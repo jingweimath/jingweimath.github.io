@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>复习计划 · 经维数学</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a56db; --primary-dark: #1e429f; --primary-light: #e8f0fe;
+    --accent: #e24b4a; --text: #1e1e2e; --text-muted: #6b7280;
+    --border: #e5e7eb; --bg: #f8f9fc; --white: #ffffff; --radius: 12px;
+    --success: #16a34a; --warning: #f59e0b;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--bg); }
+  nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 5%; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); text-decoration: none; }
+  .logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 15px; }
+  .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+  .nav-cta { background: var(--primary); color: white; padding: 8px 20px; border-radius: 8px; font-size: 14px; text-decoration: none; font-weight: 500; }
+  .page-header { background: white; padding: 40px 5% 32px; border-bottom: 1px solid var(--border); }
+  .page-header h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .page-header p { color: var(--text-muted); font-size: 15px; }
+  .content { padding: 32px 5%; max-width: 1200px; margin: 0 auto; }
+  .layout { display: grid; grid-template-columns: 300px 1fr; gap: 28px; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+
+  .sidebar-card { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+  .sidebar-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+  .progress-ring { width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 800; color: var(--primary); }
+  .progress-label { text-align: center; font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
+  .phase-list { display: flex; flex-direction: column; gap: 8px; }
+  .phase-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; transition: background 0.2s; }
+  .phase-item:hover { background: var(--bg); }
+  .phase-item.active { background: var(--primary-light); color: var(--primary); font-weight: 700; }
+  .phase-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .phase-dot.done { background: var(--success); }
+  .phase-dot.current { background: var(--primary); }
+  .phase-dot.upcoming { background: #d1d5db; }
+  .phase-progress { margin-left: auto; font-size: 12px; color: var(--text-muted); }
+
+  .main-area { display: flex; flex-direction: column; gap: 24px; }
+  .card { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+  .card h3 { font-size: 17px; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .card h3 .icon { font-size: 20px; }
+
+  .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+  .calendar-header { font-size: 12px; color: var(--text-muted); text-align: center; font-weight: 600; padding: 6px 0; }
+  .calendar-day { aspect-ratio: 1; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 13px; cursor: pointer; position: relative; border: 1px solid transparent; transition: all 0.15s; }
+  .calendar-day:hover { border-color: var(--primary); }
+  .calendar-day.today { background: var(--primary); color: white; font-weight: 700; }
+  .calendar-day.completed { background: #dcfce7; color: var(--success); font-weight: 700; border-color: #bbf7d0; }
+  .calendar-day.planned { background: var(--primary-light); color: var(--primary); font-weight: 600; }
+  .calendar-day.other-month { color: #d1d5db; }
+  .calendar-day .dot { position: absolute; bottom: 3px; width: 4px; height: 4px; border-radius: 50%; }
+  .dot.green { background: var(--success); }
+  .dot.blue { background: var(--primary); }
+  .dot.red { background: var(--accent); }
+  .month-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .month-nav h2 { font-size: 18px; font-weight: 800; }
+  .month-nav button { background: none; border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; cursor: pointer; font-size: 14px; }
+  .month-nav button:hover { background: var(--bg); }
+
+  .task-list { display: flex; flex-direction: column; gap: 10px; }
+  .task-item { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border); font-size: 14px; }
+  .task-check { width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 10px; transition: all 0.15s; }
+  .task-check.done { background: var(--success); border-color: var(--success); color: white; }
+  .task-info { flex: 1; }
+  .task-name { font-weight: 600; font-size: 14px; }
+  .task-meta { font-size: 12px; color: var(--text-muted); margin-top: 2px; display: flex; gap: 12px; }
+  .task-time { font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+  .task-badge { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px; white-space: nowrap; }
+  .badge-blue { background: #dbeafe; color: #1d4ed8; }
+  .badge-red { background: #fee2e2; color: #b91c1c; }
+  .badge-green { background: #dcfce7; color: #15803d; }
+
+  .streak-bar { display: flex; gap: 4px; margin-bottom: 16px; }
+  .streak-dot { width: 28px; height: 28px; border-radius: 6px; background: #e5e7eb; }
+  .streak-dot.fill { background: var(--success); }
+  .streak-dot.miss { background: #fca5a5; }
+
+  .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .stat-card { background: var(--bg); border-radius: 10px; padding: 14px; text-align: center; }
+  .stat-card .num { font-size: 22px; font-weight: 800; }
+  .stat-card .lbl { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .num.blue { color: var(--primary); }
+  .num.green { color: var(--success); }
+  .num.red { color: var(--accent); }
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">经维<span>数学</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="courses.html">网课视频</a></li>
+    <li><a href="plan.html" class="active">复习计划</a></li>
+    <li><a href="practice.html">题库练习</a></li>
+    <li><a href="index.html#pricing">价格</a></li>
+  </ul>
+  <a href="index.html#pricing" class="nav-cta">立即报名</a>
+</nav>
+
+<div class="page-header">
+  <h1>📅 复习计划</h1>
+  <p>科学规划，日拱一卒。基于艾宾浩斯记忆曲线，智能安排每日学习与复习任务</p>
+</div>
+
+<div class="content">
+  <div class="layout">
+    <!-- SIDEBAR -->
+    <div>
+      <div class="sidebar-card" style="margin-bottom:20px">
+        <h3>学习概览</h3>
+        <div style="display:flex;justify-content:center">
+          <div class="progress-ring" style="background:conic-gradient(#1a56db 65%, #f3f4f6 0)">65%</div>
+        </div>
+        <div class="progress-label">整体进度 · 距考试 168 天</div>
+        <div class="stats-row">
+          <div class="stat-card"><div class="num blue">43</div><div class="lbl">已学课时</div></div>
+          <div class="stat-card"><div class="num green">21</div><div class="lbl">连续打卡</div></div>
+          <div class="stat-card"><div class="num red">12</div><div class="lbl">待复习</div></div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>备考阶段</h3>
+        <div class="phase-list">
+          <div class="phase-item done">
+            <div class="phase-dot done"></div>
+            <span>基础夯实</span>
+            <span class="phase-progress">100%</span>
+          </div>
+          <div class="phase-item active">
+            <div class="phase-dot current"></div>
+            <span>强化提升</span>
+            <span class="phase-progress">65%</span>
+          </div>
+          <div class="phase-item">
+            <div class="phase-dot upcoming"></div>
+            <span>真题训练</span>
+            <span class="phase-progress">0%</span>
+          </div>
+          <div class="phase-item">
+            <div class="phase-dot upcoming"></div>
+            <span>冲刺模考</span>
+            <span class="phase-progress">0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main-area">
+      <!-- Calendar -->
+      <div class="card">
+        <div class="month-nav">
+          <button onclick="changeMonth(-1)">‹ 上月</button>
+          <h2 id="monthTitle">2026年6月</h2>
+          <button onclick="changeMonth(1)">下月 ›</button>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+
+      <!-- Today's Tasks -->
+      <div class="card">
+        <h3><span class="icon">📋</span>今日任务 · 6月3日（周三）</h3>
+        <div class="task-list" id="taskList">
+          <div class="task-item">
+            <div class="task-check done" onclick="toggleTask(this)">✓</div>
+            <div class="task-info">
+              <div class="task-name">导数的四则运算与链式法则复习</div>
+              <div class="task-meta"><span>📐 高等数学</span><span>🔄 第2次复习</span></div>
+            </div>
+            <span class="task-badge badge-green">已复习</span>
+          </div>
+          <div class="task-item">
+            <div class="task-check" onclick="toggleTask(this)"></div>
+            <div class="task-info">
+              <div class="task-name">高阶导数与隐函数求导</div>
+              <div class="task-meta"><span>📐 高等数学</span><span>📖 新课</span></div>
+            </div>
+            <span class="task-time">2h</span>
+          </div>
+          <div class="task-item">
+            <div class="task-check" onclick="toggleTask(this)"></div>
+            <div class="task-info">
+              <div class="task-name">导数应用：单调性与极值</div>
+              <div class="task-meta"><span>📐 高等数学</span><span>📖 新课</span></div>
+            </div>
+            <span class="task-time">1.5h</span>
+          </div>
+          <div class="task-item">
+            <div class="task-check" onclick="toggleTask(this)"></div>
+            <div class="task-info">
+              <div class="task-name">极限计算题复习 · 基础题×5</div>
+              <div class="task-meta"><span>📝 刷题</span><span>🔄 第3次复习</span></div>
+            </div>
+            <span class="task-time">45min</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weekly Overview -->
+      <div class="card">
+        <h3><span class="icon">📊</span>本周学习统计</h3>
+        <div style="display:flex;gap:12px;align-items:flex-end;height:120px;margin-top:8px">
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px">
+            <div style="width:40px;border-radius:6px 6px 0 0;background:#1a56db;height:80px" title="周一 · 4h"></div>
+            <span style="font-size:11px;color:#6b7280">周一</span>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px">
+            <div style="width:40px;border-radius:6px 6px 0 0;background:#1a56db;height:90px" title="周二 · 4.5h"></div>
+            <span style="font-size:11px;color:#6b7280">周二</span>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px">
+            <div style="width:40px;border-radius:6px 6px 0 0;background:#e24b4a;height:60px" title="今天 · 3h (进行中)"></div>
+            <span style="font-size:11px;font-weight:700;color:#e24b4a">今天</span>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px">
+            <div style="width:40px;border-radius:6px 6px 0 0;background:#e5e7eb;height:0px" title="周四"></div>
+            <span style="font-size:11px;color:#6b7280">周四</span>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px">
+            <div style="width:40px;border-radius:6px 6px 0 0;background:#e5e7eb;height:0px" title="周五"></div>
+            <span style="font-size:11px;color:#6b7280">周五</span>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px">
+            <div style="width:40px;border-radius:6px 6px 0 0;background:#e5e7eb;height:0px" title="周六"></div>
+            <span style="font-size:11px;color:#6b7280">周六</span>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px">
+            <div style="width:40px;border-radius:6px 6px 0 0;background:#e5e7eb;height:0px" title="周日"></div>
+            <span style="font-size:11px;color:#6b7280">周日</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const weekDays = ['日','一','二','三','四','五','六'];
+let currentYear = 2026, currentMonth = 6;
+const completed = [1,2,3];
+const planned = [3,4,5,8,9,10,11,15,16,17,18,22,23,24,25,29,30];
+
+function renderCalendar() {
+  const firstDay = new Date(currentYear, currentMonth - 1, 1).getDay();
+  const daysInMonth = new Date(currentYear, currentMonth, 0).getDate();
+  const prevDays = new Date(currentYear, currentMonth - 1, 0).getDate();
+  const today = new Date();
+  let html = '';
+  weekDays.forEach(d => html += `<div class="calendar-header">${d}</div>`);
+
+  for (let i = firstDay - 1; i >= 0; i--) {
+    html += `<div class="calendar-day other-month">${prevDays - i}</div>`;
+  }
+
+  for (let d = 1; d <= daysInMonth; d++) {
+    let cls = 'calendar-day';
+    let dots = '';
+    const isToday = currentYear === today.getFullYear() && currentMonth === today.getMonth() + 1 && d === today.getDate();
+    if (isToday) cls += ' today';
+    else if (completed.includes(d)) cls += ' completed';
+    else if (planned.includes(d)) cls += ' planned';
+
+    if (d === 1 || d === 4) dots += '<span class="dot green"></span>';
+    if (d === 3 || d === 10) dots += '<span class="dot blue"></span>';
+
+    html += `<div class="${cls}">${d}${dots}</div>`;
+  }
+
+  const totalCells = Math.ceil((firstDay + daysInMonth) / 7) * 7;
+  const remaining = totalCells - firstDay - daysInMonth;
+  for (let d = 1; d <= remaining; d++) {
+    html += `<div class="calendar-day other-month">${d}</div>`;
+  }
+
+  document.getElementById('calendarGrid').innerHTML = html;
+  document.getElementById('monthTitle').textContent = `${currentYear}年${currentMonth}月`;
+}
+
+function changeMonth(delta) {
+  currentMonth += delta;
+  if (currentMonth > 12) { currentMonth = 1; currentYear++; }
+  if (currentMonth < 1) { currentMonth = 12; currentYear--; }
+  renderCalendar();
+}
+
+function toggleTask(el) {
+  el.classList.toggle('done');
+  el.textContent = el.classList.contains('done') ? '✓' : '';
+}
+
+renderCalendar();
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "subjects": {
+    "calculus": {
+      "name": "高等数学",
+      "chapters": [
+        { "id": "calculus-limit", "name": "极限与连续", "file": "questions/calculus-limit.json" },
+        { "id": "calculus-derivative", "name": "导数与微分", "file": "questions/calculus-derivative.json" },
+        { "id": "calculus-integral", "name": "不定积分", "file": null },
+        { "id": "calculus-definite", "name": "定积分与应用", "file": null }
+      ]
+    },
+    "linalg": {
+      "name": "线性代数",
+      "chapters": [
+        { "id": "linalg-matrix", "name": "矩阵与行列式", "file": null },
+        { "id": "linalg-vector", "name": "向量与线性方程组", "file": null }
+      ]
+    },
+    "probability": {
+      "name": "概率论与数理统计",
+      "chapters": [
+        { "id": "prob-event", "name": "随机事件与概率", "file": null },
+        { "id": "prob-distribution", "name": "随机变量与分布", "file": null }
+      ]
+    }
+  }
+}

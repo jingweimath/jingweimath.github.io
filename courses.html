@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>网课视频 · 经维数学</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a56db; --primary-dark: #1e429f; --primary-light: #e8f0fe;
+    --accent: #e24b4a; --text: #1e1e2e; --text-muted: #6b7280;
+    --border: #e5e7eb; --bg: #f8f9fc; --white: #ffffff; --radius: 12px;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--bg); }
+  nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 5%; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); text-decoration: none; }
+  .logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 15px; }
+  .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+  .nav-cta { background: var(--primary); color: white; padding: 8px 20px; border-radius: 8px; font-size: 14px; text-decoration: none; font-weight: 500; }
+  .page-header { background: white; padding: 40px 5% 32px; border-bottom: 1px solid var(--border); }
+  .page-header h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .page-header p { color: var(--text-muted); font-size: 15px; }
+  .content { padding: 32px 5%; }
+  .filter-bar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+  .filter-btn { padding: 7px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; border: 1.5px solid var(--border); background: white; cursor: pointer; transition: all 0.2s; }
+  .filter-btn:hover, .filter-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+  .subject-section { margin-bottom: 48px; }
+  .subject-title { font-size: 20px; font-weight: 800; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .courses-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+  .course-card { background: white; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; cursor: pointer; transition: all 0.2s; text-decoration: none; color: inherit; display: block; }
+  .course-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.1); transform: translateY(-2px); }
+  .course-thumb { height: 148px; display: flex; align-items: center; justify-content: center; font-size: 48px; position: relative; }
+  .play-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s; }
+  .course-card:hover .play-overlay { opacity: 1; }
+  .play-circle { width: 48px; height: 48px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .lock-badge { position: absolute; top: 10px; right: 10px; border-radius: 20px; font-size: 11px; font-weight: 600; padding: 3px 8px; }
+  .free-badge { background: #dcfce7; color: #15803d; }
+  .paid-badge { background: #fee2e2; color: #b91c1c; }
+  .course-body { padding: 14px 16px; }
+  .tags { display: flex; gap: 5px; margin-bottom: 8px; flex-wrap: wrap; }
+  .tag { font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 4px; }
+  .tag-blue { background: #dbeafe; color: #1d4ed8; }
+  .tag-red { background: #fee2e2; color: #b91c1c; }
+  .tag-green { background: #dcfce7; color: #15803d; }
+  .course-body h4 { font-size: 14px; font-weight: 700; margin-bottom: 6px; line-height: 1.4; }
+  .meta { font-size: 12px; color: var(--text-muted); display: flex; gap: 10px; margin-bottom: 10px; }
+  .course-footer { display: flex; align-items: center; justify-content: space-between; }
+  .price-free { color: #16a34a; font-size: 14px; font-weight: 700; }
+  .price-paid { color: var(--accent); font-size: 16px; font-weight: 800; }
+  .btn-sm { font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 7px; text-decoration: none; }
+  .btn-primary-sm { background: var(--primary); color: white; }
+  .btn-red-sm { background: var(--accent); color: white; }
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">经维<span>数学</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="courses.html" class="active">网课视频</a></li>
+    <li><a href="plan.html">复习计划</a></li>
+    <li><a href="practice.html">题库练习</a></li>
+    <li><a href="index.html#pricing">价格</a></li>
+  </ul>
+  <a href="index.html#pricing" class="nav-cta">立即报名</a>
+</nav>
+
+<div class="page-header">
+  <h1>🎬 网课视频</h1>
+  <p>系统精讲，按章节分类，随时回放。高等数学 · 线性代数 · 概率论全覆盖</p>
+</div>
+
+<div class="content">
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterCourse(this,'all')">全部</button>
+    <button class="filter-btn" onclick="filterCourse(this,'calculus')">高等数学</button>
+    <button class="filter-btn" onclick="filterCourse(this,'linalg')">线性代数</button>
+    <button class="filter-btn" onclick="filterCourse(this,'prob')">概率论</button>
+    <button class="filter-btn" onclick="filterCourse(this,'free')">免费课</button>
+  </div>
+
+  <!-- 高等数学 -->
+  <div class="subject-section" data-subject="calculus">
+    <div class="subject-title">📐 高等数学</div>
+    <div class="courses-grid">
+      <a class="course-card" href="#" onclick="showVideo('极限与连续')">
+        <div class="course-thumb" style="background:#dbeafe">
+          <span>∞</span>
+          <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1a56db"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <span class="lock-badge free-badge">免费</span>
+        </div>
+        <div class="course-body">
+          <div class="tags"><span class="tag tag-blue">高等数学</span><span class="tag tag-green">基础</span></div>
+          <h4>01 · 极限与连续</h4>
+          <div class="meta"><span>⏱ 12课时</span><span>👥 831人</span></div>
+          <div class="course-footer"><span class="price-free">免费试听</span><span class="btn-sm btn-primary-sm">立即学习</span></div>
+        </div>
+      </a>
+      <a class="course-card" href="#" onclick="showVideo('导数与微分')">
+        <div class="course-thumb" style="background:#ede9fe">
+          <span>f'</span>
+          <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1a56db"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <span class="lock-badge paid-badge">¥99</span>
+        </div>
+        <div class="course-body">
+          <div class="tags"><span class="tag tag-blue">高等数学</span><span class="tag tag-red">重难点</span></div>
+          <h4>02 · 导数与微分</h4>
+          <div class="meta"><span>⏱ 15课时</span><span>👥 712人</span></div>
+          <div class="course-footer"><span class="price-paid">¥99</span><span class="btn-sm btn-red-sm">购买</span></div>
+        </div>
+      </a>
+      <a class="course-card" href="#" onclick="showVideo('不定积分技巧')">
+        <div class="course-thumb" style="background:#fef9c3">
+          <span>∫</span>
+          <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1a56db"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <span class="lock-badge paid-badge">¥99</span>
+        </div>
+        <div class="course-body">
+          <div class="tags"><span class="tag tag-blue">高等数学</span><span class="tag tag-red">高频考点</span></div>
+          <h4>03 · 不定积分技巧全集</h4>
+          <div class="meta"><span>⏱ 18课时</span><span>👥 652人</span></div>
+          <div class="course-footer"><span class="price-paid">¥99</span><span class="btn-sm btn-red-sm">购买</span></div>
+        </div>
+      </a>
+      <a class="course-card" href="#" onclick="showVideo('定积分与应用')">
+        <div class="course-thumb" style="background:#ecfdf5">
+          <span>∮</span>
+          <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1a56db"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <span class="lock-badge paid-badge">¥99</span>
+        </div>
+        <div class="course-body">
+          <div class="tags"><span class="tag tag-blue">高等数学</span></div>
+          <h4>04 · 定积分与几何应用</h4>
+          <div class="meta"><span>⏱ 14课时</span><span>👥 543人</span></div>
+          <div class="course-footer"><span class="price-paid">¥99</span><span class="btn-sm btn-red-sm">购买</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- 线性代数 -->
+  <div class="subject-section" data-subject="linalg">
+    <div class="subject-title">🔢 线性代数</div>
+    <div class="courses-grid">
+      <a class="course-card" href="#" onclick="showVideo('矩阵与行列式')">
+        <div class="course-thumb" style="background:#dcfce7">
+          <span>det</span>
+          <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#16a34a"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <span class="lock-badge paid-badge">¥89</span>
+        </div>
+        <div class="course-body">
+          <div class="tags"><span class="tag tag-green">线性代数</span><span class="tag tag-blue">基础</span></div>
+          <h4>01 · 矩阵与行列式</h4>
+          <div class="meta"><span>⏱ 15课时</span><span>👥 728人</span></div>
+          <div class="course-footer"><span class="price-paid">¥89</span><span class="btn-sm btn-red-sm">购买</span></div>
+        </div>
+      </a>
+      <a class="course-card" href="#" onclick="showVideo('向量与线性方程组')">
+        <div class="course-thumb" style="background:#f0fdf4">
+          <span>Ax=b</span>
+          <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#16a34a"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <span class="lock-badge paid-badge">¥89</span>
+        </div>
+        <div class="course-body">
+          <div class="tags"><span class="tag tag-green">线性代数</span></div>
+          <h4>02 · 向量组与线性方程组</h4>
+          <div class="meta"><span>⏱ 12课时</span><span>👥 621人</span></div>
+          <div class="course-footer"><span class="price-paid">¥89</span><span class="btn-sm btn-red-sm">购买</span></div>
+        </div>
+      </a>
+      <a class="course-card" href="#" onclick="showVideo('特征值与二次型')">
+        <div class="course-thumb" style="background:#ecfdf5">
+          <span>λ</span>
+          <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#16a34a"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <span class="lock-badge paid-badge">¥89</span>
+        </div>
+        <div class="course-body">
+          <div class="tags"><span class="tag tag-green">线性代数</span><span class="tag tag-red">重难点</span></div>
+          <h4>03 · 特征值与二次型</h4>
+          <div class="meta"><span>⏱ 16课时</span><span>👥 589人</span></div>
+          <div class="course-footer"><span class="price-paid">¥89</span><span class="btn-sm btn-red-sm">购买</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- 概率论 -->
+  <div class="subject-section" data-subject="prob">
+    <div class="subject-title">🎲 概率论与数理统计</div>
+    <div class="courses-grid">
+      <a class="course-card" href="#" onclick="showVideo('概率基础')">
+        <div class="course-thumb" style="background:#fce7f3">
+          <span>P(A)</span>
+          <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#db2777"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <span class="lock-badge paid-badge">¥119</span>
+        </div>
+        <div class="course-body">
+          <div class="tags"><span class="tag tag-red">概率论</span><span class="tag tag-blue">基础</span></div>
+          <h4>01 · 随机事件与概率</h4>
+          <div class="meta"><span>⏱ 10课时</span><span>👥 497人</span></div>
+          <div class="course-footer"><span class="price-paid">¥119</span><span class="btn-sm btn-red-sm">购买</span></div>
+        </div>
+      </a>
+      <a class="course-card" href="#" onclick="showVideo('随机变量')">
+        <div class="course-thumb" style="background:#fff1f2">
+          <span>X~N</span>
+          <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#db2777"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <span class="lock-badge paid-badge">¥119</span>
+        </div>
+        <div class="course-body">
+          <div class="tags"><span class="tag tag-red">概率论</span><span class="tag tag-red">重点</span></div>
+          <h4>02 · 随机变量及其分布</h4>
+          <div class="meta"><span>⏱ 14课时</span><span>👥 432人</span></div>
+          <div class="course-footer"><span class="price-paid">¥119</span><span class="btn-sm btn-red-sm">购买</span></div>
+        </div>
+      </a>
+      <a class="course-card" href="#" onclick="showVideo('数理统计')">
+        <div class="course-thumb" style="background:#fdf2f8">
+          <span>μ σ²</span>
+          <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#db2777"><path d="M8 5v14l11-7z"/></svg></div></div>
+          <span class="lock-badge paid-badge">¥119</span>
+        </div>
+        <div class="course-body">
+          <div class="tags"><span class="tag tag-red">概率论</span></div>
+          <h4>03 · 数字特征与数理统计</h4>
+          <div class="meta"><span>⏱ 12课时</span><span>👥 378人</span></div>
+          <div class="course-footer"><span class="price-paid">¥119</span><span class="btn-sm btn-red-sm">购买</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO MODAL -->
+<div id="videoModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:999;align-items:center;justify-content:center;">
+  <div style="background:white;border-radius:20px;padding:0;width:640px;max-width:92vw;overflow:hidden;position:relative;">
+    <button onclick="document.getElementById('videoModal').style.display='none'" style="position:absolute;top:12px;right:16px;background:rgba(0,0,0,0.5);border:none;color:white;font-size:20px;cursor:pointer;border-radius:50%;width:32px;height:32px;z-index:1;">×</button>
+    <div style="background:#1e1e2e;height:320px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;">
+      <div style="color:white;font-size:48px;">▶</div>
+      <div id="videoTitle" style="color:rgba(255,255,255,0.7);font-size:14px;"></div>
+      <div style="color:rgba(255,255,255,0.4);font-size:12px;">此处嵌入实际视频播放器</div>
+    </div>
+    <div style="padding:20px 24px;">
+      <div id="videoName" style="font-size:18px;font-weight:700;margin-bottom:8px;"></div>
+      <div style="font-size:13px;color:#6b7280;">课程视频 · 请购买后解锁完整内容</div>
+      <div style="margin-top:16px;display:flex;gap:10px;">
+        <a href="index.html#pricing" style="background:#1a56db;color:white;padding:10px 20px;border-radius:8px;text-decoration:none;font-size:14px;font-weight:600;">购买课程</a>
+        <button onclick="document.getElementById('videoModal').style.display='none'" style="border:1.5px solid #e5e7eb;background:none;padding:10px 20px;border-radius:8px;font-size:14px;cursor:pointer;">继续浏览</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function showVideo(title) {
+  document.getElementById('videoTitle').textContent = title;
+  document.getElementById('videoName').textContent = title;
+  document.getElementById('videoModal').style.display = 'flex';
+  return false;
+}
+function filterCourse(btn, cat) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const sections = document.querySelectorAll('.subject-section');
+  sections.forEach(s => {
+    if (cat === 'all' || cat === 'free') { s.style.display = ''; }
+    else { s.style.display = s.dataset.subject === cat ? '' : 'none'; }
+  });
+}
+</script>
+</body>
+</html>
