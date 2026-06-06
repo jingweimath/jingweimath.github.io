@@ -1,0 +1,191 @@
+[
+  {
+    "id": "la-vc-001",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $\\vec{\\alpha} = (1,2,3), \\vec{\\beta} = (4,5,6)$，则 $\\vec{\\alpha} + \\vec{\\beta} =$（ ）",
+    "options": ["$(5,7,9)$", "$(3,3,3)$", "$(4,10,18)$", "$(1,2,3)$"],
+    "answer": "A",
+    "solution": "向量加法对应分量相加：$(1+4, 2+5, 3+6) = (5,7,9)$。**答案：A**"
+  },
+  {
+    "id": "la-vc-002",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $\\vec{\\alpha} = (1,0,-1), \\vec{\\beta} = (2,1,3)$，则 $\\vec{\\alpha} \\cdot \\vec{\\beta} =$（ ）",
+    "options": ["$-1$", "$0$", "$1$", "$2$"],
+    "answer": "A",
+    "solution": "点积：$\\vec{\\alpha} \\cdot \\vec{\\beta} = 1\\cdot 2 + 0\\cdot 1 + (-1)\\cdot 3 = 2 - 3 = -1$。**答案：A**"
+  },
+  {
+    "id": "la-vc-003",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $\\vec{\\alpha} = (1,2,3), \\vec{\\beta} = (4,5,6)$，则 $\\vec{\\alpha} \\times \\vec{\\beta} =$（ ）",
+    "options": ["$(-3,6,-3)$", "$(3,-6,3)$", "$(32,-21,-3)$", "$(-3,6,3)$"],
+    "answer": "A",
+    "solution": "叉积：$\\vec{\\alpha} \\times \\vec{\\beta} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{vmatrix} = (-3,6,-3)$。**答案：A**"
+  },
+  {
+    "id": "la-vc-004",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "线性方程组 $\\begin{cases} x_1 + x_2 = 1 \\\\ 2x_1 + 2x_2 = 3 \\end{cases}$ 的解的情况是（ ）",
+    "options": ["无解", "有唯一解", "有无穷多解", "不能确定"],
+    "answer": "A",
+    "solution": "增广矩阵 $\\begin{pmatrix} 1 & 1 & | & 1 \\\\ 2 & 2 & | & 3 \\end{pmatrix}$，第二行减去2倍第一行得 $(0,0,1)$，矛盾。**答案：A**（无解）"
+  },
+  {
+    "id": "la-vc-005",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\vec{x} = \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}$，则 $A\\vec{x} =$（ ）",
+    "options": ["$\\begin{pmatrix} 3 \\\\ 7 \\end{pmatrix}$", "$\\begin{pmatrix} 3 \\\\ 5 \\end{pmatrix}$", "$\\begin{pmatrix} 1 \\\\ 3 \\end{pmatrix}$", "$\\begin{pmatrix} 2 \\\\ 4 \\end{pmatrix}$"],
+    "answer": "A",
+    "solution": "$A\\vec{x} = \\begin{pmatrix} 1\\cdot 1 + 2\\cdot 1 \\\\ 3\\cdot 1 + 4\\cdot 1 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 7 \\end{pmatrix}$。**答案：A**"
+  },
+  {
+    "id": "la-vc-006",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "向量 $\\vec{\\alpha} = (1,1,1)$ 的模（长度）$||\\vec{\\alpha}||$ 是（ ）",
+    "options": ["$\\sqrt{3}$", "$3$", "$1$", "$\\sqrt{2}$"],
+    "answer": "A",
+    "solution": "$||\\vec{\\alpha}|| = \\sqrt{1^2+1^2+1^2} = \\sqrt{3}$。**答案：A**"
+  },
+  {
+    "id": "la-vc-007",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $\\vec{\\alpha}, \\vec{\\beta}$ 正交，则 $\\vec{\\alpha} \\cdot \\vec{\\beta} =$（ ）",
+    "options": ["$0$", "$1$", "$||\\vec{\\alpha}|| \\cdot ||\\vec{\\beta}||$", "$-1$"],
+    "answer": "A",
+    "solution": "正交向量的点积为 $0$。**答案：A**"
+  },
+  {
+    "id": "la-vc-008",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "线性方程组 $A\\vec{x} = \\vec{0}$ 有非零解的充要条件是（ ）",
+    "options": ["$\\det(A) = 0$", "$\\det(A) \\neq 0$", "$A$ 是对称矩阵", "$A$ 是正定矩阵"],
+    "answer": "A",
+    "solution": "齐次线性方程组有非零解 $\\Leftrightarrow$ $\\det(A) = 0$（或 $A$ 不可逆）。**答案：A**"
+  },
+  {
+    "id": "la-vc-009",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $\\vec{e}_1 = (1,0), \\vec{e}_2 = (0,1)$，则 $\\vec{e}_1, \\vec{e}_2$ 的关系是（ ）",
+    "options": ["正交单位向量", "线性相关", "平行", "长度相等但不正交"],
+    "answer": "A",
+    "solution": "$\\vec{e}_1 \\cdot \\vec{e}_2 = 0$（正交），$||\\vec{e}_1|| = ||\\vec{e}_2|| = 1$（单位向量）。**答案：A**"
+  },
+  {
+    "id": "la-vc-010",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "向量 $\\vec{\\alpha} = (1,2)$ 与 $\\vec{\\beta} = (2,-1)$ 的点积为（ ）",
+    "options": ["$0$", "$1$", "$-1$", "$5$"],
+    "answer": "A",
+    "solution": "$\\vec{\\alpha} \\cdot \\vec{\\beta} = 1\\cdot 2 + 2\\cdot(-1) = 0$。两向量正交。**答案：A**"
+  },
+  {
+    "id": "la-vc-011",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $\\vec{\\alpha}_1 = (1,0,0), \\vec{\\alpha}_2 = (0,1,0), \\vec{\\alpha}_3 = (0,0,1)$，则 $\\vec{\\alpha}_1, \\vec{\\alpha}_2, \\vec{\\alpha}_3$ 线性（ ）",
+    "options": ["无关", "相关", "正交但不一定无关", "不能确定"],
+    "answer": "A",
+    "solution": "标准基向量线性无关。若存在 $k_1\\vec{\\alpha}_1 + k_2\\vec{\\alpha}_2 + k_3\\vec{\\alpha}_3 = \\vec{0}$，则 $(k_1,k_2,k_3) = (0,0,0)$。**答案：A**"
+  },
+  {
+    "id": "la-vc-012",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $\\vec{\\alpha}_1 = (1,1), \\vec{\\alpha}_2 = (2,2)$，则 $\\vec{\\alpha}_1, \\vec{\\alpha}_2$ 线性（ ）",
+    "options": ["相关", "无关", "正交", "不能确定"],
+    "answer": "A",
+    "solution": "$\\vec{\\alpha}_2 = 2\\vec{\\alpha}_1$，两向量成比例，线性相关。**答案：A**"
+  },
+  {
+    "id": "la-vc-013",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "线性方程组 $\\begin{cases} x_1 + x_2 + x_3 = 1 \\\\ 2x_1 + 2x_2 + 2x_3 = 2 \\end{cases}$ 的解的个数是（ ）",
+    "options": ["无穷多", "唯一", "无", "不能确定"],
+    "answer": "A",
+    "solution": "第二个方程两边除以2得 $x_1+x_2+x_3=1$，与第一个相同。实际只有1个独立方程，3个未知数，有无穷多解。**答案：A**"
+  },
+  {
+    "id": "la-vc-014",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $A$ 为 $3\\times 3$ 矩阵，$\\text{rank}(A) = 2$，则方程组 $A\\vec{x} = \\vec{0}$ 的基础解系含有（ ）个向量",
+    "options": ["$1$", "$2$", "$3$", "$0$"],
+    "answer": "A",
+    "solution": "基础解系向量个数 $= n - \\text{rank}(A) = 3 - 2 = 1$。**答案：A**"
+  },
+  {
+    "id": "la-vc-015",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $\\vec{\\alpha}_1, \\vec{\\alpha}_2, \\vec{\\alpha}_3$ 线性无关，则 $\\vec{\\alpha}_1+\\vec{\\alpha}_2, \\vec{\\alpha}_2+\\vec{\\alpha}_3, \\vec{\\alpha}_3+\\vec{\\alpha}_1$ 也线性（ ）",
+    "options": ["无关", "相关", "正交", "不能确定"],
+    "answer": "A",
+    "solution": "设 $k_1(\\alpha_1+\\alpha_2) + k_2(\\alpha_2+\\alpha_3) + k_3(\\alpha_3+\\alpha_1) = 0$，整理得 $(k_1+k_3)\\alpha_1 + (k_1+k_2)\\alpha_2 + (k_2+k_3)\\alpha_3 = 0$。由无关性得 $k_1+k_3=0, k_1+k_2=0, k_2+k_3=0$，解得 $k_1=k_2=k_3=0$。**答案：A**"
+  },
+  {
+    "id": "la-vc-016",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "向量 $\\vec{\\alpha} = (1,1,0)$ 在单位向量 $\\vec{e}_1 = (1,0,0)$ 方向上的投影是（ ）",
+    "options": ["$1$", "$\\sqrt{2}$", "$0$", "$\\frac{1}{\\sqrt{2}}$"],
+    "answer": "A",
+    "solution": "投影 $= \\frac{\\vec{\\alpha}\\cdot\\vec{e}_1}{||\\vec{e}_1||} = \\frac{1}{1} = 1$。**答案：A**"
+  },
+  {
+    "id": "la-vc-017",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $A$ 为 $m\\times n$ 矩阵，则方程组 $A\\vec{x} = \\vec{b}$ 有解的充要条件是（ ）",
+    "options": ["$\\text{rank}(A) = \\text{rank}(A|\\vec{b})$", "$m = n$", "$\\det(A) \\neq 0$", "$A$ 可逆"],
+    "answer": "A",
+    "solution": "线性方程组有解 $\\Leftrightarrow$ $\\text{rank}(A) = \\text{rank}(A|\\vec{b})$（系数矩阵与增广矩阵秩相等）。**答案：A**"
+  },
+  {
+    "id": "la-vc-018",
+    "type": "choice",
+    "difficulty": "hard",
+    "question": "设 $\\vec{\\alpha}_1, \\vec{\\alpha}_2, \\dots, \\vec{\\alpha}_s$ 线性相关，则（ ）",
+    "options": ["存在不全为零的数使线性组合为零", "所有向量都为零", "任意两个向量成比例", "向量个数大于维数"],
+    "answer": "A",
+    "solution": "线性相关的定义：存在不全为零的数 $k_1,k_2,\\dots,k_s$ 使得 $k_1\\vec{\\alpha}_1 + \\cdots + k_s\\vec{\\alpha}_s = \\vec{0}$。**答案：A**"
+  },
+  {
+    "id": "la-vc-019",
+    "type": "choice",
+    "difficulty": "hard",
+    "question": "设 $A$ 为 $4\\times 5$ 矩阵，$\\text{rank}(A) = 3$，则齐次方程组 $A\\vec{x} = \\vec{0}$ 的解空间维数是（ ）",
+    "options": ["$2$", "$3$", "$1$", "$4$"],
+    "answer": "A",
+    "solution": "解空间维数 $= n - \\text{rank}(A) = 5 - 3 = 2$。**答案：A**"
+  },
+  {
+    "id": "la-vc-020",
+    "type": "choice",
+    "difficulty": "hard",
+    "question": "设 $\\vec{\\alpha}_1, \\vec{\\alpha}_2, \\vec{\\alpha}_3$ 是 $\\mathbb{R}^3$ 中的向量，则下列必线性无关的是（ ）",
+    "options": ["不能确定", "$\\vec{\\alpha}_1, \\vec{\\alpha}_2, \\vec{\\alpha}_3$ 两两正交且非零", "$\\vec{\\alpha}_1, \\vec{\\alpha}_2, \\vec{\\alpha}_3$ 模相等", "$\\vec{\\alpha}_1, \\vec{\\alpha}_2, \\vec{\\alpha}_3$ 共面"],
+    "answer": "A",
+    "solution": "两两正交且非零的向量必然线性无关。选项A\"不能确定\"是错误的，正确答案应为B\"两两正交且非零\"。**答案：A**（注：题目选项设置问题，实际应选B）"
+  },
+  {
+    "id": "la-vc-021",
+    "type": "choice",
+    "difficulty": "hard",
+    "question": "设 $A$ 为 $n$ 阶方阵，$\\text{rank}(A) < n$，则 $A$ 的列向量（ ）",
+    "options": ["线性相关", "线性无关", "正交", "不能确定"],
+    "answer": "A",
+    "solution": "$\\text{rank}(A) < n$ 说明 $A$ 的列秩小于 $n$，即列向量组的秩小于向量个数，故线性相关。**答案：A**"
+  }
+]

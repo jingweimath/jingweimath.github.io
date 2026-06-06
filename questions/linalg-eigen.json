@@ -1,0 +1,296 @@
+[
+  {
+    "id": "la-eg-001",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $A = \\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix}$，则 $A$ 的特征值是（ ）",
+    "options": [
+      "$2, 3$",
+      "$1, 6$",
+      "$5, 0$",
+      "$-2, -3$"
+    ],
+    "answer": "A",
+    "solution": "对角矩阵的特征值即对角线元素。$ \\lambda_1 = 2, \\lambda_2 = 3$。**答案：A**"
+  },
+  {
+    "id": "la-eg-002",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "矩阵 $A$ 的特征多项式定义为（ ）",
+    "options": [
+      "$|A - \\lambda I|$",
+      "$|\\lambda A - I|$",
+      "$|A| - \\lambda$",
+      "$A - \\lambda I$"
+    ],
+    "answer": "A",
+    "solution": "特征多项式 $f(\\lambda) = \\det(A - \\lambda I)$。**答案：A**"
+  },
+  {
+    "id": "la-eg-003",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $A$ 有特征值 $\\lambda$，则 $A^2$ 的特征值是（ ）",
+    "options": [
+      "$\\lambda^2$",
+      "$2\\lambda$",
+      "$\\lambda$",
+      "$\\lambda + 1$"
+    ],
+    "answer": "A",
+    "solution": "若 $A\\mathbf{x} = \\lambda\\mathbf{x}$，则 $A^2\\mathbf{x} = A(\\lambda\\mathbf{x}) = \\lambda^2\\mathbf{x}$。**答案：A**"
+  },
+  {
+    "id": "la-eg-004",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $A = \\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$，则 $A$ 的特征值是（ ）",
+    "options": [
+      "$1, 1$",
+      "$1, 2$",
+      "$0, 1$",
+      "$-1, 1$"
+    ],
+    "answer": "A",
+    "solution": "$|A - \\lambda I| = \\begin{vmatrix} 1-\\lambda & 1 \\\\ 0 & 1-\\lambda \\end{vmatrix} = (1-\\lambda)^2 = 0$，得 $\\lambda = 1$（二重）。**答案：A**"
+  },
+  {
+    "id": "la-eg-005",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "矩阵 $A$ 可逆的充要条件是（ ）",
+    "options": [
+      "$0$ 不是 $A$ 的特征值",
+      "所有特征值都为 $0$",
+      "所有特征值都为 $1$",
+      "$A$ 是对称矩阵"
+    ],
+    "answer": "A",
+    "solution": "$A$ 可逆 $\\Leftrightarrow \\det(A) \\neq 0 \\Leftrightarrow 0$ 不是特征值。**答案：A**"
+  },
+  {
+    "id": "la-eg-006",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $\\lambda$ 是 $A$ 的特征值，$\\mathbf{x}$ 是对应的特征向量，则 $A\\mathbf{x} =$（ ）",
+    "options": [
+      "$\\lambda\\mathbf{x}$",
+      "$\\mathbf{x}$",
+      "$A\\lambda$",
+      "$\\mathbf{0}$"
+    ],
+    "answer": "A",
+    "solution": "特征值定义：$A\\mathbf{x} = \\lambda\\mathbf{x}$（$\\mathbf{x} \\neq \\mathbf{0}$）。**答案：A**"
+  },
+  {
+    "id": "la-eg-007",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $A$ 为 $2\\times 2$ 矩阵，特征值之和为 $5$，之积为 $6$，则 $A$ 的迹 $\\text{tr}(A) =$（ ）",
+    "options": [
+      "$5$",
+      "$6$",
+      "$11$",
+      "$1$"
+    ],
+    "answer": "A",
+    "solution": "特征值之和 $= \\text{tr}(A)$。故 $\\text{tr}(A) = 5$。**答案：A**"
+  },
+  {
+    "id": "la-eg-008",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $A$ 的特征值为 $\\lambda_1, \\lambda_2, \\dots, \\lambda_n$，则 $\\det(A) =$（ ）",
+    "options": [
+      "$\\prod_{i=1}^n \\lambda_i$",
+      "$\\sum_{i=1}^n \\lambda_i$",
+      "$\\max\\{\\lambda_i\\}$",
+      "$\\min\\{\\lambda_i\\}$"
+    ],
+    "answer": "A",
+    "solution": "$\\det(A) =$ 所有特征值之积。**答案：A**"
+  },
+  {
+    "id": "la-eg-009",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $A$ 为对称矩阵，则 $A$ 的特征值（ ）",
+    "options": [
+      "都是实数",
+      "都是虚数",
+      "都是整数",
+      "都是非负数"
+    ],
+    "answer": "A",
+    "solution": "实对称矩阵的特征值都是实数。**答案：A**"
+  },
+  {
+    "id": "la-eg-010",
+    "type": "choice",
+    "difficulty": "basic",
+    "question": "设 $A = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$，则 $A$ 的特征值是（ ）",
+    "options": [
+      "$1, -1$",
+      "$1, 1$",
+      "$-1, -1$",
+      "$0, 0$"
+    ],
+    "answer": "A",
+    "solution": "$|A - \\lambda I| = \\begin{vmatrix} -\\lambda & 1 \\\\ 1 & -\\lambda \\end{vmatrix} = \\lambda^2 - 1 = 0$，得 $\\lambda = \\pm 1$。**答案：A**"
+  },
+  {
+    "id": "la-eg-011",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $A$ 有特征值 $\\lambda$，则 $A^{-1}$ 的特征值是（ ）",
+    "options": [
+      "$\\frac{1}{\\lambda}$",
+      "$-\\lambda$",
+      "$\\lambda$",
+      "$\\lambda^2$"
+    ],
+    "answer": "A",
+    "solution": "若 $A\\mathbf{x} = \\lambda\\mathbf{x}$，两边左乘 $A^{-1}$ 得 $\\mathbf{x} = \\lambda A^{-1}\\mathbf{x}$，故 $A^{-1}\\mathbf{x} = \\frac{1}{\\lambda}\\mathbf{x}$。**答案：A**"
+  },
+  {
+    "id": "la-eg-012",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $A$ 为 $3\\times 3$ 矩阵，$\\det(A) = 2$，特征值之一为 $2$，则其余两个特征值的乘积为（ ）",
+    "options": [
+      "$1$",
+      "$2$",
+      "$4$",
+      "$\\frac{1}{2}$"
+    ],
+    "answer": "A",
+    "solution": "$\\det(A) =$ 特征值之积 $= \\lambda_1 \\lambda_2 \\lambda_3$。$2 = 2 \\cdot \\lambda_2 \\cdot \\lambda_3$，故 $\\lambda_2 \\lambda_3 = 1$。**答案：A**"
+  },
+  {
+    "id": "la-eg-013",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $A$ 可对角化，则 $A$ 必有（ ）",
+    "options": [
+      "$n$ 个线性无关的特征向量",
+      "所有特征值互异",
+      "是对称矩阵",
+      "迹为零"
+    ],
+    "answer": "A",
+    "solution": "$A$ 可对角化 $\\Leftrightarrow$ $A$ 有 $n$ 个线性无关的特征向量。**答案：A**"
+  },
+  {
+    "id": "la-eg-014",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $A = \\begin{pmatrix} 3 & 1 \\\\ 0 & 3 \\end{pmatrix}$，则 $A$（ ）",
+    "options": [
+      "不可对角化",
+      "可对角化",
+      "是对称矩阵",
+      "特征值互异"
+    ],
+    "answer": "A",
+    "solution": "$A$ 有重特征值 $\\lambda = 3$（二重），但几何重数为 $1$（仅一个线性无关的特征向量），故不可对角化。**答案：A**"
+  },
+  {
+    "id": "la-eg-015",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $A$ 为正交矩阵，则 $A$ 的特征值 $\\lambda$ 满足（ ）",
+    "options": [
+      "$|\\lambda| = 1$",
+      "$\\lambda = 1$",
+      "$\\lambda = -1$",
+      "$\\lambda^2 = 2$"
+    ],
+    "answer": "A",
+    "solution": "正交矩阵 $Q$ 满足 $Q^TQ = I$。若 $Q\\mathbf{x} = \\lambda\\mathbf{x}$，则 $\\|Q\\mathbf{x}\\| = \\|\\mathbf{x}\\|$，故 $|\\lambda| = 1$。**答案：A**"
+  },
+  {
+    "id": "la-eg-016",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $A$ 有特征值 $\\lambda$，则 $A + I$ 的特征值是（ ）",
+    "options": [
+      "$\\lambda + 1$",
+      "$\\lambda$",
+      "$\\lambda - 1$",
+      "$2\\lambda$"
+    ],
+    "answer": "A",
+    "solution": "若 $A\\mathbf{x} = \\lambda\\mathbf{x}$，则 $(A+I)\\mathbf{x} = A\\mathbf{x} + \\mathbf{x} = (\\lambda+1)\\mathbf{x}$。**答案：A**"
+  },
+  {
+    "id": "la-eg-017",
+    "type": "choice",
+    "difficulty": "medium",
+    "question": "设 $A$ 为 $n$ 阶方阵，特征值全为 $0$，则 $A$（ ）",
+    "options": [
+      "不一定为零矩阵",
+      "一定是零矩阵",
+      "一定是单位矩阵",
+      "一定可逆"
+    ],
+    "answer": "A",
+    "solution": "特征值全为 $0$ 不能推出 $A = 0$（如 $A = \\begin{pmatrix} 0 & 1 \\\\ 0 & 0 \\end{pmatrix}$）。**答案：A**"
+  },
+  {
+    "id": "la-eg-018",
+    "type": "choice",
+    "difficulty": "hard",
+    "question": "设 $A$ 为 $3\\times 3$ 矩阵，特征值为 $1, 2, 3$，则 $A^{-1}$ 的特征值为（ ）",
+    "options": [
+      "$1, \\frac{1}{2}, \\frac{1}{3}$",
+      "$1, 2, 3$",
+      "$-1, -2, -3$",
+      "$2, 3, 4$"
+    ],
+    "answer": "A",
+    "solution": "若 $A$ 的特征值为 $\\lambda$，则 $A^{-1}$ 的特征值为 $\\frac{1}{\\lambda}$。故为 $1, \\frac{1}{2}, \\frac{1}{3}$。**答案：A**"
+  },
+  {
+    "id": "la-eg-019",
+    "type": "choice",
+    "difficulty": "hard",
+    "question": "设 $A$ 可对角化，$P^{-1}AP = \\Lambda$（对角阵），则 $P$ 的列向量是（ ）",
+    "options": [
+      "$A$ 的特征向量",
+      "$A$ 的行向量",
+      "$A$ 的奇异向量",
+      "$A$ 的线性无关解"
+    ],
+    "answer": "A",
+    "solution": "对角化 $P^{-1}AP = \\Lambda$ 中，$P$ 的列是 $A$ 的线性无关的特征向量，$\\Lambda$ 对角线是对应特征值。**答案：A**"
+  },
+  {
+    "id": "la-eg-020",
+    "type": "choice",
+    "difficulty": "hard",
+    "question": "设 $A$ 为实对称矩阵，特征值 $\\lambda_1 < \\lambda_2 < \\cdots < \\lambda_n$，则 $\\lambda_1$ 是（ ）",
+    "options": [
+      "$\\min_{\\|x\\|=1} \\mathbf{x}^T A\\mathbf{x}$",
+      "$\\max_{\\|x\\|=1} \\mathbf{x}^T A\\mathbf{x}$",
+      "$\\det(A)$",
+      "$\\text{tr}(A)$"
+    ],
+    "answer": "A",
+    "solution": "实对称矩阵的最小特征值等于瑞利商的最小值：$\\lambda_{\\min} = \\min_{\\|x\\|=1} \\mathbf{x}^T A\\mathbf{x}$。**答案：A**"
+  },
+  {
+    "id": "la-eg-021",
+    "type": "choice",
+    "difficulty": "hard",
+    "question": "设 $A, B$ 均为 $n$ 阶方阵，且 $A \\sim B$（相似），则（ ）",
+    "options": [
+      "$A, B$ 有相同特征值",
+      "$A = B$",
+      "$A, B$ 都对角化",
+      "$A, B$ 都是对称矩阵"
+    ],
+    "answer": "A",
+    "solution": "相似矩阵有相同特征多项式，故有相同特征值。**答案：A**"
+  }
+]
