@@ -5,7 +5,7 @@
       "chapters": [
         { "id": "calculus-limit", "name": "极限与连续", "file": "questions/calculus-limit.json" },
         { "id": "calculus-derivative", "name": "一元函数微分学", "file": "questions/calculus-derivative.json" },
-        { "id": "calculus-integral", "name": "一元函数积分学", "file": null },
+        { "id": "calculus-integral", "name": "一元函数积分学", "file": "questions/calculus-integral.json" },
         { "id": "calculus-diff-eq", "name": "微分方程", "file": null },
         { "id": "calculus-multi-diff", "name": "多元函数微分学", "file": null },
         { "id": "calculus-double-integral", "name": "二重积分", "file": null },
