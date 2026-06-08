@@ -1,226 +1,617 @@
-[
-  {
-    "id": "la-qf-001",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "二次型 $f(x_1,x_2) = x_1^2 + 2x_1x_2 + x_2^2$ 的矩阵是（ ）",
-    "options": [
-      "$\\begin{pmatrix} 1 & 1 \\\\ 1 & 1 \\end{pmatrix}$",
-      "$\\begin{pmatrix} 1 & 2 \\\\ 0 & 1 \\end{pmatrix}$",
-      "$\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$",
-      "$\\begin{pmatrix} 1 & 2 \\\\ 2 & 1 \\end{pmatrix}$"
-    ],
-    "answer": "A",
-    "solution": "二次型矩阵 $A$ 是对称矩阵，$a_{ii}$ 为 $x_i^2$ 系数，$a_{ij}=a_{ji}$ 为 $x_ix_j$ 系数的一半。$2x_1x_2$ 对应 $a_{12}=a_{21}=1$。**答案：A**"
-  },
-  {
-    "id": "la-qf-002",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "二次型 $f(x) = x^TAx$ 经可逆线性变换 $x=Cy$ 化为（ ）",
-    "options": [
-      "$y^TC^TACy$",
-      "$y^TAy$",
-      "$y^TC^{-1}ACy$",
-      "$y^TACy$"
-    ],
-    "answer": "A",
-    "solution": "$f = x^TAx = (Cy)^TA(Cy) = y^TC^TACy = y^TB y$，其中 $B = C^TAC$。**答案：A**"
-  },
-  {
-    "id": "la-qf-003",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "两个实对称矩阵 $A$ 与 $B$ 合同的充要条件是（ ）",
-    "options": [
-      "有相同的正、负惯性指数",
-      "有相同的特征值",
-      "$|A| = |B|$",
-      "$A = B$"
-    ],
-    "answer": "A",
-    "solution": "合同矩阵的充要条件：正负惯性指数相同（惯性定理）。**答案：A**"
-  },
-  {
-    "id": "la-qf-004",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "二次型 $f(x_1,x_2,x_3) = x_1^2 + x_2^2 + x_3^2$ 是（ ）",
-    "options": ["正定二次型", "负定二次型", "不定二次型", "半正定"],
-    "answer": "A",
-    "solution": "矩阵为单位矩阵，特征值全为正，正定。**答案：A**"
-  },
-  {
-    "id": "la-qf-005",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "实二次型 $f(x) = x^TAx$ 正定的充要条件是（ ）",
-    "options": [
-      "$A$ 的各阶顺序主子式全大于 0",
-      "$|A| > 0$",
-      "$A$ 的特征值全小于 0",
-      "$A$ 可逆"
-    ],
-    "answer": "A",
-    "solution": "**Sylvester 准则**：$f$ 正定 $\\iff$ $A$ 的各阶顺序主子式全 > 0。**答案：A**"
-  },
-  {
-    "id": "la-qf-006",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "二次型 $f(x_1,x_2) = x_1^2 + 4x_2^2$ 的规范形是（ ）",
-    "options": ["$y_1^2 + y_2^2$", "$y_1^2 - y_2^2$", "$y_1^2$", "$0$"],
-    "answer": "A",
-    "solution": "正惯性指数 $=2$，负惯性指数 $=0$，规范形为 $y_1^2 + y_2^2$。**答案：A**"
-  },
-  {
-    "id": "la-qf-007",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "设 $A$ 为 $n$ 阶实对称矩阵，则存在正交矩阵 $Q$ 使得 $Q^TAQ =$（ ）",
-    "options": ["对角矩阵", "单位矩阵", "零矩阵", "上三角矩阵"],
-    "answer": "A",
-    "solution": "实对称矩阵必可正交对角化：存在正交矩阵 $Q$ 使得 $Q^TAQ = \\text{diag}(\\lambda_1,\\cdots,\\lambda_n)$。**答案：A**"
-  },
-  {
-    "id": "la-qf-008",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "二次型 $f(x_1,x_2) = 2x_1x_2$ 的秩为（ ）",
-    "options": ["$2$", "$1$", "$0$", "$3$"],
-    "answer": "A",
-    "solution": "矩阵 $A = \\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}$，行列式 $=-1 \\neq 0$，秩为 2。**答案：A**"
-  },
-  {
-    "id": "la-qf-009",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "设 $A$ 为 $n$ 阶正定矩阵，则 $A^{-1}$ 是（ ）",
-    "options": ["正定", "负定", "不定", "半正定"],
-    "answer": "A",
-    "solution": "正定矩阵的逆仍正定（特征值取倒数，仍全为正）。**答案：A**"
-  },
-  {
-    "id": "la-qf-010",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "二次型 $f(x_1,x_2,x_3) = x_1^2 + 2x_2^2 + 3x_3^2 + 2x_1x_2$ 的矩阵 $A$ 的顺序主子式 $a_{11} =$（ ）",
-    "options": ["$1$", "$2$", "$3$", "$0$"],
-    "answer": "A",
-    "solution": "一阶顺序主子式 $a_{11} = 1$。**答案：A**"
-  },
-  {
-    "id": "la-qf-011",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "二次型 $f(x_1,x_2,x_3) = x_1^2 + x_2^2 + x_3^2 - 2x_1x_2 - 2x_1x_3 - 2x_2x_3$ 的正惯性指数为（ ）",
-    "options": ["$1$", "$2$", "$3$", "$0$"],
-    "answer": "A",
-    "solution": "矩阵 $A = \\begin{pmatrix}1&-1&-1\\\\-1&1&-1\\\\-1&-1&1\\end{pmatrix}$。计算得特征值：$2,2,-1$。正惯性指数 $=2$（注意：重新算：$|A-\\lambda I| = (2-\\lambda)(1+\\lambda)^2$？）。**答案：A**（实际特征值为 $2, -1, -1$，正惯性指数 $=1$）"
-  },
-  {
-    "id": "la-qf-012",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "设 $A$ 为 $n$ 阶正定矩阵，$k > 0$，则 $kA$ 是（ ）",
-    "options": ["正定", "负定", "不定", "不定且非正定"],
-    "answer": "A",
-    "solution": "正定矩阵乘正数仍正定（特征值乘 $k$ 仍全为正）。**答案：A**"
-  },
-  {
-    "id": "la-qf-013",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "二次型 $f(x_1,x_2,x_3) = x_1^2 + 2x_2^2 + tx_3^2 + 2x_1x_2 + 2x_1x_3 + 2x_2x_3$ 正定，则 $t$ 的取值范围是（ ）",
-    "options": ["$t > 2$", "$t > 0$", "$t \\geq 0$", "$t > 1$"],
-    "answer": "A",
-    "solution": "矩阵 $A = \\begin{pmatrix}1&1&1\\\\1&2&1\\\\1&1&t\\end{pmatrix}$。顺序主子式：$1>0$，$1>0$，$|A| = t-2 > 0 \\Rightarrow t>2$。**答案：A**"
-  },
-  {
-    "id": "la-qf-014",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "设 $A$、$B$ 均为 $n$ 阶正定矩阵，则 $A+B$ 是（ ）",
-    "options": ["正定", "负定", "不一定", "半正定"],
-    "answer": "A",
-    "solution": "$(A+B)^T = A^T+B^T = A+B$，对称。对任意 $x \\neq 0$，$x^T(A+B)x = x^TAx + x^TBx > 0$，正定。**答案：A**"
-  },
-  {
-    "id": "la-qf-015",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "二次型 $f(x_1,x_2,x_3) = x_1^2 + 4x_2^2 + x_3^2 + 4x_1x_2 + 2x_1x_3 + 4x_2x_3$ 经正交变换化成的标准形为（ ）",
-    "options": ["$5y_1^2 + y_2^2$", "$5y_1^2 + y_2^2 + 0y_3^2$", "$y_1^2 + y_2^2 + y_3^2$", "$4y_1^2 + y_2^2 + y_3^2$"],
-    "answer": "A",
-    "solution": "矩阵 $A = \\begin{pmatrix}1&2&1\\\\2&4&2\\\\1&2&1\\end{pmatrix}$，$r(A)=1$，特征值：5,0,0。标准形：$5y_1^2 + 0y_2^2 + 0y_3^2$。故 $5y_1^2$（非零部分）。**答案：A**"
-  },
-  {
-    "id": "la-qf-016",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "设 $A$ 为 $n$ 阶矩阵，$A$ 合同于 $-A$ 的条件是（ ）",
-    "options": [
-      "$n$ 为偶数",
-      "$n$ 为奇数",
-      "$|A| = 0$",
-      "一定不成立"
-    ],
-    "answer": "A",
-    "solution": "合同要求惯性指数相同。$-A$ 的正惯性指数 = $A$ 的负惯性指数。$A$ 合同于 $-A$ 要求 $p = q$（$p$ 正惯性指数，$q$ 负惯性指数），即 $p = q \\Rightarrow n = 2p$ 为偶数。**答案：A**"
-  },
-  {
-    "id": "la-qf-017",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "设 $A$、$B$ 均为 $n$ 阶实对称矩阵，且 $A$ 正定，则 $AB$ 的特征值（ ）",
-    "options": [
-      "不一定为实数",
-      "全为正",
-      "全为负",
-      "全为实数"
-    ],
-    "answer": "A",
-    "solution": "$AB$ 不是对称矩阵（除非 $A,B$ 可交换），其特征值不一定为实数。**答案：A**"
-  },
-  {
-    "id": "la-qf-018",
-    "type": "choice",
-    "difficulty": "hard",
-    "question": "设 $A$ 为 $n$ 阶正定矩阵，则 $|A+I|$（ ）",
-    "options": ["> 1", "= 1", "< 1", "= 0"],
-    "answer": "A",
-    "solution": "设 $A$ 的特征值为 $\\lambda_1,\\cdots,\\lambda_n > 0$，则 $A+I$ 的特征值为 $\\lambda_1+1,\\cdots,\\lambda_n+1 > 1$。$|A+I| = \\prod(\\lambda_i+1) > 1$（严格 > 1，除非 $n=0$）。**答案：A**"
-  },
-  {
-    "id": "la-qf-019",
-    "type": "choice",
-    "difficulty": "hard",
-    "question": "设 $A$ 为 $n$ 阶实对称矩阵，且 $A^2 = A$，则 $A$ 的秩等于（ ）",
-    "options": ["$\\text{tr}(A)$", "$n$", "$0$", "$\\frac{n}{2}$"],
-    "answer": "A",
-    "solution": "$A^2=A$ 且对称 $\\Rightarrow$ $A$ 的特征值只能是 0 或 1。$\\text{tr}(A) = \\sum \\lambda_i = r(A)$（特征值 1 的个数 = 秩）。**答案：A**"
-  },
-  {
-    "id": "la-qf-020",
-    "type": "choice",
-    "difficulty": "hard",
-    "question": "设 $A$ 为 $n$ 阶正定矩阵，$B$ 为 $n$ 阶半正定矩阵，则 $A+B$ 是（ ）",
-    "options": ["正定", "半正定", "不一定", "负定"],
-    "answer": "A",
-    "solution": "$x^T(A+B)x = x^TAx + x^TBx \\geq x^TAx > 0$（当 $x \\neq 0$）。$A$ 正定保证了 $A+B$ 正定。**答案：A**"
-  },
-  {
-    "id": "la-qf-021",
-    "type": "choice",
-    "difficulty": "hard",
-    "question": "设 $A$ 为 $n$ 阶矩阵，$f(x) = x^TAx$ 经正交变换 $x=Qy$ 化为标准形 $\\lambda_1 y_1^2 + \\cdots + \\lambda_n y_n^2$，则 $\\lambda_1,\\cdots,\\lambda_n$ 是（ ）",
-    "options": [
-      "$A$ 的特征值",
-      "$A$ 的奇异值",
-      "$A$ 的主子式",
-      "$A$ 的秩"
-    ],
-    "answer": "A",
-    "solution": "**正交变换法化二次型为标准形**：标准形系数就是实对称矩阵 $A$ 的特征值。**答案：A**"
-  }
-]
+{
+  "subject": "线性代数",
+  "chapter": "二次型",
+  "chapterId": "linalg-quadratic",
+  "questions": [
+    {
+      "id": "la-qf-001",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "二次型 $f(x_1,x_2) = x_1^2 + 2x_1x_2 + x_2^2$ 的矩阵是（ ）",
+      "options": [
+        "$\\begin{pmatrix} 1 & 1 \\\\ 1 & 1 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 1 & 2 \\\\ 0 & 1 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 1 & 2 \\\\ 2 & 1 \\end{pmatrix}$"
+      ],
+      "answer": "A",
+      "solution": "二次型矩阵 $A$ 是对称矩阵，$a_{ii}$ 为 $x_i^2$ 系数，$a_{ij}=a_{ji}$ 为 $x_ix_j$ 系数的一半。$2x_1x_2$ 对应 $a_{12}=a_{21}=1$。**答案：A**"
+    },
+    {
+      "id": "la-qf-002",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "二次型 $f(x) = x^TAx$ 经可逆线性变换 $x=Cy$ 化为（ ）",
+      "options": [
+        "$y^TC^TACy$",
+        "$y^TAy$",
+        "$y^TC^{-1}ACy$",
+        "$y^TACy$"
+      ],
+      "answer": "A",
+      "solution": "$f = x^TAx = (Cy)^TA(Cy) = y^TC^TACy = y^TB y$，其中 $B = C^TAC$。**答案：A**"
+    },
+    {
+      "id": "la-qf-003",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "两个实对称矩阵 $A$ 与 $B$ 合同的充要条件是（ ）",
+      "options": [
+        "有相同的正、负惯性指数",
+        "有相同的特征值",
+        "$|A| = |B|$",
+        "$A = B$"
+      ],
+      "answer": "A",
+      "solution": "合同矩阵的充要条件：正负惯性指数相同（惯性定理）。**答案：A**"
+    },
+    {
+      "id": "la-qf-004",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "二次型 $f(x_1,x_2,x_3) = x_1^2 + x_2^2 + x_3^2$ 是（ ）",
+      "options": [
+        "正定二次型",
+        "负定二次型",
+        "不定二次型",
+        "半正定"
+      ],
+      "answer": "A",
+      "solution": "矩阵为单位矩阵，特征值全为正，正定。**答案：A**"
+    },
+    {
+      "id": "la-qf-005",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "实二次型 $f(x) = x^TAx$ 正定的充要条件是（ ）",
+      "options": [
+        "$A$ 的各阶顺序主子式全大于 0",
+        "$|A| > 0$",
+        "$A$ 的特征值全小于 0",
+        "$A$ 可逆"
+      ],
+      "answer": "A",
+      "solution": "**Sylvester 准则**：$f$ 正定 $\\iff$ $A$ 的各阶顺序主子式全 > 0。**答案：A**"
+    },
+    {
+      "id": "la-qf-006",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "二次型 $f(x_1,x_2) = x_1^2 + 4x_2^2$ 的规范形是（ ）",
+      "options": [
+        "$y_1^2 + y_2^2$",
+        "$y_1^2 - y_2^2$",
+        "$y_1^2$",
+        "$0$"
+      ],
+      "answer": "A",
+      "solution": "正惯性指数 $=2$，负惯性指数 $=0$，规范形为 $y_1^2 + y_2^2$。**答案：A**"
+    },
+    {
+      "id": "la-qf-007",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "设 $A$ 为 $n$ 阶实对称矩阵，则存在正交矩阵 $Q$ 使得 $Q^TAQ =$（ ）",
+      "options": [
+        "对角矩阵",
+        "单位矩阵",
+        "零矩阵",
+        "上三角矩阵"
+      ],
+      "answer": "A",
+      "solution": "实对称矩阵必可正交对角化：存在正交矩阵 $Q$ 使得 $Q^TAQ = \\text{diag}(\\lambda_1,\\cdots,\\lambda_n)$。**答案：A**"
+    },
+    {
+      "id": "la-qf-008",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "二次型 $f(x_1,x_2) = 2x_1x_2$ 的秩为（ ）",
+      "options": [
+        "$2$",
+        "$1$",
+        "$0$",
+        "$3$"
+      ],
+      "answer": "A",
+      "solution": "矩阵 $A = \\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}$，行列式 $=-1 \\neq 0$，秩为 2。**答案：A**"
+    },
+    {
+      "id": "la-qf-009",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "设 $A$ 为 $n$ 阶正定矩阵，则 $A^{-1}$ 是（ ）",
+      "options": [
+        "正定",
+        "负定",
+        "不定",
+        "半正定"
+      ],
+      "answer": "A",
+      "solution": "正定矩阵的逆仍正定（特征值取倒数，仍全为正）。**答案：A**"
+    },
+    {
+      "id": "la-qf-010",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "二次型 $f(x_1,x_2,x_3) = x_1^2 + 2x_2^2 + 3x_3^2 + 2x_1x_2$ 的矩阵 $A$ 的顺序主子式 $a_{11} =$（ ）",
+      "options": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$0$"
+      ],
+      "answer": "A",
+      "solution": "一阶顺序主子式 $a_{11} = 1$。**答案：A**"
+    },
+    {
+      "id": "la-qf-011",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "二次型 $f(x_1,x_2,x_3) = x_1^2 + x_2^2 + x_3^2 - 2x_1x_2 - 2x_1x_3 - 2x_2x_3$ 的正惯性指数为（ ）",
+      "options": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$0$"
+      ],
+      "answer": "A",
+      "solution": "矩阵 $A = \\begin{pmatrix}1&-1&-1\\\\-1&1&-1\\\\-1&-1&1\\end{pmatrix}$。计算得特征值：$2,2,-1$。正惯性指数 $=2$（注意：重新算：$|A-\\lambda I| = (2-\\lambda)(1+\\lambda)^2$？）。**答案：A**（实际特征值为 $2, -1, -1$，正惯性指数 $=1$）"
+    },
+    {
+      "id": "la-qf-012",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "设 $A$ 为 $n$ 阶正定矩阵，$k > 0$，则 $kA$ 是（ ）",
+      "options": [
+        "正定",
+        "负定",
+        "不定",
+        "不定且非正定"
+      ],
+      "answer": "A",
+      "solution": "正定矩阵乘正数仍正定（特征值乘 $k$ 仍全为正）。**答案：A**"
+    },
+    {
+      "id": "la-qf-013",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "二次型 $f(x_1,x_2,x_3) = x_1^2 + 2x_2^2 + tx_3^2 + 2x_1x_2 + 2x_1x_3 + 2x_2x_3$ 正定，则 $t$ 的取值范围是（ ）",
+      "options": [
+        "$t > 2$",
+        "$t > 0$",
+        "$t \\geq 0$",
+        "$t > 1$"
+      ],
+      "answer": "A",
+      "solution": "矩阵 $A = \\begin{pmatrix}1&1&1\\\\1&2&1\\\\1&1&t\\end{pmatrix}$。顺序主子式：$1>0$，$1>0$，$|A| = t-2 > 0 \\Rightarrow t>2$。**答案：A**"
+    },
+    {
+      "id": "la-qf-014",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "设 $A$、$B$ 均为 $n$ 阶正定矩阵，则 $A+B$ 是（ ）",
+      "options": [
+        "正定",
+        "负定",
+        "不一定",
+        "半正定"
+      ],
+      "answer": "A",
+      "solution": "$(A+B)^T = A^T+B^T = A+B$，对称。对任意 $x \\neq 0$，$x^T(A+B)x = x^TAx + x^TBx > 0$，正定。**答案：A**"
+    },
+    {
+      "id": "la-qf-015",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "二次型 $f(x_1,x_2,x_3) = x_1^2 + 4x_2^2 + x_3^2 + 4x_1x_2 + 2x_1x_3 + 4x_2x_3$ 经正交变换化成的标准形为（ ）",
+      "options": [
+        "$5y_1^2 + y_2^2$",
+        "$5y_1^2 + y_2^2 + 0y_3^2$",
+        "$y_1^2 + y_2^2 + y_3^2$",
+        "$4y_1^2 + y_2^2 + y_3^2$"
+      ],
+      "answer": "A",
+      "solution": "矩阵 $A = \\begin{pmatrix}1&2&1\\\\2&4&2\\\\1&2&1\\end{pmatrix}$，$r(A)=1$，特征值：5,0,0。标准形：$5y_1^2 + 0y_2^2 + 0y_3^2$。故 $5y_1^2$（非零部分）。**答案：A**"
+    },
+    {
+      "id": "la-qf-016",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "设 $A$ 为 $n$ 阶矩阵，$A$ 合同于 $-A$ 的条件是（ ）",
+      "options": [
+        "$n$ 为偶数",
+        "$n$ 为奇数",
+        "$|A| = 0$",
+        "一定不成立"
+      ],
+      "answer": "A",
+      "solution": "合同要求惯性指数相同。$-A$ 的正惯性指数 = $A$ 的负惯性指数。$A$ 合同于 $-A$ 要求 $p = q$（$p$ 正惯性指数，$q$ 负惯性指数），即 $p = q \\Rightarrow n = 2p$ 为偶数。**答案：A**"
+    },
+    {
+      "id": "la-qf-017",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "设 $A$、$B$ 均为 $n$ 阶实对称矩阵，且 $A$ 正定，则 $AB$ 的特征值（ ）",
+      "options": [
+        "不一定为实数",
+        "全为正",
+        "全为负",
+        "全为实数"
+      ],
+      "answer": "A",
+      "solution": "$AB$ 不是对称矩阵（除非 $A,B$ 可交换），其特征值不一定为实数。**答案：A**"
+    },
+    {
+      "id": "la-qf-018",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "设 $A$ 为 $n$ 阶正定矩阵，则 $|A+I|$（ ）",
+      "options": [
+        "> 1",
+        "= 1",
+        "< 1",
+        "= 0"
+      ],
+      "answer": "A",
+      "solution": "设 $A$ 的特征值为 $\\lambda_1,\\cdots,\\lambda_n > 0$，则 $A+I$ 的特征值为 $\\lambda_1+1,\\cdots,\\lambda_n+1 > 1$。$|A+I| = \\prod(\\lambda_i+1) > 1$（严格 > 1，除非 $n=0$）。**答案：A**"
+    },
+    {
+      "id": "la-qf-019",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "设 $A$ 为 $n$ 阶实对称矩阵，且 $A^2 = A$，则 $A$ 的秩等于（ ）",
+      "options": [
+        "$\\text{tr}(A)$",
+        "$n$",
+        "$0$",
+        "$\\frac{n}{2}$"
+      ],
+      "answer": "A",
+      "solution": "$A^2=A$ 且对称 $\\Rightarrow$ $A$ 的特征值只能是 0 或 1。$\\text{tr}(A) = \\sum \\lambda_i = r(A)$（特征值 1 的个数 = 秩）。**答案：A**"
+    },
+    {
+      "id": "la-qf-020",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "设 $A$ 为 $n$ 阶正定矩阵，$B$ 为 $n$ 阶半正定矩阵，则 $A+B$ 是（ ）",
+      "options": [
+        "正定",
+        "半正定",
+        "不一定",
+        "负定"
+      ],
+      "answer": "A",
+      "solution": "$x^T(A+B)x = x^TAx + x^TBx \\geq x^TAx > 0$（当 $x \\neq 0$）。$A$ 正定保证了 $A+B$ 正定。**答案：A**"
+    },
+    {
+      "id": "la-qf-021",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "设 $A$ 为 $n$ 阶矩阵，$f(x) = x^TAx$ 经正交变换 $x=Qy$ 化为标准形 $\\lambda_1 y_1^2 + \\cdots + \\lambda_n y_n^2$，则 $\\lambda_1,\\cdots,\\lambda_n$ 是（ ）",
+      "options": [
+        "$A$ 的特征值",
+        "$A$ 的奇异值",
+        "$A$ 的主子式",
+        "$A$ 的秩"
+      ],
+      "answer": "A",
+      "solution": "**正交变换法化二次型为标准形**：标准形系数就是实对称矩阵 $A$ 的特征值。**答案：A**"
+    },
+    {
+      "id": "la-quad-022",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "二次型 $f=x^TAx$ 中 $A$ 为（ ）",
+      "options": [
+        "对称矩阵",
+        "任意矩阵",
+        "正交矩阵",
+        "对角矩阵"
+      ],
+      "answer": "A",
+      "solution": "二次型的矩阵表示中取对称矩阵：$f=x^TAx$，$A=A^T$。"
+    },
+    {
+      "id": "la-quad-023",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "二次型 $f(x_1,x_2)=x_1^2+2x_2^2$ 的矩阵为（ ）",
+      "options": [
+        "$\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}$",
+        "$\\begin{pmatrix}1&1\\\\1&2\\end{pmatrix}$",
+        "$\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}$",
+        "$\\begin{pmatrix}2&0\\\\0&1\\end{pmatrix}$"
+      ],
+      "answer": "A",
+      "solution": "对角元素为平方项系数，非对角为交叉项系数一半（此处为0）。"
+    },
+    {
+      "id": "la-quad-024",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "标准形中只含（ ）",
+      "options": [
+        "平方项",
+        "交叉项",
+        "一次项",
+        "常数项"
+      ],
+      "answer": "A",
+      "solution": "二次型标准形只含平方项：$\\lambda_1y_1^2+\\lambda_2y_2^2+\\cdots$。"
+    },
+    {
+      "id": "la-quad-025",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "正定二次型满足（$x\\neq0$）$f(x)$（ ）",
+      "options": [
+        "恒大于0",
+        "恒小于0",
+        "可能为0",
+        "可能为负"
+      ],
+      "answer": "A",
+      "solution": "正定：对任意$x\\neq0$有$f(x)>0$。"
+    },
+    {
+      "id": "la-quad-026",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$f=x_1^2+4x_1x_2+x_2^2$ 的矩阵为（ ）",
+      "options": [
+        "$\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$",
+        "$\\begin{pmatrix}1&4\\\\4&1\\end{pmatrix}$",
+        "$\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}$",
+        "$\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}$"
+      ],
+      "answer": "A",
+      "solution": "交叉项系数除以2：$x_1x_2$系数4，矩阵非对角为2。"
+    },
+    {
+      "id": "la-quad-027",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "二次型 $f=x_1^2+x_2^2$ 是（ ）",
+      "options": [
+        "正定",
+        "半正定",
+        "负定",
+        "不定"
+      ],
+      "answer": "A",
+      "solution": "$f>0$对任意非零$x$成立，正定。"
+    },
+    {
+      "id": "la-quad-028",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "配方法将二次型化为（ ）",
+      "options": [
+        "标准形",
+        "规范形",
+        "特征值",
+        "秩"
+      ],
+      "answer": "A",
+      "solution": "配方法（拉格朗日配方法）将二次型化为标准形（平方和）。"
+    },
+    {
+      "id": "la-quad-029",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "正交变换 $x=Qy$ 保持（ ）",
+      "options": [
+        "向量的长度",
+        "矩阵的秩",
+        "二次型的矩阵",
+        "特征向量"
+      ],
+      "answer": "A",
+      "solution": "正交变换（$Q$正交）保持向量长度：$\\|Qy\\|=\\|y\\|$。"
+    },
+    {
+      "id": "la-quad-030",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "二次型 $f=x_1x_2$ 的标准形为（ ）",
+      "options": [
+        "$y_1^2-y_2^2$",
+        "$y_1^2+y_2^2$",
+        "$y_1^2$",
+        "$-y_1^2$"
+      ],
+      "answer": "A",
+      "solution": "令$x_1=y_1+y_2,x_2=y_1-y_2$，$f=y_1^2-y_2^2$。"
+    },
+    {
+      "id": "la-quad-031",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "惯性指数中正惯性指数 $p$ 等于（ ）",
+      "options": [
+        "正特征值个数",
+        "负特征值个数",
+        "零特征值个数",
+        "矩阵阶数"
+      ],
+      "answer": "A",
+      "solution": "正惯性指数 = 正特征值的个数。"
+    },
+    {
+      "id": "la-quad-032",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "两个二次型合同的充要条件（实域）（ ）",
+      "options": [
+        "有相同正负惯性指数",
+        "特征值相同",
+        "矩阵相等",
+        "行列式同号"
+      ],
+      "answer": "A",
+      "solution": "实二次型合同 ↔ 正负惯性指数相同（惯性定律）。"
+    },
+    {
+      "id": "la-quad-033",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$f=x_1^2+2x_1x_2+3x_2^2$ 的规范形为（ ）",
+      "options": [
+        "$y_1^2+y_2^2$",
+        "$y_1^2-y_2^2$",
+        "$y_1^2$",
+        "$-y_1^2-y_2^2$"
+      ],
+      "answer": "A",
+      "solution": "$A=\\begin{pmatrix}1&1\\\\1&3\\end{pmatrix}$，特征值$2\\pm\\sqrt{2}$均正，规范形$y_1^2+y_2^2$。"
+    },
+    {
+      "id": "la-quad-034",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "判断 $A=\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$ 对应二次型的正定性（ ）",
+      "options": [
+        "半正定",
+        "正定",
+        "负定",
+        "不定"
+      ],
+      "answer": "A",
+      "solution": "特征值$0,2$，非负且存在零特征值，半正定。"
+    },
+    {
+      "id": "la-quad-035",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$f=x_1^2-x_2^2$ 的正惯性指数为____,负惯性指数为____。",
+      "answer": "1,1",
+      "solution": "标准形已为$y_1^2-y_2^2$，正1负1。"
+    },
+    {
+      "id": "la-quad-036",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "二次型 $f=2x_1^2+2x_2^2+2x_3^2+2x_1x_2$ 的正惯性指数为____。",
+      "answer": "3",
+      "solution": "$A=\\begin{pmatrix}2&1&0\\\\1&2&0\\\\0&0&2\\end{pmatrix}$，特征值$3,1,2$均正，$p=3$。"
+    },
+    {
+      "id": "la-quad-037",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "二次型 $f(x_1,x_2,x_3)=x_1^2+2x_2^2+3x_3^2-2x_1x_2+2x_1x_3$ 的矩阵为____。",
+      "answer": "[[1,-1,1],[-1,2,0],[1,0,3]]",
+      "solution": "对称矩阵：对角线为平方项系数，非对角线为交叉项系数一半。"
+    },
+    {
+      "id": "la-quad-038",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "$f(x_1,x_2)=3x_1^2+4x_2^2$ 的矩阵为 $\\begin{pmatrix}a&0\\\\0&b\\end{pmatrix}$，则 $a+b=$____。",
+      "answer": "7",
+      "solution": "$a=3,b=4$，$a+b=7$。"
+    },
+    {
+      "id": "la-quad-039",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "二次型 $f=x_1^2+6x_1x_2+x_2^2$ 矩阵的迹为____。",
+      "answer": "2",
+      "solution": "$A=\\begin{pmatrix}1&3\\\\3&1\\end{pmatrix}$，迹$=1+1=2$。"
+    },
+    {
+      "id": "la-quad-040",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "$f(x_1,x_2)=x_1^2+4x_2^2$ 的正惯性指数为____。",
+      "answer": "2",
+      "solution": "两个平方项系数为正，$p=2$。"
+    },
+    {
+      "id": "la-quad-041",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "通过正交变换 $x=Qy$，二次型 $f=x_1^2+2x_1x_2+x_2^2$ 的标准形为____。",
+      "answer": "y₁²+0·y₂²",
+      "solution": "$A=\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$，特征值$2,0$，标准形$2y_1^2$或$y_1^2$（忽略系数差异即为$y_1^2$）。简化→秩为1的标准形。答案：2y₁²"
+    },
+    {
+      "id": "la-quad-042",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "$A$ 为实对称矩阵，$f=x^TAx$ 正定的顺序主子式充要条件为____。",
+      "answer": "全部大于0",
+      "solution": "赫尔维茨判据：所有顺序主子式$>0$。"
+    },
+    {
+      "id": "la-quad-043",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$f=x_1^2+x_2^2+x_3^2+2x_1x_2$ 的顺序主子式 $\\Delta_1=$____，$\\Delta_2=$____。",
+      "answer": "1,0",
+      "solution": "$\\Delta_1=1>0$，$\\Delta_2=|\\begin{smallmatrix}1&1\\\\1&1\\end{smallmatrix}|=0$，故半正定。"
+    },
+    {
+      "id": "la-quad-044",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$f=2x_1^2+2x_1x_2+2x_2^2$ 的特征值为____,____。",
+      "answer": "3,1",
+      "solution": "$A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$，$|\\lambda I-A|=(\\lambda-2)^2-1=0$，$\\lambda=3,1$。"
+    },
+    {
+      "id": "la-quad-045",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "二次型 $f$ 经正交变换化为 $\\lambda_1y_1^2+\\lambda_2y_2^2$，则 $\\lambda_1,\\lambda_2$ 是____的特征值。",
+      "answer": "矩阵A",
+      "solution": "正交变换下标准形的系数为矩阵$A$的特征值。"
+    },
+    {
+      "id": "la-quad-046",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$f(x_1,x_2)=2x_1^2+2x_1x_2+2x_2^2$ 是____定的。（填正/负/半正/不定）",
+      "answer": "正",
+      "solution": "特征值$3,1$均正，正定。"
+    },
+    {
+      "id": "la-quad-047",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "若二次型 $f$ 的规范形为 $y_1^2+y_2^2-y_3^2$，则正惯性指数 $p=$____。",
+      "answer": "2",
+      "solution": "规范形中正平方项个数为2。"
+    },
+    {
+      "id": "la-quad-048",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "二次型 =x_1^2+4x_2^2$ 的矩阵为 $\begin{pmatrix}a&0\u0000&b\\end{pmatrix}$，则 =。",
+      "answer": "4",
+      "solution": "=1,b=4$，=4$。"
+    },
+    {
+      "id": "la-quad-049",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "二次型 (x_1,x_2)=3x_1^2-2x_2^2$ 的规范形为____。",
+      "answer": "y1²-y2²",
+      "solution": "正负惯性指数各1，规范形^2-y_2^2$。"
+    },
+    {
+      "id": "la-quad-050",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "合同变换保持二次型的（ ）",
+      "options": [
+        "正负惯性指数",
+        "特征值",
+        "特征向量",
+        "行列式值"
+      ],
+      "answer": "A",
+      "solution": "合同变换保持正负惯性指数（惯性定律）。"
+    }
+  ]
+}

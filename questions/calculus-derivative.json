@@ -8,7 +8,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "f(x) 在 x₀ 处可导的定义为 lim(h→0) [f(x₀+h) - f(x₀)] / h 存在。该极限值称为？",
-      "options": ["f(x₀)", "f'(x₀)", "f''(x₀)", "df"],
+      "options": [
+        "f(x₀)",
+        "f'(x₀)",
+        "f''(x₀)",
+        "df"
+      ],
       "answer": 1,
       "solution": "导数定义：f'(x₀) = lim(h→0) [f(x₀+h) - f(x₀)] / h。这是导数的标准定义式，所有求导法则都由此推出。注意：可导等价于该极限存在且有限。"
     },
@@ -17,7 +22,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "lim(h→0) [f(x₀+h) - f(x₀-h)] / (2h) = ？",
-      "options": ["f(x₀)", "f'(x₀)", "2f'(x₀)", "0"],
+      "options": [
+        "f(x₀)",
+        "f'(x₀)",
+        "2f'(x₀)",
+        "0"
+      ],
       "answer": 1,
       "solution": "由导数定义拆分：原式 = 1/2 [lim [f(x₀+h)-f(x₀)]/h + lim [f(x₀)-f(x₀-h)]/h] = 1/2(f'(x₀) + f'(x₀)) = f'(x₀)。这是对称差商，只要 f 在 x₀ 可导，结果就等于 f'(x₀)。但注意反向不成立：对称差商存在不能推出可导（如 f(x)=|x| 在 x=0）。"
     },
@@ -26,7 +36,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "f(x)=x·|x| 在 x=0 处是否可导？",
-      "options": ["可导，f'(0)=0", "可导，f'(0)=1", "不可导", "不存在极限"],
+      "options": [
+        "可导，f'(0)=0",
+        "可导，f'(0)=1",
+        "不可导",
+        "不存在极限"
+      ],
       "answer": 0,
       "solution": "x>0 时 f(x)=x²，f'(0+)=2x|x=0=0；x<0 时 f(x)=-x²，f'(0-)=-2x|x=0=0。左右导数相等 =0，故 f'(0)=0。结论：x·|x| 比 |x| 更光滑，是奇函数且可导。"
     },
@@ -35,7 +50,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "f(x)=|x| 在 x=0 处是否可导？",
-      "options": ["可导", "不可导", "导数=0", "导数=1"],
+      "options": [
+        "可导",
+        "不可导",
+        "导数=0",
+        "导数=1"
+      ],
       "answer": 1,
       "solution": "右导数 f'+(0)=1，左导数 f'-(0)=-1，左右导数不相等，故在 x=0 不可导。|x| 是连续但不可导的经典例子。"
     },
@@ -92,7 +112,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "d(sin x) = ？",
-      "options": ["cos x dx", "cos x", "sin x dx", "-cos x dx"],
+      "options": [
+        "cos x dx",
+        "cos x",
+        "sin x dx",
+        "-cos x dx"
+      ],
       "answer": 0,
       "solution": "微分的定义：dy = f'(x)dx。因为 (sin x)' = cos x，故 d(sin x) = cos x dx。微分 = 导数 × dx。"
     },
@@ -117,7 +142,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "曲线 y = x³ - 3x 在何点处切线平行于 x 轴？",
-      "options": ["(0,0)", "(1,-2) 和 (-1,2)", "(0,0) 和 (2,2)", "仅 (0,0)"],
+      "options": [
+        "(0,0)",
+        "(1,-2) 和 (-1,2)",
+        "(0,0) 和 (2,2)",
+        "仅 (0,0)"
+      ],
       "answer": 1,
       "solution": "切线平行于 x 轴 → 导数为 0。y' = 3x² - 3 = 3(x²-1) = 0，解得 x = ±1。x=1 时 y = -2；x=-1 时 y = 2。故有两点 (1,-2) 和 (-1,2)。导数等于 0 是求驻点（可疑极值点）的标准方法。"
     },
@@ -126,7 +156,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "y = x^x (x>0) 的导数 y' = ？",
-      "options": ["x·x^(x-1)", "x^x·ln x", "x^x·(1+ln x)", "x^x"],
+      "options": [
+        "x·x^(x-1)",
+        "x^x·ln x",
+        "x^x·(1+ln x)",
+        "x^x"
+      ],
       "answer": 2,
       "solution": "幂指函数，取对数：ln y = x·ln x，两边求导：y'/y = ln x + 1，故 y' = y·(ln x+1) = x^x·(1+ln x)。切记：幂指函数必须取对数再求导！"
     },
@@ -135,7 +170,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "由方程 e^y + xy = e 确定的隐函数 y=y(x)，在 x=0 处的导数 dy/dx = ？",
-      "options": ["-1", "-1/e", "-e", "1/e"],
+      "options": [
+        "-1",
+        "-1/e",
+        "-e",
+        "1/e"
+      ],
       "answer": 1,
       "solution": "x=0 时代入原方程：e^y + 0 = e → y=1。对方程两边求导：e^y·y' + y + xy' = 0 → y' = -y/(e^y + x)。在 (0,1) 处：y' = -1/(e+0) = -1/e。隐函数求导注意代入求值。"
     },
@@ -144,7 +184,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "f(x)=x sin(1/x) (x≠0)，f(0)=0。则 f(x) 在 x=0 处？",
-      "options": ["可导且连续", "连续但不可导", "可导但不连续", "不连续也不可导"],
+      "options": [
+        "可导且连续",
+        "连续但不可导",
+        "可导但不连续",
+        "不连续也不可导"
+      ],
       "answer": 1,
       "solution": "连续性：|x sin(1/x)| ≤ |x| → 0 (x→0)，故 f(x) 在 x=0 连续。可导性：f'(0) = lim(h→0) [h sin(1/h) - 0]/h = lim sin(1/h)，该极限不存在（振荡），故不可导。"
     },
@@ -153,7 +198,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "f(x)=x² sin(1/x) (x≠0)，f(0)=0。则 f'(0) = ？",
-      "options": ["0", "1", "不存在", "-1"],
+      "options": [
+        "0",
+        "1",
+        "不存在",
+        "-1"
+      ],
       "answer": 0,
       "solution": "f'(0) = lim(h→0) [h² sin(1/h)]/h = lim h·sin(1/h) = 0（有界量乘无穷小）。比较上题：x 换成 x² 后，多了一个 x 因子，使得导数可以存在。"
     },
@@ -162,7 +212,12 @@
       "type": "choice",
       "difficulty": "hard",
       "question": "设 f(x) 在 x=0 的某邻域内有定义，lim(x→0) [f(x)-f(0)]/x² = 1，则？",
-      "options": ["f'(0)=0 是极小值", "f'(0)=0 是极大值", "f'(0)≠0", "f'(0) 不存在"],
+      "options": [
+        "f'(0)=0 是极小值",
+        "f'(0)=0 是极大值",
+        "f'(0)≠0",
+        "f'(0) 不存在"
+      ],
       "answer": 0,
       "solution": "极限存在且 =1>0，表明 [f(x)-f(0)]/x² > 0 在充分小的邻域内（分母恒正），所以 f(x) > f(0)，f(0) 为极小值。又由极限存在推 f(x)-f(0)→0，且 [f(x)-f(0)]/x = x·[f(x)-f(0)]/x² → 0·1 = 0，故 f'(0)=0。注意：这是极值判定的高阶推广，不需要二阶导数。"
     },
@@ -173,6 +228,342 @@
       "question": "y = ln[ln(ln x)]，则 y' = ______",
       "answer": "1/[x·ln x·ln(ln x)]",
       "solution": "三重复合：y = ln u，u = ln v，v = ln x。y' = (1/u)·(1/v)·(1/x) = 1/[x·ln x·ln(ln x)]。链式法则可以嵌套任意多层，每一步乘以「当前层的导数倒数」。"
+    },
+    {
+      "id": "cal-der-021",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "d/dx (x·e^x) = ?",
+      "options": [
+        "e^x",
+        "(x+1)e^x",
+        "xe^x",
+        "e^(x+1)"
+      ],
+      "answer": 1,
+      "solution": "乘积求导：(xe^x)'=1·e^x + x·e^x = (x+1)e^x。"
+    },
+    {
+      "id": "cal-der-022",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "d/dx (sin 2x) = ?",
+      "answer": "2cos 2x",
+      "solution": "链式法则：(sin2x)'=cos2x·(2x)'=2cos2x。"
+    },
+    {
+      "id": "cal-der-023",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "y=x^x(x>0) 的导数 y'=?",
+      "options": [
+        "x·x^(x-1)",
+        "x^x·lnx",
+        "x^x(1+lnx)",
+        "x^(x-1)(1+x)"
+      ],
+      "answer": 2,
+      "solution": "对数求导：lny=xlnx，y'/y=lnx+1，y'=x^x(1+lnx)。"
+    },
+    {
+      "id": "cal-der-024",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "曲线 y=x³-3x 在点(1,-2)处切线斜率为?",
+      "answer": "0",
+      "solution": "y'=3x²-3，x=1时y'=0。"
+    },
+    {
+      "id": "cal-der-025",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "d/dx [ln(cos x)] = ?",
+      "options": [
+        "-tanx",
+        "-cotx",
+        "-secx",
+        "-cscx"
+      ],
+      "answer": 0,
+      "solution": "链式法则：[ln(cosx)]'=(1/cosx)·(-sinx)=-tanx。"
+    },
+    {
+      "id": "cal-der-026",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "x=t²,y=t³,求dy/dx(t表示)",
+      "answer": "3t/2",
+      "solution": "参数方程：dy/dx=(dy/dt)/(dx/dt)=3t²/(2t)=3t/2(t≠0)。"
+    },
+    {
+      "id": "cal-der-027",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "f(x)=x²|x|在x=0处:",
+      "options": [
+        "不可导",
+        "可导f'(0)=0",
+        "可导f'(0)=1",
+        "连续不可导"
+      ],
+      "answer": 1,
+      "solution": "x>0:f=x³,f'(0+)=0;x<0:f=-x³,f'(0-)=0。左右相等，可导且f'(0)=0。"
+    },
+    {
+      "id": "cal-der-028",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "d/dx(arctan x)=?",
+      "answer": "1/(1+x²)",
+      "solution": "反三角函数的基本导数公式。"
+    },
+    {
+      "id": "cal-der-029",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "y=x^(sinx)(x>0) 的导数 y'=?",
+      "options": [
+        "sinx·x^(sinx-1)",
+        "x^(sinx)·cosx·lnx",
+        "x^(sinx)(cosx·lnx+sinx/x)",
+        "x^(sinx)·sinx/x"
+      ],
+      "answer": 2,
+      "solution": "对数求导：lny=sinx·lnx，y'/y=cosx·lnx+sinx/x。"
+    },
+    {
+      "id": "cal-der-030",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "f(x)=x²sin(1/x)(x≠0),f(0)=0,求f'(0)",
+      "answer": "0",
+      "solution": "导数定义：lim(h→0)[h²sin(1/h)-0]/h=lim h·sin(1/h)=0。"
+    },
+    {
+      "id": "cal-der-031",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "曲线y=x³在点(1,1)的法线斜率=",
+      "options": [
+        "3",
+        "-1/3",
+        "1/3",
+        "-3"
+      ],
+      "answer": 1,
+      "solution": "y'=3x²，切线斜率在x=1为3，法线斜率=-1/3。"
+    },
+    {
+      "id": "cal-der-032",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "d²/dx²(e^x·cosx)在x=0的值=?",
+      "options": [
+        "0",
+        "1",
+        "-2",
+        "2"
+      ],
+      "answer": 0,
+      "solution": "y'=e^x(cosx-sinx)，y''=-2e^x·sinx，x=0时y''=0。"
+    },
+    {
+      "id": "cal-der-033",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "y=ln(x+√(1+x²))，求y'",
+      "answer": "1/√(1+x²)",
+      "solution": "链式法则：[1/(x+√(1+x²))]·[1+x/√(1+x²)]=1/√(1+x²)。"
+    },
+    {
+      "id": "cal-der-034",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "f(x)=ln(1-x²)的驻点是?",
+      "options": [
+        "x=0",
+        "x=±1",
+        "x=-1",
+        "无驻点"
+      ],
+      "answer": 0,
+      "solution": "f'(x)=-2x/(1-x²)=0得x=0。"
+    },
+    {
+      "id": "cal-der-035",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "y=∫[0,x]t·e^t dt，求y'",
+      "answer": "x e^x",
+      "solution": "变上限积分求导：(d/dx)∫[0,x]f(t)dt=f(x)。"
+    },
+    {
+      "id": "cal-der-036",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "f(x)=x³-3x的单调递减区间:",
+      "options": [
+        "(-∞,-1)∪(1,∞)",
+        "(-1,1)",
+        "(-∞,0)",
+        "(0,∞)"
+      ],
+      "answer": 1,
+      "solution": "f'(x)=3x²-3=3(x-1)(x+1)，f'<0当-1<x<1。"
+    },
+    {
+      "id": "cal-der-037",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "arctanx在x=0处的三阶导数值",
+      "answer": "-2",
+      "solution": "泰勒展开：arctanx=x-x³/3+...，三阶导=-1/3×3!=-2。"
+    },
+    {
+      "id": "cal-der-038",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "对称差商极限存在是f在x₀可导的:",
+      "options": [
+        "充要条件",
+        "充分不必要",
+        "必要不充分",
+        "既非充分也非必要"
+      ],
+      "answer": 2,
+      "solution": "可导⇒对称差商存在。反之不然：|x|在0处对称差商=0但不可导。"
+    },
+    {
+      "id": "cal-der-039",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "罗尔定理的结论是存在ξ使:",
+      "options": [
+        "f(ξ)=0",
+        "f'(ξ)=0",
+        "f''(ξ)=0",
+        "f(ξ)=f'(ξ)"
+      ],
+      "answer": 1,
+      "solution": "罗尔定理：f(a)=f(b)⇒∃ξ∈(a,b)使f'(ξ)=0。"
+    },
+    {
+      "id": "cal-der-040",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "曲线y=ln(1+x²)的拐点x坐标",
+      "answer": "±1",
+      "solution": "y''=2(1-x²)/(1+x²)²=0⇒x=±1，且符号改变。"
+    },
+    {
+      "id": "cal-der-041",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "lim(x→0)[sin(sinx)-x]/x³=?",
+      "options": [
+        "-1/6",
+        "-1/3",
+        "1/6",
+        "1/3"
+      ],
+      "answer": 1,
+      "solution": "sin(sinx)=sin(x-x³/6+...)=x-x³/3+o(x³)，减x除x³=-1/3。"
+    },
+    {
+      "id": "cal-der-042",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "f(x)=x²·e^x, 求f''(0)",
+      "answer": "2",
+      "solution": "f''(x)=(x²+4x+2)e^x，f''(0)=2。"
+    },
+    {
+      "id": "cal-der-043",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "f(x)=(x-1)(x-2)²(x-3)³, f'(2)=?",
+      "options": [
+        "0",
+        "1",
+        "-1",
+        "2"
+      ],
+      "answer": 0,
+      "solution": "f含因子(x-2)²，f'(x)=2(x-2)g(x)+(x-2)²g'(x)，代入x=2得0。"
+    },
+    {
+      "id": "cal-der-044",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "y=sinx+cosx, 求y⁽⁵⁰⁾(0)",
+      "answer": "-1",
+      "solution": "sin/cos高阶导数周期4。50mod4=2，sin⁽⁵⁰⁾=-sinx，cos⁽⁵⁰⁾=-cosx。x=0:-1。"
+    },
+    {
+      "id": "cal-der-045",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "f''(x)>0恒成立,下列恒成立的是:",
+      "options": [
+        "f(2)-f(1)>f'(1)",
+        "f(2)-f(1)>f'(2)",
+        "f(2)-f(1)<f'(1)",
+        "f(2)-f(1)<f'(2)"
+      ],
+      "answer": 3,
+      "solution": "f''>0⇒f'递增。拉格朗日:f(2)-f(1)=f'(ξ),1<ξ<2,f'(ξ)<f'(2)⇒差<f'(2)。"
+    },
+    {
+      "id": "cal-der-046",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "lim(x→0)[tan(tanx)-sin(sinx)]/x³=?",
+      "answer": "1",
+      "solution": "tanx=x+x³/3+o(x³),sinx=x-x³/6+o(x³)。复合展开差=x³+o(x³)⇒极限=1。"
+    },
+    {
+      "id": "cal-der-047",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "f(x)=|x-1|在[0,3]满足拉格朗日条件?",
+      "options": [
+        "满足",
+        "不连续",
+        "连续但不可导",
+        "端点值不等"
+      ],
+      "answer": 2,
+      "solution": "在[0,3]连续但x=1处尖点不可导，不满足定理条件。"
+    },
+    {
+      "id": "cal-der-048",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "x²+y²=1(y≥0)确定y(x),求y''(0)",
+      "answer": "-1",
+      "solution": "隐函数求导:2x+2yy'=0⇒y'=-x/y。y''=-(y²+x²)/y³=-1/y³。点(0,1):y''=-1。"
+    },
+    {
+      "id": "cal-der-049",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "f(x)=x^(1/x)(x>0)的最大值?",
+      "options": [
+        "e^(1/e)",
+        "e",
+        "1",
+        "e²"
+      ],
+      "answer": 0,
+      "solution": "令g=lnx/x，g'=(1-lnx)/x²=0⇒x=e极大。f(e)=e^(1/e)。"
+    },
+    {
+      "id": "cal-der-050",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "lim(n→∞)n[(1+1/n)^n-e]=?",
+      "answer": "-e/2",
+      "solution": "渐近展开:(1+1/n)^n=e·exp(nln(1+1/n)-1)=e(1-1/(2n)+o(1/n))⇒n(⋯-e)→-e/2。"
     }
   ]
 }

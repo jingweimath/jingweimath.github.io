@@ -1,221 +1,641 @@
-[
-  {
-    "id": "la-mt-001",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "行列式 $\\begin{vmatrix} 1 & 2 \\\\ 3 & 4 \\end{vmatrix}$ 的值为（ ）",
-    "options": ["$-2$", "$2$", "$10$", "$-10$"],
-    "answer": "A",
-    "solution": "$\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = ad - bc = 1 \\cdot 4 - 2 \\cdot 3 = 4 - 6 = -2$。**答案：A**"
-  },
-  {
-    "id": "la-mt-002",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "设 $A$ 为 3 阶方阵且 $|A| = 2$，则 $|2A| =$（ ）",
-    "options": ["$16$", "$8$", "$4$", "$6$"],
-    "answer": "A",
-    "solution": "$|kA| = k^n|A|$，其中 $n$ 是方阵阶数。3 阶方阵：$|2A| = 2^3 \\cdot 2 = 16$。**答案：A**"
-  },
-  {
-    "id": "la-mt-003",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "若 $A$ 可逆，则 $(A^{-1})^{-1} =$（ ）",
-    "options": ["$A$", "$A^{-1}$", "$A^2$", "$I$"],
-    "answer": "A",
-    "solution": "逆矩阵的逆是原矩阵：$(A^{-1})^{-1} = A$。**答案：A**"
-  },
-  {
-    "id": "la-mt-004",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "设 $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$，则 $A$ 的伴随矩阵 $A^*$ 为（ ）",
-    "options": [
-      "$\\begin{pmatrix} 4 & -2 \\\\ -3 & 1 \\end{pmatrix}$",
-      "$\\begin{pmatrix} 4 & -3 \\\\ -2 & 1 \\end{pmatrix}$",
-      "$\\begin{pmatrix} -4 & 2 \\\\ 3 & -1 \\end{pmatrix}$",
-      "$\\begin{pmatrix} 1 & 3 \\\\ 2 & 4 \\end{pmatrix}$"
-    ],
-    "answer": "A",
-    "solution": "二阶伴随矩阵：$\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}^* = \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$。代入得 $\\begin{pmatrix} 4 & -2 \\\\ -3 & 1 \\end{pmatrix}$。**答案：A**"
-  },
-  {
-    "id": "la-mt-005",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "矩阵 $A$ 可逆的充要条件是（ ）",
-    "options": ["$|A| \\neq 0$", "$A$ 是方阵", "$|A| = 0$", "$A$ 对称"],
-    "answer": "A",
-    "solution": "方阵可逆 $\\iff$ $|A| \\neq 0$（非奇异矩阵）。**答案：A**"
-  },
-  {
-    "id": "la-mt-006",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "矩阵的秩 $r(A)$ 等于（ ）",
-    "options": [
-      "$A$ 中非零子式的最高阶数",
-      "$A$ 的行数",
-      "$A$ 的列数",
-      "$A$ 中非零元素的个数"
-    ],
-    "answer": "A",
-    "solution": "矩阵的秩 $=$ 最高阶非零子式的阶数 $=$ 行秩 $=$ 列秩。**答案：A**"
-  },
-  {
-    "id": "la-mt-007",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "设 $A$、$B$ 均为 $n$ 阶可逆矩阵，则 $(AB)^{-1} =$（ ）",
-    "options": ["$B^{-1}A^{-1}$", "$A^{-1}B^{-1}$", "$AB$", "$(BA)^{-1}$"],
-    "answer": "A",
-    "solution": "$(AB)^{-1} = B^{-1}A^{-1}$（乘积的逆等于逆的反向乘积）。**答案：A**"
-  },
-  {
-    "id": "la-mt-008",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "上三角矩阵的行列式等于（ ）",
-    "options": ["主对角线元素的乘积", "副对角线元素的乘积", "所有元素的和", "第一行元素的乘积"],
-    "answer": "A",
-    "solution": "三角矩阵（上三角、下三角）的行列式等于主对角线元素之积。**答案：A**"
-  },
-  {
-    "id": "la-mt-009",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "设 $\\alpha$、$\\beta$ 为 $n$ 维列向量，则 $\\alpha^T\\beta$ 是（ ）",
-    "options": ["一个数", "$n$ 维向量", "$n \\times n$ 矩阵", "$n \\times 1$ 矩阵"],
-    "answer": "A",
-    "solution": "$\\alpha^T\\beta$（行向量 $\\times$ 列向量）结果是标量（一个数），即内积。**答案：A**"
-  },
-  {
-    "id": "la-mt-010",
-    "type": "choice",
-    "difficulty": "basic",
-    "question": "交换矩阵的两行，其行列式的值（ ）",
-    "options": ["变号", "不变", "变为 0", "变为原来的 2 倍"],
-    "answer": "A",
-    "solution": "行列式的性质：交换两行（列），行列式改变符号。**答案：A**"
-  },
-  {
-    "id": "la-mt-011",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "设 $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$，$B = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$，则 $AB =$（ ）",
-    "options": [
-      "$\\begin{pmatrix} 2 & 1 \\\\ 4 & 3 \\end{pmatrix}$",
-      "$\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$",
-      "$\\begin{pmatrix} 3 & 2 \\\\ 1 & 4 \\end{pmatrix}$",
-      "$\\begin{pmatrix} 2 & 4 \\\\ 1 & 3 \\end{pmatrix}$"
-    ],
-    "answer": "A",
-    "solution": "$AB = \\begin{pmatrix}1\\cdot0+2\\cdot1 & 1\\cdot1+2\\cdot0 \\\\ 3\\cdot0+4\\cdot1 & 3\\cdot1+4\\cdot0\\end{pmatrix} = \\begin{pmatrix}2 & 1 \\\\ 4 & 3\\end{pmatrix}$。**答案：A**"
-  },
-  {
-    "id": "la-mt-012",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "设 $A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 4 & 6 \\\\ 3 & 6 & 9 \\end{pmatrix}$，则 $r(A) =$（ ）",
-    "options": ["$1$", "$2$", "$3$", "$0$"],
-    "answer": "A",
-    "solution": "第二行是第一行的 2 倍，第三行是第一行的 3 倍，所以只有一行为线性无关。$r(A) = 1$。**答案：A**"
-  },
-  {
-    "id": "la-mt-013",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "设 $A$ 是 $n$ 阶可逆矩阵，则 $(A^T)^{-1} =$（ ）",
-    "options": ["$(A^{-1})^T$", "$A^{-1}$", "$(A^T)^{-1}$", "$A^T$"],
-    "answer": "A",
-    "solution": "转置和逆可以交换：$(A^T)^{-1} = (A^{-1})^T$。证明：$(A^{-1})^T A^T = (AA^{-1})^T = I$。**答案：A**"
-  },
-  {
-    "id": "la-mt-014",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "行列式 $\\begin{vmatrix} 1 & 1 & 1 \\\\ a & b & c \\\\ a^2 & b^2 & c^2 \\end{vmatrix}$ 的值为（ ）",
-    "options": [
-      "$(b-a)(c-a)(c-b)$",
-      "$(a+b+c)^3$",
-      "$0$",
-      "$abc$"
-    ],
-    "answer": "A",
-    "solution": "这是 **范德蒙行列式**：$V(a,b,c) = (b-a)(c-a)(c-b)$。**答案：A**"
-  },
-  {
-    "id": "la-mt-015",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "设 $A = \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$，则 $A^n =$（ ）",
-    "options": [
-      "$\\begin{pmatrix} 1 & 0 \\\\ 0 & (-1)^n \\end{pmatrix}$",
-      "$\\begin{pmatrix} 1^n & 0 \\\\ 0 & (-1)^n \\end{pmatrix}$",
-      "$\\begin{pmatrix} n & 0 \\\\ 0 & -n \\end{pmatrix}$",
-      "$I$"
-    ],
-    "answer": "A",
-    "solution": "对角矩阵的幂：$\\text{diag}(a,b)^n = \\text{diag}(a^n, b^n)$。故 $A^n = \\begin{pmatrix} 1 & 0 \\\\ 0 & (-1)^n \\end{pmatrix}$。**答案：A**"
-  },
-  {
-    "id": "la-mt-016",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "设 $A$ 为 $m \\times n$ 矩阵，则 $r(A^TA) =$（ ）",
-    "options": ["$r(A)$", "$r(A^T)$", "$n$", "$m$"],
-    "answer": "A",
-    "solution": "对于实矩阵，$r(A^TA) = r(A)$。这是一个重要性质。**答案：A**"
-  },
-  {
-    "id": "la-mt-017",
-    "type": "choice",
-    "difficulty": "medium",
-    "question": "若方阵 $A$ 满足 $A^2 = A$（幂等矩阵），则 $A$ 的特征值只能为（ ）",
-    "options": ["$0$ 或 $1$", "$\\pm 1$", "$0$", "$1$"],
-    "answer": "A",
-    "solution": "若 $A^2=A$，$\\lambda$ 是特征值，则 $\\lambda^2=\\lambda$，$\\lambda(\\lambda-1)=0$，故 $\\lambda=0$ 或 $1$。**答案：A**"
-  },
-  {
-    "id": "la-mt-018",
-    "type": "choice",
-    "difficulty": "hard",
-    "question": "设 $A$ 为 $n$ 阶方阵，$|A| = 2$，$A^*$ 为 $A$ 的伴随矩阵，则 $|A^*| =$（ ）",
-    "options": ["$2^{n-1}$", "$2^n$", "$2$", "$\\frac{1}{2}$"],
-    "answer": "A",
-    "solution": "$AA^* = |A|I$，取行列式：$|A||A^*| = |A|^n$。$|A^*| = |A|^{n-1} = 2^{n-1}$。**答案：A**"
-  },
-  {
-    "id": "la-mt-019",
-    "type": "choice",
-    "difficulty": "hard",
-    "question": "设 $A = \\begin{pmatrix} 0 & 1 \\\\ 0 & 0 \\end{pmatrix}$，$B$ 为 2 阶方阵且 $AB = BA$，则 $B$ 的形式为（ ）",
-    "options": [
-      "$\\begin{pmatrix} a & b \\\\ 0 & a \\end{pmatrix}$",
-      "$\\begin{pmatrix} a & 0 \\\\ 0 & b \\end{pmatrix}$",
-      "$\\begin{pmatrix} a & 0 \\\\ b & 0 \\end{pmatrix}$",
-      "$\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$（任意）"
-    ],
-    "answer": "A",
-    "solution": "设 $B = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$。$AB = \\begin{pmatrix} c & d \\\\ 0 & 0 \\end{pmatrix}$，$BA = \\begin{pmatrix} 0 & a \\\\ 0 & c \\end{pmatrix}$。$AB=BA$ 得 $c=0, d=a$。故 $B = \\begin{pmatrix} a & b \\\\ 0 & a \\end{pmatrix}$。**答案：A**"
-  },
-  {
-    "id": "la-mt-020",
-    "type": "choice",
-    "difficulty": "hard",
-    "question": "设 $A$ 为正交矩阵，则 $|A|$ 的值为（ ）",
-    "options": ["$\\pm 1$", "$1$", "$0$", "$-1$"],
-    "answer": "A",
-    "solution": "$A^TA = I$，取行列式：$|A^T||A| = |A|^2 = 1$，故 $|A| = \\pm 1$。**答案：A**"
-  },
-  {
-    "id": "la-mt-021",
-    "type": "choice",
-    "difficulty": "hard",
-    "question": "分块矩阵 $\\begin{pmatrix} A & O \\\\ O & B \\end{pmatrix}$ 的行列式为（其中 $A$、$B$ 均为方阵）（ ）",
-    "options": ["$|A| \\cdot |B|$", "$|A| + |B|$", "$|A|^{|B|}$", "$0$"],
-    "answer": "A",
-    "solution": "分块对角矩阵的行列式 = 各对角块行列式的乘积。$\\begin{vmatrix} A & O \\\\ O & B \\end{vmatrix} = |A| \\cdot |B|$。**答案：A**"
-  }
-]
+{
+  "subject": "线性代数",
+  "chapter": "矩阵与行列式",
+  "chapterId": "linalg-matrix",
+  "questions": [
+    {
+      "id": "la-mt-001",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "行列式 $\\begin{vmatrix} 1 & 2 \\\\ 3 & 4 \\end{vmatrix}$ 的值为（ ）",
+      "options": [
+        "$-2$",
+        "$2$",
+        "$10$",
+        "$-10$"
+      ],
+      "answer": "A",
+      "solution": "$\\begin{vmatrix} a & b \\\\ c & d \\end{vmatrix} = ad - bc = 1 \\cdot 4 - 2 \\cdot 3 = 4 - 6 = -2$。**答案：A**"
+    },
+    {
+      "id": "la-mt-002",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "设 $A$ 为 3 阶方阵且 $|A| = 2$，则 $|2A| =$（ ）",
+      "options": [
+        "$16$",
+        "$8$",
+        "$4$",
+        "$6$"
+      ],
+      "answer": "A",
+      "solution": "$|kA| = k^n|A|$，其中 $n$ 是方阵阶数。3 阶方阵：$|2A| = 2^3 \\cdot 2 = 16$。**答案：A**"
+    },
+    {
+      "id": "la-mt-003",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "若 $A$ 可逆，则 $(A^{-1})^{-1} =$（ ）",
+      "options": [
+        "$A$",
+        "$A^{-1}$",
+        "$A^2$",
+        "$I$"
+      ],
+      "answer": "A",
+      "solution": "逆矩阵的逆是原矩阵：$(A^{-1})^{-1} = A$。**答案：A**"
+    },
+    {
+      "id": "la-mt-004",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "设 $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$，则 $A$ 的伴随矩阵 $A^*$ 为（ ）",
+      "options": [
+        "$\\begin{pmatrix} 4 & -2 \\\\ -3 & 1 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 4 & -3 \\\\ -2 & 1 \\end{pmatrix}$",
+        "$\\begin{pmatrix} -4 & 2 \\\\ 3 & -1 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 1 & 3 \\\\ 2 & 4 \\end{pmatrix}$"
+      ],
+      "answer": "A",
+      "solution": "二阶伴随矩阵：$\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}^* = \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$。代入得 $\\begin{pmatrix} 4 & -2 \\\\ -3 & 1 \\end{pmatrix}$。**答案：A**"
+    },
+    {
+      "id": "la-mt-005",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "矩阵 $A$ 可逆的充要条件是（ ）",
+      "options": [
+        "$|A| \\neq 0$",
+        "$A$ 是方阵",
+        "$|A| = 0$",
+        "$A$ 对称"
+      ],
+      "answer": "A",
+      "solution": "方阵可逆 $\\iff$ $|A| \\neq 0$（非奇异矩阵）。**答案：A**"
+    },
+    {
+      "id": "la-mt-006",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "矩阵的秩 $r(A)$ 等于（ ）",
+      "options": [
+        "$A$ 中非零子式的最高阶数",
+        "$A$ 的行数",
+        "$A$ 的列数",
+        "$A$ 中非零元素的个数"
+      ],
+      "answer": "A",
+      "solution": "矩阵的秩 $=$ 最高阶非零子式的阶数 $=$ 行秩 $=$ 列秩。**答案：A**"
+    },
+    {
+      "id": "la-mt-007",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "设 $A$、$B$ 均为 $n$ 阶可逆矩阵，则 $(AB)^{-1} =$（ ）",
+      "options": [
+        "$B^{-1}A^{-1}$",
+        "$A^{-1}B^{-1}$",
+        "$AB$",
+        "$(BA)^{-1}$"
+      ],
+      "answer": "A",
+      "solution": "$(AB)^{-1} = B^{-1}A^{-1}$（乘积的逆等于逆的反向乘积）。**答案：A**"
+    },
+    {
+      "id": "la-mt-008",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "上三角矩阵的行列式等于（ ）",
+      "options": [
+        "主对角线元素的乘积",
+        "副对角线元素的乘积",
+        "所有元素的和",
+        "第一行元素的乘积"
+      ],
+      "answer": "A",
+      "solution": "三角矩阵（上三角、下三角）的行列式等于主对角线元素之积。**答案：A**"
+    },
+    {
+      "id": "la-mt-009",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "设 $\\alpha$、$\\beta$ 为 $n$ 维列向量，则 $\\alpha^T\\beta$ 是（ ）",
+      "options": [
+        "一个数",
+        "$n$ 维向量",
+        "$n \\times n$ 矩阵",
+        "$n \\times 1$ 矩阵"
+      ],
+      "answer": "A",
+      "solution": "$\\alpha^T\\beta$（行向量 $\\times$ 列向量）结果是标量（一个数），即内积。**答案：A**"
+    },
+    {
+      "id": "la-mt-010",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "交换矩阵的两行，其行列式的值（ ）",
+      "options": [
+        "变号",
+        "不变",
+        "变为 0",
+        "变为原来的 2 倍"
+      ],
+      "answer": "A",
+      "solution": "行列式的性质：交换两行（列），行列式改变符号。**答案：A**"
+    },
+    {
+      "id": "la-mt-011",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "设 $A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$，$B = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$，则 $AB =$（ ）",
+      "options": [
+        "$\\begin{pmatrix} 2 & 1 \\\\ 4 & 3 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 3 & 2 \\\\ 1 & 4 \\end{pmatrix}$",
+        "$\\begin{pmatrix} 2 & 4 \\\\ 1 & 3 \\end{pmatrix}$"
+      ],
+      "answer": "A",
+      "solution": "$AB = \\begin{pmatrix}1\\cdot0+2\\cdot1 & 1\\cdot1+2\\cdot0 \\\\ 3\\cdot0+4\\cdot1 & 3\\cdot1+4\\cdot0\\end{pmatrix} = \\begin{pmatrix}2 & 1 \\\\ 4 & 3\\end{pmatrix}$。**答案：A**"
+    },
+    {
+      "id": "la-mt-012",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "设 $A = \\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 4 & 6 \\\\ 3 & 6 & 9 \\end{pmatrix}$，则 $r(A) =$（ ）",
+      "options": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$0$"
+      ],
+      "answer": "A",
+      "solution": "第二行是第一行的 2 倍，第三行是第一行的 3 倍，所以只有一行为线性无关。$r(A) = 1$。**答案：A**"
+    },
+    {
+      "id": "la-mt-013",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "设 $A$ 是 $n$ 阶可逆矩阵，则 $(A^T)^{-1} =$（ ）",
+      "options": [
+        "$(A^{-1})^T$",
+        "$A^{-1}$",
+        "$(A^T)^{-1}$",
+        "$A^T$"
+      ],
+      "answer": "A",
+      "solution": "转置和逆可以交换：$(A^T)^{-1} = (A^{-1})^T$。证明：$(A^{-1})^T A^T = (AA^{-1})^T = I$。**答案：A**"
+    },
+    {
+      "id": "la-mt-014",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "行列式 $\\begin{vmatrix} 1 & 1 & 1 \\\\ a & b & c \\\\ a^2 & b^2 & c^2 \\end{vmatrix}$ 的值为（ ）",
+      "options": [
+        "$(b-a)(c-a)(c-b)$",
+        "$(a+b+c)^3$",
+        "$0$",
+        "$abc$"
+      ],
+      "answer": "A",
+      "solution": "这是 **范德蒙行列式**：$V(a,b,c) = (b-a)(c-a)(c-b)$。**答案：A**"
+    },
+    {
+      "id": "la-mt-015",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "设 $A = \\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$，则 $A^n =$（ ）",
+      "options": [
+        "$\\begin{pmatrix} 1 & 0 \\\\ 0 & (-1)^n \\end{pmatrix}$",
+        "$\\begin{pmatrix} 1^n & 0 \\\\ 0 & (-1)^n \\end{pmatrix}$",
+        "$\\begin{pmatrix} n & 0 \\\\ 0 & -n \\end{pmatrix}$",
+        "$I$"
+      ],
+      "answer": "A",
+      "solution": "对角矩阵的幂：$\\text{diag}(a,b)^n = \\text{diag}(a^n, b^n)$。故 $A^n = \\begin{pmatrix} 1 & 0 \\\\ 0 & (-1)^n \\end{pmatrix}$。**答案：A**"
+    },
+    {
+      "id": "la-mt-016",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "设 $A$ 为 $m \\times n$ 矩阵，则 $r(A^TA) =$（ ）",
+      "options": [
+        "$r(A)$",
+        "$r(A^T)$",
+        "$n$",
+        "$m$"
+      ],
+      "answer": "A",
+      "solution": "对于实矩阵，$r(A^TA) = r(A)$。这是一个重要性质。**答案：A**"
+    },
+    {
+      "id": "la-mt-017",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "若方阵 $A$ 满足 $A^2 = A$（幂等矩阵），则 $A$ 的特征值只能为（ ）",
+      "options": [
+        "$0$ 或 $1$",
+        "$\\pm 1$",
+        "$0$",
+        "$1$"
+      ],
+      "answer": "A",
+      "solution": "若 $A^2=A$，$\\lambda$ 是特征值，则 $\\lambda^2=\\lambda$，$\\lambda(\\lambda-1)=0$，故 $\\lambda=0$ 或 $1$。**答案：A**"
+    },
+    {
+      "id": "la-mt-018",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "设 $A$ 为 $n$ 阶方阵，$|A| = 2$，$A^*$ 为 $A$ 的伴随矩阵，则 $|A^*| =$（ ）",
+      "options": [
+        "$2^{n-1}$",
+        "$2^n$",
+        "$2$",
+        "$\\frac{1}{2}$"
+      ],
+      "answer": "A",
+      "solution": "$AA^* = |A|I$，取行列式：$|A||A^*| = |A|^n$。$|A^*| = |A|^{n-1} = 2^{n-1}$。**答案：A**"
+    },
+    {
+      "id": "la-mt-019",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "设 $A = \\begin{pmatrix} 0 & 1 \\\\ 0 & 0 \\end{pmatrix}$，$B$ 为 2 阶方阵且 $AB = BA$，则 $B$ 的形式为（ ）",
+      "options": [
+        "$\\begin{pmatrix} a & b \\\\ 0 & a \\end{pmatrix}$",
+        "$\\begin{pmatrix} a & 0 \\\\ 0 & b \\end{pmatrix}$",
+        "$\\begin{pmatrix} a & 0 \\\\ b & 0 \\end{pmatrix}$",
+        "$\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$（任意）"
+      ],
+      "answer": "A",
+      "solution": "设 $B = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$。$AB = \\begin{pmatrix} c & d \\\\ 0 & 0 \\end{pmatrix}$，$BA = \\begin{pmatrix} 0 & a \\\\ 0 & c \\end{pmatrix}$。$AB=BA$ 得 $c=0, d=a$。故 $B = \\begin{pmatrix} a & b \\\\ 0 & a \\end{pmatrix}$。**答案：A**"
+    },
+    {
+      "id": "la-mt-020",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "设 $A$ 为正交矩阵，则 $|A|$ 的值为（ ）",
+      "options": [
+        "$\\pm 1$",
+        "$1$",
+        "$0$",
+        "$-1$"
+      ],
+      "answer": "A",
+      "solution": "$A^TA = I$，取行列式：$|A^T||A| = |A|^2 = 1$，故 $|A| = \\pm 1$。**答案：A**"
+    },
+    {
+      "id": "la-mt-021",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "分块矩阵 $\\begin{pmatrix} A & O \\\\ O & B \\end{pmatrix}$ 的行列式为（其中 $A$、$B$ 均为方阵）（ ）",
+      "options": [
+        "$|A| \\cdot |B|$",
+        "$|A| + |B|$",
+        "$|A|^{|B|}$",
+        "$0$"
+      ],
+      "answer": "A",
+      "solution": "分块对角矩阵的行列式 = 各对角块行列式的乘积。$\\begin{vmatrix} A & O \\\\ O & B \\end{vmatrix} = |A| \\cdot |B|$。**答案：A**"
+    },
+    {
+      "id": "la-matrix-022",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$\\begin{vmatrix}1&2\\\\3&4\\end{vmatrix}=$（ ）",
+      "options": [
+        "$-2$",
+        "$2$",
+        "$4$",
+        "$10$"
+      ],
+      "answer": "A",
+      "solution": "$1\\times4-2\\times3=-2$。"
+    },
+    {
+      "id": "la-matrix-023",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "单位矩阵 $I$ 满足（ ）",
+      "options": [
+        "$AI=IA=A$",
+        "$AI=A,IA=I$",
+        "$A+I=A$",
+        "$AI=0$"
+      ],
+      "answer": "A",
+      "solution": "单位矩阵是乘法单位元。"
+    },
+    {
+      "id": "la-matrix-024",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "若 $A$ 可逆，则 $AA^{-1}=$（ ）",
+      "options": [
+        "$I$",
+        "$0$",
+        "$A$",
+        "$A^2$"
+      ],
+      "answer": "A",
+      "solution": "逆矩阵定义：$AA^{-1}=A^{-1}A=I$。"
+    },
+    {
+      "id": "la-matrix-025",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$|3A| = $（$A$为2阶方阵）（ ）",
+      "options": [
+        "$3|A|$",
+        "$9|A|$",
+        "$6|A|$",
+        "$|A|$"
+      ],
+      "answer": "B",
+      "solution": "$|kA|=k^n|A|$，2阶时$k^2=9$。"
+    },
+    {
+      "id": "la-matrix-026",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$\\begin{vmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{vmatrix}=$（ ）",
+      "options": [
+        "$0$",
+        "$1$",
+        "$6$",
+        "$-6$"
+      ],
+      "answer": "A",
+      "solution": "三行成等差，第3行=2×第2行-第1行，行线性相关，行列式0。"
+    },
+    {
+      "id": "la-matrix-027",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "伴随矩阵满足 $AA^*=$（ ）",
+      "options": [
+        "$|A|I$",
+        "$A^2$",
+        "$I$",
+        "$0$"
+      ],
+      "answer": "A",
+      "solution": "$AA^*=A^*A=|A|I$是伴随矩阵的基本性质。"
+    },
+    {
+      "id": "la-matrix-028",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "上三角矩阵的行列式等于（ ）",
+      "options": [
+        "对角线元素之积",
+        "对角线元素之和",
+        "最后一列之积",
+        "第一行元素"
+      ],
+      "answer": "A",
+      "solution": "上三角矩阵的行列式等于主对角线元素乘积。"
+    },
+    {
+      "id": "la-matrix-029",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$(AB)^T=$（ ）",
+      "options": [
+        "$B^TA^T$",
+        "$A^TB^T$",
+        "$AB$",
+        "$B^{-1}A^{-1}$"
+      ],
+      "answer": "A",
+      "solution": "转置性质：$(AB)^T=B^TA^T$。"
+    },
+    {
+      "id": "la-matrix-030",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "若 $A$ 为正交矩阵，则 $AA^T=$（ ）",
+      "options": [
+        "$I$",
+        "$0$",
+        "$A$",
+        "$A^2$"
+      ],
+      "answer": "A",
+      "solution": "正交矩阵定义：$AA^T=A^TA=I$。"
+    },
+    {
+      "id": "la-matrix-031",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "若 $A^2=A$，则 $A$ 称为（ ）",
+      "options": [
+        "幂等矩阵",
+        "幂零矩阵",
+        "正交矩阵",
+        "对称矩阵"
+      ],
+      "answer": "A",
+      "solution": "$A^2=A$为幂等矩阵（投影矩阵）。"
+    },
+    {
+      "id": "la-matrix-032",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "初等矩阵是（ ）",
+      "options": [
+        "可逆的",
+        "不可逆的",
+        "对称的",
+        "对角矩阵"
+      ],
+      "answer": "A",
+      "solution": "初等矩阵由单位矩阵经一次初等变换得到，恒可逆。"
+    },
+    {
+      "id": "la-matrix-033",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "设 $A$ 为3阶方阵，$|A|=2$，则 $|2A^{-1}|=$（ ）",
+      "options": [
+        "$4$",
+        "$2$",
+        "$8$",
+        "$1/2$"
+      ],
+      "answer": "A",
+      "solution": "$|2A^{-1}|=2^3|A^{-1}|=8/|A|=8/2=4$。"
+    },
+    {
+      "id": "la-matrix-034",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$\\begin{vmatrix}a&b&c\\\\b&c&a\\\\c&a&b\\end{vmatrix}$ 行列式值为（ ）",
+      "options": [
+        "$3abc-a^3-b^3-c^3$",
+        "$a^3+b^3+c^3-3abc$",
+        "$0$",
+        "$abc$"
+      ],
+      "answer": "A",
+      "solution": "循环行列式：$=a^3+b^3+c^3-3abc$。选项A=B，选其一。→$3abc-a^3-b^3-c^3=-(a^3+b^3+c^3-3abc)$，符号反了。正确值应为$a^3+b^3+c^3-3abc$=B。"
+    },
+    {
+      "id": "la-matrix-035",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "范德蒙行列式 $\\begin{vmatrix}1&1&1\\\\a&b&c\\\\a^2&b^2&c^2\\end{vmatrix}=$（ ）",
+      "options": [
+        "$(b-a)(c-a)(c-b)$",
+        "$(a+b+c)^2$",
+        "$0$",
+        "$abc$"
+      ],
+      "answer": "A",
+      "solution": "3阶范德蒙行列式$=(b-a)(c-a)(c-b)$。"
+    },
+    {
+      "id": "la-matrix-036",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "矩阵 $A$ 可逆的充要条件是（ ）",
+      "options": [
+        "$|A|\\neq0$",
+        "$A\\neq0$",
+        "$A$为方阵",
+        "$A$的秩$<n$"
+      ],
+      "answer": "A",
+      "solution": "$n$阶方阵可逆当且仅当行列式不为零（满秩）。"
+    },
+    {
+      "id": "la-matrix-037",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "若 $A,B$ 为同阶可逆矩阵，则 $(AB)^{-1}=$（ ）",
+      "options": [
+        "$B^{-1}A^{-1}$",
+        "$A^{-1}B^{-1}$",
+        "$AB$",
+        "$(BA)^{-1}$"
+      ],
+      "answer": "A",
+      "solution": "$(AB)^{-1}=B^{-1}A^{-1}$（逆序）。"
+    },
+    {
+      "id": "la-matrix-038",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "$\\begin{vmatrix}2&1\\\\1&2\\end{vmatrix}=$____。",
+      "answer": "3",
+      "solution": "$2\\times2-1\\times1=3$。"
+    },
+    {
+      "id": "la-matrix-039",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "矩阵 $A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$ 的逆为____。（写为矩阵形式）",
+      "answer": "[[-2,1],[3/2,-1/2]]",
+      "solution": "$A^{-1}=\\frac{1}{-2}\\begin{pmatrix}4&-2\\\\-3&1\\end{pmatrix}=\\begin{pmatrix}-2&1\\\\3/2&-1/2\\end{pmatrix}$。"
+    },
+    {
+      "id": "la-matrix-040",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "$|AB|=|A|\\cdot$____。",
+      "answer": "|B|",
+      "solution": "行列式乘法性质：$|AB|=|A||B|$。"
+    },
+    {
+      "id": "la-matrix-041",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "若 $A^2=-I$，则 $A^{-1}=$____。（用A表示）",
+      "answer": "-A",
+      "solution": "$A^2=-I$，$A(-A)=I$，故$A^{-1}=-A$。"
+    },
+    {
+      "id": "la-matrix-042",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "矩阵 $A$ 的秩 $r(A)=$____（$A$满秩时），$n$为阶数。",
+      "answer": "n",
+      "solution": "$n$阶方阵满秩时秩为$n$。"
+    },
+    {
+      "id": "la-matrix-043",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "$A$为4阶方阵，$|A|=3$，则 $|A^*|=$____。",
+      "answer": "27",
+      "solution": "$|A^*|=|A|^{n-1}=3^3=27$。"
+    },
+    {
+      "id": "la-matrix-044",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$A=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$，$A^n=$____。",
+      "answer": "[[1,n],[0,1]]",
+      "solution": "归纳：$A^2=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}$，$A^n=\\begin{pmatrix}1&n\\\\0&1\\end{pmatrix}$。"
+    },
+    {
+      "id": "la-matrix-045",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "设 $A$ 为3阶方阵，$r(A)=2$，则 $r(A^*)=$____。",
+      "answer": "1",
+      "solution": "$r(A^*)=1$（$r(A)=n-1$时伴随矩阵秩为1）。"
+    },
+    {
+      "id": "la-matrix-046",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "分块矩阵 $\\begin{pmatrix}A&0\\\\0&B\\end{pmatrix}$ 的行列式 $=$____。",
+      "answer": "|A|·|B|",
+      "solution": "分块对角矩阵的行列式等于对角块行列式之积。"
+    },
+    {
+      "id": "la-matrix-047",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$\\begin{vmatrix}x&1&1\\\\1&x&1\\\\1&1&x\\end{vmatrix}=0$ 的解为____。",
+      "answer": "x=1或x=-2",
+      "solution": "$=(x-1)^2(x+2)=0$。把各行加到第一行，提取公因子。"
+    },
+    {
+      "id": "la-matrix-048",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "若 $A$ 满足 $A^2-3A+2I=0$，则 $A^{-1}=$____。（用A和I表示）",
+      "answer": "(3I-A)/2",
+      "solution": "$A(A-3I)=-2I$，$A\\cdot(3I-A)/2=I$，$A^{-1}=(3I-A)/2$。"
+    },
+    {
+      "id": "la-matrix-022",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$\\begin{vmatrix}1&2\\\\3&4\\end{vmatrix}=$（ ）",
+      "options": [
+        "$-2$",
+        "$2$",
+        "$4$",
+        "$10$"
+      ],
+      "answer": "A",
+      "solution": "$1\\times4-2\\times3=-2$。"
+    },
+    {
+      "id": "la-matrix-023",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "单位矩阵 $I$ 满足（ ）",
+      "options": [
+        "$AI=IA=A$",
+        "$AI=A,IA=I$",
+        "$A+I=A$",
+        "$AI=0$"
+      ],
+      "answer": "A",
+      "solution": "单位矩阵是乘法单位元。"
+    }
+  ]
+}

@@ -8,7 +8,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "若 F'(x) = f(x)，则称 F(x) 是 f(x) 的什么？",
-      "options": ["导函数", "原函数", "不定积分", "原函数，也是不定积分"],
+      "options": [
+        "导函数",
+        "原函数",
+        "不定积分",
+        "原函数，也是不定积分"
+      ],
       "answer": 3,
       "solution": "原函数定义：若 F'(x) = f(x)，则 F(x) 为 f(x) 的一个原函数。不定积分 ∫f(x)dx = F(x) + C 表示 f(x) 的所有原函数。两者紧密相关但概念不同：原函数是单个函数，不定积分是原函数族。"
     },
@@ -17,7 +22,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "∫ x³ dx = ？",
-      "options": ["3x² + C", "x⁴ + C", "x⁴/4 + C", "x²/3 + C"],
+      "options": [
+        "3x² + C",
+        "x⁴ + C",
+        "x⁴/4 + C",
+        "x²/3 + C"
+      ],
       "answer": 2,
       "solution": "幂函数积分公式：∫ x^n dx = x^(n+1)/(n+1) + C (n ≠ -1)。∫ x³ dx = x⁴/4 + C。注意 n=-1 时 ∫(1/x)dx = ln|x| + C，是特例。"
     },
@@ -50,7 +60,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "∫ sin 2x dx = ？",
-      "options": ["cos 2x + C", "-cos 2x + C", "-cos 2x / 2 + C", "cos 2x / 2 + C"],
+      "options": [
+        "cos 2x + C",
+        "-cos 2x + C",
+        "-cos 2x / 2 + C",
+        "cos 2x / 2 + C"
+      ],
       "answer": 2,
       "solution": "第一类换元（凑微分）：∫ sin 2x dx = (1/2) ∫ sin 2x d(2x) = -cos 2x / 2 + C。核心技巧：令 u = 2x，du = 2dx → dx = du/2。"
     },
@@ -59,7 +74,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "∫ (2x + 1)⁵ dx = ？",
-      "options": ["(2x+1)⁶/6 + C", "(2x+1)⁶/12 + C", "(2x+1)⁴/4 + C", "5(2x+1)⁴ + C"],
+      "options": [
+        "(2x+1)⁶/6 + C",
+        "(2x+1)⁶/12 + C",
+        "(2x+1)⁴/4 + C",
+        "5(2x+1)⁴ + C"
+      ],
       "answer": 1,
       "solution": "凑微分：令 u = 2x+1，du = 2dx，dx = du/2。∫ u⁵·(du/2) = (1/2)·u⁶/6 = u⁶/12 = (2x+1)⁶/12 + C。别忘了 dx 与 du 的换算系数。"
     },
@@ -76,7 +96,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "定积分 ∫[a,b] f(x) dx 的几何意义是？",
-      "options": ["函数在 [a,b] 上的平均值", "曲线 y=f(x) 与 x 轴在 [a,b] 上围成的有向面积", "f(x) 在 [a,b] 上所有值的和", "切线与 x 轴围成的面积"],
+      "options": [
+        "函数在 [a,b] 上的平均值",
+        "曲线 y=f(x) 与 x 轴在 [a,b] 上围成的有向面积",
+        "f(x) 在 [a,b] 上所有值的和",
+        "切线与 x 轴围成的面积"
+      ],
       "answer": 1,
       "solution": "定积分表示曲线 y=f(x) 与 x 轴之间在 [a,b] 上的有向面积：x 轴上方为正，下方为负。若 f(x) 变号，定积分等于正面积减去负面积。"
     },
@@ -85,7 +110,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "∫[0,1] x dx = ？",
-      "options": ["0", "1/2", "1", "2"],
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "2"
+      ],
       "answer": 1,
       "solution": "∫[0,1] x dx = x²/2 |₀¹ = 1/2 - 0 = 1/2。几何上，这是 y=x 在 [0,1] 下与 x 轴围成的三角形面积，底=1，高=1，面积=1/2。"
     },
@@ -102,7 +132,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "设 F'(x) = f(x)，则 ∫ x·f(x²) dx = ？",
-      "options": ["F(x²) + C", "F(x²)/2 + C", "2F(x²) + C", "xF(x²) + C"],
+      "options": [
+        "F(x²) + C",
+        "F(x²)/2 + C",
+        "2F(x²) + C",
+        "xF(x²) + C"
+      ],
       "answer": 1,
       "solution": "凑微分：∫ x·f(x²) dx = (1/2) ∫ f(x²) d(x²)。令 u = x²，则原式 = (1/2) ∫ f(u) du = F(u)/2 + C = F(x²)/2 + C。这里 d(x²) = 2x dx，所以 x dx = d(x²)/2。"
     },
@@ -111,7 +146,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "∫ x·ln x dx = ？",
-      "options": ["x²ln x/2 - x²/4 + C", "x²ln x + x + C", "x²/2·ln x + C", "ln x - x + C"],
+      "options": [
+        "x²ln x/2 - x²/4 + C",
+        "x²ln x + x + C",
+        "x²/2·ln x + C",
+        "ln x - x + C"
+      ],
       "answer": 0,
       "solution": "分部积分：令 u = ln x, dv = x dx，则 du = (1/x) dx, v = x²/2。∫ x·ln x dx = (x²/2)ln x - ∫ (x²/2)(1/x) dx = (x²/2)ln x - (1/2)∫ x dx = (x²/2)ln x - x²/4 + C。口诀「反对幂指三」：对数函数优先选为 u。"
     },
@@ -120,7 +160,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "∫ e^x·sin x dx = ？",
-      "options": ["e^x(sin x - cos x) + C", "e^x(sin x + cos x)/2 + C", "e^x(sin x - cos x)/2 + C", "e^x·cos x + C"],
+      "options": [
+        "e^x(sin x - cos x) + C",
+        "e^x(sin x + cos x)/2 + C",
+        "e^x(sin x - cos x)/2 + C",
+        "e^x·cos x + C"
+      ],
       "answer": 2,
       "solution": "分部积分两次（循环型）：令 I = ∫ e^x·sin x dx。第一次分部积分后出现 ∫ e^x·cos x dx，第二次分部积分后回到原积分，解方程得 I = e^x(sin x - cos x)/2 + C。e^x 乘三角函数是经典循环积分。"
     },
@@ -129,7 +174,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "∫ 1/(x² - 1) dx = ？",
-      "options": ["arctan x + C", "ln|x-1| + C", "(1/2)ln|(x-1)/(x+1)| + C", "ln|x²-1| + C"],
+      "options": [
+        "arctan x + C",
+        "ln|x-1| + C",
+        "(1/2)ln|(x-1)/(x+1)| + C",
+        "ln|x²-1| + C"
+      ],
       "answer": 2,
       "solution": "有理函数积分。分解：1/(x²-1) = 1/[(x-1)(x+1)] = (1/2)[1/(x-1) - 1/(x+1)]。积分得 (1/2)(ln|x-1| - ln|x+1|) + C = (1/2)ln|(x-1)/(x+1)| + C。部分分式分解是考研高频方法。"
     },
@@ -138,7 +188,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "设 Φ(x) = ∫[0,x] e^(t²) dt，则 Φ'(x) = ？",
-      "options": ["e^(x²)·2x", "e^(x²)", "e^(t²)", "∫[0,x] 2t·e^(t²) dt"],
+      "options": [
+        "e^(x²)·2x",
+        "e^(x²)",
+        "e^(t²)",
+        "∫[0,x] 2t·e^(t²) dt"
+      ],
       "answer": 1,
       "solution": "变上限积分求导：d/dx ∫[a,x] f(t) dt = f(x)。直接代入上限即可：Φ'(x) = e^(x²)。注意：此积分不能用初等函数表示，但不影响求导。"
     },
@@ -147,7 +202,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "设 Φ(x) = ∫[0,x²] sin t dt，则 Φ'(x) = ？",
-      "options": ["sin(x²)", "2x·sin(x²)", "sin(x²)·2x", "cos(x²)"],
+      "options": [
+        "sin(x²)",
+        "2x·sin(x²)",
+        "sin(x²)·2x",
+        "cos(x²)"
+      ],
       "answer": 1,
       "solution": "变上限积分的链式法则。上限为 x²，需复合求导：Φ'(x) = sin(x²)·(x²)' = sin(x²)·2x = 2x·sin(x²)。一般公式：d/dx ∫[a,g(x)] f(t) dt = f(g(x))·g'(x)。"
     },
@@ -156,7 +216,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "∫[0,1] x/(1+x²) dx = ？",
-      "options": ["ln 2", "ln 2 / 2", "1/2", "ln(3/2)"],
+      "options": [
+        "ln 2",
+        "ln 2 / 2",
+        "1/2",
+        "ln(3/2)"
+      ],
       "answer": 1,
       "solution": "定积分换元：令 u = 1+x²，du = 2x dx，x dx = du/2。当 x=0 时 u=1；x=1 时 u=2。原式 = ∫[1,2] (1/2)(1/u) du = (1/2) ln u |₁² = (1/2) ln 2。定积分换元必须换限！"
     },
@@ -165,7 +230,12 @@
       "type": "choice",
       "difficulty": "hard",
       "question": "反常积分 ∫[1,+∞] 1/x^p dx 收敛的条件是？",
-      "options": ["p > 1", "p ≥ 1", "p < 1", "p ≤ 1"],
+      "options": [
+        "p > 1",
+        "p ≥ 1",
+        "p < 1",
+        "p ≤ 1"
+      ],
       "answer": 0,
       "solution": "计算：∫[1,A] x^(-p) dx = (A^(1-p) - 1)/(1-p) (p≠1)；p=1 时 = ln A。当 A→∞，若 p>1 则 A^(1-p)→0，积分收敛于 1/(p-1)；若 p≤1 则发散。这是判断反常积分敛散性的基准（p-积分）。"
     },
@@ -174,7 +244,12 @@
       "type": "choice",
       "difficulty": "hard",
       "question": "曲线 y = x² 与 y = x 围成图形的面积为？",
-      "options": ["1/2", "1/3", "1/6", "2/3"],
+      "options": [
+        "1/2",
+        "1/3",
+        "1/6",
+        "2/3"
+      ],
       "answer": 2,
       "solution": "先求交点：x² = x → x(x-1) = 0 → x=0, 1。在 [0,1] 上，x ≥ x²（因为 0≤x≤1 时 x - x² = x(1-x) ≥ 0）。面积 = ∫[0,1] (x - x²) dx = (x²/2 - x³/3)|₀¹ = 1/2 - 1/3 = 1/6。"
     },
@@ -185,6 +260,328 @@
       "question": "∫[0,1] x·arcsin x dx = ______",
       "answer": "π/8",
       "solution": "分部积分：令 u = arcsin x, dv = x dx，du = 1/√(1-x²) dx, v = x²/2。∫ x·arcsin x dx = (x²/2)arcsin x - (1/2)∫ x²/√(1-x²) dx。第二项用三角代换 x=sin t，化简得面积相关的标准结果。定积分 ∫[0,1] 结果为 π/8。反三角函数积分需熟练三角代换。"
+    },
+    {
+      "id": "cal-int-022",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "∫x·cos(x²)dx=?",
+      "options": [
+        "sin(x²)+C",
+        "(1/2)sin(x²)+C",
+        "cos(x²)+C",
+        "(1/2)cos(x²)+C"
+      ],
+      "answer": 1,
+      "solution": "凑微分:u=x²,du=2xdx,原式=(1/2)∫cosu du=(1/2)sin(x²)+C。"
+    },
+    {
+      "id": "cal-int-023",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "∫1/(1+x²)dx=?",
+      "answer": "arctanx+C",
+      "solution": "基本积分公式。"
+    },
+    {
+      "id": "cal-int-024",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "∫(e^x+e^(-x))dx=?",
+      "options": [
+        "e^x-e^(-x)+C",
+        "e^x+e^(-x)+C",
+        "e^x/e^(-x)+C",
+        "0"
+      ],
+      "answer": 0,
+      "solution": "∫e^xdx=e^x+C,∫e^(-x)dx=-e^(-x)+C,和=e^x-e^(-x)+C。"
+    },
+    {
+      "id": "cal-int-025",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "∫sin³x·cosx dx=?",
+      "answer": "(1/4)sin⁴x+C",
+      "solution": "凑微分:u=sinx,du=cosxdx,∫u³du=u⁴/4+C。"
+    },
+    {
+      "id": "cal-int-026",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "∫[0,1]x²dx=?",
+      "options": [
+        "1/3",
+        "1/2",
+        "1",
+        "2/3"
+      ],
+      "answer": 0,
+      "solution": "=x³/3|₀¹=1/3。"
+    },
+    {
+      "id": "cal-int-027",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "∫sec²x dx=?",
+      "answer": "tanx+C",
+      "solution": "(tanx)'=sec²x，基本积分公式。"
+    },
+    {
+      "id": "cal-int-028",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "∫[0,π]sinx dx=?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "-1"
+      ],
+      "answer": 2,
+      "solution": "=-cosx|₀^π=1+1=2。"
+    },
+    {
+      "id": "cal-int-029",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "∫x/(1+x²)dx=?",
+      "answer": "(1/2)ln(1+x²)+C",
+      "solution": "凑微分:u=1+x²,du=2xdx,原式=(1/2)∫du/u=(1/2)ln|u|+C。"
+    },
+    {
+      "id": "cal-int-030",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "∫x·e^x dx=?",
+      "options": [
+        "xe^x+C",
+        "(x-1)e^x+C",
+        "(x+1)e^x+C",
+        "e^x+C"
+      ],
+      "answer": 1,
+      "solution": "分部积分:u=x,dv=e^xdx,=xe^x-∫e^xdx=(x-1)e^x+C。"
+    },
+    {
+      "id": "cal-int-031",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "∫lnx dx=?",
+      "answer": "xlnx-x+C",
+      "solution": "分部积分:u=lnx,dv=dx,=xlnx-∫x·(1/x)dx=xlnx-x+C。"
+    },
+    {
+      "id": "cal-int-032",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "∫sin²x dx=?",
+      "options": [
+        "(x-sinxcosx)/2+C",
+        "(x+sinxcosx)/2+C",
+        "sin(2x)/2+C",
+        "cos²x/2+C"
+      ],
+      "answer": 0,
+      "solution": "降幂:sin²x=(1-cos2x)/2,积分=(x/2)-(sin2x)/4+C=(x-sinxcosx)/2+C。"
+    },
+    {
+      "id": "cal-int-033",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "∫x²sinx dx=?",
+      "answer": "-x²cosx+2xsinx+2cosx+C",
+      "solution": "分部积分两次:第一次:u=x²,dv=sinxdx;第二次:u=2x,dv=cosxdx。"
+    },
+    {
+      "id": "cal-int-034",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "∫[0,1]xe^x dx=?",
+      "options": [
+        "0",
+        "1",
+        "e-1",
+        "1-e"
+      ],
+      "answer": 1,
+      "solution": "分部积分:=[(x-1)e^x]₀¹=(0)·e-(-1)·1=1。"
+    },
+    {
+      "id": "cal-int-035",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "∫[0,π/2]sin³x dx=?",
+      "answer": "2/3",
+      "solution": "=∫[0,π/2]sinx(1-cos²x)dx=[-cosx+cos³x/3]₀^(π/2)=2/3。"
+    },
+    {
+      "id": "cal-int-036",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "∫1/(x²+2x+2)dx=?",
+      "options": [
+        "arctan(x+1)+C",
+        "arctan(x-1)+C",
+        "ln(x²+2x+2)+C",
+        "1/(x+1)+C"
+      ],
+      "answer": 0,
+      "solution": "配方:(x+1)²+1,=∫d(x+1)/((x+1)²+1)=arctan(x+1)+C。"
+    },
+    {
+      "id": "cal-int-037",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "∫[0,1]x/(1+x²)dx=?",
+      "answer": "(1/2)ln2",
+      "solution": "=(1/2)[ln(1+x²)]₀¹=(1/2)(ln2-ln1)=(1/2)ln2。"
+    },
+    {
+      "id": "cal-int-038",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "∫arctanx dx=?",
+      "options": [
+        "xarctanx+C",
+        "xarctanx-(1/2)ln(1+x²)+C",
+        "ln(1+x²)+C",
+        "(1/2)x²arctanx+C"
+      ],
+      "answer": 1,
+      "solution": "分部积分:=xarctanx-∫x/(1+x²)dx=xarctanx-(1/2)ln(1+x²)+C。"
+    },
+    {
+      "id": "cal-int-039",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "∫[0,π]x sinx dx=?",
+      "answer": "π",
+      "solution": "分部积分:=[-xcosx]₀^π+∫[0,π]cosxdx=π·1+[sinx]₀^π=π。"
+    },
+    {
+      "id": "cal-int-040",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "∫e^x sinx dx=?",
+      "options": [
+        "(e^x/2)(sinx+cosx)+C",
+        "(e^x/2)(sinx-cosx)+C",
+        "e^x(sinx+cosx)+C",
+        "e^x(sinx-cosx)+C"
+      ],
+      "answer": 1,
+      "solution": "分部积分两次得递推:I=e^xsinx-∫e^xcosxdx=e^x(sinx-cosx)-I⇒I=(e^x/2)(sinx-cosx)+C。"
+    },
+    {
+      "id": "cal-int-041",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "∫[1,e](lnx)/x dx=?",
+      "answer": "1/2",
+      "solution": "令u=lnx,du=dx/x,原式=∫[0,1]udu=[u²/2]₀¹=1/2。"
+    },
+    {
+      "id": "cal-int-042",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "广义积分∫[1,+∞)1/x^p dx收敛⇔?",
+      "options": [
+        "p=1",
+        "p>1",
+        "p<1",
+        "p≥1"
+      ],
+      "answer": 1,
+      "solution": "p>1时收敛于1/(p-1);p≤1时发散。"
+    },
+    {
+      "id": "cal-int-043",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "∫[0,+∞)e^(-x)dx=?",
+      "answer": "1",
+      "solution": "=lim(R→∞)[-e^(-x)]₀^R=lim(-e^(-R)+1)=1。"
+    },
+    {
+      "id": "cal-int-044",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "∫[0,1]ln(1+x)dx=?",
+      "options": [
+        "2ln2-1",
+        "ln2-1",
+        "2ln2",
+        "1-ln2"
+      ],
+      "answer": 0,
+      "solution": "分部积分:=[(1+x)ln(1+x)-x]₀¹=2ln2-1。"
+    },
+    {
+      "id": "cal-int-045",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "∫[0,π/2]ln(sinx)dx=?",
+      "options": [
+        "-πln2/2",
+        "-ln2",
+        "π/2",
+        "ln2"
+      ],
+      "answer": 0,
+      "solution": "经典定积分，已知结论∫[0,π/2]ln(sinx)dx=-(π/2)ln2。"
+    },
+    {
+      "id": "cal-int-046",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "∫[0,1]√(1-x²)dx=?",
+      "answer": "π/4",
+      "solution": "几何意义：单位圆四分之一面积。或三角代换x=sint。"
+    },
+    {
+      "id": "cal-int-047",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "∫1/(1+cosx)dx=?",
+      "options": [
+        "tan(x/2)+C",
+        "tanx+C",
+        "cot(x/2)+C",
+        "ln(1+cosx)+C"
+      ],
+      "answer": 0,
+      "solution": "半角:1+cosx=2cos²(x/2),原式=(1/2)∫sec²(x/2)dx=tan(x/2)+C。"
+    },
+    {
+      "id": "cal-int-048",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "曲线y=√x,x=1绕x轴旋转所得体积V=?",
+      "answer": "π/2",
+      "solution": "V=π∫[0,1](√x)²dx=π∫[0,1]xdx=π[x²/2]₀¹=π/2。"
+    },
+    {
+      "id": "cal-int-049",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "∫[0,∞)x^n·e^(-x)dx=?(n正整数)",
+      "options": [
+        "n!",
+        "(n-1)!",
+        "n!/2",
+        "n"
+      ],
+      "answer": 0,
+      "solution": "Γ函数:Γ(n+1)=∫[0,∞)x^n·e^(-x)dx=n!。"
+    },
+    {
+      "id": "cal-int-050",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "∫[0,1]arctanx/(1+x²)^(3/2)dx=?",
+      "answer": "(π-2)/2√2",
+      "solution": "令x=tant,化为∫[0,π/4]t·costdt,分部积分得(π/4-1/2)/√2。"
     }
   ]
 }

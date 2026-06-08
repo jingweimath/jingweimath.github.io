@@ -8,7 +8,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "lim(x→0) sin x / x = ？",
-      "options": ["0", "1", "e", "∞"],
+      "options": [
+        "0",
+        "1",
+        "e",
+        "∞"
+      ],
       "answer": 1,
       "solution": "第一个重要极限：lim(x→0) sin x / x = 1。可用夹逼准则证明，考试直接使用即可。注意必须是 x→0 且分子分母形式一致。"
     },
@@ -17,7 +22,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "lim(x→∞) (1 + 1/x)^x = ？",
-      "options": ["0", "1", "e", "∞"],
+      "options": [
+        "0",
+        "1",
+        "e",
+        "∞"
+      ],
       "answer": 2,
       "solution": "第二个重要极限：lim(x→∞) (1 + 1/x)^x = e。变形形式：lim(x→0) (1 + x)^(1/x) = e。幂指函数极限的核心工具。"
     },
@@ -26,7 +36,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "lim(x→0) (1 - cos x) / x² = ？",
-      "options": ["0", "1/2", "1", "2"],
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "2"
+      ],
       "answer": 1,
       "solution": "利用等价无穷小：1 - cos x ~ x²/2 (x→0)，所以原式 = (x²/2)/x² = 1/2。等价无穷小是考研极限计算的核心方法。"
     },
@@ -35,7 +50,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "lim(x→0) tan x / x = ？",
-      "options": ["0", "1", "e", "不存在"],
+      "options": [
+        "0",
+        "1",
+        "e",
+        "不存在"
+      ],
       "answer": 1,
       "solution": "tan x = sin x / cos x，所以 lim(x→0) tan x / x = lim(x→0) [sin x / x] · [1/cos x] = 1 · 1 = 1。也可直接用等价无穷小 tan x ~ x (x→0)。"
     },
@@ -44,7 +64,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "lim(x→0) ln(1+x) / x = ？",
-      "options": ["0", "1", "e", "∞"],
+      "options": [
+        "0",
+        "1",
+        "e",
+        "∞"
+      ],
       "answer": 1,
       "solution": "等价无穷小 ln(1+x) ~ x (x→0)，所以极限 = 1。也可用导数定义：ln(1+x)/x 当 x→0 即为 ln x 在 x=1 处的导数。"
     },
@@ -53,7 +78,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "lim(x→0) (e^x - 1) / x = ？",
-      "options": ["0", "1", "e", "∞"],
+      "options": [
+        "0",
+        "1",
+        "e",
+        "∞"
+      ],
       "answer": 1,
       "solution": "等价无穷小 e^x - 1 ~ x (x→0)，所以极限 = 1。亦可用导数定义验证。这些等价无穷小必须熟记。"
     },
@@ -62,7 +92,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "lim(x→0) (1 + x)^a - 1 与什么等价？（令 a 为常数）",
-      "options": ["x", "ax", "a", "x^a"],
+      "options": [
+        "x",
+        "ax",
+        "a",
+        "x^a"
+      ],
       "answer": 1,
       "solution": "(1+x)^a - 1 ~ ax (x→0)。重要推广：当 a=1/2 时得 √(1+x) - 1 ~ x/2；当 a=-1 时得 1/(1+x) - 1 ~ -x。"
     },
@@ -71,7 +106,12 @@
       "type": "choice",
       "difficulty": "basic",
       "question": "lim(x→0) (x - sin x) / x³ = ？",
-      "options": ["-1/6", "1/6", "-1/3", "1/3"],
+      "options": [
+        "-1/6",
+        "1/6",
+        "-1/3",
+        "1/3"
+      ],
       "answer": 1,
       "solution": "泰勒展开 sin x = x - x³/6 + o(x³)，故 x - sin x = x³/6 + o(x³)，原式 = 1/6。也可以用洛必达法则（三次）得到同样结果。"
     },
@@ -96,7 +136,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "lim(x→0) [(1/x) - (1/(e^x - 1))] = ？",
-      "options": ["0", "1/2", "1", "不存在"],
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "不存在"
+      ],
       "answer": 1,
       "solution": "通分：[(e^x - 1 - x)/(x(e^x - 1))]。e^x - 1 ~ x，分母 ~ x²。分子 e^x - 1 - x = (1/2)x² + o(x²)。故极限 = 1/2。注意 e^x - 1 的泰勒展开到二次项：e^x = 1 + x + x²/2 + o(x²)。"
     },
@@ -105,7 +150,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "lim(x→0) (tan x - sin x) / x³ = ？",
-      "options": ["0", "1/2", "1", "∞"],
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "∞"
+      ],
       "answer": 1,
       "solution": "tan x - sin x = sin x(1/cos x - 1) = sin x(1 - cos x)/(cos x)。sin x ~ x，1 - cos x ~ x²/2，所以原式 = x · (x²/2) / (cos x · x³) → 1/2。直接泰勒展开亦可。"
     },
@@ -114,7 +164,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "lim(x→0) [√(1+x) - √(1-x)] / x = ？",
-      "options": ["-1", "0", "1", "2"],
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
       "answer": 2,
       "solution": "分子有理化：分子分母同乘 √(1+x) + √(1-x)，分子变为 (1+x)-(1-x) = 2x。原式 = 2x / [x(√(1+x)+√(1-x))] = 2/(1+1) = 1。也可用等价无穷小：√(1+x)-1 ~ x/2，√(1-x)-1 ~ -x/2，差 ~ x。"
     },
@@ -123,7 +178,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "lim(x→0+) x^x = ？",
-      "options": ["0", "1", "e", "不存在"],
+      "options": [
+        "0",
+        "1",
+        "e",
+        "不存在"
+      ],
       "answer": 1,
       "solution": "幂指函数极限，取对数：ln(x^x) = x·ln x。lim(x→0+) x·ln x = lim(x→0+) ln x / (1/x)。洛必达：= lim (1/x) / (-1/x²) = lim (-x) = 0。故极限 = e^0 = 1。务必保持指数形式回代！"
     },
@@ -140,7 +200,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "lim(x→∞) [√(x²+x) - x] = ？",
-      "options": ["0", "1/2", "1", "∞"],
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "∞"
+      ],
       "answer": 1,
       "solution": "有理化：乘以 [√(x²+x)+x]/[√(x²+x)+x]，分子 = x。分母 = x[√(1+1/x)+1] → x·2。故 = 1/2。∞-∞ 型标准解法：有理化。"
     },
@@ -149,7 +214,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "关于间断点：f(x) = (x²-1)/(x-1) 在 x=1 处是什么类型？",
-      "options": ["可去间断点", "跳跃间断点", "无穷间断点", "连续"],
+      "options": [
+        "可去间断点",
+        "跳跃间断点",
+        "无穷间断点",
+        "连续"
+      ],
       "answer": 0,
       "solution": "(x²-1)/(x-1) = x+1 (x≠1)，极限 lim(x→1) f(x) = 2 存在且有限，但 f(1) 无定义，故为可去间断点。补充定义 f(1)=2 即可连续。"
     },
@@ -158,7 +228,12 @@
       "type": "choice",
       "difficulty": "medium",
       "question": "关于间断点：f(x) = |x|/x 在 x=0 处是什么类型？",
-      "options": ["可去间断点", "跳跃间断点", "无穷间断点", "连续"],
+      "options": [
+        "可去间断点",
+        "跳跃间断点",
+        "无穷间断点",
+        "连续"
+      ],
       "answer": 1,
       "solution": "左极限 lim(x→0-) f(x) = -1，右极限 lim(x→0+) f(x) = 1。左右极限存在但不相等，为跳跃间断点。间隙为 2。"
     },
@@ -167,7 +242,12 @@
       "type": "choice",
       "difficulty": "hard",
       "question": "lim(x→0) (x - arctan x) / x³ = ？",
-      "options": ["1/6", "1/3", "1/2", "1"],
+      "options": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "1"
+      ],
       "answer": 1,
       "solution": "arctan x = x - x³/3 + o(x³)，故 x - arctan x = x³/3 + o(x³)，原式 = 1/3。arctan x 的展开要记住，或者两次洛必达。"
     },
@@ -178,6 +258,354 @@
       "question": "lim(x→0) (sin x - x·cos x) / x³ = ______",
       "answer": "1/3",
       "solution": "sin x = x - x³/6 + o(x³)，cos x = 1 - x²/2 + o(x²)，x·cos x = x - x³/2 + o(x³)。sin x - x·cos x = (x - x³/6) - (x - x³/2) = x³/3。原式 = 1/3。此题需精确到三次项，一次项会在减法中抵消。"
+    },
+    {
+      "id": "cal-limit-021",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "lim(x→0) (e^x - 1) / x = ?",
+      "options": [
+        "0",
+        "1",
+        "e",
+        "∞"
+      ],
+      "answer": 1,
+      "solution": "等价无穷小代换：x→0时 e^x-1 ~ x，故极限 = lim(x→0) x/x = 1。也可用导数定义：分子是 e^x 在 x=0 的增量。"
+    },
+    {
+      "id": "cal-limit-022",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "lim(x→0) ln(1+x) / x = ?",
+      "options": [
+        "0",
+        "1",
+        "e",
+        "1/e"
+      ],
+      "answer": 1,
+      "solution": "等价无穷小代换：x→0时 ln(1+x) ~ x，极限 = 1。这也是 ln(1+x) 在 x=0 处导数的定义式。"
+    },
+    {
+      "id": "cal-limit-023",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "lim(x→0) (1+x)^(1/x) = ?",
+      "options": [
+        "0",
+        "1",
+        "e",
+        "∞"
+      ],
+      "answer": 2,
+      "solution": "第二个重要极限的变形形式：lim(x→0)(1+x)^(1/x) = e。写成指数形式：令 t=1/x，x→0时 t→∞，原式 = lim(t→∞)(1+1/t)^t = e。"
+    },
+    {
+      "id": "cal-limit-024",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "lim(x→∞) (1 + 2/x)^x = ?",
+      "answer": "e²",
+      "solution": "令 (1+2/x)^x = [(1+2/x)^(x/2)]²，内层 = (1+1/t)^t → e (t=x/2→∞)，所以原式 = e²。"
+    },
+    {
+      "id": "cal-limit-025",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "lim(x→0) tan x / x = ?",
+      "options": [
+        "0",
+        "1",
+        "∞",
+        "-1"
+      ],
+      "answer": 1,
+      "solution": "等价无穷小：x→0时 tan x ~ x，故 tan x/x = 1。或写为 (sin x/x)·(1/cos x) → 1·1 = 1。"
+    },
+    {
+      "id": "cal-limit-026",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "lim(x→0) arcsin x / x = ?",
+      "answer": "1",
+      "solution": "等价无穷小代换：x→0时 arcsin x ~ x，故极限 = 1。或令 t = arcsin x，则 x = sin t，x→0 时 t→0，原式 = t/sin t → 1。"
+    },
+    {
+      "id": "cal-limit-027",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "lim(x→0) (1 - cos x) / (x sin x) = ?",
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "2"
+      ],
+      "answer": 1,
+      "solution": "1-cos x ~ x²/2，sin x ~ x，故原式 = (x²/2)/(x·x) = 1/2。注意等价无穷小可以只替换因子。"
+    },
+    {
+      "id": "cal-limit-028",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "lim(x→∞) sin x / x = ?",
+      "answer": "0",
+      "solution": "|sin x| ≤ 1 有界，1/x → 0，有界量乘无穷小仍是无穷小，故极限为 0。"
+    },
+    {
+      "id": "cal-limit-029",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "lim(x→0) (tan x - sin x) / x³ = ?",
+      "options": [
+        "0",
+        "1/6",
+        "1/3",
+        "1/2"
+      ],
+      "answer": 2,
+      "solution": "tan x = sin x / cos x，原式 = sin x(1-cos x)/(x³·cos x)。sin x ~ x，1-cos x ~ x²/2，cos x → 1，故极限 = x·(x²/2)/x³ = 1/2。"
+    },
+    {
+      "id": "cal-limit-030",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "lim(x→0) (e^x - e^(-x) - 2x) / (x - sin x) = ?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "solution": "泰勒展开：e^x = 1+x+x²/2+x³/6+o(x³)，e^(-x)=1-x+x²/2-x³/6+o(x³)，则 e^x-e^(-x)-2x = 2x³/6+o(x³)。x-sin x = x³/6+o(x³)。相除得 2。"
+    },
+    {
+      "id": "cal-limit-031",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "lim(x→0) (a^x - 1) / x = ? (a>0)",
+      "options": [
+        "0",
+        "1",
+        "ln a",
+        "a"
+      ],
+      "answer": 2,
+      "solution": "a^x = e^(x ln a)，x→0时 e^(x ln a)-1 ~ x ln a，故极限 = ln a。或者利用 (a^x)' = a^x ln a 在 x=0 的值。"
+    },
+    {
+      "id": "cal-limit-032",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "lim(x→0+) x^x = ?",
+      "answer": "1",
+      "solution": "x^x = e^(x ln x)，而 lim(x→0+) x ln x = 0（令 t=1/ln x 或 L'Hospital 验证），故原式 = e^0 = 1。"
+    },
+    {
+      "id": "cal-limit-033",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "lim(x→0) [1/(sin x) - 1/x] = ?",
+      "answer": "0",
+      "solution": "通分：1/sin x - 1/x = (x - sin x)/(x sin x)。x - sin x ~ x³/6，x sin x ~ x²，故 ~ (x³/6)/x² = x/6 → 0。"
+    },
+    {
+      "id": "cal-limit-034",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "lim(x→∞) (x² + 3x - 1)^(1/2) / x = ?",
+      "options": [
+        "0",
+        "1",
+        "3",
+        "∞"
+      ],
+      "answer": 1,
+      "solution": "x>0 时，√(x²+3x-1)/x = √(x²+3x-1)/√(x²) = √(1+3/x-1/x²) → √1 = 1。"
+    },
+    {
+      "id": "cal-limit-035",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "lim(n→∞) n·[ln(1+1/n)] = ?",
+      "answer": "1",
+      "solution": "令 x=1/n，x→0+，原式 = ln(1+x)/x → 1（等价无穷小）。这是 ln(1+x) 在 x=0 处导数的离散形式。"
+    },
+    {
+      "id": "cal-limit-036",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "lim(x→0) (1+sin x)^(1/x) = ?",
+      "options": [
+        "0",
+        "1",
+        "e",
+        "e²"
+      ],
+      "answer": 2,
+      "solution": "取对数：ln L = lim(x→0) ln(1+sin x)/x = lim(x→0) sin x/x = 1（ln(1+sin x) ~ sin x），所以 L = e。"
+    },
+    {
+      "id": "cal-limit-037",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "lim(x→0) (cos 2x - cos 3x) / x² = ?",
+      "options": [
+        "5/2",
+        "-5/2",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "solution": "用和差化积：cos 2x - cos 3x = 2 sin(5x/2) sin(x/2)。sin(5x/2) ~ 5x/2，sin(x/2) ~ x/2，原式 = 2·(5x/2)·(x/2)/x² = 5/2。"
+    },
+    {
+      "id": "cal-limit-038",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "lim(x→0) (sin x - x cos x) / x³ = ?",
+      "answer": "1/3",
+      "solution": "泰勒展开：sin x = x - x³/6 + o(x³)，cos x = 1 - x²/2 + o(x²)，则 x cos x = x - x³/2 + o(x³)。sin x - x cos x = (x - x³/6) - (x - x³/2) = x³/3 + o(x³)。除以 x³ 得 1/3。"
+    },
+    {
+      "id": "cal-limit-039",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "函数 f(x) = sin(1/x) 在 x=0 处：",
+      "options": [
+        "连续",
+        "极限存在",
+        "振荡无极限",
+        "可去间断"
+      ],
+      "answer": 2,
+      "solution": "x→0时 1/x → ∞，sin(1/x) 在 [-1,1] 之间振荡，极限不存在，也不趋于无穷大。这是震荡间断点。"
+    },
+    {
+      "id": "cal-limit-040",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "lim(x→π) sin x / (x - π) = ?",
+      "answer": "-1",
+      "solution": "令 t = x-π，x→π 即 t→0。sin x = sin(t+π) = -sin t，原式 = -sin t / t → -1。"
+    },
+    {
+      "id": "cal-limit-041",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "lim(x→1) (√x - 1) / (x - 1) = ?",
+      "options": [
+        "0",
+        "1/2",
+        "1",
+        "2"
+      ],
+      "answer": 1,
+      "solution": "分子有理化：(√x-1)/(x-1) = (√x-1)/((√x-1)(√x+1)) = 1/(√x+1) → 1/2。或用导数定义：√x 在 x=1 处导数。"
+    },
+    {
+      "id": "cal-limit-042",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "lim(x→∞) x·sin(1/x) = ?",
+      "answer": "1",
+      "solution": "令 t=1/x，x→∞时 t→0，原式 = sin t / t → 1。有界量与无穷大的乘积不能直接判断，需要转化为重要极限。"
+    },
+    {
+      "id": "cal-limit-043",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "lim(x→0+) (1 + 3x)^(1/(2x)) = ?",
+      "options": [
+        "e^(3/2)",
+        "e^(2/3)",
+        "e³",
+        "1"
+      ],
+      "answer": 0,
+      "solution": "令 (1+3x)^(1/(2x)) = [(1+3x)^(1/(3x))]^(3/2) → e^(3/2)。关键是拆出匹配重要极限的形式。"
+    },
+    {
+      "id": "cal-limit-044",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "lim(x→0) [√(1+x) - √(1-x)] / x = ?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "1/2"
+      ],
+      "answer": 1,
+      "solution": "分子有理化：分子分母同乘 √(1+x)+√(1-x)，分子 = (1+x)-(1-x)=2x，分母 = x(√(1+x)+√(1-x)) → x·2 = 2x，原式 = 2x/(x·2)=1。"
+    },
+    {
+      "id": "cal-limit-045",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "lim(x→0) [ln(1+x+x²) - x] / x² = ?",
+      "options": [
+        "-1/2",
+        "0",
+        "1/2",
+        "1"
+      ],
+      "answer": 2,
+      "solution": "泰勒展开：ln(1+u) = u - u²/2 + o(u²)，令 u = x+x²。u = x+x²，u² = x²+2x³+x⁴ = x²+o(x²)。故 ln(1+x+x²) = (x+x²) - (x²)/2 + o(x²) = x + x²/2 + o(x²)。减去 x 再除 x² 得 1/2。"
+    },
+    {
+      "id": "cal-limit-046",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "lim(x→0) (e^(sin x) - e^x) / x³ = ?（提示：提取公因子后展开）",
+      "answer": "-1/6",
+      "solution": "e^(sin x) - e^x = e^x·(e^(sin x - x) - 1)。e^x → 1，sin x - x ~ -x³/6，故 e^(sin x - x) - 1 ~ sin x - x ~ -x³/6。因此原式 = -x³/6 / x³ = -1/6。"
+    },
+    {
+      "id": "cal-limit-047",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "lim(x→1) (x^x - x) / (x - 1 - ln x) = ?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "e"
+      ],
+      "answer": 2,
+      "solution": "用泰勒展开在 x=1 附近分析。令 t=x-1，x=1+t，t→0。x^x = e^(x ln x) = e^((1+t)ln(1+t))。展开计算得 2。"
+    },
+    {
+      "id": "cal-limit-048",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "设 lim(x→0) [f(x)/x] = 1，求 lim(x→0) [f(2x)/f(3x)] = ?",
+      "answer": "2/3",
+      "solution": "由 lim f(x)/x = 1 知 x→0 时 f(x) ~ x，即 f(x) = x + o(x)。故 f(2x)/f(3x) = (2x + o(x))/(3x + o(x)) → 2/3。"
+    },
+    {
+      "id": "cal-limit-049",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "lim(x→0) (1/x² - cot² x) = ?",
+      "options": [
+        "1/3",
+        "2/3",
+        "-1/3",
+        "0"
+      ],
+      "answer": 1,
+      "solution": "通分后泰勒展开：cot x = 1/x - x/3 - x³/45 + ...，cot² x = 1/x² - 2/3 + o(1)，故 1/x² - cot² x → 2/3。"
+    },
+    {
+      "id": "cal-limit-050",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "lim(n→∞) (1 + 1/n + 1/n²)^n = ?",
+      "answer": "e",
+      "solution": "(1+1/n+1/n²)^n = (1+1/n+1/n²)^n = exp(n ln(1+1/n+1/n²))。ln(1+1/n+1/n²) = 1/n+1/n²-1/(2n²)+o(1/n²) = 1/n+1/(2n²)+o(1/n²)。n·ln(1+...) = 1+1/(2n)+o(1/n) → 1，故原式 = e。"
     }
   ]
 }

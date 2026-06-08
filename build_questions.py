@@ -13,8 +13,7 @@ lines = [
 ]
 
 subjects_json = json.dumps(index['subjects'], ensure_ascii=False, indent=2)
-lines.append('  "subjects": ' + subjects_json + ',')
-lines.append('  "data": {}')
+lines.append('  "subjects": ' + subjects_json)
 
 for subject_key, subject in index['subjects'].items():
     for chapter in subject['chapters']:
@@ -23,7 +22,16 @@ for subject_key, subject in index['subjects'].items():
             fpath = os.path.join(workspace, fname)
             if os.path.exists(fpath):
                 data = json.load(open(fpath, encoding='utf-8'))
+                # Normalize: if data is a raw list, wrap it in dict format
+                if isinstance(data, list):
+                    data = {
+                        'subject': subject['name'],
+                        'chapter': chapter['name'],
+                        'chapterId': chapter['id'],
+                        'questions': data
+                    }
                 chapter_data = json.dumps(data, ensure_ascii=False, indent=2)
+                # Add comma before all items including first (after 'subjects')
                 lines.append(',')
                 lines.append('  ' + json.dumps(chapter['id']) + ': ' + chapter_data)
 
