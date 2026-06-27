@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026考研数学考试大纲（数一/二/三） - 经维考研数学</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: #1e1e2e; background: #f8f9fc; line-height: 1.8; }
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 5% 60px; }
+  
+  /* 顶部导航 */
+  .top-bar { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 12px 5%; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .top-bar a { color: #6b7280; text-decoration: none; font-size: 14px; }
+  .top-bar a:hover { color: #1a56db; }
+  .top-bar .curr { color: #1a56db; font-weight: 600; }
+
+  /* 返回按钮 */
+  .back-link { display: inline-block; margin-bottom: 20px; color: #1a56db; text-decoration: none; font-size: 14px; }
+  .back-link:hover { text-decoration: underline; }
+  
+  /* 标签切换 */
+  .tabs { display: flex; gap: 0; margin: 24px 0 28px; border-radius: 10px; overflow: hidden; border: 1px solid #e5e7eb; }
+  .tab { flex: 1; text-align: center; padding: 14px 0; font-size: 15px; font-weight: 600; cursor: pointer; background: #fff; color: #6b7280; border: none; transition: all 0.2s; }
+  .tab.active { background: #1a56db; color: #fff; }
+  .tab:hover:not(.active) { background: #f0f4ff; }
+  
+  /* 下载按钮 */
+  .dl-bar { background: #e8f0fe; border-radius: 10px; padding: 16px 20px; margin-bottom: 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .dl-bar span { font-size: 14px; color: #1a56db; font-weight: 600; }
+  .dl-btn { background: #1a56db; color: #fff; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 500; transition: background 0.2s; display: inline-block; }
+  .dl-btn:hover { background: #1e429f; }
+  
+  /* 大纲内容区 */
+  .syllabus-content { background: #fff; border-radius: 12px; padding: 36px 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  .syllabus-content h2 { font-size: 20px; color: #1a56db; margin: 28px 0 16px; padding-bottom: 10px; border-bottom: 2px solid #e8f0fe; }
+  .syllabus-content h2:first-child { margin-top: 0; }
+  .syllabus-content h3 { font-size: 16px; color: #1e1e2e; margin: 20px 0 10px; }
+  .syllabus-content p { font-size: 14.5px; color: #374151; margin-bottom: 10px; }
+  
+  /* 试卷结构表格 */
+  .struct-table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 14px; }
+  .struct-table th { background: #1a56db; color: #fff; padding: 10px 14px; text-align: left; }
+  .struct-table td { padding: 10px 14px; border-bottom: 1px solid #e5e7eb; }
+  .struct-table tr:nth-child(even) td { background: #f9fafb; }
+  
+  /* 章节卡片 */
+  .chapter-card { background: #f9fafb; border-radius: 8px; padding: 16px 20px; margin-bottom: 12px; border-left: 4px solid #1a56db; }
+  .chapter-card h4 { font-size: 15px; color: #1a56db; margin-bottom: 6px; }
+  .chapter-card p { font-size: 13.5px; color: #6b7280; margin: 0; line-height: 1.7; }
+  
+  .note { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; padding: 14px 18px; margin: 20px 0; font-size: 14px; color: #92400e; }
+  .note strong { color: #92400e; }
+
+  @media (max-width: 640px) {
+    .container { padding: 24px 4% 40px; }
+    .syllabus-content { padding: 24px 16px; }
+    .struct-table { font-size: 13px; }
+    .dl-bar { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <a href="index.html">经维考研数学</a>
+  <span style="color:#d1d5db;">/</span>
+  <a href="exams.html">考研真题</a>
+  <span style="color:#d1d5db;">/</span>
+  <span class="curr">考试大纲</span>
+</div>
+
+<div class="container">
+
+  <a href="exams.html" class="back-link">← 返回真题列表</a>
+
+  <!-- 标签切换 -->
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('math1')">数学一</button>
+    <button class="tab" onclick="switchTab('math2')">数学二</button>
+    <button class="tab" onclick="switchTab('math3')">数学三</button>
+  </div>
+
+  <!-- 下载栏 -->
+  <div class="dl-bar">
+    <span>📥 2026年考研数学大纲（数一/二/三 合集）PDF 免费下载</span>
+    <a href="exams/2026考研数学大纲.pdf" class="dl-btn" download>下载 PDF</a>
+  </div>
+
+  <!-- ==================== 数学一 ==================== -->
+  <div class="syllabus-content" id="content-math1">
+
+    <h2>2026年全国硕士研究生招生考试数学一考试大纲</h2>
+
+    <div class="note">
+      <strong>📌 说明：</strong>2026年版大纲与2025年版完全相同，无变动。本大纲适用于2027年考研（2026年12月初试）。
+    </div>
+
+    <h2>一、考试性质</h2>
+    <p>数学一是全国硕士研究生招生考试理工科类的重要基础科目，主要考查考生对高等数学、线性代数、概率论与数理统计的基本概念、基本理论和基本方法的掌握程度，以及运用数学知识分析和解决问题的能力。</p>
+
+    <h2>二、考查目标</h2>
+    <div class="chapter-card">
+      <h4>能力要求</h4>
+      <p>1. 掌握高等数学、线性代数、概率论与数理统计的基本概念、基本理论和基本方法；</p>
+      <p>2. 运用所学知识分析、解决问题的能力；</p>
+      <p>3. 抽象思维能力、逻辑推理能力、空间想象能力、运算能力和综合运用能力。</p>
+    </div>
+
+    <h2>三、适用专业</h2>
+    <p><strong>数学一适用专业：</strong>工学门类中的力学、机械工程、光学工程、仪器科学与技术、冶金工程、动力工程及工程热物理、电气工程、电子科学与技术、信息与通信工程、控制科学与工程、计算机科学与技术、土木工程、水利工程、测绘科学与技术、交通运输工程、船舶与海洋工程、航空宇航科学与技术、兵器科学与技术、核科学与技术、生物医学工程等一级学科。</p>
+
+    <h2>四、试卷结构</h2>
+    <table class="struct-table">
+      <tr><th>科目</th><th>分值比例</th><th>约计分值</th></tr>
+      <tr><td>高等数学</td><td>约 60%</td><td>约 90 分</td></tr>
+      <tr><td>线性代数</td><td>约 20%</td><td>约 30 分</td></tr>
+      <tr><td>概率论与数理统计</td><td>约 20%</td><td>约 30 分</td></tr>
+      <tr><td>满分 / 时间</td><td colspan="2">150 分 / 180 分钟</td></tr>
+    </table>
+
+    <h3>题型及分值</h3>
+    <table class="struct-table">
+      <tr><th>题型</th><th>题量</th><th>每题分值</th><th>总分</th></tr>
+      <tr><td>单项选择题</td><td>10 题</td><td>5 分</td><td>50 分</td></tr>
+      <tr><td>填空题</td><td>6 题</td><td>5 分</td><td>30 分</td></tr>
+      <tr><td>解答题（含证明题）</td><td>6 题</td><td>约 10~14 分</td><td>70 分</td></tr>
+    </table>
+
+    <h2>五、考查内容</h2>
+
+    <h3>▶ 高等数学（约 90 分）</h3>
+
+    <div class="chapter-card">
+      <h4>第一章　函数、极限、连续</h4>
+      <p>函数的概念及表示法；函数的有界性、单调性、周期性和奇偶性；复合函数、反函数、分段函数和隐函数；基本初等函数的性质及其图形；数列极限与函数极限的定义及其性质；无穷小量和无穷大量的概念及其关系；极限的四则运算法则；极限存在的两个准则（单调有界准则和夹逼准则）；两个重要极限；函数连续的概念；函数间断点的类型；初等函数的连续性；闭区间上连续函数的性质（最大值最小值定理、介值定理、零点定理）。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第二章　一元函数微分学</h4>
+      <p>导数和微分的概念；导数的几何意义和物理意义；函数的可导性与连续性之间的关系；平面曲线的切线和法线；导数和微分的四则运算；基本初等函数的导数；复合函数、反函数、隐函数以及参数方程所确定的函数的微分法；高阶导数；一阶微分形式的不变性；微分中值定理（罗尔定理、拉格朗日中值定理、柯西中值定理、泰勒定理）；洛必达法则；函数单调性的判别；函数的极值；函数图形的凹凸性、拐点及渐近线；函数图形的描绘；函数最大值和最小值的应用。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第三章　一元函数积分学</h4>
+      <p>原函数和不定积分的概念；不定积分的基本性质；基本积分公式；定积分的概念和基本性质；定积分中值定理；积分上限的函数及其导数；牛顿-莱布尼茨公式；不定积分和定积分的换元积分法与分部积分法；有理函数、三角函数的有理式和简单无理函数的积分；反常（广义）积分；定积分的应用（平面图形的面积、平面曲线的弧长、旋转体的体积及侧面积、平行截面面积为已知的立体体积、功、引力、压力、质心等）。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第四章　向量代数和空间解析几何</h4>
+      <p>向量的概念；向量的线性运算；向量的数量积和向量积；向量的混合积；两向量垂直、平行的条件；单位向量；方向数与方向余弦；向量的坐标表达式；曲面方程和空间曲线方程的概念；平面方程（点法式、一般式、截距式）；直线方程（点向式、参数式、一般式）；平面与平面、平面与直线、直线与直线的夹角以及平行、垂直的条件；点到平面和点到直线的距离；球面；母线平行于坐标轴的柱面；旋转轴为坐标轴的旋转曲面的方程；常用的二次曲面方程（椭球面、抛物面、双曲面等）。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第五章　多元函数微分学</h4>
+      <p>多元函数的概念；二元函数的几何意义；二元函数的极限与连续的概念；有界闭区域上多元连续函数的性质；多元函数的偏导数和全微分；全微分存在的必要条件和充分条件；多元复合函数求导法则；隐函数求导公式；方向导数与梯度；空间曲线的切线和法平面；曲面的切平面和法线；多元函数的极值和最值；条件极值；拉格朗日乘数法。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第六章　多元函数积分学</h4>
+      <p>二重积分与三重积分的概念、性质、计算和应用；两类曲线积分的概念、性质及计算；两类曲线积分的关系；格林公式；平面曲线积分与路径无关的条件；全微分式的原函数；两类曲面积分的概念、性质及计算；两类曲面积分的关系；高斯公式；斯托克斯公式；散度、旋度的概念及计算。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第七章　无穷级数</h4>
+      <p>常数项级数的收敛与发散的概念；收敛级数的和的概念；级数的基本性质与收敛的必要条件；几何级数与 p 级数；正项级数敛散性的判别法（比较判别法、比值判别法、根值判别法）；交错级数与莱布尼茨判别法；任意项级数的绝对收敛与条件收敛；函数项级数的收敛域与和函数的概念；幂级数的收敛半径、收敛区间和收敛域；幂级数在其收敛区间内的基本性质；简单幂级数的和函数的求法；初等函数的幂级数展开式；傅里叶级数；正弦级数和余弦级数。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第八章　常微分方程</h4>
+      <p>常微分方程的基本概念；变量可分离的微分方程；齐次微分方程；一阶线性微分方程；伯努利方程；全微分方程；可用简单的变量代换求解的某些微分方程；可降阶的高阶微分方程；线性微分方程解的性质及解的结构定理；二阶常系数齐次线性微分方程；高于二阶的某些常系数齐次线性微分方程；简单的二阶常系数非齐次线性微分方程（自由项为多项式、指数函数、正弦函数、余弦函数它们的和与积）；欧拉方程；包含两个未知函数的一阶常系数线性微分方程组；微分方程的简单应用。</p>
+    </div>
+
+    <h3>▶ 线性代数（约 30 分）</h3>
+
+    <div class="chapter-card">
+      <h4>第一章　行列式</h4>
+      <p>行列式的概念和基本性质；行列式按行（列）展开定理；克拉默法则。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第二章　矩阵</h4>
+      <p>矩阵的概念；矩阵的线性运算；矩阵的乘法；方阵的幂；方阵乘积的行列式；矩阵的转置；逆矩阵的概念和性质；矩阵可逆的充分必要条件；伴随矩阵；矩阵的初等变换；初等矩阵；矩阵的秩；分块矩阵及其运算。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第三章　向量</h4>
+      <p>向量的概念；向量的线性组合和线性表示；向量组的线性相关与线性无关；向量组的极大线性无关组；等价向量组；向量组的秩；向量组的秩与矩阵的秩之间的关系；向量空间（数一要求）；向量空间的基、维数和坐标；过渡矩阵；内积；线性无关向量组的正交规范化方法；规范正交基；正交矩阵及其性质。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第四章　线性方程组</h4>
+      <p>线性方程组的克拉默法则；齐次线性方程组有非零解的充分必要条件；非齐次线性方程组有解的充分必要条件；线性方程组解的性质和解的结构；齐次线性方程组的基础解系和通解；非齐次线性方程组的通解。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第五章　矩阵的特征值和特征向量</h4>
+      <p>矩阵的特征值和特征向量的概念、性质及求法；相似矩阵的概念及性质；矩阵可相似对角化的充分必要条件及相似对角矩阵；实对称矩阵的特征值和特征向量及相似对角化。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第六章　二次型</h4>
+      <p>二次型及其矩阵表示；合同变换与合同矩阵；二次型的秩；惯性定理；二次型的标准形和规范形；用正交变换和配方法化二次型为标准形；正定二次型、正定矩阵及其判别法。</p>
+    </div>
+
+    <h3>▶ 概率论与数理统计（约 30 分）</h3>
+
+    <div class="chapter-card">
+      <h4>第一章　随机事件和概率</h4>
+      <p>随机事件与样本空间；事件的关系与运算；完备事件组；概率的概念；概率的基本性质；古典型概率；几何型概率；条件概率；概率的加法公式、乘法公式、全概率公式以及贝叶斯公式；事件的独立性；独立重复试验。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第二章　随机变量及其分布</h4>
+      <p>随机变量；随机变量分布函数的概念及其性质；离散型随机变量的概率分布；连续型随机变量的概率密度；常见随机变量的分布（0-1 分布、二项分布、几何分布、超几何分布、泊松分布、均匀分布、指数分布、正态分布）；随机变量函数的分布。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第三章　多维随机变量及其分布</h4>
+      <p>多维随机变量及其分布；二维离散型随机变量的概率分布、边缘分布和条件分布；二维连续型随机变量的概率密度、边缘概率密度和条件密度；随机变量的独立性和不相关性；常见二维随机变量的分布；两个随机变量简单函数的分布。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第四章　随机变量的数字特征</h4>
+      <p>随机变量的数学期望（均值）、方差、标准差及其性质；随机变量函数的数学期望；矩、协方差、相关系数及其性质。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第五章　大数定律和中心极限定理</h4>
+      <p>切比雪夫不等式；切比雪夫大数定律；伯努利大数定律；辛钦大数定律；棣莫弗-拉普拉斯中心极限定理；列维-林德伯格中心极限定理。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第六章　数理统计的基本概念</h4>
+      <p>总体与样本；样本函数；统计量；样本均值；样本方差和样本矩；χ² 分布；t 分布；F 分布；分位数；正态总体的常用抽样分布。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第七章　参数估计</h4>
+      <p>点估计的概念；估计量与估计值；矩估计法；最大似然估计法；估计量的评选标准（无偏性、有效性、一致性）；区间估计；单个正态总体的均值和方差的区间估计；两个正态总体的均值差和方差比的区间估计。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第八章　假设检验</h4>
+      <p>显著性检验的基本思想、基本步骤和可能产生的两类错误；单个及两个正态总体的均值和方差的假设检验；总体分布假设的 χ² 检验法（拟合优度检验）。</p>
+    </div>
+
+  </div><!-- /math1 -->
+
+  <!-- ==================== 数学二 ==================== -->
+  <div class="syllabus-content" id="content-math2" style="display:none;">
+
+    <h2>2026年全国硕士研究生招生考试数学二考试大纲</h2>
+
+    <div class="note">
+      <strong>📌 说明：</strong>2026年版大纲与2025年版完全相同，无变动。
+    </div>
+
+    <h2>一、适用专业</h2>
+    <p><strong>数学二适用专业：</strong>工学门类中的纺织科学与工程、轻工技术与工程、农业工程、林业工程、食品科学与工程等一级学科；以及生物工程、制药工程、给水排水工程等部分专业。考生需根据报考院校具体要求确认。</p>
+
+    <h2>二、试卷结构</h2>
+    <table class="struct-table">
+      <tr><th>科目</th><th>分值比例</th><th>约计分值</th></tr>
+      <tr><td>高等数学</td><td>约 80%</td><td>约 120 分</td></tr>
+      <tr><td>线性代数</td><td>约 20%</td><td>约 30 分</td></tr>
+      <tr><td>满分 / 时间</td><td colspan="2">150 分 / 180 分钟</td></tr>
+    </table>
+
+    <h3>题型及分值（同数学一）</h3>
+    <table class="struct-table">
+      <tr><th>题型</th><th>题量</th><th>每题分值</th><th>总分</th></tr>
+      <tr><td>单项选择题</td><td>10 题</td><td>5 分</td><td>50 分</td></tr>
+      <tr><td>填空题</td><td>6 题</td><td>5 分</td><td>30 分</td></tr>
+      <tr><td>解答题（含证明题）</td><td>6 题</td><td>约 10~14 分</td><td>70 分</td></tr>
+    </table>
+
+    <div class="note">
+      <strong>📌 数学二与数学一的主要区别：</strong>数学二不含向量代数与空间解析几何、三重积分、曲线积分、曲面积分（格林公式、高斯公式、斯托克斯公式）、傅里叶级数。线性代数不要求向量空间相关概念。
+    </div>
+
+    <h2>三、考查内容</h2>
+
+    <h3>▶ 高等数学（约 120 分）</h3>
+
+    <div class="chapter-card">
+      <h4>第一章　函数、极限、连续</h4>
+      <p>同数学一要求。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第二章　一元函数微分学</h4>
+      <p>同数学一要求（微分中值定理为考试重点，需深入掌握）。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第三章　一元函数积分学</h4>
+      <p>同数学一要求。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第四章　多元函数微积分学</h4>
+      <p>多元函数的概念；二元函数的极限与连续；偏导数与全微分；多元复合函数求导；隐函数求导；二元函数的极值；<strong>二重积分</strong>的概念、性质和计算（数学二不含三重积分）。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第五章　常微分方程</h4>
+      <p>常微分方程的基本概念；变量可分离的微分方程；齐次微分方程；一阶线性微分方程；可降阶的高阶微分方程；二阶常系数齐次线性微分方程；简单的二阶常系数非齐次线性微分方程（自由项为多项式、指数函数、正弦函数、余弦函数）；微分方程的应用。</p>
+    </div>
+
+    <h3>▶ 线性代数（约 30 分）</h3>
+
+    <div class="chapter-card">
+      <h4>各章内容</h4>
+      <p>行列式、矩阵、向量（不含向量空间）、线性方程组、特征值与特征向量、二次型。</p>
+      <p style="color:#e24b4a;font-size:13px;"><strong>注：</strong>数学二不要求向量空间、基、维数、坐标、过渡矩阵等概念。</p>
+    </div>
+
+  </div><!-- /math2 -->
+
+  <!-- ==================== 数学三 ==================== -->
+  <div class="syllabus-content" id="content-math3" style="display:none;">
+
+    <h2>2026年全国硕士研究生招生考试数学三考试大纲</h2>
+
+    <div class="note">
+      <strong>📌 说明：</strong>2026年版大纲与2025年版完全相同，无变动。
+    </div>
+
+    <h2>一、适用专业</h2>
+    <p><strong>数学三适用专业：</strong>经济学门类中的应用经济学一级学科；管理学门类中的工商管理、农林经济管理一级学科；以及经济学、金融学、国际经济与贸易、统计学、工商管理、会计学、财务管理、旅游管理等专业。</p>
+
+    <h2>二、试卷结构</h2>
+    <table class="struct-table">
+      <tr><th>科目</th><th>分值比例</th><th>约计分值</th></tr>
+      <tr><td>高等数学</td><td>约 60%</td><td>约 90 分</td></tr>
+      <tr><td>线性代数</td><td>约 20%</td><td>约 30 分</td></tr>
+      <tr><td>概率论与数理统计</td><td>约 20%</td><td>约 30 分</td></tr>
+      <tr><td>满分 / 时间</td><td colspan="2">150 分 / 180 分钟</td></tr>
+    </table>
+
+    <h3>题型及分值（同数学一、二）</h3>
+    <table class="struct-table">
+      <tr><th>题型</th><th>题量</th><th>每题分值</th><th>总分</th></tr>
+      <tr><td>单项选择题</td><td>10 题</td><td>5 分</td><td>50 分</td></tr>
+      <tr><td>填空题</td><td>6 题</td><td>5 分</td><td>30 分</td></tr>
+      <tr><td>解答题（含证明题）</td><td>6 题</td><td>约 10~14 分</td><td>70 分</td></tr>
+    </table>
+
+    <div class="note">
+      <strong>📌 数学三与数学一的主要区别：</strong>数学三不含向量代数与空间解析几何、曲线积分、曲面积分、格林公式、高斯公式、斯托克斯公式、傅里叶级数；不要求假设检验；额外要求差分方程。
+    </div>
+
+    <h2>三、考查内容</h2>
+
+    <h3>▶ 高等数学（约 90 分）</h3>
+
+    <div class="chapter-card">
+      <h4>第一章至第三章</h4>
+      <p>函数、极限、连续；一元函数微分学；一元函数积分学。同数学一要求，注重经济应用（边际、弹性等）。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第四章　多元函数微积分学</h4>
+      <p>多元函数的概念；二元函数的极限与连续；偏导数与全微分；多元复合函数求导；隐函数求导；多元函数的极值；二重积分的概念、性质和计算（仅限二重积分）。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第五章　无穷级数</h4>
+      <p>常数项级数的收敛与发散；正项级数的审敛法；交错级数与莱布尼茨判别法；幂级数的收敛半径和收敛区间；简单幂级数的和函数；初等函数的幂级数展开式。</p>
+      <p style="color:#e24b4a;font-size:13px;"><strong>注：</strong>数学三不要求傅里叶级数。</p>
+    </div>
+
+    <div class="chapter-card">
+      <h4>第六章　常微分方程与差分方程</h4>
+      <p>常微分方程的基本概念；变量可分离的微分方程；一阶线性微分方程；二阶常系数齐次线性微分方程；简单的二阶常系数非齐次线性微分方程；微分方程的应用。<strong>数学三额外要求：一阶常系数线性差分方程。</strong></p>
+    </div>
+
+    <h3>▶ 线性代数（约 30 分）</h3>
+    <p style="color:#6b7280;font-size:14px;margin-bottom:16px;">数学三的线性代数内容与数学一相同，均要求向量空间相关概念。</p>
+
+    <h3>▶ 概率论与数理统计（约 30 分）</h3>
+    <p style="color:#6b7280;font-size:14px;margin-bottom:16px;">数学三的概率论与数理统计内容与数学一基本相同，但不要求假设检验。</p>
+
+    <div class="chapter-card">
+      <h4>不含假设检验</h4>
+      <p>数学三的概率论与数理统计考查内容包括：随机事件和概率、随机变量及其分布、多维随机变量及其分布、数字特征、大数定律和中心极限定理、数理统计的基本概念、参数估计。<strong>不要求假设检验。</strong></p>
+    </div>
+
+  </div><!-- /math3 -->
+
+  <div class="note" style="margin-top:24px;">
+    <strong>⚠️ 免责声明：</strong>本页面内容整理自《2026年全国硕士研究生招生考试数学考试大纲》（高等教育出版社），仅供学习参考，如有出入请以官方出版物为准。
+  </div>
+
+</div>
+
+<script>
+function switchTab(tabName) {
+  document.getElementById('content-math1').style.display = 'none';
+  document.getElementById('content-math2').style.display = 'none';
+  document.getElementById('content-math3').style.display = 'none';
+  var tabs = document.querySelectorAll('.tab');
+  tabs.forEach(function(t) { t.classList.remove('active'); });
+  document.getElementById('content-' + tabName).style.display = 'block';
+  if (tabName === 'math1') tabs[0].classList.add('active');
+  if (tabName === 'math2') tabs[1].classList.add('active');
+  if (tabName === 'math3') tabs[2].classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
