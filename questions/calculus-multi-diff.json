@@ -7,7 +7,7 @@
       "id": "cal-md-001",
       "type": "choice",
       "difficulty": "basic",
-      "question": "设 $z = x^3 + 3xy + y^2$，则 $\\frac{\\partial z}{\\partial x}\\big|_{(1,2)} =$（ ）",
+      "question": "$设 z = x^3 + 3xy + y^2，则 \\frac{\\partial z}{\\partial x}\\big|_{(1,2)} =（ ）$",
       "options": [
         "$9$",
         "$7$",
@@ -15,7 +15,7 @@
         "$11$"
       ],
       "answer": "A",
-      "solution": "偏导计算：把 $y$ 看作常数求导。$\\frac{\\partial z}{\\partial x} = 3x^2 + 3y$，代入 $(1,2)$：$3+6=9$。**答案：A**"
+      "solution": "$偏导计算：把 y 看作常数求导。\\frac{\\partial z}{\\partial x} = 3x^2 + 3y，代入 (1,2)：3+6=9。**答案：A**$"
     },
     {
       "id": "cal-md-002",
@@ -29,13 +29,13 @@
         "既不充分也不必要条件"
       ],
       "answer": "C",
-      "solution": "可微 $\\Rightarrow$ 偏导存在（必要），但偏导存在 $\\nRightarrow$ 可微。反例：$f(x,y)=\\frac{xy}{x^2+y^2}$ 在 $(0,0)$ 偏导存在但不可微。**答案：C**"
+      "solution": "$可微 \\Rightarrow 偏导存在（必要），但偏导存在 \\nRightarrow 可微。反例：f(x,y)=\\frac{xy}{x^2+y^2} 在 (0,0) 偏导存在但不可微。**答案：C**$"
     },
     {
       "id": "cal-md-003",
       "type": "choice",
       "difficulty": "basic",
-      "question": "设 $z = f(u,v)$ 可微，$u = x+y$，$v = xy$，则 $\\frac{\\partial z}{\\partial x} =$（ ）",
+      "question": "$设 z = f(u,v) 可微，u = x+y，v = xy，则 \\frac{\\partial z}{\\partial x} =（ ）$",
       "options": [
         "$f_u + yf_v$",
         "$f_u + xf_v$",
@@ -43,13 +43,13 @@
         "$f_u - yf_v$"
       ],
       "answer": "A",
-      "solution": "链式法则：$\\frac{\\partial z}{\\partial x} = f_u \\cdot u_x + f_v \\cdot v_x = f_u \\cdot 1 + f_v \\cdot y$。**答案：A**"
+      "solution": "$链式法则：\\frac{\\partial z}{\\partial x} = f_u \\cdot u_x + f_v \\cdot v_x = f_u \\cdot 1 + f_v \\cdot y。**答案：A**$"
     },
     {
       "id": "cal-md-004",
       "type": "choice",
       "difficulty": "basic",
-      "question": "函数 $z = x^2 + y^2$ 在点 $(1,2)$ 处的梯度 $\\nabla z =$（ ）",
+      "question": "$函数 z = x^2 + y^2 在点 (1,2) 处的梯度 \\nabla z =（ ）$",
       "options": [
         "$(2,4)$",
         "$(1,2)$",
@@ -57,13 +57,13 @@
         "$(2,2)$"
       ],
       "answer": "A",
-      "solution": "$\\nabla z = (\\frac{\\partial z}{\\partial x}, \\frac{\\partial z}{\\partial y}) = (2x, 2y)$，点 $(1,2)$ 处为 $(2,4)$。**答案：A**"
+      "solution": "$\\nabla z = (\\frac{\\partial z}{\\partial x}, \\frac{\\partial z}{\\partial y}) = (2x, 2y)，点 (1,2) 处为 (2,4)。**答案：A**$"
     },
     {
       "id": "cal-md-005",
       "type": "choice",
       "difficulty": "basic",
-      "question": "设 $z = e^{x+y}$，则 $dz =$（ ）",
+      "question": "$设 z = e^{x+y}，则 dz =（ ）$",
       "options": [
         "$e^{x+y}(dx + dy)$",
         "$e^{x+y}dx$",
@@ -71,13 +71,13 @@
         "$e^{x+y}dxdy$"
       ],
       "answer": "A",
-      "solution": "全微分：$dz = \\frac{\\partial z}{\\partial x}dx + \\frac{\\partial z}{\\partial y}dy = e^{x+y}dx + e^{x+y}dy = e^{x+y}(dx+dy)$。**答案：A**"
+      "solution": "$全微分：dz = \\frac{\\partial z}{\\partial x}dx + \\frac{\\partial z}{\\partial y}dy = e^{x+y}dx + e^{x+y}dy = e^{x+y}(dx+dy)。**答案：A**$"
     },
     {
       "id": "cal-md-006",
       "type": "choice",
       "difficulty": "basic",
-      "question": "设 $z = \\ln(x + y)$，则 $\\frac{\\partial^2 z}{\\partial x\\partial y} =$（ ）",
+      "question": "$设 z = \\ln(x + y)，则 \\frac{\\partial^2 z}{\\partial x\\partial y} =（ ）$",
       "options": [
         "$-\\frac{1}{(x+y)^2}$",
         "$\\frac{1}{(x+y)^2}$",
@@ -85,7 +85,7 @@
         "$-\\frac{1}{x+y}$"
       ],
       "answer": "A",
-      "solution": "$\\frac{\\partial z}{\\partial x} = \\frac{1}{x+y}$，再对 $y$ 求导：$\\frac{\\partial^2 z}{\\partial x\\partial y} = -\\frac{1}{(x+y)^2}$。**答案：A**"
+      "solution": "$\\frac{\\partial z}{\\partial x} = \\frac{1}{x+y}，再对 y 求导：\\frac{\\partial^2 z}{\\partial x\\partial y} = -\\frac{1}{(x+y)^2}。**答案：A**$"
     },
     {
       "id": "cal-md-007",
@@ -105,7 +105,7 @@
       "id": "cal-md-008",
       "type": "choice",
       "difficulty": "basic",
-      "question": "设方程 $F(x,y)=0$ 确定隐函数 $y=y(x)$，$F_y \\neq 0$，则 $\\frac{dy}{dx} =$（ ）",
+      "question": "$设方程 F(x,y)=0 确定隐函数 y=y(x)，F_y \\neq 0，则 \\frac{dy}{dx} =（ ）$",
       "options": [
         "$-\\frac{F_x}{F_y}$",
         "$\\frac{F_x}{F_y}$",
@@ -113,13 +113,13 @@
         "$\\frac{F_y}{F_x}$"
       ],
       "answer": "A",
-      "solution": "隐函数求导公式：$F(x,y(x)) = 0$ 两边对 $x$ 求导，$F_x + F_y \\cdot y' = 0$，得 $y' = -\\frac{F_x}{F_y}$。**答案：A**"
+      "solution": "$隐函数求导公式：F(x,y(x)) = 0 两边对 x 求导，F_x + F_y \\cdot y' = 0，得 y' = -\\frac{F_x}{F_y}。**答案：A**$"
     },
     {
       "id": "cal-md-009",
       "type": "choice",
       "difficulty": "basic",
-      "question": "极限 $\\lim_{(x,y)\\to(0,0)} \\frac{xy}{x^2+y^2}$ 的值是（ ）",
+      "question": "$极限 \\lim_{(x,y)\\to(0,0)} \\frac{xy}{x^2+y^2} 的值是（ ）$",
       "options": [
         "$0$",
         "$1$",
@@ -127,13 +127,13 @@
         "不存在"
       ],
       "answer": "D",
-      "solution": "沿 $y=kx$ 取极限：$\\frac{kx^2}{x^2+k^2x^2} = \\frac{k}{1+k^2}$，不同 $k$ 得到不同值，极限不存在。**答案：D**"
+      "solution": "$沿 y=kx 取极限：\\frac{kx^2}{x^2+k^2x^2} = \\frac{k}{1+k^2}，不同 k 得到不同值，极限不存在。**答案：D**$"
     },
     {
       "id": "cal-md-010",
       "type": "choice",
       "difficulty": "basic",
-      "question": "设 $u = f(x, y)$ 可微，则函数 $u$ 沿方向 $\\vec{l} = (\\cos\\alpha, \\cos\\beta)$ 的方向导数为（ ）",
+      "question": "$设 u = f(x, y) 可微，则函数 u 沿方向 \\vec{l} = (\\cos\\alpha, \\cos\\beta) 的方向导数为（ ）$",
       "options": [
         "$f_x\\cos\\alpha + f_y\\cos\\beta$",
         "$f_x\\sin\\alpha + f_y\\sin\\beta$",
@@ -141,13 +141,13 @@
         "$f_x + f_y$"
       ],
       "answer": "A",
-      "solution": "方向导数公式：$\\frac{\\partial u}{\\partial l} = \\nabla u \\cdot \\vec{l} = f_x\\cos\\alpha + f_y\\cos\\beta$。**答案：A**"
+      "solution": "$方向导数公式：\\frac{\\partial u}{\\partial l} = \\nabla u \\cdot \\vec{l} = f_x\\cos\\alpha + f_y\\cos\\beta。**答案：A**$"
     },
     {
       "id": "cal-md-011",
       "type": "choice",
       "difficulty": "medium",
-      "question": "设 $z = f(xy, x^2+y^2)$，$f$ 可微，则 $\\frac{\\partial z}{\\partial x} =$（ ）",
+      "question": "$设 z = f(xy, x^2+y^2)，f 可微，则 \\frac{\\partial z}{\\partial x} =（ ）$",
       "options": [
         "$yf_1' + 2xf_2'$",
         "$xf_1' + 2yf_2'$",
@@ -155,7 +155,7 @@
         "$f_1' + f_2'$"
       ],
       "answer": "A",
-      "solution": "链式法则：令 $u=xy, v=x^2+y^2$，则 $z_x = f_u \\cdot u_x + f_v \\cdot v_x = f_1' \\cdot y + f_2' \\cdot 2x$。**答案：A**"
+      "solution": "$链式法则：令 u=xy, v=x^2+y^2，则 z_x = f_u \\cdot u_x + f_v \\cdot v_x = f_1' \\cdot y + f_2' \\cdot 2x。**答案：A**$"
     },
     {
       "id": "cal-md-012",
@@ -169,7 +169,7 @@
         "$x + y + z = 4$"
       ],
       "answer": "A",
-      "solution": "令 $F = x^2 + y^2 - z = 0$，$\\nabla F = (2x, 2y, -1)$。在 $(1,1,2)$：$\\vec{n} = (2,2,-1)$。切平面：$2(x-1)+2(y-1)-(z-2)=0$，即 $2x+2y-z=2$。**答案：A**"
+      "solution": "$令 F = x^2 + y^2 - z = 0，\\nabla F = (2x, 2y, -1)。在 (1,1,2)：\\vec{n} = (2,2,-1)。切平面：2(x-1)+2(y-1)-(z-2)=0，即 2x+2y-z=2。**答案：A**$"
     },
     {
       "id": "cal-md-013",
@@ -189,7 +189,7 @@
       "id": "cal-md-014",
       "type": "choice",
       "difficulty": "medium",
-      "question": "设 $z = z(x,y)$ 由方程 $x^2 + y^2 + z^2 = 1$ 确定，则 $\\frac{\\partial z}{\\partial x} =$（ ）",
+      "question": "$设 z = z(x,y) 由方程 x^2 + y^2 + z^2 = 1 确定，则 \\frac{\\partial z}{\\partial x} =（ ）$",
       "options": [
         "$-\\frac{x}{z}$",
         "$\\frac{x}{z}$",
@@ -197,13 +197,13 @@
         "$\\frac{z}{x}$"
       ],
       "answer": "A",
-      "solution": "隐函数求导：$F = x^2+y^2+z^2-1=0$，$F_x=2x$，$F_z=2z$。$\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{x}{z}$。**答案：A**"
+      "solution": "$隐函数求导：F = x^2+y^2+z^2-1=0，F_x=2x，F_z=2z。\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{x}{z}。**答案：A**$"
     },
     {
       "id": "cal-md-015",
       "type": "choice",
       "difficulty": "medium",
-      "question": "设 $z = x^2 + y^2 - \\ln\\sqrt{x^2+y^2}$，则 $\\frac{\\partial^2 z}{\\partial x^2} + \\frac{\\partial^2 z}{\\partial y^2} =$（ ）",
+      "question": "$设 z = x^2 + y^2 - \\ln\\sqrt{x^2+y^2}，则 \\frac{\\partial^2 z}{\\partial x^2} + \\frac{\\partial^2 z}{\\partial y^2} =（ ）$",
       "options": [
         "$4$",
         "$2$",
@@ -211,7 +211,7 @@
         "$\\frac{1}{x^2+y^2}$"
       ],
       "answer": "A",
-      "solution": "记 $r=\\sqrt{x^2+y^2}$，$z = r^2 - \\ln r$。$z_x = 2x - \\frac{x}{r^2}$，$z_{xx} = 2 - \\frac{r^2 - 2x^2}{r^4}$。同理 $z_{yy} = 2 - \\frac{r^2 - 2y^2}{r^4}$。相加得 $4 - \\frac{2r^2 - 2(x^2+y^2)}{r^4} = 4$。**答案：A**"
+      "solution": "$记 r=\\sqrt{x^2+y^2}，z = r^2 - \\ln r。z_x = 2x - \\frac{x}{r^2}，z_{xx} = 2 - \\frac{r^2 - 2x^2}{r^4}。同理 z_{yy} = 2 - \\frac{r^2 - 2y^2}{r^4}。相加得 4 - \\frac{2r^2 - 2(x^2+y^2)}{r^4} = 4。**答案：A**$"
     },
     {
       "id": "cal-md-016",
@@ -225,13 +225,13 @@
         "$1$"
       ],
       "answer": "A",
-      "solution": "**拉格朗日乘数法**：$L = x^2+y^2 + \\lambda(2-x-y)$。$L_x=2x-\\lambda=0$，$L_y=2y-\\lambda=0$，得 $x=y$。由 $x+y=2$ 得 $x=y=1$，极小值 $z=2$。**答案：A**"
+      "solution": "$**拉格朗日乘数法**：L = x^2+y^2 + \\lambda(2-x-y)。L_x=2x-\\lambda=0，L_y=2y-\\lambda=0，得 x=y。由 x+y=2 得 x=y=1，极小值 z=2。**答案：A**$"
     },
     {
       "id": "cal-md-017",
       "type": "choice",
       "difficulty": "medium",
-      "question": "设函数 $z = f(x,y)$ 在 $(0,0)$ 处可微且 $f(0,0)=0$，$f_x(0,0)=1$，$f_y(0,0)=2$，则 $\\lim_{t\\to 0} \\frac{f(\\sin t, \\tan t)}{t} =$（ ）",
+      "question": "$设函数 z = f(x,y) 在 (0,0) 处可微且 f(0,0)=0，f_x(0,0)=1，f_y(0,0)=2，则 \\lim_{t\\to 0} \\frac{f(\\sin t, \\tan t)}{t} =（ ）$",
       "options": [
         "$3$",
         "$1$",
@@ -239,13 +239,13 @@
         "$0$"
       ],
       "answer": "A",
-      "solution": "可微意味着 $f(\\sin t, \\tan t) = f(0,0) + f_x(0,0)\\sin t + f_y(0,0)\\tan t + o(\\sqrt{\\sin^2 t + \\tan^2 t})$。$= \\sin t + 2\\tan t + o(t)$。除以 $t$：$\\frac{\\sin t}{t} + 2\\frac{\\tan t}{t} \\to 1+2=3$。**答案：A**"
+      "solution": "$可微意味着 f(\\sin t, \\tan t) = f(0,0) + f_x(0,0)\\sin t + f_y(0,0)\\tan t + o(\\sqrt{\\sin^2 t + \\tan^2 t})。= \\sin t + 2\\tan t + o(t)。除以 t：\\frac{\\sin t}{t} + 2\\frac{\\tan t}{t} \\to 1+2=3。**答案：A**$"
     },
     {
       "id": "cal-md-018",
       "type": "choice",
       "difficulty": "hard",
-      "question": "设 $z = z(x,y)$ 由 $F(x+z\\cdot y, y+z) = 0$ 确定，$F$ 可微，则 $\\frac{\\partial z}{\\partial x} =$（ ）",
+      "question": "$设 z = z(x,y) 由 F(x+z\\cdot y, y+z) = 0 确定，F 可微，则 \\frac{\\partial z}{\\partial x} =（ ）$",
       "options": [
         "$-\\frac{F_1'}{yF_1' + F_2'}$",
         "$-\\frac{F_1'}{zF_1' + F_2'}$",
@@ -253,13 +253,13 @@
         "$\\frac{F_2'}{F_1'}$"
       ],
       "answer": "A",
-      "solution": "设 $u = x+zy, v = y+z$。对 $x$ 求偏导：$F_u \\cdot (1 + z_x y) + F_v \\cdot z_x = 0$，得 $z_x = -\\frac{F_u}{yF_u + F_v} = -\\frac{F_1'}{yF_1'+F_2'}$。**答案：A**"
+      "solution": "$设 u = x+zy, v = y+z。对 x 求偏导：F_u \\cdot (1 + z_x y) + F_v \\cdot z_x = 0，得 z_x = -\\frac{F_u}{yF_u + F_v} = -\\frac{F_1'}{yF_1'+F_2'}。**答案：A**$"
     },
     {
       "id": "cal-md-019",
       "type": "choice",
       "difficulty": "hard",
-      "question": "设 $u = \\left(\\frac{x}{y}\\right)^{\\frac{1}{z}}$，则 $du|_{(2,1,1)} =$（ ）",
+      "question": "$设 u = \\left(\\frac{x}{y}\\right)^{\\frac{1}{z}}，则 du|_{(2,1,1)} =（ ）$",
       "options": [
         "$\\frac{1}{2}dx - dy$",
         "$\\frac{1}{2}dx - dy - 2\\ln 2 dz$",
@@ -267,13 +267,13 @@
         "$\\frac{1}{2}dx - dy - \\ln 2 dz$"
       ],
       "answer": "D",
-      "solution": "取对数：$\\ln u = \\frac{1}{z}(\\ln x - \\ln y)$。求全微分：$\\frac{du}{u} = -\\frac{1}{z^2}(\\ln x - \\ln y)dz + \\frac{1}{z}(\\frac{dx}{x} - \\frac{dy}{y})$。在 $(2,1,1)$：$u=2$，$\\ln u = \\ln 2$，$du = 2(\\frac{dx}{2} - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz$… 检验：$u=2$，$du/u = -\\ln2 dz + dx/2 - dy$，$du = \\frac{1}{2}dx - dy - \\ln 2 dz$。（乘以 u 时注意 x=2, y=1，$\\frac{2}{2x}=\\frac{1}{2}\\cdot 2$? 再算：$u=2$，$\\frac{du}{2}=-\\ln 2 + \\frac{1}{2} - 1$，所以 $du = 2(\\frac{1}{2}dx - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz$... 选项D是 $\\frac{1}{2}dx - dy - \\ln 2 dz$。**答案：D**"
+      "solution": "$取对数：\\ln u = \\frac{1}{z}(\\ln x - \\ln y)。求全微分：\\frac{du}{u} = -\\frac{1}{z^2}(\\ln x - \\ln y)dz + \\frac{1}{z}(\\frac{dx}{x} - \\frac{dy}{y})。在 (2,1,1)：u=2，\\ln u = \\ln 2，du = 2(\\frac{dx}{2} - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz… 检验：u=2，du/u = -\\ln2 dz + dx/2 - dy，du = \\frac{1}{2}dx - dy - \\ln 2 dz。（乘以 u 时注意 x=2, y=1，\\frac{2}{2x}=\\frac{1}{2}\\cdot 2? 再算：u=2，\\frac{du}{2}=-\\ln 2 + \\frac{1}{2} - 1，所以 du = 2(\\frac{1}{2}dx - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz... 选项D是 \\frac{1}{2}dx - dy - \\ln 2 dz。**答案：D**$"
     },
     {
       "id": "cal-md-020",
       "type": "choice",
       "difficulty": "hard",
-      "question": "设 $z = f(x,y)$ 由方程 $e^{xyz} = x + y + z$ 确定，则 $\\frac{\\partial z}{\\partial x}\\big|_{(0,0,0)} =$（ ）",
+      "question": "$设 z = f(x,y) 由方程 e^{xyz} = x + y + z 确定，则 \\frac{\\partial z}{\\partial x}\\big|_{(0,0,0)} =（ ）$",
       "options": [
         "$1$",
         "$-1$",
@@ -281,13 +281,13 @@
         "$\\frac{1}{2}$"
       ],
       "answer": "A",
-      "solution": "隐函数：$F = e^{xyz} - x - y - z = 0$。$F_x = yz \\cdot e^{xyz} - 1$，$F_z = xy \\cdot e^{xyz} - 1$。在 $(0,0,0)$：$F_x = -1$，$F_z = -1$，$\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{-1}{-1} = -1$… 再算：$F_x = yz e^{xyz} - 1 = 0-1 = -1$，$F_z = xy e^{xyz} - 1 = 0-1 = -1$。$z_x = -F_x/F_z = -(-1)/(-1) = -1$。**答案：B**"
+      "solution": "$隐函数：F = e^{xyz} - x - y - z = 0。F_x = yz \\cdot e^{xyz} - 1，F_z = xy \\cdot e^{xyz} - 1。在 (0,0,0)：F_x = -1，F_z = -1，\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{-1}{-1} = -1… 再算：F_x = yz e^{xyz} - 1 = 0-1 = -1，F_z = xy e^{xyz} - 1 = 0-1 = -1。z_x = -F_x/F_z = -(-1)/(-1) = -1。**答案：B**$"
     },
     {
       "id": "cal-md-021",
       "type": "choice",
       "difficulty": "hard",
-      "question": "设 $z = xy + f(x^2+y^2)$，$f$ 可微，且满足 $x\\frac{\\partial z}{\\partial y} - y\\frac{\\partial z}{\\partial x} = 0$，则 $f$ 的通解形式为（ ）",
+      "question": "$设 z = xy + f(x^2+y^2)，f 可微，且满足 x\\frac{\\partial z}{\\partial y} - y\\frac{\\partial z}{\\partial x} = 0，则 f 的通解形式为（ ）$",
       "options": [
         "$f(u) = C$（常数）",
         "$f(u) = Cu$",
@@ -295,13 +295,13 @@
         "$f(u) = Ce^u$"
       ],
       "answer": "A",
-      "solution": "$z_x = y + f'(x^2+y^2) \\cdot 2x$，$z_y = x + f'(x^2+y^2) \\cdot 2y$。$x z_y - y z_x = x(x+2yf') - y(y+2xf') = x^2 + 2xyf' - y^2 - 2xyf' = x^2 - y^2 \\neq 0$ 一般情况不为0。要使恒为零，需要 $f$ 为常数（$f'=0$时原方程变为 $x^2-y^2$，仍不恒为零）。重新检查题目含义…更严谨地：题设可能指 $x\\frac{\\partial z}{\\partial y} - y\\frac{\\partial z}{\\partial x}$ 在特定条件下成立。若 $f$ 为常数，则 $z=xy+C$，$xz_y-yz_x = x(x)-y(y) = x^2-y^2$。所以 $f$ 不是常数。若 $f(u) = C\\ln u$，检验代入后…此题需慎重。**答案：A**"
+      "solution": "$z_x = y + f'(x^2+y^2) \\cdot 2x，z_y = x + f'(x^2+y^2) \\cdot 2y。x z_y - y z_x = x(x+2yf') - y(y+2xf') = x^2 + 2xyf' - y^2 - 2xyf' = x^2 - y^2 \\neq 0 一般情况不为0。要使恒为零，需要 f 为常数（f'=0时原方程变为 x^2-y^2，仍不恒为零）。重新检查题目含义…更严谨地：题设可能指 x\\frac{\\partial z}{\\partial y} - y\\frac{\\partial z}{\\partial x} 在特定条件下成立。若 f 为常数，则 z=xy+C，xz_y-yz_x = x(x)-y(y) = x^2-y^2。所以 f 不是常数。若 f(u) = C\\ln u，检验代入后…此题需慎重。**答案：A**$"
     },
     {
       "id": "cal-md-022",
       "type": "choice",
       "difficulty": "basic",
-      "question": "二元函数 $z=\\ln(x^2+y^2)$ 的定义域为（ ）",
+      "question": "$二元函数 z=\\ln(x^2+y^2) 的定义域为（ ）$",
       "options": [
         "$\\mathbb{R}^2$",
         "$\\{(x,y)\\mid x^2+y^2>0\\}$",
@@ -315,7 +315,7 @@
       "id": "cal-md-023",
       "type": "choice",
       "difficulty": "basic",
-      "question": "$z=x^2y$ 的二阶混合偏导 $\\frac{\\partial^2 z}{\\partial x\\partial y}=$（ ）",
+      "question": "$z=x^2y 的二阶混合偏导 \\frac{\\partial^2 z}{\\partial x\\partial y}=（ ）$",
       "options": [
         "$2x$",
         "$2y$",
@@ -357,7 +357,7 @@
       "id": "cal-md-026",
       "type": "choice",
       "difficulty": "basic",
-      "question": "$z=\\ln(1+x^2+y^2)$ 全微分 $dz=$（ ）",
+      "question": "$z=\\ln(1+x^2+y^2) 全微分 dz=（ ）$",
       "options": [
         "$\\frac{2xdx+2ydy}{1+x^2+y^2}$",
         "$\\frac{xdx+ydy}{1+x^2+y^2}$",
@@ -365,13 +365,13 @@
         "$\\frac{dx+dy}{1+x^2+y^2}$"
       ],
       "answer": "A",
-      "solution": "$z_x=\\frac{2x}{1+x^2+y^2}$，$z_y=\\frac{2y}{1+x^2+y^2}$。"
+      "solution": "$z_x=\\frac{2x}{1+x^2+y^2}，z_y=\\frac{2y}{1+x^2+y^2}。$"
     },
     {
       "id": "cal-md-027",
       "type": "choice",
       "difficulty": "basic",
-      "question": "$z=f(x^2+y^2)$，$f$可导，$y\\frac{\\partial z}{\\partial x}-x\\frac{\\partial z}{\\partial y}=$（ ）",
+      "question": "$z=f(x^2+y^2)，f可导，y\\frac{\\partial z}{\\partial x}-x\\frac{\\partial z}{\\partial y}=（ ）$",
       "options": [
         "$0$",
         "$2xy$",
@@ -393,13 +393,13 @@
         "$dx+dy$"
       ],
       "answer": "A",
-      "solution": "$z_x=yx^{y-1}=2e$，$z_y=x^y\\ln x=e^2$。"
+      "solution": "$z_x=yx^{y-1}=2e，z_y=x^y\\ln x=e^2。$"
     },
     {
       "id": "cal-md-029",
       "type": "choice",
       "difficulty": "medium",
-      "question": "$x^2+y^2+z^2=1$ 隐函数 $\\frac{\\partial z}{\\partial x}=$（ ）",
+      "question": "$x^2+y^2+z^2=1 隐函数 \\frac{\\partial z}{\\partial x}=（ ）$",
       "options": [
         "$-\\frac{x}{z}$",
         "$\\frac{x}{z}$",
@@ -407,7 +407,7 @@
         "$\\frac{x}{\\sqrt{1-x^2-y^2}}$"
       ],
       "answer": "A",
-      "solution": "$2x+2z\\frac{\\partial z}{\\partial x}=0$，$\\frac{\\partial z}{\\partial x}=-\\frac{x}{z}$。"
+      "solution": "$2x+2z\\frac{\\partial z}{\\partial x}=0，\\frac{\\partial z}{\\partial x}=-\\frac{x}{z}。$"
     },
     {
       "id": "cal-md-030",
@@ -421,7 +421,7 @@
         "$0$"
       ],
       "answer": "B",
-      "solution": "拉格朗日：$L=xy+\\lambda(1-x-y)$，$x=y=\\frac12$，$f=\\frac14$。"
+      "solution": "$拉格朗日：L=xy+\\lambda(1-x-y)，x=y=\\frac12，f=\\frac14。$"
     },
     {
       "id": "cal-md-031",
@@ -455,7 +455,7 @@
       "id": "cal-md-033",
       "type": "choice",
       "difficulty": "medium",
-      "question": "$u=f(x,xy,xyz)$，$f$可微，$\\frac{\\partial u}{\\partial x}=$（ ）",
+      "question": "$u=f(x,xy,xyz)，f可微，\\frac{\\partial u}{\\partial x}=（ ）$",
       "options": [
         "$f_1+yf_2+yzf_3$",
         "$f_x+xyf_{xy}$",
@@ -463,7 +463,7 @@
         "$f_x$"
       ],
       "answer": "A",
-      "solution": "链式法则：$u_x=f_1\\cdot1+f_2\\cdot y+f_3\\cdot yz$。"
+      "solution": "$链式法则：u_x=f_1\\cdot1+f_2\\cdot y+f_3\\cdot yz。$"
     },
     {
       "id": "cal-md-034",
@@ -478,20 +478,6 @@
       ],
       "answer": "C",
       "solution": "$f_x=3x^2-3y=0$，得$x^4=x$，$x=0,1$对应$(0,0),(1,1)$。"
-    },
-    {
-      "id": "cal-md-035",
-      "type": "choice",
-      "difficulty": "hard",
-      "question": "$e^z=xyz$ 确定 $z(x,y)$，$\\frac{\\partial z}{\\partial x}=$（ ）",
-      "options": [
-        "$\\frac{yz}{e^z-xy}$",
-        "$\\frac{yz}{xy-e^z}$",
-        "$\\frac{xz}{e^z-xy}$",
-        "$\\frac{xy}{e^z-xyz}$"
-      ],
-      "answer": "A",
-      "solution": "$F=e^z-xyz$，$F_x=-yz,F_z=e^z-xy$，$z_x=-F_x/F_z$。"
     },
     {
       "id": "cal-md-036",
@@ -522,18 +508,10 @@
       "solution": "内部$(0,0)$取最小值0，边界取最大值1。"
     },
     {
-      "id": "cal-md-038",
-      "type": "fill",
-      "difficulty": "basic",
-      "question": "$f(x,y)=e^{xy}$，$f_x(1,0)=$____。",
-      "answer": "0",
-      "solution": "$f_x=ye^{xy}$，$f_x(1,0)=0$。"
-    },
-    {
       "id": "cal-md-039",
       "type": "fill",
       "difficulty": "basic",
-      "question": "$z=\\arctan\\frac{y}{x}$，$x\\frac{\\partial z}{\\partial x}+y\\frac{\\partial z}{\\partial y}=$____。",
+      "question": "$z=\\arctan\\frac{y}{x}，x\\frac{\\partial z}{\\partial x}+y\\frac{\\partial z}{\\partial y}=(  )。$",
       "answer": "0",
       "solution": "欧拉定理：零次齐次函数。直接验证也可。"
     },
@@ -541,7 +519,7 @@
       "id": "cal-md-040",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$z=x^2+y^2$ 在 $(1,1,2)$ 法向量为____。",
+      "question": "$z=x^2+y^2$ 在 $(1,1,2)$ 法向量为(  )。",
       "answer": "(-2,-2,1)",
       "solution": "$F=z-x^2-y^2$，$F_x=-2,F_y=-2,F_z=1$。"
     },
@@ -549,47 +527,39 @@
       "id": "cal-md-041",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$f(x,y)=x^2-xy+y^2$ 在 $(1,2)$ 方向导数最大值____。",
+      "question": "$f(x,y)=x^2-xy+y^2$ 在 $(1,2)$ 方向导数最大值(  )。",
       "answer": "3",
-      "solution": "$\\nabla f=(2x-y,-x+2y)=(0,3)$，$|\\nabla f|=3$。"
+      "solution": "$\\nabla f=(2x-y,-x+2y)=(0,3)，|\\nabla f|=3。$"
     },
     {
       "id": "cal-md-042",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$z=x\\sin(x+y)$，$z_{xx}=$____。",
+      "question": "$z=x\\sin(x+y)，z_{xx}=(  )。$",
       "answer": "2cos(x+y)-xsin(x+y)",
-      "solution": "$z_x=\\sin(x+y)+x\\cos(x+y)$，再求导。"
-    },
-    {
-      "id": "cal-md-043",
-      "type": "fill",
-      "difficulty": "medium",
-      "question": "$xz=y+e^z$ 确定 $z(x,y)$，$\\frac{\\partial z}{\\partial y}=$____。",
-      "answer": "1/(x-e^z)",
-      "solution": "$F=xz-y-e^z$，$F_y=-1,F_z=x-e^z$。"
+      "solution": "$z_x=\\sin(x+y)+x\\cos(x+y)，再求导。$"
     },
     {
       "id": "cal-md-044",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$u=\\ln\\sqrt{x^2+y^2+z^2}$ 在 $(1,1,1)$ 梯度____。",
+      "question": "$u=\\ln\\sqrt{x^2+y^2+z^2} 在 (1,1,1) 梯度(  )。$",
       "answer": "(1/3,1/3,1/3)",
-      "solution": "$u_x=\\frac{x}{x^2+y^2+z^2}$，各分量$1/3$。"
+      "solution": "$u_x=\\frac{x}{x^2+y^2+z^2}，各分量1/3。$"
     },
     {
       "id": "cal-md-045",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$f=x^2+y^2$ 在 $x+y=2$ 下最小值____。",
+      "question": "$f=x^2+y^2$ 在 $x+y=2$ 下最小值(  )。",
       "answer": "2",
-      "solution": "$L=x^2+y^2+\\lambda(2-x-y)$，$x=y=1$，$f=2$。"
+      "solution": "$L=x^2+y^2+\\lambda(2-x-y)，x=y=1，f=2。$"
     },
     {
       "id": "cal-md-046",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$f=x^2+xy+y^2-3x-3y$ 极小值____。",
+      "question": "$f=x^2+xy+y^2-3x-3y$ 极小值(  )。",
       "answer": "-3",
       "solution": "驻点$(1,1)$，$AC-B^2=3>0,A>0$，$f=-3$。"
     },
@@ -597,15 +567,15 @@
       "id": "cal-md-047",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$(0,0,0)$ 到平面 $x+2y+2z=6$ 距离____。",
+      "question": "$(0,0,0)$ 到平面 $x+2y+2z=6$ 距离(  )。",
       "answer": "2",
-      "solution": "$d=\\frac{6}{\\sqrt{1+4+4}}=2$。"
+      "solution": "$d=\\frac{6}{\\sqrt{1+4+4}}=2。$"
     },
     {
       "id": "cal-md-048",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$xyz+z^3=4$ 在 $(1,1,1)$ 处 $\\frac{\\partial z}{\\partial x}=$____。",
+      "question": "$xyz+z^3=4 在 (1,1,1) 处 \\frac{\\partial z}{\\partial x}=(  )。$",
       "answer": "-1/4",
       "solution": "$F_x=yz=1$，$F_z=xy+3z^2=4$，商$-1/4$。"
     },
@@ -613,17 +583,17 @@
       "id": "cal-md-049",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$f=e^x(x+y^2)$ 在 $(-1,0)$ 处为____（极大/极小/鞍点）。",
+      "question": "$f=e^x(x+y^2) 在 (-1,0) 处为(  )（极大/极小/鞍点）。$",
       "answer": "极小值",
-      "solution": "$A=e^{-1}>0,B=0,C=2e^{-1}$，$AC-B^2>0$。"
+      "solution": "$A=e^{-1}>0,B=0,C=2e^{-1}，AC-B^2>0。$"
     },
     {
       "id": "cal-md-050",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$f=x^2+y^2$ 在 $x^2+xy+y^2=3$ 下最大值____。",
+      "question": "$f=x^2+y^2$ 在 $x^2+xy+y^2=3$ 下最大值(  )。",
       "answer": "6",
-      "solution": "旋转变换或特征值法，$\\lambda_{\\max}=2$，最大值$3\\cdot2=6$。"
+      "solution": "$旋转变换或特征值法，\\lambda_{\\max}=2，最大值3\\cdot2=6。$"
     }
   ]
 }

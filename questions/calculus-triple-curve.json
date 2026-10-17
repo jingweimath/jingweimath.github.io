@@ -7,7 +7,7 @@
       "id": "cal-tc-001",
       "type": "choice",
       "difficulty": "basic",
-      "question": "设 $\\Omega$ 为长方体 $0 \\leq x \\leq 1, 0 \\leq y \\leq 2, 0 \\leq z \\leq 3$，则 $\\iiint_\\Omega dxdydz =$（ ）",
+      "question": "$设 \\Omega 为长方体 0 \\leq x \\leq 1, 0 \\leq y \\leq 2, 0 \\leq z \\leq 3，则 \\iiint_\\Omega dxdydz =（ ）$",
       "options": [
         "$6$",
         "$3$",
@@ -15,13 +15,13 @@
         "$12$"
       ],
       "answer": "A",
-      "solution": "三重积分 $\\iiint_\\Omega 1\\,dV$ 等于区域体积。长方体体积 $= 1 \\times 2 \\times 3 = 6$。**答案：A**"
+      "solution": "$三重积分 \\iiint_\\Omega 1\\,dV 等于区域体积。长方体体积 = 1 \\times 2 \\times 3 = 6。**答案：A**$"
     },
     {
       "id": "cal-tc-002",
       "type": "choice",
       "difficulty": "basic",
-      "question": "格林公式 $\\oint_L Pdx + Qdy = \\iint_D (\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y})dxdy$ 适用的条件不包括（ ）",
+      "question": "$格林公式 \\oint_L Pdx + Qdy = \\iint_D (\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y})dxdy 适用的条件不包括（ ）$",
       "options": [
         "$L$ 是区域 $D$ 的正向边界曲线",
         "$P$、$Q$ 在 $D$ 上只有一阶连续偏导",
@@ -35,7 +35,7 @@
       "id": "cal-tc-003",
       "type": "choice",
       "difficulty": "basic",
-      "question": "设 $L$ 为 $y = x$ 上从 $(0,0)$ 到 $(1,1)$ 的直线段，则 $\\int_L y\\,dx =$（ ）",
+      "question": "$设 L 为 y = x 上从 (0,0) 到 (1,1) 的直线段，则 \\int_L y\\,dx =（ ）$",
       "options": [
         "$\\frac{1}{2}$",
         "$1$",
@@ -43,7 +43,7 @@
         "$\\frac{1}{3}$"
       ],
       "answer": "A",
-      "solution": "沿 $y=x$，$x$ 从 $0$ 到 $1$：$\\int_L y\\,dx = \\int_0^1 x\\,dx = \\frac{1}{2}$。**答案：A**"
+      "solution": "$沿 y=x，x 从 0 到 1：\\int_L y\\,dx = \\int_0^1 x\\,dx = \\frac{1}{2}。**答案：A**$"
     },
     {
       "id": "cal-tc-004",
@@ -57,13 +57,13 @@
         "$\\pi$"
       ],
       "answer": "A",
-      "solution": "**格林公式**：$P=y, Q=-x$，$\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -1 - 1 = -2$。$\\oint_L = \\iint_D (-2)dxdy = -2 \\cdot \\pi$。**答案：A**"
+      "solution": "$**格林公式**：P=y, Q=-x，\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -1 - 1 = -2。\\oint_L = \\iint_D (-2)dxdy = -2 \\cdot \\pi。**答案：A**$"
     },
     {
       "id": "cal-tc-005",
       "type": "choice",
       "difficulty": "basic",
-      "question": "曲线积分 $\\int_L f(x,y)\\,ds$（第一类）与路径方向的关系是（ ）",
+      "question": "$曲线积分 \\int_L f(x,y)\\,ds（第一类）与路径方向的关系是（ ）$",
       "options": [
         "无关",
         "随方向改变符号",
@@ -85,13 +85,13 @@
         "定积分"
       ],
       "answer": "A",
-      "solution": "高斯公式（散度定理）：$\\iiint_\\Omega \\text{div}\\vec{F}\\,dV = \\oiint_\\Sigma \\vec{F} \\cdot \\vec{n}\\,dS$，将三重积分转化为曲面积分。**答案：A**"
+      "solution": "$高斯公式（散度定理）：\\iiint_\\Omega \\text{div}\\vec{F}\\,dV = \\oiint_\\Sigma \\vec{F} \\cdot \\vec{n}\\,dS，将三重积分转化为曲面积分。**答案：A**$"
     },
     {
       "id": "cal-tc-007",
       "type": "choice",
       "difficulty": "basic",
-      "question": "计算三重积分 $\\iiint_\\Omega z\\,dxdydz$，$\\Omega: 0 \\leq z \\leq 1 - x^2 - y^2, x^2+y^2 \\leq 1$，结果为（ ）",
+      "question": "$计算三重积分 \\iiint_\\Omega z\\,dxdydz，\\Omega: 0 \\leq z \\leq 1 - x^2 - y^2, x^2+y^2 \\leq 1，结果为（ ）$",
       "options": [
         "$\\frac{\\pi}{6}$",
         "$\\frac{\\pi}{3}$",
@@ -99,7 +99,7 @@
         "$\\frac{\\pi}{2}$"
       ],
       "answer": "A",
-      "solution": "柱面坐标：$\\iiint_\\Omega z\\,dV = \\int_0^{2\\pi}\\!\\int_0^1\\!\\int_0^{1-r^2} z \\cdot r\\,dz\\,dr\\,d\\theta = 2\\pi\\int_0^1 r \\cdot \\frac{(1-r^2)^2}{2}dr = \\frac{\\pi}{6}$。**答案：A**"
+      "solution": "$柱面坐标：\\iiint_\\Omega z\\,dV = \\int_0^{2\\pi}\\!\\int_0^1\\!\\int_0^{1-r^2} z \\cdot r\\,dz\\,dr\\,d\\theta = 2\\pi\\int_0^1 r \\cdot \\frac{(1-r^2)^2}{2}dr = \\frac{\\pi}{6}。**答案：A**$"
     },
     {
       "id": "cal-tc-008",
@@ -113,13 +113,13 @@
         "$-\\pi$"
       ],
       "answer": "A",
-      "solution": "$P=x^2+y^2$，$Q=2xy$。$\\frac{\\partial Q}{\\partial x}=2y$，$\\frac{\\partial P}{\\partial y}=2y$，$\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = 0$。格林公式得 0。**答案：A**"
+      "solution": "$P=x^2+y^2，Q=2xy。\\frac{\\partial Q}{\\partial x}=2y，\\frac{\\partial P}{\\partial y}=2y，\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = 0。格林公式得 0。**答案：A**$"
     },
     {
       "id": "cal-tc-009",
       "type": "choice",
       "difficulty": "basic",
-      "question": "设 $\\vec{F} = (x, y, z)$，曲面 $\\Sigma: x^2+y^2+z^2=1$ 的外侧，则 $\\oiint_\\Sigma \\vec{F} \\cdot d\\vec{S}$ 用高斯公式得（ ）",
+      "question": "$设 \\vec{F} = (x, y, z)，曲面 \\Sigma: x^2+y^2+z^2=1 的外侧，则 \\oiint_\\Sigma \\vec{F} \\cdot d\\vec{S} 用高斯公式得（ ）$",
       "options": [
         "$4\\pi$",
         "$3\\pi$",
@@ -127,13 +127,13 @@
         "$\\pi$"
       ],
       "answer": "A",
-      "solution": "$\\text{div}\\vec{F} = 1+1+1 = 3$。$\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi$。**答案：A**"
+      "solution": "$\\text{div}\\vec{F} = 1+1+1 = 3。\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi。**答案：A**$"
     },
     {
       "id": "cal-tc-010",
       "type": "choice",
       "difficulty": "basic",
-      "question": "设 $L$ 为 $y = x^2$ 上从 $(0,0)$ 到 $(1,1)$ 的弧段，则 $\\int_L ds =$（ ）",
+      "question": "$设 L 为 y = x^2 上从 (0,0) 到 (1,1) 的弧段，则 \\int_L ds =（ ）$",
       "options": [
         "$\\int_0^1 \\sqrt{1+4x^2}\\,dx$",
         "$\\int_0^1 \\sqrt{1+x^4}\\,dx$",
@@ -141,7 +141,7 @@
         "$\\int_0^1 \\sqrt{1+x^2}\\,dx$"
       ],
       "answer": "A",
-      "solution": "$ds = \\sqrt{1+(y')^2}dx = \\sqrt{1+(2x)^2}dx = \\sqrt{1+4x^2}dx$。**答案：A**"
+      "solution": "$ds = \\sqrt{1+(y')^2}dx = \\sqrt{1+(2x)^2}dx = \\sqrt{1+4x^2}dx。**答案：A**$"
     },
     {
       "id": "cal-tc-011",
@@ -155,7 +155,7 @@
         "$2$"
       ],
       "answer": "A",
-      "solution": "**格林公式**：$P=2xy-y^2$，$Q=x^2+y$。$\\frac{\\partial Q}{\\partial x}=2x$，$\\frac{\\partial P}{\\partial y}=2x-2y$。$\\iint_D (2y)dxdy$。$D: -1 \\leq x \\leq 1, x^2 \\leq y \\leq 1$。$\\iint_D 2y\\,dxdy = 2\\int_{-1}^1\\!\\int_{x^2}^1 y\\,dy\\,dx = \\frac{4}{3}$。**答案：A**"
+      "solution": "$**格林公式**：P=2xy-y^2，Q=x^2+y。\\frac{\\partial Q}{\\partial x}=2x，\\frac{\\partial P}{\\partial y}=2x-2y。\\iint_D (2y)dxdy。D: -1 \\leq x \\leq 1, x^2 \\leq y \\leq 1。\\iint_D 2y\\,dxdy = 2\\int_{-1}^1\\!\\int_{x^2}^1 y\\,dy\\,dx = \\frac{4}{3}。**答案：A**$"
     },
     {
       "id": "cal-tc-012",
@@ -169,13 +169,13 @@
         "$\\frac{1}{3}$"
       ],
       "answer": "A",
-      "solution": "投影到 $xOy$ 面：$D: x \\geq 0, y \\geq 0, x+y \\leq 1$。$dS = \\sqrt{1+z_x^2+z_y^2}dxdy = \\sqrt{3}\\,dxdy$。$\\iint_\\Sigma x\\,dS = \\sqrt{3}\\int_0^1\\!\\int_0^{1-x} x\\,dy\\,dx = \\sqrt{3}\\int_0^1 x(1-x)dx = \\frac{\\sqrt{3}}{6}$。**答案：A**"
+      "solution": "$投影到 xOy 面：D: x \\geq 0, y \\geq 0, x+y \\leq 1。dS = \\sqrt{1+z_x^2+z_y^2}dxdy = \\sqrt{3}\\,dxdy。\\iint_\\Sigma x\\,dS = \\sqrt{3}\\int_0^1\\!\\int_0^{1-x} x\\,dy\\,dx = \\sqrt{3}\\int_0^1 x(1-x)dx = \\frac{\\sqrt{3}}{6}。**答案：A**$"
     },
     {
       "id": "cal-tc-013",
       "type": "choice",
       "difficulty": "medium",
-      "question": "设 $L$ 为 $(x-1)^2+(y-1)^2=1$（逆时针方向），则 $\\oint_L \\frac{-y}{x^2+y^2}dx + \\frac{x}{x^2+y^2}dy =$（ ）",
+      "question": "$设 L 为 (x-1)^2+(y-1)^2=1（逆时针方向），则 \\oint_L \\frac{-y}{x^2+y^2}dx + \\frac{x}{x^2+y^2}dy =（ ）$",
       "options": [
         "$0$",
         "$2\\pi$",
@@ -183,13 +183,13 @@
         "$\\pi$"
       ],
       "answer": "A",
-      "solution": "在圆 $L$ 内部区域 $D$ 内，原点 $(0,0)$ 不在区域内。$\\frac{\\partial Q}{\\partial x} = \\frac{\\partial P}{\\partial y}$（在区域内有连续偏导），格林公式得 0。**答案：A**。注：若 $L$ 包含原点则结果为 $2\\pi$（奇点问题）。"
+      "solution": "$在圆 L 内部区域 D 内，原点 (0,0) 不在区域内。\\frac{\\partial Q}{\\partial x} = \\frac{\\partial P}{\\partial y}（在区域内有连续偏导），格林公式得 0。**答案：A**。注：若 L 包含原点则结果为 2\\pi（奇点问题）。$"
     },
     {
       "id": "cal-tc-014",
       "type": "choice",
       "difficulty": "medium",
-      "question": "计算三重积分 $\\iiint_\\Omega (x^2+y^2)\\,dxdydz$，$\\Omega: x^2+y^2+z^2 \\leq 1$，结果为（ ）",
+      "question": "$计算三重积分 \\iiint_\\Omega (x^2+y^2)\\,dxdydz，\\Omega: x^2+y^2+z^2 \\leq 1，结果为（ ）$",
       "options": [
         "$\\frac{4\\pi}{15}$",
         "$\\frac{8\\pi}{15}$",
@@ -197,13 +197,13 @@
         "$\\frac{4\\pi}{5}$"
       ],
       "answer": "B",
-      "solution": "**球面坐标**：$x=\\rho\\sin\\varphi\\cos\\theta, y=\\rho\\sin\\varphi\\sin\\theta, z=\\rho\\cos\\varphi$。$x^2+y^2 = \\rho^2\\sin^2\\varphi$，$dV = \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta$。$\\iiint = \\int_0^{2\\pi}\\!\\int_0^{\\pi}\\!\\int_0^1 \\rho^2\\sin^2\\varphi \\cdot \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta = 2\\pi \\cdot \\frac{1}{5} \\cdot \\frac{4}{3} = \\frac{8\\pi}{15}$。**答案：B**"
+      "solution": "$**球面坐标**：x=\\rho\\sin\\varphi\\cos\\theta, y=\\rho\\sin\\varphi\\sin\\theta, z=\\rho\\cos\\varphi。x^2+y^2 = \\rho^2\\sin^2\\varphi，dV = \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta。\\iiint = \\int_0^{2\\pi}\\!\\int_0^{\\pi}\\!\\int_0^1 \\rho^2\\sin^2\\varphi \\cdot \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta = 2\\pi \\cdot \\frac{1}{5} \\cdot \\frac{4}{3} = \\frac{8\\pi}{15}。**答案：B**$"
     },
     {
       "id": "cal-tc-015",
       "type": "choice",
       "difficulty": "medium",
-      "question": "设曲线 $L$ 为上半圆 $y = \\sqrt{1-x^2}$ 从 $(1,0)$ 到 $(-1,0)$，则 $\\int_L y\\,dx =$（ ）",
+      "question": "$设曲线 L 为上半圆 y = \\sqrt{1-x^2} 从 (1,0) 到 (-1,0)，则 \\int_L y\\,dx =（ ）$",
       "options": [
         "$-\\frac{\\pi}{2}$",
         "$\\frac{\\pi}{2}$",
@@ -211,13 +211,13 @@
         "$\\pi$"
       ],
       "answer": "A",
-      "solution": "参数化 $x=\\cos t, y=\\sin t$，$t$ 从 $0$ 到 $\\pi$。$dx = -\\sin t\\,dt$。$\\int_0^\\pi \\sin t \\cdot (-\\sin t)dt = -\\int_0^\\pi \\sin^2 t\\,dt = -\\frac{\\pi}{2}$。**答案：A**"
+      "solution": "$参数化 x=\\cos t, y=\\sin t，t 从 0 到 \\pi。dx = -\\sin t\\,dt。\\int_0^\\pi \\sin t \\cdot (-\\sin t)dt = -\\int_0^\\pi \\sin^2 t\\,dt = -\\frac{\\pi}{2}。**答案：A**$"
     },
     {
       "id": "cal-tc-016",
       "type": "choice",
       "difficulty": "medium",
-      "question": "验证曲线积分 $\\int_L y\\,dx + x\\,dy$ 与路径无关，从 $(0,0)$ 到 $(1,1)$ 的值为（ ）",
+      "question": "$验证曲线积分 \\int_L y\\,dx + x\\,dy 与路径无关，从 (0,0) 到 (1,1) 的值为（ ）$",
       "options": [
         "$1$",
         "$2$",
@@ -225,13 +225,13 @@
         "$\\frac{1}{2}$"
       ],
       "answer": "A",
-      "solution": "$P=y, Q=x$，$\\frac{\\partial Q}{\\partial x}=\\frac{\\partial P}{\\partial y}=1$，与路径无关。沿 $y=x$：$\\int_0^1 (x\\,dx + x\\,dx) = 2\\int_0^1 x\\,dx = 1$。**答案：A**"
+      "solution": "$P=y, Q=x，\\frac{\\partial Q}{\\partial x}=\\frac{\\partial P}{\\partial y}=1，与路径无关。沿 y=x：\\int_0^1 (x\\,dx + x\\,dx) = 2\\int_0^1 x\\,dx = 1。**答案：A**$"
     },
     {
       "id": "cal-tc-017",
       "type": "choice",
       "difficulty": "medium",
-      "question": "设 $\\Sigma$ 为 $z = \\sqrt{x^2+y^2}$ 介于 $z=0$ 和 $z=1$ 之间的侧面积，则 $\\iint_\\Sigma dS$ 为（ ）",
+      "question": "$设 \\Sigma 为 z = \\sqrt{x^2+y^2} 介于 z=0 和 z=1 之间的侧面积，则 \\iint_\\Sigma dS 为（ ）$",
       "options": [
         "$\\sqrt{2}\\pi$",
         "$2\\pi$",
@@ -239,7 +239,7 @@
         "$\\frac{\\pi}{\\sqrt{2}}$"
       ],
       "answer": "A",
-      "solution": "$z = \\sqrt{x^2+y^2}$，$dS = \\sqrt{1+\\frac{x^2}{x^2+y^2}+\\frac{y^2}{x^2+y^2}}dxdy = \\sqrt{2}\\,dxdy$。投影 $D: x^2+y^2 \\leq 1$。$\\iint_\\Sigma dS = \\sqrt{2} \\cdot \\pi \\cdot 1^2 = \\sqrt{2}\\pi$。**答案：A**"
+      "solution": "$z = \\sqrt{x^2+y^2}，dS = \\sqrt{1+\\frac{x^2}{x^2+y^2}+\\frac{y^2}{x^2+y^2}}dxdy = \\sqrt{2}\\,dxdy。投影 D: x^2+y^2 \\leq 1。\\iint_\\Sigma dS = \\sqrt{2} \\cdot \\pi \\cdot 1^2 = \\sqrt{2}\\pi。**答案：A**$"
     },
     {
       "id": "cal-tc-018",
@@ -253,13 +253,13 @@
         "$3\\pi$"
       ],
       "answer": "A",
-      "solution": "**高斯公式**：$P=x, Q=y, R=z$。$\\text{div}\\vec{F} = 3$。$\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi$。**答案：A**"
+      "solution": "$**高斯公式**：P=x, Q=y, R=z。\\text{div}\\vec{F} = 3。\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi。**答案：A**$"
     },
     {
       "id": "cal-tc-019",
       "type": "choice",
       "difficulty": "hard",
-      "question": "计算 $\\oint_L (xy + \\sin y)dx + \\cos x\\,dy$，$L$ 为以 $(0,0),(1,0),(1,1),(0,1)$ 为顶点的正方形正向边界，结果为（ ）",
+      "question": "$计算 \\oint_L (xy + \\sin y)dx + \\cos x\\,dy，L 为以 (0,0),(1,0),(1,1),(0,1) 为顶点的正方形正向边界，结果为（ ）$",
       "options": [
         "$-\\frac{1}{2}$",
         "$0$",
@@ -267,13 +267,13 @@
         "$-1$"
       ],
       "answer": "A",
-      "solution": "**格林公式**：$P=xy+\\sin y, Q=\\cos x$。$\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -\\sin x - (x+\\cos y) = -\\sin x - x - \\cos y$。$\\iint_D (-\\sin x - x - \\cos y)dxdy$。$D: 0\\leq x,y\\leq 1$。计算得 $-\\frac{1}{2}$。**答案：A**"
+      "solution": "$**格林公式**：P=xy+\\sin y, Q=\\cos x。\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -\\sin x - (x+\\cos y) = -\\sin x - x - \\cos y。\\iint_D (-\\sin x - x - \\cos y)dxdy。D: 0\\leq x,y\\leq 1。计算得 -\\frac{1}{2}。**答案：A**$"
     },
     {
       "id": "cal-tc-020",
       "type": "choice",
       "difficulty": "hard",
-      "question": "设 $\\vec{F} = (y^2, z^2, x^2)$，$\\Sigma$ 为 $x+y+z=1$ 在第一卦限部分的上侧，则 $\\iint_\\Sigma \\vec{F} \\cdot d\\vec{S}$ 的值是（ ）",
+      "question": "$设 \\vec{F} = (y^2, z^2, x^2)，\\Sigma 为 x+y+z=1 在第一卦限部分的上侧，则 \\iint_\\Sigma \\vec{F} \\cdot d\\vec{S} 的值是（ ）$",
       "options": [
         "$\\frac{1}{12}$",
         "$\\frac{1}{6}$",
@@ -281,13 +281,13 @@
         "$\\frac{1}{3}$"
       ],
       "answer": "A",
-      "solution": "$\\Sigma$ 上侧，$z=1-x-y$。$\\iint_\\Sigma (y^2+z^2+x^2)dS$ 投影到 $xOy$ 面。$D: 0\\leq x\\leq 1, 0\\leq y\\leq 1-x$。积分得 $\\frac{1}{12}$。**答案：A**"
+      "solution": "$\\Sigma 上侧，z=1-x-y。\\iint_\\Sigma (y^2+z^2+x^2)dS 投影到 xOy 面。D: 0\\leq x\\leq 1, 0\\leq y\\leq 1-x。积分得 \\frac{1}{12}。**答案：A**$"
     },
     {
       "id": "cal-tc-021",
       "type": "choice",
       "difficulty": "hard",
-      "question": "设 $L$ 为 $\\begin{cases} x^2+y^2+z^2=4 \\\\ z=\\sqrt{3} \\end{cases}$（逆时针方向从上往下看），求 $\\oint_L y\\,dx + z\\,dy + x\\,dz$ 的值（ ）",
+      "question": "$设 L 为 \\begin{cases} x^2+y^2+z^2=4 \\\\ z=\\sqrt{3} \\end{cases}（逆时针方向从上往下看），求 \\oint_L y\\,dx + z\\,dy + x\\,dz 的值（ ）$",
       "options": [
         "$-2\\pi$",
         "$2\\pi$",
@@ -295,7 +295,7 @@
         "$4\\pi$"
       ],
       "answer": "A",
-      "solution": "**斯托克斯公式**：$\\text{rot}\\vec{F} = (-1,-1,-1)$。曲面 $\\Sigma$ 取圆盘 $x^2+y^2 \\leq 1, z=\\sqrt{3}$，法向量 $\\vec{n}=(0,0,1)$。$\\iint_\\Sigma \\text{rot}\\vec{F}\\cdot\\vec{n}dS = \\iint_\\Sigma (-1)dS = -\\pi$。**答案：A**"
+      "solution": "$**斯托克斯公式**：\\text{rot}\\vec{F} = (-1,-1,-1)。曲面 \\Sigma 取圆盘 x^2+y^2 \\leq 1, z=\\sqrt{3}，法向量 \\vec{n}=(0,0,1)。\\iint_\\Sigma \\text{rot}\\vec{F}\\cdot\\vec{n}dS = \\iint_\\Sigma (-1)dS = -\\pi。**答案：A**$"
     },
     {
       "id": "cal-tc-022",
@@ -323,7 +323,7 @@
         "$\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta$"
       ],
       "answer": "A",
-      "solution": "柱坐标：$x=r\\cos\\theta,y=r\\sin\\theta,z=z$，雅可比$|J|=r$。"
+      "solution": "$柱坐标：x=r\\cos\\theta,y=r\\sin\\theta,z=z，雅可比|J|=r。$"
     },
     {
       "id": "cal-tc-024",
@@ -337,13 +337,13 @@
         "$\\rho\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta$"
       ],
       "answer": "A",
-      "solution": "球坐标：$x=\\rho\\sin\\phi\\cos\\theta,y=\\rho\\sin\\phi\\sin\\theta,z=\\rho\\cos\\phi$，$|J|=\\rho^2\\sin\\phi$。"
+      "solution": "$球坐标：x=\\rho\\sin\\phi\\cos\\theta,y=\\rho\\sin\\phi\\sin\\theta,z=\\rho\\cos\\phi，|J|=\\rho^2\\sin\\phi。$"
     },
     {
       "id": "cal-tc-025",
       "type": "choice",
       "difficulty": "basic",
-      "question": "对弧长的曲线积分 $\\int_L 1\\,ds$ 等于（ ）",
+      "question": "$对弧长的曲线积分 \\int_L 1\\,ds 等于（ ）$",
       "options": [
         "曲线$L$的长度",
         "曲线围成的面积",
@@ -365,7 +365,7 @@
         "$1/2$"
       ],
       "answer": "B",
-      "solution": "$\\int_0^1 dz\\int_0^z dx\\int_0^z z\\,dy=\\int_0^1 z^3dz=\\frac14$。"
+      "solution": "$\\int_0^1 dz\\int_0^z dx\\int_0^z z\\,dy=\\int_0^1 z^3dz=\\frac14。$"
     },
     {
       "id": "cal-tc-027",
@@ -379,7 +379,7 @@
         "$(Q_x+P_y)dxdy$"
       ],
       "answer": "A",
-      "solution": "格林公式：$\\oint_L Pdx+Qdy=\\iint_D(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y})dxdy$。"
+      "solution": "$格林公式：\\oint_L Pdx+Qdy=\\iint_D(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y})dxdy。$"
     },
     {
       "id": "cal-tc-028",
@@ -407,7 +407,7 @@
         "$4\\pi ab$"
       ],
       "answer": "A",
-      "solution": "格林：$\\iint_D(1-(-1))dxdy=2\\iint_D dxdy=2\\pi ab$。"
+      "solution": "$格林：\\iint_D(1-(-1))dxdy=2\\iint_D dxdy=2\\pi ab。$"
     },
     {
       "id": "cal-tc-030",
@@ -449,7 +449,7 @@
         "$2\\pi$"
       ],
       "answer": "A",
-      "solution": "球坐标：$\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\,d\\phi\\int_0^1\\rho^2\\cdot\\rho^2 d\\rho=4\\pi\\cdot\\frac15=\\frac{4\\pi}{5}$。"
+      "solution": "$球坐标：\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\,d\\phi\\int_0^1\\rho^2\\cdot\\rho^2 d\\rho=4\\pi\\cdot\\frac15=\\frac{4\\pi}{5}。$"
     },
     {
       "id": "cal-tc-033",
@@ -463,7 +463,7 @@
         "$-2\\pi$"
       ],
       "answer": "A",
-      "solution": "格林：$\\iint(2y-(-1))dxdy$不对，$Q_x=1,P_y=-1$，$Q_x-P_y=2$，$\\iint 2dxdy=2\\pi$。"
+      "solution": "$格林：\\iint(2y-(-1))dxdy不对，Q_x=1,P_y=-1，Q_x-P_y=2，\\iint 2dxdy=2\\pi。$"
     },
     {
       "id": "cal-tc-034",
@@ -491,7 +491,7 @@
         "$0$"
       ],
       "answer": "A",
-      "solution": "高斯：散度$P_x+Q_y+R_z=1+1+1=3$，$\\iiint 3dV=3\\cdot\\frac{4\\pi}{3}=4\\pi$。"
+      "solution": "$高斯：散度P_x+Q_y+R_z=1+1+1=3，\\iiint 3dV=3\\cdot\\frac{4\\pi}{3}=4\\pi。$"
     },
     {
       "id": "cal-tc-036",
@@ -505,13 +505,13 @@
         "$3$"
       ],
       "answer": "A",
-      "solution": "对称性：$\\iiint x=\\iiint y=\\iiint z=\\frac12$，总和$\\frac32$。"
+      "solution": "$对称性：\\iiint x=\\iiint y=\\iiint z=\\frac12，总和\\frac32。$"
     },
     {
       "id": "cal-tc-037",
       "type": "choice",
       "difficulty": "hard",
-      "question": "$\\int_L x\\,ds$，$L$为$y=x$从$(0,0)$到$(1,1)$，值为（ ）",
+      "question": "$\\int_L x\\,ds，L为y=x从(0,0)到(1,1)，值为（ ）$",
       "options": [
         "$\\sqrt{2}/2$",
         "$\\sqrt{2}$",
@@ -519,87 +519,87 @@
         "$1/2$"
       ],
       "answer": "A",
-      "solution": "$ds=\\sqrt{1+1}dx=\\sqrt{2}dx$，$\\int_0^1 x\\sqrt{2}dx=\\frac{\\sqrt{2}}{2}$。"
+      "solution": "$ds=\\sqrt{1+1}dx=\\sqrt{2}dx，\\int_0^1 x\\sqrt{2}dx=\\frac{\\sqrt{2}}{2}。$"
     },
     {
       "id": "cal-tc-038",
       "type": "fill",
       "difficulty": "basic",
-      "question": "球体 $x^2+y^2+z^2\\le R^2$ 的体积为____。",
-      "answer": "4πR³/3",
+      "question": "球体 $x^2+y^2+z^2\\le R^2$ 的体积为(  )。",
+      "answer": "$4\\piR³/3$",
       "solution": "球体积公式。"
     },
     {
       "id": "cal-tc-039",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$\\iiint_{0\\le x,y,z\\le1}xyz\\,dV=$____。",
+      "question": "$\\iiint_{0\\le x,y,z\\le1}xyz\\,dV=$(  )。",
       "answer": "1/8",
-      "solution": "$\\int_0^1xdx\\int_0^1ydy\\int_0^1zdz=(\\frac12)^3=\\frac18$。"
+      "solution": "$\\int_0^1xdx\\int_0^1ydy\\int_0^1zdz=(\\frac12)^3=\\frac18。$"
     },
     {
       "id": "cal-tc-040",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$\\iiint_{x^2+y^2\\le1,0\\le z\\le2}z\\,dV$ 柱坐标求值为____。",
-      "answer": "2π",
-      "solution": "$\\int_0^{2\\pi}d\\theta\\int_0^1 rdr\\int_0^2 z\\,dz=2\\pi\\cdot\\frac12\\cdot2=2\\pi$。"
+      "question": "$\\iiint_{x^2+y^2\\le1,0\\le z\\le2}z\\,dV$ 柱坐标求值为(  )。",
+      "answer": "$2\\pi$",
+      "solution": "$\\int_0^{2\\pi}d\\theta\\int_0^1 rdr\\int_0^2 z\\,dz=2\\pi\\cdot\\frac12\\cdot2=2\\pi。$"
     },
     {
       "id": "cal-tc-041",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$\\int_L y\\,ds$，$L$为$x^2+y^2=1$上半圆周，值为____。",
+      "question": "$\\int_L y\\,ds，L为x^2+y^2=1上半圆周，值为(  )。$",
       "answer": "2",
-      "solution": "参数化$x=\\cos t,y=\\sin t$，$ds=dt$，$\\int_0^\\pi\\sin t\\,dt=2$。"
+      "solution": "$参数化x=\\cos t,y=\\sin t，ds=dt，\\int_0^\\pi\\sin t\\,dt=2。$"
     },
     {
       "id": "cal-tc-042",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$\\oint_L xdy$，$L$为$x^2+y^2=1$正向，值为____。",
-      "answer": "π",
-      "solution": "格林：$\\iint_D 1\\,dxdy=\\pi$。或用参数直接算。"
+      "question": "$\\oint_L xdy$，$L$为$x^2+y^2=1$正向，值为(  )。",
+      "answer": "$\\pi$",
+      "solution": "$格林：\\iint_D 1\\,dxdy=\\pi。或用参数直接算。$"
     },
     {
       "id": "cal-tc-043",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$\\iiint_{x^2+y^2+z^2\\le1}z^2dV$ 球坐标值为____。",
-      "answer": "4π/15",
-      "solution": "$\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\cos^2\\phi\\,d\\phi\\int_0^1\\rho^4 d\\rho=2\\pi\\cdot\\frac{2}{3}\\cdot\\frac15=\\frac{4\\pi}{15}$。"
+      "question": "$\\iiint_{x^2+y^2+z^2\\le1}z^2dV$ 球坐标值为(  )。",
+      "answer": "$4\\pi/15$",
+      "solution": "$\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\cos^2\\phi\\,d\\phi\\int_0^1\\rho^4 d\\rho=2\\pi\\cdot\\frac{2}{3}\\cdot\\frac15=\\frac{4\\pi}{15}。$"
     },
     {
       "id": "cal-tc-044",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$\\iint_S z\\,dxdy$，$S$为$x^2+y^2+z^2=1$上半球面上侧，值为____。",
-      "answer": "2π/3",
-      "solution": "$z=\\sqrt{1-x^2-y^2}$，$D:x^2+y^2\\le1$，极坐标：$\\int_0^{2\\pi}d\\theta\\int_0^1\\sqrt{1-r^2}\\,r\\,dr=2\\pi\\cdot\\frac13=\\frac{2\\pi}{3}$。"
+      "question": "$\\iint_S z\\,dxdy$，$S$为$x^2+y^2+z^2=1$上半球面上侧，值为(  )。",
+      "answer": "$2\\pi/3$",
+      "solution": "$z=\\sqrt{1-x^2-y^2}，D:x^2+y^2\\le1，极坐标：\\int_0^{2\\pi}d\\theta\\int_0^1\\sqrt{1-r^2}\\,r\\,dr=2\\pi\\cdot\\frac13=\\frac{2\\pi}{3}。$"
     },
     {
       "id": "cal-tc-045",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$\\oint_L (e^x\\sin y-y)dx+(e^x\\cos y+x)dy$，$L$为任意闭曲线，值为____。",
+      "question": "$\\oint_L (e^x\\sin y-y)dx+(e^x\\cos y+x)dy，L为任意闭曲线，值为(  )。$",
       "answer": "2A",
-      "solution": "$A$为$L$所围面积。格林：$Q_x-P_y=(e^x\\cos y+1)-(e^x\\cos y-1)=2$，结果$=2A$。"
+      "solution": "$A为L所围面积。格林：Q_x-P_y=(e^x\\cos y+1)-(e^x\\cos y-1)=2，结果=2A。$"
     },
     {
       "id": "cal-tc-046",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$\\iiint_{x^2+y^2+z^2\\le1}\\frac{1}{\\sqrt{x^2+y^2+z^2}}dV=$____。",
-      "answer": "2π",
-      "solution": "球坐标：$4\\pi\\int_0^1\\rho^2\\cdot\\frac{1}{\\rho}d\\rho=4\\pi\\cdot\\frac12=2\\pi$。"
+      "question": "$\\iiint_{x^2+y^2+z^2\\le1}\\frac{1}{\\sqrt{x^2+y^2+z^2}}dV=(  )。$",
+      "answer": "$2\\pi$",
+      "solution": "$球坐标：4\\pi\\int_0^1\\rho^2\\cdot\\frac{1}{\\rho}d\\rho=4\\pi\\cdot\\frac12=2\\pi。$"
     },
     {
       "id": "cal-tc-047",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$\\int_L (x^2+y^2)ds$，$L:x=\\cos t,y=\\sin t,z=t,0\\le t\\le\\pi$，值为____。",
-      "answer": "π√2",
-      "solution": "$ds=\\sqrt{(-\\sin t)^2+(\\cos t)^2+1}dt=\\sqrt{2}dt$，$\\int_0^\\pi(\\cos^2t+\\sin^2t)\\sqrt{2}dt=\\pi\\sqrt{2}$。"
+      "question": "$\\int_L (x^2+y^2)ds，L:x=\\cos t,y=\\sin t,z=t,0\\le t\\le\\pi，值为(  )。$",
+      "answer": "$\\pi\\sqrt2$",
+      "solution": "$ds=\\sqrt{(-\\sin t)^2+(\\cos t)^2+1}dt=\\sqrt{2}dt，\\int_0^\\pi(\\cos^2t+\\sin^2t)\\sqrt{2}dt=\\pi\\sqrt{2}。$"
     },
     {
       "id": "cal-tc-048",
@@ -619,7 +619,7 @@
       "id": "cal-tc-052",
       "type": "choice",
       "difficulty": "hard",
-      "question": "$\\iiint_{x^2+y^2\\le1,0\\le z\\le1}e^z dV=$（ ）",
+      "question": "$\\iiint_{x^2+y^2\\le1,0\\le z\\le1}e^z dV=（ ）$",
       "options": [
         "$\\pi(e-1)$",
         "$2\\pi(e-1)$",
@@ -627,15 +627,15 @@
         "$2\\pi$"
       ],
       "answer": "A",
-      "solution": "$\\iint_{x^2+y^2\\le1}dxdy\\cdot\\int_0^1e^zdz=\\pi\\cdot(e-1)$。"
+      "solution": "$\\iint_{x^2+y^2\\le1}dxdy\\cdot\\int_0^1e^zdz=\\pi\\cdot(e-1)。$"
     },
     {
       "id": "cal-tc-053",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$\\int_L y\\,dx+z\\,dy+x\\,dz$，$L$为$x+y+z=1$与坐标面交线正向，值为____。",
+      "question": "$\\int_L y\\,dx+z\\,dy+x\\,dz，L为x+y+z=1与坐标面交线正向，值为(  )。$",
       "answer": "-3/2",
-      "solution": "平面上$x+y+z=1$，用斯托克斯：$\\iint_S(1-1)dydz+(1-1)dzdx+(1-1)dxdy=0$。不对，$P=y,Q=z,R=x$，旋度$=(0-1,0-1,0-1)=(-1,-1,-1)$，$\\iint_S(-1,-1,-1)\\cdot(1,1,1)dS=-3\\iint_S dS$。$S$面积$=\\sqrt{3}/2$。$-3\\cdot\\frac{\\sqrt{3}}{2}\\cdot\\frac{1}{\\sqrt{3}}=-3/2$。正确！"
+      "solution": "$平面上x+y+z=1，用斯托克斯：\\iint_S(1-1)dydz+(1-1)dzdx+(1-1)dxdy=0。不对，P=y,Q=z,R=x，旋度=(0-1,0-1,0-1)=(-1,-1,-1)，\\iint_S(-1,-1,-1)\\cdot(1,1,1)dS=-3\\iint_S dS。S面积=\\sqrt{3}/2。-3\\cdot\\frac{\\sqrt{3}}{2}\\cdot\\frac{1}{\\sqrt{3}}=-3/2。正确！$"
     }
   ]
 }

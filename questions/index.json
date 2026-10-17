@@ -26,11 +26,11 @@
     "probability": {
       "name": "概率论与数理统计",
       "chapters": [
-        { "id": "prob-event", "name": "随机事件与概率", "file": null },
-        { "id": "prob-distribution", "name": "随机变量与分布", "file": null },
-        { "id": "prob-multi-var", "name": "多维随机变量", "file": null },
-        { "id": "prob-law-large", "name": "大数定律与中心极限定理", "file": null },
-        { "id": "prob-statistics", "name": "数理统计", "file": null }
+        { "id": "prob-event", "name": "随机事件与概率", "file": "questions/prob-event.json" },
+        { "id": "prob-distribution", "name": "随机变量与分布", "file": "questions/prob-distribution.json" },
+        { "id": "prob-multi-var", "name": "多维随机变量", "file": "questions/prob-multi-var.json" },
+        { "id": "prob-law-large", "name": "大数定律与中心极限定理", "file": "questions/prob-law-large.json" },
+        { "id": "prob-statistics", "name": "数理统计", "file": "questions/prob-statistics.json" }
       ]
     }
   }
