@@ -5243,11 +5243,11 @@ var QUESTION_BANK = {
     {
       "id": "cal-di-108",
       "type": "proof",
-      "difficulty": "hard",
-      "question": "比较积分大小：积分区域为 $D=\\{(x,y)\\mid(x-1)^{2}+(y-1)^{2}\\le2\\}$，\n$I_{1}=\\displaystyle\\iint_{D}(x+y)^{4}\\,\\mathrm{d}\\sigma$；$I_{2}=\\displaystyle\\iint_{D}(x+y)^{?}\\,\\mathrm{d}\\sigma$；$I_{3}=\\displaystyle\\iint_{D}\\,3^{?}\\cdots\\,\\mathrm{d}\\sigma$。\n\n【校】原卷此题文字层严重失真：三个积分式中 $I_{2}$、$I_{3}$ 的指数/底数无法可靠还原（候选版本包括 $(x+y)^{3}$、$3^{x+y}$ 等）。本题按可辨认部分收录，$I_{1}=\\iint_{D}(x+y)^{4}\\,\\mathrm{d}\\sigma$ 可确认。解题要点：在 $D$ 上 $x+y\\in[0,4]$（在圆上 $x+y=2\\pm2$），比较幂函数在 $0<u<1$ 与 $1<u<4$ 两段的大小需分段积分或用均值性质，待对照原稿补全后作答。",
-      "answer": "证明题（详见解析）",
-      "solution": "题面失真，暂无法给出确定结论；已标注【校】待核对原稿。",
-      "topic": "重积分比较·题面失真待核",
+      "difficulty": "medium",
+      "question": "比较积分大小：积分区域为 $D=\\{(x,y)\\mid(x-1)^{2}+(y-1)^{2}\\le 2\\}$，$I_{1}=\\displaystyle\\iint_{D}\\frac{x+y}{4}\\,\\mathrm{d}\\sigma$，$I_{2}=\\displaystyle\\iint_{D}\\sqrt{\\frac{x+y}{4}}\\,\\mathrm{d}\\sigma$，$I_{3}=\\displaystyle\\iint_{D}\\sqrt[3]{\\frac{x+y}{4}}\\,\\mathrm{d}\\sigma$。",
+      "answer": "$I_{1}<I_{2}<I_{3}$",
+      "solution": "**关键观察**：$D$ 是以 $(1,1)$ 为圆心、$\\sqrt2$ 为半径的圆。令 $u=\\dfrac{x+y}{4}$，则二元线性函数 $x+y$ 在有界闭区域 $D$ 上的最大、最小值在边界取得：$x+y$ 的取值范围是 $[0,4]$（最小值 $0$ 在切点 $(0,0)$，最大值 $4$ 在切点 $(2,2)$，圆心值 $2$）。故在 $D$ 上恒有 $0\\le u\\le 1$。\n\n**比较**：当 $0<u<1$ 时，幂函数不等式 $u<\\sqrt{u}<\\sqrt[3]{u}$ 成立（因为 $u^{\\frac12}>u$、$u^{\\frac13}>u^{\\frac12}$）。而 $u=0$ 或 $u=1$ 仅在切点 $(0,0)$、$(2,2)$ 处取得，这两点在 $D$ 中测度为零，因此不等式在 $D$ 上**几乎处处严格成立**，积分保持严格不等号：\n\n$$I_{1}<I_{2}<I_{3}.$$\n\n**精确值核验**（作答时不需要）：平移 $u=x-1,\\ v=y-1$ 后极坐标计算可得$I_{1}=\\displaystyle\\iint_{D}\\frac{x+y}{4}\\,\\mathrm{d}\\sigma=\\pi$（恰为圆面积的 $\\tfrac14\\times\\overline{x+y}=\\tfrac14\\times 2\\times 2\\pi=\\pi$），$I_{2}=\\dfrac{64}{15}\\approx 4.267$，$I_{3}\\approx 4.801$，与结论一致。\n\n**方法点睛**：被积函数都是 $u=\\dfrac{x+y}{4}$ 的幂函数 $u^{a}$（$a=1,\\tfrac12,\\tfrac13$）时，先弄清 $u$ 在区域上的取值范围是第一步——落在 $(0,1)$ 内则幂越大值越大，落在 $(1,+\\infty)$ 内则反过来。这类\"同底不同指数\"的比较题，核心就是把线性函数 $x+y$ 压进 $[0,1]$ 这个区间，再用幂函数单调性。",
+      "topic": "重积分比较·幂函数不等式",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "二重积分"
     },
