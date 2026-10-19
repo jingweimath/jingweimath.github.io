@@ -1,5 +1,5 @@
 // Auto-generated editor data
-// Chapters: 18, Total questions: 807
+// Chapters: 18, Total questions: 837
 // Regenerate: python build_editor_data.py
 
 var EDITOR_DATA = [
@@ -4279,6 +4279,171 @@ var EDITOR_DATA = [
         "question": "$f=x^2+y^2$ 在 $x^2+xy+y^2=3$ 下最大值(  )。",
         "answer": "6",
         "solution": "$旋转变换或特征值法，\\lambda_{\\max}=2，最大值3\\cdot2=6。$"
+      },
+      {
+        "id": "cal-md-101",
+        "type": "proof",
+        "difficulty": "hard",
+        "question": "验证极限 $\\lim\\limits_{(x,y)\\to(0,0)}\\dfrac{xy^{2}}{x^{2}+y^{4}}$ 是否存在。\n\n【校】原卷印作 $x\\to x_{0},\\ y\\to y_{0}$，按经典版本应为 $(x,y)\\to(0,0)$。",
+        "answer": "极限不存在。",
+        "solution": "沿 $y=0$ 趋于原点，得 $\\dfrac{0}{x^{2}}=0$；沿抛物线 $x=y^{2}$ 趋于原点，得 $\\dfrac{y^{2}\\cdot y^{2}}{y^{4}+y^{4}}=\\dfrac12$。两条路径极限不同，故极限不存在。",
+        "topic": "二元极限·路径法判不存在",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-102",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "求极限 $\\lim\\limits_{(x,y)\\to(0,0)}\\dfrac{xy^{2}\\sin(xy)}{x^{2}+y^{4}}$。",
+        "answer": "$0$。",
+        "solution": "在 $|xy|<1$ 的邻域内 $|\\sin(xy)|\\le|xy|$，故 $\\left|\\dfrac{xy^{2}\\sin(xy)}{x^{2}+y^{4}}\\right|\\le\\dfrac{x^{2}|y|^{3}}{x^{2}+y^{4}}\\le|y|^{3}\\to 0$，由夹逼准则极限为 $0$。",
+        "topic": "二元极限·夹逼定值",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-103",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "设 $z=u^{2}\\ln v$，$u=\\dfrac{x}{y}$，$v=3x-2y$，求 $\\dfrac{\\partial z}{\\partial x}$、$\\dfrac{\\partial z}{\\partial y}$。",
+        "answer": "$\\dfrac{\\partial z}{\\partial x}=\\dfrac{2x\\ln(3x-2y)}{y^{2}}+\\dfrac{3x^{2}}{y^{2}(3x-2y)}$；$\\dfrac{\\partial z}{\\partial y}=-\\dfrac{2x^{2}\\ln(3x-2y)}{y^{3}}-\\dfrac{2x^{2}}{y^{2}(3x-2y)}$。",
+        "solution": "$\\dfrac{\\partial z}{\\partial x}=2u\\ln v\\cdot\\dfrac1y+u^{2}\\cdot\\dfrac{3}{v}$，$\\dfrac{\\partial z}{\\partial y}=2u\\ln v\\cdot\\left(-\\dfrac{x}{y^{2}}\\right)+u^{2}\\cdot\\left(-\\dfrac2v\\right)$，代入 $u=\\dfrac xy$，$v=3x-2y$ 整理即得。",
+        "topic": "链式法则·具体复合",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-104",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "设 $u=f\\!\\left(\\dfrac{x}{y},\\dfrac{y}{z}\\right)$，求 $\\dfrac{\\partial u}{\\partial x}$、$\\dfrac{\\partial u}{\\partial y}$。",
+        "answer": "$\\dfrac{\\partial u}{\\partial x}=\\dfrac1y f_{1}$；$\\dfrac{\\partial u}{\\partial y}=-\\dfrac{x}{y^{2}}f_{1}+\\dfrac1z f_{2}$。",
+        "solution": "令 $s=\\dfrac xy$，$t=\\dfrac yz$，则 $u=f(s,t)$。$s_{x}=\\dfrac1y$，$s_{y}=-\\dfrac{x}{y^{2}}$，$t_{x}=0$，$t_{y}=\\dfrac1z$，由链式法则 $u_{x}=f_{1}s_{x}$，$u_{y}=f_{1}s_{y}+f_{2}t_{y}$，代入即得。",
+        "topic": "链式法则·抽象复合记号",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-105",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "已知 $(axy^{3}-y^{2}\\cos x)\\,\\mathrm{d}x+(1+by\\sin x+3x^{2}y^{2})\\,\\mathrm{d}y$ 是某一函数 $f(x,y)$ 的全微分，求 $a,\\ b$，并求出 $f(x,y)$。\n\n【校】原卷\"时候\"系\"是\"之误。",
+        "answer": "$a=2,\\ b=-2$；$f(x,y)=x^{2}y^{3}-y^{2}\\sin x+y+C$。",
+        "solution": "$P=axy^{3}-y^{2}\\cos x$，$Q=1+by\\sin x+3x^{2}y^{2}$。全微分要求 $P_{y}=Q_{x}$：$3axy^{2}-2y\\cos x=by\\cos x+6xy^{2}$，比较得 $3a=6,\\ b=-2$，即 $a=2$。于是 $f=\\int(2xy^{3}-y^{2}\\cos x)\\,\\mathrm{d}x=x^{2}y^{3}-y^{2}\\sin x+g(y)$；再由 $f_{y}=3x^{2}y^{2}-2y\\sin x+g'(y)=1-2y\\sin x+3x^{2}y^{2}$ 得 $g'(y)=1$，$g(y)=y+C$。",
+        "topic": "全微分·待定系数还原原函数",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-106",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "设函数 $u=f(x,y,z)$ 有连续偏导数，$y=y(x)$、$z=z(x)$ 分别由方程 $\\mathrm{e}^{xy}-y=0$ 和 $\\mathrm{e}^{z}-xz=0$ 所确定，求 $\\dfrac{\\mathrm{d}u}{\\mathrm{d}x}$。",
+        "answer": "$\\dfrac{\\mathrm{d}u}{\\mathrm{d}x}=f_{x}+\\dfrac{y^{2}}{1-xy}f_{y}+\\dfrac{z}{x(z-1)}f_{z}$。",
+        "solution": "$u=f(x,y(x),z(x))$，故 $\\dfrac{\\mathrm{d}u}{\\mathrm{d}x}=f_{x}+f_{y}y'+f_{z}z'$。对 $\\mathrm{e}^{xy}=y$ 关于 $x$ 求导：$\\mathrm{e}^{xy}(y+xy')=y'$，代入 $\\mathrm{e}^{xy}=y$ 得 $y^{2}+xy\\,y'=y'$，解得 $y'=\\dfrac{y^{2}}{1-xy}$。对 $\\mathrm{e}^{z}=xz$ 求导：$\\mathrm{e}^{z}z'=z+xz'$，代入 $\\mathrm{e}^{z}=xz$ 得 $xz\\,z'=z+xz'$，解得 $z'=\\dfrac{z}{x(z-1)}$。代入即得。",
+        "topic": "隐函数求导·方程组确定",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-107",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "设由方程组 $\\begin{cases}x+y+z=0\\\\ x^{2}+y^{2}+z^{2}=1\\end{cases}$ 所确定的函数为 $x=x(z)$，$y=y(z)$，求 $\\dfrac{\\mathrm{d}x}{\\mathrm{d}z}$ 和 $\\dfrac{\\mathrm{d}y}{\\mathrm{d}z}$。",
+        "answer": "$\\dfrac{\\mathrm{d}x}{\\mathrm{d}z}=\\dfrac{y-z}{x-y}$，$\\dfrac{\\mathrm{d}y}{\\mathrm{d}z}=\\dfrac{z-x}{x-y}$。",
+        "solution": "两式对 $z$ 求导：$x'+y'=-1$；$2xx'+2yy'+2z=0$ 即 $xx'+yy'=-z$。由第一式 $y'=-1-x'$，代入第二式：$xx'+y(-1-x')=-z$，得 $x'(x-y)=y-z$，故 $x'=\\dfrac{y-z}{x-y}$，$y'=-1-x'=\\dfrac{z-x}{x-y}$。",
+        "topic": "隐函数求导·方程组确定 dx/dz",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-108",
+        "type": "proof",
+        "difficulty": "hard",
+        "question": "设函数 $f(u)$ 在 $(0,+\\infty)$ 内具有二阶导数，且 $z=f\\!\\left(\\sqrt{x^{2}+y^{2}}\\right)$ 满足等式 $\\dfrac{\\partial^{2}z}{\\partial x^{2}}+\\dfrac{\\partial^{2}z}{\\partial y^{2}}=0$。验证：(1) $f''(u)+\\dfrac{f'(u)}{u}=0$；(2) 若 $f(1)=0$，$f'(1)=1$，求 $f(u)$。",
+        "answer": "$f(u)=\\ln u$。",
+        "solution": "(1) 记 $r=\\sqrt{x^{2}+y^{2}}$，$z_{x}=f'(r)\\dfrac{x}{r}$，$z_{xx}=f''(r)\\dfrac{x^{2}}{r^{2}}+f'(r)\\dfrac{y^{2}}{r^{3}}$；同理 $z_{yy}=f''(r)\\dfrac{y^{2}}{r^{2}}+f'(r)\\dfrac{x^{2}}{r^{3}}$。相加：$\\Delta z=f''(r)+\\dfrac{f'(r)}{r}=0$，即 $f''(u)+\\dfrac{f'(u)}{u}=0$。(2) 方程两边乘 $u$：$(u f'(u))'=0$，故 $u f'(u)=C_{1}$；代入 $f'(1)=1$ 得 $C_{1}=1$，$f'(u)=\\dfrac1u$，$f(u)=\\ln u+C_{2}$；代入 $f(1)=0$ 得 $C_{2}=0$。故 $f(u)=\\ln u$。",
+        "topic": "变量代换化简·欧拉型方程",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-109",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "已知函数 $z=f(x,y)$ 在 $(0,0)$ 点连续，且 $\\lim\\limits_{(x,y)\\to(0,0)}\\dfrac{f(x,y)-1-2x+3y}{x^{2}+y^{2}}=0$，求 $\\mathrm{d}z\\big|_{(0,0)}$。",
+        "answer": "$\\mathrm{d}z\\big|_{(0,0)}=2\\,\\mathrm{d}x-3\\,\\mathrm{d}y$。",
+        "solution": "由极限为 0 知 $f(x,y)=1+2x-3y+o(\\rho)$（$\\rho=\\sqrt{x^{2}+y^{2}}$）。取 $y=0$ 得 $f(x,0)-1-2x=o(x^{2})$，令 $x\\to0$ 由连续性得 $f(0,0)=1$；且 $\\dfrac{f(x,0)-f(0,0)}{x}=2+\\dfrac{o(x^{2})}{x}\\to 2$，故 $f_{x}(0,0)=2$；同理 $f_{y}(0,0)=-3$。两个偏导存在且增量可表示为 $2\\Delta x-3\\Delta y+o(\\rho)$，故可微，$\\mathrm{d}z\\big|_{(0,0)}=2\\,\\mathrm{d}x-3\\,\\mathrm{d}y$。",
+        "topic": "全微分近似·高阶无穷小反推",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-110",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "已知 $\\dfrac{\\partial^{2}z}{\\partial x\\partial y}=1$，且当 $x=0$ 时 $z(0,y)=\\sin y$；当 $y=0$ 时 $z(x,0)=\\cos x$，求 $z(x,y)$。",
+        "answer": "$z(x,y)=xy+\\sin y+\\cos x-1$。",
+        "solution": "由 $z_{xy}=1$ 对 $x$ 积分得 $z_{y}=x+\\varphi(y)$；再对 $y$ 积分得 $z=xy+\\Phi(y)+\\psi(x)$。由 $z(0,y)=\\Phi(y)+\\psi(0)=\\sin y$ 得 $\\Phi(y)=\\sin y-\\psi(0)$；由 $z(x,0)=\\Phi(0)+\\psi(x)=\\cos x$ 得 $\\psi(x)=\\cos x-\\Phi(0)$。故 $z=xy+\\sin y+\\cos x-\\bigl[\\psi(0)+\\Phi(0)\\bigr]$；又 $z(0,0)=1=\\psi(0)+\\Phi(0)$，故常数项为 $-1$。",
+        "topic": "混合偏导还原·边界条件定函数",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-111",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "设函数 $f(x,y)$ 可微且满足 $\\mathrm{d}f(x,y)=-2x\\mathrm{e}^{-y}\\,\\mathrm{d}x+\\mathrm{e}^{-y}(x^{2}-y-1)\\,\\mathrm{d}y$，$f(0,0)=2$。求 $f(x,y)$ 并求 $f(x,y)$ 的极值。",
+        "answer": "$f(x,y)=(y+2-x^{2})\\mathrm{e}^{-y}$；在 $(0,-1)$ 取得极大值 $f(0,-1)=\\mathrm{e}$。",
+        "solution": "$f_{x}=-2x\\mathrm{e}^{-y}$，对 $x$ 积分得 $f=-x^{2}\\mathrm{e}^{-y}+g(y)$；则 $f_{y}=x^{2}\\mathrm{e}^{-y}+g'(y)=\\mathrm{e}^{-y}(x^{2}-y-1)$，故 $g'(y)=-(y+1)\\mathrm{e}^{-y}$，$g(y)=(y+2)\\mathrm{e}^{-y}+C$。由 $f(0,0)=2$ 得 $C=0$，$f=(y+2-x^{2})\\mathrm{e}^{-y}$。令 $f_{x}=-2x\\mathrm{e}^{-y}=0$ 得 $x=0$；$f_{y}=\\mathrm{e}^{-y}(x^{2}-y-1)=0$ 得 $y=-1$，驻点 $(0,-1)$。$A=f_{xx}(0,-1)=-2\\mathrm{e}<0$，$B=f_{xy}(0,-1)=0$，$C=f_{yy}(0,-1)=\\mathrm{e}^{-y}(y-x^{2})\\big|_{(0,-1)}=-\\mathrm{e}<0$，$AC-B^{2}=2\\mathrm{e}^{2}>0$ 且 $A<0$，故极大值 $f(0,-1)=\\mathrm{e}$。",
+        "topic": "全微分还原·极值判定",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-112",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "已知函数 $f(x+y,\\ x-y)=x^{2}-y^{2}$ 对任何 $x,y$ 都成立，求 $\\dfrac{\\partial f(x,y)}{\\partial x}+\\dfrac{\\partial f(x,y)}{\\partial y}$。",
+        "answer": "$x+y$。",
+        "solution": "令 $u=x+y$，$v=x-y$，则 $x^{2}-y^{2}=(x+y)(x-y)=uv$，故 $f(u,v)=uv$，即 $f(x,y)=xy$。于是 $f_{x}+f_{y}=y+x=x+y$。",
+        "topic": "抽象函数记号·换元识别",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元微分学"
+      },
+      {
+        "id": "cal-md-113",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "求函数 $z=x^{2}y(1-x-y)$ 在直线 $x+y=3$、$x$ 轴、$y$ 轴围成的闭区域 $D$ 上的最大值与最小值。",
+        "answer": "最大值 $z\\!\\left(\\tfrac12,\\tfrac14\\right)=\\tfrac{1}{64}$；最小值 $z(2,1)=-8$。",
+        "solution": "$D=\\{(x,y)\\mid x\\ge0,\\ y\\ge0,\\ x+y\\le3\\}$。内部：$z_{x}=xy(2-3x-2y)=0$，$z_{y}=x^{2}(1-x-2y)=0$，解得 $\\left(\\tfrac12,\\tfrac14\\right)$，$z=\\tfrac{1}{64}$。边界 $x=0$、$y=0$ 上 $z\\equiv0$；边界 $x+y=3$ 上 $y=3-x$，$z=-2x^{2}(3-x)$，$x\\in[0,3]$，求导得驻点 $x=2$，$z(2,1)=-8$，端点值为 $0$。比较各值：最大 $\\tfrac{1}{64}$，最小 $-8$。",
+        "topic": "闭区域最值·三角形区域",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元极值最值"
+      },
+      {
+        "id": "cal-md-114",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "求在斜边为 $a$ 的一切直角三角形中，有最大周长的直角三角形。",
+        "answer": "等腰直角三角形（两直角边均为 $\\dfrac{a}{\\sqrt2}$），最大周长 $(1+\\sqrt2)a$。",
+        "solution": "设两直角边 $x,y$，约束 $x^{2}+y^{2}=a^{2}$，周长 $p=a+x+y$，只需最大化 $s=x+y$。令 $x=a\\cos\\theta$，$y=a\\sin\\theta$（$\\theta\\in(0,\\tfrac\\pi2)$），则 $s=a(\\cos\\theta+\\sin\\theta)=\\sqrt2\\,a\\sin\\!\\left(\\theta+\\tfrac\\pi4\\right)\\le\\sqrt2\\,a$，当且仅当 $\\theta=\\tfrac\\pi4$ 即 $x=y=\\dfrac{a}{\\sqrt2}$ 时取等。故最大周长 $p_{\\max}=a+\\sqrt2\\,a=(1+\\sqrt2)a$。",
+        "topic": "条件极值·拉格朗日·几何最值",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元极值最值"
+      },
+      {
+        "id": "cal-md-115",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "抛物面 $z=x^{2}+y^{2}$ 被平面 $x+y+z=1$ 截成一椭圆，求原点到这椭圆的最短和最长距离。",
+        "answer": "最短距离 $\\sqrt{9-5\\sqrt3}$，最长距离 $\\sqrt{9+5\\sqrt3}$。",
+        "solution": "椭圆上 $z=1-x-y$ 且 $x^{2}+y^{2}+x+y=1$。目标 $d^{2}=x^{2}+y^{2}+(1-x-y)^{2}$，约束 $g=x^{2}+y^{2}+x+y-1=0$。拉格朗日条件：$4x+2y-2=\\lambda(2x+1)$，$4y+2x-2=\\lambda(2y+1)$。两式相减得 $(x-y)(1-\\lambda)\\cdot 2=0$。若 $\\lambda=1$：由第一式 $x+y=\\tfrac32$，代入约束得 $x^{2}+y^{2}=-\\tfrac12$，无解；故 $x=y$。代入约束：$2x^{2}+2x=1$，$x=\\dfrac{-1\\pm\\sqrt3}{2}$。$x=y=\\dfrac{\\sqrt3-1}{2}$ 时 $z=2-\\sqrt3$，$d^{2}=9-5\\sqrt3$（最短）；$x=y=-\\dfrac{1+\\sqrt3}{2}$ 时 $z=2+\\sqrt3$，$d^{2}=9+5\\sqrt3$（最长）。",
+        "topic": "条件极值·拉格朗日·距离最值",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "多元极值最值"
       }
     ]
   },
@@ -4884,6 +5049,177 @@ var EDITOR_DATA = [
         ],
         "answer": "A",
         "solution": "$**逐项分析**：xy 是 x 的奇函数，D 关于 y 轴对称，积分为 0；x, y 分别为奇函数，积分均为 0。由轮换对称 \\iint x^2 = \\iint y^2 = \\frac{1}{2}\\iint(x^2+y^2) = \\frac{\\pi R^4}{4}。\\iint f = f\\pi R^2。故结果 = (a+b)\\frac{\\pi R^4}{4} + f\\pi R^2。**答案：A**$"
+      },
+      {
+        "id": "cal-di-101",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "计算 $\\displaystyle\\iint_{D}\\left[|xy|+\\sin(xy^{2})\\right]\\mathrm{d}\\sigma$，其中 $D$ 是由曲线 $|x|+|y|=1$ 围成的区域。\n\n【校】原卷第二项印刷模糊（识别为 $\\sin\\frac{y}{x}$ 或 $\\sin(y^{2}x)$ 类），无论取何版本，该项均为 $x$ 的奇函数，由对称性积分为 0，不影响结果。此处取 $\\sin(xy^{2})$。",
+        "answer": "$\\dfrac16$。",
+        "solution": "$D$ 关于两坐标轴对称。$\\sin(xy^{2})$ 关于 $x$ 为奇函数，故 $\\iint_{D}\\sin(xy^{2})\\,\\mathrm{d}\\sigma=0$；$|xy|$ 关于两轴均为偶函数，故 $\\iint_{D}|xy|\\,\\mathrm{d}\\sigma=4\\int_{0}^{1}\\mathrm{d}x\\int_{0}^{1-x}xy\\,\\mathrm{d}y=4\\int_{0}^{1}\\dfrac{x(1-x)^{2}}{2}\\,\\mathrm{d}x=2\\cdot\\dfrac{1}{12}=\\dfrac16$。",
+        "topic": "对称性·绝对值与奇函数",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
+      },
+      {
+        "id": "cal-di-102",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "计算 $\\displaystyle\\iint_{D}(x+1)^{2}\\,\\mathrm{d}\\sigma$，$D=\\{(x,y)\\mid x^{2}+y^{2}\\le 2x+2y\\}$。",
+        "answer": "$9\\pi$。",
+        "solution": "$D$ 即 $(x-1)^{2}+(y-1)^{2}\\le 2$，圆心 $(1,1)$，半径 $\\sqrt2$，面积 $2\\pi$。$x^{2}=(x-1)^{2}+2(x-1)+1$，而 $\\iint_{D}(x-1)^{2}\\,\\mathrm{d}\\sigma=\\dfrac14\\pi R^{4}=\\pi$，$\\iint_{D}(x-1)\\,\\mathrm{d}\\sigma=0$（形心），故 $\\iint_{D}x^{2}\\,\\mathrm{d}\\sigma=\\pi+0+2\\pi=3\\pi$；又 $\\iint_{D}x\\,\\mathrm{d}\\sigma=1\\cdot 2\\pi=2\\pi$，$\\iint_{D}1\\,\\mathrm{d}\\sigma=2\\pi$。合计 $3\\pi+2\\cdot2\\pi+2\\pi=9\\pi$。",
+        "topic": "对称性·平移圆域",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
+      },
+      {
+        "id": "cal-di-103",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "函数 $f(x,y)=x^{2}-3x+y+1$ 在平面区域 $D=\\{(x,y)\\mid x^{2}+y^{2}\\le a^{2}\\}$ 上的平均值。",
+        "answer": "$1+\\dfrac{a^{2}}{4}$。",
+        "solution": "平均值 $=\\dfrac{1}{\\pi a^{2}}\\iint_{D}(x^{2}-3x+y+1)\\,\\mathrm{d}\\sigma$。由对称性 $\\iint_{D}x\\,\\mathrm{d}\\sigma=\\iint_{D}y\\,\\mathrm{d}\\sigma=0$；$\\iint_{D}x^{2}\\,\\mathrm{d}\\sigma=\\dfrac12\\iint_{D}(x^{2}+y^{2})\\,\\mathrm{d}\\sigma=\\dfrac12\\int_{0}^{2\\pi}\\mathrm{d}\\theta\\int_{0}^{a}r^{2}\\cdot r\\,\\mathrm{d}r=\\dfrac{\\pi a^{4}}{4}$。故平均值 $=\\dfrac{1}{\\pi a^{2}}\\left(\\dfrac{\\pi a^{4}}{4}+\\pi a^{2}\\right)=\\dfrac{a^{2}}{4}+1$。",
+        "topic": "对称性·圆域平均值",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
+      },
+      {
+        "id": "cal-di-104",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "设 $f(t)$ 在 $(-\\infty,+\\infty)$ 内有连续导数，且 $f(t)=\\displaystyle\\iint_{x^{2}+y^{2}\\le t^{2}}\\left(x^{2}+y^{2}\\right)f\\!\\left(\\sqrt{x^{2}+y^{2}}\\right)\\mathrm{d}\\sigma+t^{4}$，求 $f(x)$。",
+        "answer": "$f(x)=\\dfrac{2}{\\pi}\\left(\\mathrm{e}^{\\frac{\\pi}{2}x^{4}}-1\\right)$。",
+        "solution": "极坐标：$f(t)=2\\pi\\int_{0}^{t}r^{3}f(r)\\,\\mathrm{d}r+t^{4}$（$t\\ge0$），且 $f(0)=0$。两边求导：$f'(t)=2\\pi t^{3}f(t)+4t^{3}$，即 $f'-2\\pi t^{3}f=4t^{3}$。一阶线性方程，积分因子 $\\mathrm{e}^{-\\pi t^{4}/2}$：$\\dfrac{\\mathrm{d}}{\\mathrm{d}t}\\left[f\\,\\mathrm{e}^{-\\pi t^{4}/2}\\right]=4t^{3}\\mathrm{e}^{-\\pi t^{4}/2}$，积分得 $f(t)\\,\\mathrm{e}^{-\\pi t^{4}/2}=\\dfrac{2}{\\pi}\\left(1-\\mathrm{e}^{-\\pi t^{4}/2}\\right)$（用了 $f(0)=0$），故 $f(t)=\\dfrac{2}{\\pi}\\left(\\mathrm{e}^{\\pi t^{4}/2}-1\\right)$。",
+        "topic": "积分方程·化为 ODE",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
+      },
+      {
+        "id": "cal-di-105",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "设 $f(x,y)$ 为连续函数，且 $f(x,y)=\\displaystyle\\iint_{D}y\\,f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v+x$；其中 $D$ 由 $y=\\dfrac1x$，$y=2$，$x=1$ 围成，求 $f(x,y)$。",
+        "answer": "$f(x,y)=x+\\dfrac32-\\ln 2$。",
+        "solution": "右端二重积分为常数，记 $K=\\iint_{D}y\\,f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v$，则 $f(x,y)=K+x$。代回：$K=\\iint_{D}y(K+u)\\,\\mathrm{d}u\\,\\mathrm{d}v=K I_{1}+I_{2}$。$D$：$x\\in\\left[\\tfrac12,1\\right]$，$y\\in\\left[\\tfrac1x,2\\right]$。$I_{1}=\\int_{1/2}^{1}\\dfrac{4-\\frac{1}{x^{2}}}{2}\\,\\mathrm{d}x=\\left[2x+\\dfrac{1}{2x}\\right]_{1/2}^{1}=\\dfrac12$；$I_{2}=\\int_{1/2}^{1}x\\cdot\\dfrac{4-\\frac{1}{x^{2}}}{2}\\,\\mathrm{d}x=\\left[x^{2}-\\tfrac12\\ln x\\right]_{1/2}^{1}=\\dfrac34-\\dfrac12\\ln2$。故 $K(1-I_{1})=I_{2}$，$K=2I_{2}=\\dfrac32-\\ln2$。",
+        "topic": "积分方程·常数提取法",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
+      },
+      {
+        "id": "cal-di-106",
+        "type": "proof",
+        "difficulty": "hard",
+        "question": "设 $f(x,y)$ 是定义在 $0\\le x\\le1$，$0\\le y\\le1$ 上的连续函数，$f(0,0)=1$；\n\n【校】原卷此题仅印出上述条件，问句疑似缺行（可能在排版/扫描中丢失）。本题暂按原样收录，待对照原始手稿补全问句后再行解答。素材价值：条件\"$f$ 在单位正方形连续且 $f(0,0)=1$\"常见于介值/积分极限类命题。",
+        "answer": "证明题（详见解析）",
+        "solution": "题面不全，暂无法作答；已标注【校】待补。",
+        "topic": "题面存疑·待对照原稿",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
+      },
+      {
+        "id": "cal-di-107",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "比较重积分大小：设 $A=\\displaystyle\\iint_{x^{2}+y^{2}\\le1}(x^{2}+y^{2})\\,\\mathrm{d}\\sigma$；$B=\\displaystyle\\iint_{|x|+|y|\\le1}(x^{2}+y^{2})\\,\\mathrm{d}\\sigma$；$C=\\displaystyle\\iint_{|x|+|y|\\le1}2|xy|\\,\\mathrm{d}\\sigma$。",
+        "answer": "$C<B<A$，即 $C=\\dfrac13<B=\\dfrac23<A=\\dfrac\\pi2$。",
+        "solution": "正方形 $|x|+|y|\\le1$ 内切于单位圆且不等，被积函数相同，故 $B<A$；在同一区域 $|x|+|y|\\le1$ 上，$2|xy|\\le x^{2}+y^{2}$ 且仅在 $|x|=|y|$ 上取等，故 $C<B$。具体值：$A=\\int_{0}^{2\\pi}\\mathrm{d}\\theta\\int_{0}^{1}r^{2}\\cdot r\\,\\mathrm{d}r=\\dfrac\\pi2$；$B=4\\int_{0}^{1}\\mathrm{d}x\\int_{0}^{1-x}(x^{2}+y^{2})\\,\\mathrm{d}y=\\dfrac23$；$C=4\\int_{0}^{1}\\mathrm{d}x\\int_{0}^{1-x}2xy\\,\\mathrm{d}y=\\dfrac13$。",
+        "topic": "重积分比较·区域与被积函数",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
+      },
+      {
+        "id": "cal-di-108",
+        "type": "proof",
+        "difficulty": "hard",
+        "question": "比较积分大小：积分区域为 $D=\\{(x,y)\\mid(x-1)^{2}+(y-1)^{2}\\le2\\}$，\n$I_{1}=\\displaystyle\\iint_{D}(x+y)^{4}\\,\\mathrm{d}\\sigma$；$I_{2}=\\displaystyle\\iint_{D}(x+y)^{?}\\,\\mathrm{d}\\sigma$；$I_{3}=\\displaystyle\\iint_{D}\\,3^{?}\\cdots\\,\\mathrm{d}\\sigma$。\n\n【校】原卷此题文字层严重失真：三个积分式中 $I_{2}$、$I_{3}$ 的指数/底数无法可靠还原（候选版本包括 $(x+y)^{3}$、$3^{x+y}$ 等）。本题按可辨认部分收录，$I_{1}=\\iint_{D}(x+y)^{4}\\,\\mathrm{d}\\sigma$ 可确认。解题要点：在 $D$ 上 $x+y\\in[0,4]$（在圆上 $x+y=2\\pm2$），比较幂函数在 $0<u<1$ 与 $1<u<4$ 两段的大小需分段积分或用均值性质，待对照原稿补全后作答。",
+        "answer": "证明题（详见解析）",
+        "solution": "题面失真，暂无法给出确定结论；已标注【校】待核对原稿。",
+        "topic": "重积分比较·题面失真待核",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
+      },
+      {
+        "id": "cal-di-109",
+        "type": "choice",
+        "difficulty": "hard",
+        "question": "设函数 $f(x,y)$ 连续，则累次积分 $\\displaystyle\\int_{0}^{\\pi/4}\\mathrm{d}\\theta\\int_{0}^{1}r^{2}\\cos\\theta\\,f(r\\cos\\theta,r\\sin\\theta)\\,\\mathrm{d}r$ 等于：\n\nA. $\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}x\\int_{x}^{\\sqrt{1-x^{2}}}x f(x,y)\\,\\mathrm{d}y$\nB. $\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}x\\int_{0}^{\\sqrt{1-x^{2}}}y f(x,y)\\,\\mathrm{d}y$\nC. $\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}y\\int_{y}^{\\sqrt{1-y^{2}}}x f(x,y)\\,\\mathrm{d}x$\nD. $\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}y\\int_{0}^{\\sqrt{1-y^{2}}}x f(x,y)\\,\\mathrm{d}x$",
+        "answer": 2,
+        "solution": "区域为扇形 $D=\\{r\\le1,\\ 0\\le\\theta\\le\\pi/4\\}$，即单位圆内 $0\\le y\\le x$ 部分。被积式 $r^{2}\\cos\\theta\\,\\mathrm{d}r\\,\\mathrm{d}\\theta=r\\cos\\theta\\cdot f\\cdot r\\,\\mathrm{d}r\\,\\mathrm{d}\\theta=x\\,f(x,y)\\,\\mathrm{d}\\sigma$。按先 $x$ 后 $y$：$y\\in\\left[0,\\tfrac{\\sqrt2}{2}\\right]$，$x\\in\\left[y,\\sqrt{1-y^{2}}\\right]$，恰为选项 C（选项 D 的内层下限 0 会混入 $x<y$ 部分，A 是上半楔形且区域颠倒，B 被积函数错为 $y$）。",
+        "topic": "极坐标化直角坐标·选项",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "累次积分互化",
+        "options": [
+          "$\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}x\\int_{x}^{\\sqrt{1-x^{2}}}x\\,f(x,y)\\,\\mathrm{d}y$",
+          "$\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}x\\int_{0}^{\\sqrt{1-x^{2}}}y\\,f(x,y)\\,\\mathrm{d}y$",
+          "$\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}y\\int_{y}^{\\sqrt{1-y^{2}}}x\\,f(x,y)\\,\\mathrm{d}x$",
+          "$\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}y\\int_{0}^{\\sqrt{1-y^{2}}}x\\,f(x,y)\\,\\mathrm{d}x$"
+        ]
+      },
+      {
+        "id": "cal-di-110",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "交换累次积分的次序：$\\displaystyle\\int_{0}^{1}\\mathrm{d}y\\int_{y}^{\\sqrt{1-y^{2}}}f(x,y)\\,\\mathrm{d}x$。\n\n【校】外层上限为 1，但使内层上限 $\\sqrt{1-y^{2}}\\ge y$ 成立的有效范围是 $0\\le y\\le\\frac{\\sqrt2}{2}$，解题时须先做此判断。",
+        "answer": "$\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}x\\int_{0}^{x}f(x,y)\\,\\mathrm{d}y+\\int_{\\sqrt2/2}^{1}\\mathrm{d}x\\int_{0}^{\\sqrt{1-x^{2}}}f(x,y)\\,\\mathrm{d}y$。",
+        "solution": "区域为 $\\{0\\le y\\le\\tfrac{\\sqrt2}{2},\\ y\\le x\\le\\sqrt{1-y^{2}}\\}$，即第一象限内直线 $y=x$ 下方、单位圆内部分。换成先 $y$ 后 $x$：$x\\in\\left[0,\\tfrac{\\sqrt2}{2}\\right]$ 时 $y$ 从 $0$ 到 $x$；$x\\in\\left[\\tfrac{\\sqrt2}{2},1\\right]$ 时 $y$ 从 $0$ 到 $\\sqrt{1-x^{2}}$，需分两段。",
+        "topic": "交换累次积分次序",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "累次积分互化"
+      },
+      {
+        "id": "cal-di-111",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "化极坐标为直角坐标：$\\displaystyle\\int_{\\pi/2}^{\\pi}\\mathrm{d}\\theta\\int_{0}^{2\\sin\\theta}f(\\rho\\cos\\theta,\\rho\\sin\\theta)\\,\\rho\\,\\mathrm{d}\\rho$。",
+        "answer": "$\\displaystyle\\int_{-1}^{0}\\mathrm{d}x\\int_{1-\\sqrt{1-x^{2}}}^{1+\\sqrt{1-x^{2}}}f(x,y)\\,\\mathrm{d}y$。",
+        "solution": "$\\rho=2\\sin\\theta$ 即圆 $x^{2}+y^{2}=2y$（圆心 $(0,1)$、半径 1）；$\\theta\\in\\left[\\tfrac\\pi2,\\pi\\right]$ 取其左半部分（$x\\le0$）。直角坐标下：$x\\in[-1,0]$，$y$ 从下边界 $1-\\sqrt{1-x^{2}}$ 到上边界 $1+\\sqrt{1-x^{2}}$。",
+        "topic": "极坐标化直角坐标",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "累次积分互化"
+      },
+      {
+        "id": "cal-di-112",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "已知平面区域 $D=\\{(x,y)\\mid x^{2}+y^{2}\\le4y,\\ x^{2}+y^{2}\\le4x\\}$，计算 $\\displaystyle\\iint_{D}(x-y)^{2}\\,\\mathrm{d}x\\,\\mathrm{d}y$。",
+        "answer": "$12\\pi-\\dfrac{112}{3}$。",
+        "solution": "$D$ 为圆 $r\\le4\\sin\\theta$ 与圆 $r\\le4\\cos\\theta$ 的公共部分，关于直线 $y=x$ 对称，极坐标下 $\\theta\\in\\left[0,\\tfrac\\pi4\\right]$ 时 $r\\le4\\sin\\theta$。故 $I=2\\int_{0}^{\\pi/4}\\mathrm{d}\\theta\\int_{0}^{4\\sin\\theta}r^{2}(\\cos\\theta-\\sin\\theta)^{2}\\,r\\,\\mathrm{d}r=128\\int_{0}^{\\pi/4}\\sin^{4}\\theta\\,(\\cos\\theta-\\sin\\theta)^{2}\\,\\mathrm{d}\\theta$。拆开 $(\\cos\\theta-\\sin\\theta)^{2}=1-\\sin2\\theta$：$\\int_{0}^{\\pi/4}\\sin^{4}\\theta\\,\\mathrm{d}\\theta=\\dfrac{3\\pi}{32}-\\dfrac14$，$\\int_{0}^{\\pi/4}\\sin^{4}\\theta\\sin2\\theta\\,\\mathrm{d}\\theta=\\left[\\tfrac{\\sin^{6}\\theta}{3}\\right]_{0}^{\\pi/4}=\\dfrac{1}{24}$。故 $I=128\\left(\\dfrac{3\\pi}{32}-\\dfrac14-\\dfrac{1}{24}\\right)=12\\pi-\\dfrac{112}{3}$。",
+        "topic": "两圆公共部分·轮换对称性",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
+      },
+      {
+        "id": "cal-di-113",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "计算二重积分 $\\displaystyle\\iint_{D}y\\,\\mathrm{d}\\sigma$，其中 $D$ 是由曲线 $y=x^{2}$ 与 $y=2-x^{2}$ 所围成的平面区域。",
+        "answer": "$\\dfrac83$。",
+        "solution": "两曲线交于 $(\\pm1,1)$。$D=\\{x\\in[-1,1],\\ x^{2}\\le y\\le2-x^{2}\\}$。$I=\\int_{-1}^{1}\\mathrm{d}x\\int_{x^{2}}^{2-x^{2}}y\\,\\mathrm{d}y=\\int_{-1}^{1}\\dfrac{(2-x^{2})^{2}-x^{4}}{2}\\,\\mathrm{d}x=\\int_{-1}^{1}(2-2x^{2})\\,\\mathrm{d}x=\\left[2x-\\dfrac{2x^{3}}{3}\\right]_{-1}^{1}=\\dfrac83$。",
+        "topic": "抛物线围成区域·直角坐标",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
+      },
+      {
+        "id": "cal-di-114",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "求二重积分 $I=\\displaystyle\\iint_{D}\\left(1-x^{2}-y^{2}+x^{3}\\sin^{2}y\\right)\\mathrm{d}\\sigma$，其中 $D$ 为 $x^{2}+y^{2}=1$ 的上半圆与 $x^{2}+y^{2}=2y$ 的下半圆所围成的区域。",
+        "answer": "$\\dfrac{3\\sqrt3}{8}$。",
+        "solution": "两圆交于 $\\left(\\pm\\tfrac{\\sqrt3}{2},\\tfrac12\\right)$。$D$ 关于 $y$ 轴对称，$x^{3}\\sin^{2}y$ 关于 $x$ 为奇函数，积分为 0。剩余部分用极坐标（$D$ 为两单位圆公共部分：$\\theta\\in\\left[0,\\tfrac\\pi6\\right]$ 时 $r\\le2\\sin\\theta$，$\\theta\\in\\left[\\tfrac\\pi6,\\tfrac\\pi2\\right]$ 时 $r\\le1$，再对称翻倍）：$I=2\\left[\\int_{0}^{\\pi/6}\\mathrm{d}\\theta\\int_{0}^{2\\sin\\theta}(1-r^{2})r\\,\\mathrm{d}r+\\int_{\\pi/6}^{\\pi/2}\\mathrm{d}\\theta\\int_{0}^{1}(1-r^{2})r\\,\\mathrm{d}r\\right]$。第一段 $=\\int_{0}^{\\pi/6}\\left(2\\sin^{2}\\theta-4\\sin^{4}\\theta\\right)\\mathrm{d}\\theta=-\\dfrac\\pi{12}+\\dfrac{3\\sqrt3}{16}$，第二段 $=\\dfrac\\pi3\\cdot\\dfrac14=\\dfrac\\pi{12}$。故 $I=2\\cdot\\dfrac{3\\sqrt3}{16}=\\dfrac{3\\sqrt3}{8}$。",
+        "topic": "两圆弧围成·极坐标分段",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
+      },
+      {
+        "id": "cal-di-115",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "设平面区域 $D=\\{(x,y)\\mid 1\\le x^{2}+y^{2}\\le4,\\ x\\ge0,\\ y\\ge0\\}$，计算 $\\displaystyle\\iint_{D}\\dfrac{x\\cos(x^{2}+y^{2})}{x+y}\\,\\mathrm{d}x\\,\\mathrm{d}y$。",
+        "answer": "$\\dfrac{\\pi}{8}\\left(\\sin4-\\sin1\\right)$。",
+        "solution": "$D$ 关于 $y=x$ 对称。记 $f(x,y)=\\dfrac{x\\cos(x^{2}+y^{2})}{x+y}$，则 $f(x,y)+f(y,x)=\\dfrac{(x+y)\\cos(x^{2}+y^{2})}{x+y}=\\cos(x^{2}+y^{2})$。故 $I=\\dfrac12\\iint_{D}\\cos(x^{2}+y^{2})\\,\\mathrm{d}\\sigma=\\dfrac12\\int_{0}^{\\pi/2}\\mathrm{d}\\theta\\int_{1}^{2}\\cos(r^{2})\\,r\\,\\mathrm{d}r=\\dfrac{\\pi}{4}\\cdot\\dfrac{\\sin4-\\sin1}{2}=\\dfrac{\\pi}{8}(\\sin4-\\sin1)$。",
+        "topic": "轮换对称性·对称化简",
+        "source": "自编·经纬研选（四）·二元函数的微积分",
+        "cat": "二重积分"
       }
     ]
   },
