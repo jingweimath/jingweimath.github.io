@@ -648,11 +648,11 @@
     {
       "id": "cal-di-105",
       "type": "fill",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "question": "设 $f(x,y)$ 为连续函数，且 $f(x,y)=\\displaystyle\\iint_{D}y\\,f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v+x$；其中 $D$ 由 $y=\\dfrac1x$，$y=2$，$x=1$ 围成，求 $f(x,y)$。",
-      "answer": "$f(x,y)=x+\\dfrac32-\\ln 2$。",
-      "solution": "右端二重积分为常数，记 $K=\\iint_{D}y\\,f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v$，则 $f(x,y)=K+x$。代回：$K=\\iint_{D}y(K+u)\\,\\mathrm{d}u\\,\\mathrm{d}v=K I_{1}+I_{2}$。$D$：$x\\in\\left[\\tfrac12,1\\right]$，$y\\in\\left[\\tfrac1x,2\\right]$。$I_{1}=\\int_{1/2}^{1}\\dfrac{4-\\frac{1}{x^{2}}}{2}\\,\\mathrm{d}x=\\left[2x+\\dfrac{1}{2x}\\right]_{1/2}^{1}=\\dfrac12$；$I_{2}=\\int_{1/2}^{1}x\\cdot\\dfrac{4-\\frac{1}{x^{2}}}{2}\\,\\mathrm{d}x=\\left[x^{2}-\\tfrac12\\ln x\\right]_{1/2}^{1}=\\dfrac34-\\dfrac12\\ln2$。故 $K(1-I_{1})=I_{2}$，$K=2I_{2}=\\dfrac32-\\ln2$。",
-      "topic": "积分方程·常数提取法",
+      "answer": "$f(x,y)=x+\\dfrac{y}{2}$。",
+      "solution": "**关键第一步：认清谁是积分变量。**右端积分变量是 $u,v$，$y$ 不随积分变，是**自由变量**，可以提出积分号外：$\\iint_{D}y\\,f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v=y\\iint_{D}f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v$。记常数 $A=\\iint_{D}f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v$，则 $f(x,y)=yA+x$。\n\n**第二步：两边在 $D$ 上积分求 $A$。**$D=\\left\\{(u,v)\\mid \\tfrac12\\le u\\le 1,\\ \\tfrac1u\\le v\\le 2\\right\\}$（由 $v=\\tfrac1u$、$v=2$、$u=1$ 围成，交点 $(\\tfrac12,2),(1,2),(1,1)$）。$A=\\iint_{D}(vA+u)\\,\\mathrm{d}u\\,\\mathrm{d}v=A I_{1}+I_{2}$，其中$I_{1}=\\iint_{D}v\\,\\mathrm{d}u\\,\\mathrm{d}v=\\int_{1/2}^{1}\\dfrac{4-\\frac{1}{u^{2}}}{2}\\,\\mathrm{d}u=\\left[2u+\\dfrac{1}{2u}\\right]_{1/2}^{1}=\\dfrac12$；$I_{2}=\\iint_{D}u\\,\\mathrm{d}u\\,\\mathrm{d}v=\\int_{1/2}^{1}u\\left(2-\\dfrac1u\\right)\\mathrm{d}u=\\left[u^{2}-u\\right]_{1/2}^{1}=\\dfrac14$。\n\n**第三步：解出 $A$。**$A\\left(1-\\tfrac12\\right)=\\tfrac14$，故 $A=\\tfrac12$，所以 $f(x,y)=x+\\dfrac{y}{2}$。\n\n（代回自检：$\\iint_{D}\\left(u+\\tfrac v2\\right)\\mathrm{d}u\\,\\mathrm{d}v=\\tfrac14+\\tfrac12\\cdot\\tfrac12=\\tfrac12=A$ ✓）\n\n**易错点：题面写 $f(u,v)$ 已表明积分变量是 $u,v$，此时 $y$ 是参数而非积分变量——若把 $y$ 误当第二积分变量（相当于把题改成 $\\iint_{D}v\\,f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v$），会解出与原题不符的常数型答案 $x+\\tfrac32-\\ln 2$。**",
+      "topic": "积分方程·含参常数提取法",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "二重积分"
     },
@@ -711,9 +711,9 @@
       "id": "cal-di-110",
       "type": "fill",
       "difficulty": "medium",
-      "question": "交换累次积分的次序：$\\displaystyle\\int_{0}^{1}\\mathrm{d}y\\int_{y}^{\\sqrt{1-y^{2}}}f(x,y)\\,\\mathrm{d}x$。\n\n【校】外层上限为 1，但使内层上限 $\\sqrt{1-y^{2}}\\ge y$ 成立的有效范围是 $0\\le y\\le\\frac{\\sqrt2}{2}$，解题时须先做此判断。",
-      "answer": "$\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}x\\int_{0}^{x}f(x,y)\\,\\mathrm{d}y+\\int_{\\sqrt2/2}^{1}\\mathrm{d}x\\int_{0}^{\\sqrt{1-x^{2}}}f(x,y)\\,\\mathrm{d}y$。",
-      "solution": "区域为 $\\{0\\le y\\le\\tfrac{\\sqrt2}{2},\\ y\\le x\\le\\sqrt{1-y^{2}}\\}$，即第一象限内直线 $y=x$ 下方、单位圆内部分。换成先 $y$ 后 $x$：$x\\in\\left[0,\\tfrac{\\sqrt2}{2}\\right]$ 时 $y$ 从 $0$ 到 $x$；$x\\in\\left[\\tfrac{\\sqrt2}{2},1\\right]$ 时 $y$ 从 $0$ 到 $\\sqrt{1-x^{2}}$，需分两段。",
+      "question": "交换累次积分的次序：$\\displaystyle\\int_{0}^{1}\\mathrm{d}y\\int_{\\sqrt{y}}^{\\sqrt{1-y^{2}}}f(x,y)\\,\\mathrm{d}x$。",
+      "answer": "$\\displaystyle\\int_{0}^{\\sqrt{\\frac{\\sqrt5-1}{2}}}\\mathrm{d}x\\int_{0}^{x^{2}}f(x,y)\\,\\mathrm{d}y+\\int_{\\sqrt{\\frac{\\sqrt5-1}{2}}}^{1}\\mathrm{d}x\\int_{0}^{\\sqrt{1-x^{2}}}f(x,y)\\,\\mathrm{d}y$。",
+      "solution": "**先定区域。**内层要求 $\\sqrt y\\le\\sqrt{1-y^{2}}$，即 $y\\le\\dfrac{\\sqrt5-1}{2}$（记 $y_{0}=\\tfrac{\\sqrt5-1}{2}$，由 $y=1-y^{2}$ 解得），故$D=\\left\\{(x,y)\\mid 0\\le y\\le y_{0},\\ \\sqrt y\\le x\\le\\sqrt{1-y^{2}}\\right\\}$：介于抛物线 $y=x^{2}$ 与圆 $x^{2}+y^{2}=1$ 之间、第一象限部分。\n\n**换序：由 $x$ 的边界反解 $y$。**$x\\ge\\sqrt y\\iff y\\le x^{2}$；$x\\le\\sqrt{1-y^{2}}\\iff y\\le\\sqrt{1-x^{2}}$。故固定 $x$ 时 $y\\in\\left[0,\\min\\left(x^{2},\\sqrt{1-x^{2}}\\right)\\right]$。两上限曲线 $y=x^{2}$ 与 $y=\\sqrt{1-x^{2}}$ 的交点由 $x^{4}=1-x^{2}$ 得 $x^{2}=\\tfrac{\\sqrt5-1}{2}$，即 $x_{0}=\\sqrt{\\tfrac{\\sqrt5-1}{2}}\\approx0.786$。\n\n**分两段写：**$x\\in\\left[0,x_{0}\\right]$ 时 $y$ 从 $0$ 到 $x^{2}$；$x\\in\\left[x_{0},1\\right]$ 时 $y$ 从 $0$ 到 $\\sqrt{1-x^{2}}$，即得答案。\n\n（面积自检：$f\\equiv1$ 时原次序 $\\int_{0}^{y_{0}}\\left(\\sqrt{1-y^{2}}-\\sqrt y\\right)\\mathrm{d}y=0.5761-0.3239=0.2522$；新次序 $\\int_{0}^{x_{0}}x^{2}\\mathrm{d}x+\\int_{x_{0}}^{1}\\sqrt{1-x^{2}}\\,\\mathrm{d}x=0.1620+0.0905=0.2525$，一致 ✓）\n\n**易错点：内层下限是 $\\sqrt y$ 不是 $y$——丢根号会把区域看成直线 $y=x$ 下方、分段点错成 $\\tfrac{\\sqrt2}{2}$；另外外层上限虽然写了 1，但 $y>y_{0}$ 后区域为空，有效范围只到 $y_{0}$。**",
       "topic": "交换累次积分次序",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "累次积分互化"
