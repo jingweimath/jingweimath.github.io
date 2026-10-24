@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>经纬研选 - 考研数学精选练习 | 经纬考研数学</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta name="description" content="经纬研选，考研数学精选练习题，涵盖极限、连续、导数、积分等核心考点，每题附详细解析。适合冲刺阶段强化训练。">
+<meta name="keywords" content="考研数学,经纬研选,考研数学精选,数学一,极限,导数,连续,考研练习题,经纬数学">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="经纬研选 - 经纬考研数学">
+<meta property="og:description" content="经纬研选，考研数学精选练习与详解，适合冲刺阶段强化训练。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jingweimath.com/comprehensive.html">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a56db;
+    --primary-dark: #1e429f;
+    --primary-light: #e8f0fe;
+    --accent: #e24b4a;
+    --text: #1e1e2e;
+    --text-muted: #6b7280;
+    --border: #e5e7eb;
+    --bg: #f8f9fc;
+    --white: #ffffff;
+    --radius: 12px;
+    --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); padding-top: 34px; }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.95); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2.5%;
+    display: flex; align-items: center; justify-content: space-between; height: 100px;
+  }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); letter-spacing: -0.5px; text-decoration: none; }
+  .logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 26px; list-style: none; align-items: stretch; }
+  .nav-links a {
+    text-decoration: none; color: var(--text); font-size: 21px; font-weight: 600;
+    transition: color 0.2s; padding: 6px 8px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    line-height: 1.3; letter-spacing: 2px;
+  }
+  .nav-icon { font-size: 19px; line-height: 1; margin-bottom: 4px; }
+  .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+  .nav-links a.nav-hot { color: var(--primary); font-weight: 700; }
+  .nav-links a.nav-star {
+    background: linear-gradient(90deg,#1a56db,#3b82f6); color:#fff;
+    padding: 8px 18px; border-radius: 18px; font-weight: 700;
+    box-shadow: 0 3px 12px rgba(26,86,219,0.35);
+  }
+  .nav-links a.nav-star:hover, .nav-links a.nav-star.active { color:#fff; opacity:0.92; }
+  .nav-cta { background: var(--primary); color: white; padding: 10px 24px; border-radius: 8px; font-size: 16px; text-decoration: none; font-weight: 500; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--primary-dark); }
+
+  /* SECTION */
+  section { padding: 72px 5%; }
+  .section-header { text-align: center; margin-bottom: 48px; }
+  .section-tag { font-size: 13px; font-weight: 600; color: var(--primary); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; }
+  .section-title { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 12px; }
+  .section-sub { font-size: 16px; color: var(--text-muted); max-width: 500px; margin: 0 auto; line-height: 1.7; }
+
+  /* NOTICE */
+  .notice {
+    background: var(--primary-light); border-radius: var(--radius);
+    padding: 16px 24px; margin-bottom: 32px;
+    display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--primary);
+    line-height: 1.7;
+  }
+  .notice .icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+
+  /* CARD GRID */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 24px; }
+  .comp-card {
+    background: white; border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 28px; transition: all 0.2s; position: relative; overflow: hidden;
+  }
+  .comp-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+  .comp-card .new-badge {
+    position: absolute; top: 16px; right: 16px;
+    background: #dcfce7; color: #15803d; font-size: 11px; font-weight: 700;
+    padding: 3px 10px; border-radius: 20px;
+  }
+  .comp-title { font-size: 20px; font-weight: 800; margin-bottom: 8px; color: var(--primary); }
+  .comp-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px; }
+  .comp-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+  .comp-tag { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 4px; }
+  .tag-blue { background: #dbeafe; color: #1d4ed8; }
+  .tag-red { background: #fee2e2; color: #b91c1c; }
+  .tag-green { background: #dcfce7; color: #15803d; }
+  .tag-orange { background: #fef3c7; color: #92400e; }
+
+  .comp-links { display: flex; flex-direction: column; gap: 10px; }
+  .comp-link {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 16px; border-radius: 8px;
+    text-decoration: none; color: var(--text);
+    border: 1px solid var(--border);
+    font-size: 14px; font-weight: 500;
+    transition: all 0.2s;
+  }
+  .comp-link:hover { border-color: var(--primary); background: var(--primary-light); color: var(--primary); }
+  .comp-link .icon { font-size: 18px; }
+  .comp-link .label { flex: 1; }
+  .comp-link .badge { font-size: 11px; padding: 2px 8px; border-radius: 4px; font-weight: 600; }
+  .badge-q { background: #dbeafe; color: #1d4ed8; }
+  .badge-s { background: #dcfce7; color: #15803d; }
+  .badge-qs { background: #ede9fe; color: #6d28d9; }
+
+  /* WATERMARK overlay */
+  .watermark {
+    position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 80px; font-weight: 900; color: rgba(26,86,219,0.03);
+    pointer-events: none; z-index: 1; white-space: nowrap;
+    letter-spacing: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .card-grid { grid-template-columns: 1fr; }
+    nav .nav-links { display: none; }
+  }
+
+  /* MARQUEE BAR */
+  .marquee-bar { position: fixed; top: 0; left: 0; width: 100%; z-index: 10000; background: linear-gradient(90deg,#1a56db,#3b82f6,#6366f1,#3b82f6,#1a56db); color: white; height: 34px; line-height: 34px; overflow: hidden; white-space: nowrap; box-shadow: 0 1px 6px rgba(0,0,0,0.15); }
+  .marquee-track { display: inline-block; animation: marquee-scroll 25s linear infinite; white-space: nowrap; }
+  .marquee-track span { display: inline-block; padding: 0 60px; font-size: 14px; font-weight: 500; letter-spacing: 1px; }
+  @keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+</style>
+<script>
+var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?a9d8ec5ea4c9eb3f3134931a2f5c67c7";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();
+</script>
+</head>
+<body>
+<div class="marquee-bar"><div class="marquee-track"><span>📢 现有部分线上一对一辅导名额，请联系微信号：andrewlaoyu 或者邮箱 jingweimath@outlook.com</span><span>📢 请随时关注，考研数学团队将持续更新内容</span><span>📢 现有部分线上一对一辅导名额，请联系微信号：andrewlaoyu 或者邮箱 jingweimath@outlook.com</span><span>📢 请随时关注，考研数学团队将持续更新内容</span></div></div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo"><img src="logo-192.png" alt="经纬考研数学" height="46"></a>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="nav-icon">🏠</span>首页</a></li>
+    <li><a href="courses.html" class="nav-star"><span class="nav-icon">🎬</span>网课<br>视频</a></li>
+    <li><a href="plan.html"><span class="nav-icon">📅</span>复习<br>计划</a></li>
+    <li><a href="practice.html" class="nav-hot"><span class="nav-icon">🔥</span>题库<br>练习</a></li>
+    <li><a href="exams.html" class="nav-hot"><span class="nav-icon">📋</span>考研<br>真题</a></li>
+    <li><a href="comprehensive.html" class="nav-hot active"><span class="nav-icon">📝</span>经纬<br>研选</a></li>
+    <li><a href="notes.html"><span class="nav-icon">📐</span>经纬<br>论数</a></li>
+  </ul>
+  <a href="practice.html" class="nav-cta">开始刷题</a>
+</nav>
+
+<div class="watermark">经纬数学</div>
+
+<section>
+  <div class="section-header">
+    <div class="section-tag">经纬研选</div>
+    <div class="section-title">考研数学精选练习与详解</div>
+    <div class="section-sub">跨章节精选好题，每部分 30+ 道精心挑选的练习题，附详细解析，适合冲刺阶段强化训练</div>
+  </div>
+
+  <div class="notice">
+    <span class="icon">💡</span>
+    <span>建议先独立做题，再对照详解。综合题侧重知识点的交叉运用，重点关注解题思路的构建与方法的灵活选择。</span>
+  </div>
+
+  <!-- 经纬研选卡片 -->
+  <div class="card-grid">
+    <!-- 模拟卷：数学二第七套 -->
+    <div class="comp-card" id="mock-shu2-v7">
+      <span class="new-badge">NEW</span>
+      <div class="comp-title">2027 考研数学（二）模拟试卷 · 第七套</div>
+      <div class="comp-desc">全套 22 题，严格按考研数学（二）题型结构与分值编排：选择题 10 道（每题 5 分）、填空题 6 道（每题 5 分）、解答题 6 道（共 70 分），满分 150 分。覆盖高数与线代核心考点，难度贴近真题、区分度良好，适合冲刺阶段整卷限时训练。</div>
+      <div class="comp-tags">
+        <span class="comp-tag tag-blue">数学二</span>
+        <span class="comp-tag tag-orange">模拟卷</span>
+        <span class="comp-tag tag-red">150分</span>
+        <span class="comp-tag tag-green">题目+详解</span>
+      </div>
+      <div class="comp-links">
+        <a class="comp-link" href="mock-shu2-v7-questions.pdf?v=20261023" target="_blank">
+          <span class="icon">📄</span>
+          <span class="label">题目 PDF（22题）</span>
+          <span class="badge badge-q">题目</span>
+        </a>
+        <a class="comp-link" href="mock-shu2-v7-solutions.pdf?v=20261023" target="_blank">
+          <span class="icon">📖</span>
+          <span class="label">详解 PDF（22题）</span>
+          <span class="badge badge-s">详解</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 第四部分：二元函数微积分 -->
+    <div class="comp-card">
+      <span class="new-badge">NEW</span>
+      <div class="comp-title">经纬研选（四）·二元函数的微积分</div>
+      <div class="comp-desc">二元函数微积分精选练习，共 30 道综合题，涵盖二元极限的存在性判定与计算、复合与隐函数（组）偏导、全微分与原函数、二元函数极值与闭区域最值、二重积分的对称性、极坐标变换与交换积分次序等核心考点。</div>
+      <div class="comp-tags">
+        <span class="comp-tag tag-blue">二元极限</span>
+        <span class="comp-tag tag-orange">偏导与全微分</span>
+        <span class="comp-tag tag-red">极值最值</span>
+        <span class="comp-tag tag-green">二重积分</span>
+      </div>
+      <div class="comp-links">
+        <a class="comp-link" href="comprehensive-5-questions.pdf?v=20261019b" target="_blank">
+          <span class="icon">📄</span>
+          <span class="label">题目 PDF（30题）</span>
+          <span class="badge badge-q">题目</span>
+        </a>
+        <a class="comp-link" href="comprehensive-5-solutions.pdf?v=20261022" target="_blank">
+          <span class="icon">📖</span>
+          <span class="label">详解 PDF（30题）</span>
+          <span class="badge badge-s">详解</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 线性代数 -->
+    <div class="comp-card">
+      <div class="comp-title">经纬研选（线性代数）</div>
+      <div class="comp-desc">线性代数综合习题 64 道，习题与解析合订本。涵盖矩阵运算与行列式、向量组线性相关性、线性方程组解的结构、特征值与特征向量、二次型标准化等核心考点。本研选题目适合配合新编考研数学线性代数网课一起使用。</div>
+      <div class="comp-tags">
+        <span class="comp-tag tag-blue">线性代数</span>
+        <span class="comp-tag tag-orange">矩阵</span>
+        <span class="comp-tag tag-red">特征值</span>
+        <span class="comp-tag tag-green">二次型</span>
+      </div>
+      <div class="comp-links">
+        <a class="comp-link" href="comprehensive-4.pdf?v=20261024" target="_blank">
+          <span class="icon">📄</span>
+          <span class="label">习题与解析 PDF（78页 64题）</span>
+          <span class="badge badge-qs">习题+解析</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 第一部分 -->
+    <div class="comp-card">
+      <div class="comp-title">经纬研选（一）</div>
+      <div class="comp-desc">31 道精选综合题，涵盖极限定义与性质、等价无穷小、定积分求极限、间断点分类、导数定义、数列极限证明等核心考点。</div>
+      <div class="comp-tags">
+        <span class="comp-tag tag-blue">极限</span>
+        <span class="comp-tag tag-orange">连续性</span>
+        <span class="comp-tag tag-red">导数</span>
+        <span class="comp-tag tag-green">证明题</span>
+      </div>
+      <div class="comp-links">
+        <a class="comp-link" href="comprehensive-1-questions.v3.pdf" target="_blank">
+          <span class="icon">📄</span>
+          <span class="label">题目 PDF（31题）</span>
+          <span class="badge badge-q">题目</span>
+        </a>
+        <a class="comp-link" href="comprehensive-1-solutions.v3.pdf" target="_blank">
+          <span class="icon">📖</span>
+          <span class="label">详解 PDF（31题）</span>
+          <span class="badge badge-s">详解</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 第二部分 -->
+    <div class="comp-card">
+      <div class="comp-title">经纬研选（二）</div>
+      <div class="comp-desc">30 道精选综合题，涵盖极限计算、导数定义与几何应用、微分中值定理证明、积分不等式、函数性态讨论等核心考点。</div>
+      <div class="comp-tags">
+        <span class="comp-tag tag-blue">极限</span>
+        <span class="comp-tag tag-orange">导数</span>
+        <span class="comp-tag tag-red">中值定理</span>
+        <span class="comp-tag tag-green">积分</span>
+      </div>
+      <div class="comp-links">
+        <a class="comp-link" href="comprehensive-2-questions.pdf" target="_blank">
+          <span class="icon">📄</span>
+          <span class="label">题目 PDF（30题）</span>
+          <span class="badge badge-q">题目</span>
+        </a>
+        <a class="comp-link" href="comprehensive-2-solutions.pdf" target="_blank">
+          <span class="icon">📖</span>
+          <span class="label">详解 PDF（30题）</span>
+          <span class="badge badge-s">详解</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 第三部分 -->
+    <div class="comp-card" id="comprehensive-3">
+      <div class="comp-title">经纬研选（三）</div>
+      <div class="comp-desc">一元函数积分精选练习，涵盖不定积分计算技巧、定积分性质与应用、反常积分收敛判定、积分等式与不等式证明等核心考点。</div>
+      <div class="comp-tags">
+        <span class="comp-tag tag-blue">不定积分</span>
+        <span class="comp-tag tag-green">定积分</span>
+        <span class="comp-tag tag-red">反常积分</span>
+        <span class="comp-tag tag-orange">证明题</span>
+      </div>
+      <div class="comp-links">
+        <a class="comp-link" href="comprehensive-3-questions.pdf" target="_blank">
+          <span class="icon">📄</span>
+          <span class="label">题目 PDF</span>
+          <span class="badge badge-q">题目</span>
+        </a>
+        <a class="comp-link" href="comprehensive-3-solutions.pdf?v=20261023" target="_blank">
+          <span class="icon">📖</span>
+          <span class="label">AI 参考解析</span>
+          <span class="badge badge-s">AI 解析</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#111827;color:#9ca3af;padding:48px 5% 32px;text-align:center;font-size:13px;">
+  <div style="margin-bottom:16px">
+    <span style="color:#60a5fa;font-size:18px;font-weight:700;">经纬<span style="color:#f87171">数学</span></span>
+  </div>
+  <div style="margin-bottom:12px;">
+    <a href="index.html" style="color:#9ca3af;text-decoration:none;margin:0 12px;">首页</a>
+    <a href="courses.html" style="color:#9ca3af;text-decoration:none;margin:0 12px;">网课</a>
+    <a href="exams.html" style="color:#9ca3af;text-decoration:none;margin:0 12px;">真题</a>
+    <a href="practice.html" style="color:#9ca3af;text-decoration:none;margin:0 12px;">题库</a>
+    <a href="comprehensive.html" style="color:#9ca3af;text-decoration:none;margin:0 12px;">经纬研选</a>
+    <a href="membership.html" style="color:#9ca3af;text-decoration:none;margin:0 12px;">会员</a>
+  </div>
+  <div>© 2026 经纬数学 · 考研辅导 · www.jingweimath.com</div>
+    <div style="margin-top:8px;"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=37020202370561" target="_blank" rel="noreferrer" style="color:#9ca3af;text-decoration:none;">鲁公网安备37020202370561号</a></div>
+  </footer>
+
+<script src="auth-widget.js"></script>
+</body>
+</html>
