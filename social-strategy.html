@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>经纬数学 · 社交媒体运营工具包</title>
+<style>
+  :root {
+    --primary: #1a73e8;
+    --bg: #f8fafc;
+    --card: #fff;
+    --border: #e2e8f0;
+    --text: #1e293b;
+    --muted: #64748b;
+    --accent-douyin: #ff0050;
+    --accent-xhs: #ff2442;
+    --accent-weibo: #e6162d;
+    --accent-baijia: #3b82f6;
+    --highlight: #fef3c7;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7;
+  }
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 50%, #1a73e8 100%);
+    color: white; padding: 60px 20px; text-align: center;
+  }
+  .header h1 { font-size: 2.2em; margin-bottom: 8px; }
+  .header p { font-size: 1.1em; opacity: 0.85; }
+
+  /* Sections */
+  .section { margin: 40px 0; }
+  .section-title {
+    font-size: 1.5em; color: var(--primary); margin-bottom: 20px;
+    padding-bottom: 8px; border-bottom: 3px solid var(--primary);
+  }
+
+  /* Cards */
+  .card {
+    background: var(--card); border-radius: 12px; padding: 24px;
+    margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border: 1px solid var(--border);
+  }
+  .card h3 { font-size: 1.15em; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .card h3 .badge {
+    font-size: 0.72em; padding: 2px 10px; border-radius: 20px;
+    color: white; font-weight: 600;
+  }
+
+  /* Platform badges */
+  .badge-douyin { background: var(--accent-douyin); }
+  .badge-xhs { background: var(--accent-xhs); }
+  .badge-weibo { background: var(--accent-weibo); }
+  .badge-baijia { background: var(--accent-baijia); }
+  .badge-gzh-personal { background: #07c160; }
+  .badge-gzh-org { background: #576b95; }
+  .badge-web { background: var(--primary); }
+  .badge-all { background: #6b7280; }
+
+  /* Template blocks */
+  .template {
+    background: #f1f5f9; border-radius: 8px; padding: 20px;
+    margin: 16px 0; font-size: 0.92em;
+  }
+  .template .label {
+    display: inline-block; font-size: 0.75em; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px;
+    color: var(--primary); margin-bottom: 12px;
+  }
+  .template .field {
+    margin: 8px 0; padding: 4px 8px;
+    background: #fff; border-radius: 4px;
+  }
+  .template .field strong { color: var(--muted); font-size: 0.85em; }
+  .template .field .placeholder {
+    color: #94a3b8; font-style: italic;
+  }
+
+  /* Calendar */
+  .calendar-wrap { overflow-x: auto; }
+  .calendar { width: 100%; border-collapse: collapse; font-size: 0.88em; }
+  .calendar th {
+    background: var(--primary); color: white; padding: 10px 8px;
+    text-align: center; font-weight: 600;
+  }
+  .calendar td {
+    padding: 10px 8px; border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .calendar .date { font-weight: 700; color: var(--primary); white-space: nowrap; }
+  .calendar .task { margin: 4px 0; padding: 3px 6px; border-radius: 4px; font-size: 0.82em; }
+  .task-douyin { background: #ffe4e6; border-left: 3px solid var(--accent-douyin); }
+  .task-xhs { background: #ffe4e6; border-left: 3px solid var(--accent-xhs); }
+  .task-weibo { background: #fce7f3; border-left: 3px solid var(--accent-weibo); }
+  .task-baijia { background: #dbeafe; border-left: 3px solid var(--accent-baijia); }
+  .task-gzh-personal { background: #e8f5e9; border-left: 3px solid #07c160; }
+  .task-gzh-org { background: #e8eaf6; border-left: 3px solid #576b95; }
+
+  /* SOP */
+  .sop-step {
+    display: flex; gap: 16px; margin: 16px 0; align-items: flex-start;
+  }
+  .sop-num {
+    background: var(--primary); color: white; width: 32px; height: 32px;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-weight: 700; flex-shrink: 0; font-size: 0.9em;
+  }
+  .sop-content { flex: 1; }
+
+  /* Tips */
+  .tip {
+    background: var(--highlight); border-radius: 8px; padding: 16px 20px;
+    margin: 16px 0; font-size: 0.92em;
+  }
+  .tip::before { content: "💡 "; }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .header h1 { font-size: 1.5em; }
+    .container { padding: 20px 12px; }
+  }
+
+  /* Print */
+  @media print {
+    .header { background: #1e3a5f !important; -webkit-print-color-adjust: exact; }
+    .card { break-inside: avoid; }
+    body { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<div class="header">
+  <h1>📐 经纬数学 · 社交媒体运营工具包</h1>
+  <p>网站 + 社交 + 公众号矩阵 · 从内容规划到每日执行</p>
+</div>
+
+<div class="container">
+
+<!-- ==================== 一、总体策略 ==================== -->
+<div class="section">
+  <h2 class="section-title">一、总体策略：网站为根，社交为枝</h2>
+
+  <div class="card">
+    <h3>🔗 流量闭环模型</h3>
+    <div style="text-align:center;padding:20px 0;font-size:1.05em;">
+      <div style="display:inline-block;background:#dbeafe;padding:10px 20px;border-radius:8px;margin:4px;">
+        社交平台<br><small>碎片化内容 · 吸引关注</small>
+      </div>
+      <span style="font-size:1.5em;margin:0 8px;">→</span>
+      <div style="display:inline-block;background:#dcfce7;padding:10px 20px;border-radius:8px;margin:4px;">
+        经纬数学网站<br><small>完整资源 · 深度服务</small>
+      </div>
+      <span style="font-size:1.5em;margin:0 8px;">→</span>
+      <div style="display:inline-block;background:#fef3c7;padding:10px 20px;border-radius:8px;margin:4px;">
+        付费转化<br><small>网课 · 会员</small>
+      </div>
+    </div>
+    <p style="color:var(--muted);font-size:0.9em;text-align:center;margin-top:12px;">
+      社交内容每一条都是网站的「广告位」，网站每一页都是社交内容的「素材库」
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>📊 六平台差异化定位</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:0.92em;">
+      <tr style="border-bottom:1px solid var(--border);">
+        <th style="padding:12px 8px;text-align:left;">平台</th>
+        <th style="padding:12px 8px;text-align:left;">内容特点</th>
+        <th style="padding:12px 8px;text-align:left;">更新频率</th>
+        <th style="padding:12px 8px;text-align:left;">核心目标</th>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:12px 8px;"><span class="badge badge-douyin">抖音</span></td>
+        <td style="padding:12px 8px;">15-60秒解题短视频，语速快、节奏紧凑</td>
+        <td style="padding:12px 8px;">每天1条</td>
+        <td style="padding:12px 8px;">最大化曝光，吸引考研人群关注</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:12px 8px;"><span class="badge badge-xhs">小红书</span></td>
+        <td style="padding:12px 8px;">图文笔记：考点总结、复习攻略、错题分析</td>
+        <td style="padding:12px 8px;">每周3-4篇</td>
+        <td style="padding:12px 8px;">建立专业形象，积累精准粉丝</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:12px 8px;"><span class="badge badge-weibo">微博</span></td>
+        <td style="padding:12px 8px;">每日一题、考研资讯、轻松互动</td>
+        <td style="padding:12px 8px;">每天1-2条</td>
+        <td style="padding:12px 8px;">保持活跃，话题营销</td>
+      </tr>
+      <tr>
+        <td style="padding:12px 8px;"><span class="badge badge-baijia">百家号</span></td>
+        <td style="padding:12px 8px;">深度长文：解题方法论、命题趋势分析</td>
+        <td style="padding:12px 8px;">每周1-2篇</td>
+        <td style="padding:12px 8px;">SEO搜索流量，知识付费铺垫</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:12px 8px;"><span class="badge badge-gzh-personal">个人公众号</span></td>
+        <td style="padding:12px 8px;">个人IP · 考研故事 · 学习方法 · 粉丝互动</td>
+        <td style="padding:12px 8px;">每周1-2篇</td>
+        <td style="padding:12px 8px;">建立信任，打造「老师」人设</td>
+      </tr>
+      <tr>
+        <td style="padding:12px 8px;"><span class="badge badge-gzh-org">机构公众号</span></td>
+        <td style="padding:12px 8px;">课程介绍 · 学员捷报 · 招生信息 · 行业洞察</td>
+        <td style="padding:12px 8px;">每周1篇</td>
+        <td style="padding:12px 8px;">品牌背书，招生转化</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== 二、内容模板 ==================== -->
+<div class="section">
+  <h2 class="section-title">二、内容模板库 · 直接套用</h2>
+
+  <!-- 抖音模板 -->
+  <div class="card">
+    <h3><span class="badge badge-douyin">抖音</span> 短视频脚本模板</h3>
+    <p style="color:var(--muted);font-size:0.9em;margin-bottom:12px;">
+      时长：30-60秒 | 节奏：前3秒抓眼球 → 10秒讲题 → 5秒总结 → 2秒引导关注
+    </p>
+
+    <div class="template">
+      <div class="label">📝 模板A：秒杀技巧型</div>
+      <div class="field">
+        <strong>标题/封面文字：</strong><br>
+        <span class="placeholder">【极限计算】遇到 0/0 型，泰勒展开一招搞定！</span>
+      </div>
+      <div class="field">
+        <strong>口播脚本：</strong><br>
+        <span style="color:#555;">
+          考研数学里遇到 0/0 型极限怎么办？<br><br>
+          别急着洛必达！试试泰勒展开，3 步出答案——<br>
+          第一步，写出 sin x = x - x³/6 + ...<br>
+          第二步，代入化简<br>
+          第三步，x → 0，答案直接 1/6！<br><br>
+          完整解题过程和高清板书，去我主页看！<br>
+          关注经纬数学，考研数学不走弯路。
+        </span>
+      </div>
+      <div class="field">
+        <strong>画面提示：</strong>手写板/平板录屏 + 同步讲解，红色标注关键步骤
+      </div>
+      <div class="field">
+        <strong>话题标签：</strong>#考研数学 #数学一 #极限计算 #经纬数学
+      </div>
+    </div>
+
+    <div class="template">
+      <div class="label">📝 模板B：易错点避坑型</div>
+      <div class="field">
+        <strong>标题/封面文字：</strong><br>
+        <span class="placeholder">90%的人都会错！这个积分你算对了吗？</span>
+      </div>
+      <div class="field">
+        <strong>口播脚本：</strong><br>
+        <span style="color:#555;">
+          这道不定积分 ∫ 1/(x²+1) dx，你第一反应是不是 ln(x²+1)？<br>
+          错！正确答案是 arctan x + C。<br>
+          为什么？因为 d/dx(ln(x²+1)) = 2x/(x²+1)，跟原题不是同一个东西！<br>
+          记住：∫ 1/(x²+a²) dx = (1/a)·arctan(x/a) + C<br>
+          你学会了吗？双击收藏，考试别出错。
+        </span>
+      </div>
+      <div class="field">
+        <strong>话题标签：</strong>#考研数学避坑 #不定积分 #易错题 #经纬数学
+      </div>
+    </div>
+
+    <div class="template">
+      <div class="label">📝 模板C：真题精讲型</div>
+      <div class="field">
+        <strong>标题/封面文字：</strong><br>
+        <span class="placeholder">2024数一真题第18题 · 曲面积分 · 3分钟吃透</span>
+      </div>
+      <div class="field">
+        <strong>口播脚本：</strong><br>
+        <span style="color:#555;">
+          2024数一的曲面积分大题，很多人栽了。<br>
+          其实这道题的核心就一个——高斯公式！<br>
+          先把曲面补成闭区域，再用高斯公式把面积分化成三重积分。<br>
+          关键一步：注意方向！外侧取正，内侧取负！<br>
+          完整16年真题解析，都在经纬数学网站，评论区有链接。
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 小红书模板 -->
+  <div class="card">
+    <h3><span class="badge badge-xhs">小红书</span> 图文笔记模板</h3>
+    <p style="color:var(--muted);font-size:0.9em;margin-bottom:12px;">
+      图片比例 3:4 | 首图最重要 | 正文多用 emoji 分段 | 文末必加引导
+    </p>
+
+    <div class="template">
+      <div class="label">📝 模板A：考点总结卡片</div>
+      <div class="field">
+        <strong>标题：</strong><br>
+        <span class="placeholder">📐 高数极限计算 · 一页纸全搞定！</span>
+      </div>
+      <div class="field">
+        <strong>首图（文字卡）：</strong><br>
+        <span style="color:#555;">
+          大标题：极限计算 7 种方法<br>
+          小字：等价无穷小 | 洛必达 | 泰勒展开 | 夹逼 | 单调有界 | 定积分定义 | 级数
+        </span>
+      </div>
+      <div class="field">
+        <strong>正文：</strong><br>
+        <span style="color:#555;">
+          极限是考研数学的基石，选择题必考、大题前置步骤。<br>
+          <br>
+          📌 7种方法适用场景：<br>
+          ① 等价无穷小 → 简单乘除式<br>
+          ② 洛必达 → 0/0 或 ∞/∞，能求导<br>
+          ③ 泰勒展开 → 复杂函数组合<br>
+          ④ 夹逼定理 → 有界函数 × 无穷小<br>
+          ⑤ 单调有界定 → 递推数列极限<br>
+          ⑥ 定积分定义 → 求和式求极限<br>
+          ⑦ 级数 → 项趋于 0<br>
+          <br>
+          🔗 完整 650 题题库练习，在经纬数学网站 (评论区👇)<br>
+          <br>
+          #考研数学 #高数 #极限 #数学一 #经纬数学
+        </span>
+      </div>
+    </div>
+
+    <div class="template">
+      <div class="label">📝 模板B：错题笔记型</div>
+      <div class="field">
+        <strong>标题：</strong><br>
+        <span class="placeholder">😭 这道线代题我错了3次，终于搞懂了</span>
+      </div>
+      <div class="field">
+        <strong>正文：</strong><br>
+        <span style="color:#555;">
+          相似对角化，多少人的噩梦……<br>
+          <br>
+          我的血泪教训：<br>
+          ❌ 错误1：n阶矩阵相似对角化 ≠ n个特征值互异<br>
+          ✅ 纠正：只要每个特征值的几何重数 = 代数重数就行<br>
+          <br>
+          ❌ 错误2：正交矩阵的逆 = 转置，但别当成所有矩阵都适用！<br>
+          ✅ 纠正：只有实对称矩阵才一定能正交对角化<br>
+          <br>
+          这俩坑，你踩过吗？评论区说说你踩过的线代坑👇<br>
+          <br>
+          #考研数学 #线性代数 #相似对角化 #经纬数学
+        </span>
+      </div>
+    </div>
+
+    <div class="template">
+      <div class="label">📝 模板C：备考规划型</div>
+      <div class="field">
+        <strong>标题：</strong><br>
+        <span class="placeholder">📅 考研数学 · 6月复习计划（保姆级）</span>
+      </div>
+      <div class="field">
+        <strong>正文：</strong><br>
+        <span style="color:#555;">
+          进入6月，强化阶段的黄金期！<br>
+          <br>
+          📆 本月目标：完成高数上册核心章节强化<br>
+          <br>
+          第1周 → 极限与连续（配套 50 题）<br>
+          第2周 → 导数与微分（配套 50 题）<br>
+          第3周 → 中值定理（配套 50 题）<br>
+          第4周 → 不定积分+定积分（配套 100 题）<br>
+          <br>
+          每日安排：<br>
+          ⏰ 上午 2h → 看视频课 + 笔记<br>
+          ⏰ 下午 2h → 刷题库 + 错题整理<br>
+          ⏰ 晚上 1h → 复习前一天错题<br>
+          <br>
+          📥 完整复习计划表 + 650题库，都在经纬数学网站~<br>
+          <br>
+          #考研复习计划 #数学一 #6月备考 #经纬数学
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 微博模板 -->
+  <div class="card">
+    <h3><span class="badge badge-weibo">微博</span> 帖子模板</h3>
+    <p style="color:var(--muted);font-size:0.9em;margin-bottom:12px;">
+      140字核心 + 配图 | 最佳发布时间：早8点、午12点、晚9点
+    </p>
+
+    <div class="template">
+      <div class="label">📝 模板A：每日一题</div>
+      <div class="field">
+        <strong>文案：</strong><br>
+        <span style="color:#555;">
+          【每日一题 · Day 47】<br>
+          设 f(x) 在 [0,1] 上连续，(0,1) 内可导，f(0)=0, f(1)=1。<br>
+          证明：存在 ξ∈(0,1)，使 f'(ξ)=2ξ。<br>
+          <br>
+          提示：构造辅助函数。<br>
+          评论区交作业，明天公布答案！<br>
+          <br>
+          #考研数学 #每日一题 #中值定理
+        </span>
+      </div>
+    </div>
+
+    <div class="template">
+      <div class="label">📝 模板B：考研倒计时</div>
+      <div class="field">
+        <strong>文案：</strong><br>
+        <span style="color:#555;">
+          ⏳ 距离2027考研还有 198 天<br>
+          <br>
+          今天的你，比昨天多学了一点点吗？<br>
+          别焦虑，按节奏来——<br>
+          经纬数学的复习计划表，科学安排每一天。<br>
+          <br>
+          #考研倒计时 #数学一 #经纬数学
+        </span>
+      </div>
+    </div>
+
+    <div class="template">
+      <div class="label">📝 模板C：轻松互动型</div>
+      <div class="field">
+        <strong>文案：</strong><br>
+        <span style="color:#555;">
+          来投票！<br>
+          考研数学里，你最头疼的是哪个？<br>
+          <br>
+          A. 极限计算 ←<br>
+          B. 中值定理证明<br>
+          C. 曲面积分<br>
+          D. 级数求和<br>
+          <br>
+          评论区告诉我，下期讲得票最高的！<br>
+          #考研数学 #灵魂拷问
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 百家号模板 -->
+  <div class="card">
+    <h3><span class="badge badge-baijia">百家号</span> 深度文章模板</h3>
+    <p style="color:var(--muted);font-size:0.9em;margin-bottom:12px;">
+      字数 1500-3000 | 配图 3-5 张 | 关键词 SEO 优化
+    </p>
+
+    <div class="template">
+      <div class="label">📝 文章框架</div>
+      <div class="field">
+        <strong>标题公式：</strong><br>
+        <span class="placeholder">[数字] + [考点] + [承诺价值] + (年份)</span><br>
+        <span style="color:#555;">
+          例：2027考研数学 | 5种必考的极限计算方法，第3种80%的人不会
+        </span>
+      </div>
+      <div class="field">
+        <strong>正文结构：</strong><br>
+        <span style="color:#555;">
+          <b>开头（200字）：</b>痛点引入 → "你是不是也遇到过……" → 引出主题<br>
+          <b>正文（2000字）：</b><br>
+          &nbsp;&nbsp;方法一：概念 + 例题（带详细步骤）+ 注意事项<br>
+          &nbsp;&nbsp;方法二：……<br>
+          &nbsp;&nbsp;方法三：……<br>
+          <b>结尾（300字）：</b>总结对比表格 + 推荐练习资源（链接网站题库）<br>
+          <b>文末引导：</b>"强烈建议收藏+转发，备考路上随时复习。"
+        </span>
+      </div>
+      <div class="field">
+        <strong>配图清单：</strong><br>
+        ① 封面图（带标题大字）② 方法对比表 ③ 例题解题步骤截图 ④ 知识框架图 ⑤ 网站二维码
+      </div>
+    </div>
+  </div>
+
+  <!-- 公众号模板 -->
+  <div class="card">
+    <h3><span class="badge badge-gzh-personal">个人公众号</span> + <span class="badge badge-gzh-org">机构公众号</span> 双号运营策略</h3>
+    
+    <div style="background:#f0fdf4;border-radius:8px;padding:16px;margin:16px 0;">
+      <strong style="color:#07c160;">🔑 核心策略：双号分工，互相导流</strong>
+      <p style="color:var(--muted);margin-top:8px;font-size:0.9em;">
+        个人号走「人设」路线，机构号走「品牌」路线。个人号的文章底部放机构号关注引导，机构号的菜单栏放个人号入口。两个号各发各的，但互相背书。
+      </p>
+    </div>
+
+    <div class="template">
+      <div class="label">📝 个人公众号 · 模板A：考研故事/心得型</div>
+      <div class="field">
+        <strong>标题：</strong><br>
+        <span class="placeholder">从数学系教师的角度，聊聊考研数学到底该怎么学</span>
+      </div>
+      <div class="field">
+        <strong>正文框架：</strong><br>
+        <span style="color:#555;">
+          <b>开头（引共鸣）：</b>"每年这个时候，都有学生问我同一个问题：老师，考研数学到底该怎么复习？"<br><br>
+          <b>正文（干货+故事）：</b><br>
+          ① 我的观察：这些年见过的最常见的三个误区<br>
+          ② 我的建议：不同基础的学生，应该走不同的路线<br>
+          ③ 我的方法：经纬数学的复习体系是怎么设计的<br><br>
+          <b>结尾（软转化）：</b>"如果你正在备考，我在经纬数学为你准备了650道分级练习题，欢迎来练。"<br>
+          → 文末放网站链接 + 个人号二维码
+        </span>
+      </div>
+    </div>
+
+    <div class="template">
+      <div class="label">📝 个人公众号 · 模板B：每周答疑汇总型</div>
+      <div class="field">
+        <strong>标题：</strong><br>
+        <span class="placeholder">本周高频问题 TOP 5 | 你关心的我都答了</span>
+      </div>
+      <div class="field">
+        <strong>正文框架：</strong><br>
+        <span style="color:#555;">
+          收集学生在各平台（抖音评论区、小红书私信、微博评论）提的问题，精选 5 个最典型的，写成问答形式。<br><br>
+          每期一个主题，比如：
+          <br>· 「极限计算」专场：洛必达到底什么时候能用？
+          <br>· 「中值定理」专场：构造辅助函数有没有套路？
+          <br>· 「线代」专场：特征值和特征向量怎么记？
+        </span>
+      </div>
+    </div>
+
+    <div class="template">
+      <div class="label">📝 个人公众号 · 模板C：备考干货/工具型</div>
+      <div class="field">
+        <strong>标题：</strong><br>
+        <span class="placeholder">考研数学 · 高数公式大全（PDF可打印）</span>
+      </div>
+      <div class="field">
+        <strong>正文框架：</strong><br>
+        <span style="color:#555;">
+          提供实用资源，引导关注。<br><br>
+          <b>开头：</b>"这份公式表是我整理了5年真题考点后浓缩的，考前背一遍，稳拿10分。"<br>
+          <b>正文：</b>公式列表预览图（2-3张）<br>
+          <b>结尾：</b>"完整PDF在经纬数学网站免费下载，链接在文末。"<br>
+          → 同时引导关注公众号：「后台回复『公式』获取下载链接」
+        </span>
+      </div>
+    </div>
+
+    <div style="border-top:2px dashed var(--border);margin:20px 0;padding-top:16px;"></div>
+
+    <div class="template">
+      <div class="label">📝 机构公众号 · 模板A：课程/服务介绍型</div>
+      <div class="field">
+        <strong>标题：</strong><br>
+        <span class="placeholder">2027考研数学 · 暑期集训营招生启动</span>
+      </div>
+      <div class="field">
+        <strong>正文框架：</strong><br>
+        <span style="color:#555;">
+          <b>开头：</b>暑期是考研数学的黄金窗口 → 用数据说明暑期复习的重要性<br>
+          <b>正文：</b>课程体系（表格）+ 师资介绍 + 往届学员成绩<br>
+          <b>结尾：</b>报名方式 + 早鸟优惠 + 二维码
+        </span>
+      </div>
+    </div>
+
+    <div class="template">
+      <div class="label">📝 机构公众号 · 模板B：学员捷报型</div>
+      <div class="field">
+        <strong>标题：</strong><br>
+        <span class="placeholder">恭喜！2026届学员数学一平均分 128 分</span>
+      </div>
+      <div class="field">
+        <strong>正文框架：</strong><br>
+        <span style="color:#555;">
+          <b>开头：</b>晒成绩单截图（打码）<br>
+          <b>正文：</b>2-3 个学员故事（"从90分到135分的蜕变"）<br>
+          <b>结尾：</b>"下一个故事的主角，会是你吗？" + 报名入口
+        </span>
+      </div>
+    </div>
+
+    <div class="template">
+      <div class="label">📝 机构公众号 · 模板C：行业观点/趋势型</div>
+      <div class="field">
+        <strong>标题：</strong><br>
+        <span class="placeholder">2027考研数学命题趋势预测：这3个变化你一定要知道</span>
+      </div>
+      <div class="field">
+        <strong>正文框架：</strong><br>
+        <span style="color:#555;">
+          展示机构专业度，建立权威感。<br>
+          分析近5年真题变化趋势 + 2027考纲预测 + 备考应对策略。<br>
+          文末自然带出机构课程。
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== 三、网站→社交 内容转化 ==================== -->
+<div class="section">
+  <h2 class="section-title">三、网站内容 → 社交内容转化指南</h2>
+
+  <div class="card">
+    <h3>♻️ 一鱼多吃：一个知识点，六个平台发</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:0.88em;">
+      <tr style="border-bottom:1px solid var(--border);">
+        <th style="padding:10px 8px;text-align:left;width:12%;">网站资源</th>
+        <th style="padding:10px 8px;text-align:left;width:14%;">抖音版</th>
+        <th style="padding:10px 8px;text-align:left;width:14%;">小红书版</th>
+        <th style="padding:10px 8px;text-align:left;width:14%;">微博版</th>
+        <th style="padding:10px 8px;text-align:left;width:14%;">百家号版</th>
+        <th style="padding:10px 8px;text-align:left;width:16%;">个人公众号版</th>
+        <th style="padding:10px 8px;text-align:left;width:16%;">机构公众号版</th>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:10px 8px;">一道典型题</td>
+        <td style="padding:10px 8px;">30秒精讲短视频</td>
+        <td style="padding:10px 8px;">图文解题步骤</td>
+        <td style="padding:10px 8px;">每日一题互动</td>
+        <td style="padding:10px 8px;">同类题方法论</td>
+        <td style="padding:10px 8px;">答疑汇总/故事</td>
+        <td style="padding:10px 8px;">-</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:10px 8px;">一个章节知识点</td>
+        <td style="padding:10px 8px;">秒杀口诀 + 例题</td>
+        <td style="padding:10px 8px;">考点总结卡片</td>
+        <td style="padding:10px 8px;">考试频率投票</td>
+        <td style="padding:10px 8px;">深度分析长文</td>
+        <td style="padding:10px 8px;">学习方法+故事</td>
+        <td style="padding:10px 8px;">课程融入介绍</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:10px 8px;">真题解析</td>
+        <td style="padding:10px 8px;">真题拆解动画</td>
+        <td style="padding:10px 8px;">真题笔记/手写</td>
+        <td style="padding:10px 8px;">回顾今日真题</td>
+        <td style="padding:10px 8px;">命题趋势分析</td>
+        <td style="padding:10px 8px;">教师视角精讲</td>
+        <td style="padding:10px 8px;">趋势预测+课程</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 8px;">复习计划</td>
+        <td style="padding:10px 8px;">30秒说清本周任务</td>
+        <td style="padding:10px 8px;">精美月历图</td>
+        <td style="padding:10px 8px;">#考研倒计时</td>
+        <td style="padding:10px 8px;">备考方法论文</td>
+        <td style="padding:10px 8px;">月度规划推送</td>
+        <td style="padding:10px 8px;">集训营时间表</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="tip">
+    <strong>效率技巧：</strong>每周选一道题库里的经典题 → ① 拍抖音讲解 ② 做小红书图文笔记 ③ 发微博互动 ④ 写成百家号深度文 ⑤ 公众号写一篇心得/答疑。一道题产出 5 条内容，耗时约 3 小时，覆盖所有平台。
+  </div>
+</div>
+
+<!-- ==================== 四、月度内容日历 ==================== -->
+<div class="section">
+  <h2 class="section-title">四、6月内容日历（示例）</h2>
+  <p style="color:var(--muted);font-size:0.9em;margin-bottom:16px;">
+    以「高数 · 导数与微分」为核心主题，同步推进各平台
+  </p>
+
+  <div class="calendar-wrap">
+    <table class="calendar">
+      <tr>
+        <th style="width:9%">日期</th>
+        <th style="width:15%"><span class="badge badge-douyin">抖音</span></th>
+        <th style="width:14%"><span class="badge badge-xhs">小红书</span></th>
+        <th style="width:13%"><span class="badge badge-weibo">微博</span></th>
+        <th style="width:13%"><span class="badge badge-baijia">百家号</span></th>
+        <th style="width:18%"><span class="badge badge-gzh-personal">个人公众号</span></th>
+        <th style="width:18%"><span class="badge badge-gzh-org">机构公众号</span></th>
+      </tr>
+      <tr>
+        <td class="date">6/10 周二</td>
+        <td><div class="task task-douyin">导数定义秒杀：左右导数一致性</div></td>
+        <td>-</td>
+        <td><div class="task task-weibo">每日一题：导数定义选择题</div></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td class="date">6/11 周三</td>
+        <td>-</td>
+        <td><div class="task task-xhs">导数公式一页纸总结卡片</div></td>
+        <td><div class="task task-weibo">互动：链式法则你会用吗？</div></td>
+        <td>-</td>
+        <td><div class="task task-gzh-personal">推送：学导数最常犯的5个错误</div></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td class="date">6/12 周四</td>
+        <td><div class="task task-douyin">高数易错：复合函数求导别再漏</div></td>
+        <td>-</td>
+        <td><div class="task task-weibo">每日一题 + 昨日答案</div></td>
+        <td><div class="task task-baijia">导数计算 · 5类必考题型全解</div></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td class="date">6/13 周五</td>
+        <td>-</td>
+        <td><div class="task task-xhs">隐函数求导3种方法对比</div></td>
+        <td><div class="task task-weibo">考研倒计时海报</div></td>
+        <td>-</td>
+        <td>-</td>
+        <td><div class="task task-gzh-org">推文：暑期集训营早鸟报名</div></td>
+      </tr>
+      <tr>
+        <td class="date">6/14 周六</td>
+        <td><div class="task task-douyin">参数方程求导 + 真题实战</div></td>
+        <td><div class="task task-xhs">周末复习计划（引导网站）</div></td>
+        <td>-</td>
+        <td>-</td>
+        <td><div class="task task-gzh-personal">心得：从老师角度看什么叫「学会」导数</div></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td class="date">6/15 周日</td>
+        <td>-</td>
+        <td>-</td>
+        <td><div class="task task-weibo">本周知识点回顾 + 投票下周围绕主题</div></td>
+        <td><div class="task task-baijia">考研数学 · 6月如何进入强化阶段</div></td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td class="date" style="color:var(--muted);">6/16~6/22</td>
+        <td colspan="6" style="text-align:center;color:var(--muted);padding:16px;">
+          <b>下周主题：微分中值定理</b> ｜ 同样节奏：抖音3条 + 小红书3篇 + 微博5条 + 百家号2篇 + 个人公众号2篇 + 机构公众号1篇
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="tip" style="margin-top:16px;">
+    <strong>每周固定节奏：</strong>抖音 ≥ 3 条 | 小红书 ≥ 3 篇 | 微博 ≥ 5 条 | 百家号 ≥ 1 篇 | 个人公众号 ≥ 1 篇 | 机构公众号 ≥ 1 篇。以此为底线，多则更好。
+  </div>
+</div>
+
+<!-- ==================== 五、发布 SOP ==================== -->
+<div class="section">
+  <h2 class="section-title">五、发布 SOP · 从选题到上线</h2>
+
+  <div class="card">
+    <div class="sop-step">
+      <div class="sop-num">1</div>
+      <div class="sop-content">
+        <strong>选题（5分钟）</strong>
+        <p style="color:var(--muted);">
+          从网站题库/真题中选 1 道经典题 → 确认目标平台和内容形式
+        </p>
+      </div>
+    </div>
+    <div class="sop-step">
+      <div class="sop-num">2</div>
+      <div class="sop-content">
+        <strong>制作（15-30分钟）</strong>
+        <p style="color:var(--muted);">
+          抖音：手机录制讲解 + 剪映简单剪辑<br>
+          小红书：Canva/稿定设计做图 → 写文案<br>
+          微博：写好 140 字 + 配图<br>
+          百家号：写文章框架 → 补充例题步骤 → 配图<br>
+          个人公众号：写文章（800-1500字）+ 排版<br>
+          机构公众号：写文章（500-1000字）+ 排版
+        </p>
+      </div>
+    </div>
+    <div class="sop-step">
+      <div class="sop-num">3</div>
+      <div class="sop-content">
+        <strong>发布（2分钟）</strong>
+        <p style="color:var(--muted);">
+          选最佳时间段发布 → 加话题标签 → 文末加网站引导（评论区或主页）
+        </p>
+      </div>
+    </div>
+    <div class="sop-step">
+      <div class="sop-num">4</div>
+      <div class="sop-content">
+        <strong>互动（碎片时间）</strong>
+        <p style="color:var(--muted);">
+          发布后 1 小时内回复评论 → 第二天查看数据 → 每周复盘调整
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>⏰ 各平台最佳发布时间</h3>
+    <table style="width:100%;font-size:0.9em;">
+      <tr><td style="padding:6px 12px;width:100px;"><span class="badge badge-douyin">抖音</span></td><td>早 7:30-8:30 / 午 12:00-13:00 / 晚 19:00-21:00</td></tr>
+      <tr><td style="padding:6px 12px;"><span class="badge badge-xhs">小红书</span></td><td>早 8:00-9:00 / 午 12:00-13:00 / 晚 20:00-21:30</td></tr>
+      <tr><td style="padding:6px 12px;"><span class="badge badge-weibo">微博</span></td><td>早 8:00-10:00 / 晚 20:00-22:00</td></tr>
+      <tr><td style="padding:6px 12px;"><span class="badge badge-baijia">百家号</span></td><td>早 7:00-8:00（审核快，早发早收录）</td></tr>
+      <tr><td style="padding:6px 12px;"><span class="badge badge-gzh-personal">个人公众号</span></td><td>晚 20:00-21:30（用户睡前阅读高峰）</td></tr>
+      <tr><td style="padding:6px 12px;"><span class="badge badge-gzh-org">机构公众号</span></td><td>工作日上午 10:00-11:00（家长/学生上课间隙）</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ==================== 六、数据追踪 ==================== -->
+<div class="section">
+  <h2 class="section-title">六、数据追踪表 · 每周复盘</h2>
+
+  <div class="card">
+    <table style="width:100%;border-collapse:collapse;font-size:0.88em;">
+      <tr style="border-bottom:1px solid var(--border);">
+        <th style="padding:8px;text-align:left;">平台</th>
+        <th style="padding:8px;text-align:center;">发布数</th>
+        <th style="padding:8px;text-align:center;">播放/阅读</th>
+        <th style="padding:8px;text-align:center;">互动</th>
+        <th style="padding:8px;text-align:center;">新增粉丝</th>
+        <th style="padding:8px;text-align:center;">网站引流</th>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;"><span class="badge badge-douyin">抖音</span></td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;"><span class="badge badge-xhs">小红书</span></td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;"><span class="badge badge-weibo">微博</span></td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;"><span class="badge badge-baijia">百家号</span></td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;"><span class="badge badge-gzh-personal">个人公众号</span></td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;"><span class="badge badge-gzh-org">机构公众号</span></td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+        <td style="padding:8px;text-align:center;color:var(--muted);">____</td>
+      </tr>
+    </table>
+    <p style="margin-top:12px;color:var(--muted);font-size:0.85em;">
+      每周日用 5 分钟填一次，月底就知道哪个平台、哪类内容最有效。
+    </p>
+  </div>
+</div>
+
+<!-- ==================== 七、常见问题 ==================== -->
+<div class="section">
+  <h2 class="section-title">七、常见问题 & 建议</h2>
+
+  <div class="card">
+    <h3>❓ 没时间做这么多内容怎么办？</h3>
+    <p style="color:var(--muted);">
+      先只做 1-2 个平台（建议 抖音 + 小红书），跑通流程后再拓展。宁可少而精，不要多而水。
+    </p>
+  </div>
+  <div class="card">
+    <h3>❓ 不会剪辑视频？</h3>
+    <p style="color:var(--muted);">
+      抖音用「剪映」一键成片，平板写题录屏直接配语音。不需要高级特效，内容有用才是王道。
+    </p>
+  </div>
+  <div class="card">
+    <h3>❓ 网站备案还没下来，现在就开始发吗？</h3>
+    <p style="color:var(--muted);">
+      <strong>现在就开始！</strong>先积累粉丝，备案通过后直接引流。文案里可以先写「经纬数学」品牌名，等网站可访问后再放链接。
+    </p>
+  </div>
+  <div class="card">
+    <h3>❓ 公众号文章谁写？</h3>
+    <p style="color:var(--muted);">
+      告诉 Buddy 选题（比如「写一篇关于极限计算的公众号推文」），我把文章框架和正文写好，你去公众号后台排版发布就行。个人号和机构号可以写不同风格。
+    </p>
+  </div>
+  <div class="card">
+    <h3>❓ 两个公众号会不会互相抢流量？</h3>
+    <p style="color:var(--muted);">
+      不会。个人号走「人设信任」路线，机构号走「品牌专业」路线，目标人群不同。反而可以互相导流：个人号读者想看课程 → 引导关注机构号；机构号学员想跟老师学 → 引导关注个人号。
+    </p>
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<div style="text-align:center;padding:40px 20px;color:var(--muted);font-size:0.85em;">
+  经纬数学 · jingweimath.com · 考研数学一站式备考平台
+</div>
+
+</body>
+</html>

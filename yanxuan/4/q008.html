@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>线性无关组的线性组合相关性判定（行列式法｜经纬研选（四） 第8题 - 经纬考研数学</title>
+<meta name="description" content="经纬研选（四） 第8题：设向量组 α_1,α_2,α_3 线性无关，判定下列向量组的线性相关性：
+1) α_1+α_2,\ α_2+α_3,\ α_1+α_2+α_3 ；
+2) α_1。附答案与分步解析，考点：线性无关组的线性组合相关性判定（行列式法。">
+<meta name="keywords" content="考研数学一,线性无关组的线性组合相关性判定（行列式法,经纬研选（四）,经纬研选,考研数学练习题,考研数学习题,行列式,矩阵与秩">
+<meta name="robots" content="index, follow">
+<meta name="author" content="经纬考研数学">
+<link rel="canonical" href="https://jingweimath.com/yanxuan/4/q008.html">
+<meta property="og:title" content="线性无关组的线性组合相关性判定（行列式法｜经纬研选（四） 第8题 - 经纬考研数学">
+<meta property="og:description" content="经纬研选（四） 第8题：设向量组 α_1,α_2,α_3 线性无关，判定下列向量组的线性相关性：
+1) α_1+α_2,\ α_2+α_3,\ α_1+α_2+α_3 ；
+2) α_1。附答案与分步解析，考点：线性无关组的线性组合相关性判定（行列式法。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jingweimath.com/yanxuan/4/q008.html">
+<meta property="og:site_name" content="经纬考研数学">
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<link rel="stylesheet" href="../../yanxuan/yanxuan.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "线性无关组的线性组合相关性判定（行列式法｜经纬研选（四） 第8题 - 经纬考研数学",
+  "description": "经纬研选（四） 第8题：设向量组 α_1,α_2,α_3 线性无关，判定下列向量组的线性相关性：\n1) α_1+α_2,\\ α_2+α_3,\\ α_1+α_2+α_3 ；\n2) α_1。附答案与分步解析，考点：线性无关组的线性组合相关性判定（行列式法。",
+  "url": "https://jingweimath.com/yanxuan/4/q008.html",
+  "inLanguage": "zh-CN",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "https://jingweimath.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "经纬研选",
+        "item": "https://jingweimath.com/comprehensive.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "在线题库",
+        "item": "https://jingweimath.com/yanxuan/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "经纬研选（四）",
+        "item": "https://jingweimath.com/yanxuan/4/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "第8题",
+        "item": "https://jingweimath.com/yanxuan/4/q008.html"
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "Question",
+    "name": "经纬研选（四） 第8题",
+    "text": "设向量组 α_1,α_2,α_3 线性无关，判定下列向量组的线性相关性：\n1) α_1+α_2,\\ α_2+α_3,\\ α_1+α_2+α_3 ；\n2) α_1-α_2+2α_3,\\ α_2-α_3,\\ 2α_1-α_2+3α_3 。",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "写成 (β_1,β_2,β_3)=(α_1,α_2,α_3)C ，则 β 组线性无关 iff |C|≠0 。\n\n1) C= 1 0 1 ; 1 1 1 ; 0 1 1 ， |C|=1·(1-0)+1·(1-0)=1+1=2≠0 （按第一行展开： 1 1 1 ; 1 1 -0+1 1 1 ; 0 1 =0+1=1 ）。\n\n精确计算： |C|=1· 1 1 ; 1 1 -0· 1 1 ; 0 1 +1· 1 1 ; 0 1 =0-0+1=1≠0 。线性无关。\n\n2) C= 1 0 2 ; -1 1 -1 ; 2 -1 3 ， |C|=1 1 -1 ; -1 3 +2 -1 1 ; 2 -1 =(3-1)+2(1-2)=2-2=0 。线性相关。\n\n答案：1) 线性无关；2) 线性相关。"
+    }
+  }
+}
+</script>
+<script>
+MathJax = { tex: { inlineMath: [["$","$"],["\\(","\\)"]] },
+  options: { skipHtmlTags: ["script","noscript","style","textarea","code"] } };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async
+  onerror="(function(){var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js';s.async=true;document.head.appendChild(s);})()"></script>
+</head>
+<body>
+<nav>
+  <a class="logo" href="../../index.html">经纬<span>考研数学</span></a>
+  <ul class="nav-links">
+    <li><a href="../../index.html"><span class="nav-icon">🏠</span>首页</a></li>
+    <li><a href="../../courses.html" class="nav-star"><span class="nav-icon">🎬</span>网课<br>视频</a></li>
+    <li><a href="../../plan.html"><span class="nav-icon">📅</span>复习<br>计划</a></li>
+    <li><a href="../../practice.html"><span class="nav-icon">🔥</span>题库<br>练习</a></li>
+    <li><a href="../../exams.html"><span class="nav-icon">📋</span>考研<br>真题</a></li>
+    <li><a href="../../comprehensive.html" class="active"><span class="nav-icon">📝</span>经纬<br>研选</a></li>
+    <li><a href="../../notes.html"><span class="nav-icon">📐</span>经纬<br>论数</a></li>
+  </ul>
+  <a href="../../index.html#pricing" class="nav-cta">立即报名</a>
+</nav>
+<div class="breadcrumb"><a href="../../index.html">首页</a> &rsaquo; <a href="../../comprehensive.html">经纬研选</a> &rsaquo; <a href="../../yanxuan/index.html">在线题库</a> &rsaquo; <a href="../index.html">经纬研选（四）</a> &rsaquo; <span>第8题</span></div>
+<div class="wrap">
+  <main class="main">
+    <div class="q-card">
+      <div class="q-head"><div class="q-num">8</div><div class="q-topic">线性无关组的线性组合相关性判定（行列式法</div></div>
+<div class="q-stem">设向量组 $\alpha_1,\alpha_2,\alpha_3$ 线性无关，判定下列向量组的线性相关性：
+1) $\alpha_1+\alpha_2,\ \alpha_2+\alpha_3,\ \alpha_1+\alpha_2+\alpha_3$；
+2) $\alpha_1-\alpha_2+2\alpha_3,\ \alpha_2-\alpha_3,\ 2\alpha_1-\alpha_2+3\alpha_3$。</div>
+    <noscript><div class="readable summary-text">设向量组 α_1,α_2,α_3 线性无关，判定下列向量组的线性相关性：
+1) α_1+α_2,\ α_2+α_3,\ α_1+α_2+α_3 ；
+2) α_1-α_2+2α_3,\ α_2-α_3,\ 2α_1-α_2+3α_3 。</div></noscript>
+
+      <details><summary>查看参考答案</summary>
+<div class="q-answer"><b>答案：1) 线性无关；2) 线性相关</b></div>
+      </details>
+
+    </div>
+    <details open><summary>完整解析</summary>
+      <div class="q-solution">
+      <p>写成 $(\beta_1,\beta_2,\beta_3)=(\alpha_1,\alpha_2,\alpha_3)C$，则 $\beta$ 组线性无关 $\iff |C|\ne0$。</p>
+      <noscript><p class="readable">写成 (β_1,β_2,β_3)=(α_1,α_2,α_3)C ，则 β 组线性无关 iff |C|≠0 。</p></noscript>
+      <p>1) $C=\begin{pmatrix}1&amp;0&amp;1\\1&amp;1&amp;1\\0&amp;1&amp;1\end{pmatrix}$，$|C|=1\cdot(1-0)+1\cdot(1-0)=1+1=2\ne0$（按第一行展开：$1\begin{vmatrix}1&amp;1\\1&amp;1\end{vmatrix}-0+1\begin{vmatrix}1&amp;1\\0&amp;1\end{vmatrix}=0+1=1$）。</p>
+      <noscript><p class="readable">1) C= 1 0 1 ; 1 1 1 ; 0 1 1 ， |C|=1·(1-0)+1·(1-0)=1+1=2≠0 （按第一行展开： 1 1 1 ; 1 1 -0+1 1 1 ; 0 1 =0+1=1 ）。</p></noscript>
+      <p>精确计算：$|C|=1\cdot\begin{vmatrix}1&amp;1\\1&amp;1\end{vmatrix}-0\cdot\begin{vmatrix}1&amp;1\\0&amp;1\end{vmatrix}+1\cdot\begin{vmatrix}1&amp;1\\0&amp;1\end{vmatrix}=0-0+1=1\ne0$。<b>线性无关</b>。</p>
+      <noscript><p class="readable">精确计算： |C|=1· 1 1 ; 1 1 -0· 1 1 ; 0 1 +1· 1 1 ; 0 1 =0-0+1=1≠0 。线性无关。</p></noscript>
+      <p>2) $C=\begin{pmatrix}1&amp;0&amp;2\\-1&amp;1&amp;-1\\2&amp;-1&amp;3\end{pmatrix}$，$|C|=1\begin{vmatrix}1&amp;-1\\-1&amp;3\end{vmatrix}+2\begin{vmatrix}-1&amp;1\\2&amp;-1\end{vmatrix}=(3-1)+2(1-2)=2-2=0$。<b>线性相关</b>。</p>
+      <noscript><p class="readable">2) C= 1 0 2 ; -1 1 -1 ; 2 -1 3 ， |C|=1 1 -1 ; -1 3 +2 -1 1 ; 2 -1 =(3-1)+2(1-2)=2-2=0 。线性相关。</p></noscript>
+      <p><b>答案：1) 线性无关；2) 线性相关。</b></p>
+      <noscript><p class="readable">答案：1) 线性无关；2) 线性相关。</p></noscript>
+      </div>
+    </details>
+
+    <div class="pn-bar"><a class="pn" href="q007.html">&larr; 上一题</a><a class="pn" href="q009.html">下一题 &rarr;</a></div>
+  </main>
+  <aside class="side">
+    <div class="side-card">
+      <h3>本题所属：经纬研选（四）</h3>
+      <p style="font-size:13px;color:#6b7280;line-height:1.7">线性代数综合习题。以线性方程组为纲，串联行列式、矩阵与秩、向量组、特征值、相似对角化与二次型。</p>
+    </div>
+    <div class="side-card">
+      <h3>相邻题目</h3>
+      <ul class="rel-list">
+    <li><a href="q005.html"><span class="rel-num">5.</span>分块行列式恒等式 |En−AB|=|Em−BA|</a></li>
+    <li><a href="q006.html"><span class="rel-num">6.</span>实方阵 AᵀA=0 ⇒ A=0（迹法</a></li>
+    <li><a href="q007.html"><span class="rel-num">7.</span>伴随矩阵的伴随 (A*)* = |A|^{n−2}A</a></li>
+    <li><a href="q009.html"><span class="rel-num">9.</span>正交向量的线性相关性（维数计数</a></li>
+    <li><a href="q010.html"><span class="rel-num">10.</span>A²=0 与 Ax=b 解的结构</a></li>
+    <li><a href="q011.html"><span class="rel-num">11.</span>矩阵方程 AB=A 的解结构</a></li>
+      </ul>
+    </div>
+    <div class="side-card cta-card">
+      <h3>系统刷题</h3>
+      <p>进入在线题库，支持即时判分与错题回顾。</p>
+      <a class="btn" href="../../practice.html">去做题 &rarr;</a>
+    </div>
+  </aside>
+</div>
+<div class="site-links">
+  <a href="../../index.html">首页</a>
+  <a href="../../practice.html">在线题库练习</a>
+  <a href="../../exams.html">历年真题下载</a>
+  <a href="../../courses.html">免费网课视频</a>
+  <a href="../../comprehensive.html">经纬研选 PDF</a>
+  <a href="../../notes.html">经纬论数</a>
+  <a href="../../plan.html">科学复习计划</a>
+</div>
+<footer>&copy; 2026 经纬考研数学 &middot; <a href="https://jingweimath.com/">jingweimath.com</a> &middot; 专注考研数学辅导</footer>
+</body>
+</html>

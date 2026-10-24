@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题库题目添加手册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #3498db;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Consolas", "Monaco", monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: #f8f8f2;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+        .tip {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 3px;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 3px;
+        }
+        .error-example {
+            background: #ffe6e6;
+            border-left: 4px solid #e74c3c;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .correct-example {
+            background: #e6ffe6;
+            border-left: 4px solid #2ecc71;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .meta {
+            color: #999;
+            font-size: 0.9em;
+            text-align: right;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 题库题目添加手册</h1>
+
+        <h2>一、文件结构说明</h2>
+        <p>题库文件位于 <code>questions/</code> 目录下：</p>
+        <ul>
+            <li><code>ch1.json</code> ~ <code>ch13.json</code>：按章节分类的题目</li>
+            <li><code>comprehensive.json</code>：跨章节综合题</li>
+            <li><code>index.json</code>：题目索引文件（控制哪些题目被加载）</li>
+        </ul>
+        <div class="tip">
+            <strong>⚠️ 重要：</strong>每次修改题目后，必须运行 <code>python build_questions.py</code> 重新生成 <code>questions-bundle.js</code>
+        </div>
+
+        <h2>二、题目格式规范</h2>
+        
+        <h3>标准JSON格式</h3>
+        <pre><code>{
+  "subject": "高等数学",
+  "chapter": "第一章 函数、极限、连续",
+  "chapterId": "ch1",
+  "questions": [
+    {
+      "type": "choice",
+      "question": "题目内容，支持LaTeX公式如 $\int_{0}^{1} x^2 dx$",
+      "options": ["A. 选项A内容", "B. 选项B内容", "C. 选项C内容", "D. 选项D内容"],
+      "answer": "A",
+      "solution": "详细解析过程..."
+    }
+  ]
+}</code></pre>
+
+        <h3>字段说明</h3>
+        <table>
+            <tr>
+                <th>字段</th>
+                <th>必填</th>
+                <th>说明</th>
+            </tr>
+            <tr>
+                <td><code>type</code></td>
+                <td>✅</td>
+                <td><code>choice</code>（选择题）或 <code>fill</code>（填空题）</td>
+            </tr>
+            <tr>
+                <td><code>question</code></td>
+                <td>✅</td>
+                <td>题目内容，支持LaTeX公式</td>
+            </tr>
+            <tr>
+                <td><code>options</code></td>
+                <td>⚠️</td>
+                <td>选择题必填，填空题不需要</td>
+            </tr>
+            <tr>
+                <td><code>answer</code></td>
+                <td>✅</td>
+                <td>答案（选择题填"A"/"B"/"C"/"D"，填空题填具体数值或表达式）</td>
+            </tr>
+            <tr>
+                <td><code>solution</code></td>
+                <td>✅</td>
+                <td>详细解析过程</td>
+            </tr>
+        </table>
+
+        <h2>三、LaTeX公式使用指南</h2>
+
+        <h3>✅ 推荐使用的格式（显示效果好）</h3>
+        
+        <p><strong>积分：</strong></p>
+        <ul>
+            <li>简单上下限：<code>$\int_{0}^{1}$</code> → ∫₀¹</li>
+            <li>简单上下限：<code>$\int_{a}^{b}$</code> → ∫ₐᵇ</li>
+        </ul>
+
+        <p><strong>分数：</strong></p>
+        <ul>
+            <li><code>$\frac{1}{2}$</code> → ½</li>
+            <li><code>$\frac{dy}{dx}$</code> → dy/dx</li>
+        </ul>
+
+        <p><strong>上下标：</strong></p>
+        <ul>
+            <li><code>$x^2$</code> → x²</li>
+            <li><code>$x_1$</code> → x₁</li>
+        </ul>
+
+        <p><strong>希腊字母：</strong></p>
+        <ul>
+            <li><code>$\alpha$</code> → α</li>
+            <li><code>$\beta$</code> → β</li>
+            <li><code>$\pi$</code> → π</li>
+        </ul>
+
+        <h3>⚠️ 已知显示问题的格式</h3>
+        <div class="warning">
+            <strong>复杂积分上下限会显示为原始LaTeX代码：</strong>
+            <ul>
+                <li><code>$\int_{-\infty}^{+\infty}$</code> → 用户会看到原始代码</li>
+                <li><code>$\int_{\pi/2}^{\pi}$</code> → 用户会看到原始代码</li>
+            </ul>
+            <p><strong>临时解决方案：</strong>对于复杂上下限，暂时用文字描述或等待后续升级渲染引擎</p>
+        </div>
+
+        <h2>四、常见错误及避免方法</h2>
+
+        <h3>错误1：options缺少"A. "前缀</h3>
+        <div class="error-example">
+            <strong>❌ 错误写法：</strong>
+            <pre><code>"options": ["选项A内容", "选项B内容", ...]</code></pre>
+        </div>
+        <div class="correct-example">
+            <strong>✅ 正确写法：</strong>
+            <pre><code>"options": ["A. 选项A内容", "B. 选项B内容", ...]</code></pre>
+        </div>
+
+        <h3>错误2：answer字段包含前缀</h3>
+        <div class="error-example">
+            <strong>❌ 错误写法：</strong>
+            <pre><code>"answer": "A. 正确选项"</code></pre>
+        </div>
+        <div class="correct-example">
+            <strong>✅ 正确写法：</strong>
+            <pre><code>"answer": "A"</code></pre>
+        </div>
+
+        <h3>错误3：JSON格式错误</h3>
+        <p><strong>常见原因：</strong></p>
+        <ul>
+            <li>缺少逗号</li>
+            <li>多余逗号（最后一个元素后不能有逗号）</li>
+            <li>引号不匹配</li>
+            <li>中文引号（<code>"</code>，<code>"</code>）代替英文引号（<code>"</code>）</li>
+        </ul>
+        <p><strong>检查方法：</strong></p>
+        <pre><code>python -m json.tool your_file.json</code></pre>
+
+        <h3>错误4：忘记重新生成bundle</h3>
+        <p><strong>症状：</strong>修改了JSON文件，但网站上没有更新</p>
+        <p><strong>解决方案：</strong></p>
+        <pre><code>cd C:\Users\yuwei\WorkBuddy\2026-06-03-task-2
+python build_questions.py</code></pre>
+
+        <h2>五、添加题目的标准流程</h2>
+
+        <h3>步骤1：准备题目内容</h3>
+        <p>在 <code>questions/</code> 目录下找到对应的章节文件（如 <code>ch1.json</code>）</p>
+
+        <h3>步骤2：按格式添加题目</h3>
+        <p>参考"二、题目格式规范"，确保：</p>
+        <ul>
+            <li>所有必填字段都有</li>
+            <li>LaTeX公式使用推荐的简单格式</li>
+            <li>options有"A. "前缀</li>
+            <li>answer不包含前缀</li>
+        </ul>
+
+        <h3>步骤3：验证JSON格式</h3>
+        <pre><code>python -m json.tool questions/ch1.json</code></pre>
+        <p>如果输出格式化后的JSON，说明格式正确。</p>
+
+        <h3>步骤4：重新生成bundle</h3>
+        <pre><code>python build_questions.py</code></pre>
+
+        <h3>步骤5：本地测试</h3>
+        <p>用浏览器打开 <code>practice.html</code>，检查：</p>
+        <ul>
+            <li>新题目是否出现</li>
+            <li>公式显示是否正常</li>
+            <li>选项显示是否完整</li>
+            <li>答案和解析是否正确</li>
+        </ul>
+
+        <h3>步骤6：部署到服务器</h3>
+        <pre><code># 使用SCP上传更新后的文件
+scp practice.html root@62.234.131.123:/var/www/html/
+scp questions-bundle.js root@62.234.131.123:/var/www/html/</code></pre>
+
+        <h2>六、快速检查清单</h2>
+        <p>添加题目后，逐项检查：</p>
+        <ul class="checklist">
+            <li>JSON格式正确（用 <code>python -m json.tool</code> 验证）</li>
+            <li>所有必填字段都有值</li>
+            <li>选择题options有"A. "前缀</li>
+            <li>answer字段只包含答案，不包含前缀</li>
+            <li>LaTeX公式使用简单格式（避免复杂上下限）</li>
+            <li>已运行 <code>python build_questions.py</code></li>
+            <li>本地测试通过</li>
+            <li>已部署到服务器</li>
+        </ul>
+
+        <h2>七、紧急情况处理</h2>
+
+        <h3>网站打不开了</h3>
+        <ol>
+            <li>检查 <code>questions-bundle.js</code> 是否生成成功</li>
+            <li>检查 <code>index.json</code> 是否包含所有章节</li>
+            <li>回滚到上一个可用版本</li>
+        </ol>
+
+        <h3>题目显示乱码</h3>
+        <ol>
+            <li>检查JSON文件编码是否为UTF-8</li>
+            <li>检查是否有特殊字符未转义</li>
+        </ol>
+
+        <h2>八、联系 support</h2>
+        <p>如果遇到本手册未覆盖的问题，联系 @Buddy 协助解决。</p>
+
+        <div class="meta">
+            <p><strong>文档版本：</strong>v1.0</p>
+            <p><strong>最后更新：</strong>2026-07-01</p>
+            <p><strong>维护者：</strong>Buddy</p>
+        </div>
+    </div>
+</body>
+</html>

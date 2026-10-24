@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>反常积分收敛为什么推不出f(x)→0？尖峰函数反例讲透</title>
+<meta name="description" content="级数收敛能推出通项趋于零，反常积分收敛为什么推不出被积函数趋于零？用尖峰函数反例讲透原理，附考研概念题考法分析。">
+<meta name="keywords" content="反常积分,收敛性,尖峰函数,反例,级数,概念题,高等数学,考研数学">
+<meta name="robots" content="index, follow">
+<meta name="author" content="经纬考研数学">
+<link rel="canonical" href="https://jingweimath.com/articles/improper-integral-limit.html">
+<meta property="og:title" content="反常积分收敛为什么推不出f(x)→0？尖峰函数反例讲透">
+<meta property="og:description" content="级数收敛能推出通项趋于零，反常积分收敛为什么推不出被积函数趋于零？用尖峰函数反例讲透原理，附考研概念题考法分析。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jingweimath.com/articles/improper-integral-limit.html">
+<meta property="og:site_name" content="经纬考研数学">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "反常积分收敛，为什么推不出 f(x)→0？",
+  "datePublished": "2026-09-28",
+  "dateModified": "2026-10-14",
+  "author": {"@type": "Organization", "name": "经纬考研数学"},
+  "publisher": {"@type": "Organization", "name": "经纬考研数学"},
+  "description": "级数收敛能推出通项趋于零，反常积分收敛为什么推不出被积函数趋于零？用尖峰函数反例讲透原理，附考研概念题考法分析。",
+  "mainEntityOfPage": "https://jingweimath.com/articles/improper-integral-limit.html"
+}
+</script>
+<script>
+MathJax = { tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]] } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" async></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a56db; --primary-dark: #1e429f; --primary-light: #e8f0fe;
+    --accent: #e24b4a; --text: #1e1e2e; --text-muted: #6b7280;
+    --border: #e5e7eb; --bg: #f8f9fc;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); }
+  .topbar { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 5%; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: var(--accent); }
+  .back { font-size: 14px; color: var(--primary); text-decoration: none; font-weight: 500; }
+  .breadcrumb { padding: 14px 5%; font-size: 13px; color: var(--text-muted); background: var(--bg); }
+  .breadcrumb a { color: var(--primary); text-decoration: none; }
+  article { max-width: 780px; margin: 0 auto; padding: 40px 24px 60px; }
+  h1 { font-size: 28px; line-height: 1.4; margin-bottom: 14px; }
+  .meta { font-size: 13px; color: var(--text-muted); margin-bottom: 30px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .meta .tag { display: inline-block; background: var(--primary-light); color: var(--primary); border-radius: 12px; padding: 2px 10px; margin-left: 6px; font-size: 12px; }
+  .body p { line-height: 1.9; margin: 14px 0; font-size: 16px; }
+  .body h2 { font-size: 21px; margin: 32px 0 12px; padding-left: 10px; border-left: 4px solid var(--primary); }
+  .body h3 { font-size: 18px; margin: 24px 0 10px; }
+  .body ul { margin: 14px 0 14px 22px; }
+  .body li { line-height: 1.9; font-size: 16px; margin: 4px 0; }
+  .body li.sub { list-style: circle; margin-left: 22px; }
+  .math-block { margin: 18px 0; text-align: center; overflow-x: auto; }
+  .related { max-width: 780px; margin: 0 auto 50px; padding: 24px; background: var(--bg); border-radius: 12px; }
+  .related h3 { font-size: 16px; margin-bottom: 14px; color: var(--primary); }
+  .related a { display: block; padding: 9px 0; color: var(--text); text-decoration: none; font-size: 15px; border-bottom: 1px dashed var(--border); }
+  .related a:hover { color: var(--primary); }
+  .site-links { max-width: 780px; margin: 0 auto 60px; padding: 0 24px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .site-links a { color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; }
+  footer { background: #1e1e2e; color: #9ca3af; text-align: center; padding: 22px 5%; font-size: 13px; }
+  footer a { color: #c3cbe0; text-decoration: none; }
+  @media (max-width: 600px) { h1 { font-size: 22px; } .body p, .body li { font-size: 15px; } }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="../index.html">经纬<span>考研数学</span></a>
+  <a class="back" href="../notes.html">返回笔记列表 →</a>
+</header>
+<nav class="breadcrumb"><a href="../index.html">首页</a> › <a href="../notes.html">经纬论数</a> › 反常积分收敛，为什么推不出 f(x)→0？</nav>
+<article>
+  <h1>反常积分收敛，为什么推不出 f(x)→0？</h1>
+  <div class="meta">发布于 2026-09-28<span class="tag">反常积分</span><span class="tag">收敛性</span><span class="tag">反例</span><span class="tag">级数</span><span class="tag">高等数学</span></div>
+  <div class="body">
+<p># 反常积分收敛，为什么推不出 f(x)→0？
+</p>
+<p>学级数的时候，老师都会强调一条<strong>收敛的必要条件</strong>：
+</p>
+<p>&gt; 若 $\displaystyle\sum_{n=1}^{\infty}a_n$ 收敛，则 $\displaystyle\lim_{n\to\infty}a_n=0$。
+</p>
+<p>很多人会自然而然地把它"移植"到反常积分上：若 $\displaystyle\int_0^{+\infty}f(x)\,\mathrm{d}x$ 收敛，那么 $\displaystyle\lim_{x\to+\infty}f(x)=0$？
+</p>
+<p><strong>这不是移植，是移植错误。</strong> 这个结论不成立，而且考研概念题就爱考这个坑。
+</p>
+<p>---
+</p>
+<h2>一、级数为什么成立</h2>
+<p>级数的证明一句话就能写完：记部分和 $S_n$，则
+</p>
+<div class="math-block">$$
+a_n = S_n - S_{n-1}.
+$$</div>
+<p>级数收敛意味着 $S_n$ 有极限，两个都收敛的数列相减，极限等于极限的差：
+</p>
+<div class="math-block">$$
+\lim_{n\to\infty}a_n = \lim_{n\to\infty}S_n - \lim_{n\to\infty}S_{n-1} = 0.
+$$</div>
+<p>注意证明的关键：<strong>$a_n$ 就是第 $n$ 段区间的"全部贡献"</strong>，它恰好等于两个部分和的差，所以它必须趋零。
+</p>
+<p>---
+</p>
+<h2>二、积分为什么不成立</h2>
+<p>积分这边，"第 $n$ 个小区间上的贡献"对应的应该是 $\int_n^{n+1}f(x)\,\mathrm{d}x$（注意这是<strong>积分</strong>，不是函数值）。收敛的积分当然能推出这些小区间贡献趋于零——但这跟 $f$ 在某<strong>一点</strong>的取值是两回事。
+</p>
+<p><strong>核心区别：连续函数在一个点（甚至很窄的一条）上的值，对积分的影响可以任意小。</strong>
+</p>
+<p>也就是说：$f$ 完全可以在很窄很窄的区间上冲得很高，只要每次冲高的面积足够小，积分照样收敛，而函数值本身可以毫无节制。
+</p>
+<h3>尖峰反例</h3>
+<p>在 $[0,+\infty)$ 上构造一个<strong>连续、恒正</strong>的 $f$：
+</p>
+<p>1. 基底取 $\mathrm{e}^{-x}$（连续、恒正、可积）；
+2. 在每个整数 $n$ 处叠一个<strong>高度为 $n$、底宽约 $\dfrac{1}{n\cdot 2^n}$ 的尖峰</strong>（用折线连出三角形即可，保持连续）。
+</p>
+<p>每个尖峰的面积约为
+</p>
+<div class="math-block">$$
+\frac{1}{2}\cdot n\cdot\frac{1}{n\cdot 2^n} = \frac{1}{2^{n+1}},
+$$</div>
+<p>于是全部尖峰的总面积是有限值：
+</p>
+<div class="math-block">$$
+\sum_{n=1}^{\infty}\frac{1}{2^{n+1}} = \frac{1}{2}.
+$$</div>
+<p>所以
+</p>
+<div class="math-block">$$
+\int_0^{+\infty}f(x)\,\mathrm{d}x \le \int_0^{+\infty}\mathrm{e}^{-x}\,\mathrm{d}x + \frac{1}{2} = \frac{3}{2} &lt; +\infty,
+$$</div>
+<p>积分收敛。但 $f(n)\ge n\to+\infty$——<strong>函数值不仅不趋于零，反而趋于无穷</strong>。
+</p>
+<p>这个 $f$ 连续、恒正、可积，条件够"好"了吧？照样不趋零。顺带一提，这个反例还说明：<strong>收敛也推不出有界</strong>（$f$ 无界）。
+</p>
+<p>---
+</p>
+<h2>三、什么时候直觉是对的</h2>
+<p>反例虽然凶，但只要补上一点条件，直觉就回来了。这两条是值得记住的：
+</p>
+<p><strong>补强条件一（极限存在）：</strong> 若 $\displaystyle\int_0^{+\infty}f(x)\,\mathrm{d}x$ 收敛，且 $\displaystyle\lim_{x\to+\infty}f(x)$ 存在（允许为 $+\infty$），则该极限必为 $0$。
+</p>
+<p>道理用反证法一句话：若极限是正数 $A$（或 $+\infty$），则 $x$ 充分大后 $f(x)&gt;\dfrac{A}{2}$，积分变成无限宽的正值条带，必然发散。尖峰反例之所以能逃掉，正是因为它的极限<strong>根本不存在</strong>。
+</p>
+<p><strong>补强条件二（单调）：</strong> 若 $f$ 在 $[0,+\infty)$ 上单调、非负，且 $\displaystyle\int_0^{+\infty}f(x)\,\mathrm{d}x$ 收敛，则不仅 $f(x)\to 0$，还有更强的结论 $x f(x)\to 0$。
+</p>
+<p>（$x f(x)\to 0$ 的证明是经典练习：利用 $[x/2, x]$ 上的单调性做下界估计，留给读者。）
+</p>
+<p>---
+</p>
+<h2>四、考研怎么考</h2>
+<p>把这个知识点整理成一张清单，四个选项级别的判断就全在里面：
+</p>
+<p>| 条件 | 能推出的结论 |
+|---|---|
+| 收敛 + 极限存在 | 极限必为 $0$ |
+| 收敛 + 单调非负 | $f(x)\to 0$，且 $x f(x)\to 0$ |
+| 收敛 + 连续恒正 | 什么都推不出（尖峰反例） |
+| 收敛（一般函数） | 连有界都推不出 |
+</p>
+<p>典型题目长这样：
+</p>
+<p>&gt; <strong>例：</strong> 设 $f(x)$ 在 $[0,+\infty)$ 上连续、非负，且 $\displaystyle\int_0^{+\infty}f(x)\,\mathrm{d}x=1$。则下列结论中正确的是（　）
+&gt;
+&gt; A. $\displaystyle\lim_{x\to+\infty}f(x)=0$　　B. 存在 $x_0&gt;0$，使 $\displaystyle\int_0^{x_0}f(x)\,\mathrm{d}x=\int_{x_0}^{+\infty}f(x)\,\mathrm{d}x$
+&gt;
+&gt; C. $f(x)$ 在 $[0,+\infty)$ 上有界　　D. $\displaystyle\lim_{x\to+\infty}f(x)$ 存在
+</p>
+<p>A、C、D 全部被尖峰反例干掉；正确答案是 B——令 $F(x)=\displaystyle\int_0^xf(t)\,\mathrm{d}t$，则 $F$ 连续、单调增，$F(0)=0$，$F(+\infty)=1$，由介值定理存在 $F(x_0)=\dfrac{1}{2}$。
+</p>
+<p><strong>一句话总结：级数的通项是"离散的整块贡献"，必须趋零；积分里的函数值只是"一个点上的瞬时值"，对整体可以毫无影响。</strong> 判断概念题时，先问自己：这个结论需不需要补"极限存在"或"单调"才能成立？
+</p>
+  </div>
+</article>
+<aside class="related">
+  <h3>相关文章</h3>
+  <a href="extrema-concavity.html">极值与凹凸性：从定义到真题</a>
+  <a href="vector-geometry.html">向量代数与空间解析几何</a>
+  <a href="limit-theory.html">极限理论：极限的存在性与保号性</a>
+  <a href="jordan-form.html">若当型——矩阵不相似于对角形，那相似于什么？</a>
+  <a href="linalg-geometry.html">跨科题目精讲——线代与几何的结合</a>
+</aside>
+<div class="site-links">
+  <a href="../practice.html">在线题库（2000+题）</a>
+  <a href="../exams.html">历年真题下载</a>
+  <a href="../courses.html">免费网课视频</a>
+  <a href="../plan.html">科学复习计划</a>
+</div>
+<footer>© 2026 经纬考研数学 · <a href="https://jingweimath.com/">jingweimath.com</a> · 专注考研数学辅导    <div style="margin-top:4px;"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" style="color:#9ca3af;text-decoration:none;">鲁ICP备2026032754号</a></div>
+  </footer>
+</body>
+</html>

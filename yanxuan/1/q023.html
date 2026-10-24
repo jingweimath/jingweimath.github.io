@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>证明导函数在某点连续｜经纬研选（一） 第23题 - 经纬考研数学</title>
+<meta name="description" content="经纬研选（一） 第23题：已知 f(x) 连续，且 lim(x→0)(f(x))/(x)=1 ，设
+
+ g(x)=∈t_0¹f(xt)\,dt, 
+
+求证 g&#x27;(x) 在 x=0 处连续。附答案与分步解析，考点：证明导函数在某点连续。">
+<meta name="keywords" content="考研数学一,证明导函数在某点连续,经纬研选（一）,经纬研选,考研数学练习题,考研数学习题,极限,连续">
+<meta name="robots" content="index, follow">
+<meta name="author" content="经纬考研数学">
+<link rel="canonical" href="https://jingweimath.com/yanxuan/1/q023.html">
+<meta property="og:title" content="证明导函数在某点连续｜经纬研选（一） 第23题 - 经纬考研数学">
+<meta property="og:description" content="经纬研选（一） 第23题：已知 f(x) 连续，且 lim(x→0)(f(x))/(x)=1 ，设
+
+ g(x)=∈t_0¹f(xt)\,dt, 
+
+求证 g&#x27;(x) 在 x=0 处连续。附答案与分步解析，考点：证明导函数在某点连续。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jingweimath.com/yanxuan/1/q023.html">
+<meta property="og:site_name" content="经纬考研数学">
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<link rel="stylesheet" href="../../yanxuan/yanxuan.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "证明导函数在某点连续｜经纬研选（一） 第23题 - 经纬考研数学",
+  "description": "经纬研选（一） 第23题：已知 f(x) 连续，且 lim(x→0)(f(x))/(x)=1 ，设\n\n g(x)=∈t_0¹f(xt)\\,dt, \n\n求证 g'(x) 在 x=0 处连续。附答案与分步解析，考点：证明导函数在某点连续。",
+  "url": "https://jingweimath.com/yanxuan/1/q023.html",
+  "inLanguage": "zh-CN",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "https://jingweimath.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "经纬研选",
+        "item": "https://jingweimath.com/comprehensive.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "在线题库",
+        "item": "https://jingweimath.com/yanxuan/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "经纬研选（一）",
+        "item": "https://jingweimath.com/yanxuan/1/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "第23题",
+        "item": "https://jingweimath.com/yanxuan/1/q023.html"
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "Question",
+    "name": "经纬研选（一） 第23题",
+    "text": "已知 f(x) 连续，且 lim(x→0)(f(x))/(x)=1 ，设\n\n g(x)=∈t_0¹f(xt)\\,dt, \n\n求证 g'(x) 在 x=0 处连续。",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "第一步：解析已知条件。 由 f 连续及 lim(x→0)(f(x))/(x)=1 得\n\n f(0)=lim(x→0)f(x)=lim(x→0)(f(x))/(x)· x=0, \nf'(0)=lim(x→0)(f(x)-f(0))/(x)=1 . \n\n第二步：化简 g(x) 。 显然 g(0)=∈t_0¹f(0)dt=0 ；当 x≠0 时，令 u=xt ，则\n\n g(x)=∈t_0¹f(xt)dt=frac1x∈t_0^xf(u)\\,du . \n\n第三步：求 g'(0) 。\n\n g'(0)=lim(x→0)(g(x)-g(0))/(x)=lim(x→0)( ∈t_0^xf(u)du)/(x²)\n=lim(x→0)(f(x))/(2x)=frac12 . \n\n第四步：求 x≠0 时的 g'(x) 并取极限。 记 F(x)=∈t_0^xf(u)du ，则 g(x)=(F(x))/(x) ，\n\n"
+    }
+  }
+}
+</script>
+<script>
+MathJax = { tex: { inlineMath: [["$","$"],["\\(","\\)"]] },
+  options: { skipHtmlTags: ["script","noscript","style","textarea","code"] } };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async
+  onerror="(function(){var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js';s.async=true;document.head.appendChild(s);})()"></script>
+</head>
+<body>
+<nav>
+  <a class="logo" href="../../index.html">经纬<span>考研数学</span></a>
+  <ul class="nav-links">
+    <li><a href="../../index.html"><span class="nav-icon">🏠</span>首页</a></li>
+    <li><a href="../../courses.html" class="nav-star"><span class="nav-icon">🎬</span>网课<br>视频</a></li>
+    <li><a href="../../plan.html"><span class="nav-icon">📅</span>复习<br>计划</a></li>
+    <li><a href="../../practice.html"><span class="nav-icon">🔥</span>题库<br>练习</a></li>
+    <li><a href="../../exams.html"><span class="nav-icon">📋</span>考研<br>真题</a></li>
+    <li><a href="../../comprehensive.html" class="active"><span class="nav-icon">📝</span>经纬<br>研选</a></li>
+    <li><a href="../../notes.html"><span class="nav-icon">📐</span>经纬<br>论数</a></li>
+  </ul>
+  <a href="../../index.html#pricing" class="nav-cta">立即报名</a>
+</nav>
+<div class="breadcrumb"><a href="../../index.html">首页</a> &rsaquo; <a href="../../comprehensive.html">经纬研选</a> &rsaquo; <a href="../../yanxuan/index.html">在线题库</a> &rsaquo; <a href="../index.html">经纬研选（一）</a> &rsaquo; <span>第23题</span></div>
+<div class="wrap">
+  <main class="main">
+    <div class="q-card">
+      <div class="q-head"><div class="q-num">23</div><div class="q-topic">证明导函数在某点连续</div></div>
+<div class="q-stem">已知 $f(x)$ 连续，且 $\lim\limits_{x\to0}\dfrac{f(x)}{x}=1$，设
+
+$$g(x)=\int_0^1f(xt)\,dt,$$
+
+求证 $g&#x27;(x)$ 在 $x=0$ 处连续。</div>
+    <noscript><div class="readable summary-text">已知 f(x) 连续，且 lim(x→0)(f(x))/(x)=1 ，设
+
+ g(x)=∈t_0¹f(xt)\,dt, 
+
+求证 g&#x27;(x) 在 x=0 处连续。</div></noscript>
+
+      <details><summary>查看参考答案</summary>
+<div class="q-answer"><b>答案：连续，且 $g&#x27;(0)=\dfrac{1}{2}$</b></div>
+      </details>
+
+    </div>
+    <details open><summary>完整解析</summary>
+      <div class="q-solution">
+      <p><b>第一步：解析已知条件。</b> 由 $f$ 连续及 $\lim\limits_{x\to0}\dfrac{f(x)}{x}=1$ 得</p>
+      <noscript><p class="readable">第一步：解析已知条件。 由 f 连续及 lim(x→0)(f(x))/(x)=1 得</p></noscript>
+      <p>$$f(0)=\lim_{x\to0}f(x)=\lim_{x\to0}\frac{f(x)}{x}\cdot x=0,\qquad
+f&#x27;(0)=\lim_{x\to0}\frac{f(x)-f(0)}{x}=1 .$$</p>
+      <noscript><p class="readable">f(0)=lim(x→0)f(x)=lim(x→0)(f(x))/(x)· x=0, 
+f&#x27;(0)=lim(x→0)(f(x)-f(0))/(x)=1 .</p></noscript>
+      <p><b>第二步：化简 $g(x)$。</b> 显然 $g(0)=\int_0^1f(0)dt=0$；当 $x\ne0$ 时，令 $u=xt$，则</p>
+      <noscript><p class="readable">第二步：化简 g(x) 。 显然 g(0)=∈t_0¹f(0)dt=0 ；当 x≠0 时，令 u=xt ，则</p></noscript>
+      <p>$$g(x)=\int_0^1f(xt)dt=\frac1x\int_0^xf(u)\,du .$$</p>
+      <noscript><p class="readable">g(x)=∈t_0¹f(xt)dt=frac1x∈t_0^xf(u)\,du .</p></noscript>
+      <p><b>第三步：求 $g&#x27;(0)$。</b></p>
+      <noscript><p class="readable">第三步：求 g&#x27;(0) 。</p></noscript>
+      <p>$$g&#x27;(0)=\lim_{x\to0}\frac{g(x)-g(0)}{x}=\lim_{x\to0}\frac{\displaystyle\int_0^xf(u)du}{x^2}
+=\lim_{x\to0}\frac{f(x)}{2x}=\frac12 .$$</p>
+      <noscript><p class="readable">g&#x27;(0)=lim(x→0)(g(x)-g(0))/(x)=lim(x→0)( ∈t_0^xf(u)du)/(x²)
+=lim(x→0)(f(x))/(2x)=frac12 .</p></noscript>
+      <p><b>第四步：求 $x\ne0$ 时的 $g&#x27;(x)$ 并取极限。</b> 记 $F(x)=\int_0^xf(u)du$，则 $g(x)=\dfrac{F(x)}{x}$，</p>
+      <noscript><p class="readable">第四步：求 x≠0 时的 g&#x27;(x) 并取极限。 记 F(x)=∈t_0^xf(u)du ，则 g(x)=(F(x))/(x) ，</p></noscript>
+      <p>$$g&#x27;(x)=\frac{xF&#x27;(x)-F(x)}{x^2}=\frac1{x^2}\left[xf(x)-\int_0^xf(u)du\right],\qquad x\ne0 .$$</p>
+      <noscript><p class="readable">g&#x27;(x)=(xF&#x27;(x)-F(x))/(x²)=frac1x²≤ft[xf(x)-∈t_0^xf(u)du , x≠0 .</p></noscript>
+      <p>于是</p>
+      <noscript><p class="readable">于是</p></noscript>
+      <p>$$\lim_{x\to0}g&#x27;(x)=\lim_{x\to0}\frac{f(x)}{x}-\lim_{x\to0}\frac{\displaystyle\int_0^xf(u)du}{x^2}=1-\frac12=\frac12=g&#x27;(0) .$$</p>
+      <noscript><p class="readable">lim(x→0)g&#x27;(x)=lim(x→0)(f(x))/(x)-lim(x→0)( ∈t_0^xf(u)du)/(x²)=1-frac12=frac12=g&#x27;(0) .</p></noscript>
+      <p>由连续的定义，$g&#x27;(x)$ 在 $x=0$ 处连续。证毕。</p>
+      <noscript><p class="readable">由连续的定义， g&#x27;(x) 在 x=0 处连续。证毕。</p></noscript>
+      </div>
+    </details>
+
+    <div class="pn-bar"><a class="pn" href="q022.html">&larr; 上一题</a><a class="pn" href="q024.html">下一题 &rarr;</a></div>
+  </main>
+  <aside class="side">
+    <div class="side-card">
+      <h3>本题所属：经纬研选（一）</h3>
+      <p style="font-size:13px;color:#6b7280;line-height:1.7">极限 · 连续 · 导数 · 证明题精选。覆盖数列极限保号性、无穷小比较、导数定义、介值/Rolle/Lagrange/Taylor 中值定理的应用与证明。</p>
+    </div>
+    <div class="side-card">
+      <h3>相邻题目</h3>
+      <ul class="rel-list">
+    <li><a href="q020.html"><span class="rel-num">20.</span>可导的充分必要条件（导数定义的精确形式</a></li>
+    <li><a href="q021.html"><span class="rel-num">21.</span>分段函数的连续性与可导性</a></li>
+    <li><a href="q022.html"><span class="rel-num">22.</span>含绝对值因子的不可导点个数</a></li>
+    <li><a href="q024.html"><span class="rel-num">24.</span>用辅助函数判定函数值不等式</a></li>
+    <li><a href="q025.html"><span class="rel-num">25.</span>无穷区间上连续函数的有界性</a></li>
+    <li><a href="q026.html"><span class="rel-num">26.</span>夹逼准则求和式极限</a></li>
+      </ul>
+    </div>
+    <div class="side-card cta-card">
+      <h3>系统刷题</h3>
+      <p>进入在线题库，支持即时判分与错题回顾。</p>
+      <a class="btn" href="../../practice.html">去做题 &rarr;</a>
+    </div>
+  </aside>
+</div>
+<div class="site-links">
+  <a href="../../index.html">首页</a>
+  <a href="../../practice.html">在线题库练习</a>
+  <a href="../../exams.html">历年真题下载</a>
+  <a href="../../courses.html">免费网课视频</a>
+  <a href="../../comprehensive.html">经纬研选 PDF</a>
+  <a href="../../notes.html">经纬论数</a>
+  <a href="../../plan.html">科学复习计划</a>
+</div>
+<footer>&copy; 2026 经纬考研数学 &middot; <a href="https://jingweimath.com/">jingweimath.com</a> &middot; 专注考研数学辅导</footer>
+</body>
+</html>

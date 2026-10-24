@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>经纬数学 · 各平台基础框架搭建指南</title>
+<style>
+  :root {
+    --primary: #1a73e8; --bg: #f8fafc; --card: #fff; --border: #e2e8f0;
+    --text: #1e293b; --muted: #64748b; --highlight: #fef3c7;
+    --green: #07c160; --blue: #576b95; --red: #ff2442;
+    --gzh-bg: #e8f5e9; --gzh-border: #07c160;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.7;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+
+  .header {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 50%, #1a73e8 100%);
+    color: white; padding: 50px 20px; text-align: center;
+  }
+  .header h1 { font-size: 2em; margin-bottom: 6px; }
+  .header p { opacity: 0.85; }
+
+  .section { margin: 36px 0; }
+  .section-title {
+    font-size: 1.4em; color: var(--primary); margin-bottom: 18px;
+    padding-bottom: 8px; border-bottom: 3px solid var(--primary);
+    display: flex; align-items: center; gap: 10px;
+  }
+
+  .card {
+    background: var(--card); border-radius: 10px; padding: 20px 24px;
+    margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    border: 1px solid var(--border);
+  }
+
+  /* Copy block */
+  .copy-block {
+    background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px;
+    padding: 16px 20px; margin: 12px 0; position: relative;
+  }
+  .copy-block .label {
+    font-size: 0.72em; font-weight: 700; text-transform: uppercase;
+    color: var(--primary); letter-spacing: 1px; margin-bottom: 8px;
+  }
+  .copy-block .content {
+    font-size: 0.95em; color: #334155; white-space: pre-wrap;
+    background: white; padding: 12px 16px; border-radius: 6px;
+    border: 1px solid #e2e8f0;
+  }
+  .copy-block .hint {
+    font-size: 0.78em; color: var(--muted); margin-top: 8px;
+  }
+
+  /* Checklist */
+  .checklist { list-style: none; }
+  .checklist li {
+    padding: 6px 0; display: flex; align-items: flex-start; gap: 8px;
+  }
+  .checklist li::before {
+    content: "☐"; font-size: 1.2em; color: #94a3b8; flex-shrink: 0;
+  }
+
+  /* Steps */
+  .step {
+    display: flex; gap: 14px; margin: 14px 0; align-items: flex-start;
+  }
+  .step-num {
+    background: var(--primary); color: white; min-width: 28px; height: 28px;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 0.85em; flex-shrink: 0;
+  }
+  .step-content { flex: 1; padding-top: 2px; }
+
+  /* GZH specific */
+  .gzh-section { background: var(--gzh-bg); border-left: 4px solid var(--gzh-border); }
+
+  /* Menu visual */
+  .menu-tree {
+    font-family: "SF Mono", "Menlo", monospace; font-size: 0.88em;
+    padding: 12px 16px; background: #1e293b; color: #e2e8f0;
+    border-radius: 8px; line-height: 1.8;
+  }
+  .menu-tree .menu-l1 { color: #7dd3fc; }
+  .menu-tree .menu-l2 { color: #a5b4fc; margin-left: 20px; }
+
+  /* Badge */
+  .badge {
+    display: inline-block; font-size: 0.72em; padding: 2px 10px;
+    border-radius: 20px; color: white; font-weight: 600;
+  }
+  .badge-douyin { background: #ff0050; }
+  .badge-xhs { background: #ff2442; }
+  .badge-weibo { background: #e6162d; }
+  .badge-baijia { background: #3b82f6; }
+  .badge-gzh-p { background: #07c160; }
+  .badge-gzh-o { background: #576b95; }
+
+  @media (max-width: 640px) {
+    .header h1 { font-size: 1.4em; }
+    .container { padding: 16px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📐 经纬数学 · 平台基础框架搭建指南</h1>
+  <p>从零到上线 · 每一步的文案都在这里</p>
+</div>
+
+<div class="container">
+
+<!-- ============ 一、品牌统一规范 ============ -->
+<div class="section">
+  <h2 class="section-title">一、品牌统一规范（所有平台通用）</h2>
+
+  <div class="card">
+    <h3>🏷️ 品牌命名</h3>
+    <table style="width:100%;font-size:0.92em;margin-top:8px;">
+      <tr><td style="padding:8px 12px;color:var(--muted);width:100px;">品牌名</td><td style="padding:8px 12px;font-weight:600;">经纬数学</td></tr>
+      <tr><td style="padding:8px 12px;color:var(--muted);">拼音</td><td style="padding:8px 12px;">jingweimath</td></tr>
+      <tr><td style="padding:8px 12px;color:var(--muted);">域名</td><td style="padding:8px 12px;">jingweimath.com</td></tr>
+      <tr><td style="padding:8px 12px;color:var(--muted);">Slogan</td><td style="padding:8px 12px;">考研数学一站式备考平台</td></tr>
+      <tr><td style="padding:8px 12px;color:var(--muted);">统一后缀</td><td style="padding:8px 12px;">高校数学教师创办 · 专注考研数学辅导</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>🖼️ 头像/封面图规格</h3>
+    <table style="width:100%;font-size:0.9em;margin-top:8px;">
+      <tr style="border-bottom:1px solid var(--border);">
+        <th style="padding:8px;text-align:left;">素材</th>
+        <th style="padding:8px;text-align:left;">建议内容</th>
+        <th style="padding:8px;text-align:left;">尺寸</th>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;">全平台头像</td>
+        <td style="padding:8px;">「经纬数学」文字LOGO + 数学符号🔢</td>
+        <td style="padding:8px;">≥ 400×400</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;">抖音主页背景</td>
+        <td style="padding:8px;">黑板/公式背景 + 品牌名</td>
+        <td style="padding:8px;">1125×633</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;">小红书主页背景</td>
+        <td style="padding:8px;">干净白底 + 品牌名</td>
+        <td style="padding:8px;">1080×360</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;">公众号头像</td>
+        <td style="padding:8px;">个人号：真人/卡通形象；机构号：机构LOGO</td>
+        <td style="padding:8px;">≥ 300×300</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:8px;">公众号封面（大）</td>
+        <td style="padding:8px;">每篇文章单独做</td>
+        <td style="padding:8px;">900×383</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">公众号封面（小）</td>
+        <td style="padding:8px;">每篇文章单独做</td>
+        <td style="padding:8px;">200×200</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- ============ 二、微信公众号 ============ -->
+<div class="section">
+  <h2 class="section-title">二、<span class="badge badge-gzh-p">个人公众号</span> 搭建步骤</h2>
+
+  <div class="card gzh-section" style="background:white;border-left-color:#07c160;">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <strong>设置公众号名称和简介</strong>
+        <div class="copy-block">
+          <div class="label">📋 个人公众号简介（复制粘贴）</div>
+          <div class="content">高校数学教师，从教 X 年。
+专注考研数学辅导，帮你避开我学生踩过的每一个坑。
+每周更新：学习方法 | 真题精讲 | 考点总结。
+经纬数学创始人。</div>
+          <div class="hint">⚠️ "从教 X 年" 替换成实际年数</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <strong>设置关注自动回复</strong>
+        <div class="copy-block">
+          <div class="label">📋 关注后自动回复文案</div>
+          <div class="content">Hi，欢迎来到经纬数学 👋
+
+我是[老师称呼]，一名高校数学教师。
+
+这个公众号专门分享考研数学的干货：
+📌 每周一篇学习方法/心得
+📌 定期真题精讲和考点总结
+📌 后台回复「公式」获取高数公式大全
+
+如果你想系统练习，我在经纬数学网站（jingweimath.com）准备了 650 道分级题库，随时随地刷题。
+
+考研路上，我们一起走 ✊
+
+回复「1」获取本月复习计划
+回复「2」获取高数公式清单</div>
+          <div class="hint">⚠️ 等备案通过后再加网址；目前可先去掉链接那行。关键词回复需要在后台设置。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <strong>设置菜单栏</strong>
+        <div class="menu-tree">
+          <span class="menu-l1">📚 学习资源</span><br>
+          <span class="menu-l2">├─ 复习计划</span><br>
+          <span class="menu-l2">├─ 高数公式大全</span><br>
+          <span class="menu-l2">└─ 历年真题</span><br>
+          <span class="menu-l1">🎓 关于我</span><br>
+          <span class="menu-l2">├─ 我是谁</span><br>
+          <span class="menu-l2">└─ 联系我</span><br>
+          <span class="menu-l1">🔗 更多</span><br>
+          <span class="menu-l2">├─ 经纬数学网站</span><br>
+          <span class="menu-l2">└─ 关注抖音/小红书</span>
+        </div>
+        <p style="color:var(--muted);font-size:0.85em;margin-top:8px;">
+          菜单行为：子菜单可以设置成「发送消息」（推送一条图文）或「跳转网页」（连到网站）。备案下来前，网站链接菜单先设置成「发送消息」，发送一条 "网站即将上线，敬请期待"。
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <strong>发布第一篇推文</strong>
+        <div class="copy-block">
+          <div class="label">📝 第一篇推文：自我介绍 + 你能得到什么</div>
+          <div class="content"><b>标题：</b>你好，我是[老师称呼]，一个教数学的大学老师
+
+<b>正文：</b>
+
+每年开学第一课，我都会问学生一个问题："你们为什么学数学？"
+
+有人说是为了学分，有人说是为了考研，也有人低头不说话。
+
+但我想说：数学不应该是你的负担，它可以是你最可靠的得分武器。
+
+---
+
+我是谁？
+
+我是一名大学数学教师，站在讲台上已经 X 年了。
+
+这些年，我见过太多学生——
+有人大一开始就崩了，高数上下两学期都没过；
+有人到了考研前三个月才发现数学一还差得远；
+也有人，跟着正确的节奏，从 70 分一路涨到 130+。
+
+差距在哪儿？不是智商，是方法，是节奏，是有人帮你把路指清楚。
+
+---
+
+所以我做了「经纬数学」。
+
+一个考研数学的一站式备考平台：
+✅ 650 道分级题库，从基础到冲刺
+✅ 16 年真题（数一数二）带详解
+✅ 视频课程 + 复习计划，跟着走就行
+
+这个公众号，我会每周分享：
+📌 学习方法——从老师视角告诉你到底该怎么学
+📌 真题精讲——每年最有价值的几道题
+📌 避坑指南——我学生踩过的坑，你别再踩
+
+---
+
+如果你正在备考，后台回复「1」获取本月复习计划。
+如果你想要资料，回复「2」获取高数公式大全。
+
+考研路上，我们一起走。
+
+[老师称呼]
+经纬数学创始人</div>
+          <div class="hint">⚠️ 如果备案还没下来，文中涉及网站的段落改成「在筹备中，敬请期待」</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 机构公众号 -->
+  <h2 class="section-title" style="margin-top:40px;">三、<span class="badge badge-gzh-o">机构公众号</span> 搭建步骤</h2>
+
+  <div class="card" style="border-left:4px solid #576b95;">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <strong>设置公众号简介</strong>
+        <div class="copy-block">
+          <div class="label">📋 机构公众号简介</div>
+          <div class="content">[机构全称]
+专注考研数学住宿式辅导，吃住学一体化。
+名师授课 | 小班管理 | 全程督学
+咨询请留言或添加微信：XXXX</div>
+          <div class="hint">⚠️ 替换实际机构名称和联系方式</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <strong>关注自动回复</strong>
+        <div class="copy-block">
+          <div class="label">📋 自动回复文案</div>
+          <div class="content">欢迎关注[机构名称]官方公众号 🎓
+
+我们是专注考研数学的住宿式辅导机构——
+吃、住、学一体化，让备考没有后顾之忧。
+
+📌 名师授课：高校教师领衔，系统教学
+📌 小班管理：每班不超过 X 人，关注到每个人
+📌 全程督学：从基础到冲刺，跟着计划走就行
+
+👉 回复「课程」查看最新课程安排
+👉 回复「喜报」看往届学员成绩
+👉 回复「咨询」获取联系方式
+
+期待在集训营见到你！</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <strong>菜单栏规划</strong>
+        <div class="menu-tree">
+          <span class="menu-l1">📋 课程介绍</span><br>
+          <span class="menu-l2">├─ 暑期集训营</span><br>
+          <span class="menu-l2">├─ 全年班</span><br>
+          <span class="menu-l2">└─ 冲刺班</span><br>
+          <span class="menu-l1">🏆 学员风采</span><br>
+          <span class="menu-l2">├─ 往届喜报</span><br>
+          <span class="menu-l2">├─ 学员故事</span><br>
+          <span class="menu-l2">└─ 上课日常</span><br>
+          <span class="menu-l1">📞 联系我们</span><br>
+          <span class="menu-l2">├─ 咨询微信</span><br>
+          <span class="menu-l2">└─ 校区地址</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <strong>第一篇推文</strong>
+        <div class="copy-block">
+          <div class="label">📝 机构第一篇：我们是谁 + 为什么选择我们</div>
+          <div class="content"><b>标题：</b>考研数学 | 选对一个好机构，比多刷 1000 道题更重要
+
+<b>正文框架：</b>
+
+1. 开头：考研数学的残酷现实（平均分、弃考率、二战率）
+2. 我们的解决方案：住宿式辅导，吃住学一体
+3. 三个核心优势（师资 / 管理 / 督学）
+4. 往届数据（如有）
+5. 招生信息 + 联系方式
+
+文末引导：扫码咨询 / 预约试听</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 四、社交平台 ============ -->
+<div class="section">
+  <h2 class="section-title">四、社交平台搭建</h2>
+
+  <div class="card">
+    <h3><span class="badge badge-douyin">抖音</span> 账号设置</h3>
+    <div class="copy-block">
+      <div class="label">📋 昵称 + 简介</div>
+      <div class="content"><b>昵称：</b>经纬数学
+<b>简介：</b>
+高校数学教师，专注考研数学辅导 📐
+每周更新解题技巧+避坑指南
+完整题库在主页 | jingweimath.com
+#考研数学 #数学一 #经纬数学</div>
+    </div>
+    <div class="copy-block">
+      <div class="label">🎬 第一条视频脚本（自我介绍型 · 30-40秒）</div>
+      <div class="content">【画面】本人出镜，黑板/白板背景
+
+"大家好，我是一名大学数学老师。
+
+从今天起，我会在这个号上分享考研数学的解题技巧。
+
+不搞花里胡哨，不讲废话，就讲最有用、最能提分的方法。
+
+每道题我讲透，每个坑我帮你避开。
+
+关注我，考研数学，我们一起把它拿下。
+
+评论区告诉我你最头疼的知识点，下期就讲它！"
+
+【字幕叠加】
+高校数学教师 | 专注考研数学
+每周更新 | 关注不走丢</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="badge badge-xhs">小红书</span> 账号设置</h3>
+    <div class="copy-block">
+      <div class="label">📋 昵称 + 简介</div>
+      <div class="content"><b>昵称：</b>经纬数学
+<b>简介：</b>
+大学数学教师 | 专注考研数学辅导
+📐 分享：考点总结 | 真题笔记 | 复习攻略
+跟着我，考研数学不迷路 ✨
+#考研数学 #数学一 #经纬数学</div>
+    </div>
+    <div class="copy-block">
+      <div class="label">📸 第一篇笔记</div>
+      <div class="content"><b>标题：</b>📐 考研数学一 | 从零开始，你需要知道的 5 件事
+
+<b>首图：</b>「5 件事」大字标题 + 简洁设计
+
+<b>正文：</b>
+
+刚开始准备考研数学，一头雾水？没关系，我帮你理清楚👇
+
+1️⃣ 考什么？
+数学一考：高数（56%）+ 线代（22%）+ 概率（22%）
+
+2️⃣ 什么时候开始？
+现在！越早越好。基础阶段至少 3 个月
+
+3️⃣ 用什么资料？
+教材（同济高数）+ 辅导书 + 真题。别贪多，啃透一套比买十套强
+
+4️⃣ 怎么学？
+听课→做题→总结→错题本。做题比听课重要 100 倍
+
+5️⃣ 需要报班吗？
+看个人。自控力强的可以自学，需要有人带的可以考虑报班（比如我后面的机构号😉）
+
+📥 完整复习计划在主页
+关注我，每周更新考研数学干货！
+
+#考研数学 #数学一 #考研经验 #经纬数学</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="badge badge-weibo">微博</span> 账号设置</h3>
+    <div class="copy-block">
+      <div class="label">📋 昵称 + 简介</div>
+      <div class="content"><b>昵称：</b>经纬数学
+<b>简介：</b>
+高校数学教师 | 经纬数学创始人 | 考研数学辅导
+每日一题 | 真题解析 | 备考攻略
+网站：jingweimath.com</div>
+    </div>
+    <div class="copy-block">
+      <div class="label">📝 第一条微博（置顶）</div>
+      <div class="content">👋 大家好，这里是经纬数学。
+
+我是一名大学数学教师，为了让考研的同学少走弯路，创办了经纬数学。
+
+这里每天更新：
+🔹 每日一题（评论区交作业！）
+🔹 考研倒计时 & 备考干货
+🔹 真题精讲 & 避坑指南
+🔹 偶尔也会聊聊考研这件事本身
+
+关注我，考研数学不迷路 📐
+
+#考研数学 #数学一 #经纬数学</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="badge badge-baijia">百家号</span> 账号设置</h3>
+    <div class="copy-block">
+      <div class="label">📋 昵称 + 简介</div>
+      <div class="content"><b>昵称：</b>经纬数学
+<b>简介：</b>
+高校数学教师，专注考研数学辅导。分享深度解题方法、命题趋势分析和备考策略。经纬数学创始人，jingweimath.com。</div>
+    </div>
+    <div class="copy-block">
+      <div class="label">📝 第一篇发文</div>
+      <div class="content"><b>标题：</b>考研数学 | 很多人不知道的 3 个提分秘诀（高校教师深度解析）
+
+<b>正文要点：</b>
+1. 做题 ≠ 会做题——为什么刷了 1000 道还是错？
+2. 真题什么时候做、怎么做最有效？
+3. 考场上那 10 分差距，往往不在知识量，在心态和策略
+
+（每点展开 500-600 字，配 2-3 张图，文末引导关注）
+
+⚠️ 提示：百家号第一篇写 1500-2000 字深度文，开头 100 字抓人（痛点+数据），文章要有 SEO 标题优化（加"考研""数学""2027"等关键词）</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 五、操作清单 ============ -->
+<div class="section">
+  <h2 class="section-title">五、搭建操作清单 · 逐个打勾</h2>
+
+  <div class="card">
+    <h3>🔴 第一优先级：本周完成</h3>
+    <ul class="checklist" style="margin-top:12px;">
+      <li><b>准备品牌头像</b> — 用 Canva/稿定设计做一个统一的文字LOGO（"经纬数学"），全平台通用</li>
+      <li><b>注册/完善 6 个平台账号</b> — 确认昵称统一为「经纬数学」</li>
+      <li><b>填写各平台简介</b> — 复用上方文案，微调即可</li>
+      <li><b>个人公众号</b> — 设置关注回复 + 菜单栏 + 发布第一篇推文</li>
+      <li><b>机构公众号</b> — 设置关注回复 + 菜单栏</li>
+      <li><b>抖音 + 小红书</b> — 发布第一条自我介绍内容</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🟡 第二优先级：下周完成</h3>
+    <ul class="checklist" style="margin-top:12px;">
+      <li>微博 — 发布置顶微博 + 开始每日一题</li>
+      <li>百家号 — 发布第一篇深度文章</li>
+      <li>机构公众号 — 发布第一篇介绍推文</li>
+      <li>各平台互相关联 — 抖音主页放公众号名，公众号菜单链其他平台</li>
+      <li>准备第二周内容素材（用 social-strategy.html 日历参考）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🟢 第三优先级：备案通过后</h3>
+    <ul class="checklist" style="margin-top:12px;">
+      <li>所有平台简介/自动回复加上 jingweimath.com 链接</li>
+      <li>公众号菜单栏「网站」项改为跳转网页</li>
+      <li>每篇内容文末统一加网站引流（"完整题库/真题在 jingweimath.com"）</li>
+      <li>个人公众号 + 机构公众号互设关注引导</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ 六、工具推荐 ============ -->
+<div class="section">
+  <h2 class="section-title">六、推荐工具</h2>
+
+  <div class="card">
+    <table style="width:100%;font-size:0.9em;">
+      <tr style="border-bottom:1px solid var(--border);">
+        <th style="padding:10px 8px;text-align:left;">用途</th>
+        <th style="padding:10px 8px;text-align:left;">工具</th>
+        <th style="padding:10px 8px;text-align:left;">说明</th>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:10px 8px;">做图</td>
+        <td style="padding:10px 8px;">Canva / 稿定设计</td>
+        <td style="padding:10px 8px;">做头像、封面图、小红书笔记图</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:10px 8px;">视频剪辑</td>
+        <td style="padding:10px 8px;">剪映</td>
+        <td style="padding:10px 8px;">抖音视频，手机就能剪</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:10px 8px;">公众号排版</td>
+        <td style="padding:10px 8px;">秀米 / 135编辑器</td>
+        <td style="padding:10px 8px;">微信自带编辑器太简陋</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:10px 8px;">素材管理</td>
+        <td style="padding:10px 8px;">飞书/石墨文档</td>
+        <td style="padding:10px 8px;">存稿件、排期表</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div style="text-align:center;padding:30px;color:var(--muted);font-size:0.85em;">
+  所有文案均直接可用 · 替换标记处即可发布
+</div>
+
+</div>
+</body>
+</html>

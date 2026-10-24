@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>微分中值定理（构造辅助函数｜经纬研选（三） 第30题 - 经纬考研数学</title>
+<meta name="description" content="经纬研选（三） 第30题：设函数 f(x) 在 [0,1] 上可导，且 ∈t_0¹f(x)dx=frac12 ，证明存在 ξ∈(0,1) ，使得
+ ξ f&#x27;(ξ)+f(ξ)=2ξ.。附答案与分步解析，考点：微分中值定理（构造辅助函数。">
+<meta name="keywords" content="考研数学一,微分中值定理（构造辅助函数,经纬研选（三）,经纬研选,考研数学练习题,考研数学习题,不定积分,定积分">
+<meta name="robots" content="index, follow">
+<meta name="author" content="经纬考研数学">
+<link rel="canonical" href="https://jingweimath.com/yanxuan/3/q030.html">
+<meta property="og:title" content="微分中值定理（构造辅助函数｜经纬研选（三） 第30题 - 经纬考研数学">
+<meta property="og:description" content="经纬研选（三） 第30题：设函数 f(x) 在 [0,1] 上可导，且 ∈t_0¹f(x)dx=frac12 ，证明存在 ξ∈(0,1) ，使得
+ ξ f&#x27;(ξ)+f(ξ)=2ξ.。附答案与分步解析，考点：微分中值定理（构造辅助函数。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jingweimath.com/yanxuan/3/q030.html">
+<meta property="og:site_name" content="经纬考研数学">
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<link rel="stylesheet" href="../../yanxuan/yanxuan.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "微分中值定理（构造辅助函数｜经纬研选（三） 第30题 - 经纬考研数学",
+  "description": "经纬研选（三） 第30题：设函数 f(x) 在 [0,1] 上可导，且 ∈t_0¹f(x)dx=frac12 ，证明存在 ξ∈(0,1) ，使得\n ξ f'(ξ)+f(ξ)=2ξ.。附答案与分步解析，考点：微分中值定理（构造辅助函数。",
+  "url": "https://jingweimath.com/yanxuan/3/q030.html",
+  "inLanguage": "zh-CN",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "https://jingweimath.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "经纬研选",
+        "item": "https://jingweimath.com/comprehensive.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "在线题库",
+        "item": "https://jingweimath.com/yanxuan/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "经纬研选（三）",
+        "item": "https://jingweimath.com/yanxuan/3/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "第30题",
+        "item": "https://jingweimath.com/yanxuan/3/q030.html"
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "Question",
+    "name": "经纬研选（三） 第30题",
+    "text": "设函数 f(x) 在 [0,1] 上可导，且 ∈t_0¹f(x)dx=frac12 ，证明存在 ξ∈(0,1) ，使得\n ξ f'(ξ)+f(ξ)=2ξ.",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "注意 ∈t_0¹frac12 的特殊性： ∈t_0¹x\\,dx=frac12 ，故\n ∈t_0¹big(f(x)-xbig)dx=frac12-frac12=0. \n记 g(x)=f(x)-x ，则 g 在 [0,1] 上连续，且 ∈t_0¹g(x)dx=0 。要证的结论用 g 表示：由 f=g+x ，\n ξ f'(ξ)+f(ξ)=ξbig(g'(ξ)+1big)+g(ξ)+ξ=ξ g'(ξ)+g(ξ)+2ξ, \n故 ξ f'(ξ)+f(ξ)=2ξiffbig(xg(x)big)'Big|_x=ξ=0 。\n\n情形一： g≡0 ，即 f(x)=x ，此时对任意 ξ∈(0,1) 都有 ξ f'(ξ)+f(ξ)=ξ+ξ=2ξ ，结论成立。\n\n情形二： gnot≡0 。由 ∈t_0¹g=0 知 g 必取到正、负两种值（否则积分不为 0 ），又 g 连续，由介值定理存在 c∈(0,1) 使 g(c)"
+    }
+  }
+}
+</script>
+<script>
+MathJax = { tex: { inlineMath: [["$","$"],["\\(","\\)"]] },
+  options: { skipHtmlTags: ["script","noscript","style","textarea","code"] } };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async
+  onerror="(function(){var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js';s.async=true;document.head.appendChild(s);})()"></script>
+</head>
+<body>
+<nav>
+  <a class="logo" href="../../index.html">经纬<span>考研数学</span></a>
+  <ul class="nav-links">
+    <li><a href="../../index.html"><span class="nav-icon">🏠</span>首页</a></li>
+    <li><a href="../../courses.html" class="nav-star"><span class="nav-icon">🎬</span>网课<br>视频</a></li>
+    <li><a href="../../plan.html"><span class="nav-icon">📅</span>复习<br>计划</a></li>
+    <li><a href="../../practice.html"><span class="nav-icon">🔥</span>题库<br>练习</a></li>
+    <li><a href="../../exams.html"><span class="nav-icon">📋</span>考研<br>真题</a></li>
+    <li><a href="../../comprehensive.html" class="active"><span class="nav-icon">📝</span>经纬<br>研选</a></li>
+    <li><a href="../../notes.html"><span class="nav-icon">📐</span>经纬<br>论数</a></li>
+  </ul>
+  <a href="../../index.html#pricing" class="nav-cta">立即报名</a>
+</nav>
+<div class="breadcrumb"><a href="../../index.html">首页</a> &rsaquo; <a href="../../comprehensive.html">经纬研选</a> &rsaquo; <a href="../../yanxuan/index.html">在线题库</a> &rsaquo; <a href="../index.html">经纬研选（三）</a> &rsaquo; <span>第30题</span></div>
+<div class="wrap">
+  <main class="main">
+    <div class="q-card">
+      <div class="q-head"><div class="q-num">30</div><div class="q-topic">微分中值定理（构造辅助函数</div></div>
+<div class="q-stem">设函数 $f(x)$ 在 $[0,1]$ 上可导，且 $\displaystyle\int_0^1f(x)dx=\frac12$，证明存在 $\xi\in(0,1)$，使得
+$$\xi f&#x27;(\xi)+f(\xi)=2\xi.$$</div>
+    <noscript><div class="readable summary-text">设函数 f(x) 在 [0,1] 上可导，且 ∈t_0¹f(x)dx=frac12 ，证明存在 ξ∈(0,1) ，使得
+ ξ f&#x27;(ξ)+f(ξ)=2ξ.</div></noscript>
+
+      <details><summary>查看参考答案</summary>
+<div class="q-answer"><b>答案：存在 $\xi\in(0,1)$ 使 $\xi f&#x27;(\xi)+f(\xi)=2\xi$</b></div>
+      </details>
+
+    </div>
+    <details open><summary>完整解析</summary>
+      <div class="q-solution">
+      <p>注意 $\displaystyle\int_0^1\frac12$ 的特殊性：$\displaystyle\int_0^1x\,dx=\frac12$，故
+$$\int_0^1\big(f(x)-x\big)dx=\frac12-\frac12=0.$$
+记 $g(x)=f(x)-x$，则 $g$ 在 $[0,1]$ 上连续，且 $\displaystyle\int_0^1g(x)dx=0$。要证的结论用 $g$ 表示：由 $f=g+x$，
+$$\xi f&#x27;(\xi)+f(\xi)=\xi\big(g&#x27;(\xi)+1\big)+g(\xi)+\xi=\xi g&#x27;(\xi)+g(\xi)+2\xi,$$
+故 $\xi f&#x27;(\xi)+f(\xi)=2\xi\iff\big(xg(x)\big)&#x27;\Big|_{x=\xi}=0$。</p>
+      <noscript><p class="readable">注意 ∈t_0¹frac12 的特殊性： ∈t_0¹x\,dx=frac12 ，故
+ ∈t_0¹big(f(x)-xbig)dx=frac12-frac12=0. 
+记 g(x)=f(x)-x ，则 g 在 [0,1] 上连续，且 ∈t_0¹g(x)dx=0 。要证的结论用 g 表示：由 f=g+x ，
+ ξ f&#x27;(ξ)+f(ξ)=ξbig(g&#x27;(ξ)+1big)+g(ξ)+ξ=ξ g&#x27;(ξ)+g(ξ)+2ξ, 
+故 ξ f&#x27;(ξ)+f(ξ)=2ξiffbig(xg(x)big)&#x27;Big|_x=ξ=0 。</p></noscript>
+      <p><b>情形一</b>：$g\equiv0$，即 $f(x)=x$，此时对任意 $\xi\in(0,1)$ 都有 $\xi f&#x27;(\xi)+f(\xi)=\xi+\xi=2\xi$，结论成立。</p>
+      <noscript><p class="readable">情形一： g≡0 ，即 f(x)=x ，此时对任意 ξ∈(0,1) 都有 ξ f&#x27;(ξ)+f(ξ)=ξ+ξ=2ξ ，结论成立。</p></noscript>
+      <p><b>情形二</b>：$g\not\equiv0$。由 $\displaystyle\int_0^1g=0$ 知 $g$ 必取到正、负两种值（否则积分不为 $0$），又 $g$ 连续，由介值定理存在 $c\in(0,1)$ 使 $g(c)=0$。考察辅助函数
+$$\Phi(x)=xg(x),$$
+则 $\Phi$ 在 $[0,c]$ 上连续、在 $(0,c)$ 内可导，且
+$$\Phi(0)=0\cdot g(0)=0,\qquad \Phi(c)=c\cdot g(c)=0.$$
+由 Rolle 定理，存在 $\xi\in(0,c)\subset(0,1)$，使 $\Phi&#x27;(\xi)=0$，即
+$$\xi g&#x27;(\xi)+g(\xi)=0\ \Longrightarrow\ \xi f&#x27;(\xi)+f(\xi)=2\xi.$$
+综上，存在 $\xi\in(0,1)$ 使所证等式成立。</p>
+      <noscript><p class="readable">情形二： gnot≡0 。由 ∈t_0¹g=0 知 g 必取到正、负两种值（否则积分不为 0 ），又 g 连续，由介值定理存在 c∈(0,1) 使 g(c)=0 。考察辅助函数
+ Φ(x)=xg(x), 
+则 Φ 在 [0,c] 上连续、在 (0,c) 内可导，且
+ Φ(0)=0· g(0)=0, Φ(c)=c· g(c)=0. 
+由 Rolle 定理，存在 ξ∈(0,c)⊂(0,1) ，使 Φ&#x27;(ξ)=0 ，即
+ ξ g&#x27;(ξ)+g(ξ)=0\ Longrightarrow\ ξ f&#x27;(ξ)+f(ξ)=2ξ. 
+综上，存在 ξ∈(0,1) 使所证等式成立。</p></noscript>
+      </div>
+    </details>
+<details open><summary>考点点睛</summary>
+      <div class="q-point">证明含 $\xi$ 的等式，第一步是把结论整理成“某函数的导数 $=0$”的形式（本题目标函数是 $xg(x)$，等价于 $xf(x)-x^{2}$）；第二步凑出两个函数值相等的点再用 Rolle。本题最妙的一步是发现 $\displaystyle\int_0^1x\,dx=\frac12$，从而 $\int_0^1(f-x)=0$ 迫使 $g$ 变号、产生第二零点。</div>
+    </details>
+    <div class="pn-bar"><a class="pn" href="q029.html">&larr; 上一题</a><span class="pn disabled">下一题 &rarr;</span></div>
+  </main>
+  <aside class="side">
+    <div class="side-card">
+      <h3>本题所属：经纬研选（三）</h3>
+      <p style="font-size:13px;color:#6b7280;line-height:1.7">一元函数积分精选。涵盖不定积分计算技巧、定积分性质与应用、反常积分收敛判定、积分等式与不等式证明。</p>
+    </div>
+    <div class="side-card">
+      <h3>相邻题目</h3>
+      <ul class="rel-list">
+    <li><a href="q027.html"><span class="rel-num">27.</span>面积最值与旋转体体积</a></li>
+    <li><a href="q028.html"><span class="rel-num">28.</span>变力做功（万有引力</a></li>
+    <li><a href="q029.html"><span class="rel-num">29.</span>含绝对值的积分函数（凹性 · 最值 · 反求 $f$</a></li>
+      </ul>
+    </div>
+    <div class="side-card cta-card">
+      <h3>系统刷题</h3>
+      <p>进入在线题库，支持即时判分与错题回顾。</p>
+      <a class="btn" href="../../practice.html">去做题 &rarr;</a>
+    </div>
+  </aside>
+</div>
+<div class="site-links">
+  <a href="../../index.html">首页</a>
+  <a href="../../practice.html">在线题库练习</a>
+  <a href="../../exams.html">历年真题下载</a>
+  <a href="../../courses.html">免费网课视频</a>
+  <a href="../../comprehensive.html">经纬研选 PDF</a>
+  <a href="../../notes.html">经纬论数</a>
+  <a href="../../plan.html">科学复习计划</a>
+</div>
+<footer>&copy; 2026 经纬考研数学 &middot; <a href="https://jingweimath.com/">jingweimath.com</a> &middot; 专注考研数学辅导</footer>
+</body>
+</html>

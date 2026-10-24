@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>复习计划 · 经维数学</title>
+<title>复习计划 - 考研数学科学备考规划 | 艾宾浩斯曲线 | 经纬考研数学</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta name="description" content="基于艾宾浩斯遗忘曲线的考研数学复习计划，自动安排每日学习任务，追踪进度。科学规划基础、强化、冲刺三阶段备考。">
+<meta name="keywords" content="考研数学复习计划,艾宾浩斯,备考规划,数学一复习,学习计划,复习进度">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="复习计划 - 经纬考研数学">
+<meta property="og:description" content="科学复习规划，基于艾宾浩斯曲线，自动追踪学习进度。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jingweimath.com/plan.html">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
@@ -12,14 +20,35 @@
     --border: #e5e7eb; --bg: #f8f9fc; --white: #ffffff; --radius: 12px;
     --success: #16a34a; --warning: #f59e0b;
   }
-  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--bg); }
-  nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 5%; display: flex; align-items: center; justify-content: space-between; height: 64px; }
-  .logo { font-size: 20px; font-weight: 700; color: var(--primary); text-decoration: none; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--bg); padding-top: 34px; }
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.95); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2.5%;
+    display: flex; align-items: center; justify-content: space-between; height: 100px;
+  }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); letter-spacing: -0.5px; text-decoration: none; }
   .logo span { color: var(--accent); }
-  .nav-links { display: flex; gap: 32px; list-style: none; }
-  .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 15px; }
+  .nav-links { display: flex; gap: 26px; list-style: none; align-items: stretch; }
+  .nav-links a {
+    text-decoration: none; color: var(--text); font-size: 21px; font-weight: 600;
+    transition: color 0.2s; padding: 6px 8px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    line-height: 1.3; letter-spacing: 2px;
+  }
+  .nav-icon { font-size: 19px; line-height: 1; margin-bottom: 4px; }
   .nav-links a:hover, .nav-links a.active { color: var(--primary); }
-  .nav-cta { background: var(--primary); color: white; padding: 8px 20px; border-radius: 8px; font-size: 14px; text-decoration: none; font-weight: 500; }
+  .nav-links a.nav-hot { color: var(--primary); font-weight: 700; }
+  .nav-links a.nav-star {
+    background: linear-gradient(90deg,#1a56db,#3b82f6); color:#fff;
+    padding: 8px 18px; border-radius: 18px; font-weight: 700;
+    box-shadow: 0 3px 12px rgba(26,86,219,0.35);
+  }
+  .nav-links a.nav-star:hover, .nav-links a.nav-star.active { color:#fff; opacity:0.92; }
+  .nav-cta { background: var(--primary); color: white; padding: 10px 24px; border-radius: 8px; font-size: 16px; text-decoration: none; font-weight: 500; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--primary-dark); }
+  @media (max-width: 768px) { nav .nav-links { display: none; } }
   .page-header { background: white; padding: 40px 5% 32px; border-bottom: 1px solid var(--border); }
   .page-header h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
   .page-header p { color: var(--text-muted); font-size: 15px; }
@@ -88,19 +117,31 @@
   .num.blue { color: var(--primary); }
   .num.green { color: var(--success); }
   .num.red { color: var(--accent); }
+
+  /* MARQUEE BAR */
+  .marquee-bar { position: fixed; top: 0; left: 0; width: 100%; z-index: 10000; background: linear-gradient(90deg,#1a56db,#3b82f6,#6366f1,#3b82f6,#1a56db); color: white; height: 34px; line-height: 34px; overflow: hidden; white-space: nowrap; box-shadow: 0 1px 6px rgba(0,0,0,0.15); }
+  .marquee-track { display: inline-block; animation: marquee-scroll 25s linear infinite; white-space: nowrap; }
+  .marquee-track span { display: inline-block; padding: 0 60px; font-size: 14px; font-weight: 500; letter-spacing: 1px; }
+  @keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 </style>
+<script>
+var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?a9d8ec5ea4c9eb3f3134931a2f5c67c7";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();
+</script>
 </head>
 <body>
+<div class="marquee-bar"><div class="marquee-track"><span>📢 现有部分线上一对一辅导名额，请联系微信号：andrewlaoyu 或者邮箱 jingweimath@outlook.com</span><span>📢 请随时关注，考研数学团队将持续更新内容</span><span>📢 现有部分线上一对一辅导名额，请联系微信号：andrewlaoyu 或者邮箱 jingweimath@outlook.com</span><span>📢 请随时关注，考研数学团队将持续更新内容</span></div></div>
 <nav>
-  <a class="logo" href="index.html">经维<span>数学</span></a>
+  <a class="logo" href="index.html"><img src="logo-192.png" alt="经纬考研数学" height="46"></a>
   <ul class="nav-links">
-    <li><a href="index.html">首页</a></li>
-    <li><a href="courses.html">网课视频</a></li>
-    <li><a href="plan.html" class="active">复习计划</a></li>
-    <li><a href="practice.html">题库练习</a></li>
-    <li><a href="index.html#pricing">价格</a></li>
+    <li><a href="index.html"><span class="nav-icon">🏠</span>首页</a></li>
+    <li><a href="courses.html" class="nav-star"><span class="nav-icon">🎬</span>网课<br>视频</a></li>
+    <li><a href="plan.html" class="active"><span class="nav-icon">📅</span>复习<br>计划</a></li>
+    <li><a href="practice.html" class="nav-hot"><span class="nav-icon">🔥</span>题库<br>练习</a></li>
+    <li><a href="exams.html" class="nav-hot"><span class="nav-icon">📋</span>考研<br>真题</a></li>
+    <li><a href="comprehensive.html" class="nav-hot"><span class="nav-icon">📝</span>经纬<br>研选</a></li>
+    <li><a href="notes.html"><span class="nav-icon">📐</span>经纬<br>论数</a></li>
   </ul>
-  <a href="index.html#pricing" class="nav-cta">立即报名</a>
+  <a href="practice.html" class="nav-cta">开始刷题</a>
 </nav>
 
 <div class="page-header">
@@ -297,5 +338,21 @@ function toggleTask(el) {
 
 renderCalendar();
 </script>
+<script src="auth-widget.js"></script>
+<!-- FOOTER -->
+<footer style="background:#111827;color:#9ca3af;padding:32px 5%;text-align:center;font-size:13px;">
+  <div style="margin-bottom:12px;">
+    <a href="index.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">首页</a>
+    <a href="courses.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">网课</a>
+    <a href="exams.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">真题</a>
+    <a href="practice.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">题库</a>
+    <a href="comprehensive.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">经纬研选</a>
+    <a href="membership.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">会员</a>
+  </div>
+  <div>© 2026 经纬数学 · 考研辅导 · www.jingweimath.com</div>
+      <div style="margin-top:8px;"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=37020202370561" target="_blank" rel="noreferrer" style="color:#9ca3af;text-decoration:none;">鲁公网安备37020202370561号</a></div>
+    <div style="margin-top:4px;"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" style="color:#9ca3af;text-decoration:none;">鲁ICP备2026032754号</a></div>
+  </footer>
+
 </body>
 </html>

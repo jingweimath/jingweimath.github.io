@@ -3,7 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>经维考研数学 · 系统精讲</title>
+<title>经纬考研数学 - 系统精讲课程 | 题库练习 | 历年真题</title>
+<meta name="description" content="经纬考研数学，专注考研数学一辅导。高等数学、线性代数、概率论系统精讲课程，2000+题库在线刷题，2010-2026历年真题免费下载，科学复习计划助你一战上岸。">
+<meta name="keywords" content="考研数学,考研数学一,高等数学,线性代数,概率论,考研真题,考研题库,数学辅导,经纬数学,2027考研,历年真题,网课">
+<meta name="robots" content="index, follow">
+<meta name="baidu-site-verification" content="codeva-E6YljvT44F" />
+<meta property="og:title" content="经纬考研数学 - 系统精讲课程 | 题库练习 | 历年真题">
+<meta property="og:description" content="专注考研数学一辅导，系统精讲+海量题库+历年真题，科学备考一站搞定。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jingweimath.com/">
+<meta property="og:site_name" content="经纬考研数学">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "经纬考研数学",
+  "url": "https://jingweimath.com/",
+  "description": "专注考研数学一辅导：系统精讲课程、2000+在线题库、2010-2026历年真题免费下载、科学复习计划。",
+  "publisher": { "@type": "Organization", "name": "经纬考研数学", "url": "https://jingweimath.com/" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "考研数学一考什么内容？",
+      "acceptedAnswer": { "@type": "Answer", "text": "数学一满分150分，内容为高等数学约56%、线性代数约22%、概率论与数理统计约22%，是考研数学中覆盖面最广的卷种，适用于绝大多数工科专业。" }
+    },
+    {
+      "@type": "Question",
+      "name": "考研数学什么时候开始复习比较好？",
+      "acceptedAnswer": { "@type": "Answer", "text": "一般建议考前一年的3月前后开始基础阶段，7-8月暑期强化，9-10月起以历年真题为核心进行冲刺训练。基础薄弱的同学可以更早开始，配合科学的复习计划按周推进。" }
+    },
+    {
+      "@type": "Question",
+      "name": "考研数学历年真题在哪里免费下载？",
+      "acceptedAnswer": { "@type": "Answer", "text": "本站历年真题页面提供2010-2026年考研数学一、数学二、数学三真题及详细解析，全部免费下载。" }
+    },
+    {
+      "@type": "Question",
+      "name": "考研数学基础差应该怎么复习？",
+      "acceptedAnswer": { "@type": "Answer", "text": "建议从基础精讲课入手，先吃透概念和定理再刷题；刷题按章节、按难度循序渐进，并坚持整理错题本，考前重点复盘错题而非盲目刷新题。" }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
@@ -27,54 +75,76 @@
     position: sticky; top: 0; z-index: 100;
     background: rgba(255,255,255,0.95); backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border);
-    padding: 0 5%;
-    display: flex; align-items: center; justify-content: space-between; height: 64px;
+    padding: 0 2.5%;
+    display: flex; align-items: center; justify-content: space-between; height: 100px;
   }
   .logo { font-size: 20px; font-weight: 700; color: var(--primary); letter-spacing: -0.5px; }
   .logo span { color: var(--accent); }
-  .nav-links { display: flex; gap: 32px; list-style: none; }
-  .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 15px; transition: color 0.2s; }
+  .nav-links { display: flex; gap: 26px; list-style: none; align-items: stretch; }
+  .nav-links a {
+    text-decoration: none; color: var(--text); font-size: 21px; font-weight: 600;
+    transition: color 0.2s; padding: 6px 8px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    line-height: 1.3; letter-spacing: 2px;
+  }
+  .nav-icon { font-size: 19px; line-height: 1; margin-bottom: 4px; }
   .nav-links a:hover, .nav-links a.active { color: var(--primary); }
-  .nav-cta { background: var(--primary); color: white; padding: 8px 20px; border-radius: 8px; font-size: 14px; text-decoration: none; font-weight: 500; transition: background 0.2s; }
+  .nav-links a.nav-hot { color: var(--primary); font-weight: 700; }
+  .nav-links a.nav-star {
+    background: linear-gradient(90deg,#1a56db,#3b82f6); color:#fff;
+    padding: 8px 18px; border-radius: 18px; font-weight: 700;
+    box-shadow: 0 3px 12px rgba(26,86,219,0.35);
+  }
+  .nav-links a.nav-star:hover { color:#fff; opacity:0.92; }
+  .nav-cta { background: var(--primary); color: white; padding: 10px 24px; border-radius: 8px; font-size: 16px; text-decoration: none; font-weight: 500; transition: background 0.2s; }
   .nav-cta:hover { background: var(--primary-dark); }
+
+  /* SITE NOTICE */
+  .site-notice {
+    background: #fef3c7; border-bottom: 1px solid #fcd34d;
+    text-align: center; padding: 10px 5%; font-size: 14px; color: #92400e;
+    font-weight: 500; letter-spacing: 0.5px;
+  }
+  .site-notice span { margin: 0 4px; }
 
   /* HERO */
   .hero {
-    padding: 80px 5% 60px;
+    padding: 36px 5% 28px;
     background: linear-gradient(135deg, #f0f4ff 0%, #fafbff 60%, #fff5f5 100%);
-    display: flex; align-items: center; gap: 60px;
-    min-height: 520px;
+    display: flex; align-items: center; gap: 40px;
+    min-height: calc(100vh - 260px);
   }
-  .hero-left { flex: 1; max-width: 560px; }
-  .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--primary-light); color: var(--primary); font-size: 13px; font-weight: 500; padding: 4px 12px; border-radius: 20px; margin-bottom: 20px; }
+  .hero-left { flex: 1; max-width: 420px; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--primary-light); color: var(--primary); font-size: 12px; font-weight: 500; padding: 3px 10px; border-radius: 20px; margin-bottom: 14px; }
   .hero-badge::before { content: ""; width: 6px; height: 6px; background: var(--primary); border-radius: 50%; }
-  .hero h1 { font-size: 42px; font-weight: 800; line-height: 1.2; margin-bottom: 16px; letter-spacing: -1px; }
+  .hero h1 { font-size: 36px; font-weight: 800; line-height: 1.18; margin-bottom: 12px; letter-spacing: -1px; }
   .hero h1 em { font-style: normal; color: var(--primary); }
-  .hero p { font-size: 17px; color: var(--text-muted); line-height: 1.7; margin-bottom: 32px; }
+  .hero p { font-size: 16px; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px; }
   .hero-btns { display: flex; gap: 12px; align-items: center; }
-  .btn-primary { background: var(--primary); color: white; padding: 14px 28px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; transition: transform 0.2s, background 0.2s; }
+  .btn-primary { background: var(--primary); color: white; padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; transition: transform 0.2s, background 0.2s; }
   .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); }
-  .btn-outline { border: 1.5px solid var(--border); color: var(--text); padding: 13px 24px; border-radius: 10px; font-size: 15px; text-decoration: none; transition: border-color 0.2s; }
+  .btn-outline { border: 1.5px solid var(--border); color: var(--text); padding: 11px 22px; border-radius: 10px; font-size: 15px; text-decoration: none; transition: border-color 0.2s; }
   .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
-  .hero-stats { display: flex; gap: 32px; margin-top: 40px; }
+  .hero-stats { display: flex; gap: 28px; margin-top: 22px; }
   .stat-item { text-align: center; }
-  .stat-num { font-size: 28px; font-weight: 800; color: var(--primary); }
-  .stat-label { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+  .stat-num { font-size: 24px; font-weight: 800; color: var(--primary); }
+  .stat-label { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
   .hero-right { flex: 1; display: flex; justify-content: center; }
   .hero-card {
-    background: white; border-radius: 20px; box-shadow: 0 8px 40px rgba(26,86,219,0.12);
-    padding: 28px; width: 340px;
+    background: white; border-radius: 16px; box-shadow: 0 6px 30px rgba(26,86,219,0.12);
+    padding: 18px; width: 300px;
   }
   .course-preview-img {
-    width: 100%; height: 180px; background: linear-gradient(135deg, #1a56db 0%, #3b82f6 100%);
-    border-radius: 12px; display: flex; align-items: center; justify-content: center;
-    margin-bottom: 16px; position: relative; overflow: hidden;
+    width: 100%; height: 150px; background: linear-gradient(135deg, #1a56db 0%, #3b82f6 100%);
+    border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    margin-bottom: 12px; position: relative; overflow: hidden;
   }
   .play-btn {
-    width: 56px; height: 56px; background: rgba(255,255,255,0.9);
+    width: 48px; height: 48px; background: rgba(255,255,255,0.9);
     border-radius: 50%; display: flex; align-items: center; justify-content: center;
     cursor: pointer; transition: transform 0.2s;
   }
+  .play-btn svg { width: 18px; height: 18px; }
   .play-btn:hover { transform: scale(1.08); }
   .play-btn svg { margin-left: 4px; }
   .course-meta { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
@@ -126,12 +196,29 @@
   /* TEACHER */
   .teacher-section { background: var(--bg); }
   .teacher-card { max-width: 820px; margin: 0 auto; background: white; border-radius: 20px; padding: 40px; display: flex; gap: 40px; align-items: flex-start; box-shadow: var(--shadow); }
-  .teacher-avatar { width: 120px; height: 120px; background: linear-gradient(135deg, var(--primary) 0%, #60a5fa 100%); border-radius: 60px; display: flex; align-items: center; justify-content: center; font-size: 42px; flex-shrink: 0; color: white; font-weight: 800; }
+  .teacher-avatar { width: 120px; height: 120px; border-radius: 60px; flex-shrink: 0; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+  .teacher-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
   .teacher-info h2 { font-size: 24px; font-weight: 800; margin-bottom: 6px; }
   .teacher-info .title { color: var(--primary); font-size: 14px; font-weight: 600; margin-bottom: 14px; }
   .teacher-info p { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
   .teacher-badges { display: flex; gap: 8px; flex-wrap: wrap; }
   .badge { background: var(--primary-light); color: var(--primary); font-size: 13px; font-weight: 500; padding: 4px 12px; border-radius: 20px; }
+
+  /* TEAM GRID */
+  .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; max-width: 960px; margin: 0 auto; }
+  .team-member {
+    background: white; border: 1px solid var(--border); border-radius: 16px;
+    padding: 28px 20px; text-align: center; transition: all 0.2s;
+  }
+  .team-member:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+  .team-avatar {
+    width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; font-weight: 800; color: white;
+  }
+  .team-member h4 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .team-role { font-size: 13px; color: var(--primary); font-weight: 600; margin-bottom: 10px; }
+  .team-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
 
   /* TESTIMONIALS */
   .reviews-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
@@ -177,29 +264,72 @@
   .wechat-qr { background: white; color: #111; padding: 12px; border-radius: 8px; font-size: 11px; text-align: center; width: 80px; }
   .wechat-qr .qr-box { width: 56px; height: 56px; background: #111; margin: 0 auto 4px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 22px; }
 
+  /* MARQUEE BAR */
+  .marquee-bar {
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
+    background: linear-gradient(90deg, #1a56db, #3b82f6, #6366f1, #3b82f6, #1a56db);
+    color: white; height: 34px; line-height: 34px;
+    overflow: hidden; white-space: nowrap;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+  }
+  .marquee-track {
+    display: inline-block;
+    animation: marquee-scroll 25s linear infinite;
+    white-space: nowrap;
+  }
+  .marquee-track span {
+    display: inline-block;
+    padding: 0 60px;
+    font-size: 14px; font-weight: 500; letter-spacing: 1px;
+  }
+  @keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  body { padding-top: 34px; }
+
+  /* SLOGAN BAR - 数学强则科技强 */
+  .slogan-bar {
+    background: linear-gradient(90deg, #1a56db 0%, #3b82f6 50%, #6366f1 100%);
+    color: #fff; text-align: center; padding: 14px 5%;
+    font-size: 19px; font-weight: 700; letter-spacing: 2px;
+    box-shadow: 0 2px 12px rgba(26,86,219,0.2);
+  }
+  .slogan-bar em { font-style: normal; color: #fde047; font-size: 21px; }
+  .slogan-bar small { display: block; font-size: 11px; font-weight: 400; opacity: 0.85; margin-top: 2px; letter-spacing: 1px; }
+
   @media (max-width: 768px) {
     .hero { flex-direction: column; padding: 48px 5% 40px; }
     .hero-right { display: none; }
     .hero h1 { font-size: 30px; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
     nav .nav-links { display: none; }
+    .slogan-bar { font-size: 16px; padding: 14px 5%; letter-spacing: 1px; }
+    .slogan-bar em { font-size: 18px; }
   }
 </style>
+<script>
+var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?a9d8ec5ea4c9eb3f3134931a2f5c67c7";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();
+</script>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <div class="logo">经维<span>数学</span></div>
+  <a href="index.html" class="logo"><img src="logo-192.png" alt="经纬考研数学" height="46"></a>
   <ul class="nav-links">
-    <li><a href="#" class="active">首页</a></li>
-    <li><a href="courses.html">网课视频</a></li>
-    <li><a href="plan.html">复习计划</a></li>
-    <li><a href="practice.html">题库练习</a></li>
-    <li><a href="#pricing">价格</a></li>
+    <li><a href="#" class="active"><span class="nav-icon">🏠</span>首页</a></li>
+    <li><a href="courses.html" class="nav-star"><span class="nav-icon">🎬</span>网课<br>视频</a></li>
+    <li><a href="plan.html"><span class="nav-icon">📅</span>复习<br>计划</a></li>
+    <li><a href="practice.html" class="nav-hot"><span class="nav-icon">🔥</span>题库<br>练习</a></li>
+    <li><a href="exams.html" class="nav-hot"><span class="nav-icon">📋</span>考研<br>真题</a></li>
+    <li><a href="comprehensive.html" class="nav-hot"><span class="nav-icon">📝</span>经纬<br>研选</a></li>
+    <li><a href="notes.html"><span class="nav-icon">📐</span>经纬<br>论数</a></li>
   </ul>
-  <a href="#pricing" class="nav-cta">立即报名</a>
+  <a href="practice.html" class="nav-cta">开始刷题</a>
 </nav>
+
+<div class="site-notice">网站改进中<span>·</span>我们正在优化内容，如发现错误请见谅</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -218,28 +348,45 @@
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-card">
-      <div class="course-preview-img">
+    <a href="courses.html#latest-video" class="hero-card" style="text-decoration:none;color:inherit;display:block;">
+      <div class="course-preview-img" style="position:relative;">
+        <div style="position:absolute;top:10px;left:10px;background:#e24b4a;color:#fff;font-size:24px;font-weight:800;padding:5px 12px;border-radius:6px;letter-spacing:1px;">最新发布</div>
+        <div style="position:absolute;bottom:8px;left:0;right:0;text-align:center;color:#fff;font-size:14px;font-weight:600;text-shadow:0 1px 3px rgba(0,0,0,0.45);letter-spacing:1px;">几何与线代交叉题目</div>
         <div class="play-btn">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="#1a56db"><path d="M8 5v14l11-7z"/></svg>
         </div>
       </div>
-      <div class="course-meta">高等数学 · 第1章</div>
-      <div class="course-title">极限与连续 — 从 ε-δ 到无穷</div>
+      <div class="course-meta">线性代数 · 精品习题课 · 免费观看</div>
+      <div class="course-title">宝藏级线性代数习题课已上线，请点击"网课视频"标签收看</div>
       <div class="course-price">
-        <span class="price-now">¥599</span>
-        <span class="price-ori">¥999</span>
-        <a href="#pricing" class="buy-btn">立即购买</a>
+        <span class="price-now" style="color:#16a34a">免费</span>
+        <span class="buy-btn" style="background:var(--primary)">马上学习</span>
       </div>
-    </div>
+    </a>
   </div>
 </section>
+
+<!-- MARQUEE BAR -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span>📢 现有部分线上一对一辅导名额，请联系微信号：andrewlaoyu 或者邮箱 jingweimath@outlook.com</span>
+    <span>📢 请随时关注，考研数学团队将持续更新内容</span>
+    <span>📢 现有部分线上一对一辅导名额，请联系微信号：andrewlaoyu 或者邮箱 jingweimath@outlook.com</span>
+    <span>📢 请随时关注，考研数学团队将持续更新内容</span>
+  </div>
+</div>
+
+<!-- SLOGAN -->
+<div class="slogan-bar">
+  数学强则科技强，<em>则国家强</em>
+  <small>—— 经纬考研数学，为强国育才</small>
+</div>
 
 <!-- MODULES -->
 <section>
   <div class="section-header">
     <div class="section-tag">全套备考体系</div>
-    <div class="section-title">四大模块，覆盖备考全流程</div>
+    <div class="section-title">五大模块，覆盖备考全流程</div>
     <div class="section-sub">从课程学习到日常练习，从计划制定到阶段测试，一站式搞定</div>
   </div>
   <div class="modules-grid">
@@ -255,17 +402,23 @@
       <p>基于艾宾浩斯曲线的科学复习日历，自动安排每日任务，追踪学习进度。</p>
       <div class="module-arrow">制定计划 →</div>
     </a>
-    <a class="module-card" href="practice.html">
-      <div class="module-icon" style="background:#fef9c3">📝</div>
-      <h3>题库练习</h3>
-      <p>2000+ 精选真题与模拟题，分章节分难度，智能错题本自动归纳薄弱点。</p>
-      <div class="module-arrow">开始刷题 →</div>
+    <a class="module-card" href="practice.html" style="border-color:var(--primary);border-width:2px;background:linear-gradient(135deg,#e8f0fe 0%,#ffffff 100%);">
+      <div class="module-icon" style="background:var(--primary);color:white;">📝</div>
+      <h3>🔥 题库练习</h3>
+      <p>2000+ 精选真题与模拟题，分章节分难度，智能错题本自动归纳薄弱点。海量刷题，稳步提分。</p>
+      <div class="module-arrow" style="font-weight:700;">开始刷题 →</div>
     </a>
-    <a class="module-card" href="#teacher">
-      <div class="module-icon" style="background:#fce7f3">👨‍🏫</div>
-      <h3>品牌与师资</h3>
-      <p>专业数学背景，多年考研辅导实战经验，教学方法经过上百名学员验证。</p>
-      <div class="module-arrow">了解更多 →</div>
+    <a class="module-card" href="exams.html" style="border-color:var(--accent);border-width:2px;background:linear-gradient(135deg,#fef2f2 0%,#ffffff 100%);">
+      <div class="module-icon" style="background:var(--accent);color:white;">📋</div>
+      <h3>📋 考研真题</h3>
+      <p>2010-2026年数学一/二/三历年真题及详细解析，含最新2026年真题。免费下载，随时练习。</p>
+      <div class="module-arrow" style="font-weight:700;color:var(--accent);">查看真题 →</div>
+    </a>
+    <a class="module-card" href="yanxuan/index.html" style="border-color:#7c3aed;border-width:2px;background:linear-gradient(135deg,#f5f3ff 0%,#ffffff 100%);">
+      <div class="module-icon" style="background:#7c3aed;color:white;">📚</div>
+      <h3>经纬研选（在线）</h3>
+      <p>151 道精选综合题在线看：极限与连续、导数与中值定理、一元积分、线性代数四大板块，逐题配分步解析，手机可直接阅读。</p>
+      <div class="module-arrow" style="font-weight:700;color:#7c3aed;">在线做题 →</div>
     </a>
   </div>
 </section>
@@ -296,7 +449,7 @@
         <div class="course-tags"><span class="tag tag-blue">高等数学</span><span class="tag tag-red">重难点</span></div>
         <h4>不定积分 · 技巧全集</h4>
         <div class="meta"><span>⏱ 18课时</span><span>👥 652人学习</span></div>
-        <div class="course-footer"><span class="price">¥199</span><span style="font-size:13px;color:var(--primary);font-weight:600">→ 购买</span></div>
+        <div class="course-footer"><span class="price free">精品课</span><span style="font-size:13px;color:var(--primary);font-weight:600">→ 进入学习</span></div>
       </div>
     </a>
     <a class="course-card" href="courses.html">
@@ -305,7 +458,7 @@
         <div class="course-tags"><span class="tag tag-green">线性代数</span><span class="tag tag-blue">基础</span></div>
         <h4>矩阵与行列式 · 零基础入门</h4>
         <div class="meta"><span>⏱ 15课时</span><span>👥 728人学习</span></div>
-        <div class="course-footer"><span class="price">¥179</span><span style="font-size:13px;color:var(--primary);font-weight:600">→ 购买</span></div>
+        <div class="course-footer"><span class="price free">精品课</span><span style="font-size:13px;color:var(--primary);font-weight:600">→ 进入学习</span></div>
       </div>
     </a>
     <a class="course-card" href="courses.html">
@@ -314,7 +467,7 @@
         <div class="course-tags"><span class="tag tag-red">概率论</span><span class="tag tag-blue">系统</span></div>
         <h4>概率论与数理统计 · 全程班</h4>
         <div class="meta"><span>⏱ 24课时</span><span>👥 489人学习</span></div>
-        <div class="course-footer"><span class="price">¥249</span><span style="font-size:13px;color:var(--primary);font-weight:600">→ 购买</span></div>
+        <div class="course-footer"><span class="price free">精品课</span><span style="font-size:13px;color:var(--primary);font-weight:600">→ 进入学习</span></div>
       </div>
     </a>
   </div>
@@ -326,21 +479,44 @@
 <!-- TEACHER -->
 <section id="teacher">
   <div class="section-header">
-    <div class="section-tag">师资介绍</div>
-    <div class="section-title">专业背景，实战经验</div>
+    <div class="section-tag">师资力量</div>
+    <div class="section-title">大学教授团队</div>
+    <div class="section-sub">全部由高校数学教师组成，学术功底扎实，深谙考研命题规律</div>
   </div>
-  <div class="teacher-card">
-    <div class="teacher-avatar">数</div>
-    <div class="teacher-info">
-      <h2>主讲教师</h2>
-      <div class="title">大学数学系讲师 · 考研辅导专家</div>
-      <p>具有专业数学研究与教学背景，深刻理解考研数学命题规律与学生痛点。授课风格清晰简练，强调理解而非死记，注重考场实战技巧与常见错误预防。</p>
-      <p>多年考研辅导经验，辅导学员平均数学提分 <strong>20+ 分</strong>，最高提分记录 <strong>57 分</strong>。</p>
-      <div class="teacher-badges">
-        <span class="badge">数学专业背景</span>
-        <span class="badge">考研真题深研</span>
-        <span class="badge">1000+ 辅导学员</span>
-        <span class="badge">极限/微积分专精</span>
+  <div class="team-grid">
+    <div class="team-member">
+      <div class="team-avatar" style="background:linear-gradient(135deg,#1a56db,#3b82f6)">数</div>
+      <h4>主讲教授</h4>
+      <div class="team-role">高等数学 · 考研数学一</div>
+      <div class="team-desc">大学数学系教师，十余年考研辅导经验，深研命题规律，授课强调理解本质。</div>
+    </div>
+    <div class="team-member">
+      <div class="team-avatar" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)">代</div>
+      <h4>线性代数讲师</h4>
+      <div class="team-role">线性代数 · 矩阵论</div>
+      <div class="team-desc">高校代数方向教师，擅长用几何直观解释抽象概念，帮学生建立代数思维。</div>
+    </div>
+    <div class="team-member">
+      <div class="team-avatar" style="background:linear-gradient(135deg,#059669,#34d399)">概</div>
+      <h4>概率统计讲师</h4>
+      <div class="team-role">概率论 · 数理统计</div>
+      <div class="team-desc">统计学博士，教学逻辑清晰，将复杂概率模型拆解为易懂步骤，考试技巧丰富。</div>
+    </div>
+  </div>
+  <div style="margin-top:48px">
+    <div class="teacher-card">
+      <div class="teacher-avatar"><img src="teacher-photo.jpg" alt="主讲教授"></div>
+      <div class="teacher-info">
+        <h2>主讲教师</h2>
+        <div class="title">大学数学教师 · 二十年教学经验</div>
+        <p>我们是一支由高校数学教师组成的教研团队。不同于普通培训机构的兼职讲师，我们拥有扎实的数学专业背景和长期一线教学经验，能从学科本质出发，帮你真正理解数学，而不只是背题型。</p>
+        <p>团队累计辅导学员 <strong>1000+</strong>，学员平均数学提分 <strong>20+ 分</strong>，最高提分记录 <strong>57 分</strong>。</p>
+        <div class="teacher-badges">
+          <span class="badge">高校教师团队</span>
+          <span class="badge">数学专业背景</span>
+          <span class="badge">考研真题深研</span>
+          <span class="badge">1000+ 辅导学员</span>
+        </div>
       </div>
     </div>
   </div>
@@ -380,56 +556,39 @@
   </div>
 </section>
 
-<!-- PRICING -->
-<section id="pricing">
+<!-- FAQ (静态文本，利于搜索引擎收录) -->
+<section id="faq">
+  <style>
+    .faq-list { max-width: 780px; margin: 0 auto; }
+    .faq-item { border: 1px solid var(--border); border-radius: 12px; padding: 18px 22px; margin-bottom: 14px; background: #fff; }
+    .faq-item h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; color: var(--text); }
+    .faq-item p { font-size: 14px; color: var(--text-muted); line-height: 1.8; }
+    .faq-item a { color: var(--primary); text-decoration: none; font-weight: 500; }
+  </style>
   <div class="section-header">
-    <div class="section-tag">课程定价</div>
-    <div class="section-title">选择适合你的方案</div>
-    <div class="section-sub">支持微信/支付宝扫码付款，购买后永久观看</div>
+    <div class="section-tag">常见问题</div>
+    <div class="section-title">考研数学备考 FAQ</div>
   </div>
-  <div class="pricing-grid">
-    <div class="pricing-card">
-      <div class="pricing-name">单科课程</div>
-      <div class="pricing-price">¥199 <small>起</small></div>
-      <div class="pricing-desc">按需购买，灵活选择</div>
-      <ul class="pricing-features">
-        <li>指定单科全部课程</li>
-        <li>课程讲义下载</li>
-        <li>对应章节题库</li>
-        <li class="no">全科题库</li>
-        <li class="no">复习计划系统</li>
-        <li class="no">答疑服务</li>
-      </ul>
-      <a href="#" class="pricing-btn outline" onclick="showPayModal('单科课程 ¥199起')">扫码购买</a>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3>考研数学一考什么内容？</h3>
+      <p>数学一满分 150 分，内容为高等数学约 56%、线性代数约 22%、概率论与数理统计约 22%，是考研数学中覆盖面最广的卷种，适用于绝大多数工科专业。</p>
     </div>
-    <div class="pricing-card featured">
-      <div class="featured-badge">最受欢迎</div>
-      <div class="pricing-name">全科套餐</div>
-      <div class="pricing-price">¥599 <small></small></div>
-      <div class="pricing-desc">数一三大模块全覆盖</div>
-      <ul class="pricing-features">
-        <li>全部课程无限回放</li>
-        <li>配套讲义 PDF</li>
-        <li>2000+ 题库练习</li>
-        <li>个性化复习计划</li>
-        <li>错题本智能归纳</li>
-        <li class="no">1对1答疑</li>
-      </ul>
-      <a href="#" class="pricing-btn primary" onclick="showPayModal('全科套餐 ¥599')">扫码购买</a>
+    <div class="faq-item">
+      <h3>考研数学什么时候开始复习比较好？</h3>
+      <p>一般建议考前一年的 3 月前后开始基础阶段，7-8 月暑期强化，9-10 月起以历年真题为核心进行冲刺训练。基础薄弱的同学可以更早开始，配合<a href="plan.html">科学的复习计划</a>按周推进。</p>
     </div>
-    <div class="pricing-card">
-      <div class="pricing-name">VIP 冲刺班</div>
-      <div class="pricing-price">¥999</div>
-      <div class="pricing-desc">全科 + 答疑 + 1对1指导</div>
-      <ul class="pricing-features">
-        <li>全部课程无限回放</li>
-        <li>配套讲义 PDF</li>
-        <li>2000+ 题库练习</li>
-        <li>个性化复习计划</li>
-        <li>错题本智能归纳</li>
-        <li>每周1对1答疑</li>
-      </ul>
-      <a href="#" class="pricing-btn outline" onclick="showPayModal('VIP 冲刺班 ¥999')">扫码购买</a>
+    <div class="faq-item">
+      <h3>考研数学历年真题在哪里免费下载？</h3>
+      <p>本站<a href="exams.html">历年真题页面</a>提供 2010-2026 年考研数学一、数学二、数学三真题及详细解析，全部免费下载。</p>
+    </div>
+    <div class="faq-item">
+      <h3>考研数学基础差应该怎么复习？</h3>
+      <p>建议从<a href="courses.html">基础精讲课</a>入手，先吃透概念和定理再刷题；刷题按章节、按难度循序渐进（可用<a href="practice.html">在线题库</a>），并坚持整理错题本，考前重点复盘错题而非盲目刷新题。</p>
+    </div>
+    <div class="faq-item">
+      <h3>哪里有考研数学知识点的深度讲解？</h3>
+      <p>「<a href="notes.html">经纬论数</a>」栏目持续更新高等数学、线性代数核心专题的深度讲解，如<a href="articles/limit-theory.html">极限的保号性与存在性</a>、<a href="articles/jordan-form.html">若当型与相似对角化</a>、<a href="articles/improper-integral-limit.html">反常积分收敛性反例</a>等，全部结合考研真题。</p>
     </div>
   </div>
 </section>
@@ -438,7 +597,7 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <span class="logo" style="color:#60a5fa">数学<span style="color:#f87171">精讲</span></span>
+      <span class="logo" style="display:inline-block;filter:brightness(0) invert(1)"><img src="logo-192.png" alt="经纬考研数学" height="28"></span>
       <p>专注考研数学一辅导，科学备考方法 + 海量精品内容，助你一战上岸。</p>
       <div style="margin-top:20px">
         <div class="wechat-qr">
@@ -468,52 +627,22 @@
       <h4>关于</h4>
       <ul>
         <li><a href="#teacher">师资介绍</a></li>
-        <li><a href="#pricing">课程定价</a></li>
-        <li><a href="#">学员评价</a></li>
-        <li><a href="#">联系我们</a></li>
+        <li><a href="practice.html">题库练习</a></li>
+        <li><a href="exams.html">📋 考研真题</a></li>
+    <li><a href="comprehensive.html" style="color:var(--primary);font-weight:700;">📝 经纬研选</a></li>
+    <li><a href="yanxuan/index.html" style="color:#7c3aed;font-weight:700;">📚 研选在线题库</a></li>
+        <li><a href="membership.html">会员</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 经维数学 · 考研辅导</span>
+    <span>© 2026 经纬数学 · 考研辅导</span>
     <span>课程内容版权所有</span>
   </div>
-</footer>
+    <div style="margin-top:8px;"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=37020202370561" target="_blank" rel="noreferrer" style="color:#9ca3af;text-decoration:none;">鲁公网安备37020202370561号</a></div>
+      <div style="margin-top:4px;"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" style="color:#9ca3af;text-decoration:none;">鲁ICP备2026032754号</a></div>
+  </footer>
 
-<!-- PAY MODAL -->
-<div id="payModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:999;display:none;align-items:center;justify-content:center;">
-  <div style="background:white;border-radius:20px;padding:36px;width:340px;text-align:center;position:relative;">
-    <button onclick="document.getElementById('payModal').style.display='none'" style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:#aaa;">×</button>
-    <div style="font-size:24px;margin-bottom:8px;">扫码付款</div>
-    <div id="payTitle" style="font-size:14px;color:#6b7280;margin-bottom:24px;"></div>
-    <div style="display:flex;gap:16px;justify-content:center;margin-bottom:20px;">
-      <div style="border:1.5px solid #e5e7eb;border-radius:12px;padding:16px 20px;flex:1;cursor:pointer;" onclick="selectPay(this,'wechat')">
-        <div style="font-size:28px;">💚</div>
-        <div style="font-size:13px;font-weight:600;margin-top:6px;">微信支付</div>
-      </div>
-      <div style="border:1.5px solid #e5e7eb;border-radius:12px;padding:16px 20px;flex:1;cursor:pointer;" onclick="selectPay(this,'alipay')">
-        <div style="font-size:28px;">💙</div>
-        <div style="font-size:13px;font-weight:600;margin-top:6px;">支付宝</div>
-      </div>
-    </div>
-    <div id="qrArea" style="background:#f8f9fc;border-radius:12px;padding:24px;margin-bottom:16px;">
-      <div style="width:120px;height:120px;background:#1e1e2e;border-radius:8px;margin:0 auto;display:flex;align-items:center;justify-content:center;color:white;font-size:11px;text-align:center;line-height:1.4;">请在此<br>放置<br>收款二维码</div>
-    </div>
-    <div style="font-size:12px;color:#9ca3af;">扫码后请备注：<strong>姓名+购买课程</strong></div>
-  </div>
-</div>
-
-<script>
-function showPayModal(title) {
-  document.getElementById('payTitle').textContent = title;
-  document.getElementById('payModal').style.display = 'flex';
-  return false;
-}
-function selectPay(el, type) {
-  document.querySelectorAll('#payModal [onclick^="selectPay"]').forEach(e => e.style.borderColor = '#e5e7eb');
-  el.style.borderColor = '#1a56db';
-}
-</script>
-
+<script src="auth-widget.js"></script>
 </body>
 </html>

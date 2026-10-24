@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>网课视频 · 经维数学</title>
+<title>网课视频 - 高等数学 | 线性代数 | 概率论 | 经纬考研数学</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta name="description" content="经纬考研数学网课，覆盖高等数学、线性代数、概率论三大模块。基础夯实到冲刺提分，系统精讲，随时回放，免费试听。">
+<meta name="keywords" content="考研数学网课,高等数学视频,线性代数课程,概率论精讲,考研数学视频,免费试听">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="网课视频 - 经纬考研数学">
+<meta property="og:description" content="高等数学、线性代数、概率论系统精讲，免费试听，随时回放。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jingweimath.com/courses.html">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
@@ -11,14 +19,35 @@
     --accent: #e24b4a; --text: #1e1e2e; --text-muted: #6b7280;
     --border: #e5e7eb; --bg: #f8f9fc; --white: #ffffff; --radius: 12px;
   }
-  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--bg); }
-  nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 5%; display: flex; align-items: center; justify-content: space-between; height: 64px; }
-  .logo { font-size: 20px; font-weight: 700; color: var(--primary); text-decoration: none; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--bg); padding-top: 34px; }
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.95); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2.5%;
+    display: flex; align-items: center; justify-content: space-between; height: 100px;
+  }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); letter-spacing: -0.5px; text-decoration: none; }
   .logo span { color: var(--accent); }
-  .nav-links { display: flex; gap: 32px; list-style: none; }
-  .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 15px; }
+  .nav-links { display: flex; gap: 26px; list-style: none; align-items: stretch; }
+  .nav-links a {
+    text-decoration: none; color: var(--text); font-size: 21px; font-weight: 600;
+    transition: color 0.2s; padding: 6px 8px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    line-height: 1.3; letter-spacing: 2px;
+  }
+  .nav-icon { font-size: 19px; line-height: 1; margin-bottom: 4px; }
   .nav-links a:hover, .nav-links a.active { color: var(--primary); }
-  .nav-cta { background: var(--primary); color: white; padding: 8px 20px; border-radius: 8px; font-size: 14px; text-decoration: none; font-weight: 500; }
+  .nav-links a.nav-hot { color: var(--primary); font-weight: 700; }
+  .nav-links a.nav-star {
+    background: linear-gradient(90deg,#1a56db,#3b82f6); color:#fff;
+    padding: 8px 18px; border-radius: 18px; font-weight: 700;
+    box-shadow: 0 3px 12px rgba(26,86,219,0.35);
+  }
+  .nav-links a.nav-star:hover, .nav-links a.nav-star.active { color:#fff; opacity:0.92; }
+  .nav-cta { background: var(--primary); color: white; padding: 10px 24px; border-radius: 8px; font-size: 16px; text-decoration: none; font-weight: 500; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--primary-dark); }
+  @media (max-width: 768px) { nav .nav-links { display: none; } }
   .page-header { background: white; padding: 40px 5% 32px; border-bottom: 1px solid var(--border); }
   .page-header h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
   .page-header p { color: var(--text-muted); font-size: 15px; }
@@ -52,19 +81,46 @@
   .btn-sm { font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 7px; text-decoration: none; }
   .btn-primary-sm { background: var(--primary); color: white; }
   .btn-red-sm { background: var(--accent); color: white; }
+
+  /* VIDEO SECTION (B站嵌入) */
+  .video-section { background: white; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 16px; overflow: hidden; }
+  .video-header { display: flex; align-items: center; gap: 14px; padding: 16px 20px; cursor: pointer; transition: all 0.2s; }
+  .video-header:hover { background: var(--primary-light); }
+  .video-play-btn { width: 40px; height: 40px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; transition: transform 0.2s; }
+  .video-header:hover .video-play-btn { transform: scale(1.1); }
+  .video-info { flex: 1; }
+  .video-badge { display: inline-block; background: #fee2e2; color: #b91c1c; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-bottom: 4px; }
+  .video-title { font-size: 16px; font-weight: 700; }
+  .video-sub { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+  .video-body { display: none; padding: 0 20px 20px; }
+  .video-body.active { display: block; }
+  .video-wrapper { position: relative; width: 100%; max-width: 720px; margin: 0 auto; padding-bottom: 56.25%; height: 0; }
+  .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+  /* MARQUEE BAR */
+  .marquee-bar { position: fixed; top: 0; left: 0; width: 100%; z-index: 10000; background: linear-gradient(90deg,#1a56db,#3b82f6,#6366f1,#3b82f6,#1a56db); color: white; height: 34px; line-height: 34px; overflow: hidden; white-space: nowrap; box-shadow: 0 1px 6px rgba(0,0,0,0.15); }
+  .marquee-track { display: inline-block; animation: marquee-scroll 25s linear infinite; white-space: nowrap; }
+  .marquee-track span { display: inline-block; padding: 0 60px; font-size: 14px; font-weight: 500; letter-spacing: 1px; }
+  @keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 </style>
+<script>
+var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?a9d8ec5ea4c9eb3f3134931a2f5c67c7";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();
+</script>
 </head>
 <body>
+<div class="marquee-bar"><div class="marquee-track"><span>📢 现有部分线上一对一辅导名额，请联系微信号：andrewlaoyu 或者邮箱 jingweimath@outlook.com</span><span>📢 请随时关注，考研数学团队将持续更新内容</span><span>📢 现有部分线上一对一辅导名额，请联系微信号：andrewlaoyu 或者邮箱 jingweimath@outlook.com</span><span>📢 请随时关注，考研数学团队将持续更新内容</span></div></div>
 <nav>
-  <a class="logo" href="index.html">经维<span>数学</span></a>
+  <a class="logo" href="index.html"><img src="logo-192.png" alt="经纬考研数学" height="46"></a>
   <ul class="nav-links">
-    <li><a href="index.html">首页</a></li>
-    <li><a href="courses.html" class="active">网课视频</a></li>
-    <li><a href="plan.html">复习计划</a></li>
-    <li><a href="practice.html">题库练习</a></li>
-    <li><a href="index.html#pricing">价格</a></li>
+    <li><a href="index.html"><span class="nav-icon">🏠</span>首页</a></li>
+    <li><a href="courses.html" class="nav-star active"><span class="nav-icon">🎬</span>网课<br>视频</a></li>
+    <li><a href="plan.html"><span class="nav-icon">📅</span>复习<br>计划</a></li>
+    <li><a href="practice.html" class="nav-hot"><span class="nav-icon">🔥</span>题库<br>练习</a></li>
+    <li><a href="exams.html" class="nav-hot"><span class="nav-icon">📋</span>考研<br>真题</a></li>
+    <li><a href="comprehensive.html" class="nav-hot"><span class="nav-icon">📝</span>经纬<br>研选</a></li>
+    <li><a href="notes.html"><span class="nav-icon">📐</span>经纬<br>论数</a></li>
   </ul>
-  <a href="index.html#pricing" class="nav-cta">立即报名</a>
+  <a href="practice.html" class="nav-cta">开始刷题</a>
 </nav>
 
 <div class="page-header">
@@ -81,8 +137,405 @@
     <button class="filter-btn" onclick="filterCourse(this,'free')">免费课</button>
   </div>
 
-  <!-- 高等数学 -->
-  <div class="subject-section" data-subject="calculus">
+  <!-- 精品线性代数习题课（B站视频） -->
+  <div class="subject-section" data-subject="linalg">
+    <div class="subject-title">📕 精品线性代数习题课</div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1Wwt86hEeE')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">精品线性代数习题课（一）</div>
+          <div class="video-sub">习题精讲 · 逐题解析 · 100分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="exams/经纬研选-线性代数习题解析.pdf?v=20260905" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#e8f0fe;color:#1a56db;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #bfdbfe;"
+             onmouseover="this.style.background='#dbeafe';" onmouseout="this.style.background='#e8f0fe';">
+            📄 下载配套习题解析 PDF
+          </a>
+          <a href="https://www.bilibili.com/video/BV1Wwt86hEeE/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1P2ta6uEV5')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">精品线性代数习题课（二）</div>
+          <div class="video-sub">习题精讲 · 逐题解析 · 123分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV1P2ta6uEV5/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1HRt36VE62')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">精品线性代数习题课（三）</div>
+          <div class="video-sub">习题精讲 · 逐题解析 · 85分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV1HRt36VE62/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1Fjt36uEMM')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">精品线性代数习题课（四）</div>
+          <div class="video-sub">习题精讲 · 逐题解析 · 87分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV1Fjt36uEMM/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV15otU6iEFj')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">精品线性代数习题课（五）</div>
+          <div class="video-sub">习题精讲 · 逐题解析 · 106分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV15otU6iEFj/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1pJtS6DEyK')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">精品线性代数习题课（六）</div>
+          <div class="video-sub">习题精讲 · 逐题解析 · 100分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV1pJtS6DEyK/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1uWtq68Eme')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">精品线性代数习题课（七）</div>
+          <div class="video-sub">习题精讲 · 逐题解析 · 90分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV1uWtq68Eme/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 新编考研数学线性代数基础（B站视频） -->
+  <div class="subject-section" data-subject="all">
+    <div class="subject-title">📗 新编考研数学线性代数基础</div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1PS826nEcB')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">新编考研数学线性代数基础（一）</div>
+          <div class="video-sub">零基础起步 · 考点系统梳理 · 80分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="exams/新编考研线代基础.pdf?v=20260823" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#e8f0fe;color:#1a56db;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #bfdbfe;"
+             onmouseover="this.style.background='#dbeafe';" onmouseout="this.style.background='#e8f0fe';">
+            📄 下载配套课件 PDF
+          </a>
+          <a href="https://www.bilibili.com/video/BV1PS826nEcB/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1PS826nEDM')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">新编考研数学线性代数基础（二）</div>
+          <div class="video-sub">零基础起步 · 考点系统梳理 · 19分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV1PS826nEDM/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 新编考研数学线性代数精华版（B站视频） -->
+  <div class="subject-section" data-subject="all">
+    <div class="subject-title">📘 新编考研数学线性代数精华版</div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1SAgL6QEMf')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">新编考研数学线性代数精华版（一）</div>
+          <div class="video-sub">系统精讲 · 讲解清晰 · 例题贴近考研真题</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="exams/考研数学线性代数精华版.pdf?v=20260905" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#e8f0fe;color:#1a56db;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #bfdbfe;"
+             onmouseover="this.style.background='#dbeafe';" onmouseout="this.style.background='#e8f0fe';">
+            📄 下载配套课件 PDF
+          </a>
+          <a href="https://www.bilibili.com/video/BV1SAgL6QEMf/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV13ngj6FEfP')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge">免费</div>
+          <div class="video-title">新编考研数学线性代数精华版（二）</div>
+          <div class="video-sub">系统精讲 · 讲解清晰 · 例题贴近考研真题</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body"></div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1gmb26ZERU')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">新编考研数学线性代数精华版（三）</div>
+          <div class="video-sub">系统精讲 · 讲解清晰 · 159分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV1gmb26ZERU/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV13mb26ZEcc')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">新编考研数学线性代数精华版（四）</div>
+          <div class="video-sub">系统精讲 · 讲解清晰 · 105分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV13mb26ZEcc/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1bMbd6jE8v')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">新编考研数学线性代数精华版（五）</div>
+          <div class="video-sub">系统精讲 · 讲解清晰 · 89分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV1bMbd6jE8v/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1VobR69EbS')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">新编考研数学线性代数精华版（六）</div>
+          <div class="video-sub">系统精讲 · 讲解清晰 · 75分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV1VobR69EbS/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 专题精讲 -->
+  <div class="subject-section" data-subject="all">
+    <div class="subject-title">🎯 专题精讲</div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1rAug6WENq')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#dbeafe;color:#1d4ed8;">专题</div>
+          <div class="video-title">考研数学 · 一题突破极限理论</div>
+          <div class="video-sub">极限存在性 · 保号性 · 连续与可导 · 21分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="exams/一题突破极限理论.pdf" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#e8f0fe;color:#1a56db;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #bfdbfe;"
+             onmouseover="this.style.background='#dbeafe';" onmouseout="this.style.background='#e8f0fe';">
+            📄 下载配套课件 PDF
+          </a>
+          <a href="https://www.bilibili.com/video/BV1rAug6WENq/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1An326vEAj')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#dbeafe;color:#1d4ed8;">专题</div>
+          <div class="video-title">考研数学 · 极值与凹凸性专题精讲</div>
+          <div class="video-sub">概念剖析 · 解题思路 · 真题演练 · 53分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="exams/考研数学极值与凹凸性专题.pdf" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#e8f0fe;color:#1a56db;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #bfdbfe;"
+             onmouseover="this.style.background='#dbeafe';" onmouseout="this.style.background='#e8f0fe';">
+            📄 下载配套课件 PDF
+          </a>
+          <a href="https://www.bilibili.com/video/BV1An326vEAj/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-section" id="latest-video">
+      <div class="video-header" onclick="toggleVideo(this, 'BV1ZBbN6XEkH')">
+        <div class="video-play-btn">▶</div>
+        <div class="video-info">
+          <div class="video-badge" style="background:#fee2e2;color:#b91c1c;">最新</div>
+          <div class="video-title">考研数学 · 几何与线代专题精讲</div>
+          <div class="video-sub">空间几何 · 线性与方程组 · 二次型 · 55分钟</div>
+        </div>
+        <span style="color:#9ca3af;font-size:13px;">点击展开 ▾</span>
+      </div>
+      <div class="video-body">
+        <div style="display:flex;gap:16px;align-items:center;justify-content:center;padding:12px 0;flex-wrap:wrap;">
+          <a href="https://www.bilibili.com/video/BV1ZBbN6XEkH/" target="_blank"
+             style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#fb7299;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid #fbc4d4;"
+             onmouseover="this.style.background='#fef2f2';" onmouseout="this.style.background='#fff';">
+            ▶ 在B站打开
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 高等数学（暂未开放，隐藏） -->
+  <div class="subject-section" data-subject="calculus" style="display:none;">
     <div class="subject-title">📐 高等数学</div>
     <div class="courses-grid">
       <a class="course-card" href="#" onclick="showVideo('极限与连续')">
@@ -102,131 +555,131 @@
         <div class="course-thumb" style="background:#ede9fe">
           <span>f'</span>
           <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1a56db"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <span class="lock-badge paid-badge">¥99</span>
+          <span class="lock-badge free-badge">精品</span>
         </div>
         <div class="course-body">
           <div class="tags"><span class="tag tag-blue">高等数学</span><span class="tag tag-red">重难点</span></div>
           <h4>02 · 导数与微分</h4>
           <div class="meta"><span>⏱ 15课时</span><span>👥 712人</span></div>
-          <div class="course-footer"><span class="price-paid">¥99</span><span class="btn-sm btn-red-sm">购买</span></div>
+          <div class="course-footer"><span class="price-free">学习</span><span class="btn-sm btn-primary-sm">进入学习</span></div>
         </div>
       </a>
       <a class="course-card" href="#" onclick="showVideo('不定积分技巧')">
         <div class="course-thumb" style="background:#fef9c3">
           <span>∫</span>
           <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1a56db"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <span class="lock-badge paid-badge">¥99</span>
+          <span class="lock-badge free-badge">精品</span>
         </div>
         <div class="course-body">
           <div class="tags"><span class="tag tag-blue">高等数学</span><span class="tag tag-red">高频考点</span></div>
           <h4>03 · 不定积分技巧全集</h4>
           <div class="meta"><span>⏱ 18课时</span><span>👥 652人</span></div>
-          <div class="course-footer"><span class="price-paid">¥99</span><span class="btn-sm btn-red-sm">购买</span></div>
+          <div class="course-footer"><span class="price-free">学习</span><span class="btn-sm btn-primary-sm">进入学习</span></div>
         </div>
       </a>
       <a class="course-card" href="#" onclick="showVideo('定积分与应用')">
         <div class="course-thumb" style="background:#ecfdf5">
           <span>∮</span>
           <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#1a56db"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <span class="lock-badge paid-badge">¥99</span>
+          <span class="lock-badge free-badge">精品</span>
         </div>
         <div class="course-body">
           <div class="tags"><span class="tag tag-blue">高等数学</span></div>
           <h4>04 · 定积分与几何应用</h4>
           <div class="meta"><span>⏱ 14课时</span><span>👥 543人</span></div>
-          <div class="course-footer"><span class="price-paid">¥99</span><span class="btn-sm btn-red-sm">购买</span></div>
+          <div class="course-footer"><span class="price-free">学习</span><span class="btn-sm btn-primary-sm">进入学习</span></div>
         </div>
       </a>
     </div>
   </div>
 
-  <!-- 线性代数 -->
-  <div class="subject-section" data-subject="linalg">
+  <!-- 线性代数（暂未开放，隐藏） -->
+  <div class="subject-section" data-subject="linalg" style="display:none;">
     <div class="subject-title">🔢 线性代数</div>
     <div class="courses-grid">
       <a class="course-card" href="#" onclick="showVideo('矩阵与行列式')">
         <div class="course-thumb" style="background:#dcfce7">
           <span>det</span>
           <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#16a34a"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <span class="lock-badge paid-badge">¥89</span>
+          <span class="lock-badge free-badge">精品</span>
         </div>
         <div class="course-body">
           <div class="tags"><span class="tag tag-green">线性代数</span><span class="tag tag-blue">基础</span></div>
           <h4>01 · 矩阵与行列式</h4>
           <div class="meta"><span>⏱ 15课时</span><span>👥 728人</span></div>
-          <div class="course-footer"><span class="price-paid">¥89</span><span class="btn-sm btn-red-sm">购买</span></div>
+          <div class="course-footer"><span class="price-free">学习</span><span class="btn-sm btn-primary-sm">进入学习</span></div>
         </div>
       </a>
       <a class="course-card" href="#" onclick="showVideo('向量与线性方程组')">
         <div class="course-thumb" style="background:#f0fdf4">
           <span>Ax=b</span>
           <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#16a34a"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <span class="lock-badge paid-badge">¥89</span>
+          <span class="lock-badge free-badge">精品</span>
         </div>
         <div class="course-body">
           <div class="tags"><span class="tag tag-green">线性代数</span></div>
           <h4>02 · 向量组与线性方程组</h4>
           <div class="meta"><span>⏱ 12课时</span><span>👥 621人</span></div>
-          <div class="course-footer"><span class="price-paid">¥89</span><span class="btn-sm btn-red-sm">购买</span></div>
+          <div class="course-footer"><span class="price-free">学习</span><span class="btn-sm btn-primary-sm">进入学习</span></div>
         </div>
       </a>
       <a class="course-card" href="#" onclick="showVideo('特征值与二次型')">
         <div class="course-thumb" style="background:#ecfdf5">
           <span>λ</span>
           <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#16a34a"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <span class="lock-badge paid-badge">¥89</span>
+          <span class="lock-badge free-badge">精品</span>
         </div>
         <div class="course-body">
           <div class="tags"><span class="tag tag-green">线性代数</span><span class="tag tag-red">重难点</span></div>
           <h4>03 · 特征值与二次型</h4>
           <div class="meta"><span>⏱ 16课时</span><span>👥 589人</span></div>
-          <div class="course-footer"><span class="price-paid">¥89</span><span class="btn-sm btn-red-sm">购买</span></div>
+          <div class="course-footer"><span class="price-free">学习</span><span class="btn-sm btn-primary-sm">进入学习</span></div>
         </div>
       </a>
     </div>
   </div>
 
-  <!-- 概率论 -->
-  <div class="subject-section" data-subject="prob">
+  <!-- 概率论（暂未开放，隐藏） -->
+  <div class="subject-section" data-subject="prob" style="display:none;">
     <div class="subject-title">🎲 概率论与数理统计</div>
     <div class="courses-grid">
       <a class="course-card" href="#" onclick="showVideo('概率基础')">
         <div class="course-thumb" style="background:#fce7f3">
           <span>P(A)</span>
           <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#db2777"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <span class="lock-badge paid-badge">¥119</span>
+          <span class="lock-badge free-badge">精品</span>
         </div>
         <div class="course-body">
           <div class="tags"><span class="tag tag-red">概率论</span><span class="tag tag-blue">基础</span></div>
           <h4>01 · 随机事件与概率</h4>
           <div class="meta"><span>⏱ 10课时</span><span>👥 497人</span></div>
-          <div class="course-footer"><span class="price-paid">¥119</span><span class="btn-sm btn-red-sm">购买</span></div>
+          <div class="course-footer"><span class="price-free">学习</span><span class="btn-sm btn-primary-sm">进入学习</span></div>
         </div>
       </a>
       <a class="course-card" href="#" onclick="showVideo('随机变量')">
         <div class="course-thumb" style="background:#fff1f2">
           <span>X~N</span>
           <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#db2777"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <span class="lock-badge paid-badge">¥119</span>
+          <span class="lock-badge free-badge">精品</span>
         </div>
         <div class="course-body">
           <div class="tags"><span class="tag tag-red">概率论</span><span class="tag tag-red">重点</span></div>
           <h4>02 · 随机变量及其分布</h4>
           <div class="meta"><span>⏱ 14课时</span><span>👥 432人</span></div>
-          <div class="course-footer"><span class="price-paid">¥119</span><span class="btn-sm btn-red-sm">购买</span></div>
+          <div class="course-footer"><span class="price-free">学习</span><span class="btn-sm btn-primary-sm">进入学习</span></div>
         </div>
       </a>
       <a class="course-card" href="#" onclick="showVideo('数理统计')">
         <div class="course-thumb" style="background:#fdf2f8">
           <span>μ σ²</span>
           <div class="play-overlay"><div class="play-circle"><svg width="16" height="16" viewBox="0 0 24 24" fill="#db2777"><path d="M8 5v14l11-7z"/></svg></div></div>
-          <span class="lock-badge paid-badge">¥119</span>
+          <span class="lock-badge free-badge">精品</span>
         </div>
         <div class="course-body">
           <div class="tags"><span class="tag tag-red">概率论</span></div>
           <h4>03 · 数字特征与数理统计</h4>
           <div class="meta"><span>⏱ 12课时</span><span>👥 378人</span></div>
-          <div class="course-footer"><span class="price-paid">¥119</span><span class="btn-sm btn-red-sm">购买</span></div>
+          <div class="course-footer"><span class="price-free">学习</span><span class="btn-sm btn-primary-sm">进入学习</span></div>
         </div>
       </a>
     </div>
@@ -244,9 +697,9 @@
     </div>
     <div style="padding:20px 24px;">
       <div id="videoName" style="font-size:18px;font-weight:700;margin-bottom:8px;"></div>
-      <div style="font-size:13px;color:#6b7280;">课程视频 · 请购买后解锁完整内容</div>
+      <div style="font-size:13px;color:#6b7280;">课程视频 · 敬请期待</div>
       <div style="margin-top:16px;display:flex;gap:10px;">
-        <a href="index.html#pricing" style="background:#1a56db;color:white;padding:10px 20px;border-radius:8px;text-decoration:none;font-size:14px;font-weight:600;">购买课程</a>
+        <a href="index.html" style="background:#1a56db;color:white;padding:10px 20px;border-radius:8px;text-decoration:none;font-size:14px;font-weight:600;">返回首页</a>
         <button onclick="document.getElementById('videoModal').style.display='none'" style="border:1.5px solid #e5e7eb;background:none;padding:10px 20px;border-radius:8px;font-size:14px;cursor:pointer;">继续浏览</button>
       </div>
     </div>
@@ -254,6 +707,26 @@
 </div>
 
 <script>
+function toggleVideo(headerEl, bvid) {
+  var body = headerEl.nextElementSibling;
+  var btn = headerEl.querySelector('.video-play-btn');
+  var hint = headerEl.querySelector('span:last-child');
+  if (body.classList.contains('active')) {
+    body.classList.remove('active');
+    var wrapper = body.querySelector('.video-wrapper');
+    if (wrapper) wrapper.remove();
+    btn.textContent = '\u25B6';
+    hint.textContent = '\u70B9\u51FB\u5C55\u5F00 \u25BE';
+  } else {
+    body.classList.add('active');
+    var wrapper = document.createElement('div');
+    wrapper.className = 'video-wrapper';
+    wrapper.innerHTML = '<iframe src="//player.bilibili.com/player.html?bvid=' + bvid + '&page=1&high_quality=1&danmaku=0&autoplay=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>';
+    body.insertBefore(wrapper, body.firstChild);
+    btn.textContent = '\u23F8';
+    hint.textContent = '\u70B9\u51FB\u6536\u8D77 \u25B4';
+  }
+}
 function showVideo(title) {
   document.getElementById('videoTitle').textContent = title;
   document.getElementById('videoName').textContent = title;
@@ -270,5 +743,43 @@ function filterCourse(btn, cat) {
   });
 }
 </script>
+<script src="auth-widget.js"></script>
+<!-- FOOTER -->
+<footer style="background:#111827;color:#9ca3af;padding:32px 5%;text-align:center;font-size:13px;">
+  <div style="margin-bottom:12px;">
+    <a href="index.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">首页</a>
+    <a href="courses.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">网课</a>
+    <a href="exams.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">真题</a>
+    <a href="practice.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">题库</a>
+    <a href="comprehensive.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">经纬研选</a>
+    <a href="membership.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">会员</a>
+  </div>
+  <div>© 2026 经纬数学 · 考研辅导 · www.jingweimath.com</div>
+      <div style="margin-top:8px;"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=37020202370561" target="_blank" rel="noreferrer" style="color:#9ca3af;text-decoration:none;">鲁公网安备37020202370561号</a></div>
+    <div style="margin-top:4px;"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" style="color:#9ca3af;text-decoration:none;">鲁ICP备2026032754号</a></div>
+  </footer>
+
+<script>
+  // 锚点定位最新视频并自动展开折叠卡片
+  (function() {
+    function openLatest() {
+      var anchor = (location.hash || '').replace('#','');
+      if (!anchor) return;
+      var section = document.getElementById(anchor);
+      if (!section) return;
+      var header = section.querySelector('.video-header');
+      var body = header && header.nextElementSibling;
+      if (header && body && !body.classList.contains('active')) {
+        header.click();
+      }
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', openLatest);
+    } else {
+      openLatest();
+    }
+  })();
+</script>
+
 </body>
 </html>

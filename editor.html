@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>题库编辑器 - 经纬考研数学</title>
+<script src="editor-data-v2.js?v=20260706"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    macros: {
+      lim: ['\\mathop{\\mathrm{lim}}\\limits', 0],
+      max: ['\\mathop{\\mathrm{max}}\\limits', 0],
+      min: ['\\mathop{\\mathrm{min}}\\limits', 0],
+      sup: ['\\mathop{\\mathrm{sup}}\\limits', 0],
+      inf: ['\\mathop{\\mathrm{inf}}\\limits', 0]
+    }
+  },
+  startup: { ready() { MathJax.startup.defaultReady(); } }
+};
+</script>
+<script src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-chtml.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; height: 100vh; display: flex; flex-direction: column; overflow: hidden; background: #f0f2f5; }
+
+/* Header */
+.header { height: 48px; background: #1a1a2e; color: #fff; display: flex; align-items: center; padding: 0 16px; justify-content: space-between; flex-shrink: 0; }
+.header h1 { font-size: 16px; font-weight: 600; }
+.header .actions { display: flex; gap: 8px; }
+.header .actions button { padding: 6px 14px; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 500; }
+.btn-export { background: #e94560; color: #fff; }
+.btn-export:hover { background: #d63851; }
+.btn-save { background: #0f3460; color: #fff; }
+.btn-save:hover { background: #16213e; }
+.btn-reload { background: #555; color: #fff; }
+.btn-reload:hover { background: #666; }
+
+/* Layout */
+.main { display: flex; flex: 1; overflow: hidden; }
+
+/* Sidebar */
+.sidebar { width: 320px; background: #fff; border-right: 1px solid #e0e0e0; display: flex; flex-direction: column; flex-shrink: 0; }
+.search-box { padding: 12px; border-bottom: 1px solid #e8e8e8; }
+.search-box input { width: 100%; padding: 8px 12px; border: 1px solid #d9d9d9; border-radius: 6px; font-size: 13px; outline: none; }
+.search-box input:focus { border-color: #1890ff; box-shadow: 0 0 0 2px rgba(24,144,255,0.2); }
+.search-box .result-count { font-size: 12px; color: #999; margin-top: 4px; display: none; }
+.chapter-list { flex: 1; overflow-y: auto; padding: 8px 0; }
+
+.chapter-group { margin-bottom: 2px; }
+.chapter-group-header { padding: 8px 16px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 13px; font-weight: 600; color: #333; user-select: none; }
+.chapter-group-header:hover { background: #f5f5f5; }
+.chapter-group-header .arrow { font-size: 10px; transition: transform 0.2s; color: #999; }
+.chapter-group-header.collapsed .arrow { transform: rotate(-90deg); }
+.chapter-group-header .count { font-size: 11px; color: #999; font-weight: 400; }
+
+.chapter-item { padding: 6px 16px 6px 32px; cursor: pointer; font-size: 13px; color: #555; display: flex; align-items: center; justify-content: space-between; }
+.chapter-item:hover { background: #e6f7ff; }
+.chapter-item.active { background: #bae7ff; color: #0050b3; font-weight: 500; }
+.chapter-item .badge { font-size: 11px; background: #f0f0f0; padding: 1px 6px; border-radius: 10px; color: #999; }
+.chapter-item.active .badge { background: #91d5ff; color: #0050b3; }
+
+.question-sublist { max-height: 0; overflow: hidden; transition: max-height 0.3s; }
+.question-sublist.open { max-height: 9999px; }
+.question-item { padding: 5px 16px 5px 48px; cursor: pointer; font-size: 12px; color: #666; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 6px; }
+.question-item:hover { background: #fafafa; }
+.question-item.active { background: #e6f7ff; color: #1890ff; }
+.question-item .qid { color: #bbb; font-size: 11px; flex-shrink: 0; }
+.question-item .dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+.question-item .dot.modified { background: #faad14; }
+.question-item .qtext { overflow: hidden; text-overflow: ellipsis; }
+.add-q-btn { display: block; width: 100%; padding: 5px 16px 5px 48px; text-align: left; border: none; background: none; color: #1890ff; font-size: 12px; cursor: pointer; }
+.add-q-btn:hover { background: #e6f7ff; }
+.btn-delete { background: none; border: 1px solid #ff4d4f; color: #ff4d4f; padding: 2px 8px; border-radius: 3px; cursor: pointer; font-size: 12px; margin-left: 16px; }
+.btn-delete:hover { background: #fff1f0; }
+
+/* Editor */
+.editor-area { flex: 1; overflow-y: auto; padding: 24px; }
+.editor-empty { display: flex; align-items: center; justify-content: center; height: 100%; color: #bbb; font-size: 15px; }
+.editor-form { max-width: 800px; margin: 0 auto; }
+
+.form-row { display: flex; gap: 16px; margin-bottom: 14px; align-items: center; }
+.form-row label { font-size: 13px; font-weight: 500; color: #333; width: 50px; flex-shrink: 0; }
+.form-row input, .form-row select { padding: 6px 10px; border: 1px solid #d9d9d9; border-radius: 4px; font-size: 13px; outline: none; }
+.form-row input:focus, .form-row select:focus { border-color: #1890ff; }
+.form-row .qid-display { font-family: monospace; font-size: 13px; color: #888; }
+
+.form-section { margin-bottom: 16px; }
+.form-section label { display: block; font-size: 13px; font-weight: 500; color: #333; margin-bottom: 6px; }
+.form-section textarea { width: 100%; padding: 10px; border: 1px solid #d9d9d9; border-radius: 6px; font-size: 14px; line-height: 1.6; resize: vertical; min-height: 70px; font-family: inherit; outline: none; }
+.form-section textarea:focus { border-color: #1890ff; box-shadow: 0 0 0 2px rgba(24,144,255,0.2); }
+.form-section textarea.tall { min-height: 120px; }
+.form-section .hint { font-size: 11px; color: #aaa; margin-top: 4px; }
+
+.options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.option-row { display: flex; align-items: center; gap: 8px; }
+.option-row .opt-label { font-weight: 600; font-size: 13px; color: #1890ff; width: 20px; }
+.option-row input { flex: 1; padding: 6px 10px; border: 1px solid #d9d9d9; border-radius: 4px; font-size: 13px; outline: none; }
+.option-row input:focus { border-color: #1890ff; }
+
+.answer-row { display: flex; align-items: center; gap: 12px; }
+.answer-row select, .answer-row input { padding: 6px 10px; border: 1px solid #d9d9d9; border-radius: 4px; font-size: 13px; outline: none; }
+.answer-row select:focus, .answer-row input:focus { border-color: #1890ff; }
+
+/* Preview */
+.preview-panel { margin-top: 20px; border: 1px solid #e8e8e8; border-radius: 8px; overflow: hidden; }
+.preview-header { background: #fafafa; padding: 8px 14px; font-size: 12px; color: #888; border-bottom: 1px solid #e8e8e8; display: flex; align-items: center; justify-content: space-between; }
+.preview-header button { font-size: 11px; padding: 2px 8px; border: 1px solid #d9d9d9; border-radius: 3px; background: #fff; cursor: pointer; }
+.preview-body { padding: 16px; background: #fff; }
+.preview-body .question-preview { font-size: 15px; margin-bottom: 12px; line-height: 1.6; }
+.preview-body .options-preview { margin-bottom: 12px; }
+.preview-body .option-preview { font-size: 14px; padding: 4px 0; line-height: 1.6; }
+.preview-body .solution-preview { border-top: 1px dashed #eee; padding-top: 12px; font-size: 14px; color: #555; line-height: 1.7; }
+
+/* Status bar */
+.status-bar { height: 28px; background: #fafafa; border-top: 1px solid #e8e8e8; display: flex; align-items: center; padding: 0 16px; font-size: 11px; color: #999; justify-content: space-between; flex-shrink: 0; }
+.status-bar .modified-count { color: #faad14; }
+
+/* Toast */
+.toast { position: fixed; top: 60px; left: 50%; transform: translateX(-50%); background: #333; color: #fff; padding: 10px 24px; border-radius: 6px; font-size: 13px; z-index: 9999; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+.toast.show { opacity: 1; }
+.toast.success { background: #52c41a; }
+.toast.error { background: #ff4d4f; }
+
+/* Responsive textarea */
+textarea.code-font { font-family: "Consolas", "Courier New", monospace; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>题库编辑器</h1>
+  <div class="actions">
+    <button class="btn-reload" onclick="reloadData()" title="放弃修改，重新加载">↻ 重新加载</button>
+    <button class="btn-save" onclick="exportJSON()" title="导出所有章节 JSON 文件">📥 导出 JSON</button>
+    <button class="btn-export" onclick="exportBundle()" title="导出完整 questions-bundle.js">📦 导出 Bundle</button>
+  </div>
+</div>
+
+<div class="main">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="搜索题目（支持题干、ID、解析）..." oninput="doSearch()">
+      <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap;">
+        <button onclick="filterIntegrals()" id="btnFilterInt" style="padding:4px 10px;font-size:12px;border:1px solid #fa8c16;color:#fa8c16;background:#fff7e6;border-radius:4px;cursor:pointer;">∫ 只看定积分</button>
+        <button onclick="filterAll()" id="btnFilterAll" style="padding:4px 10px;font-size:12px;border:1px solid #d9d9d9;color:#555;background:#fff;border-radius:4px;cursor:pointer;">全部题目</button>
+        <button onclick="filterModified()" id="btnFilterMod" style="padding:4px 10px;font-size:12px;border:1px solid #faad14;color:#faad14;background:#fffbe6;border-radius:4px;cursor:pointer;">● 已修改</button>
+      </div>
+      <div class="result-count" id="resultCount"></div>
+    </div>
+    <div class="chapter-list" id="chapterList"></div>
+  </div>
+
+  <!-- Editor -->
+  <div class="editor-area" id="editorArea">
+    <div class="editor-empty">
+      <div style="text-align:center;max-width:500px;">
+        <div style="font-size:48px;margin-bottom:16px;">📝</div>
+        <div style="font-size:16px;color:#555;margin-bottom:8px;">题库编辑器</div>
+        <div style="font-size:13px;color:#999;line-height:1.8;">
+          1. 左侧点击章节展开题目列表<br>
+          2. 点击题目开始编辑<br>
+          3. 修改题干/选项/答案/解析<br>
+          4. 底部预览区查看渲染效果<br>
+          5. 点击「＋ 新增题目」添加新题<br>
+          6. 点击「🗑 删除」移除题目<br>
+          7. 改完后点「导出 Bundle」下载文件<br>
+          8. 把下载的文件发给 Buddy 部署
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="status-bar">
+  <span id="statusLeft">共 650 题 | 已修改 0 题</span>
+  <span id="statusRight">Ctrl+S 刷新预览</span>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ====== Data Layer ======
+let chapters = [];
+let currentChapterIdx = -1;
+let currentQuestionIdx = -1;
+let modifiedSet = new Set(); // Set of "chapterIdx:questionIdx"
+let activeFilter = 'all'; // 'all' | 'integral' | 'modified'
+
+function initData() {
+  chapters = EDITOR_DATA.map((ch, ci) => ({
+    ...ch,
+    questions: ch.questions.map((q, qi) => ({ ...q, _origId: q.id }))
+  }));
+}
+
+function getCurrentQuestion() {
+  if (currentChapterIdx < 0 || currentQuestionIdx < 0) return null;
+  return chapters[currentChapterIdx].questions[currentQuestionIdx];
+}
+
+function markModified() {
+  if (currentChapterIdx < 0 || currentQuestionIdx < 0) return;
+  const key = `${currentChapterIdx}:${currentQuestionIdx}`;
+  modifiedSet.add(key);
+  updateStatus();
+  renderSidebar();
+}
+
+function isModified(ci, qi) {
+  return modifiedSet.has(`${ci}:${qi}`);
+}
+
+// ====== Sidebar ======
+function renderSidebar() {
+  const container = document.getElementById('chapterList');
+  const scrollTop = container.scrollTop; // preserve scroll
+  const searchVal = document.getElementById('searchInput').value.trim().toLowerCase();
+  let html = '';
+  let totalVisible = 0;
+
+  // Group by subject
+  const subjects = {};
+  chapters.forEach((ch, ci) => {
+    if (!subjects[ch.subject]) subjects[ch.subject] = [];
+    subjects[ch.subject].push({ ...ch, ci });
+  });
+
+  for (const [subject, chs] of Object.entries(subjects)) {
+    const totalInSubject = chs.reduce((s, c) => s + c.questions.length, 0);
+    html += `<div class="chapter-group">`;
+    html += `<div class="chapter-group-header" onclick="toggleGroup(this)" data-subject="${subject}">`;
+    html += `<span>📘 ${subject}</span>`;
+    html += `<span style="display:flex;align-items:center;gap:8px;"><span class="count">${totalInSubject}题</span><span class="arrow">▼</span></span>`;
+    html += `</div>`;
+    html += `<div class="chapter-list-inner">`;
+
+    chs.forEach(ch => {
+      const qCount = ch.questions.length;
+      const isActiveChapter = currentChapterIdx === ch.ci;
+      html += `<div class="chapter-item${isActiveChapter ? ' active' : ''}" onclick="selectChapter(${ch.ci})" data-ci="${ch.ci}">`;
+      html += `<span>${ch.name}</span><span class="badge">${qCount}</span>`;
+      html += `</div>`;
+
+      // Question sublist
+      const isOpen = isActiveChapter || searchVal;
+      html += `<div class="question-sublist${isOpen ? ' open' : ''}" data-sublist="${ch.ci}">`;
+      let visibleQs = 0;
+      ch.questions.forEach((q, qi) => {
+        if (!questionMatchesFilter(q, ch.ci, qi, searchVal)) return;
+        visibleQs++;
+        totalVisible++;
+        const isActiveQ = currentChapterIdx === ch.ci && currentQuestionIdx === qi;
+        const mod = isModified(ch.ci, qi);
+        html += `<div class="question-item${isActiveQ ? ' active' : ''}" onclick="event.stopPropagation(); selectQuestion(${ch.ci}, ${qi})">`;
+        html += `<span class="qid">${q.id}</span>`;
+        if (mod) html += `<span class="dot modified" title="已修改"></span>`;
+        html += `<span class="qtext">${escHtml(stripLatex(q.question).substring(0, 40))}</span>`;
+        html += `</div>`;
+      });
+      if (visibleQs === 0 && (searchVal || activeFilter !== 'all')) {
+        html += `<div style="padding:4px 16px 4px 48px;font-size:11px;color:#ccc;">无匹配</div>`;
+      }
+      // Add question button (hidden during search/filter)
+      if (!searchVal && activeFilter === 'all') {
+        html += `<button class="add-q-btn" onclick="event.stopPropagation(); addQuestion(${ch.ci})">＋ 新增题目</button>`;
+      }
+      html += `</div>`;
+    });
+
+    html += `</div></div>`;
+  }
+
+  // Search/filter results
+  const resultCount = document.getElementById('resultCount');
+  if (searchVal || activeFilter !== 'all') {
+    resultCount.style.display = 'block';
+    const filterLabel = searchVal ? `搜索"${searchVal}"` : (activeFilter === 'integral' ? '含定积分' : '已修改');
+    resultCount.textContent = `【${filterLabel}】找到 ${totalVisible} 个匹配题目`;
+  } else {
+    resultCount.style.display = 'none';
+  }
+
+  container.innerHTML = html;
+  container.scrollTop = scrollTop; // restore scroll
+}
+
+function toggleGroup(header) {
+  header.classList.toggle('collapsed');
+  const inner = header.nextElementSibling;
+  inner.style.display = header.classList.contains('collapsed') ? 'none' : '';
+}
+
+function selectChapter(ci) {
+  currentChapterIdx = ci;
+  currentQuestionIdx = -1;
+  renderSidebar();
+  showEditorEmpty();
+}
+
+function selectQuestion(ci, qi) {
+  currentChapterIdx = ci;
+  currentQuestionIdx = qi;
+  renderSidebar();
+  renderEditor();
+}
+
+function doSearch() {
+  const val = document.getElementById('searchInput').value.trim().toLowerCase();
+  if (val) {
+    activeFilter = 'all';
+    currentChapterIdx = -1;
+    currentQuestionIdx = -1;
+    updateFilterButtons();
+  }
+  renderSidebar();
+  if (val) {
+    document.querySelectorAll('.chapter-group-header').forEach(h => h.classList.remove('collapsed'));
+    document.querySelectorAll('.question-sublist').forEach(s => s.classList.add('open'));
+  }
+}
+
+function filterIntegrals() {
+  activeFilter = 'integral';
+  document.getElementById('searchInput').value = '';
+  currentChapterIdx = -1;
+  currentQuestionIdx = -1;
+  updateFilterButtons();
+  renderSidebar();
+  // expand all
+  setTimeout(() => {
+    document.querySelectorAll('.chapter-group-header').forEach(h => h.classList.remove('collapsed'));
+    document.querySelectorAll('.question-sublist').forEach(s => s.classList.add('open'));
+  }, 50);
+  showToast('已筛选：含定积分的题目', 'success');
+}
+
+function filterAll() {
+  activeFilter = 'all';
+  document.getElementById('searchInput').value = '';
+  updateFilterButtons();
+  renderSidebar();
+}
+
+function filterModified() {
+  activeFilter = 'modified';
+  document.getElementById('searchInput').value = '';
+  currentChapterIdx = -1;
+  currentQuestionIdx = -1;
+  updateFilterButtons();
+  renderSidebar();
+  setTimeout(() => {
+    document.querySelectorAll('.chapter-group-header').forEach(h => h.classList.remove('collapsed'));
+    document.querySelectorAll('.question-sublist').forEach(s => s.classList.add('open'));
+  }, 50);
+}
+
+function updateFilterButtons() {
+  const btnInt = document.getElementById('btnFilterInt');
+  const btnAll = document.getElementById('btnFilterAll');
+  const btnMod = document.getElementById('btnFilterMod');
+  if (!btnInt) return;
+  btnInt.style.background = activeFilter === 'integral' ? '#fa8c16' : '#fff7e6';
+  btnInt.style.color = activeFilter === 'integral' ? '#fff' : '#fa8c16';
+  btnAll.style.background = activeFilter === 'all' ? '#555' : '#fff';
+  btnAll.style.color = activeFilter === 'all' ? '#fff' : '#555';
+  btnMod.style.background = activeFilter === 'modified' ? '#faad14' : '#fffbe6';
+  btnMod.style.color = activeFilter === 'modified' ? '#fff' : '#faad14';
+}
+
+function questionMatchesFilter(q, ci, qi, searchVal) {
+  if (searchVal) {
+    const qtext = (q.question || '').toLowerCase();
+    const qid = (q.id || '').toLowerCase();
+    const sol = (q.solution || '').toLowerCase();
+    const opts = (q.options || []).join(' ').toLowerCase();
+    return qtext.includes(searchVal) || qid.includes(searchVal) || sol.includes(searchVal) || opts.includes(searchVal);
+  }
+  if (activeFilter === 'integral') {
+    const combined = (q.question || '') + (q.solution || '') + (q.options || []).join('');
+    return /\\int/.test(combined);
+  }
+  if (activeFilter === 'modified') {
+    return isModified(ci, qi);
+  }
+  return true;
+}
+
+// ====== Editor ======
+function showEditorEmpty() {
+  document.getElementById('editorArea').innerHTML = '<div class="editor-empty">👈 从左侧选择一个题目开始编辑</div>';
+}
+
+function renderEditor() {
+  const q = getCurrentQuestion();
+  if (!q) { showEditorEmpty(); return; }
+
+  const isChoice = q.type === 'choice';
+  let html = '<div class="editor-form">';
+
+  // Row 1: ID, type, difficulty
+  html += `<div class="form-row">`;
+  html += `<label>ID</label><span class="qid-display">${escHtml(q.id)}</span>`;
+  html += `<label style="margin-left:20px;">类型</label>`;
+  html += `<select onchange="onTypeChange(this.value)">`;
+  html += `<option value="choice"${isChoice ? ' selected' : ''}>选择题</option>`;
+  html += `<option value="fill"${!isChoice ? ' selected' : ''}>填空题</option>`;
+  html += `</select>`;
+  html += `<label style="margin-left:12px;">难度</label>`;
+  html += `<select onchange="onDifficultyChange(this.value)">`;
+  ['basic', 'medium', 'hard'].forEach(d => {
+    html += `<option value="${d}"${q.difficulty === d ? ' selected' : ''}>${difficultyLabel(d)}</option>`;
+  });
+  html += `</select>`;
+  html += `<button class="btn-delete" onclick="deleteQuestion()" title="删除此题">🗑 删除</button>`;
+  html += `</div>`;
+
+  // Question text
+  html += `<div class="form-section">`;
+  html += `<label>题目 <span class="hint">（支持 LaTeX: $...$）</span></label>`;
+  html += `<textarea id="editQuestion" oninput="onFieldChange()">${escHtml(q.question || '')}</textarea>`;
+  html += `</div>`;
+
+  // Options (choice only)
+  html += `<div class="form-section" id="optionsSection" style="display:${isChoice ? 'block' : 'none'}">`;
+  html += `<label>选项</label>`;
+  html += `<div class="options-grid">`;
+  const labels = ['A', 'B', 'C', 'D'];
+  const options = q.options || [];
+  labels.forEach((l, i) => {
+    html += `<div class="option-row">`;
+    html += `<span class="opt-label">${l}.</span>`;
+    html += `<input type="text" id="editOption${i}" value="${escHtml(options[i] || '')}" oninput="onFieldChange()" placeholder="选项 ${l}">`;
+    html += `</div>`;
+  });
+  html += `</div></div>`;
+
+  // Answer
+  html += `<div class="form-section">`;
+  html += `<label>答案</label>`;
+  html += `<div class="answer-row">`;
+  if (isChoice) {
+    html += `<select id="editAnswer" onchange="onFieldChange()">`;
+    labels.forEach((l, i) => {
+      html += `<option value="${i}"${q.answer === i ? ' selected' : ''}>${l}</option>`;
+    });
+    html += `</select>`;
+  } else {
+    html += `<input type="text" id="editAnswer" value="${escHtml(String(q.answer || ''))}" oninput="onFieldChange()" style="width:300px;" placeholder="正确答案">`;
+  }
+  html += `</div></div>`;
+
+  // Solution
+  html += `<div class="form-section">`;
+  html += `<label>解析 <span class="hint">（支持 LaTeX: $...$）</span></label>`;
+  html += `<textarea id="editSolution" class="tall" oninput="onFieldChange()">${escHtml(q.solution || '')}</textarea>`;
+  html += `</div>`;
+
+  // Preview
+  html += `<div class="preview-panel">`;
+  html += `<div class="preview-header"><span>📐 实时预览</span><button onclick="refreshPreview()">刷新预览</button></div>`;
+  html += `<div class="preview-body" id="previewBody"></div>`;
+  html += `</div>`;
+
+  html += '</div>';
+  document.getElementById('editorArea').innerHTML = html;
+
+  // Initial preview
+  setTimeout(refreshPreview, 300);
+}
+
+function onTypeChange(val) {
+  const q = getCurrentQuestion();
+  if (!q) return;
+  const oldType = q.type;
+  q.type = val;
+  if (val === 'choice' && oldType === 'fill') {
+    if (!q.options || q.options.length === 0) q.options = ['', '', '', ''];
+    q.answer = 0;
+  } else if (val === 'fill' && oldType === 'choice') {
+    q.answer = '';
+  }
+  markModified();
+  renderEditor();
+}
+
+function onDifficultyChange(val) {
+  const q = getCurrentQuestion();
+  if (!q) return;
+  q.difficulty = val;
+  markModified();
+}
+
+function onFieldChange() {
+  const q = getCurrentQuestion();
+  if (!q) return;
+  q.question = document.getElementById('editQuestion')?.value || '';
+  if (q.type === 'choice') {
+    q.options = [0, 1, 2, 3].map(i => document.getElementById(`editOption${i}`)?.value || '');
+    q.answer = parseInt(document.getElementById('editAnswer')?.value) || 0;
+  } else {
+    q.answer = document.getElementById('editAnswer')?.value || '';
+  }
+  q.solution = document.getElementById('editSolution')?.value || '';
+  markModified();
+  // Debounced preview
+  clearTimeout(window._previewTimer);
+  window._previewTimer = setTimeout(refreshPreview, 800);
+}
+
+function refreshPreview() {
+  const q = getCurrentQuestion();
+  if (!q) return;
+  const body = document.getElementById('previewBody');
+  if (!body) return;
+
+  let html = `<div class="question-preview">${renderLatex(q.question)}</div>`;
+  if (q.type === 'choice' && q.options) {
+    html += `<div class="options-preview">`;
+    ['A', 'B', 'C', 'D'].forEach((l, i) => {
+      html += `<div class="option-preview">${l}. ${renderLatex(q.options[i] || '')}</div>`;
+    });
+    html += `</div>`;
+    html += `<div style="font-size:13px;color:#52c41a;margin-bottom:8px;">✅ 正确答案: ${['A','B','C','D'][q.answer] || String(q.answer)}</div>`;
+  } else {
+    html += `<div style="font-size:13px;color:#52c41a;margin-bottom:8px;">✅ 答案: ${renderLatex(String(q.answer || ''))}</div>`;
+  }
+  if (q.solution) {
+    html += `<div class="solution-preview"><strong>解析：</strong>${renderLatex(q.solution)}</div>`;
+  }
+  body.innerHTML = html;
+
+  // Retrigger MathJax
+  if (window.MathJax && MathJax.typesetPromise) {
+    MathJax.typesetPromise([body]).catch(console.error);
+  }
+}
+
+// ====== Add / Delete ======
+function generateNewId(ci) {
+  const ch = chapters[ci];
+  // Derive prefix from chapter ID, e.g. "calculus-integral" → "cal-int"
+  const parts = ch.id.split('-');
+  const prefix = parts.map(p => p.substring(0, 3)).join('-');
+  // Find max existing number for this chapter
+  let maxNum = 0;
+  ch.questions.forEach(q => {
+    const match = String(q.id).match(/(\d+)$/);
+    if (match) {
+      maxNum = Math.max(maxNum, parseInt(match[1]));
+    }
+  });
+  return `${prefix}-${String(maxNum + 1).padStart(3, '0')}`;
+}
+
+function addQuestion(ci) {
+  const newQ = {
+    id: generateNewId(ci),
+    type: 'choice',
+    difficulty: 'basic',
+    question: '',
+    options: ['', '', '', ''],
+    answer: 0,
+    solution: ''
+  };
+  chapters[ci].questions.push(newQ);
+  const qi = chapters[ci].questions.length - 1;
+  currentChapterIdx = ci;
+  currentQuestionIdx = qi;
+  markModified();
+  renderSidebar();
+  renderEditor();
+  showToast(`已新增题目 ${newQ.id}`);
+}
+
+function deleteQuestion() {
+  if (currentChapterIdx < 0 || currentQuestionIdx < 0) return;
+  const q = getCurrentQuestion();
+  if (!confirm(`确定删除题目 ${q.id}？\n\n此操作不可撤销！（导出前可以从备份恢复）`)) return;
+
+  chapters[currentChapterIdx].questions.splice(currentQuestionIdx, 1);
+  // Remove from modified set
+  modifiedSet.delete(`${currentChapterIdx}:${currentQuestionIdx}`);
+
+  // Select adjacent question or clear
+  if (chapters[currentChapterIdx].questions.length > 0) {
+    if (currentQuestionIdx >= chapters[currentChapterIdx].questions.length) {
+      currentQuestionIdx = chapters[currentChapterIdx].questions.length - 1;
+    }
+    renderSidebar();
+    renderEditor();
+  } else {
+    currentQuestionIdx = -1;
+    renderSidebar();
+    showEditorEmpty();
+  }
+  updateStatus();
+  showToast(`已删除题目 ${q.id}`);
+}
+
+// ====== Export ======
+function gatherAllData() {
+  // Build index structure
+  const subjects = {};
+  chapters.forEach(ch => {
+    if (!subjects[ch.subject]) subjects[ch.subject] = { name: ch.subject, chapters: [] };
+    subjects[ch.subject].chapters.push({
+      id: ch.id,
+      name: ch.name,
+      file: `questions/${ch.id}.json`
+    });
+  });
+  return { subjects, chapters };
+}
+
+async function exportJSON() {
+  const { subjects, chapters: chs } = gatherAllData();
+  const zip = new JSZip();
+
+  // Index file
+  const indexData = { subjects: {} };
+  for (const [key, val] of Object.entries(subjects)) {
+    indexData.subjects[key] = val;
+  }
+  zip.file('index.json', JSON.stringify(indexData, null, 2));
+
+  // Chapter files in questions/ folder
+  const qFolder = zip.folder('questions');
+  chs.forEach(ch => {
+    const chData = {
+      subject: ch.subject,
+      chapter: ch.name,
+      chapterId: ch.id,
+      questions: ch.questions.map(q => {
+        const { _origId, ...rest } = q;
+        return rest;
+      })
+    };
+    qFolder.file(`${ch.id}.json`, JSON.stringify(chData, null, 2));
+  });
+
+  // Generate bundle
+  const bundleJs = generateBundle(subjects);
+  zip.file('questions-bundle.js', bundleJs);
+
+  const blob = await zip.generateAsync({ type: 'blob' });
+  downloadBlob(blob, 'questions-export.zip');
+  showToast('已导出 ZIP（含全部 JSON + bundle.js）', 'success');
+}
+
+async function exportBundle() {
+  const { subjects } = gatherAllData();
+  const bundleJs = generateBundle(subjects);
+  const blob = new Blob([bundleJs], { type: 'application/javascript' });
+  downloadBlob(blob, 'questions-bundle.js');
+  showToast('已导出 questions-bundle.js', 'success');
+}
+
+function generateBundle(subjects) {
+  // Build subjects.chapters with inline questions
+  const bundle = { subjects: {} };
+
+  for (const [key, val] of Object.entries(subjects)) {
+    bundle.subjects[key] = {
+      name: val.name,
+      chapters: val.chapters.map(ch => {
+        const chData = chapters.find(c => c.id === ch.id);
+        const questions = chData ? chData.questions.map(q => {
+          const { _origId, ...rest } = q;
+          return rest;
+        }) : [];
+        return { id: ch.id, name: ch.name, file: ch.file, questions };
+      })
+    };
+  }
+
+  return '// Auto-generated question bank bundle\n' +
+    '// Regenerate: python build_questions.py or via editor.html\n\n' +
+    'var QUESTION_BANK = ' + JSON.stringify(bundle, null, 2) + ';\n';
+}
+
+function downloadBlob(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+// ====== Utilities ======
+function escHtml(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function stripLatex(s) {
+  if (!s) return '';
+  return String(s).replace(/\$[^$]*\$/g, '[公式]').replace(/\\[a-zA-Z]+/g, '');
+}
+
+function renderLatex(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function difficultyLabel(d) {
+  return { basic: '基础', medium: '中等', hard: '困难' }[d] || d;
+}
+
+function showToast(msg, type) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast ' + (type || '');
+  t.classList.add('show');
+  clearTimeout(t._timeout);
+  t._timeout = setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+function updateStatus() {
+  document.getElementById('statusLeft').textContent = `共 ${chapters.reduce((s, c) => s + c.questions.length, 0)} 题 | 已修改 ${modifiedSet.size} 题`;
+}
+
+function reloadData() {
+  if (modifiedSet.size > 0 && !confirm(`有 ${modifiedSet.size} 处修改未导出，确定重新加载？修改将丢失！`)) return;
+  initData();
+  modifiedSet.clear();
+  currentChapterIdx = -1;
+  currentQuestionIdx = -1;
+  document.getElementById('searchInput').value = '';
+  renderSidebar();
+  showEditorEmpty();
+  updateStatus();
+  showToast('已重新加载');
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+    e.preventDefault();
+    refreshPreview();
+    showToast('预览已刷新');
+  }
+});
+
+// ====== Init ======
+if (typeof EDITOR_DATA === 'undefined') {
+  document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;font-size:18px;color:#ff4d4f;">❌ 数据加载失败：请确保 editor-data.js 与 editor.html 在同一目录。<br>运行 python build_editor_data.py 重新生成数据文件。</div>';
+  throw new Error('EDITOR_DATA not loaded');
+}
+initData();
+renderSidebar();
+updateStatus();
+updateFilterButtons();
+</script>
+
+</body>
+</html>

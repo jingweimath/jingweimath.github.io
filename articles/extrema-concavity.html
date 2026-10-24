@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>极值与凹凸性：定义、判别法与考研真题精讲</title>
+<meta name="description" content="从极值定义、高阶导数判别法到凹凸性等价条件与拐点判别，用2025、2026考研真题串联极值与凹凸性完整理论体系。">
+<meta name="keywords" content="极值,凹凸性,拐点,泰勒展开,高阶导数判别,高等数学,考研数学真题">
+<meta name="robots" content="index, follow">
+<meta name="author" content="经纬考研数学">
+<link rel="canonical" href="https://jingweimath.com/articles/extrema-concavity.html">
+<meta property="og:title" content="极值与凹凸性：定义、判别法与考研真题精讲">
+<meta property="og:description" content="从极值定义、高阶导数判别法到凹凸性等价条件与拐点判别，用2025、2026考研真题串联极值与凹凸性完整理论体系。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jingweimath.com/articles/extrema-concavity.html">
+<meta property="og:site_name" content="经纬考研数学">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "极值与凹凸性：从定义到真题",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-10-14",
+  "author": {"@type": "Organization", "name": "经纬考研数学"},
+  "publisher": {"@type": "Organization", "name": "经纬考研数学"},
+  "description": "从极值定义、高阶导数判别法到凹凸性等价条件与拐点判别，用2025、2026考研真题串联极值与凹凸性完整理论体系。",
+  "mainEntityOfPage": "https://jingweimath.com/articles/extrema-concavity.html"
+}
+</script>
+<script>
+MathJax = { tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]] } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" async></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a56db; --primary-dark: #1e429f; --primary-light: #e8f0fe;
+    --accent: #e24b4a; --text: #1e1e2e; --text-muted: #6b7280;
+    --border: #e5e7eb; --bg: #f8f9fc;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); }
+  .topbar { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 5%; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: var(--accent); }
+  .back { font-size: 14px; color: var(--primary); text-decoration: none; font-weight: 500; }
+  .breadcrumb { padding: 14px 5%; font-size: 13px; color: var(--text-muted); background: var(--bg); }
+  .breadcrumb a { color: var(--primary); text-decoration: none; }
+  article { max-width: 780px; margin: 0 auto; padding: 40px 24px 60px; }
+  h1 { font-size: 28px; line-height: 1.4; margin-bottom: 14px; }
+  .meta { font-size: 13px; color: var(--text-muted); margin-bottom: 30px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .meta .tag { display: inline-block; background: var(--primary-light); color: var(--primary); border-radius: 12px; padding: 2px 10px; margin-left: 6px; font-size: 12px; }
+  .body p { line-height: 1.9; margin: 14px 0; font-size: 16px; }
+  .body h2 { font-size: 21px; margin: 32px 0 12px; padding-left: 10px; border-left: 4px solid var(--primary); }
+  .body h3 { font-size: 18px; margin: 24px 0 10px; }
+  .body ul { margin: 14px 0 14px 22px; }
+  .body li { line-height: 1.9; font-size: 16px; margin: 4px 0; }
+  .body li.sub { list-style: circle; margin-left: 22px; }
+  .math-block { margin: 18px 0; text-align: center; overflow-x: auto; }
+  .related { max-width: 780px; margin: 0 auto 50px; padding: 24px; background: var(--bg); border-radius: 12px; }
+  .related h3 { font-size: 16px; margin-bottom: 14px; color: var(--primary); }
+  .related a { display: block; padding: 9px 0; color: var(--text); text-decoration: none; font-size: 15px; border-bottom: 1px dashed var(--border); }
+  .related a:hover { color: var(--primary); }
+  .site-links { max-width: 780px; margin: 0 auto 60px; padding: 0 24px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .site-links a { color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; }
+  footer { background: #1e1e2e; color: #9ca3af; text-align: center; padding: 22px 5%; font-size: 13px; }
+  footer a { color: #c3cbe0; text-decoration: none; }
+  @media (max-width: 600px) { h1 { font-size: 22px; } .body p, .body li { font-size: 15px; } }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="../index.html">经纬<span>考研数学</span></a>
+  <a class="back" href="../notes.html">返回笔记列表 →</a>
+</header>
+<nav class="breadcrumb"><a href="../index.html">首页</a> › <a href="../notes.html">经纬论数</a> › 极值与凹凸性：从定义到真题</nav>
+<article>
+  <h1>极值与凹凸性：从定义到真题</h1>
+  <div class="meta">发布于 2026-07-11<span class="tag">极值</span><span class="tag">凹凸性</span><span class="tag">拐点</span><span class="tag">泰勒展开</span><span class="tag">高等数学</span></div>
+  <div class="body">
+<p># 极值与凹凸性：从定义到真题
+</p>
+<p>函数的极值以及函数图像的凹凸性问题是考研数学的常考点和必考点，经常以较难的概念题出现。细致分析近几年的考题就会发现，多数考的是最基本的概念和定义，几乎没有技巧题；所以我们在学习和复习的时候就更应该深刻理解其基本概念和基本理论，包括定义中对函数的基本要求，定理成立的基本条件等。
+</p>
+<p>---
+</p>
+<h2>一、极值的定义</h2>
+<p><strong>极值的定义：</strong> 设函数 $f(x)$ 在点 $x_0$ 的某邻域内有定义，如果对于去心邻域内的任意 $x$，有
+</p>
+<div class="math-block">$$f(x) &gt; f(x_0)$$</div>
+<p>则称 $f(x_0)$ 是函数 $f(x)$ 的一个极小值。（极大值类似定义）
+</p>
+<p>这里注意的关键点是：
+</p>
+<p>1. <strong>没有要求函数 $f(x)$ 在 $x_0$ 点连续！</strong>
+2. 极值是个<strong>局部概念</strong>，不等式只在某邻域内成立即可。
+</p>
+<p>2026 数一第 3 题考的就是这个点（数二也是相同题目），我们在后面将详细分析。
+</p>
+<p>---
+</p>
+<h2>二、极值在哪些点达到？</h2>
+<p>大学高等数学学到的是在 (a) 驻点，以及 (b) 导数不存在的点；这是没有问题的，但还不够。从定义上看，(c) 极值点还可能在不连续点达到：
+</p>
+<div class="math-block">$$f(x) = \begin{cases} x^2, &amp; x \neq 0 \\ -1, &amp; x = 0 \end{cases}$$</div>
+<p>由定义，$x = 0$ 是函数 $f(x)$ 的一个极值点！
+</p>
+<p>---
+</p>
+<h2>三、极值的充分条件</h2>
+<p>当 $x_0$ 是驻点时，即 $f'(x_0) = 0$，有第一充分条件（利用在邻域内一阶导函数过 $x_0$ 点变号），以及第二充分条件（$f''(x_0) \neq 0$）来确定是否为极值。
+</p>
+<p>再进一步，如果 $f''(x_0) = 0$，以及高阶导数 $f^{(n)}(x_0) = 0$，如何判别？高等数学里没有涉及，但是考研数学题目中已经出现了。这里给出如下结果：
+</p>
+<p><strong>(i)</strong> 若 $f(x)$ 在 $x_0$ 处有任意阶导数，若 $f^{(2n)}(x_0) \neq 0$，且 $f^{(k)}(x_0) = 0$（$k &lt; 2n$），则 $x_0$ 是函数 $f(x)$ 的极值点；$f^{(2n)}(x_0) &gt; 0$ 为极小值，$f^{(2n)}(x_0) &lt; 0$ 为极大值。
+</p>
+<p><strong>(ii)</strong> 若 $f(x)$ 在 $x_0$ 处有任意阶导数，若 $f^{(2n-1)}(x_0) \neq 0$，且 $f^{(k)}(x_0) = 0$（$k &lt; 2n-1$），则 $x_0$ 不是函数的极值点。
+</p>
+<p>&gt; 也即：<strong>只有偶数阶导数不为零才是极值点。</strong>
+</p>
+<p><strong>简证：</strong>
+</p>
+<p><strong>(i)</strong> 利用泰勒展开：
+</p>
+<div class="math-block">$$f(x) = f(x_0) + 0 + 0 + \cdots + \frac{f^{(2n)}(\xi)}{(2n)!}(x - x_0)^{2n}, \quad \xi \in \mathring{U}(x_0)$$</div>
+<p>若 $f^{(2n)}(x_0) &gt; 0$，由函数的保号性，$f^{(2n)}(\xi) &gt; 0$，则有 $f(x) &gt; f(x_0)$。由定义，$f(x_0)$ 是极小值！
+</p>
+<p><strong>(ii)</strong>
+</p>
+<div class="math-block">$$f(x) = f(x_0) + 0 + 0 + \cdots + \frac{f^{(2n-1)}(\xi)}{(2n-1)!}(x - x_0)^{2n-1}$$</div>
+<p>$f^{(2n-1)}(x_0) \neq 0$ 时，$f(x)$ 在 $x_0$ 的邻域内有大于以及小于 $f(x_0)$ 的点，因此不是极值。
+</p>
+<p>---
+</p>
+<h2>四、曲线的凹凸性</h2>
+<p>近几年的考题几乎都有凹凸性相关的问题，甚至还有大题（2025 年），但也都是来自于对定义的深入挖掘。由于大学高等数学所学内容不多也不深，希望高分的同学还是需要自己多学一些的。
+</p>
+<p>同济大学版本曲线的凹凸性定义是这样的：
+</p>
+<p><strong>凹函数定义（同济版）：</strong> 设 $f(x)$ 在区间 $I$ 上连续，如果对 $I$ 上的任意两点 $x_1, x_2$，恒有
+</p>
+<div class="math-block">$$f\left(\frac{x_1 + x_2}{2}\right) &lt; \frac{f(x_1) + f(x_2)}{2}$$</div>
+<p>则称 $f(x)$ 在区间 $I$ 上的图形是凹的。
+</p>
+<p>&gt; 注意：定义只要求函数在 $I$ 上<strong>连续</strong>。
+</p>
+<p>但是一般数学分析书中都是用如下定义：
+</p>
+<p><strong>凹函数定义（一般形式）：</strong> 设 $f(x)$ 在区间 $I$ 上连续，如果对 $I$ 上任意两点 $x_1, x_2$ 以及任意实数 $\lambda \in (0, 1)$，总有
+</p>
+<div class="math-block">$$f\big(\lambda x_1 + (1 - \lambda) x_2\big) \leq \lambda f(x_1) + (1 - \lambda) f(x_2)$$</div>
+<p>则称 $f(x)$ 为 $I$ 上的凹函数。
+</p>
+<p>从两个定义看出，前一个定义是 $\lambda = \frac{1}{2}$ 的特殊情形。利用第二个定义可以容易地推出一些结论：
+</p>
+<p><strong>结论：</strong> $f(x)$ 为 $I$ 上凹函数的充分必要条件是：对于 $I$ 上的任意三点 $x_1 &lt; x_2 &lt; x_3$，总有
+</p>
+<div class="math-block">$$\frac{f(x_2) - f(x_1)}{x_2 - x_1} \leq \frac{f(x_3) - f(x_2)}{x_3 - x_2}$$</div>
+<p>---
+</p>
+<h2>五、凹凸性的等价条件</h2>
+<p>设 $f(x)$ 为区间 $I$ 上的可导函数，则下述论断互相等价（请自证）：
+</p>
+<p>1. $f(x)$ 为 $I$ 上的凹函数；
+2. $f'(x)$ 为 $I$ 上的增函数；
+3. 对 $I$ 上任意两点 $x_1, x_2$，有：$f(x_2) \geq f(x_1) + f'(x_1)(x_2 - x_1)$（几何意义？）
+</p>
+<p>&gt; <strong>习题：</strong> 若 $f(x)$ 为区间 $[a, b]$ 上的连续凹函数，则有：$f(x) \leq \max\{f(a), f(b)\}$
+&gt;
+&gt; <strong>解析：</strong> $[a,b]$ 内的任何一点 $x$ 都可以写成 $x = \lambda a + (1 - \lambda) b$，$\lambda \in (0, 1)$。由凹函数的定义：
+&gt;
+&gt; $$f(x) \leq \lambda f(a) + (1 - \lambda) f(b) \leq \max\{f(a), f(b)\}$$
+&gt;
+&gt; 得证！同学们可以自己得出凸函数相应的结论和证明。
+</p>
+<p>---
+</p>
+<h2>六、拐点</h2>
+<p><strong>拐点定义：</strong> 设 $f(x)$ 在区间 $I$ 上连续，$x_0$ 是 $I$ 内的点，如果曲线 $f(x)$ 经过点 $(x_0, f(x_0))$ 时，曲线的凹凸性改变了，则称此点为曲线的拐点。
+</p>
+<p>拐点出现在二阶导数为零的点，以及二阶导数不存在的点。
+</p>
+<p>---
+</p>
+<h2>七、真题演练</h2>
+<p>下面引用几道近几年的考题供同学们参考。
+</p>
+<p>&gt; <strong>（2026 数一第 3 题 / 数二第 5 题）</strong>
+&gt;
+&gt; 设函数 $f(x)$ 在区间 $[-1, 1]$ 上有定义，则（　）
+&gt;
+&gt; (A) 当 $f(x)$ 在 $(-1, 0)$ 单调递减，在 $(0, 1)$ 单调递增时，$f(0)$ 是极小值
+&gt;
+&gt; (B) 当 $f(0)$ 是极小值时，$f(x)$ 在 $(-1, 0)$ 单调递减，在 $(0, 1)$ 单调递增
+&gt;
+&gt; (C) 当 $f(x)$ 的图形在 $[-1, 1]$ 是凹的时，$\dfrac{f(x) - f(1)}{x - 1}$ 在 $[-1, 1]$ 单调增加
+&gt;
+&gt; (D) 当 $\dfrac{f(x) - f(1)}{x - 1}$ 在 $[-1, 1]$ 单调增加时，$f(x)$ 的图形在 $[-1, 1]$ 是凹的
+</p>
+<p>四个选项都是考察对极值以及凹凸性定义的理解。
+</p>
+<p>&gt; <strong>（2025 数二）</strong>
+&gt;
+&gt; 已知函数 $f(x) = \int_0^x e^{t^2} \sin t \, dt$，$g(x) = \int_0^x e^{t^2} dt \cdot \sin 2x$，则（　）
+&gt;
+&gt; A. $x = 0$ 是 $f(x)$ 的极值点，也是 $g(x)$ 的极值点
+&gt;
+&gt; B. $x = 0$ 是 $f(x)$ 的极值点，$(0, 0)$ 是曲线 $y = g(x)$ 的拐点
+&gt;
+&gt; C. $x = 0$ 是 $f(x)$ 的极值点，$(0, 0)$ 是曲线 $y = f(x)$ 的拐点
+&gt;
+&gt; D. $(0, 0)$ 是曲线 $y = f(x)$ 的拐点，也是曲线 $y = g(x)$ 的拐点
+</p>
+<p>&gt; <strong>（2025 数一数二，本题满分 12 分）</strong>
+&gt;
+&gt; 设函数 $f(x)$ 在区间 $(a, b)$ 内可导，证明：导函数 $f'(x)$ 在 $(a, b)$ 内严格单调增加的充分必要条件是：对 $(a, b)$ 内任意的点 $x_1, x_2, x_3$，当 $x_1 &lt; x_2 &lt; x_3$ 时，
+&gt;
+&gt; $$\frac{f(x_2) - f(x_1)}{x_2 - x_1} &lt; \frac{f(x_3) - f(x_2)}{x_3 - x_2}$$
+</p>
+<p>本题实际上是利用了凹凸性的结论。
+</p>
+<p>---
+</p>
+<h2>小结</h2>
+<p>希望同学们对定义以及定理的要求、条件有更深刻的理解，现在考题的趋势就是从基本概念中扣难题。
+</p>
+<p>---
+</p>
+<p>&gt; <strong>经纬考研数学</strong>
+&gt;
+&gt; 官网：[www.jingweimath.com](https://www.jingweimath.com)
+</p>
+  </div>
+</article>
+<aside class="related">
+  <h3>相关文章</h3>
+  <a href="improper-integral-limit.html">反常积分收敛，为什么推不出 f(x)→0？</a>
+  <a href="vector-geometry.html">向量代数与空间解析几何</a>
+  <a href="limit-theory.html">极限理论：极限的存在性与保号性</a>
+  <a href="jordan-form.html">若当型——矩阵不相似于对角形，那相似于什么？</a>
+  <a href="linalg-geometry.html">跨科题目精讲——线代与几何的结合</a>
+</aside>
+<div class="site-links">
+  <a href="../practice.html">在线题库（2000+题）</a>
+  <a href="../exams.html">历年真题下载</a>
+  <a href="../courses.html">免费网课视频</a>
+  <a href="../plan.html">科学复习计划</a>
+</div>
+<footer>© 2026 经纬考研数学 · <a href="https://jingweimath.com/">jingweimath.com</a> · 专注考研数学辅导    <div style="margin-top:4px;"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" style="color:#9ca3af;text-decoration:none;">鲁ICP备2026032754号</a></div>
+  </footer>
+</body>
+</html>

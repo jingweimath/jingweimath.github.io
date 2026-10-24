@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>若当型(Jordan标准形)是什么？矩阵不可对角化时相似于什么</title>
+<meta name="description" content="矩阵有重根特征值不可对角化时，相似于若当型(Jordan Canonical Form)。本文用三个特征值全为2的矩阵实例，讲透若当块结构与对角化理论的关系。">
+<meta name="keywords" content="若当型,Jordan标准形,相似对角化,特征值,重根,线性代数,考研数学">
+<meta name="robots" content="index, follow">
+<meta name="author" content="经纬考研数学">
+<link rel="canonical" href="https://jingweimath.com/articles/jordan-form.html">
+<meta property="og:title" content="若当型(Jordan标准形)是什么？矩阵不可对角化时相似于什么">
+<meta property="og:description" content="矩阵有重根特征值不可对角化时，相似于若当型(Jordan Canonical Form)。本文用三个特征值全为2的矩阵实例，讲透若当块结构与对角化理论的关系。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jingweimath.com/articles/jordan-form.html">
+<meta property="og:site_name" content="经纬考研数学">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "若当型——矩阵不相似于对角形，那相似于什么？",
+  "datePublished": "2026-06-29",
+  "dateModified": "2026-10-14",
+  "author": {"@type": "Organization", "name": "经纬考研数学"},
+  "publisher": {"@type": "Organization", "name": "经纬考研数学"},
+  "description": "矩阵有重根特征值不可对角化时，相似于若当型(Jordan Canonical Form)。本文用三个特征值全为2的矩阵实例，讲透若当块结构与对角化理论的关系。",
+  "mainEntityOfPage": "https://jingweimath.com/articles/jordan-form.html"
+}
+</script>
+<script>
+MathJax = { tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]] } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" async></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a56db; --primary-dark: #1e429f; --primary-light: #e8f0fe;
+    --accent: #e24b4a; --text: #1e1e2e; --text-muted: #6b7280;
+    --border: #e5e7eb; --bg: #f8f9fc;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); }
+  .topbar { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 5%; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: var(--accent); }
+  .back { font-size: 14px; color: var(--primary); text-decoration: none; font-weight: 500; }
+  .breadcrumb { padding: 14px 5%; font-size: 13px; color: var(--text-muted); background: var(--bg); }
+  .breadcrumb a { color: var(--primary); text-decoration: none; }
+  article { max-width: 780px; margin: 0 auto; padding: 40px 24px 60px; }
+  h1 { font-size: 28px; line-height: 1.4; margin-bottom: 14px; }
+  .meta { font-size: 13px; color: var(--text-muted); margin-bottom: 30px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .meta .tag { display: inline-block; background: var(--primary-light); color: var(--primary); border-radius: 12px; padding: 2px 10px; margin-left: 6px; font-size: 12px; }
+  .body p { line-height: 1.9; margin: 14px 0; font-size: 16px; }
+  .body h2 { font-size: 21px; margin: 32px 0 12px; padding-left: 10px; border-left: 4px solid var(--primary); }
+  .body h3 { font-size: 18px; margin: 24px 0 10px; }
+  .body ul { margin: 14px 0 14px 22px; }
+  .body li { line-height: 1.9; font-size: 16px; margin: 4px 0; }
+  .body li.sub { list-style: circle; margin-left: 22px; }
+  .math-block { margin: 18px 0; text-align: center; overflow-x: auto; }
+  .related { max-width: 780px; margin: 0 auto 50px; padding: 24px; background: var(--bg); border-radius: 12px; }
+  .related h3 { font-size: 16px; margin-bottom: 14px; color: var(--primary); }
+  .related a { display: block; padding: 9px 0; color: var(--text); text-decoration: none; font-size: 15px; border-bottom: 1px dashed var(--border); }
+  .related a:hover { color: var(--primary); }
+  .site-links { max-width: 780px; margin: 0 auto 60px; padding: 0 24px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .site-links a { color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; }
+  footer { background: #1e1e2e; color: #9ca3af; text-align: center; padding: 22px 5%; font-size: 13px; }
+  footer a { color: #c3cbe0; text-decoration: none; }
+  @media (max-width: 600px) { h1 { font-size: 22px; } .body p, .body li { font-size: 15px; } }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="../index.html">经纬<span>考研数学</span></a>
+  <a class="back" href="../notes.html">返回笔记列表 →</a>
+</header>
+<nav class="breadcrumb"><a href="../index.html">首页</a> › <a href="../notes.html">经纬论数</a> › 若当型——矩阵不相似于对角形，那相似于什么？</nav>
+<article>
+  <h1>若当型——矩阵不相似于对角形，那相似于什么？</h1>
+  <div class="meta">发布于 2026-06-29<span class="tag">线性代数</span><span class="tag">若当型</span><span class="tag">相似对角化</span><span class="tag">特征值</span></div>
+  <div class="body">
+<p>矩阵相似于对角形是考研数学线代部分的必考问题，选填和大题都有可能出，所以也是同学们复习的重点内容。
+</p>
+<p>$n$ 阶方阵 $A$ 相似于对角形（或者说 $A$ 可对角化）的充分必要条件是：<strong>$A$ 有 $n$ 个线性无关的特征向量</strong>。
+</p>
+<p>这是核心理论，由此得出了一些相关结论（充分条件）：
+</p>
+<ul>
+<li>如果 $A$ 有 $n$ 个互不相同的特征值，则 $A$ 相似于对角形；</li>
+<li>实对称矩阵必相似于对角形；</li>
+<li>等等。</li>
+</ul>
+<p>同学们在学习的时候应该也都理解：$A$ 不相似于对角形的关键原因就是 $A$ 有重根特征值。有重根特征值的矩阵<strong>可以</strong>相似于对角形——这时候重根特征值对应的特征向量个数必须与根的重数相等；否则就不相似于对角形。
+</p>
+<h2>不相似于对角形，那相似于什么？</h2>
+<p>自然这就引出了一个问题：矩阵如果不相似于对角形，那么是否相似于其他"标准形"？
+</p>
+<p>讲课的时候经常有同学问到这个问题。答案是：<strong>是的！</strong>
+</p>
+<p>考研数学大纲没有这方面的要求，但如果愿意多学的同学（或者说——肯定能考上研究生的同学），还是可以了解这方面的内容。读研写论文的时候你极有可能要用到，同时也有利于提高数学能力。
+</p>
+<p>这个"标准形"叫 <strong>若当型</strong>（Jordan Canonical Form，若当是法国数学家 Jordan Camille）。
+</p>
+<h2>一个例子</h2>
+<p>三个矩阵的特征值都是 $\lambda = 2$（三重根），但它们的特征向量个数截然不同：
+</p>
+<div class="math-block">$$ A = \begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 2 \end{pmatrix}, \quad
+B = \begin{pmatrix} 2 &amp; 1 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 2 \end{pmatrix}, \quad
+C = \begin{pmatrix} 2 &amp; 1 &amp; 0 \\ 0 &amp; 2 &amp; 1 \\ 0 &amp; 0 &amp; 2 \end{pmatrix} $$</div>
+<ul>
+<li>$A$ 是<strong>对角形</strong>（三个线性无关的特征向量）</li>
+<li>$B$ 和 $C$ 都是<strong>若当型</strong>——都不相似于对角形，但两者的结构也不同：</li>
+<li class="sub">$ 包含一个 $2 \times 2$ 若当块和一个 $1 \times 1$ 若当块</li>
+<li class="sub">$ 包含一个 $3 \times 3$ 若当块</li>
+</ul>
+<h2>拓展</h2>
+<p>感兴趣的同学可以参考数学系的高等代数教材。尽管不在考试范围，但如果有所了解，对判断题<strong>很有帮助</strong>。
+</p>
+<p>我推测，如果考研数学线性代数部分将来要添加内容的话，很可能就在这个地方。
+</p>
+  </div>
+</article>
+<aside class="related">
+  <h3>相关文章</h3>
+  <a href="improper-integral-limit.html">反常积分收敛，为什么推不出 f(x)→0？</a>
+  <a href="extrema-concavity.html">极值与凹凸性：从定义到真题</a>
+  <a href="vector-geometry.html">向量代数与空间解析几何</a>
+  <a href="limit-theory.html">极限理论：极限的存在性与保号性</a>
+  <a href="linalg-geometry.html">跨科题目精讲——线代与几何的结合</a>
+</aside>
+<div class="site-links">
+  <a href="../practice.html">在线题库（2000+题）</a>
+  <a href="../exams.html">历年真题下载</a>
+  <a href="../courses.html">免费网课视频</a>
+  <a href="../plan.html">科学复习计划</a>
+</div>
+<footer>© 2026 经纬考研数学 · <a href="https://jingweimath.com/">jingweimath.com</a> · 专注考研数学辅导</footer>
+</body>
+</html>

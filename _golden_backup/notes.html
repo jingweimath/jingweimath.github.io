@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>经纬论数 - 经纬考研数学</title>
+<meta name="description" content="经纬论数——考研数学专题深度讲解、学习心得与教学随笔，经纬考研数学出品。">
+<meta name="keywords" content="考研数学,数学专题,学习心得,数学随笔,经纬数学,经纬论数">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="经纬论数 - 经纬考研数学">
+<meta property="og:description" content="专题深度讲解、学习心得与教学随笔。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jingweimath.com/notes.html">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a56db;
+    --primary-dark: #1e429f;
+    --primary-light: #e8f0fe;
+    --accent: #e24b4a;
+    --text: #1e1e2e;
+    --text-muted: #6b7280;
+    --border: #e5e7eb;
+    --bg: #f8f9fc;
+    --white: #ffffff;
+    --radius: 12px;
+    --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.95); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2.5%;
+    display: flex; align-items: center; justify-content: space-between; height: 100px;
+  }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); letter-spacing: -0.5px; text-decoration: none; }
+  .logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 26px; list-style: none; align-items: stretch; }
+  .nav-links a {
+    text-decoration: none; color: var(--text); font-size: 21px; font-weight: 600;
+    transition: color 0.2s; padding: 6px 8px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    line-height: 1.3; letter-spacing: 2px;
+  }
+  .nav-icon { font-size: 19px; line-height: 1; margin-bottom: 4px; }
+  .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+  .nav-links a.nav-hot { color: var(--primary); font-weight: 700; }
+  .nav-links a.nav-star {
+    background: linear-gradient(90deg,#1a56db,#3b82f6); color:#fff;
+    padding: 8px 18px; border-radius: 18px; font-weight: 700;
+    box-shadow: 0 3px 12px rgba(26,86,219,0.35);
+  }
+  .nav-links a.nav-star:hover, .nav-links a.nav-star.active { color:#fff; opacity:0.92; }
+  .nav-cta { background: var(--primary); color: white; padding: 10px 24px; border-radius: 8px; font-size: 16px; text-decoration: none; font-weight: 500; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--primary-dark); }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #1a56db 0%, #1e429f 100%);
+    color: white; padding: 80px 5% 60px;
+    text-align: center;
+  }
+  .hero h1 { font-size: 42px; font-weight: 800; margin-bottom: 16px; letter-spacing: -1px; }
+  .hero p { font-size: 18px; opacity: 0.9; max-width: 600px; margin: 0 auto; line-height: 1.8; }
+
+  /* MAIN CONTAINER */
+  .container { max-width: 860px; margin: 0 auto; padding: 48px 5% 80px; }
+
+  /* ARTICLE LIST */
+  .article-list { display: flex; flex-direction: column; gap: 16px; }
+
+  .article-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+  }
+  .article-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+  }
+  .article-card .date {
+    font-size: 13px; color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+  .article-card h3 {
+    font-size: 20px; font-weight: 700;
+    color: var(--text); margin-bottom: 8px;
+  }
+  .article-card h3:hover { color: var(--primary); }
+  .article-card .excerpt {
+    font-size: 15px; color: var(--text-muted); line-height: 1.7;
+  }
+  .article-card .tags {
+    margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+  }
+  .article-card .tag {
+    font-size: 11px; padding: 2px 8px;
+    background: var(--primary-light); color: var(--primary);
+    border-radius: 100px;
+  }
+
+  /* INTERACTION BAR */
+  .interaction-bar {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .interaction-bar .actions {
+    display: flex; gap: 4px; align-items: center;
+  }
+  .interaction-bar .actions .btn-action {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 5px 12px; border-radius: 8px;
+    border: 1px solid var(--border); background: white;
+    font-size: 13px; color: var(--text-muted);
+    cursor: pointer; transition: all 0.2s; user-select: none;
+  }
+  .interaction-bar .actions .btn-action:hover {
+    border-color: var(--primary); color: var(--primary); background: var(--primary-light);
+  }
+  .interaction-bar .actions .btn-action.active {
+    border-color: #f59e0b; color: #b45309; background: #fffbeb;
+  }
+  .interaction-bar .actions .btn-action .count {
+    font-size: 12px; font-weight: 600; min-width: 14px; text-align: center;
+  }
+  .interaction-bar .actions .btn-action.liked {
+    border-color: #ef4444; color: #dc2626; background: #fef2f2;
+  }
+
+  /* EMPTY STATE */
+  .empty-state {
+    text-align: center; padding: 80px 20px;
+    color: var(--text-muted);
+  }
+  .empty-state .icon { font-size: 64px; margin-bottom: 24px; opacity: 0.5; }
+  .empty-state h3 { font-size: 20px; margin-bottom: 8px; color: var(--text); }
+  .empty-state p { font-size: 15px; line-height: 1.8; }
+
+  /* ARTICLE PAGE (single article view) */
+  .article-full { display: none; }
+  .article-full.active { display: block; }
+  .article-full .back-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--text-muted); text-decoration: none; font-size: 14px;
+    margin-bottom: 32px; transition: color 0.2s;
+  }
+  .article-full .back-link:hover { color: var(--primary); }
+  .article-full .article-meta {
+    font-size: 14px; color: var(--text-muted); margin-bottom: 24px;
+  }
+  .article-full .article-body {
+    font-size: 17px; line-height: 2; color: var(--text);
+  }
+  .article-full .article-body h2 { font-size: 24px; margin: 48px 0 16px; }
+  .article-full .article-body h3 { font-size: 20px; margin: 36px 0 12px; }
+  .article-full .article-body p { margin-bottom: 16px; }
+  .article-full .article-body .math-block {
+    background: var(--bg); border-radius: 8px; padding: 20px 24px;
+    margin: 20px 0; overflow-x: auto; font-size: 16px;
+  }
+
+  /* FOOTER */
+  footer { background: #111827; color: #9ca3af; padding: 48px 5% 32px; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; max-width: 1200px; margin-left: auto; margin-right: auto; }
+  .footer-brand .logo { font-size: 20px; margin-bottom: 12px; display: block; }
+  .footer-brand p { font-size: 14px; line-height: 1.7; }
+  .footer-col h4 { color: white; font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col ul a { color: #9ca3af; font-size: 14px; text-decoration: none; transition: color 0.2s; }
+  .footer-col ul a:hover { color: white; }
+  .footer-bottom { border-top: 1px solid #1f2937; padding-top: 24px; display: flex; justify-content: space-between; font-size: 13px; max-width: 1200px; margin-left: auto; margin-right: auto; }
+
+  .wechat-qr { display: inline-flex; align-items: center; gap: 8px; color: #9ca3af; }
+  .qr-box { width: 36px; height: 36px; background: #374151; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+
+  /* DROP ZONE */
+  .drop-zone {
+    max-width: 860px; margin: -20px auto 32px; padding: 0 5%;
+  }
+  .drop-zone-inner {
+    border: 2px dashed #cbd5e1; border-radius: var(--radius);
+    padding: 36px 24px; text-align: center;
+    transition: border-color 0.3s, background 0.3s;
+    background: var(--bg); cursor: pointer;
+  }
+  .drop-zone-inner.drag-over {
+    border-color: var(--primary); background: var(--primary-light);
+  }
+  .drop-zone-inner .dz-icon { font-size: 36px; margin-bottom: 8px; }
+  .drop-zone-inner .dz-text { font-size: 15px; color: var(--text-muted); }
+  .drop-zone-inner .dz-hint { font-size: 12px; color: #9ca3af; margin-top: 6px; }
+  .drop-zone-inner input[type=file] { display: none; }
+
+  /* ARTICLE ADMIN */
+  .article-card { position: relative; }
+  .article-card .btn-delete {
+    position: absolute; top: 12px; right: 12px;
+    width: 28px; height: 28px; border-radius: 50%;
+    border: none; background: transparent; color: #cbd5e1;
+    font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+    opacity: 0; transition: opacity 0.2s, color 0.2s;
+  }
+  .article-card:hover .btn-delete { opacity: 1; }
+  .article-card .btn-delete:hover { color: var(--accent); background: #fef2f2; }
+
+  .admin-bar {
+    display: flex; justify-content: flex-end; gap: 12px;
+    margin-bottom: 20px; padding: 0 2px;
+  }
+  .admin-bar button {
+    font-size: 13px; padding: 6px 16px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--white);
+    color: var(--text-muted); cursor: pointer; transition: all 0.2s;
+  }
+  .admin-bar button:hover { border-color: var(--primary); color: var(--primary); }
+
+  /* TOAST */
+  .toast {
+    position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%);
+    background: #1e1e2e; color: white; padding: 12px 28px; border-radius: 100px;
+    font-size: 14px; z-index: 999; box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    animation: toastIn 0.3s ease;
+    pointer-events: none;
+  }
+  @keyframes toastIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(12px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+
+  @media (max-width: 768px) {
+    nav .nav-links { display: none; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .hero { padding: 60px 5% 40px; }
+    .hero h1 { font-size: 32px; }
+    .container { padding: 32px 5% 60px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo"><img src="logo-192.png" alt="经纬考研数学" height="46"></a>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="nav-icon">🏠</span>首页</a></li>
+    <li><a href="courses.html" class="nav-star"><span class="nav-icon">🎬</span>网课<br>视频</a></li>
+    <li><a href="plan.html"><span class="nav-icon">📅</span>复习<br>计划</a></li>
+    <li><a href="practice.html" class="nav-hot"><span class="nav-icon">🔥</span>题库<br>练习</a></li>
+    <li><a href="exams.html" class="nav-hot"><span class="nav-icon">📋</span>考研<br>真题</a></li>
+    <li><a href="comprehensive.html" class="nav-hot"><span class="nav-icon">📝</span>经纬<br>研选</a></li>
+    <li><a href="notes.html" class="active"><span class="nav-icon">📐</span>经纬<br>论数</a></li>
+  </ul>
+  <a href="practice.html" class="nav-cta">开始刷题</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>📐 经纬论数</h1>
+  <p>专题深度讲解 · 学习心得分享 · 教学随笔<br>不只是刷题，更懂数学的来龙去脉</p>
+</section>
+
+<!-- DROP ZONE -->
+<div class="drop-zone" id="dropZone">
+  <div class="drop-zone-inner" id="dropZoneInner">
+    <div class="dz-icon">📂</div>
+    <div class="dz-text">拖拽 Markdown 文件到这里，或点击选择文件</div>
+    <div class="dz-hint">支持 .md 文件，可含 YAML 头部（date / title / tags / excerpt）</div>
+    <input type="file" id="fileInput" accept=".md" multiple>
+  </div>
+</div>
+
+<!-- ARTICLE LIST -->
+<div class="container" id="articleList">
+  <div class="empty-state">
+    <div class="icon">📝</div>
+    <h3>文章即将上线</h3>
+    <p>
+      这里将发布考研数学专题讲解、学习心得与教学随笔。<br>
+      敬请期待。
+    </p>
+  </div>
+</div>
+
+<!-- SINGLE ARTICLE VIEW (hidden by default) -->
+<div class="container article-full" id="articleView"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo" style="display:inline-block;filter:brightness(0) invert(1)"><img src="logo-192.png" alt="经纬考研数学" height="28"></span>
+      <p>专注考研数学一辅导，科学备考方法 + 海量精品内容，助你一战上岸。</p>
+      <div style="margin-top:20px">
+        <div class="wechat-qr">
+          <div class="qr-box">💬</div>
+          微信咨询
+        </div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>课程内容</h4>
+      <ul>
+        <li><a href="courses.html">高等数学</a></li>
+        <li><a href="courses.html">线性代数</a></li>
+        <li><a href="courses.html">概率论</a></li>
+        <li><a href="courses.html">真题解析</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>工具</h4>
+      <ul>
+        <li><a href="plan.html">复习计划</a></li>
+        <li><a href="practice.html">题库练习</a></li>
+        <li><a href="practice.html">错题本</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <ul>
+        <li><a href="index.html#teacher">师资介绍</a></li>
+        <li><a href="notes.html">经纬论数</a></li>
+        <li><a href="exams.html">📋 考研真题</a></li>
+    <li><a href="comprehensive.html" style="color:var(--primary);font-weight:700;">📝 经纬研选</a></li>
+        <li><a href="membership.html">会员</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 经纬数学 · 考研辅导</span>
+    <span>课程内容版权所有</span>
+  </div>
+    <div style="margin-top:8px;"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=37020202370561" target="_blank" rel="noreferrer" style="color:#9ca3af;text-decoration:none;">鲁公网安备37020202370561号</a></div>
+  </footer>
+
+<!-- MathJax -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    macros: {
+      lim: ['\\mathop{\\mathrm{lim}}\\limits', 0],
+      max: ['\\mathop{\\mathrm{max}}\\limits', 0],
+      min: ['\\mathop{\\mathrm{min}}\\limits', 0],
+      sup: ['\\mathop{\\mathrm{sup}}\\limits', 0],
+      inf: ['\\mathop{\\mathrm{inf}}\\limits', 0]
+    }
+  },
+  options: {
+    ignoreHtmlClass: 'no-mathjax',
+    processHtmlClass: 'mathjax-process'
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+
+<!-- Article data & router & upload -->
+<script>
+// ===== ARTICLE DATA =====
+// 服务器文章：从 /articles/index.json 加载索引，内容按需 fetch .md 文件
+// 本地文章：通过拖拽上传，存 localStorage
+const BUILD_VERSION = '20260727a';
+console.log('📝 经纬论数 v' + BUILD_VERSION);
+
+const STORAGE_KEY = 'jingweimath_notes_local';
+const SERVER_INDEX_URL = 'articles/index.json?v=' + BUILD_VERSION;
+let SERVER_ARTICLES = [];    // {id,title,date,excerpt,tags,file,source:'server',content:null}
+let LOCAL_ARTICLES = [];     // {id,title,date,excerpt,tags,content,source:'local'}
+let ARTICLES = [];           // merged display list
+let nextLocalId = 1;
+
+async function loadArticles() {
+  // 1. 加载服务器文章索引
+  try {
+    const resp = await fetch(SERVER_INDEX_URL);
+    if (resp.ok) {
+      const index = await resp.json();
+      console.log('✅ 服务器文章索引加载成功，共', index.length, '篇');
+      SERVER_ARTICLES = index.map(a => ({
+        id: a.id,
+        date: a.date,
+        title: a.title,
+        excerpt: a.excerpt,
+        tags: a.tags || [],
+        file: a.file,
+        source: 'server',
+        content: null  // 按需加载
+      }));
+    } else {
+      console.warn('⚠️ 服务器文章索引 HTTP', resp.status);
+      SERVER_ARTICLES = [];
+    }
+  } catch(e) {
+    console.warn('⚠️ 服务器文章加载失败，仅显示本地文章', e.message);
+    SERVER_ARTICLES = [];
+  }
+
+  // 2. 加载本地文章
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) LOCAL_ARTICLES = JSON.parse(raw);
+    const nid = localStorage.getItem(STORAGE_KEY + '_nextId');
+    if (nid) nextLocalId = parseInt(nid);
+  } catch(e) {
+    LOCAL_ARTICLES = [];
+  }
+
+  mergeArticles();
+}
+
+function mergeArticles() {
+  ARTICLES = [...SERVER_ARTICLES, ...LOCAL_ARTICLES];
+  ARTICLES.sort((a, b) => new Date(b.date) - new Date(a.date));
+}
+
+function saveLocalArticles() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(LOCAL_ARTICLES));
+  localStorage.setItem(STORAGE_KEY + '_nextId', nextLocalId);
+}
+
+// ===== SIMPLE MARKDOWN → HTML =====
+function md2html(md) {
+  // 保护数学公式块 $$...$$ 和 $...$
+  const mathBlocks = [];
+  const mathInlines = [];
+  // 保护 $$...$$
+  md = md.replace(/\$\$([\s\S]*?)\$\$/g, (_, c) => {
+    mathBlocks.push(c.trim());
+    return `\x00MB${mathBlocks.length - 1}\x00`;
+  });
+  // 保护 $...$ (单行)
+  md = md.replace(/\$(.+?)\$/g, (_, c) => {
+    mathInlines.push(c);
+    return `\x00MI${mathInlines.length - 1}\x00`;
+  });
+
+  let html = '';
+  const lines = md.split('\n');
+  let inCodeBlock = false;
+  let codeBuf = '';
+  let codeLang = '';
+
+  for (let i = 0; i < lines.length; i++) {
+    let line = lines[i];
+
+    // Code block fence
+    if (/^```/.test(line.trim())) {
+      if (!inCodeBlock) {
+        inCodeBlock = true;
+        codeLang = line.trim().slice(3).trim();
+        codeBuf = '';
+        continue;
+      } else {
+        inCodeBlock = false;
+        html += `<pre class="math-block"><code>${escapeHtml(codeBuf)}</code></pre>\n`;
+        continue;
+      }
+    }
+    if (inCodeBlock) {
+      codeBuf += (codeBuf ? '\n' : '') + line;
+      continue;
+    }
+
+    // Blank line → paragraph break
+    if (line.trim() === '') {
+      html += '\n';
+      continue;
+    }
+
+    // Heading
+    let h = line.match(/^(#{1,6})\s+(.+)/);
+    if (h) {
+      const level = h[1].length;
+      html += `<h${level}>${inlineParse(h[2])}</h${level}>\n`;
+      continue;
+    }
+
+    // Unordered list
+    let ul = line.match(/^[\-\*]\s+(.+)/);
+    if (ul) {
+      html += `<ul><li>${inlineParse(ul[1])}</li></ul>\n`;
+      continue;
+    }
+
+    // Ordered list
+    let ol = line.match(/^\d+\.\s+(.+)/);
+    if (ol) {
+      html += `<ol><li>${inlineParse(ol[1])}</li></ol>\n`;
+      continue;
+    }
+
+    // Horizontal rule
+    if (/^[\-\*\_]{3,}$/.test(line.trim())) {
+      html += '<hr>\n';
+      continue;
+    }
+
+    // Blockquote
+    if (/^>\s?(.+)/.test(line)) {
+      html += `<blockquote>${inlineParse(line.replace(/^>\s?/, ''))}</blockquote>\n`;
+      continue;
+    }
+
+    // Paragraph
+    html += `<p>${inlineParse(line)}</p>\n`;
+  }
+
+  // Restore math
+  html = html.replace(/\x00MB(\d+)\x00/g, (_, idx) => {
+    return `<div class="math-block">$$${mathBlocks[parseInt(idx)]}$$</div>`;
+  });
+  html = html.replace(/\x00MI(\d+)\x00/g, (_, idx) => {
+    return `$${mathInlines[parseInt(idx)]}$`;
+  });
+
+  return html;
+}
+
+function inlineParse(text) {
+  text = escapeHtml(text);
+  // Bold
+  text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  // Italic
+  text = text.replace(/\*(.+?)\*/g, '<em>$1</em>');
+  // Inline code
+  text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+  // Link
+  text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+  return text;
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// ===== YAML FRONTMATTER PARSER =====
+function parseFrontmatter(md) {
+  const match = md.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)/);
+  const meta = {};
+  let body = md;
+  if (match) {
+    body = match[2];
+    const yaml = match[1];
+    yaml.split('\n').forEach(line => {
+      const kv = line.match(/^(\w+):\s*(.+)/);
+      if (kv) {
+        let key = kv[1].trim();
+        let val = kv[2].trim();
+        // Remove surrounding quotes
+        val = val.replace(/^["']|["']$/g, '');
+        // Parse tags as array
+        if (key === 'tags') {
+          val = val.replace(/^\[|\]$/g, '').split(',').map(s => s.trim()).filter(Boolean);
+        }
+        meta[key] = val;
+      }
+    });
+  }
+  return { meta, body };
+}
+
+// ===== FILE PROCESSING (drag-drop) =====
+function processFiles(files) {
+  let processed = 0;
+  Array.from(files).forEach(file => {
+    if (!file.name.endsWith('.md')) {
+      toast(`跳过非 Markdown 文件：${file.name}`);
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const md = e.target.result;
+      const { meta, body } = parseFrontmatter(md);
+
+      const article = {
+        id: nextLocalId++,
+        date: meta.date || todayStr(),
+        title: meta.title || file.name.replace(/\.md$/, ''),
+        excerpt: meta.excerpt || extractExcerpt(body),
+        tags: meta.tags || [],
+        content: md2html(body),
+        source: 'local'
+      };
+
+      LOCAL_ARTICLES.push(article);
+      processed++;
+      saveLocalArticles();
+      mergeArticles();
+      renderArticleList();
+      toast(`已添加：${article.title}`);
+    };
+    reader.readAsText(file);
+  });
+}
+
+function todayStr() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+function extractExcerpt(md) {
+  const lines = md.trim().split('\n');
+  for (let line of lines) {
+    line = line.trim();
+    if (line && !line.startsWith('#') && !line.startsWith('---')) {
+      return line.replace(/[#*$`\[\]()]/g, '').slice(0, 100) + (line.length > 100 ? '…' : '');
+    }
+  }
+  return '';
+}
+
+// ===== DROP ZONE HANDLERS =====
+const dropZoneInner = document.getElementById('dropZoneInner');
+const fileInput = document.getElementById('fileInput');
+
+dropZoneInner.addEventListener('click', () => fileInput.click());
+fileInput.addEventListener('change', () => {
+  if (fileInput.files.length) {
+    processFiles(fileInput.files);
+    fileInput.value = '';
+  }
+});
+
+['dragenter', 'dragover'].forEach(evt => {
+  dropZoneInner.addEventListener(evt, e => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropZoneInner.classList.add('drag-over');
+  });
+});
+
+['dragleave', 'drop'].forEach(evt => {
+  dropZoneInner.addEventListener(evt, e => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropZoneInner.classList.remove('drag-over');
+  });
+});
+
+dropZoneInner.addEventListener('drop', e => {
+  const files = e.dataTransfer.files;
+  if (files.length) processFiles(files);
+});
+
+document.addEventListener('dragover', e => {
+  e.preventDefault();
+  dropZoneInner.classList.add('drag-over');
+});
+document.addEventListener('drop', e => {
+  e.preventDefault();
+  dropZoneInner.classList.remove('drag-over');
+  const files = e.dataTransfer.files;
+  if (files.length) processFiles(files);
+});
+
+// ===== ARTICLE MANAGEMENT =====
+function deleteArticle(id) {
+  // 只允许删除本地文章
+  const idx = LOCAL_ARTICLES.findIndex(x => x.id === id);
+  if (idx === -1) {
+    toast('服务器文章请在服务器上删除');
+    return;
+  }
+  const a = LOCAL_ARTICLES[idx];
+  if (!confirm(`确定删除文章「${a.title}」吗？\n此操作不可恢复。`)) return;
+  LOCAL_ARTICLES.splice(idx, 1);
+  saveLocalArticles();
+  mergeArticles();
+  renderArticleList();
+  toast(`已删除：${a.title}`);
+}
+
+function exportArticles() {
+  const exportable = LOCAL_ARTICLES.length > 0 ? LOCAL_ARTICLES : ARTICLES;
+  if (exportable.length === 0) {
+    toast('没有文章可导出');
+    return;
+  }
+  const json = JSON.stringify(exportable, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `jingweimath-articles-${todayStr()}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  toast(`已导出 ${exportable.length} 篇文章`);
+}
+
+// ===== TOAST =====
+function toast(msg) {
+  const el = document.createElement('div');
+  el.className = 'toast';
+  el.textContent = msg;
+  document.body.appendChild(el);
+  setTimeout(() => {
+    el.style.opacity = '0';
+    el.style.transition = 'opacity 0.3s';
+    setTimeout(() => el.remove(), 300);
+  }, 2000);
+}
+
+function getArticleKey(a) { return a.source + '_' + a.id; }
+
+function getLikes(key) {
+  const v = localStorage.getItem('notes_likes_' + key);
+  return v ? parseInt(v) : 0;
+}
+function setLikes(key, n) { localStorage.setItem('notes_likes_' + key, n); }
+
+function isFav(key) { return localStorage.getItem('notes_fav_' + key) === '1'; }
+function setFav(key, val) { localStorage.setItem('notes_fav_' + key, val ? '1' : '0'); }
+
+function toggleLike(key, btnEl) {
+  event.stopPropagation();
+  let n = getLikes(key) + 1;
+  setLikes(key, n);
+  btnEl.classList.add('liked');
+  const countEl = btnEl.querySelector('.count');
+  if (countEl) countEl.textContent = n;
+  toast('已点赞 👍');
+}
+
+function toggleFav(key, btnEl) {
+  event.stopPropagation();
+  const now = !isFav(key);
+  setFav(key, now);
+  btnEl.classList.toggle('active', now);
+  const iconEl = btnEl.querySelector('.icon');
+  if (iconEl) iconEl.textContent = now ? '⭐' : '☆';
+  toast(now ? '已收藏 ⭐' : '已取消收藏');
+}
+
+function shareArticle(id, title) {
+  event.stopPropagation();
+  const url = 'https://jingweimath.com/notes.html#article-' + id;
+  if (navigator.share) {
+    navigator.share({ title: title, url: url })
+      .catch(e => { if (e.name !== 'AbortError') copyLink(url); });
+  } else {
+    copyLink(url);
+  }
+}
+function copyLink(url) {
+  navigator.clipboard.writeText(url).then(() => {
+    toast('链接已复制 📋');
+  }).catch(() => {
+    const t = document.createElement('textarea');
+    t.value = url; t.style.position = 'fixed'; t.style.opacity = '0';
+    document.body.appendChild(t); t.select();
+    document.execCommand('copy'); document.body.removeChild(t);
+    toast('链接已复制 📋');
+  });
+}
+
+// ===== SIMPLE ROUTER =====
+function renderArticleList() {
+  const listEl = document.getElementById('articleList');
+  if (ARTICLES.length === 0) {
+    listEl.innerHTML = `
+      <div class="empty-state">
+        <div class="icon">📝</div>
+        <h3>还没有文章</h3>
+        <p>
+          拖拽 Markdown 文件到上方区域，即可发布新文章。<br>
+          支持 YAML 头部自定义标题、日期、标签等信息。
+        </p>
+      </div>`;
+    return;
+  }
+
+  // Admin bar
+  let html = `<div class="admin-bar">
+    <button onclick="exportArticles()">📥 导出本地数据</button>
+    <span style="font-size:13px;color:var(--text-muted);display:flex;align-items:center;">
+      共 ${ARTICLES.length} 篇（服务器 ${SERVER_ARTICLES.length} + 本地 ${LOCAL_ARTICLES.length}）
+    </span>
+  </div>`;
+
+  html += '<div class="article-list">';
+  ARTICLES.forEach((a, idx) => {
+    const sourceBadge = a.source === 'server' ? '' : ' <span style="font-size:11px;background:#fef3c7;color:#92400e;padding:1px 6px;border-radius:4px;">本地</span>';
+    const key = getArticleKey(a);
+    const likes = getLikes(key);
+    const fav = isFav(key);
+    const delBtn = a.source === 'local'
+      ? `<button class="btn-delete" onclick="event.stopPropagation();deleteArticle(${a.id})" title="删除">×</button>`
+      : '';
+    html += `
+      <div class="article-card" onclick="viewArticle(${idx})">
+        ${delBtn}
+        <div class="date">${a.date}${sourceBadge}</div>
+        <h3>${a.title}</h3>
+        <div class="excerpt">${a.excerpt}</div>
+        <div class="interaction-bar">
+          <div class="actions">
+            <button class="btn-action${likes > 0 ? ' liked' : ''}" onclick="toggleLike('${key}', this)" title="点赞">
+              <span>👍</span><span class="count">${likes || ''}</span>
+            </button>
+            <button class="btn-action${fav ? ' active' : ''}" onclick="toggleFav('${key}', this)" title="收藏">
+              <span class="icon">${fav ? '⭐' : '☆'}</span><span>收藏</span>
+            </button>
+            <button class="btn-action" onclick="shareArticle('${a.id}', '${a.title.replace(/'/g, "\\'")}')" title="转发">
+              <span>↗</span><span>转发</span>
+            </button>
+            <button class="btn-action" onclick="event.stopPropagation()" title="评论功能即将上线" style="opacity:0.5;cursor:not-allowed">
+              <span>💬</span><span>评论</span>
+            </button>
+          </div>
+        </div>
+      </div>`;
+  });
+  html += '</div>';
+  listEl.innerHTML = html;
+}
+
+async function viewArticle(idx) {
+  const a = ARTICLES[idx];
+  if (!a) return;
+
+  // 服务器文章：按需加载 .md 文件
+  if (a.source === 'server' && !a.content) {
+    try {
+      const resp = await fetch('articles/' + a.file);
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      const md = await resp.text();
+      const { meta, body } = parseFrontmatter(md);
+      a.content = md2html(body);
+      // 缓存到对应 SERVER_ARTICLES 条目
+      const sa = SERVER_ARTICLES.find(x => x.id === a.id);
+      if (sa) sa.content = a.content;
+    } catch(e) {
+      console.error('加载文章失败:', a.file, e);
+      a.content = '<p style="color:var(--accent)">文章加载失败，请稍后重试。</p>';
+    }
+  }
+
+  document.getElementById('articleList').style.display = 'none';
+  document.getElementById('dropZone').style.display = 'none';
+  const view = document.getElementById('articleView');
+  view.className = 'container article-full active';
+  view.innerHTML = `
+    <a href="javascript:showList()" class="back-link">← 返回文章列表</a>
+    <h1>${a.title}</h1>
+    <div class="article-meta">${a.date}${a.tags && a.tags.length ? ' · ' + a.tags.map(t => `<span class="tag">${t}</span>`).join(' ') : ''}</div>
+    <div class="article-body">${a.content}</div>
+    <div style="margin-top:48px">
+      <a href="javascript:showList()" class="back-link">← 返回文章列表</a>
+    </div>
+  `;
+  if (window.MathJax && MathJax.typesetPromise) {
+    MathJax.typesetPromise([view]);
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function showList() {
+  document.getElementById('articleList').style.display = 'block';
+  document.getElementById('dropZone').style.display = 'block';
+  document.getElementById('articleView').className = 'container article-full';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ===== INIT =====
+// 显示加载中状态
+document.getElementById('articleList').innerHTML = '<div class="empty-state"><div class="icon">⏳</div><h3>加载中...</h3></div>';
+
+// 等待文章加载完成后渲染
+loadArticles()
+  .then(() => {
+    console.log('📝 渲染文章列表，共', ARTICLES.length, '篇（服务器', SERVER_ARTICLES.length, '+ 本地', LOCAL_ARTICLES.length, '）');
+    renderArticleList();
+  })
+  .catch(e => {
+    console.error('❌ 文章加载异常', e);
+    document.getElementById('articleList').innerHTML = '<div class="empty-state"><div class="icon">⚠️</div><h3>加载失败</h3><p>请检查网络连接后刷新页面</p></div>';
+  });
+</script>
+
+<script src="auth-widget.js"></script>
+</body>
+</html>

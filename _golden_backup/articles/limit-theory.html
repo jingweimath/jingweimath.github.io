@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>考研数学极限理论详解：极限存在性与保号性（含2025真题）</title>
+<meta name="description" content="用一道2025年考研真题串联极限存在性、保号性、连续性、可导性整个理论体系。数列保号性与函数保号性的区别、极限概念题解题思路全讲解。">
+<meta name="keywords" content="考研数学,极限,保号性,极限存在性,连续,可导,高等数学,考研真题">
+<meta name="robots" content="index, follow">
+<meta name="author" content="经纬考研数学">
+<link rel="canonical" href="https://jingweimath.com/articles/limit-theory.html">
+<meta property="og:title" content="考研数学极限理论详解：极限存在性与保号性（含2025真题）">
+<meta property="og:description" content="用一道2025年考研真题串联极限存在性、保号性、连续性、可导性整个理论体系。数列保号性与函数保号性的区别、极限概念题解题思路全讲解。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jingweimath.com/articles/limit-theory.html">
+<meta property="og:site_name" content="经纬考研数学">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "极限理论：极限的存在性与保号性",
+  "datePublished": "2026-07-08",
+  "dateModified": "2026-10-14",
+  "author": {"@type": "Organization", "name": "经纬考研数学"},
+  "publisher": {"@type": "Organization", "name": "经纬考研数学"},
+  "description": "用一道2025年考研真题串联极限存在性、保号性、连续性、可导性整个理论体系。数列保号性与函数保号性的区别、极限概念题解题思路全讲解。",
+  "mainEntityOfPage": "https://jingweimath.com/articles/limit-theory.html"
+}
+</script>
+<script>
+MathJax = { tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]] } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" async></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a56db; --primary-dark: #1e429f; --primary-light: #e8f0fe;
+    --accent: #e24b4a; --text: #1e1e2e; --text-muted: #6b7280;
+    --border: #e5e7eb; --bg: #f8f9fc;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); }
+  .topbar { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 5%; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: var(--accent); }
+  .back { font-size: 14px; color: var(--primary); text-decoration: none; font-weight: 500; }
+  .breadcrumb { padding: 14px 5%; font-size: 13px; color: var(--text-muted); background: var(--bg); }
+  .breadcrumb a { color: var(--primary); text-decoration: none; }
+  article { max-width: 780px; margin: 0 auto; padding: 40px 24px 60px; }
+  h1 { font-size: 28px; line-height: 1.4; margin-bottom: 14px; }
+  .meta { font-size: 13px; color: var(--text-muted); margin-bottom: 30px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .meta .tag { display: inline-block; background: var(--primary-light); color: var(--primary); border-radius: 12px; padding: 2px 10px; margin-left: 6px; font-size: 12px; }
+  .body p { line-height: 1.9; margin: 14px 0; font-size: 16px; }
+  .body h2 { font-size: 21px; margin: 32px 0 12px; padding-left: 10px; border-left: 4px solid var(--primary); }
+  .body h3 { font-size: 18px; margin: 24px 0 10px; }
+  .body ul { margin: 14px 0 14px 22px; }
+  .body li { line-height: 1.9; font-size: 16px; margin: 4px 0; }
+  .body li.sub { list-style: circle; margin-left: 22px; }
+  .math-block { margin: 18px 0; text-align: center; overflow-x: auto; }
+  .related { max-width: 780px; margin: 0 auto 50px; padding: 24px; background: var(--bg); border-radius: 12px; }
+  .related h3 { font-size: 16px; margin-bottom: 14px; color: var(--primary); }
+  .related a { display: block; padding: 9px 0; color: var(--text); text-decoration: none; font-size: 15px; border-bottom: 1px dashed var(--border); }
+  .related a:hover { color: var(--primary); }
+  .site-links { max-width: 780px; margin: 0 auto 60px; padding: 0 24px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .site-links a { color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; }
+  footer { background: #1e1e2e; color: #9ca3af; text-align: center; padding: 22px 5%; font-size: 13px; }
+  footer a { color: #c3cbe0; text-decoration: none; }
+  @media (max-width: 600px) { h1 { font-size: 22px; } .body p, .body li { font-size: 15px; } }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="../index.html">经纬<span>考研数学</span></a>
+  <a class="back" href="../notes.html">返回笔记列表 →</a>
+</header>
+<nav class="breadcrumb"><a href="../index.html">首页</a> › <a href="../notes.html">经纬论数</a> › 极限理论：极限的存在性与保号性</nav>
+<article>
+  <h1>极限理论：极限的存在性与保号性</h1>
+  <div class="meta">发布于 2026-07-08<span class="tag">极限</span><span class="tag">保号性</span><span class="tag">存在性</span><span class="tag">连续性</span><span class="tag">可导性</span><span class="tag">高等数学</span></div>
+  <div class="body">
+<p># 极限理论：极限的存在性与保号性
+</p>
+<p>微积分作为一门完整的学科，可以说是从极限理论发展开来的；或者说极限理论是微积分的核心。
+</p>
+<p>这里说的极限理论主要包括：极限的概念与定义（"$\varepsilon$-$\delta$";  "$\varepsilon$-$N$"），极限的存在性，极限的性质，函数的连续性，以及函数的可导性。
+</p>
+<p>在考研数学的试题里这些往往都是很难的概念题目，考察的就是对理论的理解深度。
+</p>
+<p>---
+</p>
+<h2>一、数列的保号性</h2>
+<p>先说保号性，其实这也是对极限定义的深入解读。
+</p>
+<p><strong>数列的保号性：</strong> 对数列 $\{a_n\}$，若 $\displaystyle\lim_{n \to \infty}a_n = a$，且 $a &gt; 0$，则存在 $N$，当 $n &gt; N$ 时，有 $a_n &gt; 0$。
+</p>
+<p>通俗来说，大家是这样记这个结论的：<strong>极限保（号）数列</strong>；但反之不一定。反例就是：$\displaystyle\left\{\frac{1}{n}\right\}$。
+</p>
+<p>但是这个结论里一个非常主要的知识点（也是考研题目可能的出题点）就是：<strong>"存在 $N$，当 $n &gt; N$ 时"</strong> 这句话，这也是当 $n$ 趋于无穷大的数学描述。
+</p>
+<p>这句话的含义是：<strong>数列的保号性与前有限项（前 $N$ 项）无关！</strong>
+</p>
+<p>给个例子大家慢慢体会：
+</p>
+<p>&gt; <strong>例：</strong> 对数列 $\{a_n\}$ 和 $\{b_n\}$，$\displaystyle\lim_{n \to \infty}a_n = a$，$\displaystyle\lim_{n \to \infty}b_n = b$，且 $a &gt; 0$，$a &lt; b$。则下列哪个正确：
+&gt;
+&gt; A. 对所有的 $a_n$，都有 $a_n &gt; 0$
+&gt;
+&gt; B. 当 $n$ 很大时，$a_n &gt; b_n$
+</p>
+<p>---
+</p>
+<h2>二、函数的保号性</h2>
+<p><strong>函数的保号性：</strong> 设函数 $f(x)$ 在 $x_0$ 的某去心邻域 $\mathring{U}(x_0, \delta)$ 内有定义，且 $\displaystyle\lim_{x \to x_0} f(x) = A &gt; 0$；则当 $x \in \mathring{U}(x_0, \delta)$ 时有：$f(x) &gt; 0$。
+</p>
+<p>这里的关键知识点是：<strong>"$x$ 属于 $x_0$ 的某个去心邻域"</strong>。这句话包含两个意思：
+</p>
+<p>1. 函数的保号性是个<strong>局部概念</strong>，只在 $x_0$ 附近成立；
+2. 只要函数在去心邻域内有定义，且在 $x_0$ 点的极限存在即可；<strong>没有要求 $f(x_0)$ 的存在性！</strong>
+</p>
+<p>这些知识点就是需要读者认真思考的（也是考研题目的出题点）。
+</p>
+<p>---
+</p>
+<h2>三、极限的存在性</h2>
+<p>对数列极限，验证存在性一般是：
+</p>
+<ul>
+<li><strong>(a)</strong> 用定义（不在考研数学范围之内）；</li>
+<li><strong>(b)</strong> 用单调有界以及夹逼准则——以后单独开篇讲解；</li>
+<li><strong>(c)</strong> 用性质，比如：两个数列都有极限则其和、差、积也都有极限等（与 (b) 一起讨论）。</li>
+</ul>
+<p>这里主要讨论<strong>函数极限的存在性</strong>问题。除了可以利用性质来验证外，最常用的就是如下：
+</p>
+<p>&gt; <strong>函数极限存在的充分必要条件：</strong> 函数在 $x_0$ 点的左、右极限都存在且相等。
+</p>
+<p>如果是单纯验证极限的存在性，几乎都是求左右极限来验证。
+</p>
+<p>注意点是，这里对 $f(x_0)$ 也没有要求。
+</p>
+<p>---
+</p>
+<h2>四、连续性与可导性</h2>
+<p>如果左右极限存在、相等、且恰好等于 $f(x_0)$，则是<strong>连续</strong>的定义：
+</p>
+<div class="math-block">$$\lim_{x \to x_0} f(x) = f(x_0)$$</div>
+<p>这个定义还是很深刻，包含如下三个要素：
+</p>
+<p>1. $f(x_0)$ 有定义；
+2. 函数 $f(x)$ 在 $x_0$ 有极限；
+3. 极限值等于函数值。
+</p>
+<p><strong>破坏了任何一条都是间断！</strong>
+</p>
+<p>因为函数在 $x_0$ 点的导数也是由极限来定义的：
+</p>
+<p>若 $\displaystyle\lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}$ 存在，则函数 $f(x)$ 在 $x_0$ 处可导。
+</p>
+<p>因此验证函数在某点是否可导也是利用左右极限概念，在这里就是<strong>左右导数存在且相等</strong>！
+</p>
+<p>---
+</p>
+<h2>五、真题演练（2025 数一）</h2>
+<p>接下来利用 2025 年的一道考研题目综述上面的内容。
+</p>
+<p>&gt; <strong>例：</strong> 设函数 $f(x)$ 连续，给出下列四个条件：
+&gt;
+&gt; (1) $\displaystyle\lim_{x \to 0} \frac{|f(x)| - f(0)}{x}$ 存在；
+&gt;
+&gt; (2) $\displaystyle\lim_{x \to 0} \frac{f(x) - |f(0)|}{x}$ 存在；
+&gt;
+&gt; (3) $\displaystyle\lim_{x \to 0} \frac{|f(x)|}{x}$ 存在；
+&gt;
+&gt; (4) $\displaystyle\lim_{x \to 0} \frac{|f(x)| - |f(0)|}{x}$ 存在；
+&gt;
+&gt; 其中能得到"$f(x)$ 在 $x = 0$ 处可导"的条件个数是（ ）
+&gt;
+&gt; A. 1　　B. 2　　C. 3　　D. 4
+</p>
+<h3>解析</h3>
+<p>先分析 <strong>(3)</strong>：由极限存在以及函数连续，则必须有 $\displaystyle\lim_{x \to 0} |f(x)| = |f(0)| = 0$。
+</p>
+<p>又 $\displaystyle\lim_{x \to 0^-} \frac{|f(x)|}{x} \leq 0$；$\displaystyle\lim_{x \to 0^+} \frac{|f(x)|}{x} \geq 0$，所以 $\displaystyle\lim_{x \to 0} \frac{|f(x)|}{x} = 0$。
+</p>
+<p>则 $\displaystyle f'(0) = \lim_{x \to 0} \frac{f(x)}{x} = \lim_{x \to 0} \frac{f(x)}{|f(x)|} \cdot \frac{|f(x)|}{x} = 0$，可导。<strong>(3) 成立。</strong>
+</p>
+<p>再分析 <strong>(1)</strong>：比值的极限存在，则分子也必须是无穷小：
+</p>
+<div class="math-block">$$\lim_{x \to 0} \big(|f(x)| - f(0)\big) = 0$$</div>
+<p>由连续性可得 $|f(0)| = f(0)$，由此 $f(0) \geq 0$。
+</p>
+<ul>
+<li>若 $f(0) = 0$，同 (3)，可导；</li>
+<li>若 $f(0) &gt; 0$，由<strong>保号性</strong>，在 $0$ 点邻域内 $f(x) &gt; 0$；由此可得：</li>
+</ul>
+<div class="math-block">$$\lim_{x \to 0} \frac{|f(x)| - f(0)}{x} = \lim_{x \to 0} \frac{f(x) - f(0)}{x - 0} = f'(0)$$</div>
+<p>所以 <strong>(1) 也正确。</strong>
+</p>
+<p>同理可知 <strong>(2)</strong>，<strong>(4)</strong> 也都正确。
+</p>
+<p>---
+</p>
+<h2>小结</h2>
+<p>这道题完美串联了极限存在性（左右极限）、连续性、保号性和可导性——正是本文想传达的核心：<strong>极限理论是一个整体，各概念之间环环相扣。</strong> 理解了它们的内在联系，概念题自然就不难了。
+</p>
+<p>---
+</p>
+<p>&gt; <strong>经纬考研数学</strong>
+&gt;
+&gt; 官网：[www.jingweimath.com](https://www.jingweimath.com)
+</p>
+  </div>
+</article>
+<aside class="related">
+  <h3>相关文章</h3>
+  <a href="improper-integral-limit.html">反常积分收敛，为什么推不出 f(x)→0？</a>
+  <a href="extrema-concavity.html">极值与凹凸性：从定义到真题</a>
+  <a href="vector-geometry.html">向量代数与空间解析几何</a>
+  <a href="jordan-form.html">若当型——矩阵不相似于对角形，那相似于什么？</a>
+  <a href="linalg-geometry.html">跨科题目精讲——线代与几何的结合</a>
+</aside>
+<div class="site-links">
+  <a href="../practice.html">在线题库（2000+题）</a>
+  <a href="../exams.html">历年真题下载</a>
+  <a href="../courses.html">免费网课视频</a>
+  <a href="../plan.html">科学复习计划</a>
+</div>
+<footer>© 2026 经纬考研数学 · <a href="https://jingweimath.com/">jingweimath.com</a> · 专注考研数学辅导</footer>
+</body>
+</html>

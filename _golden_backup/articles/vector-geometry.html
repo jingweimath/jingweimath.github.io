@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>向量代数与空间解析几何核心考点全梳理</title>
+<meta name="description" content="向量运算、平面方程与直线方程求法、线性方程组的几何意义、二次曲面识别——空间解析几何核心考点系统梳理，附考研典型题。">
+<meta name="keywords" content="向量代数,空间解析几何,平面方程,直线方程,二次曲面,线性代数,考研数学">
+<meta name="robots" content="index, follow">
+<meta name="author" content="经纬考研数学">
+<link rel="canonical" href="https://jingweimath.com/articles/vector-geometry.html">
+<meta property="og:title" content="向量代数与空间解析几何核心考点全梳理">
+<meta property="og:description" content="向量运算、平面方程与直线方程求法、线性方程组的几何意义、二次曲面识别——空间解析几何核心考点系统梳理，附考研典型题。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jingweimath.com/articles/vector-geometry.html">
+<meta property="og:site_name" content="经纬考研数学">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "向量代数与空间解析几何",
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-10-14",
+  "author": {"@type": "Organization", "name": "经纬考研数学"},
+  "publisher": {"@type": "Organization", "name": "经纬考研数学"},
+  "description": "向量运算、平面方程与直线方程求法、线性方程组的几何意义、二次曲面识别——空间解析几何核心考点系统梳理，附考研典型题。",
+  "mainEntityOfPage": "https://jingweimath.com/articles/vector-geometry.html"
+}
+</script>
+<script>
+MathJax = { tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]] } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" async></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a56db; --primary-dark: #1e429f; --primary-light: #e8f0fe;
+    --accent: #e24b4a; --text: #1e1e2e; --text-muted: #6b7280;
+    --border: #e5e7eb; --bg: #f8f9fc;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); }
+  .topbar { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 5%; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: var(--accent); }
+  .back { font-size: 14px; color: var(--primary); text-decoration: none; font-weight: 500; }
+  .breadcrumb { padding: 14px 5%; font-size: 13px; color: var(--text-muted); background: var(--bg); }
+  .breadcrumb a { color: var(--primary); text-decoration: none; }
+  article { max-width: 780px; margin: 0 auto; padding: 40px 24px 60px; }
+  h1 { font-size: 28px; line-height: 1.4; margin-bottom: 14px; }
+  .meta { font-size: 13px; color: var(--text-muted); margin-bottom: 30px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .meta .tag { display: inline-block; background: var(--primary-light); color: var(--primary); border-radius: 12px; padding: 2px 10px; margin-left: 6px; font-size: 12px; }
+  .body p { line-height: 1.9; margin: 14px 0; font-size: 16px; }
+  .body h2 { font-size: 21px; margin: 32px 0 12px; padding-left: 10px; border-left: 4px solid var(--primary); }
+  .body h3 { font-size: 18px; margin: 24px 0 10px; }
+  .body ul { margin: 14px 0 14px 22px; }
+  .body li { line-height: 1.9; font-size: 16px; margin: 4px 0; }
+  .body li.sub { list-style: circle; margin-left: 22px; }
+  .math-block { margin: 18px 0; text-align: center; overflow-x: auto; }
+  .related { max-width: 780px; margin: 0 auto 50px; padding: 24px; background: var(--bg); border-radius: 12px; }
+  .related h3 { font-size: 16px; margin-bottom: 14px; color: var(--primary); }
+  .related a { display: block; padding: 9px 0; color: var(--text); text-decoration: none; font-size: 15px; border-bottom: 1px dashed var(--border); }
+  .related a:hover { color: var(--primary); }
+  .site-links { max-width: 780px; margin: 0 auto 60px; padding: 0 24px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .site-links a { color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; }
+  footer { background: #1e1e2e; color: #9ca3af; text-align: center; padding: 22px 5%; font-size: 13px; }
+  footer a { color: #c3cbe0; text-decoration: none; }
+  @media (max-width: 600px) { h1 { font-size: 22px; } .body p, .body li { font-size: 15px; } }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="../index.html">经纬<span>考研数学</span></a>
+  <a class="back" href="../notes.html">返回笔记列表 →</a>
+</header>
+<nav class="breadcrumb"><a href="../index.html">首页</a> › <a href="../notes.html">经纬论数</a> › 向量代数与空间解析几何</nav>
+<article>
+  <h1>向量代数与空间解析几何</h1>
+  <div class="meta">发布于 2026-07-11<span class="tag">向量代数</span><span class="tag">空间几何</span><span class="tag">平面</span><span class="tag">直线</span><span class="tag">二次曲面</span><span class="tag">线性代数</span></div>
+  <div class="body">
+<p># 向量代数与空间解析几何
+</p>
+<p>考研数学数一对向量代数与空间解析几何这部分是有明确要求的；数二和数三的考试大纲里并没有直接写出要求，但是考题中经常有这方面的影子。本部分虽然主要针对数一的复习，其他同学了解一些结论有助于提高分数！
+</p>
+<p>---
+</p>
+<h2>一、向量代数常用结论</h2>
+<p><strong>1) 数积（点乘、内积）</strong> —— 结果是数量：
+</p>
+<div class="math-block">$$\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta \quad (\text{也是夹角公式})$$</div>
+<ul>
+<li>向量的模：$|\mathbf{a}| = \sqrt{\mathbf{a} \cdot \mathbf{a}}$</li>
+<li>$\mathbf{a} \cdot \mathbf{b} = 0$ 表示两个向量<strong>垂直</strong></li>
+<li>向量在轴上的投影：$\text{Prj}_\mathbf{a}\mathbf{b} = |\mathbf{b}|\cos\varphi$；所以 $\mathbf{a} \cdot \mathbf{b}$ 也可以看成是 $|\mathbf{a}|$ 与 $\mathbf{b}$ 在 $\mathbf{a}$ 上的投影之积</li>
+</ul>
+<p><strong>2) 向量积（叉乘、矢积）</strong> —— 结果是向量，方向符合右手法则：
+</p>
+<div class="math-block">$$|\mathbf{a} \times \mathbf{b}| = |\mathbf{a}||\mathbf{b}|\sin\theta$$</div>
+<ul>
+<li>$\mathbf{a} \times \mathbf{b} = \mathbf{0}$ 表示两个向量<strong>平行</strong></li>
+<li>$\mathbf{a} \times \mathbf{b} = -\mathbf{b} \times \mathbf{a}$</li>
+<li>以 $\mathbf{a}, \mathbf{b}$ 为邻边的平行四边形面积 $= |\mathbf{a} \times \mathbf{b}|$</li>
+</ul>
+<p><strong>3) 混合积</strong> —— 结果是数值：
+</p>
+<div class="math-block">$$[\mathbf{a}\,\mathbf{b}\,\mathbf{c}] = (\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c}$$</div>
+<p>由 $\mathbf{a}, \mathbf{b}, \mathbf{c}$ 形成的平行六面体体积 $= |[\mathbf{a}\,\mathbf{b}\,\mathbf{c}]|$。
+</p>
+<p>---
+</p>
+<h2>二、平面及其方程</h2>
+<p>几何空间中三个变量 $x, y, z$ 的线性关系表示的是空间中的一个平面。
+</p>
+<p><strong>平面的一般方程：</strong>
+</p>
+<div class="math-block">$$Ax + By + Cz + D = 0$$</div>
+<ul>
+<li>$D = 0$ 表示平面过原点</li>
+<li>缺一项（如 $Ax + By = D$）表示平面平行于 $z$ 轴</li>
+<li>缺两项（如 $Cz = D$）表示平面垂直于 $z$ 轴，即平行于 $xOy$ 坐标面</li>
+</ul>
+<p><strong>平面的确定方式：</strong>
+</p>
+<p>1. 过不在一条直线上的三个点唯一确定一个平面
+2. 过一点且与某一方向垂直唯一确定一个平面——<strong>点法式</strong>：
+</p>
+<div class="math-block">$$A(x - x_0) + B(y - y_0) + C(z - z_0) = 0$$</div>
+<p>$\{A, B, C\}$ 称为平面的法向量
+</p>
+<p>3. 过一条直线以及直线外的一个点唯一确定一个平面（若此直线过原点，则平面也过原点）
+4. 空间中两条交叉直线唯一确定一个平面；两条平行直线也唯一确定一个平面
+</p>
+<p><strong>两个平面的夹角</strong> 等于其法向量的夹角：
+</p>
+<div class="math-block">$$\cos\theta = \frac{|A_1 A_2 + B_1 B_2 + C_1 C_2|}{\sqrt{A_1^2 + B_1^2 + C_1^2} \cdot \sqrt{A_2^2 + B_2^2 + C_2^2}}$$</div>
+<p><strong>点到平面的距离公式：</strong>
+</p>
+<div class="math-block">$$d = \frac{|Ax_0 + By_0 + Cz_0 + D|}{\sqrt{A^2 + B^2 + C^2}}$$</div>
+<p>---
+</p>
+<h2>三、空间直线及其方程</h2>
+<p>空间直线的一般方程由两个平面方程联立表示：
+</p>
+<div class="math-block">$$\begin{cases} A_1 x + B_1 y + C_1 z + D_1 = 0 \\ A_2 x + B_2 y + C_2 z + D_2 = 0 \end{cases}$$</div>
+<p><strong>对称式（点向式）：</strong>
+</p>
+<div class="math-block">$$\frac{x - x_0}{m} = \frac{y - y_0}{n} = \frac{z - z_0}{p}$$</div>
+<p>其中 $\{m, n, p\}$ 为直线的方向向量。
+</p>
+<p><strong>参数式：</strong>
+</p>
+<div class="math-block">$$\begin{cases} x = x_0 + mt \\ y = y_0 + nt \\ z = z_0 + pt \end{cases}$$</div>
+<ul>
+<li>直线之间的夹角就是方向向量之间的夹角</li>
+<li>直线与平面的夹角用方向向量与法向量的正弦计算</li>
+<li>直线与平面<strong>垂直</strong>：方向向量与法向量平行，$\dfrac{A}{m} = \dfrac{B}{n} = \dfrac{C}{p}$</li>
+<li>直线与平面<strong>平行</strong>：方向向量与法向量垂直，$Am + Bn + Cp = 0$</li>
+</ul>
+<p>---
+</p>
+<h2>四、方向余弦</h2>
+<p>向量 $(m, n, p)$ 的方向余弦为：
+</p>
+<div class="math-block">$$(\cos\alpha, \cos\beta, \cos\gamma) = \left(\frac{m}{\sqrt{m^2+n^2+p^2}}, \;\frac{n}{\sqrt{m^2+n^2+p^2}}, \;\frac{p}{\sqrt{m^2+n^2+p^2}}\right)$$</div>
+<p>这是一个单位向量。
+</p>
+<p>---
+</p>
+<h2>五、线性方程组与平面的几何意义（常考点、重点）</h2>
+<p>代数中的三元一次线性方程组在空间几何上表示的是三个平面之间的关系：
+</p>
+<div class="math-block">$$\begin{cases} a_{11}x + a_{12}y + a_{13}z = b_1 \\ a_{21}x + a_{22}y + a_{23}z = b_2 \\ a_{31}x + a_{32}y + a_{33}z = b_3 \end{cases}$$</div>
+<p>记 $\mathbf{a}_1 = (a_{11}, a_{21}, a_{31})^T$，$\mathbf{a}_2 = (a_{12}, a_{22}, a_{32})^T$，$\mathbf{a}_3 = (a_{13}, a_{23}, a_{33})^T$，$\mathbf{b} = (b_1, b_2, b_3)^T$，$A = (\mathbf{a}_1, \mathbf{a}_2, \mathbf{a}_3)$，则上式可写成：
+</p>
+<div class="math-block">$$x\mathbf{a}_1 + y\mathbf{a}_2 + z\mathbf{a}_3 = \mathbf{b} \quad \text{（向量组的线性表示）}$$</div>
+<div class="math-block">$$A\mathbf{X} = \mathbf{b} \quad \text{（矩阵方程）}$$</div>
+<p><strong>几何意义与解的关系：</strong>
+</p>
+<p>1. <strong>三个平面平行</strong>：方程组无解，且 $r(A) = 1$，$r(A, \mathbf{b}) = 2$；若三个平面重合，则 $r(A) = r(A, \mathbf{b}) = 1$，方程组有无穷多组解
+2. <strong>三个平面相交于一条直线</strong>：$r(A) = r(A, \mathbf{b}) = 2$，有无穷多组解
+3. <strong>三个平面两两相交</strong>（无公共交点）：$r(A) = 2$，$r(A, \mathbf{b}) = 3$，方程组无解
+4. <strong>三个平面相交于一个点</strong>：唯一解，$r(A) = r(A, \mathbf{b}) = 3$
+</p>
+<p>可以推广到 $n$ 个方程（$n$ 个平面）的问题中。
+</p>
+<p>---
+</p>
+<h2>六、曲面与二次曲面</h2>
+<p>三个变量 $x, y, z$ 的函数关系表示的是三维几何空间中的一个曲面：$F(x, y, z) = 0$。考研数学主要考察几个常见的二次曲面以及在坐标面上的投影（用于重积分计算）。
+</p>
+<h3>(i) 旋转曲面</h3>
+<p>已知 $yOz$ 面上的一条曲线 $f(y, z) = 0$：
+</p>
+<ul>
+<li>绕 $z$ 轴旋转生成的曲面为 $f\!\left(\pm\sqrt{x^2 + y^2},\; z\right) = 0$，即把 $y$ 换成 $\pm\sqrt{x^2 + y^2}$</li>
+<li>绕 $y$ 轴旋转生成的曲面为 $f\!\left(y,\; \pm\sqrt{x^2 + z^2}\right) = 0$，即把 $z$ 换成 $\pm\sqrt{x^2 + z^2}$</li>
+</ul>
+<p><strong>例1：旋转抛物面</strong> $z = x^2 + y^2$，可以看成 $z = y^2$ 绕 $z$ 轴旋转而成。在 $xOy$ 面上的投影为圆心在原点的圆（半径取决于 $z$ 方向截面的值）；在 $yOz$ 面以及 $xOz$ 面上的投影都是抛物线。
+</p>
+<p><strong>例2：旋转圆锥面</strong> $z^2 = x^2 + y^2$，可以看成 $z = y$ 绕 $z$ 轴旋转而成。在 $xOy$ 面上的投影为圆心在原点的圆；在 $yOz$ 面以及 $xOz$ 面上的投影都是直线。
+</p>
+<p><strong>例3：球面</strong> $x^2 + y^2 + z^2 = R^2$，可以看成圆弧 $z = \sqrt{R^2 - y^2}$ 绕 $z$ 轴旋转而成。在三个坐标平面上的投影都是圆。
+</p>
+<h3>(ii) 柱面</h3>
+<p>柱面由母线沿准线移动生成。一般情形下，母线平行于某坐标轴，准线则在其垂直的坐标面上。
+</p>
+<p>通常，柱面方程只含两个变量。比如 $F(x, y) = 0$ 表示母线平行于 $z$ 轴，准线为 $xOy$ 面上的曲线：
+</p>
+<div class="math-block">$$\begin{cases} F(x, y) = 0 \\ z = 0 \end{cases}$$</div>
+<p>即方程中缺少哪个变量，柱面母线就平行于那根坐标轴。
+</p>
+<p><strong>例：圆柱面</strong> $x^2 + y^2 = R^2$，母线平行于 $z$ 轴。在 $xOy$ 面投影是个圆；如果是圆柱体的话，在 $yOz$ 以及 $xOz$ 面上的投影都是矩形。
+</p>
+<h3>(iii) 其他二次曲面</h3>
+<p>椭球面以及双曲抛物面等极少考到，感兴趣的同学自行复习。
+</p>
+<p>---
+</p>
+<h2>七、空间曲线</h2>
+<p><strong>一般方程</strong>（由两个曲面的交线定义）：
+</p>
+<div class="math-block">$$\begin{cases} F(x, y, z) = 0 \\ G(x, y, z) = 0 \end{cases}$$</div>
+<p><strong>参数方程：</strong>
+</p>
+<div class="math-block">$$\begin{cases} x = x(t) \\ y = y(t) \\ z = z(t) \end{cases}, \quad t \in I$$</div>
+<p><strong>在坐标面上的投影</strong>（以 $xOy$ 面为例）：
+</p>
+<div class="math-block">$$\begin{cases} H(x, y) = 0 \\ z = 0 \end{cases}$$</div>
+<p>考研数学涉及到空间曲线的题目一般比较难，多用在曲线积分部分。
+</p>
+<p>---
+</p>
+<p>&gt; <strong>经纬考研数学</strong>
+&gt;
+&gt; 官网：[www.jingweimath.com](https://www.jingweimath.com)
+</p>
+  </div>
+</article>
+<aside class="related">
+  <h3>相关文章</h3>
+  <a href="improper-integral-limit.html">反常积分收敛，为什么推不出 f(x)→0？</a>
+  <a href="extrema-concavity.html">极值与凹凸性：从定义到真题</a>
+  <a href="limit-theory.html">极限理论：极限的存在性与保号性</a>
+  <a href="jordan-form.html">若当型——矩阵不相似于对角形，那相似于什么？</a>
+  <a href="linalg-geometry.html">跨科题目精讲——线代与几何的结合</a>
+</aside>
+<div class="site-links">
+  <a href="../practice.html">在线题库（2000+题）</a>
+  <a href="../exams.html">历年真题下载</a>
+  <a href="../courses.html">免费网课视频</a>
+  <a href="../plan.html">科学复习计划</a>
+</div>
+<footer>© 2026 经纬考研数学 · <a href="https://jingweimath.com/">jingweimath.com</a> · 专注考研数学辅导</footer>
+</body>
+</html>

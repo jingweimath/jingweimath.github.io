@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="经纬考研数学在线题库，高等数学、线性代数、概率统计三大模块869题，覆盖基础、中等、困难三个难度，支持分类练习与错题回顾，随时随地刷题。">
+<meta name="keywords" content="考研数学题库,考研数学刷题,高数题库,线性代数题库,概率统计题库,考研数学练习">
+<title>题库练习 · 经纬数学</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a56db; --primary-dark: #1e429f; --primary-light: #e8f0fe;
+    --accent: #e24b4a; --text: #1e1e2e; --text-muted: #6b7280;
+    --border: #e5e7eb; --bg: #f8f9fc; --white: #ffffff; --radius: 12px;
+    --success: #16a34a; --warning: #f59e0b;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--bg); }
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.95); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2.5%;
+    display: flex; align-items: center; justify-content: space-between; height: 100px;
+  }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); letter-spacing: -0.5px; text-decoration: none; }
+  .logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 26px; list-style: none; align-items: stretch; }
+  .nav-links a {
+    text-decoration: none; color: var(--text); font-size: 21px; font-weight: 600;
+    transition: color 0.2s; padding: 6px 8px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    line-height: 1.3; letter-spacing: 2px;
+  }
+  .nav-icon { font-size: 19px; line-height: 1; margin-bottom: 4px; }
+  .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+  .nav-links a.nav-hot { color: var(--primary); font-weight: 700; }
+  .nav-links a.nav-star {
+    background: linear-gradient(90deg,#1a56db,#3b82f6); color:#fff;
+    padding: 8px 18px; border-radius: 18px; font-weight: 700;
+    box-shadow: 0 3px 12px rgba(26,86,219,0.35);
+  }
+  .nav-links a.nav-star:hover, .nav-links a.nav-star.active { color:#fff; opacity:0.92; }
+  .nav-cta { background: var(--primary); color: white; padding: 10px 24px; border-radius: 8px; font-size: 16px; text-decoration: none; font-weight: 500; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--primary-dark); }
+  @media (max-width: 768px) { nav .nav-links { display: none; } }
+  .page-header { background: white; padding: 40px 5% 32px; border-bottom: 1px solid var(--border); }
+  .page-header h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .page-header p { color: var(--text-muted); font-size: 15px; }
+  .content { padding: 32px 5%; max-width: 1200px; margin: 0 auto; }
+  .layout { display: grid; grid-template-columns: 280px 1fr; gap: 28px; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+
+  .sidebar-card { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 20px; }
+  .sidebar-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 14px; }
+
+  .chapter-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; font-size: 13px; cursor: pointer; transition: background 0.15s; border: none; background: none; width: 100%; text-align: left; font-family: inherit; margin-bottom: 2px; }
+  .chapter-item:hover { background: var(--bg); }
+  .chapter-item.active { background: var(--primary-light); color: var(--primary); font-weight: 700; }
+  .chapter-num { width: 24px; height: 24px; border-radius: 6px; background: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .chapter-item.active .chapter-num { background: var(--primary); color: white; }
+  .chapter-count { margin-left: auto; font-size: 11px; color: var(--text-muted); }
+  .subject-group { margin-bottom: 16px; }
+  .subject-label { font-size: 11px; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; }
+
+  .quick-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .qs-item { background: var(--bg); border-radius: 8px; padding: 12px; text-align: center; }
+  .qs-num { font-size: 20px; font-weight: 800; }
+  .qs-lbl { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+  .main-area { display: flex; flex-direction: column; gap: 24px; }
+  .card { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+  .card h3 { font-size: 17px; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+
+  .tabs { display: flex; gap: 4px; background: var(--bg); border-radius: 10px; padding: 4px; margin-bottom: 20px; }
+  .tab { padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; border: none; background: none; transition: all 0.15s; font-family: inherit; }
+  .tab.active { background: white; font-weight: 700; }
+
+  .filter-row { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+  .chip { padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 500; border: 1.5px solid var(--border); background: white; cursor: pointer; transition: all 0.15s; }
+  .chip:hover, .chip.active { border-color: var(--primary); background: var(--primary-light); color: var(--primary); }
+
+  .question-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; margin-bottom: 14px; cursor: pointer; transition: all 0.15s; background: white; }
+  .question-card:hover { border-color: var(--primary); }
+  .question-card.expanded { border-color: var(--primary); }
+  .q-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .q-num { font-size: 12px; font-weight: 700; color: var(--primary); }
+  .q-difficulty { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px; }
+  .diff-basic { background: #dcfce7; color: #15803d; }
+  .diff-medium { background: #fef9c3; color: #b45309; }
+  .diff-hard { background: #fee2e2; color: #b91c1c; }
+  .q-type { font-size: 12px; color: var(--text-muted); margin-left: auto; }
+  .q-body { font-size: 15px; line-height: 1.8; color: var(--text); margin-bottom: 4px; font-family: "Georgia", "Times New Roman", serif; letter-spacing: 0.5px; }
+  .q-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+  .q-option { padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 14px; cursor: pointer; transition: all 0.15s; font-family: "Georgia", "Times New Roman", serif; }
+  .q-option:hover { border-color: var(--primary); }
+  .q-option.correct { border-color: var(--success); background: #f0fdf4; color: var(--success); font-weight: 700; }
+  .q-option.wrong { border-color: var(--accent); background: #fef2f2; color: var(--accent); }
+  .q-option.highlight-correct { border-color: var(--success); background: #f0fdf4; }
+  .q-solution { display: none; margin-top: 16px; padding: 16px; background: #f0f9ff; border-radius: 10px; font-size: 14px; line-height: 1.9; border-left: 3px solid var(--primary); }
+  .question-card.expanded .q-solution { display: block; }
+  .solution-label { font-size: 12px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+  .fill-answer { margin-top: 12px; display: flex; gap: 10px; align-items: center; }
+  .fill-answer input { padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 14px; font-family: "Georgia", "Times New Roman", serif; width: 200px; }
+  .fill-answer input:focus { outline: none; border-color: var(--primary); }
+  .fill-submit { padding: 10px 18px; background: var(--primary); color: white; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; }
+  .fill-submit:hover { background: var(--primary-dark); }
+  .fill-result { font-size: 13px; font-weight: 600; margin-left: 8px; }
+  .fill-result.correct { color: var(--success); }
+  .fill-result.wrong { color: var(--accent); }
+  .empty-state { text-align: center; padding: 60px 20px; color: var(--text-muted); }
+  .empty-state .icon { font-size: 48px; margin-bottom: 16px; }
+  .empty-state h3 { font-size: 18px; margin-bottom: 8px; color: var(--text); }
+  .empty-state p { font-size: 14px; }
+  .loading { text-align: center; padding: 40px; color: var(--text-muted); }
+  .chapter-info { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; font-size: 13px; color: var(--text-muted); }
+  .chapter-info strong { color: var(--text); }
+</style>
+<!-- MathJax -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'input']
+  },
+  startup: {
+    typeset: false
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html"><img src="logo-192.png" alt="经纬考研数学" height="46"></a>
+  <ul class="nav-links">
+    <li><a href="index.html"><span class="nav-icon">🏠</span>首页</a></li>
+    <li><a href="courses.html" class="nav-star"><span class="nav-icon">🎬</span>网课<br>视频</a></li>
+    <li><a href="plan.html"><span class="nav-icon">📅</span>复习<br>计划</a></li>
+    <li><a href="practice.html" class="nav-hot active"><span class="nav-icon">🔥</span>题库<br>练习</a></li>
+    <li><a href="exams.html" class="nav-hot"><span class="nav-icon">📋</span>考研<br>真题</a></li>
+    <li><a href="comprehensive.html" class="nav-hot"><span class="nav-icon">📝</span>经纬<br>研选</a></li>
+    <li><a href="notes.html"><span class="nav-icon">📐</span>经纬<br>论数</a></li>
+  </ul>
+  <a href="index.html#pricing" class="nav-cta">立即报名</a>
+</nav>
+
+<div class="page-header">
+  <h1>题库练习</h1>
+  <p>精选题目，分章节分级。从 JSON 题库动态加载，点击章节即可切换</p>
+</div>
+
+<div style="max-width:900px;margin:0 auto 12px;padding:10px 18px;background:#f0f7ff;border:1px solid #c3daf5;border-radius:8px;font-size:13px;color:#4a6da8;display:flex;align-items:center;gap:8px">
+  <span style="font-size:16px">💡</span>
+  <span><b>小贴士：</b>题库持续更新中，如发现内容与之前不一致，请按 <code style="background:#e1ecf9;padding:1px 5px;border-radius:3px">Ctrl+Shift+R</code> 强制刷新页面。切换章节时公式需重新渲染，短暂等待属正常现象。</span>
+</div>
+
+<div class="content">
+  <div class="layout">
+    <!-- SIDEBAR -->
+    <div>
+      <div class="sidebar-card">
+        <h3>题库统计</h3>
+        <div class="quick-stats" id="statsArea">
+          <div class="qs-item"><div class="qs-num" style="color:#1a56db" id="totalCount">-</div><div class="qs-lbl">总题数</div></div>
+          <div class="qs-item"><div class="qs-num" style="color:#f59e0b" id="chapterCount">-</div><div class="qs-lbl">本章题数</div></div>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <h3>章节选择</h3>
+        <div id="chapterNav"></div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main-area">
+      <div class="card">
+        <div class="tabs" id="tabBar">
+          <button class="tab active" onclick="switchTab('all')">全部题目</button>
+          <button class="tab" onclick="switchTab('error')">错题本</button>
+        </div>
+        <div class="filter-row" id="filterRow">
+          <button class="chip active" onclick="filterDiff('all')">全部难度</button>
+          <button class="chip" onclick="filterDiff('basic')">基础</button>
+          <button class="chip" onclick="filterDiff('medium')">适中</button>
+          <button class="chip" onclick="filterDiff('hard')">较难</button>
+        </div>
+        <div class="chapter-info" id="chapterInfo"></div>
+        <div id="questionsArea"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="questions-bundle-v2.js?v=20260720"></script>
+<script>
+// prettyMath: MathJax 接管后直接返回原文，由 MathJax 渲染
+function prettyMath(text) {
+  if (!text) return text;
+  return text;
+}
+
+var currentChapter = null;
+var currentDiff = 'all';
+var currentTab = 'all';
+var totalQuestions = 0;
+
+var DIFF_MAP = { basic: '基础', medium: '适中', hard: '较难' };
+var TYPE_MAP = { choice: '选择题', fill: '填空题', proof: '解答题' };
+var OPTION_LABELS = ['A', 'B', 'C', 'D'];
+
+function init() {
+  buildChapterNav();
+  var chapters = getAvailableChapters();
+  if (chapters.length > 0) selectChapter(chapters[0]);
+  countAllQuestions();
+}
+
+function countAllQuestions() {
+  var total = 0;
+  Object.keys(QUESTION_BANK).forEach(function(k) {
+    var d = QUESTION_BANK[k];
+    if (d && d.questions) total += d.questions.length;
+  });
+  totalQuestions = total;
+  document.getElementById('totalCount').textContent = total;
+}
+
+function getAvailableChapters() {
+  var result = [];
+  Object.values(QUESTION_BANK.subjects).forEach(function(subject) {
+    subject.chapters.forEach(function(ch) {
+      if (QUESTION_BANK[ch.id] && QUESTION_BANK[ch.id].questions) result.push(ch.id);
+    });
+  });
+  return result;
+}
+
+function buildChapterNav() {
+  var html = '';
+  var num = 1;
+  Object.keys(QUESTION_BANK.subjects).forEach(function(sk) {
+    var subj = QUESTION_BANK.subjects[sk];
+    html += '<div class="subject-group">';
+    html += '<div class="subject-label">' + subj.name + '</div>';
+    subj.chapters.forEach(function(ch) {
+      var count = QUESTION_BANK[ch.id] ? QUESTION_BANK[ch.id].questions.length : 0;
+      var cls = count ? 'chapter-item' : 'chapter-item';
+      html += '<button class="' + cls + '" onclick="selectChapter(\'' + ch.id + '\')" data-chapter="' + ch.id + '">';
+      html += '<span class="chapter-num">' + num + '</span>';
+      html += ch.name;
+      html += '<span class="chapter-count">' + count + '题</span>';
+      html += '</button>';
+      num++;
+    });
+    html += '</div>';
+  });
+  document.getElementById('chapterNav').innerHTML = html;
+}
+
+function selectChapter(chapterId) {
+  currentChapter = chapterId;
+  document.querySelectorAll('.chapter-item').forEach(function(el) { el.classList.remove('active'); });
+  var btn = document.querySelector('[data-chapter="' + chapterId + '"]');
+  if (btn) btn.classList.add('active');
+
+  var data = QUESTION_BANK[chapterId];
+  document.getElementById('chapterCount').textContent = data ? data.questions.length : 0;
+
+  var infoEl = document.getElementById('chapterInfo');
+  if (data) {
+    infoEl.innerHTML = '<strong>' + data.subject + '</strong> · ' + data.chapter + ' · 共 ' + data.questions.length + ' 题';
+  }
+  renderQuestions();
+}
+
+function switchTab(tab) {
+  currentTab = tab;
+  document.querySelectorAll('#tabBar .tab').forEach(function(t) { t.classList.remove('active'); });
+  event.target.classList.add('active');
+  document.getElementById('filterRow').style.display = tab === 'error' ? 'none' : '';
+  renderQuestions();
+}
+
+function filterDiff(diff) {
+  currentDiff = diff;
+  document.querySelectorAll('.filter-row .chip').forEach(function(c) { c.classList.remove('active'); });
+  event.target.classList.add('active');
+  renderQuestions();
+}
+
+function renderQuestions() {
+  var area = document.getElementById('questionsArea');
+  var data = currentChapter ? QUESTION_BANK[currentChapter] : null;
+
+  if (!data) {
+    area.innerHTML = '<div class="empty-state"><div class="icon">📝</div><h3>请从左侧选择一个章节</h3><p>点击章节查看对应题目</p></div>';
+    return;
+  }
+
+  var questions = data.questions;
+  if (currentDiff !== 'all') {
+    questions = questions.filter(function(q) { return q.difficulty === currentDiff; });
+  }
+
+  if (questions.length === 0) {
+    area.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><h3>该难度暂无题目</h3><p>试试切换难度筛选</p></div>';
+    return;
+  }
+
+  var html = '';
+  questions.forEach(function(q, idx) {
+    html += renderQuestion(q, idx + 1);
+  });
+  area.innerHTML = html;
+  // 触发 MathJax 重新渲染
+  if (window.MathJax && MathJax.typesetPromise) {
+    MathJax.typesetPromise([area]).catch(function(){});
+  }
+}
+
+function renderQuestion(q, num) {
+  var difClass = 'diff-' + q.difficulty;
+  var difLabel = DIFF_MAP[q.difficulty] || q.difficulty;
+  var typeLabel = TYPE_MAP[q.type] || q.type;
+
+  var html = '<div class="question-card" onclick="toggleExpand(this)" data-qid="' + q.id + '">';
+  html += '<div class="q-header">';
+  html += '<span class="q-num">Q' + num + '</span>';
+  html += '<span class="q-difficulty ' + difClass + '">' + difLabel + '</span>';
+  html += '<span class="q-type">' + typeLabel + '</span>';
+  html += '</div>';
+  html += '<div class="q-body">' + prettyMath(q.question) + '</div>';
+
+  if (q.type === 'choice') {
+    html += '<div class="q-options">';
+    q.options.forEach(function(opt, i) {
+      html += '<div class="q-option" onclick="event.stopPropagation();checkChoice(this,' + i + ',' + q.answer + ',\'' + q.id + '\')">' + OPTION_LABELS[i] + '. ' + prettyMath(opt) + '</div>';
+    });
+    html += '</div>';
+  }
+
+  if (q.type === 'fill') {
+    html += '<div class="fill-answer" onclick="event.stopPropagation()">';
+    html += '<input type="text" placeholder="输入答案..." id="fill-' + q.id + '" onkeydown="if(event.key===\'Enter\')checkFill(\'' + q.id + '\',\'' + q.answer.replace(/'/g, "\\'") + '\')">';
+    html += '<button class="fill-submit" onclick="checkFill(\'' + q.id + '\',\'' + q.answer.replace(/'/g, "\\'") + '\')">确认</button>';
+    html += '<span class="fill-result" id="result-' + q.id + '"></span>';
+    html += '</div>';
+  }
+
+  html += '<div class="q-solution">';
+  html += '<div class="solution-label">解析</div>';
+  html += prettyMath(q.solution).replace(/\n/g, '<br>');
+  html += '</div>';
+  html += '</div>';
+  return html;
+}
+
+function toggleExpand(card) {
+  card.classList.toggle('expanded');
+}
+
+function checkChoice(el, chosen, answer, qid) {
+  var parent = el.parentElement;
+  var options = parent.querySelectorAll('.q-option');
+  options.forEach(function(o) { o.classList.remove('correct','wrong','highlight-correct'); });
+
+  if (chosen === answer) {
+    el.classList.add('correct');
+  } else {
+    el.classList.add('wrong');
+    options[answer].classList.add('highlight-correct');
+  }
+}
+
+function checkFill(qid, answer) {
+  var input = document.getElementById('fill-' + qid);
+  var result = document.getElementById('result-' + qid);
+  var userAnswer = input.value.trim();
+  if (!userAnswer) return;
+
+  var correct = normalizeAnswer(userAnswer, answer);
+  result.className = 'fill-result ' + (correct ? 'correct' : 'wrong');
+  result.textContent = correct ? '√ 正确' : '× 正确答案：' + answer;
+}
+
+function normalizeAnswer(user, expected) {
+  user = user.replace(/\s/g, '');
+  expected = expected.replace(/\s/g, '');
+  if (user === expected) return true;
+
+  var parts = expected.split('/');
+  if (parts.length === 2) {
+    var num = parseFloat(user);
+    var exp = parseFloat(parts[0]) / parseInt(parts[1]);
+    if (!isNaN(num) && !isNaN(exp) && Math.abs(num - exp) < 0.001) return true;
+  }
+
+  return false;
+}
+
+init();
+</script>
+<script src="auth-widget.js"></script>
+<!-- FOOTER -->
+<footer style="background:#111827;color:#9ca3af;padding:32px 5%;text-align:center;font-size:13px;">
+  <div style="margin-bottom:12px;">
+    <a href="index.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">首页</a>
+    <a href="courses.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">网课</a>
+    <a href="exams.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">真题</a>
+    <a href="practice.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">题库</a>
+    <a href="comprehensive.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">经纬研选</a>
+    <a href="membership.html" style="color:#9ca3af;text-decoration:none;margin:0 10px;">会员</a>
+  </div>
+  <div>© 2026 经纬数学 · 考研辅导 · www.jingweimath.com</div>
+      <div style="margin-top:8px;"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=37020202370561" target="_blank" rel="noreferrer" style="color:#9ca3af;text-decoration:none;">鲁公网安备37020202370561号</a></div>
+</footer>
+
+</body>
+</html>

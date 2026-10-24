@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>变上限积分的等价化简与洛必达｜经纬研选（一） 第8题 - 经纬考研数学</title>
+<meta name="description" content="经纬研选（一） 第8题：求极限
+
+ lim(x→0)( ∈t_0^xbigl[x²-3sin(x-t)²bigr]dt)/((e^x-1)(1-cos x)³)。附答案与分步解析，考点：变上限积分的等价化简与洛必达。">
+<meta name="keywords" content="考研数学一,变上限积分的等价化简与洛必达,经纬研选（一）,经纬研选,考研数学练习题,考研数学习题,极限,连续">
+<meta name="robots" content="index, follow">
+<meta name="author" content="经纬考研数学">
+<link rel="canonical" href="https://jingweimath.com/yanxuan/1/q008.html">
+<meta property="og:title" content="变上限积分的等价化简与洛必达｜经纬研选（一） 第8题 - 经纬考研数学">
+<meta property="og:description" content="经纬研选（一） 第8题：求极限
+
+ lim(x→0)( ∈t_0^xbigl[x²-3sin(x-t)²bigr]dt)/((e^x-1)(1-cos x)³)。附答案与分步解析，考点：变上限积分的等价化简与洛必达。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jingweimath.com/yanxuan/1/q008.html">
+<meta property="og:site_name" content="经纬考研数学">
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+<link rel="stylesheet" href="../../yanxuan/yanxuan.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "变上限积分的等价化简与洛必达｜经纬研选（一） 第8题 - 经纬考研数学",
+  "description": "经纬研选（一） 第8题：求极限\n\n lim(x→0)( ∈t_0^xbigl[x²-3sin(x-t)²bigr]dt)/((e^x-1)(1-cos x)³)。附答案与分步解析，考点：变上限积分的等价化简与洛必达。",
+  "url": "https://jingweimath.com/yanxuan/1/q008.html",
+  "inLanguage": "zh-CN",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "https://jingweimath.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "经纬研选",
+        "item": "https://jingweimath.com/comprehensive.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "在线题库",
+        "item": "https://jingweimath.com/yanxuan/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "经纬研选（一）",
+        "item": "https://jingweimath.com/yanxuan/1/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "第8题",
+        "item": "https://jingweimath.com/yanxuan/1/q008.html"
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "Question",
+    "name": "经纬研选（一） 第8题",
+    "text": "求极限\n\n lim(x→0)( ∈t_0^xbigl[x²-3sin(x-t)²bigr]dt)/((e^x-1)(1-cos x)³)",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "第一步：分母等价化简。 当 x→0 时\n\n e^x-1～ x, 1-cos x～(x²)/(2), \n\n故\n\n (e^x-1)(1-cos x)³～ x·≤ft((x²)/(2) ³=(x⁷)/(8) . \n\n第二步：分子化简。 作代换 u=x-t （ t 从 0 到 x 时 u 从 x 到 0 ）：\n\n ∈t_0^xsin(x-t)²\\,dt=∈t_x⁰sin u²\\,(-du)=∈t_0^xsin u²\\,du, \n\n于是分子为\n\n ∈t_0^xbigl[x²-3sin(x-t)²bigr]dt=x³-3∈t_0^xsin u²\\,du . \n\n第三步：洛必达与泰勒展开。\n\n text原式=8lim(x→0)(x³-3 ∈t_0^xsin u²\\,du)/(x⁷)\n=8lim(x→0)(3x²-3sin x²)/(7x⁶)\n=(24)/(7)lim(x→0)(x²-sin x²)/(x"
+    }
+  }
+}
+</script>
+<script>
+MathJax = { tex: { inlineMath: [["$","$"],["\\(","\\)"]] },
+  options: { skipHtmlTags: ["script","noscript","style","textarea","code"] } };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async
+  onerror="(function(){var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js';s.async=true;document.head.appendChild(s);})()"></script>
+</head>
+<body>
+<nav>
+  <a class="logo" href="../../index.html">经纬<span>考研数学</span></a>
+  <ul class="nav-links">
+    <li><a href="../../index.html"><span class="nav-icon">🏠</span>首页</a></li>
+    <li><a href="../../courses.html" class="nav-star"><span class="nav-icon">🎬</span>网课<br>视频</a></li>
+    <li><a href="../../plan.html"><span class="nav-icon">📅</span>复习<br>计划</a></li>
+    <li><a href="../../practice.html"><span class="nav-icon">🔥</span>题库<br>练习</a></li>
+    <li><a href="../../exams.html"><span class="nav-icon">📋</span>考研<br>真题</a></li>
+    <li><a href="../../comprehensive.html" class="active"><span class="nav-icon">📝</span>经纬<br>研选</a></li>
+    <li><a href="../../notes.html"><span class="nav-icon">📐</span>经纬<br>论数</a></li>
+  </ul>
+  <a href="../../index.html#pricing" class="nav-cta">立即报名</a>
+</nav>
+<div class="breadcrumb"><a href="../../index.html">首页</a> &rsaquo; <a href="../../comprehensive.html">经纬研选</a> &rsaquo; <a href="../../yanxuan/index.html">在线题库</a> &rsaquo; <a href="../index.html">经纬研选（一）</a> &rsaquo; <span>第8题</span></div>
+<div class="wrap">
+  <main class="main">
+    <div class="q-card">
+      <div class="q-head"><div class="q-num">8</div><div class="q-topic">变上限积分的等价化简与洛必达</div></div>
+<div class="q-stem">求极限
+
+$$\lim_{x\to0}\frac{\displaystyle\int_0^x\bigl[x^2-3\sin(x-t)^2\bigr]dt}{(e^x-1)(1-\cos x)^3}$$</div>
+    <noscript><div class="readable summary-text">求极限
+
+ lim(x→0)( ∈t_0^xbigl[x²-3sin(x-t)²bigr]dt)/((e^x-1)(1-cos x)³)</div></noscript>
+
+      <details><summary>查看参考答案</summary>
+<div class="q-answer"><b>答案：$\dfrac{4}{7}$</b></div>
+      </details>
+
+    </div>
+    <details open><summary>完整解析</summary>
+      <div class="q-solution">
+      <p><b>第一步：分母等价化简。</b> 当 $x\to0$ 时</p>
+      <noscript><p class="readable">第一步：分母等价化简。 当 x→0 时</p></noscript>
+      <p>$$e^x-1\sim x,\qquad 1-\cos x\sim\frac{x^2}{2},$$</p>
+      <noscript><p class="readable">e^x-1～ x, 1-cos x～(x²)/(2),</p></noscript>
+      <p>故</p>
+      <noscript><p class="readable">故</p></noscript>
+      <p>$$(e^x-1)(1-\cos x)^3\sim x\cdot\left(\frac{x^2}{2}\right)^3=\frac{x^7}{8} .$$</p>
+      <noscript><p class="readable">(e^x-1)(1-cos x)³～ x·≤ft((x²)/(2) ³=(x⁷)/(8) .</p></noscript>
+      <p><b>第二步：分子化简。</b> 作代换 $u=x-t$（$t$ 从 $0$ 到 $x$ 时 $u$ 从 $x$ 到 $0$）：</p>
+      <noscript><p class="readable">第二步：分子化简。 作代换 u=x-t （ t 从 0 到 x 时 u 从 x 到 0 ）：</p></noscript>
+      <p>$$\int_0^x\sin(x-t)^2\,dt=\int_x^0\sin u^2\,(-du)=\int_0^x\sin u^2\,du,$$</p>
+      <noscript><p class="readable">∈t_0^xsin(x-t)²\,dt=∈t_x⁰sin u²\,(-du)=∈t_0^xsin u²\,du,</p></noscript>
+      <p>于是分子为</p>
+      <noscript><p class="readable">于是分子为</p></noscript>
+      <p>$$\int_0^x\bigl[x^2-3\sin(x-t)^2\bigr]dt=x^3-3\int_0^x\sin u^2\,du .$$</p>
+      <noscript><p class="readable">∈t_0^xbigl[x²-3sin(x-t)²bigr]dt=x³-3∈t_0^xsin u²\,du .</p></noscript>
+      <p><b>第三步：洛必达与泰勒展开。</b></p>
+      <noscript><p class="readable">第三步：洛必达与泰勒展开。</p></noscript>
+      <p>$$\text{原式}=8\lim_{x\to0}\frac{x^3-3\displaystyle\int_0^x\sin u^2\,du}{x^7}
+=8\lim_{x\to0}\frac{3x^2-3\sin x^2}{7x^6}
+=\frac{24}{7}\lim_{x\to0}\frac{x^2-\sin x^2}{x^6} .$$</p>
+      <noscript><p class="readable">text原式=8lim(x→0)(x³-3 ∈t_0^xsin u²\,du)/(x⁷)
+=8lim(x→0)(3x²-3sin x²)/(7x⁶)
+=(24)/(7)lim(x→0)(x²-sin x²)/(x⁶) .</p></noscript>
+      <p>令 $v=x^2\to0$，由 $\sin v=v-\dfrac{v^3}{6}+o(v^3)$ 得 $v-\sin v\sim\dfrac{v^3}{6}$，即 $x^2-\sin x^2\sim\dfrac{x^6}{6}$，故</p>
+      <noscript><p class="readable">令 v=x²→0 ，由 sin v=v-(v³)/(6)+o(v³) 得 v-sin v～(v³)/(6) ，即 x²-sin x²～(x⁶)/(6) ，故</p></noscript>
+      <p>$$\text{原式}=\frac{24}{7}\cdot\frac16=\frac47 .$$</p>
+      <noscript><p class="readable">text原式=(24)/(7)·frac16=frac47 .</p></noscript>
+      <p><b>答案：$\dfrac47$</b>。</p>
+      <noscript><p class="readable">答案： frac47 。</p></noscript>
+      <p><blockquote class="md-quote">注：本题核心是变上限积分的求导以及&quot;分母先等价替换成单项式&quot;的技巧。</blockquote></p>
+      <noscript><p class="readable">注：本题核心是变上限积分的求导以及&quot;分母先等价替换成单项式&quot;的技巧。</p></noscript>
+      </div>
+    </details>
+
+    <div class="pn-bar"><a class="pn" href="q007.html">&larr; 上一题</a><a class="pn" href="q009.html">下一题 &rarr;</a></div>
+  </main>
+  <aside class="side">
+    <div class="side-card">
+      <h3>本题所属：经纬研选（一）</h3>
+      <p style="font-size:13px;color:#6b7280;line-height:1.7">极限 · 连续 · 导数 · 证明题精选。覆盖数列极限保号性、无穷小比较、导数定义、介值/Rolle/Lagrange/Taylor 中值定理的应用与证明。</p>
+    </div>
+    <div class="side-card">
+      <h3>相邻题目</h3>
+      <ul class="rel-list">
+    <li><a href="q005.html"><span class="rel-num">5.</span>已知极限值反求参数</a></li>
+    <li><a href="q006.html"><span class="rel-num">6.</span>用定积分定义求极限（瑕积分</a></li>
+    <li><a href="q007.html"><span class="rel-num">7.</span>$1^\infty$ 型幂指极限</a></li>
+    <li><a href="q009.html"><span class="rel-num">9.</span>泰勒展开（或换元）求 $\infty\cdot 0$ 型极限</a></li>
+    <li><a href="q010.html"><span class="rel-num">10.</span>求曲线的渐近线</a></li>
+    <li><a href="q011.html"><span class="rel-num">11.</span>泰勒展开对比系数求参数</a></li>
+      </ul>
+    </div>
+    <div class="side-card cta-card">
+      <h3>系统刷题</h3>
+      <p>进入在线题库，支持即时判分与错题回顾。</p>
+      <a class="btn" href="../../practice.html">去做题 &rarr;</a>
+    </div>
+  </aside>
+</div>
+<div class="site-links">
+  <a href="../../index.html">首页</a>
+  <a href="../../practice.html">在线题库练习</a>
+  <a href="../../exams.html">历年真题下载</a>
+  <a href="../../courses.html">免费网课视频</a>
+  <a href="../../comprehensive.html">经纬研选 PDF</a>
+  <a href="../../notes.html">经纬论数</a>
+  <a href="../../plan.html">科学复习计划</a>
+</div>
+<footer>&copy; 2026 经纬考研数学 &middot; <a href="https://jingweimath.com/">jingweimath.com</a> &middot; 专注考研数学辅导</footer>
+</body>
+</html>

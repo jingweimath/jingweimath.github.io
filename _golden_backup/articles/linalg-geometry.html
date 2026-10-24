@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>线性代数与空间解析几何结合题精讲（数一真题题型）</title>
+<meta name="description" content="2024、2025连续两年数一真题出现线代与空间几何结合的题目。线性方程组的解与几何图形的关系、跨科题解题思路典型例题精讲。">
+<meta name="keywords" content="线性代数,空间解析几何,线性方程组,跨科题,数一,考研数学,真题">
+<meta name="robots" content="index, follow">
+<meta name="author" content="经纬考研数学">
+<link rel="canonical" href="https://jingweimath.com/articles/linalg-geometry.html">
+<meta property="og:title" content="线性代数与空间解析几何结合题精讲（数一真题题型）">
+<meta property="og:description" content="2024、2025连续两年数一真题出现线代与空间几何结合的题目。线性方程组的解与几何图形的关系、跨科题解题思路典型例题精讲。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jingweimath.com/articles/linalg-geometry.html">
+<meta property="og:site_name" content="经纬考研数学">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "跨科题目精讲——线代与几何的结合",
+  "datePublished": "2026-06-29",
+  "dateModified": "2026-10-14",
+  "author": {"@type": "Organization", "name": "经纬考研数学"},
+  "publisher": {"@type": "Organization", "name": "经纬考研数学"},
+  "description": "2024、2025连续两年数一真题出现线代与空间几何结合的题目。线性方程组的解与几何图形的关系、跨科题解题思路典型例题精讲。",
+  "mainEntityOfPage": "https://jingweimath.com/articles/linalg-geometry.html"
+}
+</script>
+<script>
+MathJax = { tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]] } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" async></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --primary: #1a56db; --primary-dark: #1e429f; --primary-light: #e8f0fe;
+    --accent: #e24b4a; --text: #1e1e2e; --text-muted: #6b7280;
+    --border: #e5e7eb; --bg: #f8f9fc;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--white); }
+  .topbar { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 5%; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 20px; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: var(--accent); }
+  .back { font-size: 14px; color: var(--primary); text-decoration: none; font-weight: 500; }
+  .breadcrumb { padding: 14px 5%; font-size: 13px; color: var(--text-muted); background: var(--bg); }
+  .breadcrumb a { color: var(--primary); text-decoration: none; }
+  article { max-width: 780px; margin: 0 auto; padding: 40px 24px 60px; }
+  h1 { font-size: 28px; line-height: 1.4; margin-bottom: 14px; }
+  .meta { font-size: 13px; color: var(--text-muted); margin-bottom: 30px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .meta .tag { display: inline-block; background: var(--primary-light); color: var(--primary); border-radius: 12px; padding: 2px 10px; margin-left: 6px; font-size: 12px; }
+  .body p { line-height: 1.9; margin: 14px 0; font-size: 16px; }
+  .body h2 { font-size: 21px; margin: 32px 0 12px; padding-left: 10px; border-left: 4px solid var(--primary); }
+  .body h3 { font-size: 18px; margin: 24px 0 10px; }
+  .body ul { margin: 14px 0 14px 22px; }
+  .body li { line-height: 1.9; font-size: 16px; margin: 4px 0; }
+  .body li.sub { list-style: circle; margin-left: 22px; }
+  .math-block { margin: 18px 0; text-align: center; overflow-x: auto; }
+  .related { max-width: 780px; margin: 0 auto 50px; padding: 24px; background: var(--bg); border-radius: 12px; }
+  .related h3 { font-size: 16px; margin-bottom: 14px; color: var(--primary); }
+  .related a { display: block; padding: 9px 0; color: var(--text); text-decoration: none; font-size: 15px; border-bottom: 1px dashed var(--border); }
+  .related a:hover { color: var(--primary); }
+  .site-links { max-width: 780px; margin: 0 auto 60px; padding: 0 24px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .site-links a { color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; }
+  footer { background: #1e1e2e; color: #9ca3af; text-align: center; padding: 22px 5%; font-size: 13px; }
+  footer a { color: #c3cbe0; text-decoration: none; }
+  @media (max-width: 600px) { h1 { font-size: 22px; } .body p, .body li { font-size: 15px; } }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="../index.html">经纬<span>考研数学</span></a>
+  <a class="back" href="../notes.html">返回笔记列表 →</a>
+</header>
+<nav class="breadcrumb"><a href="../index.html">首页</a> › <a href="../notes.html">经纬论数</a> › 跨科题目精讲——线代与几何的结合</nav>
+<article>
+  <h1>跨科题目精讲——线代与几何的结合</h1>
+  <div class="meta">发布于 2026-06-29<span class="tag">线性代数</span><span class="tag">空间解析几何</span><span class="tag">线性方程组</span><span class="tag">跨科题</span><span class="tag">数一</span></div>
+  <div class="body">
+<p>从近几年的考题来看，除了强调三基（基本概念、基础理论、基本计算）外，出现了一些跨科的题目。这里主要分享线性代数与几何相结合的题目——连续出现在 2024 数一和 2025 数一考卷里：<strong>线性方程组与空间平面问题</strong>。
+</p>
+<p>从考研数学的题目看，有重视这方面的倾向（很有必要！）。下面这个题目很好地考察了这个知识点，同学们慢慢体会，自己总结。
+</p>
+<p>---
+</p>
+<h2>例题（2025 数一）</h2>
+<p>设 $\alpha_1, \alpha_2, \alpha_3, \alpha_4$ 是 $n$ 维向量，$\alpha_1, \alpha_2$ 线性无关，$\alpha_1, \alpha_2, \alpha_3$ 线性相关，且 $\alpha_1 + \alpha_2 + \alpha_4 = 0$。
+</p>
+<p>问：在空间直角坐标系 $O\text{-}xyz$ 中，关于 $x, y, z$ 的方程组
+</p>
+<div class="math-block">$$ x\alpha_1 + y\alpha_2 + z\alpha_3 = \alpha_4 $$</div>
+<p>的几何图形是（ ）
+</p>
+<ul>
+<li>A. 过原点的一个平面</li>
+<li>B. 过原点的一条直线</li>
+<li>C. 不过原点的一个平面</li>
+<li>D. 不过原点的一条直线</li>
+</ul>
+<p>---
+</p>
+<h2>解析</h2>
+<p><strong>（1）</strong> $x\alpha_1 + y\alpha_2 + z\alpha_3 = \alpha_4$ 表示的是 $n$ 个三元一次方程组，在直角坐标系里，每个方程都表示一个平面。
+</p>
+<p><strong>（2）</strong> 由已知条件：$\alpha_1, \alpha_2$ 线性无关，$\alpha_1, \alpha_2, \alpha_3$ 线性相关，且 $\alpha_1 + \alpha_2 + \alpha_4 = 0$，可得
+</p>
+<div class="math-block">$$ r(\alpha_1, \alpha_2, \alpha_3) = r(\alpha_1, \alpha_2, \alpha_3, \alpha_4) = 2 $$</div>
+<p>即方程组有无穷多组解。也意味着这 $n$ 个方程实际上只有两个方程是独立的——几何上，只有两个平面是独立的，其他都由这两个生成。
+</p>
+<p><strong>（3）</strong> $\alpha_1 + \alpha_2 + \alpha_4 = 0$ 这个条件意味着平面<strong>不过原点</strong>（自己思考为什么？）。
+</p>
+<p><strong>（4）</strong> 几何空间中两个平面相交为一条直线。
+</p>
+<p>综合以上：<strong>方程组表示不过原点的一条直线，选 D。</strong>
+</p>
+<p>---
+</p>
+<h2>小结</h2>
+<p>这是个典型的深挖基本概念的综合题目，非常值得总结思考。
+</p>
+<p><strong>留给同学们的思考题：</strong> 方程组满足什么条件时，其所表示的几何图形为
+</p>
+<ul>
+<li>(i) 一个点？</li>
+<li>(ii) 一个平面？</li>
+<li>(iii) 方程组无解在几何上是什么图形？</li>
+</ul>
+<p>顺便提一句，未来再出此类考题的话，应该就是反向问题。
+</p>
+<p>&gt; 线下公益课我们将详细讲解这方面的问题。请同学们关注 [jingweimath.com](https://www.jingweimath.com)
+</p>
+  </div>
+</article>
+<aside class="related">
+  <h3>相关文章</h3>
+  <a href="improper-integral-limit.html">反常积分收敛，为什么推不出 f(x)→0？</a>
+  <a href="extrema-concavity.html">极值与凹凸性：从定义到真题</a>
+  <a href="vector-geometry.html">向量代数与空间解析几何</a>
+  <a href="limit-theory.html">极限理论：极限的存在性与保号性</a>
+  <a href="jordan-form.html">若当型——矩阵不相似于对角形，那相似于什么？</a>
+</aside>
+<div class="site-links">
+  <a href="../practice.html">在线题库（2000+题）</a>
+  <a href="../exams.html">历年真题下载</a>
+  <a href="../courses.html">免费网课视频</a>
+  <a href="../plan.html">科学复习计划</a>
+</div>
+<footer>© 2026 经纬考研数学 · <a href="https://jingweimath.com/">jingweimath.com</a> · 专注考研数学辅导</footer>
+</body>
+</html>
