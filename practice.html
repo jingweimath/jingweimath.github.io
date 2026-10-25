@@ -140,6 +140,20 @@
   .quiz-start:disabled { background: #9ca3af; cursor: not-allowed; }
   .quiz-pool-info { font-size: 12px; color: var(--text-muted); }
   .quiz-tip { font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-top: 10px; }
+  .ch-picker { flex: 1; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; background: var(--bg); }
+  .ch-actions { display: flex; gap: 8px; margin-bottom: 8px; }
+  .ch-actions .btn-ghost { padding: 4px 10px; font-size: 12px; }
+  .ch-group { margin-bottom: 10px; }
+  .ch-group-title { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
+  .ch-item { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; margin: 0 6px 6px 0; background: white; border: 1px solid var(--border); border-radius: 14px; font-size: 12px; cursor: pointer; user-select: none; }
+  .ch-item:hover { border-color: var(--primary); }
+  .ch-item.on { background: var(--primary); color: white; border-color: var(--primary); }
+  .ch-item.off { opacity: .45; cursor: not-allowed; }
+  .ch-n { font-size: 11px; opacity: .7; }
+  .sym-bar { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+  .sym-btn { padding: 3px 9px; font-size: 12px; background: white; border: 1px solid var(--border); border-radius: 6px; cursor: pointer; font-family: var(--font-mono, monospace); }
+  .sym-btn:hover { border-color: var(--primary); color: var(--primary); }
+  .fill-tip { font-size: 11px; color: var(--text-muted); margin-top: 6px; line-height: 1.5; }
   .weak-box { margin-top: 10px; }
   .weak-box .weak-title { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
   .weak-item { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 5px 10px; margin: 0 6px 6px 0; border: 1px solid var(--border, #e3e5e8); border-radius: 14px; cursor: pointer; background: var(--bg-sub, #fafbfc); }
@@ -253,8 +267,21 @@ window.MathJax = {
         <div id="quizPanel" style="display:none">
           <div class="quiz-setup">
             <div class="quiz-row">
+              <span class="quiz-label">报考科目</span>
+              <div class="chip-group" id="quizPaperGroup">
+                <button class="chip active" onclick="setQuizPaper('shu1',this)">数一</button>
+                <button class="chip" onclick="setQuizPaper('shu2',this)">数二</button>
+                <button class="chip" onclick="setQuizPaper('shu3',this)">数三</button>
+                <button class="chip" onclick="setQuizPaper('all',this)">全部</button>
+              </div>
+            </div>
+            <div class="quiz-row">
               <span class="quiz-label">范围</span>
-              <select id="quizScope" class="quiz-select" onchange="updateQuizPoolInfo()"></select>
+              <select id="quizScope" class="quiz-select" onchange="onScopeChange()"></select>
+            </div>
+            <div class="quiz-row" id="quizChaptersRow" style="display:none">
+              <span class="quiz-label">自选章节</span>
+              <div class="ch-picker" id="quizChapters"></div>
             </div>
             <div class="quiz-row">
               <span class="quiz-label">题量</span>
@@ -301,7 +328,7 @@ window.MathJax = {
   </div>
 </div>
 
-<script src="questions-bundle-v2.js?v=20261025e"></script>
+<script src="questions-bundle-v2.js?v=20261025f"></script>
 <script>
 // prettyMath: MathJax 接管后直接返回原文，由 MathJax 渲染
 function prettyMath(text) {
@@ -467,9 +494,16 @@ function renderQuestion(q, num) {
 
   if (q.type === 'fill') {
     html += '<div class="fill-answer" onclick="event.stopPropagation()">';
-    html += '<input type="text" placeholder="输入答案..." id="fill-' + q.id + '" onkeydown="if(event.key===\'Enter\')checkFill(\'' + q.id + '\',\'' + q.answer.replace(/'/g, "\\'") + '\')">';
+    html += '<input type="text" placeholder="输入答案，如 2/3、x^2、sqrt(2)、pi" id="fill-' + q.id + '" onkeydown="if(event.key===\'Enter\')checkFill(\'' + q.id + '\',\'' + q.answer.replace(/'/g, "\\'") + '\')">';
     html += '<button class="fill-submit" onclick="checkFill(\'' + q.id + '\',\'' + q.answer.replace(/'/g, "\\'") + '\')">确认</button>';
     html += '<span class="fill-result" id="result-' + q.id + '"></span>';
+    html += '<div class="sym-bar">';
+    var SYMS = ['^2', '^3', '^n', 'sqrt()', 'pi', 'e', 'inf', '/', 'ln()', '|', '·'];
+    SYMS.forEach(function (sm) {
+      html += '<button type="button" class="sym-btn" onclick="insertSym(\'' + q.id + '\',\'' + sm.replace(/'/g, "\\'") + '\')">' + sm + '</button>';
+    });
+    html += '</div>';
+    html += '<div class="fill-tip">平方写 x^2，根号写 sqrt(2)，π 写 pi，分数写 2/3 —— 多种写法都能判对</div>';
     html += '</div>';
   }
 
@@ -509,23 +543,100 @@ function checkFill(qid, answer) {
   result.textContent = correct ? '√ 正确' : '× 正确答案：' + answer;
 }
 
-function normalizeAnswer(user, expected) {
-  user = user.replace(/\s/g, '');
-  expected = expected.replace(/\s/g, '');
-  if (user === expected) return true;
+/* ============ 填空题宽松判分 ============
+   标准答案里大量带 LaTeX（$\dfrac{2}{3}$、$e^{2}$、$\sqrt{ab}$），
+   读者在输入框里只能写 2/3、e^2、sqrt(ab)。这里把两边归一化成同一种写法再比。 */
+function stripLatex(s) {
+  var t = String(s == null ? '' : s);
+  t = t.replace(/\$/g, '');
+  t = t.replace(/[\uFF01-\uFF5E]/g, function (c) { return String.fromCharCode(c.charCodeAt(0) - 0xFEE0); });
+  t = t.replace(/\\[dt]?frac\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, '($1)/($2)');
+  t = t.replace(/\\[dt]?frac\s*([0-9a-zA-Z])\s*([0-9a-zA-Z])/g, '($1)/($2)');
+  t = t.replace(/\\sqrt\s*\{([^{}]*)\}/g, 'sqrt($1)');
+  t = t.replace(/\\sqrt\s*\(([^()]*)\)/g, 'sqrt($1)');
+  t = t.replace(/\\sqrt\s*([0-9a-zA-Z])/g, 'sqrt($1)');
+  t = t.replace(/\\(?:geq|geqslant)/g, '>=');
+  t = t.replace(/\\(?:leq|leqslant)/g, '<=');
+  t = t.replace(/\\(?:neq|ne)/g, '!=');
+  t = t.replace(/\\(?:left|right|big|Big|bigg|Bigg|displaystyle|limits)/g, '');
+  t = t.replace(/\\(?:quad|qquad|,|;|:|!)/g, ' ');
+  t = t.replace(/\\([a-zA-Z]+)/g, '$1');
+  t = t.replace(/infty/g, 'inf');
+  t = t.replace(/\^\s*\{([^{}]*)\}/g, '^($1)');
+  t = t.replace(/\^\s*\(\s*([^()]*?)\s*\)/g, '^$1');
+  t = t.replace(/[·⋅∗×✕]/g, '*');
+  t = t.replace(/[−–—]/g, '-');
+  t = t.replace(/π/g, 'pi');
+  t = t.replace(/∞/g, 'inf');
+  t = t.replace(/[（）]/g, function (c) { return c === '（' ? '(' : ')'; });
+  t = t.replace(/²/g, '^2').replace(/³/g, '^3').replace(/¹/g, '^1').replace(/⁴/g, '^4');
+  t = t.replace(/\s/g, '');
+  t = t.replace(/\(([^()/]*)\)/g, '$1');
+  t = t.replace(/\*/g, '');
+  t = t.replace(/_/g, '');
+  return t;
+}
 
-  var parts = expected.split('/');
-  if (parts.length === 2) {
-    var num = parseFloat(user);
-    var exp = parseFloat(parts[0]) / parseInt(parts[1]);
-    if (!isNaN(num) && !isNaN(exp) && Math.abs(num - exp) < 0.001) return true;
+function numValue(t) {
+  if (!t || !/^[0-9a-z+\-*/().^]+$/.test(t)) return NaN;
+  var s = t.replace(/\^/g, '**');
+  s = s.replace(/sqrt/g, 'Math.sqrt');
+  s = s.replace(/pi/g, 'Math.PI');
+  s = s.replace(/ln/g, 'Math.log');
+  s = s.replace(/inf/g, 'Infinity');
+  s = s.replace(/\be\b/g, 'Math.E');
+  try {
+    var v = Function('"use strict";return (' + s + ')')();
+    return (typeof v === 'number' && isFinite(v)) ? v : NaN;
+  } catch (err) { return NaN; }
+}
+
+function normalizeAnswer(user, expected) {
+  var u = stripLatex(user), e = stripLatex(expected);
+  if (!u.length || !e.length) return false;
+  if (u === e) return true;
+
+  var u2 = u.replace(/[。.]$/, ''), e2 = e.replace(/[。.]$/, '');
+  if (u2 === e2) return true;
+
+  var uEq = u2.split('='), eEq = e2.split('=');
+  if (uEq.length === 2 && eEq.length === 2 && uEq[0] === eEq[0] && uEq[0].length) {
+    return normalizeAnswer(uEq[1], eEq[1]);
   }
 
+  var uv = numValue(u2), ev = numValue(e2);
+  if (!isNaN(uv) && !isNaN(ev)) {
+    return Math.abs(uv - ev) <= 1e-3 * Math.max(1, Math.abs(ev));
+  }
+
+  var u3 = u2.replace(/[()]/g, ''), e3 = e2.replace(/[()]/g, '');
+  if (u3 === e3) return true;
+
+  var es = e2.split(/[,，;；]/).filter(function (x) { return x.length; });
+  var us = u2.split(/[,，;；]/).filter(function (x) { return x.length; });
+  if (es.length > 1 && es.length === us.length) {
+    for (var i = 0; i < es.length; i++) {
+      if (!normalizeAnswer(us[i], es[i])) return false;
+    }
+    return true;
+  }
   return false;
 }
 
+function insertSym(qid, s) {
+  var el = document.getElementById('fill-' + qid);
+  if (!el) return;
+  var p = (el.selectionStart == null) ? el.value.length : el.selectionStart;
+  var q = (el.selectionEnd == null) ? p : el.selectionEnd;
+  el.value = el.value.slice(0, p) + s + el.value.slice(q);
+  var np = p + s.length;
+  try { el.focus(); el.setSelectionRange(np, np); } catch (err) { }
+  el.focus();
+}
+
 /* ================= 随机自测 ================= */
-var QUIZ_STATE = { active: false, questions: [], answers: {}, selfMark: {}, submitted: false, scope: 'all', count: 10, diff: 'all', startAt: 0, mode: 'quiz' };
+var QUIZ_STATE = { active: false, questions: [], answers: {}, selfMark: {}, submitted: false, scope: 'all', count: 10, diff: 'all', startAt: 0, mode: 'quiz', paper: 'shu1', customChs: [] };
+var PAPER_NAME = { shu1: '数一', shu2: '数二', shu3: '数三', all: '全部' };
 var LS_WRONG = 'jm_wrong_bank_v1';
 var LS_HIST = 'jm_quiz_history_v1';
 var LS_UID = 'jm_uid_v1';
@@ -730,24 +841,153 @@ function buildQIndex() {
   return Q_INDEX;
 }
 
+function paperOk(p) {
+  var pp = QUIZ_STATE.paper;
+  if (pp === 'all') return true;
+  return !p || p.indexOf(pp) >= 0;
+}
+
+function canJudge(q) {
+  if (q.type === 'choice') {
+    return typeof q.answer === 'number' && q.options && q.answer >= 0 && q.answer < q.options.length;
+  }
+  if (q.type === 'fill') {
+    return q.answer !== undefined && q.answer !== null && String(q.answer).length > 0;
+  }
+  if (q.type === 'proof') {
+    return !!(q.solution && String(q.solution).length > 0);
+  }
+  return false;
+}
+
+function chapterCount(chId) {
+  var node = QUESTION_BANK[chId];
+  if (!node || !node.questions) return 0;
+  return node.questions.filter(function (q) { return paperOk(q.papers) && canJudge(q); }).length;
+}
+
 function buildQuizScope() {
   var sel = document.getElementById('quizScope');
   if (!sel) return;
-  var html = '<option value="all">全科综合（全部章节混抽）</option>';
+  var pn = PAPER_NAME[QUIZ_STATE.paper] || '全部';
+  var html = '<option value="all">' + pn + '全科（全部章节混抽）</option>';
+  html += '<option value="custom">自选章节（可多选）…</option>';
   Object.keys(QUESTION_BANK.subjects).forEach(function (sk) {
     var subj = QUESTION_BANK.subjects[sk];
+    var chs = subj.chapters.filter(function (ch) { return paperOk(ch.papers); });
+    if (!chs.length) return;
     var sn = 0;
-    subj.chapters.forEach(function (ch) { sn += QUESTION_BANK[ch.id] ? QUESTION_BANK[ch.id].questions.length : 0; });
+    chs.forEach(function (ch) { sn += chapterCount(ch.id); });
     html += '<optgroup label="' + subj.name + '">';
     html += '<option value="subj:' + sk + '">' + subj.name + '（整科 ' + sn + ' 题）</option>';
-    subj.chapters.forEach(function (ch) {
-      var n = QUESTION_BANK[ch.id] ? QUESTION_BANK[ch.id].questions.length : 0;
-      html += '<option value="ch:' + ch.id + '">' + ch.name + '（' + n + ' 题）</option>';
+    chs.forEach(function (ch) {
+      html += '<option value="ch:' + ch.id + '">' + ch.name + '（' + chapterCount(ch.id) + ' 题）</option>';
     });
     html += '</optgroup>';
   });
+  var keep = QUIZ_STATE.scope;
   sel.innerHTML = html;
-  sel.value = 'all';
+  if (keep === 'custom' || keep.indexOf('chs:') === 0) {
+    sel.value = 'custom';
+    QUIZ_STATE.scope = 'chs:' + QUIZ_STATE.customChs.join('|');
+    var row = document.getElementById('quizChaptersRow');
+    if (row) row.style.display = '';
+    renderChapterPicker();
+  } else if (keep !== 'all' && !isScopeAvailable(keep)) {
+    sel.value = 'all';
+    QUIZ_STATE.scope = 'all';
+    var row2 = document.getElementById('quizChaptersRow');
+    if (row2) row2.style.display = 'none';
+  } else {
+    sel.value = keep;
+  }
+}
+
+function isScopeAvailable(scope) {
+  if (scope.indexOf('ch:') === 0) return chapterCount(scope.slice(3)) > 0;
+  if (scope.indexOf('subj:') === 0) {
+    var subj = QUESTION_BANK.subjects[scope.slice(5)];
+    if (!subj) return false;
+    return subj.chapters.some(function (ch) { return paperOk(ch.papers) && chapterCount(ch.id) > 0; });
+  }
+  return true;
+}
+
+function renderChapterPicker() {
+  var box = document.getElementById('quizChapters');
+  if (!box) return;
+  var html = '';
+  html += '<div class="ch-actions"><button class="btn-ghost" onclick="pickAllChapters()">全选' +
+    (PAPER_NAME[QUIZ_STATE.paper] || '') + '</button>' +
+    '<button class="btn-ghost" onclick="clearChapters()">清空</button></div>';
+  Object.keys(QUESTION_BANK.subjects).forEach(function (sk) {
+    var subj = QUESTION_BANK.subjects[sk];
+    var chs = subj.chapters.filter(function (ch) { return paperOk(ch.papers); });
+    if (!chs.length) return;
+    html += '<div class="ch-group"><div class="ch-group-title">' + subj.name + '</div>';
+    chs.forEach(function (ch) {
+      var n = chapterCount(ch.id);
+      var on = QUIZ_STATE.customChs.indexOf(ch.id) >= 0 ? ' on' : '';
+      html += '<div class="ch-item' + on + (n ? '' : ' off') + '" onclick="toggleChapter(\'' + ch.id + '\')">' +
+        ch.name + '<span class="ch-n">' + n + '</span></div>';
+    });
+    html += '</div>';
+  });
+  box.innerHTML = html;
+}
+
+function toggleChapter(chId) {
+  var i = QUIZ_STATE.customChs.indexOf(chId);
+  if (i >= 0) QUIZ_STATE.customChs.splice(i, 1);
+  else QUIZ_STATE.customChs.push(chId);
+  QUIZ_STATE.scope = 'chs:' + QUIZ_STATE.customChs.join('|');
+  renderChapterPicker();
+  updateQuizPoolInfo();
+}
+
+function pickAllChapters() {
+  QUIZ_STATE.customChs = [];
+  Object.keys(QUESTION_BANK.subjects).forEach(function (sk) {
+    QUESTION_BANK.subjects[sk].chapters.forEach(function (ch) {
+      if (paperOk(ch.papers) && chapterCount(ch.id) > 0) QUIZ_STATE.customChs.push(ch.id);
+    });
+  });
+  QUIZ_STATE.scope = 'chs:' + QUIZ_STATE.customChs.join('|');
+  renderChapterPicker();
+  updateQuizPoolInfo();
+}
+
+function clearChapters() {
+  QUIZ_STATE.customChs = [];
+  QUIZ_STATE.scope = 'chs:';
+  renderChapterPicker();
+  updateQuizPoolInfo();
+}
+
+function setQuizPaper(p, el) {
+  QUIZ_STATE.paper = p;
+  document.querySelectorAll('#quizPaperGroup .chip').forEach(function (c) { c.classList.remove('active'); });
+  if (el) el.classList.add('active');
+  QUIZ_STATE.customChs = QUIZ_STATE.customChs.filter(function (cid) {
+    return chapterCount(cid) > 0;
+  });
+  buildQuizScope();
+  updateQuizPoolInfo();
+}
+
+function onScopeChange() {
+  var sel = document.getElementById('quizScope');
+  if (!sel) return;
+  var row = document.getElementById('quizChaptersRow');
+  if (sel.value === 'custom') {
+    QUIZ_STATE.scope = 'chs:' + QUIZ_STATE.customChs.join('|');
+    if (row) row.style.display = '';
+    renderChapterPicker();
+  } else {
+    QUIZ_STATE.scope = sel.value;
+    if (row) row.style.display = 'none';
+  }
+  updateQuizPoolInfo();
 }
 
 function getPoolByScope(scope) {
@@ -768,19 +1008,14 @@ function getPoolByScope(scope) {
   } else if (scope.indexOf('ch:') === 0) {
     var node2 = QUESTION_BANK[scope.slice(3)];
     if (node2 && node2.questions) out = node2.questions.slice();
+  } else if (scope.indexOf('chs:') === 0) {
+    var ids = scope.slice(4).split('|').filter(function (x) { return x; });
+    ids.forEach(function (cid) {
+      var node3 = QUESTION_BANK[cid];
+      if (node3 && node3.questions) node3.questions.forEach(function (q) { out.push(q); });
+    });
   }
-  return out.filter(function (q) {
-    if (q.type === 'choice') {
-      return typeof q.answer === 'number' && q.options && q.answer >= 0 && q.answer < q.options.length;
-    }
-    if (q.type === 'fill') {
-      return q.answer !== undefined && q.answer !== null && String(q.answer).length > 0;
-    }
-    if (q.type === 'proof') {
-      return !!(q.solution && String(q.solution).length > 0);
-    }
-    return false;
-  });
+  return out.filter(function (q) { return paperOk(q.papers) && canJudge(q); });
 }
 
 function currentPool() {
@@ -790,7 +1025,11 @@ function currentPool() {
 }
 
 function scopeName(scope) {
-  if (scope === 'all') return '全科综合';
+  if (scope === 'all') return (PAPER_NAME[QUIZ_STATE.paper] || '') + '全科综合';
+  if (scope.indexOf('chs:') === 0) {
+    var n = scope.slice(4).split('|').filter(function (x) { return x; }).length;
+    return '自选章节 ' + n + ' 个';
+  }
   if (scope.indexOf('subj:') === 0) {
     var s = QUESTION_BANK.subjects[scope.slice(5)];
     return s ? s.name : '自测';
@@ -809,14 +1048,14 @@ function fmtTime(s) {
 }
 
 function updateQuizPoolInfo() {
-  var sel = document.getElementById('quizScope');
-  if (sel) QUIZ_STATE.scope = sel.value;
   var n = currentPool().length;
   var info = document.getElementById('quizPoolInfo');
   var btn = document.getElementById('quizStartBtn');
   if (n === 0) {
-    info.textContent = '这个范围没有可选题目，换个范围或难度';
-    btn.disabled = true;
+    if (info) info.textContent = QUIZ_STATE.scope.indexOf('chs:') === 0
+      ? '还没选章节，点上面「自选章节」勾选；或换回其他范围'
+      : '这个范围没有可选题目，换个范围或难度';
+    if (btn) btn.disabled = true;
   } else {
     info.textContent = '当前范围可选 ' + n + ' 题，随机抽取';
     btn.disabled = false;
