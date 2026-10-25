@@ -140,6 +140,13 @@
   .quiz-start:disabled { background: #9ca3af; cursor: not-allowed; }
   .quiz-pool-info { font-size: 12px; color: var(--text-muted); }
   .quiz-tip { font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-top: 10px; }
+  .weak-box { margin-top: 10px; }
+  .weak-box .weak-title { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
+  .weak-item { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 5px 10px; margin: 0 6px 6px 0; border: 1px solid var(--border, #e3e5e8); border-radius: 14px; cursor: pointer; background: var(--bg-sub, #fafbfc); }
+  .weak-item:hover { border-color: var(--primary, #2b5cd9); }
+  .weak-item b { font-weight: 500; }
+  .weak-rate { color: #c0392b; }
+  .due-btn { background: #fff5f3; border-color: #e06c5a; color: #c0392b; }
 
   .quiz-actions { display: flex; gap: 10px; align-items: center; margin: 20px 0 8px; flex-wrap: wrap; }
   .btn-ghost { padding: 10px 18px; border: 1.5px solid var(--border); background: transparent; color: var(--text); border-radius: 8px; font-size: 13px; cursor: pointer; font-family: inherit; }
@@ -272,6 +279,15 @@ window.MathJax = {
               <button class="quiz-start" id="quizStartBtn" onclick="startQuiz()">开始自测</button>
               <span class="quiz-pool-info" id="quizPoolInfo"></span>
             </div>
+            <div class="quiz-row">
+              <span class="quiz-label">智能</span>
+              <label style="font-size:13px;display:flex;align-items:center;gap:6px;cursor:pointer">
+                <input type="checkbox" id="autoDiffChk" onchange="toggleAutoDiff(this.checked)">
+                自动难度（按近期正确率挑难度档）
+              </label>
+              <span class="quiz-pool-info" id="autoDiffHint"></span>
+            </div>
+            <div class="weak-box" id="weakBox"></div>
             <div class="quiz-tip">随机抽题，答完交卷后统一批改。做错的题会自动进「错题本」，可随时回来重做。</div>
           </div>
           <div id="quizHistory"></div>
@@ -285,7 +301,7 @@ window.MathJax = {
   </div>
 </div>
 
-<script src="questions-bundle-v2.js?v=20261025b"></script>
+<script src="questions-bundle-v2.js?v=20261025d"></script>
 <script>
 // prettyMath: MathJax 接管后直接返回原文，由 MathJax 渲染
 function prettyMath(text) {
@@ -509,10 +525,190 @@ function normalizeAnswer(user, expected) {
 }
 
 /* ================= 随机自测 ================= */
-var QUIZ_STATE = { active: false, questions: [], answers: {}, selfMark: {}, submitted: false, scope: 'all', count: 10, diff: 'all', startAt: 0 };
+var QUIZ_STATE = { active: false, questions: [], answers: {}, selfMark: {}, submitted: false, scope: 'all', count: 10, diff: 'all', startAt: 0, mode: 'quiz' };
 var LS_WRONG = 'jm_wrong_bank_v1';
 var LS_HIST = 'jm_quiz_history_v1';
+var LS_UID = 'jm_uid_v1';
 var Q_INDEX = null;
+
+function jmUid() {
+  try {
+    var u = localStorage.getItem(LS_UID);
+    if (!u) {
+      u = 'u' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
+      localStorage.setItem(LS_UID, u);
+    }
+    return u;
+  } catch (e) { return ''; }
+}
+
+function reportAttempt(items, mode) {
+  try {
+    var uid = jmUid();
+    if (!uid || !items || !items.length) return;
+    var payload = JSON.stringify({ uid: uid, mode: String(mode || 'quiz').slice(0, 24), items: items });
+    if (typeof navigator.sendBeacon === 'function') {
+      navigator.sendBeacon('/api/report', new Blob([payload], { type: 'application/json' }));
+    } else {
+      var x = new XMLHttpRequest();
+      x.open('POST', '/api/report', true);
+      x.setRequestHeader('Content-Type', 'application/json');
+      x.send(payload);
+    }
+  } catch (e) { }
+}
+
+/* ================= 读者侧智能（本地留存） ================= */
+var LS_LOG = 'jm_item_log_v1';
+var LS_SRS = 'jm_srs_v1';
+var LS_AUTO = 'jm_auto_diff_v1';
+var SRS_DAYS = [1, 2, 4, 7, 15, 30];
+
+function loadJSON(k, def) {
+  try { var v = JSON.parse(localStorage.getItem(k)); return (v === null || v === undefined) ? def : v; }
+  catch (e) { return def; }
+}
+function saveJSON(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { } }
+
+function logAttempts(qs, oks) {
+  var log = loadJSON(LS_LOG, []);
+  var srs = loadJSON(LS_SRS, {});
+  var now = Date.now();
+  qs.forEach(function (q, i) {
+    var ok = !!oks[i];
+    log.push({ id: q.id, ok: ok ? 1 : 0, t: now, topic: q.topic || '', cat: q.cat || '', d: q.difficulty || '' });
+    var rec = srs[q.id] || { stage: 0 };
+    rec.stage = ok ? Math.min((rec.stage || 0) + 1, SRS_DAYS.length - 1) : 0;
+    rec.next = now + SRS_DAYS[rec.stage] * 86400000;
+    rec.t = now;
+    srs[q.id] = rec;
+  });
+  if (log.length > 600) log = log.slice(log.length - 600);
+  saveJSON(LS_LOG, log);
+  saveJSON(LS_SRS, srs);
+}
+
+function weakness(topN) {
+  var log = loadJSON(LS_LOG, []);
+  var m = {};
+  log.forEach(function (r) {
+    var k = r.topic || r.cat || '';
+    if (!k) return;
+    m[k] = m[k] || { n: 0, w: 0 };
+    m[k].n++;
+    if (!r.ok) m[k].w++;
+  });
+  var arr = Object.keys(m).map(function (k) {
+    return { topic: k, n: m[k].n, w: m[k].w, rate: m[k].w / m[k].n };
+  }).filter(function (r) { return r.n >= 2 && r.w > 0; });
+  arr.sort(function (a, b) { return (b.w - a.w) || (b.rate - a.rate); });
+  return arr.slice(0, topN || 5);
+}
+
+function dueWrongIds() {
+  var srs = loadJSON(LS_SRS, {});
+  var w = loadWrong();
+  var now = Date.now();
+  return Object.keys(w).filter(function (id) {
+    var r = srs[id];
+    return !r || !r.next || r.next <= now;
+  });
+}
+
+function autoDiffSuggest() {
+  var log = loadJSON(LS_LOG, []).slice(-20);
+  if (log.length < 5) return 'medium';
+  var ok = 0;
+  log.forEach(function (r) { if (r.ok) ok++; });
+  var r = ok / log.length;
+  var expert = log.filter(function (x) { return x.d === 'expert'; });
+  if (expert.length >= 5) {
+    var eok = expert.filter(function (x) { return x.ok; }).length;
+    if (eok / expert.length >= 0.7) return 'expert';
+  }
+  if (r >= 0.85) return 'hard';
+  if (r >= 0.6) return 'medium';
+  return 'basic';
+}
+
+function toggleAutoDiff(on) {
+  saveJSON(LS_AUTO, !!on);
+  renderAutoHint();
+}
+
+function renderAutoHint() {
+  var on = loadJSON(LS_AUTO, false);
+  var chk = document.getElementById('autoDiffChk');
+  if (chk) chk.checked = !!on;
+  var hint = document.getElementById('autoDiffHint');
+  if (hint) hint.textContent = on ? ('已按你的水平选「' + (DIFF_MAP_FULL[autoDiffSuggest()] || autoDiffSuggest()) + '」') : '';
+}
+
+function markDiffChip(d) {
+  var g = document.getElementById('quizDiffGroup');
+  if (!g) return;
+  var map = { all: 0, basic: 1, medium: 2, hard: 3, expert: 4 };
+  Array.prototype.forEach.call(g.children, function (c) { c.classList.remove('active'); });
+  var i = map[d];
+  if (i !== undefined && g.children[i]) g.children[i].classList.add('active');
+}
+
+function renderWeakBox() {
+  var box = document.getElementById('weakBox');
+  if (!box) return;
+  var w = weakness(5);
+  var html = '';
+  if (!w.length) {
+    html += '<div class="weak-title">我的薄弱考点：同一考点做满 2 次后才会分析，先去做几套</div>';
+  } else {
+    html += '<div class="weak-title">我的薄弱考点（错得多排前面，点一下就针对它出一套）</div>';
+    w.forEach(function (r) {
+      var arg = JSON.stringify(r.topic).replace(/"/g, '&quot;');
+      html += '<span class="weak-item" onclick="quizFromWeak(' + arg + ')"><b>' + esc(r.topic) + '</b>'
+        + '<span class="weak-rate">错 ' + r.w + '/' + r.n + '</span></span>';
+    });
+  }
+  var due = dueWrongIds().length;
+  if (due > 0) {
+    html += '<div style="margin-top:2px"><button class="chip due-btn" onclick="quizFromDue()">到期待重练 ' + due + ' 题</button></div>';
+  }
+  box.innerHTML = html;
+}
+
+function goQuizTab() {
+  var tabs = document.querySelectorAll('#tabBar .tab');
+  tabs.forEach(function (t) { t.classList.remove('active'); });
+  if (tabs[1]) tabs[1].classList.add('active');
+  currentTab = 'quiz';
+  document.getElementById('quizPanel').style.display = 'none';
+}
+
+function quizFromWeak(topic) {
+  buildQIndex();
+  var list = [];
+  Object.keys(Q_INDEX).forEach(function (id) {
+    var e = Q_INDEX[id];
+    if (!e || !e.q) return;
+    var q = e.q;
+    if ((q.topic === topic || q.cat === topic) && (q.type === 'choice' || q.type === 'fill')) list.push(q);
+  });
+  if (!list.length) { alert('这个考点暂时没有可自动判分的题，换个考点试试'); return; }
+  goQuizTab();
+  startQuiz(shuffle(list).slice(0, QUIZ_STATE.count));
+}
+
+function quizFromDue() {
+  var ids = dueWrongIds();
+  buildQIndex();
+  var list = [];
+  ids.forEach(function (id) {
+    var e = Q_INDEX[id];
+    if (e && (e.q.type === 'choice' || e.q.type === 'fill')) list.push(e.q);
+  });
+  if (!list.length) { alert('当前没有到期待重练的错题'); return; }
+  goQuizTab();
+  startQuiz(shuffle(list).slice(0, QUIZ_STATE.count));
+}
 
 function esc(s) {
   return String(s === null || s === undefined ? '' : s)
@@ -657,11 +853,17 @@ function showQuizSetup() {
   document.getElementById('quizActions').innerHTML = '';
   document.getElementById('quizPanel').style.display = '';
   updateQuizPoolInfo();
+  renderAutoHint();
+  renderWeakBox();
   document.getElementById('questionsArea').innerHTML =
     '<div class="empty-state"><div class="icon">🎯</div><h3>选好范围，开始自测</h3><p>系统随机抽题，答完交卷后统一批改</p></div>';
 }
 
 function startQuiz(list) {
+  if (!list && loadJSON(LS_AUTO, false)) {
+    QUIZ_STATE.diff = autoDiffSuggest();
+    markDiffChip(QUIZ_STATE.diff);
+  }
   var pool = list || shuffle(currentPool()).slice(0, QUIZ_STATE.count);
   if (!pool.length) return;
   QUIZ_STATE.questions = pool;
@@ -669,6 +871,7 @@ function startQuiz(list) {
   QUIZ_STATE.selfMark = {};
   QUIZ_STATE.submitted = false;
   QUIZ_STATE.active = true;
+  QUIZ_STATE.mode = list ? 'wrong' : 'quiz';
   QUIZ_STATE.startAt = Date.now();
   document.getElementById('quizPanel').style.display = 'none';
   document.getElementById('quizResult').innerHTML = '';
@@ -800,6 +1003,21 @@ function submitQuiz() {
   });
   QUIZ_STATE.submitted = true;
   var seconds = Math.round((Date.now() - QUIZ_STATE.startAt) / 1000);
+  try {
+    var _oks = qs.map(function (q, idx) { return judgeOne(q, QUIZ_STATE.answers[idx], idx) ? 1 : 0; });
+    var _items = qs.map(function (q, idx) {
+      return {
+        id: q.id,
+        ok: _oks[idx],
+        diff: q.difficulty || '',
+        cat: q.cat || '',
+        topic: q.topic || '',
+        sec: seconds
+      };
+    });
+    reportAttempt(_items, QUIZ_STATE.mode);
+    logAttempts(qs, _oks);
+  } catch (e) { }
   var pct = qs.length ? Math.round(right / qs.length * 100) : 0;
 
   var html = '<div class="quiz-result-card">';
@@ -929,8 +1147,12 @@ function renderErrorBook() {
   var html = '<div class="quiz-result-card" style="text-align:left">';
   html += '<div style="font-size:15px;font-weight:600;margin-bottom:4px">错题本 · ' + items.length + ' 题</div>';
   html += '<div class="quiz-meta">按最近做错时间排序，错一次记一次</div>';
-  html += '<div class="quiz-actions"><button class="quiz-start" onclick="quizFromWrong()">用错题出一套</button>';
-  html += '<button class="btn-ghost" onclick="clearWrong()">清空错题本</button></div></div>';
+  html += '<div class="quiz-actions">';
+  html += '<button class="quiz-start" onclick="quizFromWrong()">用错题出一套</button>';
+  var _due = dueWrongIds().length;
+  if (_due > 0) html += '<button class="quiz-start due-btn" onclick="quizFromDue()">只重练到期 ' + _due + ' 题</button>';
+  html += '<button class="btn-ghost" onclick="clearWrong()">清空错题本</button></div>';
+  html += '<div class="quiz-meta" style="margin-top:6px">间隔重练：答错回到第 1 天，答对后依次 2、4、7、15、30 天再来</div></div>';
   items.forEach(function (it, i) {
     html += '<div class="wrong-entry">错 ' + it.meta.n + ' 次 · ' + esc(it.subject) + ' · ' + esc(it.chapter) + '</div>';
     html += renderQuestion(it.q, i + 1);

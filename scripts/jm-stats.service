@@ -1,0 +1,15 @@
+[Unit]
+Description=Jingwei math quiz stats API
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/jmstats
+Environment=JM_STATS_TOKEN=jw2026stats
+Environment=JM_STATS_PORT=8787
+ExecStart=/usr/bin/python3 /opt/jmstats/server.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

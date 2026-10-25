@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>答题数据统计 · 经纬考研数学（内部）</title>
+<style>
+  body { margin:0; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background:#f5f6f8; color:#222; font-size:14px; }
+  .wrap { max-width:1080px; margin:0 auto; padding:24px 18px 60px; }
+  h1 { font-size:20px; margin:0 0 4px; font-weight:500; }
+  .sub { color:#888; font-size:13px; margin-bottom:20px; }
+  .card { background:#fff; border:1px solid #e6e8eb; border-radius:10px; padding:16px 18px; margin-bottom:16px; }
+  .card h2 { font-size:15px; margin:0 0 12px; font-weight:500; }
+  .kpis { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:16px; }
+  .kpi { flex:1; min-width:140px; background:#fff; border:1px solid #e6e8eb; border-radius:10px; padding:14px 16px; }
+  .kpi .v { font-size:24px; font-weight:500; line-height:1.2; }
+  .kpi .l { color:#888; font-size:12px; margin-top:4px; }
+  .gate { text-align:center; padding:60px 20px; }
+  .gate input { padding:8px 12px; border:1px solid #d0d3d8; border-radius:6px; font-size:14px; width:220px; }
+  button { padding:7px 14px; border:1px solid #d0d3d8; background:#fff; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.primary { background:#2b5cd9; border-color:#2b5cd9; color:#fff; }
+  button:hover { opacity:.9; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { padding:7px 8px; border-bottom:1px solid #eef0f2; text-align:left; vertical-align:top; }
+  th { color:#666; font-weight:500; background:#fafbfc; }
+  .bar { height:8px; background:#eef0f2; border-radius:4px; overflow:hidden; min-width:60px; }
+  .bar > i { display:block; height:100%; background:#e06c5a; }
+  .qid { font-family:ui-monospace, Consolas, monospace; font-size:12px; color:#555; }
+  .stem { color:#333; font-size:12px; line-height:1.7; max-height:70px; overflow:auto; }
+  .stem code { background:#f4f5f7; padding:0 3px; border-radius:3px; font-family:ui-monospace, Consolas, monospace; }
+  .tag { display:inline-block; font-size:11px; color:#666; background:#f0f2f5; border-radius:4px; padding:1px 6px; margin-right:4px; }
+  .tools { display:flex; gap:8px; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
+  .hint { color:#999; font-size:12px; }
+  .err { color:#c0392b; }
+  .trend td.d { white-space:nowrap; color:#666; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>答题数据统计</h1>
+  <div class="sub">经纬考研数学 · 出题人内部看板。数据来自读者交卷时的匿名上报，不含任何个人信息。</div>
+
+  <div class="card gate" id="gate">
+    <div>请输入统计口令</div>
+    <div style="margin-top:12px">
+      <input type="password" id="tokenInput" placeholder="口令">
+      <button class="primary" onclick="submitToken()">进入</button>
+    </div>
+    <div class="hint" style="margin-top:10px" id="gateHint"></div>
+  </div>
+
+  <div id="panel" style="display:none">
+    <div class="kpis" id="kpis"></div>
+
+    <div class="card">
+      <div class="tools">
+        <span>时间范围：</span>
+        <button onclick="load(0)" id="rng0">全部</button>
+        <button onclick="load(7)" id="rng7">近 7 天</button>
+        <button onclick="load(30)" id="rng30">近 30 天</button>
+        <span style="flex:1"></span>
+        <button onclick="load(currentRange)">刷新</button>
+        <button onclick="exportCsv()">导出错题榜 CSV</button>
+        <span class="hint" id="updated"></span>
+      </div>
+      <div class="hint">错误率 = 答错次数 ÷ 总作答次数。<span class="qid">odds</span> 列越低说明越该重点讲。</div>
+    </div>
+
+    <div class="card">
+      <h2>错题榜（答错次数最多）</h2>
+      <table id="tblWrong"></table>
+      <div class="hint" style="margin-top:8px">点题号可展开/收起题面。最多显示 40 条。</div>
+    </div>
+
+    <div class="card">
+      <h2>考点错误率（二级知识点）</h2>
+      <table id="tblTopic"></table>
+    </div>
+
+    <div class="card">
+      <h2>章节��块正确率</h2>
+      <table id="tblCat"></table>
+    </div>
+
+    <div class="card">
+      <h2>难度档正确率</h2>
+      <table id="tblDiff"></table>
+    </div>
+
+    <div class="card">
+      <h2>每日答题量</h2>
+      <table class="trend" id="tblDaily"></table>
+    </div>
+  </div>
+</div>
+
+<script src="/questions-bundle-v2.js"></script>
+<script>
+var TOKEN = localStorage.getItem('jm_stats_token_v1') || '';
+var currentRange = 0;
+var LAST = null;
+var QMAP = {};
+
+function buildMap() {
+  if (QMAP.built || typeof QUESTION_BANK === 'undefined') return;
+  var subs = QUESTION_BANK.subjects || {};
+  Object.keys(subs).forEach(function (sk) {
+    var sub = subs[sk] || {};
+    (sub.chapters || []).forEach(function (ch) {
+      (ch.questions || []).forEach(function (q) {
+        if (!q || !q.id) return;
+        q._sub = sub.name || sk;
+        q._ch = ch.name || '';
+        QMAP[q.id] = q;
+      });
+    });
+  });
+  QMAP.built = true;
+}
+buildMap();
+
+function submitToken() {
+  var v = document.getElementById('tokenInput').value.trim();
+  if (!v) return;
+  TOKEN = v;
+  localStorage.setItem('jm_stats_token_v1', v);
+  load(0);
+}
+
+function fmtTs(ts) {
+  if (!ts) return '—';
+  var d = new Date(ts * 1000);
+  var p = function (n) { return n < 10 ? '0' + n : '' + n; };
+  return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + ' ' + p(d.getHours()) + ':' + p(d.getMinutes());
+}
+
+function rate(w, n) { return n ? (w / n * 100) : 0; }
+
+function load(days) {
+  currentRange = days;
+  var since = days ? Math.floor(Date.now() / 1000) - days * 86400 : 0;
+  var url = '/api/stats?token=' + encodeURIComponent(TOKEN) + (since ? '&since=' + since : '');
+  fetch(url).then(function (r) {
+    if (r.status === 403) { showGate('口令不对，请重试'); return null; }
+    return r.json();
+  }).then(function (d) {
+    if (!d) return;
+    document.getElementById('gate').style.display = 'none';
+    document.getElementById('panel').style.display = 'block';
+    LAST = d;
+    render(d);
+    document.getElementById('updated').textContent = '更新于 ' + new Date().toLocaleTimeString('zh-CN');
+    [0, 7, 30].forEach(function (k) {
+      var b = document.getElementById('rng' + k);
+      if (b) b.className = (k === days) ? 'primary' : '';
+    });
+  }).catch(function (e) {
+    showGate('读取失败：' + e.message);
+  });
+}
+
+function showGate(msg) {
+  document.getElementById('gate').style.display = 'block';
+  document.getElementById('panel').style.display = 'none';
+  document.getElementById('gateHint').innerHTML = '<span class="err">' + msg + '</span>';
+}
+
+function render(d) {
+  var kp = [
+    ['总答题量', d.total || 0, '次作答记录'],
+    ['独立用户', d.users || 0, '个匿名 ID'],
+    ['被做过的题', d.covered || 0, '道（题库共 ' + Object.keys(QMAP).length + ' 道左右）'],
+    ['最近一次', fmtTs(d.last_ts), '首次 ' + fmtTs(d.first_ts)]
+  ];
+  document.getElementById('kpis').innerHTML = kp.map(function (a) {
+    return '<div class="kpi"><div class="v">' + a[1] + '</div><div class="l">' + a[0] + ' · ' + a[2] + '</div></div>';
+  }).join('');
+
+  renderWrong(d.top_wrong || []);
+  renderGroup('tblTopic', (d.by_topic || []).slice(0, 25), '知识点');
+  renderGroup('tblCat', (d.by_cat || []).slice(0, 20), '板块');
+  renderGroup('tblDiff', (d.by_diff || []).slice(0, 8), '难度');
+  renderDaily(d.daily || []);
+}
+
+function renderWrong(rows) {
+  var el = document.getElementById('tblWrong');
+  var list = rows.filter(function (r) { return r.w > 0; }).slice(0, 40);
+  if (!list.length) { el.innerHTML = '<tr><td class="hint">暂无错题数据。等读者做完几套题就有了。</td></tr>'; return; }
+  var html = '<tr><th style="width:120px">题号</th><th style="width:150px">错误率</th><th>题面 / 考点</th><th style="width:80px">答错</th><th style="width:80px">总次数</th></tr>';
+  list.forEach(function (r) {
+    var q = QMAP[r.k] || {};
+    var pct = rate(r.w, r.n);
+    html += '<tr>';
+    html += '<td class="qid"><a href="javascript:void(0)" onclick="toggleStem(\'' + r.k + '\')">' + esc(r.k) + '</a></td>';
+    html += '<td><div class="bar"><i style="width:' + Math.round(pct) + '%"></i></div><div class="hint">' + pct.toFixed(0) + '%</div></td>';
+    html += '<td><div id="stem-' + r.k + '" class="stem">' + stem(q) + '</div>'
+      + '<div style="margin-top:4px">' + tag(q.difficulty) + tag(q.cat) + tag(q.topic) + tag(q._ch) + '</div></td>';
+    html += '<td>' + r.w + '</td><td>' + r.n + '</td>';
+    html += '</tr>';
+  });
+  el.innerHTML = html;
+}
+
+function toggleStem(id) {
+  var el = document.getElementById('stem-' + id);
+  if (!el) return;
+  el.style.maxHeight = (el.style.maxHeight === 'none') ? '70px' : 'none';
+  el.style.overflow = (el.style.maxHeight === 'none') ? 'visible' : 'auto';
+}
+
+function stem(q) {
+  var s = q.question || '（题库中未找到该题）';
+  s = String(s).replace(/</g, '&lt;').replace(/\n/g, ' ');
+  s = s.replace(/\$([^$]+)\$/g, '<code>$1</code>');
+  return s.length > 400 ? s.slice(0, 400) + '…' : s;
+}
+
+function tag(t) { return t ? '<span class="tag">' + esc(t) + '</span>' : ''; }
+
+function renderGroup(id, rows, label) {
+  var el = document.getElementById(id);
+  if (!rows.length) { el.innerHTML = '<tr><td class="hint">暂无数据</td></tr>'; return; }
+  var html = '<tr><th style="width:260px">' + label + '</th><th style="width:180px">错误率</th><th style="width:80px">答错</th><th style="width:80px">总次数</th></tr>';
+  rows.forEach(function (r) {
+    var pct = rate(r.w, r.n);
+    html += '<tr><td>' + esc(r.k) + '</td>'
+      + '<td><div class="bar"><i style="width:' + Math.round(pct) + '%"></i></div><div class="hint">' + pct.toFixed(0) + '%</div></td>'
+      + '<td>' + r.w + '</td><td>' + r.n + '</td></tr>';
+  });
+  el.innerHTML = html;
+}
+
+function renderDaily(rows) {
+  var el = document.getElementById('tblDaily');
+  if (!rows.length) { el.innerHTML = '<tr><td class="hint">暂无数据</td></tr>'; return; }
+  var max = Math.max.apply(null, rows.map(function (r) { return r.n; })) || 1;
+  var html = '<tr><th style="width:110px">日期</th><th style="width:200px">答题量</th><th>答错</th></tr>';
+  rows.forEach(function (r) {
+    html += '<tr><td class="d">' + r.d + '</td>'
+      + '<td><div class="bar"><i style="width:' + Math.round(r.n / max * 100) + '%"></i></div><div class="hint">' + r.n + ' 次</div></td>'
+      + '<td>' + r.w + '（' + rate(r.w, r.n).toFixed(0) + '%）</td></tr>';
+  });
+  el.innerHTML = html;
+}
+
+function esc(s) {
+  return String(s === null || s === undefined ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function exportCsv() {
+  if (!LAST) return;
+  var rows = [['题号', '板块', '知识点', '难度', '答错次数', '总次数', '错误率']];
+  (LAST.top_wrong || []).forEach(function (r) {
+    var q = QMAP[r.k] || {};
+    rows.push([r.k, q.cat || '', q.topic || '', q.difficulty || '', r.w, r.n, rate(r.w, r.n).toFixed(1) + '%']);
+  });
+  var csv = rows.map(function (a) {
+    return a.map(function (v) { return '"' + String(v).replace(/"/g, '""') + '"'; }).join(',');
+  }).join('\r\n');
+  var blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = '错题统计-' + new Date().toISOString().slice(0, 10) + '.csv';
+  a.click();
+}
+
+if (TOKEN) load(0);
+</script>
+</body>
+</html>
