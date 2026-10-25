@@ -14,9 +14,22 @@
     --border: #e5e7eb; --bg: #f8f9fc; --white: #ffffff; --radius: 12px;
     --success: #16a34a; --warning: #f59e0b;
   }
-  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--bg); }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: var(--text); background: var(--bg); padding-top: 34px; }
+
+  /* MARQUEE BAR */
+  .marquee-bar {
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 10000;
+    background: linear-gradient(90deg, #1a56db, #3b82f6, #6366f1, #3b82f6, #1a56db);
+    color: white; height: 34px; line-height: 34px;
+    overflow: hidden; white-space: nowrap;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+  }
+  .marquee-track { display: inline-block; animation: marquee-scroll 32s linear infinite; white-space: nowrap; }
+  .marquee-track span { display: inline-block; padding: 0 60px; font-size: 14px; font-weight: 500; letter-spacing: 1px; }
+  @keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
   nav {
-    position: sticky; top: 0; z-index: 100;
+    position: sticky; top: 34px; z-index: 100;
     background: rgba(255,255,255,0.95); backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border);
     padding: 0 2.5%;
@@ -207,6 +220,18 @@ window.MathJax = {
 <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
+<!-- MARQUEE BAR -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span><span style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:12px;border-radius:10px;padding:1px 9px;margin-right:8px;letter-spacing:0">NEW</span>🎉 <b style="color:#fde047">智能题库已上线</b>：1055 道题目 · 数一/二/三任选 · 单章或自选章节随机抽题 · 错题本自动归纳薄弱点（部分题目由 AI 解答，欢迎参考指正）</span>
+    <span>📢 现有部分线上一对一辅导名额，请联系微信号：andrewlaoyu 或者邮箱 jingweimath@outlook.com</span>
+    <span>📢 请随时关注，考研数学团队将持续更新内容</span>
+    <span><span style="display:inline-block;background:#f59e0b;color:#fff;font-weight:700;font-size:12px;border-radius:10px;padding:1px 9px;margin-right:8px;letter-spacing:0">NEW</span>🎉 <b style="color:#fde047">智能题库已上线</b>：1055 道题目 · 数一/二/三任选 · 单章或自选章节随机抽题 · 错题本自动归纳薄弱点（部分题目由 AI 解答，欢迎参考指正）</span>
+    <span>📢 现有部分线上一对一辅导名额，请联系微信号：andrewlaoyu 或者邮箱 jingweimath@outlook.com</span>
+    <span>📢 请随时关注，考研数学团队将持续更新内容</span>
+  </div>
+</div>
+
 <nav>
   <a class="logo" href="index.html"><img src="logo-192.png" alt="经纬考研数学" height="46"></a>
   <ul class="nav-links">
