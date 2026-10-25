@@ -127,7 +127,7 @@
       "id": "comp-010",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$设曲线 y = x·e^x 在点 (0,0) 处的切线方程为 y = ( )_}__}$",
+      "question": "$设曲线 y = x·e^x 在点 (0,0) 处的切线方程为 y = （　）$",
       "answer": "x",
       "solution": "$y' = x·e^x + e^x = e^x(x+1)，y'(0) = 1·1 = 1。切线方程为 y - 0 = 1·(x - 0)，即 y = x。考查导数几何意义——切线斜率。综合乘积求导法则。$"
     },
@@ -135,7 +135,7 @@
       "id": "comp-011",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$若 \\lim_{x \\to 0} [\\ln(1+x) + a \\ln(1-x)] / x^{2} = b（a,b为常数），则 a = ( )_}__}$",
+      "question": "$若 \\lim_{x \\to 0} [\\ln(1+x) + a \\ln(1-x)] / x^{2} = b（a,b为常数），则 a = （　）$",
       "answer": "1",
       "solution": "$泰勒展开：\\ln(1+x)=x-x^{2}/2+o(x^{2})，\\ln(1-x)=-x-x^{2}/2+o(x^{2})。分子 = x-x^{2}/2 + a(-x-x^{2}/2) + o(x^{2}) = (1-a)x - (1+a)x^{2}/2 + o(x^{2})。要使极限存在且有限，分子中 x 的系数必须为零即 1-a=0，解得 a=1。此时分子=-x^{2}+o(x^{2})，极限值为 b=-1。考查参数确定型极限，综合泰勒展开与待定系数法。$"
     },
@@ -241,7 +241,7 @@
       "id": "comp-019",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$由 \\int ₀ˣ f(t) dt = x·\\cos x 确定的 f(x) = ( )_}__}$",
+      "question": "$由 \\int ₀ˣ f(t) dt = x·\\cos x 确定的 f(x) = （　）$",
       "answer": "cos x - x sin x",
       "solution": "求导：f(x) = (x·\\cos x)' = \\cos x - x·\\sin x。考查变上限积分求导与乘积法则。"
     },
@@ -277,7 +277,7 @@
       "id": "comp-022",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$\\int ₀^(\\pi/2) x·\\cos x dx = ( )_}__}$",
+      "question": "$\\int ₀^(\\pi/2) x·\\cos x dx = （　）$",
       "answer": "$\\pi/2 - 1$",
       "solution": "$分部积分：u=x，dv=\\cos x dx。\\int x \\cos x dx = x \\sin x - \\int \\sin x dx = x \\sin x + \\cos x。从 0 到 \\pi/2：(\\pi/2·1+0) - (0+1) = \\pi/2 - 1。考查分部积分+定积分计算。$"
     },
@@ -285,7 +285,7 @@
       "id": "comp-023",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 f(x) = \\int ₀ˣ e^(-t²) dt，则 \\int ₀¹ x·f(x) dx = ( )_}__}$",
+      "question": "$设 f(x) = \\int ₀ˣ e^(-t²) dt，则 \\int ₀¹ x·f(x) dx = （　）$",
       "answer": "$(e^(-1)+1)/4$",
       "solution": "$交换积分次序：\\int ₀¹ x f(x) dx = \\int ₀¹ x·\\int ₀ˣ e^(-t²) dt dx = \\int ₀¹ e^(-t²) \\int ₜ¹ x dx dt = \\int ₀¹ e^(-t²)·(1-t²)/2 dt。令 u=t²，du=2t dt 不直接。改为分部：\\int ₀¹ (1-t²)/2 · e^(-t²) dt。或用 f(x) 的原函数：设 F 为 f 的原函数，分部积分法。答案是 (1+e^(-1))/4。$"
     },
@@ -649,7 +649,7 @@
       "id": "comp-052",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$螺旋线 x=\\cos t, y=\\sin t, z=t (0\\leqt\\leq2\\pi) 的弧长为 ( )_}__}$",
+      "question": "$螺旋线 x=\\cos t, y=\\sin t, z=t (0\\leqt\\leq2\\pi) 的弧长为 （　）$",
       "answer": "$2\\sqrt2 \\pi$",
       "solution": "$ds = \\sqrt[(dx/dt)²+(dy/dt)²+(dz/dt)²] dt = \\sqrt[\\sin²t+\\cos²t+1] dt = \\sqrt2 dt。弧长 = \\int ₀^(2\\pi) \\sqrt2 dt = 2\\sqrt2 \\pi。考查空间曲线弧长——参数方程的三维推广。$"
     },
@@ -757,7 +757,7 @@
       "id": "comp-062",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$Σ(n=1\\rightarrow\\infty) 1/(n·2ⁿ) = ( )_}__}$",
+      "question": "$Σ(n=1\\rightarrow\\infty) 1/(n·2ⁿ) = （　）$",
       "answer": "ln 2",
       "solution": "$令 S(x) = Σ xⁿ/n，S'(x) = Σ x^(n-1) = 1/(1-x)。积分得 S(x) = -\\ln(1-x)。代入 x=1/2：S(1/2) = -\\ln(1/2) = \\ln 2。考查构造幂级数求常数项级数和——先引入 x 变量求和再代入。$"
     },
@@ -849,7 +849,7 @@
       "id": "comp-069",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$\\lim_{n \\to \\infty} (1 + 2/n)^n = ( )_}__}$",
+      "question": "$\\lim_{n \\to \\infty} (1 + 2/n)^n = （　）$",
       "answer": "e²",
       "solution": "$(1+2/n)^n = [(1+2/n)^(n/2)]² \\rightarrow e²。或令 t=2/n\\rightarrow0，(1+t)^(2/t) = [(1+t)^(1/t)]² \\rightarrow e²。考查重要极限的变形——调整系数。$"
     },
@@ -857,7 +857,7 @@
       "id": "comp-070",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$\\lim_{n \\to \\infty} n²·[e - (1+1/n)^n] = ( )_}__}$",
+      "question": "$\\lim_{n \\to \\infty} n²·[e - (1+1/n)^n] = （　）$",
       "answer": "e/2",
       "solution": "$利用展开式：(1+1/n)^n = e^{n \\ln(1+1/n)} = e^{n[1/n-1/(2n²)+1/(3n³)+…]} = e^{1-1/(2n)+1/(3n²)+…} = e·e^{-1/(2n)+1/(3n²)+…} = e·[1-1/(2n)+O(1/n²)]。所以 e-(1+1/n)^n = e/(2n)+O(1/n²)，n²[e-(1+1/n)^n] \\rightarrow e/2。考查数列收敛速率的精确估计。$"
     },
@@ -893,7 +893,7 @@
       "id": "comp-073",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$函数 y = Σ(n=0\\rightarrow\\infty) xⁿ/n! 满足的微分方程是 y' = ( )_}__}$",
+      "question": "$函数 y = Σ(n=0\\rightarrow\\infty) xⁿ/n! 满足的微分方程是 y' = （　）$",
       "answer": "y",
       "solution": "$y = Σ xⁿ/n! = e^x 是满足 y'=y 且 y(0)=1 的唯一解。反过来，知道级数形式可推导其满足的微分方程。这是一个双向联系。$"
     },
@@ -1472,7 +1472,7 @@
       "type": "fill",
       "difficulty": "medium",
       "question": "若 $x=0$ 是 $f(x)=\\dfrac{ax-\\ln(1+x)}{x+b\\sin x}$ 的可去间断点，求 $a,\\ b$。",
-      "answer": "$\\boxed{b\\ne -1,\\ a\\ \\text{任意}（当\\ a=1\\ \\text{时极限}=0；当\\ a\\ne 1\\ \\text{时极限}=\\dfrac",
+      "answer": "b≠-1，a任意",
       "solution": "$x=0$ 是可去间断点 $\\Longleftrightarrow$ $\\lim_{x\\to 0}f(x)$ 存在且有限。\n\n**Taylor 展开：**\n- 分子：$ax-\\ln(1+x)=ax-\\left(x-\\dfrac{x^{2}}{2}+\\dfrac{x^{3}}{3}-\\cdots\\right)=(a-1)x+\\dfrac{x^{2}}{2}-\\dfrac{x^{3}}{3}+O(x^{4}).$\n- 分母：$x+b\\sin x=x+b\\left(x-\\dfrac{x^{3}}{6}+O(x^{5})\\right)=(1+b)x-\\dfrac{b}{6}x^{3}+O(x^{5}).$\n\n**分情形讨论：**\n\n**(1) $b=-1$：** 分母 $=x-\\sin x=\\dfrac{x^{3}}{6}+O(x^{5})$，是 $O(x^{3})$；\n- 若 $a\\ne 1$，分子是 $O(x)$，分母是 $O(x^{3})$，极限 $=\\infty$（无穷间断点）；\n- 若 $a=1$，分子是 $O(x^{2})$，分母是 $O(x^{3})$，极限 $=\\infty$（无穷间断点）。\n\n故 $b=-1$ 时 $x=0$ 是无穷间断点，**排除**。\n\n**(2) $b\\ne -1$：** 分母主项 $(1+b)x$ 是 $O(x)$。\n- 若 $a\\ne 1$，分子分母同为 $O(x)$，\n$$\\lim_{x\\to 0}f(x)=\\frac{a-1}{1+b}.$$\n- 若 $a=1$，分子主项 $\\dfrac{x^{2}}{2}$ 高于分母的 $O(x)$，\n$$\\lim_{x\\to 0}f(x)=0.$$\n\n两者极限都存在且有限，且 $f(0)$ 因分母为 $0$ 而无定义，故 $x=0$ 是**可去间断点**。\n\n**结论：** 可去间断点的条件是 $b\\ne -1$（$a$ 任意）。极限值：\n$$\\lim_{x\\to 0}f(x)=\\begin{cases}0, & a=1,\\\\[2pt]\\dfrac{a-1}{1+b}, & a\\ne 1.\\end{cases}$$\n\n可去间断点 = 极限存在。判别套路：分子分母各自 Taylor 到最低非零阶，看阶数是否同阶或分子阶数更高（否则极限 $\\infty$，不是可去）。本题若题目要求极限为定值（如 $=0$），则 $a=1$；若仅要求可去，则 $b\\ne -1$ 即可。\n\n---",
       "cat": "极限与微分",
       "topic": "可去间断点",
@@ -1661,7 +1661,7 @@
       "type": "fill",
       "difficulty": "medium",
       "question": "求过原点并与曲线 $C:y=x^{2}+1$ 相切的两条切线与曲线 $C$ 所围成的图形绕 $y$ 轴旋转生成的体积。",
-      "answer": "两条切线为 $y=2x$ 与 $y=-2x$（切点分别为 $(1,2)$、$(-1,2)$）；所围图形绕 $y$ 轴旋转所得体积 $V=\\dfrac{\\pi}{",
+      "answer": "π/6",
       "solution": "**第一步：用判别式法求过原点的切线。** 设过原点的直线为 $y=kx$（竖直线 $x=0$ 显然不与抛物线相切，可不考虑）。它与 $C:y=x^{2}+1$ 相交时，$x$ 满足\n$$x^{2}+1=kx\\quad\\Longleftrightarrow\\quad x^{2}-kx+1=0 .$$\n相切的充要条件是该二次方程有**重根**，即判别式为零：\n$$\\Delta=k^{2}-4=0\\ \\Longrightarrow\\ k=\\pm2 .$$\n故两条切线为\n$$l_1:\\ y=2x,\\qquad l_2:\\ y=-2x,$$\n重根分别为 $x=\\dfrac{k}{2}=\\pm1$，切点为 $(1,2)$ 与 $(-1,2)$。\n\n**第二步：确定积分区域。** 两条切线与抛物线围成的封闭图形满足 $x^{2}+1\\ge y\\ge 2|x|$（$|x|\\le1$）：下边界为 V 形折线 $y=2|x|$，上边界为抛物线段 $y=x^{2}+1$，两端交于 $x=\\pm1$（此时 $y=2$）。该图形关于 $y$ 轴**对称**。\n\n**第三步：绕 $y$ 轴旋转的体积（柱壳法，只取右半，避免重复）。**\n\n由对称性，$[-1,0]$ 上的左半叶绕 $y$ 轴扫出的立体与 $[0,1]$ 上的右半叶扫出的立体**完全相同**（互为镜像），整个图形绕 $y$ 轴所得立体 = 右半叶绕 $y$ 轴所得立体。对右半叶用柱壳法（$0\\le x\\le1$，位于 $y$ 轴右侧，柱壳半径互不相同、互不重叠）：壳高 $h(x)=(x^{2}+1)-2x$，\n$$V=2\\pi\\int_0^1 x\\,h(x)\\,\\mathrm{d}x=2\\pi\\int_0^1 x\\bigl(x^{2}+1-2x\\bigr)\\mathrm{d}x\n=2\\pi\\int_0^1\\bigl(x^{3}-2x^{2}+x\\bigr)\\mathrm{d}x .$$\n$$\\int_0^1\\bigl(x^{3}-2x^{2}+x\\bigr)\\mathrm{d}x=\\frac14-\\frac23+\\frac12=\\frac{3-8+6}{12}=\\frac{1}{12},$$\n故\n$$V=2\\pi\\cdot\\frac{1}{12}=\\frac{\\pi}{6}.$$\n\n**第四步：用垫片法（横切片）验证。** 图形被 $y=1$ 分成两部分：\n- $0\\le y\\le1$：截面半径 $r=\\dfrac{y}{2}$，圆盘面积 $\\pi\\dfrac{y^{2}}{4}$；\n- $1\\le y\\le2$： $|x|$ 介于 $\\sqrt{y-1}$ 与 $\\dfrac y2$ 之间，旋转后为**圆环**，外半径 $\\dfrac y2$、内半径 $\\sqrt{y-1}$（两曲线在 $y=2$ 处相切，内半径在此为 $1=$ 外半径），面积 $\\pi\\left(\\dfrac{y^{2}}{4}-(y-1)\\right)$。\n\n于是\n$$V=\\pi\\int_0^1\\frac{y^{2}}{4}\\,\\mathrm{d}y+\\pi\\int_1^2\\left(\\frac{y^{2}}{4}-y+1\\right)\\mathrm{d}y\n=\\frac{\\pi}{12}+\\pi\\left[\\frac{y^{3}}{12}-\\frac{y^{2}}{2}+y\\right]_1^2=\\frac{\\pi}{12}+\\pi\\left(\\frac{2}{3}-\\frac{7}{12}\\right)=\\frac{\\pi}{12}+\\frac{\\pi}{12}=\\frac{\\pi}{6},$$\n与柱壳法一致。（可见 $y>1$ 段的确是\"空心\"的，直接对整个图形用 $\\pi\\int r^2$ 会把抛物线上方的洞算进去。）\n\n---\n\n① 求\"过已知点的切线\"用**判别式法**（重根条件 $\\Delta=0$）最省事，比起\"设切点、列 $k=y'=2x_0$ 与 $y_0=kx_0$\"更不易漏解。② 区域横跨旋转轴时（对称双叶），**左半与右半绕 $y$ 轴生成同一立体**，只能算一次；柱壳法也只允许对 $x\\ge0$ 的部分使用。③ 若改用横切片（垫片法），务必逐段核对内外半径，遇到\"空心\"部分要用 $\\pi(r_{\\text{外}}^2-r_{\\text{内}}^2)$。\n\n---",
       "cat": "一元积分学",
       "topic": "切线·旋转体体积",

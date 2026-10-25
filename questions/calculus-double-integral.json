@@ -469,7 +469,7 @@
       "difficulty": "hard",
       "question": "$\\lim_{R \\to +\\infty} \\iint_{x^2+y^2 \\leq R^2} e^{-(x^2+y^2)}\\,d\\sigma = (  )$。",
       "answer": "$\\pi$",
-      "solution": "$极坐标：\\int_0^{2\\pi}\\int_0^R e^{-r^2} r\\,dr\\,d\\theta = \\pi(1-e^{-R^2}) \\to \\pi$（R\\to+\\infty）。$"
+      "solution": "极坐标：$\\int_0^{2\\pi}\\int_0^R e^{-r^2} r\\,dr\\,d\\theta = \\pi(1-e^{-R^2}) \\to \\pi$（$R\\to+\\infty$）。"
     },
     {
       "id": "cal-di-070",

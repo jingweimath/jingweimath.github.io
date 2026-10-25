@@ -21,7 +21,7 @@
       "id": "prob-dist-002",
       "type": "fill",
       "difficulty": "basic",
-      "question": "$设 X \\sim N(2, 9)，则 Y = \\frac{X-2}{3} \\sim ( )_}__}$",
+      "question": "$设 X \\sim N(2, 9)，则 Y = \\frac{X-2}{3} \\sim （　）$",
       "answer": "N(0,1)",
       "solution": "$标准化变换：\\frac{X-\\mu}{\\sigma} \\sim N(0,1)。\\mu=2，\\sigma=3，得 Y \\sim N(0,1)。$"
     },
@@ -57,7 +57,7 @@
       "id": "prob-dist-005",
       "type": "fill",
       "difficulty": "basic",
-      "question": "$泊松分布 X \\sim P(\\lambda) 的方差 D(X)= ( )_}__}$",
+      "question": "$泊松分布 X \\sim P(\\lambda) 的方差 D(X)= （　）$",
       "answer": "λ",
       "solution": "$泊松分布的期望和方差相等：E(X)=D(X)=\\lambda。这是泊松分布的核心特征。$"
     },
@@ -79,7 +79,7 @@
       "id": "prob-dist-007",
       "type": "fill",
       "difficulty": "basic",
-      "question": "指数分布 $Exp(2)$ 的期望 $E(X)=$ ( )_}__}",
+      "question": "指数分布 $Exp(2)$ 的期望 $E(X)=$ （　）",
       "answer": "1/2",
       "solution": "$指数分布 Exp(\\lambda)：f(x)=\\lambda e^{-\\lambda x}(x>0)，E(X)=1/\\lambda，D(X)=1/\\lambda^2。\\lambda=2时E(X)=0.5。$"
     },
@@ -143,7 +143,7 @@
       "id": "prob-dist-012",
       "type": "fill",
       "difficulty": "medium",
-      "question": "设X密度 $f(x)=\\begin{cases} cx^2,&0<x<1\\\\0,&\\text{其他}\\end{cases}$，则c= ( )_}__}",
+      "question": "设X密度 $f(x)=\\begin{cases} cx^2,&0<x<1\\\\0,&\\text{其他}\\end{cases}$，则c= （　）",
       "answer": "3",
       "solution": "$\\int_0^1 cx^2 dx = c \\cdot \\frac{1}{3} = 1，故 c = 3。$"
     },
@@ -165,7 +165,7 @@
       "id": "prob-dist-014",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$X \\sim Exp(0.5)$，则 $P(X > 2) =$ ( )_}__}（用e表示）",
+      "question": "$X \\sim Exp(0.5)$，则 $P(X > 2) =$ （　）（用e表示）",
       "answer": "$e^{-1}$",
       "solution": "$指数分布 P(X > x) = e^{-\\lambda x}。\\lambda=0.5，P(X>2) = e^{-1}。$"
     },
@@ -201,7 +201,7 @@
       "id": "prob-dist-017",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$X \\sim P(2)，则 P(X \\geq 3) = ( )_}__}（保留4位小数）$",
+      "question": "$X \\sim P(2)，则 P(X \\geq 3) = （　）（保留4位小数）$",
       "answer": "0.3233",
       "solution": "$P(X\\geq 3)=1-P(X=0)-P(X=1)-P(X=2) = 1 - e^{-2} - 2e^{-2} - \\frac{4e^{-2}}{2} = 1 - 5e^{-2} \\approx 1-5/7.389 \\approx 0.3233。$"
     },
@@ -223,7 +223,7 @@
       "id": "prob-dist-019",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$X \\sim U[0,4]$，$Y=2X+1$，则 $E(Y)=$ ( )_}__}",
+      "question": "$X \\sim U[0,4]$，$Y=2X+1$，则 $E(Y)=$ （　）",
       "answer": "5",
       "solution": "$E(X)=(0+4)/2=2，E(Y)=2E(X)+1=4+1=5。D(Y)=4D(X)=4 \\times 16/12 = 16/3。$"
     },
@@ -259,7 +259,7 @@
       "id": "prob-dist-022",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X \\sim Exp(\\lambda)，则 Y = \\min(X, 1) 是 ( )_}__} 型随机变量（填连续/离散/混合）$",
+      "question": "$设 X \\sim Exp(\\lambda)，则 Y = \\min(X, 1) 是 （　） 型随机变量（填连续/离散/混合）$",
       "answer": "混合",
       "solution": "$Y在[0,1)上取值X（连续部分），在Y=1处有概率质量 P(X \\geq 1) = e^{-\\lambda}。非纯连续也非纯离散，是混合型。$"
     },
@@ -295,7 +295,7 @@
       "id": "prob-dist-025",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$X \\sim N(\\mu, \\sigma^2)，P(X \\leq \\mu + k\\sigma) 仅为k的函数，与 \\mu,\\sigma 无关。写出这个函数表达式 ( )_}__}$",
+      "question": "$X \\sim N(\\mu, \\sigma^2)，P(X \\leq \\mu + k\\sigma) 仅为k的函数，与 \\mu,\\sigma 无关。写出这个函数表达式 （　）$",
       "answer": "Φ(k)",
       "solution": "$标准化 Z=\\frac{X-\\mu}{\\sigma} \\sim N(0,1)，P(X \\leq \\mu+k\\sigma) = P(Z \\leq k) = \\Phi(k)。$"
     },
@@ -331,7 +331,7 @@
       "id": "prob-dist-028",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X \\sim P(\\lambda)，且 P(X=1) = P(X=2)，则 P(X=4) = ( )_}__}（用e表示）$",
+      "question": "$设 X \\sim P(\\lambda)，且 P(X=1) = P(X=2)，则 P(X=4) = （　）（用e表示）$",
       "answer": "$2e^{-2}/3$",
       "solution": "$\\lambda e^{-\\lambda} = \\frac{\\lambda^2 e^{-\\lambda}}{2}，得 1 = \\lambda/2，\\lambda=2。P(X=4) = \\frac{2^4 e^{-2}}{4!} = \\frac{16e^{-2}}{24} = \\frac{2e^{-2}}{3}。$"
     },
@@ -353,7 +353,7 @@
       "id": "prob-dist-030",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$X \\sim B(3, 0.4)$，$Y = X^2 - 2X$，则 $E(Y) =$ ( )_}__}",
+      "question": "$X \\sim B(3, 0.4)$，$Y = X^2 - 2X$，则 $E(Y) =$ （　）",
       "answer": "-0.24",
       "solution": "$E(X)=3\\times0.4=1.2，E(X^2)=D(X)+E^2(X)=3\\times0.4\\times0.6+1.44=0.72+1.44=2.16。E(Y)=E(X^2)-2E(X)=2.16-2.4=-0.24。$"
     },
@@ -389,7 +389,7 @@
       "id": "prob-dist-033",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X \\sim N(0,4)，则 E(|X^3|) = ( )_}__}（用 \\sqrt{\\pi} 表示）$",
+      "question": "$设 X \\sim N(0,4)，则 E(|X^3|) = （　）（用 \\sqrt{\\pi} 表示）$",
       "answer": "$32/\\sqrt\\pi$",
       "solution": "$E(|X^3|) = \\frac{2}{\\sqrt{2\\pi}\\cdot 2}\\int_0^{\\infty} x^3 e^{-x^2/8}dx。令 t=x^2/8，= \\frac{32}{\\sqrt{\\pi}}\\int_0^{\\infty} t e^{-t}dt = \\frac{32}{\\sqrt{\\pi}}。$"
     },
@@ -411,7 +411,7 @@
       "id": "prob-dist-035",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设X的密度 f(x) = \\frac{1}{\\pi(1+x^2)}, -\\infty<x<\\infty，则 E(X) = ( )_}__}（若不存在填\"不存在\"）$",
+      "question": "$设X的密度 f(x) = \\frac{1}{\\pi(1+x^2)}, -\\infty<x<\\infty，则 E(X) = （　）（若不存在填\"不存在\"）$",
       "answer": "不存在",
       "solution": "$这是柯西分布。\\int_{-\\infty}^{\\infty} |x| \\cdot \\frac{1}{\\pi(1+x^2)}dx = \\infty，期望不存在。注意密度对称但不意味着期望为0，需绝对可积。$"
     },
@@ -447,7 +447,7 @@
       "id": "prob-dist-038",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$X \\sim N(0,1)$，$Y = |X|$ 的密度 $f_Y(y) =$ ( )_}__}（$y>0$）",
+      "question": "$X \\sim N(0,1)$，$Y = |X|$ 的密度 $f_Y(y) =$ （　）（$y>0$）",
       "answer": "$\\sqrt(2/\\pi)e^(-y^2/2)$",
       "solution": "$P(Y \\leq y) = P(|X| \\leq y) = 2\\Phi(y)-1。f_Y(y) = 2\\varphi(y) = \\frac{2}{\\sqrt{2\\pi}}e^{-y^2/2} = \\sqrt{\\frac{2}{\\pi}}e^{-y^2/2}。$"
     },

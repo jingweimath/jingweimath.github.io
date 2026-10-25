@@ -185,7 +185,7 @@
         "$-1$"
       ],
       "answer": 1,
-      "solution": "$连续性条件：$\\lim_{x\\to 0}f(x) = f(0) = 0$。拆分：$\\lim_{x\\to 0}\\frac{\\sin 2x}{x} = 2$，$\\lim_{x\\to 0}\\frac{e^{ax}-1}{x} = a$（$\\because e^{ax}-1 \\sim ax$）。故 $\\lim f(x) = 2 + a = 0 \\Rightarrow a = -2$。",
+      "solution": "**连续性条件**：$\\lim_{x\\to 0}f(x) = f(0) = 0$。拆分：$\\lim_{x\\to 0}\\frac{\\sin 2x}{x} = 2$，$\\lim_{x\\to 0}\\frac{e^{ax}-1}{x} = a$（$\\because e^{ax}-1 \\sim ax$）。故 $\\lim f(x) = 2 + a = 0 \\Rightarrow a = -2$。",
       "topic": "连续性·参数确定",
       "source": "自编",
       "cat": "连续性"

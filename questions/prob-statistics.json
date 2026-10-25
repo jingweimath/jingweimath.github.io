@@ -21,7 +21,7 @@
       "id": "prob-stat-002",
       "type": "fill",
       "difficulty": "basic",
-      "question": "$样本方差 S^2 = \\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\bar{X})^2，分母为n-1而不是n，是为了保证 S^2 是 \\sigma^2 的 ( )_}__} 估计$",
+      "question": "$样本方差 S^2 = \\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\bar{X})^2，分母为n-1而不是n，是为了保证 S^2 是 \\sigma^2 的 （　） 估计$",
       "answer": "无偏",
       "solution": "$$E($S^2$)=\\sigm$a^2$$，所以 $$S^2$$ 是总体方差的无偏估计。用n作分母的估计量有偏。$"
     },
@@ -93,7 +93,7 @@
       "id": "prob-stat-008",
       "type": "fill",
       "difficulty": "basic",
-      "question": "$设 X \\sim N(\\mu, 1)，样本量为n，\\mu 的95%置信区间为 [\\bar{X} - 1.96/\\sqrt{n}, \\bar{X} + ( )_}__}]$",
+      "question": "$设 X \\sim N(\\mu, 1)，样本量为n，\\mu 的95%置信区间为 [\\bar{X} - 1.96/\\sqrt{n}, \\bar{X} + （　）]$",
       "answer": "$1.96/\\sqrtn$",
       "solution": "$方差已知时置信区间：\\bar{X} \\pm z_{\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}。\\alpha=0.05时 z_{0.025}=1.96。$"
     },
@@ -157,7 +157,7 @@
       "id": "prob-stat-013",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$设 X \\sim P(\\lambda)，\\hat{\\lambda} = \\bar{X} 的方差为 ( )_}__}$",
+      "question": "$设 X \\sim P(\\lambda)，\\hat{\\lambda} = \\bar{X} 的方差为 （　）$",
       "answer": "λ/n",
       "solution": "$D(\\bar{X}) = \\frac{D(X)}{n} = \\frac{\\lambda}{n}。且 E(\\bar{X}) = \\lambda，所以 \\bar{X} 是无偏估计。$"
     },
@@ -193,7 +193,7 @@
       "id": "prob-stat-016",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$X \\sim N(\\mu, \\sigma^2)，\\sigma已知时 \\mu 的 1-\\alpha 置信区间半宽为 ( )_}__}$",
+      "question": "$X \\sim N(\\mu, \\sigma^2)，\\sigma已知时 \\mu 的 1-\\alpha 置信区间半宽为 （　）$",
       "answer": "$z_{α/2}·σ/\\sqrtn$",
       "solution": "$方差已知：[\\bar{X} - z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}, \\bar{X} + z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}]。z_{\\alpha/2} 为标准正态上 \\alpha/2 分位数。$"
     },
@@ -215,7 +215,7 @@
       "id": "prob-stat-018",
       "type": "fill",
       "difficulty": "medium",
-      "question": "设总体 $X \\sim B(1,p)$，则p的极大似然估计 $\\hat{p} =$ ( )_}__}",
+      "question": "设总体 $X \\sim B(1,p)$，则p的极大似然估计 $\\hat{p} =$ （　）",
       "answer": "X̄",
       "solution": "$似然函数 L(p) = p^{\\sum X_i}(1-p)^{n-\\sum X_i}。对数似然求导得 \\hat{p} = \\bar{X}。即样本中'1'的比例。$"
     },
@@ -265,7 +265,7 @@
       "id": "prob-stat-022",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X \\sim U[0,\\theta]，\\theta 的极大似然估计 \\hat{\\theta}_{MLE} = ( )_}__}$",
+      "question": "$设 X \\sim U[0,\\theta]，\\theta 的极大似然估计 \\hat{\\theta}_{MLE} = （　）$",
       "answer": "max(X_i)",
       "solution": "$似然函数 L(\\theta) = 1/\\theta^n，0 \\leq X_i \\leq \\theta。\\theta越小L越大，但受约束\\theta \\geq \\max(X_i)。故 \\hat{\\theta} = X_{(n)} = \\max(X_i)。$"
     },
@@ -301,7 +301,7 @@
       "id": "prob-stat-025",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X \\sim N(\\mu, \\sigma^2)，\\mu 未知，\\sigma^2的 1-\\alpha 置信区间基于的枢轴量为 ( )_}__}$",
+      "question": "$设 X \\sim N(\\mu, \\sigma^2)，\\mu 未知，\\sigma^2的 1-\\alpha 置信区间基于的枢轴量为 （　）$",
       "answer": "(n-1)$S^2$/σ^2 ~ χ^2(n-1)",
       "solution": "$\\frac{(n-1)S^2}{\\sigma^2} \\sim \\chi^2(n-1)。置信区间：[\\frac{(n-1)S^2}{\\chi^2_{\\alpha/2}}, \\frac{(n-1)S^2}{\\chi^2_{1-\\alpha/2}}]。$"
     },
@@ -323,7 +323,7 @@
       "id": "prob-stat-027",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X \\sim N(\\mu, \\sigma^2)，样本容量n。\\mu 的 1-\\alpha 置信区间的长度为 ( )_}__}（用 t_{\\alpha/2}(n-1), S, n 表示）$",
+      "question": "$设 X \\sim N(\\mu, \\sigma^2)，样本容量n。\\mu 的 1-\\alpha 置信区间的长度为 （　）（用 t_{\\alpha/2}(n-1), S, n 表示）$",
       "answer": "$2t_{α/2}(n-1)·S/\\sqrtn$",
       "solution": "$\\sigma未知时用t分布：[\\bar{X} - t_{\\alpha/2}(n-1)\\frac{S}{\\sqrt{n}}, \\bar{X} + t_{\\alpha/2}(n-1)\\frac{S}{\\sqrt{n}}]。长度 = 2t_{\\alpha/2}(n-1) \\cdot S/\\sqrt{n}。$"
     },
@@ -359,7 +359,7 @@
       "id": "prob-stat-030",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X_1,\\ldots,X_n 独立同分布 N(0,\\sigma^2)。\\sigma^2 的C-R下界为 ( )_}__}$",
+      "question": "$设 X_1,\\ldots,X_n 独立同分布 N(0,\\sigma^2)。\\sigma^2 的C-R下界为 （　）$",
       "answer": "2σ^4/n",
       "solution": "$I(\\sigma^2) = \\frac{1}{2\\sigma^4}（单个观测）。C-R下界 = \\frac{1}{nI} = \\frac{2\\sigma^4}{n}。\\frac{1}{n}\\sum X_i^2 达到此下界，是最小方差无偏估计。$"
     },
@@ -395,7 +395,7 @@
       "id": "prob-stat-033",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设总体 X 的分布函数为 F(x;\\theta)。次序统计量 (X_{(1)},\\ldots,X_{(n)}) 是 \\theta 的 ( )_}__} 统计量（填充分/完备/有效）$",
+      "question": "$设总体 X 的分布函数为 F(x;\\theta)。次序统计量 (X_{(1)},\\ldots,X_{(n)}) 是 \\theta 的 （　） 统计量（填充分/完备/有效）$",
       "answer": "充分",
       "solution": "对于任意分布，次序统计量总是充分的（给定排序后，样本值的具体排列不再提供额外信息）。但一般不完备。"
     },
@@ -431,7 +431,7 @@
       "id": "prob-stat-036",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X \\sim Exp(\\lambda)，\\lambda 的无偏估计 \\hat{\\lambda} = ( )_}__}（用 \\bar{X} 表示）$",
+      "question": "$设 X \\sim Exp(\\lambda)，\\lambda 的无偏估计 \\hat{\\lambda} = （　）（用 \\bar{X} 表示）$",
       "answer": "(n-1)/(nX̄)",
       "solution": "$注意 E(1/\\bar{X}) \\neq \\lambda。\\sum X_i \\sim \\Gamma(n,\\lambda)，E(1/\\sum X_i) = \\lambda/(n-1)。故 \\hat{\\lambda} = \\frac{n-1}{n\\bar{X}} 是无偏的。实际上 E(\\frac{n-1}{\\sum X_i}) = \\lambda。$"
     },
@@ -453,7 +453,7 @@
       "id": "prob-stat-038",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$在 H_0: \\mu = \\mu_0 vs H_1: \\mu \\neq \\mu_0 的双边检验中，若 |T| > t_{\\alpha/2} 时拒绝 H_0。此时第II类错误 \\beta 依赖于 ( )_}__}（填参数名称）$",
+      "question": "$在 H_0: \\mu = \\mu_0 vs H_1: \\mu \\neq \\mu_0 的双边检验中，若 |T| > t_{\\alpha/2} 时拒绝 H_0。此时第II类错误 \\beta 依赖于 （　）（填参数名称）$",
       "answer": "μ",
       "solution": "$\\beta(\\mu) = P(\\text{接受}H_0|\\mu \\neq \\mu_0)，是 \\mu 的函数。\\beta 随 |\\mu-\\mu_0| 增大而减小。1-\\beta 是功效函数。$"
     },

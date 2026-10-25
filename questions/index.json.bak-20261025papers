@@ -1,0 +1,43 @@
+{
+  "subjects": {
+    "calculus": {
+      "name": "高等数学",
+      "chapters": [
+        { "id": "calculus-limit", "name": "极限与连续", "file": "questions/calculus-limit.json" },
+        { "id": "calculus-derivative", "name": "一元函数微分学", "file": "questions/calculus-derivative.json" },
+        { "id": "calculus-integral", "name": "一元函数积分学", "file": "questions/calculus-integral.json" },
+        { "id": "calculus-diff-eq", "name": "微分方程", "file": "questions/calculus-diff-eq.json" },
+        { "id": "calculus-multi-diff", "name": "多元函数微分学", "file": "questions/calculus-multi-diff.json" },
+        { "id": "calculus-double-integral", "name": "二重积分", "file": "questions/calculus-double-integral.json" },
+        { "id": "calculus-vector-geometry", "name": "向量代数与空间解析几何", "file": "questions/calculus-vector-geometry.json" },
+        { "id": "calculus-triple-curve", "name": "三重积分与曲线曲面积分", "file": "questions/calculus-triple-curve.json" },
+        { "id": "calculus-series", "name": "无穷级数", "file": "questions/calculus-series.json" }
+      ]
+    },
+    "linalg": {
+      "name": "线性代数",
+      "chapters": [
+        { "id": "linalg-matrix", "name": "矩阵与行列式", "file": "questions/linalg-matrix.json" },
+        { "id": "linalg-vector", "name": "向量与线性方程组", "file": "questions/linalg-vector.json" },
+        { "id": "linalg-eigen", "name": "特征值与特征向量", "file": "questions/linalg-eigen.json" },
+        { "id": "linalg-quadratic", "name": "二次型", "file": "questions/linalg-quadratic.json" }
+      ]
+    },
+    "probability": {
+      "name": "概率论与数理统计",
+      "chapters": [
+        { "id": "prob-event", "name": "随机事件与概率", "file": "questions/prob-event.json" },
+        { "id": "prob-distribution", "name": "随机变量与分布", "file": "questions/prob-distribution.json" },
+        { "id": "prob-multi-var", "name": "多维随机变量", "file": "questions/prob-multi-var.json" },
+        { "id": "prob-law-large", "name": "大数定律与中心极限定理", "file": "questions/prob-law-large.json" },
+        { "id": "prob-statistics", "name": "数理统计", "file": "questions/prob-statistics.json" }
+      ]
+    },
+    "comprehensive": {
+      "name": "综合训练",
+      "chapters": [
+        { "id": "comprehensive", "name": "综合题目", "file": "questions/comprehensive.json" }
+      ]
+    }
+  }
+}

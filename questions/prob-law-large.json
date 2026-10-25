@@ -35,7 +35,7 @@
       "id": "prob-ll-003",
       "type": "fill",
       "difficulty": "basic",
-      "question": "$独立同分布中心极限定理中，\\frac{\\sum X_i - n\\mu}{\\sqrt{n}\\sigma} 的极限分布是 ( )_}__}$",
+      "question": "$独立同分布中心极限定理中，\\frac{\\sum X_i - n\\mu}{\\sqrt{n}\\sigma} 的极限分布是 （　）$",
       "answer": "N(0,1)",
       "solution": "$林德贝格-莱维中心极限定理：标准化后的独立同分布随机变量之和，当 n \\to \\infty 时收敛到标准正态分布。$"
     },
@@ -107,7 +107,7 @@
       "id": "prob-ll-009",
       "type": "fill",
       "difficulty": "basic",
-      "question": "$利用切比雪夫不等式，若 E(X)=1, D(X)=0.01，则 P(0.5<X<1.5) \\geq ( )_}__}$",
+      "question": "$利用切比雪夫不等式，若 E(X)=1, D(X)=0.01，则 P(0.5<X<1.5) \\geq （　）$",
       "answer": "0.96",
       "solution": "$P(|X-1| < 0.5) = 1 - P(|X-1| \\geq 0.5) \\geq 1 - \\frac{0.01}{0.25} = 1 - 0.04 = 0.96。$"
     },
@@ -193,7 +193,7 @@
       "id": "prob-ll-016",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$设有独立随机变量序列 \\{X_n\\}，D(X_n) \\leq 2（n\\geq 1），则 \\frac{1}{n}\\sum_{i=1}^{n}(X_i-E(X_i)) 依概率收敛于 ( )_}__}$",
+      "question": "$设有独立随机变量序列 \\{X_n\\}，D(X_n) \\leq 2（n\\geq 1），则 \\frac{1}{n}\\sum_{i=1}^{n}(X_i-E(X_i)) 依概率收敛于 （　）$",
       "answer": "0",
       "solution": "由切比雪夫大数定律，方差一致有界保证 $\\bar{X} - E\\bar{X} \\xrightarrow{P} 0$。"
     },
@@ -215,7 +215,7 @@
       "id": "prob-ll-018",
       "type": "fill",
       "difficulty": "medium",
-      "question": "$设母体 X 的分布未知，E(X)=\\mu, D(X)=\\sigma^2。用切比雪夫不等式确定使 P(|\\bar{X}-\\mu|<\\sigma/2) \\geq 0.95 所需的最小样本量n至少为 ( )_}__}$",
+      "question": "$设母体 X 的分布未知，E(X)=\\mu, D(X)=\\sigma^2。用切比雪夫不等式确定使 P(|\\bar{X}-\\mu|<\\sigma/2) \\geq 0.95 所需的最小样本量n至少为 （　）$",
       "answer": "80",
       "solution": "$P(|\\bar{X}-\\mu| < \\sigma/2) \\geq 1 - \\frac{\\sigma^2/n}{(\\sigma/2)^2} = 1 - \\frac{4}{n} \\geq 0.95，得 \\frac{4}{n} \\leq 0.05，n \\geq 80。$"
     },
@@ -279,7 +279,7 @@
       "id": "prob-ll-023",
       "type": "fill",
       "difficulty": "hard",
-      "question": "设100个独立元件的寿命 $X_i \\sim Exp(0.01)$，总寿命超过12000小时的概率近似为 ( )_}__}（用 $\\Phi$ 表示）",
+      "question": "设100个独立元件的寿命 $X_i \\sim Exp(0.01)$，总寿命超过12000小时的概率近似为 （　）（用 $\\Phi$ 表示）",
       "answer": "1-Φ(2)",
       "solution": "$E(X_i)=100, D(X_i)=10000。E(S)=10000, D(S)=1000000, \\sqrt{D}=1000。P(S>12000) = P(Z>2) = 1-\\Phi(2)。$"
     },
@@ -301,7 +301,7 @@
       "id": "prob-ll-025",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X_n \\sim B(n,p)，则 \\frac{X_n}{n} - p 的收敛阶为 ( )_}__}（填 O_p(1/\\sqrt{n}) 或 O_p(1/n)）$",
+      "question": "$设 X_n \\sim B(n,p)，则 \\frac{X_n}{n} - p 的收敛阶为 （　）（填 O_p(1/\\sqrt{n}) 或 O_p(1/n)）$",
       "answer": "$O_p(1/\\sqrtn)$",
       "solution": "$由中心极限定理 \\sqrt{n}(\\frac{X_n}{n}-p) \\xrightarrow{D} N(0,p(1-p))，故 \\frac{X_n}{n}-p = O_p(1/\\sqrt{n})。$"
     },
@@ -337,7 +337,7 @@
       "id": "prob-ll-028",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X_i 独立，P(X_i=1)=P(X_i=-1)=1/2。由中心极限定理，\\sum_{i=1}^{100} X_i 落在 [-20,20] 内的概率近似为 ( )_}__}（用 \\Phi 表示）$",
+      "question": "$设 X_i 独立，P(X_i=1)=P(X_i=-1)=1/2。由中心极限定理，\\sum_{i=1}^{100} X_i 落在 [-20,20] 内的概率近似为 （　）（用 \\Phi 表示）$",
       "answer": "2Φ(2)-1",
       "solution": "$E(X_i)=0, D(X_i)=1。E(S)=0, D(S)=100, \\sqrt{D}=10。P(-20\\leq S\\leq 20) = P(-2\\leq Z\\leq 2) = 2\\Phi(2)-1 \\approx 0.954。$"
     },
@@ -359,7 +359,7 @@
       "id": "prob-ll-030",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X_n \\sim \\chi^2(n)，根据中心极限定理，当n很大时 \\frac{X_n-n}{\\sqrt{2n}} 近似服从 ( )_}__} 分布$",
+      "question": "$设 X_n \\sim \\chi^2(n)，根据中心极限定理，当n很大时 \\frac{X_n-n}{\\sqrt{2n}} 近似服从 （　） 分布$",
       "answer": "N(0,1)",
       "solution": "$\\chi^2(n)$可表示为n个独立$N(0,1)$的平方和，$E=n$, $D=2n$。由CLT标准化后近似$N(0,1)$。"
     },
@@ -395,7 +395,7 @@
       "id": "prob-ll-033",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X_1,\\ldots,X_n 独立同分布 Exp(\\lambda)。\\frac{1}{\\bar{X}} 依概率收敛于 ( )_}__}$",
+      "question": "$设 X_1,\\ldots,X_n 独立同分布 Exp(\\lambda)。\\frac{1}{\\bar{X}} 依概率收敛于 （　）$",
       "answer": "λ",
       "solution": "$由大数定律 \\bar{X} \\xrightarrow{P} E(X) = 1/\\lambda。由连续映射定理 \\frac{1}{\\bar{X}} \\xrightarrow{P} \\lambda。这是极大似然估计的相合性。$"
     },
@@ -453,7 +453,7 @@
       "id": "prob-ll-038",
       "type": "fill",
       "difficulty": "hard",
-      "question": "$设 X_1,\\ldots,X_n 独立同分布，E(X_1)=0, D(X_1)=\\sigma^2。则 \\frac{1}{n}\\sum X_i^2 \\xrightarrow{P} ( )_}__}$",
+      "question": "$设 X_1,\\ldots,X_n 独立同分布，E(X_1)=0, D(X_1)=\\sigma^2。则 \\frac{1}{n}\\sum X_i^2 \\xrightarrow{P} （　）$",
       "answer": "σ^2",
       "solution": "$$E(X_$i^2$) = D(X_i) + $E^2$(X_i) = \\sigm$a^2$ + 0 = \\sigm$a^2$$。由大数定律样本二阶矩收敛到总体二阶矩$\\sigm$a^2$$。$"
     },
