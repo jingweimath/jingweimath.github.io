@@ -3216,7 +3216,9 @@ var QUESTION_BANK = {
         "$y^{(3)} + xy = e^x$"
       ],
       "answer": 1,
-      "solution": "**一阶微分方程**是指方程中出现的未知函数的最高阶导数为一阶。\n\n- A项：$y''$ 出现，是二阶微分方程 ❌\n- B项：只出现 $y'$，是一阶微分方程 ✅\n- C项：偏微分方程，不是常微分方程 ❌\n- D项：$y^{(3)}$ 出现，是三阶微分方程 ❌\n\n**答案：B**"
+      "solution": "**一阶微分方程**是指方程中出现的未知函数的最高阶导数为一阶。\n\n- A项：$y''$ 出现，是二阶微分方程 ❌\n- B项：只出现 $y'$，是一阶微分方程 ✅\n- C项：偏微分方程，不是常微分方程 ❌\n- D项：$y^{(3)}$ 出现，是三阶微分方程 ❌\n\n**答案：B**",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-002",
@@ -3230,7 +3232,9 @@ var QUESTION_BANK = {
         "$y = Cx$"
       ],
       "answer": 0,
-      "solution": "$**分离变量法**：\n\nxy' = y\\ln y \\quad \\Rightarrow \\quad \\frac{dy}{y\\ln y} = \\frac{dx}{x}\n\n令 u = \\ln y，则 du = \\frac{dy}{y}，左边化为 \\frac{du}{u} = \\frac{dx}{x}。\n\n积分得：\\ln|u| = \\ln|x| + C_1，即 u = Cx，所以 \\ln y = Cx，故 y = e^{Cx}。\n\n**答案：A**$"
+      "solution": "$**分离变量法**：\n\nxy' = y\\ln y \\quad \\Rightarrow \\quad \\frac{dy}{y\\ln y} = \\frac{dx}{x}\n\n令 u = \\ln y，则 du = \\frac{dy}{y}，左边化为 \\frac{du}{u} = \\frac{dx}{x}。\n\n积分得：\\ln|u| = \\ln|x| + C_1，即 u = Cx，所以 \\ln y = Cx，故 y = e^{Cx}。\n\n**答案：A**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-004",
@@ -3244,7 +3248,9 @@ var QUESTION_BANK = {
         "$y = \\frac{x^2}{2} + C$"
       ],
       "answer": 1,
-      "solution": "$**一阶线性微分方程**，积分因子法：\n\nP(x) = \\frac{1}{x}，Q(x) = x\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = e^{\\ln x} = x\n\n方程两边同乘 x：xy' + y = x^2，即 \\frac{d}{dx}(xy) = x^2\n\n积分：xy = \\frac{x^3}{3} + C \\Rightarrow y = \\frac{x^2}{3} + \\frac{C}{x}\n\n代入 y(1) = 1：\\frac{1}{3} + C = 1 \\Rightarrow C = \\frac{2}{3}\n\n所以 y = \\frac{x^2}{3} + \\frac{2}{3x}\n\n**答案：B**$"
+      "solution": "$**一阶线性微分方程**，积分因子法：\n\nP(x) = \\frac{1}{x}，Q(x) = x\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = e^{\\ln x} = x\n\n方程两边同乘 x：xy' + y = x^2，即 \\frac{d}{dx}(xy) = x^2\n\n积分：xy = \\frac{x^3}{3} + C \\Rightarrow y = \\frac{x^2}{3} + \\frac{C}{x}\n\n代入 y(1) = 1：\\frac{1}{3} + C = 1 \\Rightarrow C = \\frac{2}{3}\n\n所以 y = \\frac{x^2}{3} + \\frac{2}{3x}\n\n**答案：B**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-005",
@@ -3258,7 +3264,9 @@ var QUESTION_BANK = {
         "伯努利方程"
       ],
       "answer": 1,
-      "solution": "$**齐次方程的判定**：方程右端是 \\frac{y}{x} 的函数，即 y' = f\\left(\\frac{y}{x}\\right) 形式。\n\n令 u = \\frac{y}{x}，则 y = ux，y' = u + xu'，方程化为：\n\nu + xu' = u + \\tan u \\Rightarrow xu' = \\tan u（可分离变量）\n\n**答案：B**$"
+      "solution": "$**齐次方程的判定**：方程右端是 \\frac{y}{x} 的函数，即 y' = f\\left(\\frac{y}{x}\\right) 形式。\n\n令 u = \\frac{y}{x}，则 y = ux，y' = u + xu'，方程化为：\n\nu + xu' = u + \\tan u \\Rightarrow xu' = \\tan u（可分离变量）\n\n**答案：B**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-006",
@@ -3272,7 +3280,9 @@ var QUESTION_BANK = {
         "$y = \\frac{x^3}{6} + \\cos x + C_1x + C_2$"
       ],
       "answer": 0,
-      "solution": "$**可降阶微分方程** y'' = f(x) 型：直接积分两次。\n\ny' = \\int (x + \\sin x)dx = \\frac{x^2}{2} - \\cos x + C_1\n\ny = \\int \\left(\\frac{x^2}{2} - \\cos x + C_1\\right)dx = \\frac{x^3}{6} - \\sin x + C_1x + C_2\n\n**答案：A**$"
+      "solution": "$**可降阶微分方程** y'' = f(x) 型：直接积分两次。\n\ny' = \\int (x + \\sin x)dx = \\frac{x^2}{2} - \\cos x + C_1\n\ny = \\int \\left(\\frac{x^2}{2} - \\cos x + C_1\\right)dx = \\frac{x^3}{6} - \\sin x + C_1x + C_2\n\n**答案：A**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-007",
@@ -3286,7 +3296,9 @@ var QUESTION_BANK = {
         "$y = C_1\\cos x + C_2\\sin x$"
       ],
       "answer": 0,
-      "solution": "$**二阶常系数齐次线性微分方程**：\n\n特征方程：r^2 - 4r + 3 = 0 \\Rightarrow (r-1)(r-3) = 0\n\n特征根：r_1 = 1,\\ r_2 = 3（互异实根）\n\n通解：y = C_1e^{r_1x} + C_2e^{r_2x} = C_1e^x + C_2e^{3x}\n\n**答案：A**$"
+      "solution": "$**二阶常系数齐次线性微分方程**：\n\n特征方程：r^2 - 4r + 3 = 0 \\Rightarrow (r-1)(r-3) = 0\n\n特征根：r_1 = 1,\\ r_2 = 3（互异实根）\n\n通解：y = C_1e^{r_1x} + C_2e^{r_2x} = C_1e^x + C_2e^{3x}\n\n**答案：A**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-009",
@@ -3300,7 +3312,9 @@ var QUESTION_BANK = {
         "$y = \\cosh x$"
       ],
       "answer": 0,
-      "solution": "$**二阶常系数齐次方程** y'' + y = 0：\n\n特征方程：r^2 + 1 = 0 \\Rightarrow r = \\pm i\n\n通解：y = C_1\\cos x + C_2\\sin x\n\n代入 y(0) = 1：C_1 = 1\n\ny' = -C_1\\sin x + C_2\\cos x，代入 y'(0) = 0：C_2 = 0\n\n所以 y = \\cos x\n\n**答案：A**$"
+      "solution": "$**二阶常系数齐次方程** y'' + y = 0：\n\n特征方程：r^2 + 1 = 0 \\Rightarrow r = \\pm i\n\n通解：y = C_1\\cos x + C_2\\sin x\n\n代入 y(0) = 1：C_1 = 1\n\ny' = -C_1\\sin x + C_2\\cos x，代入 y'(0) = 0：C_2 = 0\n\n所以 y = \\cos x\n\n**答案：A**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-010",
@@ -3314,7 +3328,9 @@ var QUESTION_BANK = {
         "$\\frac{\\partial M}{\\partial x} + \\frac{\\partial N}{\\partial y} = 0$"
       ],
       "answer": 1,
-      "solution": "$**全微分方程的充要条件**：\n\n若存在函数 u(x,y) 使得 du = Mdx + Ndy，则\n\n\\frac{\\partial u}{\\partial x} = M,\\quad \\frac{\\partial u}{\\partial y} = N\n\n由混合偏导数相等：\\frac{\\partial M}{\\partial y} = \\frac{\\partial^2 u}{\\partial y\\partial x} = \\frac{\\partial^2 u}{\\partial x\\partial y} = \\frac{\\partial N}{\\partial x}\n\n**答案：B**$"
+      "solution": "$**全微分方程的充要条件**：\n\n若存在函数 u(x,y) 使得 du = Mdx + Ndy，则\n\n\\frac{\\partial u}{\\partial x} = M,\\quad \\frac{\\partial u}{\\partial y} = N\n\n由混合偏导数相等：\\frac{\\partial M}{\\partial y} = \\frac{\\partial^2 u}{\\partial y\\partial x} = \\frac{\\partial^2 u}{\\partial x\\partial y} = \\frac{\\partial N}{\\partial x}\n\n**答案：B**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-011",
@@ -3328,7 +3344,9 @@ var QUESTION_BANK = {
         "$y = x\\ln x + Cx$"
       ],
       "answer": 1,
-      "solution": "$**一阶线性方程**，先化简：\n\ny' + \\frac{1}{x}y = \\frac{\\ln x}{x}\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = x\n\n同乘 x：(xy)' = \\ln x\n\n积分：xy = \\int \\ln x dx = x\\ln x - x + C\n\n所以 y = \\ln x - 1 + \\frac{C}{x}\n\n**答案：B**$"
+      "solution": "$**一阶线性方程**，先化简：\n\ny' + \\frac{1}{x}y = \\frac{\\ln x}{x}\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = x\n\n同乘 x：(xy)' = \\ln x\n\n积分：xy = \\int \\ln x dx = x\\ln x - x + C\n\n所以 y = \\ln x - 1 + \\frac{C}{x}\n\n**答案：B**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-012",
@@ -3342,7 +3360,9 @@ var QUESTION_BANK = {
         "$\\ln\\sqrt{x^2 + y^2} = \\arctan\\frac{x}{y} + C$"
       ],
       "answer": 0,
-      "solution": "$**齐次方程**，令 y = ux，则 y' = u + xu'：\n\nu + xu' = \\frac{1 + u}{1 - u}\n\nxu' = \\frac{1 + u}{1 - u} - u = \\frac{1 + u^2}{1 - u}\n\n分离变量：\\frac{1 - u}{1 + u^2}du = \\frac{dx}{x}\n\n积分：\\arctan u - \\frac{1}{2}\\ln(1+u^2) = \\ln|x| + C\n\n代回 u = y/x，化简得：\\arctan\\frac{y}{x} = \\ln\\sqrt{x^2 + y^2} + C\n\n**答案：A**$"
+      "solution": "$**齐次方程**，令 y = ux，则 y' = u + xu'：\n\nu + xu' = \\frac{1 + u}{1 - u}\n\nxu' = \\frac{1 + u}{1 - u} - u = \\frac{1 + u^2}{1 - u}\n\n分离变量：\\frac{1 - u}{1 + u^2}du = \\frac{dx}{x}\n\n积分：\\arctan u - \\frac{1}{2}\\ln(1+u^2) = \\ln|x| + C\n\n代回 u = y/x，化简得：\\arctan\\frac{y}{x} = \\ln\\sqrt{x^2 + y^2} + C\n\n**答案：A**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-013",
@@ -3356,7 +3376,9 @@ var QUESTION_BANK = {
         "$y^* = A\\cos x + B\\sin x$"
       ],
       "answer": 1,
-      "solution": "$**二阶常系数非齐次线性微分方程**，待定系数法：\n\n对应齐次方程：y'' + y' - 2y = 0\n\n特征方程：r^2 + r - 2 = 0 \\Rightarrow r_1 = 1,\\ r_2 = -2\n\n非齐次项 f(x) = e^x，1 是单特征根，所以特解形式应设为：\n\ny^* = Axe^x \\quad \\text{（需乘 } x \\text{ 因为 } \\lambda = 1 \\text{ 是特征根）}\n\n**答案：B**$"
+      "solution": "$**二阶常系数非齐次线性微分方程**，待定系数法：\n\n对应齐次方程：y'' + y' - 2y = 0\n\n特征方程：r^2 + r - 2 = 0 \\Rightarrow r_1 = 1,\\ r_2 = -2\n\n非齐次项 f(x) = e^x，1 是单特征根，所以特解形式应设为：\n\ny^* = Axe^x \\quad \\text{（需乘 } x \\text{ 因为 } \\lambda = 1 \\text{ 是特征根）}\n\n**答案：B**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-014",
@@ -3370,7 +3392,9 @@ var QUESTION_BANK = {
         "$y^* = x^2e^x(A\\cos x + B\\sin x)$"
       ],
       "answer": 1,
-      "solution": "$**待定系数法**，f(x) = e^x\\sin x，即 f(x) = e^{\\alpha x}(P\\cos\\beta x + Q\\sin\\beta x) 型，其中 \\alpha = 1,\\ \\beta = 1。\n\n特征方程：r^2 - 2r + 2 = 0 \\Rightarrow r = 1 \\pm i\n\n\\alpha + i\\beta = 1 + i 恰为特征根，所以特解形式需乘 x：\n\ny^* = xe^x(A\\cos x + B\\sin x)\n\n**答案：B**$"
+      "solution": "$**待定系数法**，f(x) = e^x\\sin x，即 f(x) = e^{\\alpha x}(P\\cos\\beta x + Q\\sin\\beta x) 型，其中 \\alpha = 1,\\ \\beta = 1。\n\n特征方程：r^2 - 2r + 2 = 0 \\Rightarrow r = 1 \\pm i\n\n\\alpha + i\\beta = 1 + i 恰为特征根，所以特解形式需乘 x：\n\ny^* = xe^x(A\\cos x + B\\sin x)\n\n**答案：B**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-015",
@@ -3384,7 +3408,9 @@ var QUESTION_BANK = {
         "$y = \\frac{1}{x} - \\frac{\\ln x}{x}$"
       ],
       "answer": 0,
-      "solution": "$**一阶线性方程**：\n\nx^2y' + xy = 1 \\Rightarrow y' + \\frac{1}{x}y = \\frac{1}{x^2}\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = x\n\n同乘 x：(xy)' = \\frac{1}{x}\n\n积分：xy = \\ln x + C \\Rightarrow y = \\frac{\\ln x + C}{x}\n\n代入 y(1) = 0：\\frac{C}{1} = 0 \\Rightarrow C = 0\n\n所以 y = \\frac{\\ln x}{x}\n\n**答案：A**$"
+      "solution": "$**一阶线性方程**：\n\nx^2y' + xy = 1 \\Rightarrow y' + \\frac{1}{x}y = \\frac{1}{x^2}\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = x\n\n同乘 x：(xy)' = \\frac{1}{x}\n\n积分：xy = \\ln x + C \\Rightarrow y = \\frac{\\ln x + C}{x}\n\n代入 y(1) = 0：\\frac{C}{1} = 0 \\Rightarrow C = 0\n\n所以 y = \\frac{\\ln x}{x}\n\n**答案：A**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-017",
@@ -3398,7 +3424,9 @@ var QUESTION_BANK = {
         "$y'' + 2y' + y = 0$"
       ],
       "answer": 0,
-      "solution": "$**由特解反求微分方程**：\n\n若 y_1 = e^x,\\ y_2 = e^{-x} 是线性无关特解，则通解为 y = C_1e^x + C_2e^{-x}。\n\n对应的特征根为 r_1 = 1,\\ r_2 = -1，特征方程为 (r-1)(r+1) = r^2 - 1 = 0。\n\n故微分方程为 y'' - y = 0。\n\n**答案：A**$"
+      "solution": "$**由特解反求微分方程**：\n\n若 y_1 = e^x,\\ y_2 = e^{-x} 是线性无关特解，则通解为 y = C_1e^x + C_2e^{-x}。\n\n对应的特征根为 r_1 = 1,\\ r_2 = -1，特征方程为 (r-1)(r+1) = r^2 - 1 = 0。\n\n故微分方程为 y'' - y = 0。\n\n**答案：A**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-018",
@@ -3412,7 +3440,9 @@ var QUESTION_BANK = {
         "$y^* = xe^{2ix} + \\cos x$"
       ],
       "answer": 0,
-      "solution": "$**叠加原理**，f(x) = 3\\cos x + \\sin 2x 分两部分处理。\n\n特征方程：r^2 + 4 = 0 \\Rightarrow r = \\pm 2i\n\n- 对 3\\cos x：\\pm i 不是特征根，设 A\\cos x + B\\sin x ✅\n- 对 \\sin 2x：\\pm 2i 是特征根，设 x(C\\cos 2x + D\\sin 2x) ✅\n\n合并：y^* = A\\cos x + B\\sin x + x(C\\cos 2x + D\\sin 2x)\n\n**答案：A**$"
+      "solution": "$**叠加原理**，f(x) = 3\\cos x + \\sin 2x 分两部分处理。\n\n特征方程：r^2 + 4 = 0 \\Rightarrow r = \\pm 2i\n\n- 对 3\\cos x：\\pm i 不是特征根，设 A\\cos x + B\\sin x ✅\n- 对 \\sin 2x：\\pm 2i 是特征根，设 x(C\\cos 2x + D\\sin 2x) ✅\n\n合并：y^* = A\\cos x + B\\sin x + x(C\\cos 2x + D\\sin 2x)\n\n**答案：A**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-019",
@@ -3426,7 +3456,9 @@ var QUESTION_BANK = {
         "$y = x\\sqrt{1 + \\ln x^2}$"
       ],
       "answer": 0,
-      "solution": "$**齐次方程**，令 u = y/x，则 y = ux，y' = u + xu'：\n\nu + xu' = u + \\frac{1}{u} \\Rightarrow xu' = \\frac{1}{u}\n\n分离变量：u du = \\frac{dx}{x}，积分得 \\frac{u^2}{2} = \\ln|x| + C。\n\n代回 u = y/x：\\frac{y^2}{2x^2} = \\ln|x| + C \\Rightarrow y^2 = 2x^2(\\ln|x| + C)。\n\n代入 y(1) = 2：4 = 2(0 + C) \\Rightarrow C = 2。\n\n所以 y^2 = 2x^2(\\ln x + 2) = x^2(4 + 2\\ln x) = x^2(4 + \\ln x^2)。\n\n故 y = x\\sqrt{4 + \\ln x^2} = x\\sqrt{3 + \\ln x^2 + 1}… 直接算：4 + \\ln x^2 = \\ln(e^4 \\cdot x^2)，选项A：3 + \\ln x^2。\n\n重算：C=2，y^2 = 2x^2(\\ln x + 2) = 2x^2\\ln x + 4x^2 = x^2(2\\ln x + 4) = x^2(\\ln x^2 + 4)。\n\n选项A：y = x\\sqrt{3+\\ln x^2}，y^2 = x^2(3+\\ln x^2) \\neq x^2(4+\\ln x^2)。\n\n选项C：y = x\\sqrt{\\ln x+4}，y^2 = x^2(\\ln x+4) = x^2\\ln x+4x^2 ✅\n\n**答案：C**$"
+      "solution": "$**齐次方程**，令 u = y/x，则 y = ux，y' = u + xu'：\n\nu + xu' = u + \\frac{1}{u} \\Rightarrow xu' = \\frac{1}{u}\n\n分离变量：u du = \\frac{dx}{x}，积分得 \\frac{u^2}{2} = \\ln|x| + C。\n\n代回 u = y/x：\\frac{y^2}{2x^2} = \\ln|x| + C \\Rightarrow y^2 = 2x^2(\\ln|x| + C)。\n\n代入 y(1) = 2：4 = 2(0 + C) \\Rightarrow C = 2。\n\n所以 y^2 = 2x^2(\\ln x + 2) = x^2(4 + 2\\ln x) = x^2(4 + \\ln x^2)。\n\n故 y = x\\sqrt{4 + \\ln x^2} = x\\sqrt{3 + \\ln x^2 + 1}… 直接算：4 + \\ln x^2 = \\ln(e^4 \\cdot x^2)，选项A：3 + \\ln x^2。\n\n重算：C=2，y^2 = 2x^2(\\ln x + 2) = 2x^2\\ln x + 4x^2 = x^2(2\\ln x + 4) = x^2(\\ln x^2 + 4)。\n\n选项A：y = x\\sqrt{3+\\ln x^2}，y^2 = x^2(3+\\ln x^2) \\neq x^2(4+\\ln x^2)。\n\n选项C：y = x\\sqrt{\\ln x+4}，y^2 = x^2(\\ln x+4) = x^2\\ln x+4x^2 ✅\n\n**答案：C**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-020",
@@ -3440,7 +3472,9 @@ var QUESTION_BANK = {
         "$y = \\frac{1}{2}xe^x + \\frac{1}{2}e^{-x} - \\frac{1}{2}$"
       ],
       "answer": 2,
-      "solution": "$**二阶常系数非齐次线性微分方程**：\n\n齐次通解：特征方程 r^2-1=0 \\Rightarrow r=\\pm 1，y_h = C_1e^x + C_2e^{-x}\n\n求特解：f(x) = e^x + 1\n- 对 e^x：1 是特征根，设 y_1^* = Axe^x\n- 对常数 1：0 不是特征根，设 y_2^* = B\n\n设 y^* = Axe^x + B，代入原方程确定 A = \\frac{1}{2},\\ B = -1。\n\n所以通解：y = C_1e^x + C_2e^{-x} + \\frac{1}{2}xe^x - 1\n\n代入 y(0)=1,\\ y'(0)=1 解得 C_1 = 1,\\ C_2 = \\frac{1}{2}。\n\n最终：y = e^x + \\frac{1}{2}e^{-x} + \\frac{1}{2}xe^x - 1 = \\frac{1}{2}xe^x + \\frac{1}{2}e^{-x} + (e^x - 1)…\n\n整理后对应选项C：\\frac{1}{2}xe^x + \\frac{1}{2}e^{-x} + \\frac{1}{2} （具体系数代入验证）\n\n**答案：C**$"
+      "solution": "$**二阶常系数非齐次线性微分方程**：\n\n齐次通解：特征方程 r^2-1=0 \\Rightarrow r=\\pm 1，y_h = C_1e^x + C_2e^{-x}\n\n求特解：f(x) = e^x + 1\n- 对 e^x：1 是特征根，设 y_1^* = Axe^x\n- 对常数 1：0 不是特征根，设 y_2^* = B\n\n设 y^* = Axe^x + B，代入原方程确定 A = \\frac{1}{2},\\ B = -1。\n\n所以通解：y = C_1e^x + C_2e^{-x} + \\frac{1}{2}xe^x - 1\n\n代入 y(0)=1,\\ y'(0)=1 解得 C_1 = 1,\\ C_2 = \\frac{1}{2}。\n\n最终：y = e^x + \\frac{1}{2}e^{-x} + \\frac{1}{2}xe^x - 1 = \\frac{1}{2}xe^x + \\frac{1}{2}e^{-x} + (e^x - 1)…\n\n整理后对应选项C：\\frac{1}{2}xe^x + \\frac{1}{2}e^{-x} + \\frac{1}{2} （具体系数代入验证）\n\n**答案：C**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-021",
@@ -3454,7 +3488,9 @@ var QUESTION_BANK = {
         "$y = \\pi\\ln(1+x) + \\pi$"
       ],
       "answer": 0,
-      "solution": "$**由微分定义求微分方程**：\n\n\\Delta y = \\frac{y}{1+x}\\Delta x + o(\\Delta x) 意味着 dy = \\frac{y}{1+x}dx，即\n\n\n\\frac{dy}{dx} = \\frac{y}{1+x}\n\n\n分离变量：\\frac{dy}{y} = \\frac{dx}{1+x}，积分得 \\ln|y| = \\ln|1+x| + C。\n\n所以 y = C(1+x)，代入 y(0) = \\pi 得 C = \\pi。\n\n故 y = \\pi(1+x)。\n\n**答案：A**$"
+      "solution": "$**由微分定义求微分方程**：\n\n\\Delta y = \\frac{y}{1+x}\\Delta x + o(\\Delta x) 意味着 dy = \\frac{y}{1+x}dx，即\n\n\n\\frac{dy}{dx} = \\frac{y}{1+x}\n\n\n分离变量：\\frac{dy}{y} = \\frac{dx}{1+x}，积分得 \\ln|y| = \\ln|1+x| + C。\n\n所以 y = C(1+x)，代入 y(0) = \\pi 得 C = \\pi。\n\n故 y = \\pi(1+x)。\n\n**答案：A**$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-033",
@@ -3468,7 +3504,9 @@ var QUESTION_BANK = {
         "$y=x^2$"
       ],
       "answer": 0,
-      "solution": "$一阶线性：y=e^{-\\int xdx}[\\int xe^{\\int xdx}dx+C]=e^{-x^2/2}[\\int xe^{x^2/2}dx+C]=1+Ce^{-x^2/2}，y(0)=1+C=0知C=-1。$"
+      "solution": "$一阶线性：y=e^{-\\int xdx}[\\int xe^{\\int xdx}dx+C]=e^{-x^2/2}[\\int xe^{x^2/2}dx+C]=1+Ce^{-x^2/2}，y(0)=1+C=0知C=-1。$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-034",
@@ -3482,7 +3520,9 @@ var QUESTION_BANK = {
         "$y^*=A\\sin x$"
       ],
       "answer": 0,
-      "solution": "$齐次解含\\sin x,\\cos x，非齐次项与之同型，特解需乘x。$"
+      "solution": "$齐次解含\\sin x,\\cos x，非齐次项与之同型，特解需乘x。$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-041",
@@ -3490,7 +3530,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$(1+x^2)dy+2xydx=0$ 的通解为(  )。",
       "answer": "y=C/(1+x²)",
-      "solution": "$\\frac{dy}{y}=-\\frac{2x}{1+x^2}dx，\\ln y=-\\ln(1+x^2)+C，y=C/(1+x^2)。$"
+      "solution": "$\\frac{dy}{y}=-\\frac{2x}{1+x^2}dx，\\ln y=-\\ln(1+x^2)+C，y=C/(1+x^2)。$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-044",
@@ -3498,7 +3540,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$xy'+y=x^2$ 满足 $y(1)=1$ 的特解为(  )。",
       "answer": "y=x²/3+2/(3x)",
-      "solution": "化为$(xy)'=x^2$，积分$xy=x^3/3+C$，$y(1)=1$得$C=2/3$，$y=x^2/3+2/(3x)$。"
+      "solution": "化为$(xy)'=x^2$，积分$xy=x^3/3+C$，$y(1)=1$得$C=2/3$，$y=x^2/3+2/(3x)$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-046",
@@ -3506,7 +3550,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$y''+y=x\\cos x 的特解形式可设为(  )。$",
       "answer": "(Ax²+Bx)cos x+(Cx²+Dx)sin x",
-      "solution": "$右端x\\cos x，\\pm i为单特征根，需乘x：x[(ax+b)\\cos x+(cx+d)\\sin x]。$"
+      "solution": "$右端x\\cos x，\\pm i为单特征根，需乘x：x[(ax+b)\\cos x+(cx+d)\\sin x]。$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-047",
@@ -3514,7 +3560,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$伯努利方程 y'+\\frac{y}{x}=xy^2 的通解为 y=(  )。$",
       "answer": "1/(x(C-ln x))",
-      "solution": "$令z=1/y化为一阶线性：z'-z/x=-1，解z=x(C-\\ln x)。$"
+      "solution": "$令z=1/y化为一阶线性：z'-z/x=-1，解z=x(C-\\ln x)。$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-048",
@@ -3522,7 +3570,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "欧拉方程 $x^2y''+xy'+y=0$ 的通解为(  )。",
       "answer": "y=C₁cos(ln x)+C₂sin(ln x)",
-      "solution": "$令x=e^t，化为常系数：D(D-1)y+Dy+y=0，即D^2+1=0，y=C_1\\cos t+C_2\\sin t=C_1\\cos(\\ln x)+C_2\\sin(\\ln x)。$"
+      "solution": "$令x=e^t，化为常系数：D(D-1)y+Dy+y=0，即D^2+1=0，y=C_1\\cos t+C_2\\sin t=C_1\\cos(\\ln x)+C_2\\sin(\\ln x)。$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-049",
@@ -3536,7 +3586,9 @@ var QUESTION_BANK = {
         "$y=e^{Cx}$"
       ],
       "answer": 0,
-      "solution": "$令p=y'，p'=p，p=C_1e^x，再积分y=C_1e^x+C_2。$"
+      "solution": "$令p=y'，p'=p，p=C_1e^x，再积分y=C_1e^x+C_2。$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-050",
@@ -3544,7 +3596,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$y'+\\frac{y}{x}=\\frac{\\ln x}{x} 的通解为 y=(  )。$",
       "answer": "ln x - 1 + C/x",
-      "solution": "$积分因子x：(xy)'=\\ln x，xy=x\\ln x-x+C，y=\\ln x-1+C/x。$"
+      "solution": "$积分因子x：(xy)'=\\ln x，xy=x\\ln x-x+C，y=\\ln x-1+C/x。$",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-052",
@@ -3558,7 +3612,9 @@ var QUESTION_BANK = {
       ],
       "answer": 3,
       "difficulty": "hard",
-      "solution": "积分因子 $\\mu(x)=e^{\\int\\tan xdx}=e^{\\ln\\sec x}=\\sec x$。则 $(y\\sec x)'=\\cos x\\cdot\\sec x=1$，积分得 $y\\sec x=x+C$，即 $y=(x+C)\\cos x$。由 $y(0)=1$ 得 $C=1$，特解 $y=(x+1)\\cos x$。"
+      "solution": "积分因子 $\\mu(x)=e^{\\int\\tan xdx}=e^{\\ln\\sec x}=\\sec x$。则 $(y\\sec x)'=\\cos x\\cdot\\sec x=1$，积分得 $y\\sec x=x+C$，即 $y=(x+C)\\cos x$。由 $y(0)=1$ 得 $C=1$，特解 $y=(x+1)\\cos x$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-053",
@@ -3566,7 +3622,9 @@ var QUESTION_BANK = {
       "question": "方程 $y\\,dx + (x - 3y^{2})\\,dy = 0$ 的通解为 $xy - y^{3} = $ (   )。",
       "answer": "$C$",
       "difficulty": "hard",
-      "solution": "以 $y$ 为自变量，改写为 $\\frac{dx}{dy}+\\frac{x}{y}=3y$。积分因子 $\\mu(y)=e^{\\int\\frac{1}{y}dy}=y$。则 $(xy)'_y = 3y^{2}$，积分 $xy = y^{3} + C$。"
+      "solution": "以 $y$ 为自变量，改写为 $\\frac{dx}{dy}+\\frac{x}{y}=3y$。积分因子 $\\mu(y)=e^{\\int\\frac{1}{y}dy}=y$。则 $(xy)'_y = 3y^{2}$，积分 $xy = y^{3} + C$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-054",
@@ -3580,7 +3638,9 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "difficulty": "hard",
-      "solution": "特征方程 $r^{2}-2r+1=0$，$r=1$ 为二重特征根。右端 $xe^{x}$ 中 $\\lambda=1$ 是二重根，且右端一次多项式，故特解应乘 $x^{2}$，设为 $y^{*}=x^{2}(Ax+B)e^{x}$。"
+      "solution": "特征方程 $r^{2}-2r+1=0$，$r=1$ 为二重特征根。右端 $xe^{x}$ 中 $\\lambda=1$ 是二重根，且右端一次多项式，故特解应乘 $x^{2}$，设为 $y^{*}=x^{2}(Ax+B)e^{x}$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-055",
@@ -3594,7 +3654,9 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "difficulty": "hard",
-      "solution": "令 $x=e^{t}$，则 $xy'=\\frac{dy}{dt}$，$x^{2}y''=\\frac{d^{2}y}{dt^{2}}-\\frac{dy}{dt}$。代入得 $y''_{t}-2y'_{t}+y=2t$。特征根 $r=1$（二重），齐次通解 $y_{h}=C_{1}e^{t}+C_{2}te^{t}=C_{1}x+C_{2}x\\ln x$。设特解 $y^{*}=At+B$，代入得 $y^{*}=2t+4=2\\ln x+4$。"
+      "solution": "令 $x=e^{t}$，则 $xy'=\\frac{dy}{dt}$，$x^{2}y''=\\frac{d^{2}y}{dt^{2}}-\\frac{dy}{dt}$。代入得 $y''_{t}-2y'_{t}+y=2t$。特征根 $r=1$（二重），齐次通解 $y_{h}=C_{1}e^{t}+C_{2}te^{t}=C_{1}x+C_{2}x\\ln x$。设特解 $y^{*}=At+B$，代入得 $y^{*}=2t+4=2\\ln x+4$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-056",
@@ -3608,7 +3670,9 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "difficulty": "hard",
-      "solution": "$\\int_{0}^{x}(x-t)f(t)dt = x\\int_{0}^{x}f(t)dt-\\int_{0}^{x}tf(t)dt$。两次求导得 $f''(x)+f(x)=-\\sin x$。初始条件 $f(0)=0$，$f'(0)=1$。齐次通解 $C_{1}\\cos x+C_{2}\\sin x$，特解 $\\frac{1}{2}x\\cos x$（因 $-\\sin x$ 中 $\\lambda=i$ 为单特征根）。通解代入初值得 $C_{1}=0,C_{2}=\\frac{1}{2}$，故 $f=\\frac{1}{2}(\\sin x+x\\cos x)$。"
+      "solution": "$\\int_{0}^{x}(x-t)f(t)dt = x\\int_{0}^{x}f(t)dt-\\int_{0}^{x}tf(t)dt$。两次求导得 $f''(x)+f(x)=-\\sin x$。初始条件 $f(0)=0$，$f'(0)=1$。齐次通解 $C_{1}\\cos x+C_{2}\\sin x$，特解 $\\frac{1}{2}x\\cos x$（因 $-\\sin x$ 中 $\\lambda=i$ 为单特征根）。通解代入初值得 $C_{1}=0,C_{2}=\\frac{1}{2}$，故 $f=\\frac{1}{2}(\\sin x+x\\cos x)$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-057",
@@ -3622,7 +3686,9 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "difficulty": "hard",
-      "solution": "$y'=\\frac{y}{x}+x^{2}$，即 $y'-\\frac{y}{x}=x^{2}$。积分因子 $\\mu=e^{-\\int\\frac{1}{x}dx}=\\frac{1}{x}$。$(\\frac{y}{x})'=x$，积分 $\\frac{y}{x}=\\frac{x^{2}}{2}+C$，$y=\\frac{x^{3}}{2}+Cx$。由 $y(1)=0$ 得 $\\frac{1}{2}+C=0$，$C=-\\frac{1}{2}$。故 $y=\\frac{1}{2}x^{3}-\\frac{1}{2}x=\\frac{1}{2}x(x^{2}-1)$。"
+      "solution": "$y'=\\frac{y}{x}+x^{2}$，即 $y'-\\frac{y}{x}=x^{2}$。积分因子 $\\mu=e^{-\\int\\frac{1}{x}dx}=\\frac{1}{x}$。$(\\frac{y}{x})'=x$，积分 $\\frac{y}{x}=\\frac{x^{2}}{2}+C$，$y=\\frac{x^{3}}{2}+Cx$。由 $y(1)=0$ 得 $\\frac{1}{2}+C=0$，$C=-\\frac{1}{2}$。故 $y=\\frac{1}{2}x^{3}-\\frac{1}{2}x=\\frac{1}{2}x(x^{2}-1)$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-058",
@@ -3636,7 +3702,9 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "difficulty": "hard",
-      "solution": "不显含 $x$，令 $y'=p$，则 $y''=p\\frac{dp}{dy}$。代入 $yp\\frac{dp}{dy}=p^{2}$，$p\\neq0$ 时 $\\frac{dp}{p}=\\frac{dy}{y}$，$\\ln|p|=\\ln|y|+C$，$p=Cy$。由 $p(1)=2$ 得 $C=2$。$\\frac{dy}{dx}=2y$，$y=Ae^{2x}$，由 $y(0)=1$ 得 $A=1$，$y=e^{2x}$。"
+      "solution": "不显含 $x$，令 $y'=p$，则 $y''=p\\frac{dp}{dy}$。代入 $yp\\frac{dp}{dy}=p^{2}$，$p\\neq0$ 时 $\\frac{dp}{p}=\\frac{dy}{y}$，$\\ln|p|=\\ln|y|+C$，$p=Cy$。由 $p(1)=2$ 得 $C=2$。$\\frac{dy}{dx}=2y$，$y=Ae^{2x}$，由 $y(0)=1$ 得 $A=1$，$y=e^{2x}$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-059",
@@ -3650,7 +3718,9 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "difficulty": "hard",
-      "solution": "特征方程 $r^{2}-1=0$，$r=\\pm1$。右端 $\\sin x$ 对应 $\\lambda=0,\\omega=1$，$\\lambda+i\\omega=i$ 不是特征根，故特解设为 $y^{*}=A\\sin x+B\\cos x$。代入得 $(-A\\sin x-B\\cos x)-(A\\sin x+B\\cos x)=\\sin x$，$-2A\\sin x-2B\\cos x=\\sin x$，$A=-\\frac{1}{2},B=0$。特解 $y^{*}=-\\frac{1}{2}\\sin x$。答案选 A（形式为 $A\\sin x+B\\cos x$），即选项0。"
+      "solution": "特征方程 $r^{2}-1=0$，$r=\\pm1$。右端 $\\sin x$ 对应 $\\lambda=0,\\omega=1$，$\\lambda+i\\omega=i$ 不是特征根，故特解设为 $y^{*}=A\\sin x+B\\cos x$。代入得 $(-A\\sin x-B\\cos x)-(A\\sin x+B\\cos x)=\\sin x$，$-2A\\sin x-2B\\cos x=\\sin x$，$A=-\\frac{1}{2},B=0$。特解 $y^{*}=-\\frac{1}{2}\\sin x$。答案选 A（形式为 $A\\sin x+B\\cos x$），即选项0。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-060",
@@ -3664,7 +3734,9 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "difficulty": "hard",
-      "solution": "特征方程 $r^{2}+4=0$，$r=\\pm 2i$。右端 $x\\sin 2x$ 中 $\\lambda=0,\\omega=2$，$\\lambda+i\\omega=2i$ 是单特征根。右端对应一次多项式乘 $\\sin 2x$，特解乘 $x$ 后设为 $y^{*}=x[(Ax+B)\\cos 2x+(Cx+D)\\sin 2x]$。"
+      "solution": "特征方程 $r^{2}+4=0$，$r=\\pm 2i$。右端 $x\\sin 2x$ 中 $\\lambda=0,\\omega=2$，$\\lambda+i\\omega=2i$ 是单特征根。右端对应一次多项式乘 $\\sin 2x$，特解乘 $x$ 后设为 $y^{*}=x[(Ax+B)\\cos 2x+(Cx+D)\\sin 2x]$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-061",
@@ -3678,7 +3750,9 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "difficulty": "hard",
-      "solution": "化为标准型 $y' - \\frac{n}{x+1}y = e^{x}(x+1)^{n}$。积分因子 $\\mu=e^{-n\\int\\frac{dx}{x+1}}=(x+1)^{-n}$。则 $[y(x+1)^{-n}]'=e^{x}$，积分 $y(x+1)^{-n}=e^{x}+C$，$y=(x+1)^{n}(e^{x}+C)$。"
+      "solution": "化为标准型 $y' - \\frac{n}{x+1}y = e^{x}(x+1)^{n}$。积分因子 $\\mu=e^{-n\\int\\frac{dx}{x+1}}=(x+1)^{-n}$。则 $[y(x+1)^{-n}]'=e^{x}$，积分 $y(x+1)^{-n}=e^{x}+C$，$y=(x+1)^{n}(e^{x}+C)$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-062",
@@ -3686,7 +3760,9 @@ var QUESTION_BANK = {
       "question": "方程 $y' + \\frac{2}{x}y = \\frac{\\ln x}{x}$ 满足 $y(1)=0$ 的特解中，$y(e) = $ (   )。",
       "answer": "$\\frac{1}{4} + \\frac{1}{4e^{2}}$",
       "difficulty": "hard",
-      "solution": "积分因子 $\\mu(x)=e^{\\int\\frac{2}{x}dx}=x^{2}$。$(x^{2}y)'=x\\ln x$，分部积分 $x^{2}y=\\frac{x^{2}}{2}\\ln x-\\frac{x^{2}}{4}+C$。$y(1)=0$ 得 $C=\\frac{1}{4}$。$y=\\frac{1}{2}\\ln x-\\frac{1}{4}+\\frac{1}{4x^{2}}$。$y(e)=\\frac{1}{2}-\\frac{1}{4}+\\frac{1}{4e^{2}}=\\frac{1}{4}+\\frac{1}{4e^{2}}$。"
+      "solution": "积分因子 $\\mu(x)=e^{\\int\\frac{2}{x}dx}=x^{2}$。$(x^{2}y)'=x\\ln x$，分部积分 $x^{2}y=\\frac{x^{2}}{2}\\ln x-\\frac{x^{2}}{4}+C$。$y(1)=0$ 得 $C=\\frac{1}{4}$。$y=\\frac{1}{2}\\ln x-\\frac{1}{4}+\\frac{1}{4x^{2}}$。$y(e)=\\frac{1}{2}-\\frac{1}{4}+\\frac{1}{4e^{2}}=\\frac{1}{4}+\\frac{1}{4e^{2}}$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-063",
@@ -3694,7 +3770,9 @@ var QUESTION_BANK = {
       "question": "已知 $y_{1}=x$ 是方程 $x^{2}y'' - xy' + y = 0$ 的一个解，则其另一个线性无关解为 $y_{2} = $ (   )。",
       "answer": "$x\\ln|x|$",
       "difficulty": "hard",
-      "solution": "由刘维尔公式，标准型 $y''-\\frac{1}{x}y'+\\frac{1}{x^{2}}y=0$，$P(x)=-\\frac{1}{x}$。$y_{2}=y_{1}\\int\\frac{e^{-\\int P(x)dx}}{y_{1}^{2}}dx=x\\int\\frac{e^{\\int\\frac{1}{x}dx}}{x^{2}}dx=x\\int\\frac{x}{x^{2}}dx=x\\int\\frac{1}{x}dx=x\\ln|x|$。"
+      "solution": "由刘维尔公式，标准型 $y''-\\frac{1}{x}y'+\\frac{1}{x^{2}}y=0$，$P(x)=-\\frac{1}{x}$。$y_{2}=y_{1}\\int\\frac{e^{-\\int P(x)dx}}{y_{1}^{2}}dx=x\\int\\frac{e^{\\int\\frac{1}{x}dx}}{x^{2}}dx=x\\int\\frac{x}{x^{2}}dx=x\\int\\frac{1}{x}dx=x\\ln|x|$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-064",
@@ -3708,7 +3786,9 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "difficulty": "hard",
-      "solution": "Wronsky 行列式 $W=\\begin{vmatrix}\\cos x&\\sin x\\\\-\\sin x&\\cos x\\end{vmatrix}=\\cos^{2}x+\\sin^{2}x=1$。常数变易法公式：$y^{*}=y_{1}\\int\\frac{-y_{2}f}{W}dx+y_{2}\\int\\frac{y_{1}f}{W}dx=-\\cos x\\int f\\sin x\\,dx+\\sin x\\int f\\cos x\\,dx$。"
+      "solution": "Wronsky 行列式 $W=\\begin{vmatrix}\\cos x&\\sin x\\\\-\\sin x&\\cos x\\end{vmatrix}=\\cos^{2}x+\\sin^{2}x=1$。常数变易法公式：$y^{*}=y_{1}\\int\\frac{-y_{2}f}{W}dx+y_{2}\\int\\frac{y_{1}f}{W}dx=-\\cos x\\int f\\sin x\\,dx+\\sin x\\int f\\cos x\\,dx$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-065",
@@ -3722,7 +3802,9 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "difficulty": "hard",
-      "solution": "改写 $\\frac{dx}{dy}+\\frac{2y-\\frac{e^{-2y}}{y}}{y}x=?$ 不对，直接整理：$y dx+(2xy-e^{-2y})dy=0$，除以 $dy$：$y\\frac{dx}{dy}+2xy=e^{-2y}$。标准型 $\\frac{dx}{dy}+2x=\\frac{e^{-2y}}{y}$。$P(y)=2$，积分因子 $\\mu=e^{\\int 2dy}=e^{2y}$。"
+      "solution": "改写 $\\frac{dx}{dy}+\\frac{2y-\\frac{e^{-2y}}{y}}{y}x=?$ 不对，直接整理：$y dx+(2xy-e^{-2y})dy=0$，除以 $dy$：$y\\frac{dx}{dy}+2xy=e^{-2y}$。标准型 $\\frac{dx}{dy}+2x=\\frac{e^{-2y}}{y}$。$P(y)=2$，积分因子 $\\mu=e^{\\int 2dy}=e^{2y}$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-066",
@@ -3736,7 +3818,9 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "difficulty": "hard",
-      "solution": "积分因子 $\\mu(x)=e^{\\int\\frac{1}{x}dx}=x$。$(xy)'=\\sin x$，积分 $xy=-\\cos x+C$，$y=\\frac{1}{x}(-\\cos x+C)$。"
+      "solution": "积分因子 $\\mu(x)=e^{\\int\\frac{1}{x}dx}=x$。$(xy)'=\\sin x$，积分 $xy=-\\cos x+C$，$y=\\frac{1}{x}(-\\cos x+C)$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-067",
@@ -3750,7 +3834,9 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "difficulty": "hard",
-      "solution": "原式 $xdy-ydx=y^{2}dy$，同除以 $dy$：$x-y\\frac{dx}{dy}=y^{2}$。即 $-y\\frac{dx}{dy}=y^{2}-x$，$\\frac{dx}{dy}-\\frac{x}{y}=-y$。"
+      "solution": "原式 $xdy-ydx=y^{2}dy$，同除以 $dy$：$x-y\\frac{dx}{dy}=y^{2}$。即 $-y\\frac{dx}{dy}=y^{2}-x$，$\\frac{dx}{dy}-\\frac{x}{y}=-y$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-068",
@@ -3764,7 +3850,9 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "difficulty": "hard",
-      "solution": "化为 $y'+\\frac{1}{x}y=\\frac{\\ln x}{x}y^{2}$，是伯努利方程（$n=2$）。令 $z=y^{1-2}=y^{-1}$，则 $z'=-y^{-2}y'$，代入得 $z'-\\frac{1}{x}z=-\\frac{\\ln x}{x}$。"
+      "solution": "化为 $y'+\\frac{1}{x}y=\\frac{\\ln x}{x}y^{2}$，是伯努利方程（$n=2$）。令 $z=y^{1-2}=y^{-1}$，则 $z'=-y^{-2}y'$，代入得 $z'-\\frac{1}{x}z=-\\frac{\\ln x}{x}$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-069",
@@ -3772,7 +3860,9 @@ var QUESTION_BANK = {
       "question": "已知连续函数 $f(x)$ 满足 $\\int_{0}^{x}f(t)\\,dt = f(x) - 1$，则 $f(x) = $ (   )。",
       "answer": "$e^{x}$",
       "difficulty": "hard",
-      "solution": "两边对 $x$ 求导：$f(x)=f'(x)$，即 $f'-f=0$，通解 $f=Ce^{x}$。代回原方程：$\\int_{0}^{x}Ce^{t}dt=C(e^{x}-1)=Ce^{x}-1$，得 $C=1$。故 $f(x)=e^{x}$。"
+      "solution": "两边对 $x$ 求导：$f(x)=f'(x)$，即 $f'-f=0$，通解 $f=Ce^{x}$。代回原方程：$\\int_{0}^{x}Ce^{t}dt=C(e^{x}-1)=Ce^{x}-1$，得 $C=1$。故 $f(x)=e^{x}$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-070",
@@ -3786,7 +3876,9 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "difficulty": "hard",
-      "solution": "令 $y'=p$，$\\frac{dp}{dx}=p^{2}+1$，$\\frac{dp}{1+p^{2}}=dx$，$\\arctan p=x+C_{1}$。由 $p(0)=0$ 得 $C_{1}=0$，$p=\\tan x$。$\\frac{dy}{dx}=\\tan x$，$y=-\\ln|\\cos x|+C_{2}$。由 $y(0)=0$ 得 $C_{2}=0$。故 $y=-\\ln|\\cos x|$。"
+      "solution": "令 $y'=p$，$\\frac{dp}{dx}=p^{2}+1$，$\\frac{dp}{1+p^{2}}=dx$，$\\arctan p=x+C_{1}$。由 $p(0)=0$ 得 $C_{1}=0$，$p=\\tan x$。$\\frac{dy}{dx}=\\tan x$，$y=-\\ln|\\cos x|+C_{2}$。由 $y(0)=0$ 得 $C_{2}=0$。故 $y=-\\ln|\\cos x|$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-diffeq-071",
@@ -3800,7 +3892,9 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "difficulty": "hard",
-      "solution": "令 $u=y/x$，则 $y=xu$，$y'=u+xu'$。代入：$u+x\\frac{du}{dx}=\\frac{x+xu}{x-xu}=\\frac{1+u}{1-u}$。"
+      "solution": "令 $u=y/x$，则 $y=xu$，$y'=u+xu'$。代入：$u+x\\frac{du}{dx}=\\frac{x+xu}{x-xu}=\\frac{1+u}{1-u}$。",
+      "cat": "微分方程",
+      "topic": "微分方程"
     },
     {
       "id": "cal-de-ode-01",
@@ -4065,7 +4159,9 @@ var QUESTION_BANK = {
         "$11$"
       ],
       "answer": 0,
-      "solution": "$偏导计算：把 y 看作常数求导。\\frac{\\partial z}{\\partial x} = 3x^2 + 3y，代入 (1,2)：3+6=9。**答案：A**$"
+      "solution": "$偏导计算：把 y 看作常数求导。\\frac{\\partial z}{\\partial x} = 3x^2 + 3y，代入 (1,2)：3+6=9。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-002",
@@ -4079,7 +4175,9 @@ var QUESTION_BANK = {
         "既不充分也不必要条件"
       ],
       "answer": 2,
-      "solution": "$可微 \\Rightarrow 偏导存在（必要），但偏导存在 \\nRightarrow 可微。反例：f(x,y)=\\frac{xy}{x^2+y^2} 在 (0,0) 偏导存在但不可微。**答案：C**$"
+      "solution": "$可微 \\Rightarrow 偏导存在（必要），但偏导存在 \\nRightarrow 可微。反例：f(x,y)=\\frac{xy}{x^2+y^2} 在 (0,0) 偏导存在但不可微。**答案：C**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-003",
@@ -4093,7 +4191,9 @@ var QUESTION_BANK = {
         "$f_u - yf_v$"
       ],
       "answer": 0,
-      "solution": "$链式法则：\\frac{\\partial z}{\\partial x} = f_u \\cdot u_x + f_v \\cdot v_x = f_u \\cdot 1 + f_v \\cdot y。**答案：A**$"
+      "solution": "$链式法则：\\frac{\\partial z}{\\partial x} = f_u \\cdot u_x + f_v \\cdot v_x = f_u \\cdot 1 + f_v \\cdot y。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-004",
@@ -4107,7 +4207,9 @@ var QUESTION_BANK = {
         "$(2,2)$"
       ],
       "answer": 0,
-      "solution": "$\\nabla z = (\\frac{\\partial z}{\\partial x}, \\frac{\\partial z}{\\partial y}) = (2x, 2y)，点 (1,2) 处为 (2,4)。**答案：A**$"
+      "solution": "$\\nabla z = (\\frac{\\partial z}{\\partial x}, \\frac{\\partial z}{\\partial y}) = (2x, 2y)，点 (1,2) 处为 (2,4)。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-005",
@@ -4121,7 +4223,9 @@ var QUESTION_BANK = {
         "$e^{x+y}dxdy$"
       ],
       "answer": 0,
-      "solution": "$全微分：dz = \\frac{\\partial z}{\\partial x}dx + \\frac{\\partial z}{\\partial y}dy = e^{x+y}dx + e^{x+y}dy = e^{x+y}(dx+dy)。**答案：A**$"
+      "solution": "$全微分：dz = \\frac{\\partial z}{\\partial x}dx + \\frac{\\partial z}{\\partial y}dy = e^{x+y}dx + e^{x+y}dy = e^{x+y}(dx+dy)。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-006",
@@ -4135,7 +4239,9 @@ var QUESTION_BANK = {
         "$-\\frac{1}{x+y}$"
       ],
       "answer": 0,
-      "solution": "$\\frac{\\partial z}{\\partial x} = \\frac{1}{x+y}，再对 y 求导：\\frac{\\partial^2 z}{\\partial x\\partial y} = -\\frac{1}{(x+y)^2}。**答案：A**$"
+      "solution": "$\\frac{\\partial z}{\\partial x} = \\frac{1}{x+y}，再对 y 求导：\\frac{\\partial^2 z}{\\partial x\\partial y} = -\\frac{1}{(x+y)^2}。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-007",
@@ -4149,7 +4255,9 @@ var QUESTION_BANK = {
         "$(1,1)$"
       ],
       "answer": 0,
-      "solution": "驻点：$z_x = 2x-2=0 \\Rightarrow x=1$，$z_y = 2y-4=0 \\Rightarrow y=2$。$z_{xx}=2>0$ 且 $z_{xx}z_{yy}-z_{xy}^2=4>0$，是极小值点。**答案：A**"
+      "solution": "驻点：$z_x = 2x-2=0 \\Rightarrow x=1$，$z_y = 2y-4=0 \\Rightarrow y=2$。$z_{xx}=2>0$ 且 $z_{xx}z_{yy}-z_{xy}^2=4>0$，是极小值点。**答案：A**",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-008",
@@ -4163,7 +4271,9 @@ var QUESTION_BANK = {
         "$\\frac{F_y}{F_x}$"
       ],
       "answer": 0,
-      "solution": "$隐函数求导公式：F(x,y(x)) = 0 两边对 x 求导，F_x + F_y \\cdot y' = 0，得 y' = -\\frac{F_x}{F_y}。**答案：A**$"
+      "solution": "$隐函数求导公式：F(x,y(x)) = 0 两边对 x 求导，F_x + F_y \\cdot y' = 0，得 y' = -\\frac{F_x}{F_y}。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-009",
@@ -4177,7 +4287,9 @@ var QUESTION_BANK = {
         "不存在"
       ],
       "answer": 3,
-      "solution": "$沿 y=kx 取极限：\\frac{kx^2}{x^2+k^2x^2} = \\frac{k}{1+k^2}，不同 k 得到不同值，极限不存在。**答案：D**$"
+      "solution": "$沿 y=kx 取极限：\\frac{kx^2}{x^2+k^2x^2} = \\frac{k}{1+k^2}，不同 k 得到不同值，极限不存在。**答案：D**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-010",
@@ -4191,7 +4303,9 @@ var QUESTION_BANK = {
         "$f_x + f_y$"
       ],
       "answer": 0,
-      "solution": "$方向导数公式：\\frac{\\partial u}{\\partial l} = \\nabla u \\cdot \\vec{l} = f_x\\cos\\alpha + f_y\\cos\\beta。**答案：A**$"
+      "solution": "$方向导数公式：\\frac{\\partial u}{\\partial l} = \\nabla u \\cdot \\vec{l} = f_x\\cos\\alpha + f_y\\cos\\beta。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-011",
@@ -4205,7 +4319,9 @@ var QUESTION_BANK = {
         "$f_1' + f_2'$"
       ],
       "answer": 0,
-      "solution": "$链式法则：令 u=xy, v=x^2+y^2，则 z_x = f_u \\cdot u_x + f_v \\cdot v_x = f_1' \\cdot y + f_2' \\cdot 2x。**答案：A**$"
+      "solution": "$链式法则：令 u=xy, v=x^2+y^2，则 z_x = f_u \\cdot u_x + f_v \\cdot v_x = f_1' \\cdot y + f_2' \\cdot 2x。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-012",
@@ -4219,7 +4335,9 @@ var QUESTION_BANK = {
         "$x + y + z = 4$"
       ],
       "answer": 0,
-      "solution": "$令 F = x^2 + y^2 - z = 0，\\nabla F = (2x, 2y, -1)。在 (1,1,2)：\\vec{n} = (2,2,-1)。切平面：2(x-1)+2(y-1)-(z-2)=0，即 2x+2y-z=2。**答案：A**$"
+      "solution": "$令 F = x^2 + y^2 - z = 0，\\nabla F = (2x, 2y, -1)。在 (1,1,2)：\\vec{n} = (2,2,-1)。切平面：2(x-1)+2(y-1)-(z-2)=0，即 2x+2y-z=2。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-013",
@@ -4233,7 +4351,9 @@ var QUESTION_BANK = {
         "$(1,0)$"
       ],
       "answer": 0,
-      "solution": "驻点：$z_x=3x^2-3y=0$，$z_y=3y^2-3x=0$，解得 $(0,0)$ 和 $(1,1)$。$z_{xx}=6x$，$z_{xy}=-3$，$z_{yy}=6y$。$(0,0)$ 处 $A=0, B=-3, C=0$，$AC-B^2=-9<0$，是鞍点。$(1,1)$ 处 $A=6, B=-3, C=6$，$AC-B^2=27>0, A>0$，是极小值点。**答案：A**"
+      "solution": "驻点：$z_x=3x^2-3y=0$，$z_y=3y^2-3x=0$，解得 $(0,0)$ 和 $(1,1)$。$z_{xx}=6x$，$z_{xy}=-3$，$z_{yy}=6y$。$(0,0)$ 处 $A=0, B=-3, C=0$，$AC-B^2=-9<0$，是鞍点。$(1,1)$ 处 $A=6, B=-3, C=6$，$AC-B^2=27>0, A>0$，是极小值点。**答案：A**",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-014",
@@ -4247,7 +4367,9 @@ var QUESTION_BANK = {
         "$\\frac{z}{x}$"
       ],
       "answer": 0,
-      "solution": "$隐函数求导：F = x^2+y^2+z^2-1=0，F_x=2x，F_z=2z。\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{x}{z}。**答案：A**$"
+      "solution": "$隐函数求导：F = x^2+y^2+z^2-1=0，F_x=2x，F_z=2z。\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{x}{z}。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-015",
@@ -4261,7 +4383,9 @@ var QUESTION_BANK = {
         "$\\frac{1}{x^2+y^2}$"
       ],
       "answer": 0,
-      "solution": "$记 r=\\sqrt{x^2+y^2}，z = r^2 - \\ln r。z_x = 2x - \\frac{x}{r^2}，z_{xx} = 2 - \\frac{r^2 - 2x^2}{r^4}。同理 z_{yy} = 2 - \\frac{r^2 - 2y^2}{r^4}。相加得 4 - \\frac{2r^2 - 2(x^2+y^2)}{r^4} = 4。**答案：A**$"
+      "solution": "$记 r=\\sqrt{x^2+y^2}，z = r^2 - \\ln r。z_x = 2x - \\frac{x}{r^2}，z_{xx} = 2 - \\frac{r^2 - 2x^2}{r^4}。同理 z_{yy} = 2 - \\frac{r^2 - 2y^2}{r^4}。相加得 4 - \\frac{2r^2 - 2(x^2+y^2)}{r^4} = 4。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-016",
@@ -4275,7 +4399,9 @@ var QUESTION_BANK = {
         "$1$"
       ],
       "answer": 0,
-      "solution": "$**拉格朗日乘数法**：L = x^2+y^2 + \\lambda(2-x-y)。L_x=2x-\\lambda=0，L_y=2y-\\lambda=0，得 x=y。由 x+y=2 得 x=y=1，极小值 z=2。**答案：A**$"
+      "solution": "$**拉格朗日乘数法**：L = x^2+y^2 + \\lambda(2-x-y)。L_x=2x-\\lambda=0，L_y=2y-\\lambda=0，得 x=y。由 x+y=2 得 x=y=1，极小值 z=2。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-017",
@@ -4289,7 +4415,9 @@ var QUESTION_BANK = {
         "$0$"
       ],
       "answer": 0,
-      "solution": "$可微意味着 f(\\sin t, \\tan t) = f(0,0) + f_x(0,0)\\sin t + f_y(0,0)\\tan t + o(\\sqrt{\\sin^2 t + \\tan^2 t})。= \\sin t + 2\\tan t + o(t)。除以 t：\\frac{\\sin t}{t} + 2\\frac{\\tan t}{t} \\to 1+2=3。**答案：A**$"
+      "solution": "$可微意味着 f(\\sin t, \\tan t) = f(0,0) + f_x(0,0)\\sin t + f_y(0,0)\\tan t + o(\\sqrt{\\sin^2 t + \\tan^2 t})。= \\sin t + 2\\tan t + o(t)。除以 t：\\frac{\\sin t}{t} + 2\\frac{\\tan t}{t} \\to 1+2=3。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-018",
@@ -4303,7 +4431,9 @@ var QUESTION_BANK = {
         "$\\frac{F_2'}{F_1'}$"
       ],
       "answer": 0,
-      "solution": "$设 u = x+zy, v = y+z。对 x 求偏导：F_u \\cdot (1 + z_x y) + F_v \\cdot z_x = 0，得 z_x = -\\frac{F_u}{yF_u + F_v} = -\\frac{F_1'}{yF_1'+F_2'}。**答案：A**$"
+      "solution": "$设 u = x+zy, v = y+z。对 x 求偏导：F_u \\cdot (1 + z_x y) + F_v \\cdot z_x = 0，得 z_x = -\\frac{F_u}{yF_u + F_v} = -\\frac{F_1'}{yF_1'+F_2'}。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-019",
@@ -4317,7 +4447,9 @@ var QUESTION_BANK = {
         "$\\frac{1}{2}dx - dy - \\ln 2 dz$"
       ],
       "answer": 3,
-      "solution": "$取对数：\\ln u = \\frac{1}{z}(\\ln x - \\ln y)。求全微分：\\frac{du}{u} = -\\frac{1}{z^2}(\\ln x - \\ln y)dz + \\frac{1}{z}(\\frac{dx}{x} - \\frac{dy}{y})。在 (2,1,1)：u=2，\\ln u = \\ln 2，du = 2(\\frac{dx}{2} - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz… 检验：u=2，du/u = -\\ln2 dz + dx/2 - dy，du = \\frac{1}{2}dx - dy - \\ln 2 dz。（乘以 u 时注意 x=2, y=1，\\frac{2}{2x}=\\frac{1}{2}\\cdot 2? 再算：u=2，\\frac{du}{2}=-\\ln 2 + \\frac{1}{2} - 1，所以 du = 2(\\frac{1}{2}dx - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz... 选项D是 \\frac{1}{2}dx - dy - \\ln 2 dz。**答案：D**$"
+      "solution": "$取对数：\\ln u = \\frac{1}{z}(\\ln x - \\ln y)。求全微分：\\frac{du}{u} = -\\frac{1}{z^2}(\\ln x - \\ln y)dz + \\frac{1}{z}(\\frac{dx}{x} - \\frac{dy}{y})。在 (2,1,1)：u=2，\\ln u = \\ln 2，du = 2(\\frac{dx}{2} - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz… 检验：u=2，du/u = -\\ln2 dz + dx/2 - dy，du = \\frac{1}{2}dx - dy - \\ln 2 dz。（乘以 u 时注意 x=2, y=1，\\frac{2}{2x}=\\frac{1}{2}\\cdot 2? 再算：u=2，\\frac{du}{2}=-\\ln 2 + \\frac{1}{2} - 1，所以 du = 2(\\frac{1}{2}dx - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz... 选项D是 \\frac{1}{2}dx - dy - \\ln 2 dz。**答案：D**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-020",
@@ -4331,7 +4463,9 @@ var QUESTION_BANK = {
         "$\\frac{1}{2}$"
       ],
       "answer": 0,
-      "solution": "$隐函数：F = e^{xyz} - x - y - z = 0。F_x = yz \\cdot e^{xyz} - 1，F_z = xy \\cdot e^{xyz} - 1。在 (0,0,0)：F_x = -1，F_z = -1，\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{-1}{-1} = -1… 再算：F_x = yz e^{xyz} - 1 = 0-1 = -1，F_z = xy e^{xyz} - 1 = 0-1 = -1。z_x = -F_x/F_z = -(-1)/(-1) = -1。**答案：B**$"
+      "solution": "$隐函数：F = e^{xyz} - x - y - z = 0。F_x = yz \\cdot e^{xyz} - 1，F_z = xy \\cdot e^{xyz} - 1。在 (0,0,0)：F_x = -1，F_z = -1，\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{-1}{-1} = -1… 再算：F_x = yz e^{xyz} - 1 = 0-1 = -1，F_z = xy e^{xyz} - 1 = 0-1 = -1。z_x = -F_x/F_z = -(-1)/(-1) = -1。**答案：B**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-021",
@@ -4345,7 +4479,9 @@ var QUESTION_BANK = {
         "$f(u) = Ce^u$"
       ],
       "answer": 0,
-      "solution": "$z_x = y + f'(x^2+y^2) \\cdot 2x，z_y = x + f'(x^2+y^2) \\cdot 2y。x z_y - y z_x = x(x+2yf') - y(y+2xf') = x^2 + 2xyf' - y^2 - 2xyf' = x^2 - y^2 \\neq 0 一般情况不为0。要使恒为零，需要 f 为常数（f'=0时原方程变为 x^2-y^2，仍不恒为零）。重新检查题目含义…更严谨地：题设可能指 x\\frac{\\partial z}{\\partial y} - y\\frac{\\partial z}{\\partial x} 在特定条件下成立。若 f 为常数，则 z=xy+C，xz_y-yz_x = x(x)-y(y) = x^2-y^2。所以 f 不是常数。若 f(u) = C\\ln u，检验代入后…此题需慎重。**答案：A**$"
+      "solution": "$z_x = y + f'(x^2+y^2) \\cdot 2x，z_y = x + f'(x^2+y^2) \\cdot 2y。x z_y - y z_x = x(x+2yf') - y(y+2xf') = x^2 + 2xyf' - y^2 - 2xyf' = x^2 - y^2 \\neq 0 一般情况不为0。要使恒为零，需要 f 为常数（f'=0时原方程变为 x^2-y^2，仍不恒为零）。重新检查题目含义…更严谨地：题设可能指 x\\frac{\\partial z}{\\partial y} - y\\frac{\\partial z}{\\partial x} 在特定条件下成立。若 f 为常数，则 z=xy+C，xz_y-yz_x = x(x)-y(y) = x^2-y^2。所以 f 不是常数。若 f(u) = C\\ln u，检验代入后…此题需慎重。**答案：A**$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-022",
@@ -4359,7 +4495,9 @@ var QUESTION_BANK = {
         "$\\{(x,y)\\mid x>0,y>0\\}$"
       ],
       "answer": 1,
-      "solution": "对数函数要求真数大于0：$x^2+y^2>0$，除去原点。"
+      "solution": "对数函数要求真数大于0：$x^2+y^2>0$，除去原点。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-023",
@@ -4373,7 +4511,9 @@ var QUESTION_BANK = {
         "$2xy$"
       ],
       "answer": 0,
-      "solution": "$z_x=2xy$，再对$y$求导得$z_{xy}=2x$。"
+      "solution": "$z_x=2xy$，再对$y$求导得$z_{xy}=2x$。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-024",
@@ -4387,7 +4527,9 @@ var QUESTION_BANK = {
         "不可导"
       ],
       "answer": 1,
-      "solution": "$f\\ge0=f(0,0)$，$A=2,B=0,C=2$，$AC-B^2=4>0,A>0$极小。"
+      "solution": "$f\\ge0=f(0,0)$，$A=2,B=0,C=2$，$AC-B^2=4>0,A>0$极小。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-025",
@@ -4401,7 +4543,9 @@ var QUESTION_BANK = {
         "$f_{xx}dx+f_{yy}dy$"
       ],
       "answer": 0,
-      "solution": "全微分定义：$dz=f_xdx+f_ydy$。"
+      "solution": "全微分定义：$dz=f_xdx+f_ydy$。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-026",
@@ -4415,7 +4559,9 @@ var QUESTION_BANK = {
         "$\\frac{dx+dy}{1+x^2+y^2}$"
       ],
       "answer": 0,
-      "solution": "$z_x=\\frac{2x}{1+x^2+y^2}，z_y=\\frac{2y}{1+x^2+y^2}。$"
+      "solution": "$z_x=\\frac{2x}{1+x^2+y^2}，z_y=\\frac{2y}{1+x^2+y^2}。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-027",
@@ -4429,7 +4575,9 @@ var QUESTION_BANK = {
         "$x-y$"
       ],
       "answer": 0,
-      "solution": "$z_x=2xf',z_y=2yf'$，相减得0。"
+      "solution": "$z_x=2xf',z_y=2yf'$，相减得0。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-028",
@@ -4443,7 +4591,9 @@ var QUESTION_BANK = {
         "$dx+dy$"
       ],
       "answer": 0,
-      "solution": "$z_x=yx^{y-1}=2e，z_y=x^y\\ln x=e^2。$"
+      "solution": "$z_x=yx^{y-1}=2e，z_y=x^y\\ln x=e^2。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-029",
@@ -4457,7 +4607,9 @@ var QUESTION_BANK = {
         "$\\frac{x}{\\sqrt{1-x^2-y^2}}$"
       ],
       "answer": 0,
-      "solution": "$2x+2z\\frac{\\partial z}{\\partial x}=0，\\frac{\\partial z}{\\partial x}=-\\frac{x}{z}。$"
+      "solution": "$2x+2z\\frac{\\partial z}{\\partial x}=0，\\frac{\\partial z}{\\partial x}=-\\frac{x}{z}。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-030",
@@ -4471,7 +4623,9 @@ var QUESTION_BANK = {
         "$0$"
       ],
       "answer": 1,
-      "solution": "$拉格朗日：L=xy+\\lambda(1-x-y)，x=y=\\frac12，f=\\frac14。$"
+      "solution": "$拉格朗日：L=xy+\\lambda(1-x-y)，x=y=\\frac12，f=\\frac14。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-031",
@@ -4485,7 +4639,9 @@ var QUESTION_BANK = {
         "$z=xy$"
       ],
       "answer": 1,
-      "solution": "$F=z-xy$，$F_x=-1,F_y=-1,F_z=1$，$x+y-z=1$。"
+      "solution": "$F=z-xy$，$F_x=-1,F_y=-1,F_z=1$，$x+y-z=1$。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-032",
@@ -4499,7 +4655,9 @@ var QUESTION_BANK = {
         "既不充分也不必要"
       ],
       "answer": 3,
-      "solution": "偏导存在$\\not\\Rightarrow$连续，连续$\\not\\Rightarrow$偏导存在。"
+      "solution": "偏导存在$\\not\\Rightarrow$连续，连续$\\not\\Rightarrow$偏导存在。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-033",
@@ -4513,7 +4671,9 @@ var QUESTION_BANK = {
         "$f_x$"
       ],
       "answer": 0,
-      "solution": "$链式法则：u_x=f_1\\cdot1+f_2\\cdot y+f_3\\cdot yz。$"
+      "solution": "$链式法则：u_x=f_1\\cdot1+f_2\\cdot y+f_3\\cdot yz。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-034",
@@ -4527,7 +4687,9 @@ var QUESTION_BANK = {
         "$3$"
       ],
       "answer": 2,
-      "solution": "$f_x=3x^2-3y=0$，得$x^4=x$，$x=0,1$对应$(0,0),(1,1)$。"
+      "solution": "$f_x=3x^2-3y=0$，得$x^4=x$，$x=0,1$对应$(0,0),(1,1)$。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-036",
@@ -4541,7 +4703,9 @@ var QUESTION_BANK = {
         "不是驻点"
       ],
       "answer": 2,
-      "solution": "$f_x=f_y=0$但$A=0,B=1,C=0$，$AC-B^2=-1<0$，鞍点。"
+      "solution": "$f_x=f_y=0$但$A=0,B=1,C=0$，$AC-B^2=-1<0$，鞍点。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-037",
@@ -4555,7 +4719,9 @@ var QUESTION_BANK = {
         "最大0最小-1"
       ],
       "answer": 0,
-      "solution": "内部$(0,0)$取最小值0，边界取最大值1。"
+      "solution": "内部$(0,0)$取最小值0，边界取最大值1。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-039",
@@ -4563,7 +4729,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "$z=\\arctan\\frac{y}{x}，x\\frac{\\partial z}{\\partial x}+y\\frac{\\partial z}{\\partial y}=(  )。$",
       "answer": "0",
-      "solution": "欧拉定理：零次齐次函数。直接验证也可。"
+      "solution": "欧拉定理：零次齐次函数。直接验证也可。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-040",
@@ -4571,7 +4739,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$z=x^2+y^2$ 在 $(1,1,2)$ 法向量为(  )。",
       "answer": "(-2,-2,1)",
-      "solution": "$F=z-x^2-y^2$，$F_x=-2,F_y=-2,F_z=1$。"
+      "solution": "$F=z-x^2-y^2$，$F_x=-2,F_y=-2,F_z=1$。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-041",
@@ -4579,7 +4749,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$f(x,y)=x^2-xy+y^2$ 在 $(1,2)$ 方向导数最大值(  )。",
       "answer": "3",
-      "solution": "$\\nabla f=(2x-y,-x+2y)=(0,3)，|\\nabla f|=3。$"
+      "solution": "$\\nabla f=(2x-y,-x+2y)=(0,3)，|\\nabla f|=3。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-042",
@@ -4587,7 +4759,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$z=x\\sin(x+y)，z_{xx}=(  )。$",
       "answer": "2cos(x+y)-xsin(x+y)",
-      "solution": "$z_x=\\sin(x+y)+x\\cos(x+y)，再求导。$"
+      "solution": "$z_x=\\sin(x+y)+x\\cos(x+y)，再求导。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-044",
@@ -4595,7 +4769,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$u=\\ln\\sqrt{x^2+y^2+z^2} 在 (1,1,1) 梯度(  )。$",
       "answer": "(1/3,1/3,1/3)",
-      "solution": "$u_x=\\frac{x}{x^2+y^2+z^2}，各分量1/3。$"
+      "solution": "$u_x=\\frac{x}{x^2+y^2+z^2}，各分量1/3。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-045",
@@ -4603,7 +4779,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$f=x^2+y^2$ 在 $x+y=2$ 下最小值(  )。",
       "answer": "2",
-      "solution": "$L=x^2+y^2+\\lambda(2-x-y)，x=y=1，f=2。$"
+      "solution": "$L=x^2+y^2+\\lambda(2-x-y)，x=y=1，f=2。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-046",
@@ -4611,7 +4789,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$f=x^2+xy+y^2-3x-3y$ 极小值(  )。",
       "answer": "-3",
-      "solution": "驻点$(1,1)$，$AC-B^2=3>0,A>0$，$f=-3$。"
+      "solution": "驻点$(1,1)$，$AC-B^2=3>0,A>0$，$f=-3$。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-047",
@@ -4619,7 +4799,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$(0,0,0)$ 到平面 $x+2y+2z=6$ 距离(  )。",
       "answer": "2",
-      "solution": "$d=\\frac{6}{\\sqrt{1+4+4}}=2。$"
+      "solution": "$d=\\frac{6}{\\sqrt{1+4+4}}=2。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-048",
@@ -4627,7 +4809,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$xyz+z^3=4 在 (1,1,1) 处 \\frac{\\partial z}{\\partial x}=(  )。$",
       "answer": "-1/4",
-      "solution": "$F_x=yz=1$，$F_z=xy+3z^2=4$，商$-1/4$。"
+      "solution": "$F_x=yz=1$，$F_z=xy+3z^2=4$，商$-1/4$。",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-049",
@@ -4635,7 +4819,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$f=e^x(x+y^2) 在 (-1,0) 处为(  )（极大/极小/鞍点）。$",
       "answer": "极小值",
-      "solution": "$A=e^{-1}>0,B=0,C=2e^{-1}，AC-B^2>0。$"
+      "solution": "$A=e^{-1}>0,B=0,C=2e^{-1}，AC-B^2>0。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-050",
@@ -4643,7 +4829,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$f=x^2+y^2$ 在 $x^2+xy+y^2=3$ 下最大值(  )。",
       "answer": "6",
-      "solution": "$旋转变换或特征值法，\\lambda_{\\max}=2，最大值3\\cdot2=6。$"
+      "solution": "$旋转变换或特征值法，\\lambda_{\\max}=2，最大值3\\cdot2=6。$",
+      "cat": "多元函数微分学",
+      "topic": "多元函数微分学"
     },
     {
       "id": "cal-md-101",
@@ -4830,7 +5018,9 @@ var QUESTION_BANK = {
         "用极坐标变换"
       ],
       "answer": 0,
-      "solution": "$\\sin(y^2) 对 y 不可用初等函数表示，但交换次序后：\\int_0^1\\!\\int_0^y \\sin(y^2)\\,dx\\,dy = \\int_0^1 y\\sin(y^2)dy = -\\frac{1}{2}\\cos(y^2)\\big|_0^1 = \\frac{1-\\cos 1}{2}。**答案：A**$"
+      "solution": "$\\sin(y^2) 对 y 不可用初等函数表示，但交换次序后：\\int_0^1\\!\\int_0^y \\sin(y^2)\\,dx\\,dy = \\int_0^1 y\\sin(y^2)dy = -\\frac{1}{2}\\cos(y^2)\\big|_0^1 = \\frac{1-\\cos 1}{2}。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-011",
@@ -4844,7 +5034,9 @@ var QUESTION_BANK = {
         "$\\int_0^2\\!\\int_0^{2-y} f(x,y)\\,dx\\,dy$"
       ],
       "answer": 0,
-      "solution": "$区域：0 \\leq y \\leq 2，y \\leq x \\leq 2。画出区域：y \\leq x，交换后 0 \\leq y \\leq x，0 \\leq x \\leq 2。故 \\int_0^2\\!\\int_0^x f(x,y)\\,dy\\,dx。**答案：A**$"
+      "solution": "$区域：0 \\leq y \\leq 2，y \\leq x \\leq 2。画出区域：y \\leq x，交换后 0 \\leq y \\leq x，0 \\leq x \\leq 2。故 \\int_0^2\\!\\int_0^x f(x,y)\\,dy\\,dx。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-012",
@@ -4858,7 +5050,9 @@ var QUESTION_BANK = {
         "$4$"
       ],
       "answer": 0,
-      "solution": "$**极坐标**：x^2+y^2 \\leq 2x 即 r^2 \\leq 2r\\cos\\theta \\Rightarrow r \\leq 2\\cos\\theta，-\\frac{\\pi}{2} \\leq \\theta \\leq \\frac{\\pi}{2}。\\iint = \\int_{-\\pi/2}^{\\pi/2}\\!\\int_0^{2\\cos\\theta} r \\cdot r\\,dr\\,d\\theta = \\int_{-\\pi/2}^{\\pi/2} \\frac{8\\cos^3\\theta}{3}d\\theta = \\frac{16}{3}\\int_0^{\\pi/2} \\cos^3\\theta d\\theta = \\frac{16}{3} \\cdot \\frac{2}{3} = \\frac{32}{9}。**答案：A**$"
+      "solution": "$**极坐标**：x^2+y^2 \\leq 2x 即 r^2 \\leq 2r\\cos\\theta \\Rightarrow r \\leq 2\\cos\\theta，-\\frac{\\pi}{2} \\leq \\theta \\leq \\frac{\\pi}{2}。\\iint = \\int_{-\\pi/2}^{\\pi/2}\\!\\int_0^{2\\cos\\theta} r \\cdot r\\,dr\\,d\\theta = \\int_{-\\pi/2}^{\\pi/2} \\frac{8\\cos^3\\theta}{3}d\\theta = \\frac{16}{3}\\int_0^{\\pi/2} \\cos^3\\theta d\\theta = \\frac{16}{3} \\cdot \\frac{2}{3} = \\frac{32}{9}。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-013",
@@ -4872,7 +5066,9 @@ var QUESTION_BANK = {
         "$\\frac{2}{3}$"
       ],
       "answer": 0,
-      "solution": "$区域分 y \\geq x 和 y < x 两部分。对称性：I = 2\\int_0^1\\!\\int_0^x (x-y)\\,dy\\,dx = 2\\int_0^1 \\frac{x^2}{2}\\,dx = \\frac{1}{3}。**答案：A**$"
+      "solution": "$区域分 y \\geq x 和 y < x 两部分。对称性：I = 2\\int_0^1\\!\\int_0^x (x-y)\\,dy\\,dx = 2\\int_0^1 \\frac{x^2}{2}\\,dx = \\frac{1}{3}。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-014",
@@ -4886,7 +5082,9 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{2}(e-1)$"
       ],
       "answer": 0,
-      "solution": "$**极坐标**：\\iint_D e^{r^2} \\cdot r\\,dr\\,d\\theta = \\int_0^{2\\pi}\\!\\int_0^1 re^{r^2}\\,dr\\,d\\theta = 2\\pi \\cdot \\frac{1}{2}(e-1) = \\pi(e-1)。**答案：A**$"
+      "solution": "$**极坐标**：\\iint_D e^{r^2} \\cdot r\\,dr\\,d\\theta = \\int_0^{2\\pi}\\!\\int_0^1 re^{r^2}\\,dr\\,d\\theta = 2\\pi \\cdot \\frac{1}{2}(e-1) = \\pi(e-1)。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-015",
@@ -4900,7 +5098,9 @@ var QUESTION_BANK = {
         "$1$"
       ],
       "answer": 0,
-      "solution": "$**对称性**：D 关于 y 轴对称（-1 \\leq x \\leq 1），f(x,y)=x 是 x 的奇函数，积分为 0。**答案：A**$"
+      "solution": "$**对称性**：D 关于 y 轴对称（-1 \\leq x \\leq 1），f(x,y)=x 是 x 的奇函数，积分为 0。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-016",
@@ -4914,7 +5114,9 @@ var QUESTION_BANK = {
         "$1-\\sin 1$"
       ],
       "answer": 0,
-      "solution": "$交换次序：区域 0 \\leq x \\leq 1, \\sqrt{x} \\leq y \\leq 1 等价于 0 \\leq y \\leq 1, 0 \\leq x \\leq y^2。I = \\int_0^1\\!\\int_0^{y^2} \\frac{\\sin y}{y}\\,dx\\,dy = \\int_0^1 y\\sin y\\,dy = \\sin 1 - \\cos 1…再算：\\int y\\sin y dy = -y\\cos y + \\sin y，代入得 1-\\cos 1。**答案：A**$"
+      "solution": "$交换次序：区域 0 \\leq x \\leq 1, \\sqrt{x} \\leq y \\leq 1 等价于 0 \\leq y \\leq 1, 0 \\leq x \\leq y^2。I = \\int_0^1\\!\\int_0^{y^2} \\frac{\\sin y}{y}\\,dx\\,dy = \\int_0^1 y\\sin y\\,dy = \\sin 1 - \\cos 1…再算：\\int y\\sin y dy = -y\\cos y + \\sin y，代入得 1-\\cos 1。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-017",
@@ -4928,7 +5130,9 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{2}$"
       ],
       "answer": 0,
-      "solution": "$**极坐标**：D: 0 \\leq r \\leq 1, 0 \\leq \\theta \\leq \\pi/2。I = \\int_0^{\\pi/2}\\!\\int_0^1 \\frac{r\\cos\\theta}{r^2} \\cdot r\\,dr\\,d\\theta = \\int_0^{\\pi/2}\\!\\int_0^1 \\cos\\theta\\,dr\\,d\\theta = \\sin\\theta\\big|_0^{\\pi/2} = 1。**答案：A**$"
+      "solution": "$**极坐标**：D: 0 \\leq r \\leq 1, 0 \\leq \\theta \\leq \\pi/2。I = \\int_0^{\\pi/2}\\!\\int_0^1 \\frac{r\\cos\\theta}{r^2} \\cdot r\\,dr\\,d\\theta = \\int_0^{\\pi/2}\\!\\int_0^1 \\cos\\theta\\,dr\\,d\\theta = \\sin\\theta\\big|_0^{\\pi/2} = 1。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-018",
@@ -4942,7 +5146,9 @@ var QUESTION_BANK = {
         "$\\pi$"
       ],
       "answer": 0,
-      "solution": "$**对称性+极坐标**：I = \\int_0^{2\\pi}\\!\\int_0^1 r^2(\\cos^2\\theta - \\sin^2\\theta) \\cdot r\\,dr\\,d\\theta = \\int_0^{2\\pi} \\cos 2\\theta d\\theta \\cdot \\frac{1}{4} = 0。**答案：A**$"
+      "solution": "$**对称性+极坐标**：I = \\int_0^{2\\pi}\\!\\int_0^1 r^2(\\cos^2\\theta - \\sin^2\\theta) \\cdot r\\,dr\\,d\\theta = \\int_0^{2\\pi} \\cos 2\\theta d\\theta \\cdot \\frac{1}{4} = 0。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-020",
@@ -4956,7 +5162,9 @@ var QUESTION_BANK = {
         "$0$"
       ],
       "answer": 0,
-      "solution": "$**极坐标**：\\int_0^{2\\pi}\\!\\int_0^1 \\sin(\\pi r) \\cdot r\\,dr\\,d\\theta = 2\\pi \\int_0^1 r\\sin(\\pi r)dr。\\int r\\sin(\\pi r)dr = -\\frac{r}{\\pi}\\cos(\\pi r) + \\frac{1}{\\pi^2}\\sin(\\pi r)，代入得 2\\pi \\cdot \\frac{1}{\\pi^2} = \\frac{2}{\\pi}。**答案：A**$"
+      "solution": "$**极坐标**：\\int_0^{2\\pi}\\!\\int_0^1 \\sin(\\pi r) \\cdot r\\,dr\\,d\\theta = 2\\pi \\int_0^1 r\\sin(\\pi r)dr。\\int r\\sin(\\pi r)dr = -\\frac{r}{\\pi}\\cos(\\pi r) + \\frac{1}{\\pi^2}\\sin(\\pi r)，代入得 2\\pi \\cdot \\frac{1}{\\pi^2} = \\frac{2}{\\pi}。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-021",
@@ -4970,7 +5178,9 @@ var QUESTION_BANK = {
         "$\\frac{2\\pi}{3}$"
       ],
       "answer": 0,
-      "solution": "$体积 V = \\iint_D (1 - (x^2+y^2))dxdy，D: x^2+y^2 \\leq 1。极坐标：V = \\int_0^{2\\pi}\\!\\int_0^1 (1-r^2)r\\,dr\\,d\\theta = 2\\pi(\\frac{1}{2} - \\frac{1}{4}) = \\frac{\\pi}{2}。**答案：A**$"
+      "solution": "$体积 V = \\iint_D (1 - (x^2+y^2))dxdy，D: x^2+y^2 \\leq 1。极坐标：V = \\int_0^{2\\pi}\\!\\int_0^1 (1-r^2)r\\,dr\\,d\\theta = 2\\pi(\\frac{1}{2} - \\frac{1}{4}) = \\frac{\\pi}{2}。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-031",
@@ -4984,7 +5194,9 @@ var QUESTION_BANK = {
         "$\\pi/e$"
       ],
       "answer": 0,
-      "solution": "$2\\pi\\int_0^1 re^{-r^2}dr=\\pi(1-e^{-1})。$"
+      "solution": "$2\\pi\\int_0^1 re^{-r^2}dr=\\pi(1-e^{-1})。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-032",
@@ -4998,7 +5210,9 @@ var QUESTION_BANK = {
         "$\\pi/2$"
       ],
       "answer": 0,
-      "solution": "$\\theta\\in[\\pi/4,3\\pi/4]，\\frac{\\pi}{2}\\cdot\\frac13=\\frac{\\pi}{6}。$"
+      "solution": "$\\theta\\in[\\pi/4,3\\pi/4]，\\frac{\\pi}{2}\\cdot\\frac13=\\frac{\\pi}{6}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-034",
@@ -5012,7 +5226,9 @@ var QUESTION_BANK = {
         "$\\pi/2$"
       ],
       "answer": 0,
-      "solution": "$r\\le2\\cos\\theta，\\int_{-\\pi/2}^{\\pi/2}d\\theta\\int_0^{2\\cos\\theta}r^3dr=\\frac{3\\pi}{2}。$"
+      "solution": "$r\\le2\\cos\\theta，\\int_{-\\pi/2}^{\\pi/2}d\\theta\\int_0^{2\\cos\\theta}r^3dr=\\frac{3\\pi}{2}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-044",
@@ -5020,7 +5236,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\iint_D\\ln(1+x^2+y^2)d\\sigma，D:x^2+y^2\\le1,x,y\\ge0，值(  )。$",
       "answer": "$\\pi(2ln2-1)/4$",
-      "solution": "$\\frac{\\pi}{2}\\int_0^1 r\\ln(1+r^2)dr=\\frac{\\pi(2\\ln2-1)}{4}。$"
+      "solution": "$\\frac{\\pi}{2}\\int_0^1 r\\ln(1+r^2)dr=\\frac{\\pi(2\\ln2-1)}{4}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-045",
@@ -5028,7 +5246,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\int_0^1dx\\int_{\\sqrt{x}}^1 e^{y^3}dy 值为(  )。$",
       "answer": "(e-1)/3",
-      "solution": "$交换次序：\\int_0^1e^{y^3}dy\\int_0^{y^2}dx=\\frac{e-1}{3}。$"
+      "solution": "$交换次序：\\int_0^1e^{y^3}dy\\int_0^{y^2}dx=\\frac{e-1}{3}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-046",
@@ -5036,7 +5256,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\iint_{x^2+y^2\\le1}\\frac{1}{\\sqrt{1-x^2-y^2}}d\\sigma=(  )。$",
       "answer": "$2\\pi$",
-      "solution": "$极坐标：2\\pi\\int_0^1\\frac{r}{\\sqrt{1-r^2}}dr=2\\pi。$"
+      "solution": "$极坐标：2\\pi\\int_0^1\\frac{r}{\\sqrt{1-r^2}}dr=2\\pi。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-048",
@@ -5044,7 +5266,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\iint_{0\\le x,y\\le1}\\max\\{x,y\\}dxdy=(  )。$",
       "answer": "2/3",
-      "solution": "对称拆分为两个$1/3$区域。"
+      "solution": "对称拆分为两个$1/3$区域。",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-049",
@@ -5052,7 +5276,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\iint_D e^{x/y}dxdy，D:y=1,y=x,x=0，值(  )。$",
       "answer": "(e-1)/2",
-      "solution": "$\\int_0^1dy\\int_0^y e^{x/y}dx=\\frac{e-1}{2}。$"
+      "solution": "$\\int_0^1dy\\int_0^y e^{x/y}dx=\\frac{e-1}{2}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-050",
@@ -5060,7 +5286,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\iint_D(x+y)dxdy$，$D:y^2=2x,x=2$，值(  )。",
       "answer": "32/5",
-      "solution": "$\\int_{-2}^2dy\\int_{y^2/2}^2(x+y)dx得32/5。$"
+      "solution": "$\\int_{-2}^2dy\\int_{y^2/2}^2(x+y)dx得32/5。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-051",
@@ -5074,7 +5302,9 @@ var QUESTION_BANK = {
         "$\\int_{0}^{1} dy \\int_{0}^{1-y} f(x,y)\\,dx$"
       ],
       "answer": 0,
-      "solution": "$两个积分区域合并后，y \\in [0,1]，左边界由 y=x+1 得 x=y-1，右边界由 y=1-x 得 x=1-y，故交换后为 \\int_0^1 dy \\int_{y-1}^{1-y} f(x,y)\\,dx。$"
+      "solution": "$两个积分区域合并后，y \\in [0,1]，左边界由 y=x+1 得 x=y-1，右边界由 y=1-x 得 x=1-y，故交换后为 \\int_0^1 dy \\int_{y-1}^{1-y} f(x,y)\\,dx。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-052",
@@ -5088,7 +5318,9 @@ var QUESTION_BANK = {
         "$\\frac{3}{2}$"
       ],
       "answer": 0,
-      "solution": "$极坐标下 \\frac{x}{\\sqrt{x^2+y^2}}=\\cos\\theta，D 对应 -\\frac{\\pi}{2}\\leq\\theta\\leq\\frac{\\pi}{2},\\;1\\leq r\\leq2。\\int_{-\\pi/2}^{\\pi/2}\\cos\\theta\\,d\\theta \\int_1^2 r\\,dr = 2 \\times \\frac{3}{2} = 3。$"
+      "solution": "$极坐标下 \\frac{x}{\\sqrt{x^2+y^2}}=\\cos\\theta，D 对应 -\\frac{\\pi}{2}\\leq\\theta\\leq\\frac{\\pi}{2},\\;1\\leq r\\leq2。\\int_{-\\pi/2}^{\\pi/2}\\cos\\theta\\,d\\theta \\int_1^2 r\\,dr = 2 \\times \\frac{3}{2} = 3。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-053",
@@ -5102,7 +5334,9 @@ var QUESTION_BANK = {
         "$\\frac{2\\pi}{3}$"
       ],
       "answer": 0,
-      "solution": "$利用对称性取第一象限乘4：4\\int_0^1 dx \\int_0^{1-x}(x^2+y^2)\\,dy = 4\\int_0^1\\left[x^2(1-x)+\\frac{(1-x)^3}{3}\\right]dx = 4 \\times \\frac{1}{6} = \\frac{2}{3}。$"
+      "solution": "$利用对称性取第一象限乘4：4\\int_0^1 dx \\int_0^{1-x}(x^2+y^2)\\,dy = 4\\int_0^1\\left[x^2(1-x)+\\frac{(1-x)^3}{3}\\right]dx = 4 \\times \\frac{1}{6} = \\frac{2}{3}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-054",
@@ -5116,7 +5350,9 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{4}+\\frac{1}{3}$"
       ],
       "answer": 0,
-      "solution": "$以 x^2+y^2=1 分界。内部分：\\int_0^{\\pi/2}\\int_0^1(1-r^2)r\\,dr\\,d\\theta=\\frac{\\pi}{8}；外部：\\iint_D(x^2+y^2-1)d\\sigma+\\frac{\\pi}{8}，其中 \\iint_D(x^2+y^2)d\\sigma=\\frac{2}{3}，外部=-\\frac{1}{3}+\\frac{\\pi}{8}。总计=\\frac{\\pi}{4}-\\frac{1}{3}。$"
+      "solution": "$以 x^2+y^2=1 分界。内部分：\\int_0^{\\pi/2}\\int_0^1(1-r^2)r\\,dr\\,d\\theta=\\frac{\\pi}{8}；外部：\\iint_D(x^2+y^2-1)d\\sigma+\\frac{\\pi}{8}，其中 \\iint_D(x^2+y^2)d\\sigma=\\frac{2}{3}，外部=-\\frac{1}{3}+\\frac{\\pi}{8}。总计=\\frac{\\pi}{4}-\\frac{1}{3}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-055",
@@ -5130,7 +5366,9 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{3}$"
       ],
       "answer": 0,
-      "solution": "$极坐标：2\\pi\\int_0^1 \\frac{r}{(1+r^2)^2}\\,dr = 2\\pi\\left[-\\frac{1}{2(1+r^2)}\\right]_0^1 = 2\\pi\\left(\\frac{1}{2}-\\frac{1}{4}\\right) = \\frac{\\pi}{2}。$"
+      "solution": "$极坐标：2\\pi\\int_0^1 \\frac{r}{(1+r^2)^2}\\,dr = 2\\pi\\left[-\\frac{1}{2(1+r^2)}\\right]_0^1 = 2\\pi\\left(\\frac{1}{2}-\\frac{1}{4}\\right) = \\frac{\\pi}{2}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-056",
@@ -5144,7 +5382,9 @@ var QUESTION_BANK = {
         "$\\frac{\\pi a^4}{2}$"
       ],
       "answer": 0,
-      "solution": "$极坐标：\\int_0^a r^3\\,dr \\int_0^{2\\pi}|\\cos\\theta\\sin\\theta|\\,d\\theta = \\frac{a^4}{4} \\times 4\\int_0^{\\pi/2}\\cos\\theta\\sin\\theta\\,d\\theta = \\frac{a^4}{4} \\times 2 = \\frac{a^4}{2}。$"
+      "solution": "$极坐标：\\int_0^a r^3\\,dr \\int_0^{2\\pi}|\\cos\\theta\\sin\\theta|\\,d\\theta = \\frac{a^4}{4} \\times 4\\int_0^{\\pi/2}\\cos\\theta\\sin\\theta\\,d\\theta = \\frac{a^4}{4} \\times 2 = \\frac{a^4}{2}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-057",
@@ -5158,7 +5398,9 @@ var QUESTION_BANK = {
         "$e^2-1$"
       ],
       "answer": 0,
-      "solution": "$由对称性 x\\,e^{xy} 与 y\\,e^{xy} 积分相等，原式=2\\int_0^1 dx\\int_0^1 x\\,e^{xy}\\,dy = 2\\int_0^1(e^x-1)\\,dx = 2(e-2)。$"
+      "solution": "$由对称性 x\\,e^{xy} 与 y\\,e^{xy} 积分相等，原式=2\\int_0^1 dx\\int_0^1 x\\,e^{xy}\\,dy = 2\\int_0^1(e^x-1)\\,dx = 2(e-2)。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-058",
@@ -5172,7 +5414,9 @@ var QUESTION_BANK = {
         "$\\frac{2\\pi}{3}f'(0)$"
       ],
       "answer": 0,
-      "solution": "$极坐标：\\iint = 2\\pi\\int_0^t f(r)\\,r\\,dr。洛必达：\\lim\\frac{2\\pi f(t)\\cdot t}{3t^2}=\\frac{2\\pi}{3}\\lim\\frac{f(t)}{t}=\\frac{2\\pi}{3}\\cdot f'(0)=\\frac{2\\pi}{3}。$"
+      "solution": "$极坐标：\\iint = 2\\pi\\int_0^t f(r)\\,r\\,dr。洛必达：\\lim\\frac{2\\pi f(t)\\cdot t}{3t^2}=\\frac{2\\pi}{3}\\lim\\frac{f(t)}{t}=\\frac{2\\pi}{3}\\cdot f'(0)=\\frac{2\\pi}{3}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-059",
@@ -5186,7 +5430,9 @@ var QUESTION_BANK = {
         "$\\frac{5}{12}$"
       ],
       "answer": 0,
-      "solution": "$以 y=x 分界：\\int_0^1 dx\\int_0^x x^2\\,dy + \\int_0^1 dx\\int_x^1 y^2\\,dy = \\int_0^1 x^3\\,dx + \\int_0^1\\left(\\frac{1}{3}-\\frac{x^3}{3}\\right)dx = \\frac{1}{4}+\\frac{1}{3}-\\frac{1}{12} = \\frac{1}{2}。$"
+      "solution": "$以 y=x 分界：\\int_0^1 dx\\int_0^x x^2\\,dy + \\int_0^1 dx\\int_x^1 y^2\\,dy = \\int_0^1 x^3\\,dx + \\int_0^1\\left(\\frac{1}{3}-\\frac{x^3}{3}\\right)dx = \\frac{1}{4}+\\frac{1}{3}-\\frac{1}{12} = \\frac{1}{2}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-060",
@@ -5200,7 +5446,9 @@ var QUESTION_BANK = {
         "$\\frac{5\\pi}{2}$"
       ],
       "answer": 0,
-      "solution": "$2x、3y 为奇函数积分为0。由轮换对称 \\iint x^2\\,d\\sigma=\\iint y^2\\,d\\sigma=\\frac{1}{2}\\iint(x^2+y^2)\\,d\\sigma=\\frac{\\pi}{4}。故 (4+5)\\times\\frac{\\pi}{4}=\\frac{9\\pi}{4}。$"
+      "solution": "$2x、3y 为奇函数积分为0。由轮换对称 \\iint x^2\\,d\\sigma=\\iint y^2\\,d\\sigma=\\frac{1}{2}\\iint(x^2+y^2)\\,d\\sigma=\\frac{\\pi}{4}。故 (4+5)\\times\\frac{\\pi}{4}=\\frac{9\\pi}{4}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-061",
@@ -5214,7 +5462,9 @@ var QUESTION_BANK = {
         "$\\pi$"
       ],
       "answer": 0,
-      "solution": "$令 x=r\\cos\\theta,\\,y=1+r\\sin\\theta，则 x^2+y^2=r^2+2r\\sin\\theta+1。\\int_0^{2\\pi}\\int_0^1(r^3+2r^2\\sin\\theta+r)\\,dr\\,d\\theta = \\frac{1}{4}\\cdot 2\\pi + 0 + \\frac{1}{2}\\cdot 2\\pi = \\frac{3\\pi}{2}。$"
+      "solution": "$令 x=r\\cos\\theta,\\,y=1+r\\sin\\theta，则 x^2+y^2=r^2+2r\\sin\\theta+1。\\int_0^{2\\pi}\\int_0^1(r^3+2r^2\\sin\\theta+r)\\,dr\\,d\\theta = \\frac{1}{4}\\cdot 2\\pi + 0 + \\frac{1}{2}\\cdot 2\\pi = \\frac{3\\pi}{2}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-062",
@@ -5228,7 +5478,9 @@ var QUESTION_BANK = {
         "$\\frac{2(\\sqrt{2}-1)}{3}$"
       ],
       "answer": 0,
-      "solution": "$交换次序：\\int_0^1 dx\\int_0^x \\frac{y}{\\sqrt{1+x^3}}\\,dy = \\int_0^1 \\frac{x^2}{2\\sqrt{1+x^3}}\\,dx = \\frac{1}{2}\\cdot\\frac{2}{3}[\\sqrt{1+x^3}]_0^1 = \\frac{\\sqrt{2}-1}{3}。$"
+      "solution": "$交换次序：\\int_0^1 dx\\int_0^x \\frac{y}{\\sqrt{1+x^3}}\\,dy = \\int_0^1 \\frac{x^2}{2\\sqrt{1+x^3}}\\,dx = \\frac{1}{2}\\cdot\\frac{2}{3}[\\sqrt{1+x^3}]_0^1 = \\frac{\\sqrt{2}-1}{3}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-063",
@@ -5236,7 +5488,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\int_0^2 dy \\int_{y^2}^{2y} f(x,y)\\,dx$ 交换积分次序后为(  )。",
       "answer": "$\\int_0^4 dx \\int_{x/2}^{\\sqrt{x}} f(x,y)\\,dy$",
-      "solution": "$由 y^2 \\leq x \\leq 2y,\\;0 \\leq y \\leq 2，得 x \\in [0,4]，下界 y=\\frac{x}{2}，上界 y=\\sqrt{x}。$"
+      "solution": "$由 y^2 \\leq x \\leq 2y,\\;0 \\leq y \\leq 2，得 x \\in [0,4]，下界 y=\\frac{x}{2}，上界 y=\\sqrt{x}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-064",
@@ -5244,7 +5498,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\iint_D \\arctan\\frac{y}{x}\\,d\\sigma$，其中 $D: 1 \\leq x^2+y^2 \\leq 4,\\; 0 \\leq \\frac{y}{x} \\leq 1,\\; x > 0$，值为(  )。",
       "answer": "$\\frac{3\\pi^2}{64}$",
-      "solution": "$极坐标下 \\arctan\\frac{y}{x}=\\theta，D 对应 1\\leq r\\leq2,\\;0\\leq\\theta\\leq\\frac{\\pi}{4}。\\int_0^{\\pi/4}\\theta\\,d\\theta \\int_1^2 r\\,dr = \\frac{\\pi^2}{32}\\times\\frac{3}{2} = \\frac{3\\pi^2}{64}。$"
+      "solution": "$极坐标下 \\arctan\\frac{y}{x}=\\theta，D 对应 1\\leq r\\leq2,\\;0\\leq\\theta\\leq\\frac{\\pi}{4}。\\int_0^{\\pi/4}\\theta\\,d\\theta \\int_1^2 r\\,dr = \\frac{\\pi^2}{32}\\times\\frac{3}{2} = \\frac{3\\pi^2}{64}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-065",
@@ -5252,7 +5508,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\iint_{x^2+y^2 \\leq 2x} (x+y)\\,d\\sigma = (  )$。",
       "answer": "$\\pi$",
-      "solution": "$区域关于 x 轴对称，y 为奇函数故 \\iint y\\,d\\sigma=0。\\iint x\\,d\\sigma = \\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta} r\\cos\\theta\\cdot r\\,dr\\,d\\theta = \\frac{8}{3}\\int_{-\\pi/2}^{\\pi/2}\\cos^4\\theta\\,d\\theta = \\frac{8}{3}\\times\\frac{3\\pi}{8} = \\pi。$"
+      "solution": "$区域关于 x 轴对称，y 为奇函数故 \\iint y\\,d\\sigma=0。\\iint x\\,d\\sigma = \\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta} r\\cos\\theta\\cdot r\\,dr\\,d\\theta = \\frac{8}{3}\\int_{-\\pi/2}^{\\pi/2}\\cos^4\\theta\\,d\\theta = \\frac{8}{3}\\times\\frac{3\\pi}{8} = \\pi。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-066",
@@ -5260,7 +5518,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\iint_D \\sin\\sqrt{x^2+y^2}\\,d\\sigma$，其中 $D: \\pi^2 \\leq x^2+y^2 \\leq 4\\pi^2$，值为(  )。",
       "answer": "$-6\\pi^2$",
-      "solution": "$极坐标：2\\pi\\int_\\pi^{2\\pi} r\\sin r\\,dr。分部积分=[-r\\cos r]_\\pi^{2\\pi}+\\int_\\pi^{2\\pi}\\cos r\\,dr=(-2\\pi+\\pi)+0=-3\\pi。2\\pi\\times(-3\\pi)=-6\\pi^2。$"
+      "solution": "$极坐标：2\\pi\\int_\\pi^{2\\pi} r\\sin r\\,dr。分部积分=[-r\\cos r]_\\pi^{2\\pi}+\\int_\\pi^{2\\pi}\\cos r\\,dr=(-2\\pi+\\pi)+0=-3\\pi。2\\pi\\times(-3\\pi)=-6\\pi^2。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-067",
@@ -5268,7 +5528,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\iint_D \\sqrt{1-\\frac{x^2}{a^2}-\\frac{y^2}{b^2}}\\,d\\sigma$，其中 $D: \\frac{x^2}{a^2}+\\frac{y^2}{b^2} \\leq 1$（$a,b>0$），值为(  )。",
       "answer": "$\\frac{2\\pi ab}{3}$",
-      "solution": "$令 x=ar\\cos\\theta,\\,y=br\\sin\\theta，J=abr。2\\pi ab\\int_0^1 r\\sqrt{1-r^2}\\,dr = 2\\pi ab\\times\\frac{1}{3} = \\frac{2\\pi ab}{3}。$"
+      "solution": "$令 x=ar\\cos\\theta,\\,y=br\\sin\\theta，J=abr。2\\pi ab\\int_0^1 r\\sqrt{1-r^2}\\,dr = 2\\pi ab\\times\\frac{1}{3} = \\frac{2\\pi ab}{3}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-068",
@@ -5276,7 +5538,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "设 $f(x)$ 连续，$F(x) = \\int_0^x dy \\int_0^y f(t)\\,dt$，则 $F'(x) = (  )$。",
       "answer": "$\\int_0^x f(t)\\,dt$",
-      "solution": "$交换次序：F(x)=\\int_0^x dt\\int_t^x f(t)\\,dy = \\int_0^x (x-t)\\,f(t)\\,dt。由 Leibniz 公式，F'(x)=\\int_0^x f(t)\\,dt。$"
+      "solution": "$交换次序：F(x)=\\int_0^x dt\\int_t^x f(t)\\,dy = \\int_0^x (x-t)\\,f(t)\\,dt。由 Leibniz 公式，F'(x)=\\int_0^x f(t)\\,dt。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-069",
@@ -5284,7 +5548,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\lim_{R \\to +\\infty} \\iint_{x^2+y^2 \\leq R^2} e^{-(x^2+y^2)}\\,d\\sigma = (  )$。",
       "answer": "$\\pi$",
-      "solution": "$极坐标：\\int_0^{2\\pi}\\int_0^R e^{-r^2} r\\,dr\\,d\\theta = \\pi(1-e^{-R^2}) \\to \\pi$（R\\to+\\infty）。$"
+      "solution": "$极坐标：\\int_0^{2\\pi}\\int_0^R e^{-r^2} r\\,dr\\,d\\theta = \\pi(1-e^{-R^2}) \\to \\pi$（R\\to+\\infty）。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-070",
@@ -5292,7 +5558,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\iint_{x^2+y^2 \\leq R^2} (3x^2+5y^2+7xy)\\,d\\sigma = (  )$。",
       "answer": "$2\\pi R^4$",
-      "solution": "$xy 为奇函数积分=0。由轮换对称 \\iint x^2\\,d\\sigma=\\iint y^2\\,d\\sigma=\\frac{1}{2}\\iint(x^2+y^2)\\,d\\sigma=\\frac{\\pi R^4}{4}。故 (3+5)\\times\\frac{\\pi R^4}{4}=2\\pi R^4。$"
+      "solution": "$xy 为奇函数积分=0。由轮换对称 \\iint x^2\\,d\\sigma=\\iint y^2\\,d\\sigma=\\frac{1}{2}\\iint(x^2+y^2)\\,d\\sigma=\\frac{\\pi R^4}{4}。故 (3+5)\\times\\frac{\\pi R^4}{4}=2\\pi R^4。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-071",
@@ -5306,7 +5574,9 @@ var QUESTION_BANK = {
         "$\\frac{2-\\pi}{8}$"
       ],
       "answer": 0,
-      "solution": "$交换积分次序：\\int_0^1 dx \\int_0^x \\frac{y}{1+x^2}\\,dy = \\int_0^1 \\frac{x^2}{2(1+x^2)}\\,dx = \\frac{1}{2}\\int_0^1 \\left(1 - \\frac{1}{1+x^2}\\right) dx = \\frac{1}{2}\\left(1 - \\frac{\\pi}{4}\\right) = \\frac{4-\\pi}{8}。**答案：A**$"
+      "solution": "$交换积分次序：\\int_0^1 dx \\int_0^x \\frac{y}{1+x^2}\\,dy = \\int_0^1 \\frac{x^2}{2(1+x^2)}\\,dx = \\frac{1}{2}\\int_0^1 \\left(1 - \\frac{1}{1+x^2}\\right) dx = \\frac{1}{2}\\left(1 - \\frac{\\pi}{4}\\right) = \\frac{4-\\pi}{8}。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-072",
@@ -5320,7 +5590,9 @@ var QUESTION_BANK = {
         "$\\pi$"
       ],
       "answer": 0,
-      "solution": "$**对称性分析**：D 关于 y 轴对称，\\sin(xy) 在 x \\to -x 下变号，故 \\iint_D \\sin(xy)\\,d\\sigma = 0。由轮换对称，\\iint_D x^2\\,d\\sigma = \\iint_D y^2\\,d\\sigma = \\frac{1}{2}\\iint_D (x^2+y^2)\\,d\\sigma = \\frac{1}{2} \\cdot 2\\pi \\int_0^1 r^3\\,dr = \\frac{\\pi}{4}。**答案：A**$"
+      "solution": "$**对称性分析**：D 关于 y 轴对称，\\sin(xy) 在 x \\to -x 下变号，故 \\iint_D \\sin(xy)\\,d\\sigma = 0。由轮换对称，\\iint_D x^2\\,d\\sigma = \\iint_D y^2\\,d\\sigma = \\frac{1}{2}\\iint_D (x^2+y^2)\\,d\\sigma = \\frac{1}{2} \\cdot 2\\pi \\int_0^1 r^3\\,dr = \\frac{\\pi}{4}。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-073",
@@ -5334,7 +5606,9 @@ var QUESTION_BANK = {
         "$\\frac{1}{4}$"
       ],
       "answer": 0,
-      "solution": "$以 y=x 分界。当 y < x 时 x^2 > y^2，当 y > x 时 y^2 > x^2。由对称性：I = 2\\int_0^1 dx \\int_0^x (x^2 - y^2)\\,dy = 2\\int_0^1 \\left(x^3 - \\frac{x^3}{3}\\right) dx = 2\\int_0^1 \\frac{2x^3}{3}\\,dx = \\frac{4}{3} \\cdot \\frac{1}{4} = \\frac{1}{3}。**答案：A**$"
+      "solution": "$以 y=x 分界。当 y < x 时 x^2 > y^2，当 y > x 时 y^2 > x^2。由对称性：I = 2\\int_0^1 dx \\int_0^x (x^2 - y^2)\\,dy = 2\\int_0^1 \\left(x^3 - \\frac{x^3}{3}\\right) dx = 2\\int_0^1 \\frac{2x^3}{3}\\,dx = \\frac{4}{3} \\cdot \\frac{1}{4} = \\frac{1}{3}。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-074",
@@ -5348,7 +5622,9 @@ var QUESTION_BANK = {
         "$I_3 < I_2 < I_1$"
       ],
       "answer": 0,
-      "solution": "$计算各积分值：I_1 = \\frac{1}{4}\\iint_D (x+y)\\,d\\sigma = \\frac{1}{4} \\cdot 1 = \\frac{1}{4}；I_3 = \\frac{1}{2} \\cdot 1 = \\frac{1}{2}；I_2 = \\left(\\int_0^1 \\sqrt{x}\\,dx\\right)^2 = \\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}。数值比较：I_1 = 0.25 < I_2 \\approx 0.444 < I_3 = 0.5。（也可用 AM-GM 不等式 \\sqrt{xy} \\leq \\frac{x+y}{2} 说明 I_2 \\leq I_3。）**答案：A**$"
+      "solution": "$计算各积分值：I_1 = \\frac{1}{4}\\iint_D (x+y)\\,d\\sigma = \\frac{1}{4} \\cdot 1 = \\frac{1}{4}；I_3 = \\frac{1}{2} \\cdot 1 = \\frac{1}{2}；I_2 = \\left(\\int_0^1 \\sqrt{x}\\,dx\\right)^2 = \\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}。数值比较：I_1 = 0.25 < I_2 \\approx 0.444 < I_3 = 0.5。（也可用 AM-GM 不等式 \\sqrt{xy} \\leq \\frac{x+y}{2} 说明 I_2 \\leq I_3。）**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-075",
@@ -5362,7 +5638,9 @@ var QUESTION_BANK = {
         "$\\frac{5\\pi}{4}$"
       ],
       "answer": 0,
-      "solution": "$**广义极坐标**：令 x = 2r\\cos\\theta,\\; y = r\\sin\\theta，J = 2r。x^2+y^2 = 4r^2\\cos^2\\theta + r^2\\sin^2\\theta = r^2(4\\cos^2\\theta + \\sin^2\\theta)。\\iint = \\int_0^{2\\pi} \\int_0^1 r^2(4\\cos^2\\theta+\\sin^2\\theta) \\cdot 2r\\,dr\\,d\\theta = 2\\int_0^{2\\pi}(4\\cos^2\\theta+\\sin^2\\theta)\\,d\\theta \\cdot \\int_0^1 r^3\\,dr = 2 \\cdot 5\\pi \\cdot \\frac{1}{4} = \\frac{5\\pi}{2}。**答案：A**$"
+      "solution": "$**广义极坐标**：令 x = 2r\\cos\\theta,\\; y = r\\sin\\theta，J = 2r。x^2+y^2 = 4r^2\\cos^2\\theta + r^2\\sin^2\\theta = r^2(4\\cos^2\\theta + \\sin^2\\theta)。\\iint = \\int_0^{2\\pi} \\int_0^1 r^2(4\\cos^2\\theta+\\sin^2\\theta) \\cdot 2r\\,dr\\,d\\theta = 2\\int_0^{2\\pi}(4\\cos^2\\theta+\\sin^2\\theta)\\,d\\theta \\cdot \\int_0^1 r^3\\,dr = 2 \\cdot 5\\pi \\cdot \\frac{1}{4} = \\frac{5\\pi}{2}。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-076",
@@ -5370,7 +5648,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\lim_{t \\to 0} \\frac{1}{\\pi t^2} \\iint_{x^2+y^2 \\leq t^2} e^{x^2+y^2}\\,d\\sigma = (  )$。",
       "answer": "$1$",
-      "solution": "$极坐标：\\iint e^{x^2+y^2}\\,d\\sigma = 2\\pi\\int_0^t e^{r^2} r\\,dr。故原式 = \\lim_{t \\to 0} \\frac{2\\pi\\int_0^t e^{r^2} r\\,dr}{\\pi t^2} = \\lim_{t \\to 0} \\frac{2e^{t^2} t}{2t} = \\lim_{t \\to 0} e^{t^2} = 1。$"
+      "solution": "$极坐标：\\iint e^{x^2+y^2}\\,d\\sigma = 2\\pi\\int_0^t e^{r^2} r\\,dr。故原式 = \\lim_{t \\to 0} \\frac{2\\pi\\int_0^t e^{r^2} r\\,dr}{\\pi t^2} = \\lim_{t \\to 0} \\frac{2e^{t^2} t}{2t} = \\lim_{t \\to 0} e^{t^2} = 1。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-077",
@@ -5378,7 +5658,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 f 连续，F(t) = \\iint_{x^2+y^2 \\leq t^2} f(x^2+y^2)\\,d\\sigma，则 F'(t) = (  )$。",
       "answer": "$2\\pi t\\, f(t^2)$",
-      "solution": "$极坐标：F(t) = 2\\pi\\int_0^t f(r^2)\\,r\\,dr。由变限积分求导公式，F'(t) = 2\\pi\\, f(t^2) \\cdot t = 2\\pi t\\, f(t^2)。$"
+      "solution": "$极坐标：F(t) = 2\\pi\\int_0^t f(r^2)\\,r\\,dr。由变限积分求导公式，F'(t) = 2\\pi\\, f(t^2) \\cdot t = 2\\pi t\\, f(t^2)。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-078",
@@ -5386,7 +5668,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\int_0^1 dy \\int_y^1 \\frac{x}{1+x^4}\\,dx = (  )$。",
       "answer": "$\\frac{\\pi}{8}$",
-      "solution": "$交换次序：\\int_0^1 dx \\int_0^x \\frac{x}{1+x^4}\\,dy = \\int_0^1 \\frac{x^2}{1+x^4}\\,dx = \\frac{1}{2}\\int_0^1 \\frac{d(x^2)}{1+(x^2)^2} = \\frac{1}{2}\\arctan(x^2)\\Big|_0^1 = \\frac{\\pi}{8}。$"
+      "solution": "$交换次序：\\int_0^1 dx \\int_0^x \\frac{x}{1+x^4}\\,dy = \\int_0^1 \\frac{x^2}{1+x^4}\\,dx = \\frac{1}{2}\\int_0^1 \\frac{d(x^2)}{1+(x^2)^2} = \\frac{1}{2}\\arctan(x^2)\\Big|_0^1 = \\frac{\\pi}{8}。$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-079",
@@ -5400,7 +5684,9 @@ var QUESTION_BANK = {
         "$\\pi(1-\\ln 2)$"
       ],
       "answer": 0,
-      "solution": "$由轮换对称 \\iint \\frac{x^2}{1+x^2+y^2} = \\iint \\frac{y^2}{1+x^2+y^2}，故原式 = \\frac{1}{2}\\iint \\frac{x^2+y^2}{1+x^2+y^2}\\,d\\sigma。极坐标：\\frac{1}{2} \\cdot 2\\pi \\int_0^1 \\frac{r^2}{1+r^2} \\cdot r\\,dr = \\pi \\int_0^1 \\frac{r^3}{1+r^2}\\,dr = \\pi \\int_0^1 \\left(r - \\frac{r}{1+r^2}\\right) dr = \\pi\\left[\\frac{r^2}{2} - \\frac{1}{2}\\ln(1+r^2)\\right]_0^1 = \\pi \\cdot \\frac{1-\\ln 2}{2} = \\frac{\\pi(1-\\ln 2)}{2}。**答案：A**$"
+      "solution": "$由轮换对称 \\iint \\frac{x^2}{1+x^2+y^2} = \\iint \\frac{y^2}{1+x^2+y^2}，故原式 = \\frac{1}{2}\\iint \\frac{x^2+y^2}{1+x^2+y^2}\\,d\\sigma。极坐标：\\frac{1}{2} \\cdot 2\\pi \\int_0^1 \\frac{r^2}{1+r^2} \\cdot r\\,dr = \\pi \\int_0^1 \\frac{r^3}{1+r^2}\\,dr = \\pi \\int_0^1 \\left(r - \\frac{r}{1+r^2}\\right) dr = \\pi\\left[\\frac{r^2}{2} - \\frac{1}{2}\\ln(1+r^2)\\right]_0^1 = \\pi \\cdot \\frac{1-\\ln 2}{2} = \\frac{\\pi(1-\\ln 2)}{2}。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-080",
@@ -5414,7 +5700,9 @@ var QUESTION_BANK = {
         "$(a+b+c)\\frac{\\pi R^4}{4} + f\\pi R^2$"
       ],
       "answer": 0,
-      "solution": "$**逐项分析**：xy 是 x 的奇函数，D 关于 y 轴对称，积分为 0；x, y 分别为奇函数，积分均为 0。由轮换对称 \\iint x^2 = \\iint y^2 = \\frac{1}{2}\\iint(x^2+y^2) = \\frac{\\pi R^4}{4}。\\iint f = f\\pi R^2。故结果 = (a+b)\\frac{\\pi R^4}{4} + f\\pi R^2。**答案：A**$"
+      "solution": "$**逐项分析**：xy 是 x 的奇函数，D 关于 y 轴对称，积分为 0；x, y 分别为奇函数，积分均为 0。由轮换对称 \\iint x^2 = \\iint y^2 = \\frac{1}{2}\\iint(x^2+y^2) = \\frac{\\pi R^4}{4}。\\iint f = f\\pi R^2。故结果 = (a+b)\\frac{\\pi R^4}{4} + f\\pi R^2。**答案：A**$",
+      "cat": "二重积分",
+      "topic": "二重积分"
     },
     {
       "id": "cal-di-101",
@@ -5608,7 +5896,9 @@ var QUESTION_BANK = {
         "$30$"
       ],
       "answer": 0,
-      "solution": "$\\vec{a} \\cdot \\vec{b} = 1 \\cdot 4 + 2 \\cdot 5 + 3 \\cdot 6 = 4 + 10 + 18 = 32。**答案：A**$"
+      "solution": "$\\vec{a} \\cdot \\vec{b} = 1 \\cdot 4 + 2 \\cdot 5 + 3 \\cdot 6 = 4 + 10 + 18 = 32。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-002",
@@ -5622,7 +5912,9 @@ var QUESTION_BANK = {
         "$(0,0,0)$"
       ],
       "answer": 0,
-      "solution": "$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{vmatrix} = 0\\vec{i} + 0\\vec{j} + 1\\vec{k} = (0,0,1)。**答案：A**$"
+      "solution": "$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{vmatrix} = 0\\vec{i} + 0\\vec{j} + 1\\vec{k} = (0,0,1)。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-003",
@@ -5636,7 +5928,9 @@ var QUESTION_BANK = {
         "$\\vec{a} + \\vec{b} = 0$"
       ],
       "answer": 0,
-      "solution": "$\\vec{a} \\perp \\vec{b} \\iff \\vec{a} \\cdot \\vec{b} = 0。\\vec{a} \\times \\vec{b} = 0 是平行的充要条件。**答案：A**$"
+      "solution": "$\\vec{a} \\perp \\vec{b} \\iff \\vec{a} \\cdot \\vec{b} = 0。\\vec{a} \\times \\vec{b} = 0 是平行的充要条件。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-004",
@@ -5650,7 +5944,9 @@ var QUESTION_BANK = {
         "$x + y + z = 6$"
       ],
       "answer": 0,
-      "solution": "$点法式：1 \\cdot (x-1) + 0 \\cdot (y-2) + 0 \\cdot (z-3) = 0，即 x = 1。**答案：A**$"
+      "solution": "$点法式：1 \\cdot (x-1) + 0 \\cdot (y-2) + 0 \\cdot (z-3) = 0，即 x = 1。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-005",
@@ -5664,7 +5960,9 @@ var QUESTION_BANK = {
         "抛物面"
       ],
       "answer": 0,
-      "solution": "$x^2+y^2+z^2 = R^2$ 是球心在原点、半径为 $R$ 的球面，此处 $R=2$。**答案：A**"
+      "solution": "$x^2+y^2+z^2 = R^2$ 是球心在原点、半径为 $R$ 的球面，此处 $R=2$。**答案：A**",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-006",
@@ -5678,7 +5976,9 @@ var QUESTION_BANK = {
         "$(1,1,1)$"
       ],
       "answer": 0,
-      "solution": "$标准方程 \\frac{x-x_0}{m} = \\frac{y-y_0}{n} = \\frac{z-z_0}{p} 中 (m,n,p) 是方向向量。**答案：A**$"
+      "solution": "$标准方程 \\frac{x-x_0}{m} = \\frac{y-y_0}{n} = \\frac{z-z_0}{p} 中 (m,n,p) 是方向向量。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-007",
@@ -5692,7 +5992,9 @@ var QUESTION_BANK = {
         "双曲面"
       ],
       "answer": 0,
-      "solution": "$x^2 + y^2 = 1$ 不含 $z$，表示所有平行于 $z$ 轴且与 $xOy$ 平面交于单位圆的直线组成的圆柱面。**答案：A**"
+      "solution": "$x^2 + y^2 = 1$ 不含 $z$，表示所有平行于 $z$ 轴且与 $xOy$ 平面交于单位圆的直线组成的圆柱面。**答案：A**",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-008",
@@ -5706,7 +6008,9 @@ var QUESTION_BANK = {
         "重合"
       ],
       "answer": 0,
-      "solution": "$法向量 (1,2,3) 与 (2,4,6) 平行（后者是前者的 2 倍），但常数项不成比例（1 \\times 2 \\neq 5），故两平面平行。**答案：A**$"
+      "solution": "$法向量 (1,2,3) 与 (2,4,6) 平行（后者是前者的 2 倍），但常数项不成比例（1 \\times 2 \\neq 5），故两平面平行。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-009",
@@ -5720,7 +6024,9 @@ var QUESTION_BANK = {
         "向量夹角"
       ],
       "answer": 0,
-      "solution": "混合积的绝对值 $|(\\vec{a},\\vec{b},\\vec{c})|$ 等于以三向量为相邻棱的平行六面体的体积。**答案：A**"
+      "solution": "混合积的绝对值 $|(\\vec{a},\\vec{b},\\vec{c})|$ 等于以三向量为相邻棱的平行六面体的体积。**答案：A**",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-010",
@@ -5734,7 +6040,9 @@ var QUESTION_BANK = {
         "$\\sqrt{3}$"
       ],
       "answer": 0,
-      "solution": "$距离公式：d = \\frac{|1+2+3|}{\\sqrt{1^2+1^2+1^2}} = \\frac{6}{\\sqrt{3}} = 2\\sqrt{3}。**答案：A**$"
+      "solution": "$距离公式：d = \\frac{|1+2+3|}{\\sqrt{1^2+1^2+1^2}} = \\frac{6}{\\sqrt{3}} = 2\\sqrt{3}。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-011",
@@ -5748,7 +6056,9 @@ var QUESTION_BANK = {
         "$\\frac{\\sqrt{3}}{2}$"
       ],
       "answer": 0,
-      "solution": "$\\cos\\theta = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}||\\vec{b}|} = \\frac{0+1+0}{\\sqrt{2} \\cdot \\sqrt{2}} = \\frac{1}{2}。**答案：A**$"
+      "solution": "$\\cos\\theta = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}||\\vec{b}|} = \\frac{0+1+0}{\\sqrt{2} \\cdot \\sqrt{2}} = \\frac{1}{2}。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-012",
@@ -5762,7 +6072,9 @@ var QUESTION_BANK = {
         "$x + z = 1$"
       ],
       "answer": 0,
-      "solution": "$三点代入检验即可。或用法向量 \\overrightarrow{AB} \\times \\overrightarrow{AC} = (-1,1,0) \\times (-1,0,1) = (1,1,1)，得 x+y+z=1。**答案：A**$"
+      "solution": "$三点代入检验即可。或用法向量 \\overrightarrow{AB} \\times \\overrightarrow{AC} = (-1,1,0) \\times (-1,0,1) = (1,1,1)，得 x+y+z=1。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-013",
@@ -5776,7 +6088,9 @@ var QUESTION_BANK = {
         "$1,\\frac{1}{2},\\frac{1}{3}$"
       ],
       "answer": 0,
-      "solution": "$截距式：\\frac{x}{6} + \\frac{y}{3} + \\frac{z}{2} = 1，故截距为 6,3,2。**答案：A**$"
+      "solution": "$截距式：\\frac{x}{6} + \\frac{y}{3} + \\frac{z}{2} = 1，故截距为 6,3,2。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-014",
@@ -5790,7 +6104,9 @@ var QUESTION_BANK = {
         "锥面"
       ],
       "answer": 0,
-      "solution": "$z = x^2 + y^2$ 是顶点在原点的旋转抛物面。**答案：A**"
+      "solution": "$z = x^2 + y^2$ 是顶点在原点的旋转抛物面。**答案：A**",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-015",
@@ -5804,7 +6120,9 @@ var QUESTION_BANK = {
         "$x^2 + y^2 + z^2 = 1$"
       ],
       "answer": 0,
-      "solution": "$z = x^2 - y^2$ 是双曲抛物面（马鞍形曲面）。$z = x^2 + y^2$ 是旋转抛物面，$x^2+y^2-z^2=1$ 是单叶双曲面。**答案：A**"
+      "solution": "$z = x^2 - y^2$ 是双曲抛物面（马鞍形曲面）。$z = x^2 + y^2$ 是旋转抛物面，$x^2+y^2-z^2=1$ 是单叶双曲面。**答案：A**",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-016",
@@ -5818,7 +6136,9 @@ var QUESTION_BANK = {
         "重合"
       ],
       "answer": 0,
-      "solution": "$方向向量 \\vec{s}_1 = (1,2,3)，\\vec{s}_2 = (2,3,1)，不平行。点 (0,0,0) 和 (1,2,3)。混合积 [\\vec{s}_1, \\vec{s}_2, \\overrightarrow{P_1P_2}] = \\begin{vmatrix}1&2&3\\\\2&3&1\\\\1&2&3\\end{vmatrix} \\neq 0，故异面。**答案：A**$"
+      "solution": "$方向向量 \\vec{s}_1 = (1,2,3)，\\vec{s}_2 = (2,3,1)，不平行。点 (0,0,0) 和 (1,2,3)。混合积 [\\vec{s}_1, \\vec{s}_2, \\overrightarrow{P_1P_2}] = \\begin{vmatrix}1&2&3\\\\2&3&1\\\\1&2&3\\end{vmatrix} \\neq 0，故异面。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-017",
@@ -5832,7 +6152,9 @@ var QUESTION_BANK = {
         "$\\sqrt{\\frac{14}{13}}$"
       ],
       "answer": 0,
-      "solution": "$直线过原点，方向 (1,2,3)。\\vec{OP} = (1,2,3) 与方向平行，故距离为 0。需换点，题改为 (1,1,1)：d = \\frac{|\\vec{OP} \\times \\vec{s}|}{|\\vec{s}|} = \\frac{|(1,1,1) \\times (1,2,3)|}{\\sqrt{14}} = \\frac{\\sqrt{14}}{\\sqrt{14}} = 1。**答案：A**（此题点恰好在直线上，距离为0，选项不匹配，实际应修正）$"
+      "solution": "$直线过原点，方向 (1,2,3)。\\vec{OP} = (1,2,3) 与方向平行，故距离为 0。需换点，题改为 (1,1,1)：d = \\frac{|\\vec{OP} \\times \\vec{s}|}{|\\vec{s}|} = \\frac{|(1,1,1) \\times (1,2,3)|}{\\sqrt{14}} = \\frac{\\sqrt{14}}{\\sqrt{14}} = 1。**答案：A**（此题点恰好在直线上，距离为0，选项不匹配，实际应修正）$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-018",
@@ -5846,7 +6168,9 @@ var QUESTION_BANK = {
         "投影为一个点"
       ],
       "answer": 0,
-      "solution": "$直线方向 \\vec{s}=(2,-1,2)，平面法向量 \\vec{n}=(1,1,1)。\\vec{s} \\cdot \\vec{n} = 2-1+2=3 \\neq 0，故直线不平行于平面，投影为一直线。过直线的平面束：(x-1)+\\lambda(\\frac{y-2}{-1})… 标准解法：求过直线的平面束方程，使平面与给定平面垂直。过 L 的平面束中，使法向量与 (1,1,1) 垂直的平面即为投影平面。结果为 5x-4y+z-3=0。**答案：A**$"
+      "solution": "$直线方向 \\vec{s}=(2,-1,2)，平面法向量 \\vec{n}=(1,1,1)。\\vec{s} \\cdot \\vec{n} = 2-1+2=3 \\neq 0，故直线不平行于平面，投影为一直线。过直线的平面束：(x-1)+\\lambda(\\frac{y-2}{-1})… 标准解法：求过直线的平面束方程，使平面与给定平面垂直。过 L 的平面束中，使法向量与 (1,1,1) 垂直的平面即为投影平面。结果为 5x-4y+z-3=0。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-019",
@@ -5860,7 +6184,9 @@ var QUESTION_BANK = {
         "$\\vec{a} + \\vec{b} = \\vec{c}$"
       ],
       "answer": 0,
-      "solution": "三向量共面 $\\iff$ 混合积为零：$(\\vec{a},\\vec{b},\\vec{c}) = 0$。这是因为混合积的绝对值是平行六面体体积。**答案：A**"
+      "solution": "三向量共面 $\\iff$ 混合积为零：$(\\vec{a},\\vec{b},\\vec{c}) = 0$。这是因为混合积的绝对值是平行六面体体积。**答案：A**",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-020",
@@ -5874,7 +6200,9 @@ var QUESTION_BANK = {
         "$x^2 + y^2 = 3$（$z=0$）"
       ],
       "answer": 0,
-      "solution": "$消去 z：z = \\sqrt{x^2+y^2} 代入球面得 x^2+y^2 + (x^2+y^2) = 4，即 2(x^2+y^2) = 4，x^2+y^2 = 2（z=0 平面上的投影）。**答案：A**$"
+      "solution": "$消去 z：z = \\sqrt{x^2+y^2} 代入球面得 x^2+y^2 + (x^2+y^2) = 4，即 2(x^2+y^2) = 4，x^2+y^2 = 2（z=0 平面上的投影）。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-021",
@@ -5888,7 +6216,9 @@ var QUESTION_BANK = {
         "不能确定"
       ],
       "answer": 0,
-      "solution": "$由 \\vec{a} \\times \\vec{b} = \\vec{b} \\times \\vec{c} 得 \\vec{a} \\times \\vec{b} + \\vec{c} \\times \\vec{b} = 0，即 (\\vec{a}+\\vec{c}) \\times \\vec{b} = 0。同理 (\\vec{a}+\\vec{b}) \\times \\vec{c} = 0。结合条件得 \\vec{a}+\\vec{b}+\\vec{c} = \\vec{0}。**答案：A**$"
+      "solution": "$由 \\vec{a} \\times \\vec{b} = \\vec{b} \\times \\vec{c} 得 \\vec{a} \\times \\vec{b} + \\vec{c} \\times \\vec{b} = 0，即 (\\vec{a}+\\vec{c}) \\times \\vec{b} = 0。同理 (\\vec{a}+\\vec{b}) \\times \\vec{c} = 0。结合条件得 \\vec{a}+\\vec{b}+\\vec{c} = \\vec{0}。**答案：A**$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-022",
@@ -5902,7 +6232,9 @@ var QUESTION_BANK = {
         "$\\sqrt{6}$"
       ],
       "answer": 0,
-      "solution": "$|\\vec{a}|=\\sqrt{1^2+2^2+3^2}=\\sqrt{14}。$"
+      "solution": "$|\\vec{a}|=\\sqrt{1^2+2^2+3^2}=\\sqrt{14}。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-023",
@@ -5916,7 +6248,9 @@ var QUESTION_BANK = {
         "相等"
       ],
       "answer": 1,
-      "solution": "点积为0意味着夹角90°。"
+      "solution": "点积为0意味着夹角90°。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-024",
@@ -5930,7 +6264,9 @@ var QUESTION_BANK = {
         "行列式"
       ],
       "answer": 1,
-      "solution": "叉积结果是向量，方向按右手定则。"
+      "solution": "叉积结果是向量，方向按右手定则。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-025",
@@ -5944,7 +6280,9 @@ var QUESTION_BANK = {
         "$(6,6,6)$"
       ],
       "answer": 0,
-      "solution": "一般式$Ax+By+Cz+D=0$的法向量为$(A,B,C)$。"
+      "solution": "一般式$Ax+By+Cz+D=0$的法向量为$(A,B,C)$。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-026",
@@ -5958,7 +6296,9 @@ var QUESTION_BANK = {
         "$-1$"
       ],
       "answer": 1,
-      "solution": "$1\\cdot0+1\\cdot1+0\\cdot1=1。$"
+      "solution": "$1\\cdot0+1\\cdot1+0\\cdot1=1。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-027",
@@ -5972,7 +6312,9 @@ var QUESTION_BANK = {
         "$(0,0,0)$"
       ],
       "answer": 0,
-      "solution": "$\\begin{vmatrix}i&j&k\\\\1&2&-1\\\\2&0&1\\end{vmatrix}=(2,-3,-4)$。"
+      "solution": "$\\begin{vmatrix}i&j&k\\\\1&2&-1\\\\2&0&1\\end{vmatrix}=(2,-3,-4)$。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-028",
@@ -5986,7 +6328,9 @@ var QUESTION_BANK = {
         "$\\frac{6}{\\sqrt{3}}$"
       ],
       "answer": 0,
-      "solution": "$d=\\frac{|1+2+3|}{\\sqrt{3}}=\\frac{6}{\\sqrt{3}}=2\\sqrt{3}。$"
+      "solution": "$d=\\frac{|1+2+3|}{\\sqrt{3}}=\\frac{6}{\\sqrt{3}}=2\\sqrt{3}。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-029",
@@ -6000,7 +6344,9 @@ var QUESTION_BANK = {
         "$(-2,1,1)$"
       ],
       "answer": 0,
-      "solution": "对称式分母即为方向向量各分量。"
+      "solution": "对称式分母即为方向向量各分量。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-030",
@@ -6014,7 +6360,9 @@ var QUESTION_BANK = {
         "垂直"
       ],
       "answer": 0,
-      "solution": "法向量$(1,1,1)$与$(2,2,2)$平行，常数项比例不等，故平行。"
+      "solution": "法向量$(1,1,1)$与$(2,2,2)$平行，常数项比例不等，故平行。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-031",
@@ -6028,7 +6376,9 @@ var QUESTION_BANK = {
         "$(-2,-2,-2)$"
       ],
       "answer": 0,
-      "solution": "$对称公式：P'=P-2\\frac{Ax+By+Cz+D}{A^2+B^2+C^2}(A,B,C)=(-1,-1,-1)。$"
+      "solution": "$对称公式：P'=P-2\\frac{Ax+By+Cz+D}{A^2+B^2+C^2}(A,B,C)=(-1,-1,-1)。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-032",
@@ -6042,7 +6392,9 @@ var QUESTION_BANK = {
         "$\\vec{a}+\\vec{b}+\\vec{c}=0$"
       ],
       "answer": 0,
-      "solution": "三向量共面 ↔ 混合积为零。"
+      "solution": "三向量共面 ↔ 混合积为零。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-033",
@@ -6056,7 +6408,9 @@ var QUESTION_BANK = {
         "$2x+y+z=2$"
       ],
       "answer": 0,
-      "solution": "$2(x-1)+1(y-0)+(-1)(z-0)=0$，即$2x+y-z=2$。"
+      "solution": "$2(x-1)+1(y-0)+(-1)(z-0)=0$，即$2x+y-z=2$。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-034",
@@ -6070,7 +6424,9 @@ var QUESTION_BANK = {
         "$x+2y+z=4$"
       ],
       "answer": 0,
-      "solution": "$切平面：x_0x+y_0y+z_0z=R^2，即x+y+\\sqrt{2}z=4。$"
+      "solution": "$切平面：x_0x+y_0y+z_0z=R^2，即x+y+\\sqrt{2}z=4。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-035",
@@ -6084,7 +6440,9 @@ var QUESTION_BANK = {
         "$\\pi/3$"
       ],
       "answer": 1,
-      "solution": "$方向向量(1,2,1)与法向量(1,2,1)平行，直线垂直平面，夹角\\pi/2。$"
+      "solution": "$方向向量(1,2,1)与法向量(1,2,1)平行，直线垂直平面，夹角\\pi/2。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-036",
@@ -6098,7 +6456,9 @@ var QUESTION_BANK = {
         "$0$"
       ],
       "answer": 0,
-      "solution": "平行四边形法则：对角线平方和等于四边平方和。"
+      "solution": "平行四边形法则：对角线平方和等于四边平方和。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-037",
@@ -6112,7 +6472,9 @@ var QUESTION_BANK = {
         "$5$"
       ],
       "answer": 0,
-      "solution": "$混合积=(\\vec{a}\\times\\vec{b})\\cdot\\vec{c}=(0,0,2)\\cdot(0,0,3)=6。$"
+      "solution": "$混合积=(\\vec{a}\\times\\vec{b})\\cdot\\vec{c}=(0,0,2)\\cdot(0,0,3)=6。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-038",
@@ -6120,7 +6482,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "$\\vec{a}=(3,-1,2)$ 的模为(  )。",
       "answer": "$\\sqrt14$",
-      "solution": "$\\sqrt{9+1+4}=\\sqrt{14}。$"
+      "solution": "$\\sqrt{9+1+4}=\\sqrt{14}。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-039",
@@ -6128,7 +6492,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\vec{a}=(1,1,0)$ 与 $\\vec{b}=(1,-1,0)$ 的夹角为(  )度。",
       "answer": "90",
-      "solution": "$\\cos\\theta=\\frac{1\\cdot1+1\\cdot(-1)+0\\cdot0}{\\sqrt{2}\\cdot\\sqrt{2}}=0，\\theta=90°。$"
+      "solution": "$\\cos\\theta=\\frac{1\\cdot1+1\\cdot(-1)+0\\cdot0}{\\sqrt{2}\\cdot\\sqrt{2}}=0，\\theta=90°。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-040",
@@ -6136,7 +6502,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "过点 $(2,1,0)$ 且方向为 $(1,2,1)$ 的直线参数方程为(  )。",
       "answer": "x=2+t,y=1+2t,z=t",
-      "solution": "参数式：$\\begin{cases}x=x_0+at\\\\y=y_0+bt\\\\z=z_0+ct\\end{cases}$。"
+      "solution": "参数式：$\\begin{cases}x=x_0+at\\\\y=y_0+bt\\\\z=z_0+ct\\end{cases}$。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-041",
@@ -6144,7 +6512,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\vec{a}=(2,-1,1)$ 在 $\\vec{b}=(1,0,-1)$ 上的投影为(  )。",
       "answer": "$1/\\sqrt2$",
-      "solution": "$投影=\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{b}|}=\\frac{2+0-1}{\\sqrt{2}}=\\frac{1}{\\sqrt{2}}。$"
+      "solution": "$投影=\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{b}|}=\\frac{2+0-1}{\\sqrt{2}}=\\frac{1}{\\sqrt{2}}。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-042",
@@ -6152,7 +6522,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$点 (1,1,1) 到直线 \\frac{x}{1}=\\frac{y}{2}=\\frac{z}{1} 的距离为(  )。$",
       "answer": "$\\sqrt3/\\sqrt6=1/\\sqrt2\\approx0.707$",
-      "solution": "$过点作法平面，求交点再算距离。简化：(1,1,1)恰在直线上？代入x=t,y=2t,z=t，t=1时(1,2,1)\\neq(1,1,1)。距离\\frac{|\\vec{P_0P}\\times\\vec{s}|}{|\\vec{s}|}。取直线上点(0,0,0)，\\vec{P_0P}=(1,1,1)，\\vec{s}=(1,2,1)，叉积(1,1,1)\\times(1,2,1)=(-1,0,1)，|\\vec{s}|=\\sqrt{6}，d=\\sqrt{2}/\\sqrt{6}=1/\\sqrt{3}。直接改成：距离1/\\sqrt{3}。$"
+      "solution": "$过点作法平面，求交点再算距离。简化：(1,1,1)恰在直线上？代入x=t,y=2t,z=t，t=1时(1,2,1)\\neq(1,1,1)。距离\\frac{|\\vec{P_0P}\\times\\vec{s}|}{|\\vec{s}|}。取直线上点(0,0,0)，\\vec{P_0P}=(1,1,1)，\\vec{s}=(1,2,1)，叉积(1,1,1)\\times(1,2,1)=(-1,0,1)，|\\vec{s}|=\\sqrt{6}，d=\\sqrt{2}/\\sqrt{6}=1/\\sqrt{3}。直接改成：距离1/\\sqrt{3}。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-043",
@@ -6160,7 +6532,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "两向量 $\\vec{a}=(1,2,3)$，$\\vec{b}=(2,4,k)$ 平行，则 $k=$(  )。",
       "answer": "6",
-      "solution": "$平行 \\rightarrow 对应分量成比例：\\frac{1}{2}=\\frac{2}{4}=\\frac{3}{k}，k=6。$"
+      "solution": "$平行 \\rightarrow 对应分量成比例：\\frac{1}{2}=\\frac{2}{4}=\\frac{3}{k}，k=6。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-044",
@@ -6168,7 +6542,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "过三点 $A(1,0,0),B(0,1,0),C(0,0,1)$ 的平面方程为(  )。",
       "answer": "x+y+z=1",
-      "solution": "$截距式或用法向量：\\overrightarrow{AB}\\times\\overrightarrow{AC}=(-1,1,0)\\times(-1,0,1)=(1,1,1)，法向量(1,1,1)，平面x+y+z=1。$"
+      "solution": "$截距式或用法向量：\\overrightarrow{AB}\\times\\overrightarrow{AC}=(-1,1,0)\\times(-1,0,1)=(1,1,1)，法向量(1,1,1)，平面x+y+z=1。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-045",
@@ -6176,7 +6552,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "柱面 $x^2+y^2=4$ 与平面 $z=1$ 的交线为(  )。",
       "answer": "圆",
-      "solution": "交线是平面$z=1$上的圆$x^2+y^2=4$。"
+      "solution": "交线是平面$z=1$上的圆$x^2+y^2=4$。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-046",
@@ -6184,7 +6562,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "旋转抛物面 $z=x^2+y^2$ 在 $(1,1,2)$ 处的切平面方程为(  )。",
       "answer": "2x+2y-z=2",
-      "solution": "$F=z-x^2-y^2，\\nabla F=(-2x,-2y,1)=(-2,-2,1)，2(x-1)+2(y-1)-(z-2)=0即2x+2y-z=2。$"
+      "solution": "$F=z-x^2-y^2，\\nabla F=(-2x,-2y,1)=(-2,-2,1)，2(x-1)+2(y-1)-(z-2)=0即2x+2y-z=2。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-047",
@@ -6192,7 +6572,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "原点 $(0,0,0)$ 关于平面 $x+y+z=1$ 的对称点为(  )。",
       "answer": "(2/3,2/3,2/3)",
-      "solution": "$对称：P'=(0,0,0)-2\\frac{0+0+0-1}{1+1+1}(1,1,1)=(\\frac23,\\frac23,\\frac23)。$"
+      "solution": "$对称：P'=(0,0,0)-2\\frac{0+0+0-1}{1+1+1}(1,1,1)=(\\frac23,\\frac23,\\frac23)。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-048",
@@ -6200,7 +6582,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$x^2+y^2=z$ 是什么曲面？(  )。",
       "answer": "旋转抛物面",
-      "solution": "$z=x^2+y^2$是绕$z$轴的旋转抛物面。"
+      "solution": "$z=x^2+y^2$是绕$z$轴的旋转抛物面。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-049",
@@ -6214,7 +6598,9 @@ var QUESTION_BANK = {
         "$x^2=y^2+z^2$"
       ],
       "answer": 2,
-      "solution": "$绕x轴：y替换为\\sqrt{y^2+z^2}，得x^2+y^2+z^2=1。\\rightarrow仔细：原x^2+y^2=1绕x轴，y\\to\\sqrt{y^2+z^2}，得x^2+y^2+z^2=1。答案C即x^2+y^2+z^2=1。$"
+      "solution": "$绕x轴：y替换为\\sqrt{y^2+z^2}，得x^2+y^2+z^2=1。\\rightarrow仔细：原x^2+y^2=1绕x轴，y\\to\\sqrt{y^2+z^2}，得x^2+y^2+z^2=1。答案C即x^2+y^2+z^2=1。$",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     },
     {
       "id": "cal-vg-050",
@@ -6222,7 +6608,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$x^2/4+y^2/9+z^2/16=1$ 是什么曲面？(  )。",
       "answer": "椭球面",
-      "solution": "三元二次方程，系数全正，为椭球面。"
+      "solution": "三元二次方程，系数全正，为椭球面。",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何"
     }
   ]
 }
@@ -6244,7 +6632,9 @@ var QUESTION_BANK = {
         "$12$"
       ],
       "answer": 0,
-      "solution": "$三重积分 \\iiint_\\Omega 1\\,dV 等于区域体积。长方体体积 = 1 \\times 2 \\times 3 = 6。**答案：A**$"
+      "solution": "$三重积分 \\iiint_\\Omega 1\\,dV 等于区域体积。长方体体积 = 1 \\times 2 \\times 3 = 6。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-002",
@@ -6258,7 +6648,9 @@ var QUESTION_BANK = {
         "$D$ 是有界闭区域"
       ],
       "answer": 2,
-      "solution": "格林公式要求 $D$ 是有界闭区域，$L$ 为逐段光滑的正向边界，$P$、$Q$ 在 $D$ 上有一阶连续偏导数。无界区域不能直接应用。**答案：C**"
+      "solution": "格林公式要求 $D$ 是有界闭区域，$L$ 为逐段光滑的正向边界，$P$、$Q$ 在 $D$ 上有一阶连续偏导数。无界区域不能直接应用。**答案：C**",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-003",
@@ -6272,7 +6664,9 @@ var QUESTION_BANK = {
         "$\\frac{1}{3}$"
       ],
       "answer": 0,
-      "solution": "$沿 y=x，x 从 0 到 1：\\int_L y\\,dx = \\int_0^1 x\\,dx = \\frac{1}{2}。**答案：A**$"
+      "solution": "$沿 y=x，x 从 0 到 1：\\int_L y\\,dx = \\int_0^1 x\\,dx = \\frac{1}{2}。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-004",
@@ -6286,7 +6680,9 @@ var QUESTION_BANK = {
         "$\\pi$"
       ],
       "answer": 0,
-      "solution": "$**格林公式**：P=y, Q=-x，\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -1 - 1 = -2。\\oint_L = \\iint_D (-2)dxdy = -2 \\cdot \\pi。**答案：A**$"
+      "solution": "$**格林公式**：P=y, Q=-x，\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -1 - 1 = -2。\\oint_L = \\iint_D (-2)dxdy = -2 \\cdot \\pi。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-005",
@@ -6300,7 +6696,9 @@ var QUESTION_BANK = {
         "只有正向有意义"
       ],
       "answer": 0,
-      "solution": "第一类曲线积分（对弧长）与曲线方向无关，因为 $ds$ 是弧长微元（非负）。第二类曲线积分（对坐标）方向相反则变号。**答案：A**"
+      "solution": "第一类曲线积分（对弧长）与曲线方向无关，因为 $ds$ 是弧长微元（非负）。第二类曲线积分（对坐标）方向相反则变号。**答案：A**",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-006",
@@ -6314,7 +6712,9 @@ var QUESTION_BANK = {
         "定积分"
       ],
       "answer": 0,
-      "solution": "$高斯公式（散度定理）：\\iiint_\\Omega \\text{div}\\vec{F}\\,dV = \\oiint_\\Sigma \\vec{F} \\cdot \\vec{n}\\,dS，将三重积分转化为曲面积分。**答案：A**$"
+      "solution": "$高斯公式（散度定理）：\\iiint_\\Omega \\text{div}\\vec{F}\\,dV = \\oiint_\\Sigma \\vec{F} \\cdot \\vec{n}\\,dS，将三重积分转化为曲面积分。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-007",
@@ -6328,7 +6728,9 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{2}$"
       ],
       "answer": 0,
-      "solution": "$柱面坐标：\\iiint_\\Omega z\\,dV = \\int_0^{2\\pi}\\!\\int_0^1\\!\\int_0^{1-r^2} z \\cdot r\\,dz\\,dr\\,d\\theta = 2\\pi\\int_0^1 r \\cdot \\frac{(1-r^2)^2}{2}dr = \\frac{\\pi}{6}。**答案：A**$"
+      "solution": "$柱面坐标：\\iiint_\\Omega z\\,dV = \\int_0^{2\\pi}\\!\\int_0^1\\!\\int_0^{1-r^2} z \\cdot r\\,dz\\,dr\\,d\\theta = 2\\pi\\int_0^1 r \\cdot \\frac{(1-r^2)^2}{2}dr = \\frac{\\pi}{6}。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-008",
@@ -6342,7 +6744,9 @@ var QUESTION_BANK = {
         "$-\\pi$"
       ],
       "answer": 0,
-      "solution": "$P=x^2+y^2，Q=2xy。\\frac{\\partial Q}{\\partial x}=2y，\\frac{\\partial P}{\\partial y}=2y，\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = 0。格林公式得 0。**答案：A**$"
+      "solution": "$P=x^2+y^2，Q=2xy。\\frac{\\partial Q}{\\partial x}=2y，\\frac{\\partial P}{\\partial y}=2y，\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = 0。格林公式得 0。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-009",
@@ -6356,7 +6760,9 @@ var QUESTION_BANK = {
         "$\\pi$"
       ],
       "answer": 0,
-      "solution": "$\\text{div}\\vec{F} = 1+1+1 = 3。\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi。**答案：A**$"
+      "solution": "$\\text{div}\\vec{F} = 1+1+1 = 3。\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-010",
@@ -6370,7 +6776,9 @@ var QUESTION_BANK = {
         "$\\int_0^1 \\sqrt{1+x^2}\\,dx$"
       ],
       "answer": 0,
-      "solution": "$ds = \\sqrt{1+(y')^2}dx = \\sqrt{1+(2x)^2}dx = \\sqrt{1+4x^2}dx。**答案：A**$"
+      "solution": "$ds = \\sqrt{1+(y')^2}dx = \\sqrt{1+(2x)^2}dx = \\sqrt{1+4x^2}dx。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-011",
@@ -6384,7 +6792,9 @@ var QUESTION_BANK = {
         "$2$"
       ],
       "answer": 0,
-      "solution": "$**格林公式**：P=2xy-y^2，Q=x^2+y。\\frac{\\partial Q}{\\partial x}=2x，\\frac{\\partial P}{\\partial y}=2x-2y。\\iint_D (2y)dxdy。D: -1 \\leq x \\leq 1, x^2 \\leq y \\leq 1。\\iint_D 2y\\,dxdy = 2\\int_{-1}^1\\!\\int_{x^2}^1 y\\,dy\\,dx = \\frac{4}{3}。**答案：A**$"
+      "solution": "$**格林公式**：P=2xy-y^2，Q=x^2+y。\\frac{\\partial Q}{\\partial x}=2x，\\frac{\\partial P}{\\partial y}=2x-2y。\\iint_D (2y)dxdy。D: -1 \\leq x \\leq 1, x^2 \\leq y \\leq 1。\\iint_D 2y\\,dxdy = 2\\int_{-1}^1\\!\\int_{x^2}^1 y\\,dy\\,dx = \\frac{4}{3}。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-012",
@@ -6398,7 +6808,9 @@ var QUESTION_BANK = {
         "$\\frac{1}{3}$"
       ],
       "answer": 0,
-      "solution": "$投影到 xOy 面：D: x \\geq 0, y \\geq 0, x+y \\leq 1。dS = \\sqrt{1+z_x^2+z_y^2}dxdy = \\sqrt{3}\\,dxdy。\\iint_\\Sigma x\\,dS = \\sqrt{3}\\int_0^1\\!\\int_0^{1-x} x\\,dy\\,dx = \\sqrt{3}\\int_0^1 x(1-x)dx = \\frac{\\sqrt{3}}{6}。**答案：A**$"
+      "solution": "$投影到 xOy 面：D: x \\geq 0, y \\geq 0, x+y \\leq 1。dS = \\sqrt{1+z_x^2+z_y^2}dxdy = \\sqrt{3}\\,dxdy。\\iint_\\Sigma x\\,dS = \\sqrt{3}\\int_0^1\\!\\int_0^{1-x} x\\,dy\\,dx = \\sqrt{3}\\int_0^1 x(1-x)dx = \\frac{\\sqrt{3}}{6}。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-013",
@@ -6412,7 +6824,9 @@ var QUESTION_BANK = {
         "$\\pi$"
       ],
       "answer": 0,
-      "solution": "$在圆 L 内部区域 D 内，原点 (0,0) 不在区域内。\\frac{\\partial Q}{\\partial x} = \\frac{\\partial P}{\\partial y}（在区域内有连续偏导），格林公式得 0。**答案：A**。注：若 L 包含原点则结果为 2\\pi（奇点问题）。$"
+      "solution": "$在圆 L 内部区域 D 内，原点 (0,0) 不在区域内。\\frac{\\partial Q}{\\partial x} = \\frac{\\partial P}{\\partial y}（在区域内有连续偏导），格林公式得 0。**答案：A**。注：若 L 包含原点则结果为 2\\pi（奇点问题）。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-014",
@@ -6426,7 +6840,9 @@ var QUESTION_BANK = {
         "$\\frac{4\\pi}{5}$"
       ],
       "answer": 1,
-      "solution": "$**球面坐标**：x=\\rho\\sin\\varphi\\cos\\theta, y=\\rho\\sin\\varphi\\sin\\theta, z=\\rho\\cos\\varphi。x^2+y^2 = \\rho^2\\sin^2\\varphi，dV = \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta。\\iiint = \\int_0^{2\\pi}\\!\\int_0^{\\pi}\\!\\int_0^1 \\rho^2\\sin^2\\varphi \\cdot \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta = 2\\pi \\cdot \\frac{1}{5} \\cdot \\frac{4}{3} = \\frac{8\\pi}{15}。**答案：B**$"
+      "solution": "$**球面坐标**：x=\\rho\\sin\\varphi\\cos\\theta, y=\\rho\\sin\\varphi\\sin\\theta, z=\\rho\\cos\\varphi。x^2+y^2 = \\rho^2\\sin^2\\varphi，dV = \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta。\\iiint = \\int_0^{2\\pi}\\!\\int_0^{\\pi}\\!\\int_0^1 \\rho^2\\sin^2\\varphi \\cdot \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta = 2\\pi \\cdot \\frac{1}{5} \\cdot \\frac{4}{3} = \\frac{8\\pi}{15}。**答案：B**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-015",
@@ -6440,7 +6856,9 @@ var QUESTION_BANK = {
         "$\\pi$"
       ],
       "answer": 0,
-      "solution": "$参数化 x=\\cos t, y=\\sin t，t 从 0 到 \\pi。dx = -\\sin t\\,dt。\\int_0^\\pi \\sin t \\cdot (-\\sin t)dt = -\\int_0^\\pi \\sin^2 t\\,dt = -\\frac{\\pi}{2}。**答案：A**$"
+      "solution": "$参数化 x=\\cos t, y=\\sin t，t 从 0 到 \\pi。dx = -\\sin t\\,dt。\\int_0^\\pi \\sin t \\cdot (-\\sin t)dt = -\\int_0^\\pi \\sin^2 t\\,dt = -\\frac{\\pi}{2}。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-016",
@@ -6454,7 +6872,9 @@ var QUESTION_BANK = {
         "$\\frac{1}{2}$"
       ],
       "answer": 0,
-      "solution": "$P=y, Q=x，\\frac{\\partial Q}{\\partial x}=\\frac{\\partial P}{\\partial y}=1，与路径无关。沿 y=x：\\int_0^1 (x\\,dx + x\\,dx) = 2\\int_0^1 x\\,dx = 1。**答案：A**$"
+      "solution": "$P=y, Q=x，\\frac{\\partial Q}{\\partial x}=\\frac{\\partial P}{\\partial y}=1，与路径无关。沿 y=x：\\int_0^1 (x\\,dx + x\\,dx) = 2\\int_0^1 x\\,dx = 1。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-017",
@@ -6468,7 +6888,9 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{\\sqrt{2}}$"
       ],
       "answer": 0,
-      "solution": "$z = \\sqrt{x^2+y^2}，dS = \\sqrt{1+\\frac{x^2}{x^2+y^2}+\\frac{y^2}{x^2+y^2}}dxdy = \\sqrt{2}\\,dxdy。投影 D: x^2+y^2 \\leq 1。\\iint_\\Sigma dS = \\sqrt{2} \\cdot \\pi \\cdot 1^2 = \\sqrt{2}\\pi。**答案：A**$"
+      "solution": "$z = \\sqrt{x^2+y^2}，dS = \\sqrt{1+\\frac{x^2}{x^2+y^2}+\\frac{y^2}{x^2+y^2}}dxdy = \\sqrt{2}\\,dxdy。投影 D: x^2+y^2 \\leq 1。\\iint_\\Sigma dS = \\sqrt{2} \\cdot \\pi \\cdot 1^2 = \\sqrt{2}\\pi。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-018",
@@ -6482,7 +6904,9 @@ var QUESTION_BANK = {
         "$3\\pi$"
       ],
       "answer": 0,
-      "solution": "$**高斯公式**：P=x, Q=y, R=z。\\text{div}\\vec{F} = 3。\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi。**答案：A**$"
+      "solution": "$**高斯公式**：P=x, Q=y, R=z。\\text{div}\\vec{F} = 3。\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-019",
@@ -6496,7 +6920,9 @@ var QUESTION_BANK = {
         "$-1$"
       ],
       "answer": 0,
-      "solution": "$**格林公式**：P=xy+\\sin y, Q=\\cos x。\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -\\sin x - (x+\\cos y) = -\\sin x - x - \\cos y。\\iint_D (-\\sin x - x - \\cos y)dxdy。D: 0\\leq x,y\\leq 1。计算得 -\\frac{1}{2}。**答案：A**$"
+      "solution": "$**格林公式**：P=xy+\\sin y, Q=\\cos x。\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -\\sin x - (x+\\cos y) = -\\sin x - x - \\cos y。\\iint_D (-\\sin x - x - \\cos y)dxdy。D: 0\\leq x,y\\leq 1。计算得 -\\frac{1}{2}。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-020",
@@ -6510,7 +6936,9 @@ var QUESTION_BANK = {
         "$\\frac{1}{3}$"
       ],
       "answer": 0,
-      "solution": "$\\Sigma 上侧，z=1-x-y。\\iint_\\Sigma (y^2+z^2+x^2)dS 投影到 xOy 面。D: 0\\leq x\\leq 1, 0\\leq y\\leq 1-x。积分得 \\frac{1}{12}。**答案：A**$"
+      "solution": "$\\Sigma 上侧，z=1-x-y。\\iint_\\Sigma (y^2+z^2+x^2)dS 投影到 xOy 面。D: 0\\leq x\\leq 1, 0\\leq y\\leq 1-x。积分得 \\frac{1}{12}。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-021",
@@ -6524,7 +6952,9 @@ var QUESTION_BANK = {
         "$4\\pi$"
       ],
       "answer": 0,
-      "solution": "$**斯托克斯公式**：\\text{rot}\\vec{F} = (-1,-1,-1)。曲面 \\Sigma 取圆盘 x^2+y^2 \\leq 1, z=\\sqrt{3}，法向量 \\vec{n}=(0,0,1)。\\iint_\\Sigma \\text{rot}\\vec{F}\\cdot\\vec{n}dS = \\iint_\\Sigma (-1)dS = -\\pi。**答案：A**$"
+      "solution": "$**斯托克斯公式**：\\text{rot}\\vec{F} = (-1,-1,-1)。曲面 \\Sigma 取圆盘 x^2+y^2 \\leq 1, z=\\sqrt{3}，法向量 \\vec{n}=(0,0,1)。\\iint_\\Sigma \\text{rot}\\vec{F}\\cdot\\vec{n}dS = \\iint_\\Sigma (-1)dS = -\\pi。**答案：A**$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-022",
@@ -6538,7 +6968,9 @@ var QUESTION_BANK = {
         "0"
       ],
       "answer": 0,
-      "solution": "被积函数为1的三重积分等于区域体积。"
+      "solution": "被积函数为1的三重积分等于区域体积。",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-023",
@@ -6552,7 +6984,9 @@ var QUESTION_BANK = {
         "$\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta$"
       ],
       "answer": 0,
-      "solution": "$柱坐标：x=r\\cos\\theta,y=r\\sin\\theta,z=z，雅可比|J|=r。$"
+      "solution": "$柱坐标：x=r\\cos\\theta,y=r\\sin\\theta,z=z，雅可比|J|=r。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-024",
@@ -6566,7 +7000,9 @@ var QUESTION_BANK = {
         "$\\rho\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta$"
       ],
       "answer": 0,
-      "solution": "$球坐标：x=\\rho\\sin\\phi\\cos\\theta,y=\\rho\\sin\\phi\\sin\\theta,z=\\rho\\cos\\phi，|J|=\\rho^2\\sin\\phi。$"
+      "solution": "$球坐标：x=\\rho\\sin\\phi\\cos\\theta,y=\\rho\\sin\\phi\\sin\\theta,z=\\rho\\cos\\phi，|J|=\\rho^2\\sin\\phi。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-025",
@@ -6580,7 +7016,9 @@ var QUESTION_BANK = {
         "$2\\pi$"
       ],
       "answer": 0,
-      "solution": "被积函数为1的弧长积分等于曲线弧长。"
+      "solution": "被积函数为1的弧长积分等于曲线弧长。",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-026",
@@ -6594,7 +7032,9 @@ var QUESTION_BANK = {
         "$1/2$"
       ],
       "answer": 1,
-      "solution": "$\\int_0^1 dz\\int_0^z dx\\int_0^z z\\,dy=\\int_0^1 z^3dz=\\frac14。$"
+      "solution": "$\\int_0^1 dz\\int_0^z dx\\int_0^z z\\,dy=\\int_0^1 z^3dz=\\frac14。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-027",
@@ -6608,7 +7048,9 @@ var QUESTION_BANK = {
         "$(Q_x+P_y)dxdy$"
       ],
       "answer": 0,
-      "solution": "$格林公式：\\oint_L Pdx+Qdy=\\iint_D(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y})dxdy。$"
+      "solution": "$格林公式：\\oint_L Pdx+Qdy=\\iint_D(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y})dxdy。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-028",
@@ -6622,7 +7064,9 @@ var QUESTION_BANK = {
         "$1$"
       ],
       "answer": 0,
-      "solution": "奇函数$z$在关于$xy$平面对称的球域上积分，由对称性得0。"
+      "solution": "奇函数$z$在关于$xy$平面对称的球域上积分，由对称性得0。",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-029",
@@ -6636,7 +7080,9 @@ var QUESTION_BANK = {
         "$4\\pi ab$"
       ],
       "answer": 0,
-      "solution": "$格林：\\iint_D(1-(-1))dxdy=2\\iint_D dxdy=2\\pi ab。$"
+      "solution": "$格林：\\iint_D(1-(-1))dxdy=2\\iint_D dxdy=2\\pi ab。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-030",
@@ -6650,7 +7096,9 @@ var QUESTION_BANK = {
         "$RdV$"
       ],
       "answer": 0,
-      "solution": "高斯公式（散度定理）。"
+      "solution": "高斯公式（散度定理）。",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-031",
@@ -6664,7 +7112,9 @@ var QUESTION_BANK = {
         "$2\\pi$"
       ],
       "answer": 0,
-      "solution": "格林：$\\iint_D(1-1)dxdy=0$。"
+      "solution": "格林：$\\iint_D(1-1)dxdy=0$。",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-032",
@@ -6678,7 +7128,9 @@ var QUESTION_BANK = {
         "$2\\pi$"
       ],
       "answer": 0,
-      "solution": "$球坐标：\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\,d\\phi\\int_0^1\\rho^2\\cdot\\rho^2 d\\rho=4\\pi\\cdot\\frac15=\\frac{4\\pi}{5}。$"
+      "solution": "$球坐标：\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\,d\\phi\\int_0^1\\rho^2\\cdot\\rho^2 d\\rho=4\\pi\\cdot\\frac15=\\frac{4\\pi}{5}。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-033",
@@ -6692,7 +7144,9 @@ var QUESTION_BANK = {
         "$-2\\pi$"
       ],
       "answer": 0,
-      "solution": "$格林：\\iint(2y-(-1))dxdy不对，Q_x=1,P_y=-1，Q_x-P_y=2，\\iint 2dxdy=2\\pi。$"
+      "solution": "$格林：\\iint(2y-(-1))dxdy不对，Q_x=1,P_y=-1，Q_x-P_y=2，\\iint 2dxdy=2\\pi。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-034",
@@ -6706,7 +7160,9 @@ var QUESTION_BANK = {
         "定积分"
       ],
       "answer": 0,
-      "solution": "斯托克斯公式将空间曲线积分转化为以该曲线为边界的曲面积分。"
+      "solution": "斯托克斯公式将空间曲线积分转化为以该曲线为边界的曲面积分。",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-035",
@@ -6720,7 +7176,9 @@ var QUESTION_BANK = {
         "$0$"
       ],
       "answer": 0,
-      "solution": "$高斯：散度P_x+Q_y+R_z=1+1+1=3，\\iiint 3dV=3\\cdot\\frac{4\\pi}{3}=4\\pi。$"
+      "solution": "$高斯：散度P_x+Q_y+R_z=1+1+1=3，\\iiint 3dV=3\\cdot\\frac{4\\pi}{3}=4\\pi。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-036",
@@ -6734,7 +7192,9 @@ var QUESTION_BANK = {
         "$3$"
       ],
       "answer": 0,
-      "solution": "$对称性：\\iiint x=\\iiint y=\\iiint z=\\frac12，总和\\frac32。$"
+      "solution": "$对称性：\\iiint x=\\iiint y=\\iiint z=\\frac12，总和\\frac32。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-037",
@@ -6748,7 +7208,9 @@ var QUESTION_BANK = {
         "$1/2$"
       ],
       "answer": 0,
-      "solution": "$ds=\\sqrt{1+1}dx=\\sqrt{2}dx，\\int_0^1 x\\sqrt{2}dx=\\frac{\\sqrt{2}}{2}。$"
+      "solution": "$ds=\\sqrt{1+1}dx=\\sqrt{2}dx，\\int_0^1 x\\sqrt{2}dx=\\frac{\\sqrt{2}}{2}。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-038",
@@ -6756,7 +7218,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "球体 $x^2+y^2+z^2\\le R^2$ 的体积为(  )。",
       "answer": "$4\\piR³/3$",
-      "solution": "球体积公式。"
+      "solution": "球体积公式。",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-039",
@@ -6764,7 +7228,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\iiint_{0\\le x,y,z\\le1}xyz\\,dV=$(  )。",
       "answer": "1/8",
-      "solution": "$\\int_0^1xdx\\int_0^1ydy\\int_0^1zdz=(\\frac12)^3=\\frac18。$"
+      "solution": "$\\int_0^1xdx\\int_0^1ydy\\int_0^1zdz=(\\frac12)^3=\\frac18。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-040",
@@ -6772,7 +7238,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\iiint_{x^2+y^2\\le1,0\\le z\\le2}z\\,dV$ 柱坐标求值为(  )。",
       "answer": "$2\\pi$",
-      "solution": "$\\int_0^{2\\pi}d\\theta\\int_0^1 rdr\\int_0^2 z\\,dz=2\\pi\\cdot\\frac12\\cdot2=2\\pi。$"
+      "solution": "$\\int_0^{2\\pi}d\\theta\\int_0^1 rdr\\int_0^2 z\\,dz=2\\pi\\cdot\\frac12\\cdot2=2\\pi。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-041",
@@ -6780,7 +7248,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\int_L y\\,ds，L为x^2+y^2=1上半圆周，值为(  )。$",
       "answer": "2",
-      "solution": "$参数化x=\\cos t,y=\\sin t，ds=dt，\\int_0^\\pi\\sin t\\,dt=2。$"
+      "solution": "$参数化x=\\cos t,y=\\sin t，ds=dt，\\int_0^\\pi\\sin t\\,dt=2。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-042",
@@ -6788,7 +7258,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\oint_L xdy$，$L$为$x^2+y^2=1$正向，值为(  )。",
       "answer": "$\\pi$",
-      "solution": "$格林：\\iint_D 1\\,dxdy=\\pi。或用参数直接算。$"
+      "solution": "$格林：\\iint_D 1\\,dxdy=\\pi。或用参数直接算。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-043",
@@ -6796,7 +7268,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\iiint_{x^2+y^2+z^2\\le1}z^2dV$ 球坐标值为(  )。",
       "answer": "$4\\pi/15$",
-      "solution": "$\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\cos^2\\phi\\,d\\phi\\int_0^1\\rho^4 d\\rho=2\\pi\\cdot\\frac{2}{3}\\cdot\\frac15=\\frac{4\\pi}{15}。$"
+      "solution": "$\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\cos^2\\phi\\,d\\phi\\int_0^1\\rho^4 d\\rho=2\\pi\\cdot\\frac{2}{3}\\cdot\\frac15=\\frac{4\\pi}{15}。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-044",
@@ -6804,7 +7278,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\iint_S z\\,dxdy$，$S$为$x^2+y^2+z^2=1$上半球面上侧，值为(  )。",
       "answer": "$2\\pi/3$",
-      "solution": "$z=\\sqrt{1-x^2-y^2}，D:x^2+y^2\\le1，极坐标：\\int_0^{2\\pi}d\\theta\\int_0^1\\sqrt{1-r^2}\\,r\\,dr=2\\pi\\cdot\\frac13=\\frac{2\\pi}{3}。$"
+      "solution": "$z=\\sqrt{1-x^2-y^2}，D:x^2+y^2\\le1，极坐标：\\int_0^{2\\pi}d\\theta\\int_0^1\\sqrt{1-r^2}\\,r\\,dr=2\\pi\\cdot\\frac13=\\frac{2\\pi}{3}。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-045",
@@ -6812,7 +7288,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\oint_L (e^x\\sin y-y)dx+(e^x\\cos y+x)dy，L为任意闭曲线，值为(  )。$",
       "answer": "2A",
-      "solution": "$A为L所围面积。格林：Q_x-P_y=(e^x\\cos y+1)-(e^x\\cos y-1)=2，结果=2A。$"
+      "solution": "$A为L所围面积。格林：Q_x-P_y=(e^x\\cos y+1)-(e^x\\cos y-1)=2，结果=2A。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-046",
@@ -6820,7 +7298,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\iiint_{x^2+y^2+z^2\\le1}\\frac{1}{\\sqrt{x^2+y^2+z^2}}dV=(  )。$",
       "answer": "$2\\pi$",
-      "solution": "$球坐标：4\\pi\\int_0^1\\rho^2\\cdot\\frac{1}{\\rho}d\\rho=4\\pi\\cdot\\frac12=2\\pi。$"
+      "solution": "$球坐标：4\\pi\\int_0^1\\rho^2\\cdot\\frac{1}{\\rho}d\\rho=4\\pi\\cdot\\frac12=2\\pi。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-047",
@@ -6828,7 +7308,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\int_L (x^2+y^2)ds，L:x=\\cos t,y=\\sin t,z=t,0\\le t\\le\\pi，值为(  )。$",
       "answer": "$\\pi\\sqrt2$",
-      "solution": "$ds=\\sqrt{(-\\sin t)^2+(\\cos t)^2+1}dt=\\sqrt{2}dt，\\int_0^\\pi(\\cos^2t+\\sin^2t)\\sqrt{2}dt=\\pi\\sqrt{2}。$"
+      "solution": "$ds=\\sqrt{(-\\sin t)^2+(\\cos t)^2+1}dt=\\sqrt{2}dt，\\int_0^\\pi(\\cos^2t+\\sin^2t)\\sqrt{2}dt=\\pi\\sqrt{2}。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-048",
@@ -6842,7 +7324,9 @@ var QUESTION_BANK = {
         "$4\\pi$"
       ],
       "answer": 0,
-      "solution": "被积函数为1的曲面积分等于曲面面积。"
+      "solution": "被积函数为1的曲面积分等于曲面面积。",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-052",
@@ -6856,7 +7340,9 @@ var QUESTION_BANK = {
         "$2\\pi$"
       ],
       "answer": 0,
-      "solution": "$\\iint_{x^2+y^2\\le1}dxdy\\cdot\\int_0^1e^zdz=\\pi\\cdot(e-1)。$"
+      "solution": "$\\iint_{x^2+y^2\\le1}dxdy\\cdot\\int_0^1e^zdz=\\pi\\cdot(e-1)。$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     },
     {
       "id": "cal-tc-053",
@@ -6864,7 +7350,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\int_L y\\,dx+z\\,dy+x\\,dz，L为x+y+z=1与坐标面交线正向，值为(  )。$",
       "answer": "-3/2",
-      "solution": "$平面上x+y+z=1，用斯托克斯：\\iint_S(1-1)dydz+(1-1)dzdx+(1-1)dxdy=0。不对，P=y,Q=z,R=x，旋度=(0-1,0-1,0-1)=(-1,-1,-1)，\\iint_S(-1,-1,-1)\\cdot(1,1,1)dS=-3\\iint_S dS。S面积=\\sqrt{3}/2。-3\\cdot\\frac{\\sqrt{3}}{2}\\cdot\\frac{1}{\\sqrt{3}}=-3/2。正确！$"
+      "solution": "$平面上x+y+z=1，用斯托克斯：\\iint_S(1-1)dydz+(1-1)dzdx+(1-1)dxdy=0。不对，P=y,Q=z,R=x，旋度=(0-1,0-1,0-1)=(-1,-1,-1)，\\iint_S(-1,-1,-1)\\cdot(1,1,1)dS=-3\\iint_S dS。S面积=\\sqrt{3}/2。-3\\cdot\\frac{\\sqrt{3}}{2}\\cdot\\frac{1}{\\sqrt{3}}=-3/2。正确！$",
+      "cat": "三重积分与曲线曲面积分",
+      "topic": "三重积分与曲线曲面积分"
     }
   ]
 }
@@ -6886,7 +7374,9 @@ var QUESTION_BANK = {
         "$|a_n| \\leq 1$"
       ],
       "answer": 0,
-      "solution": "$级数收敛的必要条件是一般项趋于零：\\lim_{n\\to\\infty} a_n = 0。注意这不是充分条件（如调和级数）。**答案：A**$"
+      "solution": "$级数收敛的必要条件是一般项趋于零：\\lim_{n\\to\\infty} a_n = 0。注意这不是充分条件（如调和级数）。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-002",
@@ -6900,7 +7390,9 @@ var QUESTION_BANK = {
         "$r > 0$"
       ],
       "answer": 0,
-      "solution": "$几何级数 \\sum ar^n 当 |r| < 1 时收敛，和为 \\frac{a}{1-r}。|r| \\geq 1 时发散。**答案：A**$"
+      "solution": "$几何级数 \\sum ar^n 当 |r| < 1 时收敛，和为 \\frac{a}{1-r}。|r| \\geq 1 时发散。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-003",
@@ -6914,7 +7406,9 @@ var QUESTION_BANK = {
         "$p \\leq 1$"
       ],
       "answer": 0,
-      "solution": "$p-级数：p > 1 收敛，p \\leq 1 发散。p=1 即调和级数，发散。**答案：A**$"
+      "solution": "$p-级数：p > 1 收敛，p \\leq 1 发散。p=1 即调和级数，发散。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-004",
@@ -6928,7 +7422,9 @@ var QUESTION_BANK = {
         "$0$"
       ],
       "answer": 0,
-      "solution": "$\\frac{1}{n(n+1)} = \\frac{1}{n} - \\frac{1}{n+1}。部分和 S_n = (1-\\frac{1}{2})+(\\frac{1}{2}-\\frac{1}{3})+\\cdots+(\\frac{1}{n}-\\frac{1}{n+1}) = 1-\\frac{1}{n+1}。\\lim S_n = 1。**答案：A**$"
+      "solution": "$\\frac{1}{n(n+1)} = \\frac{1}{n} - \\frac{1}{n+1}。部分和 S_n = (1-\\frac{1}{2})+(\\frac{1}{2}-\\frac{1}{3})+\\cdots+(\\frac{1}{n}-\\frac{1}{n+1}) = 1-\\frac{1}{n+1}。\\lim S_n = 1。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-005",
@@ -6942,7 +7438,9 @@ var QUESTION_BANK = {
         "以上都包含"
       ],
       "answer": 2,
-      "solution": "$莱布尼茨判别法的两个条件是：① a_n 单调递减；② \\lim_{n\\to\\infty} a_n = 0。a_n 有界是必要条件中的一部分但非判别条件。**答案：C**$"
+      "solution": "$莱布尼茨判别法的两个条件是：① a_n 单调递减；② \\lim_{n\\to\\infty} a_n = 0。a_n 有界是必要条件中的一部分但非判别条件。**答案：C**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-006",
@@ -6956,7 +7454,9 @@ var QUESTION_BANK = {
         "条件收敛"
       ],
       "answer": 0,
-      "solution": "比值判别法：$\\rho < 1 \\Rightarrow$ 绝对收敛；$\\rho > 1 \\Rightarrow$ 发散；$\\rho = 1 \\Rightarrow$ 不能确定。**答案：A**"
+      "solution": "比值判别法：$\\rho < 1 \\Rightarrow$ 绝对收敛；$\\rho > 1 \\Rightarrow$ 发散；$\\rho = 1 \\Rightarrow$ 不能确定。**答案：A**",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-007",
@@ -6970,7 +7470,9 @@ var QUESTION_BANK = {
         "条件收敛"
       ],
       "answer": 0,
-      "solution": "**阿贝尔定理**：幂级数在某点 $x_0$ 收敛，则在 $|x| < |x_0|$ 内绝对收敛。$|1| < |2|$，故在 $x=1$ 处绝对收敛。**答案：A**"
+      "solution": "**阿贝尔定理**：幂级数在某点 $x_0$ 收敛，则在 $|x| < |x_0|$ 内绝对收敛。$|1| < |2|$，故在 $x=1$ 处绝对收敛。**答案：A**",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-008",
@@ -6984,7 +7486,9 @@ var QUESTION_BANK = {
         "$0$"
       ],
       "answer": 0,
-      "solution": "$\\lim_{n\\to\\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| = \\lim_{n\\to\\infty} \\frac{n}{n+1} = 1，收敛半径 R = 1。**答案：A**$"
+      "solution": "$\\lim_{n\\to\\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| = \\lim_{n\\to\\infty} \\frac{n}{n+1} = 1，收敛半径 R = 1。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-009",
@@ -6998,7 +7502,9 @@ var QUESTION_BANK = {
         "$\\sum_{n=1}^{\\infty} \\frac{(-1)^{n-1}x^n}{n}$"
       ],
       "answer": 0,
-      "solution": "$\\frac{1}{1-x} = 1 + x + x^2 + \\cdots = \\sum_{n=0}^{\\infty} x^n，收敛区间 |x|<1。**答案：A**$"
+      "solution": "$\\frac{1}{1-x} = 1 + x + x^2 + \\cdots = \\sum_{n=0}^{\\infty} x^n，收敛区间 |x|<1。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-010",
@@ -7012,7 +7518,9 @@ var QUESTION_BANK = {
         "振荡"
       ],
       "answer": 0,
-      "solution": "$莱布尼茨条件满足（\\frac{1}{n} 递减趋于 0），级数收敛。但 \\sum |a_n| = \\sum \\frac{1}{n} 发散（调和级数），故条件收敛。**答案：A**$"
+      "solution": "$莱布尼茨条件满足（\\frac{1}{n} 递减趋于 0），级数收敛。但 \\sum |a_n| = \\sum \\frac{1}{n} 发散（调和级数），故条件收敛。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-011",
@@ -7026,7 +7534,9 @@ var QUESTION_BANK = {
         "发散"
       ],
       "answer": 0,
-      "solution": "$**比值法**：\\rho = \\lim \\frac{n+1}{2^{n+1}} \\cdot \\frac{2^n}{n} = \\frac{1}{2} < 1，收敛。求和：S = \\sum nx^n 取 x=\\frac{1}{2}，S = \\frac{x}{(1-x)^2} = \\frac{1/2}{1/4} = 2。**答案：A**$"
+      "solution": "$**比值法**：\\rho = \\lim \\frac{n+1}{2^{n+1}} \\cdot \\frac{2^n}{n} = \\frac{1}{2} < 1，收敛。求和：S = \\sum nx^n 取 x=\\frac{1}{2}，S = \\frac{x}{(1-x)^2} = \\frac{1/2}{1/4} = 2。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-012",
@@ -7040,7 +7550,9 @@ var QUESTION_BANK = {
         "$e^{x^2}$"
       ],
       "answer": 0,
-      "solution": "$\\cosh x = \\frac{e^x + e^{-x}}{2} = \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}。**答案：A**$"
+      "solution": "$\\cosh x = \\frac{e^x + e^{-x}}{2} = \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-013",
@@ -7054,7 +7566,9 @@ var QUESTION_BANK = {
         "$[-1,1]$"
       ],
       "answer": 0,
-      "solution": "$半径 R=1。x=1：交错调和级数，条件收敛 ✅。x=-1：-\\sum \\frac{1}{n}，调和级数发散 ❌。收敛域 (-1,1]。**答案：A**$"
+      "solution": "$半径 R=1。x=1：交错调和级数，条件收敛 ✅。x=-1：-\\sum \\frac{1}{n}，调和级数发散 ❌。收敛域 (-1,1]。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-014",
@@ -7068,7 +7582,9 @@ var QUESTION_BANK = {
         "振荡无极限"
       ],
       "answer": 0,
-      "solution": "$\\cos n\\pi = (-1)^n，交错级数。a_n = \\frac{1}{n^{2/3}} 递减趋于 0，莱布尼茨条件满足，条件收敛。\\sum \\frac{1}{n^{2/3}} 中 p=2/3<1，发散，非绝对收敛。**答案：A**$"
+      "solution": "$\\cos n\\pi = (-1)^n，交错级数。a_n = \\frac{1}{n^{2/3}} 递减趋于 0，莱布尼茨条件满足，条件收敛。\\sum \\frac{1}{n^{2/3}} 中 p=2/3<1，发散，非绝对收敛。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-015",
@@ -7082,7 +7598,9 @@ var QUESTION_BANK = {
         "$[-1,1]$"
       ],
       "answer": 0,
-      "solution": "$\\ln(1+x) = \\sum_{n=1}^{\\infty} (-1)^{n-1}\\frac{x^n}{n}。x=1：交错调和级数收敛 ✅。x=-1：-\\sum \\frac{1}{n} 发散 ❌。收敛域 (-1,1]。**答案：A**$"
+      "solution": "$\\ln(1+x) = \\sum_{n=1}^{\\infty} (-1)^{n-1}\\frac{x^n}{n}。x=1：交错调和级数收敛 ✅。x=-1：-\\sum \\frac{1}{n} 发散 ❌。收敛域 (-1,1]。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-016",
@@ -7096,7 +7614,9 @@ var QUESTION_BANK = {
         "$\\frac{1}{2\\pi}\\int_{-\\pi}^{\\pi} f(x)dx$"
       ],
       "answer": 0,
-      "solution": "$a_0 = \\frac{1}{\\pi}\\int_{-\\pi}^{\\pi} f(x)dx。注意常数项是 \\frac{a_0}{2}。**答案：A**$"
+      "solution": "$a_0 = \\frac{1}{\\pi}\\int_{-\\pi}^{\\pi} f(x)dx。注意常数项是 \\frac{a_0}{2}。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-017",
@@ -7110,7 +7630,9 @@ var QUESTION_BANK = {
         "$\\frac{5}{2}$"
       ],
       "answer": 0,
-      "solution": "$拆成两个几何级数：\\sum (\\frac{3}{5})^n + \\sum (-\\frac{2}{5})^n = \\frac{3/5}{1-3/5} + \\frac{-2/5}{1+2/5} = \\frac{3}{2} - \\frac{2}{7} = \\frac{21-4}{14} = \\frac{17}{14}… 重算：第一个从 n=1：\\frac{3/5}{1-3/5} = \\frac{3/5}{2/5} = \\frac{3}{2}。第二个：\\frac{-2/5}{1-(-2/5)} = \\frac{-2/5}{7/5} = -\\frac{2}{7}。和 = \\frac{3}{2} - \\frac{2}{7} = \\frac{21-4}{14} = \\frac{17}{14}。选项不匹配，选项A是 \\frac{7}{4}。重算：\\frac{3}{2} - \\frac{2}{7} = \\frac{21}{14} - \\frac{4}{14} = \\frac{17}{14}。选项A 7/4 = 14/8，不对。选项D 5/2 = 35/14。都不对。改为题目用更整齐的数字：\\frac{2^n+3^n}{6^n}。和 = \\frac{2/6}{1-2/6} + \\frac{3/6}{1-3/6} = \\frac{1/3}{2/3} + \\frac{1/2}{1/2} = \\frac{1}{2} + 1 = \\frac{3}{2}。**答案：B**$"
+      "solution": "$拆成两个几何级数：\\sum (\\frac{3}{5})^n + \\sum (-\\frac{2}{5})^n = \\frac{3/5}{1-3/5} + \\frac{-2/5}{1+2/5} = \\frac{3}{2} - \\frac{2}{7} = \\frac{21-4}{14} = \\frac{17}{14}… 重算：第一个从 n=1：\\frac{3/5}{1-3/5} = \\frac{3/5}{2/5} = \\frac{3}{2}。第二个：\\frac{-2/5}{1-(-2/5)} = \\frac{-2/5}{7/5} = -\\frac{2}{7}。和 = \\frac{3}{2} - \\frac{2}{7} = \\frac{21-4}{14} = \\frac{17}{14}。选项不匹配，选项A是 \\frac{7}{4}。重算：\\frac{3}{2} - \\frac{2}{7} = \\frac{21}{14} - \\frac{4}{14} = \\frac{17}{14}。选项A 7/4 = 14/8，不对。选项D 5/2 = 35/14。都不对。改为题目用更整齐的数字：\\frac{2^n+3^n}{6^n}。和 = \\frac{2/6}{1-2/6} + \\frac{3/6}{1-3/6} = \\frac{1/3}{2/3} + \\frac{1/2}{1/2} = \\frac{1}{2} + 1 = \\frac{3}{2}。**答案：B**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-018",
@@ -7124,7 +7646,9 @@ var QUESTION_BANK = {
         "$\\frac{x}{(3-x)^2}$"
       ],
       "answer": 0,
-      "solution": "$\\sum_{n=1}^{\\infty} ny^{n-1} = \\frac{1}{(1-y)^2}。此处 y=\\frac{x}{3}。\\sum \\frac{n}{3^n}x^{n-1} = \\frac{1}{3}\\sum n(\\frac{x}{3})^{n-1} = \\frac{1}{3} \\cdot \\frac{1}{(1-\\frac{x}{3})^2} = \\frac{1}{3} \\cdot \\frac{9}{(3-x)^2} = \\frac{3}{(3-x)^2}。**答案：A**$"
+      "solution": "$\\sum_{n=1}^{\\infty} ny^{n-1} = \\frac{1}{(1-y)^2}。此处 y=\\frac{x}{3}。\\sum \\frac{n}{3^n}x^{n-1} = \\frac{1}{3}\\sum n(\\frac{x}{3})^{n-1} = \\frac{1}{3} \\cdot \\frac{1}{(1-\\frac{x}{3})^2} = \\frac{1}{3} \\cdot \\frac{9}{(3-x)^2} = \\frac{3}{(3-x)^2}。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-019",
@@ -7138,7 +7662,9 @@ var QUESTION_BANK = {
         "不收敛"
       ],
       "answer": 0,
-      "solution": "$|x| 是偶函数，b_n=0。a_0 = \\frac{2}{\\pi}\\int_0^{\\pi} x\\,dx = \\pi。a_n = \\frac{2}{\\pi}\\int_0^{\\pi} x\\cos nx\\,dx = \\frac{2}{\\pi}\\frac{(-1)^n-1}{n^2}。|x| = \\frac{\\pi}{2} - \\frac{4}{\\pi}\\sum\\frac{\\cos(2k-1)x}{(2k-1)^2}。在 x=0 处，傅里叶级数收敛于 f(0)=0（f 连续）。**答案：A**$"
+      "solution": "$|x| 是偶函数，b_n=0。a_0 = \\frac{2}{\\pi}\\int_0^{\\pi} x\\,dx = \\pi。a_n = \\frac{2}{\\pi}\\int_0^{\\pi} x\\cos nx\\,dx = \\frac{2}{\\pi}\\frac{(-1)^n-1}{n^2}。|x| = \\frac{\\pi}{2} - \\frac{4}{\\pi}\\sum\\frac{\\cos(2k-1)x}{(2k-1)^2}。在 x=0 处，傅里叶级数收敛于 f(0)=0（f 连续）。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-020",
@@ -7152,7 +7678,9 @@ var QUESTION_BANK = {
         "$p > 0$"
       ],
       "answer": 0,
-      "solution": "$**积分判别法**：\\int_2^{\\infty} \\frac{dx}{x(\\ln x)^p}，令 u=\\ln x，\\int_{\\ln 2}^{\\infty} u^{-p}du。收敛 \\iff p>1，与 p-级数的积分判别结果相同。**答案：A**$"
+      "solution": "$**积分判别法**：\\int_2^{\\infty} \\frac{dx}{x(\\ln x)^p}，令 u=\\ln x，\\int_{\\ln 2}^{\\infty} u^{-p}du。收敛 \\iff p>1，与 p-级数的积分判别结果相同。**答案：A**$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-cs-021",
@@ -7166,7 +7694,9 @@ var QUESTION_BANK = {
         "一定发散"
       ],
       "answer": 0,
-      "solution": "$x=-1$ 对应 $(x-1)=-2$。若在 $-2$ 处收敛，收敛半径至少为 $2$。$(2-1)=1$，$|1|<2$，在收敛区间内绝对收敛。**答案：A**"
+      "solution": "$x=-1$ 对应 $(x-1)=-2$。若在 $-2$ 处收敛，收敛半径至少为 $2$。$(2-1)=1$，$|1|<2$，在收敛区间内绝对收敛。**答案：A**",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-022",
@@ -7180,7 +7710,9 @@ var QUESTION_BANK = {
         "$p>0$"
       ],
       "answer": 0,
-      "solution": "$p$级数：$p>1$收敛，$p\\le1$发散。"
+      "solution": "$p$级数：$p>1$收敛，$p\\le1$发散。",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-023",
@@ -7194,7 +7726,9 @@ var QUESTION_BANK = {
         "$\\infty$"
       ],
       "answer": 0,
-      "solution": "$裂项：\\frac{1}{n(n+1)}=\\frac{1}{n}-\\frac{1}{n+1}，部分和S_n=1-\\frac{1}{n+1}\\to1。$"
+      "solution": "$裂项：\\frac{1}{n(n+1)}=\\frac{1}{n}-\\frac{1}{n+1}，部分和S_n=1-\\frac{1}{n+1}\\to1。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-024",
@@ -7208,7 +7742,9 @@ var QUESTION_BANK = {
         "$|q|>1$"
       ],
       "answer": 0,
-      "solution": "$几何级数：|q|<1时收敛，和\\frac{1}{1-q}。$"
+      "solution": "$几何级数：|q|<1时收敛，和\\frac{1}{1-q}。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-025",
@@ -7222,7 +7758,9 @@ var QUESTION_BANK = {
         "$\\infty$"
       ],
       "answer": 0,
-      "solution": "收敛的必要条件：通项趋于0。"
+      "solution": "收敛的必要条件：通项趋于0。",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-026",
@@ -7236,7 +7774,9 @@ var QUESTION_BANK = {
         "无法判断"
       ],
       "answer": 0,
-      "solution": "$交错调和级数条件收敛：莱布尼茨判别法，但\\sum1/n发散故非绝对收敛。$"
+      "solution": "$交错调和级数条件收敛：莱布尼茨判别法，但\\sum1/n发散故非绝对收敛。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-027",
@@ -7250,7 +7790,9 @@ var QUESTION_BANK = {
         "$e$"
       ],
       "answer": 1,
-      "solution": "$\\rho=\\lim|a_{n+1}/a_n|=\\lim\\frac{1/(n+1)}{1/n}=1，R=1。$"
+      "solution": "$\\rho=\\lim|a_{n+1}/a_n|=\\lim\\frac{1/(n+1)}{1/n}=1，R=1。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-028",
@@ -7264,7 +7806,9 @@ var QUESTION_BANK = {
         "无法判断"
       ],
       "answer": 0,
-      "solution": "$|\\sin n/n^2|\\le1/n^2，\\sum 1/n^2收敛，比较判别法得绝对收敛。$"
+      "solution": "$|\\sin n/n^2|\\le1/n^2，\\sum 1/n^2收敛，比较判别法得绝对收敛。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-029",
@@ -7278,7 +7822,9 @@ var QUESTION_BANK = {
         "$4$"
       ],
       "answer": 1,
-      "solution": "$\\sum nx^n=\\frac{x}{(1-x)^2}，取x=1/2：\\frac{1/2}{1/4}=2。$"
+      "solution": "$\\sum nx^n=\\frac{x}{(1-x)^2}，取x=1/2：\\frac{1/2}{1/4}=2。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-030",
@@ -7292,7 +7838,9 @@ var QUESTION_BANK = {
         "$\\cos x$"
       ],
       "answer": 0,
-      "solution": "$e^x的麦克劳林展开：e^x=\\sum_{n=0}^\\infty\\frac{x^n}{n!}。$"
+      "solution": "$e^x的麦克劳林展开：e^x=\\sum_{n=0}^\\infty\\frac{x^n}{n!}。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-031",
@@ -7306,7 +7854,9 @@ var QUESTION_BANK = {
         "无法判断"
       ],
       "answer": 0,
-      "solution": "$\\lim\\frac{a_{n+1}}{a_n}=\\lim\\frac{n+1}{(n+1)^{n+1}}\\cdot\\frac{n^n}{n!}\\cdot\\frac{(n+1)!}{n+1}=...=1/e<1收敛。$"
+      "solution": "$\\lim\\frac{a_{n+1}}{a_n}=\\lim\\frac{n+1}{(n+1)^{n+1}}\\cdot\\frac{n^n}{n!}\\cdot\\frac{(n+1)!}{n+1}=...=1/e<1收敛。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-032",
@@ -7320,7 +7870,9 @@ var QUESTION_BANK = {
         "无法判断"
       ],
       "answer": 1,
-      "solution": "$\\ln(1+1/n)\\sim 1/n，与调和级数同阶故发散。$"
+      "solution": "$\\ln(1+1/n)\\sim 1/n，与调和级数同阶故发散。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-033",
@@ -7334,7 +7886,9 @@ var QUESTION_BANK = {
         "无法判断"
       ],
       "answer": 0,
-      "solution": "$莱布尼茨判别法：交错且1/\\sqrt{n}\\to0单调递减\\rightarrow收敛。但\\sum 1/\\sqrt{n}发散，故条件收敛。$"
+      "solution": "$莱布尼茨判别法：交错且1/\\sqrt{n}\\to0单调递减\\rightarrow收敛。但\\sum 1/\\sqrt{n}发散，故条件收敛。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-034",
@@ -7348,7 +7902,9 @@ var QUESTION_BANK = {
         "$\\sum_{n=0}^\\infty x^n$"
       ],
       "answer": 0,
-      "solution": "$\\ln(1+x)=\\sum_{n=1}^\\infty(-1)^{n-1}\\frac{x^n}{n}，-1<x\\le1。$"
+      "solution": "$\\ln(1+x)=\\sum_{n=1}^\\infty(-1)^{n-1}\\frac{x^n}{n}，-1<x\\le1。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-035",
@@ -7362,7 +7918,9 @@ var QUESTION_BANK = {
         "$[-1,1)$"
       ],
       "answer": 0,
-      "solution": "$\\rho=1，R=1。端点x=\\pm1时\\sum n(\\pm1)^{n-1}通项不趋于0，发散。$"
+      "solution": "$\\rho=1，R=1。端点x=\\pm1时\\sum n(\\pm1)^{n-1}通项不趋于0，发散。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-036",
@@ -7376,7 +7934,9 @@ var QUESTION_BANK = {
         "$\\frac{x^3}{6}$"
       ],
       "answer": 0,
-      "solution": "$e^x=1+x+\\frac{x^2}{2!}+\\frac{x^3}{3!}+\\cdots。$"
+      "solution": "$e^x=1+x+\\frac{x^2}{2!}+\\frac{x^3}{3!}+\\cdots。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-037",
@@ -7390,7 +7950,9 @@ var QUESTION_BANK = {
         "$\\infty$"
       ],
       "answer": 0,
-      "solution": "$e^x展开代入x=2：e^2=\\sum\\frac{2^n}{n!}。$"
+      "solution": "$e^x展开代入x=2：e^2=\\sum\\frac{2^n}{n!}。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-038",
@@ -7398,7 +7960,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "$\\sum_{n=1}^\\infty \\frac{1}{4n^2-1} 的和为(  )。$",
       "answer": "1/2",
-      "solution": "$裂项：\\frac{1}{4n^2-1}=\\frac{1}{2}(\\frac{1}{2n-1}-\\frac{1}{2n+1})，望远镜和=1/2。$"
+      "solution": "$裂项：\\frac{1}{4n^2-1}=\\frac{1}{2}(\\frac{1}{2n-1}-\\frac{1}{2n+1})，望远镜和=1/2。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-039",
@@ -7406,7 +7970,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "$等比级数 \\sum_{n=0}^\\infty \\frac{2}{3^n} 的和为(  )。$",
       "answer": "3",
-      "solution": "$S=2\\sum(1/3)^n=2\\cdot\\frac{1}{1-1/3}=3。$"
+      "solution": "$S=2\\sum(1/3)^n=2\\cdot\\frac{1}{1-1/3}=3。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-040",
@@ -7414,7 +7980,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n\\cdot 2^n} 的近似值（取前2项）为(  )。$",
       "answer": "7/24",
-      "solution": "$前2项：1/2-1/8=3/8。但题目取前2项：n=1:\\frac{1}{2}，n=2:-\\frac{1}{8}，和3/8。改为\\frac{3}{8}=0.375。答案3/8。$"
+      "solution": "$前2项：1/2-1/8=3/8。但题目取前2项：n=1:\\frac{1}{2}，n=2:-\\frac{1}{8}，和3/8。改为\\frac{3}{8}=0.375。答案3/8。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-041",
@@ -7422,7 +7990,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\lim_{n\\to\\infty}\\frac{2^n}{n!}=(  )。$",
       "answer": "0",
-      "solution": "$比值：\\frac{2^{n+1}/(n+1)!}{2^n/n!}=\\frac{2}{n+1}\\to0，收敛于0。$"
+      "solution": "$比值：\\frac{2^{n+1}/(n+1)!}{2^n/n!}=\\frac{2}{n+1}\\to0，收敛于0。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-042",
@@ -7430,7 +8000,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\sum_{n=1}^\\infty (\\frac{1}{2^n}+\\frac{1}{3^n}) 的和为(  )。$",
       "answer": "3/2",
-      "solution": "$分别求和：\\frac{1/2}{1-1/2}+\\frac{1/3}{1-1/3}=1+\\frac12=\\frac32。$"
+      "solution": "$分别求和：\\frac{1/2}{1-1/2}+\\frac{1/3}{1-1/3}=1+\\frac12=\\frac32。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-043",
@@ -7438,7 +8010,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$幂级数 \\sum_{n=0}^\\infty (n+1)x^n 的和函数为(  )。$",
       "answer": "1/(1-x)²",
-      "solution": "$\\sum(n+1)x^n=\\frac{d}{dx}\\sum x^{n+1}=\\frac{d}{dx}\\frac{x}{1-x}=\\frac{1}{(1-x)^2}。$"
+      "solution": "$\\sum(n+1)x^n=\\frac{d}{dx}\\sum x^{n+1}=\\frac{d}{dx}\\frac{x}{1-x}=\\frac{1}{(1-x)^2}。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-044",
@@ -7446,7 +8020,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\sum_{n=1}^\\infty \\frac{1}{n^2+n} 的和为(  )。$",
       "answer": "1",
-      "solution": "$裂项\\frac{1}{n(n+1)}=\\frac{1}{n}-\\frac{1}{n+1}，望远镜和=1。$"
+      "solution": "$裂项\\frac{1}{n(n+1)}=\\frac{1}{n}-\\frac{1}{n+1}，望远镜和=1。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-045",
@@ -7454,7 +8030,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$将 \\frac{1}{1+x^2} 展开为 x 的幂级数：\\sum_{n=0}^\\infty(  )。$",
       "answer": "(-1)^n x^(2n)",
-      "solution": "$\\frac{1}{1+x^2}=\\frac{1}{1-(-x^2)}=\\sum(-x^2)^n=\\sum(-1)^n x^{2n}，|x|<1。$"
+      "solution": "$\\frac{1}{1+x^2}=\\frac{1}{1-(-x^2)}=\\sum(-x^2)^n=\\sum(-1)^n x^{2n}，|x|<1。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-046",
@@ -7462,7 +8040,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$f(x)=\\cos x 的麦克劳林级数 x^2 项系数为(  )。$",
       "answer": "-1/2",
-      "solution": "$\\cos x=1-\\frac{x^2}{2!}+\\frac{x^4}{4!}-\\cdots，x^2系数-1/2。$"
+      "solution": "$\\cos x=1-\\frac{x^2}{2!}+\\frac{x^4}{4!}-\\cdots，x^2系数-1/2。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-047",
@@ -7470,7 +8050,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\sum_{n=1}^\\infty n(\\frac{2}{3})^{n-1} 的和为(  )。$",
       "answer": "9",
-      "solution": "$\\sum nx^{n-1}=\\frac{1}{(1-x)^2}，代入x=2/3：1/(1/3)^2=9。$"
+      "solution": "$\\sum nx^{n-1}=\\frac{1}{(1-x)^2}，代入x=2/3：1/(1/3)^2=9。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-048",
@@ -7478,7 +8060,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$级数 \\sum_{n=1}^\\infty(-1)^{n-1}\\frac{x^{2n-1}}{2n-1} 的和函数为(  )。$",
       "answer": "arctan x",
-      "solution": "$\\arctan x=\\sum_{n=0}^\\infty(-1)^n\\frac{x^{2n+1}}{2n+1}=x-\\frac{x^3}{3}+\\cdots。$"
+      "solution": "$\\arctan x=\\sum_{n=0}^\\infty(-1)^n\\frac{x^{2n+1}}{2n+1}=x-\\frac{x^3}{3}+\\cdots。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-049",
@@ -7486,7 +8070,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\sum_{n=1}^\\infty \\frac{n+1}{n!} 的和为(  )。$",
       "answer": "2e-1",
-      "solution": "$\\sum\\frac{n}{n!}+\\sum\\frac{1}{n!}=\\sum\\frac{1}{(n-1)!}+\\sum\\frac{1}{n!}=e+(e-1)=2e-1。$"
+      "solution": "$\\sum\\frac{n}{n!}+\\sum\\frac{1}{n!}=\\sum\\frac{1}{(n-1)!}+\\sum\\frac{1}{n!}=e+(e-1)=2e-1。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     },
     {
       "id": "cal-series-050",
@@ -7500,7 +8086,9 @@ var QUESTION_BANK = {
         "$2$"
       ],
       "answer": 0,
-      "solution": "$巴塞尔问题：\\sum_{n=1}^\\infty\\frac{1}{n^2}=\\frac{\\pi^2}{6}。$"
+      "solution": "$巴塞尔问题：\\sum_{n=1}^\\infty\\frac{1}{n^2}=\\frac{\\pi^2}{6}。$",
+      "cat": "无穷级数",
+      "topic": "无穷级数"
     }
   ]
 }
@@ -7522,7 +8110,9 @@ var QUESTION_BANK = {
         "$16$"
       ],
       "answer": 0,
-      "solution": "$|kA|=k^n|A|$（$n=3$阶）。$|A|=1(4-0)-2(0-2)+(-1)(0-4)=4+4+4=12$。$|2A|=2^3\\times12=96$。**答案：A**"
+      "solution": "$|kA|=k^n|A|$（$n=3$阶）。$|A|=1(4-0)-2(0-2)+(-1)(0-4)=4+4+4=12$。$|2A|=2^3\\times12=96$。**答案：A**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-002",
@@ -7536,7 +8126,9 @@ var QUESTION_BANK = {
         "$AB=BA$ 恒成立"
       ],
       "answer": 3,
-      "solution": "$AB=I$ 说明 $A,B$ 互逆，故 $BA=I$、$A^{-1}=B$、$|A|\\neq0$ 均成立。但矩阵乘法一般不满足交换律，$AB=BA$ 不是普遍规律。**答案：D**"
+      "solution": "$AB=I$ 说明 $A,B$ 互逆，故 $BA=I$、$A^{-1}=B$、$|A|\\neq0$ 均成立。但矩阵乘法一般不满足交换律，$AB=BA$ 不是普遍规律。**答案：D**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-003",
@@ -7545,7 +8137,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}1&0&0\\\\2&1&0\\\\0&3&1\\end{pmatrix}$，则 $|A|=(\\quad)$。",
       "options": null,
       "answer": "$1$",
-      "solution": "$A$ 为下三角矩阵，行列式等于主对角线元素之积：$|A|=1\\times1\\times1=1$。"
+      "solution": "$A$ 为下三角矩阵，行列式等于主对角线元素之积：$|A|=1\\times1\\times1=1$。",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-004",
@@ -7559,7 +8153,9 @@ var QUESTION_BANK = {
         "$\\begin{pmatrix}7&0&7\\\\3&2&-1\\\\-1&4&5\\end{pmatrix}^{\\mathrm{T}}$"
       ],
       "answer": 3,
-      "solution": "计算各代数余子式：$|A|=11$。$A_{11}=7,A_{12}=0,A_{13}=7,A_{21}=3,A_{22}=2,A_{23}=-1,A_{31}=-1,A_{32}=4,A_{33}=5$。$A^{*}=(A_{ji})$ 即代数余子式矩阵的转置。**答案：D**"
+      "solution": "计算各代数余子式：$|A|=11$。$A_{11}=7,A_{12}=0,A_{13}=7,A_{21}=3,A_{22}=2,A_{23}=-1,A_{31}=-1,A_{32}=4,A_{33}=5$。$A^{*}=(A_{ji})$ 即代数余子式矩阵的转置。**答案：D**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-005",
@@ -7573,7 +8169,9 @@ var QUESTION_BANK = {
         "$16$"
       ],
       "answer": 1,
-      "solution": "$|A^{*}|=|A|^{n-1}=|A|^2=2^2=4$（$n=3$）。**答案：B**"
+      "solution": "$|A^{*}|=|A|^{n-1}=|A|^2=2^2=4$（$n=3$）。**答案：B**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-006",
@@ -7587,7 +8185,9 @@ var QUESTION_BANK = {
         "$\\dfrac{1}{4|A|}A$"
       ],
       "answer": 0,
-      "solution": "$A^{*}=|A|A^{-1}$，故 $(2A^{*})^{-1}=(2|A|A^{-1})^{-1}=\\dfrac{1}{2|A|}(A^{-1})^{-1}=\\dfrac{A}{2|A|}$。**答案：A**"
+      "solution": "$A^{*}=|A|A^{-1}$，故 $(2A^{*})^{-1}=(2|A|A^{-1})^{-1}=\\dfrac{1}{2|A|}(A^{-1})^{-1}=\\dfrac{A}{2|A|}$。**答案：A**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-007",
@@ -7601,7 +8201,9 @@ var QUESTION_BANK = {
         "以上均正确"
       ],
       "answer": 3,
-      "solution": "三类初等矩阵的逆：(1) 交换型自逆 $E_{ij}^{-1}=E_{ij}$；(2) 倍乘型 $E_i(k)^{-1}=E_i(\\frac1k)$；(3) 倍加型 $E_{ij}(k)^{-1}=E_{ij}(-k)$。三者皆对。**答案：D**"
+      "solution": "三类初等矩阵的逆：(1) 交换型自逆 $E_{ij}^{-1}=E_{ij}$；(2) 倍乘型 $E_i(k)^{-1}=E_i(\\frac1k)$；(3) 倍加型 $E_{ij}(k)^{-1}=E_{ij}(-k)$。三者皆对。**答案：D**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-008",
@@ -7610,7 +8212,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{pmatrix}$，则 $r(A)=(\\quad)$。",
       "options": null,
       "answer": "$2$",
-      "solution": "$R_2-R_1=(3,3,3)$，$R_3-R_1=(6,6,6)=2(R_2-R_1)$，故三行线性相关。二阶子式 $\\begin{vmatrix}1&2\\\\4&5\\end{vmatrix}=-3\\neq0$，所以 $r(A)=2$。"
+      "solution": "$R_2-R_1=(3,3,3)$，$R_3-R_1=(6,6,6)=2(R_2-R_1)$，故三行线性相关。二阶子式 $\\begin{vmatrix}1&2\\\\4&5\\end{vmatrix}=-3\\neq0$，所以 $r(A)=2$。",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-009",
@@ -7624,7 +8228,9 @@ var QUESTION_BANK = {
         "$1,-1,-1$"
       ],
       "answer": 0,
-      "solution": "$|\\lambda I-A|=(\\lambda-1)[(\\lambda-1)^2-4]=(\\lambda-1)(\\lambda-3)(\\lambda+1)$。特征值为 $1,3,-1$。**答案：A**"
+      "solution": "$|\\lambda I-A|=(\\lambda-1)[(\\lambda-1)^2-4]=(\\lambda-1)(\\lambda-3)(\\lambda+1)$。特征值为 $1,3,-1$。**答案：A**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-010",
@@ -7638,7 +8244,9 @@ var QUESTION_BANK = {
         "$|AB|=|A||B|$"
       ],
       "answer": 3,
-      "solution": "$(AB)^T=B^TA^T$；$(AB)^{-1}=B^{-1}A^{-1}$；$(A+B)^2=A^2+AB+BA+B^2$（仅当 $AB=BA$ 时等于 $A^2+2AB+B^2$）；$|AB|=|A||B|$ 恒成立。**答案：D**"
+      "solution": "$(AB)^T=B^TA^T$；$(AB)^{-1}=B^{-1}A^{-1}$；$(A+B)^2=A^2+AB+BA+B^2$（仅当 $AB=BA$ 时等于 $A^2+2AB+B^2$）；$|AB|=|A||B|$ 恒成立。**答案：D**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-011",
@@ -7647,7 +8255,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}1&a&1\\\\a&1&a\\\\1&a&1\\end{pmatrix}$，若 $r(A)=1$，则 $a=(\\quad)$。",
       "options": null,
       "answer": "$\\pm1$",
-      "solution": "$A$ 的第1行与第3行恒相同，故 $|A|=0$，$A$ 始终奇异（$r(A)\\le2$）。当 $a=1$ 时三行全同，$r(A)=1$；当 $a=-1$ 时第2行 $=-$ 第1行，$r(A)=1$。其余 $a$ 值时 $r(A)=2$。故 $r(A)=1\\Leftrightarrow a=\\pm1$。**答案：$a=\\pm1$**"
+      "solution": "$A$ 的第1行与第3行恒相同，故 $|A|=0$，$A$ 始终奇异（$r(A)\\le2$）。当 $a=1$ 时三行全同，$r(A)=1$；当 $a=-1$ 时第2行 $=-$ 第1行，$r(A)=1$。其余 $a$ 值时 $r(A)=2$。故 $r(A)=1\\Leftrightarrow a=\\pm1$。**答案：$a=\\pm1$**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-012",
@@ -7661,7 +8271,9 @@ var QUESTION_BANK = {
         "保持 $A$ 不变"
       ],
       "answer": 0,
-      "solution": "$PAP$：左乘 $P$ 交换第2、3行，右乘 $P$ 交换第2、3列。这是**合同变换**（也是相似变换，因为 $P=P^{-1}$）。效果是同时交换对应的行和列。**答案：A**"
+      "solution": "$PAP$：左乘 $P$ 交换第2、3行，右乘 $P$ 交换第2、3列。这是**合同变换**（也是相似变换，因为 $P=P^{-1}$）。效果是同时交换对应的行和列。**答案：A**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-013",
@@ -7670,7 +8282,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}0&1&0\\\\1&0&0\\\\0&0&1\\end{pmatrix}$，则 $A^{2024}=(\\quad)$。",
       "options": null,
       "answer": "$I_3$",
-      "solution": "$A$ 是交换第1、2行的置换矩阵，$A^2=I$（换两次还原），故 $A^{2024}=(A^2)^{1012}=I^{1012}=I$。"
+      "solution": "$A$ 是交换第1、2行的置换矩阵，$A^2=I$（换两次还原），故 $A^{2024}=(A^2)^{1012}=I^{1012}=I$。",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-014",
@@ -7684,7 +8298,9 @@ var QUESTION_BANK = {
         "$tr(A)=0$"
       ],
       "answer": 0,
-      "solution": "若 $Ax=\\lambda x$（$x\\neq0$），则 $A^3x=\\lambda^3x$。由 $A^3=A$ 得 $\\lambda^3=\\lambda$，解得 $\\lambda\\in\\{0,1,-1\\}$。但 $A$ 不一定可对角化（如 Jordan 块情形），$|A|$ 也不一定为0（可逆时特征值均为 $\\pm1$）。**答案：A**"
+      "solution": "若 $Ax=\\lambda x$（$x\\neq0$），则 $A^3x=\\lambda^3x$。由 $A^3=A$ 得 $\\lambda^3=\\lambda$，解得 $\\lambda\\in\\{0,1,-1\\}$。但 $A$ 不一定可对角化（如 Jordan 块情形），$|A|$ 也不一定为0（可逆时特征值均为 $\\pm1$）。**答案：A**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-015",
@@ -7693,7 +8309,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}a&2&1\\\\2&a&2\\\\1&2&a\\end{pmatrix}$ 正定，则 $a$ 的取值范围是 $(\\quad)$。",
       "options": null,
       "answer": "$a>3$",
-      "solution": "顺序主子式：$\\Delta_1=a>0$；$\\Delta_2=a^2-4>0\\Rightarrow a>2$；$\\Delta_3=a^3-9a+8>0$。由 $a^3-9a+8=(a-1)(a^2+a-8)>0$ 结合 $a>2$，得 $a>3$ 时满足全部条件。**答案：$a>3$**"
+      "solution": "顺序主子式：$\\Delta_1=a>0$；$\\Delta_2=a^2-4>0\\Rightarrow a>2$；$\\Delta_3=a^3-9a+8>0$。由 $a^3-9a+8=(a-1)(a^2+a-8)>0$ 结合 $a>2$，得 $a>3$ 时满足全部条件。**答案：$a>3$**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-016",
@@ -7707,7 +8325,9 @@ var QUESTION_BANK = {
         "$a=1$"
       ],
       "answer": 2,
-      "solution": "$(A-2I)X=A$ 有解 $\\Leftrightarrow r(A-2I)=r([A-2I\\mid A])$。计算增广矩阵经行变换后可得：当 $a=-1$ 时系数矩阵与增广矩阵同秩（均为2），方程有解。**答案：C**"
+      "solution": "$(A-2I)X=A$ 有解 $\\Leftrightarrow r(A-2I)=r([A-2I\\mid A])$。计算增广矩阵经行变换后可得：当 $a=-1$ 时系数矩阵与增广矩阵同秩（均为2），方程有解。**答案：C**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-017",
@@ -7721,7 +8341,9 @@ var QUESTION_BANK = {
         "$\\dfrac12(2I-A)$"
       ],
       "answer": 0,
-      "solution": "由 $A^2-A-2I=O$ 得 $A^2-A=2I$，即 $A(A-I)=2I$，故 $A\\cdot\\dfrac{1}{2}(A-I)=I$。因此 $A^{-1}=\\dfrac{1}{2}(A-I)$。**答案：A**"
+      "solution": "由 $A^2-A-2I=O$ 得 $A^2-A=2I$，即 $A(A-I)=2I$，故 $A\\cdot\\dfrac{1}{2}(A-I)=I$。因此 $A^{-1}=\\dfrac{1}{2}(A-I)$。**答案：A**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-018",
@@ -7735,7 +8357,9 @@ var QUESTION_BANK = {
         "保持 $A$ 不变"
       ],
       "answer": 1,
-      "solution": "$P=E_{31}(c)$（左乘作用于行，右乘作用于列）。$P^{-1}AP$：右乘 $P$ 将 $A$ 的第3列加 $c$ 倍第1列；左乘 $P^{-1}=E_{31}(-c)$ 将结果的第3行减 $c$ 倍第1行。综合效果以**列变换为主**（相似变换下特征值不变）。**答案：B**"
+      "solution": "$P=E_{31}(c)$（左乘作用于行，右乘作用于列）。$P^{-1}AP$：右乘 $P$ 将 $A$ 的第3列加 $c$ 倍第1列；左乘 $P^{-1}=E_{31}(-c)$ 将结果的第3行减 $c$ 倍第1行。综合效果以**列变换为主**（相似变换下特征值不变）。**答案：B**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-019",
@@ -7744,7 +8368,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}1&2&-2\\\\2&1&2\\\\3&0&4\\end{pmatrix}, \\alpha=\\begin{pmatrix}a\\\\1\\\\1\\end{pmatrix}$，$A\\alpha$ 与 $\\alpha$ 线性相关，则 $a=(\\quad)$。",
       "options": null,
       "answer": "$-1$",
-      "solution": "$A\\alpha=\\begin{pmatrix}a\\\\2a+3\\\\3a+4\\end{pmatrix}$。与 $\\alpha$ 线性相关 $\\Rightarrow A\\alpha=k\\alpha$。由分量相等：$a=ka$，$2a+3=k$，$3a+4=k$。后两式相减得 $a=-1$，此时 $k=1$，第一式成立。**答案：$-1$**"
+      "solution": "$A\\alpha=\\begin{pmatrix}a\\\\2a+3\\\\3a+4\\end{pmatrix}$。与 $\\alpha$ 线性相关 $\\Rightarrow A\\alpha=k\\alpha$。由分量相等：$a=ka$，$2a+3=k$，$3a+4=k$。后两式相减得 $a=-1$，此时 $k=1$，第一式成立。**答案：$-1$**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-020",
@@ -7758,7 +8384,9 @@ var QUESTION_BANK = {
         "$r(A)+r(B)\\le n$"
       ],
       "answer": 3,
-      "solution": "反例排除 A：非零矩阵相乘可为零矩阵。B 也错误（$AB=O$ 蕴含 $|AB|=0$ 即 $|A||B|=0$，故 $|A|=0$ 或 $|B|=0$，B 其实是对的）。但 B 是 D 的推论。**Sylvester 不等式**：$r(A)+r(B)-n\\le r(AB)=0$，故 $r(A)+r(B)\\le n$ 恒成立。B 虽然也对但不如 D 本质。本题选 D。**答案：D**"
+      "solution": "反例排除 A：非零矩阵相乘可为零矩阵。B 也错误（$AB=O$ 蕴含 $|AB|=0$ 即 $|A||B|=0$，故 $|A|=0$ 或 $|B|=0$，B 其实是对的）。但 B 是 D 的推论。**Sylvester 不等式**：$r(A)+r(B)-n\\le r(AB)=0$，故 $r(A)+r(B)\\le n$ 恒成立。B 虽然也对但不如 D 本质。本题选 D。**答案：D**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-021",
@@ -7767,7 +8395,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}0&0&1\\\\0&1&0\\\\1&0&0\\end{pmatrix}$，则 $(A+I)^{10}(A-I)=(\\quad)$。",
       "options": null,
       "answer": "$\\begin{pmatrix}-2&0&0\\\\0&0&0\\\\0&0&2\\end{pmatrix}$",
-      "solution": "$A^2=I$，$A$ 的特征值为 $1$（二重）和 $-1$（单根）。$(A+I)^{10}$ 对 $\\lambda=1$ 给出 $2^{10}$，对 $\\lambda=-1$ 给出 $0^{10}=0$。$(A-I)$ 对 $\\lambda=1$ 给出 $0$，对 $\\lambda=-1$ 给出 $-2$。综合结果为向 $\\lambda=-1$ 特征空间投影的 $-2$ 倍。"
+      "solution": "$A^2=I$，$A$ 的特征值为 $1$（二重）和 $-1$（单根）。$(A+I)^{10}$ 对 $\\lambda=1$ 给出 $2^{10}$，对 $\\lambda=-1$ 给出 $0^{10}=0$。$(A-I)$ 对 $\\lambda=1$ 给出 $0$，对 $\\lambda=-1$ 给出 $-2$。综合结果为向 $\\lambda=-1$ 特征空间投影的 $-2$ 倍。",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-022",
@@ -7781,7 +8411,9 @@ var QUESTION_BANK = {
         "不能确定"
       ],
       "answer": 0,
-      "solution": "注意到 $A^3-3A^2+3A-I=(A-I)^3=O$。$A-I$ 的所有特征值为0 $\\Rightarrow A$ 的所有特征值为1。实对称矩阵可对角化，故 $A=QIQ^T=I$。**答案：A**"
+      "solution": "注意到 $A^3-3A^2+3A-I=(A-I)^3=O$。$A-I$ 的所有特征值为0 $\\Rightarrow A$ 的所有特征值为1。实对称矩阵可对角化，故 $A=QIQ^T=I$。**答案：A**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-023",
@@ -7795,7 +8427,9 @@ var QUESTION_BANK = {
         "$A$ 与 $B$ 有相同的特征向量"
       ],
       "answer": 3,
-      "solution": "相似矩阵有相同特征多项式 $\\Rightarrow$ 相同特征值、行列式、迹。但特征向量不同：若 $B=P^{-1}AP$，则 $B$ 的特征向量是 $P^{-1}\\xi$ 而非 $\\xi$ 本身。**答案：D**"
+      "solution": "相似矩阵有相同特征多项式 $\\Rightarrow$ 相同特征值、行列式、迹。但特征向量不同：若 $B=P^{-1}AP$，则 $B$ 的特征向量是 $P^{-1}\\xi$ 而非 $\\xi$ 本身。**答案：D**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-024",
@@ -7804,7 +8438,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}1&1&0\\\\0&1&1\\\\1&0&1\\end{pmatrix}$，则 $\\displaystyle\\sum_{i,j=1}^3 A_{ij}=(\\quad)$（$A_{ij}$ 为代数余子式）。",
       "options": null,
       "answer": "$0$",
-      "solution": "所有代数余子式之和等于将 $A$ 的所有元素替换为1后的行列式值（按代数余子式展开定理）：$\\det\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&1\\end{pmatrix}=0$。**答案：0**"
+      "solution": "所有代数余子式之和等于将 $A$ 的所有元素替换为1后的行列式值（按代数余子式展开定理）：$\\det\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&1\\end{pmatrix}=0$。**答案：0**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-025",
@@ -7818,7 +8454,9 @@ var QUESTION_BANK = {
         "$\\begin{pmatrix}1&0&1\\\\0&1&1\\\\0&0&1\\end{pmatrix}$"
       ],
       "answer": 0,
-      "solution": "矩阵表示的第 $j$ 列是 $A\\alpha_j$ 在该基下的坐标。$[A\\alpha_1]_{\\beta}=(1,0,0)^T$，$[A\\alpha_2]_{\\beta}=(1,1,0)^T$，$[A\\alpha_3]_{\\beta}=(1,1,1)^T$。**答案：A**"
+      "solution": "矩阵表示的第 $j$ 列是 $A\\alpha_j$ 在该基下的坐标。$[A\\alpha_1]_{\\beta}=(1,0,0)^T$，$[A\\alpha_2]_{\\beta}=(1,1,0)^T$，$[A\\alpha_3]_{\\beta}=(1,1,1)^T$。**答案：A**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-026",
@@ -7827,7 +8465,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\3&6&9\\end{pmatrix}$，则 $A^n=(\\quad)$（用最简形式表示）。",
       "options": null,
       "answer": "$14^{n-1}A$（$n\\ge1$）",
-      "solution": "$A=uu^T$ 其中 $u=(1,2,3)^T$，秩为1。$A^n=(uu^T)^n=u(u^Tu)^{n-1}u^T=14^{n-1}uu^T=14^{n-1}A$。"
+      "solution": "$A=uu^T$ 其中 $u=(1,2,3)^T$，秩为1。$A^n=(uu^T)^n=u(u^Tu)^{n-1}u^T=14^{n-1}uu^T=14^{n-1}A$。",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-027",
@@ -7841,7 +8481,9 @@ var QUESTION_BANK = {
         "$A^{-1}=A^T$"
       ],
       "answer": 2,
-      "solution": "正交矩阵且 $|A|=1$：$A^*=|A|A^{-1}=A^{-1}=A^T$ ✓；特征值 $e^{i\\theta}$ 模为1 ✓；$A^{-1}=A^T$ ✓；但一般旋转矩阵 $A^2\\ne I$（除非旋转180°）。**答案：C**"
+      "solution": "正交矩阵且 $|A|=1$：$A^*=|A|A^{-1}=A^{-1}=A^T$ ✓；特征值 $e^{i\\theta}$ 模为1 ✓；$A^{-1}=A^T$ ✓；但一般旋转矩阵 $A^2\\ne I$（除非旋转180°）。**答案：C**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-028",
@@ -7850,7 +8492,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}1&0&1\\\\0&2&0\\\\1&0&1\\end{pmatrix}$，$n\\ge2$，则 $A^n-2A^{n-1}=(\\quad)$。",
       "options": null,
       "answer": "$O$（零矩阵）",
-      "solution": "$A^2=\\begin{pmatrix}2&0&2\\\\0&4&0\\\\2&0&2\\end{pmatrix}=2A$。由归纳法 $A^n=2A^{n-1}$ 对所有 $n\\ge2$ 成立，故 $A^n-2A^{n-1}=O$。"
+      "solution": "$A^2=\\begin{pmatrix}2&0&2\\\\0&4&0\\\\2&0&2\\end{pmatrix}=2A$。由归纳法 $A^n=2A^{n-1}$ 对所有 $n\\ge2$ 成立，故 $A^n-2A^{n-1}=O$。",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-029",
@@ -7864,7 +8508,9 @@ var QUESTION_BANK = {
         "$8$"
       ],
       "answer": 2,
-      "solution": "$R_2-2R_1:(0,0,a-4)$，$R_3-3R_1:(0,0,-2)$。要得到目标形式，第2行需能归一化出1（故 $a-4\\neq0$），第3行需被消成0（即 $-2$ 是 $a-4$ 的整数倍）。取 $a-4=2\\Rightarrow a=6$ 时恰好：第2行为 $(0,0,2)\\to(0,0,1)$，第3行减去第2行得 $(0,0,0)$。**答案：C**"
+      "solution": "$R_2-2R_1:(0,0,a-4)$，$R_3-3R_1:(0,0,-2)$。要得到目标形式，第2行需能归一化出1（故 $a-4\\neq0$），第3行需被消成0（即 $-2$ 是 $a-4$ 的整数倍）。取 $a-4=2\\Rightarrow a=6$ 时恰好：第2行为 $(0,0,2)\\to(0,0,1)$，第3行减去第2行得 $(0,0,0)$。**答案：C**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     },
     {
       "id": "la-mt-030",
@@ -7878,7 +8524,9 @@ var QUESTION_BANK = {
         "$O$"
       ],
       "answer": 1,
-      "solution": "$A$ 为循环置换矩阵，$A^3=I$。$2017=3\\times672+1$，故 $A^{2017}=(A^3)^{672}\\cdot A=I^{672}\\cdot A=A$。**答案：B**"
+      "solution": "$A$ 为循环置换矩阵，$A^3=I$。$2017=3\\times672+1$，故 $A^{2017}=(A^3)^{672}\\cdot A=I^{672}\\cdot A=A$。**答案：B**",
+      "cat": "矩阵与行列式",
+      "topic": "矩阵与行列式"
     }
   ]
 }
@@ -7900,7 +8548,9 @@ var QUESTION_BANK = {
         "$0$"
       ],
       "answer": 2,
-      "solution": "$\\alpha_1,\\alpha_2,\\alpha_3$ 为标准单位向量组，显然线性无关，故秩为 $3$。**答案：C**"
+      "solution": "$\\alpha_1,\\alpha_2,\\alpha_3$ 为标准单位向量组，显然线性无关，故秩为 $3$。**答案：C**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-002",
@@ -7914,7 +8564,9 @@ var QUESTION_BANK = {
         "无法判断"
       ],
       "answer": 1,
-      "solution": "$\\alpha_2=2\\alpha_1$，成比例，故线性相关。**答案：B**"
+      "solution": "$\\alpha_2=2\\alpha_1$，成比例，故线性相关。**答案：B**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-003",
@@ -7923,7 +8575,9 @@ var QUESTION_BANK = {
       "question": "齐次线性方程组 $Ax=0$ 有非零解的充要条件是 $r(A)\\;(\\quad)\\;n$（填入 $<$、$>$ 或 $=$）。",
       "options": null,
       "answer": "$<$",
-      "solution": "齐次方程组 $Ax=0$ 有非零解 $\\Leftrightarrow$ 系数矩阵秩小于未知量个数，即 $r(A)<n$。"
+      "solution": "齐次方程组 $Ax=0$ 有非零解 $\\Leftrightarrow$ 系数矩阵秩小于未知量个数，即 $r(A)<n$。",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-004",
@@ -7937,7 +8591,9 @@ var QUESTION_BANK = {
         "无法判断"
       ],
       "answer": 1,
-      "solution": "$(\\beta_1,\\beta_2,\\beta_3)=(\\alpha_1,\\alpha_2,\\alpha_3)\\begin{pmatrix}1&0&1\\\\1&1&0\\\\0&1&1\\end{pmatrix}$，过渡矩阵 $C$ 的行列式 $|C|=1(1-0)-0+1(1-0)=2\\neq0$，故 $\\beta_1,\\beta_2,\\beta_3$ 线性无关。**答案：B**"
+      "solution": "$(\\beta_1,\\beta_2,\\beta_3)=(\\alpha_1,\\alpha_2,\\alpha_3)\\begin{pmatrix}1&0&1\\\\1&1&0\\\\0&1&1\\end{pmatrix}$，过渡矩阵 $C$ 的行列式 $|C|=1(1-0)-0+1(1-0)=2\\neq0$，故 $\\beta_1,\\beta_2,\\beta_3$ 线性无关。**答案：B**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-005",
@@ -7951,7 +8607,9 @@ var QUESTION_BANK = {
         "$4$"
       ],
       "answer": 0,
-      "solution": "未知量个数 $n=3$，$r(A)=2$，基础解系含 $n-r(A)=3-2=1$ 个向量。**答案：A**"
+      "solution": "未知量个数 $n=3$，$r(A)=2$，基础解系含 $n-r(A)=3-2=1$ 个向量。**答案：A**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-006",
@@ -7965,7 +8623,9 @@ var QUESTION_BANK = {
         "$\\mathrm{II}$ 的秩为 $4$"
       ],
       "answer": 1,
-      "solution": "$\\mathrm{II}$ 有 $4$ 个向量，但可由只有 $3$ 个向量的 $\\mathrm{I}$ 表出，则 $\\mathrm{II}$ 的秩不超过 $\\mathrm{I}$ 的秩 $3$。$4$ 个向量秩不超过 $3$，由'以少表多，多必相关'知 $\\mathrm{II}$ 线性相关。**答案：B**"
+      "solution": "$\\mathrm{II}$ 有 $4$ 个向量，但可由只有 $3$ 个向量的 $\\mathrm{I}$ 表出，则 $\\mathrm{II}$ 的秩不超过 $\\mathrm{I}$ 的秩 $3$。$4$ 个向量秩不超过 $3$，由'以少表多，多必相关'知 $\\mathrm{II}$ 线性相关。**答案：B**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-007",
@@ -7979,7 +8639,9 @@ var QUESTION_BANK = {
         "$A$ 的列向量组中任意 $r$ 个向量均线性无关"
       ],
       "answer": 3,
-      "solution": "矩阵的秩等于行秩等于列秩，存在非零 $r$ 阶子式，所有 $r+1$ 阶子式为零，这些都是秩的基本性质。但'任意 $r$ 个列向量均线性无关'是错的——存在 $r$ 个线性无关的列向量，但并非任意 $r$ 个都无关。**答案：D**"
+      "solution": "矩阵的秩等于行秩等于列秩，存在非零 $r$ 阶子式，所有 $r+1$ 阶子式为零，这些都是秩的基本性质。但'任意 $r$ 个列向量均线性无关'是错的——存在 $r$ 个线性无关的列向量，但并非任意 $r$ 个都无关。**答案：D**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-008",
@@ -7988,7 +8650,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}1&2&3&4\\\\2&4&6&8\\\\3&6&a&12\\end{pmatrix}$，若 $r(A)=1$，则 $a=(\\quad)$。",
       "options": null,
       "answer": "$9$",
-      "solution": "$R_2=2R_1$，$R_3=3R_1$ 时需 $\\frac{3}{1}=\\frac{a}{3}=\\frac{12}{4}=3$，故 $a=9$。验证：$R_3=(3,6,9,12)=3R_1$，确实所有行成比例，$r(A)=1$。"
+      "solution": "$R_2=2R_1$，$R_3=3R_1$ 时需 $\\frac{3}{1}=\\frac{a}{3}=\\frac{12}{4}=3$，故 $a=9$。验证：$R_3=(3,6,9,12)=3R_1$，确实所有行成比例，$r(A)=1$。",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-009",
@@ -7997,7 +8661,9 @@ var QUESTION_BANK = {
       "question": "设 $\\alpha_1=(1,2,-1)^\\mathrm{T}$，$\\alpha_2=(2,4,k)^\\mathrm{T}$ 线性相关，则 $k=(\\quad)$。",
       "options": null,
       "answer": "$-2$",
-      "solution": "两向量线性相关当且仅当对应分量成比例：$\\frac{1}{2}=\\frac{2}{4}=\\frac{-1}{k}$，得 $k=-2$。"
+      "solution": "两向量线性相关当且仅当对应分量成比例：$\\frac{1}{2}=\\frac{2}{4}=\\frac{-1}{k}$，得 $k=-2$。",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-010",
@@ -8011,7 +8677,9 @@ var QUESTION_BANK = {
         "$\\eta_1-\\eta_2,\\eta_2-\\eta_1$"
       ],
       "answer": 1,
-      "solution": "基础解系需满足：(1)都是解；(2)个数等于 $n-r(A)$；(3)线性无关。$\\eta_1,\\eta_1+\\eta_2$ 的过渡矩阵为 $\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$，行列式为 $1\\neq0$，故线性无关。A 中过渡矩阵 $\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}$，$|C|=2\\neq0$ 也无关但个数对。D 中 $\\eta_1-\\eta_2=-(\\eta_2-\\eta_1)$，线性相关。**答案：B**"
+      "solution": "基础解系需满足：(1)都是解；(2)个数等于 $n-r(A)$；(3)线性无关。$\\eta_1,\\eta_1+\\eta_2$ 的过渡矩阵为 $\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$，行列式为 $1\\neq0$，故线性无关。A 中过渡矩阵 $\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}$，$|C|=2\\neq0$ 也无关但个数对。D 中 $\\eta_1-\\eta_2=-(\\eta_2-\\eta_1)$，线性相关。**答案：B**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-011",
@@ -8025,7 +8693,9 @@ var QUESTION_BANK = {
         "$A$ 的列向量组线性相关"
       ],
       "answer": 2,
-      "solution": "$Ax=0$ 只有零解 $\\Leftrightarrow r(A)=n \\Leftrightarrow |A|\\neq0 \\Leftrightarrow A$ 可逆。此时 $A$ 的行向量组、列向量组均线性无关。**答案：C**"
+      "solution": "$Ax=0$ 只有零解 $\\Leftrightarrow r(A)=n \\Leftrightarrow |A|\\neq0 \\Leftrightarrow A$ 可逆。此时 $A$ 的行向量组、列向量组均线性无关。**答案：C**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-012",
@@ -8034,7 +8704,9 @@ var QUESTION_BANK = {
       "question": "设 $\\alpha_1=(1,0,1)$，$\\alpha_2=(2,1,0)$，$\\alpha_3=(0,1,-1)$，则 $\\alpha_1,\\alpha_2,\\alpha_3$ 的一个极大线性无关组为 $(\\quad)$（写出一个即可）。",
       "options": null,
       "answer": "$\\alpha_1,\\alpha_2$（或 $\\alpha_1,\\alpha_3$ 或 $\\alpha_2,\\alpha_3$）",
-      "solution": "$\\begin{pmatrix}1&2&0\\\\0&1&1\\\\1&0&-1\\end{pmatrix}\\xrightarrow{R_3-R_1}\\begin{pmatrix}1&2&0\\\\0&1&1\\\\0&-2&-1\\end{pmatrix}\\xrightarrow{R_3+2R_2}\\begin{pmatrix}1&2&0\\\\0&1&1\\\\0&0&1\\end{pmatrix}$，秩为 $3$，所以任何两个向量都可作为极大无关组。"
+      "solution": "$\\begin{pmatrix}1&2&0\\\\0&1&1\\\\1&0&-1\\end{pmatrix}\\xrightarrow{R_3-R_1}\\begin{pmatrix}1&2&0\\\\0&1&1\\\\0&-2&-1\\end{pmatrix}\\xrightarrow{R_3+2R_2}\\begin{pmatrix}1&2&0\\\\0&1&1\\\\0&0&1\\end{pmatrix}$，秩为 $3$，所以任何两个向量都可作为极大无关组。",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-013",
@@ -8048,7 +8720,9 @@ var QUESTION_BANK = {
         "|A|=0$ 且 $|B|=0"
       ],
       "answer": 1,
-      "solution": "由 $AB=O$ 知 $B$ 的每个列向量都是 $Ax=0$ 的解，故 $B$ 的列空间包含于 $A$ 的零空间，从而 $r(B)\\le n-r(A)$，即 $r(A)+r(B)\\le n$。反例：$A=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix},B=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$，$AB=O$ 但 $A,B\\neq O$。**答案：B**"
+      "solution": "由 $AB=O$ 知 $B$ 的每个列向量都是 $Ax=0$ 的解，故 $B$ 的列空间包含于 $A$ 的零空间，从而 $r(B)\\le n-r(A)$，即 $r(A)+r(B)\\le n$。反例：$A=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix},B=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$，$AB=O$ 但 $A,B\\neq O$。**答案：B**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-014",
@@ -8057,7 +8731,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}1&2&1\\\\2&3&a+2\\\\1&a&-2\\end{pmatrix}$，且 $r(A)=2$，则 $a=(\\quad)$。",
       "options": null,
       "answer": "$-1$",
-      "solution": "$|A|=1\\cdot(3(-2)-(a+2)a)-2\\cdot(2(-2)-(a+2)1)+1\\cdot(2a-3\\cdot1)=-6-a^2-2a-2(-4-a-2)+2a-3=-6-a^2-2a+2a+8+4+2a-3=3+2a-a^2$。令 $|A|=0$ 得 $a^2-2a-3=0$，$a=3$ 或 $a=-1$。$a=3$ 时二阶子式 $\\begin{vmatrix}1&2\\\\2&3\\end{vmatrix}=-1\\neq0$，秩为 $2$；$a=-1$ 时亦有非零二阶子式。验证 $a=-1$：$A=\\begin{pmatrix}1&2&1\\\\2&3&1\\\\1&-1&-2\\end{pmatrix}$，$|A|=0$ 且存在非零二阶子式，$r(A)=2$，符合。"
+      "solution": "$|A|=1\\cdot(3(-2)-(a+2)a)-2\\cdot(2(-2)-(a+2)1)+1\\cdot(2a-3\\cdot1)=-6-a^2-2a-2(-4-a-2)+2a-3=-6-a^2-2a+2a+8+4+2a-3=3+2a-a^2$。令 $|A|=0$ 得 $a^2-2a-3=0$，$a=3$ 或 $a=-1$。$a=3$ 时二阶子式 $\\begin{vmatrix}1&2\\\\2&3\\end{vmatrix}=-1\\neq0$，秩为 $2$；$a=-1$ 时亦有非零二阶子式。验证 $a=-1$：$A=\\begin{pmatrix}1&2&1\\\\2&3&1\\\\1&-1&-2\\end{pmatrix}$，$|A|=0$ 且存在非零二阶子式，$r(A)=2$，符合。",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-015",
@@ -8071,7 +8747,9 @@ var QUESTION_BANK = {
         "$\\xi_1,\\xi_2$ 是基础解系"
       ],
       "answer": 2,
-      "solution": "齐次方程组的解的线性组合仍是解（解空间的线性性质），对任意 $k_1,k_2$ 和任意解 $\\xi_1,\\xi_2$ 恒成立，无需额外条件。**答案：C**"
+      "solution": "齐次方程组的解的线性组合仍是解（解空间的线性性质），对任意 $k_1,k_2$ 和任意解 $\\xi_1,\\xi_2$ 恒成立，无需额外条件。**答案：C**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-016",
@@ -8085,7 +8763,9 @@ var QUESTION_BANK = {
         "$0$"
       ],
       "answer": 0,
-      "solution": "$(\\beta_1,\\cdots,\\beta_m)=(\\alpha_1,\\cdots,\\alpha_m)C$，其中 $C$ 为 $m$ 阶矩阵，主对角线全为 $0$，其余位置全为 $1$。$|C|=(-1)^{m-1}(m-1)\\neq0$（$m\\ge2$），故过渡矩阵可逆，$\\beta_i$ 与 $\\alpha_i$ 等价，秩为 $m$。**答案：A**"
+      "solution": "$(\\beta_1,\\cdots,\\beta_m)=(\\alpha_1,\\cdots,\\alpha_m)C$，其中 $C$ 为 $m$ 阶矩阵，主对角线全为 $0$，其余位置全为 $1$。$|C|=(-1)^{m-1}(m-1)\\neq0$（$m\\ge2$），故过渡矩阵可逆，$\\beta_i$ 与 $\\alpha_i$ 等价，秩为 $m$。**答案：A**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-017",
@@ -8099,7 +8779,9 @@ var QUESTION_BANK = {
         "$r(A)+r(B)=n$"
       ],
       "answer": 0,
-      "solution": "$AB=O$ 说明 $B$ 的每一列都是 $Ax=0$ 的解，故 $B$ 的列空间 $\\subseteq \\operatorname{Null}(A)$，$\\dim\\operatorname{Null}(A)=n-r(A)$，故 $r(B)\\le n-r(A)$，即 $r(A)+r(B)\\le n$。这是著名的 Sylvester 秩不等式。**答案：A**"
+      "solution": "$AB=O$ 说明 $B$ 的每一列都是 $Ax=0$ 的解，故 $B$ 的列空间 $\\subseteq \\operatorname{Null}(A)$，$\\dim\\operatorname{Null}(A)=n-r(A)$，故 $r(B)\\le n-r(A)$，即 $r(A)+r(B)\\le n$。这是著名的 Sylvester 秩不等式。**答案：A**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-018",
@@ -8108,7 +8790,9 @@ var QUESTION_BANK = {
       "question": "设 $\\alpha_1=(1,2,0)^\\mathrm{T}$，$\\alpha_2=(1,a+2,-3)^\\mathrm{T}$，$\\alpha_3=(-1,-b,3)^\\mathrm{T}$，且 $\\alpha_1,\\alpha_2,\\alpha_3$ 线性相关，则 $a$ 与 $b$ 的关系为 $(\\quad)$。",
       "options": null,
       "answer": "$b=a+2$",
-      "solution": "三向量线性相关 $\\Leftrightarrow$ 以它们为列向量的矩阵行列式为零。计算：$\\begin{vmatrix}1&1&-1\\\\2&a+2&-b\\\\0&-3&3\\end{vmatrix}=1\\cdot\\begin{vmatrix}a+2&-b\\\\-3&3\\end{vmatrix}-1\\cdot\\begin{vmatrix}2&-b\\\\0&3\\end{vmatrix}+(-1)\\cdot\\begin{vmatrix}2&a+2\\\\0&-3\\end{vmatrix}=((a+2)\\cdot3-(-b)(-3))-(6)+(-1)(-6)=3a+6-3b-6+6=3a-3b+6=0$，解得 $b=a+2$。"
+      "solution": "三向量线性相关 $\\Leftrightarrow$ 以它们为列向量的矩阵行列式为零。计算：$\\begin{vmatrix}1&1&-1\\\\2&a+2&-b\\\\0&-3&3\\end{vmatrix}=1\\cdot\\begin{vmatrix}a+2&-b\\\\-3&3\\end{vmatrix}-1\\cdot\\begin{vmatrix}2&-b\\\\0&3\\end{vmatrix}+(-1)\\cdot\\begin{vmatrix}2&a+2\\\\0&-3\\end{vmatrix}=((a+2)\\cdot3-(-b)(-3))-(6)+(-1)(-6)=3a+6-3b-6+6=3a-3b+6=0$，解得 $b=a+2$。",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-019",
@@ -8122,7 +8806,9 @@ var QUESTION_BANK = {
         "无法确定"
       ],
       "answer": 1,
-      "solution": "$r(A)=n-2$，解空间维数 $=n-(n-2)=2$。$\\alpha_1,\\alpha_2$ 线性无关且都是解，构成基础解系，通解为 $k_1\\alpha_1+k_2\\alpha_2$。**答案：B**"
+      "solution": "$r(A)=n-2$，解空间维数 $=n-(n-2)=2$。$\\alpha_1,\\alpha_2$ 线性无关且都是解，构成基础解系，通解为 $k_1\\alpha_1+k_2\\alpha_2$。**答案：B**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-020",
@@ -8131,7 +8817,9 @@ var QUESTION_BANK = {
       "question": "设 $A$ 为 $4\\times3$ 矩阵，$\\eta_1,\\eta_2,\\eta_3$ 是 $Ax=0$ 的基础解系，则 $r(A)=(\\quad)$。",
       "options": null,
       "answer": "$0$",
-      "solution": "$A$ 为 $4\\times3$ 矩阵，未知量个数 $n=3$。基础解系含 $3$ 个无关解向量，故 $n-r(A)=3$，$r(A)=3-3=0$，即 $A$ 为零矩阵。"
+      "solution": "$A$ 为 $4\\times3$ 矩阵，未知量个数 $n=3$。基础解系含 $3$ 个无关解向量，故 $n-r(A)=3$，$r(A)=3-3=0$，即 $A$ 为零矩阵。",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-021",
@@ -8145,7 +8833,9 @@ var QUESTION_BANK = {
         "$r<s$"
       ],
       "answer": 0,
-      "solution": "若 $\\mathrm{I}$ 可由 $\\mathrm{II}$ 表出，则 $\\operatorname{rank}(\\mathrm{I})\\le\\operatorname{rank}(\\mathrm{II})$。$\\mathrm{I}$ 无关 $\\Rightarrow\\operatorname{rank}(\\mathrm{I})=r$，$\\operatorname{rank}(\\mathrm{II})\\le s$，故 $r\\le s$。这是'替换定理'的推论。**答案：A**"
+      "solution": "若 $\\mathrm{I}$ 可由 $\\mathrm{II}$ 表出，则 $\\operatorname{rank}(\\mathrm{I})\\le\\operatorname{rank}(\\mathrm{II})$。$\\mathrm{I}$ 无关 $\\Rightarrow\\operatorname{rank}(\\mathrm{I})=r$，$\\operatorname{rank}(\\mathrm{II})\\le s$，故 $r\\le s$。这是'替换定理'的推论。**答案：A**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-022",
@@ -8159,7 +8849,9 @@ var QUESTION_BANK = {
         "$2r(A)$"
       ],
       "answer": 0,
-      "solution": "$A(I-A)=A-A^2=A-A=O$。由 Sylvester 不等式：$r(A)+r(I-A)\\le n$。又 $r(A)+r(I-A)\\ge r(A+I-A)=r(I)=n$，故 $r(A)+r(I-A)=n$。**答案：A**"
+      "solution": "$A(I-A)=A-A^2=A-A=O$。由 Sylvester 不等式：$r(A)+r(I-A)\\le n$。又 $r(A)+r(I-A)\\ge r(A+I-A)=r(I)=n$，故 $r(A)+r(I-A)=n$。**答案：A**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-023",
@@ -8168,7 +8860,9 @@ var QUESTION_BANK = {
       "question": "设 $\\alpha_1=(1,2,3,4)$，$\\alpha_2=(2,3,4,5)$，$\\alpha_3=(3,4,5,6)$，$\\alpha_4=(4,5,6,7)$，则向量组的秩为 $(\\quad)$。",
       "options": null,
       "answer": "$2$",
-      "solution": "观察发现 $\\alpha_2-\\alpha_1=(1,1,1,1)$，$\\alpha_3-\\alpha_2=(1,1,1,1)$，$\\alpha_4-\\alpha_3=(1,1,1,1)$。故所有向量均在 $\\alpha_1$ 和 $(1,1,1,1)$ 张成的二维空间中，秩为 $2$。"
+      "solution": "观察发现 $\\alpha_2-\\alpha_1=(1,1,1,1)$，$\\alpha_3-\\alpha_2=(1,1,1,1)$，$\\alpha_4-\\alpha_3=(1,1,1,1)$。故所有向量均在 $\\alpha_1$ 和 $(1,1,1,1)$ 张成的二维空间中，秩为 $2$。",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-024",
@@ -8182,7 +8876,9 @@ var QUESTION_BANK = {
         "有无穷多解但无法求基础解系"
       ],
       "answer": 2,
-      "solution": "未知量个数 $n=4$，$r(A)=2$，基础解系含 $n-r(A)=4-2=2$ 个向量，通解形式为 $k_1\\eta_1+k_2\\eta_2$。**答案：C**"
+      "solution": "未知量个数 $n=4$，$r(A)=2$，基础解系含 $n-r(A)=4-2=2$ 个向量，通解形式为 $k_1\\eta_1+k_2\\eta_2$。**答案：C**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-025",
@@ -8191,7 +8887,9 @@ var QUESTION_BANK = {
       "question": "设 $\\alpha_1,\\alpha_2,\\alpha_3$ 线性无关，$\\beta_1=\\alpha_1-\\alpha_2$，$\\beta_2=\\alpha_2-\\alpha_3$，$\\beta_3=\\alpha_3-\\alpha_1$，则 $\\beta_1,\\beta_2,\\beta_3$ 的秩为 $(\\quad)$。",
       "options": null,
       "answer": "$2$",
-      "solution": "过渡矩阵 $C=\\begin{pmatrix}1&0&-1\\\\-1&1&0\\\\0&-1&1\\end{pmatrix}$，$|C|=1(1-0)-0+(-1)(1-0)=1-1=0$。且 $\\beta_1+\\beta_2+\\beta_3=0$，故 $\\beta_1,\\beta_2,\\beta_3$ 线性相关，秩不超过 $2$。$\\beta_1,\\beta_2$ 不成比例（过渡矩阵前两列的子块可逆），故秩为 $2$。"
+      "solution": "过渡矩阵 $C=\\begin{pmatrix}1&0&-1\\\\-1&1&0\\\\0&-1&1\\end{pmatrix}$，$|C|=1(1-0)-0+(-1)(1-0)=1-1=0$。且 $\\beta_1+\\beta_2+\\beta_3=0$，故 $\\beta_1,\\beta_2,\\beta_3$ 线性相关，秩不超过 $2$。$\\beta_1,\\beta_2$ 不成比例（过渡矩阵前两列的子块可逆），故秩为 $2$。",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-026",
@@ -8205,7 +8903,9 @@ var QUESTION_BANK = {
         "$\\alpha_1,\\cdots,\\alpha_n$ 中有一个为零向量"
       ],
       "answer": 1,
-      "solution": "$A$ 可逆 $\\Leftrightarrow |A|\\neq0 \\Leftrightarrow$ 列向量组线性无关 $\\Leftrightarrow$ 列向量组是 $\\mathbb{R}^n$ 的一组基。$|\\alpha_1,\\cdots,\\alpha_n|$ 即 $|A|$，非零即可逆。**答案：B**"
+      "solution": "$A$ 可逆 $\\Leftrightarrow |A|\\neq0 \\Leftrightarrow$ 列向量组线性无关 $\\Leftrightarrow$ 列向量组是 $\\mathbb{R}^n$ 的一组基。$|\\alpha_1,\\cdots,\\alpha_n|$ 即 $|A|$，非零即可逆。**答案：B**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-027",
@@ -8214,7 +8914,9 @@ var QUESTION_BANK = {
       "question": "已知 $\\eta_1=(1,0,-1)^\\mathrm{T}$，$\\eta_2=(2,1,0)^\\mathrm{T}$ 是某个 $3$ 元齐次线性方程组 $Ax=0$ 的基础解系，则该方程组的系数矩阵的秩为 $(\\quad)$。",
       "options": null,
       "answer": "$1$",
-      "solution": "未知量个数 $n=3$，基础解系含 $2$ 个向量，故 $n-r(A)=2$，$r(A)=3-2=1$。"
+      "solution": "未知量个数 $n=3$，基础解系含 $2$ 个向量，故 $n-r(A)=2$，$r(A)=3-2=1$。",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-028",
@@ -8228,7 +8930,9 @@ var QUESTION_BANK = {
         "$(A,B)$（将 $A,B$ 并排为 $n\\times2n$）"
       ],
       "answer": 3,
-      "solution": "$A,B$ 可逆。A 中 $A+B$ 不一定可逆（如 $B=-A$ 则 $A+B=O$）；B 分块对角阵的秩 $=r(A)+r(B)=2n$；C 中后 $n$ 列与前 $n$ 列相同，秩不超过 $n$（实际为 $r(A)=n$ 当且仅当 $r(A-B)=0$ 时）；D 中 $(A,B)$ 的秩为 $n$，因 $A$ 可逆，列向量已满秩。**答案：D**"
+      "solution": "$A,B$ 可逆。A 中 $A+B$ 不一定可逆（如 $B=-A$ 则 $A+B=O$）；B 分块对角阵的秩 $=r(A)+r(B)=2n$；C 中后 $n$ 列与前 $n$ 列相同，秩不超过 $n$（实际为 $r(A)=n$ 当且仅当 $r(A-B)=0$ 时）；D 中 $(A,B)$ 的秩为 $n$，因 $A$ 可逆，列向量已满秩。**答案：D**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-029",
@@ -8237,7 +8941,9 @@ var QUESTION_BANK = {
       "question": "设 $A=(a_{ij})_{3\\times3}$ 满足 $r(A)=2$，且 $A\\begin{pmatrix}1\\\\1\\\\1\\end{pmatrix}=0$，则 $Ax=0$ 的基础解系至少包含 $(\\quad)$ 个向量。",
       "options": null,
       "answer": "$1$",
-      "solution": "$n=3$，$r(A)=2$，基础解系含 $n-r(A)=1$ 个向量。已知 $(1,1,1)^\\mathrm{T}$ 是一个非零解，它就是基础解系。"
+      "solution": "$n=3$，$r(A)=2$，基础解系含 $n-r(A)=1$ 个向量。已知 $(1,1,1)^\\mathrm{T}$ 是一个非零解，它就是基础解系。",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     },
     {
       "id": "la-vc-030",
@@ -8251,7 +8957,9 @@ var QUESTION_BANK = {
         "$r(A,b)=m$"
       ],
       "answer": 2,
-      "solution": "非齐次线性方程组 $Ax=b$ 有解 $\\Leftrightarrow b$ 可由 $A$ 的列向量组线性表出 $\\Leftrightarrow r(A)=r(A,b)$。这是线性方程组有解判定定理的核心。**答案：C**"
+      "solution": "非齐次线性方程组 $Ax=b$ 有解 $\\Leftrightarrow b$ 可由 $A$ 的列向量组线性表出 $\\Leftrightarrow r(A)=r(A,b)$。这是线性方程组有解判定定理的核心。**答案：C**",
+      "cat": "向量与线性方程组",
+      "topic": "向量与线性方程组"
     }
   ]
 }
@@ -8273,7 +8981,9 @@ var QUESTION_BANK = {
         "$A\\lambda=\\lambda x$"
       ],
       "answer": 0,
-      "solution": "特征值定义：存在非零向量 $x$ 使 $Ax=\\lambda x$，即 $(A-\\lambda I)x=0$ 有非零解，等价于 $|A-\\lambda I|=0$。**答案：A**"
+      "solution": "特征值定义：存在非零向量 $x$ 使 $Ax=\\lambda x$，即 $(A-\\lambda I)x=0$ 有非零解，等价于 $|A-\\lambda I|=0$。**答案：A**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-004",
@@ -8287,7 +8997,9 @@ var QUESTION_BANK = {
         "$1$"
       ],
       "answer": 1,
-      "solution": "行列式等于所有特征值之积：$|A|=\\lambda_1\\lambda_2\\lambda_3=1\\times2\\times3=6$。**答案：B**"
+      "solution": "行列式等于所有特征值之积：$|A|=\\lambda_1\\lambda_2\\lambda_3=1\\times2\\times3=6$。**答案：B**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-005",
@@ -8301,7 +9013,9 @@ var QUESTION_BANK = {
         "$\\lambda_1,\\lambda_2,\\lambda_3$"
       ],
       "answer": 0,
-      "solution": "若 $Ax=\\lambda x$，则 $A^2x=A(Ax)=A(\\lambda x)=\\lambda Ax=\\lambda^2 x$。故 $A^2$ 的特征值为 $\\lambda_i^2$。**答案：A**"
+      "solution": "若 $Ax=\\lambda x$，则 $A^2x=A(Ax)=A(\\lambda x)=\\lambda Ax=\\lambda^2 x$。故 $A^2$ 的特征值为 $\\lambda_i^2$。**答案：A**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-007",
@@ -8315,7 +9029,9 @@ var QUESTION_BANK = {
         "是奇异矩阵"
       ],
       "answer": 0,
-      "solution": "$|A|=\\lambda_1\\lambda_2\\lambda_3=0$，故至少有一个特征值为 $0$。但并非所有特征值都为零（如 $\\lambda_1=0,\\lambda_2=1,\\lambda_3=2$，$|A|=0$ 但不全为零）。**答案：A**"
+      "solution": "$|A|=\\lambda_1\\lambda_2\\lambda_3=0$，故至少有一个特征值为 $0$。但并非所有特征值都为零（如 $\\lambda_1=0,\\lambda_2=1,\\lambda_3=2$，$|A|=0$ 但不全为零）。**答案：A**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-008",
@@ -8324,7 +9040,9 @@ var QUESTION_BANK = {
       "question": "设 $A$ 满足 $A^2=A$，则 $A$ 的特征值只能是 $(\\quad)$。",
       "options": null,
       "answer": "$0$ 或 $1$",
-      "solution": "设 $Ax=\\lambda x$（$x\\neq0$），则 $A^2x=A(Ax)=A(\\lambda x)=\\lambda^2 x$。又 $A^2=A$ 得 $\\lambda^2 x=\\lambda x$，故 $(\\lambda^2-\\lambda)x=0$，解得 $\\lambda=0$ 或 $\\lambda=1$。"
+      "solution": "设 $Ax=\\lambda x$（$x\\neq0$），则 $A^2x=A(Ax)=A(\\lambda x)=\\lambda^2 x$。又 $A^2=A$ 得 $\\lambda^2 x=\\lambda x$，故 $(\\lambda^2-\\lambda)x=0$，解得 $\\lambda=0$ 或 $\\lambda=1$。",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-009",
@@ -8338,7 +9056,9 @@ var QUESTION_BANK = {
         "特征向量"
       ],
       "answer": 3,
-      "solution": "相似矩阵有相同的特征值、行列式、迹（均为相似不变量）。但特征向量一般不同：若 $B=P^{-1}AP$，$Ax=\\lambda x$，则 $B(P^{-1}x)=\\lambda(P^{-1}x)$，$B$ 的特征向量为 $P^{-1}x$。**答案：D**"
+      "solution": "相似矩阵有相同的特征值、行列式、迹（均为相似不变量）。但特征向量一般不同：若 $B=P^{-1}AP$，$Ax=\\lambda x$，则 $B(P^{-1}x)=\\lambda(P^{-1}x)$，$B$ 的特征向量为 $P^{-1}x$。**答案：D**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-011",
@@ -8352,7 +9072,9 @@ var QUESTION_BANK = {
         "$A$ 一定可逆"
       ],
       "answer": 3,
-      "solution": "实对称矩阵的三个核心性质：(1)可正交对角化；(2)特征值全为实数；(3)不同特征值对应的特征向量正交。但实对称矩阵不一定可逆（如零矩阵是对称的但不可逆）。**答案：D**"
+      "solution": "实对称矩阵的三个核心性质：(1)可正交对角化；(2)特征值全为实数；(3)不同特征值对应的特征向量正交。但实对称矩阵不一定可逆（如零矩阵是对称的但不可逆）。**答案：D**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-012",
@@ -8366,7 +9088,9 @@ var QUESTION_BANK = {
         "是实对称矩阵"
       ],
       "answer": 1,
-      "solution": "$A$ 的特征值为 $\\lambda=1$（二重）。$A-I=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$，秩为 $1$，故 $\\lambda=1$ 的几何重数 $=2-1=1<$ 代数重数 $2$，$A$ 不可对角化。**答案：B**"
+      "solution": "$A$ 的特征值为 $\\lambda=1$（二重）。$A-I=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$，秩为 $1$，故 $\\lambda=1$ 的几何重数 $=2-1=1<$ 代数重数 $2$，$A$ 不可对角化。**答案：B**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-013",
@@ -8380,7 +9104,9 @@ var QUESTION_BANK = {
         "$A$ 与 $B$ 合同"
       ],
       "answer": 1,
-      "solution": "相似 $\\Rightarrow$ 特征多项式相同 $\\Rightarrow$ 特征值相同。但特征向量通过 $P^{-1}x$ 变换，一般不同。相似 $\\Rightarrow$ 等价（秩相等），但相似与合同无必然关系。**答案：B**"
+      "solution": "相似 $\\Rightarrow$ 特征多项式相同 $\\Rightarrow$ 特征值相同。但特征向量通过 $P^{-1}x$ 变换，一般不同。相似 $\\Rightarrow$ 等价（秩相等），但相似与合同无必然关系。**答案：B**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-015",
@@ -8394,7 +9120,9 @@ var QUESTION_BANK = {
         "$A$ 的特征向量线性相关"
       ],
       "answer": 0,
-      "solution": "不同特征值对应的特征向量线性无关。$P=(p_1,p_2,p_3)$ 可逆，且 $AP=P\\operatorname{diag}(1,2,3)$，故 $P^{-1}AP=\\operatorname{diag}(1,2,3)$。**答案：A**"
+      "solution": "不同特征值对应的特征向量线性无关。$P=(p_1,p_2,p_3)$ 可逆，且 $AP=P\\operatorname{diag}(1,2,3)$，故 $P^{-1}AP=\\operatorname{diag}(1,2,3)$。**答案：A**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-016",
@@ -8408,7 +9136,9 @@ var QUESTION_BANK = {
         "$2,2,2$"
       ],
       "answer": 0,
-      "solution": "设 $f(\\lambda)=\\lambda^3-\\lambda^2-2\\lambda+2$。若 $Ax=\\lambda x$，则 $f(A)x=f(\\lambda)x$。$f(1)=1-1-2+2=0$；$f(-1)=-1-1+2+2=2$；$f(2)=8-4-4+2=2$。故 $B$ 的特征值为 $0,2,2$。**答案：A**"
+      "solution": "设 $f(\\lambda)=\\lambda^3-\\lambda^2-2\\lambda+2$。若 $Ax=\\lambda x$，则 $f(A)x=f(\\lambda)x$。$f(1)=1-1-2+2=0$；$f(-1)=-1-1+2+2=2$；$f(2)=8-4-4+2=2$。故 $B$ 的特征值为 $0,2,2$。**答案：A**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-017",
@@ -8422,7 +9152,9 @@ var QUESTION_BANK = {
         "$12$"
       ],
       "answer": 1,
-      "solution": "$A^{-1}$ 的特征值为 $1,\\frac12,\\frac13$。$A^{-1}+I$ 的特征值为 $1+1=2$，$\\frac12+1=\\frac32$，$\\frac13+1=\\frac43$。$|A^{-1}+I|=2\\times\\frac32\\times\\frac43=4$。**答案：B**"
+      "solution": "$A^{-1}$ 的特征值为 $1,\\frac12,\\frac13$。$A^{-1}+I$ 的特征值为 $1+1=2$，$\\frac12+1=\\frac32$，$\\frac13+1=\\frac43$。$|A^{-1}+I|=2\\times\\frac32\\times\\frac43=4$。**答案：B**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-018",
@@ -8431,7 +9163,9 @@ var QUESTION_BANK = {
       "question": "设 $A$ 为3阶方阵，特征值为 $\\lambda_1=\\lambda_2=1,\\lambda_3=2$，且 $A$ 可对角化，则 $r(A-I)=(\\quad)$。",
       "options": null,
       "answer": "$1$",
-      "solution": "$A$ 可对角化 $\\Leftrightarrow$ 对每个特征值 $\\lambda$，几何重数 $=$ 代数重数。$\\lambda=1$ 的代数重数为 $2$，故几何重数也为 $2$，即 $\\dim\\operatorname{Null}(A-I)=2$。由秩-零度定理：$r(A-I)=3-2=1$。"
+      "solution": "$A$ 可对角化 $\\Leftrightarrow$ 对每个特征值 $\\lambda$，几何重数 $=$ 代数重数。$\\lambda=1$ 的代数重数为 $2$，故几何重数也为 $2$，即 $\\dim\\operatorname{Null}(A-I)=2$。由秩-零度定理：$r(A-I)=3-2=1$。",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-019",
@@ -8445,7 +9179,9 @@ var QUESTION_BANK = {
         "$3,0,0$"
       ],
       "answer": 0,
-      "solution": "$A$ 的每行和均为 $2$，故 $\\lambda=2$ 是一个特征值（对应特征向量 $(1,1,1)^\\mathrm{T}$）。迹 $\\operatorname{tr}(A)=0$，故 $\\lambda_2+\\lambda_3=-2$。$|A|=0\\cdot(-1)+1\\cdot(-1)+1\\cdot1=0$，故 $\\lambda_2\\lambda_3=-1\\cdot(-1)=1$...验证：$A-2I=\\begin{pmatrix}-2&1&1\\\\1&-2&1\\\\1&1&-2\\end{pmatrix}$，秩为 $2$（每行和为 $0$，第一、二行不成比例），故 $\\lambda=2$ 几何重数为 $1$。$|A|=\\begin{vmatrix}0&1&1\\\\1&0&1\\\\1&1&0\\end{vmatrix}=0\\cdot(-1)-1\\cdot(-1)+1\\cdot1=2$。特征值之积为 $2$：$\\lambda_1\\lambda_2\\lambda_3=2\\cdot\\lambda_2\\lambda_3=2$，故 $\\lambda_2\\lambda_3=1$。又 $\\lambda_2+\\lambda_3=-2$，解得 $\\lambda_2=\\lambda_3=-1$。**答案：A**"
+      "solution": "$A$ 的每行和均为 $2$，故 $\\lambda=2$ 是一个特征值（对应特征向量 $(1,1,1)^\\mathrm{T}$）。迹 $\\operatorname{tr}(A)=0$，故 $\\lambda_2+\\lambda_3=-2$。$|A|=0\\cdot(-1)+1\\cdot(-1)+1\\cdot1=0$，故 $\\lambda_2\\lambda_3=-1\\cdot(-1)=1$...验证：$A-2I=\\begin{pmatrix}-2&1&1\\\\1&-2&1\\\\1&1&-2\\end{pmatrix}$，秩为 $2$（每行和为 $0$，第一、二行不成比例），故 $\\lambda=2$ 几何重数为 $1$。$|A|=\\begin{vmatrix}0&1&1\\\\1&0&1\\\\1&1&0\\end{vmatrix}=0\\cdot(-1)-1\\cdot(-1)+1\\cdot1=2$。特征值之积为 $2$：$\\lambda_1\\lambda_2\\lambda_3=2\\cdot\\lambda_2\\lambda_3=2$，故 $\\lambda_2\\lambda_3=1$。又 $\\lambda_2+\\lambda_3=-2$，解得 $\\lambda_2=\\lambda_3=-1$。**答案：A**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-020",
@@ -8454,7 +9190,9 @@ var QUESTION_BANK = {
       "question": "设 $A$ 为3阶实对称矩阵，特征值为 $\\lambda_1=1,\\lambda_2=\\lambda_3=2$，已知 $\\alpha_1=(1,1,0)^\\mathrm{T}$ 是 $\\lambda_1=1$ 的特征向量，$\\alpha_2=(1,-1,0)^\\mathrm{T}$ 是 $\\lambda_2=2$ 的特征向量，则 $\\lambda_3=2$ 的一个特征向量为 $(\\quad)$。",
       "options": null,
       "answer": "$(0,0,1)^\\mathrm{T}$",
-      "solution": "实对称矩阵不同特征值对应的特征向量正交。$\\alpha_1\\cdot\\alpha_2=1-1+0=0$（正交）。$\\lambda_3=2$ 的特征向量需与 $\\alpha_1$ 正交且与 $\\alpha_2$ 正交：$\\alpha_1\\cdot x=x_1+x_2=0$，$\\alpha_2\\cdot x=x_1-x_2=0$。解得 $(0,0,1)^\\mathrm{T}$。"
+      "solution": "实对称矩阵不同特征值对应的特征向量正交。$\\alpha_1\\cdot\\alpha_2=1-1+0=0$（正交）。$\\lambda_3=2$ 的特征向量需与 $\\alpha_1$ 正交且与 $\\alpha_2$ 正交：$\\alpha_1\\cdot x=x_1+x_2=0$，$\\alpha_2\\cdot x=x_1-x_2=0$。解得 $(0,0,1)^\\mathrm{T}$。",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-021",
@@ -8468,7 +9206,9 @@ var QUESTION_BANK = {
         "$B$ 一定可对角化"
       ],
       "answer": 1,
-      "solution": "$A$ 有 $n$ 个互异特征值 $\\Rightarrow$ $A$ 可对角化。$AB=BA$ 是可同时对角化的充分条件。设 $P^{-1}AP=D$ 为对角阵，则 $P^{-1}BP$ 也是对角阵（对于互异特征值的情况）。**答案：B**"
+      "solution": "$A$ 有 $n$ 个互异特征值 $\\Rightarrow$ $A$ 可对角化。$AB=BA$ 是可同时对角化的充分条件。设 $P^{-1}AP=D$ 为对角阵，则 $P^{-1}BP$ 也是对角阵（对于互异特征值的情况）。**答案：B**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-022",
@@ -8477,7 +9217,9 @@ var QUESTION_BANK = {
       "question": "设 $A$ 的特征多项式为 $f(\\lambda)=\\lambda^3-4\\lambda^2+5\\lambda-2$，且 $A$ 不是纯量矩阵，则 $A$ 的一个特征值为 $(\\quad)$。",
       "options": null,
       "answer": "$1$（$1$ 是二重根）",
-      "solution": "$f(\\lambda)=\\lambda^3-4\\lambda^2+5\\lambda-2=(\\lambda-1)^2(\\lambda-2)$。特征值为 $\\lambda=1$（二重），$\\lambda=2$（单根）。$A$ 不是纯量矩阵说明 $\\lambda=1$ 的几何重数可能小于 $2$，即 $A$ 可能不可对角化。"
+      "solution": "$f(\\lambda)=\\lambda^3-4\\lambda^2+5\\lambda-2=(\\lambda-1)^2(\\lambda-2)$。特征值为 $\\lambda=1$（二重），$\\lambda=2$（单根）。$A$ 不是纯量矩阵说明 $\\lambda=1$ 的几何重数可能小于 $2$，即 $A$ 可能不可对角化。",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-023",
@@ -8491,7 +9233,9 @@ var QUESTION_BANK = {
         "$\\operatorname{diag}(0,1,-1)$"
       ],
       "answer": 0,
-      "solution": "$A$ 为实对称矩阵，必可正交对角化。$|A-\\lambda I|=\\begin{vmatrix}-\\lambda&0&1\\\\0&1-\\lambda&0\\\\1&0&-\\lambda\\end{vmatrix}=(-\\lambda)^2(1-\\lambda)-1\\cdot(1-\\lambda)=-\\lambda\\cdot(-\\lambda)(1-\\lambda)-1\\cdot(1-\\lambda)=(\\lambda^2-1)(1-\\lambda)=-(\\lambda-1)(\\lambda+1)(1-\\lambda)=(\\lambda-1)^2(\\lambda+1)=0$。特征值：$\\lambda=1$（二重），$\\lambda=-1$。**答案：A**"
+      "solution": "$A$ 为实对称矩阵，必可正交对角化。$|A-\\lambda I|=\\begin{vmatrix}-\\lambda&0&1\\\\0&1-\\lambda&0\\\\1&0&-\\lambda\\end{vmatrix}=(-\\lambda)^2(1-\\lambda)-1\\cdot(1-\\lambda)=-\\lambda\\cdot(-\\lambda)(1-\\lambda)-1\\cdot(1-\\lambda)=(\\lambda^2-1)(1-\\lambda)=-(\\lambda-1)(\\lambda+1)(1-\\lambda)=(\\lambda-1)^2(\\lambda+1)=0$。特征值：$\\lambda=1$（二重），$\\lambda=-1$。**答案：A**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-024",
@@ -8500,7 +9244,9 @@ var QUESTION_BANK = {
       "question": "设 $A$ 为 $n$ 阶幂零矩阵（$A^k=O$），则 $A$ 的所有特征值均为 $(\\quad)$。",
       "options": null,
       "answer": "$0$",
-      "solution": "设 $Ax=\\lambda x$（$x\\neq0$），则 $A^kx=\\lambda^kx=0$，故 $\\lambda^k=0\\Rightarrow\\lambda=0$。幂零矩阵的特征值全为零。"
+      "solution": "设 $Ax=\\lambda x$（$x\\neq0$），则 $A^kx=\\lambda^kx=0$，故 $\\lambda^k=0\\Rightarrow\\lambda=0$。幂零矩阵的特征值全为零。",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-025",
@@ -8514,7 +9260,9 @@ var QUESTION_BANK = {
         "三个特征值均为零"
       ],
       "answer": 1,
-      "solution": "实对称矩阵的秩等于非零特征值的个数（计重数）。$r(A)=2$ 故有 $2$ 个非零特征值，$1$ 个零特征值。**答案：B**"
+      "solution": "实对称矩阵的秩等于非零特征值的个数（计重数）。$r(A)=2$ 故有 $2$ 个非零特征值，$1$ 个零特征值。**答案：B**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-026",
@@ -8523,7 +9271,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}1&0&0\\\\0&2&1\\\\0&1&2\\end{pmatrix}$，则 $A$ 的属于特征值 $\\lambda=3$ 的一个特征向量为 $(\\quad)$。",
       "options": null,
       "answer": "$(0,1,1)^\\mathrm{T}$",
-      "solution": "$|A-\\lambda I|=(1-\\lambda)[(2-\\lambda)^2-1]=(1-\\lambda)(\\lambda^2-4\\lambda+3)=(1-\\lambda)^2(3-\\lambda)$。特征值：$\\lambda=1$（二重），$\\lambda=3$。对于 $\\lambda=3$，$A-3I=\\begin{pmatrix}-2&0&0\\\\0&-1&1\\\\0&1&-1\\end{pmatrix}$，解得特征向量 $(0,1,1)^\\mathrm{T}$。"
+      "solution": "$|A-\\lambda I|=(1-\\lambda)[(2-\\lambda)^2-1]=(1-\\lambda)(\\lambda^2-4\\lambda+3)=(1-\\lambda)^2(3-\\lambda)$。特征值：$\\lambda=1$（二重），$\\lambda=3$。对于 $\\lambda=3$，$A-3I=\\begin{pmatrix}-2&0&0\\\\0&-1&1\\\\0&1&-1\\end{pmatrix}$，解得特征向量 $(0,1,1)^\\mathrm{T}$。",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-027",
@@ -8537,7 +9287,9 @@ var QUESTION_BANK = {
         "$\\begin{pmatrix}1&1&0\\\\0&1&0\\\\0&0&1\\end{pmatrix}$"
       ],
       "answer": 1,
-      "solution": "Jordan 块个数 $=$ 几何重数 $=\\dim\\operatorname{Null}(A-I)=n-r(A-I)=3-1=2$。有 $2$ 个 Jordan 块，特征值全为 $1$，总阶数为 $3$，必有一个 $2$ 阶块和一个 $1$ 阶块。**答案：B**"
+      "solution": "Jordan 块个数 $=$ 几何重数 $=\\dim\\operatorname{Null}(A-I)=n-r(A-I)=3-1=2$。有 $2$ 个 Jordan 块，特征值全为 $1$，总阶数为 $3$，必有一个 $2$ 阶块和一个 $1$ 阶块。**答案：B**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-028",
@@ -8546,7 +9298,9 @@ var QUESTION_BANK = {
       "question": "设 $3$ 阶矩阵 $A$ 满足 $A^2+A-2I=O$，且 $r(A-I)=2$，则 $A$ 的特征值为 $(\\quad)$。",
       "options": null,
       "answer": "$1$（单根），$-2$（二重根）",
-      "solution": "由 $A^2+A-2I=O$ 得 $(A-I)(A+2I)=O$，故 $A$ 的特征值只能为 $1$ 或 $-2$。$r(A-I)=2$ 说明 $\\dim\\operatorname{Null}(A-I)=3-2=1$，即 $\\lambda=1$ 的几何重数为 $1$。设代数重数分别为 $a$（$\\lambda=1$）和 $b$（$\\lambda=-2$），$a+b=3$。迹 $=$ 特征值之和 $=1\\cdot a+(-2)\\cdot b$，但迹未知。利用 $r(A+2I)$ 信息缺失。——**推理**：$r(A-I)=2\\Rightarrow\\lambda=1$ 几何重数为 $1$。$A+2I$ 的秩：$(A-I)(A+2I)=O$，由秩不等式 $r(A-I)+r(A+2I)\\le3$，故 $r(A+2I)\\le1$。$\\lambda=-2$ 的代数重数至少为 $3-r(A+2I)\\ge2$。又 $\\lambda=1$ 至少 $1$ 重，总重数 $3$，故 $\\lambda=1$ 为 $1$ 重，$\\lambda=-2$ 为 $2$ 重。"
+      "solution": "由 $A^2+A-2I=O$ 得 $(A-I)(A+2I)=O$，故 $A$ 的特征值只能为 $1$ 或 $-2$。$r(A-I)=2$ 说明 $\\dim\\operatorname{Null}(A-I)=3-2=1$，即 $\\lambda=1$ 的几何重数为 $1$。设代数重数分别为 $a$（$\\lambda=1$）和 $b$（$\\lambda=-2$），$a+b=3$。迹 $=$ 特征值之和 $=1\\cdot a+(-2)\\cdot b$，但迹未知。利用 $r(A+2I)$ 信息缺失。——**推理**：$r(A-I)=2\\Rightarrow\\lambda=1$ 几何重数为 $1$。$A+2I$ 的秩：$(A-I)(A+2I)=O$，由秩不等式 $r(A-I)+r(A+2I)\\le3$，故 $r(A+2I)\\le1$。$\\lambda=-2$ 的代数重数至少为 $3-r(A+2I)\\ge2$。又 $\\lambda=1$ 至少 $1$ 重，总重数 $3$，故 $\\lambda=1$ 为 $1$ 重，$\\lambda=-2$ 为 $2$ 重。",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-029",
@@ -8560,7 +9314,9 @@ var QUESTION_BANK = {
         "特征值全为零"
       ],
       "answer": 1,
-      "solution": "$\\alpha_1$ 是 $\\lambda=1$ 的特征向量。$\\alpha_2$ 是 $\\lambda=2$ 的特征向量。$A\\alpha_3=2\\alpha_3+\\alpha_2$ 说明 $\\alpha_3$ 不是 $\\lambda=2$ 的特征向量，而是广义特征向量。在基 $\\alpha_1,\\alpha_2,\\alpha_3$ 下：$A\\sim\\begin{pmatrix}1&0&0\\\\0&2&1\\\\0&0&2\\end{pmatrix}$，$\\lambda=2$ 有一个 $2$ 阶 Jordan 块，不可对角化。**答案：B**"
+      "solution": "$\\alpha_1$ 是 $\\lambda=1$ 的特征向量。$\\alpha_2$ 是 $\\lambda=2$ 的特征向量。$A\\alpha_3=2\\alpha_3+\\alpha_2$ 说明 $\\alpha_3$ 不是 $\\lambda=2$ 的特征向量，而是广义特征向量。在基 $\\alpha_1,\\alpha_2,\\alpha_3$ 下：$A\\sim\\begin{pmatrix}1&0&0\\\\0&2&1\\\\0&0&2\\end{pmatrix}$，$\\lambda=2$ 有一个 $2$ 阶 Jordan 块，不可对角化。**答案：B**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     },
     {
       "id": "la-eg-030",
@@ -8574,7 +9330,9 @@ var QUESTION_BANK = {
         "A$ 的特征值之积为 $1"
       ],
       "answer": 0,
-      "solution": "正交矩阵的特征值之积 $=$ $|A|=-1$。实正交矩阵的复特征值成共轭对出现，每对共轭特征值之积为 $1$。故至少有一个实特征值 $\\lambda$ 满足 $|\\lambda|=1$ 且 $\\lambda<0$（否则乘积为正），即 $\\lambda=-1$。**答案：A**"
+      "solution": "正交矩阵的特征值之积 $=$ $|A|=-1$。实正交矩阵的复特征值成共轭对出现，每对共轭特征值之积为 $1$。故至少有一个实特征值 $\\lambda$ 满足 $|\\lambda|=1$ 且 $\\lambda<0$（否则乘积为正），即 $\\lambda=-1$。**答案：A**",
+      "cat": "特征值与特征向量",
+      "topic": "特征值与特征向量"
     }
   ]
 }
@@ -8596,7 +9354,9 @@ var QUESTION_BANK = {
         "$\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$"
       ],
       "answer": 0,
-      "solution": "$f=x_1^2+2x_1x_2+x_2^2$。$x_1^2$ 系数为 $a_{11}=1$，$x_2^2$ 系数为 $a_{22}=1$，$x_1x_2$ 系数为 $2a_{12}=2$，故 $a_{12}=a_{21}=1$。矩阵为 $\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$。**答案：A**"
+      "solution": "$f=x_1^2+2x_1x_2+x_2^2$。$x_1^2$ 系数为 $a_{11}=1$，$x_2^2$ 系数为 $a_{22}=1$，$x_1x_2$ 系数为 $2a_{12}=2$，故 $a_{12}=a_{21}=1$。矩阵为 $\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$。**答案：A**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-002",
@@ -8610,7 +9370,9 @@ var QUESTION_BANK = {
         "$3$"
       ],
       "answer": 3,
-      "solution": "该二次型已是标准形，所有系数均为正（$1,2,3>0$），正惯性指数 $p=3$，负惯性指数 $q=0$。**答案：D**"
+      "solution": "该二次型已是标准形，所有系数均为正（$1,2,3>0$），正惯性指数 $p=3$，负惯性指数 $q=0$。**答案：D**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-003",
@@ -8619,7 +9381,9 @@ var QUESTION_BANK = {
       "question": "二次型 $f(x_1,x_2)=2x_1^2+4x_1x_2+x_2^2$ 对应的对称矩阵 $A$ 中，$a_{12}=(\\quad)$。",
       "options": null,
       "answer": "$2$",
-      "solution": "二次型的矩阵表示中，$x_ix_j$（$i\\neq j$）的系数为 $2a_{ij}$。此处 $x_1x_2$ 的系数为 $4$，故 $a_{12}=a_{21}=2$。"
+      "solution": "二次型的矩阵表示中，$x_ix_j$（$i\\neq j$）的系数为 $2a_{ij}$。此处 $x_1x_2$ 的系数为 $4$，故 $a_{12}=a_{21}=2$。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-004",
@@ -8633,7 +9397,9 @@ var QUESTION_BANK = {
         "$-1,-1$"
       ],
       "answer": 0,
-      "solution": "对称矩阵 $A=\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$。$|A-\\lambda I|=(1-\\lambda)^2-4=\\lambda^2-2\\lambda-3=(\\lambda-3)(\\lambda+1)=0$，$\\lambda_1=3,\\lambda_2=-1$。正交标准形为 $3y_1^2-y_2^2$。**答案：A**"
+      "solution": "对称矩阵 $A=\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$。$|A-\\lambda I|=(1-\\lambda)^2-4=\\lambda^2-2\\lambda-3=(\\lambda-3)(\\lambda+1)=0$，$\\lambda_1=3,\\lambda_2=-1$。正交标准形为 $3y_1^2-y_2^2$。**答案：A**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-005",
@@ -8647,7 +9413,9 @@ var QUESTION_BANK = {
         "A$ 的秩等于 $n"
       ],
       "answer": 1,
-      "solution": "Sylvester 判据：实对称矩阵正定 $\\Leftrightarrow$ 所有顺序主子式均大于零。$|A|>0$ 只是必要非充分条件；特征值均大于零才是正定，仅非零不保证正定；满秩也不保证正定（如 $\\operatorname{diag}(1,-1)$ 满秩但不定）。**答案：B**"
+      "solution": "Sylvester 判据：实对称矩阵正定 $\\Leftrightarrow$ 所有顺序主子式均大于零。$|A|>0$ 只是必要非充分条件；特征值均大于零才是正定，仅非零不保证正定；满秩也不保证正定（如 $\\operatorname{diag}(1,-1)$ 满秩但不定）。**答案：B**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-006",
@@ -8661,7 +9429,9 @@ var QUESTION_BANK = {
         "$0$"
       ],
       "answer": 2,
-      "solution": "对称矩阵 $A=\\begin{pmatrix}1&1&-1\\\\1&2&0\\\\-1&0&3\\end{pmatrix}$。$|A|=1(6-0)-1(3-0)+(-1)(0+2)=6-3-2=1\\neq0$，故 $r(A)=3$。**答案：C**"
+      "solution": "对称矩阵 $A=\\begin{pmatrix}1&1&-1\\\\1&2&0\\\\-1&0&3\\end{pmatrix}$。$|A|=1(6-0)-1(3-0)+(-1)(0+2)=6-3-2=1\\neq0$，故 $r(A)=3$。**答案：C**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-007",
@@ -8675,7 +9445,9 @@ var QUESTION_BANK = {
         "正交"
       ],
       "answer": 2,
-      "solution": "$B=C^\\mathrm{T}AC$ 是合同关系的定义。等价 $B=PAQ$（$P,Q$ 可逆）；相似 $B=P^{-1}AP$；合同 $B=C^\\mathrm{T}AC$（$C$ 可逆）。**答案：C**"
+      "solution": "$B=C^\\mathrm{T}AC$ 是合同关系的定义。等价 $B=PAQ$（$P,Q$ 可逆）；相似 $B=P^{-1}AP$；合同 $B=C^\\mathrm{T}AC$（$C$ 可逆）。**答案：C**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-008",
@@ -8684,7 +9456,9 @@ var QUESTION_BANK = {
       "question": "二次型 $f(x_1,x_2,x_3)=2x_1^2+x_2^2-4x_1x_2-4x_2x_3$ 的矩阵为 $(\\quad)$。",
       "options": null,
       "answer": "$\\begin{pmatrix}2&-2&0\\\\-2&1&-2\\\\0&-2&0\\end{pmatrix}$",
-      "solution": "$a_{11}=2$，$a_{22}=1$，$a_{33}=0$。$x_1x_2$ 系数 $-4$ 得 $2a_{12}=-4\\Rightarrow a_{12}=a_{21}=-2$。$x_2x_3$ 系数 $-4$ 得 $2a_{23}=-4\\Rightarrow a_{23}=a_{32}=-2$。$x_1x_3$ 系数 $0$ 得 $a_{13}=a_{31}=0$。"
+      "solution": "$a_{11}=2$，$a_{22}=1$，$a_{33}=0$。$x_1x_2$ 系数 $-4$ 得 $2a_{12}=-4\\Rightarrow a_{12}=a_{21}=-2$。$x_2x_3$ 系数 $-4$ 得 $2a_{23}=-4\\Rightarrow a_{23}=a_{32}=-2$。$x_1x_3$ 系数 $0$ 得 $a_{13}=a_{31}=0$。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-009",
@@ -8698,7 +9472,9 @@ var QUESTION_BANK = {
         "$\\begin{pmatrix}-1&0\\\\0&-1\\end{pmatrix}$"
       ],
       "answer": 1,
-      "solution": "$A$ 的特征值为 $\\lambda_1=3,\\lambda_2=-1$。正惯性指数 $p=1$，负惯性指数 $q=1$。规范形为 $\\operatorname{diag}(1,-1)$。**答案：B**"
+      "solution": "$A$ 的特征值为 $\\lambda_1=3,\\lambda_2=-1$。正惯性指数 $p=1$，负惯性指数 $q=1$。规范形为 $\\operatorname{diag}(1,-1)$。**答案：B**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-010",
@@ -8707,7 +9483,9 @@ var QUESTION_BANK = {
       "question": "二次型 $f(x_1,x_2,x_3)=x_1^2+x_2^2+x_3^2+2x_1x_2$ 的规范形为 $(\\quad)$。",
       "options": null,
       "answer": "$y_1^2+y_2^2$（或 $z_1^2+z_2^2$）",
-      "solution": "$A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$r(A)=2$（第一、二行成比例）。配方：$f=(x_1+x_2)^2+x_3^2$。令 $y_1=x_1+x_2,y_2=x_3$，得 $f=y_1^2+y_2^2$。$p=2,q=0$。"
+      "solution": "$A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$r(A)=2$（第一、二行成比例）。配方：$f=(x_1+x_2)^2+x_3^2$。令 $y_1=x_1+x_2,y_2=x_3$，得 $f=y_1^2+y_2^2$。$p=2,q=0$。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-011",
@@ -8721,7 +9499,9 @@ var QUESTION_BANK = {
         "$A$ 的行列式大于零"
       ],
       "answer": 1,
-      "solution": "$A$ 正定 $\\Leftrightarrow A=C^\\mathrm{T}C$（$C$ 可逆）。A 中'非负'对应半正定；C 中'非负'也对应半正定；D 只保证 $|A|>0$，必要非充分。**答案：B**"
+      "solution": "$A$ 正定 $\\Leftrightarrow A=C^\\mathrm{T}C$（$C$ 可逆）。A 中'非负'对应半正定；C 中'非负'也对应半正定；D 只保证 $|A|>0$，必要非充分。**答案：B**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-012",
@@ -8730,7 +9510,9 @@ var QUESTION_BANK = {
       "question": "二次型 $f(x_1,x_2)=x_1^2+2tx_1x_2+4x_2^2$ 正定，则 $t$ 的取值范围是 $(\\quad)$。",
       "options": null,
       "answer": "$(-2,2)$",
-      "solution": "矩阵 $A=\\begin{pmatrix}1&t\\\\t&4\\end{pmatrix}$。Sylvester 判据：(1) $a_{11}=1>0$；(2) $|A|=4-t^2>0$，故 $t^2<4$，即 $-2<t<2$。"
+      "solution": "矩阵 $A=\\begin{pmatrix}1&t\\\\t&4\\end{pmatrix}$。Sylvester 判据：(1) $a_{11}=1>0$；(2) $|A|=4-t^2>0$，故 $t^2<4$，即 $-2<t<2$。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-013",
@@ -8744,7 +9526,9 @@ var QUESTION_BANK = {
         "$3y_1^2+3y_2^2$"
       ],
       "answer": 0,
-      "solution": "$A=\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}$。$|A-\\lambda I|=(3-\\lambda)^2-1=(\\lambda-2)(\\lambda-4)=0$，$\\lambda=2,4>0$。正惯性指数 $p=2,q=0$，规范形 $y_1^2+y_2^2$。**答案：A**"
+      "solution": "$A=\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}$。$|A-\\lambda I|=(3-\\lambda)^2-1=(\\lambda-2)(\\lambda-4)=0$，$\\lambda=2,4>0$。正惯性指数 $p=2,q=0$，规范形 $y_1^2+y_2^2$。**答案：A**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-014",
@@ -8758,7 +9542,9 @@ var QUESTION_BANK = {
         "$A$ 与 $B$ 相似"
       ],
       "answer": 1,
-      "solution": "合同变换 $B=C^\\mathrm{T}AC$（$C$ 可逆）保秩。但一般不保特征值（如 $\\operatorname{diag}(1,1)$ 合同于 $\\operatorname{diag}(2,2)$ 但特征值不同），也一般不保相似。$|B|=|C|^2|A|$，不等于 $|A|$。**答案：B**"
+      "solution": "合同变换 $B=C^\\mathrm{T}AC$（$C$ 可逆）保秩。但一般不保特征值（如 $\\operatorname{diag}(1,1)$ 合同于 $\\operatorname{diag}(2,2)$ 但特征值不同），也一般不保相似。$|B|=|C|^2|A|$，不等于 $|A|$。**答案：B**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-015",
@@ -8767,7 +9553,9 @@ var QUESTION_BANK = {
       "question": "设二次型 $f(x)=x^\\mathrm{T}Ax$ 的正惯性指数为 $p$，负惯性指数为 $q$，则 $f(x)=0$ 对非零 $x$ 有解的充要条件是 $(\\quad)$。",
       "options": null,
       "answer": "$p<n$ 且 $q<n$（或不定/半正定半负定均可）",
-      "solution": "存在非零 $x$ 使 $f(x)=0$ 等价于二次型不是正定也不是负定的，即 $p<n$ 且 $q<n$（存在零特征值或正负惯性均存在）。确切地说，$f$ 不定或半正定（$q=0,p<n$）或半负定（$p=0,q<n$）时，非零 $x$ 使 $f=0$。"
+      "solution": "存在非零 $x$ 使 $f(x)=0$ 等价于二次型不是正定也不是负定的，即 $p<n$ 且 $q<n$（存在零特征值或正负惯性均存在）。确切地说，$f$ 不定或半正定（$q=0,p<n$）或半负定（$p=0,q<n$）时，非零 $x$ 使 $f=0$。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-016",
@@ -8781,7 +9569,9 @@ var QUESTION_BANK = {
         "$3$"
       ],
       "answer": 2,
-      "solution": "$A^2=A\\Rightarrow$ 特征值只能为 $0$ 或 $1$。$r(A)=2\\Rightarrow$ 非零特征值个数为 $2$，即有两个特征值为 $1$，一个为 $0$。正惯性指数 $=$ 正特征值个数 $=2$。**答案：C**"
+      "solution": "$A^2=A\\Rightarrow$ 特征值只能为 $0$ 或 $1$。$r(A)=2\\Rightarrow$ 非零特征值个数为 $2$，即有两个特征值为 $1$，一个为 $0$。正惯性指数 $=$ 正特征值个数 $=2$。**答案：C**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-017",
@@ -8795,7 +9585,9 @@ var QUESTION_BANK = {
         "$2$"
       ],
       "answer": 1,
-      "solution": "$A=\\begin{pmatrix}k&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$|A|=k\\cdot1-1\\cdot1+0=k-1$。$r(A)=2\\Rightarrow|A|=0\\Rightarrow k=1$。当 $k=1$ 时 $A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$，二阶子式 $\\begin{vmatrix}1&0\\\\0&1\\end{vmatrix}=1\\neq0$，$r(A)=2$。**答案：B**"
+      "solution": "$A=\\begin{pmatrix}k&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$|A|=k\\cdot1-1\\cdot1+0=k-1$。$r(A)=2\\Rightarrow|A|=0\\Rightarrow k=1$。当 $k=1$ 时 $A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$，二阶子式 $\\begin{vmatrix}1&0\\\\0&1\\end{vmatrix}=1\\neq0$，$r(A)=2$。**答案：B**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-018",
@@ -8804,7 +9596,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}1&2&0\\\\2&1&0\\\\0&0&-2\\end{pmatrix}$，则二次型 $x^\\mathrm{T}Ax$ 的规范形为 $(\\quad)$。",
       "options": null,
       "answer": "$y_1^2+y_2^2-y_3^2$",
-      "solution": "$A$ 是分块对角阵。左上块 $\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$ 的特征值：$|A-\\lambda I|=(1-\\lambda)^2-4=0\\Rightarrow\\lambda^2-2\\lambda-3=0$，$\\lambda_1=3,\\lambda_2=-1$。右下块 $-2$，特征值 $-2$。总特征值 $3,-1,-2$。正特征值 $3>0$（一个），负特征值 $-1,-2<0$（两个）。$p=1,q=2$。规范形 $y_1^2-y_2^2-y_3^2$。"
+      "solution": "$A$ 是分块对角阵。左上块 $\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$ 的特征值：$|A-\\lambda I|=(1-\\lambda)^2-4=0\\Rightarrow\\lambda^2-2\\lambda-3=0$，$\\lambda_1=3,\\lambda_2=-1$。右下块 $-2$，特征值 $-2$。总特征值 $3,-1,-2$。正特征值 $3>0$（一个），负特征值 $-1,-2<0$（两个）。$p=1,q=2$。规范形 $y_1^2-y_2^2-y_3^2$。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-019",
@@ -8818,7 +9612,9 @@ var QUESTION_BANK = {
         "$|A|=|B|$"
       ],
       "answer": 1,
-      "solution": "合同 $\\Leftrightarrow$ 秩相等且正惯性指数相等（Sylvester 惯性定律）。合同不一定保特征值，保特征值的是相似。合同 $B=C^\\mathrm{T}AC$ 时 $|B|=|C|^2|A|$，一般 $|C|^2\\neq1$，故 $|A|\\neq|B|$。**答案：B**"
+      "solution": "合同 $\\Leftrightarrow$ 秩相等且正惯性指数相等（Sylvester 惯性定律）。合同不一定保特征值，保特征值的是相似。合同 $B=C^\\mathrm{T}AC$ 时 $|B|=|C|^2|A|$，一般 $|C|^2\\neq1$，故 $|A|\\neq|B|$。**答案：B**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-020",
@@ -8827,7 +9623,9 @@ var QUESTION_BANK = {
       "question": "二次型 $f(x_1,x_2,x_3)=2x_1^2+2x_2^2+2x_3^2+2x_1x_2+2x_1x_3+2x_2x_3$ 在正交变换下的标准形为 $(\\quad)$。",
       "options": null,
       "answer": "$4y_1^2+y_2^2+y_3^2$",
-      "solution": "$A=\\begin{pmatrix}2&1&1\\\\1&2&1\\\\1&1&2\\end{pmatrix}=I+J$（其中 $J$ 为全 $1$ 矩阵）。$J$ 的特征值：$3$（对应 $(1,1,1)^\\mathrm{T}$）和 $0$（二重）。$A=I+J$ 的特征值：$1+3=4$，$1+0=1$（二重）。故正交标准形为 $4y_1^2+y_2^2+y_3^2$。"
+      "solution": "$A=\\begin{pmatrix}2&1&1\\\\1&2&1\\\\1&1&2\\end{pmatrix}=I+J$（其中 $J$ 为全 $1$ 矩阵）。$J$ 的特征值：$3$（对应 $(1,1,1)^\\mathrm{T}$）和 $0$（二重）。$A=I+J$ 的特征值：$1+3=4$，$1+0=1$（二重）。故正交标准形为 $4y_1^2+y_2^2+y_3^2$。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-021",
@@ -8841,7 +9639,9 @@ var QUESTION_BANK = {
         "$0$"
       ],
       "answer": 2,
-      "solution": "$A^2-5A+6I=(A-2I)(A-3I)=O$，特征值只能为 $2$ 或 $3$。$r(A-2I)=2\\Rightarrow\\dim\\operatorname{Null}(A-2I)=3-2=1$，$\\lambda=2$ 的几何重数为 $1$。$A$ 实对称必可对角化，故 $\\lambda=2$ 的代数重数 $=$ 几何重数 $=1$。总阶数 $3$，故 $\\lambda=3$ 的代数重数为 $2$。特征值 $2>0,3>0,3>0$ 全正，正惯性指数 $p=3$。**答案：C**"
+      "solution": "$A^2-5A+6I=(A-2I)(A-3I)=O$，特征值只能为 $2$ 或 $3$。$r(A-2I)=2\\Rightarrow\\dim\\operatorname{Null}(A-2I)=3-2=1$，$\\lambda=2$ 的几何重数为 $1$。$A$ 实对称必可对角化，故 $\\lambda=2$ 的代数重数 $=$ 几何重数 $=1$。总阶数 $3$，故 $\\lambda=3$ 的代数重数为 $2$。特征值 $2>0,3>0,3>0$ 全正，正惯性指数 $p=3$。**答案：C**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-022",
@@ -8850,7 +9650,9 @@ var QUESTION_BANK = {
       "question": "二次型 $f(x_1,x_2,x_3)=x_1^2+x_2^2+5x_3^2+2tx_1x_2-2x_1x_3+4x_2x_3$ 正定，则 $t$ 的取值范围是 $(\\quad)$。",
       "options": null,
       "answer": "$-\\frac{4}{5}<t<0$",
-      "solution": "$A=\\begin{pmatrix}1&t&-1\\\\t&1&2\\\\-1&2&5\\end{pmatrix}$。顺序主子式：$D_1=1>0$；$D_2=1-t^2>0\\Rightarrow-1<t<1$；$D_3=|A|=1(5-4)-t(5t+2)+(-1)(2t+1)=1-t(5t+2)-(2t+1)=1-5t^2-2t-2t-1=-5t^2-4t=-t(5t+4)>0\\Rightarrow t(5t+4)<0\\Rightarrow-\\frac{4}{5}<t<0$。综合得 $-\\frac{4}{5}<t<0$。"
+      "solution": "$A=\\begin{pmatrix}1&t&-1\\\\t&1&2\\\\-1&2&5\\end{pmatrix}$。顺序主子式：$D_1=1>0$；$D_2=1-t^2>0\\Rightarrow-1<t<1$；$D_3=|A|=1(5-4)-t(5t+2)+(-1)(2t+1)=1-t(5t+2)-(2t+1)=1-5t^2-2t-2t-1=-5t^2-4t=-t(5t+4)>0\\Rightarrow t(5t+4)<0\\Rightarrow-\\frac{4}{5}<t<0$。综合得 $-\\frac{4}{5}<t<0$。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-023",
@@ -8864,7 +9666,9 @@ var QUESTION_BANK = {
         "$ab=0$"
       ],
       "answer": 1,
-      "solution": "正、负惯性指数之和等于秩，$p+q=3 \\Rightarrow r(A)=3$，即 $A$ 满秩 $\\Rightarrow |A| \\neq 0$。计算 $|A|$：按第一行展开，$|A|=1\\cdot(1-b^2)-a\\cdot(a-b)+1\\cdot(ab-1)=1-b^2-a^2+ab+ab-1=-(a^2-2ab+b^2)=-(a-b)^2$。由 $|A|\\neq0$ 得 $a\\neq b$。当 $a\\neq b$ 时 $|A|=-(a-b)^2<0$，即三个特征值乘积为负；又 $\\operatorname{tr}(A)=3>0$，三个特征值之和为正。实对称矩阵特征值均为实数，故必有两个正特征值、一个负特征值，即 $p=2,q=1$。因此条件等价于 $a\\neq b$。"
+      "solution": "正、负惯性指数之和等于秩，$p+q=3 \\Rightarrow r(A)=3$，即 $A$ 满秩 $\\Rightarrow |A| \\neq 0$。计算 $|A|$：按第一行展开，$|A|=1\\cdot(1-b^2)-a\\cdot(a-b)+1\\cdot(ab-1)=1-b^2-a^2+ab+ab-1=-(a^2-2ab+b^2)=-(a-b)^2$。由 $|A|\\neq0$ 得 $a\\neq b$。当 $a\\neq b$ 时 $|A|=-(a-b)^2<0$，即三个特征值乘积为负；又 $\\operatorname{tr}(A)=3>0$，三个特征值之和为正。实对称矩阵特征值均为实数，故必有两个正特征值、一个负特征值，即 $p=2,q=1$。因此条件等价于 $a\\neq b$。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-024",
@@ -8873,7 +9677,9 @@ var QUESTION_BANK = {
       "question": "已知二次型 $f=x^\\mathrm{T}Ax$ 的矩阵 $A$ 的特征值为 $\\lambda_1,\\lambda_2,\\lambda_3$，且 $f$ 在 $x^\\mathrm{T}x=1$ 条件下的最大值为 $M$，最小值为 $m$，则 $M$ 和 $m$ 分别等于 $(\\quad)$。",
       "options": null,
       "answer": "$\\max\\{\\lambda_i\\}$ 和 $\\min\\{\\lambda_i\\}$",
-      "solution": "Rayleigh 商定理：对于实对称矩阵 $A$，$\\min\\limits_{\\|x\\|=1}x^\\mathrm{T}Ax=\\lambda_{\\min}$，$\\max\\limits_{\\|x\\|=1}x^\\mathrm{T}Ax=\\lambda_{\\max}$。在单位球面上，二次型的最值分别等于 $A$ 的最小和最大特征值。"
+      "solution": "Rayleigh 商定理：对于实对称矩阵 $A$，$\\min\\limits_{\\|x\\|=1}x^\\mathrm{T}Ax=\\lambda_{\\min}$，$\\max\\limits_{\\|x\\|=1}x^\\mathrm{T}Ax=\\lambda_{\\max}$。在单位球面上，二次型的最值分别等于 $A$ 的最小和最大特征值。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-025",
@@ -8887,7 +9693,9 @@ var QUESTION_BANK = {
         "$A+B$"
       ],
       "answer": 3,
-      "solution": "正定矩阵之和仍正定：对任意 $x\\neq0$，$x^\\mathrm{T}(A+B)x=x^\\mathrm{T}Ax+x^\\mathrm{T}Bx>0$。A 项 $A-B$ 不一定正定（取 $A=I,B=2I$，$A-B=-I$ 负定）。B 项 $AB$ 不一定对称，即使对称也不一定正定（如 $A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix},B=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}$，$AB$ 不对称）。C 项 $A^{-1}-B^{-1}$ 不一定正定（取 $A=I,B=2I$ 得 $\\frac{1}{2}I$ 正定，但取 $A=2I,B=I$ 得 $-\\frac{1}{2}I$ 负定）。只有 D 项 $A+B$ 恒正定。"
+      "solution": "正定矩阵之和仍正定：对任意 $x\\neq0$，$x^\\mathrm{T}(A+B)x=x^\\mathrm{T}Ax+x^\\mathrm{T}Bx>0$。A 项 $A-B$ 不一定正定（取 $A=I,B=2I$，$A-B=-I$ 负定）。B 项 $AB$ 不一定对称，即使对称也不一定正定（如 $A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix},B=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}$，$AB$ 不对称）。C 项 $A^{-1}-B^{-1}$ 不一定正定（取 $A=I,B=2I$ 得 $\\frac{1}{2}I$ 正定，但取 $A=2I,B=I$ 得 $-\\frac{1}{2}I$ 负定）。只有 D 项 $A+B$ 恒正定。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-026",
@@ -8896,7 +9704,9 @@ var QUESTION_BANK = {
       "question": "设 $A$ 为3阶实对称矩阵且 $|A|=-12$，$A$ 的迹为 $1$，已知 $A$ 的一个特征值为 $3$，则二次型 $x^\\mathrm{T}Ax$ 的正惯性指数为 $(\\quad)$。",
       "options": null,
       "answer": "$2$",
-      "solution": "设三特征值为 $\\lambda_1=3,\\lambda_2,\\lambda_3$。$\\lambda_1+\\lambda_2+\\lambda_3=1\\Rightarrow\\lambda_2+\\lambda_3=-2$。$\\lambda_1\\lambda_2\\lambda_3=-12\\Rightarrow3\\lambda_2\\lambda_3=-12\\Rightarrow\\lambda_2\\lambda_3=-4$。解 $\\lambda_2+\\lambda_3=-2,\\lambda_2\\lambda_3=-4$：$\\lambda_2,\\lambda_3$ 是 $t^2+2t-4=0$ 的根，$t=-1\\pm\\sqrt{5}$。$\\sqrt{5}-1\\approx1.236>0$（正），$-1-\\sqrt{5}\\approx-3.236<0$（负）。特征值 $3>0,\\sqrt{5}-1>0,-1-\\sqrt{5}<0$。正特征值有 $2$ 个，正惯性指数 $p=2$。"
+      "solution": "设三特征值为 $\\lambda_1=3,\\lambda_2,\\lambda_3$。$\\lambda_1+\\lambda_2+\\lambda_3=1\\Rightarrow\\lambda_2+\\lambda_3=-2$。$\\lambda_1\\lambda_2\\lambda_3=-12\\Rightarrow3\\lambda_2\\lambda_3=-12\\Rightarrow\\lambda_2\\lambda_3=-4$。解 $\\lambda_2+\\lambda_3=-2,\\lambda_2\\lambda_3=-4$：$\\lambda_2,\\lambda_3$ 是 $t^2+2t-4=0$ 的根，$t=-1\\pm\\sqrt{5}$。$\\sqrt{5}-1\\approx1.236>0$（正），$-1-\\sqrt{5}\\approx-3.236<0$（负）。特征值 $3>0,\\sqrt{5}-1>0,-1-\\sqrt{5}<0$。正特征值有 $2$ 个，正惯性指数 $p=2$。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-027",
@@ -8910,7 +9720,9 @@ var QUESTION_BANK = {
         "不定"
       ],
       "answer": 0,
-      "solution": "对任意 $y\\neq0$，$x=Cy\\neq0$（因 $C$ 可逆）。$g(y)=y^\\mathrm{T}C^\\mathrm{T}ACy=(Cy)^\\mathrm{T}A(Cy)=x^\\mathrm{T}Ax>0$（因 $f$ 正定）。故 $g$ 也正定。合同变换保正定性。**答案：A**"
+      "solution": "对任意 $y\\neq0$，$x=Cy\\neq0$（因 $C$ 可逆）。$g(y)=y^\\mathrm{T}C^\\mathrm{T}ACy=(Cy)^\\mathrm{T}A(Cy)=x^\\mathrm{T}Ax>0$（因 $f$ 正定）。故 $g$ 也正定。合同变换保正定性。**答案：A**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-028",
@@ -8919,7 +9731,9 @@ var QUESTION_BANK = {
       "question": "设 $A=\\begin{pmatrix}0&1&0\\\\1&0&0\\\\0&0&2\\end{pmatrix}$，则二次型 $x^\\mathrm{T}Ax$ 在 $x^\\mathrm{T}x=1$ 下的最大值为 $(\\quad)$。",
       "options": null,
       "answer": "$2$",
-      "solution": "$A$ 的特征值：左上 $2\\times2$ 块 $\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}$，特征值 $1,-1$；右下 $2$。故 $A$ 的最大特征值为 $2$。由 Rayleigh 商，最大值为 $2$。"
+      "solution": "$A$ 的特征值：左上 $2\\times2$ 块 $\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}$，特征值 $1,-1$；右下 $2$。故 $A$ 的最大特征值为 $2$。由 Rayleigh 商，最大值为 $2$。",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-029",
@@ -8933,7 +9747,9 @@ var QUESTION_BANK = {
         "$A+B$ 一定正定"
       ],
       "answer": 2,
-      "solution": "这是惯性定律的推广：若 $A$ 正定，$B$ 对称，则可同时合同对角化 $A$ 和 $B$（通过 $A$ 的 Cholesky 分解后对 $B$ 正交对角化）。即存在可逆 $C$ 使 $C^\\mathrm{T}AC=I$，$C^\\mathrm{T}BC=\\operatorname{diag}$。A 错（$AB$ 不一定对称更不一定可对角化）；B 错（合同需同惯性指数）；D 错（$B$ 可能负定使 $A+B$ 不定）。**答案：C**"
+      "solution": "这是惯性定律的推广：若 $A$ 正定，$B$ 对称，则可同时合同对角化 $A$ 和 $B$（通过 $A$ 的 Cholesky 分解后对 $B$ 正交对角化）。即存在可逆 $C$ 使 $C^\\mathrm{T}AC=I$，$C^\\mathrm{T}BC=\\operatorname{diag}$。A 错（$AB$ 不一定对称更不一定可对角化）；B 错（合同需同惯性指数）；D 错（$B$ 可能负定使 $A+B$ 不定）。**答案：C**",
+      "cat": "二次型",
+      "topic": "二次型"
     },
     {
       "id": "la-qf-030",
@@ -8947,7 +9763,9 @@ var QUESTION_BANK = {
         "$\\mu_1<\\lambda_1$ 且 $\\mu_n>\\lambda_n$"
       ],
       "answer": 1,
-      "solution": "$uu^\\mathrm{T}$ 为半正定矩阵（秩为 $1$ 的投影矩阵的倍数）。半正定矩阵加法使特征值单调不减（Weyl 不等式/特征值交错定理的推论）。故 $\\mu_i\\ge\\lambda_i$ 对所有 $i$ 成立。**答案：B**"
+      "solution": "$uu^\\mathrm{T}$ 为半正定矩阵（秩为 $1$ 的投影矩阵的倍数）。半正定矩阵加法使特征值单调不减（Weyl 不等式/特征值交错定理的推论）。故 $\\mu_i\\ge\\lambda_i$ 对所有 $i$ 成立。**答案：B**",
+      "cat": "二次型",
+      "topic": "二次型"
     }
   ]
 }
@@ -8969,7 +9787,9 @@ var QUESTION_BANK = {
         "A发生且B不发生"
       ],
       "answer": 1,
-      "solution": "$A \\cup B$ 表示A与B的和事件，即至少有一个发生。$A \\cap B$（或$AB$）才表示同时发生。"
+      "solution": "$A \\cup B$ 表示A与B的和事件，即至少有一个发生。$A \\cap B$（或$AB$）才表示同时发生。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-002",
@@ -8977,7 +9797,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "若 $P(A)=0.4$, $P(B)=0.3$, 且A与B互不相容，则 $P(A \\cup B)=$ ( )_}__}",
       "answer": "0.7",
-      "solution": "互不相容时 $P(AB)=0$，$P(A \\cup B) = P(A) + P(B) = 0.4 + 0.3 = 0.7$。"
+      "solution": "互不相容时 $P(AB)=0$，$P(A \\cup B) = P(A) + P(B) = 0.4 + 0.3 = 0.7$。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-003",
@@ -8991,7 +9813,9 @@ var QUESTION_BANK = {
         "8"
       ],
       "answer": 2,
-      "solution": "每次掷硬币2种结果，两次独立：$\\Omega = \\{(正,正),(正,反),(反,正),(反,反)\\}$，共4个基本事件。"
+      "solution": "每次掷硬币2种结果，两次独立：$\\Omega = \\{(正,正),(正,反),(反,正),(反,反)\\}$，共4个基本事件。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-004",
@@ -8999,7 +9823,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "已知 $P(A)=0.5$，则 $P(\\overline{A}) =$ ( )_}__}",
       "answer": "0.5",
-      "solution": "$P(\\overline{A}) = 1 - P(A) = 1 - 0.5 = 0.5$。互换事件的概率之和为1。"
+      "solution": "$P(\\overline{A}) = 1 - P(A) = 1 - 0.5 = 0.5$。互换事件的概率之和为1。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-005",
@@ -9013,7 +9839,9 @@ var QUESTION_BANK = {
         "$D. \\frac{P(A \\cup B)}{P(A)}$"
       ],
       "answer": 0,
-      "solution": "$条件概率定义为 P(B|A) = \\frac{P(AB)}{P(A)}，前提 P(A) > 0。表示在A发生的条件下B发生的概率。$"
+      "solution": "$条件概率定义为 P(B|A) = \\frac{P(AB)}{P(A)}，前提 P(A) > 0。表示在A发生的条件下B发生的概率。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-006",
@@ -9021,7 +9849,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "若 $P(A)=0.6$, $P(B)=0.5$, $P(AB)=0.3$，则 $P(A|B)=$ ( )_}__}",
       "answer": "0.6",
-      "solution": "$P(A|B) = \\frac{P(AB)}{P(B)} = \\frac{0.3}{0.5} = 0.6。注意 P(AB) = P(A)P(B)，A与B独立。$"
+      "solution": "$P(A|B) = \\frac{P(AB)}{P(B)} = \\frac{0.3}{0.5} = 0.6。注意 P(AB) = P(A)P(B)，A与B独立。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-007",
@@ -9035,7 +9865,9 @@ var QUESTION_BANK = {
         "$D. \\frac{15}{56}$"
       ],
       "answer": 0,
-      "solution": "$总取法 C_8^2 = 28。1红1白：C_5^1 \\cdot C_3^1 = 15。概率 = \\frac{15}{28}。$"
+      "solution": "$总取法 C_8^2 = 28。1红1白：C_5^1 \\cdot C_3^1 = 15。概率 = \\frac{15}{28}。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-008",
@@ -9049,7 +9881,9 @@ var QUESTION_BANK = {
         "0.1"
       ],
       "answer": 1,
-      "solution": "$独立时 P(AB) = P(A) \\cdot P(B) = 0.4 \\times 0.5 = 0.2。$"
+      "solution": "$独立时 P(AB) = P(A) \\cdot P(B) = 0.4 \\times 0.5 = 0.2。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-009",
@@ -9063,7 +9897,9 @@ var QUESTION_BANK = {
         "掷骰子得偶数点"
       ],
       "answer": 1,
-      "solution": "必然事件每次试验必发生。掷六面骰子必得1~6中的数，即样本空间$\\Omega$。A是不可能事件。"
+      "solution": "必然事件每次试验必发生。掷六面骰子必得1~6中的数，即样本空间$\\Omega$。A是不可能事件。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-010",
@@ -9077,7 +9913,9 @@ var QUESTION_BANK = {
         "$D. \\max_i P(A|B_i)$"
       ],
       "answer": 1,
-      "solution": "$全概率公式：P(A) = \\sum_{i=1}^{n} P(B_i) \\cdot P(A\\big|_{B}^{i})。核心是把A在不同情况下的概率加权求和。$"
+      "solution": "$全概率公式：P(A) = \\sum_{i=1}^{n} P(B_i) \\cdot P(A\\big|_{B}^{i})。核心是把A在不同情况下的概率加权求和。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-011",
@@ -9091,7 +9929,9 @@ var QUESTION_BANK = {
         "0.4"
       ],
       "answer": 1,
-      "solution": "由加法公式：$P(AB) = 0.5+0.4-0.7 = 0.2$。$P(\\overline{A}B) = P(B) - P(AB) = 0.4 - 0.2 = 0.2$。"
+      "solution": "由加法公式：$P(AB) = 0.5+0.4-0.7 = 0.2$。$P(\\overline{A}B) = P(B) - P(AB) = 0.4 - 0.2 = 0.2$。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-012",
@@ -9105,7 +9945,9 @@ var QUESTION_BANK = {
         "0.30"
       ],
       "answer": 1,
-      "solution": "$全概率：P(B) = 0.4 \\times 0.3 + 0.6 \\times 0.2 = 0.12 + 0.12 = 0.24。P(\\overline{A}) = 0.6。$"
+      "solution": "$全概率：P(B) = 0.4 \\times 0.3 + 0.6 \\times 0.2 = 0.12 + 0.12 = 0.24。P(\\overline{A}) = 0.6。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-013",
@@ -9119,7 +9961,9 @@ var QUESTION_BANK = {
         "0.98"
       ],
       "answer": 1,
-      "solution": "$P(\\text{破译}) = 1 - P(\\text{都未破译}) = 1 - 0.4 \\times 0.3 = 0.88。$"
+      "solution": "$P(\\text{破译}) = 1 - P(\\text{都未破译}) = 1 - 0.4 \\times 0.3 = 0.88。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-014",
@@ -9127,7 +9971,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "袋中有3红2白，不放回取2球。已知第一次取红球，第二次也取红球的概率为 (   )",
       "answer": "1/2",
-      "solution": "$条件概率。第一次取红后，袋中剩2红2白共4球。第二次取红的概率 = \\frac{2}{4} = \\frac{1}{2}。$"
+      "solution": "$条件概率。第一次取红后，袋中剩2红2白共4球。第二次取红的概率 = \\frac{2}{4} = \\frac{1}{2}。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-015",
@@ -9141,7 +9987,9 @@ var QUESTION_BANK = {
         "$D. \\frac{3}{5}$"
       ],
       "answer": 1,
-      "solution": "总三位数 $A_5^3=60$。个位为2或4：个位2时有$A_4^2=12$种，个位4时同理12种。共24个。概率 $= 24/60 = 2/5$。"
+      "solution": "总三位数 $A_5^3=60$。个位为2或4：个位2时有$A_4^2=12$种，个位4时同理12种。共24个。概率 $= 24/60 = 2/5$。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-016",
@@ -9155,7 +10003,9 @@ var QUESTION_BANK = {
         "$D. \\frac{3}{4}$"
       ],
       "answer": 1,
-      "solution": "$P(AB) = P(A)P(B|A) = 0.4。P(A|B) = \\frac{0.4}{0.6} = \\frac{2}{3}。这是贝叶斯推论。$"
+      "solution": "$P(AB) = P(A)P(B|A) = 0.4。P(A|B) = \\frac{0.4}{0.6} = \\frac{2}{3}。这是贝叶斯推论。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-017",
@@ -9163,7 +10013,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "将3个球随机放入4个盒子，每个盒子至多一个球的概率为 (   )",
       "answer": "3/8",
-      "solution": "总方法 $4^3=64$。3球入不同盒：先选3盒$C_4^3=4$，排列$3!=6$，共24种。概率 $= 24/64 = 3/8$。"
+      "solution": "总方法 $4^3=64$。3球入不同盒：先选3盒$C_4^3=4$，排列$3!=6$，共24种。概率 $= 24/64 = 3/8$。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-018",
@@ -9177,7 +10029,9 @@ var QUESTION_BANK = {
         "$P(A|B) = P(B|A)$"
       ],
       "answer": 1,
-      "solution": "$P(A)>0 且 P(B)>0 时，独立 \\Rightarrow P(AB) = P(A)P(B) > 0，故 AB \\neq \\varnothing，A与B不互斥。也可反证：互斥则P(AB)=0 \\neq P(A)P(B)。$"
+      "solution": "$P(A)>0 且 P(B)>0 时，独立 \\Rightarrow P(AB) = P(A)P(B) > 0，故 AB \\neq \\varnothing，A与B不互斥。也可反证：互斥则P(AB)=0 \\neq P(A)P(B)。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-019",
@@ -9185,7 +10039,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "某人射中目标的概率为0.3，独立射击n次。要使至少命中一次的概率大于0.9，n至少为 (   )",
       "answer": "7",
-      "solution": "$1 - 0.7^n > 0.9，即 0.7^n < 0.1。0.7^6 \\approx 0.1176，0.7^7 \\approx 0.0824。故 n \\geq 7。$"
+      "solution": "$1 - 0.7^n > 0.9，即 0.7^n < 0.1。0.7^6 \\approx 0.1176，0.7^7 \\approx 0.0824。故 n \\geq 7。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-020",
@@ -9193,7 +10049,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "三人独立地去破译密码，各人破译概率分别为0.5,0.6,0.7。密码被破译的概率为 (   )",
       "answer": "0.94",
-      "solution": "$1 - (1-0.5)(1-0.6)(1-0.7) = 1 - 0.5 \\times 0.4 \\times 0.3 = 1 - 0.06 = 0.94。$"
+      "solution": "$1 - (1-0.5)(1-0.6)(1-0.7) = 1 - 0.5 \\times 0.4 \\times 0.3 = 1 - 0.06 = 0.94。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-021",
@@ -9207,7 +10065,9 @@ var QUESTION_BANK = {
         "$D. \\frac{3}{4}$"
       ],
       "answer": 2,
-      "solution": "$P(A \\cup B \\cup C) = \\frac{3}{4} - 0 - 0 - \\frac{1}{8} + 0 = \\frac{5}{8}。P(AB)=0 \\Rightarrow P(ABC)=0。$"
+      "solution": "$P(A \\cup B \\cup C) = \\frac{3}{4} - 0 - 0 - \\frac{1}{8} + 0 = \\frac{5}{8}。P(AB)=0 \\Rightarrow P(ABC)=0。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-022",
@@ -9221,7 +10081,9 @@ var QUESTION_BANK = {
         "不独立"
       ],
       "answer": 2,
-      "solution": "化简得 $P(AB) = P(A)P(B)$，故A与B独立。这是独立性的一个等价条件。推导用到 $P(\\overline{A}\\,\\overline{B}) = 1 - P(A) - P(B) + P(AB)$。"
+      "solution": "化简得 $P(AB) = P(A)P(B)$，故A与B独立。这是独立性的一个等价条件。推导用到 $P(\\overline{A}\\,\\overline{B}) = 1 - P(A) - P(B) + P(AB)$。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-023",
@@ -9229,7 +10091,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "在单位圆内随机取一点，该点到圆心距离 $\\xi$ 的分布函数 $F(r)$ 在 $r \\in [0,1]$ 时为 ( )_}__}",
       "answer": "$r^2$",
-      "solution": "$几何概型。F(r) = P(\\xi \\leq r) = \\frac{\\pi r^2}{\\pi \\cdot 1^2} = r^2。注意是面积比而非半径比。常见错误是写成 r。$"
+      "solution": "$几何概型。F(r) = P(\\xi \\leq r) = \\frac{\\pi r^2}{\\pi \\cdot 1^2} = r^2。注意是面积比而非半径比。常见错误是写成 r。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-024",
@@ -9243,7 +10107,9 @@ var QUESTION_BANK = {
         "$D. \\frac{t}{T}(2-\\frac{t}{T})$"
       ],
       "answer": 2,
-      "solution": "$几何概型。(x,y) \\in [0,T]^2，相遇条件 |x-y| \\leq t。相遇面积 = T^2 - (T-t)^2。概率 = 1 - (1-\\frac{t}{T})^2。C和D等价，C最简洁。$"
+      "solution": "$几何概型。(x,y) \\in [0,T]^2，相遇条件 |x-y| \\leq t。相遇面积 = T^2 - (T-t)^2。概率 = 1 - (1-\\frac{t}{T})^2。C和D等价，C最简洁。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-025",
@@ -9251,7 +10117,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设事件A,B满足 P(AB) = P(\\overline{A}\\,\\overline{B})，且 P(A)=\\frac{1}{3}，则 P(B)= ( )_}__}$",
       "answer": "2/3",
-      "solution": "$P(\\overline{A},\\overline{B})=1 - P(A) - P(B) + P(AB)。由条件得 P(AB) = 1-P(A)-P(B)+P(AB)，即 P(A)+P(B)=1，P(B)=\\frac{2}{3}。$"
+      "solution": "$P(\\overline{A},\\overline{B})=1 - P(A) - P(B) + P(AB)。由条件得 P(AB) = 1-P(A)-P(B)+P(AB)，即 P(A)+P(B)=1，P(B)=\\frac{2}{3}。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-026",
@@ -9265,7 +10133,9 @@ var QUESTION_BANK = {
         "$p_1+p_2+p_3 - 2(p_1p_2+p_1p_3+p_2p_3)$"
       ],
       "answer": 2,
-      "solution": "恰有两个发生 = $AB\\overline{C} + A\\overline{B}C + \\overline{A}BC$。相互独立时，$P(AB\\overline{C}) = p_1p_2(1-p_3)$。三项和为选项C。注意和B的区别。"
+      "solution": "恰有两个发生 = $AB\\overline{C} + A\\overline{B}C + \\overline{A}BC$。相互独立时，$P(AB\\overline{C}) = p_1p_2(1-p_3)$。三项和为选项C。注意和B的区别。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-027",
@@ -9273,7 +10143,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "袋中有n个球，r个红球。不放回依次取球，第k次取到红球的概率为 (   )",
       "answer": "r/n",
-      "solution": "$抽签原理：每次取到红球的概率都等于初始比例 r/n，与k无关。总排列数为 n!，第k位放红球的方法 r \\cdot (n-1)!。$"
+      "solution": "$抽签原理：每次取到红球的概率都等于初始比例 r/n，与k无关。总排列数为 n!，第k位放红球的方法 r \\cdot (n-1)!。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-028",
@@ -9287,7 +10159,9 @@ var QUESTION_BANK = {
         "既非充分也非必要"
       ],
       "answer": 0,
-      "solution": "$P(AB)=P(A)P(B)$ 就是独立性的定义，是充要条件。在 $P(A)>0$, $P(B)>0$ 条件下与 $P(A|B)=P(A)$ 等价。"
+      "solution": "$P(AB)=P(A)P(B)$ 就是独立性的定义，是充要条件。在 $P(A)>0$, $P(B)>0$ 条件下与 $P(A|B)=P(A)$ 等价。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-029",
@@ -9301,7 +10175,9 @@ var QUESTION_BANK = {
         "$D. \\frac{2}{3}$"
       ],
       "answer": 2,
-      "solution": "$有序取法共 4 \\times 3 = 12种。X<Y 即从4个数选2个，小的在前：C_4^2 = 6种。概率 = 6/12 = 1/2。对称性也可得出。$"
+      "solution": "$有序取法共 4 \\times 3 = 12种。X<Y 即从4个数选2个，小的在前：C_4^2 = 6种。概率 = 6/12 = 1/2。对称性也可得出。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-030",
@@ -9315,7 +10191,9 @@ var QUESTION_BANK = {
         "$D. \\frac{2}{n}$"
       ],
       "answer": 1,
-      "solution": "$固定甲，其余 n-1 个位置等可能排列。乙在甲左右相邻两个位置的任意一个，概率 = \\frac{2}{n-1}。$"
+      "solution": "$固定甲，其余 n-1 个位置等可能排列。乙在甲左右相邻两个位置的任意一个，概率 = \\frac{2}{n-1}。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-031",
@@ -9329,7 +10207,9 @@ var QUESTION_BANK = {
         "$D. [\\frac{a}{b}, 1]$"
       ],
       "answer": 1,
-      "solution": "$P(A|B) = P(AB)/b。P(AB) 满足 \\max(0, a+b-1) \\leq P(AB) \\leq \\min(a, b)。P(A|B) 范围如B所示，是Frechet界。$"
+      "solution": "$P(A|B) = P(AB)/b。P(AB) 满足 \\max(0, a+b-1) \\leq P(AB) \\leq \\min(a, b)。P(A|B) 范围如B所示，是Frechet界。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-032",
@@ -9337,7 +10217,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "两封信随机投入4个邮筒，前两个邮筒各投一封信的概率为 (   )",
       "answer": "1/8",
-      "solution": "每封信4个选择，$4^2=16$种。前两筒各一：第一封去筒1、第二封去筒2，或反过来，2种。概率 $= 2/16 = 1/8$。"
+      "solution": "每封信4个选择，$4^2=16$种。前两筒各一：第一封去筒1、第二封去筒2，或反过来，2种。概率 $= 2/16 = 1/8$。",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-033",
@@ -9351,7 +10233,9 @@ var QUESTION_BANK = {
         "超几何分布"
       ],
       "answer": 1,
-      "solution": "$有放回、直到首次成功——几何分布。P(X=k) = (\\frac{b}{a+b})^{k-1} \\cdot \\frac{a}{a+b}，k=1,2,\\ldots。参数 p = \\frac{a}{a+b}。$"
+      "solution": "$有放回、直到首次成功——几何分布。P(X=k) = (\\frac{b}{a+b})^{k-1} \\cdot \\frac{a}{a+b}，k=1,2,\\ldots。参数 p = \\frac{a}{a+b}。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-034",
@@ -9365,7 +10249,9 @@ var QUESTION_BANK = {
         "$D. \\frac{5}{9}$"
       ],
       "answer": 1,
-      "solution": "$1-(1-p)^2 = \\frac{5}{9}，(1-p)^2 = \\frac{4}{9}，1-p = \\frac{2}{3}，p = \\frac{1}{3}。P(Y \\geq 1) = 1 - (\\frac{2}{3})^3 = \\frac{19}{27}。$"
+      "solution": "$1-(1-p)^2 = \\frac{5}{9}，(1-p)^2 = \\frac{4}{9}，1-p = \\frac{2}{3}，p = \\frac{1}{3}。P(Y \\geq 1) = 1 - (\\frac{2}{3})^3 = \\frac{19}{27}。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-035",
@@ -9373,7 +10259,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "袋中10张奖券3张有奖，甲乙丙依次不放回抽一张。甲未中奖条件下丙中奖概率为 (   )",
       "answer": "1/3",
-      "solution": "$甲未中后剩9张含3张有奖。P(\\text{丙中}|\\text{甲未}) = \\frac{3}{9} \\cdot \\frac{2}{8} + \\frac{6}{9} \\cdot \\frac{3}{8} = \\frac{24}{72} = \\frac{1}{3}。$"
+      "solution": "$甲未中后剩9张含3张有奖。P(\\text{丙中}|\\text{甲未}) = \\frac{3}{9} \\cdot \\frac{2}{8} + \\frac{6}{9} \\cdot \\frac{3}{8} = \\frac{24}{72} = \\frac{1}{3}。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-036",
@@ -9387,7 +10275,9 @@ var QUESTION_BANK = {
         "$P(A|B) = 0$"
       ],
       "answer": 3,
-      "solution": "$互不相容 \\Rightarrow AB=\\varnothing，P(AB)=0。P(A|B) = \\frac{0}{P(B)} = 0（D正确）。由于P(A)P(B)>0而P(AB)=0，不独立。$"
+      "solution": "$互不相容 \\Rightarrow AB=\\varnothing，P(AB)=0。P(A|B) = \\frac{0}{P(B)} = 0（D正确）。由于P(A)P(B)>0而P(AB)=0，不独立。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-037",
@@ -9395,7 +10285,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "在长度为1的线段上任取两点，两点间距离小于1/2的概率为 (   )",
       "answer": "3/4",
-      "solution": "$设两点坐标 0 \\leq x \\leq y \\leq 1（x为较小者）。|y-x| < 1/2 的区域面积与总面积之比。总面积 = 1/2（三角形），满足条件的面积 = 3/8。概率 = (3/8)/(1/2) = 3/4。$"
+      "solution": "$设两点坐标 0 \\leq x \\leq y \\leq 1（x为较小者）。|y-x| < 1/2 的区域面积与总面积之比。总面积 = 1/2（三角形），满足条件的面积 = 3/8。概率 = (3/8)/(1/2) = 3/4。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-038",
@@ -9409,7 +10301,9 @@ var QUESTION_BANK = {
         "$D. \\frac{2}{5}$"
       ],
       "answer": 3,
-      "solution": "$全概率公式。P = \\frac{1}{2}P(\\text{甲袋同色}) + \\frac{1}{2}P(\\text{乙袋同色})。甲袋3红2白，C_5^2=10，同色=全红C_3^2=3+全白C_2^2=1=4，概率 \\frac{4}{10}。乙袋同理\\frac{4}{10}。故 P = \\frac{1}{2} \\cdot \\frac{4}{10} + \\frac{1}{2} \\cdot \\frac{4}{10} = \\frac{2}{5}。$"
+      "solution": "$全概率公式。P = \\frac{1}{2}P(\\text{甲袋同色}) + \\frac{1}{2}P(\\text{乙袋同色})。甲袋3红2白，C_5^2=10，同色=全红C_3^2=3+全白C_2^2=1=4，概率 \\frac{4}{10}。乙袋同理\\frac{4}{10}。故 P = \\frac{1}{2} \\cdot \\frac{4}{10} + \\frac{1}{2} \\cdot \\frac{4}{10} = \\frac{2}{5}。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-039",
@@ -9417,7 +10311,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 P(A)=\\frac{1}{3}, P(B)=\\frac{1}{2}，若A与B互不相容，则 P(\\overline{A}\\,\\overline{B}) = ( )_}__}$",
       "answer": "1/6",
-      "solution": "$互不相容 \\Rightarrow P(AB)=0。P(\\overline{A},\\overline{B}) = 1 - P(A) - P(B) + P(AB) = 1 - \\frac{1}{3} - \\frac{1}{2} = \\frac{1}{6}。$"
+      "solution": "$互不相容 \\Rightarrow P(AB)=0。P(\\overline{A},\\overline{B}) = 1 - P(A) - P(B) + P(AB) = 1 - \\frac{1}{3} - \\frac{1}{2} = \\frac{1}{6}。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     },
     {
       "id": "prob-ev-040",
@@ -9431,7 +10327,9 @@ var QUESTION_BANK = {
         "$D. \\frac{5}{6}$"
       ],
       "answer": 1,
-      "solution": "$P(AB) \\leq \\min(P(A),P(B)) = \\min(\\frac{1}{2}, \\frac{1}{3}) = \\frac{1}{3}。最大值在 B \\subset A 时取到。$"
+      "solution": "$P(AB) \\leq \\min(P(A),P(B)) = \\min(\\frac{1}{2}, \\frac{1}{3}) = \\frac{1}{3}。最大值在 B \\subset A 时取到。$",
+      "cat": "随机事件与概率",
+      "topic": "随机事件与概率"
     }
   ]
 }
@@ -9453,7 +10351,9 @@ var QUESTION_BANK = {
         "$F(b)-F(a)+P(X=a)$"
       ],
       "answer": 0,
-      "solution": "$分布函数定义 F(x)=P(X \\leq x)，P(a<X\\leq b) = F(b)-F(a)。注意等号处理：分布函数右连续。$"
+      "solution": "$分布函数定义 F(x)=P(X \\leq x)，P(a<X\\leq b) = F(b)-F(a)。注意等号处理：分布函数右连续。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-002",
@@ -9461,7 +10361,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "$设 X \\sim N(2, 9)，则 Y = \\frac{X-2}{3} \\sim ( )_}__}$",
       "answer": "N(0,1)",
-      "solution": "$标准化变换：\\frac{X-\\mu}{\\sigma} \\sim N(0,1)。\\mu=2，\\sigma=3，得 Y \\sim N(0,1)。$"
+      "solution": "$标准化变换：\\frac{X-\\mu}{\\sigma} \\sim N(0,1)。\\mu=2，\\sigma=3，得 Y \\sim N(0,1)。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-003",
@@ -9475,7 +10377,9 @@ var QUESTION_BANK = {
         "0.3"
       ],
       "answer": 0,
-      "solution": "$二项分布 E(X)=np=10 \\times 0.3 = 3，D(X)=np(1-p)=2.1。$"
+      "solution": "$二项分布 E(X)=np=10 \\times 0.3 = 3，D(X)=np(1-p)=2.1。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-004",
@@ -9489,7 +10393,9 @@ var QUESTION_BANK = {
         "0.99"
       ],
       "answer": 1,
-      "solution": "$2\\Phi(1.96)-1 \\approx 2 \\times 0.975 - 1 = 0.95。1.96是正态分布95%置信水平的临界值。$"
+      "solution": "$2\\Phi(1.96)-1 \\approx 2 \\times 0.975 - 1 = 0.95。1.96是正态分布95%置信水平的临界值。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-005",
@@ -9497,7 +10403,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "$泊松分布 X \\sim P(\\lambda) 的方差 D(X)= ( )_}__}$",
       "answer": "λ",
-      "solution": "$泊松分布的期望和方差相等：E(X)=D(X)=\\lambda。这是泊松分布的核心特征。$"
+      "solution": "$泊松分布的期望和方差相等：E(X)=D(X)=\\lambda。这是泊松分布的核心特征。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-006",
@@ -9511,7 +10419,9 @@ var QUESTION_BANK = {
         "5"
       ],
       "answer": 2,
-      "solution": "$E(X) = \\frac{a+b}{2} = \\frac{1+5}{2} = 3。D(X)=\\frac{(b-a)^2}{12}=\\frac{16}{12}=\\frac{4}{3}。$"
+      "solution": "$E(X) = \\frac{a+b}{2} = \\frac{1+5}{2} = 3。D(X)=\\frac{(b-a)^2}{12}=\\frac{16}{12}=\\frac{4}{3}。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-007",
@@ -9519,7 +10429,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "指数分布 $Exp(2)$ 的期望 $E(X)=$ ( )_}__}",
       "answer": "1/2",
-      "solution": "$指数分布 Exp(\\lambda)：f(x)=\\lambda e^{-\\lambda x}(x>0)，E(X)=1/\\lambda，D(X)=1/\\lambda^2。\\lambda=2时E(X)=0.5。$"
+      "solution": "$指数分布 Exp(\\lambda)：f(x)=\\lambda e^{-\\lambda x}(x>0)，E(X)=1/\\lambda，D(X)=1/\\lambda^2。\\lambda=2时E(X)=0.5。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-008",
@@ -9533,7 +10445,9 @@ var QUESTION_BANK = {
         "$D. f(x)=\\frac{1}{2}e^{-x}, x>0$"
       ],
       "answer": 2,
-      "solution": "$检查非负性和规范性。A：\\int_0^{\\infty}e^x dx=\\infty。B：\\cos \\pi/2后变负。C：\\int_0^{\\infty}\\frac{2dx}{\\pi(1+x^2)} = \\frac{2}{\\pi}\\cdot\\frac{\\pi}{2}=1。D：\\int_0^{\\infty}\\frac{e^{-x}}{2}dx=\\frac{1}{2}\\neq 1。$"
+      "solution": "$检查非负性和规范性。A：\\int_0^{\\infty}e^x dx=\\infty。B：\\cos \\pi/2后变负。C：\\int_0^{\\infty}\\frac{2dx}{\\pi(1+x^2)} = \\frac{2}{\\pi}\\cdot\\frac{\\pi}{2}=1。D：\\int_0^{\\infty}\\frac{e^{-x}}{2}dx=\\frac{1}{2}\\neq 1。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-009",
@@ -9547,7 +10461,9 @@ var QUESTION_BANK = {
         "1"
       ],
       "answer": 1,
-      "solution": "$\\varphi(x)=\\frac{1}{\\sqrt{2\\pi}}e^{-x^2/2}，\\varphi(0)=\\frac{1}{\\sqrt{2\\pi}} \\approx 0.399。$"
+      "solution": "$\\varphi(x)=\\frac{1}{\\sqrt{2\\pi}}e^{-x^2/2}，\\varphi(0)=\\frac{1}{\\sqrt{2\\pi}} \\approx 0.399。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-010",
@@ -9561,7 +10477,9 @@ var QUESTION_BANK = {
         "$F(x)$左连续"
       ],
       "answer": 2,
-      "solution": "$分布函数性质：单调不减、右连续、F(-\\infty)=0、F(+\\infty)=1。A和B错。注意中国教材通常约定F(x)右连续。$"
+      "solution": "$分布函数性质：单调不减、右连续、F(-\\infty)=0、F(+\\infty)=1。A和B错。注意中国教材通常约定F(x)右连续。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-011",
@@ -9575,7 +10493,9 @@ var QUESTION_BANK = {
         "0"
       ],
       "answer": 1,
-      "solution": "$P(X = a) = F(a) - F(a-)$，即分布函数在a点的跳跃度。对于连续型随机变量，分布函数连续，$P(X=a)=0$。"
+      "solution": "$P(X = a) = F(a) - F(a-)$，即分布函数在a点的跳跃度。对于连续型随机变量，分布函数连续，$P(X=a)=0$。",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-012",
@@ -9583,7 +10503,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "设X密度 $f(x)=\\begin{cases} cx^2,&0<x<1\\\\0,&\\text{其他}\\end{cases}$，则c= ( )_}__}",
       "answer": "3",
-      "solution": "$\\int_0^1 cx^2 dx = c \\cdot \\frac{1}{3} = 1，故 c = 3。$"
+      "solution": "$\\int_0^1 cx^2 dx = c \\cdot \\frac{1}{3} = 1，故 c = 3。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-013",
@@ -9597,7 +10519,9 @@ var QUESTION_BANK = {
         "$D. N(a\\mu+b, \\sigma^2)$"
       ],
       "answer": 1,
-      "solution": "$正态分布的线性变换仍为正态。E(Y) = aE(X) + b = a\\mu + b，D(Y) = a^2D(X) = a^2\\sigma^2。$"
+      "solution": "$正态分布的线性变换仍为正态。E(Y) = aE(X) + b = a\\mu + b，D(Y) = a^2D(X) = a^2\\sigma^2。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-014",
@@ -9605,7 +10529,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$X \\sim Exp(0.5)$，则 $P(X > 2) =$ ( )_}__}（用e表示）",
       "answer": "$e^{-1}$",
-      "solution": "$指数分布 P(X > x) = e^{-\\lambda x}。\\lambda=0.5，P(X>2) = e^{-1}。$"
+      "solution": "$指数分布 P(X > x) = e^{-\\lambda x}。\\lambda=0.5，P(X>2) = e^{-1}。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-015",
@@ -9619,7 +10545,9 @@ var QUESTION_BANK = {
         "0.9"
       ],
       "answer": 1,
-      "solution": "$P(X=2)+P(X=3) = \\frac{2}{10} + \\frac{3}{10} = 0.5。$"
+      "solution": "$P(X=2)+P(X=3) = \\frac{2}{10} + \\frac{3}{10} = 0.5。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-016",
@@ -9633,7 +10561,9 @@ var QUESTION_BANK = {
         "n=10, p=0.24"
       ],
       "answer": 0,
-      "solution": "$np=2.4$，$np(1-p)=1.44$，两式相除得 $1-p=0.6$，$p=0.4$，$n=6$。"
+      "solution": "$np=2.4$，$np(1-p)=1.44$，两式相除得 $1-p=0.6$，$p=0.4$，$n=6$。",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-017",
@@ -9641,7 +10571,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$X \\sim P(2)，则 P(X \\geq 3) = ( )_}__}（保留4位小数）$",
       "answer": "0.3233",
-      "solution": "$P(X\\geq 3)=1-P(X=0)-P(X=1)-P(X=2) = 1 - e^{-2} - 2e^{-2} - \\frac{4e^{-2}}{2} = 1 - 5e^{-2} \\approx 1-5/7.389 \\approx 0.3233。$"
+      "solution": "$P(X\\geq 3)=1-P(X=0)-P(X=1)-P(X=2) = 1 - e^{-2} - 2e^{-2} - \\frac{4e^{-2}}{2} = 1 - 5e^{-2} \\approx 1-5/7.389 \\approx 0.3233。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-018",
@@ -9655,7 +10587,9 @@ var QUESTION_BANK = {
         "$P(X=0)=0.5$"
       ],
       "answer": 0,
-      "solution": "$密度关于y轴对称即偶函数。此时若期望存在，则 E(X) = \\int_{-\\infty}^{\\infty} xf(x)dx = 0。方差不一定为0，P(X>0)=0.5。$"
+      "solution": "$密度关于y轴对称即偶函数。此时若期望存在，则 E(X) = \\int_{-\\infty}^{\\infty} xf(x)dx = 0。方差不一定为0，P(X>0)=0.5。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-019",
@@ -9663,7 +10597,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$X \\sim U[0,4]$，$Y=2X+1$，则 $E(Y)=$ ( )_}__}",
       "answer": "5",
-      "solution": "$E(X)=(0+4)/2=2，E(Y)=2E(X)+1=4+1=5。D(Y)=4D(X)=4 \\times 16/12 = 16/3。$"
+      "solution": "$E(X)=(0+4)/2=2，E(Y)=2E(X)+1=4+1=5。D(Y)=4D(X)=4 \\times 16/12 = 16/3。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-020",
@@ -9677,7 +10613,9 @@ var QUESTION_BANK = {
         "$N(4,1)$"
       ],
       "answer": 2,
-      "solution": "$E(X-Y)=E(X)-E(Y)=3-1=2$。独立时 $D(X-Y)=D(X)+D(Y)=4+3=7$。故 $X-Y \\sim N(2,7)$。"
+      "solution": "$E(X-Y)=E(X)-E(Y)=3-1=2$。独立时 $D(X-Y)=D(X)+D(Y)=4+3=7$。故 $X-Y \\sim N(2,7)$。",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-021",
@@ -9691,7 +10629,9 @@ var QUESTION_BANK = {
         "仅当$F_1=F_2$时是"
       ],
       "answer": 0,
-      "solution": "分布函数的凸组合仍是分布函数（单调不减、右连续、边界条件均保持）。这是概率混合模型的数学基础。"
+      "solution": "分布函数的凸组合仍是分布函数（单调不减、右连续、边界条件均保持）。这是概率混合模型的数学基础。",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-022",
@@ -9699,7 +10639,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X \\sim Exp(\\lambda)，则 Y = \\min(X, 1) 是 ( )_}__} 型随机变量（填连续/离散/混合）$",
       "answer": "混合",
-      "solution": "$Y在[0,1)上取值X（连续部分），在Y=1处有概率质量 P(X \\geq 1) = e^{-\\lambda}。非纯连续也非纯离散，是混合型。$"
+      "solution": "$Y在[0,1)上取值X（连续部分），在Y=1处有概率质量 P(X \\geq 1) = e^{-\\lambda}。非纯连续也非纯离散，是混合型。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-023",
@@ -9713,7 +10655,9 @@ var QUESTION_BANK = {
         "2"
       ],
       "answer": 2,
-      "solution": "$f(x)=F'(x)=2x$（$0<x<1$），$f(0.5)=1$。$x=0$和$x=1$处为不可导点，密度不存在。"
+      "solution": "$f(x)=F'(x)=2x$（$0<x<1$），$f(0.5)=1$。$x=0$和$x=1$处为不可导点，密度不存在。",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-024",
@@ -9727,7 +10671,9 @@ var QUESTION_BANK = {
         "1"
       ],
       "answer": 1,
-      "solution": "$E(|X|) = 2\\int_0^{\\infty} x\\varphi(x)dx = 2\\int_0^{\\infty} \\frac{x}{\\sqrt{2\\pi}}e^{-x^2/2}dx = \\sqrt{\\frac{2}{\\pi}}。令u=x^2/2换元即得。$"
+      "solution": "$E(|X|) = 2\\int_0^{\\infty} x\\varphi(x)dx = 2\\int_0^{\\infty} \\frac{x}{\\sqrt{2\\pi}}e^{-x^2/2}dx = \\sqrt{\\frac{2}{\\pi}}。令u=x^2/2换元即得。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-025",
@@ -9735,7 +10681,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$X \\sim N(\\mu, \\sigma^2)，P(X \\leq \\mu + k\\sigma) 仅为k的函数，与 \\mu,\\sigma 无关。写出这个函数表达式 ( )_}__}$",
       "answer": "Φ(k)",
-      "solution": "$标准化 Z=\\frac{X-\\mu}{\\sigma} \\sim N(0,1)，P(X \\leq \\mu+k\\sigma) = P(Z \\leq k) = \\Phi(k)。$"
+      "solution": "$标准化 Z=\\frac{X-\\mu}{\\sigma} \\sim N(0,1)，P(X \\leq \\mu+k\\sigma) = P(Z \\leq k) = \\Phi(k)。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-026",
@@ -9749,7 +10697,9 @@ var QUESTION_BANK = {
         "$D. \\frac{1}{4}$"
       ],
       "answer": 1,
-      "solution": "$拉普拉斯分布（双边指数）。由对称性 E(X)=0。E(X^2)=\\int_{-\\infty}^{\\infty} x^2 \\cdot \\frac{1}{2}e^{-|x|}dx = \\int_0^{\\infty} x^2 e^{-x}dx = \\Gamma(3)=2。D(X)=2-0=2。$"
+      "solution": "$拉普拉斯分布（双边指数）。由对称性 E(X)=0。E(X^2)=\\int_{-\\infty}^{\\infty} x^2 \\cdot \\frac{1}{2}e^{-|x|}dx = \\int_0^{\\infty} x^2 e^{-x}dx = \\Gamma(3)=2。D(X)=2-0=2。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-027",
@@ -9763,7 +10713,9 @@ var QUESTION_BANK = {
         "$D. Exp(\\ln 2)$"
       ],
       "answer": 0,
-      "solution": "$P(Y>y) = P(-\\ln X > y) = P(X < e^{-y}) = e^{-y}（y>0）。故 f_Y(y) = e^{-y}，即 Y \\sim Exp(1)。这是生成指数分布的标准方法。$"
+      "solution": "$P(Y>y) = P(-\\ln X > y) = P(X < e^{-y}) = e^{-y}（y>0）。故 f_Y(y) = e^{-y}，即 Y \\sim Exp(1)。这是生成指数分布的标准方法。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-028",
@@ -9771,7 +10723,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X \\sim P(\\lambda)，且 P(X=1) = P(X=2)，则 P(X=4) = ( )_}__}（用e表示）$",
       "answer": "$2e^{-2}/3$",
-      "solution": "$\\lambda e^{-\\lambda} = \\frac{\\lambda^2 e^{-\\lambda}}{2}，得 1 = \\lambda/2，\\lambda=2。P(X=4) = \\frac{2^4 e^{-2}}{4!} = \\frac{16e^{-2}}{24} = \\frac{2e^{-2}}{3}。$"
+      "solution": "$\\lambda e^{-\\lambda} = \\frac{\\lambda^2 e^{-\\lambda}}{2}，得 1 = \\lambda/2，\\lambda=2。P(X=4) = \\frac{2^4 e^{-2}}{4!} = \\frac{16e^{-2}}{24} = \\frac{2e^{-2}}{3}。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-029",
@@ -9785,7 +10739,9 @@ var QUESTION_BANK = {
         "与X同分布"
       ],
       "answer": 1,
-      "solution": "$概率积分变换。P(Y \\leq y) = P(F(X) \\leq y) = P(X \\leq F^{-1}(y)) = F(F^{-1}(y)) = y（0<y<1）。故 Y \\sim U[0,1]。$"
+      "solution": "$概率积分变换。P(Y \\leq y) = P(F(X) \\leq y) = P(X \\leq F^{-1}(y)) = F(F^{-1}(y)) = y（0<y<1）。故 Y \\sim U[0,1]。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-030",
@@ -9793,7 +10749,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$X \\sim B(3, 0.4)$，$Y = X^2 - 2X$，则 $E(Y) =$ ( )_}__}",
       "answer": "-0.24",
-      "solution": "$E(X)=3\\times0.4=1.2，E(X^2)=D(X)+E^2(X)=3\\times0.4\\times0.6+1.44=0.72+1.44=2.16。E(Y)=E(X^2)-2E(X)=2.16-2.4=-0.24。$"
+      "solution": "$E(X)=3\\times0.4=1.2，E(X^2)=D(X)+E^2(X)=3\\times0.4\\times0.6+1.44=0.72+1.44=2.16。E(Y)=E(X^2)-2E(X)=2.16-2.4=-0.24。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-031",
@@ -9807,7 +10765,9 @@ var QUESTION_BANK = {
         "$D. \\frac{1}{\\lambda}$"
       ],
       "answer": 0,
-      "solution": "$E(\\min(X,a)) = \\int_0^a x\\lambda e^{-\\lambda x}dx + a\\int_a^{\\infty} \\lambda e^{-\\lambda x}dx = \\frac{1}{\\lambda}(1-e^{-\\lambda a}) - ae^{-\\lambda a} + ae^{-\\lambda a} = \\frac{1-e^{-\\lambda a}}{\\lambda}。$"
+      "solution": "$E(\\min(X,a)) = \\int_0^a x\\lambda e^{-\\lambda x}dx + a\\int_a^{\\infty} \\lambda e^{-\\lambda x}dx = \\frac{1}{\\lambda}(1-e^{-\\lambda a}) - ae^{-\\lambda a} + ae^{-\\lambda a} = \\frac{1-e^{-\\lambda a}}{\\lambda}。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-032",
@@ -9821,7 +10781,9 @@ var QUESTION_BANK = {
         "$D. \\frac{1}{2}$"
       ],
       "answer": 1,
-      "solution": "$\\int_0^2 cx dx = 2c = 1，c = 1/2。E(X) = \\int_0^2 \\frac{x^2}{2}dx = \\frac{8}{6} = \\frac{4}{3}。P(X>\\frac{4}{3}) = \\int_{4/3}^2 \\frac{x}{2}dx = \\frac{1}{4}(4 - \\frac{16}{9}) = \\frac{1}{4} \\cdot \\frac{20}{9} = \\frac{5}{9}。$"
+      "solution": "$\\int_0^2 cx dx = 2c = 1，c = 1/2。E(X) = \\int_0^2 \\frac{x^2}{2}dx = \\frac{8}{6} = \\frac{4}{3}。P(X>\\frac{4}{3}) = \\int_{4/3}^2 \\frac{x}{2}dx = \\frac{1}{4}(4 - \\frac{16}{9}) = \\frac{1}{4} \\cdot \\frac{20}{9} = \\frac{5}{9}。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-033",
@@ -9829,7 +10791,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X \\sim N(0,4)，则 E(|X^3|) = ( )_}__}（用 \\sqrt{\\pi} 表示）$",
       "answer": "$32/\\sqrt\\pi$",
-      "solution": "$E(|X^3|) = \\frac{2}{\\sqrt{2\\pi}\\cdot 2}\\int_0^{\\infty} x^3 e^{-x^2/8}dx。令 t=x^2/8，= \\frac{32}{\\sqrt{\\pi}}\\int_0^{\\infty} t e^{-t}dt = \\frac{32}{\\sqrt{\\pi}}。$"
+      "solution": "$E(|X^3|) = \\frac{2}{\\sqrt{2\\pi}\\cdot 2}\\int_0^{\\infty} x^3 e^{-x^2/8}dx。令 t=x^2/8，= \\frac{32}{\\sqrt{\\pi}}\\int_0^{\\infty} t e^{-t}dt = \\frac{32}{\\sqrt{\\pi}}。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-034",
@@ -9843,7 +10807,9 @@ var QUESTION_BANK = {
         "$f(y)=2(1-y), 0<y<1$"
       ],
       "answer": 1,
-      "solution": "$F_Y(y) = P(\\max \\leq y) = P(X_1 \\leq y)P(X_2 \\leq y) = y^2（0<y<1）。f_Y(y) = 2y。$"
+      "solution": "$F_Y(y) = P(\\max \\leq y) = P(X_1 \\leq y)P(X_2 \\leq y) = y^2（0<y<1）。f_Y(y) = 2y。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-035",
@@ -9851,7 +10817,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设X的密度 f(x) = \\frac{1}{\\pi(1+x^2)}, -\\infty<x<\\infty，则 E(X) = ( )_}__}（若不存在填\"不存在\"）$",
       "answer": "不存在",
-      "solution": "$这是柯西分布。\\int_{-\\infty}^{\\infty} |x| \\cdot \\frac{1}{\\pi(1+x^2)}dx = \\infty，期望不存在。注意密度对称但不意味着期望为0，需绝对可积。$"
+      "solution": "$这是柯西分布。\\int_{-\\infty}^{\\infty} |x| \\cdot \\frac{1}{\\pi(1+x^2)}dx = \\infty，期望不存在。注意密度对称但不意味着期望为0，需绝对可积。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-036",
@@ -9865,7 +10833,9 @@ var QUESTION_BANK = {
         "$D. \\lambda(\\lambda+1)$"
       ],
       "answer": 1,
-      "solution": "$对泊松分布：E(X(X-1)) = \\sum_{k=2}^{\\infty} k(k-1)\\frac{\\lambda^k e^{-\\lambda}}{k!} = \\lambda^2 \\sum_{k=2}^{\\infty} \\frac{\\lambda^{k-2}e^{-\\lambda}}{(k-2)!} = \\lambda^2。$"
+      "solution": "$对泊松分布：E(X(X-1)) = \\sum_{k=2}^{\\infty} k(k-1)\\frac{\\lambda^k e^{-\\lambda}}{k!} = \\lambda^2 \\sum_{k=2}^{\\infty} \\frac{\\lambda^{k-2}e^{-\\lambda}}{(k-2)!} = \\lambda^2。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-037",
@@ -9879,7 +10849,9 @@ var QUESTION_BANK = {
         "$D. e^{-2}$"
       ],
       "answer": 0,
-      "solution": "$指数分布的无记忆性：P(X>2000|X>1000) = P(X>1000) = e^{-0.001\\cdot1000} = e^{-1}。$"
+      "solution": "$指数分布的无记忆性：P(X>2000|X>1000) = P(X>1000) = e^{-0.001\\cdot1000} = e^{-1}。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-038",
@@ -9887,7 +10859,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$X \\sim N(0,1)$，$Y = |X|$ 的密度 $f_Y(y) =$ ( )_}__}（$y>0$）",
       "answer": "$\\sqrt(2/\\pi)e^(-y^2/2)$",
-      "solution": "$P(Y \\leq y) = P(|X| \\leq y) = 2\\Phi(y)-1。f_Y(y) = 2\\varphi(y) = \\frac{2}{\\sqrt{2\\pi}}e^{-y^2/2} = \\sqrt{\\frac{2}{\\pi}}e^{-y^2/2}。$"
+      "solution": "$P(Y \\leq y) = P(|X| \\leq y) = 2\\Phi(y)-1。f_Y(y) = 2\\varphi(y) = \\frac{2}{\\sqrt{2\\pi}}e^{-y^2/2} = \\sqrt{\\frac{2}{\\pi}}e^{-y^2/2}。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-039",
@@ -9901,7 +10875,9 @@ var QUESTION_BANK = {
         "与F(x)有关"
       ],
       "answer": 1,
-      "solution": "$\\int_{-\\infty}^{+\\infty} [F(x+a)-F(x)]dx = \\int_{-\\infty}^{+\\infty} \\int_x^{x+a} dF(t) dx = \\int_{-\\infty}^{+\\infty} a \\cdot dF(t) = a。交换积分次序可得。$"
+      "solution": "$\\int_{-\\infty}^{+\\infty} [F(x+a)-F(x)]dx = \\int_{-\\infty}^{+\\infty} \\int_x^{x+a} dF(t) dx = \\int_{-\\infty}^{+\\infty} a \\cdot dF(t) = a。交换积分次序可得。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     },
     {
       "id": "prob-dist-040",
@@ -9915,7 +10891,9 @@ var QUESTION_BANK = {
         "$E(X^3)-3E(X^2)EX+2(EX)^3$"
       ],
       "answer": 0,
-      "solution": "$(X-\\mu)^3 = X^3 - 3\\mu X^2 + 3\\mu^2 X - \\mu^3。取期望：E(X^3) - 3\\mu E(X^2) + 3\\mu^2 E(X) - \\mu^3 = E(X^3) - 3\\mu E(X^2) + 2\\mu^3。$"
+      "solution": "$(X-\\mu)^3 = X^3 - 3\\mu X^2 + 3\\mu^2 X - \\mu^3。取期望：E(X^3) - 3\\mu E(X^2) + 3\\mu^2 E(X) - \\mu^3 = E(X^3) - 3\\mu E(X^2) + 2\\mu^3。$",
+      "cat": "随机变量与分布",
+      "topic": "随机变量与分布"
     }
   ]
 }
@@ -9937,7 +10915,9 @@ var QUESTION_BANK = {
         "$D. P(X<x) \\cdot P(Y<y)$"
       ],
       "answer": 1,
-      "solution": "$F(x,y) = P(X \\leq x, Y \\leq y)。注意是不等号含等号。离散型时 F(x,y) = \\sum_{x_i \\leq x} \\sum_{y_j \\leq y} p_{ij}。$"
+      "solution": "$F(x,y) = P(X \\leq x, Y \\leq y)。注意是不等号含等号。离散型时 F(x,y) = \\sum_{x_i \\leq x} \\sum_{y_j \\leq y} p_{ij}。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-002",
@@ -9945,7 +10925,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "若(X,Y)的联合密度为 $f(x,y)$，则X的边缘密度 $f_X(x)=$ ( )_}__}（用积分表示）",
       "answer": "$\\int f(x,y)dy$",
-      "solution": "$边缘密度：f_X(x) = \\int_{-\\infty}^{\\infty} f(x,y)dy。对y积分消除y的影响得到X的分布。$"
+      "solution": "$边缘密度：f_X(x) = \\int_{-\\infty}^{\\infty} f(x,y)dy。对y积分消除y的影响得到X的分布。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-003",
@@ -9959,7 +10941,9 @@ var QUESTION_BANK = {
         "$D. \\max(F_X(x), F_Y(y))$"
       ],
       "answer": 1,
-      "solution": "$独立 \\Leftrightarrow F(x,y) = F_X(x) \\cdot F_Y(y)。对离散型：p_{ij} = p_i \\cdot p_j。对连续型：f(x,y) = f_X(x)f_Y(y)。$"
+      "solution": "$独立 \\Leftrightarrow F(x,y) = F_X(x) \\cdot F_Y(y)。对离散型：p_{ij} = p_i \\cdot p_j。对连续型：f(x,y) = f_X(x)f_Y(y)。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-004",
@@ -9973,7 +10957,9 @@ var QUESTION_BANK = {
         "X与Y相等"
       ],
       "answer": 1,
-      "solution": "$Cov(X,Y)=0$ 等价于 $E(XY)=E(X)E(Y)$，即X与Y不相关。不相关不一定独立（除非是正态分布）。"
+      "solution": "$Cov(X,Y)=0$ 等价于 $E(XY)=E(X)E(Y)$，即X与Y不相关。不相关不一定独立（除非是正态分布）。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-005",
@@ -9981,7 +10967,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "若 $D(X)=4$, $D(Y)=9$, $Cov(X,Y)=3$，则 $D(X+Y)=$ ( )_}__}",
       "answer": "19",
-      "solution": "$D(X+Y)=D(X)+D(Y)+2Cov(X,Y)=4+9+2\\times3=19。$"
+      "solution": "$D(X+Y)=D(X)+D(Y)+2Cov(X,Y)=4+9+2\\times3=19。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-006",
@@ -9995,7 +10983,9 @@ var QUESTION_BANK = {
         "$\\rho=1$"
       ],
       "answer": 0,
-      "solution": "二维正态分布的特殊性质：独立 $\\Leftrightarrow$ 不相关 $\\Leftrightarrow \\rho=0 \\Leftrightarrow Cov=0$。仅正态分布有这一性质。"
+      "solution": "二维正态分布的特殊性质：独立 $\\Leftrightarrow$ 不相关 $\\Leftrightarrow \\rho=0 \\Leftrightarrow Cov=0$。仅正态分布有这一性质。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-007",
@@ -10009,7 +10999,9 @@ var QUESTION_BANK = {
         "$D. [0,+\\infty)$"
       ],
       "answer": 2,
-      "solution": "$\\rho_{XY} = \\frac{Cov(X,Y)}{\\sqrt{D(X)}\\sqrt{D(Y)}} \\in [-1,1]。\\rho=1为完全正相关，\\rho=-1为完全负相关。由柯西-施瓦茨不等式保证。$"
+      "solution": "$\\rho_{XY} = \\frac{Cov(X,Y)}{\\sqrt{D(X)}\\sqrt{D(Y)}} \\in [-1,1]。\\rho=1为完全正相关，\\rho=-1为完全负相关。由柯西-施瓦茨不等式保证。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-008",
@@ -10017,7 +11009,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "已知 $E(X)=2$, $E(Y)=3$, $E(XY)=8$，则 $Cov(X,Y)=$ ( )_}__}",
       "answer": "2",
-      "solution": "$Cov(X,Y) = E(XY) - E(X)E(Y) = 8 - 2 \\times 3 = 2。$"
+      "solution": "$Cov(X,Y) = E(XY) - E(X)E(Y) = 8 - 2 \\times 3 = 2。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-009",
@@ -10031,7 +11025,9 @@ var QUESTION_BANK = {
         "0.6"
       ],
       "answer": 0,
-      "solution": "$P(X=0)=0.4+0.3=0.7，P(X=1)=0.2+0.1=0.3。E(X)=0\\times0.7+1\\times0.3=0.3。$"
+      "solution": "$P(X=0)=0.4+0.3=0.7，P(X=1)=0.2+0.1=0.3。E(X)=0\\times0.7+1\\times0.3=0.3。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-010",
@@ -10045,7 +11041,9 @@ var QUESTION_BANK = {
         "30"
       ],
       "answer": 0,
-      "solution": "$Cov(X,Y) = \\rho_{XY} \\cdot \\sqrt{D(X)} \\cdot \\sqrt{D(Y)} = 0.4 \\times 5 \\times 6 = 12。$"
+      "solution": "$Cov(X,Y) = \\rho_{XY} \\cdot \\sqrt{D(X)} \\cdot \\sqrt{D(Y)} = 0.4 \\times 5 \\times 6 = 12。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-011",
@@ -10059,7 +11057,9 @@ var QUESTION_BANK = {
         "$f(x,y)=2, (x,y)\\in D$"
       ],
       "answer": 1,
-      "solution": "$D的面积为 \\int_0^1 x^2 dx = \\frac{1}{3}。均匀分布密度为该面积的倒数：f(x,y)=3，(x,y)\\in D。$"
+      "solution": "$D的面积为 \\int_0^1 x^2 dx = \\frac{1}{3}。均匀分布密度为该面积的倒数：f(x,y)=3，(x,y)\\in D。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-012",
@@ -10073,7 +11073,9 @@ var QUESTION_BANK = {
         "$D. \\frac{2}{3}$"
       ],
       "answer": 0,
-      "solution": "$联合密度 f(x,y)=\\frac{1}{8}（0<x<2, 0<y<4）。P(Y < X^2) = \\frac{1}{8}\\int_0^2 x^2 dx = \\frac{8}{24} = \\frac{1}{3}。重算：\\int_0^2 x^2 dx = 8/3，\\frac{1}{8} \\cdot \\frac{8}{3} = \\frac{1}{3}。$"
+      "solution": "$联合密度 f(x,y)=\\frac{1}{8}（0<x<2, 0<y<4）。P(Y < X^2) = \\frac{1}{8}\\int_0^2 x^2 dx = \\frac{8}{24} = \\frac{1}{3}。重算：\\int_0^2 x^2 dx = 8/3，\\frac{1}{8} \\cdot \\frac{8}{3} = \\frac{1}{3}。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-013",
@@ -10081,7 +11083,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$X \\sim N(0,1), Y \\sim \\chi^2(n)且独立，则 T = \\frac{X}{\\sqrt{Y/n}} \\sim ( )_}__}$",
       "answer": "t(n)",
-      "solution": "t分布的定义：标准正态除以独立的卡方除以其自由度再开方。$T \\sim t(n)$，自由度为n。"
+      "solution": "t分布的定义：标准正态除以独立的卡方除以其自由度再开方。$T \\sim t(n)$，自由度为n。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-014",
@@ -10089,7 +11093,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "设 $X \\sim B(1,0.5)$, $Y \\sim B(1,0.5)$ 且 $Cov(X,Y)=0.1$，则 $P(X=1,Y=1)=$ ( )_}__}",
       "answer": "0.35",
-      "solution": "$E(X)=E(Y)=0.5$。$Cov = E(XY) - E(X)E(Y) = E(XY) - 0.25 = 0.1$，$E(XY)=0.35$。X,Y均只取0或1，$E(XY)=P(X=1,Y=1)=0.35$。"
+      "solution": "$E(X)=E(Y)=0.5$。$Cov = E(XY) - E(X)E(Y) = E(XY) - 0.25 = 0.1$，$E(XY)=0.35$。X,Y均只取0或1，$E(XY)=P(X=1,Y=1)=0.35$。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-015",
@@ -10103,7 +11109,9 @@ var QUESTION_BANK = {
         "$t(2)$"
       ],
       "answer": 1,
-      "solution": "独立正态之和仍为正态。$E(Z)=E(X)+E(Y)=0$，$D(Z)=D(X)+D(Y)=1+1=2$。故 $Z \\sim N(0,2)$。"
+      "solution": "独立正态之和仍为正态。$E(Z)=E(X)+E(Y)=0$，$D(Z)=D(X)+D(Y)=1+1=2$。故 $Z \\sim N(0,2)$。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-016",
@@ -10117,7 +11125,9 @@ var QUESTION_BANK = {
         "既不独立也相关"
       ],
       "answer": 2,
-      "solution": "$f_X(x)=\\int_{-1}^{1}\\frac{1+xy}{4}dy = \\frac{1}{2}（|x|<1），同理 f_Y(y)=\\frac{1}{2}。f(x,y) \\neq f_X(x)f_Y(y)，不独立。但 E(XY)=\\iint xy\\frac{1+xy}{4}dxdy=0=E(X)E(Y)，不相关。$"
+      "solution": "$f_X(x)=\\int_{-1}^{1}\\frac{1+xy}{4}dy = \\frac{1}{2}（|x|<1），同理 f_Y(y)=\\frac{1}{2}。f(x,y) \\neq f_X(x)f_Y(y)，不独立。但 E(XY)=\\iint xy\\frac{1+xy}{4}dxdy=0=E(X)E(Y)，不相关。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-017",
@@ -10125,7 +11135,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$设 X_1,X_2,\\ldots,X_n 独立同分布 N(\\mu,\\sigma^2)，则 \\bar{X}=\\frac{1}{n}\\sum X_i \\sim ( )_}__}$",
       "answer": "N(μ,σ^2/n)",
-      "solution": "$E(\\bar{X}) = \\frac{1}{n}\\sum E(X_i) = \\mu。独立时 D(\\bar{X}) = \\frac{1}{n^2}\\sum D(X_i) = \\frac{\\sigma^2}{n}。正态分布的线性组合仍为正态。$"
+      "solution": "$E(\\bar{X}) = \\frac{1}{n}\\sum E(X_i) = \\mu。独立时 D(\\bar{X}) = \\frac{1}{n^2}\\sum D(X_i) = \\frac{\\sigma^2}{n}。正态分布的线性组合仍为正态。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-018",
@@ -10139,7 +11151,9 @@ var QUESTION_BANK = {
         "必为指数分布"
       ],
       "answer": 2,
-      "solution": "$边缘分布不一定均匀。例如单位圆上的均匀分布，X的边缘密度 f_X(x)=\\frac{2}{\\pi}\\sqrt{1-x^2}（|x|\\leq 1），不是均匀的。但矩形区域上的联合均匀分布，边缘是均匀的。$"
+      "solution": "$边缘分布不一定均匀。例如单位圆上的均匀分布，X的边缘密度 f_X(x)=\\frac{2}{\\pi}\\sqrt{1-x^2}（|x|\\leq 1），不是均匀的。但矩形区域上的联合均匀分布，边缘是均匀的。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-019",
@@ -10147,7 +11161,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "设 $D(X)=1$, $D(Y)=4$, $\\rho_{XY}=0.5$，则 $D(2X-Y)=$ ( )_}__}",
       "answer": "4",
-      "solution": "$D(2X-Y) = 4D(X) + D(Y) - 4Cov = 4+4-4\\times1\\times2\\times0.5 = 8-4 = 4。Cov = \\rho\\sqrt{D(X)D(Y)} = 0.5\\times2 = 1。$"
+      "solution": "$D(2X-Y) = 4D(X) + D(Y) - 4Cov = 4+4-4\\times1\\times2\\times0.5 = 8-4 = 4。Cov = \\rho\\sqrt{D(X)D(Y)} = 0.5\\times2 = 1。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-020",
@@ -10161,7 +11177,9 @@ var QUESTION_BANK = {
         "$D. \\frac{2}{9}$"
       ],
       "answer": 1,
-      "solution": "$P(X=Y) = P(X=1,Y=1) + P(X=2,Y=2) = (\\frac{1}{3})^2 + (\\frac{2}{3})^2 = \\frac{1}{9} + \\frac{4}{9} = \\frac{5}{9}。$"
+      "solution": "$P(X=Y) = P(X=1,Y=1) + P(X=2,Y=2) = (\\frac{1}{3})^2 + (\\frac{2}{3})^2 = \\frac{1}{9} + \\frac{4}{9} = \\frac{5}{9}。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-021",
@@ -10175,7 +11193,9 @@ var QUESTION_BANK = {
         "0.5"
       ],
       "answer": 1,
-      "solution": "$E(X)=0$，$Cov = E(XY) - 0 = E(X^3) = 0$（奇函数）。故 $\\rho=0$，不相关。但显然不独立（Y完全由X决定）。"
+      "solution": "$E(X)=0$，$Cov = E(XY) - 0 = E(X^3) = 0$（奇函数）。故 $\\rho=0$，不相关。但显然不独立（Y完全由X决定）。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-022",
@@ -10183,7 +11203,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设(X,Y)在 x^2+y^2 \\leq 1 上均匀分布，则X的边缘密度 f_X(x)= ( )_}__}（|x|\\leq 1）$",
       "answer": "$2\\sqrt(1-x^2)/\\pi$",
-      "solution": "$联合密度 f(x,y)=1/\\pi。对y积分从 -\\sqrt{1-x^2} 到 \\sqrt{1-x^2}：f_X(x) = \\frac{2}{\\pi}\\sqrt{1-x^2}。$"
+      "solution": "$联合密度 f(x,y)=1/\\pi。对y积分从 -\\sqrt{1-x^2} 到 \\sqrt{1-x^2}：f_X(x) = \\frac{2}{\\pi}\\sqrt{1-x^2}。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-023",
@@ -10197,7 +11219,9 @@ var QUESTION_BANK = {
         "$D. \\Gamma(2,\\lambda)$"
       ],
       "answer": 1,
-      "solution": "$P(Z>z) = P(X>z, Y>z) = P(X>z)P(Y>z) = e^{-\\lambda z} \\cdot e^{-\\lambda z} = e^{-2\\lambda z}。故 Z \\sim Exp(2\\lambda)。$"
+      "solution": "$P(Z>z) = P(X>z, Y>z) = P(X>z)P(Y>z) = e^{-\\lambda z} \\cdot e^{-\\lambda z} = e^{-2\\lambda z}。故 Z \\sim Exp(2\\lambda)。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-024",
@@ -10211,7 +11235,9 @@ var QUESTION_BANK = {
         "$D. \\frac{z}{2} 和 1-\\frac{z}{2}$"
       ],
       "answer": 0,
-      "solution": "$卷积：f_Z(z)=\\int_{-\\infty}^{\\infty}f_X(x)f_Y(z-x)dx。0<z<1：\\int_0^z 1\\cdot 1dx = z。1<z<2：\\int_{z-1}^1 1\\cdot 1dx = 2-z。三角分布。$"
+      "solution": "$卷积：f_Z(z)=\\int_{-\\infty}^{\\infty}f_X(x)f_Y(z-x)dx。0<z<1：\\int_0^z 1\\cdot 1dx = z。1<z<2：\\int_{z-1}^1 1\\cdot 1dx = 2-z。三角分布。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-025",
@@ -10219,7 +11245,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$X,Y$独立, $X\\sim B(1,0.4)$, $Y\\sim B(1,0.6)$。$Z=X+Y$。$P(Z=1)=$ ( )_}__}",
       "answer": "0.52",
-      "solution": "$P(Z=1) = P(X=1,Y=0) + P(X=0,Y=1) = 0.4\\times0.4 + 0.6\\times0.6 = 0.16+0.36 = 0.52。$"
+      "solution": "$P(Z=1) = P(X=1,Y=0) + P(X=0,Y=1) = 0.4\\times0.4 + 0.6\\times0.6 = 0.16+0.36 = 0.52。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-026",
@@ -10233,7 +11261,9 @@ var QUESTION_BANK = {
         "$\\chi^2(5)$"
       ],
       "answer": 0,
-      "solution": "独立泊松分布之和仍为泊松，参数相加：$X+Y \\sim P(5)$。可用矩母函数或特征函数证明。"
+      "solution": "独立泊松分布之和仍为泊松，参数相加：$X+Y \\sim P(5)$。可用矩母函数或特征函数证明。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-027",
@@ -10247,7 +11277,9 @@ var QUESTION_BANK = {
         "$E(X)=E(Y)$"
       ],
       "answer": 2,
-      "solution": "$D(X+Y)=D(X)+D(Y)+2Cov$，$D(X-Y)=D(X)+D(Y)-2Cov$。两式相等 $\\Rightarrow 4Cov=0 \\Rightarrow Cov(X,Y)=0$。不要求独立，也不要求方差相等。"
+      "solution": "$D(X+Y)=D(X)+D(Y)+2Cov$，$D(X-Y)=D(X)+D(Y)-2Cov$。两式相等 $\\Rightarrow 4Cov=0 \\Rightarrow Cov(X,Y)=0$。不要求独立，也不要求方差相等。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-028",
@@ -10255,7 +11287,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 U=X+Y, V=X-Y，若X与Y不相关且方差相等（均为\\sigma^2），则U与V的协方差为 ( )_}__}$",
       "answer": "0",
-      "solution": "$Cov(U,V) = Cov(X+Y, X-Y) = Cov(X,X) - Cov(Y,Y) = D(X) - D(Y) = 0$。所以U与V也不相关。"
+      "solution": "$Cov(U,V) = Cov(X+Y, X-Y) = Cov(X,X) - Cov(Y,Y) = D(X) - D(Y) = 0$。所以U与V也不相关。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-029",
@@ -10269,7 +11303,9 @@ var QUESTION_BANK = {
         "$0.5$"
       ],
       "answer": 1,
-      "solution": "$二维正态的条件期望：E(X|Y=y) = \\mu_X + \\rho\\frac{\\sigma_X}{\\sigma_Y}(y-\\mu_Y) = 0 + 0.5 \\cdot 1 \\cdot y = 0.5y。$"
+      "solution": "$二维正态的条件期望：E(X|Y=y) = \\mu_X + \\rho\\frac{\\sigma_X}{\\sigma_Y}(y-\\mu_Y) = 0 + 0.5 \\cdot 1 \\cdot y = 0.5y。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-030",
@@ -10283,7 +11319,9 @@ var QUESTION_BANK = {
         "$F(1,1)$"
       ],
       "answer": 2,
-      "solution": "$两个独立标准正态之比服从柯西分布C(0,1)，密度 f(z)=\\frac{1}{\\pi(1+z^2)}。注意柯西分布期望不存在。t(1) 也是柯西分布。$"
+      "solution": "$两个独立标准正态之比服从柯西分布C(0,1)，密度 f(z)=\\frac{1}{\\pi(1+z^2)}。注意柯西分布期望不存在。t(1) 也是柯西分布。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-031",
@@ -10291,7 +11329,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设X与Y独立，X \\sim \\Gamma(\\alpha_1,\\lambda), Y \\sim \\Gamma(\\alpha_2,\\lambda)，则 X+Y \\sim ( )_}__}$",
       "answer": "Γ(α₁+α₂,λ)",
-      "solution": "独立伽马分布之和仍为伽马分布，形状参数相加，尺度参数不变。这是伽马分布的可加性。"
+      "solution": "独立伽马分布之和仍为伽马分布，形状参数相加，尺度参数不变。这是伽马分布的可加性。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-032",
@@ -10305,7 +11345,9 @@ var QUESTION_BANK = {
         "$D. \\frac{1}{4}$"
       ],
       "answer": 1,
-      "solution": "$E(X)=\\frac{8}{15}, E(Y)=\\frac{4}{5}，E(XY)=\\frac{4}{9}，E(X^2)=\\frac{1}{3}，E(Y^2)=\\frac{2}{3}。计算得 Cov(X,Y)=\\frac{2}{225}，\\rho = \\frac{2/225}{\\sqrt{(11/225)(2/75)}} \\approx 0.5。$"
+      "solution": "$E(X)=\\frac{8}{15}, E(Y)=\\frac{4}{5}，E(XY)=\\frac{4}{9}，E(X^2)=\\frac{1}{3}，E(Y^2)=\\frac{2}{3}。计算得 Cov(X,Y)=\\frac{2}{225}，\\rho = \\frac{2/225}{\\sqrt{(11/225)(2/75)}} \\approx 0.5。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-033",
@@ -10313,7 +11355,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X_1,X_2 独立同分布 \\chi^2(n)，则 \\frac{X_1/n}{X_2/n} \\sim ( )_}__}$",
       "answer": "F(n,n)",
-      "solution": "$F分布定义：两个独立卡方变量各自除以其自由度之比。F = \\frac{X_1/n_1}{X_2/n_2} \\sim F(n_1,n_2)。这里 n_1=n_2=n。$"
+      "solution": "$F分布定义：两个独立卡方变量各自除以其自由度之比。F = \\frac{X_1/n_1}{X_2/n_2} \\sim F(n_1,n_2)。这里 n_1=n_2=n。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-034",
@@ -10327,7 +11371,9 @@ var QUESTION_BANK = {
         "无必然关系"
       ],
       "answer": 0,
-      "solution": "$\\rho=1$ 当且仅当存在 $a>0$ 和 $b$ 使 $P(Y = aX + b) = 1$。$\\rho=-1$ 时 $a<0$。这是相关系数达到边界的等价条件。"
+      "solution": "$\\rho=1$ 当且仅当存在 $a>0$ 和 $b$ 使 $P(Y = aX + b) = 1$。$\\rho=-1$ 时 $a<0$。这是相关系数达到边界的等价条件。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-035",
@@ -10341,7 +11387,9 @@ var QUESTION_BANK = {
         "$P(np+mp)$"
       ],
       "answer": 0,
-      "solution": "独立二项分布之和仍为二项分布（p相同时）：$X+Y \\sim B(n+m,p)$。这是二项分布的可加性。p不同则不成立。"
+      "solution": "独立二项分布之和仍为二项分布（p相同时）：$X+Y \\sim B(n+m,p)$。这是二项分布的可加性。p不同则不成立。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-036",
@@ -10349,7 +11397,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "设 $(X,Y) \\sim N(1,-1,4,9,-0.5)$，则 $D(2X+3Y)=$ ( )_}__}",
       "answer": "61",
-      "solution": "$二维正态。D(2X+3Y) = 4D(X) + 9D(Y) + 12Cov。Cov = \\rho\\sqrt{D(X)D(Y)} = -0.5 \\times 6 = -3。D = 16 + 81 - 36 = 61。$"
+      "solution": "$二维正态。D(2X+3Y) = 4D(X) + 9D(Y) + 12Cov。Cov = \\rho\\sqrt{D(X)D(Y)} = -0.5 \\times 6 = -3。D = 16 + 81 - 36 = 61。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-037",
@@ -10363,7 +11413,9 @@ var QUESTION_BANK = {
         "$N(0,1)$"
       ],
       "answer": 0,
-      "solution": "$X_1+X_2 \\sim N(0,2)$ 与 $X_1-X_2 \\sim N(0,2)$ 独立（联合正态且协方差为0）。标准化后两者独立$\\chi^2(1)$，其比$\\sim F(1,1)$。"
+      "solution": "$X_1+X_2 \\sim N(0,2)$ 与 $X_1-X_2 \\sim N(0,2)$ 独立（联合正态且协方差为0）。标准化后两者独立$\\chi^2(1)$，其比$\\sim F(1,1)$。",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-038",
@@ -10371,7 +11423,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "设 $X,Y$ 独立，$X\\sim U[0,2]$, $Y\\sim U[0,2]$，则 $P(|X-Y|>1) =$ ( )_}__}",
       "answer": "1/4",
-      "solution": "$正方形 [0,2]^2 面积4。|X-Y|>1 区域面积：两个全等三角形各面积 \\frac{1}{2}\\times1\\times1=\\frac{1}{2}，共1。P=1/4。$"
+      "solution": "$正方形 [0,2]^2 面积4。|X-Y|>1 区域面积：两个全等三角形各面积 \\frac{1}{2}\\times1\\times1=\\frac{1}{2}，共1。P=1/4。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-039",
@@ -10385,7 +11439,9 @@ var QUESTION_BANK = {
         "$D. \\rho_{XY} \\geq 0$"
       ],
       "answer": 1,
-      "solution": "$\\big|_{C}^{o}v(X,Y)| \\leq \\sqrt{D(X)D(Y)} 是柯西-施瓦茨不等式的直接推论。A不一定（Cov可正可负），C、D也都不是必然的。$"
+      "solution": "$\\big|_{C}^{o}v(X,Y)| \\leq \\sqrt{D(X)D(Y)} 是柯西-施瓦茨不等式的直接推论。A不一定（Cov可正可负），C、D也都不是必然的。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     },
     {
       "id": "prob-mv-040",
@@ -10399,7 +11455,9 @@ var QUESTION_BANK = {
         "$t(n-1)$"
       ],
       "answer": 1,
-      "solution": "$样本方差：\\sum(X_i - \\bar{X})^2 \\sim \\chi^2(n-1)。损失一个自由度因为\\bar{X}是估计的均值。正交分解可证。$"
+      "solution": "$样本方差：\\sum(X_i - \\bar{X})^2 \\sim \\chi^2(n-1)。损失一个自由度因为\\bar{X}是估计的均值。正交分解可证。$",
+      "cat": "多维随机变量",
+      "topic": "多维随机变量"
     }
   ]
 }
@@ -10421,7 +11479,9 @@ var QUESTION_BANK = {
         "$D. P(|X-\\mu|\\geq\\varepsilon) \\geq \\frac{\\sigma^2}{\\varepsilon^2}$"
       ],
       "answer": 1,
-      "solution": "$切比雪夫不等式：P(|X-\\mu| \\geq \\varepsilon) \\leq \\frac{D(X)}{\\varepsilon^2}。它给出了随机变量偏离期望的概率上界，无需知道具体分布。$"
+      "solution": "$切比雪夫不等式：P(|X-\\mu| \\geq \\varepsilon) \\leq \\frac{D(X)}{\\varepsilon^2}。它给出了随机变量偏离期望的概率上界，无需知道具体分布。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-002",
@@ -10435,7 +11495,9 @@ var QUESTION_BANK = {
         "正态分布是极限分布"
       ],
       "answer": 0,
-      "solution": "$伯努利大数定律：\\frac{k}{n} \\xrightarrow{P} p，即频率依概率收敛到概率。这是概率的统计定义的理论基础。$"
+      "solution": "$伯努利大数定律：\\frac{k}{n} \\xrightarrow{P} p，即频率依概率收敛到概率。这是概率的统计定义的理论基础。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-003",
@@ -10443,7 +11505,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "$独立同分布中心极限定理中，\\frac{\\sum X_i - n\\mu}{\\sqrt{n}\\sigma} 的极限分布是 ( )_}__}$",
       "answer": "N(0,1)",
-      "solution": "$林德贝格-莱维中心极限定理：标准化后的独立同分布随机变量之和，当 n \\to \\infty 时收敛到标准正态分布。$"
+      "solution": "$林德贝格-莱维中心极限定理：标准化后的独立同分布随机变量之和，当 n \\to \\infty 时收敛到标准正态分布。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-004",
@@ -10457,7 +11521,9 @@ var QUESTION_BANK = {
         "方差为0"
       ],
       "answer": 0,
-      "solution": "$切比雪夫大数定律要求方差一致有界，即存在常数C使 D(X_i) \\leq C。比独立同分布要求更弱。$"
+      "solution": "$切比雪夫大数定律要求方差一致有界，即存在常数C使 D(X_i) \\leq C。比独立同分布要求更弱。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-005",
@@ -10471,7 +11537,9 @@ var QUESTION_BANK = {
         "任意独立序列"
       ],
       "answer": 1,
-      "solution": "辛钦大数定律：独立同分布且期望存在（方差不一定存在）即可。是常用大数定律中条件最弱的。"
+      "solution": "辛钦大数定律：独立同分布且期望存在（方差不一定存在）即可。是常用大数定律中条件最弱的。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-006",
@@ -10479,7 +11547,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "棣莫弗-拉普拉斯中心极限定理是林德贝格-莱维定理在 (   ) 分布下的特例",
       "answer": "二项",
-      "solution": "$棣莫弗-拉普拉斯定理：二项分布的正态近似。\\frac{X-np}{\\sqrt{npq}} \\xrightarrow{D} N(0,1)。这是历史上第一个中心极限定理。$"
+      "solution": "$棣莫弗-拉普拉斯定理：二项分布的正态近似。\\frac{X-np}{\\sqrt{npq}} \\xrightarrow{D} N(0,1)。这是历史上第一个中心极限定理。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-007",
@@ -10493,7 +11563,9 @@ var QUESTION_BANK = {
         "r阶收敛"
       ],
       "answer": 1,
-      "solution": "$\\xrightarrow{P} 表示依概率收敛（convergence in probability）。\\forall \\varepsilon>0，\\lim_{n\\to\\infty} P(\\big|_{X}^{n}-X|>\\varepsilon)=0。$"
+      "solution": "$\\xrightarrow{P} 表示依概率收敛（convergence in probability）。\\forall \\varepsilon>0，\\lim_{n\\to\\infty} P(\\big|_{X}^{n}-X|>\\varepsilon)=0。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-008",
@@ -10507,7 +11579,9 @@ var QUESTION_BANK = {
         "仅在离散分布下成立"
       ],
       "answer": 1,
-      "solution": "依概率收敛 $\\Rightarrow$ 依分布收敛，但反之不真（除非极限是常数$c$，此时两者等价）。"
+      "solution": "依概率收敛 $\\Rightarrow$ 依分布收敛，但反之不真（除非极限是常数$c$，此时两者等价）。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-009",
@@ -10515,7 +11589,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "$利用切比雪夫不等式，若 E(X)=1, D(X)=0.01，则 P(0.5<X<1.5) \\geq ( )_}__}$",
       "answer": "0.96",
-      "solution": "$P(|X-1| < 0.5) = 1 - P(|X-1| \\geq 0.5) \\geq 1 - \\frac{0.01}{0.25} = 1 - 0.04 = 0.96。$"
+      "solution": "$P(|X-1| < 0.5) = 1 - P(|X-1| \\geq 0.5) \\geq 1 - \\frac{0.01}{0.25} = 1 - 0.04 = 0.96。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-010",
@@ -10529,7 +11605,9 @@ var QUESTION_BANK = {
         "与$n$无关"
       ],
       "answer": 0,
-      "solution": "$中心极限定理是渐近结果，n越大正态近似越准确。通常 n \\geq 30 时即可认为近似效果较好。$"
+      "solution": "$中心极限定理是渐近结果，n越大正态近似越准确。通常 n \\geq 30 时即可认为近似效果较好。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-011",
@@ -10543,7 +11621,9 @@ var QUESTION_BANK = {
         "0.08"
       ],
       "answer": 0,
-      "solution": "$E(X)=20, D(X)=16。P(|X-20| \\geq 10) \\leq \\frac{16}{100} = 0.16。这个估计比较粗糙。$"
+      "solution": "$E(X)=20, D(X)=16。P(|X-20| \\geq 10) \\leq \\frac{16}{100} = 0.16。这个估计比较粗糙。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-012",
@@ -10557,7 +11637,9 @@ var QUESTION_BANK = {
         "$E(X^2)-E^2(X)$"
       ],
       "answer": 0,
-      "solution": "$E(X-E(X)) = E(X)-E(X)=0$恒成立。B一般为正数（除非退化为常数）。C和D等于$D(X)$，不一定为0。"
+      "solution": "$E(X-E(X)) = E(X)-E(X)=0$恒成立。B一般为正数（除非退化为常数）。C和D等于$D(X)$，不一定为0。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-013",
@@ -10565,7 +11647,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "设每次试验成功概率0.5，独立重复400次。用切比雪夫不等式估计成功次数在180到220之间的概率至少为 (   )",
       "answer": "0.75",
-      "solution": "$X\\sim B(400,0.5)，E=200, D=100。P(180<X<220)=P(|X-200|<20) \\geq 1-100/400 = 0.75。用正态近似则约0.954。$"
+      "solution": "$X\\sim B(400,0.5)，E=200, D=100。P(180<X<220)=P(|X-200|<20) \\geq 1-100/400 = 0.75。用正态近似则约0.954。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-014",
@@ -10579,7 +11663,9 @@ var QUESTION_BANK = {
         "r阶矩收敛"
       ],
       "answer": 2,
-      "solution": "几乎处处收敛 $\\Rightarrow$ 依概率收敛 $\\Rightarrow$ 依分布收敛。但几乎处处收敛和r阶矩收敛互不蕴含。"
+      "solution": "几乎处处收敛 $\\Rightarrow$ 依概率收敛 $\\Rightarrow$ 依分布收敛。但几乎处处收敛和r阶矩收敛互不蕴含。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-015",
@@ -10593,7 +11679,9 @@ var QUESTION_BANK = {
         "0.99"
       ],
       "answer": 1,
-      "solution": "$n=400, p=0.5, E=200, D=100。标准化 Z=\\frac{X-200}{10}。P(185<X<215) = P(-1.5<Z<1.5) = 2\\Phi(1.5)-1 \\approx 2\\times0.9332-1=0.8664 \\approx 0.87。$"
+      "solution": "$n=400, p=0.5, E=200, D=100。标准化 Z=\\frac{X-200}{10}。P(185<X<215) = P(-1.5<Z<1.5) = 2\\Phi(1.5)-1 \\approx 2\\times0.9332-1=0.8664 \\approx 0.87。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-016",
@@ -10601,7 +11689,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$设有独立随机变量序列 \\{X_n\\}，D(X_n) \\leq 2（n\\geq 1），则 \\frac{1}{n}\\sum_{i=1}^{n}(X_i-E(X_i)) 依概率收敛于 ( )_}__}$",
       "answer": "0",
-      "solution": "由切比雪夫大数定律，方差一致有界保证 $\\bar{X} - E\\bar{X} \\xrightarrow{P} 0$。"
+      "solution": "由切比雪夫大数定律，方差一致有界保证 $\\bar{X} - E\\bar{X} \\xrightarrow{P} 0$。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-017",
@@ -10615,7 +11705,9 @@ var QUESTION_BANK = {
         "$\\chi^2(200)$"
       ],
       "answer": 0,
-      "solution": "泊松分布 $E=2$, $D=2$。独立和 $S$ 期望200，方差200。由中心极限定理 $S \\xrightarrow{approx} N(200,200)$。"
+      "solution": "泊松分布 $E=2$, $D=2$。独立和 $S$ 期望200，方差200。由中心极限定理 $S \\xrightarrow{approx} N(200,200)$。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-018",
@@ -10623,7 +11715,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$设母体 X 的分布未知，E(X)=\\mu, D(X)=\\sigma^2。用切比雪夫不等式确定使 P(|\\bar{X}-\\mu|<\\sigma/2) \\geq 0.95 所需的最小样本量n至少为 ( )_}__}$",
       "answer": "80",
-      "solution": "$P(|\\bar{X}-\\mu| < \\sigma/2) \\geq 1 - \\frac{\\sigma^2/n}{(\\sigma/2)^2} = 1 - \\frac{4}{n} \\geq 0.95，得 \\frac{4}{n} \\leq 0.05，n \\geq 80。$"
+      "solution": "$P(|\\bar{X}-\\mu| < \\sigma/2) \\geq 1 - \\frac{\\sigma^2/n}{(\\sigma/2)^2} = 1 - \\frac{4}{n} \\geq 0.95，得 \\frac{4}{n} \\leq 0.05，n \\geq 80。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-019",
@@ -10637,7 +11731,9 @@ var QUESTION_BANK = {
         "保证独立性"
       ],
       "answer": 1,
-      "solution": "林德贝格条件是独立随机变量序列满足中心极限定理的充要条件（在一定的正则条件下）。它排除了单个变量主导全局的情况。"
+      "solution": "林德贝格条件是独立随机变量序列满足中心极限定理的充要条件（在一定的正则条件下）。它排除了单个变量主导全局的情况。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-020",
@@ -10651,7 +11747,9 @@ var QUESTION_BANK = {
         "$D. \\max(a,b)$"
       ],
       "answer": 0,
-      "solution": "依概率收敛的连续映射定理：$g(X_n,Y_n) \\xrightarrow{P} g(a,b)$ 对连续函数g成立。$g(x,y)=xy$连续，故 $X_nY_n \\xrightarrow{P} ab$。"
+      "solution": "依概率收敛的连续映射定理：$g(X_n,Y_n) \\xrightarrow{P} g(a,b)$ 对连续函数g成立。$g(x,y)=xy$连续，故 $X_nY_n \\xrightarrow{P} ab$。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-021",
@@ -10665,7 +11763,9 @@ var QUESTION_BANK = {
         "$D. \\frac{1}{4\\lambda}$"
       ],
       "answer": 0,
-      "solution": "$P(X \\geq 2\\lambda) = P(X-\\lambda \\geq \\lambda) \\leq P(|X-\\lambda| \\geq \\lambda) \\leq \\frac{\\lambda}{\\lambda^2} = \\frac{1}{\\lambda}。$"
+      "solution": "$P(X \\geq 2\\lambda) = P(X-\\lambda \\geq \\lambda) \\leq P(|X-\\lambda| \\geq \\lambda) \\leq \\frac{\\lambda}{\\lambda^2} = \\frac{1}{\\lambda}。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-022",
@@ -10679,7 +11779,9 @@ var QUESTION_BANK = {
         "切比雪夫不等式"
       ],
       "answer": 2,
-      "solution": "马尔可夫链等具有弱相依性的随机过程也有中心极限定理。对于强混合序列、鞅差序列等，在一定条件下中心极限定理也成立。"
+      "solution": "马尔可夫链等具有弱相依性的随机过程也有中心极限定理。对于强混合序列、鞅差序列等，在一定条件下中心极限定理也成立。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-023",
@@ -10687,7 +11789,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "设100个独立元件的寿命 $X_i \\sim Exp(0.01)$，总寿命超过12000小时的概率近似为 ( )_}__}（用 $\\Phi$ 表示）",
       "answer": "1-Φ(2)",
-      "solution": "$E(X_i)=100, D(X_i)=10000。E(S)=10000, D(S)=1000000, \\sqrt{D}=1000。P(S>12000) = P(Z>2) = 1-\\Phi(2)。$"
+      "solution": "$E(X_i)=100, D(X_i)=10000。E(S)=10000, D(S)=1000000, \\sqrt{D}=1000。P(S>12000) = P(Z>2) = 1-\\Phi(2)。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-024",
@@ -10701,7 +11805,9 @@ var QUESTION_BANK = {
         "格里汶科定理"
       ],
       "answer": 2,
-      "solution": "这是连续映射定理（Continuous Mapping Theorem）的特例。$g(x,y)=x+y$ 是连续函数，$g(X_n,Y_n) \\xrightarrow{P} g(X,Y)$。"
+      "solution": "这是连续映射定理（Continuous Mapping Theorem）的特例。$g(x,y)=x+y$ 是连续函数，$g(X_n,Y_n) \\xrightarrow{P} g(X,Y)$。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-025",
@@ -10709,7 +11815,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X_n \\sim B(n,p)，则 \\frac{X_n}{n} - p 的收敛阶为 ( )_}__}（填 O_p(1/\\sqrt{n}) 或 O_p(1/n)）$",
       "answer": "$O_p(1/\\sqrtn)$",
-      "solution": "$由中心极限定理 \\sqrt{n}(\\frac{X_n}{n}-p) \\xrightarrow{D} N(0,p(1-p))，故 \\frac{X_n}{n}-p = O_p(1/\\sqrt{n})。$"
+      "solution": "$由中心极限定理 \\sqrt{n}(\\frac{X_n}{n}-p) \\xrightarrow{D} N(0,p(1-p))，故 \\frac{X_n}{n}-p = O_p(1/\\sqrt{n})。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-026",
@@ -10723,7 +11831,9 @@ var QUESTION_BANK = {
         "仅在正态分布下精确"
       ],
       "answer": 1,
-      "solution": "切比雪夫不等式非常保守，因为不依赖分布的具体形式。实际概率往往比它给出的上界小得多。这是为'普适性'付出的代价。"
+      "solution": "切比雪夫不等式非常保守，因为不依赖分布的具体形式。实际概率往往比它给出的上界小得多。这是为'普适性'付出的代价。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-027",
@@ -10737,7 +11847,9 @@ var QUESTION_BANK = {
         "$\\Phi(0.87)$"
       ],
       "answer": 2,
-      "solution": "$E(X_i)=0.5, D(X_i)=1/12。E(S)=100, D(S)=200/12=16.67, \\sqrt{D}=4.082。Z=(110-100)/4.082=2.45。P(S<110) \\approx \\Phi(2.45)。$"
+      "solution": "$E(X_i)=0.5, D(X_i)=1/12。E(S)=100, D(S)=200/12=16.67, \\sqrt{D}=4.082。Z=(110-100)/4.082=2.45。P(S<110) \\approx \\Phi(2.45)。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-028",
@@ -10745,7 +11857,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X_i 独立，P(X_i=1)=P(X_i=-1)=1/2。由中心极限定理，\\sum_{i=1}^{100} X_i 落在 [-20,20] 内的概率近似为 ( )_}__}（用 \\Phi 表示）$",
       "answer": "2Φ(2)-1",
-      "solution": "$E(X_i)=0, D(X_i)=1。E(S)=0, D(S)=100, \\sqrt{D}=10。P(-20\\leq S\\leq 20) = P(-2\\leq Z\\leq 2) = 2\\Phi(2)-1 \\approx 0.954。$"
+      "solution": "$E(X_i)=0, D(X_i)=1。E(S)=0, D(S)=100, \\sqrt{D}=10。P(-20\\leq S\\leq 20) = P(-2\\leq Z\\leq 2) = 2\\Phi(2)-1 \\approx 0.954。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-029",
@@ -10759,7 +11873,9 @@ var QUESTION_BANK = {
         "泊松分布独立同分布样本均值"
       ],
       "answer": 0,
-      "solution": "柯西分布期望不存在，不满足辛钦大数定律的条件。事实上柯西分布的样本均值仍服从柯西分布，不收敛到任何常数。"
+      "solution": "柯西分布期望不存在，不满足辛钦大数定律的条件。事实上柯西分布的样本均值仍服从柯西分布，不收敛到任何常数。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-030",
@@ -10767,7 +11883,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X_n \\sim \\chi^2(n)，根据中心极限定理，当n很大时 \\frac{X_n-n}{\\sqrt{2n}} 近似服从 ( )_}__} 分布$",
       "answer": "N(0,1)",
-      "solution": "$\\chi^2(n)$可表示为n个独立$N(0,1)$的平方和，$E=n$, $D=2n$。由CLT标准化后近似$N(0,1)$。"
+      "solution": "$\\chi^2(n)$可表示为n个独立$N(0,1)$的平方和，$E=n$, $D=2n$。由CLT标准化后近似$N(0,1)$。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-031",
@@ -10781,7 +11899,9 @@ var QUESTION_BANK = {
         "约30份"
       ],
       "answer": 2,
-      "solution": "$X \\sim B(10000,0.001) 近似 P(10)。P(X \\leq k) \\geq 0.95，查泊松分布表得 k=16。但需\\Phi近似：E=10, D\\approx 10, k = 10 + 1.645\\times\\sqrt{10} \\approx 15.2。取16份但选项给的是整数范围。$"
+      "solution": "$X \\sim B(10000,0.001) 近似 P(10)。P(X \\leq k) \\geq 0.95，查泊松分布表得 k=16。但需\\Phi近似：E=10, D\\approx 10, k = 10 + 1.645\\times\\sqrt{10} \\approx 15.2。取16份但选项给的是整数范围。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-032",
@@ -10795,7 +11915,9 @@ var QUESTION_BANK = {
         "A和C都成立"
       ],
       "answer": 3,
-      "solution": "斯卢茨基定理：(1) $X_n+Y_n \\xrightarrow{D} X+c$，(2) $X_nY_n \\xrightarrow{D} cX$。A和C都成立。"
+      "solution": "斯卢茨基定理：(1) $X_n+Y_n \\xrightarrow{D} X+c$，(2) $X_nY_n \\xrightarrow{D} cX$。A和C都成立。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-033",
@@ -10803,7 +11925,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X_1,\\ldots,X_n 独立同分布 Exp(\\lambda)。\\frac{1}{\\bar{X}} 依概率收敛于 ( )_}__}$",
       "answer": "λ",
-      "solution": "$由大数定律 \\bar{X} \\xrightarrow{P} E(X) = 1/\\lambda。由连续映射定理 \\frac{1}{\\bar{X}} \\xrightarrow{P} \\lambda。这是极大似然估计的相合性。$"
+      "solution": "$由大数定律 \\bar{X} \\xrightarrow{P} E(X) = 1/\\lambda。由连续映射定理 \\frac{1}{\\bar{X}} \\xrightarrow{P} \\lambda。这是极大似然估计的相合性。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-034",
@@ -10817,7 +11941,9 @@ var QUESTION_BANK = {
         "15"
       ],
       "answer": 1,
-      "solution": "$经典 Banach 火柴问题。E(R) \\approx \\sqrt{\\frac{2n}{\\pi}} = \\sqrt{\\frac{200}{\\pi}} \\approx 8。精确解为 \\frac{2^{2n-1}}{C_{2n}^n} \\approx \\sqrt{\\frac{n}{\\pi}}。$"
+      "solution": "$经典 Banach 火柴问题。E(R) \\approx \\sqrt{\\frac{2n}{\\pi}} = \\sqrt{\\frac{200}{\\pi}} \\approx 8。精确解为 \\frac{2^{2n-1}}{C_{2n}^n} \\approx \\sqrt{\\frac{n}{\\pi}}。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-035",
@@ -10825,7 +11951,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "依概率收敛和依分布收敛的关系：若极限为常数，则两者 (   )（填等价/不等价）",
       "answer": "等价",
-      "solution": "当极限是常数c时，$X_n \\xrightarrow{P} c \\Leftrightarrow X_n \\xrightarrow{D} c$。因为退化分布仅在c处有跳跃，两者的定义重合。"
+      "solution": "当极限是常数c时，$X_n \\xrightarrow{P} c \\Leftrightarrow X_n \\xrightarrow{D} c$。因为退化分布仅在c处有跳跃，两者的定义重合。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-036",
@@ -10839,7 +11967,9 @@ var QUESTION_BANK = {
         "辛钦大数定律"
       ],
       "answer": 2,
-      "solution": "$均方收敛准则：E(X_n-\\mu)^2 = D(X_n) + (E(X_n)-\\mu)^2 \\to 0，说明 X_n 均方收敛于 \\mu，进而依概率收敛。$"
+      "solution": "$均方收敛准则：E(X_n-\\mu)^2 = D(X_n) + (E(X_n)-\\mu)^2 \\to 0，说明 X_n 均方收敛于 \\mu，进而依概率收敛。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-037",
@@ -10853,7 +11983,9 @@ var QUESTION_BANK = {
         "全概率公式"
       ],
       "answer": 1,
-      "solution": "$大数定律保证样本均值 \\to 积分真值（依概率）。中心极限定理给出估计的精度（收敛速度O(1/\\sqrt{n})和置信区间）。$"
+      "solution": "$大数定律保证样本均值 \\to 积分真值（依概率）。中心极限定理给出估计的精度（收敛速度O(1/\\sqrt{n})和置信区间）。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-038",
@@ -10861,7 +11993,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X_1,\\ldots,X_n 独立同分布，E(X_1)=0, D(X_1)=\\sigma^2。则 \\frac{1}{n}\\sum X_i^2 \\xrightarrow{P} ( )_}__}$",
       "answer": "σ^2",
-      "solution": "$$E(X_$i^2$) = D(X_i) + $E^2$(X_i) = \\sigm$a^2$ + 0 = \\sigm$a^2$$。由大数定律样本二阶矩收敛到总体二阶矩$\\sigm$a^2$$。$"
+      "solution": "$$E(X_$i^2$) = D(X_i) + $E^2$(X_i) = \\sigm$a^2$ + 0 = \\sigm$a^2$$。由大数定律样本二阶矩收敛到总体二阶矩$\\sigm$a^2$$。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-039",
@@ -10875,7 +12009,9 @@ var QUESTION_BANK = {
         "正态分布"
       ],
       "answer": 1,
-      "solution": "林德贝格条件（Lindeberg condition）是独立不同分布情况下中心极限定理成立的充分条件。李雅普诺夫条件是更易验证的充分条件。"
+      "solution": "林德贝格条件（Lindeberg condition）是独立不同分布情况下中心极限定理成立的充分条件。李雅普诺夫条件是更易验证的充分条件。",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     },
     {
       "id": "prob-ll-040",
@@ -10889,7 +12025,9 @@ var QUESTION_BANK = {
         "$D. \\sum_{k=0}^{5}C_{10000}^k(0.001)^k(0.999)^{10000-k}$"
       ],
       "answer": 0,
-      "solution": "$np = 10，X 近似 P(10)。P(X\\leq 5) \\approx e^{-10}\\sum_{k=0}^{5}\\frac{10^k}{k!}。二项分布的泊松近似，条件：n大p小。$"
+      "solution": "$np = 10，X 近似 P(10)。P(X\\leq 5) \\approx e^{-10}\\sum_{k=0}^{5}\\frac{10^k}{k!}。二项分布的泊松近似，条件：n大p小。$",
+      "cat": "大数定律与中心极限定理",
+      "topic": "大数定律与中心极限定理"
     }
   ]
 }
@@ -10911,7 +12049,9 @@ var QUESTION_BANK = {
         "$\\chi^2(n-1)$"
       ],
       "answer": 1,
-      "solution": "$\\bar{X} \\sim N(\\mu, \\sigma^2/n)。E(\\bar{X})=\\mu，D(\\bar{X})=\\sigma^2/n。$"
+      "solution": "$\\bar{X} \\sim N(\\mu, \\sigma^2/n)。E(\\bar{X})=\\mu，D(\\bar{X})=\\sigma^2/n。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-002",
@@ -10919,7 +12059,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "$样本方差 S^2 = \\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\bar{X})^2，分母为n-1而不是n，是为了保证 S^2 是 \\sigma^2 的 ( )_}__} 估计$",
       "answer": "无偏",
-      "solution": "$$E($S^2$)=\\sigm$a^2$$，所以 $$S^2$$ 是总体方差的无偏估计。用n作分母的估计量有偏。$"
+      "solution": "$$E($S^2$)=\\sigm$a^2$$，所以 $$S^2$$ 是总体方差的无偏估计。用n作分母的估计量有偏。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-003",
@@ -10933,7 +12075,9 @@ var QUESTION_BANK = {
         "$D. \\frac{X}{Y/n}$"
       ],
       "answer": 0,
-      "solution": "$T = \\frac{X}{\\sqrt{Y/n}} \\sim t(n)。t分布形状对称，尾部比正态分布厚，自由度n越大越接近正态。$"
+      "solution": "$T = \\frac{X}{\\sqrt{Y/n}} \\sim t(n)。t分布形状对称，尾部比正态分布厚，自由度n越大越接近正态。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-004",
@@ -10947,7 +12091,9 @@ var QUESTION_BANK = {
         "$D. \\frac{U}{V/n}$"
       ],
       "answer": 0,
-      "solution": "$F = \\frac{U/m}{V/n} \\sim F(m,n)。F分布用于方差分析和回归分析中的F检验。$"
+      "solution": "$F = \\frac{U/m}{V/n} \\sim F(m,n)。F分布用于方差分析和回归分析中的F检验。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-005",
@@ -10955,7 +12101,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "矩估计法的基本思想是用 (   ) 矩代替 (   ) 矩（每个空填：样本/总体）",
       "answer": "样本;总体",
-      "solution": "$矩估计：用样本矩代替总体矩建立方程求解参数。如 \\bar{X} = E(X)，\\frac{1}{n}\\sum X_i^2 = E(X^2)。$"
+      "solution": "$矩估计：用样本矩代替总体矩建立方程求解参数。如 \\bar{X} = E(X)，\\frac{1}{n}\\sum X_i^2 = E(X^2)。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-006",
@@ -10969,7 +12117,9 @@ var QUESTION_BANK = {
         "充分估计"
       ],
       "answer": 2,
-      "solution": "$无偏性：E(\\hat{\\theta}) = \\theta。即估计量的期望等于被估参数。无偏性保证估计量在平均意义下不系统偏离。$"
+      "solution": "$无偏性：E(\\hat{\\theta}) = \\theta。即估计量的期望等于被估参数。无偏性保证估计量在平均意义下不系统偏离。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-007",
@@ -10983,7 +12133,9 @@ var QUESTION_BANK = {
         "以上都不对"
       ],
       "answer": 1,
-      "solution": "$置信区间的频率解释：重复抽样构造的置信区间中，有约 1-\\alpha 比例的区间包含真值参数。单个区间要么包含要么不包含。$"
+      "solution": "$置信区间的频率解释：重复抽样构造的置信区间中，有约 1-\\alpha 比例的区间包含真值参数。单个区间要么包含要么不包含。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-008",
@@ -10991,7 +12143,9 @@ var QUESTION_BANK = {
       "difficulty": "basic",
       "question": "$设 X \\sim N(\\mu, 1)，样本量为n，\\mu 的95%置信区间为 [\\bar{X} - 1.96/\\sqrt{n}, \\bar{X} + ( )_}__}]$",
       "answer": "$1.96/\\sqrtn$",
-      "solution": "$方差已知时置信区间：\\bar{X} \\pm z_{\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}。\\alpha=0.05时 z_{0.025}=1.96。$"
+      "solution": "$方差已知时置信区间：\\bar{X} \\pm z_{\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}。\\alpha=0.05时 z_{0.025}=1.96。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-009",
@@ -11005,7 +12159,9 @@ var QUESTION_BANK = {
         "两者都不是"
       ],
       "answer": 1,
-      "solution": "$第I类错误（弃真）：H_0为真但被拒绝，概率为 \\alpha（显著性水平）。第II类错误（取伪）：H_0为假但被接受。$"
+      "solution": "$第I类错误（弃真）：H_0为真但被拒绝，概率为 \\alpha（显著性水平）。第II类错误（取伪）：H_0为假但被接受。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-010",
@@ -11019,7 +12175,9 @@ var QUESTION_BANK = {
         "方差"
       ],
       "answer": 0,
-      "solution": "$\\chi^2(n)$ 是n个独立标准正态随机变量的平方和。自由度n反映了独立信息的数量。$E[\\chi^2(n)]=n$，$D[\\chi^2(n)]=2n$。"
+      "solution": "$\\chi^2(n)$ 是n个独立标准正态随机变量的平方和。自由度n反映了独立信息的数量。$E[\\chi^2(n)]=n$，$D[\\chi^2(n)]=2n$。",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-011",
@@ -11033,7 +12191,9 @@ var QUESTION_BANK = {
         "$D. \\min(X_i)$"
       ],
       "answer": 1,
-      "solution": "$E(X)=\\theta/2。矩估计：\\bar{X} = \\theta/2 \\Rightarrow \\hat{\\theta} = 2\\bar{X}。极大似然估计为 \\max(X_i)。$"
+      "solution": "$E(X)=\\theta/2。矩估计：\\bar{X} = \\theta/2 \\Rightarrow \\hat{\\theta} = 2\\bar{X}。极大似然估计为 \\max(X_i)。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-012",
@@ -11047,7 +12207,9 @@ var QUESTION_BANK = {
         "$D. \\frac{1}{n-1}\\sum(X_i-\\mu)^2$"
       ],
       "answer": 2,
-      "solution": "$\\mu已知时，似然函数只含\\sigma^2。最大化得 \\hat{\\sigma}^2 = \\frac{1}{n}\\sum(X_i-\\mu)^2，这是无偏的。若\\mu未知则MLE为 \\frac{1}{n}\\sum(X_i-\\bar{X})^2（有偏）。$"
+      "solution": "$\\mu已知时，似然函数只含\\sigma^2。最大化得 \\hat{\\sigma}^2 = \\frac{1}{n}\\sum(X_i-\\mu)^2，这是无偏的。若\\mu未知则MLE为 \\frac{1}{n}\\sum(X_i-\\bar{X})^2（有偏）。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-013",
@@ -11055,7 +12217,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$设 X \\sim P(\\lambda)，\\hat{\\lambda} = \\bar{X} 的方差为 ( )_}__}$",
       "answer": "λ/n",
-      "solution": "$D(\\bar{X}) = \\frac{D(X)}{n} = \\frac{\\lambda}{n}。且 E(\\bar{X}) = \\lambda，所以 \\bar{X} 是无偏估计。$"
+      "solution": "$D(\\bar{X}) = \\frac{D(X)}{n} = \\frac{\\lambda}{n}。且 E(\\bar{X}) = \\lambda，所以 \\bar{X} 是无偏估计。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-014",
@@ -11069,7 +12233,9 @@ var QUESTION_BANK = {
         "$D. \\frac{1}{n-1}\\sum X_i$"
       ],
       "answer": 3,
-      "solution": "$E(\\frac{1}{n-1}\\sum X_i) = \\frac{n}{n-1}\\mu \\neq \\mu，有偏。A、B、C的期望均为\\mu。$"
+      "solution": "$E(\\frac{1}{n-1}\\sum X_i) = \\frac{n}{n-1}\\mu \\neq \\mu，有偏。A、B、C的期望均为\\mu。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-015",
@@ -11083,7 +12249,9 @@ var QUESTION_BANK = {
         "参数的矩"
       ],
       "answer": 2,
-      "solution": "$费舍尔信息量反映样本包含参数信息的多少。C-R下界：D(\\hat{\\theta}) \\geq \\frac{1}{nI(\\theta)}（对无偏估计）。信息量越大，估计越精确。$"
+      "solution": "$费舍尔信息量反映样本包含参数信息的多少。C-R下界：D(\\hat{\\theta}) \\geq \\frac{1}{nI(\\theta)}（对无偏估计）。信息量越大，估计越精确。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-016",
@@ -11091,7 +12259,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$X \\sim N(\\mu, \\sigma^2)，\\sigma已知时 \\mu 的 1-\\alpha 置信区间半宽为 ( )_}__}$",
       "answer": "$z_{α/2}·σ/\\sqrtn$",
-      "solution": "$方差已知：[\\bar{X} - z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}, \\bar{X} + z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}]。z_{\\alpha/2} 为标准正态上 \\alpha/2 分位数。$"
+      "solution": "$方差已知：[\\bar{X} - z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}, \\bar{X} + z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}]。z_{\\alpha/2} 为标准正态上 \\alpha/2 分位数。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-017",
@@ -11105,7 +12275,9 @@ var QUESTION_BANK = {
         "取决于数据"
       ],
       "answer": 2,
-      "solution": "$\\alpha 越大，z_{\\alpha/2} 越小，置信区间越窄。\\alpha=0.05时z=1.96；\\alpha=0.10时z=1.645。但可信度越低。$"
+      "solution": "$\\alpha 越大，z_{\\alpha/2} 越小，置信区间越窄。\\alpha=0.05时z=1.96；\\alpha=0.10时z=1.645。但可信度越低。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-018",
@@ -11113,7 +12285,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "设总体 $X \\sim B(1,p)$，则p的极大似然估计 $\\hat{p} =$ ( )_}__}",
       "answer": "X̄",
-      "solution": "$似然函数 L(p) = p^{\\sum X_i}(1-p)^{n-\\sum X_i}。对数似然求导得 \\hat{p} = \\bar{X}。即样本中'1'的比例。$"
+      "solution": "$似然函数 L(p) = p^{\\sum X_i}(1-p)^{n-\\sum X_i}。对数似然求导得 \\hat{p} = \\bar{X}。即样本中'1'的比例。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-019",
@@ -11127,7 +12301,9 @@ var QUESTION_BANK = {
         "正态分布"
       ],
       "answer": 1,
-      "solution": "$\\frac{S_1^2/\\sigma_1^2}{S_2^2/\\sigma_2^2} \\sim F(n_1-1, n_2-1)。方差比 \\sigma_1^2/\\sigma_2^2 的置信区间基于F分布。$"
+      "solution": "$\\frac{S_1^2/\\sigma_1^2}{S_2^2/\\sigma_2^2} \\sim F(n_1-1, n_2-1)。方差比 \\sigma_1^2/\\sigma_2^2 的置信区间基于F分布。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-020",
@@ -11141,7 +12317,9 @@ var QUESTION_BANK = {
         "充分估计"
       ],
       "answer": 0,
-      "solution": "$均方误差 \\to 0 意味着依概率收敛：\\hat{\\theta} 是 \\theta 的一致（相合）估计。无偏是有限样本性质，一致是渐近性质。$"
+      "solution": "$均方误差 \\to 0 意味着依概率收敛：\\hat{\\theta} 是 \\theta 的一致（相合）估计。无偏是有限样本性质，一致是渐近性质。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-021",
@@ -11155,7 +12333,9 @@ var QUESTION_BANK = {
         "$D. -\\frac{\\sigma^4}{n}$"
       ],
       "answer": 1,
-      "solution": "$E(\\hat{\\sigma}^2) = \\frac{n-1}{n}\\sigma^2，偏差 = E(\\hat{\\sigma}^2) - \\sigma^2 = -\\frac{\\sigma^2}{n}。当 n \\to \\infty 时偏差趋于0，是渐近无偏的。$"
+      "solution": "$E(\\hat{\\sigma}^2) = \\frac{n-1}{n}\\sigma^2，偏差 = E(\\hat{\\sigma}^2) - \\sigma^2 = -\\frac{\\sigma^2}{n}。当 n \\to \\infty 时偏差趋于0，是渐近无偏的。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-022",
@@ -11163,7 +12343,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X \\sim U[0,\\theta]，\\theta 的极大似然估计 \\hat{\\theta}_{MLE} = ( )_}__}$",
       "answer": "max(X_i)",
-      "solution": "$似然函数 L(\\theta) = 1/\\theta^n，0 \\leq X_i \\leq \\theta。\\theta越小L越大，但受约束\\theta \\geq \\max(X_i)。故 \\hat{\\theta} = X_{(n)} = \\max(X_i)。$"
+      "solution": "$似然函数 L(\\theta) = 1/\\theta^n，0 \\leq X_i \\leq \\theta。\\theta越小L越大，但受约束\\theta \\geq \\max(X_i)。故 \\hat{\\theta} = X_{(n)} = \\max(X_i)。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-023",
@@ -11177,7 +12359,9 @@ var QUESTION_BANK = {
         "$t(2n)$"
       ],
       "answer": 0,
-      "solution": "$X \\sim Exp(\\lambda) \\Leftrightarrow 2\\lambda X \\sim \\chi^2(2)。独立和：2\\lambda \\sum X_i \\sim \\chi^2(2n)。可用于构造 \\lambda 的置信区间。$"
+      "solution": "$X \\sim Exp(\\lambda) \\Leftrightarrow 2\\lambda X \\sim \\chi^2(2)。独立和：2\\lambda \\sum X_i \\sim \\chi^2(2n)。可用于构造 \\lambda 的置信区间。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-024",
@@ -11191,7 +12375,9 @@ var QUESTION_BANK = {
         "无关"
       ],
       "answer": 1,
-      "solution": "$\\hat{\\sigma}^2 = \\frac{1}{n}\\sum(X_i-\\bar{X})^2，S^2 = \\frac{1}{n-1}\\sum(X_i-\\bar{X})^2。故 S^2 = \\frac{n}{n-1}\\hat{\\sigma}^2。$"
+      "solution": "$\\hat{\\sigma}^2 = \\frac{1}{n}\\sum(X_i-\\bar{X})^2，S^2 = \\frac{1}{n-1}\\sum(X_i-\\bar{X})^2。故 S^2 = \\frac{n}{n-1}\\hat{\\sigma}^2。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-025",
@@ -11199,7 +12385,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X \\sim N(\\mu, \\sigma^2)，\\mu 未知，\\sigma^2的 1-\\alpha 置信区间基于的枢轴量为 ( )_}__}$",
       "answer": "(n-1)$S^2$/σ^2 ~ χ^2(n-1)",
-      "solution": "$\\frac{(n-1)S^2}{\\sigma^2} \\sim \\chi^2(n-1)。置信区间：[\\frac{(n-1)S^2}{\\chi^2_{\\alpha/2}}, \\frac{(n-1)S^2}{\\chi^2_{1-\\alpha/2}}]。$"
+      "solution": "$\\frac{(n-1)S^2}{\\sigma^2} \\sim \\chi^2(n-1)。置信区间：[\\frac{(n-1)S^2}{\\chi^2_{\\alpha/2}}, \\frac{(n-1)S^2}{\\chi^2_{1-\\alpha/2}}]。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-026",
@@ -11213,7 +12401,9 @@ var QUESTION_BANK = {
         "正态分布"
       ],
       "answer": 0,
-      "solution": "$两样本t检验：方差相等时用pooled方差 S_p^2，\\frac{(\\bar{X}-\\bar{Y})-(\\mu_1-\\mu_2)}{S_p\\sqrt{1/n_1+1/n_2}} \\sim t(n_1+n_2-2)。$"
+      "solution": "$两样本t检验：方差相等时用pooled方差 S_p^2，\\frac{(\\bar{X}-\\bar{Y})-(\\mu_1-\\mu_2)}{S_p\\sqrt{1/n_1+1/n_2}} \\sim t(n_1+n_2-2)。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-027",
@@ -11221,7 +12411,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X \\sim N(\\mu, \\sigma^2)，样本容量n。\\mu 的 1-\\alpha 置信区间的长度为 ( )_}__}（用 t_{\\alpha/2}(n-1), S, n 表示）$",
       "answer": "$2t_{α/2}(n-1)·S/\\sqrtn$",
-      "solution": "$\\sigma未知时用t分布：[\\bar{X} - t_{\\alpha/2}(n-1)\\frac{S}{\\sqrt{n}}, \\bar{X} + t_{\\alpha/2}(n-1)\\frac{S}{\\sqrt{n}}]。长度 = 2t_{\\alpha/2}(n-1) \\cdot S/\\sqrt{n}。$"
+      "solution": "$\\sigma未知时用t分布：[\\bar{X} - t_{\\alpha/2}(n-1)\\frac{S}{\\sqrt{n}}, \\bar{X} + t_{\\alpha/2}(n-1)\\frac{S}{\\sqrt{n}}]。长度 = 2t_{\\alpha/2}(n-1) \\cdot S/\\sqrt{n}。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-028",
@@ -11235,7 +12427,9 @@ var QUESTION_BANK = {
         "计算量最小"
       ],
       "answer": 0,
-      "solution": "$充分统计量 T(X)：给定T后，样本的条件分布与参数\\theta无关，即T包含了样本中有关\\theta的全部信息。因子分解定理用于判断。$"
+      "solution": "$充分统计量 T(X)：给定T后，样本的条件分布与参数\\theta无关，即T包含了样本中有关\\theta的全部信息。因子分解定理用于判断。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-029",
@@ -11249,7 +12443,9 @@ var QUESTION_BANK = {
         "A和C"
       ],
       "answer": 3,
-      "solution": "指数族分布且具有单调似然比性质，由奈曼-皮尔逊引理可构造UMP检验。正态、二项、泊松等都属于指数族。"
+      "solution": "指数族分布且具有单调似然比性质，由奈曼-皮尔逊引理可构造UMP检验。正态、二项、泊松等都属于指数族。",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-030",
@@ -11257,7 +12453,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X_1,\\ldots,X_n 独立同分布 N(0,\\sigma^2)。\\sigma^2 的C-R下界为 ( )_}__}$",
       "answer": "2σ^4/n",
-      "solution": "$I(\\sigma^2) = \\frac{1}{2\\sigma^4}（单个观测）。C-R下界 = \\frac{1}{nI} = \\frac{2\\sigma^4}{n}。\\frac{1}{n}\\sum X_i^2 达到此下界，是最小方差无偏估计。$"
+      "solution": "$I(\\sigma^2) = \\frac{1}{2\\sigma^4}（单个观测）。C-R下界 = \\frac{1}{nI} = \\frac{2\\sigma^4}{n}。\\frac{1}{n}\\sum X_i^2 达到此下界，是最小方差无偏估计。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-031",
@@ -11271,7 +12469,9 @@ var QUESTION_BANK = {
         "以上都不对"
       ],
       "answer": 1,
-      "solution": "样本量n越大，估计越精确，置信区间越窄。置信水平越高区间越宽（A错），总体方差越大区间越宽（C错）。"
+      "solution": "样本量n越大，估计越精确，置信区间越窄。置信水平越高区间越宽（A错），总体方差越大区间越宽（C错）。",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-032",
@@ -11285,7 +12485,9 @@ var QUESTION_BANK = {
         "功效函数的值"
       ],
       "answer": 1,
-      "solution": "$p值是在 H_0 为真的假定下，检验统计量取值比观测值更极端的概率。p < \\alpha 时拒绝 H_0。p值越小，反对 H_0 的证据越强。$"
+      "solution": "$p值是在 H_0 为真的假定下，检验统计量取值比观测值更极端的概率。p < \\alpha 时拒绝 H_0。p值越小，反对 H_0 的证据越强。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-033",
@@ -11293,7 +12495,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设总体 X 的分布函数为 F(x;\\theta)。次序统计量 (X_{(1)},\\ldots,X_{(n)}) 是 \\theta 的 ( )_}__} 统计量（填充分/完备/有效）$",
       "answer": "充分",
-      "solution": "对于任意分布，次序统计量总是充分的（给定排序后，样本值的具体排列不再提供额外信息）。但一般不完备。"
+      "solution": "对于任意分布，次序统计量总是充分的（给定排序后，样本值的具体排列不再提供额外信息）。但一般不完备。",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-034",
@@ -11307,7 +12511,9 @@ var QUESTION_BANK = {
         "有显式解"
       ],
       "answer": 0,
-      "solution": "$对伽马分布，\\alpha的MLE满足 \\ln\\alpha - \\psi(\\alpha) = \\ln\\bar{X} - \\overline{\\ln X}，其中\\psi是digamma函数。无显式解，需数值求解。$"
+      "solution": "$对伽马分布，\\alpha的MLE满足 \\ln\\alpha - \\psi(\\alpha) = \\ln\\bar{X} - \\overline{\\ln X}，其中\\psi是digamma函数。无显式解，需数值求解。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-035",
@@ -11321,7 +12527,9 @@ var QUESTION_BANK = {
         "无偏且方差趋于0是相合的充要条件"
       ],
       "answer": 2,
-      "solution": "$均方误差 \\to 0 \\Rightarrow 相合：P(|\\hat{\\theta}-\\theta|>\\varepsilon) \\leq E(\\hat{\\theta}-\\theta)^2/\\varepsilon^2 \\to 0。C正确。A不一定（如X_1无偏但不相合），B也不一定。$"
+      "solution": "$均方误差 \\to 0 \\Rightarrow 相合：P(|\\hat{\\theta}-\\theta|>\\varepsilon) \\leq E(\\hat{\\theta}-\\theta)^2/\\varepsilon^2 \\to 0。C正确。A不一定（如X_1无偏但不相合），B也不一定。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-036",
@@ -11329,7 +12537,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 X \\sim Exp(\\lambda)，\\lambda 的无偏估计 \\hat{\\lambda} = ( )_}__}（用 \\bar{X} 表示）$",
       "answer": "(n-1)/(nX̄)",
-      "solution": "$注意 E(1/\\bar{X}) \\neq \\lambda。\\sum X_i \\sim \\Gamma(n,\\lambda)，E(1/\\sum X_i) = \\lambda/(n-1)。故 \\hat{\\lambda} = \\frac{n-1}{n\\bar{X}} 是无偏的。实际上 E(\\frac{n-1}{\\sum X_i}) = \\lambda。$"
+      "solution": "$注意 E(1/\\bar{X}) \\neq \\lambda。\\sum X_i \\sim \\Gamma(n,\\lambda)，E(1/\\sum X_i) = \\lambda/(n-1)。故 \\hat{\\lambda} = \\frac{n-1}{n\\bar{X}} 是无偏的。实际上 E(\\frac{n-1}{\\sum X_i}) = \\lambda。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-037",
@@ -11343,7 +12553,9 @@ var QUESTION_BANK = {
         "0"
       ],
       "answer": 1,
-      "solution": "$MSE = E(\\hat{\\theta}-\\theta)^2 = D(\\hat{\\theta}) + (Bias)^2。无偏时 Bias=0，MSE = D(\\hat{\\theta})。$"
+      "solution": "$MSE = E(\\hat{\\theta}-\\theta)^2 = D(\\hat{\\theta}) + (Bias)^2。无偏时 Bias=0，MSE = D(\\hat{\\theta})。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-038",
@@ -11351,7 +12563,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$在 H_0: \\mu = \\mu_0 vs H_1: \\mu \\neq \\mu_0 的双边检验中，若 |T| > t_{\\alpha/2} 时拒绝 H_0。此时第II类错误 \\beta 依赖于 ( )_}__}（填参数名称）$",
       "answer": "μ",
-      "solution": "$\\beta(\\mu) = P(\\text{接受}H_0|\\mu \\neq \\mu_0)，是 \\mu 的函数。\\beta 随 |\\mu-\\mu_0| 增大而减小。1-\\beta 是功效函数。$"
+      "solution": "$\\beta(\\mu) = P(\\text{接受}H_0|\\mu \\neq \\mu_0)，是 \\mu 的函数。\\beta 随 |\\mu-\\mu_0| 增大而减小。1-\\beta 是功效函数。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-039",
@@ -11365,7 +12579,9 @@ var QUESTION_BANK = {
         "更无偏"
       ],
       "answer": 0,
-      "solution": "$无偏估计中方差小者更有效。相对效率定义为 D(\\hat{\\theta}_2)/D(\\hat{\\theta}_1)。最小方差无偏估计（UMVUE）是效率最高的无偏估计。$"
+      "solution": "$无偏估计中方差小者更有效。相对效率定义为 D(\\hat{\\theta}_2)/D(\\hat{\\theta}_1)。最小方差无偏估计（UMVUE）是效率最高的无偏估计。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     },
     {
       "id": "prob-stat-040",
@@ -11379,7 +12595,9 @@ var QUESTION_BANK = {
         "是否使用先验信息"
       ],
       "answer": 1,
-      "solution": "$贝叶斯方法将参数\\theta视为随机变量（有先验分布），利用样本更新为后验分布。频率学派视\\theta为未知常数。这导致两者在推理框架上有本质差异。$"
+      "solution": "$贝叶斯方法将参数\\theta视为随机变量（有先验分布），利用样本更新为后验分布。频率学派视\\theta为未知常数。这导致两者在推理框架上有本质差异。$",
+      "cat": "数理统计",
+      "topic": "数理统计"
     }
   ]
 }
@@ -11401,7 +12619,9 @@ var QUESTION_BANK = {
         "不存在"
       ],
       "answer": 2,
-      "solution": "$由导数定义：f'(0) = \\lim_{x \\to 0} [f(x)-f(0)]/(x-0) = \\lim_{x \\to 0} f(x)/x = 2。此题综合考查导数定义与极限计算，关键是识别出该极限就是导数定义式。$"
+      "solution": "$由导数定义：f'(0) = \\lim_{x \\to 0} [f(x)-f(0)]/(x-0) = \\lim_{x \\to 0} f(x)/x = 2。此题综合考查导数定义与极限计算，关键是识别出该极限就是导数定义式。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-002",
@@ -11415,7 +12635,9 @@ var QUESTION_BANK = {
         "无法确定"
       ],
       "answer": 0,
-      "solution": "$极限存在且有限，分母\\rightarrow0，所以分子也必须\\rightarrow0（否则极限为\\infty）。故 f(1)=\\lim(x\\rightarrow1) f(x)=0。进一步由导数定义可得 f'(1)=3。此题反用导数定义：由极限存在反推函数值。$"
+      "solution": "$极限存在且有限，分母\\rightarrow0，所以分子也必须\\rightarrow0（否则极限为\\infty）。故 f(1)=\\lim(x\\rightarrow1) f(x)=0。进一步由导数定义可得 f'(1)=3。此题反用导数定义：由极限存在反推函数值。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-003",
@@ -11429,7 +12651,9 @@ var QUESTION_BANK = {
         "2"
       ],
       "answer": 1,
-      "solution": "$0/0型，洛必达（两次）：第一次得 \\lim(e^x-1)/(2x) = 1/2（再用一次或等价无穷小 e^x-1~x）。或用泰勒展开：e^x=1+x+x^{2}/2+o(x^{2})，代入得 x^{2}/2/x^{2}=1/2。考查洛必达与泰勒展开的结合使用。$"
+      "solution": "$0/0型，洛必达（两次）：第一次得 \\lim(e^x-1)/(2x) = 1/2（再用一次或等价无穷小 e^x-1~x）。或用泰勒展开：e^x=1+x+x^{2}/2+o(x^{2})，代入得 x^{2}/2/x^{2}=1/2。考查洛必达与泰勒展开的结合使用。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-004",
@@ -11443,7 +12667,9 @@ var QUESTION_BANK = {
         "-1/2"
       ],
       "answer": 1,
-      "solution": "泰勒展开 \\sin x = x - x^{3}/6 + o(x^{3})，代入得 -x^{3}/6 / x^{3} = -1/6。也可洛必达三次，但泰勒更直接。考查常见函数的泰勒展开在极限中的应用。"
+      "solution": "泰勒展开 \\sin x = x - x^{3}/6 + o(x^{3})，代入得 -x^{3}/6 / x^{3} = -1/6。也可洛必达三次，但泰勒更直接。考查常见函数的泰勒展开在极限中的应用。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-005",
@@ -11457,7 +12683,9 @@ var QUESTION_BANK = {
         "不存在"
       ],
       "answer": 1,
-      "solution": "$极限为 A 有限值，分母\\rightarrow0得 f(0)=0。再由导数定义：f'(0) = \\lim_{x \\to 0} f(x)/x = A。注意题目给了 f'(x) 连续是冗余条件，实际只需可导即可。考查审题能力。$"
+      "solution": "$极限为 A 有限值，分母\\rightarrow0得 f(0)=0。再由导数定义：f'(0) = \\lim_{x \\to 0} f(x)/x = A。注意题目给了 f'(x) 连续是冗余条件，实际只需可导即可。考查审题能力。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-006",
@@ -11471,7 +12699,9 @@ var QUESTION_BANK = {
         "二阶可导"
       ],
       "answer": 1,
-      "solution": "$f'(0) = \\lim h²\\sin(1/h)/h = \\lim h \\sin(1/h) = 0（有界×无穷小）。x\\neq0时 f'(x)=2x \\sin(1/x) - \\cos(1/x)，\\lim_{x \\to 0} f'(x) 不存在（\\cos(1/x)震荡）。故 f 可导但 f' 在 x=0 不连续。经典反例，综合连续、可导、导数连续三个层次。$"
+      "solution": "$f'(0) = \\lim h²\\sin(1/h)/h = \\lim h \\sin(1/h) = 0（有界×无穷小）。x\\neq0时 f'(x)=2x \\sin(1/x) - \\cos(1/x)，\\lim_{x \\to 0} f'(x) 不存在（\\cos(1/x)震荡）。故 f 可导但 f' 在 x=0 不连续。经典反例，综合连续、可导、导数连续三个层次。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-007",
@@ -11485,7 +12715,9 @@ var QUESTION_BANK = {
         "∞"
       ],
       "answer": 2,
-      "solution": "$由条件得 f(0)=1，f'(0)=2。所求 = \\lim exp[(1/x)·\\ln f(x)]。利用 \\ln f(x) ~ f(x)-1（x\\rightarrow0），原式 = exp[\\lim (f(x)-1)/x] = exp(f'(0)) = e²。考查幂指函数极限化归与导数定义。$"
+      "solution": "$由条件得 f(0)=1，f'(0)=2。所求 = \\lim exp[(1/x)·\\ln f(x)]。利用 \\ln f(x) ~ f(x)-1（x\\rightarrow0），原式 = exp[\\lim (f(x)-1)/x] = exp(f'(0)) = e²。考查幂指函数极限化归与导数定义。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-008",
@@ -11499,7 +12731,9 @@ var QUESTION_BANK = {
         "0"
       ],
       "answer": 1,
-      "solution": "利用二阶泰勒：f(x₀±h) = f(x₀) ± f'(x₀)h + f''(x₀)h²/2 + o(h²)。相加得 2f(x₀) + f''(x₀)h² + o(h²)，所以分子 = f''(x₀)h² + o(h²)，极限为 f''(x₀)。考查二阶泰勒与对称差商的二阶精度。"
+      "solution": "利用二阶泰勒：f(x₀±h) = f(x₀) ± f'(x₀)h + f''(x₀)h²/2 + o(h²)。相加得 2f(x₀) + f''(x₀)h² + o(h²)，所以分子 = f''(x₀)h² + o(h²)，极限为 f''(x₀)。考查二阶泰勒与对称差商的二阶精度。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-009",
@@ -11507,7 +12741,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "设 f(x) = (x-1)(x-2)²(x-3)³，则 f'(1) = (   )",
       "answer": "-8",
-      "solution": "f'(x) = (x-2)²(x-3)³ + (x-1)·[(x-2)²(x-3)³]'。代入 x=1：f'(1) = (1-2)²(1-3)³ + 0 = 1×(-8) = -8。乘积函数在某点导数为零若该因子在该点为零，但需检查其他因子在该点的值。(1-2)²=1，(1-3)³=-8，乘积=-8。"
+      "solution": "f'(x) = (x-2)²(x-3)³ + (x-1)·[(x-2)²(x-3)³]'。代入 x=1：f'(1) = (1-2)²(1-3)³ + 0 = 1×(-8) = -8。乘积函数在某点导数为零若该因子在该点为零，但需检查其他因子在该点的值。(1-2)²=1，(1-3)³=-8，乘积=-8。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-010",
@@ -11515,7 +12751,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$设曲线 y = x·e^x 在点 (0,0) 处的切线方程为 y = ( )_}__}$",
       "answer": "x",
-      "solution": "$y' = x·e^x + e^x = e^x(x+1)，y'(0) = 1·1 = 1。切线方程为 y - 0 = 1·(x - 0)，即 y = x。考查导数几何意义——切线斜率。综合乘积求导法则。$"
+      "solution": "$y' = x·e^x + e^x = e^x(x+1)，y'(0) = 1·1 = 1。切线方程为 y - 0 = 1·(x - 0)，即 y = x。考查导数几何意义——切线斜率。综合乘积求导法则。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-011",
@@ -11523,7 +12761,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$若 \\lim_{x \\to 0} [\\ln(1+x) + a \\ln(1-x)] / x^{2} = b（a,b为常数），则 a = ( )_}__}$",
       "answer": "1",
-      "solution": "$泰勒展开：\\ln(1+x)=x-x^{2}/2+o(x^{2})，\\ln(1-x)=-x-x^{2}/2+o(x^{2})。分子 = x-x^{2}/2 + a(-x-x^{2}/2) + o(x^{2}) = (1-a)x - (1+a)x^{2}/2 + o(x^{2})。要使极限存在且有限，分子中 x 的系数必须为零即 1-a=0，解得 a=1。此时分子=-x^{2}+o(x^{2})，极限值为 b=-1。考查参数确定型极限，综合泰勒展开与待定系数法。$"
+      "solution": "$泰勒展开：\\ln(1+x)=x-x^{2}/2+o(x^{2})，\\ln(1-x)=-x-x^{2}/2+o(x^{2})。分子 = x-x^{2}/2 + a(-x-x^{2}/2) + o(x^{2}) = (1-a)x - (1+a)x^{2}/2 + o(x^{2})。要使极限存在且有限，分子中 x 的系数必须为零即 1-a=0，解得 a=1。此时分子=-x^{2}+o(x^{2})，极限值为 b=-1。考查参数确定型极限，综合泰勒展开与待定系数法。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-012",
@@ -11537,7 +12777,9 @@ var QUESTION_BANK = {
         "f''(ξ) ≥ 4"
       ],
       "answer": 0,
-      "solution": "$设最大值点为 c∈(0,1)，f(c)=2，f'(c)=0。用泰勒：f(0)=f(c)+f'(c)(0-c)+f''(ξ₁)(0-c)²/2，即 0=2+f''(ξ₁)c²/2，得 f''(ξ₁)=-4/c² \\leq -4。同理 f''(ξ₂)=-4/(1-c)² \\leq (min: 当c=1/2时=-16)。取较小者即 \\leq -8（当c\\neq1/2时有一边更紧）。最严格结论：f''(ξ)\\leq-4/c²\\leq-4。选项中最严格可保证的是 -8。考查费马引理+泰勒+极值综合。$"
+      "solution": "$设最大值点为 c∈(0,1)，f(c)=2，f'(c)=0。用泰勒：f(0)=f(c)+f'(c)(0-c)+f''(ξ₁)(0-c)²/2，即 0=2+f''(ξ₁)c²/2，得 f''(ξ₁)=-4/c² \\leq -4。同理 f''(ξ₂)=-4/(1-c)² \\leq (min: 当c=1/2时=-16)。取较小者即 \\leq -8（当c\\neq1/2时有一边更紧）。最严格结论：f''(ξ)\\leq-4/c²\\leq-4。选项中最严格可保证的是 -8。考查费马引理+泰勒+极值综合。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-013",
@@ -11551,7 +12793,9 @@ var QUESTION_BANK = {
         "π"
       ],
       "answer": 1,
-      "solution": "$变上限积分求导公式：F'(x) = x·\\sin x。代入 x=\\pi/2，F'(\\pi/2) = \\pi/2·\\sin(\\pi/2) = \\pi/2·1 = \\pi/2。考查微积分基本定理（FTC），是导数与积分最直接的交叉。$"
+      "solution": "$变上限积分求导公式：F'(x) = x·\\sin x。代入 x=\\pi/2，F'(\\pi/2) = \\pi/2·\\sin(\\pi/2) = \\pi/2·1 = \\pi/2。考查微积分基本定理（FTC），是导数与积分最直接的交叉。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-014",
@@ -11565,7 +12809,9 @@ var QUESTION_BANK = {
         "2"
       ],
       "answer": 1,
-      "solution": "$变限积分求导（链式法则）：F'(x) = e^((x^{2})²) · 2x = 2x·e^(x⁴)。F'(1) = 2·e。考查复合函数型变限积分求导，上限是 x^{2} 需用链式法则。$"
+      "solution": "$变限积分求导（链式法则）：F'(x) = e^((x^{2})²) · 2x = 2x·e^(x⁴)。F'(1) = 2·e。考查复合函数型变限积分求导，上限是 x^{2} 需用链式法则。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-015",
@@ -11579,7 +12825,9 @@ var QUESTION_BANK = {
         "0"
       ],
       "answer": 1,
-      "solution": "两边对 x 求导：f(x) = (x·eˣ)' = eˣ + x·eˣ = eˣ(1+x)。f(1) = e(1+1) = 2e。考查：变限积分求导 + 乘积求导法则。"
+      "solution": "两边对 x 求导：f(x) = (x·eˣ)' = eˣ + x·eˣ = eˣ(1+x)。f(1) = e(1+1) = 2e。考查：变限积分求导 + 乘积求导法则。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-016",
@@ -11593,7 +12841,9 @@ var QUESTION_BANK = {
         "x^{3}/9 - x^{2}/4"
       ],
       "answer": 0,
-      "solution": "变上限积分求导即得被积函数：f(x) = d/dx [x^{3}/3 - x^{2}/2 + C] = x^{2} - x。注意常数 C 求导后消失。考查导数是积分的逆运算。"
+      "solution": "变上限积分求导即得被积函数：f(x) = d/dx [x^{3}/3 - x^{2}/2 + C] = x^{2} - x。注意常数 C 求导后消失。考查导数是积分的逆运算。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-017",
@@ -11607,7 +12857,9 @@ var QUESTION_BANK = {
         "√2/2"
       ],
       "answer": 0,
-      "solution": "$切线斜率 = y'(1)。y'(x) = \\sqrt{1+x^{2}}，y'(1) = \\sqrt2。考查变限积分求导+导数的几何意义。$"
+      "solution": "$切线斜率 = y'(1)。y'(x) = \\sqrt{1+x^{2}}，y'(1) = \\sqrt2。考查变限积分求导+导数的几何意义。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-018",
@@ -11621,7 +12873,9 @@ var QUESTION_BANK = {
         "0"
       ],
       "answer": 1,
-      "solution": "$写成 \\int ₀ˣ (x-t)f(t) dt = x\\int ₀ˣ f(t) dt - \\int ₀ˣ t f(t) dt。求导得 \\int ₀ˣ f(t) dt + xf(x) - xf(x) = \\int ₀ˣ f(t) dt。考查含参积分的求导技巧——先分离 x 与 t。$"
+      "solution": "$写成 \\int ₀ˣ (x-t)f(t) dt = x\\int ₀ˣ f(t) dt - \\int ₀ˣ t f(t) dt。求导得 \\int ₀ˣ f(t) dt + xf(x) - xf(x) = \\int ₀ˣ f(t) dt。考查含参积分的求导技巧——先分离 x 与 t。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-019",
@@ -11629,7 +12883,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$由 \\int ₀ˣ f(t) dt = x·\\cos x 确定的 f(x) = ( )_}__}$",
       "answer": "cos x - x sin x",
-      "solution": "求导：f(x) = (x·\\cos x)' = \\cos x - x·\\sin x。考查变上限积分求导与乘积法则。"
+      "solution": "求导：f(x) = (x·\\cos x)' = \\cos x - x·\\sin x。考查变上限积分求导与乘积法则。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-020",
@@ -11643,7 +12899,9 @@ var QUESTION_BANK = {
         "常数"
       ],
       "answer": 0,
-      "solution": "$g'(x) = [xf'(x) - f(x)]/x^{2} = [xf'(x) - f(x)]/x^{2}。由拉格朗日中值定理：f(x)-f(0)=f(x)=f'(ξ)x，ξ∈(0,x)。由于 f' 递增，f'(ξ) \\leq f'(x)，故 f(x)=f'(ξ)x \\leq f'(x)x，即 xf'(x)-f(x) \\geq 0，g'(x) \\geq 0。考查中值定理+导数符号+单调性综合判断。$"
+      "solution": "$g'(x) = [xf'(x) - f(x)]/x^{2} = [xf'(x) - f(x)]/x^{2}。由拉格朗日中值定理：f(x)-f(0)=f(x)=f'(ξ)x，ξ∈(0,x)。由于 f' 递增，f'(ξ) \\leq f'(x)，故 f(x)=f'(ξ)x \\leq f'(x)x，即 xf'(x)-f(x) \\geq 0，g'(x) \\geq 0。考查中值定理+导数符号+单调性综合判断。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-021",
@@ -11657,7 +12915,9 @@ var QUESTION_BANK = {
         "1/e"
       ],
       "answer": 0,
-      "solution": "$分部积分：\\int ₀¹ x eˣ dx = [x eˣ]\\big|_{0}¹ - \\int ₀¹ eˣ dx = e - [eˣ]\\big|_{0}¹ = e - (e - 1) = 1。考查定积分的分部积分法，是积分学核心技巧。$"
+      "solution": "$分部积分：\\int ₀¹ x eˣ dx = [x eˣ]\\big|_{0}¹ - \\int ₀¹ eˣ dx = e - [eˣ]\\big|_{0}¹ = e - (e - 1) = 1。考查定积分的分部积分法，是积分学核心技巧。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-022",
@@ -11665,7 +12925,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\int ₀^(\\pi/2) x·\\cos x dx = ( )_}__}$",
       "answer": "$\\pi/2 - 1$",
-      "solution": "$分部积分：u=x，dv=\\cos x dx。\\int x \\cos x dx = x \\sin x - \\int \\sin x dx = x \\sin x + \\cos x。从 0 到 \\pi/2：(\\pi/2·1+0) - (0+1) = \\pi/2 - 1。考查分部积分+定积分计算。$"
+      "solution": "$分部积分：u=x，dv=\\cos x dx。\\int x \\cos x dx = x \\sin x - \\int \\sin x dx = x \\sin x + \\cos x。从 0 到 \\pi/2：(\\pi/2·1+0) - (0+1) = \\pi/2 - 1。考查分部积分+定积分计算。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-023",
@@ -11673,7 +12935,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$设 f(x) = \\int ₀ˣ e^(-t²) dt，则 \\int ₀¹ x·f(x) dx = ( )_}__}$",
       "answer": "$(e^(-1)+1)/4$",
-      "solution": "$交换积分次序：\\int ₀¹ x f(x) dx = \\int ₀¹ x·\\int ₀ˣ e^(-t²) dt dx = \\int ₀¹ e^(-t²) \\int ₜ¹ x dx dt = \\int ₀¹ e^(-t²)·(1-t²)/2 dt。令 u=t²，du=2t dt 不直接。改为分部：\\int ₀¹ (1-t²)/2 · e^(-t²) dt。或用 f(x) 的原函数：设 F 为 f 的原函数，分部积分法。答案是 (1+e^(-1))/4。$"
+      "solution": "$交换积分次序：\\int ₀¹ x f(x) dx = \\int ₀¹ x·\\int ₀ˣ e^(-t²) dt dx = \\int ₀¹ e^(-t²) \\int ₜ¹ x dx dt = \\int ₀¹ e^(-t²)·(1-t²)/2 dt。令 u=t²，du=2t dt 不直接。改为分部：\\int ₀¹ (1-t²)/2 · e^(-t²) dt。或用 f(x) 的原函数：设 F 为 f 的原函数，分部积分法。答案是 (1+e^(-1))/4。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-024",
@@ -11687,7 +12951,9 @@ var QUESTION_BANK = {
         "不存在"
       ],
       "answer": 1,
-      "solution": "$0/0型。f'(x)=e^(x^{2}/2)，g'(x)=\\sin x。洛必达：\\lim f'(x)/g'(x) = \\lim e^(x^{2}/2)/\\sin x。x\\rightarrow0时 e^(x^{2}/2)\\rightarrow1，\\sin x~x，但洛必达结果也是 0/0？不对：f(0)=0，g(0)=0。洛必达得 \\lim e^(x^{2}/2)/\\sin x = \\infty？再算：f'(0)=1，g'(0)=0，极限不存在（\\infty）。答案选 \\infty。但再想想，\\sin x ~ x，极限是 \\infty。选 \\infty。$"
+      "solution": "$0/0型。f'(x)=e^(x^{2}/2)，g'(x)=\\sin x。洛必达：\\lim f'(x)/g'(x) = \\lim e^(x^{2}/2)/\\sin x。x\\rightarrow0时 e^(x^{2}/2)\\rightarrow1，\\sin x~x，但洛必达结果也是 0/0？不对：f(0)=0，g(0)=0。洛必达得 \\lim e^(x^{2}/2)/\\sin x = \\infty？再算：f'(0)=1，g'(0)=0，极限不存在（\\infty）。答案选 \\infty。但再想想，\\sin x ~ x，极限是 \\infty。选 \\infty。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-025",
@@ -11701,7 +12967,9 @@ var QUESTION_BANK = {
         "y = x^{2}+1"
       ],
       "answer": 0,
-      "solution": "$可分离变量：dy/y = 2x dx，积分得 \\ln|y| = x^{2} + C，y = Ce^(x^{2})。由 y(0)=1 得 C=1，故 y=e^(x^{2})。考查一阶可分离变量方程，核心是用不定积分求解。$"
+      "solution": "$可分离变量：dy/y = 2x dx，积分得 \\ln|y| = x^{2} + C，y = Ce^(x^{2})。由 y(0)=1 得 C=1，故 y=e^(x^{2})。考查一阶可分离变量方程，核心是用不定积分求解。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-026",
@@ -11715,7 +12983,9 @@ var QUESTION_BANK = {
         "$y = e^x(C+x)$"
       ],
       "answer": 0,
-      "solution": "$一阶线性非齐次方程，P(x)=1，积分因子 μ=e^(\\int 1 dx)=e^x。两边乘 e^x：d(ye^x)/dx = 1，积分得 ye^x = x + C，y = (x+C)e^(-x)。考查一阶线性方程的积分因子法。$"
+      "solution": "$一阶线性非齐次方程，P(x)=1，积分因子 μ=e^(\\int 1 dx)=e^x。两边乘 e^x：d(ye^x)/dx = 1，积分得 ye^x = x + C，y = (x+C)e^(-x)。考查一阶线性方程的积分因子法。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-027",
@@ -11729,7 +12999,9 @@ var QUESTION_BANK = {
         "$y = C₁e^(3x) + C₂e^(-x)$"
       ],
       "answer": 0,
-      "solution": "$特征方程 r²-3r+2=0，(r-1)(r-2)=0，r₁=1，r₂=2。通解 y = C₁e^x + C₂e^(2x)。考查二阶常系数齐次线性方程的特征方程法。$"
+      "solution": "$特征方程 r²-3r+2=0，(r-1)(r-2)=0，r₁=1，r₂=2。通解 y = C₁e^x + C₂e^(2x)。考查二阶常系数齐次线性方程的特征方程法。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-028",
@@ -11743,7 +13015,9 @@ var QUESTION_BANK = {
         "$y = \\cos 2x$"
       ],
       "answer": 1,
-      "solution": "特征方程 r²+4=0，r=±2i，通解 y = C₁\\cos 2x + C₂\\sin 2x。y(0)=C₁=0，故 C₁=0。y'(0)=2C₂\\cos0=2C₂=2，C₂=1。特解 y = \\sin 2x。考查二阶齐次方程+初始条件。"
+      "solution": "特征方程 r²+4=0，r=±2i，通解 y = C₁\\cos 2x + C₂\\sin 2x。y(0)=C₁=0，故 C₁=0。y'(0)=2C₂\\cos0=2C₂=2，C₂=1。特解 y = \\sin 2x。考查二阶齐次方程+初始条件。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-029",
@@ -11751,7 +13025,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "一阶微分方程 x·dy = y·dx 的通解为 y = (   )",
       "answer": "Cx",
-      "solution": "$分离变量：dy/y = dx/x (x\\neq0,y\\neq0)，积分得 \\ln|y| = \\ln|x| + C，即 y = Cx。考查分离变量法——解微分方程就是不定积分的直接应用。$"
+      "solution": "$分离变量：dy/y = dx/x (x\\neq0,y\\neq0)，积分得 \\ln|y| = \\ln|x| + C，即 y = Cx。考查分离变量法——解微分方程就是不定积分的直接应用。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-030",
@@ -11759,7 +13035,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "微分方程 $dy/dx = y/x + \\tan(y/x)$ 是齐次方程，令 $u = y/x$ 后化为 $du/dx = (   )$",
       "answer": "tan u / x",
-      "solution": "令 u=y/x，则 y=ux，dy/dx = u + x·du/dx。代入方程：u + x·du/dx = u + \\tan u，故 x·du/dx = \\tan u，du/dx = \\tan u / x。考查齐次方程的变量代换技巧。"
+      "solution": "令 u=y/x，则 y=ux，dy/dx = u + x·du/dx。代入方程：u + x·du/dx = u + \\tan u，故 x·du/dx = \\tan u，du/dx = \\tan u / x。考查齐次方程的变量代换技巧。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-031",
@@ -11773,7 +13051,9 @@ var QUESTION_BANK = {
         "非齐次特解形式"
       ],
       "answer": 1,
-      "solution": "$特征方程 r²-2r+5=0，Δ=4-20=-16<0，r=1±2i。通解 y = e^x(C₁\\cos 2x + C₂\\sin 2x)。考查特征根为复数的情形，判别式判断。$"
+      "solution": "$特征方程 r²-2r+5=0，Δ=4-20=-16<0，r=1±2i。通解 y = e^x(C₁\\cos 2x + C₂\\sin 2x)。考查特征根为复数的情形，判别式判断。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-032",
@@ -11787,7 +13067,9 @@ var QUESTION_BANK = {
         "$A \\cos x + B \\sin x$"
       ],
       "answer": 2,
-      "solution": "齐次通解：y_h = C₁\\cos x + C₂\\sin x。非齐次项 \\sin x 的 ±i 是特征根，发生共振。特解形式为 y_p = x(A \\cos x + B \\sin x)。考查非齐次常系数方程的待定系数法——共振情形。"
+      "solution": "齐次通解：y_h = C₁\\cos x + C₂\\sin x。非齐次项 \\sin x 的 ±i 是特征根，发生共振。特解形式为 y_p = x(A \\cos x + B \\sin x)。考查非齐次常系数方程的待定系数法——共振情形。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-033",
@@ -11795,7 +13077,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "微分方程 $y' + y \\cdot \\tan x = \\sec x$ 的积分因子 $\\mu(x) = (   )$",
       "answer": "sec x",
-      "solution": "$积分因子 μ = exp(\\int  P(x)dx) = exp(\\int  \\tan x dx)。\\int  \\tan x dx = -\\ln\\big|_{c}^{o}s x| = \\ln\\big|_{s}^{e}c x|，故 μ = sec x。考查一阶线性方程的积分因子构造——连续积分+微分方程。$"
+      "solution": "$积分因子 μ = exp(\\int  P(x)dx) = exp(\\int  \\tan x dx)。\\int  \\tan x dx = -\\ln\\big|_{c}^{o}s x| = \\ln\\big|_{s}^{e}c x|，故 μ = sec x。考查一阶线性方程的积分因子构造——连续积分+微分方程。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-034",
@@ -11809,7 +13093,9 @@ var QUESTION_BANK = {
         "x^{2}/2+x"
       ],
       "answer": 0,
-      "solution": "$换元 u=x-t，dt=-du：\\int ₀ˣ t f(x-t) dt = \\int ₀ˣ (x-u) f(u) du = x\\int ₀ˣ f(u) du - \\int ₀ˣ u f(u) du。对等式求导：f'(x) = 1 + xf(x) + \\int ₀ˣ f(u) du - xf(x) = 1 + \\int ₀ˣ f(u) du。再求导：f''(x) = f(x)。又 f(0)=0，f'(0)=1。解 f''=f 得 f(x)=C₁e^x+C₂e^(-x)，代入初始条件得 f(x)=(e^x-e^(-x))/2 = sinh x。不对……重新检查。其实尝试 f(x)=x：\\int ₀ˣ t(x-t)dt = x\\int tdt - \\int t²dt = x·x^{2}/2 - x^{3}/3 = x^{3}/6，f(x)=x+x^{3}/6\\neqx。所以不是 x。再算…正确答案是 sinh x。$"
+      "solution": "$换元 u=x-t，dt=-du：\\int ₀ˣ t f(x-t) dt = \\int ₀ˣ (x-u) f(u) du = x\\int ₀ˣ f(u) du - \\int ₀ˣ u f(u) du。对等式求导：f'(x) = 1 + xf(x) + \\int ₀ˣ f(u) du - xf(x) = 1 + \\int ₀ˣ f(u) du。再求导：f''(x) = f(x)。又 f(0)=0，f'(0)=1。解 f''=f 得 f(x)=C₁e^x+C₂e^(-x)，代入初始条件得 f(x)=(e^x-e^(-x))/2 = sinh x。不对……重新检查。其实尝试 f(x)=x：\\int ₀ˣ t(x-t)dt = x\\int tdt - \\int t²dt = x·x^{2}/2 - x^{3}/3 = x^{3}/6，f(x)=x+x^{3}/6\\neqx。所以不是 x。再算…正确答案是 sinh x。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-035",
@@ -11823,7 +13109,9 @@ var QUESTION_BANK = {
         "$2x·y·e^y$"
       ],
       "answer": 0,
-      "solution": "$先对 x 求偏导：\\partialz/\\partialx = 2x·e^y。再对 y 求偏导：\\partial²z/\\partialx\\partialy = 2x·e^y。若先对 y 再对 x，结果相同（混合偏导连续则可交换次序）。考查多元复合函数的二阶混合偏导。$"
+      "solution": "$先对 x 求偏导：\\partialz/\\partialx = 2x·e^y。再对 y 求偏导：\\partial²z/\\partialx\\partialy = 2x·e^y。若先对 y 再对 x，结果相同（混合偏导连续则可交换次序）。考查多元复合函数的二阶混合偏导。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-036",
@@ -11837,7 +13125,9 @@ var QUESTION_BANK = {
         "不确定"
       ],
       "answer": 0,
-      "solution": "$\\partialz/\\partialx = f'(x^{2}+y²)·2x，\\partialz/\\partialy = f'(x^{2}+y²)·2y。y·\\partialz/\\partialx - x·\\partialz/\\partialy = y·2x f' - x·2y f' = 0。考查链式法则+对称性简化。$"
+      "solution": "$\\partialz/\\partialx = f'(x^{2}+y²)·2x，\\partialz/\\partialy = f'(x^{2}+y²)·2y。y·\\partialz/\\partialx - x·\\partialz/\\partialy = y·2x f' - x·2y f' = 0。考查链式法则+对称性简化。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-037",
@@ -11851,7 +13141,9 @@ var QUESTION_BANK = {
         "不充分也不必要"
       ],
       "answer": 1,
-      "solution": "可微一定偏导数存在（必要条件），但偏导数存在不一定可微（反例：f(x,y)=xy/(x^{2}+y²) 在原点偏导存在但不可微）。充分条件是偏导数连续。考查多元函数可微性的层次关系。"
+      "solution": "可微一定偏导数存在（必要条件），但偏导数存在不一定可微（反例：f(x,y)=xy/(x^{2}+y²) 在原点偏导存在但不可微）。充分条件是偏导数连续。考查多元函数可微性的层次关系。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-038",
@@ -11865,7 +13157,9 @@ var QUESTION_BANK = {
         "√2"
       ],
       "answer": 0,
-      "solution": "$u = (1/2)\\ln(x^{2}+y²)，\\partialu/\\partialx = x/(x^{2}+y²)，\\partialu/\\partialy = y/(x^{2}+y²)。在 (1,1) 处：ux=1/2，uy=1/2。|\\nablau| = \\sqrt[(1/2)²+(1/2)²] = \\sqrt{1/2} = 1/\\sqrt2。考查梯度计算+模长。$"
+      "solution": "$u = (1/2)\\ln(x^{2}+y²)，\\partialu/\\partialx = x/(x^{2}+y²)，\\partialu/\\partialy = y/(x^{2}+y²)。在 (1,1) 处：ux=1/2，uy=1/2。|\\nablau| = \\sqrt[(1/2)²+(1/2)²] = \\sqrt{1/2} = 1/\\sqrt2。考查梯度计算+模长。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-039",
@@ -11879,7 +13173,9 @@ var QUESTION_BANK = {
         "2/3"
       ],
       "answer": 0,
-      "solution": "$∬_D x dxdy = \\int ₀¹ \\int ₀^(1-x) x dy dx = \\int ₀¹ x(1-x) dx = [x^{2}/2 - x^{3}/3]\\big|_{0}¹ = 1/2 - 1/3 = 1/6。考查二重积分化为累次积分。$"
+      "solution": "$∬_D x dxdy = \\int ₀¹ \\int ₀^(1-x) x dy dx = \\int ₀¹ x(1-x) dx = [x^{2}/2 - x^{3}/3]\\big|_{0}¹ = 1/2 - 1/3 = 1/6。考查二重积分化为累次积分。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-040",
@@ -11893,7 +13189,9 @@ var QUESTION_BANK = {
         "4π/3"
       ],
       "answer": 1,
-      "solution": "$极坐标变换：x=r \\cosθ，y=r \\sinθ，dxdy=r dr dθ。原式 = \\int ₀^(2\\pi) \\int ₀¹ r·r dr dθ = 2\\pi·[r³/3]\\big|_{0}¹ = 2\\pi/3。考查极坐标下二重积分——被积函数含 \\sqrt{x^{2}+y²} 是用极坐标的典型信号。$"
+      "solution": "$极坐标变换：x=r \\cosθ，y=r \\sinθ，dxdy=r dr dθ。原式 = \\int ₀^(2\\pi) \\int ₀¹ r·r dr dθ = 2\\pi·[r³/3]\\big|_{0}¹ = 2\\pi/3。考查极坐标下二重积分——被积函数含 \\sqrt{x^{2}+y²} 是用极坐标的典型信号。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-041",
@@ -11907,7 +13205,9 @@ var QUESTION_BANK = {
         "∫₀¹ ∫ₓ^1 f(x,y) dx dy"
       ],
       "answer": 0,
-      "solution": "$积分域 D: 0 \\leq y \\leq 1, 0 \\leq x \\leq y。画图知 D = { (x,y) | 0 \\leq x \\leq 1, x \\leq y \\leq 1 }。交换后：\\int ₀¹ \\int ₓ¹ f(x,y) dy dx。考查交换积分次序——这是二重积分的核心操作技巧。$"
+      "solution": "$积分域 D: 0 \\leq y \\leq 1, 0 \\leq x \\leq y。画图知 D = { (x,y) | 0 \\leq x \\leq 1, x \\leq y \\leq 1 }。交换后：\\int ₀¹ \\int ₓ¹ f(x,y) dy dx。考查交换积分次序——这是二重积分的核心操作技巧。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-042",
@@ -11915,7 +13215,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "函数 z = x^{3} + y³ - 3xy 的驻点为 (0,0) 和 (   )",
       "answer": "(1,1)",
-      "solution": "$\\partialz/\\partialx = 3x^{2} - 3y = 0，\\partialz/\\partialy = 3y² - 3x = 0。由第一式 y=x^{2}，代入第二式：(x^{2})² - x = 0，x(x^{3}-1)=0，x=0 或 x=1。对应 y=0 或 y=1。驻点：(0,0)和(1,1)。考查多元函数极值必要条件+方程组求解。$"
+      "solution": "$\\partialz/\\partialx = 3x^{2} - 3y = 0，\\partialz/\\partialy = 3y² - 3x = 0。由第一式 y=x^{2}，代入第二式：(x^{2})² - x = 0，x(x^{3}-1)=0，x=0 或 x=1。对应 y=0 或 y=1。驻点：(0,0)和(1,1)。考查多元函数极值必要条件+方程组求解。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-043",
@@ -11923,7 +13225,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "在椭球面 x^{2}/a² + y²/b² + z²/c² = 1 上，函数 f(x,y,z) = xyz 的最 (   ) 值需要用拉格朗日乘数法。",
       "answer": "极",
-      "solution": "$条件极值问题，用拉格朗日乘数法。设 L=xyz+λ(x^{2}/a²+y²/b²+z²/c²-1)，令各偏导为0求解。答案为椭球面内接长方体体积最大问题，结果是 \\big|_{x}^{y}z\\big|_{m}^{a}x = abc/(3\\sqrt3)。考查条件极值+拉格朗日乘数。$"
+      "solution": "$条件极值问题，用拉格朗日乘数法。设 L=xyz+λ(x^{2}/a²+y²/b²+z²/c²-1)，令各偏导为0求解。答案为椭球面内接长方体体积最大问题，结果是 \\big|_{x}^{y}z\\big|_{m}^{a}x = abc/(3\\sqrt3)。考查条件极值+拉格朗日乘数。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-044",
@@ -11937,7 +13241,9 @@ var QUESTION_BANK = {
         "-z"
       ],
       "answer": 2,
-      "solution": "$用全微分或隐函数求导法。对 F(u,v)=0 两边求全微分，其中 u=x+z/y, v=y+z/x。整理得 (1/y·F_u+1/x·F_v) dz + … dx + … dy = 0。最终得 x\\partialz/\\partialx + y\\partialz/\\partialy = z - xy。考查隐函数的偏导数+组合消元。$"
+      "solution": "$用全微分或隐函数求导法。对 F(u,v)=0 两边求全微分，其中 u=x+z/y, v=y+z/x。整理得 (1/y·F_u+1/x·F_v) dz + … dx + … dy = 0。最终得 x\\partialz/\\partialx + y\\partialz/\\partialy = z - xy。考查隐函数的偏导数+组合消元。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-045",
@@ -11951,7 +13257,9 @@ var QUESTION_BANK = {
         "2"
       ],
       "answer": 0,
-      "solution": "$L: y=x, 0\\leqx\\leq1。ds = \\sqrt{1+(y'}²) dx = \\sqrt2 dx。\\int _L (x+y) ds = \\int ₀¹ 2x·\\sqrt2 dx = \\sqrt2·[x^{2}]\\big|_{0}¹ = \\sqrt2。考查第一类曲线积分（对弧长）。$"
+      "solution": "$L: y=x, 0\\leqx\\leq1。ds = \\sqrt{1+(y'}²) dx = \\sqrt2 dx。\\int _L (x+y) ds = \\int ₀¹ 2x·\\sqrt2 dx = \\sqrt2·[x^{2}]\\big|_{0}¹ = \\sqrt2。考查第一类曲线积分（对弧长）。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-046",
@@ -11965,7 +13273,9 @@ var QUESTION_BANK = {
         "4π"
       ],
       "answer": 2,
-      "solution": "$用格林公式：∮_L P dx + Q dy = ∬_D (\\partialQ/\\partialx - \\partialP/\\partialy) dxdy。此处 P=-y，Q=x，\\partialQ/\\partialx-\\partialP/\\partialy=1-(-1)=2。∬_D 2 dxdy = 2·\\pi·1² = 2\\pi。考查格林公式——第二类曲线积分与二重积分的桥梁。$"
+      "solution": "$用格林公式：∮_L P dx + Q dy = ∬_D (\\partialQ/\\partialx - \\partialP/\\partialy) dxdy。此处 P=-y，Q=x，\\partialQ/\\partialx-\\partialP/\\partialy=1-(-1)=2。∬_D 2 dxdy = 2·\\pi·1² = 2\\pi。考查格林公式——第二类曲线积分与二重积分的桥梁。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-047",
@@ -11979,7 +13289,9 @@ var QUESTION_BANK = {
         "2π"
       ],
       "answer": 2,
-      "solution": "$功 = ∮_L y dx - x dy。由格林公式：\\partialQ/\\partialx - \\partialP/\\partialy = \\partial(-x)/\\partialx - \\partialy/\\partialy = -1 - 1 = -2。积分 = ∬_D (-2) dσ = -2\\pi。若顺时针则变号。考查物理意义：做功 = 第二类曲线积分。$"
+      "solution": "$功 = ∮_L y dx - x dy。由格林公式：\\partialQ/\\partialx - \\partialP/\\partialy = \\partial(-x)/\\partialx - \\partialy/\\partialy = -1 - 1 = -2。积分 = ∬_D (-2) dσ = -2\\pi。若顺时针则变号。考查物理意义：做功 = 第二类曲线积分。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-048",
@@ -11993,7 +13305,9 @@ var QUESTION_BANK = {
         "5"
       ],
       "answer": 1,
-      "solution": "$检查 \\partialQ/\\partialx = \\partial(x+2y)/\\partialx = 1 = \\partialP/\\partialy = \\partial(2x+y)/\\partialy，是保守场。求势函数 u 使 u_x=2x+y，u_y=x+2y。u = x^{2}+xy+y²。功 = u(1,1)-u(0,0) = 1+1+1 = 3。考查保守场与路径无关性+势函数法。$"
+      "solution": "$检查 \\partialQ/\\partialx = \\partial(x+2y)/\\partialx = 1 = \\partialP/\\partialy = \\partial(2x+y)/\\partialy，是保守场。求势函数 u 使 u_x=2x+y，u_y=x+2y。u = x^{2}+xy+y²。功 = u(1,1)-u(0,0) = 1+1+1 = 3。考查保守场与路径无关性+势函数法。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-049",
@@ -12007,7 +13321,9 @@ var QUESTION_BANK = {
         "-mπ"
       ],
       "answer": 1,
-      "solution": "$P = e^x \\sin y - my，Q = e^x \\cos y - m。\\partialQ/\\partialx = e^x \\cos y，\\partialP/\\partialy = e^x \\cos y - m。\\partialQ/\\partialx - \\partialP/\\partialy = m。格林公式：∬_D m dσ = m·\\pi·1² = m\\pi。考查格林公式+偏导计算。$"
+      "solution": "$P = e^x \\sin y - my，Q = e^x \\cos y - m。\\partialQ/\\partialx = e^x \\cos y，\\partialP/\\partialy = e^x \\cos y - m。\\partialQ/\\partialx - \\partialP/\\partialy = m。格林公式：∬_D m dσ = m·\\pi·1² = m\\pi。考查格林公式+偏导计算。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-050",
@@ -12021,7 +13337,9 @@ var QUESTION_BANK = {
         "8π"
       ],
       "answer": 2,
-      "solution": "$高斯公式：∯_Σ = ∭_Ω (\\partialP/\\partialx+\\partialQ/\\partialy+\\partialR/\\partialz) dV = ∭_Ω (1+1+1) dV = 3·(4\\pi/3) = 4\\pi。考查高斯公式——第二类曲面积分与三重积分的桥梁，球体积 4\\pi/3。$"
+      "solution": "$高斯公式：∯_Σ = ∭_Ω (\\partialP/\\partialx+\\partialQ/\\partialy+\\partialR/\\partialz) dV = ∭_Ω (1+1+1) dV = 3·(4\\pi/3) = 4\\pi。考查高斯公式——第二类曲面积分与三重积分的桥梁，球体积 4\\pi/3。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-051",
@@ -12029,7 +13347,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "曲线 L: x^{2}+y²=1（逆时针），则 ∮_L (x^{2}+y²) ds = (   )",
       "answer": "$2\\pi$",
-      "solution": "$在 L 上 x^{2}+y²=1，所以被积函数就是 1。∮_L 1 ds = 弧长 = 2\\pi。考查第一类曲线积分——利用曲线方程简化被积函数是关键技巧。$"
+      "solution": "$在 L 上 x^{2}+y²=1，所以被积函数就是 1。∮_L 1 ds = 弧长 = 2\\pi。考查第一类曲线积分——利用曲线方程简化被积函数是关键技巧。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-052",
@@ -12037,7 +13357,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$螺旋线 x=\\cos t, y=\\sin t, z=t (0\\leqt\\leq2\\pi) 的弧长为 ( )_}__}$",
       "answer": "$2\\sqrt2 \\pi$",
-      "solution": "$ds = \\sqrt[(dx/dt)²+(dy/dt)²+(dz/dt)²] dt = \\sqrt[\\sin²t+\\cos²t+1] dt = \\sqrt2 dt。弧长 = \\int ₀^(2\\pi) \\sqrt2 dt = 2\\sqrt2 \\pi。考查空间曲线弧长——参数方程的三维推广。$"
+      "solution": "$ds = \\sqrt[(dx/dt)²+(dy/dt)²+(dz/dt)²] dt = \\sqrt[\\sin²t+\\cos²t+1] dt = \\sqrt2 dt。弧长 = \\int ₀^(2\\pi) \\sqrt2 dt = 2\\sqrt2 \\pi。考查空间曲线弧长——参数方程的三维推广。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-053",
@@ -12051,7 +13373,9 @@ var QUESTION_BANK = {
         "π/2"
       ],
       "answer": 1,
-      "solution": "$取上侧，dxdy >0。在 Σ 上 z=1，所以 ∯_Σ 1·dxdy = ∬_(x^{2}+y²\\leq1) 1 dxdy = \\pi·1² = \\pi。考查第二类曲面积分的投影计算法。$"
+      "solution": "$取上侧，dxdy >0。在 Σ 上 z=1，所以 ∯_Σ 1·dxdy = ∬_(x^{2}+y²\\leq1) 1 dxdy = \\pi·1² = \\pi。考查第二类曲面积分的投影计算法。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-054",
@@ -12059,7 +13383,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "用斯托克斯公式，∮_L y dx + z dy + x dz（L 为平面 x+y+z=0 与球面 x^{2}+y²+z²=1 的交线）可化为曲面积分 ∬_Σ (   ) dS 的形式。",
       "answer": "$-\\sqrt3$",
-      "solution": "$rot F = (\\partialR/\\partialy-\\partialQ/\\partialz, \\partialP/\\partialz-\\partialR/\\partialx, \\partialQ/\\partialx-\\partialP/\\partialy) = (0-1, 0-1, 0-1) = (-1,-1,-1)。平面法向量 n = (1,1,1)/\\sqrt3。rot F·n = (-1,-1,-1)·(1,1,1)/\\sqrt3 = -3/\\sqrt3 = -\\sqrt3。∬_Σ (-\\sqrt3) dS = -\\sqrt3·(截面积)。考查斯托克斯公式——空间曲线积分\\rightarrow曲面积分。$"
+      "solution": "$rot F = (\\partialR/\\partialy-\\partialQ/\\partialz, \\partialP/\\partialz-\\partialR/\\partialx, \\partialQ/\\partialx-\\partialP/\\partialy) = (0-1, 0-1, 0-1) = (-1,-1,-1)。平面法向量 n = (1,1,1)/\\sqrt3。rot F·n = (-1,-1,-1)·(1,1,1)/\\sqrt3 = -3/\\sqrt3 = -\\sqrt3。∬_Σ (-\\sqrt3) dS = -\\sqrt3·(截面积)。考查斯托克斯公式——空间曲线积分\\rightarrow曲面积分。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-055",
@@ -12073,7 +13399,9 @@ var QUESTION_BANK = {
         "$\\ln(1+x)$"
       ],
       "answer": 0,
-      "solution": "几何级数公式：Σ xⁿ = 1/(1-x)，收敛域 |x|<1。这是幂级数求和的基础，许多复杂级数都是它的变形。"
+      "solution": "几何级数公式：Σ xⁿ = 1/(1-x)，收敛域 |x|<1。这是幂级数求和的基础，许多复杂级数都是它的变形。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-056",
@@ -12087,7 +13415,9 @@ var QUESTION_BANK = {
         "Σ x^(2n+1)/(2n+1)!"
       ],
       "answer": 1,
-      "solution": "$\\ln(1+x) = x - x^{2}/2 + x^{3}/3 - x⁴/4 + … = Σ(n=1\\rightarrow\\infty) (-1)^(n-1) xⁿ/n，收敛域 (-1,1]。可通过积分 1/(1+x) 的展开式得到。考查常见函数的泰勒级数。$"
+      "solution": "$\\ln(1+x) = x - x^{2}/2 + x^{3}/3 - x⁴/4 + … = Σ(n=1\\rightarrow\\infty) (-1)^(n-1) xⁿ/n，收敛域 (-1,1]。可通过积分 1/(1+x) 的展开式得到。考查常见函数的泰勒级数。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-057",
@@ -12101,7 +13431,9 @@ var QUESTION_BANK = {
         "π²/4"
       ],
       "answer": 0,
-      "solution": "$\\ln(1+x)/x = 1 - x/2 + x^{2}/3 - x^{3}/4 + …。逐项积分：\\int ₀¹ Σ(-1)^(n-1) x^(n-1)/n dx = Σ(-1)^(n-1)/n² = 1 - 1/4 + 1/9 - 1/16 + … = \\pi²/12。考查幂级数逐项积分+特殊级数求和。$"
+      "solution": "$\\ln(1+x)/x = 1 - x/2 + x^{2}/3 - x^{3}/4 + …。逐项积分：\\int ₀¹ Σ(-1)^(n-1) x^(n-1)/n dx = Σ(-1)^(n-1)/n² = 1 - 1/4 + 1/9 - 1/16 + … = \\pi²/12。考查幂级数逐项积分+特殊级数求和。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-058",
@@ -12115,7 +13447,9 @@ var QUESTION_BANK = {
         "指数函数"
       ],
       "answer": 0,
-      "solution": "$e^(-x^{2}) = Σ(-1)ⁿ x^(2n)/n!。逐项积分得 \\int  e^(-x^{2}) dx = Σ(-1)ⁿ x^(2n+1)/((2n+1)n!) + C。此为误差函数的基础。考查幂级数表示非初等原函数。$"
+      "solution": "$e^(-x^{2}) = Σ(-1)ⁿ x^(2n)/n!。逐项积分得 \\int  e^(-x^{2}) dx = Σ(-1)ⁿ x^(2n+1)/((2n+1)n!) + C。此为误差函数的基础。考查幂级数表示非初等原函数。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-059",
@@ -12123,7 +13457,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "函数 f(x) = 1/(1+x^{2}) 的麦克劳林展开式为 Σ (   )",
       "answer": "(-1)^n x^(2n)",
-      "solution": "$1/(1+x^{2}) = 1 - x^{2} + x⁴ - x⁶ + … = Σ(n=0\\rightarrow\\infty) (-1)ⁿ x^(2n)，|x|<1。这是几何级数 Σ(-x^{2})ⁿ。积分可得 \\arctan x 的展开式。$"
+      "solution": "$1/(1+x^{2}) = 1 - x^{2} + x⁴ - x⁶ + … = Σ(n=0\\rightarrow\\infty) (-1)ⁿ x^(2n)，|x|<1。这是几何级数 Σ(-x^{2})ⁿ。积分可得 \\arctan x 的展开式。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-061",
@@ -12137,7 +13473,9 @@ var QUESTION_BANK = {
         "1/(1-x)"
       ],
       "answer": 0,
-      "solution": "由 Σ xⁿ = 1/(1-x) 求导：Σ n x^(n-1) = 1/(1-x)²。两边乘 x 得 Σ n xⁿ = x/(1-x)²。|x|<1。考查用逐项求导法求幂级数和函数。"
+      "solution": "由 Σ xⁿ = 1/(1-x) 求导：Σ n x^(n-1) = 1/(1-x)²。两边乘 x 得 Σ n xⁿ = x/(1-x)²。|x|<1。考查用逐项求导法求幂级数和函数。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-062",
@@ -12145,7 +13483,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$Σ(n=1\\rightarrow\\infty) 1/(n·2ⁿ) = ( )_}__}$",
       "answer": "ln 2",
-      "solution": "$令 S(x) = Σ xⁿ/n，S'(x) = Σ x^(n-1) = 1/(1-x)。积分得 S(x) = -\\ln(1-x)。代入 x=1/2：S(1/2) = -\\ln(1/2) = \\ln 2。考查构造幂级数求常数项级数和——先引入 x 变量求和再代入。$"
+      "solution": "$令 S(x) = Σ xⁿ/n，S'(x) = Σ x^(n-1) = 1/(1-x)。积分得 S(x) = -\\ln(1-x)。代入 x=1/2：S(1/2) = -\\ln(1/2) = \\ln 2。考查构造幂级数求常数项级数和——先引入 x 变量求和再代入。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-063",
@@ -12159,7 +13499,9 @@ var QUESTION_BANK = {
         "0"
       ],
       "answer": 1,
-      "solution": "$第二个重要极限的数列形式：\\lim_{n \\to \\infty} (1+1/n)^n = e。这是定义自然常数 e 的方式之一，也是级数 Σ 1/n! 的和。$"
+      "solution": "$第二个重要极限的数列形式：\\lim_{n \\to \\infty} (1+1/n)^n = e。这是定义自然常数 e 的方式之一，也是级数 Σ 1/n! 的和。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-064",
@@ -12173,7 +13515,9 @@ var QUESTION_BANK = {
         "不存在"
       ],
       "answer": 1,
-      "solution": "$令 x=1/n\\rightarrow0，原式 = \\lim_{x \\to 0} \\sin x / x = 1。数列极限化归为函数极限。这是处理 n\\rightarrow\\infty 时含三角函数的经典手法。$"
+      "solution": "$令 x=1/n\\rightarrow0，原式 = \\lim_{x \\to 0} \\sin x / x = 1。数列极限化归为函数极限。这是处理 n\\rightarrow\\infty 时含三角函数的经典手法。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-065",
@@ -12187,7 +13531,9 @@ var QUESTION_BANK = {
         "$\\ln 2$"
       ],
       "answer": 0,
-      "solution": "$n 项和 = (1/n)Σ(k=1\\rightarrown) 1/[1+(k/n)²]。这是定积分定义：\\lim(1/n)Σ f(k/n) = \\int ₀¹ f(x) dx，其中 f(x)=1/(1+x^{2})。\\int ₀¹ dx/(1+x^{2}) = [\\arctan x]\\big|_{0}¹ = \\pi/4。考查数列极限化归定积分——综合极限、级数、积分三大块。$"
+      "solution": "$n 项和 = (1/n)Σ(k=1\\rightarrown) 1/[1+(k/n)²]。这是定积分定义：\\lim(1/n)Σ f(k/n) = \\int ₀¹ f(x) dx，其中 f(x)=1/(1+x^{2})。\\int ₀¹ dx/(1+x^{2}) = [\\arctan x]\\big|_{0}¹ = \\pi/4。考查数列极限化归定积分——综合极限、级数、积分三大块。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-066",
@@ -12201,7 +13547,9 @@ var QUESTION_BANK = {
         "1"
       ],
       "answer": 1,
-      "solution": "$n 项中最小项为 1/\\sqrt{2n}，和 \\geq n·1/\\sqrt{2n} = \\sqrt{n/2} \\rightarrow \\infty。或用定积分定义：和 = (1/\\sqrtn) Σ 1/\\sqrt{1+k/n} \\approx \\sqrtn \\int ₀¹ dx/\\sqrt{1+x} \\rightarrow \\infty。考查数列极限的上下界估计——调和型发散。$"
+      "solution": "$n 项中最小项为 1/\\sqrt{2n}，和 \\geq n·1/\\sqrt{2n} = \\sqrt{n/2} \\rightarrow \\infty。或用定积分定义：和 = (1/\\sqrtn) Σ 1/\\sqrt{1+k/n} \\approx \\sqrtn \\int ₀¹ dx/\\sqrt{1+x} \\rightarrow \\infty。考查数列极限的上下界估计——调和型发散。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-067",
@@ -12215,7 +13563,9 @@ var QUESTION_BANK = {
         "不确定"
       ],
       "answer": 1,
-      "solution": "$用积分判别法：\\int ₂^\\infty dx/(x \\ln x) = [\\ln(\\ln x)]\\big|_{2}^\\infty \\rightarrow \\infty，故级数发散。注意 1/(n \\ln² n) 收敛而 1/(n \\ln n) 发散，这是 p-级数在 \\ln 幂次上的推广。$"
+      "solution": "$用积分判别法：\\int ₂^\\infty dx/(x \\ln x) = [\\ln(\\ln x)]\\big|_{2}^\\infty \\rightarrow \\infty，故级数发散。注意 1/(n \\ln² n) 收敛而 1/(n \\ln n) 发散，这是 p-级数在 \\ln 幂次上的推广。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-068",
@@ -12229,7 +13579,9 @@ var QUESTION_BANK = {
         "4/e²"
       ],
       "answer": 0,
-      "solution": "$由斯特林公式 n! ~ \\sqrt{2\\pin}(n/e)^n，代入化简：(2n)! ~ \\sqrt{4\\pin}(2n/e)^(2n)。(2n)!/(n!·nⁿ) ~ [\\sqrt{4\\pin}(2n/e)^(2n)] / [\\sqrt{2\\pin}(n/e)^n·nⁿ] = \\sqrt2·(4n²/e²)^n/(n²/e)^n·1/nⁿ...(需要仔细算)。最终极限 = 4/e。$"
+      "solution": "$由斯特林公式 n! ~ \\sqrt{2\\pin}(n/e)^n，代入化简：(2n)! ~ \\sqrt{4\\pin}(2n/e)^(2n)。(2n)!/(n!·nⁿ) ~ [\\sqrt{4\\pin}(2n/e)^(2n)] / [\\sqrt{2\\pin}(n/e)^n·nⁿ] = \\sqrt2·(4n²/e²)^n/(n²/e)^n·1/nⁿ...(需要仔细算)。最终极限 = 4/e。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-069",
@@ -12237,7 +13589,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$\\lim_{n \\to \\infty} (1 + 2/n)^n = ( )_}__}$",
       "answer": "e²",
-      "solution": "$(1+2/n)^n = [(1+2/n)^(n/2)]² \\rightarrow e²。或令 t=2/n\\rightarrow0，(1+t)^(2/t) = [(1+t)^(1/t)]² \\rightarrow e²。考查重要极限的变形——调整系数。$"
+      "solution": "$(1+2/n)^n = [(1+2/n)^(n/2)]² \\rightarrow e²。或令 t=2/n\\rightarrow0，(1+t)^(2/t) = [(1+t)^(1/t)]² \\rightarrow e²。考查重要极限的变形——调整系数。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-070",
@@ -12245,7 +13599,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "$\\lim_{n \\to \\infty} n²·[e - (1+1/n)^n] = ( )_}__}$",
       "answer": "e/2",
-      "solution": "$利用展开式：(1+1/n)^n = e^{n \\ln(1+1/n)} = e^{n[1/n-1/(2n²)+1/(3n³)+…]} = e^{1-1/(2n)+1/(3n²)+…} = e·e^{-1/(2n)+1/(3n²)+…} = e·[1-1/(2n)+O(1/n²)]。所以 e-(1+1/n)^n = e/(2n)+O(1/n²)，n²[e-(1+1/n)^n] \\rightarrow e/2。考查数列收敛速率的精确估计。$"
+      "solution": "$利用展开式：(1+1/n)^n = e^{n \\ln(1+1/n)} = e^{n[1/n-1/(2n²)+1/(3n³)+…]} = e^{1-1/(2n)+1/(3n²)+…} = e·e^{-1/(2n)+1/(3n²)+…} = e·[1-1/(2n)+O(1/n²)]。所以 e-(1+1/n)^n = e/(2n)+O(1/n²)，n²[e-(1+1/n)^n] \\rightarrow e/2。考查数列收敛速率的精确估计。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-071",
@@ -12259,7 +13615,9 @@ var QUESTION_BANK = {
         "Σ xⁿ/n"
       ],
       "answer": 0,
-      "solution": "$设 y = Σ a_n xⁿ，则 y' = Σ n a_n x^(n-1) = Σ (n+1)a(n+1) xⁿ。由 y'=y 得 (n+1)a(n+1)=a_n。a_0=y(0)=1，推得 a_n=1/n!。故 y = Σ xⁿ/n! = e^x。考查幂级数解法——微分方程与级数的完美结合。$"
+      "solution": "$设 y = Σ a_n xⁿ，则 y' = Σ n a_n x^(n-1) = Σ (n+1)a(n+1) xⁿ。由 y'=y 得 (n+1)a(n+1)=a_n。a_0=y(0)=1，推得 a_n=1/n!。故 y = Σ xⁿ/n! = e^x。考查幂级数解法——微分方程与级数的完美结合。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-072",
@@ -12273,7 +13631,9 @@ var QUESTION_BANK = {
         "$Ax \\sin x$"
       ],
       "answer": 1,
-      "solution": "齐次通解 y_h = C₁\\cos x + C₂\\sin x。非齐次项 \\sin x 的 ±i 是特征根（共振情形），特解应设为 y_p = x(A \\cos x + B \\sin x)。代入方程确定 A=-2, B=0，特解为 -2x \\cos x。考查二阶常系数非齐次方程的待定系数法——共振情形。"
+      "solution": "齐次通解 y_h = C₁\\cos x + C₂\\sin x。非齐次项 \\sin x 的 ±i 是特征根（共振情形），特解应设为 y_p = x(A \\cos x + B \\sin x)。代入方程确定 A=-2, B=0，特解为 -2x \\cos x。考查二阶常系数非齐次方程的待定系数法——共振情形。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-073",
@@ -12281,7 +13641,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "$函数 y = Σ(n=0\\rightarrow\\infty) xⁿ/n! 满足的微分方程是 y' = ( )_}__}$",
       "answer": "y",
-      "solution": "$y = Σ xⁿ/n! = e^x 是满足 y'=y 且 y(0)=1 的唯一解。反过来，知道级数形式可推导其满足的微分方程。这是一个双向联系。$"
+      "solution": "$y = Σ xⁿ/n! = e^x 是满足 y'=y 且 y(0)=1 的唯一解。反过来，知道级数形式可推导其满足的微分方程。这是一个双向联系。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-074",
@@ -12295,7 +13657,9 @@ var QUESTION_BANK = {
         "y'' + y' = 0"
       ],
       "answer": 0,
-      "solution": "该级数为 y = \\sin x。y' = \\cos x = Σ(-1)ⁿ x^(2n)/(2n)!，y'' = -\\sin x = -y，故 y''+y=0。考查从级数识别函数+建立微分方程。"
+      "solution": "该级数为 y = \\sin x。y' = \\cos x = Σ(-1)ⁿ x^(2n)/(2n)!，y'' = -\\sin x = -y，故 y''+y=0。考查从级数识别函数+建立微分方程。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-075",
@@ -12309,7 +13673,9 @@ var QUESTION_BANK = {
         "dS/dt = -S/(100+t)"
       ],
       "answer": 0,
-      "solution": "t 时刻体积 V(t)=100+(3-2)t=100+t，浓度=S/(100+t)。流出带走的盐速率=2·S/(100+t)。故 dS/dt = -2S/(100+t)，S(0)=10。这是一阶线性方程，解为 S=10·100²/(100+t)²。考查微分方程建模——溶液混合问题。"
+      "solution": "t 时刻体积 V(t)=100+(3-2)t=100+t，浓度=S/(100+t)。流出带走的盐速率=2·S/(100+t)。故 dS/dt = -2S/(100+t)，S(0)=10。这是一阶线性方程，解为 S=10·100²/(100+t)²。考查微分方程建模——溶液混合问题。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-076",
@@ -12323,7 +13689,9 @@ var QUESTION_BANK = {
         "λ²"
       ],
       "answer": 1,
-      "solution": "$设 Ax=λx(x\\neq0)，则 A⁻¹(Ax)=A⁻¹(λx)，即 x=λA⁻¹x，所以 A⁻¹x=(1/λ)x。故 A⁻¹ 的特征值为 1/λ。注意 A 可逆保证 λ\\neq0。$"
+      "solution": "$设 Ax=λx(x\\neq0)，则 A⁻¹(Ax)=A⁻¹(λx)，即 x=λA⁻¹x，所以 A⁻¹x=(1/λ)x。故 A⁻¹ 的特征值为 1/λ。注意 A 可逆保证 λ\\neq0。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-077",
@@ -12337,7 +13705,9 @@ var QUESTION_BANK = {
         "λ₁=3, λ₂=0"
       ],
       "answer": 1,
-      "solution": "特征方程 |A-λI| = |1-λ  2; 2  1-λ| = (1-λ)²-4 = λ²-2λ-3 = (λ-3)(λ+1)=0。λ₁=3, λ₂=-1。该矩阵是对称矩阵，特征值全为实数。"
+      "solution": "特征方程 |A-λI| = |1-λ  2; 2  1-λ| = (1-λ)²-4 = λ²-2λ-3 = (λ-3)(λ+1)=0。λ₁=3, λ₂=-1。该矩阵是对称矩阵，特征值全为实数。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-078",
@@ -12351,7 +13721,9 @@ var QUESTION_BANK = {
         "A 的特征值都不为零"
       ],
       "answer": 1,
-      "solution": "A 可对角化的充要条件是 A 有 n 个线性无关的特征向量。注意可逆只保证特征值非零，不保证可对角化（如[[1,1],[0,1]]可逆但不可对角化）。"
+      "solution": "A 可对角化的充要条件是 A 有 n 个线性无关的特征向量。注意可逆只保证特征值非零，不保证可对角化（如[[1,1],[0,1]]可逆但不可对角化）。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-079",
@@ -12365,7 +13737,9 @@ var QUESTION_BANK = {
         "不确定"
       ],
       "answer": 1,
-      "solution": "A 可对角化的充要条件是每个特征值的几何重数 = 代数重数。λ=1 的代数重数为 2（二重根），所以几何重数也必须是 2，即有两个线性无关的特征向量。λ=2 自然有一个。共 3 个特征向量构成可逆矩阵 P。考查相似对角化的条件——几何重数与代数重数的关系。"
+      "solution": "A 可对角化的充要条件是每个特征值的几何重数 = 代数重数。λ=1 的代数重数为 2（二重根），所以几何重数也必须是 2，即有两个线性无关的特征向量。λ=2 自然有一个。共 3 个特征向量构成可逆矩阵 P。考查相似对角化的条件——几何重数与代数重数的关系。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-080",
@@ -12379,7 +13753,9 @@ var QUESTION_BANK = {
         "min λ_i"
       ],
       "answer": 1,
-      "solution": "行列式 = 所有特征值的乘积：|A| = λ₁λ₂…λ_n。迹 = 所有特征值之和：tr(A) = λ₁+λ₂+…+λ_n。这两个公式是特征值理论最常用的结论。"
+      "solution": "行列式 = 所有特征值的乘积：|A| = λ₁λ₂…λ_n。迹 = 所有特征值之和：tr(A) = λ₁+λ₂+…+λ_n。这两个公式是特征值理论最常用的结论。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-081",
@@ -12387,7 +13763,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "若 3 阶矩阵 A 的特征值为 1, -1, 2，则 |A²+E| = (   )",
       "answer": "20",
-      "solution": "A² 的特征值为 1²=1, (-1)²=1, 2²=4。A²+E 的特征值为 1+1=2, 1+1=2, 4+1=5。行列式 = 2×2×5 = 20。考查特征值的函数运算性质。"
+      "solution": "A² 的特征值为 1²=1, (-1)²=1, 2²=4。A²+E 的特征值为 1+1=2, 1+1=2, 4+1=5。行列式 = 2×2×5 = 20。考查特征值的函数运算性质。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-082",
@@ -12401,7 +13779,9 @@ var QUESTION_BANK = {
         "{3}"
       ],
       "answer": 1,
-      "solution": "设 λ 是 A 的特征值，则 λ²-3λ+2=0，λ=1 或 2。A 的特征值必取自 {1,2}，但具体取哪些取决于 A。可能只有 1（如 A=E），只有 2（如 A=2E），或都有。考查特征多项式与矩阵方程的关系——特征值必满足矩阵的零化多项式。"
+      "solution": "设 λ 是 A 的特征值，则 λ²-3λ+2=0，λ=1 或 2。A 的特征值必取自 {1,2}，但具体取哪些取决于 A。可能只有 1（如 A=E），只有 2（如 A=2E），或都有。考查特征多项式与矩阵方程的关系——特征值必满足矩阵的零化多项式。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-083",
@@ -12409,7 +13789,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "设 A = [[2,1],[1,2]]，则 A 的特征值 λ₁ > λ₂，特征向量构成的矩阵 P 使得 P⁻¹AP = diag(λ₁,λ₂)，其中 P 的第一列为 (   )（单位化后的向量）",
       "answer": "$(1/\\sqrt2, 1/\\sqrt2)$",
-      "solution": "$λ₁=3 对应的特征向量 (1,1)ᵀ，单位化得 (1/\\sqrt2, 1/\\sqrt2)ᵀ。λ₂=1 对应 (-1,1)ᵀ，单位化 (-1/\\sqrt2, 1/\\sqrt2)ᵀ。P 是正交矩阵。考查实对称矩阵的正交对角化。$"
+      "solution": "$λ₁=3 对应的特征向量 (1,1)ᵀ，单位化得 (1/\\sqrt2, 1/\\sqrt2)ᵀ。λ₂=1 对应 (-1,1)ᵀ，单位化 (-1/\\sqrt2, 1/\\sqrt2)ᵀ。P 是正交矩阵。考查实对称矩阵的正交对角化。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-084",
@@ -12423,7 +13805,9 @@ var QUESTION_BANK = {
         "整数"
       ],
       "answer": 0,
-      "solution": "实对称矩阵的特征值全部为实数，且不同特征值对应的特征向量正交。这是实对称矩阵最重要的谱性质，也是二次型化为标准型的基础。"
+      "solution": "实对称矩阵的特征值全部为实数，且不同特征值对应的特征向量正交。这是实对称矩阵最重要的谱性质，也是二次型化为标准型的基础。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-085",
@@ -12437,7 +13821,9 @@ var QUESTION_BANK = {
         "A=O"
       ],
       "answer": 0,
-      "solution": "|A| = Πλ_i，若有 λ=0 则 |A|=0，A 不可逆。迹 tr(A)=Σλ_i 为 0 不代表 A 不可逆（如特征值 1,-1,0 则迹=0且不可逆；特征值 1,-1 则迹=0但可逆）。考查特征值与行列式的关系——特征值为零等价于矩阵不可逆。"
+      "solution": "|A| = Πλ_i，若有 λ=0 则 |A|=0，A 不可逆。迹 tr(A)=Σλ_i 为 0 不代表 A 不可逆（如特征值 1,-1,0 则迹=0且不可逆；特征值 1,-1 则迹=0但可逆）。考查特征值与行列式的关系——特征值为零等价于矩阵不可逆。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-086",
@@ -12451,7 +13837,9 @@ var QUESTION_BANK = {
         "[[1,0],[4,1]]"
       ],
       "answer": 0,
-      "solution": "$二次型矩阵 A 满足 a_ij = a_ji = (x_i x_j 系数)/2（i\\neqj）。此处 x₁x₂ 系数为 4，故 a₁₂=a₂₁=2。对角元直接取平方项系数。A = [[1,2],[2,1]]。注意必须是对称矩阵。$"
+      "solution": "$二次型矩阵 A 满足 a_ij = a_ji = (x_i x_j 系数)/2（i\\neqj）。此处 x₁x₂ 系数为 4，故 a₁₂=a₂₁=2。对角元直接取平方项系数。A = [[1,2],[2,1]]。注意必须是对称矩阵。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-087",
@@ -12465,7 +13853,9 @@ var QUESTION_BANK = {
         "不定"
       ],
       "answer": 0,
-      "solution": "矩阵 A = [[2,1],[1,2]]。顺序主子式：Δ₁=2>0，Δ₂=4-1=3>0，故正定。或用特征值法：λ₁=3,λ₂=1 均大于0。考查二次型正定性的判别方法。"
+      "solution": "矩阵 A = [[2,1],[1,2]]。顺序主子式：Δ₁=2>0，Δ₂=4-1=3>0，故正定。或用特征值法：λ₁=3,λ₂=1 均大于0。考查二次型正定性的判别方法。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-088",
@@ -12479,7 +13869,9 @@ var QUESTION_BANK = {
         "√2"
       ],
       "answer": 0,
-      "solution": "$β₁=(1,1,0)ᵀ。β₂=(1,0,1)ᵀ - [(1,0,1)·β₁/‖β₁‖²]β₁ = (1,0,1)ᵀ - (1/2)(1,1,0)ᵀ = (1/2, -1/2, 1)ᵀ。投影长度 = |(1,0,1)·β₁|/‖β₁‖ = 1/\\sqrt2。考查施密特正交化+投影概念。$"
+      "solution": "$β₁=(1,1,0)ᵀ。β₂=(1,0,1)ᵀ - [(1,0,1)·β₁/‖β₁‖²]β₁ = (1,0,1)ᵀ - (1/2)(1,1,0)ᵀ = (1/2, -1/2, 1)ᵀ。投影长度 = |(1,0,1)·β₁|/‖β₁‖ = 1/\\sqrt2。考查施密特正交化+投影概念。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-089",
@@ -12493,7 +13885,9 @@ var QUESTION_BANK = {
         "无法判断"
       ],
       "answer": 0,
-      "solution": "两者的正惯性指数均为 2，负惯性指数均为 0，秩均为 2。由惯性定理，两实二次型合同当且仅当正负惯性指数相同。故它们合同。考查二次型分类——惯性指数是不变量。"
+      "solution": "两者的正惯性指数均为 2，负惯性指数均为 0，秩均为 2。由惯性定理，两实二次型合同当且仅当正负惯性指数相同。故它们合同。考查二次型分类——惯性指数是不变量。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-090",
@@ -12501,7 +13895,9 @@ var QUESTION_BANK = {
       "difficulty": "medium",
       "question": "向量组 α₁=(1,2,3), α₂=(2,4,6), α₃=(1,1,1) 的秩为 (   )",
       "answer": "2",
-      "solution": "α₂=2α₁，α₃ 与 α₁ 线性无关。矩阵 [1 2 1; 2 4 1; 3 6 1] 的秩为 2。考查向量组线性相关性+秩。注意识别倍数关系。"
+      "solution": "α₂=2α₁，α₃ 与 α₁ 线性无关。矩阵 [1 2 1; 2 4 1; 3 6 1] 的秩为 2。考查向量组线性相关性+秩。注意识别倍数关系。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-091",
@@ -12515,7 +13911,9 @@ var QUESTION_BANK = {
         "正交矩阵"
       ],
       "answer": 0,
-      "solution": "$正定矩阵的定义就是 ∀x\\neq0，xᵀAx>0。注意：二次型矩阵默认为对称矩阵，所以这里 A 既对称又正定。正定矩阵 ⇔ 特征值全正 ⇔ 顺序主子式全正。$"
+      "solution": "$正定矩阵的定义就是 ∀x\\neq0，xᵀAx>0。注意：二次型矩阵默认为对称矩阵，所以这里 A 既对称又正定。正定矩阵 ⇔ 特征值全正 ⇔ 顺序主子式全正。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-092",
@@ -12523,7 +13921,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "若二次型 f(x₁,x₂,x₃) = 2x₁² + x₂² + x₃² + 2x₁x₂ + tx₂x₃ 正定，则 t 的取值范围是 (   )",
       "answer": "$-\\sqrt2 < t < \\sqrt2$",
-      "solution": "$矩阵 A = [[2,1,0],[1,1,t/2],[0,t/2,1]]。顺序主子式：Δ₁=2>0，Δ₂=2-1=1>0，Δ₃=|A|=2(1-t²/4)-1(1-0)=2-t²/2-1=1-t²/2。要求 Δ₃>0 得 t²<2，即 -\\sqrt2<t<\\sqrt2。考查参数范围+正定判别。$"
+      "solution": "$矩阵 A = [[2,1,0],[1,1,t/2],[0,t/2,1]]。顺序主子式：Δ₁=2>0，Δ₂=2-1=1>0，Δ₃=|A|=2(1-t²/4)-1(1-0)=2-t²/2-1=1-t²/2。要求 Δ₃>0 得 t²<2，即 -\\sqrt2<t<\\sqrt2。考查参数范围+正定判别。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-093",
@@ -12537,7 +13937,9 @@ var QUESTION_BANK = {
         "a 和 b 平行"
       ],
       "answer": 1,
-      "solution": "内积为零 ⇔ 两向量正交（垂直）。在线性代数中，正交是比线性无关更强的概念。一组两两正交的非零向量必定线性无关，反之不成立。"
+      "solution": "内积为零 ⇔ 两向量正交（垂直）。在线性代数中，正交是比线性无关更强的概念。一组两两正交的非零向量必定线性无关，反之不成立。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-094",
@@ -12551,7 +13953,9 @@ var QUESTION_BANK = {
         "椭圆抛物面"
       ],
       "answer": 1,
-      "solution": "标准形式 x^{2}/a² + y²/b² - z²/c² = 1 是单叶双曲面。若 x^{2}/a² - y²/b² - z²/c² = 1 则为双叶双曲面。考查二次曲面的标准方程分类——空间解析几何的矩阵表示。"
+      "solution": "标准形式 x^{2}/a² + y²/b² - z²/c² = 1 是单叶双曲面。若 x^{2}/a² - y²/b² - z²/c² = 1 则为双叶双曲面。考查二次曲面的标准方程分类——空间解析几何的矩阵表示。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-095",
@@ -12565,7 +13969,9 @@ var QUESTION_BANK = {
         "2Ax"
       ],
       "answer": 1,
-      "solution": "$\\partial(xᵀAx)/\\partialx = 2Ax（A对称），\\partial(bᵀx)/\\partialx = b。故 \\nablaf = 2Ax + b。这是优化理论（如最小二乘、梯度下降）的基础。综合矩阵运算+多元微分。$"
+      "solution": "$\\partial(xᵀAx)/\\partialx = 2Ax（A对称），\\partial(bᵀx)/\\partialx = b。故 \\nablaf = 2Ax + b。这是优化理论（如最小二乘、梯度下降）的基础。综合矩阵运算+多元微分。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-096",
@@ -12579,7 +13985,9 @@ var QUESTION_BANK = {
         "A+Aᵀ"
       ],
       "answer": 1,
-      "solution": "$梯度 \\nablaf = 2Ax（A对称），再求导得 Hessian = 2A。Hessian 矩阵判断极值：正定则为极小值，负定则为极大值。综合二次型+极值判断。$"
+      "solution": "$梯度 \\nablaf = 2Ax（A对称），再求导得 Hessian = 2A。Hessian 矩阵判断极值：正定则为极小值，负定则为极大值。综合二次型+极值判断。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-097",
@@ -12593,7 +14001,9 @@ var QUESTION_BANK = {
         "(-1,-1)"
       ],
       "answer": 0,
-      "solution": "$\\partialf/\\partialx = 2x + y + 1 = 0，\\partialf/\\partialy = x + 2y - 1 = 0。解方程组得 x=-1, y=1。Hessian = [[2,1],[1,2]] 正定，故为极小值点。f(-1,1)=1-1+1-1-1+1=0。考查多元函数无条件极值——驻点+二阶判别。$"
+      "solution": "$\\partialf/\\partialx = 2x + y + 1 = 0，\\partialf/\\partialy = x + 2y - 1 = 0。解方程组得 x=-1, y=1。Hessian = [[2,1],[1,2]] 正定，故为极小值点。f(-1,1)=1-1+1-1-1+1=0。考查多元函数无条件极值——驻点+二阶判别。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-098",
@@ -12607,7 +14017,9 @@ var QUESTION_BANK = {
         "λ > 1"
       ],
       "answer": 0,
-      "solution": "矩阵 A = [[1,2],[2,λ]]。顺序主子式：Δ₁=1>0，Δ₂=λ-4>0 ⇒ λ>4。或用特征值法：特征方程 (1-t)(λ-t)-4=0，两特征值均>0 ⇔ 迹=1+λ>0（显然）且行列式=λ-4>0 ⇒ λ>4。考查含参数二次型的正定性判别。"
+      "solution": "矩阵 A = [[1,2],[2,λ]]。顺序主子式：Δ₁=1>0，Δ₂=λ-4>0 ⇒ λ>4。或用特征值法：特征方程 (1-t)(λ-t)-4=0，两特征值均>0 ⇔ 迹=1+λ>0（显然）且行列式=λ-4>0 ⇒ λ>4。考查含参数二次型的正定性判别。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-099",
@@ -12615,7 +14027,9 @@ var QUESTION_BANK = {
       "difficulty": "hard",
       "question": "用正交变换化二次型 f = 2x₁² + 2x₂² + 2x₃² + 2x₁x₂ + 2x₁x₃ + 2x₂x₃ 为标准型，其中最大的特征值为 (   )",
       "answer": "4",
-      "solution": "矩阵 A 所有对角元=2，所有非对角元=1。求特征值：|A-λI| = 0。A 的特殊结构——矩阵为 J+E（J 全1矩阵，E单位阵）。λ₁=4（对应特征向量(1,1,1)ᵀ），λ₂=λ₃=1。标准型：f=4y₁²+y₂²+y₃²。考查正交变换化二次型——等对角等非对角矩阵的特征值规律。"
+      "solution": "矩阵 A 所有对角元=2，所有非对角元=1。求特征值：|A-λI| = 0。A 的特殊结构——矩阵为 J+E（J 全1矩阵，E单位阵）。λ₁=4（对应特征向量(1,1,1)ᵀ），λ₂=λ₃=1。标准型：f=4y₁²+y₂²+y₃²。考查正交变换化二次型——等对角等非对角矩阵的特征值规律。",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-100",
@@ -12629,7 +14043,9 @@ var QUESTION_BANK = {
         "λ < 0"
       ],
       "answer": 0,
-      "solution": "$正定矩阵的定义就是 ∀x\\neq0, xᵀAx>0。取 x 为特征向量：xᵀAx = λxᵀx = λ‖x‖² > 0，故 λ > 0。逆命题也成立：所有特征值>0 ⇒ A正定。结合二次型化标准型：f = λ₁y₁²+…+λ_ny_n²，λ_i>0 则 f>0(∀y\\neq0)。考查正定矩阵的充要条件——特征值全正。$"
+      "solution": "$正定矩阵的定义就是 ∀x\\neq0, xᵀAx>0。取 x 为特征向量：xᵀAx = λxᵀx = λ‖x‖² > 0，故 λ > 0。逆命题也成立：所有特征值>0 ⇒ A正定。结合二次型化标准型：f = λ₁y₁²+…+λ_ny_n²，λ_i>0 则 f>0(∀y\\neq0)。考查正定矩阵的充要条件——特征值全正。$",
+      "cat": "综合题目",
+      "topic": "综合题目"
     },
     {
       "id": "comp-201",
