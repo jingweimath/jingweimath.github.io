@@ -694,7 +694,7 @@
       "id": "cal-di-109",
       "type": "choice",
       "difficulty": "hard",
-      "question": "设函数 $f(x,y)$ 连续，则累次积分 $\\displaystyle\\int_{0}^{\\pi/4}\\mathrm{d}\\theta\\int_{0}^{1}r^{2}\\cos\\theta\\,f(r\\cos\\theta,r\\sin\\theta)\\,\\mathrm{d}r$ 等于：\n\nA. $\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}x\\int_{x}^{\\sqrt{1-x^{2}}}x f(x,y)\\,\\mathrm{d}y$\nB. $\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}x\\int_{0}^{\\sqrt{1-x^{2}}}y f(x,y)\\,\\mathrm{d}y$\nC. $\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}y\\int_{y}^{\\sqrt{1-y^{2}}}x f(x,y)\\,\\mathrm{d}x$\nD. $\\displaystyle\\int_{0}^{\\sqrt2/2}\\mathrm{d}y\\int_{0}^{\\sqrt{1-y^{2}}}x f(x,y)\\,\\mathrm{d}x$",
+      "question": "设函数 $f(x,y)$ 连续，则累次积分 $\\displaystyle\\int_{0}^{\\pi/4}\\mathrm{d}\\theta\\int_{0}^{1}r^{2}\\cos\\theta\\,f(r\\cos\\theta,r\\sin\\theta)\\,\\mathrm{d}r$ 等于：",
       "answer": 2,
       "solution": "区域为扇形 $D=\\{r\\le1,\\ 0\\le\\theta\\le\\pi/4\\}$，即单位圆内 $0\\le y\\le x$ 部分。被积式 $r^{2}\\cos\\theta\\,\\mathrm{d}r\\,\\mathrm{d}\\theta=r\\cos\\theta\\cdot f\\cdot r\\,\\mathrm{d}r\\,\\mathrm{d}\\theta=x\\,f(x,y)\\,\\mathrm{d}\\sigma$。按先 $x$ 后 $y$：$y\\in\\left[0,\\tfrac{\\sqrt2}{2}\\right]$，$x\\in\\left[y,\\sqrt{1-y^{2}}\\right]$，恰为选项 C（选项 D 的内层下限 0 会混入 $x<y$ 部分，A 是上半楔形且区域颠倒，B 被积函数错为 $y$）。",
       "topic": "极坐标化直角坐标·选项",
