@@ -1,7 +1,6 @@
 // Auto-generated question bank bundle
 // Regenerate: python build_questions.py
 // Version: 20261025
-
 var QUESTION_BANK = {
   "subjects": {
   "calculus": {

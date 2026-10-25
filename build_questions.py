@@ -1,10 +1,63 @@
-import json, os, datetime
+# -*- coding: utf-8 -*-
+"""重建 questions-bundle-v2.js。
 
-qdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'questions')
+流程（2026-10-25 加固）：
+  1. 构建前跑 lint_questions.py 体检 —— 有 ERROR 直接中止，坏题不上线
+  2. 重建 bundle
+  3. 构建后自检：题数一致、choice answer 必须是 0-3 整数、id 无重复
+  4. **自动把 practice.html 里的 ?v=版本号 改成新版本号**（以前靠人肉记，忘了就走缓存）
+
+用法：
+    python build_questions.py                  # 正常：体检不过就不出包
+    python build_questions.py --force-lint     # 带着 ERROR 强行出包（应急用，不建议）
+    python build_questions.py --no-version     # 不改 practice.html 版本号
+"""
+import json
+import os
+import re
+import sys
+import datetime
+
 workspace = os.path.dirname(os.path.abspath(__file__))
+qdir = os.path.join(workspace, 'questions')
 
-# 自动生成版本号：今天日期
-VERSION = datetime.datetime.now().strftime('%Y%m%d')
+sys.path.insert(0, workspace)
+import lint_questions  # noqa: E402
+
+FORCE = '--force-lint' in sys.argv
+NO_VERSION = '--no-version' in sys.argv
+
+# ---------------------------------------------------------------- 1. 体检
+print('=' * 70)
+print('步骤 1/4  构建前体检')
+print('=' * 70)
+errors, warns, src_total = lint_questions.lint()
+if errors:
+    print('发现 %d 处 ERROR：' % len(errors))
+    for fname, qid, fld, why, ctx in errors:
+        print('  %s  %s / %s / %s' % (fname, qid, fld, why))
+        if ctx:
+            print('      ...%s...' % ctx)
+    if not FORCE:
+        print('\n✗ 构建中止：坏题不能上线。')
+        print('  修完再跑，或确需应急出包用：python build_questions.py --force-lint')
+        sys.exit(1)
+    print('\n⚠ --force-lint 已指定，继续出包（坏题会一并上线）')
+else:
+    print('✓ 体检通过：%d 道题，0 ERROR' % src_total)
+if warns:
+    import collections
+    agg = collections.Counter(w[3] for w in warns)
+    print('  WARN %d 处：' % len(warns) +
+          '、'.join('%s %d' % (k, v) for k, v in agg.most_common()))
+
+# ------------------------------------------------------------ 2. 重建 bundle
+print()
+print('=' * 70)
+print('步骤 2/4  重建 bundle')
+print('=' * 70)
+
+VERSION_DATE = datetime.datetime.now().strftime('%Y%m%d')
 
 index = json.load(open(os.path.join(qdir, 'index.json'), encoding='utf-8'))
 
@@ -60,13 +113,8 @@ def fill_papers(data, chapter_papers, is_comprehensive=False):
         else:
             q['papers'] = list(chapter_papers)
 
-lines = [
-    '// Auto-generated question bank bundle',
-    '// Regenerate: python build_questions.py',
-    '// Version: ' + VERSION,
-    '',
-    'var QUESTION_BANK = {',
-]
+
+lines = []
 
 subjects_json = json.dumps(index['subjects'], ensure_ascii=False, indent=2)
 lines.append('  "subjects": ' + subjects_json)
@@ -90,20 +138,101 @@ for subject_key, subject in index['subjects'].items():
                 fill_papers(data, chapter.get('papers', ALL_PAPERS),
                             is_comprehensive=(chapter['id'] == 'comprehensive'))
                 chapter_data = json.dumps(data, ensure_ascii=False, indent=2)
-                # Add comma before all items including first (after 'subjects')
                 lines.append(',')
                 lines.append('  ' + json.dumps(chapter['id']) + ': ' + chapter_data)
 
-lines.append('};')
+# ------------------------------------------------------------ 3. 构建后自检
+print()
+print('=' * 70)
+print('步骤 3/4  构建后自检')
+print('=' * 70)
 
+body = '{\n' + '\n'.join(lines) + '\n}'
+try:
+    parsed = json.loads(body)
+except Exception as e:
+    print('✗ bundle 不是合法 JSON：%s' % e)
+    sys.exit(1)
+
+bank_total = 0
+post_err = []
+seen_ids = set()
+for key, val in parsed.items():
+    if key == 'subjects' or not isinstance(val, dict) or 'questions' not in val:
+        continue
+    for q in val['questions']:
+        bank_total += 1
+        qid = q.get('id')
+        if qid in seen_ids:
+            post_err.append('%s: id 重复' % qid)
+        seen_ids.add(qid)
+        if q.get('type') == 'choice':
+            a = q.get('answer')
+            opts = q.get('options') or []
+            if not isinstance(a, int) or isinstance(a, bool) or not (0 <= a < len(opts)):
+                post_err.append('%s: choice answer=%r 不是合法索引（options %d 项）'
+                                % (qid, a, len(opts)))
+        if not str(q.get('cat', '')).strip() or not str(q.get('topic', '')).strip():
+            post_err.append('%s: 考点标签兜底失败' % qid)
+        if not q.get('papers'):
+            post_err.append('%s: papers 为空' % qid)
+
+if bank_total != src_total:
+    post_err.append('题数不一致：源 %d vs bundle %d' % (src_total, bank_total))
+
+if post_err:
+    print('✗ 自检失败 %d 项：' % len(post_err))
+    for e in post_err[:20]:
+        print('  ' + e)
+    sys.exit(1)
+
+print('✓ 题数一致：源 %d = bundle %d' % (src_total, bank_total))
+print('✓ choice answer 索引合法、id 无重复、考点标签 100%、papers 齐全')
+
+# ------------------------------------------------- 4. 写文件 + 自动版本号
 output_path = os.path.join(workspace, 'questions-bundle-v2.js')
 with open(output_path, 'w', encoding='utf-8') as f:
-    f.write('\n'.join(lines))
+    f.write('// Auto-generated question bank bundle\n')
+    f.write('// Regenerate: python build_questions.py\n')
+    f.write('// Version: %s\n' % VERSION_DATE)
+    f.write('var QUESTION_BANK = ')
+    f.write(body)
+    f.write(';\n')
 
-print(f'Bundle generated: {output_path}')
-print(f'Version: {VERSION}')
-print('Remember to update practice.html to use ?v=' + VERSION)
-cnt = len(lines) - 5
-print(f'Chapters loaded: {cnt}')
+print()
+print('=' * 70)
+print('步骤 4/4  同步 practice.html 版本号')
+print('=' * 70)
+
+PRACTICE = os.path.join(workspace, 'practice.html')
+VERSION = VERSION_DATE
+if NO_VERSION:
+    print('--no-version 已指定，跳过版本号同步')
+else:
+    with open(PRACTICE, encoding='utf-8') as f:
+        html = f.read()
+    m = re.search(r'questions-bundle-v2\.js\?v=([0-9]{8})([a-z]?)', html)
+    if not m:
+        print('⚠ 没在 practice.html 里找到 questions-bundle-v2.js?v=... ，未改版本号')
+    else:
+        old_date, old_suffix = m.group(1), m.group(2)
+        if old_date == VERSION_DATE:
+            # 同一天再次构建：字母后缀递增 a→b→…→z
+            nxt = chr(ord(old_suffix) + 1) if old_suffix and old_suffix != 'z' else \
+                  ('a' if not old_suffix else 'z')
+            VERSION = VERSION_DATE + nxt
+        else:
+            VERSION = VERSION_DATE
+        html = html.replace(m.group(0), 'questions-bundle-v2.js?v=' + VERSION)
+        with open(PRACTICE, 'w', encoding='utf-8') as f:
+            f.write(html)
+        print('✓ practice.html: ?v=%s%s  →  ?v=%s' % (old_date, old_suffix, VERSION))
+
+print()
+print('Bundle generated: %s' % output_path)
+print('Version: %s' % VERSION)
+print('Chapters loaded: %d' % (len(lines) - 1))
 if FILL_TOTAL:
-    print(f'考点标签兜底回填: {FILL_TOTAL} 处（cat/topic 缺失，用章节名填充）')
+    print('考点标签兜底回填: %d 处（cat/topic 缺失，用章节名填充）' % FILL_TOTAL)
+print()
+print('下一步：scp questions-bundle-v2.js practice.html editor-data.js root@62.234.131.123:/var/www/jingweimath/')
