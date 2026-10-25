@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="经纬考研数学在线题库，高等数学、线性代数、概率统计三大模块807题，覆盖基础、适中、较难、拔高四个难度，支持分类练习与错题回顾，随时随地刷题。">
+<meta name="description" content="经纬考研数学在线题库，高等数学、线性代数、概率统计三大模块869题，覆盖基础、中等、困难三个难度，支持分类练习与错题回顾，随时随地刷题。">
 <meta name="keywords" content="考研数学题库,考研数学刷题,高数题库,线性代数题库,概率统计题库,考研数学练习">
 <title>题库练习 · 经纬数学</title>
 <style>
@@ -67,7 +67,7 @@
   .qs-num { font-size: 20px; font-weight: 800; }
   .qs-lbl { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
 
-  .main-area { display: flex; flex-direction: column; gap: 24px; }
+  .main-area { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
   .card { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
   .card h3 { font-size: 17px; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
 
@@ -88,7 +88,6 @@
   .diff-basic { background: #dcfce7; color: #15803d; }
   .diff-medium { background: #fef9c3; color: #b45309; }
   .diff-hard { background: #fee2e2; color: #b91c1c; }
-  .diff-expert { background: #ede9fe; color: #6d28d9; }
   .q-type { font-size: 12px; color: var(--text-muted); margin-left: auto; }
   .q-body { font-size: 15px; line-height: 1.8; color: var(--text); margin-bottom: 4px; font-family: "Georgia", "Times New Roman", serif; letter-spacing: 0.5px; }
   .q-options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
@@ -100,6 +99,7 @@
   .q-solution { display: none; margin-top: 16px; padding: 16px; background: #f0f9ff; border-radius: 10px; font-size: 14px; line-height: 1.9; border-left: 3px solid var(--primary); }
   .question-card.expanded .q-solution { display: block; }
   .solution-label { font-size: 12px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+  .q-solution { overflow-x: auto; max-width: 100%; }
   .fill-answer { margin-top: 12px; display: flex; gap: 10px; align-items: center; }
   .fill-answer input { padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 14px; font-family: "Georgia", "Times New Roman", serif; width: 200px; }
   .fill-answer input:focus { outline: none; border-color: var(--primary); }
@@ -115,6 +115,46 @@
   .loading { text-align: center; padding: 40px; color: var(--text-muted); }
   .chapter-info { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; font-size: 13px; color: var(--text-muted); }
   .chapter-info strong { color: var(--text); }
+
+  .quiz-setup { background: var(--bg); border-radius: 12px; padding: 18px; margin-bottom: 18px; }
+  .quiz-row { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+  .quiz-row:last-child { margin-bottom: 0; }
+  .quiz-label { font-size: 13px; font-weight: 600; color: var(--text); width: 62px; flex-shrink: 0; }
+  .quiz-select { padding: 9px 12px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 13px; font-family: inherit; background: var(--background, #fff); color: var(--text); min-width: 220px; }
+  .quiz-select:focus { outline: none; border-color: var(--primary); }
+  .chip-group { display: flex; gap: 8px; flex-wrap: wrap; }
+  .chip-group .chip { padding: 7px 14px; }
+  .quiz-start { padding: 11px 26px; background: var(--primary); color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+  .quiz-start:hover { background: var(--primary-dark); }
+  .quiz-start:disabled { background: #9ca3af; cursor: not-allowed; }
+  .quiz-pool-info { font-size: 12px; color: var(--text-muted); }
+  .quiz-tip { font-size: 12px; color: var(--text-muted); line-height: 1.6; margin-top: 10px; }
+
+  .quiz-actions { display: flex; gap: 10px; align-items: center; margin: 20px 0 8px; flex-wrap: wrap; }
+  .btn-ghost { padding: 10px 18px; border: 1.5px solid var(--border); background: transparent; color: var(--text); border-radius: 8px; font-size: 13px; cursor: pointer; font-family: inherit; }
+  .btn-ghost:hover { border-color: var(--primary); color: var(--primary); }
+
+  .quiz-result-card { background: var(--bg); border-radius: 12px; padding: 20px; margin-bottom: 18px; text-align: center; }
+  .quiz-score { font-size: 34px; font-weight: 700; color: var(--primary); line-height: 1.2; }
+  .quiz-score small { font-size: 15px; font-weight: 500; color: var(--text-muted); }
+  .quiz-meta { font-size: 13px; color: var(--text-muted); margin-top: 6px; }
+  .quiz-badges { display: flex; gap: 10px; justify-content: center; margin-top: 14px; flex-wrap: wrap; }
+  .quiz-badge { font-size: 12px; padding: 5px 12px; border-radius: 20px; background: #fff; border: 1px solid var(--border); color: var(--text); }
+
+  .q-option.picked { border-color: var(--primary); background: var(--primary-light); }
+  .q-option.picked::after { content: '你的选择'; margin-left: auto; font-size: 11px; color: var(--primary); font-weight: 600; }
+  .quiz-verdict { font-size: 12px; font-weight: 700; margin-top: 10px; padding: 6px 12px; border-radius: 6px; display: inline-block; }
+  .quiz-verdict.right { background: #ecfdf5; color: #047857; }
+  .quiz-verdict.wrong { background: #fef2f2; color: #b91c1c; }
+  .quiz-your-answer { font-size: 12px; color: var(--text-muted); margin-top: 8px; }
+  .question-card.q-right { border-left: 3px solid #10b981; }
+  .question-card.q-wrong { border-left: 3px solid #ef4444; }
+
+  .hist-item { display: flex; justify-content: space-between; align-items: center; padding: 9px 12px; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .hist-item:last-child { border-bottom: none; }
+  .hist-score { font-weight: 700; color: var(--primary); }
+  .hist-meta { color: var(--text-muted); font-size: 12px; }
+  .wrong-entry { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted); margin-top: 8px; }
 </style>
 <!-- MathJax -->
 <script>
@@ -181,6 +221,7 @@ window.MathJax = {
       <div class="card">
         <div class="tabs" id="tabBar">
           <button class="tab active" onclick="switchTab('all')">全部题目</button>
+          <button class="tab" onclick="switchTab('quiz')">随机自测</button>
           <button class="tab" onclick="switchTab('error')">错题本</button>
         </div>
         <div class="filter-row" id="filterRow">
@@ -188,16 +229,52 @@ window.MathJax = {
           <button class="chip" onclick="filterDiff('basic')">基础</button>
           <button class="chip" onclick="filterDiff('medium')">适中</button>
           <button class="chip" onclick="filterDiff('hard')">较难</button>
-          <button class="chip" onclick="filterDiff('expert')">拔高</button>
         </div>
         <div class="chapter-info" id="chapterInfo"></div>
+
+        <div id="quizPanel" style="display:none">
+          <div class="quiz-setup">
+            <div class="quiz-row">
+              <span class="quiz-label">范围</span>
+              <select id="quizScope" class="quiz-select" onchange="updateQuizPoolInfo()"></select>
+            </div>
+            <div class="quiz-row">
+              <span class="quiz-label">题量</span>
+              <div class="chip-group" id="quizCountGroup">
+                <button class="chip" onclick="setQuizCount(5,this)">5 题</button>
+                <button class="chip active" onclick="setQuizCount(10,this)">10 题</button>
+                <button class="chip" onclick="setQuizCount(20,this)">20 题</button>
+                <button class="chip" onclick="setQuizCount(30,this)">30 题</button>
+              </div>
+            </div>
+            <div class="quiz-row">
+              <span class="quiz-label">难度</span>
+              <div class="chip-group" id="quizDiffGroup">
+                <button class="chip active" onclick="setQuizDiff('all',this)">全部</button>
+                <button class="chip" onclick="setQuizDiff('basic',this)">基础</button>
+                <button class="chip" onclick="setQuizDiff('medium',this)">适中</button>
+                <button class="chip" onclick="setQuizDiff('hard',this)">较难</button>
+                <button class="chip" onclick="setQuizDiff('expert',this)">拔高</button>
+              </div>
+            </div>
+            <div class="quiz-row">
+              <button class="quiz-start" id="quizStartBtn" onclick="startQuiz()">开始自测</button>
+              <span class="quiz-pool-info" id="quizPoolInfo"></span>
+            </div>
+            <div class="quiz-tip">随机抽题，答完交卷后统一批改。做错的题会自动进「错题本」，可随时回来重做。</div>
+          </div>
+          <div id="quizHistory"></div>
+        </div>
+
+        <div id="quizResult"></div>
         <div id="questionsArea"></div>
+        <div id="quizActions"></div>
       </div>
     </div>
   </div>
 </div>
 
-<script src="questions-bundle-v2.js?v=20261023"></script>
+<script src="questions-bundle-v2.js?v=20261025"></script>
 <script>
 // prettyMath: MathJax 接管后直接返回原文，由 MathJax 渲染
 function prettyMath(text) {
@@ -211,11 +288,14 @@ var currentTab = 'all';
 var totalQuestions = 0;
 
 var DIFF_MAP = { basic: '基础', medium: '适中', hard: '较难', expert: '拔高' };
+var DIFF_MAP_FULL = { all: '全部难度', basic: '基础', medium: '适中', hard: '较难', expert: '拔高' };
 var TYPE_MAP = { choice: '选择题', fill: '填空题', proof: '解答题' };
 var OPTION_LABELS = ['A', 'B', 'C', 'D'];
 
 function init() {
   buildChapterNav();
+  buildQuizScope();
+  buildQIndex();
   var chapters = getAvailableChapters();
   if (chapters.length > 0) selectChapter(chapters[0]);
   countAllQuestions();
@@ -282,9 +362,22 @@ function selectChapter(chapterId) {
 function switchTab(tab) {
   currentTab = tab;
   document.querySelectorAll('#tabBar .tab').forEach(function(t) { t.classList.remove('active'); });
-  event.target.classList.add('active');
-  document.getElementById('filterRow').style.display = tab === 'error' ? 'none' : '';
-  renderQuestions();
+  if (event && event.target) event.target.classList.add('active');
+  var isQuiz = (tab === 'quiz');
+  var isError = (tab === 'error');
+  document.getElementById('filterRow').style.display = (isQuiz || isError) ? 'none' : '';
+  document.getElementById('chapterInfo').style.display = (isQuiz || isError) ? 'none' : '';
+  document.getElementById('quizPanel').style.display = isQuiz ? '' : 'none';
+  document.getElementById('quizResult').innerHTML = '';
+  document.getElementById('quizActions').innerHTML = '';
+  if (isQuiz) {
+    if (QUIZ_STATE.active && !QUIZ_STATE.submitted) renderQuizQuestions();
+    else showQuizSetup();
+  } else if (isError) {
+    renderErrorBook();
+  } else {
+    renderQuestions();
+  }
 }
 
 function filterDiff(diff) {
@@ -402,6 +495,403 @@ function normalizeAnswer(user, expected) {
   }
 
   return false;
+}
+
+/* ================= 随机自测 ================= */
+var QUIZ_STATE = { active: false, questions: [], answers: {}, submitted: false, scope: 'all', count: 10, diff: 'all', startAt: 0 };
+var LS_WRONG = 'jm_wrong_bank_v1';
+var LS_HIST = 'jm_quiz_history_v1';
+var Q_INDEX = null;
+
+function esc(s) {
+  return String(s === null || s === undefined ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function buildQIndex() {
+  if (Q_INDEX) return Q_INDEX;
+  Q_INDEX = {};
+  Object.values(QUESTION_BANK.subjects).forEach(function (subj) {
+    subj.chapters.forEach(function (ch) {
+      var node = QUESTION_BANK[ch.id];
+      if (!node || !node.questions) return;
+      node.questions.forEach(function (q) {
+        Q_INDEX[q.id] = { q: q, chapter: ch.name, subject: subj.name };
+      });
+    });
+  });
+  return Q_INDEX;
+}
+
+function buildQuizScope() {
+  var sel = document.getElementById('quizScope');
+  if (!sel) return;
+  var html = '<option value="all">全科综合（全部章节混抽）</option>';
+  Object.keys(QUESTION_BANK.subjects).forEach(function (sk) {
+    var subj = QUESTION_BANK.subjects[sk];
+    var sn = 0;
+    subj.chapters.forEach(function (ch) { sn += QUESTION_BANK[ch.id] ? QUESTION_BANK[ch.id].questions.length : 0; });
+    html += '<optgroup label="' + subj.name + '">';
+    html += '<option value="subj:' + sk + '">' + subj.name + '（整科 ' + sn + ' 题）</option>';
+    subj.chapters.forEach(function (ch) {
+      var n = QUESTION_BANK[ch.id] ? QUESTION_BANK[ch.id].questions.length : 0;
+      html += '<option value="ch:' + ch.id + '">' + ch.name + '（' + n + ' 题）</option>';
+    });
+    html += '</optgroup>';
+  });
+  sel.innerHTML = html;
+  sel.value = 'all';
+}
+
+function getPoolByScope(scope) {
+  var out = [];
+  if (scope === 'all') {
+    Object.keys(QUESTION_BANK.subjects).forEach(function (sk) {
+      QUESTION_BANK.subjects[sk].chapters.forEach(function (ch) {
+        var node = QUESTION_BANK[ch.id];
+        if (node && node.questions) node.questions.forEach(function (q) { out.push(q); });
+      });
+    });
+  } else if (scope.indexOf('subj:') === 0) {
+    var subj = QUESTION_BANK.subjects[scope.slice(5)];
+    if (subj) subj.chapters.forEach(function (ch) {
+      var node = QUESTION_BANK[ch.id];
+      if (node && node.questions) node.questions.forEach(function (q) { out.push(q); });
+    });
+  } else if (scope.indexOf('ch:') === 0) {
+    var node2 = QUESTION_BANK[scope.slice(3)];
+    if (node2 && node2.questions) out = node2.questions.slice();
+  }
+  return out.filter(function (q) {
+    if (q.type === 'choice') {
+      return typeof q.answer === 'number' && q.options && q.answer >= 0 && q.answer < q.options.length;
+    }
+    if (q.type === 'fill') {
+      return q.answer !== undefined && q.answer !== null && String(q.answer).length > 0;
+    }
+    return false;
+  });
+}
+
+function currentPool() {
+  var pool = getPoolByScope(QUIZ_STATE.scope);
+  if (QUIZ_STATE.diff !== 'all') pool = pool.filter(function (q) { return q.difficulty === QUIZ_STATE.diff; });
+  return pool;
+}
+
+function scopeName(scope) {
+  if (scope === 'all') return '全科综合';
+  if (scope.indexOf('subj:') === 0) {
+    var s = QUESTION_BANK.subjects[scope.slice(5)];
+    return s ? s.name : '自测';
+  }
+  if (scope.indexOf('ch:') === 0) {
+    var n = QUESTION_BANK[scope.slice(3)];
+    return n ? n.chapter : '自测';
+  }
+  return '自测';
+}
+
+function fmtTime(s) {
+  if (s < 60) return s + ' 秒';
+  var m = Math.floor(s / 60), ss = s % 60;
+  return m + ' 分' + (ss ? ss + ' 秒' : '');
+}
+
+function updateQuizPoolInfo() {
+  var sel = document.getElementById('quizScope');
+  if (sel) QUIZ_STATE.scope = sel.value;
+  var n = currentPool().length;
+  var info = document.getElementById('quizPoolInfo');
+  var btn = document.getElementById('quizStartBtn');
+  if (n === 0) {
+    info.textContent = '这个范围没有可选题目，换个范围或难度';
+    btn.disabled = true;
+  } else {
+    info.textContent = '当前范围可选 ' + n + ' 题，随机抽取';
+    btn.disabled = false;
+  }
+  renderQuizHistory();
+}
+
+function setQuizCount(n, el) {
+  QUIZ_STATE.count = n;
+  document.querySelectorAll('#quizCountGroup .chip').forEach(function (c) { c.classList.remove('active'); });
+  el.classList.add('active');
+}
+
+function setQuizDiff(d, el) {
+  QUIZ_STATE.diff = d;
+  document.querySelectorAll('#quizDiffGroup .chip').forEach(function (c) { c.classList.remove('active'); });
+  el.classList.add('active');
+  updateQuizPoolInfo();
+}
+
+function shuffle(arr) {
+  var a = arr.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+
+function showQuizSetup() {
+  QUIZ_STATE.active = false;
+  QUIZ_STATE.submitted = false;
+  document.getElementById('quizResult').innerHTML = '';
+  document.getElementById('quizActions').innerHTML = '';
+  document.getElementById('quizPanel').style.display = '';
+  updateQuizPoolInfo();
+  document.getElementById('questionsArea').innerHTML =
+    '<div class="empty-state"><div class="icon">🎯</div><h3>选好范围，开始自测</h3><p>系统随机抽题，答完交卷后统一批改</p></div>';
+}
+
+function startQuiz(list) {
+  var pool = list || shuffle(currentPool()).slice(0, QUIZ_STATE.count);
+  if (!pool.length) return;
+  QUIZ_STATE.questions = pool;
+  QUIZ_STATE.answers = {};
+  QUIZ_STATE.submitted = false;
+  QUIZ_STATE.active = true;
+  QUIZ_STATE.startAt = Date.now();
+  document.getElementById('quizPanel').style.display = 'none';
+  document.getElementById('quizResult').innerHTML = '';
+  renderQuizQuestions();
+}
+
+function restartQuiz() { startQuiz(); }
+
+function retryWrong() {
+  var wrongs = [];
+  QUIZ_STATE.questions.forEach(function (q, idx) {
+    if (!judgeOne(q, QUIZ_STATE.answers[idx])) wrongs.push(q);
+  });
+  if (!wrongs.length) return;
+  startQuiz(shuffle(wrongs));
+}
+
+function renderQuizQuestions() {
+  var area = document.getElementById('questionsArea');
+  var html = '';
+  QUIZ_STATE.questions.forEach(function (q, idx) { html += renderQuizQuestion(q, idx); });
+  area.innerHTML = html;
+
+  var acts = '';
+  if (!QUIZ_STATE.submitted) {
+    acts = '<div class="quiz-actions">';
+    acts += '<button class="quiz-start" onclick="submitQuiz()">交卷批改</button>';
+    acts += '<button class="btn-ghost" onclick="showQuizSetup()">重新设置</button>';
+    acts += '<span class="quiz-pool-info">共 ' + QUIZ_STATE.questions.length + ' 题，答完点交卷</span>';
+    acts += '</div>';
+  }
+  document.getElementById('quizActions').innerHTML = acts;
+
+  if (window.MathJax && MathJax.typesetPromise) {
+    MathJax.typesetPromise([area]).catch(function () {});
+  }
+}
+
+function renderQuizQuestion(q, idx) {
+  var difLabel = DIFF_MAP[q.difficulty] || q.difficulty;
+  var typeLabel = TYPE_MAP[q.type] || q.type;
+  var html = '<div class="question-card" id="qq-' + idx + '" data-qid="' + q.id + '">';
+  html += '<div class="q-header">';
+  html += '<span class="q-num">第 ' + (idx + 1) + ' 题</span>';
+  html += '<span class="q-difficulty diff-' + q.difficulty + '">' + difLabel + '</span>';
+  html += '<span class="q-type">' + typeLabel + '</span>';
+  html += '</div>';
+  html += '<div class="q-body">' + prettyMath(q.question) + '</div>';
+
+  if (q.type === 'choice') {
+    html += '<div class="q-options">';
+    q.options.forEach(function (opt, i) {
+      var picked = (QUIZ_STATE.answers[idx] === i) ? ' picked' : '';
+      html += '<div class="q-option' + picked + '" onclick="pickQuizChoice(' + idx + ',' + i + ',this)">' + OPTION_LABELS[i] + '. ' + prettyMath(opt) + '</div>';
+    });
+    html += '</div>';
+  } else if (q.type === 'fill') {
+    html += '<div class="fill-answer">';
+    html += '<input type="text" placeholder="输入答案..." value="' + esc(QUIZ_STATE.answers[idx]) + '" oninput="onQuizFill(' + idx + ',this.value)">';
+    html += '</div>';
+  }
+  html += '<div class="quiz-feedback" id="qf-' + idx + '"></div>';
+  html += '</div>';
+  return html;
+}
+
+function pickQuizChoice(idx, optIdx, el) {
+  if (QUIZ_STATE.submitted) return;
+  QUIZ_STATE.answers[idx] = optIdx;
+  var parent = el.parentElement;
+  parent.querySelectorAll('.q-option').forEach(function (o) { o.classList.remove('picked'); });
+  el.classList.add('picked');
+}
+
+function onQuizFill(idx, value) { QUIZ_STATE.answers[idx] = value; }
+
+function judgeOne(q, ans) {
+  if (ans === undefined || ans === null || ans === '') return false;
+  if (q.type === 'choice') return ans === q.answer;
+  if (q.type === 'fill') return normalizeAnswer(String(ans), String(q.answer));
+  return false;
+}
+
+function submitQuiz() {
+  var qs = QUIZ_STATE.questions;
+  var right = 0, wrongCount = 0, wrongIds = [];
+  qs.forEach(function (q, idx) {
+    if (judgeOne(q, QUIZ_STATE.answers[idx])) right++;
+    else { wrongCount++; wrongIds.push(q.id); }
+  });
+  QUIZ_STATE.submitted = true;
+  var seconds = Math.round((Date.now() - QUIZ_STATE.startAt) / 1000);
+  var pct = qs.length ? Math.round(right / qs.length * 100) : 0;
+
+  var html = '<div class="quiz-result-card">';
+  html += '<div class="quiz-score">' + right + '<small> / ' + qs.length + ' 题</small></div>';
+  html += '<div class="quiz-meta">正确率 ' + pct + '%　用时 ' + fmtTime(seconds) + '</div>';
+  html += '<div class="quiz-badges">';
+  html += '<span class="quiz-badge">' + esc(scopeName(QUIZ_STATE.scope)) + '</span>';
+  html += '<span class="quiz-badge">' + (DIFF_MAP_FULL[QUIZ_STATE.diff] || '全部难度') + '</span>';
+  html += '<span class="quiz-badge">答错 ' + wrongCount + ' 题</span>';
+  html += '</div></div>';
+  document.getElementById('quizResult').innerHTML = html;
+
+  qs.forEach(function (q, idx) {
+    var card = document.getElementById('qq-' + idx);
+    if (!card) return;
+    var ok = judgeOne(q, QUIZ_STATE.answers[idx]);
+    card.classList.add(ok ? 'q-right' : 'q-wrong');
+    var ans = QUIZ_STATE.answers[idx];
+    var yourTxt, correctTxt;
+    if (q.type === 'choice') {
+      yourTxt = (ans === undefined || ans === null) ? '未作答' : (OPTION_LABELS[ans] + '. ' + q.options[ans]);
+      correctTxt = OPTION_LABELS[q.answer] + '. ' + q.options[q.answer];
+      card.querySelectorAll('.q-option').forEach(function (o, i) {
+        if (i === q.answer) o.classList.add('highlight-correct');
+        else if (i === ans) o.classList.add('wrong');
+      });
+    } else {
+      yourTxt = (ans === undefined || ans === null || ans === '') ? '未作答' : ans;
+      correctTxt = q.answer;
+    }
+    var s = '<span class="quiz-verdict ' + (ok ? 'right' : 'wrong') + '">' + (ok ? '回答正确' : '回答错误') + '</span>';
+    s += '<div class="quiz-your-answer">你的答案：' + esc(yourTxt) + (ok ? '' : '　正确答案：' + esc(correctTxt)) + '</div>';
+    s += '<div class="q-solution" style="display:block"><div class="solution-label">解析</div>' + prettyMath(q.solution).replace(/\n/g, '<br>') + '</div>';
+    document.getElementById('qf-' + idx).innerHTML = s;
+  });
+
+  if (window.MathJax && MathJax.typesetPromise) {
+    MathJax.typesetPromise([document.getElementById('questionsArea')]).catch(function () {});
+  }
+
+  var acts = '<div class="quiz-actions">';
+  acts += '<button class="quiz-start" onclick="restartQuiz()">再来一组</button>';
+  if (wrongCount) acts += '<button class="btn-ghost" onclick="retryWrong()">只重做错题（' + wrongCount + '）</button>';
+  acts += '<button class="btn-ghost" onclick="showQuizSetup()">换个范围</button>';
+  acts += '</div>';
+  document.getElementById('quizActions').innerHTML = acts;
+
+  saveHistory({ date: new Date().toISOString(), right: right, total: qs.length, pct: pct, seconds: seconds, scope: scopeName(QUIZ_STATE.scope), diff: QUIZ_STATE.diff });
+  if (wrongIds.length) saveWrong(wrongIds);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function saveWrong(ids) {
+  try {
+    var w = JSON.parse(localStorage.getItem(LS_WRONG) || '{}');
+    ids.forEach(function (id) { w[id] = { n: (w[id] ? w[id].n : 0) + 1, t: Date.now() }; });
+    localStorage.setItem(LS_WRONG, JSON.stringify(w));
+  } catch (e) {}
+}
+
+function loadWrong() {
+  try { return JSON.parse(localStorage.getItem(LS_WRONG) || '{}'); } catch (e) { return {}; }
+}
+
+function clearWrong() {
+  if (!confirm('确定清空错题本？存在本机的错题记录会被删除。')) return;
+  try { localStorage.removeItem(LS_WRONG); } catch (e) {}
+  renderErrorBook();
+}
+
+function saveHistory(rec) {
+  try {
+    var h = JSON.parse(localStorage.getItem(LS_HIST) || '[]');
+    h.unshift(rec);
+    if (h.length > 50) h = h.slice(0, 50);
+    localStorage.setItem(LS_HIST, JSON.stringify(h));
+  } catch (e) {}
+}
+
+function loadHistory() {
+  try { return JSON.parse(localStorage.getItem(LS_HIST) || '[]'); } catch (e) { return []; }
+}
+
+function renderQuizHistory() {
+  var box = document.getElementById('quizHistory');
+  if (!box) return;
+  var h = loadHistory();
+  if (!h.length) { box.innerHTML = ''; return; }
+  var tq = 0, tr = 0;
+  h.forEach(function (r) { tq += r.total; tr += r.right; });
+  var s = '<div style="margin-top:18px">';
+  s += '<div style="font-size:13px;font-weight:600;margin-bottom:6px">我的自测记录</div>';
+  s += '<div class="quiz-meta" style="margin-bottom:8px">累计 ' + h.length + ' 组 · 共 ' + tq + ' 题 · 总正确率 ' + (tq ? Math.round(tr / tq * 100) : 0) + '%（只存在这台设备上）</div>';
+  h.slice(0, 8).forEach(function (r) {
+    s += '<div class="hist-item"><span class="hist-meta">' + esc(r.scope) + ' · ' + (DIFF_MAP_FULL[r.diff] || '全部') + ' · ' + fmtTime(r.seconds) + '</span>';
+    s += '<span class="hist-score">' + r.right + '/' + r.total + '</span></div>';
+  });
+  s += '</div>';
+  box.innerHTML = s;
+}
+
+function renderErrorBook() {
+  var area = document.getElementById('questionsArea');
+  document.getElementById('quizActions').innerHTML = '';
+  document.getElementById('quizResult').innerHTML = '';
+  var w = loadWrong();
+  buildQIndex();
+  var ids = Object.keys(w).sort(function (a, b) { return (w[b].t || 0) - (w[a].t || 0); });
+  var items = [];
+  ids.forEach(function (id) {
+    if (Q_INDEX[id]) items.push({ id: id, q: Q_INDEX[id].q, subject: Q_INDEX[id].subject, chapter: Q_INDEX[id].chapter, meta: w[id] });
+  });
+  if (!items.length) {
+    area.innerHTML = '<div class="empty-state"><div class="icon">✅</div><h3>错题本是空的</h3><p>去「随机自测」做几组题，做错的会自动收进这里</p></div>';
+    return;
+  }
+  var html = '<div class="quiz-result-card" style="text-align:left">';
+  html += '<div style="font-size:15px;font-weight:600;margin-bottom:4px">错题本 · ' + items.length + ' 题</div>';
+  html += '<div class="quiz-meta">按最近做错时间排序，错一次记一次</div>';
+  html += '<div class="quiz-actions"><button class="quiz-start" onclick="quizFromWrong()">用错题出一套</button>';
+  html += '<button class="btn-ghost" onclick="clearWrong()">清空错题本</button></div></div>';
+  items.forEach(function (it, i) {
+    html += '<div class="wrong-entry">错 ' + it.meta.n + ' 次 · ' + esc(it.subject) + ' · ' + esc(it.chapter) + '</div>';
+    html += renderQuestion(it.q, i + 1);
+  });
+  area.innerHTML = html;
+  if (window.MathJax && MathJax.typesetPromise) {
+    MathJax.typesetPromise([area]).catch(function () {});
+  }
+}
+
+function quizFromWrong() {
+  var w = loadWrong();
+  buildQIndex();
+  var list = [];
+  Object.keys(w).forEach(function (id) {
+    var it = Q_INDEX[id];
+    if (it && (it.q.type === 'choice' || it.q.type === 'fill')) list.push(it.q);
+  });
+  if (!list.length) return;
+  var tabs = document.querySelectorAll('#tabBar .tab');
+  tabs.forEach(function (t) { t.classList.remove('active'); });
+  if (tabs[1]) tabs[1].classList.add('active');
+  currentTab = 'quiz';
+  document.getElementById('quizPanel').style.display = 'none';
+  startQuiz(shuffle(list));
 }
 
 init();

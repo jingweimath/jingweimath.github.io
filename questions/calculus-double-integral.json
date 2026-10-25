@@ -14,7 +14,7 @@
         "用分部积分法",
         "用极坐标变换"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\sin(y^2) 对 y 不可用初等函数表示，但交换次序后：\\int_0^1\\!\\int_0^y \\sin(y^2)\\,dx\\,dy = \\int_0^1 y\\sin(y^2)dy = -\\frac{1}{2}\\cos(y^2)\\big|_0^1 = \\frac{1-\\cos 1}{2}。**答案：A**$"
     },
     {
@@ -28,7 +28,7 @@
         "$\\int_0^2\\!\\int_0^2 f(x,y)\\,dy\\,dx$",
         "$\\int_0^2\\!\\int_0^{2-y} f(x,y)\\,dx\\,dy$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$区域：0 \\leq y \\leq 2，y \\leq x \\leq 2。画出区域：y \\leq x，交换后 0 \\leq y \\leq x，0 \\leq x \\leq 2。故 \\int_0^2\\!\\int_0^x f(x,y)\\,dy\\,dx。**答案：A**$"
     },
     {
@@ -42,7 +42,7 @@
         "$\\frac{8}{3}$",
         "$4$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**极坐标**：x^2+y^2 \\leq 2x 即 r^2 \\leq 2r\\cos\\theta \\Rightarrow r \\leq 2\\cos\\theta，-\\frac{\\pi}{2} \\leq \\theta \\leq \\frac{\\pi}{2}。\\iint = \\int_{-\\pi/2}^{\\pi/2}\\!\\int_0^{2\\cos\\theta} r \\cdot r\\,dr\\,d\\theta = \\int_{-\\pi/2}^{\\pi/2} \\frac{8\\cos^3\\theta}{3}d\\theta = \\frac{16}{3}\\int_0^{\\pi/2} \\cos^3\\theta d\\theta = \\frac{16}{3} \\cdot \\frac{2}{3} = \\frac{32}{9}。**答案：A**$"
     },
     {
@@ -56,7 +56,7 @@
         "$\\frac{1}{4}$",
         "$\\frac{2}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$区域分 y \\geq x 和 y < x 两部分。对称性：I = 2\\int_0^1\\!\\int_0^x (x-y)\\,dy\\,dx = 2\\int_0^1 \\frac{x^2}{2}\\,dx = \\frac{1}{3}。**答案：A**$"
     },
     {
@@ -70,7 +70,7 @@
         "$\\pi e$",
         "$\\frac{\\pi}{2}(e-1)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**极坐标**：\\iint_D e^{r^2} \\cdot r\\,dr\\,d\\theta = \\int_0^{2\\pi}\\!\\int_0^1 re^{r^2}\\,dr\\,d\\theta = 2\\pi \\cdot \\frac{1}{2}(e-1) = \\pi(e-1)。**答案：A**$"
     },
     {
@@ -84,7 +84,7 @@
         "$\\frac{2}{3}$",
         "$1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**对称性**：D 关于 y 轴对称（-1 \\leq x \\leq 1），f(x,y)=x 是 x 的奇函数，积分为 0。**答案：A**$"
     },
     {
@@ -98,7 +98,7 @@
         "$\\cos 1$",
         "$1-\\sin 1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$交换次序：区域 0 \\leq x \\leq 1, \\sqrt{x} \\leq y \\leq 1 等价于 0 \\leq y \\leq 1, 0 \\leq x \\leq y^2。I = \\int_0^1\\!\\int_0^{y^2} \\frac{\\sin y}{y}\\,dx\\,dy = \\int_0^1 y\\sin y\\,dy = \\sin 1 - \\cos 1…再算：\\int y\\sin y dy = -y\\cos y + \\sin y，代入得 1-\\cos 1。**答案：A**$"
     },
     {
@@ -112,7 +112,7 @@
         "$\\frac{1}{2}$",
         "$\\frac{\\pi}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**极坐标**：D: 0 \\leq r \\leq 1, 0 \\leq \\theta \\leq \\pi/2。I = \\int_0^{\\pi/2}\\!\\int_0^1 \\frac{r\\cos\\theta}{r^2} \\cdot r\\,dr\\,d\\theta = \\int_0^{\\pi/2}\\!\\int_0^1 \\cos\\theta\\,dr\\,d\\theta = \\sin\\theta\\big|_0^{\\pi/2} = 1。**答案：A**$"
     },
     {
@@ -126,7 +126,7 @@
         "$\\frac{\\pi}{2}$",
         "$\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**对称性+极坐标**：I = \\int_0^{2\\pi}\\!\\int_0^1 r^2(\\cos^2\\theta - \\sin^2\\theta) \\cdot r\\,dr\\,d\\theta = \\int_0^{2\\pi} \\cos 2\\theta d\\theta \\cdot \\frac{1}{4} = 0。**答案：A**$"
     },
     {
@@ -140,7 +140,7 @@
         "$-\\frac{2}{\\pi}$",
         "$0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**极坐标**：\\int_0^{2\\pi}\\!\\int_0^1 \\sin(\\pi r) \\cdot r\\,dr\\,d\\theta = 2\\pi \\int_0^1 r\\sin(\\pi r)dr。\\int r\\sin(\\pi r)dr = -\\frac{r}{\\pi}\\cos(\\pi r) + \\frac{1}{\\pi^2}\\sin(\\pi r)，代入得 2\\pi \\cdot \\frac{1}{\\pi^2} = \\frac{2}{\\pi}。**答案：A**$"
     },
     {
@@ -154,7 +154,7 @@
         "$\\frac{\\pi}{3}$",
         "$\\frac{2\\pi}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$体积 V = \\iint_D (1 - (x^2+y^2))dxdy，D: x^2+y^2 \\leq 1。极坐标：V = \\int_0^{2\\pi}\\!\\int_0^1 (1-r^2)r\\,dr\\,d\\theta = 2\\pi(\\frac{1}{2} - \\frac{1}{4}) = \\frac{\\pi}{2}。**答案：A**$"
     },
     {
@@ -168,7 +168,7 @@
         "$2\\pi(1-e^{-1})$",
         "$\\pi/e$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$2\\pi\\int_0^1 re^{-r^2}dr=\\pi(1-e^{-1})。$"
     },
     {
@@ -182,7 +182,7 @@
         "$\\pi/3$",
         "$\\pi/2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\theta\\in[\\pi/4,3\\pi/4]，\\frac{\\pi}{2}\\cdot\\frac13=\\frac{\\pi}{6}。$"
     },
     {
@@ -196,7 +196,7 @@
         "$2\\pi$",
         "$\\pi/2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$r\\le2\\cos\\theta，\\int_{-\\pi/2}^{\\pi/2}d\\theta\\int_0^{2\\cos\\theta}r^3dr=\\frac{3\\pi}{2}。$"
     },
     {
@@ -258,7 +258,7 @@
         "$\\int_{-1}^{1} dy \\int_{0}^{1} f(x,y)\\,dx$",
         "$\\int_{0}^{1} dy \\int_{0}^{1-y} f(x,y)\\,dx$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$两个积分区域合并后，y \\in [0,1]，左边界由 y=x+1 得 x=y-1，右边界由 y=1-x 得 x=1-y，故交换后为 \\int_0^1 dy \\int_{y-1}^{1-y} f(x,y)\\,dx。$"
     },
     {
@@ -272,7 +272,7 @@
         "$2\\pi$",
         "$\\frac{3}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$极坐标下 \\frac{x}{\\sqrt{x^2+y^2}}=\\cos\\theta，D 对应 -\\frac{\\pi}{2}\\leq\\theta\\leq\\frac{\\pi}{2},\\;1\\leq r\\leq2。\\int_{-\\pi/2}^{\\pi/2}\\cos\\theta\\,d\\theta \\int_1^2 r\\,dr = 2 \\times \\frac{3}{2} = 3。$"
     },
     {
@@ -286,7 +286,7 @@
         "$\\frac{4}{3}$",
         "$\\frac{2\\pi}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$利用对称性取第一象限乘4：4\\int_0^1 dx \\int_0^{1-x}(x^2+y^2)\\,dy = 4\\int_0^1\\left[x^2(1-x)+\\frac{(1-x)^3}{3}\\right]dx = 4 \\times \\frac{1}{6} = \\frac{2}{3}。$"
     },
     {
@@ -300,7 +300,7 @@
         "$\\frac{\\pi}{2}-\\frac{2}{3}$",
         "$\\frac{\\pi}{4}+\\frac{1}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$以 x^2+y^2=1 分界。内部分：\\int_0^{\\pi/2}\\int_0^1(1-r^2)r\\,dr\\,d\\theta=\\frac{\\pi}{8}；外部：\\iint_D(x^2+y^2-1)d\\sigma+\\frac{\\pi}{8}，其中 \\iint_D(x^2+y^2)d\\sigma=\\frac{2}{3}，外部=-\\frac{1}{3}+\\frac{\\pi}{8}。总计=\\frac{\\pi}{4}-\\frac{1}{3}。$"
     },
     {
@@ -314,7 +314,7 @@
         "$\\frac{\\pi}{4}$",
         "$\\frac{\\pi}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$极坐标：2\\pi\\int_0^1 \\frac{r}{(1+r^2)^2}\\,dr = 2\\pi\\left[-\\frac{1}{2(1+r^2)}\\right]_0^1 = 2\\pi\\left(\\frac{1}{2}-\\frac{1}{4}\\right) = \\frac{\\pi}{2}。$"
     },
     {
@@ -328,7 +328,7 @@
         "$\\frac{a^4}{4}$",
         "$\\frac{\\pi a^4}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$极坐标：\\int_0^a r^3\\,dr \\int_0^{2\\pi}|\\cos\\theta\\sin\\theta|\\,d\\theta = \\frac{a^4}{4} \\times 4\\int_0^{\\pi/2}\\cos\\theta\\sin\\theta\\,d\\theta = \\frac{a^4}{4} \\times 2 = \\frac{a^4}{2}。$"
     },
     {
@@ -342,7 +342,7 @@
         "$2(e-1)$",
         "$e^2-1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$由对称性 x\\,e^{xy} 与 y\\,e^{xy} 积分相等，原式=2\\int_0^1 dx\\int_0^1 x\\,e^{xy}\\,dy = 2\\int_0^1(e^x-1)\\,dx = 2(e-2)。$"
     },
     {
@@ -356,7 +356,7 @@
         "$\\frac{4\\pi}{3}$",
         "$\\frac{2\\pi}{3}f'(0)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$极坐标：\\iint = 2\\pi\\int_0^t f(r)\\,r\\,dr。洛必达：\\lim\\frac{2\\pi f(t)\\cdot t}{3t^2}=\\frac{2\\pi}{3}\\lim\\frac{f(t)}{t}=\\frac{2\\pi}{3}\\cdot f'(0)=\\frac{2\\pi}{3}。$"
     },
     {
@@ -370,7 +370,7 @@
         "$\\frac{2}{3}$",
         "$\\frac{5}{12}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$以 y=x 分界：\\int_0^1 dx\\int_0^x x^2\\,dy + \\int_0^1 dx\\int_x^1 y^2\\,dy = \\int_0^1 x^3\\,dx + \\int_0^1\\left(\\frac{1}{3}-\\frac{x^3}{3}\\right)dx = \\frac{1}{4}+\\frac{1}{3}-\\frac{1}{12} = \\frac{1}{2}。$"
     },
     {
@@ -384,7 +384,7 @@
         "$\\frac{9\\pi}{2}$",
         "$\\frac{5\\pi}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$2x、3y 为奇函数积分为0。由轮换对称 \\iint x^2\\,d\\sigma=\\iint y^2\\,d\\sigma=\\frac{1}{2}\\iint(x^2+y^2)\\,d\\sigma=\\frac{\\pi}{4}。故 (4+5)\\times\\frac{\\pi}{4}=\\frac{9\\pi}{4}。$"
     },
     {
@@ -398,7 +398,7 @@
         "$\\frac{5\\pi}{4}$",
         "$\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$令 x=r\\cos\\theta,\\,y=1+r\\sin\\theta，则 x^2+y^2=r^2+2r\\sin\\theta+1。\\int_0^{2\\pi}\\int_0^1(r^3+2r^2\\sin\\theta+r)\\,dr\\,d\\theta = \\frac{1}{4}\\cdot 2\\pi + 0 + \\frac{1}{2}\\cdot 2\\pi = \\frac{3\\pi}{2}。$"
     },
     {
@@ -412,7 +412,7 @@
         "$\\frac{\\sqrt{2}}{3}$",
         "$\\frac{2(\\sqrt{2}-1)}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$交换次序：\\int_0^1 dx\\int_0^x \\frac{y}{\\sqrt{1+x^3}}\\,dy = \\int_0^1 \\frac{x^2}{2\\sqrt{1+x^3}}\\,dx = \\frac{1}{2}\\cdot\\frac{2}{3}[\\sqrt{1+x^3}]_0^1 = \\frac{\\sqrt{2}-1}{3}。$"
     },
     {
@@ -490,7 +490,7 @@
         "$\\frac{\\pi-2}{8}$",
         "$\\frac{2-\\pi}{8}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$交换积分次序：\\int_0^1 dx \\int_0^x \\frac{y}{1+x^2}\\,dy = \\int_0^1 \\frac{x^2}{2(1+x^2)}\\,dx = \\frac{1}{2}\\int_0^1 \\left(1 - \\frac{1}{1+x^2}\\right) dx = \\frac{1}{2}\\left(1 - \\frac{\\pi}{4}\\right) = \\frac{4-\\pi}{8}。**答案：A**$"
     },
     {
@@ -504,7 +504,7 @@
         "$0$",
         "$\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**对称性分析**：D 关于 y 轴对称，\\sin(xy) 在 x \\to -x 下变号，故 \\iint_D \\sin(xy)\\,d\\sigma = 0。由轮换对称，\\iint_D x^2\\,d\\sigma = \\iint_D y^2\\,d\\sigma = \\frac{1}{2}\\iint_D (x^2+y^2)\\,d\\sigma = \\frac{1}{2} \\cdot 2\\pi \\int_0^1 r^3\\,dr = \\frac{\\pi}{4}。**答案：A**$"
     },
     {
@@ -518,7 +518,7 @@
         "$\\frac{2}{3}$",
         "$\\frac{1}{4}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$以 y=x 分界。当 y < x 时 x^2 > y^2，当 y > x 时 y^2 > x^2。由对称性：I = 2\\int_0^1 dx \\int_0^x (x^2 - y^2)\\,dy = 2\\int_0^1 \\left(x^3 - \\frac{x^3}{3}\\right) dx = 2\\int_0^1 \\frac{2x^3}{3}\\,dx = \\frac{4}{3} \\cdot \\frac{1}{4} = \\frac{1}{3}。**答案：A**$"
     },
     {
@@ -532,7 +532,7 @@
         "$I_2 < I_1 < I_3$",
         "$I_3 < I_2 < I_1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$计算各积分值：I_1 = \\frac{1}{4}\\iint_D (x+y)\\,d\\sigma = \\frac{1}{4} \\cdot 1 = \\frac{1}{4}；I_3 = \\frac{1}{2} \\cdot 1 = \\frac{1}{2}；I_2 = \\left(\\int_0^1 \\sqrt{x}\\,dx\\right)^2 = \\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}。数值比较：I_1 = 0.25 < I_2 \\approx 0.444 < I_3 = 0.5。（也可用 AM-GM 不等式 \\sqrt{xy} \\leq \\frac{x+y}{2} 说明 I_2 \\leq I_3。）**答案：A**$"
     },
     {
@@ -546,7 +546,7 @@
         "$\\frac{3\\pi}{2}$",
         "$\\frac{5\\pi}{4}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**广义极坐标**：令 x = 2r\\cos\\theta,\\; y = r\\sin\\theta，J = 2r。x^2+y^2 = 4r^2\\cos^2\\theta + r^2\\sin^2\\theta = r^2(4\\cos^2\\theta + \\sin^2\\theta)。\\iint = \\int_0^{2\\pi} \\int_0^1 r^2(4\\cos^2\\theta+\\sin^2\\theta) \\cdot 2r\\,dr\\,d\\theta = 2\\int_0^{2\\pi}(4\\cos^2\\theta+\\sin^2\\theta)\\,d\\theta \\cdot \\int_0^1 r^3\\,dr = 2 \\cdot 5\\pi \\cdot \\frac{1}{4} = \\frac{5\\pi}{2}。**答案：A**$"
     },
     {
@@ -584,7 +584,7 @@
         "$\\frac{\\pi \\ln 2}{2}$",
         "$\\pi(1-\\ln 2)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$由轮换对称 \\iint \\frac{x^2}{1+x^2+y^2} = \\iint \\frac{y^2}{1+x^2+y^2}，故原式 = \\frac{1}{2}\\iint \\frac{x^2+y^2}{1+x^2+y^2}\\,d\\sigma。极坐标：\\frac{1}{2} \\cdot 2\\pi \\int_0^1 \\frac{r^2}{1+r^2} \\cdot r\\,dr = \\pi \\int_0^1 \\frac{r^3}{1+r^2}\\,dr = \\pi \\int_0^1 \\left(r - \\frac{r}{1+r^2}\\right) dr = \\pi\\left[\\frac{r^2}{2} - \\frac{1}{2}\\ln(1+r^2)\\right]_0^1 = \\pi \\cdot \\frac{1-\\ln 2}{2} = \\frac{\\pi(1-\\ln 2)}{2}。**答案：A**$"
     },
     {
@@ -598,7 +598,7 @@
         "$\\frac{ab\\pi R^4}{4} + f\\pi R^2$",
         "$(a+b+c)\\frac{\\pi R^4}{4} + f\\pi R^2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**逐项分析**：xy 是 x 的奇函数，D 关于 y 轴对称，积分为 0；x, y 分别为奇函数，积分均为 0。由轮换对称 \\iint x^2 = \\iint y^2 = \\frac{1}{2}\\iint(x^2+y^2) = \\frac{\\pi R^4}{4}。\\iint f = f\\pi R^2。故结果 = (a+b)\\frac{\\pi R^4}{4} + f\\pi R^2。**答案：A**$"
     },
     {

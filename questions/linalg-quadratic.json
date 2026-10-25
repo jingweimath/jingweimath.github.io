@@ -14,7 +14,7 @@
         "$\\begin{pmatrix}1&0\\\\2&1\\end{pmatrix}$",
         "$\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$f=x_1^2+2x_1x_2+x_2^2$。$x_1^2$ 系数为 $a_{11}=1$，$x_2^2$ 系数为 $a_{22}=1$，$x_1x_2$ 系数为 $2a_{12}=2$，故 $a_{12}=a_{21}=1$。矩阵为 $\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$。**答案：A**"
     },
     {
@@ -28,7 +28,7 @@
         "$2$",
         "$3$"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "该二次型已是标准形，所有系数均为正（$1,2,3>0$），正惯性指数 $p=3$，负惯性指数 $q=0$。**答案：D**"
     },
     {
@@ -51,7 +51,7 @@
         "$1,3$",
         "$-1,-1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "对称矩阵 $A=\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$。$|A-\\lambda I|=(1-\\lambda)^2-4=\\lambda^2-2\\lambda-3=(\\lambda-3)(\\lambda+1)=0$，$\\lambda_1=3,\\lambda_2=-1$。正交标准形为 $3y_1^2-y_2^2$。**答案：A**"
     },
     {
@@ -65,7 +65,7 @@
         "$A$ 的特征值均非零",
         "A$ 的秩等于 $n"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "Sylvester 判据：实对称矩阵正定 $\\Leftrightarrow$ 所有顺序主子式均大于零。$|A|>0$ 只是必要非充分条件；特征值均大于零才是正定，仅非零不保证正定；满秩也不保证正定（如 $\\operatorname{diag}(1,-1)$ 满秩但不定）。**答案：B**"
     },
     {
@@ -79,7 +79,7 @@
         "$3$",
         "$0$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "对称矩阵 $A=\\begin{pmatrix}1&1&-1\\\\1&2&0\\\\-1&0&3\\end{pmatrix}$。$|A|=1(6-0)-1(3-0)+(-1)(0+2)=6-3-2=1\\neq0$，故 $r(A)=3$。**答案：C**"
     },
     {
@@ -93,7 +93,7 @@
         "合同",
         "正交"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$B=C^\\mathrm{T}AC$ 是合同关系的定义。等价 $B=PAQ$（$P,Q$ 可逆）；相似 $B=P^{-1}AP$；合同 $B=C^\\mathrm{T}AC$（$C$ 可逆）。**答案：C**"
     },
     {
@@ -116,7 +116,7 @@
         "$\\begin{pmatrix}2&0\\\\0&2\\end{pmatrix}$",
         "$\\begin{pmatrix}-1&0\\\\0&-1\\end{pmatrix}$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$A$ 的特征值为 $\\lambda_1=3,\\lambda_2=-1$。正惯性指数 $p=1$，负惯性指数 $q=1$。规范形为 $\\operatorname{diag}(1,-1)$。**答案：B**"
     },
     {
@@ -139,7 +139,7 @@
         "$A$ 的所有特征值非负",
         "$A$ 的行列式大于零"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$A$ 正定 $\\Leftrightarrow A=C^\\mathrm{T}C$（$C$ 可逆）。A 中'非负'对应半正定；C 中'非负'也对应半正定；D 只保证 $|A|>0$，必要非充分。**答案：B**"
     },
     {
@@ -162,7 +162,7 @@
         "$-y_1^2-y_2^2$",
         "$3y_1^2+3y_2^2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$A=\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}$。$|A-\\lambda I|=(3-\\lambda)^2-1=(\\lambda-2)(\\lambda-4)=0$，$\\lambda=2,4>0$。正惯性指数 $p=2,q=0$，规范形 $y_1^2+y_2^2$。**答案：A**"
     },
     {
@@ -176,7 +176,7 @@
         "$|A|=|B|$",
         "$A$ 与 $B$ 相似"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "合同变换 $B=C^\\mathrm{T}AC$（$C$ 可逆）保秩。但一般不保特征值（如 $\\operatorname{diag}(1,1)$ 合同于 $\\operatorname{diag}(2,2)$ 但特征值不同），也一般不保相似。$|B|=|C|^2|A|$，不等于 $|A|$。**答案：B**"
     },
     {
@@ -199,7 +199,7 @@
         "$2$",
         "$3$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$A^2=A\\Rightarrow$ 特征值只能为 $0$ 或 $1$。$r(A)=2\\Rightarrow$ 非零特征值个数为 $2$，即有两个特征值为 $1$，一个为 $0$。正惯性指数 $=$ 正特征值个数 $=2$。**答案：C**"
     },
     {
@@ -213,7 +213,7 @@
         "$-1$",
         "$2$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$A=\\begin{pmatrix}k&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$|A|=k\\cdot1-1\\cdot1+0=k-1$。$r(A)=2\\Rightarrow|A|=0\\Rightarrow k=1$。当 $k=1$ 时 $A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$，二阶子式 $\\begin{vmatrix}1&0\\\\0&1\\end{vmatrix}=1\\neq0$，$r(A)=2$。**答案：B**"
     },
     {
@@ -236,7 +236,7 @@
         "$A$ 与 $B$ 相似",
         "$|A|=|B|$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "合同 $\\Leftrightarrow$ 秩相等且正惯性指数相等（Sylvester 惯性定律）。合同不一定保特征值，保特征值的是相似。合同 $B=C^\\mathrm{T}AC$ 时 $|B|=|C|^2|A|$，一般 $|C|^2\\neq1$，故 $|A|\\neq|B|$。**答案：B**"
     },
     {
@@ -259,7 +259,7 @@
         "$3$",
         "$0$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$A^2-5A+6I=(A-2I)(A-3I)=O$，特征值只能为 $2$ 或 $3$。$r(A-2I)=2\\Rightarrow\\dim\\operatorname{Null}(A-2I)=3-2=1$，$\\lambda=2$ 的几何重数为 $1$。$A$ 实对称必可对角化，故 $\\lambda=2$ 的代数重数 $=$ 几何重数 $=1$。总阶数 $3$，故 $\\lambda=3$ 的代数重数为 $2$。特征值 $2>0,3>0,3>0$ 全正，正惯性指数 $p=3$。**答案：C**"
     },
     {
@@ -282,7 +282,7 @@
         "$a=-b$",
         "$ab=0$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "正、负惯性指数之和等于秩，$p+q=3 \\Rightarrow r(A)=3$，即 $A$ 满秩 $\\Rightarrow |A| \\neq 0$。计算 $|A|$：按第一行展开，$|A|=1\\cdot(1-b^2)-a\\cdot(a-b)+1\\cdot(ab-1)=1-b^2-a^2+ab+ab-1=-(a^2-2ab+b^2)=-(a-b)^2$。由 $|A|\\neq0$ 得 $a\\neq b$。当 $a\\neq b$ 时 $|A|=-(a-b)^2<0$，即三个特征值乘积为负；又 $\\operatorname{tr}(A)=3>0$，三个特征值之和为正。实对称矩阵特征值均为实数，故必有两个正特征值、一个负特征值，即 $p=2,q=1$。因此条件等价于 $a\\neq b$。"
     },
     {
@@ -305,7 +305,7 @@
         "$A^{-1}-B^{-1}$",
         "$A+B$"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "正定矩阵之和仍正定：对任意 $x\\neq0$，$x^\\mathrm{T}(A+B)x=x^\\mathrm{T}Ax+x^\\mathrm{T}Bx>0$。A 项 $A-B$ 不一定正定（取 $A=I,B=2I$，$A-B=-I$ 负定）。B 项 $AB$ 不一定对称，即使对称也不一定正定（如 $A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix},B=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}$，$AB$ 不对称）。C 项 $A^{-1}-B^{-1}$ 不一定正定（取 $A=I,B=2I$ 得 $\\frac{1}{2}I$ 正定，但取 $A=2I,B=I$ 得 $-\\frac{1}{2}I$ 负定）。只有 D 项 $A+B$ 恒正定。"
     },
     {
@@ -328,7 +328,7 @@
         "半正定",
         "不定"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "对任意 $y\\neq0$，$x=Cy\\neq0$（因 $C$ 可逆）。$g(y)=y^\\mathrm{T}C^\\mathrm{T}ACy=(Cy)^\\mathrm{T}A(Cy)=x^\\mathrm{T}Ax>0$（因 $f$ 正定）。故 $g$ 也正定。合同变换保正定性。**答案：A**"
     },
     {
@@ -351,7 +351,7 @@
         "存在可逆矩阵 $C$ 使 $C^\\mathrm{T}AC=I$ 且 $C^\\mathrm{T}BC$ 为对角阵",
         "$A+B$ 一定正定"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "这是惯性定律的推广：若 $A$ 正定，$B$ 对称，则可同时合同对角化 $A$ 和 $B$（通过 $A$ 的 Cholesky 分解后对 $B$ 正交对角化）。即存在可逆 $C$ 使 $C^\\mathrm{T}AC=I$，$C^\\mathrm{T}BC=\\operatorname{diag}$。A 错（$AB$ 不一定对称更不一定可对角化）；B 错（合同需同惯性指数）；D 错（$B$ 可能负定使 $A+B$ 不定）。**答案：C**"
     },
     {
@@ -365,7 +365,7 @@
         "$\\mu_i=\\lambda_i$（$i=1,\\cdots,n$）",
         "$\\mu_1<\\lambda_1$ 且 $\\mu_n>\\lambda_n$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$uu^\\mathrm{T}$ 为半正定矩阵（秩为 $1$ 的投影矩阵的倍数）。半正定矩阵加法使特征值单调不减（Weyl 不等式/特征值交错定理的推论）。故 $\\mu_i\\ge\\lambda_i$ 对所有 $i$ 成立。**答案：B**"
     }
   ]

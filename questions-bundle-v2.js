@@ -1,6 +1,6 @@
 // Auto-generated question bank bundle
 // Regenerate: python build_questions.py
-// Version: 20261023
+// Version: 20261025
 
 var QUESTION_BANK = {
   "subjects": {
@@ -762,7 +762,7 @@ var QUESTION_BANK = {
         "对任意 $\\delta>0$，当 $0<|x-x_0|<\\delta$ 时，$f(x)>0$",
         "对任意 $x\\neq x_0$，都有 $f(x)>0$"
       ],
-      "answer": "0",
+      "answer": 0,
       "solution": "极限的局部保号性：若 $\\lim_{x\\to x_0}f(x)=A>0$，则【存在】某个去心邻域，使得 $f(x)>0$。关键点：是「存在」邻域，不是「对任意」邻域。选项 C、D 错在将存在换成了任意；B 的 $\\geq$ 不够精确。",
       "topic": "极限性质·保号性",
       "source": "自编",
@@ -782,7 +782,7 @@ var QUESTION_BANK = {
         "$=0$",
         "不存在"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "保号性只能推出极限 $\\geq 0$，不能推出 $>0$。反例：$f(x)=x^2$，在 $x=0$ 的任何去心邻域内 $f(x)>0$，但 $\\lim_{x\\to 0}f(x)=0$。极限取等号是完全可能的。",
       "topic": "极限性质·保号性",
       "source": "自编",
@@ -802,7 +802,7 @@ var QUESTION_BANK = {
         "$x>0$ 时正，$x<0$ 时负",
         "$x>0$ 时负，$x<0$ 时正"
       ],
-      "answer": "2",
+      "answer": 2,
       "solution": "由 $\\lim_{x\\to 0}\\frac{f(x)}{x}=2>0$ 及保号性，存在 $\\delta>0$ 使得当 $0<|x|<\\delta$ 时 $\\frac{f(x)}{x}>0$。故 $f(x)$ 与 $x$ 同号：$x>0$ 时 $f(x)>0$，$x<0$ 时 $f(x)<0$。（由连续性，$f(0)=\\lim f(x)=\\lim x\\cdot\\frac{f(x)}{x}=0\\cdot 2=0$。）",
       "topic": "极限性质·保号性",
       "source": "自编",
@@ -822,7 +822,7 @@ var QUESTION_BANK = {
         "$\\displaystyle\\lim_{x\\to 0}\\frac{1}{x}\\sin\\frac{1}{x}$",
         "$\\displaystyle\\lim_{x\\to 0}\\frac{\\sin x}{|x|}$"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "A：$\\sin\\frac{1}{x}$ 在 $x\\to 0$ 时无限振荡，极限不存在。\nB：$|x\\sin\\frac{1}{x}|\\leq|x|\\to 0$，无穷小乘有界函数，极限为 $0$，存在。\nC：$\\frac{1}{x}\\to\\infty$，$\\sin\\frac{1}{x}\\in[-1,1]$，无界振荡，不存在。\nD：左右极限不相等（$x>0$ 时 $\\to 1$，$x<0$ 时 $\\to -1$），不存在。",
       "topic": "极限性质·存在性辨析",
       "source": "自编",
@@ -842,7 +842,7 @@ var QUESTION_BANK = {
         "$f(x)=x\\arctan\\dfrac{1}{x}$",
         "$f(x)=\\dfrac{\\tan x}{x}$"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "A：$\\frac{\\sin x}{x}\\to 1$，存在。\nB：$\\arctan\\frac{1}{x}$，$x\\to 0^{+}$ 时 $\\to\\frac{\\pi}{2}$，$x\\to 0^{-}$ 时 $\\to-\\frac{\\pi}{2}$，左右极限不等，不存在。\nC：$|x\\arctan\\frac{1}{x}|\\leq\\frac{\\pi}{2}|x|\\to 0$，无穷小乘有界，存在。\nD：$\\frac{\\tan x}{x}\\to 1$，存在。",
       "topic": "极限性质·存在性辨析",
       "source": "自编",
@@ -862,7 +862,7 @@ var QUESTION_BANK = {
         "$=-\\infty$",
         "不存在"
       ],
-      "answer": "3",
+      "answer": 3,
       "solution": "左极限：$\\lim_{x\\to 0^{-}}f(x)=\\lim_{x\\to 0^{-}}\\ln(1-x)=0$。右极限：$\\lim_{x\\to 0^{+}}f(x)=\\lim_{x\\to 0^{+}}e^{1/x}=+\\infty$。左右极限不相等（一个为 $0$，一个为 $+\\infty$），故极限不存在。",
       "topic": "极限性质·左右极限·分段",
       "source": "自编",
@@ -882,7 +882,7 @@ var QUESTION_BANK = {
         "无穷间断点",
         "连续（非间断点）"
       ],
-      "answer": "0",
+      "answer": 0,
       "solution": "$x=1$ 时分母为 $0$，函数无定义。$\\lim_{x\\to 1}\\frac{x^2-1}{x-1}=\\lim_{x\\to 1}(x+1)=2$，极限存在且为有限值。极限存在但函数在该点无定义（或定义值与极限不相等），故为【可去间断点】。补充定义 $f(1)=2$ 即可使之连续。",
       "topic": "间断点分类·可去间断点",
       "source": "自编",
@@ -902,7 +902,7 @@ var QUESTION_BANK = {
         "跳跃间断点",
         "第二类间断点"
       ],
-      "answer": "2",
+      "answer": 2,
       "solution": "左极限：$\\lim_{x\\to 0^{-}}f(x)=\\lim_{x\\to 0^{-}}x=0$。右极限：$\\lim_{x\\to 0^{+}}f(x)=\\lim_{x\\to 0^{+}}(1+x^2)=1$。左右极限均存在但不相等（$0\\neq 1$），故为【跳跃间断点】。跳跃量 $=1-0=1$。",
       "topic": "间断点分类·跳跃间断点",
       "source": "自编",
@@ -922,7 +922,7 @@ var QUESTION_BANK = {
         "无穷间断点",
         "连续点"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "令 $t=\\frac{x}{1-x}$。$x\\to 1^{-}$ 时 $t\\to +\\infty$，$e^{t}\\to +\\infty$，$f(x)\\to 0^{-}$。$x\\to 1^{+}$ 时 $t\\to -\\infty$，$e^{t}\\to 0$，$f(x)\\to 1$。左右极限均存在但不相等（$0\\neq 1$），故 $x=1$ 为跳跃间断点。注意：虽然涉及无穷大，但函数极限仍有限，不是无穷间断点。",
       "topic": "间断点分类·无穷间断点",
       "source": "自编",
@@ -942,7 +942,7 @@ var QUESTION_BANK = {
         "必有界但未必能取得最值",
         "未必有界"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "闭区间上连续函数的性质（有界性与最值定理）：① 必有界；② 必能取得最大值和最小值。注意：若区间改为开区间 $(a,b)$，则连续函数未必有界，如 $f(x)=\\frac{1}{x}$ 在 $(0,1)$ 上连续但无界。闭区间是核心条件。",
       "topic": "闭区间连续性质·有界性定理",
       "source": "自编",
@@ -962,7 +962,7 @@ var QUESTION_BANK = {
         "$\\ln x$",
         "$\\dfrac{1}{\\sin x}$"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "A：$\\frac{1}{x}\\to +\\infty$（$x\\to 0^{+}$），无界。\nB：$|\\sin\\frac{1}{x}|\\leq 1$，有界。$\\sin$ 本身有界与自变量取值无关。\nC：$\\ln x\\to -\\infty$（$x\\to 0^{+}$），无界。\nD：$\\sin x\\to 0$（$x\\to 0^{+}$），$\\frac{1}{\\sin x}\\to\\infty$，无界。",
       "topic": "闭区间连续性质·有界性辨析",
       "source": "自编",
@@ -982,7 +982,7 @@ var QUESTION_BANK = {
         "有两个实根",
         "有无穷多个实根"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "令 $f(x)=x^5+x-1$，$f(x)$ 在 $[0,1]$ 上连续。$f(0)=-1<0$，$f(1)=1>0$，由零点定理知存在 $\\xi\\in(0,1)$ 使 $f(\\xi)=0$。又 $f'(x)=5x^4+1>0$（严格单调递增），故根唯一。",
       "topic": "闭区间连续性质·零点定理",
       "source": "自编",
@@ -1002,7 +1002,7 @@ var QUESTION_BANK = {
         "$f(\\xi)=\\dfrac{a+b}{2}$",
         "$f'(\\xi)=1$"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "构造 $F(x)=f(x)-x$，则 $F(x)$ 在 $[a,b]$ 上连续。$F(a)=f(a)-a<0$，$F(b)=f(b)-b>0$。由零点定理，存在 $\\xi\\in(a,b)$ 使 $F(\\xi)=0$，即 $f(\\xi)=\\xi$。这类问题的核心技巧：欲证 $f(x)=g(x)$ 有根，构造 $F(x)=f(x)-g(x)$。",
       "topic": "闭区间连续性质·介值定理·构造辅助函数",
       "source": "自编",
@@ -1022,7 +1022,7 @@ var QUESTION_BANK = {
         "罗尔定理",
         "拉格朗日中值定理"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "零点定理是介值定理的特例（$f(a)$ 与 $f(b)$ 异号时取 $c=0$）。本题 $c$ 是 $(0,1)$ 内任意值，$f(0)=0<c<1=f(1)$，由介值定理知必存在 $\\xi$ 使 $f(\\xi)=c$。区别：零点定理要求 $f(a)f(b)<0$；介值定理覆盖任意中间值。",
       "topic": "闭区间连续性质·介值定理",
       "source": "自编",
@@ -1042,7 +1042,7 @@ var QUESTION_BANK = {
         "不一定存在 $\\xi$ 使 $f(\\xi)=c$",
         "当且仅当 $x_1<x_2$ 时才存在"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "介值定理：若 $f(x)$ 在闭区间 $[x_1,x_2]$ 上连续，则对介于端点函数值之间的任意 $c$，存在 $\\xi$ 使 $f(\\xi)=c$。$f(x)$ 在 $(a,b)$ 内连续保证了在 $[x_1,x_2]\\subset(a,b)$ 上连续，故介值定理适用。虽然定义在开区间，但 $x_1$ 与 $x_2$ 之间的闭区间上仍连续。",
       "topic": "闭区间连续性质·介值定理",
       "source": "自编",
@@ -1062,7 +1062,7 @@ var QUESTION_BANK = {
         "一定不连续",
         "连续但不可导"
       ],
-      "answer": "0",
+      "answer": 0,
       "solution": "复合函数的连续性：$\\lim_{x\\to x_0}f(g(x))=f(\\lim_{x\\to x_0}g(x))=f(g(x_0))$。外函数在内函数的值点连续，内函数在该点连续，则复合函数在该点连续。这是连续函数复合运算的封闭性。",
       "topic": "连续性·复合函数",
       "source": "自编",
@@ -1082,7 +1082,7 @@ var QUESTION_BANK = {
         "错误（需 $x_n$ 有界）",
         "错误（需补充其他条件）"
       ],
-      "answer": "0",
+      "answer": 0,
       "solution": "海涅定理（归结原则）：$\\lim_{x\\to x_0}f(x)=A$ 的充要条件是，对任意以 $x_0$ 为极限且 $x_n\\neq x_0$ 的数列 $\\{x_n\\}$，都有 $\\lim_{n\\to\\infty}f(x_n)=A$。不需额外条件；选项 B、C、D 是常见干扰。",
       "topic": "极限性质·海涅定理",
       "source": "自编",
@@ -1102,7 +1102,7 @@ var QUESTION_BANK = {
         "可导",
         "极限不存在"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "连续性：$|f(x)|\\leq|x|\\to 0=f(0)$，故在 $x=0$ 处连续。可导性：差商 $\\frac{f(x)-f(0)}{x-0}=\\sin\\frac{1}{x}$，当 $x\\to 0$ 时无限振荡，极限不存在。故 $f(x)$ 在 $x=0$ 处连续但不可导。此例说明：连续不一定可导。",
       "topic": "连续性·振荡因子",
       "source": "自编",
@@ -1122,7 +1122,7 @@ var QUESTION_BANK = {
         "若 $\\displaystyle\\lim_{x\\to x_0}f(x)$ 存在，则 $f(x)$ 在 $x_0$ 处连续",
         "若 $f(x)$ 在 $x_0$ 处无定义，则 $\\displaystyle\\lim_{x\\to x_0}f(x)$ 不存在"
       ],
-      "answer": "1",
+      "answer": 1,
       "solution": "A×：有定义+极限存在不等于连续，还需 $\\lim f(x)=f(x_0)$。B√：连续的定义就是极限存在且等于函数值，故极限必存在。C×：极限存在不一定连续（可去间断点即为反例）。D×：无定义也可以极限存在（可去间断点）。",
       "topic": "连续性·命题辨析",
       "source": "自编",
@@ -3205,7 +3205,7 @@ var QUESTION_BANK = {
         "$\\frac{\\partial u}{\\partial x} + \\frac{\\partial u}{\\partial y} = 0$",
         "$y^{(3)} + xy = e^x$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "**一阶微分方程**是指方程中出现的未知函数的最高阶导数为一阶。\n\n- A项：$y''$ 出现，是二阶微分方程 ❌\n- B项：只出现 $y'$，是一阶微分方程 ✅\n- C项：偏微分方程，不是常微分方程 ❌\n- D项：$y^{(3)}$ 出现，是三阶微分方程 ❌\n\n**答案：B**"
     },
     {
@@ -3219,7 +3219,7 @@ var QUESTION_BANK = {
         "$y = e^{Cx^2}$",
         "$y = Cx$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**分离变量法**：\n\nxy' = y\\ln y \\quad \\Rightarrow \\quad \\frac{dy}{y\\ln y} = \\frac{dx}{x}\n\n令 u = \\ln y，则 du = \\frac{dy}{y}，左边化为 \\frac{du}{u} = \\frac{dx}{x}。\n\n积分得：\\ln|u| = \\ln|x| + C_1，即 u = Cx，所以 \\ln y = Cx，故 y = e^{Cx}。\n\n**答案：A**$"
     },
     {
@@ -3233,7 +3233,7 @@ var QUESTION_BANK = {
         "$y = x^2$",
         "$y = \\frac{x^2}{2} + C$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$**一阶线性微分方程**，积分因子法：\n\nP(x) = \\frac{1}{x}，Q(x) = x\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = e^{\\ln x} = x\n\n方程两边同乘 x：xy' + y = x^2，即 \\frac{d}{dx}(xy) = x^2\n\n积分：xy = \\frac{x^3}{3} + C \\Rightarrow y = \\frac{x^2}{3} + \\frac{C}{x}\n\n代入 y(1) = 1：\\frac{1}{3} + C = 1 \\Rightarrow C = \\frac{2}{3}\n\n所以 y = \\frac{x^2}{3} + \\frac{2}{3x}\n\n**答案：B**$"
     },
     {
@@ -3247,7 +3247,7 @@ var QUESTION_BANK = {
         "一阶线性方程",
         "伯努利方程"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$**齐次方程的判定**：方程右端是 \\frac{y}{x} 的函数，即 y' = f\\left(\\frac{y}{x}\\right) 形式。\n\n令 u = \\frac{y}{x}，则 y = ux，y' = u + xu'，方程化为：\n\nu + xu' = u + \\tan u \\Rightarrow xu' = \\tan u（可分离变量）\n\n**答案：B**$"
     },
     {
@@ -3261,7 +3261,7 @@ var QUESTION_BANK = {
         "$y = \\frac{x^2}{2} - \\cos x + C_1$",
         "$y = \\frac{x^3}{6} + \\cos x + C_1x + C_2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**可降阶微分方程** y'' = f(x) 型：直接积分两次。\n\ny' = \\int (x + \\sin x)dx = \\frac{x^2}{2} - \\cos x + C_1\n\ny = \\int \\left(\\frac{x^2}{2} - \\cos x + C_1\\right)dx = \\frac{x^3}{6} - \\sin x + C_1x + C_2\n\n**答案：A**$"
     },
     {
@@ -3275,7 +3275,7 @@ var QUESTION_BANK = {
         "$y = (C_1 + C_2x)e^x$",
         "$y = C_1\\cos x + C_2\\sin x$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**二阶常系数齐次线性微分方程**：\n\n特征方程：r^2 - 4r + 3 = 0 \\Rightarrow (r-1)(r-3) = 0\n\n特征根：r_1 = 1,\\ r_2 = 3（互异实根）\n\n通解：y = C_1e^{r_1x} + C_2e^{r_2x} = C_1e^x + C_2e^{3x}\n\n**答案：A**$"
     },
     {
@@ -3289,7 +3289,7 @@ var QUESTION_BANK = {
         "$y = e^{-x}$",
         "$y = \\cosh x$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**二阶常系数齐次方程** y'' + y = 0：\n\n特征方程：r^2 + 1 = 0 \\Rightarrow r = \\pm i\n\n通解：y = C_1\\cos x + C_2\\sin x\n\n代入 y(0) = 1：C_1 = 1\n\ny' = -C_1\\sin x + C_2\\cos x，代入 y'(0) = 0：C_2 = 0\n\n所以 y = \\cos x\n\n**答案：A**$"
     },
     {
@@ -3303,7 +3303,7 @@ var QUESTION_BANK = {
         "$M = N$",
         "$\\frac{\\partial M}{\\partial x} + \\frac{\\partial N}{\\partial y} = 0$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$**全微分方程的充要条件**：\n\n若存在函数 u(x,y) 使得 du = Mdx + Ndy，则\n\n\\frac{\\partial u}{\\partial x} = M,\\quad \\frac{\\partial u}{\\partial y} = N\n\n由混合偏导数相等：\\frac{\\partial M}{\\partial y} = \\frac{\\partial^2 u}{\\partial y\\partial x} = \\frac{\\partial^2 u}{\\partial x\\partial y} = \\frac{\\partial N}{\\partial x}\n\n**答案：B**$"
     },
     {
@@ -3317,7 +3317,7 @@ var QUESTION_BANK = {
         "$y = \\frac{\\ln x}{x} + C$",
         "$y = x\\ln x + Cx$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$**一阶线性方程**，先化简：\n\ny' + \\frac{1}{x}y = \\frac{\\ln x}{x}\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = x\n\n同乘 x：(xy)' = \\ln x\n\n积分：xy = \\int \\ln x dx = x\\ln x - x + C\n\n所以 y = \\ln x - 1 + \\frac{C}{x}\n\n**答案：B**$"
     },
     {
@@ -3331,7 +3331,7 @@ var QUESTION_BANK = {
         "$\\frac{y}{x} = \\ln\\sqrt{x^2 + y^2} + C$",
         "$\\ln\\sqrt{x^2 + y^2} = \\arctan\\frac{x}{y} + C$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**齐次方程**，令 y = ux，则 y' = u + xu'：\n\nu + xu' = \\frac{1 + u}{1 - u}\n\nxu' = \\frac{1 + u}{1 - u} - u = \\frac{1 + u^2}{1 - u}\n\n分离变量：\\frac{1 - u}{1 + u^2}du = \\frac{dx}{x}\n\n积分：\\arctan u - \\frac{1}{2}\\ln(1+u^2) = \\ln|x| + C\n\n代回 u = y/x，化简得：\\arctan\\frac{y}{x} = \\ln\\sqrt{x^2 + y^2} + C\n\n**答案：A**$"
     },
     {
@@ -3345,7 +3345,7 @@ var QUESTION_BANK = {
         "$y^* = Ax^2e^x$",
         "$y^* = A\\cos x + B\\sin x$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$**二阶常系数非齐次线性微分方程**，待定系数法：\n\n对应齐次方程：y'' + y' - 2y = 0\n\n特征方程：r^2 + r - 2 = 0 \\Rightarrow r_1 = 1,\\ r_2 = -2\n\n非齐次项 f(x) = e^x，1 是单特征根，所以特解形式应设为：\n\ny^* = Axe^x \\quad \\text{（需乘 } x \\text{ 因为 } \\lambda = 1 \\text{ 是特征根）}\n\n**答案：B**$"
     },
     {
@@ -3359,7 +3359,7 @@ var QUESTION_BANK = {
         "$y^* = e^xA\\sin x$",
         "$y^* = x^2e^x(A\\cos x + B\\sin x)$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$**待定系数法**，f(x) = e^x\\sin x，即 f(x) = e^{\\alpha x}(P\\cos\\beta x + Q\\sin\\beta x) 型，其中 \\alpha = 1,\\ \\beta = 1。\n\n特征方程：r^2 - 2r + 2 = 0 \\Rightarrow r = 1 \\pm i\n\n\\alpha + i\\beta = 1 + i 恰为特征根，所以特解形式需乘 x：\n\ny^* = xe^x(A\\cos x + B\\sin x)\n\n**答案：B**$"
     },
     {
@@ -3373,7 +3373,7 @@ var QUESTION_BANK = {
         "$y = \\ln x$",
         "$y = \\frac{1}{x} - \\frac{\\ln x}{x}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**一阶线性方程**：\n\nx^2y' + xy = 1 \\Rightarrow y' + \\frac{1}{x}y = \\frac{1}{x^2}\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = x\n\n同乘 x：(xy)' = \\frac{1}{x}\n\n积分：xy = \\ln x + C \\Rightarrow y = \\frac{\\ln x + C}{x}\n\n代入 y(1) = 0：\\frac{C}{1} = 0 \\Rightarrow C = 0\n\n所以 y = \\frac{\\ln x}{x}\n\n**答案：A**$"
     },
     {
@@ -3387,7 +3387,7 @@ var QUESTION_BANK = {
         "$y'' - 2y' + y = 0$",
         "$y'' + 2y' + y = 0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**由特解反求微分方程**：\n\n若 y_1 = e^x,\\ y_2 = e^{-x} 是线性无关特解，则通解为 y = C_1e^x + C_2e^{-x}。\n\n对应的特征根为 r_1 = 1,\\ r_2 = -1，特征方程为 (r-1)(r+1) = r^2 - 1 = 0。\n\n故微分方程为 y'' - y = 0。\n\n**答案：A**$"
     },
     {
@@ -3401,7 +3401,7 @@ var QUESTION_BANK = {
         "$y^* = A\\cos 2x + B\\sin 2x + x(C\\cos x + D\\sin x)$",
         "$y^* = xe^{2ix} + \\cos x$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**叠加原理**，f(x) = 3\\cos x + \\sin 2x 分两部分处理。\n\n特征方程：r^2 + 4 = 0 \\Rightarrow r = \\pm 2i\n\n- 对 3\\cos x：\\pm i 不是特征根，设 A\\cos x + B\\sin x ✅\n- 对 \\sin 2x：\\pm 2i 是特征根，设 x(C\\cos 2x + D\\sin 2x) ✅\n\n合并：y^* = A\\cos x + B\\sin x + x(C\\cos 2x + D\\sin 2x)\n\n**答案：A**$"
     },
     {
@@ -3415,7 +3415,7 @@ var QUESTION_BANK = {
         "$y = x\\sqrt{\\ln x + 4}$",
         "$y = x\\sqrt{1 + \\ln x^2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**齐次方程**，令 u = y/x，则 y = ux，y' = u + xu'：\n\nu + xu' = u + \\frac{1}{u} \\Rightarrow xu' = \\frac{1}{u}\n\n分离变量：u du = \\frac{dx}{x}，积分得 \\frac{u^2}{2} = \\ln|x| + C。\n\n代回 u = y/x：\\frac{y^2}{2x^2} = \\ln|x| + C \\Rightarrow y^2 = 2x^2(\\ln|x| + C)。\n\n代入 y(1) = 2：4 = 2(0 + C) \\Rightarrow C = 2。\n\n所以 y^2 = 2x^2(\\ln x + 2) = x^2(4 + 2\\ln x) = x^2(4 + \\ln x^2)。\n\n故 y = x\\sqrt{4 + \\ln x^2} = x\\sqrt{3 + \\ln x^2 + 1}… 直接算：4 + \\ln x^2 = \\ln(e^4 \\cdot x^2)，选项A：3 + \\ln x^2。\n\n重算：C=2，y^2 = 2x^2(\\ln x + 2) = 2x^2\\ln x + 4x^2 = x^2(2\\ln x + 4) = x^2(\\ln x^2 + 4)。\n\n选项A：y = x\\sqrt{3+\\ln x^2}，y^2 = x^2(3+\\ln x^2) \\neq x^2(4+\\ln x^2)。\n\n选项C：y = x\\sqrt{\\ln x+4}，y^2 = x^2(\\ln x+4) = x^2\\ln x+4x^2 ✅\n\n**答案：C**$"
     },
     {
@@ -3429,7 +3429,7 @@ var QUESTION_BANK = {
         "$y = \\frac{1}{2}xe^x + \\frac{1}{2}e^{-x} + \\frac{1}{2}$",
         "$y = \\frac{1}{2}xe^x + \\frac{1}{2}e^{-x} - \\frac{1}{2}$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$**二阶常系数非齐次线性微分方程**：\n\n齐次通解：特征方程 r^2-1=0 \\Rightarrow r=\\pm 1，y_h = C_1e^x + C_2e^{-x}\n\n求特解：f(x) = e^x + 1\n- 对 e^x：1 是特征根，设 y_1^* = Axe^x\n- 对常数 1：0 不是特征根，设 y_2^* = B\n\n设 y^* = Axe^x + B，代入原方程确定 A = \\frac{1}{2},\\ B = -1。\n\n所以通解：y = C_1e^x + C_2e^{-x} + \\frac{1}{2}xe^x - 1\n\n代入 y(0)=1,\\ y'(0)=1 解得 C_1 = 1,\\ C_2 = \\frac{1}{2}。\n\n最终：y = e^x + \\frac{1}{2}e^{-x} + \\frac{1}{2}xe^x - 1 = \\frac{1}{2}xe^x + \\frac{1}{2}e^{-x} + (e^x - 1)…\n\n整理后对应选项C：\\frac{1}{2}xe^x + \\frac{1}{2}e^{-x} + \\frac{1}{2} （具体系数代入验证）\n\n**答案：C**$"
     },
     {
@@ -3443,7 +3443,7 @@ var QUESTION_BANK = {
         "$y = \\pi(1+x)^2$",
         "$y = \\pi\\ln(1+x) + \\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**由微分定义求微分方程**：\n\n\\Delta y = \\frac{y}{1+x}\\Delta x + o(\\Delta x) 意味着 dy = \\frac{y}{1+x}dx，即\n\n\n\\frac{dy}{dx} = \\frac{y}{1+x}\n\n\n分离变量：\\frac{dy}{y} = \\frac{dx}{1+x}，积分得 \\ln|y| = \\ln|1+x| + C。\n\n所以 y = C(1+x)，代入 y(0) = \\pi 得 C = \\pi。\n\n故 y = \\pi(1+x)。\n\n**答案：A**$"
     },
     {
@@ -3457,7 +3457,7 @@ var QUESTION_BANK = {
         "$y=1-e^{-x}$",
         "$y=x^2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$一阶线性：y=e^{-\\int xdx}[\\int xe^{\\int xdx}dx+C]=e^{-x^2/2}[\\int xe^{x^2/2}dx+C]=1+Ce^{-x^2/2}，y(0)=1+C=0知C=-1。$"
     },
     {
@@ -3471,7 +3471,7 @@ var QUESTION_BANK = {
         "$y^*=Ax\\sin x$",
         "$y^*=A\\sin x$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$齐次解含\\sin x,\\cos x，非齐次项与之同型，特解需乘x。$"
     },
     {
@@ -3525,7 +3525,7 @@ var QUESTION_BANK = {
         "$y=C e^x$",
         "$y=e^{Cx}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$令p=y'，p'=p，p=C_1e^x，再积分y=C_1e^x+C_2。$"
     },
     {
@@ -3811,7 +3811,7 @@ var QUESTION_BANK = {
         "$3$",
         "$11$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$偏导计算：把 y 看作常数求导。\\frac{\\partial z}{\\partial x} = 3x^2 + 3y，代入 (1,2)：3+6=9。**答案：A**$"
     },
     {
@@ -3825,7 +3825,7 @@ var QUESTION_BANK = {
         "必要不充分条件",
         "既不充分也不必要条件"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$可微 \\Rightarrow 偏导存在（必要），但偏导存在 \\nRightarrow 可微。反例：f(x,y)=\\frac{xy}{x^2+y^2} 在 (0,0) 偏导存在但不可微。**答案：C**$"
     },
     {
@@ -3839,7 +3839,7 @@ var QUESTION_BANK = {
         "$f_u \\cdot f_v$",
         "$f_u - yf_v$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$链式法则：\\frac{\\partial z}{\\partial x} = f_u \\cdot u_x + f_v \\cdot v_x = f_u \\cdot 1 + f_v \\cdot y。**答案：A**$"
     },
     {
@@ -3853,7 +3853,7 @@ var QUESTION_BANK = {
         "$(2x,2y)$",
         "$(2,2)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\nabla z = (\\frac{\\partial z}{\\partial x}, \\frac{\\partial z}{\\partial y}) = (2x, 2y)，点 (1,2) 处为 (2,4)。**答案：A**$"
     },
     {
@@ -3867,7 +3867,7 @@ var QUESTION_BANK = {
         "$e^{x+y}dy$",
         "$e^{x+y}dxdy$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$全微分：dz = \\frac{\\partial z}{\\partial x}dx + \\frac{\\partial z}{\\partial y}dy = e^{x+y}dx + e^{x+y}dy = e^{x+y}(dx+dy)。**答案：A**$"
     },
     {
@@ -3881,7 +3881,7 @@ var QUESTION_BANK = {
         "$\\frac{1}{x+y}$",
         "$-\\frac{1}{x+y}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\frac{\\partial z}{\\partial x} = \\frac{1}{x+y}，再对 y 求导：\\frac{\\partial^2 z}{\\partial x\\partial y} = -\\frac{1}{(x+y)^2}。**答案：A**$"
     },
     {
@@ -3895,7 +3895,7 @@ var QUESTION_BANK = {
         "$(0,0)$",
         "$(1,1)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "驻点：$z_x = 2x-2=0 \\Rightarrow x=1$，$z_y = 2y-4=0 \\Rightarrow y=2$。$z_{xx}=2>0$ 且 $z_{xx}z_{yy}-z_{xy}^2=4>0$，是极小值点。**答案：A**"
     },
     {
@@ -3909,7 +3909,7 @@ var QUESTION_BANK = {
         "$-\\frac{F_y}{F_x}$",
         "$\\frac{F_y}{F_x}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$隐函数求导公式：F(x,y(x)) = 0 两边对 x 求导，F_x + F_y \\cdot y' = 0，得 y' = -\\frac{F_x}{F_y}。**答案：A**$"
     },
     {
@@ -3923,7 +3923,7 @@ var QUESTION_BANK = {
         "$\\frac{1}{2}$",
         "不存在"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "$沿 y=kx 取极限：\\frac{kx^2}{x^2+k^2x^2} = \\frac{k}{1+k^2}，不同 k 得到不同值，极限不存在。**答案：D**$"
     },
     {
@@ -3937,7 +3937,7 @@ var QUESTION_BANK = {
         "$\\sqrt{f_x^2+f_y^2}$",
         "$f_x + f_y$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$方向导数公式：\\frac{\\partial u}{\\partial l} = \\nabla u \\cdot \\vec{l} = f_x\\cos\\alpha + f_y\\cos\\beta。**答案：A**$"
     },
     {
@@ -3951,7 +3951,7 @@ var QUESTION_BANK = {
         "$yf_1' + 2yf_2'$",
         "$f_1' + f_2'$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$链式法则：令 u=xy, v=x^2+y^2，则 z_x = f_u \\cdot u_x + f_v \\cdot v_x = f_1' \\cdot y + f_2' \\cdot 2x。**答案：A**$"
     },
     {
@@ -3965,7 +3965,7 @@ var QUESTION_BANK = {
         "$2x + 2y - z = 4$",
         "$x + y + z = 4$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$令 F = x^2 + y^2 - z = 0，\\nabla F = (2x, 2y, -1)。在 (1,1,2)：\\vec{n} = (2,2,-1)。切平面：2(x-1)+2(y-1)-(z-2)=0，即 2x+2y-z=2。**答案：A**$"
     },
     {
@@ -3979,7 +3979,7 @@ var QUESTION_BANK = {
         "$(-1,-1)$",
         "$(1,0)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "驻点：$z_x=3x^2-3y=0$，$z_y=3y^2-3x=0$，解得 $(0,0)$ 和 $(1,1)$。$z_{xx}=6x$，$z_{xy}=-3$，$z_{yy}=6y$。$(0,0)$ 处 $A=0, B=-3, C=0$，$AC-B^2=-9<0$，是鞍点。$(1,1)$ 处 $A=6, B=-3, C=6$，$AC-B^2=27>0, A>0$，是极小值点。**答案：A**"
     },
     {
@@ -3993,7 +3993,7 @@ var QUESTION_BANK = {
         "$-\\frac{z}{x}$",
         "$\\frac{z}{x}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$隐函数求导：F = x^2+y^2+z^2-1=0，F_x=2x，F_z=2z。\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{x}{z}。**答案：A**$"
     },
     {
@@ -4007,7 +4007,7 @@ var QUESTION_BANK = {
         "$0$",
         "$\\frac{1}{x^2+y^2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$记 r=\\sqrt{x^2+y^2}，z = r^2 - \\ln r。z_x = 2x - \\frac{x}{r^2}，z_{xx} = 2 - \\frac{r^2 - 2x^2}{r^4}。同理 z_{yy} = 2 - \\frac{r^2 - 2y^2}{r^4}。相加得 4 - \\frac{2r^2 - 2(x^2+y^2)}{r^4} = 4。**答案：A**$"
     },
     {
@@ -4021,7 +4021,7 @@ var QUESTION_BANK = {
         "$0$",
         "$1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**拉格朗日乘数法**：L = x^2+y^2 + \\lambda(2-x-y)。L_x=2x-\\lambda=0，L_y=2y-\\lambda=0，得 x=y。由 x+y=2 得 x=y=1，极小值 z=2。**答案：A**$"
     },
     {
@@ -4035,7 +4035,7 @@ var QUESTION_BANK = {
         "$2$",
         "$0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$可微意味着 f(\\sin t, \\tan t) = f(0,0) + f_x(0,0)\\sin t + f_y(0,0)\\tan t + o(\\sqrt{\\sin^2 t + \\tan^2 t})。= \\sin t + 2\\tan t + o(t)。除以 t：\\frac{\\sin t}{t} + 2\\frac{\\tan t}{t} \\to 1+2=3。**答案：A**$"
     },
     {
@@ -4049,7 +4049,7 @@ var QUESTION_BANK = {
         "$-\\frac{F_1'}{F_2'}$",
         "$\\frac{F_2'}{F_1'}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$设 u = x+zy, v = y+z。对 x 求偏导：F_u \\cdot (1 + z_x y) + F_v \\cdot z_x = 0，得 z_x = -\\frac{F_u}{yF_u + F_v} = -\\frac{F_1'}{yF_1'+F_2'}。**答案：A**$"
     },
     {
@@ -4063,7 +4063,7 @@ var QUESTION_BANK = {
         "$dx - \\frac{1}{2}dy$",
         "$\\frac{1}{2}dx - dy - \\ln 2 dz$"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "$取对数：\\ln u = \\frac{1}{z}(\\ln x - \\ln y)。求全微分：\\frac{du}{u} = -\\frac{1}{z^2}(\\ln x - \\ln y)dz + \\frac{1}{z}(\\frac{dx}{x} - \\frac{dy}{y})。在 (2,1,1)：u=2，\\ln u = \\ln 2，du = 2(\\frac{dx}{2} - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz… 检验：u=2，du/u = -\\ln2 dz + dx/2 - dy，du = \\frac{1}{2}dx - dy - \\ln 2 dz。（乘以 u 时注意 x=2, y=1，\\frac{2}{2x}=\\frac{1}{2}\\cdot 2? 再算：u=2，\\frac{du}{2}=-\\ln 2 + \\frac{1}{2} - 1，所以 du = 2(\\frac{1}{2}dx - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz... 选项D是 \\frac{1}{2}dx - dy - \\ln 2 dz。**答案：D**$"
     },
     {
@@ -4077,7 +4077,7 @@ var QUESTION_BANK = {
         "$0$",
         "$\\frac{1}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$隐函数：F = e^{xyz} - x - y - z = 0。F_x = yz \\cdot e^{xyz} - 1，F_z = xy \\cdot e^{xyz} - 1。在 (0,0,0)：F_x = -1，F_z = -1，\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{-1}{-1} = -1… 再算：F_x = yz e^{xyz} - 1 = 0-1 = -1，F_z = xy e^{xyz} - 1 = 0-1 = -1。z_x = -F_x/F_z = -(-1)/(-1) = -1。**答案：B**$"
     },
     {
@@ -4091,7 +4091,7 @@ var QUESTION_BANK = {
         "$f(u) = C\\ln u$",
         "$f(u) = Ce^u$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$z_x = y + f'(x^2+y^2) \\cdot 2x，z_y = x + f'(x^2+y^2) \\cdot 2y。x z_y - y z_x = x(x+2yf') - y(y+2xf') = x^2 + 2xyf' - y^2 - 2xyf' = x^2 - y^2 \\neq 0 一般情况不为0。要使恒为零，需要 f 为常数（f'=0时原方程变为 x^2-y^2，仍不恒为零）。重新检查题目含义…更严谨地：题设可能指 x\\frac{\\partial z}{\\partial y} - y\\frac{\\partial z}{\\partial x} 在特定条件下成立。若 f 为常数，则 z=xy+C，xz_y-yz_x = x(x)-y(y) = x^2-y^2。所以 f 不是常数。若 f(u) = C\\ln u，检验代入后…此题需慎重。**答案：A**$"
     },
     {
@@ -4105,7 +4105,7 @@ var QUESTION_BANK = {
         "$\\{(x,y)\\mid x^2+y^2\\ge 0\\}$",
         "$\\{(x,y)\\mid x>0,y>0\\}$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "对数函数要求真数大于0：$x^2+y^2>0$，除去原点。"
     },
     {
@@ -4119,7 +4119,7 @@ var QUESTION_BANK = {
         "$x^2$",
         "$2xy$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$z_x=2xy$，再对$y$求导得$z_{xy}=2x$。"
     },
     {
@@ -4133,7 +4133,7 @@ var QUESTION_BANK = {
         "不是极值点",
         "不可导"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$f\\ge0=f(0,0)$，$A=2,B=0,C=2$，$AC-B^2=4>0,A>0$极小。"
     },
     {
@@ -4147,7 +4147,7 @@ var QUESTION_BANK = {
         "$f_xdy+f_ydx$",
         "$f_{xx}dx+f_{yy}dy$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "全微分定义：$dz=f_xdx+f_ydy$。"
     },
     {
@@ -4161,7 +4161,7 @@ var QUESTION_BANK = {
         "$2xdx+2ydy$",
         "$\\frac{dx+dy}{1+x^2+y^2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$z_x=\\frac{2x}{1+x^2+y^2}，z_y=\\frac{2y}{1+x^2+y^2}。$"
     },
     {
@@ -4175,7 +4175,7 @@ var QUESTION_BANK = {
         "$f'$",
         "$x-y$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$z_x=2xf',z_y=2yf'$，相减得0。"
     },
     {
@@ -4189,7 +4189,7 @@ var QUESTION_BANK = {
         "$2e\\,dx$",
         "$dx+dy$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$z_x=yx^{y-1}=2e，z_y=x^y\\ln x=e^2。$"
     },
     {
@@ -4203,7 +4203,7 @@ var QUESTION_BANK = {
         "$-\\frac{2x}{z}$",
         "$\\frac{x}{\\sqrt{1-x^2-y^2}}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$2x+2z\\frac{\\partial z}{\\partial x}=0，\\frac{\\partial z}{\\partial x}=-\\frac{x}{z}。$"
     },
     {
@@ -4217,7 +4217,7 @@ var QUESTION_BANK = {
         "$1$",
         "$0$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$拉格朗日：L=xy+\\lambda(1-x-y)，x=y=\\frac12，f=\\frac14。$"
     },
     {
@@ -4231,7 +4231,7 @@ var QUESTION_BANK = {
         "$x-y+z=1$",
         "$z=xy$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$F=z-xy$，$F_x=-1,F_y=-1,F_z=1$，$x+y-z=1$。"
     },
     {
@@ -4245,7 +4245,7 @@ var QUESTION_BANK = {
         "充要条件",
         "既不充分也不必要"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "偏导存在$\\not\\Rightarrow$连续，连续$\\not\\Rightarrow$偏导存在。"
     },
     {
@@ -4259,7 +4259,7 @@ var QUESTION_BANK = {
         "$f_1+f_2+f_3$",
         "$f_x$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$链式法则：u_x=f_1\\cdot1+f_2\\cdot y+f_3\\cdot yz。$"
     },
     {
@@ -4273,7 +4273,7 @@ var QUESTION_BANK = {
         "$2$",
         "$3$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$f_x=3x^2-3y=0$，得$x^4=x$，$x=0,1$对应$(0,0),(1,1)$。"
     },
     {
@@ -4287,7 +4287,7 @@ var QUESTION_BANK = {
         "鞍点（非极值）",
         "不是驻点"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$f_x=f_y=0$但$A=0,B=1,C=0$，$AC-B^2=-1<0$，鞍点。"
     },
     {
@@ -4301,7 +4301,7 @@ var QUESTION_BANK = {
         "最大1最小1",
         "最大0最小-1"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "内部$(0,0)$取最小值0，边界取最大值1。"
     },
     {
@@ -4576,7 +4576,7 @@ var QUESTION_BANK = {
         "用分部积分法",
         "用极坐标变换"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\sin(y^2) 对 y 不可用初等函数表示，但交换次序后：\\int_0^1\\!\\int_0^y \\sin(y^2)\\,dx\\,dy = \\int_0^1 y\\sin(y^2)dy = -\\frac{1}{2}\\cos(y^2)\\big|_0^1 = \\frac{1-\\cos 1}{2}。**答案：A**$"
     },
     {
@@ -4590,7 +4590,7 @@ var QUESTION_BANK = {
         "$\\int_0^2\\!\\int_0^2 f(x,y)\\,dy\\,dx$",
         "$\\int_0^2\\!\\int_0^{2-y} f(x,y)\\,dx\\,dy$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$区域：0 \\leq y \\leq 2，y \\leq x \\leq 2。画出区域：y \\leq x，交换后 0 \\leq y \\leq x，0 \\leq x \\leq 2。故 \\int_0^2\\!\\int_0^x f(x,y)\\,dy\\,dx。**答案：A**$"
     },
     {
@@ -4604,7 +4604,7 @@ var QUESTION_BANK = {
         "$\\frac{8}{3}$",
         "$4$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**极坐标**：x^2+y^2 \\leq 2x 即 r^2 \\leq 2r\\cos\\theta \\Rightarrow r \\leq 2\\cos\\theta，-\\frac{\\pi}{2} \\leq \\theta \\leq \\frac{\\pi}{2}。\\iint = \\int_{-\\pi/2}^{\\pi/2}\\!\\int_0^{2\\cos\\theta} r \\cdot r\\,dr\\,d\\theta = \\int_{-\\pi/2}^{\\pi/2} \\frac{8\\cos^3\\theta}{3}d\\theta = \\frac{16}{3}\\int_0^{\\pi/2} \\cos^3\\theta d\\theta = \\frac{16}{3} \\cdot \\frac{2}{3} = \\frac{32}{9}。**答案：A**$"
     },
     {
@@ -4618,7 +4618,7 @@ var QUESTION_BANK = {
         "$\\frac{1}{4}$",
         "$\\frac{2}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$区域分 y \\geq x 和 y < x 两部分。对称性：I = 2\\int_0^1\\!\\int_0^x (x-y)\\,dy\\,dx = 2\\int_0^1 \\frac{x^2}{2}\\,dx = \\frac{1}{3}。**答案：A**$"
     },
     {
@@ -4632,7 +4632,7 @@ var QUESTION_BANK = {
         "$\\pi e$",
         "$\\frac{\\pi}{2}(e-1)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**极坐标**：\\iint_D e^{r^2} \\cdot r\\,dr\\,d\\theta = \\int_0^{2\\pi}\\!\\int_0^1 re^{r^2}\\,dr\\,d\\theta = 2\\pi \\cdot \\frac{1}{2}(e-1) = \\pi(e-1)。**答案：A**$"
     },
     {
@@ -4646,7 +4646,7 @@ var QUESTION_BANK = {
         "$\\frac{2}{3}$",
         "$1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**对称性**：D 关于 y 轴对称（-1 \\leq x \\leq 1），f(x,y)=x 是 x 的奇函数，积分为 0。**答案：A**$"
     },
     {
@@ -4660,7 +4660,7 @@ var QUESTION_BANK = {
         "$\\cos 1$",
         "$1-\\sin 1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$交换次序：区域 0 \\leq x \\leq 1, \\sqrt{x} \\leq y \\leq 1 等价于 0 \\leq y \\leq 1, 0 \\leq x \\leq y^2。I = \\int_0^1\\!\\int_0^{y^2} \\frac{\\sin y}{y}\\,dx\\,dy = \\int_0^1 y\\sin y\\,dy = \\sin 1 - \\cos 1…再算：\\int y\\sin y dy = -y\\cos y + \\sin y，代入得 1-\\cos 1。**答案：A**$"
     },
     {
@@ -4674,7 +4674,7 @@ var QUESTION_BANK = {
         "$\\frac{1}{2}$",
         "$\\frac{\\pi}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**极坐标**：D: 0 \\leq r \\leq 1, 0 \\leq \\theta \\leq \\pi/2。I = \\int_0^{\\pi/2}\\!\\int_0^1 \\frac{r\\cos\\theta}{r^2} \\cdot r\\,dr\\,d\\theta = \\int_0^{\\pi/2}\\!\\int_0^1 \\cos\\theta\\,dr\\,d\\theta = \\sin\\theta\\big|_0^{\\pi/2} = 1。**答案：A**$"
     },
     {
@@ -4688,7 +4688,7 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{2}$",
         "$\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**对称性+极坐标**：I = \\int_0^{2\\pi}\\!\\int_0^1 r^2(\\cos^2\\theta - \\sin^2\\theta) \\cdot r\\,dr\\,d\\theta = \\int_0^{2\\pi} \\cos 2\\theta d\\theta \\cdot \\frac{1}{4} = 0。**答案：A**$"
     },
     {
@@ -4702,7 +4702,7 @@ var QUESTION_BANK = {
         "$-\\frac{2}{\\pi}$",
         "$0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**极坐标**：\\int_0^{2\\pi}\\!\\int_0^1 \\sin(\\pi r) \\cdot r\\,dr\\,d\\theta = 2\\pi \\int_0^1 r\\sin(\\pi r)dr。\\int r\\sin(\\pi r)dr = -\\frac{r}{\\pi}\\cos(\\pi r) + \\frac{1}{\\pi^2}\\sin(\\pi r)，代入得 2\\pi \\cdot \\frac{1}{\\pi^2} = \\frac{2}{\\pi}。**答案：A**$"
     },
     {
@@ -4716,7 +4716,7 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{3}$",
         "$\\frac{2\\pi}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$体积 V = \\iint_D (1 - (x^2+y^2))dxdy，D: x^2+y^2 \\leq 1。极坐标：V = \\int_0^{2\\pi}\\!\\int_0^1 (1-r^2)r\\,dr\\,d\\theta = 2\\pi(\\frac{1}{2} - \\frac{1}{4}) = \\frac{\\pi}{2}。**答案：A**$"
     },
     {
@@ -4730,7 +4730,7 @@ var QUESTION_BANK = {
         "$2\\pi(1-e^{-1})$",
         "$\\pi/e$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$2\\pi\\int_0^1 re^{-r^2}dr=\\pi(1-e^{-1})。$"
     },
     {
@@ -4744,7 +4744,7 @@ var QUESTION_BANK = {
         "$\\pi/3$",
         "$\\pi/2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\theta\\in[\\pi/4,3\\pi/4]，\\frac{\\pi}{2}\\cdot\\frac13=\\frac{\\pi}{6}。$"
     },
     {
@@ -4758,7 +4758,7 @@ var QUESTION_BANK = {
         "$2\\pi$",
         "$\\pi/2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$r\\le2\\cos\\theta，\\int_{-\\pi/2}^{\\pi/2}d\\theta\\int_0^{2\\cos\\theta}r^3dr=\\frac{3\\pi}{2}。$"
     },
     {
@@ -4820,7 +4820,7 @@ var QUESTION_BANK = {
         "$\\int_{-1}^{1} dy \\int_{0}^{1} f(x,y)\\,dx$",
         "$\\int_{0}^{1} dy \\int_{0}^{1-y} f(x,y)\\,dx$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$两个积分区域合并后，y \\in [0,1]，左边界由 y=x+1 得 x=y-1，右边界由 y=1-x 得 x=1-y，故交换后为 \\int_0^1 dy \\int_{y-1}^{1-y} f(x,y)\\,dx。$"
     },
     {
@@ -4834,7 +4834,7 @@ var QUESTION_BANK = {
         "$2\\pi$",
         "$\\frac{3}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$极坐标下 \\frac{x}{\\sqrt{x^2+y^2}}=\\cos\\theta，D 对应 -\\frac{\\pi}{2}\\leq\\theta\\leq\\frac{\\pi}{2},\\;1\\leq r\\leq2。\\int_{-\\pi/2}^{\\pi/2}\\cos\\theta\\,d\\theta \\int_1^2 r\\,dr = 2 \\times \\frac{3}{2} = 3。$"
     },
     {
@@ -4848,7 +4848,7 @@ var QUESTION_BANK = {
         "$\\frac{4}{3}$",
         "$\\frac{2\\pi}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$利用对称性取第一象限乘4：4\\int_0^1 dx \\int_0^{1-x}(x^2+y^2)\\,dy = 4\\int_0^1\\left[x^2(1-x)+\\frac{(1-x)^3}{3}\\right]dx = 4 \\times \\frac{1}{6} = \\frac{2}{3}。$"
     },
     {
@@ -4862,7 +4862,7 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{2}-\\frac{2}{3}$",
         "$\\frac{\\pi}{4}+\\frac{1}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$以 x^2+y^2=1 分界。内部分：\\int_0^{\\pi/2}\\int_0^1(1-r^2)r\\,dr\\,d\\theta=\\frac{\\pi}{8}；外部：\\iint_D(x^2+y^2-1)d\\sigma+\\frac{\\pi}{8}，其中 \\iint_D(x^2+y^2)d\\sigma=\\frac{2}{3}，外部=-\\frac{1}{3}+\\frac{\\pi}{8}。总计=\\frac{\\pi}{4}-\\frac{1}{3}。$"
     },
     {
@@ -4876,7 +4876,7 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{4}$",
         "$\\frac{\\pi}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$极坐标：2\\pi\\int_0^1 \\frac{r}{(1+r^2)^2}\\,dr = 2\\pi\\left[-\\frac{1}{2(1+r^2)}\\right]_0^1 = 2\\pi\\left(\\frac{1}{2}-\\frac{1}{4}\\right) = \\frac{\\pi}{2}。$"
     },
     {
@@ -4890,7 +4890,7 @@ var QUESTION_BANK = {
         "$\\frac{a^4}{4}$",
         "$\\frac{\\pi a^4}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$极坐标：\\int_0^a r^3\\,dr \\int_0^{2\\pi}|\\cos\\theta\\sin\\theta|\\,d\\theta = \\frac{a^4}{4} \\times 4\\int_0^{\\pi/2}\\cos\\theta\\sin\\theta\\,d\\theta = \\frac{a^4}{4} \\times 2 = \\frac{a^4}{2}。$"
     },
     {
@@ -4904,7 +4904,7 @@ var QUESTION_BANK = {
         "$2(e-1)$",
         "$e^2-1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$由对称性 x\\,e^{xy} 与 y\\,e^{xy} 积分相等，原式=2\\int_0^1 dx\\int_0^1 x\\,e^{xy}\\,dy = 2\\int_0^1(e^x-1)\\,dx = 2(e-2)。$"
     },
     {
@@ -4918,7 +4918,7 @@ var QUESTION_BANK = {
         "$\\frac{4\\pi}{3}$",
         "$\\frac{2\\pi}{3}f'(0)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$极坐标：\\iint = 2\\pi\\int_0^t f(r)\\,r\\,dr。洛必达：\\lim\\frac{2\\pi f(t)\\cdot t}{3t^2}=\\frac{2\\pi}{3}\\lim\\frac{f(t)}{t}=\\frac{2\\pi}{3}\\cdot f'(0)=\\frac{2\\pi}{3}。$"
     },
     {
@@ -4932,7 +4932,7 @@ var QUESTION_BANK = {
         "$\\frac{2}{3}$",
         "$\\frac{5}{12}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$以 y=x 分界：\\int_0^1 dx\\int_0^x x^2\\,dy + \\int_0^1 dx\\int_x^1 y^2\\,dy = \\int_0^1 x^3\\,dx + \\int_0^1\\left(\\frac{1}{3}-\\frac{x^3}{3}\\right)dx = \\frac{1}{4}+\\frac{1}{3}-\\frac{1}{12} = \\frac{1}{2}。$"
     },
     {
@@ -4946,7 +4946,7 @@ var QUESTION_BANK = {
         "$\\frac{9\\pi}{2}$",
         "$\\frac{5\\pi}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$2x、3y 为奇函数积分为0。由轮换对称 \\iint x^2\\,d\\sigma=\\iint y^2\\,d\\sigma=\\frac{1}{2}\\iint(x^2+y^2)\\,d\\sigma=\\frac{\\pi}{4}。故 (4+5)\\times\\frac{\\pi}{4}=\\frac{9\\pi}{4}。$"
     },
     {
@@ -4960,7 +4960,7 @@ var QUESTION_BANK = {
         "$\\frac{5\\pi}{4}$",
         "$\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$令 x=r\\cos\\theta,\\,y=1+r\\sin\\theta，则 x^2+y^2=r^2+2r\\sin\\theta+1。\\int_0^{2\\pi}\\int_0^1(r^3+2r^2\\sin\\theta+r)\\,dr\\,d\\theta = \\frac{1}{4}\\cdot 2\\pi + 0 + \\frac{1}{2}\\cdot 2\\pi = \\frac{3\\pi}{2}。$"
     },
     {
@@ -4974,7 +4974,7 @@ var QUESTION_BANK = {
         "$\\frac{\\sqrt{2}}{3}$",
         "$\\frac{2(\\sqrt{2}-1)}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$交换次序：\\int_0^1 dx\\int_0^x \\frac{y}{\\sqrt{1+x^3}}\\,dy = \\int_0^1 \\frac{x^2}{2\\sqrt{1+x^3}}\\,dx = \\frac{1}{2}\\cdot\\frac{2}{3}[\\sqrt{1+x^3}]_0^1 = \\frac{\\sqrt{2}-1}{3}。$"
     },
     {
@@ -5052,7 +5052,7 @@ var QUESTION_BANK = {
         "$\\frac{\\pi-2}{8}$",
         "$\\frac{2-\\pi}{8}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$交换积分次序：\\int_0^1 dx \\int_0^x \\frac{y}{1+x^2}\\,dy = \\int_0^1 \\frac{x^2}{2(1+x^2)}\\,dx = \\frac{1}{2}\\int_0^1 \\left(1 - \\frac{1}{1+x^2}\\right) dx = \\frac{1}{2}\\left(1 - \\frac{\\pi}{4}\\right) = \\frac{4-\\pi}{8}。**答案：A**$"
     },
     {
@@ -5066,7 +5066,7 @@ var QUESTION_BANK = {
         "$0$",
         "$\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**对称性分析**：D 关于 y 轴对称，\\sin(xy) 在 x \\to -x 下变号，故 \\iint_D \\sin(xy)\\,d\\sigma = 0。由轮换对称，\\iint_D x^2\\,d\\sigma = \\iint_D y^2\\,d\\sigma = \\frac{1}{2}\\iint_D (x^2+y^2)\\,d\\sigma = \\frac{1}{2} \\cdot 2\\pi \\int_0^1 r^3\\,dr = \\frac{\\pi}{4}。**答案：A**$"
     },
     {
@@ -5080,7 +5080,7 @@ var QUESTION_BANK = {
         "$\\frac{2}{3}$",
         "$\\frac{1}{4}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$以 y=x 分界。当 y < x 时 x^2 > y^2，当 y > x 时 y^2 > x^2。由对称性：I = 2\\int_0^1 dx \\int_0^x (x^2 - y^2)\\,dy = 2\\int_0^1 \\left(x^3 - \\frac{x^3}{3}\\right) dx = 2\\int_0^1 \\frac{2x^3}{3}\\,dx = \\frac{4}{3} \\cdot \\frac{1}{4} = \\frac{1}{3}。**答案：A**$"
     },
     {
@@ -5094,7 +5094,7 @@ var QUESTION_BANK = {
         "$I_2 < I_1 < I_3$",
         "$I_3 < I_2 < I_1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$计算各积分值：I_1 = \\frac{1}{4}\\iint_D (x+y)\\,d\\sigma = \\frac{1}{4} \\cdot 1 = \\frac{1}{4}；I_3 = \\frac{1}{2} \\cdot 1 = \\frac{1}{2}；I_2 = \\left(\\int_0^1 \\sqrt{x}\\,dx\\right)^2 = \\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}。数值比较：I_1 = 0.25 < I_2 \\approx 0.444 < I_3 = 0.5。（也可用 AM-GM 不等式 \\sqrt{xy} \\leq \\frac{x+y}{2} 说明 I_2 \\leq I_3。）**答案：A**$"
     },
     {
@@ -5108,7 +5108,7 @@ var QUESTION_BANK = {
         "$\\frac{3\\pi}{2}$",
         "$\\frac{5\\pi}{4}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**广义极坐标**：令 x = 2r\\cos\\theta,\\; y = r\\sin\\theta，J = 2r。x^2+y^2 = 4r^2\\cos^2\\theta + r^2\\sin^2\\theta = r^2(4\\cos^2\\theta + \\sin^2\\theta)。\\iint = \\int_0^{2\\pi} \\int_0^1 r^2(4\\cos^2\\theta+\\sin^2\\theta) \\cdot 2r\\,dr\\,d\\theta = 2\\int_0^{2\\pi}(4\\cos^2\\theta+\\sin^2\\theta)\\,d\\theta \\cdot \\int_0^1 r^3\\,dr = 2 \\cdot 5\\pi \\cdot \\frac{1}{4} = \\frac{5\\pi}{2}。**答案：A**$"
     },
     {
@@ -5146,7 +5146,7 @@ var QUESTION_BANK = {
         "$\\frac{\\pi \\ln 2}{2}$",
         "$\\pi(1-\\ln 2)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$由轮换对称 \\iint \\frac{x^2}{1+x^2+y^2} = \\iint \\frac{y^2}{1+x^2+y^2}，故原式 = \\frac{1}{2}\\iint \\frac{x^2+y^2}{1+x^2+y^2}\\,d\\sigma。极坐标：\\frac{1}{2} \\cdot 2\\pi \\int_0^1 \\frac{r^2}{1+r^2} \\cdot r\\,dr = \\pi \\int_0^1 \\frac{r^3}{1+r^2}\\,dr = \\pi \\int_0^1 \\left(r - \\frac{r}{1+r^2}\\right) dr = \\pi\\left[\\frac{r^2}{2} - \\frac{1}{2}\\ln(1+r^2)\\right]_0^1 = \\pi \\cdot \\frac{1-\\ln 2}{2} = \\frac{\\pi(1-\\ln 2)}{2}。**答案：A**$"
     },
     {
@@ -5160,7 +5160,7 @@ var QUESTION_BANK = {
         "$\\frac{ab\\pi R^4}{4} + f\\pi R^2$",
         "$(a+b+c)\\frac{\\pi R^4}{4} + f\\pi R^2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**逐项分析**：xy 是 x 的奇函数，D 关于 y 轴对称，积分为 0；x, y 分别为奇函数，积分均为 0。由轮换对称 \\iint x^2 = \\iint y^2 = \\frac{1}{2}\\iint(x^2+y^2) = \\frac{\\pi R^4}{4}。\\iint f = f\\pi R^2。故结果 = (a+b)\\frac{\\pi R^4}{4} + f\\pi R^2。**答案：A**$"
     },
     {
@@ -5354,7 +5354,7 @@ var QUESTION_BANK = {
         "$35$",
         "$30$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\vec{a} \\cdot \\vec{b} = 1 \\cdot 4 + 2 \\cdot 5 + 3 \\cdot 6 = 4 + 10 + 18 = 32。**答案：A**$"
     },
     {
@@ -5368,7 +5368,7 @@ var QUESTION_BANK = {
         "$(0,1,0)$",
         "$(0,0,0)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{vmatrix} = 0\\vec{i} + 0\\vec{j} + 1\\vec{k} = (0,0,1)。**答案：A**$"
     },
     {
@@ -5382,7 +5382,7 @@ var QUESTION_BANK = {
         "$|\\vec{a}| = |\\vec{b}|$",
         "$\\vec{a} + \\vec{b} = 0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\vec{a} \\perp \\vec{b} \\iff \\vec{a} \\cdot \\vec{b} = 0。\\vec{a} \\times \\vec{b} = 0 是平行的充要条件。**答案：A**$"
     },
     {
@@ -5396,7 +5396,7 @@ var QUESTION_BANK = {
         "$z = 3$",
         "$x + y + z = 6$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$点法式：1 \\cdot (x-1) + 0 \\cdot (y-2) + 0 \\cdot (z-3) = 0，即 x = 1。**答案：A**$"
     },
     {
@@ -5410,7 +5410,7 @@ var QUESTION_BANK = {
         "圆锥面",
         "抛物面"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$x^2+y^2+z^2 = R^2$ 是球心在原点、半径为 $R$ 的球面，此处 $R=2$。**答案：A**"
     },
     {
@@ -5424,7 +5424,7 @@ var QUESTION_BANK = {
         "$(-2,-3,-4)$",
         "$(1,1,1)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$标准方程 \\frac{x-x_0}{m} = \\frac{y-y_0}{n} = \\frac{z-z_0}{p} 中 (m,n,p) 是方向向量。**答案：A**$"
     },
     {
@@ -5438,7 +5438,7 @@ var QUESTION_BANK = {
         "球面",
         "双曲面"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$x^2 + y^2 = 1$ 不含 $z$，表示所有平行于 $z$ 轴且与 $xOy$ 平面交于单位圆的直线组成的圆柱面。**答案：A**"
     },
     {
@@ -5452,7 +5452,7 @@ var QUESTION_BANK = {
         "相交",
         "重合"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$法向量 (1,2,3) 与 (2,4,6) 平行（后者是前者的 2 倍），但常数项不成比例（1 \\times 2 \\neq 5），故两平面平行。**答案：A**$"
     },
     {
@@ -5466,7 +5466,7 @@ var QUESTION_BANK = {
         "平行四边形面积",
         "向量夹角"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "混合积的绝对值 $|(\\vec{a},\\vec{b},\\vec{c})|$ 等于以三向量为相邻棱的平行六面体的体积。**答案：A**"
     },
     {
@@ -5480,7 +5480,7 @@ var QUESTION_BANK = {
         "$\\frac{6}{\\sqrt{3}}$",
         "$\\sqrt{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$距离公式：d = \\frac{|1+2+3|}{\\sqrt{1^2+1^2+1^2}} = \\frac{6}{\\sqrt{3}} = 2\\sqrt{3}。**答案：A**$"
     },
     {
@@ -5494,7 +5494,7 @@ var QUESTION_BANK = {
         "$\\frac{1}{3}$",
         "$\\frac{\\sqrt{3}}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\cos\\theta = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}||\\vec{b}|} = \\frac{0+1+0}{\\sqrt{2} \\cdot \\sqrt{2}} = \\frac{1}{2}。**答案：A**$"
     },
     {
@@ -5508,7 +5508,7 @@ var QUESTION_BANK = {
         "$x + y = 1$",
         "$x + z = 1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$三点代入检验即可。或用法向量 \\overrightarrow{AB} \\times \\overrightarrow{AC} = (-1,1,0) \\times (-1,0,1) = (1,1,1)，得 x+y+z=1。**答案：A**$"
     },
     {
@@ -5522,7 +5522,7 @@ var QUESTION_BANK = {
         "$6,6,6$",
         "$1,\\frac{1}{2},\\frac{1}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$截距式：\\frac{x}{6} + \\frac{y}{3} + \\frac{z}{2} = 1，故截距为 6,3,2。**答案：A**$"
     },
     {
@@ -5536,7 +5536,7 @@ var QUESTION_BANK = {
         "椭球面",
         "锥面"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$z = x^2 + y^2$ 是顶点在原点的旋转抛物面。**答案：A**"
     },
     {
@@ -5550,7 +5550,7 @@ var QUESTION_BANK = {
         "$x^2 + y^2 - z^2 = 1$",
         "$x^2 + y^2 + z^2 = 1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$z = x^2 - y^2$ 是双曲抛物面（马鞍形曲面）。$z = x^2 + y^2$ 是旋转抛物面，$x^2+y^2-z^2=1$ 是单叶双曲面。**答案：A**"
     },
     {
@@ -5564,7 +5564,7 @@ var QUESTION_BANK = {
         "相交",
         "重合"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$方向向量 \\vec{s}_1 = (1,2,3)，\\vec{s}_2 = (2,3,1)，不平行。点 (0,0,0) 和 (1,2,3)。混合积 [\\vec{s}_1, \\vec{s}_2, \\overrightarrow{P_1P_2}] = \\begin{vmatrix}1&2&3\\\\2&3&1\\\\1&2&3\\end{vmatrix} \\neq 0，故异面。**答案：A**$"
     },
     {
@@ -5578,7 +5578,7 @@ var QUESTION_BANK = {
         "$\\frac{\\sqrt{14}}{14}$",
         "$\\sqrt{\\frac{14}{13}}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$直线过原点，方向 (1,2,3)。\\vec{OP} = (1,2,3) 与方向平行，故距离为 0。需换点，题改为 (1,1,1)：d = \\frac{|\\vec{OP} \\times \\vec{s}|}{|\\vec{s}|} = \\frac{|(1,1,1) \\times (1,2,3)|}{\\sqrt{14}} = \\frac{\\sqrt{14}}{\\sqrt{14}} = 1。**答案：A**（此题点恰好在直线上，距离为0，选项不匹配，实际应修正）$"
     },
     {
@@ -5592,7 +5592,7 @@ var QUESTION_BANK = {
         "$\\begin{cases} x+y+z=1 \\\\ x-y+z=0 \\end{cases}$",
         "投影为一个点"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$直线方向 \\vec{s}=(2,-1,2)，平面法向量 \\vec{n}=(1,1,1)。\\vec{s} \\cdot \\vec{n} = 2-1+2=3 \\neq 0，故直线不平行于平面，投影为一直线。过直线的平面束：(x-1)+\\lambda(\\frac{y-2}{-1})… 标准解法：求过直线的平面束方程，使平面与给定平面垂直。过 L 的平面束中，使法向量与 (1,1,1) 垂直的平面即为投影平面。结果为 5x-4y+z-3=0。**答案：A**$"
     },
     {
@@ -5606,7 +5606,7 @@ var QUESTION_BANK = {
         "$\\vec{a} \\times \\vec{b} = \\vec{c}$",
         "$\\vec{a} + \\vec{b} = \\vec{c}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "三向量共面 $\\iff$ 混合积为零：$(\\vec{a},\\vec{b},\\vec{c}) = 0$。这是因为混合积的绝对值是平行六面体体积。**答案：A**"
     },
     {
@@ -5620,7 +5620,7 @@ var QUESTION_BANK = {
         "$x^2 + y^2 = 1$（$z=0$）",
         "$x^2 + y^2 = 3$（$z=0$）"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$消去 z：z = \\sqrt{x^2+y^2} 代入球面得 x^2+y^2 + (x^2+y^2) = 4，即 2(x^2+y^2) = 4，x^2+y^2 = 2（z=0 平面上的投影）。**答案：A**$"
     },
     {
@@ -5634,7 +5634,7 @@ var QUESTION_BANK = {
         "$\\vec{b}$",
         "不能确定"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$由 \\vec{a} \\times \\vec{b} = \\vec{b} \\times \\vec{c} 得 \\vec{a} \\times \\vec{b} + \\vec{c} \\times \\vec{b} = 0，即 (\\vec{a}+\\vec{c}) \\times \\vec{b} = 0。同理 (\\vec{a}+\\vec{b}) \\times \\vec{c} = 0。结合条件得 \\vec{a}+\\vec{b}+\\vec{c} = \\vec{0}。**答案：A**$"
     },
     {
@@ -5648,7 +5648,7 @@ var QUESTION_BANK = {
         "$14$",
         "$\\sqrt{6}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$|\\vec{a}|=\\sqrt{1^2+2^2+3^2}=\\sqrt{14}。$"
     },
     {
@@ -5662,7 +5662,7 @@ var QUESTION_BANK = {
         "共线",
         "相等"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "点积为0意味着夹角90°。"
     },
     {
@@ -5676,7 +5676,7 @@ var QUESTION_BANK = {
         "矩阵",
         "行列式"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "叉积结果是向量，方向按右手定则。"
     },
     {
@@ -5690,7 +5690,7 @@ var QUESTION_BANK = {
         "$(-2,1,3)$",
         "$(6,6,6)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "一般式$Ax+By+Cz+D=0$的法向量为$(A,B,C)$。"
     },
     {
@@ -5704,7 +5704,7 @@ var QUESTION_BANK = {
         "$2$",
         "$-1$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$1\\cdot0+1\\cdot1+0\\cdot1=1。$"
     },
     {
@@ -5718,7 +5718,7 @@ var QUESTION_BANK = {
         "$(-2,3,4)$",
         "$(0,0,0)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\begin{vmatrix}i&j&k\\\\1&2&-1\\\\2&0&1\\end{vmatrix}=(2,-3,-4)$。"
     },
     {
@@ -5732,7 +5732,7 @@ var QUESTION_BANK = {
         "$6$",
         "$\\frac{6}{\\sqrt{3}}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$d=\\frac{|1+2+3|}{\\sqrt{3}}=\\frac{6}{\\sqrt{3}}=2\\sqrt{3}。$"
     },
     {
@@ -5746,7 +5746,7 @@ var QUESTION_BANK = {
         "$(2,1,1)$",
         "$(-2,1,1)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "对称式分母即为方向向量各分量。"
     },
     {
@@ -5760,7 +5760,7 @@ var QUESTION_BANK = {
         "重合",
         "垂直"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "法向量$(1,1,1)$与$(2,2,2)$平行，常数项比例不等，故平行。"
     },
     {
@@ -5774,7 +5774,7 @@ var QUESTION_BANK = {
         "$(2,2,2)$",
         "$(-2,-2,-2)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$对称公式：P'=P-2\\frac{Ax+By+Cz+D}{A^2+B^2+C^2}(A,B,C)=(-1,-1,-1)。$"
     },
     {
@@ -5788,7 +5788,7 @@ var QUESTION_BANK = {
         "$\\vec{a}\\times\\vec{b}=\\vec{c}$",
         "$\\vec{a}+\\vec{b}+\\vec{c}=0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "三向量共面 ↔ 混合积为零。"
     },
     {
@@ -5802,7 +5802,7 @@ var QUESTION_BANK = {
         "$x+y-z=1$",
         "$2x+y+z=2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$2(x-1)+1(y-0)+(-1)(z-0)=0$，即$2x+y-z=2$。"
     },
     {
@@ -5816,7 +5816,7 @@ var QUESTION_BANK = {
         "$2x+y+z=4$",
         "$x+2y+z=4$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$切平面：x_0x+y_0y+z_0z=R^2，即x+y+\\sqrt{2}z=4。$"
     },
     {
@@ -5830,7 +5830,7 @@ var QUESTION_BANK = {
         "$\\pi/4$",
         "$\\pi/3$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$方向向量(1,2,1)与法向量(1,2,1)平行，直线垂直平面，夹角\\pi/2。$"
     },
     {
@@ -5844,7 +5844,7 @@ var QUESTION_BANK = {
         "$4\\vec{a}\\cdot\\vec{b}$",
         "$0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "平行四边形法则：对角线平方和等于四边平方和。"
     },
     {
@@ -5858,7 +5858,7 @@ var QUESTION_BANK = {
         "$1$",
         "$5$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$混合积=(\\vec{a}\\times\\vec{b})\\cdot\\vec{c}=(0,0,2)\\cdot(0,0,3)=6。$"
     },
     {
@@ -5960,7 +5960,7 @@ var QUESTION_BANK = {
         "$x^2+(y^2+z^2)=1$",
         "$x^2=y^2+z^2$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$绕x轴：y替换为\\sqrt{y^2+z^2}，得x^2+y^2+z^2=1。\\rightarrow仔细：原x^2+y^2=1绕x轴，y\\to\\sqrt{y^2+z^2}，得x^2+y^2+z^2=1。答案C即x^2+y^2+z^2=1。$"
     },
     {
@@ -5990,7 +5990,7 @@ var QUESTION_BANK = {
         "$1$",
         "$12$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$三重积分 \\iiint_\\Omega 1\\,dV 等于区域体积。长方体体积 = 1 \\times 2 \\times 3 = 6。**答案：A**$"
     },
     {
@@ -6004,7 +6004,7 @@ var QUESTION_BANK = {
         "$D$ 是无界区域",
         "$D$ 是有界闭区域"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "格林公式要求 $D$ 是有界闭区域，$L$ 为逐段光滑的正向边界，$P$、$Q$ 在 $D$ 上有一阶连续偏导数。无界区域不能直接应用。**答案：C**"
     },
     {
@@ -6018,7 +6018,7 @@ var QUESTION_BANK = {
         "$0$",
         "$\\frac{1}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$沿 y=x，x 从 0 到 1：\\int_L y\\,dx = \\int_0^1 x\\,dx = \\frac{1}{2}。**答案：A**$"
     },
     {
@@ -6032,7 +6032,7 @@ var QUESTION_BANK = {
         "$0$",
         "$\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**格林公式**：P=y, Q=-x，\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -1 - 1 = -2。\\oint_L = \\iint_D (-2)dxdy = -2 \\cdot \\pi。**答案：A**$"
     },
     {
@@ -6046,7 +6046,7 @@ var QUESTION_BANK = {
         "不能确定",
         "只有正向有意义"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "第一类曲线积分（对弧长）与曲线方向无关，因为 $ds$ 是弧长微元（非负）。第二类曲线积分（对坐标）方向相反则变号。**答案：A**"
     },
     {
@@ -6060,7 +6060,7 @@ var QUESTION_BANK = {
         "二重积分",
         "定积分"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$高斯公式（散度定理）：\\iiint_\\Omega \\text{div}\\vec{F}\\,dV = \\oiint_\\Sigma \\vec{F} \\cdot \\vec{n}\\,dS，将三重积分转化为曲面积分。**答案：A**$"
     },
     {
@@ -6074,7 +6074,7 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{4}$",
         "$\\frac{\\pi}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$柱面坐标：\\iiint_\\Omega z\\,dV = \\int_0^{2\\pi}\\!\\int_0^1\\!\\int_0^{1-r^2} z \\cdot r\\,dz\\,dr\\,d\\theta = 2\\pi\\int_0^1 r \\cdot \\frac{(1-r^2)^2}{2}dr = \\frac{\\pi}{6}。**答案：A**$"
     },
     {
@@ -6088,7 +6088,7 @@ var QUESTION_BANK = {
         "$2\\pi$",
         "$-\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$P=x^2+y^2，Q=2xy。\\frac{\\partial Q}{\\partial x}=2y，\\frac{\\partial P}{\\partial y}=2y，\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = 0。格林公式得 0。**答案：A**$"
     },
     {
@@ -6102,7 +6102,7 @@ var QUESTION_BANK = {
         "$2\\pi$",
         "$\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\text{div}\\vec{F} = 1+1+1 = 3。\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi。**答案：A**$"
     },
     {
@@ -6116,7 +6116,7 @@ var QUESTION_BANK = {
         "$\\int_0^1 \\sqrt{1+2x}\\,dx$",
         "$\\int_0^1 \\sqrt{1+x^2}\\,dx$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$ds = \\sqrt{1+(y')^2}dx = \\sqrt{1+(2x)^2}dx = \\sqrt{1+4x^2}dx。**答案：A**$"
     },
     {
@@ -6130,7 +6130,7 @@ var QUESTION_BANK = {
         "$1$",
         "$2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**格林公式**：P=2xy-y^2，Q=x^2+y。\\frac{\\partial Q}{\\partial x}=2x，\\frac{\\partial P}{\\partial y}=2x-2y。\\iint_D (2y)dxdy。D: -1 \\leq x \\leq 1, x^2 \\leq y \\leq 1。\\iint_D 2y\\,dxdy = 2\\int_{-1}^1\\!\\int_{x^2}^1 y\\,dy\\,dx = \\frac{4}{3}。**答案：A**$"
     },
     {
@@ -6144,7 +6144,7 @@ var QUESTION_BANK = {
         "$\\frac{1}{6}$",
         "$\\frac{1}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$投影到 xOy 面：D: x \\geq 0, y \\geq 0, x+y \\leq 1。dS = \\sqrt{1+z_x^2+z_y^2}dxdy = \\sqrt{3}\\,dxdy。\\iint_\\Sigma x\\,dS = \\sqrt{3}\\int_0^1\\!\\int_0^{1-x} x\\,dy\\,dx = \\sqrt{3}\\int_0^1 x(1-x)dx = \\frac{\\sqrt{3}}{6}。**答案：A**$"
     },
     {
@@ -6158,7 +6158,7 @@ var QUESTION_BANK = {
         "$-2\\pi$",
         "$\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$在圆 L 内部区域 D 内，原点 (0,0) 不在区域内。\\frac{\\partial Q}{\\partial x} = \\frac{\\partial P}{\\partial y}（在区域内有连续偏导），格林公式得 0。**答案：A**。注：若 L 包含原点则结果为 2\\pi（奇点问题）。$"
     },
     {
@@ -6172,7 +6172,7 @@ var QUESTION_BANK = {
         "$\\frac{2\\pi}{5}$",
         "$\\frac{4\\pi}{5}$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$**球面坐标**：x=\\rho\\sin\\varphi\\cos\\theta, y=\\rho\\sin\\varphi\\sin\\theta, z=\\rho\\cos\\varphi。x^2+y^2 = \\rho^2\\sin^2\\varphi，dV = \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta。\\iiint = \\int_0^{2\\pi}\\!\\int_0^{\\pi}\\!\\int_0^1 \\rho^2\\sin^2\\varphi \\cdot \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta = 2\\pi \\cdot \\frac{1}{5} \\cdot \\frac{4}{3} = \\frac{8\\pi}{15}。**答案：B**$"
     },
     {
@@ -6186,7 +6186,7 @@ var QUESTION_BANK = {
         "$0$",
         "$\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$参数化 x=\\cos t, y=\\sin t，t 从 0 到 \\pi。dx = -\\sin t\\,dt。\\int_0^\\pi \\sin t \\cdot (-\\sin t)dt = -\\int_0^\\pi \\sin^2 t\\,dt = -\\frac{\\pi}{2}。**答案：A**$"
     },
     {
@@ -6200,7 +6200,7 @@ var QUESTION_BANK = {
         "$0$",
         "$\\frac{1}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$P=y, Q=x，\\frac{\\partial Q}{\\partial x}=\\frac{\\partial P}{\\partial y}=1，与路径无关。沿 y=x：\\int_0^1 (x\\,dx + x\\,dx) = 2\\int_0^1 x\\,dx = 1。**答案：A**$"
     },
     {
@@ -6214,7 +6214,7 @@ var QUESTION_BANK = {
         "$\\pi$",
         "$\\frac{\\pi}{\\sqrt{2}}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$z = \\sqrt{x^2+y^2}，dS = \\sqrt{1+\\frac{x^2}{x^2+y^2}+\\frac{y^2}{x^2+y^2}}dxdy = \\sqrt{2}\\,dxdy。投影 D: x^2+y^2 \\leq 1。\\iint_\\Sigma dS = \\sqrt{2} \\cdot \\pi \\cdot 1^2 = \\sqrt{2}\\pi。**答案：A**$"
     },
     {
@@ -6228,7 +6228,7 @@ var QUESTION_BANK = {
         "$\\pi$",
         "$3\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**高斯公式**：P=x, Q=y, R=z。\\text{div}\\vec{F} = 3。\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi。**答案：A**$"
     },
     {
@@ -6242,7 +6242,7 @@ var QUESTION_BANK = {
         "$1$",
         "$-1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**格林公式**：P=xy+\\sin y, Q=\\cos x。\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -\\sin x - (x+\\cos y) = -\\sin x - x - \\cos y。\\iint_D (-\\sin x - x - \\cos y)dxdy。D: 0\\leq x,y\\leq 1。计算得 -\\frac{1}{2}。**答案：A**$"
     },
     {
@@ -6256,7 +6256,7 @@ var QUESTION_BANK = {
         "$\\frac{1}{4}$",
         "$\\frac{1}{3}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\Sigma 上侧，z=1-x-y。\\iint_\\Sigma (y^2+z^2+x^2)dS 投影到 xOy 面。D: 0\\leq x\\leq 1, 0\\leq y\\leq 1-x。积分得 \\frac{1}{12}。**答案：A**$"
     },
     {
@@ -6270,7 +6270,7 @@ var QUESTION_BANK = {
         "$-4\\pi$",
         "$4\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**斯托克斯公式**：\\text{rot}\\vec{F} = (-1,-1,-1)。曲面 \\Sigma 取圆盘 x^2+y^2 \\leq 1, z=\\sqrt{3}，法向量 \\vec{n}=(0,0,1)。\\iint_\\Sigma \\text{rot}\\vec{F}\\cdot\\vec{n}dS = \\iint_\\Sigma (-1)dS = -\\pi。**答案：A**$"
     },
     {
@@ -6284,7 +6284,7 @@ var QUESTION_BANK = {
         "积分区域的质量",
         "0"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "被积函数为1的三重积分等于区域体积。"
     },
     {
@@ -6298,7 +6298,7 @@ var QUESTION_BANK = {
         "$r^2dr\\,d\\theta\\,dz$",
         "$\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$柱坐标：x=r\\cos\\theta,y=r\\sin\\theta,z=z，雅可比|J|=r。$"
     },
     {
@@ -6312,7 +6312,7 @@ var QUESTION_BANK = {
         "$r\\,dr\\,d\\theta\\,dz$",
         "$\\rho\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$球坐标：x=\\rho\\sin\\phi\\cos\\theta,y=\\rho\\sin\\phi\\sin\\theta,z=\\rho\\cos\\phi，|J|=\\rho^2\\sin\\phi。$"
     },
     {
@@ -6326,7 +6326,7 @@ var QUESTION_BANK = {
         "$0$",
         "$2\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "被积函数为1的弧长积分等于曲线弧长。"
     },
     {
@@ -6340,7 +6340,7 @@ var QUESTION_BANK = {
         "$1/3$",
         "$1/2$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$\\int_0^1 dz\\int_0^z dx\\int_0^z z\\,dy=\\int_0^1 z^3dz=\\frac14。$"
     },
     {
@@ -6354,7 +6354,7 @@ var QUESTION_BANK = {
         "$(P_x-Q_y)dxdy$",
         "$(Q_x+P_y)dxdy$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$格林公式：\\oint_L Pdx+Qdy=\\iint_D(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y})dxdy。$"
     },
     {
@@ -6368,7 +6368,7 @@ var QUESTION_BANK = {
         "$\\pi/2$",
         "$1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "奇函数$z$在关于$xy$平面对称的球域上积分，由对称性得0。"
     },
     {
@@ -6382,7 +6382,7 @@ var QUESTION_BANK = {
         "$0$",
         "$4\\pi ab$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$格林：\\iint_D(1-(-1))dxdy=2\\iint_D dxdy=2\\pi ab。$"
     },
     {
@@ -6396,7 +6396,7 @@ var QUESTION_BANK = {
         "$PdV$",
         "$RdV$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "高斯公式（散度定理）。"
     },
     {
@@ -6410,7 +6410,7 @@ var QUESTION_BANK = {
         "$-2\\pi$",
         "$2\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "格林：$\\iint_D(1-1)dxdy=0$。"
     },
     {
@@ -6424,7 +6424,7 @@ var QUESTION_BANK = {
         "$4\\pi/3$",
         "$2\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$球坐标：\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\,d\\phi\\int_0^1\\rho^2\\cdot\\rho^2 d\\rho=4\\pi\\cdot\\frac15=\\frac{4\\pi}{5}。$"
     },
     {
@@ -6438,7 +6438,7 @@ var QUESTION_BANK = {
         "$0$",
         "$-2\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$格林：\\iint(2y-(-1))dxdy不对，Q_x=1,P_y=-1，Q_x-P_y=2，\\iint 2dxdy=2\\pi。$"
     },
     {
@@ -6452,7 +6452,7 @@ var QUESTION_BANK = {
         "三重积分",
         "定积分"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "斯托克斯公式将空间曲线积分转化为以该曲线为边界的曲面积分。"
     },
     {
@@ -6466,7 +6466,7 @@ var QUESTION_BANK = {
         "$2\\pi$",
         "$0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$高斯：散度P_x+Q_y+R_z=1+1+1=3，\\iiint 3dV=3\\cdot\\frac{4\\pi}{3}=4\\pi。$"
     },
     {
@@ -6480,7 +6480,7 @@ var QUESTION_BANK = {
         "$2$",
         "$3$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$对称性：\\iiint x=\\iiint y=\\iiint z=\\frac12，总和\\frac32。$"
     },
     {
@@ -6494,7 +6494,7 @@ var QUESTION_BANK = {
         "$1$",
         "$1/2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$ds=\\sqrt{1+1}dx=\\sqrt{2}dx，\\int_0^1 x\\sqrt{2}dx=\\frac{\\sqrt{2}}{2}。$"
     },
     {
@@ -6588,7 +6588,7 @@ var QUESTION_BANK = {
         "0",
         "$4\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "被积函数为1的曲面积分等于曲面面积。"
     },
     {
@@ -6602,7 +6602,7 @@ var QUESTION_BANK = {
         "$\\pi e$",
         "$2\\pi$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\iint_{x^2+y^2\\le1}dxdy\\cdot\\int_0^1e^zdz=\\pi\\cdot(e-1)。$"
     },
     {
@@ -6632,7 +6632,7 @@ var QUESTION_BANK = {
         "$a_n$ 单调递减",
         "$|a_n| \\leq 1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$级数收敛的必要条件是一般项趋于零：\\lim_{n\\to\\infty} a_n = 0。注意这不是充分条件（如调和级数）。**答案：A**$"
     },
     {
@@ -6646,7 +6646,7 @@ var QUESTION_BANK = {
         "$|r| \\leq 1$",
         "$r > 0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$几何级数 \\sum ar^n 当 |r| < 1 时收敛，和为 \\frac{a}{1-r}。|r| \\geq 1 时发散。**答案：A**$"
     },
     {
@@ -6660,7 +6660,7 @@ var QUESTION_BANK = {
         "$p < 1$",
         "$p \\leq 1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$p-级数：p > 1 收敛，p \\leq 1 发散。p=1 即调和级数，发散。**答案：A**$"
     },
     {
@@ -6674,7 +6674,7 @@ var QUESTION_BANK = {
         "$\\frac{1}{2}$",
         "$0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\frac{1}{n(n+1)} = \\frac{1}{n} - \\frac{1}{n+1}。部分和 S_n = (1-\\frac{1}{2})+(\\frac{1}{2}-\\frac{1}{3})+\\cdots+(\\frac{1}{n}-\\frac{1}{n+1}) = 1-\\frac{1}{n+1}。\\lim S_n = 1。**答案：A**$"
     },
     {
@@ -6688,7 +6688,7 @@ var QUESTION_BANK = {
         "$a_n$ 有界",
         "以上都包含"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$莱布尼茨判别法的两个条件是：① a_n 单调递减；② \\lim_{n\\to\\infty} a_n = 0。a_n 有界是必要条件中的一部分但非判别条件。**答案：C**$"
     },
     {
@@ -6702,7 +6702,7 @@ var QUESTION_BANK = {
         "不能确定",
         "条件收敛"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "比值判别法：$\\rho < 1 \\Rightarrow$ 绝对收敛；$\\rho > 1 \\Rightarrow$ 发散；$\\rho = 1 \\Rightarrow$ 不能确定。**答案：A**"
     },
     {
@@ -6716,7 +6716,7 @@ var QUESTION_BANK = {
         "一定发散",
         "条件收敛"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "**阿贝尔定理**：幂级数在某点 $x_0$ 收敛，则在 $|x| < |x_0|$ 内绝对收敛。$|1| < |2|$，故在 $x=1$ 处绝对收敛。**答案：A**"
     },
     {
@@ -6730,7 +6730,7 @@ var QUESTION_BANK = {
         "$\\infty$",
         "$0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\lim_{n\\to\\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| = \\lim_{n\\to\\infty} \\frac{n}{n+1} = 1，收敛半径 R = 1。**答案：A**$"
     },
     {
@@ -6744,7 +6744,7 @@ var QUESTION_BANK = {
         "$\\sum_{n=0}^{\\infty} (-1)^n x^{2n}$",
         "$\\sum_{n=1}^{\\infty} \\frac{(-1)^{n-1}x^n}{n}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\frac{1}{1-x} = 1 + x + x^2 + \\cdots = \\sum_{n=0}^{\\infty} x^n，收敛区间 |x|<1。**答案：A**$"
     },
     {
@@ -6758,7 +6758,7 @@ var QUESTION_BANK = {
         "发散",
         "振荡"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$莱布尼茨条件满足（\\frac{1}{n} 递减趋于 0），级数收敛。但 \\sum |a_n| = \\sum \\frac{1}{n} 发散（调和级数），故条件收敛。**答案：A**$"
     },
     {
@@ -6772,7 +6772,7 @@ var QUESTION_BANK = {
         "$\\frac{1}{2}$",
         "发散"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**比值法**：\\rho = \\lim \\frac{n+1}{2^{n+1}} \\cdot \\frac{2^n}{n} = \\frac{1}{2} < 1，收敛。求和：S = \\sum nx^n 取 x=\\frac{1}{2}，S = \\frac{x}{(1-x)^2} = \\frac{1/2}{1/4} = 2。**答案：A**$"
     },
     {
@@ -6786,7 +6786,7 @@ var QUESTION_BANK = {
         "$\\sinh x$",
         "$e^{x^2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\cosh x = \\frac{e^x + e^{-x}}{2} = \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}。**答案：A**$"
     },
     {
@@ -6800,7 +6800,7 @@ var QUESTION_BANK = {
         "$[-1,1)$",
         "$[-1,1]$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$半径 R=1。x=1：交错调和级数，条件收敛 ✅。x=-1：-\\sum \\frac{1}{n}，调和级数发散 ❌。收敛域 (-1,1]。**答案：A**$"
     },
     {
@@ -6814,7 +6814,7 @@ var QUESTION_BANK = {
         "发散",
         "振荡无极限"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\cos n\\pi = (-1)^n，交错级数。a_n = \\frac{1}{n^{2/3}} 递减趋于 0，莱布尼茨条件满足，条件收敛。\\sum \\frac{1}{n^{2/3}} 中 p=2/3<1，发散，非绝对收敛。**答案：A**$"
     },
     {
@@ -6828,7 +6828,7 @@ var QUESTION_BANK = {
         "$(-1,1)$",
         "$[-1,1]$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\ln(1+x) = \\sum_{n=1}^{\\infty} (-1)^{n-1}\\frac{x^n}{n}。x=1：交错调和级数收敛 ✅。x=-1：-\\sum \\frac{1}{n} 发散 ❌。收敛域 (-1,1]。**答案：A**$"
     },
     {
@@ -6842,7 +6842,7 @@ var QUESTION_BANK = {
         "$\\int_{-\\pi}^{\\pi} f(x)dx$",
         "$\\frac{1}{2\\pi}\\int_{-\\pi}^{\\pi} f(x)dx$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$a_0 = \\frac{1}{\\pi}\\int_{-\\pi}^{\\pi} f(x)dx。注意常数项是 \\frac{a_0}{2}。**答案：A**$"
     },
     {
@@ -6856,7 +6856,7 @@ var QUESTION_BANK = {
         "$2$",
         "$\\frac{5}{2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$拆成两个几何级数：\\sum (\\frac{3}{5})^n + \\sum (-\\frac{2}{5})^n = \\frac{3/5}{1-3/5} + \\frac{-2/5}{1+2/5} = \\frac{3}{2} - \\frac{2}{7} = \\frac{21-4}{14} = \\frac{17}{14}… 重算：第一个从 n=1：\\frac{3/5}{1-3/5} = \\frac{3/5}{2/5} = \\frac{3}{2}。第二个：\\frac{-2/5}{1-(-2/5)} = \\frac{-2/5}{7/5} = -\\frac{2}{7}。和 = \\frac{3}{2} - \\frac{2}{7} = \\frac{21-4}{14} = \\frac{17}{14}。选项不匹配，选项A是 \\frac{7}{4}。重算：\\frac{3}{2} - \\frac{2}{7} = \\frac{21}{14} - \\frac{4}{14} = \\frac{17}{14}。选项A 7/4 = 14/8，不对。选项D 5/2 = 35/14。都不对。改为题目用更整齐的数字：\\frac{2^n+3^n}{6^n}。和 = \\frac{2/6}{1-2/6} + \\frac{3/6}{1-3/6} = \\frac{1/3}{2/3} + \\frac{1/2}{1/2} = \\frac{1}{2} + 1 = \\frac{3}{2}。**答案：B**$"
     },
     {
@@ -6870,7 +6870,7 @@ var QUESTION_BANK = {
         "$\\frac{3}{3-x}$",
         "$\\frac{x}{(3-x)^2}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\sum_{n=1}^{\\infty} ny^{n-1} = \\frac{1}{(1-y)^2}。此处 y=\\frac{x}{3}。\\sum \\frac{n}{3^n}x^{n-1} = \\frac{1}{3}\\sum n(\\frac{x}{3})^{n-1} = \\frac{1}{3} \\cdot \\frac{1}{(1-\\frac{x}{3})^2} = \\frac{1}{3} \\cdot \\frac{9}{(3-x)^2} = \\frac{3}{(3-x)^2}。**答案：A**$"
     },
     {
@@ -6884,7 +6884,7 @@ var QUESTION_BANK = {
         "$\\frac{\\pi}{2}$",
         "不收敛"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$|x| 是偶函数，b_n=0。a_0 = \\frac{2}{\\pi}\\int_0^{\\pi} x\\,dx = \\pi。a_n = \\frac{2}{\\pi}\\int_0^{\\pi} x\\cos nx\\,dx = \\frac{2}{\\pi}\\frac{(-1)^n-1}{n^2}。|x| = \\frac{\\pi}{2} - \\frac{4}{\\pi}\\sum\\frac{\\cos(2k-1)x}{(2k-1)^2}。在 x=0 处，傅里叶级数收敛于 f(0)=0（f 连续）。**答案：A**$"
     },
     {
@@ -6898,7 +6898,7 @@ var QUESTION_BANK = {
         "$p < 1$",
         "$p > 0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$**积分判别法**：\\int_2^{\\infty} \\frac{dx}{x(\\ln x)^p}，令 u=\\ln x，\\int_{\\ln 2}^{\\infty} u^{-p}du。收敛 \\iff p>1，与 p-级数的积分判别结果相同。**答案：A**$"
     },
     {
@@ -6912,7 +6912,7 @@ var QUESTION_BANK = {
         "可能发散",
         "一定发散"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$x=-1$ 对应 $(x-1)=-2$。若在 $-2$ 处收敛，收敛半径至少为 $2$。$(2-1)=1$，$|1|<2$，在收敛区间内绝对收敛。**答案：A**"
     },
     {
@@ -6926,7 +6926,7 @@ var QUESTION_BANK = {
         "$p<1$",
         "$p>0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$p$级数：$p>1$收敛，$p\\le1$发散。"
     },
     {
@@ -6940,7 +6940,7 @@ var QUESTION_BANK = {
         "$\\frac12$",
         "$\\infty$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$裂项：\\frac{1}{n(n+1)}=\\frac{1}{n}-\\frac{1}{n+1}，部分和S_n=1-\\frac{1}{n+1}\\to1。$"
     },
     {
@@ -6954,7 +6954,7 @@ var QUESTION_BANK = {
         "$q<1$",
         "$|q|>1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$几何级数：|q|<1时收敛，和\\frac{1}{1-q}。$"
     },
     {
@@ -6968,7 +6968,7 @@ var QUESTION_BANK = {
         "不一定存在",
         "$\\infty$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "收敛的必要条件：通项趋于0。"
     },
     {
@@ -6982,7 +6982,7 @@ var QUESTION_BANK = {
         "发散",
         "无法判断"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$交错调和级数条件收敛：莱布尼茨判别法，但\\sum1/n发散故非绝对收敛。$"
     },
     {
@@ -6996,7 +6996,7 @@ var QUESTION_BANK = {
         "$\\infty$",
         "$e$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$\\rho=\\lim|a_{n+1}/a_n|=\\lim\\frac{1/(n+1)}{1/n}=1，R=1。$"
     },
     {
@@ -7010,7 +7010,7 @@ var QUESTION_BANK = {
         "发散",
         "无法判断"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$|\\sin n/n^2|\\le1/n^2，\\sum 1/n^2收敛，比较判别法得绝对收敛。$"
     },
     {
@@ -7024,7 +7024,7 @@ var QUESTION_BANK = {
         "$3$",
         "$4$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$\\sum nx^n=\\frac{x}{(1-x)^2}，取x=1/2：\\frac{1/2}{1/4}=2。$"
     },
     {
@@ -7038,7 +7038,7 @@ var QUESTION_BANK = {
         "$\\sin x$",
         "$\\cos x$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$e^x的麦克劳林展开：e^x=\\sum_{n=0}^\\infty\\frac{x^n}{n!}。$"
     },
     {
@@ -7052,7 +7052,7 @@ var QUESTION_BANK = {
         "条件收敛",
         "无法判断"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\lim\\frac{a_{n+1}}{a_n}=\\lim\\frac{n+1}{(n+1)^{n+1}}\\cdot\\frac{n^n}{n!}\\cdot\\frac{(n+1)!}{n+1}=...=1/e<1收敛。$"
     },
     {
@@ -7066,7 +7066,7 @@ var QUESTION_BANK = {
         "条件收敛",
         "无法判断"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$\\ln(1+1/n)\\sim 1/n，与调和级数同阶故发散。$"
     },
     {
@@ -7080,7 +7080,7 @@ var QUESTION_BANK = {
         "发散",
         "无法判断"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$莱布尼茨判别法：交错且1/\\sqrt{n}\\to0单调递减\\rightarrow收敛。但\\sum 1/\\sqrt{n}发散，故条件收敛。$"
     },
     {
@@ -7094,7 +7094,7 @@ var QUESTION_BANK = {
         "$\\sum_{n=0}^\\infty (-1)^n\\frac{x^{2n}}{(2n)!}$",
         "$\\sum_{n=0}^\\infty x^n$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\ln(1+x)=\\sum_{n=1}^\\infty(-1)^{n-1}\\frac{x^n}{n}，-1<x\\le1。$"
     },
     {
@@ -7108,7 +7108,7 @@ var QUESTION_BANK = {
         "$(-1,1]$",
         "$[-1,1)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$\\rho=1，R=1。端点x=\\pm1时\\sum n(\\pm1)^{n-1}通项不趋于0，发散。$"
     },
     {
@@ -7122,7 +7122,7 @@ var QUESTION_BANK = {
         "$1+x+\\frac{x^2}{2}$",
         "$\\frac{x^3}{6}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$e^x=1+x+\\frac{x^2}{2!}+\\frac{x^3}{3!}+\\cdots。$"
     },
     {
@@ -7136,7 +7136,7 @@ var QUESTION_BANK = {
         "$e^2-1$",
         "$\\infty$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$e^x展开代入x=2：e^2=\\sum\\frac{2^n}{n!}。$"
     },
     {
@@ -7246,7 +7246,7 @@ var QUESTION_BANK = {
         "$1$",
         "$2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$巴塞尔问题：\\sum_{n=1}^\\infty\\frac{1}{n^2}=\\frac{\\pi^2}{6}。$"
     }
   ]
@@ -7268,7 +7268,7 @@ var QUESTION_BANK = {
         "$192$",
         "$16$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$|kA|=k^n|A|$（$n=3$阶）。$|A|=1(4-0)-2(0-2)+(-1)(0-4)=4+4+4=12$。$|2A|=2^3\\times12=96$。**答案：A**"
     },
     {
@@ -7282,7 +7282,7 @@ var QUESTION_BANK = {
         "$|A|\\neq0$",
         "$AB=BA$ 恒成立"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "$AB=I$ 说明 $A,B$ 互逆，故 $BA=I$、$A^{-1}=B$、$|A|\\neq0$ 均成立。但矩阵乘法一般不满足交换律，$AB=BA$ 不是普遍规律。**答案：D**"
     },
     {
@@ -7305,7 +7305,7 @@ var QUESTION_BANK = {
         "$\\begin{pmatrix}7&3&-1\\\\0&2&4\\\\7&-1&5\\end{pmatrix}^{\\mathrm{T}}$",
         "$\\begin{pmatrix}7&0&7\\\\3&2&-1\\\\-1&4&5\\end{pmatrix}^{\\mathrm{T}}$"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "计算各代数余子式：$|A|=11$。$A_{11}=7,A_{12}=0,A_{13}=7,A_{21}=3,A_{22}=2,A_{23}=-1,A_{31}=-1,A_{32}=4,A_{33}=5$。$A^{*}=(A_{ji})$ 即代数余子式矩阵的转置。**答案：D**"
     },
     {
@@ -7319,7 +7319,7 @@ var QUESTION_BANK = {
         "$8$",
         "$16$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$|A^{*}|=|A|^{n-1}=|A|^2=2^2=4$（$n=3$）。**答案：B**"
     },
     {
@@ -7333,7 +7333,7 @@ var QUESTION_BANK = {
         "$\\dfrac{2}{|A|}A$",
         "$\\dfrac{1}{4|A|}A$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$A^{*}=|A|A^{-1}$，故 $(2A^{*})^{-1}=(2|A|A^{-1})^{-1}=\\dfrac{1}{2|A|}(A^{-1})^{-1}=\\dfrac{A}{2|A|}$。**答案：A**"
     },
     {
@@ -7347,7 +7347,7 @@ var QUESTION_BANK = {
         "$E_{ij}(k)^{-1}=E_{ij}(-k)$",
         "以上均正确"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "三类初等矩阵的逆：(1) 交换型自逆 $E_{ij}^{-1}=E_{ij}$；(2) 倍乘型 $E_i(k)^{-1}=E_i(\\frac1k)$；(3) 倍加型 $E_{ij}(k)^{-1}=E_{ij}(-k)$。三者皆对。**答案：D**"
     },
     {
@@ -7370,7 +7370,7 @@ var QUESTION_BANK = {
         "$-1,-1,3$",
         "$1,-1,-1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$|\\lambda I-A|=(\\lambda-1)[(\\lambda-1)^2-4]=(\\lambda-1)(\\lambda-3)(\\lambda+1)$。特征值为 $1,3,-1$。**答案：A**"
     },
     {
@@ -7384,7 +7384,7 @@ var QUESTION_BANK = {
         "$(A+B)^2=A^2+2AB+B^2$",
         "$|AB|=|A||B|$"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "$(AB)^T=B^TA^T$；$(AB)^{-1}=B^{-1}A^{-1}$；$(A+B)^2=A^2+AB+BA+B^2$（仅当 $AB=BA$ 时等于 $A^2+2AB+B^2$）；$|AB|=|A||B|$ 恒成立。**答案：D**"
     },
     {
@@ -7407,7 +7407,7 @@ var QUESTION_BANK = {
         "只交换 $A$ 的第2、3列",
         "保持 $A$ 不变"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$PAP$：左乘 $P$ 交换第2、3行，右乘 $P$ 交换第2、3列。这是**合同变换**（也是相似变换，因为 $P=P^{-1}$）。效果是同时交换对应的行和列。**答案：A**"
     },
     {
@@ -7430,7 +7430,7 @@ var QUESTION_BANK = {
         "$|A|=0$",
         "$tr(A)=0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "若 $Ax=\\lambda x$（$x\\neq0$），则 $A^3x=\\lambda^3x$。由 $A^3=A$ 得 $\\lambda^3=\\lambda$，解得 $\\lambda\\in\\{0,1,-1\\}$。但 $A$ 不一定可对角化（如 Jordan 块情形），$|A|$ 也不一定为0（可逆时特征值均为 $\\pm1$）。**答案：A**"
     },
     {
@@ -7453,7 +7453,7 @@ var QUESTION_BANK = {
         "$a=-1$",
         "$a=1$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$(A-2I)X=A$ 有解 $\\Leftrightarrow r(A-2I)=r([A-2I\\mid A])$。计算增广矩阵经行变换后可得：当 $a=-1$ 时系数矩阵与增广矩阵同秩（均为2），方程有解。**答案：C**"
     },
     {
@@ -7467,7 +7467,7 @@ var QUESTION_BANK = {
         "$A-2I$",
         "$\\dfrac12(2I-A)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "由 $A^2-A-2I=O$ 得 $A^2-A=2I$，即 $A(A-I)=2I$，故 $A\\cdot\\dfrac{1}{2}(A-I)=I$。因此 $A^{-1}=\\dfrac{1}{2}(A-I)$。**答案：A**"
     },
     {
@@ -7481,7 +7481,7 @@ var QUESTION_BANK = {
         "将 $A$ 的第1行加 $c$ 倍第3行",
         "保持 $A$ 不变"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$P=E_{31}(c)$（左乘作用于行，右乘作用于列）。$P^{-1}AP$：右乘 $P$ 将 $A$ 的第3列加 $c$ 倍第1列；左乘 $P^{-1}=E_{31}(-c)$ 将结果的第3行减 $c$ 倍第1行。综合效果以**列变换为主**（相似变换下特征值不变）。**答案：B**"
     },
     {
@@ -7504,7 +7504,7 @@ var QUESTION_BANK = {
         "$r(A)+r(B)=n$",
         "$r(A)+r(B)\\le n$"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "反例排除 A：非零矩阵相乘可为零矩阵。B 也错误（$AB=O$ 蕴含 $|AB|=0$ 即 $|A||B|=0$，故 $|A|=0$ 或 $|B|=0$，B 其实是对的）。但 B 是 D 的推论。**Sylvester 不等式**：$r(A)+r(B)-n\\le r(AB)=0$，故 $r(A)+r(B)\\le n$ 恒成立。B 虽然也对但不如 D 本质。本题选 D。**答案：D**"
     },
     {
@@ -7527,7 +7527,7 @@ var QUESTION_BANK = {
         "$-I$",
         "不能确定"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "注意到 $A^3-3A^2+3A-I=(A-I)^3=O$。$A-I$ 的所有特征值为0 $\\Rightarrow A$ 的所有特征值为1。实对称矩阵可对角化，故 $A=QIQ^T=I$。**答案：A**"
     },
     {
@@ -7541,7 +7541,7 @@ var QUESTION_BANK = {
         "$A$ 与 $B$ 有相同的特征值",
         "$A$ 与 $B$ 有相同的特征向量"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "相似矩阵有相同特征多项式 $\\Rightarrow$ 相同特征值、行列式、迹。但特征向量不同：若 $B=P^{-1}AP$，则 $B$ 的特征向量是 $P^{-1}\\xi$ 而非 $\\xi$ 本身。**答案：D**"
     },
     {
@@ -7564,7 +7564,7 @@ var QUESTION_BANK = {
         "$\\begin{pmatrix}1&1&0\\\\0&1&1\\\\0&0&1\\end{pmatrix}$",
         "$\\begin{pmatrix}1&0&1\\\\0&1&1\\\\0&0&1\\end{pmatrix}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "矩阵表示的第 $j$ 列是 $A\\alpha_j$ 在该基下的坐标。$[A\\alpha_1]_{\\beta}=(1,0,0)^T$，$[A\\alpha_2]_{\\beta}=(1,1,0)^T$，$[A\\alpha_3]_{\\beta}=(1,1,1)^T$。**答案：A**"
     },
     {
@@ -7587,7 +7587,7 @@ var QUESTION_BANK = {
         "$A^2=I$",
         "$A^{-1}=A^T$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "正交矩阵且 $|A|=1$：$A^*=|A|A^{-1}=A^{-1}=A^T$ ✓；特征值 $e^{i\\theta}$ 模为1 ✓；$A^{-1}=A^T$ ✓；但一般旋转矩阵 $A^2\\ne I$（除非旋转180°）。**答案：C**"
     },
     {
@@ -7610,7 +7610,7 @@ var QUESTION_BANK = {
         "$6$",
         "$8$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$R_2-2R_1:(0,0,a-4)$，$R_3-3R_1:(0,0,-2)$。要得到目标形式，第2行需能归一化出1（故 $a-4\\neq0$），第3行需被消成0（即 $-2$ 是 $a-4$ 的整数倍）。取 $a-4=2\\Rightarrow a=6$ 时恰好：第2行为 $(0,0,2)\\to(0,0,1)$，第3行减去第2行得 $(0,0,0)$。**答案：C**"
     },
     {
@@ -7624,7 +7624,7 @@ var QUESTION_BANK = {
         "$A^2$",
         "$O$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$A$ 为循环置换矩阵，$A^3=I$。$2017=3\\times672+1$，故 $A^{2017}=(A^3)^{672}\\cdot A=I^{672}\\cdot A=A$。**答案：B**"
     }
   ]
@@ -7646,7 +7646,7 @@ var QUESTION_BANK = {
         "$3$",
         "$0$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$\\alpha_1,\\alpha_2,\\alpha_3$ 为标准单位向量组，显然线性无关，故秩为 $3$。**答案：C**"
     },
     {
@@ -7660,7 +7660,7 @@ var QUESTION_BANK = {
         "正交",
         "无法判断"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$\\alpha_2=2\\alpha_1$，成比例，故线性相关。**答案：B**"
     },
     {
@@ -7683,7 +7683,7 @@ var QUESTION_BANK = {
         "含有零向量",
         "无法判断"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$(\\beta_1,\\beta_2,\\beta_3)=(\\alpha_1,\\alpha_2,\\alpha_3)\\begin{pmatrix}1&0&1\\\\1&1&0\\\\0&1&1\\end{pmatrix}$，过渡矩阵 $C$ 的行列式 $|C|=1(1-0)-0+1(1-0)=2\\neq0$，故 $\\beta_1,\\beta_2,\\beta_3$ 线性无关。**答案：B**"
     },
     {
@@ -7697,7 +7697,7 @@ var QUESTION_BANK = {
         "$3$",
         "$4$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "未知量个数 $n=3$，$r(A)=2$，基础解系含 $n-r(A)=3-2=1$ 个向量。**答案：A**"
     },
     {
@@ -7711,7 +7711,7 @@ var QUESTION_BANK = {
         "$\\mathrm{II}$ 的秩为 $3$",
         "$\\mathrm{II}$ 的秩为 $4$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$\\mathrm{II}$ 有 $4$ 个向量，但可由只有 $3$ 个向量的 $\\mathrm{I}$ 表出，则 $\\mathrm{II}$ 的秩不超过 $\\mathrm{I}$ 的秩 $3$。$4$ 个向量秩不超过 $3$，由'以少表多，多必相关'知 $\\mathrm{II}$ 线性相关。**答案：B**"
     },
     {
@@ -7725,7 +7725,7 @@ var QUESTION_BANK = {
         "所有 $r+1$ 阶子式均为零",
         "$A$ 的列向量组中任意 $r$ 个向量均线性无关"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "矩阵的秩等于行秩等于列秩，存在非零 $r$ 阶子式，所有 $r+1$ 阶子式为零，这些都是秩的基本性质。但'任意 $r$ 个列向量均线性无关'是错的——存在 $r$ 个线性无关的列向量，但并非任意 $r$ 个都无关。**答案：D**"
     },
     {
@@ -7757,7 +7757,7 @@ var QUESTION_BANK = {
         "$\\eta_1+\\eta_2$",
         "$\\eta_1-\\eta_2,\\eta_2-\\eta_1$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "基础解系需满足：(1)都是解；(2)个数等于 $n-r(A)$；(3)线性无关。$\\eta_1,\\eta_1+\\eta_2$ 的过渡矩阵为 $\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$，行列式为 $1\\neq0$，故线性无关。A 中过渡矩阵 $\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}$，$|C|=2\\neq0$ 也无关但个数对。D 中 $\\eta_1-\\eta_2=-(\\eta_2-\\eta_1)$，线性相关。**答案：B**"
     },
     {
@@ -7771,7 +7771,7 @@ var QUESTION_BANK = {
         "$A$ 的行向量组线性无关",
         "$A$ 的列向量组线性相关"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$Ax=0$ 只有零解 $\\Leftrightarrow r(A)=n \\Leftrightarrow |A|\\neq0 \\Leftrightarrow A$ 可逆。此时 $A$ 的行向量组、列向量组均线性无关。**答案：C**"
     },
     {
@@ -7794,7 +7794,7 @@ var QUESTION_BANK = {
         "$r(A)+r(B)=n$",
         "|A|=0$ 且 $|B|=0"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "由 $AB=O$ 知 $B$ 的每个列向量都是 $Ax=0$ 的解，故 $B$ 的列空间包含于 $A$ 的零空间，从而 $r(B)\\le n-r(A)$，即 $r(A)+r(B)\\le n$。反例：$A=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix},B=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$，$AB=O$ 但 $A,B\\neq O$。**答案：B**"
     },
     {
@@ -7817,7 +7817,7 @@ var QUESTION_BANK = {
         "恒成立（无充要条件）",
         "$\\xi_1,\\xi_2$ 是基础解系"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "齐次方程组的解的线性组合仍是解（解空间的线性性质），对任意 $k_1,k_2$ 和任意解 $\\xi_1,\\xi_2$ 恒成立，无需额外条件。**答案：C**"
     },
     {
@@ -7831,7 +7831,7 @@ var QUESTION_BANK = {
         "$1$",
         "$0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$(\\beta_1,\\cdots,\\beta_m)=(\\alpha_1,\\cdots,\\alpha_m)C$，其中 $C$ 为 $m$ 阶矩阵，主对角线全为 $0$，其余位置全为 $1$。$|C|=(-1)^{m-1}(m-1)\\neq0$（$m\\ge2$），故过渡矩阵可逆，$\\beta_i$ 与 $\\alpha_i$ 等价，秩为 $m$。**答案：A**"
     },
     {
@@ -7845,7 +7845,7 @@ var QUESTION_BANK = {
         "$A$ 的列向量组与 $B$ 的行向量组正交",
         "$r(A)+r(B)=n$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$AB=O$ 说明 $B$ 的每一列都是 $Ax=0$ 的解，故 $B$ 的列空间 $\\subseteq \\operatorname{Null}(A)$，$\\dim\\operatorname{Null}(A)=n-r(A)$，故 $r(B)\\le n-r(A)$，即 $r(A)+r(B)\\le n$。这是著名的 Sylvester 秩不等式。**答案：A**"
     },
     {
@@ -7868,7 +7868,7 @@ var QUESTION_BANK = {
         "$\\alpha_1+\\alpha_2$",
         "无法确定"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$r(A)=n-2$，解空间维数 $=n-(n-2)=2$。$\\alpha_1,\\alpha_2$ 线性无关且都是解，构成基础解系，通解为 $k_1\\alpha_1+k_2\\alpha_2$。**答案：B**"
     },
     {
@@ -7891,7 +7891,7 @@ var QUESTION_BANK = {
         "$r=s$",
         "$r<s$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "若 $\\mathrm{I}$ 可由 $\\mathrm{II}$ 表出，则 $\\operatorname{rank}(\\mathrm{I})\\le\\operatorname{rank}(\\mathrm{II})$。$\\mathrm{I}$ 无关 $\\Rightarrow\\operatorname{rank}(\\mathrm{I})=r$，$\\operatorname{rank}(\\mathrm{II})\\le s$，故 $r\\le s$。这是'替换定理'的推论。**答案：A**"
     },
     {
@@ -7905,7 +7905,7 @@ var QUESTION_BANK = {
         "$r(A)$",
         "$2r(A)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$A(I-A)=A-A^2=A-A=O$。由 Sylvester 不等式：$r(A)+r(I-A)\\le n$。又 $r(A)+r(I-A)\\ge r(A+I-A)=r(I)=n$，故 $r(A)+r(I-A)=n$。**答案：A**"
     },
     {
@@ -7928,7 +7928,7 @@ var QUESTION_BANK = {
         "基础解系含 $2$ 个向量",
         "有无穷多解但无法求基础解系"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "未知量个数 $n=4$，$r(A)=2$，基础解系含 $n-r(A)=4-2=2$ 个向量，通解形式为 $k_1\\eta_1+k_2\\eta_2$。**答案：C**"
     },
     {
@@ -7951,7 +7951,7 @@ var QUESTION_BANK = {
         "$\\alpha_1,\\cdots,\\alpha_n$ 两两正交",
         "$\\alpha_1,\\cdots,\\alpha_n$ 中有一个为零向量"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$A$ 可逆 $\\Leftrightarrow |A|\\neq0 \\Leftrightarrow$ 列向量组线性无关 $\\Leftrightarrow$ 列向量组是 $\\mathbb{R}^n$ 的一组基。$|\\alpha_1,\\cdots,\\alpha_n|$ 即 $|A|$，非零即可逆。**答案：B**"
     },
     {
@@ -7974,7 +7974,7 @@ var QUESTION_BANK = {
         "$\\begin{pmatrix}A&A\\\\B&B\\end{pmatrix}$",
         "$(A,B)$（将 $A,B$ 并排为 $n\\times2n$）"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "$A,B$ 可逆。A 中 $A+B$ 不一定可逆（如 $B=-A$ 则 $A+B=O$）；B 分块对角阵的秩 $=r(A)+r(B)=2n$；C 中后 $n$ 列与前 $n$ 列相同，秩不超过 $n$（实际为 $r(A)=n$ 当且仅当 $r(A-B)=0$ 时）；D 中 $(A,B)$ 的秩为 $n$，因 $A$ 可逆，列向量已满秩。**答案：D**"
     },
     {
@@ -7997,7 +7997,7 @@ var QUESTION_BANK = {
         "$r(A)=r(A,b)$",
         "$r(A,b)=m$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "非齐次线性方程组 $Ax=b$ 有解 $\\Leftrightarrow b$ 可由 $A$ 的列向量组线性表出 $\\Leftrightarrow r(A)=r(A,b)$。这是线性方程组有解判定定理的核心。**答案：C**"
     }
   ]
@@ -8019,7 +8019,7 @@ var QUESTION_BANK = {
         "$|A|=0$",
         "$A\\lambda=\\lambda x$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "特征值定义：存在非零向量 $x$ 使 $Ax=\\lambda x$，即 $(A-\\lambda I)x=0$ 有非零解，等价于 $|A-\\lambda I|=0$。**答案：A**"
     },
     {
@@ -8033,7 +8033,7 @@ var QUESTION_BANK = {
         "$9$",
         "$1$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "行列式等于所有特征值之积：$|A|=\\lambda_1\\lambda_2\\lambda_3=1\\times2\\times3=6$。**答案：B**"
     },
     {
@@ -8047,7 +8047,7 @@ var QUESTION_BANK = {
         "$\\frac{1}{\\lambda_1},\\frac{1}{\\lambda_2},\\frac{1}{\\lambda_3}$",
         "$\\lambda_1,\\lambda_2,\\lambda_3$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "若 $Ax=\\lambda x$，则 $A^2x=A(Ax)=A(\\lambda x)=\\lambda Ax=\\lambda^2 x$。故 $A^2$ 的特征值为 $\\lambda_i^2$。**答案：A**"
     },
     {
@@ -8061,7 +8061,7 @@ var QUESTION_BANK = {
         "不可相似对角化",
         "是奇异矩阵"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$|A|=\\lambda_1\\lambda_2\\lambda_3=0$，故至少有一个特征值为 $0$。但并非所有特征值都为零（如 $\\lambda_1=0,\\lambda_2=1,\\lambda_3=2$，$|A|=0$ 但不全为零）。**答案：A**"
     },
     {
@@ -8084,7 +8084,7 @@ var QUESTION_BANK = {
         "迹",
         "特征向量"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "相似矩阵有相同的特征值、行列式、迹（均为相似不变量）。但特征向量一般不同：若 $B=P^{-1}AP$，$Ax=\\lambda x$，则 $B(P^{-1}x)=\\lambda(P^{-1}x)$，$B$ 的特征向量为 $P^{-1}x$。**答案：D**"
     },
     {
@@ -8098,7 +8098,7 @@ var QUESTION_BANK = {
         "$A$ 的不同特征值的特征向量正交",
         "$A$ 一定可逆"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "实对称矩阵的三个核心性质：(1)可正交对角化；(2)特征值全为实数；(3)不同特征值对应的特征向量正交。但实对称矩阵不一定可逆（如零矩阵是对称的但不可逆）。**答案：D**"
     },
     {
@@ -8112,7 +8112,7 @@ var QUESTION_BANK = {
         "特征值为 $1$ 和 $0$",
         "是实对称矩阵"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$A$ 的特征值为 $\\lambda=1$（二重）。$A-I=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$，秩为 $1$，故 $\\lambda=1$ 的几何重数 $=2-1=1<$ 代数重数 $2$，$A$ 不可对角化。**答案：B**"
     },
     {
@@ -8126,7 +8126,7 @@ var QUESTION_BANK = {
         "$A$ 与 $B$ 等价",
         "$A$ 与 $B$ 合同"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "相似 $\\Rightarrow$ 特征多项式相同 $\\Rightarrow$ 特征值相同。但特征向量通过 $P^{-1}x$ 变换，一般不同。相似 $\\Rightarrow$ 等价（秩相等），但相似与合同无必然关系。**答案：B**"
     },
     {
@@ -8140,7 +8140,7 @@ var QUESTION_BANK = {
         "$A$ 不可逆",
         "$A$ 的特征向量线性相关"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "不同特征值对应的特征向量线性无关。$P=(p_1,p_2,p_3)$ 可逆，且 $AP=P\\operatorname{diag}(1,2,3)$，故 $P^{-1}AP=\\operatorname{diag}(1,2,3)$。**答案：A**"
     },
     {
@@ -8154,7 +8154,7 @@ var QUESTION_BANK = {
         "$1,-1,2$",
         "$2,2,2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "设 $f(\\lambda)=\\lambda^3-\\lambda^2-2\\lambda+2$。若 $Ax=\\lambda x$，则 $f(A)x=f(\\lambda)x$。$f(1)=1-1-2+2=0$；$f(-1)=-1-1+2+2=2$；$f(2)=8-4-4+2=2$。故 $B$ 的特征值为 $0,2,2$。**答案：A**"
     },
     {
@@ -8168,7 +8168,7 @@ var QUESTION_BANK = {
         "$6$",
         "$12$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$A^{-1}$ 的特征值为 $1,\\frac12,\\frac13$。$A^{-1}+I$ 的特征值为 $1+1=2$，$\\frac12+1=\\frac32$，$\\frac13+1=\\frac43$。$|A^{-1}+I|=2\\times\\frac32\\times\\frac43=4$。**答案：B**"
     },
     {
@@ -8191,7 +8191,7 @@ var QUESTION_BANK = {
         "$3,-1,-1$",
         "$3,0,0$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$A$ 的每行和均为 $2$，故 $\\lambda=2$ 是一个特征值（对应特征向量 $(1,1,1)^\\mathrm{T}$）。迹 $\\operatorname{tr}(A)=0$，故 $\\lambda_2+\\lambda_3=-2$。$|A|=0\\cdot(-1)+1\\cdot(-1)+1\\cdot1=0$，故 $\\lambda_2\\lambda_3=-1\\cdot(-1)=1$...验证：$A-2I=\\begin{pmatrix}-2&1&1\\\\1&-2&1\\\\1&1&-2\\end{pmatrix}$，秩为 $2$（每行和为 $0$，第一、二行不成比例），故 $\\lambda=2$ 几何重数为 $1$。$|A|=\\begin{vmatrix}0&1&1\\\\1&0&1\\\\1&1&0\\end{vmatrix}=0\\cdot(-1)-1\\cdot(-1)+1\\cdot1=2$。特征值之积为 $2$：$\\lambda_1\\lambda_2\\lambda_3=2\\cdot\\lambda_2\\lambda_3=2$，故 $\\lambda_2\\lambda_3=1$。又 $\\lambda_2+\\lambda_3=-2$，解得 $\\lambda_2=\\lambda_3=-1$。**答案：A**"
     },
     {
@@ -8214,7 +8214,7 @@ var QUESTION_BANK = {
         "$B$ 的特征值都是实数",
         "$B$ 一定可对角化"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$A$ 有 $n$ 个互异特征值 $\\Rightarrow$ $A$ 可对角化。$AB=BA$ 是可同时对角化的充分条件。设 $P^{-1}AP=D$ 为对角阵，则 $P^{-1}BP$ 也是对角阵（对于互异特征值的情况）。**答案：B**"
     },
     {
@@ -8237,7 +8237,7 @@ var QUESTION_BANK = {
         "$\\operatorname{diag}(1,1,1)$",
         "$\\operatorname{diag}(0,1,-1)$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$A$ 为实对称矩阵，必可正交对角化。$|A-\\lambda I|=\\begin{vmatrix}-\\lambda&0&1\\\\0&1-\\lambda&0\\\\1&0&-\\lambda\\end{vmatrix}=(-\\lambda)^2(1-\\lambda)-1\\cdot(1-\\lambda)=-\\lambda\\cdot(-\\lambda)(1-\\lambda)-1\\cdot(1-\\lambda)=(\\lambda^2-1)(1-\\lambda)=-(\\lambda-1)(\\lambda+1)(1-\\lambda)=(\\lambda-1)^2(\\lambda+1)=0$。特征值：$\\lambda=1$（二重），$\\lambda=-1$。**答案：A**"
     },
     {
@@ -8260,7 +8260,7 @@ var QUESTION_BANK = {
         "恰有两个特征值为零",
         "三个特征值均为零"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "实对称矩阵的秩等于非零特征值的个数（计重数）。$r(A)=2$ 故有 $2$ 个非零特征值，$1$ 个零特征值。**答案：B**"
     },
     {
@@ -8283,7 +8283,7 @@ var QUESTION_BANK = {
         "$\\begin{pmatrix}1&1&0\\\\0&1&1\\\\0&0&1\\end{pmatrix}$",
         "$\\begin{pmatrix}1&1&0\\\\0&1&0\\\\0&0&1\\end{pmatrix}$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "Jordan 块个数 $=$ 几何重数 $=\\dim\\operatorname{Null}(A-I)=n-r(A-I)=3-1=2$。有 $2$ 个 Jordan 块，特征值全为 $1$，总阶数为 $3$，必有一个 $2$ 阶块和一个 $1$ 阶块。**答案：B**"
     },
     {
@@ -8306,7 +8306,7 @@ var QUESTION_BANK = {
         "只有一个特征值",
         "特征值全为零"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$\\alpha_1$ 是 $\\lambda=1$ 的特征向量。$\\alpha_2$ 是 $\\lambda=2$ 的特征向量。$A\\alpha_3=2\\alpha_3+\\alpha_2$ 说明 $\\alpha_3$ 不是 $\\lambda=2$ 的特征向量，而是广义特征向量。在基 $\\alpha_1,\\alpha_2,\\alpha_3$ 下：$A\\sim\\begin{pmatrix}1&0&0\\\\0&2&1\\\\0&0&2\\end{pmatrix}$，$\\lambda=2$ 有一个 $2$ 阶 Jordan 块，不可对角化。**答案：B**"
     },
     {
@@ -8320,7 +8320,7 @@ var QUESTION_BANK = {
         "$A$ 的特征值都是实数",
         "A$ 的特征值之积为 $1"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "正交矩阵的特征值之积 $=$ $|A|=-1$。实正交矩阵的复特征值成共轭对出现，每对共轭特征值之积为 $1$。故至少有一个实特征值 $\\lambda$ 满足 $|\\lambda|=1$ 且 $\\lambda<0$（否则乘积为正），即 $\\lambda=-1$。**答案：A**"
     }
   ]
@@ -8342,7 +8342,7 @@ var QUESTION_BANK = {
         "$\\begin{pmatrix}1&0\\\\2&1\\end{pmatrix}$",
         "$\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$f=x_1^2+2x_1x_2+x_2^2$。$x_1^2$ 系数为 $a_{11}=1$，$x_2^2$ 系数为 $a_{22}=1$，$x_1x_2$ 系数为 $2a_{12}=2$，故 $a_{12}=a_{21}=1$。矩阵为 $\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$。**答案：A**"
     },
     {
@@ -8356,7 +8356,7 @@ var QUESTION_BANK = {
         "$2$",
         "$3$"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "该二次型已是标准形，所有系数均为正（$1,2,3>0$），正惯性指数 $p=3$，负惯性指数 $q=0$。**答案：D**"
     },
     {
@@ -8379,7 +8379,7 @@ var QUESTION_BANK = {
         "$1,3$",
         "$-1,-1$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "对称矩阵 $A=\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$。$|A-\\lambda I|=(1-\\lambda)^2-4=\\lambda^2-2\\lambda-3=(\\lambda-3)(\\lambda+1)=0$，$\\lambda_1=3,\\lambda_2=-1$。正交标准形为 $3y_1^2-y_2^2$。**答案：A**"
     },
     {
@@ -8393,7 +8393,7 @@ var QUESTION_BANK = {
         "$A$ 的特征值均非零",
         "A$ 的秩等于 $n"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "Sylvester 判据：实对称矩阵正定 $\\Leftrightarrow$ 所有顺序主子式均大于零。$|A|>0$ 只是必要非充分条件；特征值均大于零才是正定，仅非零不保证正定；满秩也不保证正定（如 $\\operatorname{diag}(1,-1)$ 满秩但不定）。**答案：B**"
     },
     {
@@ -8407,7 +8407,7 @@ var QUESTION_BANK = {
         "$3$",
         "$0$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "对称矩阵 $A=\\begin{pmatrix}1&1&-1\\\\1&2&0\\\\-1&0&3\\end{pmatrix}$。$|A|=1(6-0)-1(3-0)+(-1)(0+2)=6-3-2=1\\neq0$，故 $r(A)=3$。**答案：C**"
     },
     {
@@ -8421,7 +8421,7 @@ var QUESTION_BANK = {
         "合同",
         "正交"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$B=C^\\mathrm{T}AC$ 是合同关系的定义。等价 $B=PAQ$（$P,Q$ 可逆）；相似 $B=P^{-1}AP$；合同 $B=C^\\mathrm{T}AC$（$C$ 可逆）。**答案：C**"
     },
     {
@@ -8444,7 +8444,7 @@ var QUESTION_BANK = {
         "$\\begin{pmatrix}2&0\\\\0&2\\end{pmatrix}$",
         "$\\begin{pmatrix}-1&0\\\\0&-1\\end{pmatrix}$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$A$ 的特征值为 $\\lambda_1=3,\\lambda_2=-1$。正惯性指数 $p=1$，负惯性指数 $q=1$。规范形为 $\\operatorname{diag}(1,-1)$。**答案：B**"
     },
     {
@@ -8467,7 +8467,7 @@ var QUESTION_BANK = {
         "$A$ 的所有特征值非负",
         "$A$ 的行列式大于零"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$A$ 正定 $\\Leftrightarrow A=C^\\mathrm{T}C$（$C$ 可逆）。A 中'非负'对应半正定；C 中'非负'也对应半正定；D 只保证 $|A|>0$，必要非充分。**答案：B**"
     },
     {
@@ -8490,7 +8490,7 @@ var QUESTION_BANK = {
         "$-y_1^2-y_2^2$",
         "$3y_1^2+3y_2^2$"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "$A=\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}$。$|A-\\lambda I|=(3-\\lambda)^2-1=(\\lambda-2)(\\lambda-4)=0$，$\\lambda=2,4>0$。正惯性指数 $p=2,q=0$，规范形 $y_1^2+y_2^2$。**答案：A**"
     },
     {
@@ -8504,7 +8504,7 @@ var QUESTION_BANK = {
         "$|A|=|B|$",
         "$A$ 与 $B$ 相似"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "合同变换 $B=C^\\mathrm{T}AC$（$C$ 可逆）保秩。但一般不保特征值（如 $\\operatorname{diag}(1,1)$ 合同于 $\\operatorname{diag}(2,2)$ 但特征值不同），也一般不保相似。$|B|=|C|^2|A|$，不等于 $|A|$。**答案：B**"
     },
     {
@@ -8527,7 +8527,7 @@ var QUESTION_BANK = {
         "$2$",
         "$3$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$A^2=A\\Rightarrow$ 特征值只能为 $0$ 或 $1$。$r(A)=2\\Rightarrow$ 非零特征值个数为 $2$，即有两个特征值为 $1$，一个为 $0$。正惯性指数 $=$ 正特征值个数 $=2$。**答案：C**"
     },
     {
@@ -8541,7 +8541,7 @@ var QUESTION_BANK = {
         "$-1$",
         "$2$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$A=\\begin{pmatrix}k&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$|A|=k\\cdot1-1\\cdot1+0=k-1$。$r(A)=2\\Rightarrow|A|=0\\Rightarrow k=1$。当 $k=1$ 时 $A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$，二阶子式 $\\begin{vmatrix}1&0\\\\0&1\\end{vmatrix}=1\\neq0$，$r(A)=2$。**答案：B**"
     },
     {
@@ -8564,7 +8564,7 @@ var QUESTION_BANK = {
         "$A$ 与 $B$ 相似",
         "$|A|=|B|$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "合同 $\\Leftrightarrow$ 秩相等且正惯性指数相等（Sylvester 惯性定律）。合同不一定保特征值，保特征值的是相似。合同 $B=C^\\mathrm{T}AC$ 时 $|B|=|C|^2|A|$，一般 $|C|^2\\neq1$，故 $|A|\\neq|B|$。**答案：B**"
     },
     {
@@ -8587,7 +8587,7 @@ var QUESTION_BANK = {
         "$3$",
         "$0$"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "$A^2-5A+6I=(A-2I)(A-3I)=O$，特征值只能为 $2$ 或 $3$。$r(A-2I)=2\\Rightarrow\\dim\\operatorname{Null}(A-2I)=3-2=1$，$\\lambda=2$ 的几何重数为 $1$。$A$ 实对称必可对角化，故 $\\lambda=2$ 的代数重数 $=$ 几何重数 $=1$。总阶数 $3$，故 $\\lambda=3$ 的代数重数为 $2$。特征值 $2>0,3>0,3>0$ 全正，正惯性指数 $p=3$。**答案：C**"
     },
     {
@@ -8610,7 +8610,7 @@ var QUESTION_BANK = {
         "$a=-b$",
         "$ab=0$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "正、负惯性指数之和等于秩，$p+q=3 \\Rightarrow r(A)=3$，即 $A$ 满秩 $\\Rightarrow |A| \\neq 0$。计算 $|A|$：按第一行展开，$|A|=1\\cdot(1-b^2)-a\\cdot(a-b)+1\\cdot(ab-1)=1-b^2-a^2+ab+ab-1=-(a^2-2ab+b^2)=-(a-b)^2$。由 $|A|\\neq0$ 得 $a\\neq b$。当 $a\\neq b$ 时 $|A|=-(a-b)^2<0$，即三个特征值乘积为负；又 $\\operatorname{tr}(A)=3>0$，三个特征值之和为正。实对称矩阵特征值均为实数，故必有两个正特征值、一个负特征值，即 $p=2,q=1$。因此条件等价于 $a\\neq b$。"
     },
     {
@@ -8633,7 +8633,7 @@ var QUESTION_BANK = {
         "$A^{-1}-B^{-1}$",
         "$A+B$"
       ],
-      "answer": "D",
+      "answer": 3,
       "solution": "正定矩阵之和仍正定：对任意 $x\\neq0$，$x^\\mathrm{T}(A+B)x=x^\\mathrm{T}Ax+x^\\mathrm{T}Bx>0$。A 项 $A-B$ 不一定正定（取 $A=I,B=2I$，$A-B=-I$ 负定）。B 项 $AB$ 不一定对称，即使对称也不一定正定（如 $A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix},B=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}$，$AB$ 不对称）。C 项 $A^{-1}-B^{-1}$ 不一定正定（取 $A=I,B=2I$ 得 $\\frac{1}{2}I$ 正定，但取 $A=2I,B=I$ 得 $-\\frac{1}{2}I$ 负定）。只有 D 项 $A+B$ 恒正定。"
     },
     {
@@ -8656,7 +8656,7 @@ var QUESTION_BANK = {
         "半正定",
         "不定"
       ],
-      "answer": "A",
+      "answer": 0,
       "solution": "对任意 $y\\neq0$，$x=Cy\\neq0$（因 $C$ 可逆）。$g(y)=y^\\mathrm{T}C^\\mathrm{T}ACy=(Cy)^\\mathrm{T}A(Cy)=x^\\mathrm{T}Ax>0$（因 $f$ 正定）。故 $g$ 也正定。合同变换保正定性。**答案：A**"
     },
     {
@@ -8679,7 +8679,7 @@ var QUESTION_BANK = {
         "存在可逆矩阵 $C$ 使 $C^\\mathrm{T}AC=I$ 且 $C^\\mathrm{T}BC$ 为对角阵",
         "$A+B$ 一定正定"
       ],
-      "answer": "C",
+      "answer": 2,
       "solution": "这是惯性定律的推广：若 $A$ 正定，$B$ 对称，则可同时合同对角化 $A$ 和 $B$（通过 $A$ 的 Cholesky 分解后对 $B$ 正交对角化）。即存在可逆 $C$ 使 $C^\\mathrm{T}AC=I$，$C^\\mathrm{T}BC=\\operatorname{diag}$。A 错（$AB$ 不一定对称更不一定可对角化）；B 错（合同需同惯性指数）；D 错（$B$ 可能负定使 $A+B$ 不定）。**答案：C**"
     },
     {
@@ -8693,7 +8693,7 @@ var QUESTION_BANK = {
         "$\\mu_i=\\lambda_i$（$i=1,\\cdots,n$）",
         "$\\mu_1<\\lambda_1$ 且 $\\mu_n>\\lambda_n$"
       ],
-      "answer": "B",
+      "answer": 1,
       "solution": "$uu^\\mathrm{T}$ 为半正定矩阵（秩为 $1$ 的投影矩阵的倍数）。半正定矩阵加法使特征值单调不减（Weyl 不等式/特征值交错定理的推论）。故 $\\mu_i\\ge\\lambda_i$ 对所有 $i$ 成立。**答案：B**"
     }
   ]
