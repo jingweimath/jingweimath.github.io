@@ -600,6 +600,249 @@
       "answer": 0,
       "difficulty": "hard",
       "solution": "令 $u=y/x$，则 $y=xu$，$y'=u+xu'$。代入：$u+x\\frac{du}{dx}=\\frac{x+xu}{x-xu}=\\frac{1+u}{1-u}$。"
+    },
+    {
+      "id": "cal-de-ode-01",
+      "type": "proof",
+      "difficulty": "basic",
+      "question": "求微分方程 $xy'-y\\ln y=0$ 的通解。",
+      "solution": "分离变量：\\[\\frac{dy}{y\\ln y}=\\frac{dx}{x},\\quad x\\ne0,\\; y>0,\\; y\\ne1.\\]两边积分：$\\ln|\\ln y|=\\ln|x|+C$，即 $\\ln y=Cx$，故通解为\n\\[y=e^{Cx}\\]（$C$ 为任意常数；另有特解 $y=1$）。",
+      "cat": "微分方程",
+      "topic": "可分离变量方程",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-02",
+      "type": "proof",
+      "difficulty": "medium",
+      "question": "求微分方程 $\\dfrac{dy}{dx}=\\dfrac{xy-y^{2}}{x^{2}-2xy}$ 满足 $y(1)=1$ 的解。",
+      "solution": "分子分母同除以 $x^{2}$：\\[\\frac{dy}{dx}=\\frac{\\frac{y}{x}-\\left(\\frac{y}{x}\\right)^{2}}{1-2\\frac{y}{x}}.\\]令 $u=\\dfrac{y}{x}$，则 $u+x\\dfrac{du}{dx}=\\dfrac{u-u^{2}}{1-2u}$，整理得\n\\[\\frac{1-2u}{u^{2}}du=\\frac{dx}{x}.\\]积分：$-\\dfrac{1}{u}-2\\ln|u|=\\ln|x|+C$，代回 $u=\\dfrac{y}{x}$ 并整理：\n\\[\\ln\\frac{y^{2}}{x}+\\frac{x}{y}+C=0.\\]代入 $y(1)=1$：$0+1+C=0$，得 $C=-1$。故所求解为\n\\[\\ln\\frac{y^{2}}{x}+\\frac{x}{y}-1=0.\\]",
+      "cat": "微分方程",
+      "topic": "齐次方程",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-03",
+      "type": "proof",
+      "difficulty": "basic",
+      "question": "求微分方程 $dy+(2xy-4x)dx=0$ 的通解。",
+      "solution": "化为 $y'+2xy=4x$，是一阶线性方程，$P(x)=2x$，$Q(x)=4x$。\n\\[y=e^{-\\int 2x\\,dx}\\left[\\int 4x\\,e^{\\int 2x\\,dx}dx+C\\right]=e^{-x^{2}}\\left[\\int 4xe^{x^{2}}dx+C\\right]=e^{-x^{2}}\\left(2e^{x^{2}}+C\\right).\\]故通解 $y=2+Ce^{-x^{2}}$。",
+      "cat": "微分方程",
+      "topic": "一阶线性方程",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-04",
+      "type": "proof",
+      "difficulty": "medium",
+      "question": "求微分方程 $\\dfrac{dy}{dx}=\\dfrac{1}{x+y^{2}}$ 的通解。",
+      "solution": "把 $x$ 看作 $y$ 的函数：$\\dfrac{dx}{dy}=x+y^{2}$，即 $\\dfrac{dx}{dy}-x=y^{2}$，关于 $x$ 是一阶线性的。\n\\[x=e^{\\int dy}\\left[\\int y^{2}e^{-\\int dy}dy+C\\right]=e^{y}\\left[\\int y^{2}e^{-y}dy+C\\right].\\]而 $\\int y^{2}e^{-y}dy=-(y^{2}+2y+2)e^{-y}$，故\n\\[x=Ce^{y}-y^{2}-2y-2.\\]",
+      "cat": "微分方程",
+      "topic": "一阶线性方程·反解自变量",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-05",
+      "type": "proof",
+      "difficulty": "medium",
+      "question": "求微分方程 $\\dfrac{dy}{dx}=y+xy^{5}$ 的通解。",
+      "solution": "这是伯努利方程。两边除以 $y^{5}$：$y^{-5}y'=y^{-4}+x$。令 $u=y^{-4}$，则 $u'=-4y^{-5}y'$，故\n\\[-\\frac{1}{4}u'=u+x\\quad\\Longrightarrow\\quad u'=-4u-4x.\\]解此一阶线性方程：$u=e^{-4x}\\left(\\int -4xe^{4x}dx+C\\right)=-x+\\dfrac14+Ce^{-4x}$（其中 $\\int -4xe^{4x}dx=-xe^{4x}+\\dfrac14e^{4x}$）。\n故通解为\n\\[y^{-4}=-x+\\frac14+Ce^{-4x}.\\]",
+      "cat": "微分方程",
+      "topic": "伯努利方程",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-06",
+      "type": "proof",
+      "difficulty": "medium",
+      "question": "求微分方程 $(2y-3x)dx+(2x-5y)dy=0$ 满足 $y(1)=1$ 的解。",
+      "solution": "记 $P=2y-3x$，$Q=2x-5y$，$\\dfrac{\\partial P}{\\partial y}=2=\\dfrac{\\partial Q}{\\partial x}$，故为全微分方程。\n\\[U(x,y)=\\int_0^x P(x,0)dx+\\int_0^y Q(x,y)dy=-\\frac32x^{2}+2xy-\\frac52y^{2}.\\]通解 $-\\dfrac32x^{2}+2xy-\\dfrac52y^{2}=C$。代入 $y(1)=1$：$-\\dfrac32+2-\\dfrac52=-2=C$。故所求解为\n\\[2xy-\\frac32x^{2}-\\frac52y^{2}+2=0.\\]",
+      "cat": "微分方程",
+      "topic": "全微分方程",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-07",
+      "type": "proof",
+      "difficulty": "medium",
+      "question": "求微分方程 $yy''-(y')^{2}=0$ 满足 $y(0)=1,\\;y'(0)=2$ 的特解。",
+      "solution": "方程不显含 $x$。令 $y'=p$，则 $y''=p\\dfrac{dp}{dy}$，代入得\n\\[yp\\frac{dp}{dy}-p^{2}=0.\\]约去 $p$（$p\\not\\equiv0$）：$\\dfrac{dp}{p}=\\dfrac{dy}{y}$，积分得 $p=c_1y$。由 $y(0)=1$、$p(0)=y'(0)=2$ 得 $c_1=2$，即 $y'=2y$。再分离变量：$\\ln|y|=2x+c_2$；由 $y(0)=1$ 得 $c_2=0$。故\n\\[y=e^{2x}.\\]",
+      "cat": "微分方程",
+      "topic": "可降阶方程·不显含自变量",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-08",
+      "type": "proof",
+      "difficulty": "medium",
+      "question": "写出微分方程 $y''-y=e^{-x}+2$ 的一个特解。",
+      "solution": "特征方程 $\\lambda^{2}-1=0$，$\\lambda=\\pm1$。\n\n对 $e^{-x}$：$-1$ 为单根，设 $y_1^{*}=axe^{-x}$，代入 $y''-y=e^{-x}$ 得 $-2ae^{-x}=e^{-x}$，故 $a=-\\dfrac12$，$y_1^{*}=-\\dfrac12xe^{-x}$。\n\n对常数 $2$：设 $y_2^{*}=b$，代入 $y''-y=2$ 得 $-b=2$，故 $b=-2$。\n\n合起来，原方程的一个特解为\n\\[y^{*}=-\\frac12xe^{-x}-2.\\]",
+      "cat": "微分方程",
+      "topic": "二阶常系数非齐次·特解",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-09",
+      "type": "proof",
+      "difficulty": "medium",
+      "question": "写出微分方程 $y''+y=x^{2}-\\cos x$ 的一个特解。",
+      "solution": "特征方程 $\\lambda^{2}+1=0$，$\\lambda=\\pm i$。\n\n对 $x^{2}$：设 $y_1^{*}=ax^{2}+bx+c$，代入 $y''+y=x^{2}$：$2a+ax^{2}+bx+c=x^{2}$，比较得 $a=1,\\;b=0,\\;c=-2$，即 $y_1^{*}=x^{2}-2$。\n\n对 $-\\cos x$：$\\pm i$ 为单根，取 $k=1$，设 $y_2^{*}=x(A\\sin x+B\\cos x)$，代入 $y''+y=-\\cos x$ 得 $A=-\\dfrac12,\\;B=0$，即 $y_2^{*}=-\\dfrac12x\\sin x$。\n\n故一个特解为\n\\[y^{*}=x^{2}-2-\\frac12x\\sin x.\\]",
+      "cat": "微分方程",
+      "topic": "二阶常系数非齐次·特解",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-10",
+      "type": "proof",
+      "difficulty": "medium",
+      "question": "写出微分方程 $y'''-y''=x$ 的一个特解。",
+      "solution": "特征方程 $\\lambda^{3}-\\lambda^{2}=0$，得 $\\lambda=1$ 及 $\\lambda=0$（二重），故取 $k=2$，设\n\\[y^{*}=x^{2}(ax+b)=ax^{3}+bx^{2}.\\]则 $y^{*'}=3ax^{2}+2bx$，$y^{*''}=6ax+2b$，$y^{*'''}=6a$。代入 $y'''-y''=x$：\n\\[6a-(6ax+2b)=x\\ \\Longrightarrow\\ -6a=1,\\; 6a-2b=0,\\]\n得 $a=-\\dfrac16$，$b=-\\dfrac12$。故一个特解为\n\\[y^{*}=-\\frac16x^{3}-\\frac12x^{2}.\\]",
+      "cat": "微分方程",
+      "topic": "高阶常系数非齐次·特解",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-11",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "在下列方程中，以 $y=C_1e^{-x}+C_2\\sin 2x+C_3\\cos 2x$ 为通解的微分方程是（　）",
+      "solution": "由通解形式知特征根为 $-1,\\;\\pm2i$，故特征方程为\n\\[(\\lambda+1)(\\lambda^{2}+4)=\\lambda^{3}+\\lambda^{2}+4\\lambda+4=0,\\]\n对应微分方程 $y'''+y''+4y'+4y=0$，选 D。",
+      "cat": "微分方程",
+      "topic": "常系数线性方程·由通解反推方程",
+      "source": "自编·微分方程习题与解",
+      "options": [
+        "$y'''+y''-4y'+4y=0$",
+        "$y'''+y''-4y'-4y=0$",
+        "$y'''-y''+4y'+4y=0$",
+        "$y'''+y''+4y'+4y=0$"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "cal-de-ode-12",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "若微分方程 $y''+ay'+by=0$ 的解在 $(-\\infty,+\\infty)$ 上有界，则下列正确的是（　）",
+      "solution": "特征方程 $\\lambda^{2}+a\\lambda+b=0$，按判别式分三种情形：\n\n① $\\Delta=a^{2}-4b>0$（两不等实根）：$y=C_1e^{\\lambda_1x}+C_2e^{\\lambda_2x}$，在 $(-\\infty,+\\infty)$ 上不可能有界；\n\n② $\\Delta=0$（重根 $\\lambda$）：$y=(C_1+C_2x)e^{\\lambda x}$，无论 $\\lambda$ 取何值都无界；\n\n③ $\\Delta<0$（共轭复根 $\\alpha\\pm\\beta i$）：$y=e^{\\alpha x}(A\\cos\\beta x+B\\sin\\beta x)$，只有 $\\alpha=-\\dfrac{a}{2}=0$ 时才有界，此时 $a=0$ 且 $\\Delta=-4b<0$ 即 $b>0$。\n\n故 $a=0,\\;b>0$，选 3）。",
+      "cat": "微分方程",
+      "topic": "常系数线性方程·解的有界性",
+      "source": "自编·微分方程习题与解",
+      "options": [
+        "$a<0,\\;b>0$",
+        "$a>0,\\;b>0$",
+        "$a=0,\\;b>0$",
+        "$a=0,\\;b<0$"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "cal-de-ode-13",
+      "type": "proof",
+      "difficulty": "hard",
+      "question": "设 $f(x)=\\displaystyle\\int_0^x (t-x)f(t)\\,dt+\\sin x$，其中 $f(x)$ 连续，求 $f(x)$。",
+      "solution": "两边对 $x$ 求导（注意 $\\int_0^x(t-x)f(t)dt=\\int_0^x tf(t)dt-x\\int_0^x f(t)dt$）：\n\\[f'(x)=-\\int_0^x f(t)\\,dt+\\cos x\\qquad(1)\\]\n再求导：\n\\[f''(x)=-f(x)-\\sin x\\ \\Longrightarrow\\ f''+f=-\\sin x\\qquad(2)\\]\n特征方程 $\\lambda^{2}+1=0$，$\\lambda=\\pm i$；右端 $-\\sin x$ 对应 $k=1$，设特解 $y^{*}=x(A\\sin x+B\\cos x)$，代入（2）得 $A=0,\\;B=\\dfrac12$。故\n\\[f(x)=C_1\\sin x+C_2\\cos x+\\frac12x\\cos x.\\]\n由原式 $f(0)=0$；由（1）式 $f'(0)=1$。代入得 $C_2=0$，$C_1=\\dfrac12$。所以\n\\[f(x)=\\frac12\\sin x+\\frac12x\\cos x.\\]",
+      "cat": "微分方程",
+      "topic": "积分方程·化为微分方程",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-14",
+      "type": "proof",
+      "difficulty": "hard",
+      "question": "已知连续函数 $f(x)$ 满足 $\\displaystyle\\int_0^x f(t)\\,dt+\\int_0^x tf(x-t)\\,dt=ax^{2}$。（1）求 $f(x)$；（2）若 $f(x)$ 在区间 $[0,1]$ 上的平均值为 $1$，求 $a$ 的值。",
+      "solution": "（1）对第二个积分令 $u=x-t$：$\\int_0^x tf(x-t)dt=\\int_0^x (x-u)f(u)du=x\\int_0^x f(u)du-\\int_0^x uf(u)du$。原式化为\n\\[\\int_0^x f(t)dt+x\\int_0^x f(u)du-\\int_0^x uf(u)du=ax^{2}.\\]\n求导：$f(x)+\\int_0^x f(u)du=2ax$（记为 (1)）；再求导：$f'(x)+f(x)=2a$，解得\n\\[f(x)=Ce^{-x}+2a.\\]\n由 (1) 式令 $x=0$ 得 $f(0)=0$，故 $C=-2a$，即 $f(x)=2a(1-e^{-x})$。\n\n（2）平均值为 $1$：$\\int_0^1 f(x)dx=1$，即\n\\[2a\\int_0^1(1-e^{-x})dx=2a\\bigl[x+e^{-x}\\bigr]_0^1=2a\\cdot e^{-1}=1,\\]\n故 $a=\\dfrac{e}{2}$。",
+      "cat": "微分方程",
+      "topic": "积分方程·卷积与平均值",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-15",
+      "type": "proof",
+      "difficulty": "hard",
+      "question": "设函数 $y(x)$ 满足 $y''+2y'+ky=0$，其中 $0<k<1$。（1）证明：反常积分 $\\displaystyle\\int_0^{+\\infty}y(x)\\,dx$ 收敛；（2）若 $y(0)=1,\\;y'(0)=1$，求 $\\displaystyle\\int_0^{+\\infty}y(x)\\,dx$ 的值。",
+      "solution": "（1）特征方程 $\\lambda^{2}+2\\lambda+k=0$，得\n\\[\\lambda_{1}=-1+\\sqrt{1-k}<0,\\qquad \\lambda_{2}=-1-\\sqrt{1-k}<0\\quad(0<k<1).\\]\n故 $y(x)=C_1e^{\\lambda_1x}+C_2e^{\\lambda_2x}$，而 $\\int_0^{+\\infty}e^{\\lambda_ix}dx$（$i=1,2$）均收敛，所以 $\\int_0^{+\\infty}y(x)dx$ 收敛。\n\n（2）由方程 $y''+2y'=-ky$，且 $x\\to+\\infty$ 时 $y(x)\\to0$、$y'(x)\\to0$，于是\n\\[\\int_0^{+\\infty}y\\,dx=-\\frac1k\\int_0^{+\\infty}(y''+2y')dx=-\\frac1k\\bigl[y'+2y\\bigr]_0^{+\\infty}=-\\frac1k\\bigl(0-(1+2)\\bigr)=\\frac3k.\\]",
+      "cat": "微分方程",
+      "topic": "微分方程与反常积分",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-16",
+      "type": "proof",
+      "difficulty": "hard",
+      "question": "对任意实数 $x>0$，曲线 $y=f(x)$ 在点 $(x,f(x))$ 处的切线与 $y$ 轴的截距等于函数 $f(\\sqrt{x})$ 在区间 $[0,x^{2}]$ 上的平均值，求 $f(x)$。",
+      "solution": "切线方程为 $Y-f(x)=f'(x)(X-x)$，令 $X=0$ 得在 $y$ 轴上的截距 $f(x)-xf'(x)$；而 $f(\\sqrt{x})$ 在 $[0,x^{2}]$ 上的平均值为 $\\dfrac{1}{x^{2}}\\int_0^{x^{2}}f(\\sqrt{t})\\,dt$。故\n\\[f(x)-xf'(x)=\\frac{1}{x^{2}}\\int_0^{x^{2}}f(\\sqrt{t})\\,dt.\\]\n两边乘 $x^{2}$ 并对 $x$ 求导（右端用变上限积分求导，$\\dfrac{d}{dx}\\int_0^{x^{2}}f(\\sqrt{t})dt=2xf(x)$），化简得\n\\[xf''(x)+2f'(x)=0,\\]\n即 $\\dfrac{d}{dx}\\bigl(x^{2}f'(x)\\bigr)=0$，故 $f'(x)=\\dfrac{C}{x^{2}}$，积分得\n\\[f(x)=\\frac{c_1}{x}+c_2\\quad(x>0).\\]",
+      "cat": "微分方程",
+      "topic": "几何应用·列方程",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-17",
+      "type": "proof",
+      "difficulty": "hard",
+      "question": "设 $y=y(x)$ 是一条向上凸的连续曲线，其上任意一点 $(x,y)$ 处的曲率为 $\\dfrac{1}{\\sqrt{1+(y')^{2}}}$，且此曲线在点 $(0,1)$ 处的切线为 $y=x+1$，求该曲线方程。",
+      "solution": "向上凸故 $y''<0$，$|y''|=-y''$。由曲率公式\n\\[\\frac{-y''}{\\bigl[1+(y')^{2}\\bigr]^{3/2}}=\\frac{1}{\\sqrt{1+(y')^{2}}}\\ \\Longrightarrow\\ \\frac{y''}{1+(y')^{2}}=-1.\\]\n两边积分：$\\arctan y'=-x+c$。由切线 $y=x+1$ 知 $y'(0)=1$，得 $c=\\dfrac{\\pi}{4}$，故\n\\[y'=\\tan\\left(\\frac{\\pi}{4}-x\\right).\\]\n再积分：$y=\\ln\\left|\\cos\\left(\\dfrac{\\pi}{4}-x\\right)\\right|+C$。由 $y(0)=1$：$1=\\ln\\cos\\dfrac{\\pi}{4}+C=-\\dfrac{\\ln2}{2}+C$，故 $C=1+\\dfrac{\\ln2}{2}$。曲线方程为\n\\[y=\\ln\\left|\\cos\\left(\\frac{\\pi}{4}-x\\right)\\right|+1+\\frac{\\ln2}{2}.\\]",
+      "cat": "微分方程",
+      "topic": "几何应用·曲率",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-18",
+      "type": "proof",
+      "difficulty": "medium",
+      "question": "求微分方程 $y'=\\dfrac{1}{xy+y^{3}}$ 的通解。",
+      "solution": "把 $x$ 看作 $y$ 的函数：$\\dfrac{dx}{dy}=xy+y^{3}$，即 $\\dfrac{dx}{dy}-yx=y^{3}$，关于 $x$ 是一阶线性的。\n\\[x=e^{\\int y\\,dy}\\left[\\int y^{3}e^{-\\int y\\,dy}dy+C\\right]=e^{y^{2}/2}\\left[\\int y^{3}e^{-y^{2}/2}dy+C\\right].\\]\n其中令 $s=\\dfrac{y^{2}}{2}$，则 $\\int y^{3}e^{-y^{2}/2}dy=\\int 2se^{-s}ds=-2(s+1)e^{-s}=-(y^{2}+2)e^{-y^{2}/2}$。故通解为\n\\[x=Ce^{y^{2}/2}-y^{2}-2.\\]",
+      "cat": "微分方程",
+      "topic": "一阶线性方程·反解自变量",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-19",
+      "type": "proof",
+      "difficulty": "medium",
+      "question": "求方程 $(y+\\sqrt{x^{2}+y^{2}})\\,dx-x\\,dy=0$ 满足 $y(1)=0\\;(x>0)$ 的解。",
+      "solution": "化为 $\\dfrac{dy}{dx}=\\dfrac{y+\\sqrt{x^{2}+y^{2}}}{x}$，是齐次方程。令 $u=\\dfrac{y}{x}$，$y'=u+xu'$，代入得\n\\[u+xu'=u+\\sqrt{1+u^{2}}\\ \\Longrightarrow\\ \\frac{du}{\\sqrt{1+u^{2}}}=\\frac{dx}{x}.\\]\n积分：$\\ln\\bigl(u+\\sqrt{1+u^{2}}\\bigr)=\\ln x+\\ln C$，即 $u+\\sqrt{1+u^{2}}=Cx$。由 $y(1)=0$ 得 $u(1)=0$，故 $C=1$。于是\n\\[\\frac{y}{x}+\\sqrt{1+\\left(\\frac{y}{x}\\right)^{2}}=x,\\]\n整理（由 $\\sqrt{x^2+y^2}=x^2-y$ 再平方）得所求解\n\\[y=\\frac{x^{2}-1}{2}\\quad(x>0).\\]",
+      "cat": "微分方程",
+      "topic": "齐次方程",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-20",
+      "type": "proof",
+      "difficulty": "medium",
+      "question": "求微分方程 $(x+2y)\\,dx+(2x+y)\\,dy=0$ 的通解。",
+      "solution": "**法一（观察法）**：原式拆为 $x\\,dx+y\\,dy+(2y\\,dx+2x\\,dy)=0$，即\n\\[\\frac12d(x^{2})+\\frac12d(y^{2})+d(2xy)=0,\\]\n积分得 $\\dfrac{x^{2}}{2}+\\dfrac{y^{2}}{2}+2xy=C$，即 $x^{2}+y^{2}+4xy=C$。\n\n**法二（全微分法）**：$P=x+2y$，$Q=2x+y$，$\\dfrac{\\partial P}{\\partial y}=2=\\dfrac{\\partial Q}{\\partial x}$，故为全微分方程。\n\\[U=\\int_0^x P(x,0)dx+\\int_0^y Q(x,y)dy=\\int_0^x x\\,dx+\\int_0^y(2x+y)dy=\\frac{x^{2}}{2}+2xy+\\frac{y^{2}}{2},\\]\n通解 $\\dfrac{x^{2}}{2}+2xy+\\dfrac{y^{2}}{2}=C$，即 $x^{2}+y^{2}+4xy=C$。",
+      "cat": "微分方程",
+      "topic": "全微分方程·一题多解",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
+    },
+    {
+      "id": "cal-de-ode-21",
+      "type": "proof",
+      "difficulty": "hard",
+      "question": "求方程 $y''-\\dfrac{y'}{x}+\\dfrac{y}{x^{2}}=\\dfrac{2}{x}$ 的通解。",
+      "solution": "两边同乘 $x^{2}$ 化为欧拉方程：$x^{2}y''-xy'+y=2x$。令 $x=e^{t}$（$t=\\ln x$），记 $D=\\dfrac{d}{dt}$，则\n\\[D(D-1)y-Dy+y=2e^{t}\\ \\Longrightarrow\\ (D^{2}-2D+1)y=2e^{t}.\\]\n特征方程 $\\lambda^{2}-2\\lambda+1=0$，$\\lambda=1$ 为二重根，齐次通解 $(c_1+c_2t)e^{t}$；右端 $2e^{t}$ 对应 $k=2$，设特解 $at^{2}e^{t}$，代入得 $a=1$。故\n\\[y=(c_1+c_2t)e^{t}+t^{2}e^{t}=(c_1+c_2\\ln x)\\,x+x(\\ln x)^{2}.\\]",
+      "cat": "微分方程",
+      "topic": "欧拉方程",
+      "source": "自编·微分方程习题与解",
+      "answer": ""
     }
   ]
 }
