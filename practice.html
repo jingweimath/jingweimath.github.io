@@ -99,6 +99,17 @@
   .q-solution { display: none; margin-top: 16px; padding: 16px; background: #f0f9ff; border-radius: 10px; font-size: 14px; line-height: 1.9; border-left: 3px solid var(--primary); }
   .question-card.expanded .q-solution { display: block; }
   .solution-label { font-size: 12px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+  .proof-train { margin-top: 12px; }
+  .proof-tip { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+  .proof-btns { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .btn-ghost.small { padding: 5px 12px; font-size: 12px; }
+  .self-mark { display: flex; align-items: center; gap: 6px; }
+  .sm-label { font-size: 12px; color: var(--text-muted); }
+  .sm-btn { border: 1px solid var(--border); background: var(--bg); color: var(--text-muted); border-radius: 6px; padding: 5px 12px; font-size: 12px; cursor: pointer; }
+  .sm-btn:hover { border-color: var(--primary); color: var(--primary); }
+  .sm-btn.ok.active { background: #dcfce7; border-color: #15803d; color: #15803d; font-weight: 700; }
+  .sm-btn.no.active { background: #fee2e2; border-color: #b91c1c; color: #b91c1c; font-weight: 700; }
+  .proof-solution { margin-top: 10px; }
   .q-solution { overflow-x: auto; max-width: 100%; }
   .fill-answer { margin-top: 12px; display: flex; gap: 10px; align-items: center; }
   .fill-answer input { padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 14px; font-family: "Georgia", "Times New Roman", serif; width: 200px; }
@@ -274,7 +285,7 @@ window.MathJax = {
   </div>
 </div>
 
-<script src="questions-bundle-v2.js?v=20261025"></script>
+<script src="questions-bundle-v2.js?v=20261025b"></script>
 <script>
 // prettyMath: MathJax 接管后直接返回原文，由 MathJax 渲染
 function prettyMath(text) {
@@ -498,7 +509,7 @@ function normalizeAnswer(user, expected) {
 }
 
 /* ================= 随机自测 ================= */
-var QUIZ_STATE = { active: false, questions: [], answers: {}, submitted: false, scope: 'all', count: 10, diff: 'all', startAt: 0 };
+var QUIZ_STATE = { active: false, questions: [], answers: {}, selfMark: {}, submitted: false, scope: 'all', count: 10, diff: 'all', startAt: 0 };
 var LS_WRONG = 'jm_wrong_bank_v1';
 var LS_HIST = 'jm_quiz_history_v1';
 var Q_INDEX = null;
@@ -568,6 +579,9 @@ function getPoolByScope(scope) {
     }
     if (q.type === 'fill') {
       return q.answer !== undefined && q.answer !== null && String(q.answer).length > 0;
+    }
+    if (q.type === 'proof') {
+      return !!(q.solution && String(q.solution).length > 0);
     }
     return false;
   });
@@ -652,6 +666,7 @@ function startQuiz(list) {
   if (!pool.length) return;
   QUIZ_STATE.questions = pool;
   QUIZ_STATE.answers = {};
+  QUIZ_STATE.selfMark = {};
   QUIZ_STATE.submitted = false;
   QUIZ_STATE.active = true;
   QUIZ_STATE.startAt = Date.now();
@@ -665,7 +680,7 @@ function restartQuiz() { startQuiz(); }
 function retryWrong() {
   var wrongs = [];
   QUIZ_STATE.questions.forEach(function (q, idx) {
-    if (!judgeOne(q, QUIZ_STATE.answers[idx])) wrongs.push(q);
+    if (!judgeOne(q, QUIZ_STATE.answers[idx], idx)) wrongs.push(q);
   });
   if (!wrongs.length) return;
   startQuiz(shuffle(wrongs));
@@ -714,10 +729,44 @@ function renderQuizQuestion(q, idx) {
     html += '<div class="fill-answer">';
     html += '<input type="text" placeholder="输入答案..." value="' + esc(QUIZ_STATE.answers[idx]) + '" oninput="onQuizFill(' + idx + ',this.value)">';
     html += '</div>';
+  } else if (q.type === 'proof') {
+    var mk = QUIZ_STATE.selfMark[idx];
+    html += '<div class="proof-train">';
+    html += '<div class="proof-tip">解答题先在草稿纸上做完，再看参考答案自评</div>';
+    html += '<div class="proof-btns">';
+    html += '<button class="btn-ghost small" onclick="toggleProofSolution(' + idx + ')">查看参考答案</button>';
+    html += '<div class="self-mark">';
+    html += '<span class="sm-label">自评：</span>';
+    html += '<button class="sm-btn ok' + (mk === 'ok' ? ' active' : '') + '" id="smok-' + idx + '" onclick="setSelfMark(' + idx + ',\'ok\')">会了</button>';
+    html += '<button class="sm-btn no' + (mk === 'no' ? ' active' : '') + '" id="smno-' + idx + '" onclick="setSelfMark(' + idx + ',\'no\')">不会</button>';
+    html += '</div></div>';
+    html += '<div class="proof-solution" id="psol-' + idx + '" style="display:none"></div>';
+    html += '</div>';
   }
   html += '<div class="quiz-feedback" id="qf-' + idx + '"></div>';
   html += '</div>';
   return html;
+}
+
+function toggleProofSolution(idx) {
+  var box = document.getElementById('psol-' + idx);
+  if (!box) return;
+  if (box.style.display === 'none' || !box.innerHTML) {
+    var q = QUIZ_STATE.questions[idx];
+    box.innerHTML = '<div class="q-solution" style="display:block"><div class="solution-label">参考解析</div>' + prettyMath(q.solution).replace(/\n/g, '<br>') + '</div>';
+    box.style.display = 'block';
+    if (window.MathJax && MathJax.typesetPromise) { MathJax.typesetPromise([box]).catch(function () {}); }
+  } else {
+    box.style.display = box.style.display === 'block' ? 'none' : 'block';
+  }
+}
+
+function setSelfMark(idx, val) {
+  if (QUIZ_STATE.submitted) return;
+  QUIZ_STATE.selfMark[idx] = val;
+  var okBtn = document.getElementById('smok-' + idx), noBtn = document.getElementById('smno-' + idx);
+  if (okBtn) okBtn.classList.toggle('active', val === 'ok');
+  if (noBtn) noBtn.classList.toggle('active', val === 'no');
 }
 
 function pickQuizChoice(idx, optIdx, el) {
@@ -730,7 +779,9 @@ function pickQuizChoice(idx, optIdx, el) {
 
 function onQuizFill(idx, value) { QUIZ_STATE.answers[idx] = value; }
 
-function judgeOne(q, ans) {
+function judgeOne(q, ans, idx) {
+  if (typeof idx !== 'number') idx = QUIZ_STATE.questions.indexOf(q);
+  if (q.type === 'proof') return QUIZ_STATE.selfMark[idx] === 'ok';
   if (ans === undefined || ans === null || ans === '') return false;
   if (q.type === 'choice') return ans === q.answer;
   if (q.type === 'fill') return normalizeAnswer(String(ans), String(q.answer));
@@ -739,9 +790,12 @@ function judgeOne(q, ans) {
 
 function submitQuiz() {
   var qs = QUIZ_STATE.questions;
+  var unmarked = 0;
+  qs.forEach(function (q, idx) { if (q.type === 'proof' && !QUIZ_STATE.selfMark[idx]) unmarked++; });
+  if (unmarked && !confirm('有 ' + unmarked + ' 道解答题还没自评，交卷会按「不会」计。确定交卷吗？')) return;
   var right = 0, wrongCount = 0, wrongIds = [];
   qs.forEach(function (q, idx) {
-    if (judgeOne(q, QUIZ_STATE.answers[idx])) right++;
+    if (judgeOne(q, QUIZ_STATE.answers[idx], idx)) right++;
     else { wrongCount++; wrongIds.push(q.id); }
   });
   QUIZ_STATE.submitted = true;
@@ -761,24 +815,34 @@ function submitQuiz() {
   qs.forEach(function (q, idx) {
     var card = document.getElementById('qq-' + idx);
     if (!card) return;
-    var ok = judgeOne(q, QUIZ_STATE.answers[idx]);
+    var ok = judgeOne(q, QUIZ_STATE.answers[idx], idx);
     card.classList.add(ok ? 'q-right' : 'q-wrong');
     var ans = QUIZ_STATE.answers[idx];
-    var yourTxt, correctTxt;
-    if (q.type === 'choice') {
-      yourTxt = (ans === undefined || ans === null) ? '未作答' : (OPTION_LABELS[ans] + '. ' + q.options[ans]);
-      correctTxt = OPTION_LABELS[q.answer] + '. ' + q.options[q.answer];
-      card.querySelectorAll('.q-option').forEach(function (o, i) {
-        if (i === q.answer) o.classList.add('highlight-correct');
-        else if (i === ans) o.classList.add('wrong');
-      });
-    } else {
-      yourTxt = (ans === undefined || ans === null || ans === '') ? '未作答' : ans;
-      correctTxt = q.answer;
-    }
     var s = '<span class="quiz-verdict ' + (ok ? 'right' : 'wrong') + '">' + (ok ? '回答正确' : '回答错误') + '</span>';
-    s += '<div class="quiz-your-answer">你的答案：' + esc(yourTxt) + (ok ? '' : '　正确答案：' + esc(correctTxt)) + '</div>';
-    s += '<div class="q-solution" style="display:block"><div class="solution-label">解析</div>' + prettyMath(q.solution).replace(/\n/g, '<br>') + '</div>';
+    if (q.type === 'proof') {
+      var mk = QUIZ_STATE.selfMark[idx];
+      s += '<div class="quiz-your-answer">你的自评：' + (mk === 'ok' ? '会了' : (mk === 'no' ? '不会' : '未自评（按不会计）')) + '</div>';
+      var psol = document.getElementById('psol-' + idx);
+      if (psol) {
+        psol.style.display = 'block';
+        if (!psol.innerHTML) psol.innerHTML = '<div class="q-solution" style="display:block"><div class="solution-label">参考解析</div>' + prettyMath(q.solution).replace(/\n/g, '<br>') + '</div>';
+      }
+    } else {
+      var yourTxt, correctTxt;
+      if (q.type === 'choice') {
+        yourTxt = (ans === undefined || ans === null) ? '未作答' : (OPTION_LABELS[ans] + '. ' + q.options[ans]);
+        correctTxt = OPTION_LABELS[q.answer] + '. ' + q.options[q.answer];
+        card.querySelectorAll('.q-option').forEach(function (o, i) {
+          if (i === q.answer) o.classList.add('highlight-correct');
+          else if (i === ans) o.classList.add('wrong');
+        });
+      } else {
+        yourTxt = (ans === undefined || ans === null || ans === '') ? '未作答' : ans;
+        correctTxt = q.answer;
+      }
+      s += '<div class="quiz-your-answer">你的答案：' + esc(yourTxt) + (ok ? '' : '　正确答案：' + esc(correctTxt)) + '</div>';
+      s += '<div class="q-solution" style="display:block"><div class="solution-label">解析</div>' + prettyMath(q.solution).replace(/\n/g, '<br>') + '</div>';
+    }
     document.getElementById('qf-' + idx).innerHTML = s;
   });
 
