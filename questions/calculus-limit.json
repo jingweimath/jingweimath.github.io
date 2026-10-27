@@ -1032,7 +1032,7 @@
     {
       "id": "cal-limit-101",
       "type": "proof",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "数列极限",
       "topic": "数列极限·单调有界准则·递推",
       "question": "设 $x_1=\\sqrt{2}$，$x_{n+1}=\\sqrt{2+x_n}\\ (n\\geq1)$。证明数列 $\\{x_n\\}$ 收敛，并求其极限。",
@@ -1043,7 +1043,7 @@
     {
       "id": "cal-limit-102",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "数列极限",
       "topic": "数列极限·夹逼准则·项数也在变",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\left(\\frac{1}{\\sqrt{n^2+1}}+\\frac{1}{\\sqrt{n^2+2}}+\\cdots+\\frac{1}{\\sqrt{n^2+n}}\\right)$。",
@@ -1054,7 +1054,7 @@
     {
       "id": "cal-limit-103",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "数列极限",
       "topic": "和式极限·定积分定义·黎曼和",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^{n}\\frac{n}{n^2+k^2}$。",
@@ -1065,7 +1065,7 @@
     {
       "id": "cal-limit-104",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "数列极限",
       "topic": "数列极限·Stolz 定理",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\frac{\\sqrt1+\\sqrt2+\\cdots+\\sqrt n}{n^{3/2}}$。",
@@ -1076,7 +1076,7 @@
     {
       "id": "cal-limit-105",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "极限计算",
       "topic": "幂指函数极限·1^∞型·几何平均",
       "question": "设 $a>0,\\ b>0$，求 $\\displaystyle\\lim_{x\\to0}\\left(\\frac{a^x+b^x}{2}\\right)^{\\frac1x}$。",
@@ -1087,7 +1087,7 @@
     {
       "id": "cal-limit-106",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "数列极限",
       "topic": "数列极限·泰勒展开·e 的逼近速度",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}n\\Big[\\,e-\\Big(1+\\frac1n\\Big)^{n}\\Big]$。",
@@ -1098,7 +1098,7 @@
     {
       "id": "cal-limit-107",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "数列极限",
       "topic": "数列极限·阶乘·定积分定义·瑕积分",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\frac{\\sqrt[n]{n!}}{n}$。",
@@ -1109,7 +1109,7 @@
     {
       "id": "cal-limit-108",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "数列极限",
       "topic": "数列极限·阶乘·Stirling 型·定积分定义",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\sqrt[n]{\\frac{(2n)!}{n!\\;n^{n}}}$。",
@@ -1120,7 +1120,7 @@
     {
       "id": "cal-limit-109",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "极限计算",
       "topic": "函数极限·泰勒展开·抽象函数",
       "question": "设 $f(x)$ 在 $x=0$ 处三阶可导，且 $f(0)=0$，$f'(0)=1$，$f''(0)=0$，$f'''(0)=6$。求 $\\displaystyle\\lim_{x\\to0}\\frac{f(x)-x}{x^3}$。",
@@ -1131,7 +1131,7 @@
     {
       "id": "cal-limit-110",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "极限计算",
       "topic": "变限积分·等价无穷小·洛必达",
       "question": "求极限 $\\displaystyle\\lim_{x\\to0}\\frac{\\displaystyle\\int_0^{x^2}\\big(e^t-1-t\\big)\\,dt}{x^6}$。",
@@ -1142,7 +1142,7 @@
     {
       "id": "cal-limit-111",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "极限计算",
       "topic": "极限反求参数·泰勒待定系数",
       "question": "设 $\\displaystyle\\lim_{x\\to0}\\frac{\\ln(1+x)-(ax+bx^2)}{x^2}=0$，求常数 $a,b$。",
@@ -1153,7 +1153,7 @@
     {
       "id": "cal-limit-112",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "极限计算",
       "topic": "极限反求·抽象函数·整体极限",
       "question": "设函数 $f(x)$ 满足 $\\displaystyle\\lim_{x\\to0}\\frac{\\ln(1+2x)+x\\,f(x)}{x^2}=1$，求 $\\displaystyle\\lim_{x\\to0}\\frac{f(x)+2}{x}$。",
@@ -1164,7 +1164,7 @@
     {
       "id": "cal-limit-113",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "极限计算",
       "topic": "x→∞ 型·倒代换·泰勒展开",
       "question": "求极限 $\\displaystyle\\lim_{x\\to\\infty}x^2\\Big[\\ln\\Big(1+\\frac1x\\Big)-\\frac1x\\Big]$。",
@@ -1175,7 +1175,7 @@
     {
       "id": "cal-limit-114",
       "type": "proof",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "数列极限",
       "topic": "递推数列·压缩映射·减函数递推",
       "question": "设 $x_1=1$，$x_{n+1}=\\dfrac{1}{1+x_n}\\ (n\\geq1)$。证明 $\\{x_n\\}$ 收敛并求极限。",
@@ -1186,7 +1186,7 @@
     {
       "id": "cal-limit-115",
       "type": "fill",
-      "difficulty": "expert",
+      "difficulty": "hard",
       "cat": "极限计算",
       "topic": "∞−∞ 型·通分化商·泰勒展开",
       "question": "求极限 $\\displaystyle\\lim_{x\\to0}\\left(\\frac{1}{x^2}-\\cot^2x\\right)$。",

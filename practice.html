@@ -327,7 +327,6 @@ window.MathJax = {
                 <button class="chip" onclick="setQuizDiff('basic',this)">基础</button>
                 <button class="chip" onclick="setQuizDiff('medium',this)">适中</button>
                 <button class="chip" onclick="setQuizDiff('hard',this)">较难</button>
-                <button class="chip" onclick="setQuizDiff('expert',this)">拔高</button>
               </div>
             </div>
             <div class="quiz-row">
@@ -356,7 +355,7 @@ window.MathJax = {
   </div>
 </div>
 
-<script src="questions-bundle-v2.js?v=20261025j"></script>
+<script src="questions-bundle-v2.js?v=20261027"></script>
 <script>
 // prettyMath: MathJax 接管后直接返回原文，由 MathJax 渲染
 function prettyMath(text) {
@@ -369,8 +368,8 @@ var currentDiff = 'all';
 var currentTab = 'all';
 var totalQuestions = 0;
 
-var DIFF_MAP = { basic: '基础', medium: '适中', hard: '较难', expert: '拔高' };
-var DIFF_MAP_FULL = { all: '全部难度', basic: '基础', medium: '适中', hard: '较难', expert: '拔高' };
+var DIFF_MAP = { basic: '基础', medium: '适中', hard: '较难' };
+var DIFF_MAP_FULL = { all: '全部难度', basic: '基础', medium: '适中', hard: '较难' };
 var TYPE_MAP = { choice: '选择题', fill: '填空题', proof: '解答题' };
 var OPTION_LABELS = ['A', 'B', 'C', 'D'];
 
@@ -760,11 +759,6 @@ function autoDiffSuggest() {
   var ok = 0;
   log.forEach(function (r) { if (r.ok) ok++; });
   var r = ok / log.length;
-  var expert = log.filter(function (x) { return x.d === 'expert'; });
-  if (expert.length >= 5) {
-    var eok = expert.filter(function (x) { return x.ok; }).length;
-    if (eok / expert.length >= 0.7) return 'expert';
-  }
   if (r >= 0.85) return 'hard';
   if (r >= 0.6) return 'medium';
   return 'basic';
@@ -786,7 +780,7 @@ function renderAutoHint() {
 function markDiffChip(d) {
   var g = document.getElementById('quizDiffGroup');
   if (!g) return;
-  var map = { all: 0, basic: 1, medium: 2, hard: 3, expert: 4 };
+  var map = { all: 0, basic: 1, medium: 2, hard: 3 };
   Array.prototype.forEach.call(g.children, function (c) { c.classList.remove('active'); });
   var i = map[d];
   if (i !== undefined && g.children[i]) g.children[i].classList.add('active');

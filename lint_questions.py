@@ -24,7 +24,7 @@ import collections
 QDIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'questions')
 
 VALID_TYPES = ('choice', 'fill', 'proof')
-VALID_DIFF = ('basic', 'medium', 'hard', 'expert')
+VALID_DIFF = ('basic', 'medium', 'hard')  # 2026-10-27 起三档（原 expert 拔高并入 hard 较难）
 
 
 # ---------------------------------------------------------------- LaTeX 部分

@@ -1,5 +1,5 @@
 // Auto-generated editor data
-// Chapters: 19, Total questions: 1055
+// Chapters: 19, Total questions: 1082
 // Regenerate: python build_editor_data.py
 
 var EDITOR_DATA = [
@@ -1037,7 +1037,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-101",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "数列极限",
         "topic": "数列极限·单调有界准则·递推",
         "question": "设 $x_1=\\sqrt{2}$，$x_{n+1}=\\sqrt{2+x_n}\\ (n\\geq1)$。证明数列 $\\{x_n\\}$ 收敛，并求其极限。",
@@ -1048,7 +1048,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-102",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "数列极限",
         "topic": "数列极限·夹逼准则·项数也在变",
         "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\left(\\frac{1}{\\sqrt{n^2+1}}+\\frac{1}{\\sqrt{n^2+2}}+\\cdots+\\frac{1}{\\sqrt{n^2+n}}\\right)$。",
@@ -1059,7 +1059,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-103",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "数列极限",
         "topic": "和式极限·定积分定义·黎曼和",
         "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^{n}\\frac{n}{n^2+k^2}$。",
@@ -1070,7 +1070,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-104",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "数列极限",
         "topic": "数列极限·Stolz 定理",
         "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\frac{\\sqrt1+\\sqrt2+\\cdots+\\sqrt n}{n^{3/2}}$。",
@@ -1081,7 +1081,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-105",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "极限计算",
         "topic": "幂指函数极限·1^∞型·几何平均",
         "question": "设 $a>0,\\ b>0$，求 $\\displaystyle\\lim_{x\\to0}\\left(\\frac{a^x+b^x}{2}\\right)^{\\frac1x}$。",
@@ -1092,7 +1092,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-106",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "数列极限",
         "topic": "数列极限·泰勒展开·e 的逼近速度",
         "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}n\\Big[\\,e-\\Big(1+\\frac1n\\Big)^{n}\\Big]$。",
@@ -1103,7 +1103,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-107",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "数列极限",
         "topic": "数列极限·阶乘·定积分定义·瑕积分",
         "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\frac{\\sqrt[n]{n!}}{n}$。",
@@ -1114,7 +1114,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-108",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "数列极限",
         "topic": "数列极限·阶乘·Stirling 型·定积分定义",
         "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\sqrt[n]{\\frac{(2n)!}{n!\\;n^{n}}}$。",
@@ -1125,7 +1125,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-109",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "极限计算",
         "topic": "函数极限·泰勒展开·抽象函数",
         "question": "设 $f(x)$ 在 $x=0$ 处三阶可导，且 $f(0)=0$，$f'(0)=1$，$f''(0)=0$，$f'''(0)=6$。求 $\\displaystyle\\lim_{x\\to0}\\frac{f(x)-x}{x^3}$。",
@@ -1136,7 +1136,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-110",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "极限计算",
         "topic": "变限积分·等价无穷小·洛必达",
         "question": "求极限 $\\displaystyle\\lim_{x\\to0}\\frac{\\displaystyle\\int_0^{x^2}\\big(e^t-1-t\\big)\\,dt}{x^6}$。",
@@ -1147,7 +1147,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-111",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "极限计算",
         "topic": "极限反求参数·泰勒待定系数",
         "question": "设 $\\displaystyle\\lim_{x\\to0}\\frac{\\ln(1+x)-(ax+bx^2)}{x^2}=0$，求常数 $a,b$。",
@@ -1158,7 +1158,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-112",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "极限计算",
         "topic": "极限反求·抽象函数·整体极限",
         "question": "设函数 $f(x)$ 满足 $\\displaystyle\\lim_{x\\to0}\\frac{\\ln(1+2x)+x\\,f(x)}{x^2}=1$，求 $\\displaystyle\\lim_{x\\to0}\\frac{f(x)+2}{x}$。",
@@ -1169,7 +1169,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-113",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "极限计算",
         "topic": "x→∞ 型·倒代换·泰勒展开",
         "question": "求极限 $\\displaystyle\\lim_{x\\to\\infty}x^2\\Big[\\ln\\Big(1+\\frac1x\\Big)-\\frac1x\\Big]$。",
@@ -1180,7 +1180,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-114",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "数列极限",
         "topic": "递推数列·压缩映射·减函数递推",
         "question": "设 $x_1=1$，$x_{n+1}=\\dfrac{1}{1+x_n}\\ (n\\geq1)$。证明 $\\{x_n\\}$ 收敛并求极限。",
@@ -1191,7 +1191,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-limit-115",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "极限计算",
         "topic": "∞−∞ 型·通分化商·泰勒展开",
         "question": "求极限 $\\displaystyle\\lim_{x\\to0}\\left(\\frac{1}{x^2}-\\cot^2x\\right)$。",
@@ -2080,7 +2080,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-101",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "导数定义与可导性",
         "topic": "连续性·连续延拓·分段点导数定义",
         "question": "设 $f(x)=\\begin{cases}\\dfrac{\\ln(1+x)-x}{x^2}, & x\\neq0,\\\\[2mm] a, & x=0,\\end{cases}$ 若 $f(x)$ 在 $x=0$ 处连续，求常数 $a$；并讨论 $f(x)$ 在 $x=0$ 处是否可导。",
@@ -2091,7 +2091,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-102",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "导数定义与可导性",
         "topic": "可导性讨论·含参数振荡因子·三个门槛",
         "question": "设 $f(x)=\\begin{cases}x^{\\alpha}\\sin\\dfrac1x, & x\\neq0,\\\\[2mm] 0, & x=0,\\end{cases}$ 分别讨论 $\\alpha$ 取何值时，$f(x)$ 在 $x=0$ 处：(1) 连续；(2) 可导；(3) 导函数 $f'(x)$ 在 $x=0$ 处连续。",
@@ -2102,7 +2102,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-103",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "导数定义与可导性",
         "topic": "导数定义·复合凑形·抽象函数",
         "question": "设 $f(0)=0$，$f'(0)=2$，求 $\\displaystyle\\lim_{x\\to0}\\frac{f(1-\\cos x)}{x^2}$。",
@@ -2113,7 +2113,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-104",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "导数定义与可导性",
         "topic": "二阶可导·对称差分·反向不成立",
         "question": "设 $f(x)$ 在 $x_0$ 处二阶可导，求 $\\displaystyle\\lim_{h\\to0}\\frac{f(x_0+h)+f(x_0-h)-2f(x_0)}{h^2}$。",
@@ -2124,7 +2124,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-105",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "导数计算",
         "topic": "隐函数求导·先定点坐标",
         "question": "设 $y=y(x)$ 由方程 $xy+e^{y}=e^{x}+1$ 确定，求 $y(0)$ 与 $y'(0)$。",
@@ -2135,7 +2135,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-106",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "导数计算",
         "topic": "参数方程二阶导·摆线",
         "question": "设摆线 $\\begin{cases}x=t-\\sin t,\\\\ y=1-\\cos t,\\end{cases}$ 求 $\\dfrac{dy}{dx}$ 与 $\\dfrac{d^2y}{dx^2}$。",
@@ -2146,7 +2146,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-107",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "导数计算",
         "topic": "高阶导数·莱布尼茨公式·幂级数法",
         "question": "设 $f(x)=x^2e^{2x}$，求 $f^{(n)}(0)\\ (n\\geq2)$。",
@@ -2157,7 +2157,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-108",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "中值定理",
         "topic": "罗尔定理·构造辅助函数·积分因子",
         "question": "设 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(1)=0$。证明：存在 $\\xi\\in(0,1)$，使得 $f'(\\xi)=-\\dfrac{f(\\xi)}{\\xi}$。",
@@ -2168,7 +2168,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-109",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "中值定理",
         "topic": "罗尔定理·构造辅助函数·乘 e^x",
         "question": "设 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $f(a)=f(b)=0$。证明：存在 $\\xi\\in(a,b)$，使得 $f'(\\xi)+f(\\xi)=0$。",
@@ -2179,7 +2179,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-110",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "中值定理",
         "topic": "柯西中值定理·取 g(x)=ln x",
         "question": "设 $0<a<b$，函数 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导。证明：存在 $\\xi\\in(a,b)$ 使得 $f(b)-f(a)=\\xi f'(\\xi)\\ln\\dfrac{b}{a}$。",
@@ -2190,7 +2190,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-111",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "中值定理",
         "topic": "双中值问题·介值定理分点·分段拉格朗日",
         "question": "设 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(0)=0$，$f(1)=1$。证明：存在**不同**的 $\\xi,\\eta\\in(0,1)$，使得 $\\dfrac{1}{f'(\\xi)}+\\dfrac{1}{f'(\\eta)}=2$。",
@@ -2201,7 +2201,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-112",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "中值定理",
         "topic": "泰勒公式·最大值反推二阶导·最优常数",
         "question": "设 $f(x)$ 在 $[0,1]$ 上二阶可导，$f(0)=f(1)=0$，且 $\\max\\limits_{[0,1]}f(x)=2$。证明：存在 $\\xi\\in(0,1)$ 使得 $f''(\\xi)\\leq-16$。",
@@ -2212,7 +2212,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-113",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "中值定理",
         "topic": "泰勒余项·抽象函数·含参数结论",
         "question": "设 $f(x)$ 在 $x=0$ 处三阶可导，且 $f(0)=0$，$f'(0)=0$，$f''(0)=2$。求 $\\displaystyle\\lim_{x\\to0}\\frac{f(x)-x^2}{x^3}$。",
@@ -2223,7 +2223,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-114",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "中值定理",
         "topic": "拉格朗日定理·证明不等式·ln(1+x) 双侧估计",
         "question": "证明：当 $x>0$ 时，$\\dfrac{x}{1+x}<\\ln(1+x)<x$。",
@@ -2234,7 +2234,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-115",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "单调性与极值",
         "topic": "零点定理+单调性·根的唯一性",
         "question": "证明方程 $x^3-3x+1=0$ 在区间 $(0,1)$ 内有且仅有一个实根。",
@@ -2245,7 +2245,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-116",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "凹凸性与拐点",
         "topic": "凹凸性·琴生不等式·均值不等式",
         "question": "利用函数 $f(x)=\\ln x$ 的凹凸性证明：对任意 $a>0,\\ b>0$，有 $\\sqrt{ab}\\leq\\dfrac{a+b}{2}$，并说明等号成立的条件。",
@@ -2256,7 +2256,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-117",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "单调性与极值",
         "topic": "单调性·拉格朗日定理·割线斜率递增",
         "question": "设 $f(x)$ 在 $[0,+\\infty)$ 上连续，在 $(0,+\\infty)$ 内可导，$f(0)=0$，且 $f'(x)$ 在 $(0,+\\infty)$ 上单调递增。证明：$g(x)=\\dfrac{f(x)}{x}$ 在 $(0,+\\infty)$ 上单调递增。",
@@ -2267,7 +2267,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-118",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "中值定理",
         "topic": "罗尔定理·构造 f(x)-∫h(x)dx",
         "question": "设 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(0)=0$，$f(1)=1$。证明：存在 $\\xi\\in(0,1)$ 使得 $f'(\\xi)=2\\xi$。",
@@ -2278,7 +2278,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-119",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "几何应用",
         "topic": "渐近线综合·垂直渐近线须分左右",
         "question": "求曲线 $y=x\\,e^{1/x}$ 的全部渐近线。",
@@ -2289,7 +2289,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-120",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "单调性与极值",
         "topic": "方程根的个数讨论·两端极限同号+唯一极值",
         "question": "讨论方程 $\\ln x=ax\\ (a>0)$ 的实根个数。",
@@ -2300,7 +2300,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-121",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "单调性与极值",
         "topic": "不等式恒成立·分离参数·最值法",
         "question": "若不等式 $a\\,e^{x}\\geq x+1$ 对一切 $x>0$ 成立，求常数 $a$ 的取值范围。",
@@ -2311,7 +2311,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-122",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "几何应用",
         "topic": "曲率·最值应用·曲率公式",
         "question": "求曲线 $y=\\ln x\\ (x>0)$ 上曲率最大的点，并求该最大曲率。",
@@ -2322,7 +2322,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-123",
         "type": "fill",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "单调性与极值",
         "topic": "极值·反求参数·驻点非极值的例子",
         "question": "设 $f(x)=x^3-3ax+1$。(1) 若 $f(x)$ 在 $x=1$ 处取得极值，求 $a$ 并判断是极大值还是极小值；(2) 求使 $f(x)$ 有极值的 $a$ 的取值范围。",
@@ -2333,7 +2333,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-124",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "中值定理",
         "topic": "介值定理·不动点型·一维 Borsuk-Ulam",
         "question": "设 $f(x)$ 在 $[0,1]$ 上连续，且 $f(0)=f(1)$。证明：存在 $\\xi\\in\\Big[0,\\dfrac12\\Big]$，使得 $f(\\xi)=f\\Big(\\xi+\\dfrac12\\Big)$。",
@@ -2344,7 +2344,7 @@ var EDITOR_DATA = [
       {
         "id": "cal-der-125",
         "type": "proof",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "cat": "中值定理",
         "topic": "泰勒展开·两点展开相减·导界估计",
         "question": "设 $f(x)$ 在 $[0,1]$ 上二阶可导，$f(0)=f(1)=0$，且 $|f''(x)|\\leq1$ 对 $x\\in[0,1]$ 成立。证明：对任意 $x\\in[0,1]$，$|f'(x)|\\leq\\dfrac12$。",
@@ -4687,6 +4687,78 @@ var EDITOR_DATA = [
         "topic": "条件极值·拉格朗日·距离最值",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "多元极值最值"
+      },
+      {
+        "id": "cal-md-116",
+        "type": "proof",
+        "difficulty": "medium",
+        "question": "求曲线 $\\begin{cases}x^{2}+y^{2}+z^{2}=6\\\\ x+y+z=0\\end{cases}$ 在点 $(1,-2,1)$ 处的切线及法平面。",
+        "solution": "设 $F=x^{2}+y^{2}+z^{2}-6$，$G=x+y+z$。\n\n**思路**：把曲线看成隐函数组 $y=y(x),z=z(x)$，方程两边对 $x$ 求导。\n\n**求导**：对两方程两边对 $x$ 求导并移项，得\n$$\\begin{cases}y\\frac{dy}{dx}+z\\frac{dz}{dx}=-x\\\\[4pt] \\frac{dy}{dx}+\\frac{dz}{dx}=-1\\end{cases}$$\n\n由克拉默法则，\n$$\\frac{dy}{dx}=\\frac{\\begin{vmatrix}-x & z\\\\ -1 & 1\\end{vmatrix}}{\\begin{vmatrix}y & z\\\\ 1 & 1\\end{vmatrix}}=\\frac{z-x}{y-z}=0,\\qquad\n\\frac{dz}{dx}=\\frac{\\begin{vmatrix}y & -x\\\\ 1 & -1\\end{vmatrix}}{\\begin{vmatrix}y & z\\\\ 1 & 1\\end{vmatrix}}=\\frac{x-y}{y-z}=-1$$\n\n**切向量**：$T=\\left(1,\\frac{dy}{dx},\\frac{dz}{dx}\\right)=(1,0,-1)$。\n\n**切线方程**：\n$$\\frac{x-1}{1}=\\frac{y+2}{0}=\\frac{z-1}{-1}$$\n或写成 $\\begin{cases}x+z-2=0\\\\ y+2=0\\end{cases}$。\n\n**法平面方程**（点法式）：\n$$1\\cdot(x-1)+0\\cdot(y+2)+(-1)\\cdot(z-1)=0$$\n即 $x-z=0$。\n\n**注**：因为 $\\frac{\\partial(F,G)}{\\partial(y,z)}\\Big|_{(1,-2,1)}=2y-2z\\Big|_{(1,-2,1)}=-6\\neq0$，由隐函数存在定理确实确定了 $y=y(x),z=z(x)$，所以上面的求导是合法的。",
+        "cat": "多元函数微分学",
+        "topic": "隐函数求导·空间曲线的切线与法平面",
+        "source": "经纬研选（五）·数一多元",
+        "answer": ""
+      },
+      {
+        "id": "cal-md-117",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "求旋转椭球面 $3x^{2}+y^{2}+z^{2}=16$ 上点 $(-1,-2,3)$ 处的切平面与 $xOy$ 面夹角的余弦。",
+        "solution": "**分析**：切平面与 $xOy$ 面的夹角，等于切平面的法线与 $z$ 轴的夹角，也就是法向量与 $z$ 轴单位向量 $\\vec{e}=(0,0,1)$ 的夹角。\n\n设 $F=3x^{2}+y^{2}+z^{2}-16$，则\n$$F_{x}=6x,\\quad F_{y}=2y,\\quad F_{z}=2z$$\n\n在 $(-1,-2,3)$ 处法向量 $\\vec{n}=(-6,-4,6)$。\n\n由两向量夹角余弦公式，\n$$\\cos\\gamma=\\frac{|\\vec{n}\\cdot\\vec{e}|}{|\\vec{n}|\\,|\\vec{e}|}\n=\\frac{|(-6)\\cdot0+(-4)\\cdot0+6\\cdot1|}{\\sqrt{36+16+36}\\times1}\n=\\frac{6}{\\sqrt{88}}=\\frac{3}{\\sqrt{22}}$$\n\n**答案**：$\\dfrac{3}{\\sqrt{22}}$（也可写成 $\\dfrac{3\\sqrt{22}}{22}$）。",
+        "cat": "多元函数微分学",
+        "topic": "曲面切平面·两平面夹角",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$\\dfrac{3}{\\sqrt{22}}$"
+      },
+      {
+        "id": "cal-md-118",
+        "type": "proof",
+        "difficulty": "hard",
+        "question": "试证曲面 $\\sqrt{x}+\\sqrt{y}+\\sqrt{z}=\\sqrt{a}\\ (a>0)$ 上任何点处的切平面在三个坐标轴上的截距之和等于 $a$。",
+        "solution": "**证明**：设 $P_{0}(x_{0},y_{0},z_{0})$ 为曲面上任意一点，则 $\\sqrt{x_{0}}+\\sqrt{y_{0}}+\\sqrt{z_{0}}=\\sqrt{a}$。\n\n**法向量**：令 $F=\\sqrt{x}+\\sqrt{y}+\\sqrt{z}-\\sqrt{a}$，则\n$$\\vec{n}=\\left(\\frac{1}{2\\sqrt{x_{0}}},\\frac{1}{2\\sqrt{y_{0}}},\\frac{1}{2\\sqrt{z_{0}}}\\right)$$\n\n**切平面方程**：\n$$\\frac{x-x_{0}}{2\\sqrt{x_{0}}}+\\frac{y-y_{0}}{2\\sqrt{y_{0}}}+\\frac{z-z_{0}}{2\\sqrt{z_{0}}}=0$$\n\n整理为截距式形式：\n$$\\frac{x}{2\\sqrt{x_{0}}}+\\frac{y}{2\\sqrt{y_{0}}}+\\frac{z}{2\\sqrt{z_{0}}}\n=\\frac{x_{0}}{2\\sqrt{x_{0}}}+\\frac{y_{0}}{2\\sqrt{y_{0}}}+\\frac{z_{0}}{2\\sqrt{z_{0}}}\n=\\frac{\\sqrt{x_{0}}+\\sqrt{y_{0}}+\\sqrt{z_{0}}}{2}=\\frac{\\sqrt{a}}{2}$$\n\n**三个截距**：令 $y=z=0$ 得 $x$ 轴截距 $\\dfrac{\\sqrt{a}}{2}\\cdot2\\sqrt{x_{0}}=\\sqrt{ax_{0}}$；同理得 $y$ 轴、$z$ 轴截距分别为 $\\sqrt{ay_{0}},\\sqrt{az_{0}}$。\n\n**求和**：\n$$\\sqrt{ax_{0}}+\\sqrt{ay_{0}}+\\sqrt{az_{0}}\n=\\sqrt{a}\\left(\\sqrt{x_{0}}+\\sqrt{y_{0}}+\\sqrt{z_{0}}\\right)\n=\\sqrt{a}\\cdot\\sqrt{a}=a$$\n\n故截距之和恒为 $a$，与所取的点无关。证毕。",
+        "cat": "多元函数微分学",
+        "topic": "曲面切平面·截距之和",
+        "source": "经纬研选（五）·数一多元",
+        "answer": ""
+      },
+      {
+        "id": "cal-md-119",
+        "type": "proof",
+        "difficulty": "hard",
+        "question": "函数 $z=\\sqrt{x^{2}+y^{2}}$ 在点 $(0,0)$ 处沿 $(1,0)$ 方向的方向导数 $\\dfrac{\\partial z}{\\partial l}=1$，证明函数在 $(0,0)$ 的偏导数 $\\dfrac{\\partial z}{\\partial x}$ 不存在。",
+        "solution": "**证明**：记 $f(x,y)=\\sqrt{x^{2}+y^{2}}$。\n\n**方向导数**（沿 $\\vec{l}=(1,0)$，由定义）：\n$$\\frac{\\partial z}{\\partial l}\\Big|_{(0,0)}\n=\\lim_{t\\to0^{+}}\\frac{f(t,0)-f(0,0)}{t}\n=\\lim_{t\\to0^{+}}\\frac{\\sqrt{t^{2}}}{t}\n=\\lim_{t\\to0^{+}}\\frac{|t|}{t}=1$$\n\n**偏导数**（仍由定义，注意这里是双侧极限）：\n$$\\frac{\\partial z}{\\partial x}\\Big|_{(0,0)}\n=\\lim_{x\\to0}\\frac{f(x,0)-f(0,0)}{x}\n=\\lim_{x\\to0}\\frac{\\sqrt{x^{2}}}{x}\n=\\lim_{x\\to0}\\frac{|x|}{x}$$\n\n右极限为 $1$，左极限为 $-1$，两者不相等，故该极限不存在。\n\n**结论**：偏导数 $\\dfrac{\\partial z}{\\partial x}$ 不存在。\n\n**点睛**：方向导数用的是**单侧**极限 $t\\to0^{+}$，偏导数用的是**双侧**极限 $x\\to0$。沿某方向的方向导数存在，推不出偏导数存在——这是本题的要害。",
+        "cat": "多元函数微分学",
+        "topic": "方向导数·偏导数存在性",
+        "source": "经纬研选（五）·数一多元",
+        "answer": ""
+      },
+      {
+        "id": "cal-md-120",
+        "type": "choice",
+        "difficulty": "medium",
+        "question": "函数 $z=\\sqrt{x^{2}+y^{2}}$ 在点 $(0,0)$ 处，下面哪个正确？",
+        "solution": "逐项判断。\n\n**A 错**：$z=\\sqrt{x^{2}+y^{2}}$ 是连续函数的复合，在 $(0,0)$ 处连续。\n\n**C 错**：由上一题，$\\dfrac{\\partial z}{\\partial x}\\Big|_{(0,0)}=\\lim\\limits_{x\\to0}\\dfrac{|x|}{x}$ 不存在，偏导数不存在。\n\n**B 错、D 对**：设任意单位方向 $\\vec{l}=(\\cos\\alpha,\\cos\\beta)$，由定义\n$$\\frac{\\partial f}{\\partial l}\\Big|_{(0,0)}\n=\\lim_{t\\to0^{+}}\\frac{f(t\\cos\\alpha,\\,t\\cos\\beta)-f(0,0)}{t}\n=\\lim_{t\\to0^{+}}\\frac{\\sqrt{t^{2}(\\cos^{2}\\alpha+\\cos^{2}\\beta)}}{t}\n=\\lim_{t\\to0^{+}}\\frac{t\\cdot1}{t}=1$$\n\n即沿**任意**方向的方向导数都存在且都等于 $1$。\n\n**答案：D**",
+        "cat": "多元函数微分学",
+        "topic": "方向导数·偏导数存在性",
+        "source": "经纬研选（五）·数一多元",
+        "options": [
+          "不连续",
+          "方向导数不存在",
+          "偏导数存在",
+          "沿任意方向的方向导数存在"
+        ],
+        "answer": 3
+      },
+      {
+        "id": "cal-md-121",
+        "type": "proof",
+        "difficulty": "medium",
+        "question": "设 $f(x,y)=\\dfrac{1}{2}(x^{2}+y^{2})$，点 $P_{0}(1,1)$，求：（1）$f(x,y)$ 在 $P_{0}$ 处增加最快的方向以及沿这个方向的方向导数；（2）$f(x,y)$ 在 $P_{0}$ 处变化率为零的方向。",
+        "solution": "**（1）增加最快的方向**\n\n增加最快的方向就是梯度方向。\n$$f_{x}=x,\\quad f_{y}=y\\quad\\Rightarrow\\quad \\nabla f(1,1)=(1,1)$$\n\n其方向余弦为 $\\left(\\dfrac{1}{\\sqrt{2}},\\dfrac{1}{\\sqrt{2}}\\right)$，即方向与 $x$ 轴正向成 $45^{\\circ}$。\n\n沿该方向的方向导数等于梯度的模：\n$$\\frac{\\partial f}{\\partial l}\\Big|_{(1,1)}\n=1\\cdot\\frac{1}{\\sqrt{2}}+1\\cdot\\frac{1}{\\sqrt{2}}=\\sqrt{2}$$\n\n**（2）变化率为零的方向**\n\n方向导数 $\\dfrac{\\partial f}{\\partial l}=\\nabla f\\cdot\\vec{l}^{\\,\\circ}=0$ 意味着方向与梯度垂直。\n\n与 $(1,1)$ 垂直的单位向量有两个：\n$$\\left(-\\frac{1}{\\sqrt{2}},\\frac{1}{\\sqrt{2}}\\right)\\quad\\text{或}\\quad\\left(\\frac{1}{\\sqrt{2}},-\\frac{1}{\\sqrt{2}}\\right)$$\n\n**点睛**：变化率为零的方向是**等值线（等高线）的切线方向**。本题等值线是圆 $x^{2}+y^{2}=C$，在 $(1,1)$ 处切线方向正是上述两个方向。",
+        "cat": "多元函数微分学",
+        "topic": "梯度·方向导数·变化率为零的方向",
+        "source": "经纬研选（五）·数一多元",
+        "answer": ""
       }
     ]
   },
@@ -6740,6 +6812,237 @@ var EDITOR_DATA = [
         "question": "$\\int_L y\\,dx+z\\,dy+x\\,dz，L为x+y+z=1与坐标面交线正向，值为(  )。$",
         "answer": "-3/2",
         "solution": "$平面上x+y+z=1，用斯托克斯：\\iint_S(1-1)dydz+(1-1)dzdx+(1-1)dxdy=0。不对，P=y,Q=z,R=x，旋度=(0-1,0-1,0-1)=(-1,-1,-1)，\\iint_S(-1,-1,-1)\\cdot(1,1,1)dS=-3\\iint_S dS。S面积=\\sqrt{3}/2。-3\\cdot\\frac{\\sqrt{3}}{2}\\cdot\\frac{1}{\\sqrt{3}}=-3/2。正确！$"
+      },
+      {
+        "id": "cal-tc-054",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "计算三重积分 $\\displaystyle\\iiint_{\\Omega}x\\,dxdydz$，其中 $\\Omega$ 为三个坐标面以及平面 $x+2y+z=1$ 所围成的闭区域。",
+        "solution": "**确定投影区域**：$\\Omega$ 由 $x\\ge0,y\\ge0,z\\ge0$ 与 $x+2y+z\\le1$ 围成（四面体）。\n\n投影到 $xOy$ 面上：\n$$D_{xy}=\\left\\{(x,y)\\ \\Big|\\ 0\\le x\\le1,\\ 0\\le y\\le\\frac{1-x}{2}\\right\\}$$\n\n**先一后二**（先对 $z$ 积分）：\n$$\\iiint_{\\Omega}x\\,dV=\\int_{0}^{1}dx\\int_{0}^{\\frac{1-x}{2}}dy\\int_{0}^{1-x-2y}x\\,dz$$\n\n对 $z$ 积分（被积与 $z$ 无关）：\n$$=\\int_{0}^{1}x\\,dx\\int_{0}^{\\frac{1-x}{2}}(1-x-2y)\\,dy$$\n\n内层：$\\displaystyle\\int_{0}^{\\frac{1-x}{2}}(1-x-2y)dy=\\left[(1-x)y-y^{2}\\right]_{0}^{\\frac{1-x}{2}}=\\frac{(1-x)^{2}}{4}$\n\n外层：$\\displaystyle\\frac{1}{4}\\int_{0}^{1}x(1-x)^{2}dx=\\frac{1}{4}\\cdot\\frac{1}{12}=\\frac{1}{48}$\n\n（其中 $\\int_{0}^{1}x(1-x)^{2}dx=B(2,3)=\\dfrac{1}{12}$）\n\n**答案**：$\\dfrac{1}{48}$",
+        "cat": "三重积分",
+        "topic": "先一后二·投影区域确定",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$\\dfrac{1}{48}$"
+      },
+      {
+        "id": "cal-tc-055",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "设 $\\Omega$ 为平面曲线 $\\begin{cases}y^{2}=2z\\\\ x=0\\end{cases}$ 绕 $z$ 轴旋转一周所成的曲面与平面 $z=2$ 所围成的区域，求 $\\displaystyle\\iiint_{\\Omega}(x^{2}+y^{2})\\,dV$。",
+        "solution": "**旋转曲面方程**：平面曲线 $y^{2}=2z$（在 $yOz$ 面内）绕 $z$ 轴旋转，把 $y$ 换成 $\\pm\\sqrt{x^{2}+y^{2}}$，得\n\n$$x^{2}+y^{2}=2z$$\n\n与平面 $z=2$ 围成的区域为旋转抛物面的内部，$z\\in\\left[\\dfrac{x^{2}+y^{2}}{2},\\,2\\right]$。\n\n**投影区域**：$z=2$ 时 $x^{2}+y^{2}=4$，故在 $xOy$ 面投影为圆盘 $x^{2}+y^{2}\\le4$。\n\n**用柱坐标**（$x^{2}+y^{2}=r^{2}$，$dV=r\\,dr\\,d\\theta\\,dz$）：\n$$\\iiint_{\\Omega}(x^{2}+y^{2})dV\n=\\int_{0}^{2\\pi}d\\theta\\int_{0}^{2}dr\\int_{\\frac{r^{2}}{2}}^{2}r^{2}\\cdot r\\,dz\n=2\\pi\\int_{0}^{2}r^{3}\\left(2-\\frac{r^{2}}{2}\\right)dr$$\n\n计算内层：\n$$\\int_{0}^{2}r^{3}\\left(2-\\frac{r^{2}}{2}\\right)dr=\\left[\\frac{r^{4}}{2}-\\frac{r^{6}}{12}\\right]_{0}^{2}=8-\\frac{16}{3}=\\frac{8}{3}$$\n\n故\n$$\\iiint_{\\Omega}(x^{2}+y^{2})dV=2\\pi\\cdot\\frac{8}{3}=\\frac{16\\pi}{3}$$\n\n**答案**：$\\dfrac{16\\pi}{3}$\n\n**校注**：本题容易在最后一步把 $2\\pi$ 漏掉而错答 $\\dfrac{8\\pi}{3}$。上面结果已用蒙特卡洛抽样独立复核（抽样值 $16.82$，与 $16\\pi/3\\approx16.755$ 吻合，与 $8\\pi/3\\approx8.378$ 差一倍）。",
+        "cat": "三重积分",
+        "topic": "旋转曲面·柱坐标",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$\\dfrac{16\\pi}{3}$"
+      },
+      {
+        "id": "cal-tc-056",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "计算 $I=\\displaystyle\\iiint_{\\Omega}\\frac{1}{\\sqrt{x^{2}+y^{2}+z^{2}}}\\,dV$，其中 $\\Omega$ 由 $x^{2}+y^{2}+(z-1)^{2}\\le1,\\ z\\ge1,\\ y\\ge0$ 所确定。",
+        "solution": "**认清区域**：$x^{2}+y^{2}+(z-1)^{2}\\le1$ 是球心 $(0,0,1)$、半径 $1$ 的球体；$z\\ge1$ 取其上半球；$y\\ge0$ 再取一半（共 $\\frac{1}{4}$ 球体）。\n\n**用球坐标**（以**原点**为极点，这样被积函数 $\\frac{1}{r}$ 才最简）：\n$$x=r\\sin\\varphi\\cos\\theta,\\quad y=r\\sin\\varphi\\sin\\theta,\\quad z=r\\cos\\varphi$$\n$$dV=r^{2}\\sin\\varphi\\,dr\\,d\\varphi\\,d\\theta$$\n\n**确定 $r$ 的范围**（这是本题最难的一步）：\n\n- 球面方程展开：$x^{2}+y^{2}+z^{2}-2z+1\\le1$，即 $r^{2}\\le2r\\cos\\varphi$，得 $r\\le2\\cos\\varphi$\n- 条件 $z\\ge1$：$r\\cos\\varphi\\ge1$，得 $r\\ge\\dfrac{1}{\\cos\\varphi}$\n\n两者要相容：$\\dfrac{1}{\\cos\\varphi}\\le2\\cos\\varphi\\ \\Rightarrow\\ \\cos^{2}\\varphi\\ge\\dfrac{1}{2}\\ \\Rightarrow\\ \\varphi\\in\\left[0,\\dfrac{\\pi}{4}\\right]$\n\n**确定 $\\theta$ 的范围**：$y\\ge0$ 即 $\\sin\\theta\\ge0$，故 $\\theta\\in[0,\\pi]$。\n\n**积分**：\n$$I=\\int_{0}^{\\pi}d\\theta\\int_{0}^{\\frac{\\pi}{4}}d\\varphi\\int_{\\frac{1}{\\cos\\varphi}}^{2\\cos\\varphi}\\frac{1}{r}\\cdot r^{2}\\sin\\varphi\\,dr$$\n\n对 $r$ 积分：\n$$=\\pi\\int_{0}^{\\frac{\\pi}{4}}\\sin\\varphi\\cdot\\frac{(2\\cos\\varphi)^{2}-\\left(\\frac{1}{\\cos\\varphi}\\right)^{2}}{2}\\,d\\varphi\n=\\frac{\\pi}{2}\\int_{0}^{\\frac{\\pi}{4}}\\left(4\\cos^{2}\\varphi-\\sec^{2}\\varphi\\right)\\sin\\varphi\\,d\\varphi$$\n\n令 $u=\\cos\\varphi$：\n$$=\\frac{\\pi}{2}\\int_{\\frac{1}{\\sqrt{2}}}^{1}\\left(4u^{2}-\\frac{1}{u^{2}}\\right)du\n=\\frac{\\pi}{2}\\left[\\frac{4u^{3}}{3}+\\frac{1}{u}\\right]_{\\frac{1}{\\sqrt{2}}}^{1}$$\n\n$$=\\frac{\\pi}{2}\\left[\\left(\\frac{4}{3}+1\\right)-\\left(\\frac{4}{3}\\cdot\\frac{1}{2\\sqrt{2}}+\\sqrt{2}\\right)\\right]\n=\\frac{\\pi}{2}\\left(\\frac{7}{3}-\\frac{\\sqrt{2}}{3}-\\sqrt{2}\\right)\n=\\frac{\\pi}{2}\\cdot\\frac{7-4\\sqrt{2}}{3}\n=\\frac{(7-4\\sqrt{2})\\pi}{6}$$\n\n**答案**：$\\dfrac{(7-4\\sqrt{2})\\pi}{6}\\approx0.7032$（已数值复核）",
+        "cat": "三重积分",
+        "topic": "球坐标·积分限的确定",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$\\dfrac{(7-4\\sqrt{2})\\pi}{6}$"
+      },
+      {
+        "id": "cal-tc-057",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "计算 $\\displaystyle\\iiint_{\\Omega}(ax+by+cz)^{2}\\,dV$，其中 $\\Omega$ 为球体 $x^{2}+y^{2}+z^{2}\\le R^{2}$。",
+        "solution": "**展开被积函数**：\n$$(ax+by+cz)^{2}=\\underbrace{(a^{2}x^{2}+b^{2}y^{2}+c^{2}z^{2})}_{\\text{平方项}}+\\underbrace{(2abxy+2bcyz+2acxz)}_{\\text{交叉项}}$$\n\n**交叉项用奇偶性消掉**：$\\Omega$ 关于三个坐标面都对称，而 $xy$ 关于 $x$（也关于 $y$）是奇函数，故\n$$\\iiint_{\\Omega}xy\\,dV=\\iiint_{\\Omega}yz\\,dV=\\iiint_{\\Omega}xz\\,dV=0$$\n\n**平方项用轮换对称性**：$\\Omega$ 关于 $x,y,z$ 完全对称，故\n$$\\iiint_{\\Omega}x^{2}dV=\\iiint_{\\Omega}y^{2}dV=\\iiint_{\\Omega}z^{2}dV=\\frac{1}{3}\\iiint_{\\Omega}(x^{2}+y^{2}+z^{2})dV$$\n\n于是\n$$\\iiint_{\\Omega}(a^{2}x^{2}+b^{2}y^{2}+c^{2}z^{2})dV=\\frac{a^{2}+b^{2}+c^{2}}{3}\\iiint_{\\Omega}(x^{2}+y^{2}+z^{2})dV$$\n\n**球坐标计算**：\n$$\\iiint_{\\Omega}(x^{2}+y^{2}+z^{2})dV=\\int_{0}^{2\\pi}d\\theta\\int_{0}^{\\pi}d\\varphi\\int_{0}^{R}r^{2}\\cdot r^{2}\\sin\\varphi\\,dr\n=2\\pi\\cdot2\\cdot\\frac{R^{5}}{5}=\\frac{4\\pi R^{5}}{5}$$\n\n**合并**：\n$$\\iiint_{\\Omega}(ax+by+cz)^{2}dV=\\frac{a^{2}+b^{2}+c^{2}}{3}\\cdot\\frac{4\\pi R^{5}}{5}=\\frac{4\\pi R^{5}}{15}(a^{2}+b^{2}+c^{2})$$\n\n**答案**：$\\dfrac{4\\pi R^{5}}{15}(a^{2}+b^{2}+c^{2})$\n\n**注**：原题中球体半径也记作 $a$，与被积函数的系数 $a$ 重名，容易混淆，这里把球体半径改记为 $R$。",
+        "cat": "三重积分",
+        "topic": "奇偶对称性·轮换对称性",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$\\dfrac{4\\pi R^{5}}{15}(a^{2}+b^{2}+c^{2})$"
+      },
+      {
+        "id": "cal-tc-058",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "计算半径为 $R$、中心角为 $2\\alpha$ 的圆弧 $L$ 对于其对称轴的转动惯量 $I$（设线密度 $\\mu=1$）。",
+        "solution": "**建系**：取对称轴为 $x$ 轴，圆心在原点，则 $L$ 的参数方程为\n$$\\begin{cases}x=R\\cos\\theta\\\\ y=R\\sin\\theta\\end{cases}\\quad(-\\alpha\\le\\theta\\le\\alpha)$$\n\n**转动惯量**：对 $x$ 轴的转动惯量为 $\\displaystyle I=\\int_{L}y^{2}\\mu\\,ds=\\int_{L}y^{2}ds$。\n\n**弧长微元**：\n$$ds=\\sqrt{(-R\\sin\\theta)^{2}+(R\\cos\\theta)^{2}}\\,d\\theta=R\\,d\\theta$$\n\n**代入计算**：\n$$I=\\int_{-\\alpha}^{\\alpha}(R\\sin\\theta)^{2}\\cdot R\\,d\\theta\n=R^{3}\\int_{-\\alpha}^{\\alpha}\\sin^{2}\\theta\\,d\\theta$$\n\n$$\\int_{-\\alpha}^{\\alpha}\\sin^{2}\\theta\\,d\\theta=\\left[\\frac{\\theta}{2}-\\frac{\\sin2\\theta}{4}\\right]_{-\\alpha}^{\\alpha}=\\alpha-\\frac{\\sin2\\alpha}{2}=\\alpha-\\sin\\alpha\\cos\\alpha$$\n\n**答案**：$I=R^{3}(\\alpha-\\sin\\alpha\\cos\\alpha)$",
+        "cat": "曲线积分",
+        "topic": "第一类曲线积分·转动惯量",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$R^{3}(\\alpha-\\sin\\alpha\\cos\\alpha)$"
+      },
+      {
+        "id": "cal-tc-059",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "设曲线 $L:\\begin{cases}x^{2}+y^{2}+z^{2}=4\\\\ x+y+z=0\\end{cases}$，求第一类曲线积分 $\\displaystyle\\int_{L}(x+y)^{2}ds$。",
+        "solution": "**化简被积函数**：在 $L$ 上恒有 $x+y=-z$，故\n$$\\int_{L}(x+y)^{2}ds=\\int_{L}z^{2}ds$$\n\n**用轮换对称性**：$L$ 的方程组关于 $x,y,z$ 完全对称，故\n$$\\int_{L}z^{2}ds=\\int_{L}x^{2}ds=\\int_{L}y^{2}ds$$\n\n于是\n$$3\\int_{L}z^{2}ds=\\int_{L}(x^{2}+y^{2}+z^{2})ds=\\int_{L}4\\,ds=4\\cdot|L|$$\n\n**求弧长**：$L$ 是球面 $x^{2}+y^{2}+z^{2}=4$ 与过球心的平面 $x+y+z=0$ 的交圆，半径为球的半径 $2$，故\n$$|L|=2\\pi\\cdot2=4\\pi$$\n\n**结论**：\n$$\\int_{L}(x+y)^{2}ds=\\frac{4}{3}\\cdot4\\pi=\\frac{16\\pi}{3}$$\n\n**答案**：$\\dfrac{16\\pi}{3}$\n\n**点睛**：第一类（对弧长的）曲线积分可以把曲线方程代入被积函数化简——因为积分变量满足这些关系。**但第二类曲线积分不可以这样代入**，代入会改变 $\\cos\\alpha$ 等方向余弦，从而改变结果。",
+        "cat": "曲线积分",
+        "topic": "第一类曲线积分·轮换对称性",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$\\dfrac{16\\pi}{3}$"
+      },
+      {
+        "id": "cal-tc-060",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "计算第二类曲线积分 $\\displaystyle\\int_{L}\\sin^{2}x\\,dx+(x^{2}-1)y\\,dy$，其中 $L$ 是曲线 $y=\\sin x$ 从点 $(0,0)$ 到 $(\\pi,0)$ 的一段。",
+        "solution": "**参数化**：以 $x$ 为参数，$y=\\sin x$，$dy=\\cos x\\,dx$，$x:0\\to\\pi$。\n\n$$\\int_{L}\\sin^{2}x\\,dx+(x^{2}-1)y\\,dy\n=\\int_{0}^{\\pi}\\left[\\sin^{2}x+(x^{2}-1)\\sin x\\cos x\\right]dx$$\n\n**第一项**：\n$$\\int_{0}^{\\pi}\\sin^{2}x\\,dx=\\frac{\\pi}{2}$$\n\n**第二项**（分部积分）：\n$$\\int_{0}^{\\pi}(x^{2}-1)\\sin x\\cos x\\,dx=\\frac{1}{2}\\int_{0}^{\\pi}(x^{2}-1)\\sin2x\\,dx$$\n\n其中\n$$\\int_{0}^{\\pi}x^{2}\\sin2x\\,dx=\\left[-\\frac{x^{2}\\cos2x}{2}\\right]_{0}^{\\pi}+\\int_{0}^{\\pi}x\\cos2x\\,dx=-\\frac{\\pi^{2}}{2}+0=-\\frac{\\pi^{2}}{2}$$\n$$\\int_{0}^{\\pi}\\sin2x\\,dx=\\left[-\\frac{\\cos2x}{2}\\right]_{0}^{\\pi}=0$$\n\n故第二项 $=\\dfrac{1}{2}\\left(-\\dfrac{\\pi^{2}}{2}-0\\right)=-\\dfrac{\\pi^{2}}{4}$。\n\n**结论**：\n$$\\int_{L}\\sin^{2}x\\,dx+(x^{2}-1)y\\,dy=\\frac{\\pi}{2}-\\frac{\\pi^{2}}{4}$$\n\n**答案**：$\\dfrac{\\pi}{2}-\\dfrac{\\pi^{2}}{4}$",
+        "cat": "曲线积分",
+        "topic": "第二类曲线积分·参数化",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$\\dfrac{\\pi}{2}-\\dfrac{\\pi^{2}}{4}$"
+      },
+      {
+        "id": "cal-tc-061",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "计算 $\\displaystyle\\int_{L}2xy\\,dx+x^{2}dy$，其中 $L$ 为抛物线 $y=x^{2}$ 上从 $O(0,0)$ 到 $(1,1)$ 的一段弧。",
+        "solution": "**参数化**：以 $x$ 为参数，$y=x^{2}$，$dy=2x\\,dx$，$x:0\\to1$。\n\n$$\\int_{L}2xy\\,dx+x^{2}dy=\\int_{0}^{1}\\left(2x\\cdot x^{2}+x^{2}\\cdot2x\\right)dx=\\int_{0}^{1}4x^{3}dx=\\left[x^{4}\\right]_{0}^{1}=1$$\n\n**答案**：$1$\n\n**验证（路径无关）**：$P=2xy,Q=x^{2}$，$\\dfrac{\\partial Q}{\\partial x}=2x=\\dfrac{\\partial P}{\\partial y}$，故积分与路径无关。改走折线 $O(0,0)\\to(1,0)\\to(1,1)$：\n\n- $O\\to(1,0)$：$y=0,dy=0$，积分为 $0$\n- $(1,0)\\to(1,1)$：$dx=0,x=1$，积分 $=\\int_{0}^{1}1\\,dy=1$\n\n结果一致。",
+        "cat": "曲线积分",
+        "topic": "第二类曲线积分·参数化",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$1$"
+      },
+      {
+        "id": "cal-tc-062",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "计算 $\\displaystyle\\oint_{L}x^{2}y\\,dx-xy^{2}dy$，其中 $L$ 为正向圆周 $x^{2}+y^{2}=a^{2}$。",
+        "solution": "**方法一：参数方程**\n\n$L$ 的正向（逆时针）参数方程：$x=a\\cos\\theta,\\ y=a\\sin\\theta,\\ \\theta:0\\to2\\pi$，\n$$dx=-a\\sin\\theta\\,d\\theta,\\quad dy=a\\cos\\theta\\,d\\theta$$\n\n$$\\oint_{L}x^{2}y\\,dx-xy^{2}dy=\\int_{0}^{2\\pi}\\left[a^{2}\\cos^{2}\\theta\\cdot a\\sin\\theta\\cdot(-a\\sin\\theta)-a\\cos\\theta\\cdot a^{2}\\sin^{2}\\theta\\cdot a\\cos\\theta\\right]d\\theta$$\n\n$$=-a^{4}\\int_{0}^{2\\pi}2\\cos^{2}\\theta\\sin^{2}\\theta\\,d\\theta\n=-2a^{4}\\int_{0}^{2\\pi}\\frac{\\sin^{2}2\\theta}{4}d\\theta\n=-\\frac{a^{4}}{2}\\cdot\\pi=-\\frac{\\pi a^{4}}{2}$$\n\n（用到 $\\int_{0}^{2\\pi}\\sin^{2}2\\theta\\,d\\theta=\\pi$）\n\n**方法二：格林公式**\n\n$P=x^{2}y,\\ Q=-xy^{2}$，则 $\\dfrac{\\partial Q}{\\partial x}-\\dfrac{\\partial P}{\\partial y}=-y^{2}-x^{2}=-(x^{2}+y^{2})$\n\n$$\\oint_{L}=\\iint_{D}-(x^{2}+y^{2})dA=-\\int_{0}^{2\\pi}d\\theta\\int_{0}^{a}r^{2}\\cdot r\\,dr=-2\\pi\\cdot\\frac{a^{4}}{4}=-\\frac{\\pi a^{4}}{2}$$\n\n**答案**：$-\\dfrac{\\pi a^{4}}{2}$\n\n**校注**：常见错答 $-\\dfrac{\\pi a^{4}}{8}$，是把 $\\int_{0}^{2\\pi}\\cos^{2}\\theta\\sin^{2}\\theta\\,d\\theta$ 算成了 $\\dfrac{\\pi}{8}$（正确值是 $\\dfrac{\\pi}{4}$），或漏掉了 $dx,dy$ 带来的两个 $a$ 因子。上面结果已用参数化数值积分与格林公式两条独立路径互验（取 $a=1$ 均为 $-1.5708=-\\pi/2$）。",
+        "cat": "曲线积分",
+        "topic": "第二类曲线积分·格林公式",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$-\\dfrac{\\pi a^{4}}{2}$"
+      },
+      {
+        "id": "cal-tc-063",
+        "type": "proof",
+        "difficulty": "hard",
+        "question": "计算 $\\displaystyle\\oint_{L}\\frac{x\\,dy-y\\,dx}{x^{2}+y^{2}}$，其中 $L$ 为分段光滑且不经过原点的连续封闭曲线，$L$ 的方向为逆时针方向。",
+        "solution": "**记**：$L$ 围成的闭区域为 $D$。被积式写成 $P\\,dx+Q\\,dy$，其中\n$$P=\\frac{-y}{x^{2}+y^{2}},\\qquad Q=\\frac{x}{x^{2}+y^{2}}$$\n\n**验证恰当性**（在原点以外）：\n$$\\frac{\\partial Q}{\\partial x}=\\frac{(x^{2}+y^{2})-x\\cdot2x}{(x^{2}+y^{2})^{2}}=\\frac{y^{2}-x^{2}}{(x^{2}+y^{2})^{2}}$$\n$$\\frac{\\partial P}{\\partial y}=\\frac{-(x^{2}+y^{2})-(-y)\\cdot2y}{(x^{2}+y^{2})^{2}}=\\frac{y^{2}-x^{2}}{(x^{2}+y^{2})^{2}}$$\n\n两者相等，所以在不含原点的单连通区域上积分与路径无关。\n\n**情形一：$(0,0)\\notin D$**\n\n此时 $P,Q$ 在 $D$ 上连续可微，满足格林公式条件：\n$$\\oint_{L}\\frac{x\\,dy-y\\,dx}{x^{2}+y^{2}}=\\iint_{D}\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dA=\\iint_{D}0\\,dA=0$$\n\n**情形二：$(0,0)\\in D$**\n\n$P,Q$ 在原点无定义、在 $D$ 上不连续，**不能直接用格林公式**。取充分小的 $r>0$，在 $D$ 内作圆周\n$$l:\\ x^{2}+y^{2}=r^{2}\\quad(\\text{取逆时针方向})$$\n\n记 $L$ 与 $l$ 围成的环形区域为 $D_{1}$（$D_{1}$ 不含原点），在 $D_{1}$ 上应用格林公式：\n$$\\oint_{L+l^{-}}\\frac{x\\,dy-y\\,dx}{x^{2}+y^{2}}=0$$\n\n于是 $\\displaystyle\\oint_{L}=\\oint_{l}$（注意 $l^{-}$ 是顺时针，移项后变号）：\n$$\\oint_{l}\\frac{x\\,dy-y\\,dx}{x^{2}+y^{2}}\n=\\int_{0}^{2\\pi}\\frac{r\\cos\\theta\\cdot r\\cos\\theta\\,d\\theta-r\\sin\\theta\\cdot(-r\\sin\\theta\\,d\\theta)}{r^{2}}\n=\\int_{0}^{2\\pi}1\\,d\\theta=2\\pi$$\n\n**结论**：\n$$\\oint_{L}\\frac{x\\,dy-y\\,dx}{x^{2}+y^{2}}=\\begin{cases}0, & (0,0)\\notin D\\\\[4pt] 2\\pi, & (0,0)\\in D\\end{cases}$$\n\n**点睛**：这就是\"挖洞法\"——奇点把区域挖掉，沿小洞的积分反而最好算。本题的被积式正是极角微分 $d\\theta$，绕原点一圈积累 $2\\pi$。",
+        "cat": "曲线积分",
+        "topic": "格林公式·挖洞法（奇点处理）",
+        "source": "经纬研选（五）·数一多元",
+        "answer": ""
+      },
+      {
+        "id": "cal-tc-064",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "计算第二类线积分 $\\displaystyle\\int_{L}ye^{y^{2}}dx+(xe^{y^{2}}+2xy^{2}e^{y^{2}})dy$，其中 $L$ 是曲线 $y=\\sqrt[3]{x}$ 从 $O(0,0)$ 到 $A(1,1)$ 的一段弧。",
+        "solution": "**先验证路径无关**：\n$$P=ye^{y^{2}},\\quad Q=xe^{y^{2}}+2xy^{2}e^{y^{2}}$$\n$$\\frac{\\partial P}{\\partial y}=e^{y^{2}}+2y^{2}e^{y^{2}},\\qquad \\frac{\\partial Q}{\\partial x}=e^{y^{2}}+2y^{2}e^{y^{2}}$$\n\n两者相等，故积分与路径无关，**可以改走从 $O$ 到 $A$ 的直线段 $y=x$**。\n\n**计算**（$y=x,dy=dx$）：\n$$\\int_{O}^{A}=\\int_{0}^{1}\\left[xe^{x^{2}}+(xe^{x^{2}}+2x^{3}e^{x^{2}})\\right]dx\n=\\underbrace{\\int_{0}^{1}2xe^{x^{2}}dx}_{I_{1}}+\\underbrace{\\int_{0}^{1}2x^{3}e^{x^{2}}dx}_{I_{2}}$$\n\n$$I_{1}=\\left[e^{x^{2}}\\right]_{0}^{1}=e-1$$\n\n$$I_{2}\\overset{u=x^{2}}{=}\\int_{0}^{1}ue^{u}du=\\left[(u-1)e^{u}\\right]_{0}^{1}=0-(-1)=1$$\n\n**结论**：$\\displaystyle\\int_{L}=I_{1}+I_{2}=(e-1)+1=e$\n\n**答案**：$e$\n\n**注**：也可改走折线 $O(0,0)\\to B(1,0)\\to A(1,1)$：$OB$ 上 $y=0,dy=0$，积分为 $0$；$BA$ 上 $dx=0$，积分 $\\int_{0}^{1}(e^{y^{2}}+2y^{2}e^{y^{2}})dy$，用分部积分同样得 $e$。",
+        "cat": "曲线积分",
+        "topic": "路径无关性·改走简单路径",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$e$"
+      },
+      {
+        "id": "cal-tc-065",
+        "type": "proof",
+        "difficulty": "hard",
+        "question": "求解方程 $(5x^{4}+3xy^{2}-y^{3})dx+(3x^{2}y-3xy^{2}+y^{2})dy=0$ 的通解。",
+        "solution": "**判别全微分**：\n$$P=5x^{4}+3xy^{2}-y^{3},\\qquad Q=3x^{2}y-3xy^{2}+y^{2}$$\n$$\\frac{\\partial P}{\\partial y}=6xy-3y^{2},\\qquad \\frac{\\partial Q}{\\partial x}=6xy-3y^{2}$$\n\n两者相等，故为**全微分方程**，存在原函数 $U$ 使 $dU=P\\,dx+Q\\,dy$。\n\n**求原函数**（取起点 $(0,0)$，走折线）：\n\n$$U(x,y)=\\int_{(0,0)}^{(x,y)}P\\,dx+Q\\,dy$$\n\n- 沿 $x$ 轴 $(0,0)\\to(x,0)$：$y=0,dy=0$\n$$\\int_{0}^{x}5t^{4}dt=x^{5}$$\n\n- 沿竖直线 $(x,0)\\to(x,y)$：$dx=0$\n$$\\int_{0}^{y}(3x^{2}t-3xt^{2}+t^{2})dt=\\frac{3}{2}x^{2}y^{2}-xy^{3}+\\frac{1}{3}y^{3}$$\n\n$$U(x,y)=x^{5}+\\frac{3}{2}x^{2}y^{2}-xy^{3}+\\frac{1}{3}y^{3}$$\n\n**通解**：\n$$x^{5}+\\frac{3}{2}x^{2}y^{2}-xy^{3}+\\frac{1}{3}y^{3}=C$$\n\n**注**：折线法的关键在于走平行于坐标轴的折线，使每段上只有一个变量在变（$x$ 轴上 $dy=0$，竖直段上 $dx=0$），这样每段都是一元积分。",
+        "cat": "微分方程",
+        "topic": "全微分方程·凑原函数",
+        "source": "经纬研选（五）·数一多元",
+        "answer": ""
+      },
+      {
+        "id": "cal-tc-066",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "设平面曲线 $L$ 是从点 $O(0,0)$ 到点 $A(\\pi,\\pi)$ 的半圆弧，试求该平面内一质点在变力 $\\vec{F}=(e^{x}\\sin y-4y)\\vec{i}+(e^{x}\\cos y-1)\\vec{j}$ 作用下，沿圆弧 $L$ 从 $O$ 移动到 $A$ 所做的功。",
+        "solution": "**物理意义**：变力做功 $W=\\displaystyle\\int_{L}P\\,dx+Q\\,dy$，其中\n$$P=e^{x}\\sin y-4y,\\qquad Q=e^{x}\\cos y-1$$\n\n**补线成闭**：补上有向线段 $AO$（从 $A$ 回到 $O$），与半圆弧 $L$ 围成半圆区域 $D$，闭曲线 $L+AO$ 是**负向**（顺时针）。\n\n**用格林公式**：\n$$\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}=e^{x}\\cos y-(e^{x}\\cos y-4)=4$$\n\n$$\\oint_{L+AO}=\\iint_{D}(-4)\\,dA=-4\\cdot|D|$$\n\n半圆以 $OA$ 为直径，直径长 $\\sqrt{\\pi^{2}+\\pi^{2}}=\\sqrt{2}\\pi$，半径 $\\dfrac{\\sqrt{2}\\pi}{2}=\\dfrac{\\pi}{\\sqrt{2}}$，\n$$|D|=\\frac{1}{2}\\pi\\left(\\frac{\\pi}{\\sqrt{2}}\\right)^{2}=\\frac{\\pi^{3}}{4}$$\n\n故 $\\displaystyle\\oint_{L+AO}=-4\\cdot\\frac{\\pi^{3}}{4}=-\\pi^{3}$。\n\n**减去补线段的贡献**：线段 $AO$ 在直线 $y=x$ 上，$x$ 从 $\\pi$ 到 $0$，\n\n$$\\int_{AO}=\\int_{\\pi}^{0}\\left[(e^{x}\\sin x-4x)+(e^{x}\\cos x-1)\\right]dx$$\n\n$$\\int_{0}^{\\pi}e^{x}\\sin x\\,dx=\\left[\\frac{e^{x}(\\sin x-\\cos x)}{2}\\right]_{0}^{\\pi}=\\frac{e^{\\pi}+1}{2}$$\n$$\\int_{0}^{\\pi}e^{x}\\cos x\\,dx=\\left[\\frac{e^{x}(\\sin x+\\cos x)}{2}\\right]_{0}^{\\pi}=-\\frac{e^{\\pi}+1}{2}$$\n\n两项相消，故\n$$\\int_{AO}=-\\int_{0}^{\\pi}(-4x-1)dx=4\\cdot\\frac{\\pi^{2}}{2}+\\pi=2\\pi^{2}+\\pi$$\n\n**结论**：\n$$W=\\int_{L}=\\oint_{L+AO}-\\int_{AO}=-\\pi^{3}-(2\\pi^{2}+\\pi)=-\\pi^{3}-2\\pi^{2}-\\pi$$\n\n**答案**：$-\\pi^{3}-2\\pi^{2}-\\pi$",
+        "cat": "曲线积分",
+        "topic": "格林公式·变力做功",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$-\\pi^{3}-2\\pi^{2}-\\pi$"
+      },
+      {
+        "id": "cal-tc-067",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "设 $f(x)$ 具有二阶连续导数，$f(1)=f'(1)=1$；且 $\\displaystyle\\oint_{L}\\left[\\frac{y^{2}}{x}+xf\\left(\\frac{y}{x}\\right)\\right]dx+\\left[y-xf'\\left(\\frac{y}{x}\\right)\\right]dy=0$，其中 $L$ 是右半平面 $x>0$ 内任一光滑封闭曲线，求 $f(x)$。",
+        "solution": "**把条件翻译成偏导等式**：闭曲线积分恒为零 $\\Leftrightarrow$ 积分与路径无关 $\\Leftrightarrow\\dfrac{\\partial P}{\\partial y}=\\dfrac{\\partial Q}{\\partial x}$。\n\n$$P=\\frac{y^{2}}{x}+xf\\left(\\frac{y}{x}\\right),\\qquad Q=y-xf'\\left(\\frac{y}{x}\\right)$$\n\n$$\\frac{\\partial P}{\\partial y}=\\frac{2y}{x}+x\\cdot f'\\left(\\frac{y}{x}\\right)\\cdot\\frac{1}{x}=\\frac{2y}{x}+f'\\left(\\frac{y}{x}\\right)$$\n$$\\frac{\\partial Q}{\\partial x}=-\\left[f'\\left(\\frac{y}{x}\\right)+x\\cdot f''\\left(\\frac{y}{x}\\right)\\cdot\\left(-\\frac{y}{x^{2}}\\right)\\right]=-f'\\left(\\frac{y}{x}\\right)+\\frac{y}{x}f''\\left(\\frac{y}{x}\\right)$$\n\n令两者相等：\n$$\\frac{2y}{x}+f'\\left(\\frac{y}{x}\\right)=-f'\\left(\\frac{y}{x}\\right)+\\frac{y}{x}f''\\left(\\frac{y}{x}\\right)$$\n\n**换元**：设 $t=\\dfrac{y}{x}$，整理得\n$$t\\,f''(t)-2f'(t)=2t\\quad\\Rightarrow\\quad f''(t)-\\frac{2}{t}f'(t)=2$$\n\n**降阶**：令 $u=f'(t)$，得到一阶线性方程 $u'-\\dfrac{2}{t}u=2$。\n\n积分因子 $e^{\\int-\\frac{2}{t}dt}=t^{-2}$：\n$$\\left(u\\,t^{-2}\\right)'=2t^{-2}\\quad\\Rightarrow\\quad u\\,t^{-2}=-\\frac{2}{t}+C_{1}\\quad\\Rightarrow\\quad u=-2t+C_{1}t^{2}$$\n\n即 $f'(t)=-2t+C_{1}t^{2}$。由 $f'(1)=1$：$-2+C_{1}=1$，得 $C_{1}=3$。\n\n**再积分**：\n$$f(t)=\\int(-2t+3t^{2})dt=-t^{2}+t^{3}+C_{2}$$\n\n由 $f(1)=1$：$-1+1+C_{2}=1$，得 $C_{2}=1$。\n\n**答案**：$f(x)=x^{3}-x^{2}+1$",
+        "cat": "微分方程",
+        "topic": "由线积分性质反推·欧拉型方程",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$f(x)=x^{3}-x^{2}+1$"
+      },
+      {
+        "id": "cal-tc-068",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "计算曲面积分 $\\displaystyle\\iint_{\\Sigma}z\\,dxdy$，其中 $\\Sigma$ 是球面 $x^{2}+y^{2}+z^{2}=1$ 外侧在 $x\\ge0,y\\ge0$ 的部分。",
+        "solution": "**分面**：$\\Sigma$ 由上下两片组成\n$$\\Sigma_{1}:\\ z=\\sqrt{1-x^{2}-y^{2}}\\ (\\text{上侧}),\\qquad \\Sigma_{2}:\\ z=-\\sqrt{1-x^{2}-y^{2}}\\ (\\text{下侧})$$\n\n两者在 $xOy$ 面的投影都是 $D_{xy}=\\{(x,y)\\mid x\\ge0,y\\ge0,x^{2}+y^{2}\\le1\\}$（第一象限的 $\\frac{1}{4}$ 圆）。\n\n**化为二重积分**（第二类曲面积分 $\\iint z\\,dxdy$，上侧取正、下侧取负）：\n$$\\iint_{\\Sigma}z\\,dxdy=\\iint_{\\Sigma_{1}}z\\,dxdy+\\iint_{\\Sigma_{2}}z\\,dxdy$$\n$$=\\iint_{D_{xy}}\\sqrt{1-x^{2}-y^{2}}\\,dxdy+\\iint_{D_{xy}}\\left(-\\sqrt{1-x^{2}-y^{2}}\\right)\\cdot(-1)\\,dxdy$$\n$$=2\\iint_{D_{xy}}\\sqrt{1-x^{2}-y^{2}}\\,dxdy$$\n\n**极坐标**：$D_{xy}$ 对应 $\\theta\\in\\left[0,\\dfrac{\\pi}{2}\\right],\\ r\\in[0,1]$：\n$$=2\\int_{0}^{\\frac{\\pi}{2}}d\\theta\\int_{0}^{1}\\sqrt{1-r^{2}}\\cdot r\\,dr\n=2\\cdot\\frac{\\pi}{2}\\cdot\\frac{1}{3}=\\frac{\\pi}{3}$$\n\n（其中 $\\int_{0}^{1}r\\sqrt{1-r^{2}}dr=\\left[-\\dfrac{(1-r^{2})^{3/2}}{3}\\right]_{0}^{1}=\\dfrac{1}{3}$）\n\n**答案**：$\\dfrac{\\pi}{3}$",
+        "cat": "曲面积分",
+        "topic": "第二类曲面积分·分面投影",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$\\dfrac{\\pi}{3}$"
+      },
+      {
+        "id": "cal-tc-069",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "计算曲面积分 $\\displaystyle\\iint_{\\Sigma}(z^{2}+x)\\,dydz-z\\,dxdy$，其中 $\\Sigma$ 是旋转抛物面 $z=x^{2}+y^{2}$ 介于平面 $z=0$ 与 $z=4$ 之间的部分的下侧。",
+        "solution": "**认清被积式**：$\\displaystyle\\iint_{\\Sigma}P\\,dydz+Q\\,dzdx+R\\,dxdy$，其中\n$$P=z^{2}+x,\\qquad Q=0,\\qquad R=-z$$\n\n**补面用高斯**：$\\Sigma$ 是下侧（不封闭），补上平面 $\\Sigma_{1}:z=4$ 的**上侧**，则 $\\Sigma+\\Sigma_{1}$ 围成闭区域 $\\Omega$（取外法向）。\n\n$$\\frac{\\partial P}{\\partial x}+\\frac{\\partial Q}{\\partial y}+\\frac{\\partial R}{\\partial z}=1+0+(-1)=0$$\n\n故由高斯公式：\n$$\\iint_{\\Sigma+\\Sigma_{1}}=\\iiint_{\\Omega}0\\,dV=0\\quad\\Rightarrow\\quad \\iint_{\\Sigma}=-\\iint_{\\Sigma_{1}}$$\n\n**算补面 $\\Sigma_{1}$ 的积分**：$\\Sigma_{1}$ 上 $z=4$（常数），\n\n- $dydz$ 项：曲面是水平面，在 $yOz$ 面投影退化为线段，故 $\\displaystyle\\iint_{\\Sigma_{1}}(z^{2}+x)dydz=0$\n- $dxdy$ 项：上侧取正，投影区域 $D_{xy}:x^{2}+y^{2}\\le4$\n$$\\iint_{\\Sigma_{1}}-z\\,dxdy=-\\iint_{D_{xy}}4\\,dxdy=-4\\cdot\\pi\\cdot2^{2}=-16\\pi$$\n\n**结论**：\n$$\\iint_{\\Sigma}=-\\iint_{\\Sigma_{1}}=-(-16\\pi)=16\\pi$$\n\n**答案**：$16\\pi$\n\n**点睛**：本题散度恰为 $0$，所以补面后闭曲面积分为零，原积分直接等于补面积分的相反数——散度为 $0$ 的向量场，穿过任何闭曲面的通量为零，是高斯公式里最好用的一类。",
+        "cat": "曲面积分",
+        "topic": "高斯公式·补面法",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$16\\pi$"
+      },
+      {
+        "id": "cal-tc-070",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "计算 $\\displaystyle\\iint_{\\Sigma}(x^{2}+y^{2}+z^{2})\\,dS$，其中 $\\Sigma$ 为球面 $x^{2}+y^{2}+z^{2}=2z$。",
+        "solution": "**先化简被积函数**：曲面方程是 $x^{2}+y^{2}+z^{2}=2z$，即 $x^{2}+y^{2}+(z-1)^{2}=1$（球心 $(0,0,1)$、半径 $1$）。在 $\\Sigma$ 上恒有 $x^{2}+y^{2}+z^{2}=2z$，代入得\n\n$$\\iint_{\\Sigma}(x^{2}+y^{2}+z^{2})dS=\\iint_{\\Sigma}2z\\,dS$$\n\n**方法一：对称性**（推荐）\n\n$\\Sigma$ 关于平面 $z=1$ 对称，故 $\\displaystyle\\iint_{\\Sigma}(z-1)dS=0$，于是\n$$\\iint_{\\Sigma}2z\\,dS=2\\iint_{\\Sigma}\\left[(z-1)+1\\right]dS=2\\iint_{\\Sigma}1\\,dS=2\\cdot|\\Sigma|=2\\cdot4\\pi=8\\pi$$\n\n（球面半径 $1$，表面积 $4\\pi R^{2}=4\\pi$）\n\n**方法二：形心公式**\n\n$$\\iint_{\\Sigma}z\\,dS=\\bar{z}\\cdot|\\Sigma|=1\\cdot4\\pi=4\\pi$$\n\n故原式 $=2\\cdot4\\pi=8\\pi$。\n\n**答案**：$8\\pi$\n\n**点睛**：第一类（对面积的）曲面积分可以**把曲面方程代入被积函数**化简——因为积分变量在曲面上满足该关系。这一点与第一类曲线积分类似，但要注意与第二类积分区分开。",
+        "cat": "曲面积分",
+        "topic": "第一类曲面积分·对称性与形心",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$8\\pi$"
+      },
+      {
+        "id": "cal-tc-071",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "计算曲线积分 $I=\\displaystyle\\oint_{L}y^{2}dx+z^{2}dy+x^{2}dz$，其中 $L$ 为曲线 $\\begin{cases}x^{2}+y^{2}+z^{2}=4\\\\ x^{2}+y^{2}=2x\\end{cases}\\ (z\\ge0)$，从 $z$ 轴正向看取逆时针方向。",
+        "solution": "**求参数方程**：由 $x^{2}+y^{2}=2x$ 得 $(x-1)^{2}+y^{2}=1$，是母线平行于 $z$ 轴的圆柱面。\n\n代入球面 $x^{2}+y^{2}+z^{2}=4$：$2x+z^{2}=4$，即 $z^{2}=4-2x$。\n\n取参数 $\\theta$ 使 $x=1+\\cos\\theta,\\ y=\\sin\\theta$（$\\theta:0\\to2\\pi$），则\n$$z^{2}=4-2(1+\\cos\\theta)=2-2\\cos\\theta=4\\sin^{2}\\frac{\\theta}{2}$$\n由 $z\\ge0$ 得 $z=2\\sin\\dfrac{\\theta}{2}$。\n\n$$x'=-\\sin\\theta,\\qquad y'=\\cos\\theta,\\qquad z'=\\cos\\frac{\\theta}{2}$$\n\n**代入积分**：\n$$I=\\int_{0}^{2\\pi}\\left[\\sin^{2}\\theta\\cdot(-\\sin\\theta)+4\\sin^{2}\\frac{\\theta}{2}\\cdot\\cos\\theta+(1+\\cos\\theta)^{2}\\cdot\\cos\\frac{\\theta}{2}\\right]d\\theta$$\n\n**第一项**：$\\displaystyle\\int_{0}^{2\\pi}-\\sin^{3}\\theta\\,d\\theta=0$\n\n**第二项**（用 $\\sin^{2}\\frac{\\theta}{2}=\\frac{1-\\cos\\theta}{2}$）：\n$$4\\int_{0}^{2\\pi}\\frac{1-\\cos\\theta}{2}\\cos\\theta\\,d\\theta=2\\int_{0}^{2\\pi}(\\cos\\theta-\\cos^{2}\\theta)d\\theta=2(0-\\pi)=-2\\pi$$\n\n**第三项**（用 $1+\\cos\\theta=2\\cos^{2}\\frac{\\theta}{2}$）：\n$$\\int_{0}^{2\\pi}4\\cos^{4}\\frac{\\theta}{2}\\cos\\frac{\\theta}{2}\\,d\\theta\\overset{\\varphi=\\theta/2}{=}8\\int_{0}^{\\pi}\\cos^{5}\\varphi\\,d\\varphi=0$$\n\n**结论**：$I=0+(-2\\pi)+0=-2\\pi$\n\n**答案**：$-2\\pi$",
+        "cat": "曲线积分",
+        "topic": "空间曲线积分·参数方程",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$-2\\pi$"
+      },
+      {
+        "id": "cal-tc-072",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "求八分之一球面 $x^{2}+y^{2}+z^{2}=R^{2}\\ (x\\ge0,y\\ge0,z\\ge0)$ 的边界曲线的质心（设密度为 $1$）。",
+        "solution": "**认清边界**：八分之一球面的边界由三段 $\\frac{1}{4}$ 圆弧组成，分别在三个坐标面上：\n$$l_{1}:x^{2}+y^{2}=R^{2}(z=0),\\quad l_{2}:y^{2}+z^{2}=R^{2}(x=0),\\quad l_{3}:x^{2}+z^{2}=R^{2}(y=0)$$\n记 $L=l_{1}+l_{2}+l_{3}$。\n\n**质心公式**：\n$$\\bar{x}=\\frac{\\oint_{L}x\\rho\\,ds}{\\oint_{L}\\rho\\,ds}=\\frac{\\oint_{L}x\\,ds}{\\oint_{L}ds}$$\n\n**分母**（总弧长）：每段是 $\\frac{1}{4}$ 圆周，弧长 $\\dfrac{2\\pi R}{4}=\\dfrac{\\pi R}{2}$，\n$$\\oint_{L}ds=3\\cdot\\frac{\\pi R}{2}=\\frac{3\\pi R}{2}$$\n\n**分子**：\n- 在 $l_{1}$（$z=0$）上，取 $x=R\\cos\\theta,\\ ds=R\\,d\\theta,\\ \\theta:0\\to\\frac{\\pi}{2}$：\n$$\\int_{l_{1}}x\\,ds=R^{2}\\int_{0}^{\\frac{\\pi}{2}}\\cos\\theta\\,d\\theta=R^{2}$$\n- 在 $l_{2}$（$x=0$）上：$x\\equiv0$，积分为 $0$\n- 在 $l_{3}$（$y=0$）上，取 $x=R\\cos\\theta$：同理得 $R^{2}$\n\n$$\\oint_{L}x\\,ds=R^{2}+0+R^{2}=2R^{2}$$\n\n**质心**：由对称性 $\\bar{x}=\\bar{y}=\\bar{z}$，\n$$\\bar{x}=\\frac{2R^{2}}{\\frac{3\\pi R}{2}}=\\frac{4R}{3\\pi}$$\n\n**答案**：$\\bar{x}=\\bar{y}=\\bar{z}=\\dfrac{4R}{3\\pi}$，即质心为 $\\left(\\dfrac{4R}{3\\pi},\\dfrac{4R}{3\\pi},\\dfrac{4R}{3\\pi}\\right)$\n\n**校注**：用 $xOy$ 面上的弧长微元直接算也行——在 $l_{1}$ 上 $ds=\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^{2}}dx=\\dfrac{R}{\\sqrt{R^{2}-x^{2}}}dx$，则 $\\int_{0}^{R}x\\cdot\\dfrac{R}{\\sqrt{R^{2}-x^{2}}}dx=R^{2}$，结果一致。",
+        "cat": "曲线积分",
+        "topic": "第一类曲线积分·质心",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$\\dfrac{4R}{3\\pi}$"
+      },
+      {
+        "id": "cal-tc-073",
+        "type": "fill",
+        "difficulty": "hard",
+        "question": "计算 $\\displaystyle\\iint_{\\Sigma}(xy+yz+zx)\\,dS$，其中 $\\Sigma$ 为圆锥面 $z=\\sqrt{x^{2}+y^{2}}$ 被圆柱面 $x^{2}+y^{2}=2x$ 所截的部分。",
+        "solution": "**投影区域**：柱面 $x^{2}+y^{2}=2x$ 即 $(x-1)^{2}+y^{2}=1$，故\n$$D_{xy}=\\{(x,y)\\mid (x-1)^{2}+y^{2}\\le1\\}$$\n\n**用对称性消去两项**：$\\Sigma$ 关于 $xOz$ 坐标面对称（$y\\to-y$ 不变），而 $xy$ 与 $yz$ 关于 $y$ 是奇函数，故\n$$\\iint_{\\Sigma}xy\\,dS=\\iint_{\\Sigma}yz\\,dS=0$$\n\n于是\n$$\\iint_{\\Sigma}(xy+yz+zx)dS=\\iint_{\\Sigma}zx\\,dS$$\n\n**面积微元**：$z=\\sqrt{x^{2}+y^{2}}$，$z_{x}=\\dfrac{x}{\\sqrt{x^{2}+y^{2}}},\\ z_{y}=\\dfrac{y}{\\sqrt{x^{2}+y^{2}}}$\n$$dS=\\sqrt{1+z_{x}^{2}+z_{y}^{2}}\\,dxdy=\\sqrt{1+\\frac{x^{2}}{x^{2}+y^{2}}+\\frac{y^{2}}{x^{2}+y^{2}}}\\,dxdy=\\sqrt{2}\\,dxdy$$\n\n**化为二重积分并转极坐标**：\n$$\\iint_{\\Sigma}zx\\,dS=\\iint_{D_{xy}}\\sqrt{x^{2}+y^{2}}\\cdot x\\cdot\\sqrt{2}\\,dxdy$$\n\n$D$ 的极坐标表示：$r^{2}=2r\\cos\\theta$，即 $r=2\\cos\\theta,\\ \\theta\\in\\left[-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right]$：\n$$=\\sqrt{2}\\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}}d\\theta\\int_{0}^{2\\cos\\theta}r\\cos\\theta\\cdot r\\cdot r\\,dr\n=\\sqrt{2}\\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}}\\cos\\theta\\cdot\\frac{(2\\cos\\theta)^{4}}{4}\\,d\\theta$$\n$$=4\\sqrt{2}\\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}}\\cos^{5}\\theta\\,d\\theta\n=4\\sqrt{2}\\cdot2\\int_{0}^{\\frac{\\pi}{2}}\\cos^{5}\\theta\\,d\\theta\n=8\\sqrt{2}\\cdot\\frac{8}{15}=\\frac{64\\sqrt{2}}{15}$$\n\n（用到 $\\int_{0}^{\\pi/2}\\cos^{5}\\theta\\,d\\theta=\\dfrac{4}{5}\\cdot\\dfrac{2}{3}\\cdot1=\\dfrac{8}{15}$）\n\n**答案**：$\\dfrac{64\\sqrt{2}}{15}$",
+        "cat": "曲面积分",
+        "topic": "第一类曲面积分·锥面·对称性",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$\\dfrac{64\\sqrt{2}}{15}$"
+      },
+      {
+        "id": "cal-tc-074",
+        "type": "fill",
+        "difficulty": "medium",
+        "question": "设 $\\Sigma$ 是球面 $x^{2}+y^{2}+z^{2}=1\\ (x\\ge0,y\\ge0)$ 的外侧，求曲面积分 $\\displaystyle\\iint_{\\Sigma}xyz\\,dxdy$。",
+        "solution": "**分面**：$\\Sigma$ 由上下两片组成\n$$\\Sigma_{1}:z=\\sqrt{1-x^{2}-y^{2}}\\ (\\text{上侧}),\\qquad \\Sigma_{2}:z=-\\sqrt{1-x^{2}-y^{2}}\\ (\\text{下侧})$$\n\n**注意投影区域**：因为 $\\Sigma$ 只取 $x\\ge0,y\\ge0$ 的部分，两片在 $xOy$ 面的投影是\n$$D_{xy}=\\{(x,y)\\mid x\\ge0,\\ y\\ge0,\\ x^{2}+y^{2}\\le1\\}$$\n即第一象限的 $\\frac{1}{4}$ 圆（不是整个圆）。\n\n**化为二重积分**（上侧取正、下侧取负）：\n$$\\iint_{\\Sigma}xyz\\,dxdy=\\iint_{D_{xy}}xy\\sqrt{1-x^{2}-y^{2}}\\,dxdy+\\iint_{D_{xy}}xy(-\\sqrt{1-x^{2}-y^{2}})\\cdot(-1)\\,dxdy$$\n$$=2\\iint_{D_{xy}}xy\\sqrt{1-x^{2}-y^{2}}\\,dxdy$$\n\n**极坐标**（$D_{xy}$ 对应 $\\theta\\in\\left[0,\\dfrac{\\pi}{2}\\right],\\ r\\in[0,1]$）：\n$$=2\\int_{0}^{\\frac{\\pi}{2}}d\\theta\\int_{0}^{1}r\\cos\\theta\\cdot r\\sin\\theta\\cdot\\sqrt{1-r^{2}}\\cdot r\\,dr$$\n$$=2\\left(\\int_{0}^{\\frac{\\pi}{2}}\\cos\\theta\\sin\\theta\\,d\\theta\\right)\\left(\\int_{0}^{1}r^{3}\\sqrt{1-r^{2}}\\,dr\\right)$$\n\n前者 $=\\dfrac{1}{2}$；后者令 $u=1-r^{2}$：\n$$\\int_{0}^{1}r^{3}\\sqrt{1-r^{2}}dr=\\frac{1}{2}\\int_{0}^{1}(1-u)u^{1/2}du=\\frac{1}{2}\\left(\\frac{2}{3}-\\frac{2}{5}\\right)=\\frac{2}{15}$$\n\n$$\\iint_{\\Sigma}xyz\\,dxdy=2\\cdot\\frac{1}{2}\\cdot\\frac{2}{15}=\\frac{2}{15}$$\n\n**答案**：$\\dfrac{2}{15}$\n\n**校注**：这一步的 $\\theta$ 上限必须随 $x\\ge0,y\\ge0$ 写 $\\dfrac{\\pi}{2}$。若误写成 $[0,2\\pi]$，则 $\\int_{0}^{2\\pi}\\cos\\theta\\sin\\theta\\,d\\theta=0$，会得到 $0$（与第一象限外的部分正负相消）——结果就错了。",
+        "cat": "曲面积分",
+        "topic": "第二类曲面积分·分面投影",
+        "source": "经纬研选（五）·数一多元",
+        "answer": "$\\dfrac{2}{15}$"
       }
     ]
   },
@@ -13489,7 +13792,7 @@ var EDITOR_DATA = [
       {
         "id": "comp-307",
         "type": "choice",
-        "difficulty": "expert",
+        "difficulty": "hard",
         "question": "设函数 $f(x)$ 在 $x=0$ 处连续，给出下列四个条件：\n\n① $\\lim\\limits_{x\\to 0}\\dfrac{f(x)-f(0)}{\\ln(1+2x)}$ 存在；\n\n② $\\lim\\limits_{x\\to 0}\\dfrac{f(x^2)-f(0)}{x}$ 存在；\n\n③ $\\lim\\limits_{n\\to\\infty}n\\left[f\\left(\\dfrac{1}{n}\\right)-f(0)\\right]$ 存在；\n\n④ $\\lim\\limits_{x\\to 0}\\dfrac{f(x)-f(0)-\\dfrac{x}{1+x^2}}{x}$ 存在．\n\n其中能得出\"$f(x)$ 在 $x=0$ 处可导\"的条件个数是（　）",
         "answer": 1,
         "solution": "**本题命题手法对照 2025 年真题第 7 题**：四个条件表面上都是\"某个极限存在\"，实质分别踩在导数定义的不同门槛上——等价无穷小替换、单侧信息、归结原则（点列 vs 整体）、极限四则运算．逐条判定：\n\n**① 正确**．由 $\\ln(1+2x)\\sim 2x$（$x\\to0$，双向等价），且 $f(x)-f(0)\\to 0$（连续性），\n$$\\lim_{x\\to0}\\frac{f(x)-f(0)}{\\ln(1+2x)}=A\\ \\text{存在}\\ \\Longrightarrow\\ \\lim_{x\\to0}\\frac{f(x)-f(0)}{x}=\\lim_{x\\to0}\\frac{f(x)-f(0)}{\\ln(1+2x)}\\cdot\\frac{\\ln(1+2x)}{x}=2A,$$\n即 $f'(0)=2A$ 存在．（考等价无穷小替换：分母换成同阶量不改变\"是否存在\"的结论．）\n\n**② 错误**．$x^2\\ge0$，条件只含 $f$ 在**右侧**的信息：令 $t=x^2$，则 $\\dfrac{f(x^2)-f(0)}{x}=\\dfrac{f(t)-f(0)}{\\sqrt t}$（$t>0$），极限存在只说明 $\\lim\\limits_{t\\to0^+}\\dfrac{f(t)-f(0)}{\\sqrt{t}}$ 存在，完全控制不到左侧．\n反例：$f(x)=|x|$（连续，$f(0)=0$），$\\dfrac{f(x^2)-f(0)}{x}=\\dfrac{x^2}{x}=x\\to0$ 存在，但 $f$ 在 $x=0$ 不可导．（考\"单侧信息不足\"——与真题第 7 题中\"③ $\\frac{|f(x)|}{x}$ 型条件\"同源．）\n\n**③ 错误**．条件只沿**点列** $x_n=\\frac1n$ 成立．由归结原则（海涅定理），\"整列极限存在 $\\Rightarrow$ 任意点列极限存在且相等\"，但**一个点列的极限存在推不出整体极限存在**．\n反例：$f(x)=x\\sin\\dfrac{\\pi}{x}$（补充定义 $f(0)=0$，连续），则 $n\\left[f\\left(\\dfrac1n\\right)-f(0)\\right]=\\sin n\\pi=0$ 存在；但 $\\dfrac{f(x)-f(0)}{x}=\\sin\\dfrac{\\pi}{x}$ 当 $x\\to0$ 无极限，$f'(0)$ 不存在．（考归结原则的必要不充分性．）\n\n**④ 正确**．设该极限为 $A$，则由极限的四则运算法则：\n$$\\lim_{x\\to0}\\frac{f(x)-f(0)}{x}=\\lim_{x\\to0}\\left[\\frac{f(x)-f(0)-\\frac{x}{1+x^2}}{x}+\\frac{1}{1+x^2}\\right]=A+1,$$\n存在，即 $f'(0)=A+1$．（考\"收敛 + 收敛 = 收敛\"的拆分；对照 2025 真题第 7 题④的处理思想．）\n\n综上，能得出可导的是①④，共 **2** 个，**选 B**．\n\n> **命题注记（给老板）**：2025 真题第 7 题官方答案 B（②④），但严格数学分析（保号性逼出 $\\lim\\frac{|f(x)|}{x}=0$）支持四个条件全部成立，是当年著名的争议题，多家机构评析认为\"四个全对\"正是其\"奇异之美\"．本题沿用\"四条件判个数\"的骨架与\"每个条件各踩一个知识点\"的分工（等价无穷小／单双侧／归结原则／四则拆分），但答案取平凡的\"2 个\"，四条判定本身无争议．",
