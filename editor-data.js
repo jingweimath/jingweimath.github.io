@@ -3289,7 +3289,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "**一阶微分方程**是指方程中出现的未知函数的最高阶导数为一阶。\n\n- A项：$y''$ 出现，是二阶微分方程 ❌\n- B项：只出现 $y'$，是一阶微分方程 ✅\n- C项：偏微分方程，不是常微分方程 ❌\n- D项：$y^{(3)}$ 出现，是三阶微分方程 ❌\n\n**答案：B**",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "可分离变量与齐次方程"
       },
       {
         "id": "cal-de-002",
@@ -3304,7 +3305,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**分离变量法**：\n\nxy' = y\\ln y \\quad \\Rightarrow \\quad \\frac{dy}{y\\ln y} = \\frac{dx}{x}\n\n令 u = \\ln y，则 du = \\frac{dy}{y}，左边化为 \\frac{du}{u} = \\frac{dx}{x}。\n\n积分得：\\ln|u| = \\ln|x| + C_1，即 u = Cx，所以 \\ln y = Cx，故 y = e^{Cx}。\n\n**答案：A**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "可分离变量与齐次方程"
       },
       {
         "id": "cal-de-004",
@@ -3319,7 +3321,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$**一阶线性微分方程**，积分因子法：\n\nP(x) = \\frac{1}{x}，Q(x) = x\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = e^{\\ln x} = x\n\n方程两边同乘 x：xy' + y = x^2，即 \\frac{d}{dx}(xy) = x^2\n\n积分：xy = \\frac{x^3}{3} + C \\Rightarrow y = \\frac{x^2}{3} + \\frac{C}{x}\n\n代入 y(1) = 1：\\frac{1}{3} + C = 1 \\Rightarrow C = \\frac{2}{3}\n\n所以 y = \\frac{x^2}{3} + \\frac{2}{3x}\n\n**答案：B**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-de-005",
@@ -3334,7 +3337,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$**齐次方程的判定**：方程右端是 \\frac{y}{x} 的函数，即 y' = f\\left(\\frac{y}{x}\\right) 形式。\n\n令 u = \\frac{y}{x}，则 y = ux，y' = u + xu'，方程化为：\n\nu + xu' = u + \\tan u \\Rightarrow xu' = \\tan u（可分离变量）\n\n**答案：B**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "可分离变量与齐次方程"
       },
       {
         "id": "cal-de-006",
@@ -3349,7 +3353,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**可降阶微分方程** y'' = f(x) 型：直接积分两次。\n\ny' = \\int (x + \\sin x)dx = \\frac{x^2}{2} - \\cos x + C_1\n\ny = \\int \\left(\\frac{x^2}{2} - \\cos x + C_1\\right)dx = \\frac{x^3}{6} - \\sin x + C_1x + C_2\n\n**答案：A**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "可降阶方程"
       },
       {
         "id": "cal-de-007",
@@ -3364,7 +3369,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**二阶常系数齐次线性微分方程**：\n\n特征方程：r^2 - 4r + 3 = 0 \\Rightarrow (r-1)(r-3) = 0\n\n特征根：r_1 = 1,\\ r_2 = 3（互异实根）\n\n通解：y = C_1e^{r_1x} + C_2e^{r_2x} = C_1e^x + C_2e^{3x}\n\n**答案：A**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数齐次"
       },
       {
         "id": "cal-de-009",
@@ -3379,7 +3385,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**二阶常系数齐次方程** y'' + y = 0：\n\n特征方程：r^2 + 1 = 0 \\Rightarrow r = \\pm i\n\n通解：y = C_1\\cos x + C_2\\sin x\n\n代入 y(0) = 1：C_1 = 1\n\ny' = -C_1\\sin x + C_2\\cos x，代入 y'(0) = 0：C_2 = 0\n\n所以 y = \\cos x\n\n**答案：A**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数齐次"
       },
       {
         "id": "cal-de-010",
@@ -3394,7 +3401,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$**全微分方程的充要条件**：\n\n若存在函数 u(x,y) 使得 du = Mdx + Ndy，则\n\n\\frac{\\partial u}{\\partial x} = M,\\quad \\frac{\\partial u}{\\partial y} = N\n\n由混合偏导数相等：\\frac{\\partial M}{\\partial y} = \\frac{\\partial^2 u}{\\partial y\\partial x} = \\frac{\\partial^2 u}{\\partial x\\partial y} = \\frac{\\partial N}{\\partial x}\n\n**答案：B**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "全微分方程"
       },
       {
         "id": "cal-de-011",
@@ -3409,7 +3417,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$**一阶线性方程**，先化简：\n\ny' + \\frac{1}{x}y = \\frac{\\ln x}{x}\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = x\n\n同乘 x：(xy)' = \\ln x\n\n积分：xy = \\int \\ln x dx = x\\ln x - x + C\n\n所以 y = \\ln x - 1 + \\frac{C}{x}\n\n**答案：B**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-de-012",
@@ -3424,7 +3433,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**齐次方程**，令 y = ux，则 y' = u + xu'：\n\nu + xu' = \\frac{1 + u}{1 - u}\n\nxu' = \\frac{1 + u}{1 - u} - u = \\frac{1 + u^2}{1 - u}\n\n分离变量：\\frac{1 - u}{1 + u^2}du = \\frac{dx}{x}\n\n积分：\\arctan u - \\frac{1}{2}\\ln(1+u^2) = \\ln|x| + C\n\n代回 u = y/x，化简得：\\arctan\\frac{y}{x} = \\ln\\sqrt{x^2 + y^2} + C\n\n**答案：A**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "可分离变量与齐次方程"
       },
       {
         "id": "cal-de-013",
@@ -3439,7 +3449,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$**二阶常系数非齐次线性微分方程**，待定系数法：\n\n对应齐次方程：y'' + y' - 2y = 0\n\n特征方程：r^2 + r - 2 = 0 \\Rightarrow r_1 = 1,\\ r_2 = -2\n\n非齐次项 f(x) = e^x，1 是单特征根，所以特解形式应设为：\n\ny^* = Axe^x \\quad \\text{（需乘 } x \\text{ 因为 } \\lambda = 1 \\text{ 是特征根）}\n\n**答案：B**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数非齐次"
       },
       {
         "id": "cal-de-014",
@@ -3454,7 +3465,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$**待定系数法**，f(x) = e^x\\sin x，即 f(x) = e^{\\alpha x}(P\\cos\\beta x + Q\\sin\\beta x) 型，其中 \\alpha = 1,\\ \\beta = 1。\n\n特征方程：r^2 - 2r + 2 = 0 \\Rightarrow r = 1 \\pm i\n\n\\alpha + i\\beta = 1 + i 恰为特征根，所以特解形式需乘 x：\n\ny^* = xe^x(A\\cos x + B\\sin x)\n\n**答案：B**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数非齐次"
       },
       {
         "id": "cal-de-015",
@@ -3469,7 +3481,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**一阶线性方程**：\n\nx^2y' + xy = 1 \\Rightarrow y' + \\frac{1}{x}y = \\frac{1}{x^2}\n\n积分因子：\\mu(x) = e^{\\int \\frac{1}{x}dx} = x\n\n同乘 x：(xy)' = \\frac{1}{x}\n\n积分：xy = \\ln x + C \\Rightarrow y = \\frac{\\ln x + C}{x}\n\n代入 y(1) = 0：\\frac{C}{1} = 0 \\Rightarrow C = 0\n\n所以 y = \\frac{\\ln x}{x}\n\n**答案：A**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-de-017",
@@ -3484,7 +3497,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**由特解反求微分方程**：\n\n若 y_1 = e^x,\\ y_2 = e^{-x} 是线性无关特解，则通解为 y = C_1e^x + C_2e^{-x}。\n\n对应的特征根为 r_1 = 1,\\ r_2 = -1，特征方程为 (r-1)(r+1) = r^2 - 1 = 0。\n\n故微分方程为 y'' - y = 0。\n\n**答案：A**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数齐次"
       },
       {
         "id": "cal-de-018",
@@ -3499,7 +3513,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**叠加原理**，f(x) = 3\\cos x + \\sin 2x 分两部分处理。\n\n特征方程：r^2 + 4 = 0 \\Rightarrow r = \\pm 2i\n\n- 对 3\\cos x：\\pm i 不是特征根，设 A\\cos x + B\\sin x ✅\n- 对 \\sin 2x：\\pm 2i 是特征根，设 x(C\\cos 2x + D\\sin 2x) ✅\n\n合并：y^* = A\\cos x + B\\sin x + x(C\\cos 2x + D\\sin 2x)\n\n**答案：A**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数非齐次"
       },
       {
         "id": "cal-de-019",
@@ -3514,7 +3529,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**齐次方程**，令 u = y/x，则 y = ux，y' = u + xu'：\n\nu + xu' = u + \\frac{1}{u} \\Rightarrow xu' = \\frac{1}{u}\n\n分离变量：u du = \\frac{dx}{x}，积分得 \\frac{u^2}{2} = \\ln|x| + C。\n\n代回 u = y/x：\\frac{y^2}{2x^2} = \\ln|x| + C \\Rightarrow y^2 = 2x^2(\\ln|x| + C)。\n\n代入 y(1) = 2：4 = 2(0 + C) \\Rightarrow C = 2。\n\n所以 y^2 = 2x^2(\\ln x + 2) = x^2(4 + 2\\ln x) = x^2(4 + \\ln x^2)。\n\n故 y = x\\sqrt{4 + \\ln x^2} = x\\sqrt{3 + \\ln x^2 + 1}… 直接算：4 + \\ln x^2 = \\ln(e^4 \\cdot x^2)，选项A：3 + \\ln x^2。\n\n重算：C=2，y^2 = 2x^2(\\ln x + 2) = 2x^2\\ln x + 4x^2 = x^2(2\\ln x + 4) = x^2(\\ln x^2 + 4)。\n\n选项A：y = x\\sqrt{3+\\ln x^2}，y^2 = x^2(3+\\ln x^2) \\neq x^2(4+\\ln x^2)。\n\n选项C：y = x\\sqrt{\\ln x+4}，y^2 = x^2(\\ln x+4) = x^2\\ln x+4x^2 ✅\n\n**答案：C**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "可分离变量与齐次方程"
       },
       {
         "id": "cal-de-020",
@@ -3529,7 +3545,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "$**二阶常系数非齐次线性微分方程**：\n\n齐次通解：特征方程 r^2-1=0 \\Rightarrow r=\\pm 1，y_h = C_1e^x + C_2e^{-x}\n\n求特解：f(x) = e^x + 1\n- 对 e^x：1 是特征根，设 y_1^* = Axe^x\n- 对常数 1：0 不是特征根，设 y_2^* = B\n\n设 y^* = Axe^x + B，代入原方程确定 A = \\frac{1}{2},\\ B = -1。\n\n所以通解：y = C_1e^x + C_2e^{-x} + \\frac{1}{2}xe^x - 1\n\n代入 y(0)=1,\\ y'(0)=1 解得 C_1 = 1,\\ C_2 = \\frac{1}{2}。\n\n最终：y = e^x + \\frac{1}{2}e^{-x} + \\frac{1}{2}xe^x - 1 = \\frac{1}{2}xe^x + \\frac{1}{2}e^{-x} + (e^x - 1)…\n\n整理后对应选项C：\\frac{1}{2}xe^x + \\frac{1}{2}e^{-x} + \\frac{1}{2} （具体系数代入验证）\n\n**答案：C**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数非齐次"
       },
       {
         "id": "cal-de-021",
@@ -3544,7 +3561,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**由微分定义求微分方程**：\n\n\\Delta y = \\frac{y}{1+x}\\Delta x + o(\\Delta x) 意味着 dy = \\frac{y}{1+x}dx，即\n\n\n\\frac{dy}{dx} = \\frac{y}{1+x}\n\n\n分离变量：\\frac{dy}{y} = \\frac{dx}{1+x}，积分得 \\ln|y| = \\ln|1+x| + C。\n\n所以 y = C(1+x)，代入 y(0) = \\pi 得 C = \\pi。\n\n故 y = \\pi(1+x)。\n\n**答案：A**$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "微分方程应用与综合"
       },
       {
         "id": "cal-de-033",
@@ -3559,7 +3577,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$一阶线性：y=e^{-\\int xdx}[\\int xe^{\\int xdx}dx+C]=e^{-x^2/2}[\\int xe^{x^2/2}dx+C]=1+Ce^{-x^2/2}，y(0)=1+C=0知C=-1。$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-de-034",
@@ -3574,7 +3593,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$齐次解含\\sin x,\\cos x，非齐次项与之同型，特解需乘x。$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数非齐次"
       },
       {
         "id": "cal-de-041",
@@ -3583,7 +3603,8 @@ var EDITOR_DATA = [
         "question": "$(1+x^2)dy+2xydx=0$ 的通解为(  )。",
         "answer": "y=C/(1+x²)",
         "solution": "$\\frac{dy}{y}=-\\frac{2x}{1+x^2}dx，\\ln y=-\\ln(1+x^2)+C，y=C/(1+x^2)。$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "可分离变量与齐次方程"
       },
       {
         "id": "cal-de-044",
@@ -3592,7 +3613,8 @@ var EDITOR_DATA = [
         "question": "$xy'+y=x^2$ 满足 $y(1)=1$ 的特解为(  )。",
         "answer": "y=x²/3+2/(3x)",
         "solution": "化为$(xy)'=x^2$，积分$xy=x^3/3+C$，$y(1)=1$得$C=2/3$，$y=x^2/3+2/(3x)$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-de-046",
@@ -3601,7 +3623,8 @@ var EDITOR_DATA = [
         "question": "$y''+y=x\\cos x 的特解形式可设为(  )。$",
         "answer": "(Ax²+Bx)cos x+(Cx²+Dx)sin x",
         "solution": "$右端x\\cos x，\\pm i为单特征根，需乘x：x[(ax+b)\\cos x+(cx+d)\\sin x]。$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数非齐次"
       },
       {
         "id": "cal-de-047",
@@ -3610,7 +3633,8 @@ var EDITOR_DATA = [
         "question": "$伯努利方程 y'+\\frac{y}{x}=xy^2 的通解为 y=(  )。$",
         "answer": "1/(x(C-ln x))",
         "solution": "$令z=1/y化为一阶线性：z'-z/x=-1，解z=x(C-\\ln x)。$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "伯努利方程"
       },
       {
         "id": "cal-de-048",
@@ -3619,7 +3643,8 @@ var EDITOR_DATA = [
         "question": "欧拉方程 $x^2y''+xy'+y=0$ 的通解为(  )。",
         "answer": "y=C₁cos(ln x)+C₂sin(ln x)",
         "solution": "$令x=e^t，化为常系数：D(D-1)y+Dy+y=0，即D^2+1=0，y=C_1\\cos t+C_2\\sin t=C_1\\cos(\\ln x)+C_2\\sin(\\ln x)。$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "欧拉方程"
       },
       {
         "id": "cal-de-049",
@@ -3634,7 +3659,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$令p=y'，p'=p，p=C_1e^x，再积分y=C_1e^x+C_2。$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "可降阶方程"
       },
       {
         "id": "cal-de-050",
@@ -3643,7 +3669,8 @@ var EDITOR_DATA = [
         "question": "$y'+\\frac{y}{x}=\\frac{\\ln x}{x} 的通解为 y=(  )。$",
         "answer": "ln x - 1 + C/x",
         "solution": "$积分因子x：(xy)'=\\ln x，xy=x\\ln x-x+C，y=\\ln x-1+C/x。$",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-diffeq-052",
@@ -3658,7 +3685,8 @@ var EDITOR_DATA = [
         "answer": 3,
         "difficulty": "hard",
         "solution": "积分因子 $\\mu(x)=e^{\\int\\tan xdx}=e^{\\ln\\sec x}=\\sec x$。则 $(y\\sec x)'=\\cos x\\cdot\\sec x=1$，积分得 $y\\sec x=x+C$，即 $y=(x+C)\\cos x$。由 $y(0)=1$ 得 $C=1$，特解 $y=(x+1)\\cos x$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-diffeq-053",
@@ -3667,7 +3695,8 @@ var EDITOR_DATA = [
         "answer": "$C$",
         "difficulty": "hard",
         "solution": "以 $y$ 为自变量，改写为 $\\frac{dx}{dy}+\\frac{x}{y}=3y$。积分因子 $\\mu(y)=e^{\\int\\frac{1}{y}dy}=y$。则 $(xy)'_y = 3y^{2}$，积分 $xy = y^{3} + C$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-diffeq-054",
@@ -3682,7 +3711,8 @@ var EDITOR_DATA = [
         "answer": 1,
         "difficulty": "hard",
         "solution": "特征方程 $r^{2}-2r+1=0$，$r=1$ 为二重特征根。右端 $xe^{x}$ 中 $\\lambda=1$ 是二重根，且右端一次多项式，故特解应乘 $x^{2}$，设为 $y^{*}=x^{2}(Ax+B)e^{x}$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数非齐次"
       },
       {
         "id": "cal-diffeq-055",
@@ -3697,7 +3727,8 @@ var EDITOR_DATA = [
         "answer": 0,
         "difficulty": "hard",
         "solution": "令 $x=e^{t}$，则 $xy'=\\frac{dy}{dt}$，$x^{2}y''=\\frac{d^{2}y}{dt^{2}}-\\frac{dy}{dt}$。代入得 $y''_{t}-2y'_{t}+y=2t$。特征根 $r=1$（二重），齐次通解 $y_{h}=C_{1}e^{t}+C_{2}te^{t}=C_{1}x+C_{2}x\\ln x$。设特解 $y^{*}=At+B$，代入得 $y^{*}=2t+4=2\\ln x+4$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "欧拉方程"
       },
       {
         "id": "cal-diffeq-056",
@@ -3712,7 +3743,8 @@ var EDITOR_DATA = [
         "answer": 0,
         "difficulty": "hard",
         "solution": "$\\int_{0}^{x}(x-t)f(t)dt = x\\int_{0}^{x}f(t)dt-\\int_{0}^{x}tf(t)dt$。两次求导得 $f''(x)+f(x)=-\\sin x$。初始条件 $f(0)=0$，$f'(0)=1$。齐次通解 $C_{1}\\cos x+C_{2}\\sin x$，特解 $\\frac{1}{2}x\\cos x$（因 $-\\sin x$ 中 $\\lambda=i$ 为单特征根）。通解代入初值得 $C_{1}=0,C_{2}=\\frac{1}{2}$，故 $f=\\frac{1}{2}(\\sin x+x\\cos x)$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "积分方程化为微分方程"
       },
       {
         "id": "cal-diffeq-057",
@@ -3727,7 +3759,8 @@ var EDITOR_DATA = [
         "answer": 1,
         "difficulty": "hard",
         "solution": "$y'=\\frac{y}{x}+x^{2}$，即 $y'-\\frac{y}{x}=x^{2}$。积分因子 $\\mu=e^{-\\int\\frac{1}{x}dx}=\\frac{1}{x}$。$(\\frac{y}{x})'=x$，积分 $\\frac{y}{x}=\\frac{x^{2}}{2}+C$，$y=\\frac{x^{3}}{2}+Cx$。由 $y(1)=0$ 得 $\\frac{1}{2}+C=0$，$C=-\\frac{1}{2}$。故 $y=\\frac{1}{2}x^{3}-\\frac{1}{2}x=\\frac{1}{2}x(x^{2}-1)$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "微分方程应用与综合"
       },
       {
         "id": "cal-diffeq-058",
@@ -3742,7 +3775,8 @@ var EDITOR_DATA = [
         "answer": 0,
         "difficulty": "hard",
         "solution": "不显含 $x$，令 $y'=p$，则 $y''=p\\frac{dp}{dy}$。代入 $yp\\frac{dp}{dy}=p^{2}$，$p\\neq0$ 时 $\\frac{dp}{p}=\\frac{dy}{y}$，$\\ln|p|=\\ln|y|+C$，$p=Cy$。由 $p(1)=2$ 得 $C=2$。$\\frac{dy}{dx}=2y$，$y=Ae^{2x}$，由 $y(0)=1$ 得 $A=1$，$y=e^{2x}$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "可降阶方程"
       },
       {
         "id": "cal-diffeq-059",
@@ -3757,7 +3791,8 @@ var EDITOR_DATA = [
         "answer": 2,
         "difficulty": "hard",
         "solution": "特征方程 $r^{2}-1=0$，$r=\\pm1$。右端 $\\sin x$ 对应 $\\lambda=0,\\omega=1$，$\\lambda+i\\omega=i$ 不是特征根，故特解设为 $y^{*}=A\\sin x+B\\cos x$。代入得 $(-A\\sin x-B\\cos x)-(A\\sin x+B\\cos x)=\\sin x$，$-2A\\sin x-2B\\cos x=\\sin x$，$A=-\\frac{1}{2},B=0$。特解 $y^{*}=-\\frac{1}{2}\\sin x$。答案选 A（形式为 $A\\sin x+B\\cos x$），即选项0。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数非齐次"
       },
       {
         "id": "cal-diffeq-060",
@@ -3772,7 +3807,8 @@ var EDITOR_DATA = [
         "answer": 2,
         "difficulty": "hard",
         "solution": "特征方程 $r^{2}+4=0$，$r=\\pm 2i$。右端 $x\\sin 2x$ 中 $\\lambda=0,\\omega=2$，$\\lambda+i\\omega=2i$ 是单特征根。右端对应一次多项式乘 $\\sin 2x$，特解乘 $x$ 后设为 $y^{*}=x[(Ax+B)\\cos 2x+(Cx+D)\\sin 2x]$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "二阶常系数非齐次"
       },
       {
         "id": "cal-diffeq-061",
@@ -3787,7 +3823,8 @@ var EDITOR_DATA = [
         "answer": 0,
         "difficulty": "hard",
         "solution": "化为标准型 $y' - \\frac{n}{x+1}y = e^{x}(x+1)^{n}$。积分因子 $\\mu=e^{-n\\int\\frac{dx}{x+1}}=(x+1)^{-n}$。则 $[y(x+1)^{-n}]'=e^{x}$，积分 $y(x+1)^{-n}=e^{x}+C$，$y=(x+1)^{n}(e^{x}+C)$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-diffeq-062",
@@ -3796,7 +3833,8 @@ var EDITOR_DATA = [
         "answer": "$\\frac{1}{4} + \\frac{1}{4e^{2}}$",
         "difficulty": "hard",
         "solution": "积分因子 $\\mu(x)=e^{\\int\\frac{2}{x}dx}=x^{2}$。$(x^{2}y)'=x\\ln x$，分部积分 $x^{2}y=\\frac{x^{2}}{2}\\ln x-\\frac{x^{2}}{4}+C$。$y(1)=0$ 得 $C=\\frac{1}{4}$。$y=\\frac{1}{2}\\ln x-\\frac{1}{4}+\\frac{1}{4x^{2}}$。$y(e)=\\frac{1}{2}-\\frac{1}{4}+\\frac{1}{4e^{2}}=\\frac{1}{4}+\\frac{1}{4e^{2}}$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-diffeq-063",
@@ -3805,7 +3843,8 @@ var EDITOR_DATA = [
         "answer": "$x\\ln|x|$",
         "difficulty": "hard",
         "solution": "由刘维尔公式，标准型 $y''-\\frac{1}{x}y'+\\frac{1}{x^{2}}y=0$，$P(x)=-\\frac{1}{x}$。$y_{2}=y_{1}\\int\\frac{e^{-\\int P(x)dx}}{y_{1}^{2}}dx=x\\int\\frac{e^{\\int\\frac{1}{x}dx}}{x^{2}}dx=x\\int\\frac{x}{x^{2}}dx=x\\int\\frac{1}{x}dx=x\\ln|x|$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "高阶线性方程与解的结构"
       },
       {
         "id": "cal-diffeq-064",
@@ -3820,7 +3859,8 @@ var EDITOR_DATA = [
         "answer": 2,
         "difficulty": "hard",
         "solution": "Wronsky 行列式 $W=\\begin{vmatrix}\\cos x&\\sin x\\\\-\\sin x&\\cos x\\end{vmatrix}=\\cos^{2}x+\\sin^{2}x=1$。常数变易法公式：$y^{*}=y_{1}\\int\\frac{-y_{2}f}{W}dx+y_{2}\\int\\frac{y_{1}f}{W}dx=-\\cos x\\int f\\sin x\\,dx+\\sin x\\int f\\cos x\\,dx$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "高阶线性方程与解的结构"
       },
       {
         "id": "cal-diffeq-065",
@@ -3835,7 +3875,8 @@ var EDITOR_DATA = [
         "answer": 0,
         "difficulty": "hard",
         "solution": "改写 $\\frac{dx}{dy}+\\frac{2y-\\frac{e^{-2y}}{y}}{y}x=?$ 不对，直接整理：$y dx+(2xy-e^{-2y})dy=0$，除以 $dy$：$y\\frac{dx}{dy}+2xy=e^{-2y}$。标准型 $\\frac{dx}{dy}+2x=\\frac{e^{-2y}}{y}$。$P(y)=2$，积分因子 $\\mu=e^{\\int 2dy}=e^{2y}$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-diffeq-066",
@@ -3850,7 +3891,8 @@ var EDITOR_DATA = [
         "answer": 0,
         "difficulty": "hard",
         "solution": "积分因子 $\\mu(x)=e^{\\int\\frac{1}{x}dx}=x$。$(xy)'=\\sin x$，积分 $xy=-\\cos x+C$，$y=\\frac{1}{x}(-\\cos x+C)$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-diffeq-067",
@@ -3865,7 +3907,8 @@ var EDITOR_DATA = [
         "answer": 1,
         "difficulty": "hard",
         "solution": "原式 $xdy-ydx=y^{2}dy$，同除以 $dy$：$x-y\\frac{dx}{dy}=y^{2}$。即 $-y\\frac{dx}{dy}=y^{2}-x$，$\\frac{dx}{dy}-\\frac{x}{y}=-y$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "一阶线性方程"
       },
       {
         "id": "cal-diffeq-068",
@@ -3880,7 +3923,8 @@ var EDITOR_DATA = [
         "answer": 0,
         "difficulty": "hard",
         "solution": "化为 $y'+\\frac{1}{x}y=\\frac{\\ln x}{x}y^{2}$，是伯努利方程（$n=2$）。令 $z=y^{1-2}=y^{-1}$，则 $z'=-y^{-2}y'$，代入得 $z'-\\frac{1}{x}z=-\\frac{\\ln x}{x}$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "伯努利方程"
       },
       {
         "id": "cal-diffeq-069",
@@ -3889,7 +3933,8 @@ var EDITOR_DATA = [
         "answer": "$e^{x}$",
         "difficulty": "hard",
         "solution": "两边对 $x$ 求导：$f(x)=f'(x)$，即 $f'-f=0$，通解 $f=Ce^{x}$。代回原方程：$\\int_{0}^{x}Ce^{t}dt=C(e^{x}-1)=Ce^{x}-1$，得 $C=1$。故 $f(x)=e^{x}$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "积分方程化为微分方程"
       },
       {
         "id": "cal-diffeq-070",
@@ -3904,7 +3949,8 @@ var EDITOR_DATA = [
         "answer": 1,
         "difficulty": "hard",
         "solution": "令 $y'=p$，$\\frac{dp}{dx}=p^{2}+1$，$\\frac{dp}{1+p^{2}}=dx$，$\\arctan p=x+C_{1}$。由 $p(0)=0$ 得 $C_{1}=0$，$p=\\tan x$。$\\frac{dy}{dx}=\\tan x$，$y=-\\ln|\\cos x|+C_{2}$。由 $y(0)=0$ 得 $C_{2}=0$。故 $y=-\\ln|\\cos x|$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "可降阶方程"
       },
       {
         "id": "cal-diffeq-071",
@@ -3919,7 +3965,8 @@ var EDITOR_DATA = [
         "answer": 0,
         "difficulty": "hard",
         "solution": "令 $u=y/x$，则 $y=xu$，$y'=u+xu'$。代入：$u+x\\frac{du}{dx}=\\frac{x+xu}{x-xu}=\\frac{1+u}{1-u}$。",
-        "cat": "微分方程"
+        "cat": "微分方程",
+        "topic": "可分离变量与齐次方程"
       },
       {
         "id": "cal-de-ode-01",
@@ -3928,7 +3975,7 @@ var EDITOR_DATA = [
         "question": "求微分方程 $xy'-y\\ln y=0$ 的通解。",
         "solution": "分离变量：\\[\\frac{dy}{y\\ln y}=\\frac{dx}{x},\\quad x\\ne0,\\; y>0,\\; y\\ne1.\\]两边积分：$\\ln|\\ln y|=\\ln|x|+C$，即 $\\ln y=Cx$，故通解为\n\\[y=e^{Cx}\\]（$C$ 为任意常数；另有特解 $y=1$）。",
         "cat": "微分方程",
-        "topic": "可分离变量方程",
+        "topic": "可分离变量与齐次方程",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -3939,7 +3986,7 @@ var EDITOR_DATA = [
         "question": "求微分方程 $\\dfrac{dy}{dx}=\\dfrac{xy-y^{2}}{x^{2}-2xy}$ 满足 $y(1)=1$ 的解。",
         "solution": "分子分母同除以 $x^{2}$：\\[\\frac{dy}{dx}=\\frac{\\frac{y}{x}-\\left(\\frac{y}{x}\\right)^{2}}{1-2\\frac{y}{x}}.\\]令 $u=\\dfrac{y}{x}$，则 $u+x\\dfrac{du}{dx}=\\dfrac{u-u^{2}}{1-2u}$，整理得\n\\[\\frac{1-2u}{u^{2}}du=\\frac{dx}{x}.\\]积分：$-\\dfrac{1}{u}-2\\ln|u|=\\ln|x|+C$，代回 $u=\\dfrac{y}{x}$ 并整理：\n\\[\\ln\\frac{y^{2}}{x}+\\frac{x}{y}+C=0.\\]代入 $y(1)=1$：$0+1+C=0$，得 $C=-1$。故所求解为\n\\[\\ln\\frac{y^{2}}{x}+\\frac{x}{y}-1=0.\\]",
         "cat": "微分方程",
-        "topic": "齐次方程",
+        "topic": "可分离变量与齐次方程",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -3961,7 +4008,7 @@ var EDITOR_DATA = [
         "question": "求微分方程 $\\dfrac{dy}{dx}=\\dfrac{1}{x+y^{2}}$ 的通解。",
         "solution": "把 $x$ 看作 $y$ 的函数：$\\dfrac{dx}{dy}=x+y^{2}$，即 $\\dfrac{dx}{dy}-x=y^{2}$，关于 $x$ 是一阶线性的。\n\\[x=e^{\\int dy}\\left[\\int y^{2}e^{-\\int dy}dy+C\\right]=e^{y}\\left[\\int y^{2}e^{-y}dy+C\\right].\\]而 $\\int y^{2}e^{-y}dy=-(y^{2}+2y+2)e^{-y}$，故\n\\[x=Ce^{y}-y^{2}-2y-2.\\]",
         "cat": "微分方程",
-        "topic": "一阶线性方程·反解自变量",
+        "topic": "一阶线性方程",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -3994,7 +4041,7 @@ var EDITOR_DATA = [
         "question": "求微分方程 $yy''-(y')^{2}=0$ 满足 $y(0)=1,\\;y'(0)=2$ 的特解。",
         "solution": "方程不显含 $x$。令 $y'=p$，则 $y''=p\\dfrac{dp}{dy}$，代入得\n\\[yp\\frac{dp}{dy}-p^{2}=0.\\]约去 $p$（$p\\not\\equiv0$）：$\\dfrac{dp}{p}=\\dfrac{dy}{y}$，积分得 $p=c_1y$。由 $y(0)=1$、$p(0)=y'(0)=2$ 得 $c_1=2$，即 $y'=2y$。再分离变量：$\\ln|y|=2x+c_2$；由 $y(0)=1$ 得 $c_2=0$。故\n\\[y=e^{2x}.\\]",
         "cat": "微分方程",
-        "topic": "可降阶方程·不显含自变量",
+        "topic": "可降阶方程",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -4005,7 +4052,7 @@ var EDITOR_DATA = [
         "question": "写出微分方程 $y''-y=e^{-x}+2$ 的一个特解。",
         "solution": "特征方程 $\\lambda^{2}-1=0$，$\\lambda=\\pm1$。\n\n对 $e^{-x}$：$-1$ 为单根，设 $y_1^{*}=axe^{-x}$，代入 $y''-y=e^{-x}$ 得 $-2ae^{-x}=e^{-x}$，故 $a=-\\dfrac12$，$y_1^{*}=-\\dfrac12xe^{-x}$。\n\n对常数 $2$：设 $y_2^{*}=b$，代入 $y''-y=2$ 得 $-b=2$，故 $b=-2$。\n\n合起来，原方程的一个特解为\n\\[y^{*}=-\\frac12xe^{-x}-2.\\]",
         "cat": "微分方程",
-        "topic": "二阶常系数非齐次·特解",
+        "topic": "二阶常系数非齐次",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -4016,7 +4063,7 @@ var EDITOR_DATA = [
         "question": "写出微分方程 $y''+y=x^{2}-\\cos x$ 的一个特解。",
         "solution": "特征方程 $\\lambda^{2}+1=0$，$\\lambda=\\pm i$。\n\n对 $x^{2}$：设 $y_1^{*}=ax^{2}+bx+c$，代入 $y''+y=x^{2}$：$2a+ax^{2}+bx+c=x^{2}$，比较得 $a=1,\\;b=0,\\;c=-2$，即 $y_1^{*}=x^{2}-2$。\n\n对 $-\\cos x$：$\\pm i$ 为单根，取 $k=1$，设 $y_2^{*}=x(A\\sin x+B\\cos x)$，代入 $y''+y=-\\cos x$ 得 $A=-\\dfrac12,\\;B=0$，即 $y_2^{*}=-\\dfrac12x\\sin x$。\n\n故一个特解为\n\\[y^{*}=x^{2}-2-\\frac12x\\sin x.\\]",
         "cat": "微分方程",
-        "topic": "二阶常系数非齐次·特解",
+        "topic": "二阶常系数非齐次",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -4027,7 +4074,7 @@ var EDITOR_DATA = [
         "question": "写出微分方程 $y'''-y''=x$ 的一个特解。",
         "solution": "特征方程 $\\lambda^{3}-\\lambda^{2}=0$，得 $\\lambda=1$ 及 $\\lambda=0$（二重），故取 $k=2$，设\n\\[y^{*}=x^{2}(ax+b)=ax^{3}+bx^{2}.\\]则 $y^{*'}=3ax^{2}+2bx$，$y^{*''}=6ax+2b$，$y^{*'''}=6a$。代入 $y'''-y''=x$：\n\\[6a-(6ax+2b)=x\\ \\Longrightarrow\\ -6a=1,\\; 6a-2b=0,\\]\n得 $a=-\\dfrac16$，$b=-\\dfrac12$。故一个特解为\n\\[y^{*}=-\\frac16x^{3}-\\frac12x^{2}.\\]",
         "cat": "微分方程",
-        "topic": "高阶常系数非齐次·特解",
+        "topic": "二阶常系数非齐次",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -4038,7 +4085,7 @@ var EDITOR_DATA = [
         "question": "在下列方程中，以 $y=C_1e^{-x}+C_2\\sin 2x+C_3\\cos 2x$ 为通解的微分方程是（　）",
         "solution": "由通解形式知特征根为 $-1,\\;\\pm2i$，故特征方程为\n\\[(\\lambda+1)(\\lambda^{2}+4)=\\lambda^{3}+\\lambda^{2}+4\\lambda+4=0,\\]\n对应微分方程 $y'''+y''+4y'+4y=0$，选 D。",
         "cat": "微分方程",
-        "topic": "常系数线性方程·由通解反推方程",
+        "topic": "二阶常系数齐次",
         "source": "自编·微分方程习题与解",
         "options": [
           "$y'''+y''-4y'+4y=0$",
@@ -4055,7 +4102,7 @@ var EDITOR_DATA = [
         "question": "若微分方程 $y''+ay'+by=0$ 的解在 $(-\\infty,+\\infty)$ 上有界，则下列正确的是（　）",
         "solution": "特征方程 $\\lambda^{2}+a\\lambda+b=0$，按判别式分三种情形：\n\n① $\\Delta=a^{2}-4b>0$（两不等实根）：$y=C_1e^{\\lambda_1x}+C_2e^{\\lambda_2x}$，在 $(-\\infty,+\\infty)$ 上不可能有界；\n\n② $\\Delta=0$（重根 $\\lambda$）：$y=(C_1+C_2x)e^{\\lambda x}$，无论 $\\lambda$ 取何值都无界；\n\n③ $\\Delta<0$（共轭复根 $\\alpha\\pm\\beta i$）：$y=e^{\\alpha x}(A\\cos\\beta x+B\\sin\\beta x)$，只有 $\\alpha=-\\dfrac{a}{2}=0$ 时才有界，此时 $a=0$ 且 $\\Delta=-4b<0$ 即 $b>0$。\n\n故 $a=0,\\;b>0$，选 3）。",
         "cat": "微分方程",
-        "topic": "常系数线性方程·解的有界性",
+        "topic": "二阶常系数齐次",
         "source": "自编·微分方程习题与解",
         "options": [
           "$a<0,\\;b>0$",
@@ -4072,7 +4119,7 @@ var EDITOR_DATA = [
         "question": "设 $f(x)=\\displaystyle\\int_0^x (t-x)f(t)\\,dt+\\sin x$，其中 $f(x)$ 连续，求 $f(x)$。",
         "solution": "两边对 $x$ 求导（注意 $\\int_0^x(t-x)f(t)dt=\\int_0^x tf(t)dt-x\\int_0^x f(t)dt$）：\n\\[f'(x)=-\\int_0^x f(t)\\,dt+\\cos x\\qquad(1)\\]\n再求导：\n\\[f''(x)=-f(x)-\\sin x\\ \\Longrightarrow\\ f''+f=-\\sin x\\qquad(2)\\]\n特征方程 $\\lambda^{2}+1=0$，$\\lambda=\\pm i$；右端 $-\\sin x$ 对应 $k=1$，设特解 $y^{*}=x(A\\sin x+B\\cos x)$，代入（2）得 $A=0,\\;B=\\dfrac12$。故\n\\[f(x)=C_1\\sin x+C_2\\cos x+\\frac12x\\cos x.\\]\n由原式 $f(0)=0$；由（1）式 $f'(0)=1$。代入得 $C_2=0$，$C_1=\\dfrac12$。所以\n\\[f(x)=\\frac12\\sin x+\\frac12x\\cos x.\\]",
         "cat": "微分方程",
-        "topic": "积分方程·化为微分方程",
+        "topic": "积分方程化为微分方程",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -4083,7 +4130,7 @@ var EDITOR_DATA = [
         "question": "已知连续函数 $f(x)$ 满足 $\\displaystyle\\int_0^x f(t)\\,dt+\\int_0^x tf(x-t)\\,dt=ax^{2}$。（1）求 $f(x)$；（2）若 $f(x)$ 在区间 $[0,1]$ 上的平均值为 $1$，求 $a$ 的值。",
         "solution": "（1）对第二个积分令 $u=x-t$：$\\int_0^x tf(x-t)dt=\\int_0^x (x-u)f(u)du=x\\int_0^x f(u)du-\\int_0^x uf(u)du$。原式化为\n\\[\\int_0^x f(t)dt+x\\int_0^x f(u)du-\\int_0^x uf(u)du=ax^{2}.\\]\n求导：$f(x)+\\int_0^x f(u)du=2ax$（记为 (1)）；再求导：$f'(x)+f(x)=2a$，解得\n\\[f(x)=Ce^{-x}+2a.\\]\n由 (1) 式令 $x=0$ 得 $f(0)=0$，故 $C=-2a$，即 $f(x)=2a(1-e^{-x})$。\n\n（2）平均值为 $1$：$\\int_0^1 f(x)dx=1$，即\n\\[2a\\int_0^1(1-e^{-x})dx=2a\\bigl[x+e^{-x}\\bigr]_0^1=2a\\cdot e^{-1}=1,\\]\n故 $a=\\dfrac{e}{2}$。",
         "cat": "微分方程",
-        "topic": "积分方程·卷积与平均值",
+        "topic": "积分方程化为微分方程",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -4094,7 +4141,7 @@ var EDITOR_DATA = [
         "question": "设函数 $y(x)$ 满足 $y''+2y'+ky=0$，其中 $0<k<1$。（1）证明：反常积分 $\\displaystyle\\int_0^{+\\infty}y(x)\\,dx$ 收敛；（2）若 $y(0)=1,\\;y'(0)=1$，求 $\\displaystyle\\int_0^{+\\infty}y(x)\\,dx$ 的值。",
         "solution": "（1）特征方程 $\\lambda^{2}+2\\lambda+k=0$，得\n\\[\\lambda_{1}=-1+\\sqrt{1-k}<0,\\qquad \\lambda_{2}=-1-\\sqrt{1-k}<0\\quad(0<k<1).\\]\n故 $y(x)=C_1e^{\\lambda_1x}+C_2e^{\\lambda_2x}$，而 $\\int_0^{+\\infty}e^{\\lambda_ix}dx$（$i=1,2$）均收敛，所以 $\\int_0^{+\\infty}y(x)dx$ 收敛。\n\n（2）由方程 $y''+2y'=-ky$，且 $x\\to+\\infty$ 时 $y(x)\\to0$、$y'(x)\\to0$，于是\n\\[\\int_0^{+\\infty}y\\,dx=-\\frac1k\\int_0^{+\\infty}(y''+2y')dx=-\\frac1k\\bigl[y'+2y\\bigr]_0^{+\\infty}=-\\frac1k\\bigl(0-(1+2)\\bigr)=\\frac3k.\\]",
         "cat": "微分方程",
-        "topic": "微分方程与反常积分",
+        "topic": "微分方程应用与综合",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -4105,7 +4152,7 @@ var EDITOR_DATA = [
         "question": "对任意实数 $x>0$，曲线 $y=f(x)$ 在点 $(x,f(x))$ 处的切线与 $y$ 轴的截距等于函数 $f(\\sqrt{x})$ 在区间 $[0,x^{2}]$ 上的平均值，求 $f(x)$。",
         "solution": "切线方程为 $Y-f(x)=f'(x)(X-x)$，令 $X=0$ 得在 $y$ 轴上的截距 $f(x)-xf'(x)$；而 $f(\\sqrt{x})$ 在 $[0,x^{2}]$ 上的平均值为 $\\dfrac{1}{x^{2}}\\int_0^{x^{2}}f(\\sqrt{t})\\,dt$。故\n\\[f(x)-xf'(x)=\\frac{1}{x^{2}}\\int_0^{x^{2}}f(\\sqrt{t})\\,dt.\\]\n两边乘 $x^{2}$ 并对 $x$ 求导（右端用变上限积分求导，$\\dfrac{d}{dx}\\int_0^{x^{2}}f(\\sqrt{t})dt=2xf(x)$），化简得\n\\[xf''(x)+2f'(x)=0,\\]\n即 $\\dfrac{d}{dx}\\bigl(x^{2}f'(x)\\bigr)=0$，故 $f'(x)=\\dfrac{C}{x^{2}}$，积分得\n\\[f(x)=\\frac{c_1}{x}+c_2\\quad(x>0).\\]",
         "cat": "微分方程",
-        "topic": "几何应用·列方程",
+        "topic": "微分方程应用与综合",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -4116,7 +4163,7 @@ var EDITOR_DATA = [
         "question": "设 $y=y(x)$ 是一条向上凸的连续曲线，其上任意一点 $(x,y)$ 处的曲率为 $\\dfrac{1}{\\sqrt{1+(y')^{2}}}$，且此曲线在点 $(0,1)$ 处的切线为 $y=x+1$，求该曲线方程。",
         "solution": "向上凸故 $y''<0$，$|y''|=-y''$。由曲率公式\n\\[\\frac{-y''}{\\bigl[1+(y')^{2}\\bigr]^{3/2}}=\\frac{1}{\\sqrt{1+(y')^{2}}}\\ \\Longrightarrow\\ \\frac{y''}{1+(y')^{2}}=-1.\\]\n两边积分：$\\arctan y'=-x+c$。由切线 $y=x+1$ 知 $y'(0)=1$，得 $c=\\dfrac{\\pi}{4}$，故\n\\[y'=\\tan\\left(\\frac{\\pi}{4}-x\\right).\\]\n再积分：$y=\\ln\\left|\\cos\\left(\\dfrac{\\pi}{4}-x\\right)\\right|+C$。由 $y(0)=1$：$1=\\ln\\cos\\dfrac{\\pi}{4}+C=-\\dfrac{\\ln2}{2}+C$，故 $C=1+\\dfrac{\\ln2}{2}$。曲线方程为\n\\[y=\\ln\\left|\\cos\\left(\\frac{\\pi}{4}-x\\right)\\right|+1+\\frac{\\ln2}{2}.\\]",
         "cat": "微分方程",
-        "topic": "几何应用·曲率",
+        "topic": "微分方程应用与综合",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -4127,7 +4174,7 @@ var EDITOR_DATA = [
         "question": "求微分方程 $y'=\\dfrac{1}{xy+y^{3}}$ 的通解。",
         "solution": "把 $x$ 看作 $y$ 的函数：$\\dfrac{dx}{dy}=xy+y^{3}$，即 $\\dfrac{dx}{dy}-yx=y^{3}$，关于 $x$ 是一阶线性的。\n\\[x=e^{\\int y\\,dy}\\left[\\int y^{3}e^{-\\int y\\,dy}dy+C\\right]=e^{y^{2}/2}\\left[\\int y^{3}e^{-y^{2}/2}dy+C\\right].\\]\n其中令 $s=\\dfrac{y^{2}}{2}$，则 $\\int y^{3}e^{-y^{2}/2}dy=\\int 2se^{-s}ds=-2(s+1)e^{-s}=-(y^{2}+2)e^{-y^{2}/2}$。故通解为\n\\[x=Ce^{y^{2}/2}-y^{2}-2.\\]",
         "cat": "微分方程",
-        "topic": "一阶线性方程·反解自变量",
+        "topic": "一阶线性方程",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -4138,7 +4185,7 @@ var EDITOR_DATA = [
         "question": "求方程 $(y+\\sqrt{x^{2}+y^{2}})\\,dx-x\\,dy=0$ 满足 $y(1)=0\\;(x>0)$ 的解。",
         "solution": "化为 $\\dfrac{dy}{dx}=\\dfrac{y+\\sqrt{x^{2}+y^{2}}}{x}$，是齐次方程。令 $u=\\dfrac{y}{x}$，$y'=u+xu'$，代入得\n\\[u+xu'=u+\\sqrt{1+u^{2}}\\ \\Longrightarrow\\ \\frac{du}{\\sqrt{1+u^{2}}}=\\frac{dx}{x}.\\]\n积分：$\\ln\\bigl(u+\\sqrt{1+u^{2}}\\bigr)=\\ln x+\\ln C$，即 $u+\\sqrt{1+u^{2}}=Cx$。由 $y(1)=0$ 得 $u(1)=0$，故 $C=1$。于是\n\\[\\frac{y}{x}+\\sqrt{1+\\left(\\frac{y}{x}\\right)^{2}}=x,\\]\n整理（由 $\\sqrt{x^2+y^2}=x^2-y$ 再平方）得所求解\n\\[y=\\frac{x^{2}-1}{2}\\quad(x>0).\\]",
         "cat": "微分方程",
-        "topic": "齐次方程",
+        "topic": "可分离变量与齐次方程",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -4149,7 +4196,7 @@ var EDITOR_DATA = [
         "question": "求微分方程 $(x+2y)\\,dx+(2x+y)\\,dy=0$ 的通解。",
         "solution": "**法一（观察法）**：原式拆为 $x\\,dx+y\\,dy+(2y\\,dx+2x\\,dy)=0$，即\n\\[\\frac12d(x^{2})+\\frac12d(y^{2})+d(2xy)=0,\\]\n积分得 $\\dfrac{x^{2}}{2}+\\dfrac{y^{2}}{2}+2xy=C$，即 $x^{2}+y^{2}+4xy=C$。\n\n**法二（全微分法）**：$P=x+2y$，$Q=2x+y$，$\\dfrac{\\partial P}{\\partial y}=2=\\dfrac{\\partial Q}{\\partial x}$，故为全微分方程。\n\\[U=\\int_0^x P(x,0)dx+\\int_0^y Q(x,y)dy=\\int_0^x x\\,dx+\\int_0^y(2x+y)dy=\\frac{x^{2}}{2}+2xy+\\frac{y^{2}}{2},\\]\n通解 $\\dfrac{x^{2}}{2}+2xy+\\dfrac{y^{2}}{2}=C$，即 $x^{2}+y^{2}+4xy=C$。",
         "cat": "微分方程",
-        "topic": "全微分方程·一题多解",
+        "topic": "全微分方程",
         "source": "自编·微分方程习题与解",
         "answer": ""
       },
@@ -12867,7 +12914,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$可分离变量：dy/y = 2x dx，积分得 \\ln|y| = x^{2} + C，y = Ce^(x^{2})。由 y(0)=1 得 C=1，故 y=e^(x^{2})。考查一阶可分离变量方程，核心是用不定积分求解。$",
         "cat": "微分方程",
-        "topic": "可分离变量"
+        "topic": "可分离变量与齐次方程"
       },
       {
         "id": "comp-026",
@@ -12883,7 +12930,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$一阶线性非齐次方程，P(x)=1，积分因子 μ=e^(\\int 1 dx)=e^x。两边乘 e^x：d(ye^x)/dx = 1，积分得 ye^x = x + C，y = (x+C)e^(-x)。考查一阶线性方程的积分因子法。$",
         "cat": "微分方程",
-        "topic": "一阶线性方程·常数变易"
+        "topic": "一阶线性方程"
       },
       {
         "id": "comp-027",
@@ -12915,7 +12962,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "特征方程 r²+4=0，r=±2i，通解 y = C₁\\cos 2x + C₂\\sin 2x。y(0)=C₁=0，故 C₁=0。y'(0)=2C₂\\cos0=2C₂=2，C₂=1。特解 y = \\sin 2x。考查二阶齐次方程+初始条件。",
         "cat": "微分方程",
-        "topic": "二阶常系数齐次·初值问题"
+        "topic": "二阶常系数齐次"
       },
       {
         "id": "comp-029",
@@ -12925,7 +12972,7 @@ var EDITOR_DATA = [
         "answer": "Cx",
         "solution": "$分离变量：dy/y = dx/x (x\\neq0,y\\neq0)，积分得 \\ln|y| = \\ln|x| + C，即 y = Cx。考查分离变量法——解微分方程就是不定积分的直接应用。$",
         "cat": "微分方程",
-        "topic": "可分离变量"
+        "topic": "可分离变量与齐次方程"
       },
       {
         "id": "comp-030",
@@ -12935,7 +12982,7 @@ var EDITOR_DATA = [
         "answer": "tan u / x",
         "solution": "令 u=y/x，则 y=ux，dy/dx = u + x·du/dx。代入方程：u + x·du/dx = u + \\tan u，故 x·du/dx = \\tan u，du/dx = \\tan u / x。考查齐次方程的变量代换技巧。",
         "cat": "微分方程",
-        "topic": "齐次方程·变量代换"
+        "topic": "可分离变量与齐次方程"
       },
       {
         "id": "comp-031",
@@ -12951,7 +12998,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$特征方程 r²-2r+5=0，Δ=4-20=-16<0，r=1±2i。通解 y = e^x(C₁\\cos 2x + C₂\\sin 2x)。考查特征根为复数的情形，判别式判断。$",
         "cat": "微分方程",
-        "topic": "二阶常系数齐次·共轭复根"
+        "topic": "二阶常系数齐次"
       },
       {
         "id": "comp-032",
@@ -12967,7 +13014,7 @@ var EDITOR_DATA = [
         "answer": 2,
         "solution": "齐次通解：y_h = C₁\\cos x + C₂\\sin x。非齐次项 \\sin x 的 ±i 是特征根，发生共振。特解形式为 y_p = x(A \\cos x + B \\sin x)。考查非齐次常系数方程的待定系数法——共振情形。",
         "cat": "微分方程",
-        "topic": "二阶常系数非齐次·待定系数法"
+        "topic": "二阶常系数非齐次"
       },
       {
         "id": "comp-033",
@@ -12977,7 +13024,7 @@ var EDITOR_DATA = [
         "answer": "sec x",
         "solution": "$积分因子 μ = exp(\\int  P(x)dx) = exp(\\int  \\tan x dx)。\\int  \\tan x dx = -\\ln\\big|_{c}^{o}s x| = \\ln\\big|_{s}^{e}c x|，故 μ = sec x。考查一阶线性方程的积分因子构造——连续积分+微分方程。$",
         "cat": "微分方程",
-        "topic": "一阶线性方程·积分因子"
+        "topic": "一阶线性方程"
       },
       {
         "id": "comp-034",
@@ -13514,8 +13561,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$设 y = Σ a_n xⁿ，则 y' = Σ n a_n x^(n-1) = Σ (n+1)a(n+1) xⁿ。由 y'=y 得 (n+1)a(n+1)=a_n。a_0=y(0)=1，推得 a_n=1/n!。故 y = Σ xⁿ/n! = e^x。考查幂级数解法——微分方程与级数的完美结合。$",
-        "cat": "微分方程",
-        "topic": "幂级数解法"
+        "cat": "无穷级数",
+        "topic": null
       },
       {
         "id": "comp-072",
@@ -13531,7 +13578,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "齐次通解 y_h = C₁\\cos x + C₂\\sin x。非齐次项 \\sin x 的 ±i 是特征根（共振情形），特解应设为 y_p = x(A \\cos x + B \\sin x)。代入方程确定 A=-2, B=0，特解为 -2x \\cos x。考查二阶常系数非齐次方程的待定系数法——共振情形。",
         "cat": "微分方程",
-        "topic": "二阶常系数非齐次·共振情形"
+        "topic": "二阶常系数非齐次"
       },
       {
         "id": "comp-073",
@@ -13573,7 +13620,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "t 时刻体积 V(t)=100+(3-2)t=100+t，浓度=S/(100+t)。流出带走的盐速率=2·S/(100+t)。故 dS/dt = -2S/(100+t)，S(0)=10。这是一阶线性方程，解为 S=10·100²/(100+t)²。考查微分方程建模——溶液混合问题。",
         "cat": "微分方程",
-        "topic": "一阶线性方程·物理建模"
+        "topic": "微分方程应用与综合"
       },
       {
         "id": "comp-076",
@@ -14430,7 +14477,7 @@ var EDITOR_DATA = [
         "answer": "$\\displaystyle I=\\dfrac{4\\bigl(e^{\\pi/2}-1\\bigr)}{\\pi+2}.$",
         "solution": "【校】PDF 上限为 $\\pi$，应为 $\\dfrac{\\pi}{2}$ 或 $\\pi$ 均可，按 $\\dfrac{\\pi}{2}$ 处理并在解答中说明 $\\pi$ 的情形。\n\n**第一步：联立微分方程。** 由 $f'(x)=g(x)$，得 $f''(x)=g'(x)=4e^x-f(x)$，即\n$$f''(x)+f(x)=4e^x,\\quad f(0)=0,\\ f'(0)=g(0)=0.$$\n\n**第二步：解 ODE。** 齐次解 $f_h=C_1\\cos x+C_2\\sin x$。设特解 $f_p=Ae^x$，代入得 $2Ae^x=4e^x$，$A=2$，$f_p=2e^x$。\n通解 $f(x)=C_1\\cos x+C_2\\sin x+2e^x$。\n由 $f(0)=C_1+2=0\\Rightarrow C_1=-2$；$f'(0)=-C_1\\sin 0+C_2\\cos 0+2e^0=C_2+2=0\\Rightarrow C_2=-2$。\n$$f(x)=-2\\cos x-2\\sin x+2e^x.$$\n$$g(x)=f'(x)=2\\sin x-2\\cos x+2e^x.$$\n\n**第三步：分部积分被积函数。** 记\n$$I=\\int_0^{\\pi/2}\\left[\\frac{g(x)}{1+x}-\\frac{f(x)}{(1+x)^2}\\right]\\mathrm{d}x.$$\n注意到\n$$\\frac{\\mathrm{d}}{\\mathrm{d}x}\\!\\left[\\frac{f(x)}{1+x}\\right]=\\frac{f'(x)(1+x)-f(x)}{(1+x)^2}=\\frac{g(x)(1+x)-f(x)}{(1+x)^2}=\\frac{g(x)}{1+x}-\\frac{f(x)}{(1+x)^2}.$$\n故被积函数恰为 $\\left[\\dfrac{f(x)}{1+x}\\right]'$，原函数为 $\\dfrac{f(x)}{1+x}$。\n\n**第四步：套 Newton-Leibniz 公式。**\n$$I=\\left.\\frac{f(x)}{1+x}\\right|_0^{\\pi/2}=\\frac{f(\\pi/2)}{1+\\pi/2}-\\frac{f(0)}{1+0}.$$\n\n计算 $f(\\pi/2)=-2\\cos(\\pi/2)-2\\sin(\\pi/2)+2e^{\\pi/2}=0-2+2e^{\\pi/2}=2e^{\\pi/2}-2$。\n$$I=\\frac{2e^{\\pi/2}-2}{1+\\pi/2}-0=\\frac{2(e^{\\pi/2}-1)}{1+\\pi/2}=\\frac{4(e^{\\pi/2}-1)}{\\pi+2}.$$\n\n【校】**注**：本题上限 PDF 给 $\\pi$ 或 $\\dfrac{\\pi}{2}$，按 $\\dfrac{\\pi}{2}$ 处理。若上限取 $\\pi$：\n$$f(\\pi)=-2\\cos\\pi-2\\sin\\pi+2e^\\pi=2+0+2e^\\pi=2(e^\\pi+1).$$\n$$I=\\frac{2(e^\\pi+1)}{1+\\pi}=\\frac{2(e^\\pi+1)}{\\pi+1}.$$\n\n被积式 $\\dfrac{g(x)}{1+x}-\\dfrac{f(x)}{(1+x)^2}$ 是 $\\dfrac{f(x)}{1+x}$ 的导数——观察到此结构后无需具体求 $f$、$g$，直接用 Newton-Leibniz 公式即可。为配合边界条件 $f(0)=0$，仍需求出 $f(\\pi/2)$ 的值。\n\n---",
         "cat": "微分方程",
-        "topic": "",
+        "topic": "高阶线性方程与解的结构",
         "source": "综合例题PDF·例65"
       },
       {
@@ -14633,7 +14680,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**结论**：$$\\int_0^1 f(x)\\,\\mathrm{d}x=-\\frac{\\pi}{8}.$$\n\n使 $\\sqrt{2x-x^2}$ 有意义的区间为 $[0,2]$。当 $x>0$ 时方程化为标准形式\n\n$$f'(x)-\\frac{1}{x}f(x)=\\frac{\\sqrt{2x-x^{2}}}{x},\\qquad\\text{即}\\qquad \\left(\\frac{f(x)}{x}\\right)'=\\frac{\\sqrt{2x-x^{2}}}{x^{2}},$$\n\n积分因子为 $e^{-\\int \\mathrm{d}x/x}=1/x$。于是\n\n$$f(x)=x\\left[C+\\int_1^x\\frac{\\sqrt{2t-t^{2}}}{t^{2}}\\,\\mathrm{d}t\\right],$$\n\n代入 $f(1)=0$ 得 $C=0$，常数被锁定。（若需显式解：令 $t-1=\\sin\\theta$，则 $\\displaystyle\\int\\frac{\\sqrt{2t-t^{2}}}{t^{2}}\\mathrm{d}t=2\\tan\\theta-2\\sec\\theta-\\theta+C$，$\\theta=\\arcsin(t-1)$。）\n\n当 $t\\to0^+$ 时被积函数 $\\sim\\sqrt2\\,t^{-3/2}$，反常积分收敛，故 $f$ 在 $[0,1]$ 上连续且 $f(0)=0$，从而 $\\lim_{x\\to0^+}xf(x)=0$。\n\n求定积分不必解出显式原函数。由方程得 $xf'(x)=f(x)+\\sqrt{2x-x^{2}}$，在 $[0,1]$ 上积分：\n\n$$\\int_0^1 xf'(x)\\,\\mathrm{d}x=\\int_0^1 f(x)\\,\\mathrm{d}x+\\int_0^1\\sqrt{2x-x^{2}}\\,\\mathrm{d}x.$$\n\n对左端分部积分（注意 $f(1)=0$，$xf(x)\\to0$）：\n\n$$\\int_0^1 xf'(x)\\,\\mathrm{d}x=\\Big[xf(x)\\Big]_0^1-\\int_0^1 f(x)\\,\\mathrm{d}x=-\\int_0^1 f(x)\\,\\mathrm{d}x.$$\n\n而 $\\sqrt{2x-x^{2}}=\\sqrt{1-(x-1)^{2}}$ 是圆心在 $(1,0)$、半径为 $1$ 的上半圆，故\n\n$$\\int_0^1\\sqrt{2x-x^{2}}\\,\\mathrm{d}x=\\frac{\\pi}{4}\\quad(\\text{四分之一单位圆的面积}).$$\n\n记 $I=\\displaystyle\\int_0^1 f(x)\\,\\mathrm{d}x$，则 $-I=I+\\dfrac{\\pi}{4}$，解得\n\n$$I=-\\frac{\\pi}{8}.$$\n\n对 $xf'-f=\\varphi(x)$ 型方程，\"先解出 $f$ 再积分\"往往冗长。更高效的套路是：直接对方程两边积分，并用分部积分 $\\int xf'\\,\\mathrm{d}x=[xf]-\\int f\\,\\mathrm{d}x$ 让所求积分在等式两边\"自消\"，只留下已知的几何量 $\\int_0^1\\sqrt{2x-x^2}\\,\\mathrm{d}x=\\pi/4$（用圆面积计算，避免三角代换硬算）。",
         "cat": "微分方程",
-        "topic": "一阶线性方程·定积分",
+        "topic": "一阶线性方程",
         "source": "综合例题PDF·例34"
       },
       {
@@ -14644,7 +14691,7 @@ var EDITOR_DATA = [
         "answer": "$$a=0,\\qquad b=-1,\\qquad c=1,\\qquad g=2.$$",
         "solution": "把通解按是否含任意常数拆分：\n\n$$y=\\underbrace{C_1e^{x}+C_2e^{-x}}_{\\text{齐次通解}}+\\underbrace{xe^{x}}_{\\text{非齐次特解}}.$$\n\n齐次部分含 $e^x$ 与 $e^{-x}$ 两项线性无关解，故特征根为 $r=1$ 与 $r=-1$（互异单根），特征方程\n\n$$(r-1)(r+1)=r^{2}-1,$$\n\n比较 $y''+ay'+by$ 得 $a=0,\\ b=-1$。\n\n特解部分为 $xe^{x}$。右端 $ge^{cx}$ 为指数型，特解形如 $x^{k}A e^{cx}$，其中 $k$ 为 $c$ 作为特征根的重数：若 $c$ 不是特征根则 $k=0$，特解不含因子 $x$。今特解中出现了因子 $x\\cdot e^{x}$，说明发生了共振且重数为 $1$，即\n\n$$c=1\\quad(\\text{单特征根}).$$\n\n将 $y^{*}=xe^{x}$ 代入方程 $y''-y=ge^{x}$：$y^{*\\prime}=(x+1)e^{x}$，$y^{*\\prime\\prime}=(x+2)e^{x}$，故\n\n$$y^{*\\prime\\prime}-y^{*}=(x+2)e^{x}-xe^{x}=2e^{x},$$\n\n所以 $g=2$。\n\n验证：$y''-y=2e^x$ 的通解确为 $(C_1+x)e^x+C_2e^{-x}$。\n\n\"由通解反推方程\"的固定套路：(1) 通解中带任意常数的部分就是齐次通解，读出全部特征根，写出特征方程即得 $a,b$；(2) 剩下的特解部分，其 $x^k$ 因子暴露共振信息——$k$ 恰等于右端指数 $c$ 作为特征根的重数，由此定 $c$；(3) 把特解代回方程比较系数定 $g$。",
         "cat": "微分方程",
-        "topic": "二阶常系数·由通解定参数",
+        "topic": "高阶线性方程与解的结构",
         "source": "综合例题PDF·例35"
       },
       {
@@ -14655,7 +14702,7 @@ var EDITOR_DATA = [
         "answer": "$$a=2,\\qquad b=2.$$",
         "solution": "右端 $e^{-x}\\cos x$ 是 $e^{(-1+i)x}$ 的实部，对应复指数 $\\lambda=-1+i$（及其共轭 $\\lambda=-1-i$）。\n\n特解 $e^{-x}(x\\cos x+x\\sin x)$ 中，$e^{-x}\\cos x$ 与 $e^{-x}\\sin x$ 前都带一次因子 $x$。论证这必是共振：若 $-1\\pm i$ **不是**特征根，则特解应取 $e^{-x}(A\\cos x+B\\sin x)$（无 $x$ 因子），而齐次通解（无论特征根是实根还是另一对共轭复根）中也不可能产生 $xe^{-x}\\cos x$ 型的项，与所给特解含 $x$ 因子矛盾。又实系数二阶方程的复特征根共轭成对，故 $-1\\pm i$ 只能是一对**单根**。\n\n于是特征方程为\n\n$$(r+1)^{2}+1=r^{2}+2r+2,$$\n\n比较 $y''+ay'+by$ 的系数得\n\n$$a=2,\\qquad b=2.$$\n\n【注】利用 $P(D)[e^{-x}v]=e^{-x}(v''+v)$（其中 $P(D)=D^2+2D+2$）：取 $v=x(\\cos x+\\sin x)$ 得 $v''+v=2(\\cos x-\\sin x)$，即题给特解代入 $y''+2y'+2y$ 得 $2e^{-x}(\\cos x-\\sin x)$，与右端 $e^{-x}\\cos x$ 的系数出入系 PDF 识别失真所致（例如取 $v=\\tfrac12 x\\sin x$，则 $v''+v=\\cos x$，即 $\\tfrac12xe^{-x}\\sin x$ 是严格意义下的特解）。但决定 $a,b$ 的只是特解中 $x$ 因子所携带的共振结构，结论 $a=2,\\ b=2$ 不受影响。\n\n方程 $y''+ay'+by=e^{\\alpha x}\\cos\\beta x$ 的特解形状由 $\\lambda=\\alpha+i\\beta$ 是否为特征根决定：不是根，特解为 $e^{\\alpha x}(A\\cos\\beta x+B\\sin\\beta x)$；是单根，则多乘一个 $x$。反过来，由特解是否带 $x$ 因子可以\"反读\"特征根，本题正是这一逆向技术的典型应用。",
         "cat": "微分方程",
-        "topic": "二阶常系数·由特解定参数",
+        "topic": "高阶线性方程与解的结构",
         "source": "综合例题PDF·例48"
       },
       {
@@ -14666,7 +14713,7 @@ var EDITOR_DATA = [
         "answer": "$$y=\\frac{x(x+4)}{2}\\,e^{3x}.$$",
         "solution": "几何条件转化为初始条件：曲线过原点 $\\Rightarrow y(0)=0$；直线 $2x-y-5=0$ 即 $y=2x-5$，斜率为 $2$，故原点处切线平行于它 $\\Rightarrow y'(0)=2$。\n\n特征方程 $r^{2}-6r+9=(r-3)^{2}=0$：$r=3$ 为**二重根**，齐次通解为 $(C_1+C_2x)e^{3x}$。\n\n右端 $e^{3x}$ 的指数 $3$ 恰为二重特征根（共振重数 $2$），故设特解\n\n$$y^{*}=Ax^{2}e^{3x}.$$\n\n记 $u=Ax^{2}$，由 $y''-6y'+9y=(D-3)^{2}y$ 及 $(D-3)^{2}[e^{3x}u]=e^{3x}u''$，代入得\n\n$$e^{3x}\\cdot 2A=e^{3x}\\ \\Longrightarrow\\ A=\\frac12,$$\n\n即 $y^{*}=\\dfrac12x^{2}e^{3x}$。于是通解\n\n$$y=\\left(C_1+C_2x+\\frac{x^{2}}{2}\\right)e^{3x}.$$\n\n代入初值：$y(0)=C_1=0$；又\n\n$$y'=(C_2+x)e^{3x}+3\\Bigl(C_2x+\\frac{x^{2}}{2}\\Bigr)e^{3x},\\qquad y'(0)=C_2=2.$$\n\n故\n\n$$y=\\Bigl(2x+\\frac{x^{2}}{2}\\Bigr)e^{3x}=\\frac{x(x+4)}{2}\\,e^{3x}.$$\n\n共振记忆法：右端 $e^{3x}$ 中指数 $3$ 是几重特征根，特解就乘几个 $x$；本题是二重根，特解为 $\\tfrac12x^2e^{3x}$。二重根时用移位算子 $P(D)[e^{3x}u]=e^{3x}P(D+3)u=e^{3x}u''$（对 $P=(D-3)^2$）定系数最快。另注意\"切线与已知直线平行 $\\Leftrightarrow$ 斜率相等\"，把几何语言译成初始条件是这类题的第一步。",
         "cat": "微分方程",
-        "topic": "初值问题",
+        "topic": "二阶常系数非齐次",
         "source": "综合例题PDF·例49"
       },
       {
@@ -14677,7 +14724,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**结论**：$$a=-4,\\qquad b=3,\\qquad c=-2;$$\n\n通解 $y=C_1e^{3x}+C_2e^{x}+xe^{x}$；所求特解为 $y=e^{3x}+(x-1)e^{x}$。\n\n**(1) 结构分析定 $a,b$。** 把特解拆开：$y=e^{3x}+2e^{x}+xe^{x}$。右端为 $ce^{x}$（指数 $1$），故\n\n- $xe^{x}$ 带一次因子 $x$，是共振项 $\\Rightarrow$ $1$ 是单特征根，方程真正的非齐次特解就是 $xe^{x}$；\n- 剩下的 $e^{3x}$ 与 $2e^{x}$ 不带 $x$ 因子，不可能由右端 $ce^x$ 产生，只能是混入特解表达式的**齐次解** $\\Rightarrow$ $3$ 与 $1$ 都是特征根。\n\n于是特征方程 $(r-1)(r-3)=r^{2}-4r+3$，故\n\n$$a=-4,\\qquad b=3.$$\n\n**代回定 $c$。** 记 $P(r)=r^{2}-4r+3$，对单根共振有 $P(D)[xe^{x}]=P'(1)e^{x}$，而 $P'(1)=2-4=-2$，故\n\n$$c=-2.$$\n\n（直接验证：$y'=3e^{3x}+(3+x)e^{x}$，$y''=9e^{3x}+(4+x)e^{x}$，代入 $y''-4y'+3y$：$e^{3x}$ 项系数 $9-12+3=0$ 消去，$e^{x}$ 项 $(4+x)-4(3+x)+3(2+x)=-2$，恰得 $-2e^{x}$。）\n\n**通解：**\n\n$$y=C_1e^{3x}+C_2e^{x}+xe^{x}$$\n\n（题给的 $(2+x)e^{x}$ 亦可充当特解，因 $2e^{x}$ 可并入 $C_2e^{x}$）。\n\n**(2) 极限条件转初值。** 解处处光滑，$\\displaystyle\\lim_{x\\to0}\\frac{y(x)}{x}$ 存在且有限 $\\Rightarrow y(0)=0$，且极限值等于 $y'(0)=3$。代入：\n\n$$y(0)=C_1+C_2=0,$$\n$$y'=3C_1e^{3x}+C_2e^{x}+(1+x)e^{x},\\qquad y'(0)=3C_1+C_2+1=3.$$\n\n解得 $C_1=1,\\ C_2=-1$，故\n\n$$y=e^{3x}+(x-1)e^{x}.$$\n\n验证：$y(0)=0$，$y'=3e^{3x}+xe^{x}$，$y'(0)=3$，故 $\\displaystyle\\lim_{x\\to0}\\frac{y(x)}{x}=y'(0)=3$。\n\n本题陷阱在于\"特解里混着齐次解\"：逐项判断归属——带 $x^k$ 因子的项对应共振（$k$ 为右端指数的特征根重数），纯指数项则可能是齐次成分——据此反读出全部特征根。极限型条件 $\\lim\\limits_{x\\to0}y/x=A$ 是常见的条件转写：它等价于 $y(0)=0,\\ y'(0)=A$（导数定义或洛必达）。",
         "cat": "微分方程",
-        "topic": "二阶方程·特解与通解",
+        "topic": "高阶线性方程与解的结构",
         "source": "综合例题PDF·例68"
       },
       {
@@ -14687,8 +14734,8 @@ var EDITOR_DATA = [
         "question": "设二元函数 $F(x,y)=\\dfrac{g(y-x)}{2x}$，$F(1,y)=\\dfrac{y^{2}}{2}-y+5$；又设 $x_1>0$，$x_{n+1}=F(x_n,2x_n)$。证明 $\\{x_n\\}$ 有极限并求之。",
         "answer": "",
         "solution": "**结论**：$\\{x_n\\}$ 收敛，且 $\\displaystyle\\lim_{n\\to\\infty}x_n=3$。\n\n**先定 $g$。** 在 $F$ 中取 $x=1$：\n\n$$F(1,y)=\\frac{g(y-1)}{2}=\\frac{y^{2}}{2}-y+5\\ \\Longrightarrow\\ g(y-1)=y^{2}-2y+10.$$\n\n令 $t=y-1$（整体换元，$y=t+1$）：\n\n$$g(t)=(t+1)^{2}-2(t+1)+10=t^{2}+9.$$\n\n**再化递推式。**\n\n$$x_{n+1}=F(x_n,2x_n)=\\frac{g(2x_n-x_n)}{2x_n}=\\frac{x_n^{2}+9}{2x_n}=\\frac12\\Bigl(x_n+\\frac{9}{x_n}\\Bigr).$$\n\n**有界性（下界）。** 由 $x_1>0$ 及上式知一切 $x_n>0$；由均值不等式\n\n$$x_{n+1}=\\frac12\\Bigl(x_n+\\frac{9}{x_n}\\Bigr)\\ge\\sqrt{x_n\\cdot\\frac{9}{x_n}}=3\\qquad(n\\ge1),$$\n\n故 $n\\ge2$ 时 $x_n\\ge3$（若某步取等号 $x_n=3$，则此后恒为 $3$，极限已得）。\n\n**单调性。** 对 $n\\ge2$，$x_n\\ge3$，故\n\n$$x_{n+1}-x_n=\\frac{9-x_n^{2}}{2x_n}\\le0,$$\n\n即 $\\{x_n\\}_{n\\ge2}$ 单调不增且有下界 $3$，由单调有界定理收敛。\n\n**求极限。** 设 $\\lim x_n=L\\ge3>0$，在递推式两边取极限：\n\n$$L=\\frac12\\Bigl(L+\\frac{9}{L}\\Bigr)\\ \\Longrightarrow\\ L^{2}=9\\ \\Longrightarrow\\ L=3\\quad(L>0).$$\n\n$x_{n+1}=\\tfrac12\\bigl(x_n+\\tfrac{a}{x_n}\\bigr)$ 正是求 $\\sqrt a$ 的牛顿迭代：AM-GM 一步给出下界 $\\sqrt a$，之后数列单调下降夹向 $\\sqrt a$。解题模板：先证\"从第二项起\"有下界与单调性，再对递推式取极限解不动点方程。另注意 $g$ 的确定必须整体换元：由 $g(y-1)$ 的表达式令 $t=y-1$ 得 $g(t)=t^2+9$，切勿把 $y-1$ 的函数误当成 $y$ 的函数。",
-        "cat": "微分方程",
-        "topic": "数列极限·递推",
+        "cat": "极限与连续",
+        "topic": "数列极限",
         "source": "综合例题PDF·例50"
       },
       {
@@ -14698,8 +14745,8 @@ var EDITOR_DATA = [
         "question": "设 $x_1>0$，$x_{n+1}=3+\\dfrac{4}{x_n}$。证明 $\\{x_n\\}$ 有极限并求之。",
         "answer": "",
         "solution": "**结论**：$\\{x_n\\}$ 收敛，且 $\\displaystyle\\lim_{n\\to\\infty}x_n=4$。\n\n**不动点候选。** 若极限存在，则 $L=3+\\dfrac4L$，即 $L^{2}-3L-4=0$，$L=4$ 或 $L=-1$。由 $x_1>0$ 及 $x_{n+1}=3+4/x_n>0$ 知一切 $x_n>0$，极限只能取正根 $4$。\n\n**有界性。** $x_{n+1}=3+\\dfrac{4}{x_n}>3$ 对一切 $n$ 成立（因 $4/x_n>0$），故\n\n$$n\\ge2\\ \\text{时}\\quad x_n>3.$$\n\n**振荡性与压缩估计。** 直接计算：\n\n$$x_{n+1}-4=\\frac{4}{x_n}-1=\\frac{4-x_n}{x_n},$$\n\n它与 $x_n-4$ 异号，故数列在 $4$ 两侧交替，**整体不单调**，不能直接套单调有界定理。但上式给出压缩：当 $n\\ge2$ 时 $x_n>3$，故\n\n$$|x_{n+1}-4|=\\frac{|x_n-4|}{x_n}<\\frac{|x_n-4|}{3}.$$\n\n反复递推得\n\n$$|x_{n+1}-4|\\le\\frac{|x_2-4|}{3^{\\,n-1}}\\to0\\qquad(n\\to\\infty),$$\n\n由夹逼定理 $x_n\\to4$。\n\n（若坚持用单调有界定理：由 $x_{n+2}=3+\\dfrac{4}{x_{n+1}}=\\dfrac{13x_n+12}{3x_n+4}$ 得 $x_{n+2}-4=\\dfrac{x_n-4}{3x_n+4}$，与 $x_n-4$ 同号且绝对值变小，故奇、偶子列各自单调有界收敛；两极限均 $>3>0$ 且满足 $L^2-3L-4=0$，故都等于 $4$。）\n\n递推函数 $f(x)=3+4/x$ 在不动点 $4$ 处 $f'(4)=-\\tfrac{1}{4}$，导数为负解释了数列绕 $4$ 振荡、整体不单调。此时标准对策是考察 $|x_n-4|$ 的几何衰减（压缩），或分奇偶子列各自用单调有界定理。解题次序：先解不动点方程锁定候选极限（舍去与符号条件不符的根），再证收敛。",
-        "cat": "微分方程",
-        "topic": "数列极限·递推",
+        "cat": "极限与连续",
+        "topic": "数列极限",
         "source": "综合例题PDF·例51"
       },
       {
@@ -14709,8 +14756,8 @@ var EDITOR_DATA = [
         "question": "设 $f(x)$ 具有一阶连续导数，$f(0)=1$，$f(1)=a$。\n(1) 求使得 $g(a)=1+\\dfrac{a}{2}-\\displaystyle\\int_0^1\\sqrt{1+\\bigl(f'(x)\\bigr)^{2}}\\,\\mathrm{d}x$ 取得最大值的 $f(x)$ 的表达式；\n(2) $a$ 为何值时 $g(a)$ 取得最大值？并求出最大值。",
         "answer": "",
         "solution": "【校】PDF 被积式写作 $1+(f')^2$，按几何意义（弧长）应为 $\\sqrt{1+(f')^2}$。\n**结论**：(1) $f(x)=1+(a-1)x$（连接 $(0,1)$ 与 $(1,a)$ 的直线段）；\n\n(2) $a=1+\\dfrac{1}{\\sqrt3}=1+\\dfrac{\\sqrt3}{3}$，最大值 $g_{\\max}=\\dfrac{3-\\sqrt3}{2}$。\n\n$\\displaystyle\\int_0^1\\sqrt{1+(f')^{2}}\\,\\mathrm{d}x$ 是曲线 $y=f(x)$（$0\\le x\\le1$）的弧长。\n\n**(1) 固定 $a$，在函数类中选最优 $f$。** 注意到 $g(a)$ 关于 $f$ 的依赖只通过弧长（取负号），故使 $g(a)$ 最大即使弧长最小。对任意满足 $f(0)=1,\\ f(1)=a$ 的 $C^1$ 函数，取单位向量 $u=\\dfrac{(1,\\ a-1)}{\\sqrt{1+(a-1)^{2}}}$，由 $\\|(1,f')\\|\\ge(1,f')\\cdot u$ 得逐点不等式\n\n$$\\sqrt{1+(f')^{2}}\\ \\ge\\ \\frac{1+(a-1)f'(x)}{\\sqrt{1+(a-1)^{2}}},$$\n\n积分（并利用 $\\displaystyle\\int_0^1 f'(x)\\,\\mathrm{d}x=f(1)-f(0)=a-1$）：\n\n$$\\int_0^1\\sqrt{1+(f')^{2}}\\,\\mathrm{d}x\\ \\ge\\ \\frac{1+(a-1)^{2}}{\\sqrt{1+(a-1)^{2}}}=\\sqrt{1+(a-1)^{2}},$$\n\n即弧长不小于两端点的直线距离。等号成立当且仅当 $(1,f')$ 与 $(1,a-1)$ 同向，即 $f'(x)\\equiv a-1$。结合边界条件，最优函数为直线段\n\n$$f(x)=1+(a-1)x,$$\n\n此时\n\n$$g(a)=1+\\frac{a}{2}-\\sqrt{1+(a-1)^{2}}.$$\n\n（直观解释：两点之间线段最短。）\n\n**(2) 对 $a$ 求最大。** 求导：\n\n$$g'(a)=\\frac12-\\frac{a-1}{\\sqrt{1+(a-1)^{2}}},\\qquad g''(a)=-\\frac{1}{\\bigl[1+(a-1)^{2}\\bigr]^{3/2}}<0,$$\n\n故 $g$ 严格凹，唯一驻点即最大点。令 $g'(a)=0$：\n\n$$\\frac{a-1}{\\sqrt{1+(a-1)^{2}}}=\\frac12.$$\n\n右端为正，故 $a>1$；两边平方得 $\\dfrac{(a-1)^{2}}{1+(a-1)^{2}}=\\dfrac14$，即 $3(a-1)^{2}=1$，$a-1=\\dfrac{1}{\\sqrt3}$，所以\n\n$$a=1+\\frac{1}{\\sqrt3}=1+\\frac{\\sqrt3}{3}.$$\n\n最大值：\n\n$$g_{\\max}=1+\\frac12\\Bigl(1+\\frac{1}{\\sqrt3}\\Bigr)-\\sqrt{1+\\frac13}\n=\\frac32+\\frac{1}{2\\sqrt3}-\\frac{2}{\\sqrt3}\n=\\frac32-\\frac{3}{2\\sqrt3}\n=\\frac{3-\\sqrt3}{2}.$$\n\n这是变分法的雏形题：泛函 $g$ 由弧长泛函构成，\"曲线弧长 $\\ge$ 端点直线距离\"（积分形式的三角不等式，本质是向量不等式 $\\|v\\|\\ge v\\cdot u$ 的积分版）一步给出最优曲线是直线段，无需 Euler 方程。注意两层最优化的次序：先对每个固定的 $a$ 在函数类中取最优 $f$，得到 $g(a)$ 的显式表达式；再对参数 $a$ 做普通的一元极值（凹函数驻点即最大点）。\n",
-        "cat": "微分方程",
-        "topic": "泛函极值·变分雏形",
+        "cat": "一元积分学",
+        "topic": "定积分几何应用",
         "source": "综合例题PDF·例54"
       },
       {
@@ -14875,7 +14922,7 @@ var EDITOR_DATA = [
         "question": "设 $y_1,y_2,y_3$ 是非齐次线性微分方程 $y''+p(x)y'+q(x)y=f(x)$ 的三个线性无关解，则下列组合中是该方程**通解**的是（　　），其中 $c_1,c_2$ 为任意常数。",
         "answer": 2,
         "solution": "**判定定理（两步走）**。设 $L[y]=y''+p(x)y'+q(x)y$，则 $L[y_i]=f$。\n\n① **是不是解**：$L\\left[\\sum k_iy_i\\right]=\\left(\\sum k_i\\right)f$，故 $\\sum k_iy_i$ 是原方程的解 $\\iff$ 系数和 $\\sum k_i=1$。\n\n② **是不是通解**：二阶方程的通解含两个独立常数。记 $u=y_2-y_1,\\,v=y_3-y_1$（齐次解，由三解线性无关知 $u,v$ 无关），则 $\\sum k_iy_i=\\left(\\sum k_i\\right)y_1+k_2u+k_3v$。它是通解 $\\iff$ $k_2,k_3$ 能随 $c_1,c_2$ 独立取遍任意实数。\n\n**逐项检验**（列出 $y_1,y_2,y_3$ 的系数 $k_1,k_2,k_3$）：\n\n| 选项 | $k_1$ | $k_2$ | $k_3$ | 系数和 | 结论 |\n|---|---|---|---|---|---|\n| A | $-c_1+1$ | $c_1+c_2$ | $c_2$ | $1+2c_2$ | 随 $c_2$ 变，**不是解** |\n| B | $-c_1+1$ | $c_1+c_2+1$ | $-c_2$ | $2$ | 是 $L[y]=2f$ 的解，**不是原方程的解** |\n| C | $-c_1+\\tfrac13$ | $c_1+c_2$ | $-c_2+\\tfrac23$ | $1$ | 是解；且 $k_2=c_1+c_2,\\,k_3=-c_2+\\tfrac23$ 可独立取遍 $\\mathbb R^2$（变换 $\\begin{pmatrix}k_2\\\\k_3\\end{pmatrix}=\\begin{pmatrix}1&1\\\\0&-1\\end{pmatrix}\\begin{pmatrix}c_1\\\\c_2\\end{pmatrix}+\\begin{pmatrix}0\\\\\\tfrac23\\end{pmatrix}$ 可逆） |\n| D | $-c_1+\\tfrac13$ | $c_1+c_2$ | $-c_2+\\tfrac13$ | $\\tfrac23$ | **不是原方程的解** |\n\n**答案：C**。\n\n**方法点睛**：这类题不用解微分方程，只看两个数——**系数和必须为 1**（保证是解），**系数中要含两个独立参数**（保证是通解）。B、D 是典型的「系数和不对」陷阱，它们分别是 $L[y]=2f$ 与 $L[y]=\\tfrac23f$ 的解；A 的系数和里混进了 $c_2$，只有在 $c_2=0$ 时才是解，更不可能是通解。",
-        "topic": "微分方程·解的结构·线性组合系数判别法",
+        "topic": "高阶线性方程与解的结构",
         "source": "自编·数二模拟卷第七套",
         "cat": "微分方程",
         "options": [
@@ -15044,7 +15091,7 @@ var EDITOR_DATA = [
         "question": "微分方程 $y''-3y'+2y=2e^x$ 满足 $y(0)=0$，$y'(0)=0$ 的特解为 $y=$ ______．",
         "answer": "$y=2e^{2x}-2(x+1)e^x$",
         "solution": "齐次特征方程 $(r-1)(r-2)=0$；$e^x$ 对应单根 $r=1$，设 $y^*= Axe^x$（$A$ 待定）代入得 $A=-2$．\n通解 $y=C_1e^x+C_2e^{2x}-2xe^x$．代入 $y(0)=0$：$C_1+C_2=0$；$y'(0)=0$：$C_1+2C_2-2=0$，解得 $C_2=2$，$C_1=-2$．\n故 $y=2e^{2x}-2(x+1)e^x$．（已用 sympy 验证满足方程与初值．）",
-        "topic": "微分方程·特解",
+        "topic": "二阶常系数非齐次",
         "source": "自编·数二模拟卷第七套",
         "cat": "微分方程"
       },
