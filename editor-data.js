@@ -8480,7 +8480,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$|kA|=k^n|A|$（$n=3$阶）。$|A|=1(4-0)-2(0-2)+(-1)(0-4)=4+4+4=12$。$|2A|=2^3\\times12=96$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-002",
@@ -8495,7 +8496,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "$AB=I$ 说明 $A,B$ 互逆，故 $BA=I$、$A^{-1}=B$、$|A|\\neq0$ 均成立。但矩阵乘法一般不满足交换律，$AB=BA$ 不是普遍规律。**答案：D**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-003",
@@ -8505,7 +8507,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$1$",
         "solution": "$A$ 为下三角矩阵，行列式等于主对角线元素之积：$|A|=1\\times1\\times1=1$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-004",
@@ -8520,7 +8523,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "计算各代数余子式：$|A|=11$。$A_{11}=7,A_{12}=0,A_{13}=7,A_{21}=3,A_{22}=2,A_{23}=-1,A_{31}=-1,A_{32}=4,A_{33}=5$。$A^{*}=(A_{ji})$ 即代数余子式矩阵的转置。**答案：D**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-005",
@@ -8535,7 +8539,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$|A^{*}|=|A|^{n-1}=|A|^2=2^2=4$（$n=3$）。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-006",
@@ -8550,7 +8555,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$A^{*}=|A|A^{-1}$，故 $(2A^{*})^{-1}=(2|A|A^{-1})^{-1}=\\dfrac{1}{2|A|}(A^{-1})^{-1}=\\dfrac{A}{2|A|}$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-007",
@@ -8565,7 +8571,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "三类初等矩阵的逆：(1) 交换型自逆 $E_{ij}^{-1}=E_{ij}$；(2) 倍乘型 $E_i(k)^{-1}=E_i(\\frac1k)$；(3) 倍加型 $E_{ij}(k)^{-1}=E_{ij}(-k)$。三者皆对。**答案：D**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-008",
@@ -8575,7 +8582,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$2$",
         "solution": "$R_2-R_1=(3,3,3)$，$R_3-R_1=(6,6,6)=2(R_2-R_1)$，故三行线性相关。二阶子式 $\\begin{vmatrix}1&2\\\\4&5\\end{vmatrix}=-3\\neq0$，所以 $r(A)=2$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-mt-009",
@@ -8590,7 +8598,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$|\\lambda I-A|=(\\lambda-1)[(\\lambda-1)^2-4]=(\\lambda-1)(\\lambda-3)(\\lambda+1)$。特征值为 $1,3,-1$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-mt-010",
@@ -8605,7 +8614,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "$(AB)^T=B^TA^T$；$(AB)^{-1}=B^{-1}A^{-1}$；$(A+B)^2=A^2+AB+BA+B^2$（仅当 $AB=BA$ 时等于 $A^2+2AB+B^2$）；$|AB|=|A||B|$ 恒成立。**答案：D**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-011",
@@ -8615,7 +8625,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$\\pm1$",
         "solution": "$A$ 的第1行与第3行恒相同，故 $|A|=0$，$A$ 始终奇异（$r(A)\\le2$）。当 $a=1$ 时三行全同，$r(A)=1$；当 $a=-1$ 时第2行 $=-$ 第1行，$r(A)=1$。其余 $a$ 值时 $r(A)=2$。故 $r(A)=1\\Leftrightarrow a=\\pm1$。**答案：$a=\\pm1$**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-mt-012",
@@ -8630,7 +8641,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$PAP$：左乘 $P$ 交换第2、3行，右乘 $P$ 交换第2、3列。这是**合同变换**（也是相似变换，因为 $P=P^{-1}$）。效果是同时交换对应的行和列。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-013",
@@ -8640,7 +8652,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$I_3$",
         "solution": "$A$ 是交换第1、2行的置换矩阵，$A^2=I$（换两次还原），故 $A^{2024}=(A^2)^{1012}=I^{1012}=I$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-014",
@@ -8655,7 +8668,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "若 $Ax=\\lambda x$（$x\\neq0$），则 $A^3x=\\lambda^3x$。由 $A^3=A$ 得 $\\lambda^3=\\lambda$，解得 $\\lambda\\in\\{0,1,-1\\}$。但 $A$ 不一定可对角化（如 Jordan 块情形），$|A|$ 也不一定为0（可逆时特征值均为 $\\pm1$）。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-mt-015",
@@ -8665,7 +8679,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$a>3$",
         "solution": "顺序主子式：$\\Delta_1=a>0$；$\\Delta_2=a^2-4>0\\Rightarrow a>2$；$\\Delta_3=a^3-9a+8>0$。由 $a^3-9a+8=(a-1)(a^2+a-8)>0$ 结合 $a>2$，得 $a>3$ 时满足全部条件。**答案：$a>3$**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "正定二次型"
       },
       {
         "id": "la-mt-016",
@@ -8680,7 +8695,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "$(A-2I)X=A$ 有解 $\\Leftrightarrow r(A-2I)=r([A-2I\\mid A])$。计算增广矩阵经行变换后可得：当 $a=-1$ 时系数矩阵与增广矩阵同秩（均为2），方程有解。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-017",
@@ -8695,7 +8711,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "由 $A^2-A-2I=O$ 得 $A^2-A=2I$，即 $A(A-I)=2I$，故 $A\\cdot\\dfrac{1}{2}(A-I)=I$。因此 $A^{-1}=\\dfrac{1}{2}(A-I)$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-018",
@@ -8710,7 +8727,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$P=E_{31}(c)$（左乘作用于行，右乘作用于列）。$P^{-1}AP$：右乘 $P$ 将 $A$ 的第3列加 $c$ 倍第1列；左乘 $P^{-1}=E_{31}(-c)$ 将结果的第3行减 $c$ 倍第1行。综合效果以**列变换为主**（相似变换下特征值不变）。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-019",
@@ -8720,7 +8738,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$-1$",
         "solution": "$A\\alpha=\\begin{pmatrix}a\\\\2a+3\\\\3a+4\\end{pmatrix}$。与 $\\alpha$ 线性相关 $\\Rightarrow A\\alpha=k\\alpha$。由分量相等：$a=ka$，$2a+3=k$，$3a+4=k$。后两式相减得 $a=-1$，此时 $k=1$，第一式成立。**答案：$-1$**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-mt-020",
@@ -8735,7 +8754,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "反例排除 A：非零矩阵相乘可为零矩阵。B 也错误（$AB=O$ 蕴含 $|AB|=0$ 即 $|A||B|=0$，故 $|A|=0$ 或 $|B|=0$，B 其实是对的）。但 B 是 D 的推论。**Sylvester 不等式**：$r(A)+r(B)-n\\le r(AB)=0$，故 $r(A)+r(B)\\le n$ 恒成立。B 虽然也对但不如 D 本质。本题选 D。**答案：D**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-mt-021",
@@ -8745,7 +8765,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$\\begin{pmatrix}-2&0&0\\\\0&0&0\\\\0&0&2\\end{pmatrix}$",
         "solution": "$A^2=I$，$A$ 的特征值为 $1$（二重）和 $-1$（单根）。$(A+I)^{10}$ 对 $\\lambda=1$ 给出 $2^{10}$，对 $\\lambda=-1$ 给出 $0^{10}=0$。$(A-I)$ 对 $\\lambda=1$ 给出 $0$，对 $\\lambda=-1$ 给出 $-2$。综合结果为向 $\\lambda=-1$ 特征空间投影的 $-2$ 倍。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-022",
@@ -8760,7 +8781,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "注意到 $A^3-3A^2+3A-I=(A-I)^3=O$。$A-I$ 的所有特征值为0 $\\Rightarrow A$ 的所有特征值为1。实对称矩阵可对角化，故 $A=QIQ^T=I$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-023",
@@ -8775,7 +8797,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "相似矩阵有相同特征多项式 $\\Rightarrow$ 相同特征值、行列式、迹。但特征向量不同：若 $B=P^{-1}AP$，则 $B$ 的特征向量是 $P^{-1}\\xi$ 而非 $\\xi$ 本身。**答案：D**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-mt-024",
@@ -8785,7 +8808,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$0$",
         "solution": "所有代数余子式之和等于将 $A$ 的所有元素替换为1后的行列式值（按代数余子式展开定理）：$\\det\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&1\\end{pmatrix}=0$。**答案：0**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-025",
@@ -8800,7 +8824,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "矩阵表示的第 $j$ 列是 $A\\alpha_j$ 在该基下的坐标。$[A\\alpha_1]_{\\beta}=(1,0,0)^T$，$[A\\alpha_2]_{\\beta}=(1,1,0)^T$，$[A\\alpha_3]_{\\beta}=(1,1,1)^T$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-026",
@@ -8810,7 +8835,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$14^{n-1}A$（$n\\ge1$）",
         "solution": "$A=uu^T$ 其中 $u=(1,2,3)^T$，秩为1。$A^n=(uu^T)^n=u(u^Tu)^{n-1}u^T=14^{n-1}uu^T=14^{n-1}A$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-027",
@@ -8825,7 +8851,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "正交矩阵且 $|A|=1$：$A^*=|A|A^{-1}=A^{-1}=A^T$ ✓；特征值 $e^{i\\theta}$ 模为1 ✓；$A^{-1}=A^T$ ✓；但一般旋转矩阵 $A^2\\ne I$（除非旋转180°）。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-028",
@@ -8835,7 +8862,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$O$（零矩阵）",
         "solution": "$A^2=\\begin{pmatrix}2&0&2\\\\0&4&0\\\\2&0&2\\end{pmatrix}=2A$。由归纳法 $A^n=2A^{n-1}$ 对所有 $n\\ge2$ 成立，故 $A^n-2A^{n-1}=O$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       },
       {
         "id": "la-mt-029",
@@ -8850,7 +8878,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "$R_2-2R_1:(0,0,a-4)$，$R_3-3R_1:(0,0,-2)$。要得到目标形式，第2行需能归一化出1（故 $a-4\\neq0$），第3行需被消成0（即 $-2$ 是 $a-4$ 的整数倍）。取 $a-4=2\\Rightarrow a=6$ 时恰好：第2行为 $(0,0,2)\\to(0,0,1)$，第3行减去第2行得 $(0,0,0)$。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-mt-030",
@@ -8865,7 +8894,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$A$ 为循环置换矩阵，$A^3=I$。$2017=3\\times672+1$，故 $A^{2017}=(A^3)^{672}\\cdot A=I^{672}\\cdot A=A$。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵运算与行列式"
       }
     ]
   },
@@ -8887,7 +8917,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "$\\alpha_1,\\alpha_2,\\alpha_3$ 为标准单位向量组，显然线性无关，故秩为 $3$。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "la-vc-002",
@@ -8902,7 +8933,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$\\alpha_2=2\\alpha_1$，成比例，故线性相关。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "la-vc-003",
@@ -8912,7 +8944,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$<$",
         "solution": "齐次方程组 $Ax=0$ 有非零解 $\\Leftrightarrow$ 系数矩阵秩小于未知量个数，即 $r(A)<n$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "线性方程组"
       },
       {
         "id": "la-vc-004",
@@ -8927,7 +8960,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$(\\beta_1,\\beta_2,\\beta_3)=(\\alpha_1,\\alpha_2,\\alpha_3)\\begin{pmatrix}1&0&1\\\\1&1&0\\\\0&1&1\\end{pmatrix}$，过渡矩阵 $C$ 的行列式 $|C|=1(1-0)-0+1(1-0)=2\\neq0$，故 $\\beta_1,\\beta_2,\\beta_3$ 线性无关。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "la-vc-005",
@@ -8942,7 +8976,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "未知量个数 $n=3$，$r(A)=2$，基础解系含 $n-r(A)=3-2=1$ 个向量。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "线性方程组"
       },
       {
         "id": "la-vc-006",
@@ -8957,7 +8992,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$\\mathrm{II}$ 有 $4$ 个向量，但可由只有 $3$ 个向量的 $\\mathrm{I}$ 表出，则 $\\mathrm{II}$ 的秩不超过 $\\mathrm{I}$ 的秩 $3$。$4$ 个向量秩不超过 $3$，由'以少表多，多必相关'知 $\\mathrm{II}$ 线性相关。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "la-vc-007",
@@ -8972,7 +9008,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "矩阵的秩等于行秩等于列秩，存在非零 $r$ 阶子式，所有 $r+1$ 阶子式为零，这些都是秩的基本性质。但'任意 $r$ 个列向量均线性无关'是错的——存在 $r$ 个线性无关的列向量，但并非任意 $r$ 个都无关。**答案：D**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-vc-008",
@@ -8982,7 +9019,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$9$",
         "solution": "$R_2=2R_1$，$R_3=3R_1$ 时需 $\\frac{3}{1}=\\frac{a}{3}=\\frac{12}{4}=3$，故 $a=9$。验证：$R_3=(3,6,9,12)=3R_1$，确实所有行成比例，$r(A)=1$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-vc-009",
@@ -8992,7 +9030,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$-2$",
         "solution": "两向量线性相关当且仅当对应分量成比例：$\\frac{1}{2}=\\frac{2}{4}=\\frac{-1}{k}$，得 $k=-2$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "la-vc-010",
@@ -9007,7 +9046,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "基础解系需满足：(1)都是解；(2)个数等于 $n-r(A)$；(3)线性无关。$\\eta_1,\\eta_1+\\eta_2$ 的过渡矩阵为 $\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$，行列式为 $1\\neq0$，故线性无关。A 中过渡矩阵 $\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}$，$|C|=2\\neq0$ 也无关但个数对。D 中 $\\eta_1-\\eta_2=-(\\eta_2-\\eta_1)$，线性相关。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "线性方程组"
       },
       {
         "id": "la-vc-011",
@@ -9022,7 +9062,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "$Ax=0$ 只有零解 $\\Leftrightarrow r(A)=n \\Leftrightarrow |A|\\neq0 \\Leftrightarrow A$ 可逆。此时 $A$ 的行向量组、列向量组均线性无关。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-vc-012",
@@ -9032,7 +9073,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$\\alpha_1,\\alpha_2$（或 $\\alpha_1,\\alpha_3$ 或 $\\alpha_2,\\alpha_3$）",
         "solution": "$\\begin{pmatrix}1&2&0\\\\0&1&1\\\\1&0&-1\\end{pmatrix}\\xrightarrow{R_3-R_1}\\begin{pmatrix}1&2&0\\\\0&1&1\\\\0&-2&-1\\end{pmatrix}\\xrightarrow{R_3+2R_2}\\begin{pmatrix}1&2&0\\\\0&1&1\\\\0&0&1\\end{pmatrix}$，秩为 $3$，所以任何两个向量都可作为极大无关组。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "la-vc-013",
@@ -9047,7 +9089,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "由 $AB=O$ 知 $B$ 的每个列向量都是 $Ax=0$ 的解，故 $B$ 的列空间包含于 $A$ 的零空间，从而 $r(B)\\le n-r(A)$，即 $r(A)+r(B)\\le n$。反例：$A=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix},B=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$，$AB=O$ 但 $A,B\\neq O$。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-vc-014",
@@ -9057,7 +9100,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$-1$",
         "solution": "$|A|=1\\cdot(3(-2)-(a+2)a)-2\\cdot(2(-2)-(a+2)1)+1\\cdot(2a-3\\cdot1)=-6-a^2-2a-2(-4-a-2)+2a-3=-6-a^2-2a+2a+8+4+2a-3=3+2a-a^2$。令 $|A|=0$ 得 $a^2-2a-3=0$，$a=3$ 或 $a=-1$。$a=3$ 时二阶子式 $\\begin{vmatrix}1&2\\\\2&3\\end{vmatrix}=-1\\neq0$，秩为 $2$；$a=-1$ 时亦有非零二阶子式。验证 $a=-1$：$A=\\begin{pmatrix}1&2&1\\\\2&3&1\\\\1&-1&-2\\end{pmatrix}$，$|A|=0$ 且存在非零二阶子式，$r(A)=2$，符合。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-vc-015",
@@ -9072,7 +9116,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "齐次方程组的解的线性组合仍是解（解空间的线性性质），对任意 $k_1,k_2$ 和任意解 $\\xi_1,\\xi_2$ 恒成立，无需额外条件。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "线性方程组"
       },
       {
         "id": "la-vc-016",
@@ -9087,7 +9132,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$(\\beta_1,\\cdots,\\beta_m)=(\\alpha_1,\\cdots,\\alpha_m)C$，其中 $C$ 为 $m$ 阶矩阵，主对角线全为 $0$，其余位置全为 $1$。$|C|=(-1)^{m-1}(m-1)\\neq0$（$m\\ge2$），故过渡矩阵可逆，$\\beta_i$ 与 $\\alpha_i$ 等价，秩为 $m$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "la-vc-017",
@@ -9102,7 +9148,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$AB=O$ 说明 $B$ 的每一列都是 $Ax=0$ 的解，故 $B$ 的列空间 $\\subseteq \\operatorname{Null}(A)$，$\\dim\\operatorname{Null}(A)=n-r(A)$，故 $r(B)\\le n-r(A)$，即 $r(A)+r(B)\\le n$。这是著名的 Sylvester 秩不等式。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-vc-018",
@@ -9112,7 +9159,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$b=a+2$",
         "solution": "三向量线性相关 $\\Leftrightarrow$ 以它们为列向量的矩阵行列式为零。计算：$\\begin{vmatrix}1&1&-1\\\\2&a+2&-b\\\\0&-3&3\\end{vmatrix}=1\\cdot\\begin{vmatrix}a+2&-b\\\\-3&3\\end{vmatrix}-1\\cdot\\begin{vmatrix}2&-b\\\\0&3\\end{vmatrix}+(-1)\\cdot\\begin{vmatrix}2&a+2\\\\0&-3\\end{vmatrix}=((a+2)\\cdot3-(-b)(-3))-(6)+(-1)(-6)=3a+6-3b-6+6=3a-3b+6=0$，解得 $b=a+2$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "la-vc-019",
@@ -9127,7 +9175,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$r(A)=n-2$，解空间维数 $=n-(n-2)=2$。$\\alpha_1,\\alpha_2$ 线性无关且都是解，构成基础解系，通解为 $k_1\\alpha_1+k_2\\alpha_2$。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "线性方程组"
       },
       {
         "id": "la-vc-020",
@@ -9137,7 +9186,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$0$",
         "solution": "$A$ 为 $4\\times3$ 矩阵，未知量个数 $n=3$。基础解系含 $3$ 个无关解向量，故 $n-r(A)=3$，$r(A)=3-3=0$，即 $A$ 为零矩阵。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "线性方程组"
       },
       {
         "id": "la-vc-021",
@@ -9152,7 +9202,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "若 $\\mathrm{I}$ 可由 $\\mathrm{II}$ 表出，则 $\\operatorname{rank}(\\mathrm{I})\\le\\operatorname{rank}(\\mathrm{II})$。$\\mathrm{I}$ 无关 $\\Rightarrow\\operatorname{rank}(\\mathrm{I})=r$，$\\operatorname{rank}(\\mathrm{II})\\le s$，故 $r\\le s$。这是'替换定理'的推论。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "la-vc-022",
@@ -9167,7 +9218,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$A(I-A)=A-A^2=A-A=O$。由 Sylvester 不等式：$r(A)+r(I-A)\\le n$。又 $r(A)+r(I-A)\\ge r(A+I-A)=r(I)=n$，故 $r(A)+r(I-A)=n$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-vc-023",
@@ -9177,7 +9229,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$2$",
         "solution": "观察发现 $\\alpha_2-\\alpha_1=(1,1,1,1)$，$\\alpha_3-\\alpha_2=(1,1,1,1)$，$\\alpha_4-\\alpha_3=(1,1,1,1)$。故所有向量均在 $\\alpha_1$ 和 $(1,1,1,1)$ 张成的二维空间中，秩为 $2$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "la-vc-024",
@@ -9192,7 +9245,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "未知量个数 $n=4$，$r(A)=2$，基础解系含 $n-r(A)=4-2=2$ 个向量，通解形式为 $k_1\\eta_1+k_2\\eta_2$。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "线性方程组"
       },
       {
         "id": "la-vc-025",
@@ -9202,7 +9256,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$2$",
         "solution": "过渡矩阵 $C=\\begin{pmatrix}1&0&-1\\\\-1&1&0\\\\0&-1&1\\end{pmatrix}$，$|C|=1(1-0)-0+(-1)(1-0)=1-1=0$。且 $\\beta_1+\\beta_2+\\beta_3=0$，故 $\\beta_1,\\beta_2,\\beta_3$ 线性相关，秩不超过 $2$。$\\beta_1,\\beta_2$ 不成比例（过渡矩阵前两列的子块可逆），故秩为 $2$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "la-vc-026",
@@ -9217,7 +9272,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$A$ 可逆 $\\Leftrightarrow |A|\\neq0 \\Leftrightarrow$ 列向量组线性无关 $\\Leftrightarrow$ 列向量组是 $\\mathbb{R}^n$ 的一组基。$|\\alpha_1,\\cdots,\\alpha_n|$ 即 $|A|$，非零即可逆。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-vc-027",
@@ -9227,7 +9283,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$1$",
         "solution": "未知量个数 $n=3$，基础解系含 $2$ 个向量，故 $n-r(A)=2$，$r(A)=3-2=1$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "线性方程组"
       },
       {
         "id": "la-vc-028",
@@ -9242,7 +9299,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "$A,B$ 可逆。A 中 $A+B$ 不一定可逆（如 $B=-A$ 则 $A+B=O$）；B 分块对角阵的秩 $=r(A)+r(B)=2n$；C 中后 $n$ 列与前 $n$ 列相同，秩不超过 $n$（实际为 $r(A)=n$ 当且仅当 $r(A-B)=0$ 时）；D 中 $(A,B)$ 的秩为 $n$，因 $A$ 可逆，列向量已满秩。**答案：D**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "矩阵的秩"
       },
       {
         "id": "la-vc-029",
@@ -9252,7 +9310,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$1$",
         "solution": "$n=3$，$r(A)=2$，基础解系含 $n-r(A)=1$ 个向量。已知 $(1,1,1)^\\mathrm{T}$ 是一个非零解，它就是基础解系。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "线性方程组"
       },
       {
         "id": "la-vc-030",
@@ -9267,7 +9326,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "非齐次线性方程组 $Ax=b$ 有解 $\\Leftrightarrow b$ 可由 $A$ 的列向量组线性表出 $\\Leftrightarrow r(A)=r(A,b)$。这是线性方程组有解判定定理的核心。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "线性方程组"
       }
     ]
   },
@@ -9289,7 +9349,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "特征值定义：存在非零向量 $x$ 使 $Ax=\\lambda x$，即 $(A-\\lambda I)x=0$ 有非零解，等价于 $|A-\\lambda I|=0$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-004",
@@ -9304,7 +9365,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "行列式等于所有特征值之积：$|A|=\\lambda_1\\lambda_2\\lambda_3=1\\times2\\times3=6$。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-005",
@@ -9319,7 +9381,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "若 $Ax=\\lambda x$，则 $A^2x=A(Ax)=A(\\lambda x)=\\lambda Ax=\\lambda^2 x$。故 $A^2$ 的特征值为 $\\lambda_i^2$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-007",
@@ -9334,7 +9397,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$|A|=\\lambda_1\\lambda_2\\lambda_3=0$，故至少有一个特征值为 $0$。但并非所有特征值都为零（如 $\\lambda_1=0,\\lambda_2=1,\\lambda_3=2$，$|A|=0$ 但不全为零）。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-008",
@@ -9344,7 +9408,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$0$ 或 $1$",
         "solution": "设 $Ax=\\lambda x$（$x\\neq0$），则 $A^2x=A(Ax)=A(\\lambda x)=\\lambda^2 x$。又 $A^2=A$ 得 $\\lambda^2 x=\\lambda x$，故 $(\\lambda^2-\\lambda)x=0$，解得 $\\lambda=0$ 或 $\\lambda=1$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-009",
@@ -9359,7 +9424,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "相似矩阵有相同的特征值、行列式、迹（均为相似不变量）。但特征向量一般不同：若 $B=P^{-1}AP$，$Ax=\\lambda x$，则 $B(P^{-1}x)=\\lambda(P^{-1}x)$，$B$ 的特征向量为 $P^{-1}x$。**答案：D**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-eg-011",
@@ -9374,7 +9440,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "实对称矩阵的三个核心性质：(1)可正交对角化；(2)特征值全为实数；(3)不同特征值对应的特征向量正交。但实对称矩阵不一定可逆（如零矩阵是对称的但不可逆）。**答案：D**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-eg-012",
@@ -9389,7 +9456,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$A$ 的特征值为 $\\lambda=1$（二重）。$A-I=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$，秩为 $1$，故 $\\lambda=1$ 的几何重数 $=2-1=1<$ 代数重数 $2$，$A$ 不可对角化。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-eg-013",
@@ -9404,7 +9472,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "相似 $\\Rightarrow$ 特征多项式相同 $\\Rightarrow$ 特征值相同。但特征向量通过 $P^{-1}x$ 变换，一般不同。相似 $\\Rightarrow$ 等价（秩相等），但相似与合同无必然关系。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-eg-015",
@@ -9419,7 +9488,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "不同特征值对应的特征向量线性无关。$P=(p_1,p_2,p_3)$ 可逆，且 $AP=P\\operatorname{diag}(1,2,3)$，故 $P^{-1}AP=\\operatorname{diag}(1,2,3)$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-016",
@@ -9434,7 +9504,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "设 $f(\\lambda)=\\lambda^3-\\lambda^2-2\\lambda+2$。若 $Ax=\\lambda x$，则 $f(A)x=f(\\lambda)x$。$f(1)=1-1-2+2=0$；$f(-1)=-1-1+2+2=2$；$f(2)=8-4-4+2=2$。故 $B$ 的特征值为 $0,2,2$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-017",
@@ -9449,7 +9520,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$A^{-1}$ 的特征值为 $1,\\frac12,\\frac13$。$A^{-1}+I$ 的特征值为 $1+1=2$，$\\frac12+1=\\frac32$，$\\frac13+1=\\frac43$。$|A^{-1}+I|=2\\times\\frac32\\times\\frac43=4$。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-018",
@@ -9459,7 +9531,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$1$",
         "solution": "$A$ 可对角化 $\\Leftrightarrow$ 对每个特征值 $\\lambda$，几何重数 $=$ 代数重数。$\\lambda=1$ 的代数重数为 $2$，故几何重数也为 $2$，即 $\\dim\\operatorname{Null}(A-I)=2$。由秩-零度定理：$r(A-I)=3-2=1$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-eg-019",
@@ -9474,7 +9547,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$A$ 的每行和均为 $2$，故 $\\lambda=2$ 是一个特征值（对应特征向量 $(1,1,1)^\\mathrm{T}$）。迹 $\\operatorname{tr}(A)=0$，故 $\\lambda_2+\\lambda_3=-2$。$|A|=0\\cdot(-1)+1\\cdot(-1)+1\\cdot1=0$，故 $\\lambda_2\\lambda_3=-1\\cdot(-1)=1$...验证：$A-2I=\\begin{pmatrix}-2&1&1\\\\1&-2&1\\\\1&1&-2\\end{pmatrix}$，秩为 $2$（每行和为 $0$，第一、二行不成比例），故 $\\lambda=2$ 几何重数为 $1$。$|A|=\\begin{vmatrix}0&1&1\\\\1&0&1\\\\1&1&0\\end{vmatrix}=0\\cdot(-1)-1\\cdot(-1)+1\\cdot1=2$。特征值之积为 $2$：$\\lambda_1\\lambda_2\\lambda_3=2\\cdot\\lambda_2\\lambda_3=2$，故 $\\lambda_2\\lambda_3=1$。又 $\\lambda_2+\\lambda_3=-2$，解得 $\\lambda_2=\\lambda_3=-1$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-020",
@@ -9484,7 +9558,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$(0,0,1)^\\mathrm{T}$",
         "solution": "实对称矩阵不同特征值对应的特征向量正交。$\\alpha_1\\cdot\\alpha_2=1-1+0=0$（正交）。$\\lambda_3=2$ 的特征向量需与 $\\alpha_1$ 正交且与 $\\alpha_2$ 正交：$\\alpha_1\\cdot x=x_1+x_2=0$，$\\alpha_2\\cdot x=x_1-x_2=0$。解得 $(0,0,1)^\\mathrm{T}$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-eg-021",
@@ -9499,7 +9574,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$A$ 有 $n$ 个互异特征值 $\\Rightarrow$ $A$ 可对角化。$AB=BA$ 是可同时对角化的充分条件。设 $P^{-1}AP=D$ 为对角阵，则 $P^{-1}BP$ 也是对角阵（对于互异特征值的情况）。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-eg-022",
@@ -9509,7 +9585,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$1$（$1$ 是二重根）",
         "solution": "$f(\\lambda)=\\lambda^3-4\\lambda^2+5\\lambda-2=(\\lambda-1)^2(\\lambda-2)$。特征值为 $\\lambda=1$（二重），$\\lambda=2$（单根）。$A$ 不是纯量矩阵说明 $\\lambda=1$ 的几何重数可能小于 $2$，即 $A$ 可能不可对角化。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-eg-023",
@@ -9524,7 +9601,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$A$ 为实对称矩阵，必可正交对角化。$|A-\\lambda I|=\\begin{vmatrix}-\\lambda&0&1\\\\0&1-\\lambda&0\\\\1&0&-\\lambda\\end{vmatrix}=(-\\lambda)^2(1-\\lambda)-1\\cdot(1-\\lambda)=-\\lambda\\cdot(-\\lambda)(1-\\lambda)-1\\cdot(1-\\lambda)=(\\lambda^2-1)(1-\\lambda)=-(\\lambda-1)(\\lambda+1)(1-\\lambda)=(\\lambda-1)^2(\\lambda+1)=0$。特征值：$\\lambda=1$（二重），$\\lambda=-1$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-eg-024",
@@ -9534,7 +9612,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$0$",
         "solution": "设 $Ax=\\lambda x$（$x\\neq0$），则 $A^kx=\\lambda^kx=0$，故 $\\lambda^k=0\\Rightarrow\\lambda=0$。幂零矩阵的特征值全为零。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-025",
@@ -9549,7 +9628,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "实对称矩阵的秩等于非零特征值的个数（计重数）。$r(A)=2$ 故有 $2$ 个非零特征值，$1$ 个零特征值。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-eg-026",
@@ -9559,7 +9639,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$(0,1,1)^\\mathrm{T}$",
         "solution": "$|A-\\lambda I|=(1-\\lambda)[(2-\\lambda)^2-1]=(1-\\lambda)(\\lambda^2-4\\lambda+3)=(1-\\lambda)^2(3-\\lambda)$。特征值：$\\lambda=1$（二重），$\\lambda=3$。对于 $\\lambda=3$，$A-3I=\\begin{pmatrix}-2&0&0\\\\0&-1&1\\\\0&1&-1\\end{pmatrix}$，解得特征向量 $(0,1,1)^\\mathrm{T}$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-027",
@@ -9574,7 +9655,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "Jordan 块个数 $=$ 几何重数 $=\\dim\\operatorname{Null}(A-I)=n-r(A-I)=3-1=2$。有 $2$ 个 Jordan 块，特征值全为 $1$，总阶数为 $3$，必有一个 $2$ 阶块和一个 $1$ 阶块。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "la-eg-028",
@@ -9584,7 +9666,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$1$（单根），$-2$（二重根）",
         "solution": "由 $A^2+A-2I=O$ 得 $(A-I)(A+2I)=O$，故 $A$ 的特征值只能为 $1$ 或 $-2$。$r(A-I)=2$ 说明 $\\dim\\operatorname{Null}(A-I)=3-2=1$，即 $\\lambda=1$ 的几何重数为 $1$。设代数重数分别为 $a$（$\\lambda=1$）和 $b$（$\\lambda=-2$），$a+b=3$。迹 $=$ 特征值之和 $=1\\cdot a+(-2)\\cdot b$，但迹未知。利用 $r(A+2I)$ 信息缺失。——**推理**：$r(A-I)=2\\Rightarrow\\lambda=1$ 几何重数为 $1$。$A+2I$ 的秩：$(A-I)(A+2I)=O$，由秩不等式 $r(A-I)+r(A+2I)\\le3$，故 $r(A+2I)\\le1$。$\\lambda=-2$ 的代数重数至少为 $3-r(A+2I)\\ge2$。又 $\\lambda=1$ 至少 $1$ 重，总重数 $3$，故 $\\lambda=1$ 为 $1$ 重，$\\lambda=-2$ 为 $2$ 重。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-029",
@@ -9599,7 +9682,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$\\alpha_1$ 是 $\\lambda=1$ 的特征向量。$\\alpha_2$ 是 $\\lambda=2$ 的特征向量。$A\\alpha_3=2\\alpha_3+\\alpha_2$ 说明 $\\alpha_3$ 不是 $\\lambda=2$ 的特征向量，而是广义特征向量。在基 $\\alpha_1,\\alpha_2,\\alpha_3$ 下：$A\\sim\\begin{pmatrix}1&0&0\\\\0&2&1\\\\0&0&2\\end{pmatrix}$，$\\lambda=2$ 有一个 $2$ 阶 Jordan 块，不可对角化。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "特征值与特征向量"
       },
       {
         "id": "la-eg-030",
@@ -9614,7 +9698,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "正交矩阵的特征值之积 $=$ $|A|=-1$。实正交矩阵的复特征值成共轭对出现，每对共轭特征值之积为 $1$。故至少有一个实特征值 $\\lambda$ 满足 $|\\lambda|=1$ 且 $\\lambda<0$（否则乘积为正），即 $\\lambda=-1$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "相似对角化与实对称矩阵"
       }
     ]
   },
@@ -9636,7 +9721,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$f=x_1^2+2x_1x_2+x_2^2$。$x_1^2$ 系数为 $a_{11}=1$，$x_2^2$ 系数为 $a_{22}=1$，$x_1x_2$ 系数为 $2a_{12}=2$，故 $a_{12}=a_{21}=1$。矩阵为 $\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-002",
@@ -9651,7 +9737,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "该二次型已是标准形，所有系数均为正（$1,2,3>0$），正惯性指数 $p=3$，负惯性指数 $q=0$。**答案：D**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-003",
@@ -9661,7 +9748,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$2$",
         "solution": "二次型的矩阵表示中，$x_ix_j$（$i\\neq j$）的系数为 $2a_{ij}$。此处 $x_1x_2$ 的系数为 $4$，故 $a_{12}=a_{21}=2$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-004",
@@ -9676,7 +9764,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "对称矩阵 $A=\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$。$|A-\\lambda I|=(1-\\lambda)^2-4=\\lambda^2-2\\lambda-3=(\\lambda-3)(\\lambda+1)=0$，$\\lambda_1=3,\\lambda_2=-1$。正交标准形为 $3y_1^2-y_2^2$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-005",
@@ -9691,7 +9780,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "Sylvester 判据：实对称矩阵正定 $\\Leftrightarrow$ 所有顺序主子式均大于零。$|A|>0$ 只是必要非充分条件；特征值均大于零才是正定，仅非零不保证正定；满秩也不保证正定（如 $\\operatorname{diag}(1,-1)$ 满秩但不定）。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "正定二次型"
       },
       {
         "id": "la-qf-006",
@@ -9706,7 +9796,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "对称矩阵 $A=\\begin{pmatrix}1&1&-1\\\\1&2&0\\\\-1&0&3\\end{pmatrix}$。$|A|=1(6-0)-1(3-0)+(-1)(0+2)=6-3-2=1\\neq0$，故 $r(A)=3$。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-007",
@@ -9721,7 +9812,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "$B=C^\\mathrm{T}AC$ 是合同关系的定义。等价 $B=PAQ$（$P,Q$ 可逆）；相似 $B=P^{-1}AP$；合同 $B=C^\\mathrm{T}AC$（$C$ 可逆）。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-008",
@@ -9731,7 +9823,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$\\begin{pmatrix}2&-2&0\\\\-2&1&-2\\\\0&-2&0\\end{pmatrix}$",
         "solution": "$a_{11}=2$，$a_{22}=1$，$a_{33}=0$。$x_1x_2$ 系数 $-4$ 得 $2a_{12}=-4\\Rightarrow a_{12}=a_{21}=-2$。$x_2x_3$ 系数 $-4$ 得 $2a_{23}=-4\\Rightarrow a_{23}=a_{32}=-2$。$x_1x_3$ 系数 $0$ 得 $a_{13}=a_{31}=0$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-009",
@@ -9746,7 +9839,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$A$ 的特征值为 $\\lambda_1=3,\\lambda_2=-1$。正惯性指数 $p=1$，负惯性指数 $q=1$。规范形为 $\\operatorname{diag}(1,-1)$。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-010",
@@ -9756,7 +9850,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$y_1^2+y_2^2$（或 $z_1^2+z_2^2$）",
         "solution": "$A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$r(A)=2$（第一、二行成比例）。配方：$f=(x_1+x_2)^2+x_3^2$。令 $y_1=x_1+x_2,y_2=x_3$，得 $f=y_1^2+y_2^2$。$p=2,q=0$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-011",
@@ -9771,7 +9866,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$A$ 正定 $\\Leftrightarrow A=C^\\mathrm{T}C$（$C$ 可逆）。A 中'非负'对应半正定；C 中'非负'也对应半正定；D 只保证 $|A|>0$，必要非充分。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "正定二次型"
       },
       {
         "id": "la-qf-012",
@@ -9781,7 +9877,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$(-2,2)$",
         "solution": "矩阵 $A=\\begin{pmatrix}1&t\\\\t&4\\end{pmatrix}$。Sylvester 判据：(1) $a_{11}=1>0$；(2) $|A|=4-t^2>0$，故 $t^2<4$，即 $-2<t<2$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "正定二次型"
       },
       {
         "id": "la-qf-013",
@@ -9796,7 +9893,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$A=\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}$。$|A-\\lambda I|=(3-\\lambda)^2-1=(\\lambda-2)(\\lambda-4)=0$，$\\lambda=2,4>0$。正惯性指数 $p=2,q=0$，规范形 $y_1^2+y_2^2$。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-014",
@@ -9811,7 +9909,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "合同变换 $B=C^\\mathrm{T}AC$（$C$ 可逆）保秩。但一般不保特征值（如 $\\operatorname{diag}(1,1)$ 合同于 $\\operatorname{diag}(2,2)$ 但特征值不同），也一般不保相似。$|B|=|C|^2|A|$，不等于 $|A|$。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-015",
@@ -9821,7 +9920,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$p<n$ 且 $q<n$（或不定/半正定半负定均可）",
         "solution": "存在非零 $x$ 使 $f(x)=0$ 等价于二次型不是正定也不是负定的，即 $p<n$ 且 $q<n$（存在零特征值或正负惯性均存在）。确切地说，$f$ 不定或半正定（$q=0,p<n$）或半负定（$p=0,q<n$）时，非零 $x$ 使 $f=0$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-016",
@@ -9836,7 +9936,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "$A^2=A\\Rightarrow$ 特征值只能为 $0$ 或 $1$。$r(A)=2\\Rightarrow$ 非零特征值个数为 $2$，即有两个特征值为 $1$，一个为 $0$。正惯性指数 $=$ 正特征值个数 $=2$。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-017",
@@ -9851,7 +9952,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$A=\\begin{pmatrix}k&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$|A|=k\\cdot1-1\\cdot1+0=k-1$。$r(A)=2\\Rightarrow|A|=0\\Rightarrow k=1$。当 $k=1$ 时 $A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$，二阶子式 $\\begin{vmatrix}1&0\\\\0&1\\end{vmatrix}=1\\neq0$，$r(A)=2$。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-018",
@@ -9861,7 +9963,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$y_1^2+y_2^2-y_3^2$",
         "solution": "$A$ 是分块对角阵。左上块 $\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$ 的特征值：$|A-\\lambda I|=(1-\\lambda)^2-4=0\\Rightarrow\\lambda^2-2\\lambda-3=0$，$\\lambda_1=3,\\lambda_2=-1$。右下块 $-2$，特征值 $-2$。总特征值 $3,-1,-2$。正特征值 $3>0$（一个），负特征值 $-1,-2<0$（两个）。$p=1,q=2$。规范形 $y_1^2-y_2^2-y_3^2$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-019",
@@ -9876,7 +9979,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "合同 $\\Leftrightarrow$ 秩相等且正惯性指数相等（Sylvester 惯性定律）。合同不一定保特征值，保特征值的是相似。合同 $B=C^\\mathrm{T}AC$ 时 $|B|=|C|^2|A|$，一般 $|C|^2\\neq1$，故 $|A|\\neq|B|$。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-020",
@@ -9886,7 +9990,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$4y_1^2+y_2^2+y_3^2$",
         "solution": "$A=\\begin{pmatrix}2&1&1\\\\1&2&1\\\\1&1&2\\end{pmatrix}=I+J$（其中 $J$ 为全 $1$ 矩阵）。$J$ 的特征值：$3$（对应 $(1,1,1)^\\mathrm{T}$）和 $0$（二重）。$A=I+J$ 的特征值：$1+3=4$，$1+0=1$（二重）。故正交标准形为 $4y_1^2+y_2^2+y_3^2$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-021",
@@ -9901,7 +10006,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "$A^2-5A+6I=(A-2I)(A-3I)=O$，特征值只能为 $2$ 或 $3$。$r(A-2I)=2\\Rightarrow\\dim\\operatorname{Null}(A-2I)=3-2=1$，$\\lambda=2$ 的几何重数为 $1$。$A$ 实对称必可对角化，故 $\\lambda=2$ 的代数重数 $=$ 几何重数 $=1$。总阶数 $3$，故 $\\lambda=3$ 的代数重数为 $2$。特征值 $2>0,3>0,3>0$ 全正，正惯性指数 $p=3$。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-022",
@@ -9911,7 +10017,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$-\\frac{4}{5}<t<0$",
         "solution": "$A=\\begin{pmatrix}1&t&-1\\\\t&1&2\\\\-1&2&5\\end{pmatrix}$。顺序主子式：$D_1=1>0$；$D_2=1-t^2>0\\Rightarrow-1<t<1$；$D_3=|A|=1(5-4)-t(5t+2)+(-1)(2t+1)=1-t(5t+2)-(2t+1)=1-5t^2-2t-2t-1=-5t^2-4t=-t(5t+4)>0\\Rightarrow t(5t+4)<0\\Rightarrow-\\frac{4}{5}<t<0$。综合得 $-\\frac{4}{5}<t<0$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "正定二次型"
       },
       {
         "id": "la-qf-023",
@@ -9926,7 +10033,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "正、负惯性指数之和等于秩，$p+q=3 \\Rightarrow r(A)=3$，即 $A$ 满秩 $\\Rightarrow |A| \\neq 0$。计算 $|A|$：按第一行展开，$|A|=1\\cdot(1-b^2)-a\\cdot(a-b)+1\\cdot(ab-1)=1-b^2-a^2+ab+ab-1=-(a^2-2ab+b^2)=-(a-b)^2$。由 $|A|\\neq0$ 得 $a\\neq b$。当 $a\\neq b$ 时 $|A|=-(a-b)^2<0$，即三个特征值乘积为负；又 $\\operatorname{tr}(A)=3>0$，三个特征值之和为正。实对称矩阵特征值均为实数，故必有两个正特征值、一个负特征值，即 $p=2,q=1$。因此条件等价于 $a\\neq b$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-024",
@@ -9936,7 +10044,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$\\max\\{\\lambda_i\\}$ 和 $\\min\\{\\lambda_i\\}$",
         "solution": "Rayleigh 商定理：对于实对称矩阵 $A$，$\\min\\limits_{\\|x\\|=1}x^\\mathrm{T}Ax=\\lambda_{\\min}$，$\\max\\limits_{\\|x\\|=1}x^\\mathrm{T}Ax=\\lambda_{\\max}$。在单位球面上，二次型的最值分别等于 $A$ 的最小和最大特征值。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-025",
@@ -9951,7 +10060,8 @@ var EDITOR_DATA = [
         ],
         "answer": 3,
         "solution": "正定矩阵之和仍正定：对任意 $x\\neq0$，$x^\\mathrm{T}(A+B)x=x^\\mathrm{T}Ax+x^\\mathrm{T}Bx>0$。A 项 $A-B$ 不一定正定（取 $A=I,B=2I$，$A-B=-I$ 负定）。B 项 $AB$ 不一定对称，即使对称也不一定正定（如 $A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix},B=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}$，$AB$ 不对称）。C 项 $A^{-1}-B^{-1}$ 不一定正定（取 $A=I,B=2I$ 得 $\\frac{1}{2}I$ 正定，但取 $A=2I,B=I$ 得 $-\\frac{1}{2}I$ 负定）。只有 D 项 $A+B$ 恒正定。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "正定二次型"
       },
       {
         "id": "la-qf-026",
@@ -9961,7 +10071,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$2$",
         "solution": "设三特征值为 $\\lambda_1=3,\\lambda_2,\\lambda_3$。$\\lambda_1+\\lambda_2+\\lambda_3=1\\Rightarrow\\lambda_2+\\lambda_3=-2$。$\\lambda_1\\lambda_2\\lambda_3=-12\\Rightarrow3\\lambda_2\\lambda_3=-12\\Rightarrow\\lambda_2\\lambda_3=-4$。解 $\\lambda_2+\\lambda_3=-2,\\lambda_2\\lambda_3=-4$：$\\lambda_2,\\lambda_3$ 是 $t^2+2t-4=0$ 的根，$t=-1\\pm\\sqrt{5}$。$\\sqrt{5}-1\\approx1.236>0$（正），$-1-\\sqrt{5}\\approx-3.236<0$（负）。特征值 $3>0,\\sqrt{5}-1>0,-1-\\sqrt{5}<0$。正特征值有 $2$ 个，正惯性指数 $p=2$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-027",
@@ -9976,7 +10087,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "对任意 $y\\neq0$，$x=Cy\\neq0$（因 $C$ 可逆）。$g(y)=y^\\mathrm{T}C^\\mathrm{T}ACy=(Cy)^\\mathrm{T}A(Cy)=x^\\mathrm{T}Ax>0$（因 $f$ 正定）。故 $g$ 也正定。合同变换保正定性。**答案：A**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "正定二次型"
       },
       {
         "id": "la-qf-028",
@@ -9986,7 +10098,8 @@ var EDITOR_DATA = [
         "options": null,
         "answer": "$2$",
         "solution": "$A$ 的特征值：左上 $2\\times2$ 块 $\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}$，特征值 $1,-1$；右下 $2$。故 $A$ 的最大特征值为 $2$。由 Rayleigh 商，最大值为 $2$。",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "la-qf-029",
@@ -10001,7 +10114,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "这是惯性定律的推广：若 $A$ 正定，$B$ 对称，则可同时合同对角化 $A$ 和 $B$（通过 $A$ 的 Cholesky 分解后对 $B$ 正交对角化）。即存在可逆 $C$ 使 $C^\\mathrm{T}AC=I$，$C^\\mathrm{T}BC=\\operatorname{diag}$。A 错（$AB$ 不一定对称更不一定可对角化）；B 错（合同需同惯性指数）；D 错（$B$ 可能负定使 $A+B$ 不定）。**答案：C**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "正定二次型"
       },
       {
         "id": "la-qf-030",
@@ -10016,7 +10130,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$uu^\\mathrm{T}$ 为半正定矩阵（秩为 $1$ 的投影矩阵的倍数）。半正定矩阵加法使特征值单调不减（Weyl 不等式/特征值交错定理的推论）。故 $\\mu_i\\ge\\lambda_i$ 对所有 $i$ 成立。**答案：B**",
-        "cat": "线性代数"
+        "cat": "线性代数",
+        "topic": "二次型标准形与合同"
       }
     ]
   },
@@ -13736,7 +13851,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$设 Ax=λx(x\\neq0)，则 A⁻¹(Ax)=A⁻¹(λx)，即 x=λA⁻¹x，所以 A⁻¹x=(1/λ)x。故 A⁻¹ 的特征值为 1/λ。注意 A 可逆保证 λ\\neq0。$",
         "cat": "线性代数",
-        "topic": "逆矩阵的特征值"
+        "topic": "特征值与特征向量"
       },
       {
         "id": "comp-077",
@@ -13752,7 +13867,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "特征方程 |A-λI| = |1-λ  2; 2  1-λ| = (1-λ)²-4 = λ²-2λ-3 = (λ-3)(λ+1)=0。λ₁=3, λ₂=-1。该矩阵是对称矩阵，特征值全为实数。",
         "cat": "线性代数",
-        "topic": "特征多项式求解"
+        "topic": "特征值与特征向量"
       },
       {
         "id": "comp-078",
@@ -13768,7 +13883,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "A 可对角化的充要条件是 A 有 n 个线性无关的特征向量。注意可逆只保证特征值非零，不保证可对角化（如[[1,1],[0,1]]可逆但不可对角化）。",
         "cat": "线性代数",
-        "topic": "可对角化判定"
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "comp-079",
@@ -13784,7 +13899,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "A 可对角化的充要条件是每个特征值的几何重数 = 代数重数。λ=1 的代数重数为 2（二重根），所以几何重数也必须是 2，即有两个线性无关的特征向量。λ=2 自然有一个。共 3 个特征向量构成可逆矩阵 P。考查相似对角化的条件——几何重数与代数重数的关系。",
         "cat": "线性代数",
-        "topic": "可对角化·几何重数"
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "comp-080",
@@ -13800,7 +13915,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "行列式 = 所有特征值的乘积：|A| = λ₁λ₂…λ_n。迹 = 所有特征值之和：tr(A) = λ₁+λ₂+…+λ_n。这两个公式是特征值理论最常用的结论。",
         "cat": "线性代数",
-        "topic": "特征值与行列式的关系"
+        "topic": "特征值与特征向量"
       },
       {
         "id": "comp-081",
@@ -13810,7 +13925,7 @@ var EDITOR_DATA = [
         "answer": "20",
         "solution": "A² 的特征值为 1²=1, (-1)²=1, 2²=4。A²+E 的特征值为 1+1=2, 1+1=2, 4+1=5。行列式 = 2×2×5 = 20。考查特征值的函数运算性质。",
         "cat": "线性代数",
-        "topic": "矩阵多项式的特征值"
+        "topic": "特征值与特征向量"
       },
       {
         "id": "comp-082",
@@ -13826,7 +13941,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "设 λ 是 A 的特征值，则 λ²-3λ+2=0，λ=1 或 2。A 的特征值必取自 {1,2}，但具体取哪些取决于 A。可能只有 1（如 A=E），只有 2（如 A=2E），或都有。考查特征多项式与矩阵方程的关系——特征值必满足矩阵的零化多项式。",
         "cat": "线性代数",
-        "topic": "矩阵零化多项式·特征值范围"
+        "topic": "特征值与特征向量"
       },
       {
         "id": "comp-083",
@@ -13836,7 +13951,7 @@ var EDITOR_DATA = [
         "answer": "$(1/\\sqrt2, 1/\\sqrt2)$",
         "solution": "$λ₁=3 对应的特征向量 (1,1)ᵀ，单位化得 (1/\\sqrt2, 1/\\sqrt2)ᵀ。λ₂=1 对应 (-1,1)ᵀ，单位化 (-1/\\sqrt2, 1/\\sqrt2)ᵀ。P 是正交矩阵。考查实对称矩阵的正交对角化。$",
         "cat": "线性代数",
-        "topic": "实对称矩阵对角化·单位特征向量"
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "comp-084",
@@ -13852,7 +13967,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "实对称矩阵的特征值全部为实数，且不同特征值对应的特征向量正交。这是实对称矩阵最重要的谱性质，也是二次型化为标准型的基础。",
         "cat": "线性代数",
-        "topic": "实对称矩阵性质"
+        "topic": "相似对角化与实对称矩阵"
       },
       {
         "id": "comp-085",
@@ -13868,7 +13983,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "|A| = Πλ_i，若有 λ=0 则 |A|=0，A 不可逆。迹 tr(A)=Σλ_i 为 0 不代表 A 不可逆（如特征值 1,-1,0 则迹=0且不可逆；特征值 1,-1 则迹=0但可逆）。考查特征值与行列式的关系——特征值为零等价于矩阵不可逆。",
         "cat": "线性代数",
-        "topic": "零特征值与奇异性"
+        "topic": "特征值与特征向量"
       },
       {
         "id": "comp-086",
@@ -13884,7 +13999,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$二次型矩阵 A 满足 a_ij = a_ji = (x_i x_j 系数)/2（i\\neqj）。此处 x₁x₂ 系数为 4，故 a₁₂=a₂₁=2。对角元直接取平方项系数。A = [[1,2],[2,1]]。注意必须是对称矩阵。$",
         "cat": "线性代数",
-        "topic": "二次型的矩阵表示"
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "comp-087",
@@ -13900,7 +14015,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "矩阵 A = [[2,1],[1,2]]。顺序主子式：Δ₁=2>0，Δ₂=4-1=3>0，故正定。或用特征值法：λ₁=3,λ₂=1 均大于0。考查二次型正定性的判别方法。",
         "cat": "线性代数",
-        "topic": "正定判定·顺序主子式"
+        "topic": "正定二次型"
       },
       {
         "id": "comp-088",
@@ -13916,7 +14031,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$β₁=(1,1,0)ᵀ。β₂=(1,0,1)ᵀ - [(1,0,1)·β₁/‖β₁‖²]β₁ = (1,0,1)ᵀ - (1/2)(1,1,0)ᵀ = (1/2, -1/2, 1)ᵀ。投影长度 = |(1,0,1)·β₁|/‖β₁‖ = 1/\\sqrt2。考查施密特正交化+投影概念。$",
         "cat": "线性代数",
-        "topic": "施密特正交化·投影"
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "comp-089",
@@ -13932,7 +14047,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "两者的正惯性指数均为 2，负惯性指数均为 0，秩均为 2。由惯性定理，两实二次型合同当且仅当正负惯性指数相同。故它们合同。考查二次型分类——惯性指数是不变量。",
         "cat": "线性代数",
-        "topic": "合同判定·惯性指数"
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "comp-090",
@@ -13942,7 +14057,7 @@ var EDITOR_DATA = [
         "answer": "2",
         "solution": "α₂=2α₁，α₃ 与 α₁ 线性无关。矩阵 [1 2 1; 2 4 1; 3 6 1] 的秩为 2。考查向量组线性相关性+秩。注意识别倍数关系。",
         "cat": "线性代数",
-        "topic": "向量组的秩"
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "comp-091",
@@ -13958,7 +14073,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$正定矩阵的定义就是 ∀x\\neq0，xᵀAx>0。注意：二次型矩阵默认为对称矩阵，所以这里 A 既对称又正定。正定矩阵 ⇔ 特征值全正 ⇔ 顺序主子式全正。$",
         "cat": "线性代数",
-        "topic": "正定判定"
+        "topic": "正定二次型"
       },
       {
         "id": "comp-092",
@@ -13968,7 +14083,7 @@ var EDITOR_DATA = [
         "answer": "$-\\sqrt2 < t < \\sqrt2$",
         "solution": "$矩阵 A = [[2,1,0],[1,1,t/2],[0,t/2,1]]。顺序主子式：Δ₁=2>0，Δ₂=2-1=1>0，Δ₃=|A|=2(1-t²/4)-1(1-0)=2-t²/2-1=1-t²/2。要求 Δ₃>0 得 t²<2，即 -\\sqrt2<t<\\sqrt2。考查参数范围+正定判别。$",
         "cat": "线性代数",
-        "topic": "正定判定·参数范围"
+        "topic": "正定二次型"
       },
       {
         "id": "comp-093",
@@ -13984,7 +14099,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "内积为零 ⇔ 两向量正交（垂直）。在线性代数中，正交是比线性无关更强的概念。一组两两正交的非零向量必定线性无关，反之不成立。",
         "cat": "线性代数",
-        "topic": "内积与正交"
+        "topic": "向量组的线性相关性"
       },
       {
         "id": "comp-094",
@@ -14064,7 +14179,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "矩阵 A = [[1,2],[2,λ]]。顺序主子式：Δ₁=1>0，Δ₂=λ-4>0 ⇒ λ>4。或用特征值法：特征方程 (1-t)(λ-t)-4=0，两特征值均>0 ⇔ 迹=1+λ>0（显然）且行列式=λ-4>0 ⇒ λ>4。考查含参数二次型的正定性判别。",
         "cat": "线性代数",
-        "topic": "正定判定·参数范围"
+        "topic": "正定二次型"
       },
       {
         "id": "comp-099",
@@ -14074,7 +14189,7 @@ var EDITOR_DATA = [
         "answer": "4",
         "solution": "矩阵 A 所有对角元=2，所有非对角元=1。求特征值：|A-λI| = 0。A 的特殊结构——矩阵为 J+E（J 全1矩阵，E单位阵）。λ₁=4（对应特征向量(1,1,1)ᵀ），λ₂=λ₃=1。标准型：f=4y₁²+y₂²+y₃²。考查正交变换化二次型——等对角等非对角矩阵的特征值规律。",
         "cat": "线性代数",
-        "topic": "正交变换化标准型"
+        "topic": "二次型标准形与合同"
       },
       {
         "id": "comp-100",
@@ -14090,7 +14205,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$正定矩阵的定义就是 ∀x\\neq0, xᵀAx>0。取 x 为特征向量：xᵀAx = λxᵀx = λ‖x‖² > 0，故 λ > 0。逆命题也成立：所有特征值>0 ⇒ A正定。结合二次型化标准型：f = λ₁y₁²+…+λ_ny_n²，λ_i>0 则 f>0(∀y\\neq0)。考查正定矩阵的充要条件——特征值全正。$",
         "cat": "线性代数",
-        "topic": "正定与特征值"
+        "topic": "正定二次型"
       },
       {
         "id": "comp-201",
@@ -14868,7 +14983,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "【校】PDF 作 $\\alpha_3=\\alpha_2+2\\alpha_2$，显系笔误，按 $\\alpha_3=\\alpha_1+2\\alpha_2$。\n\n**结论**：(1) $r(A)=2$。\n(2) $Ax=b$ 的通解为 $x=(0,0,2)^{\\mathrm{T}}+k(1,2,-1)^{\\mathrm{T}},\\ k\\in\\mathbb{R}$。\n\n(1) $A=(\\alpha_1,\\alpha_2,\\alpha_3)$ 是 $3$ 阶矩阵，$\\alpha_1,\\alpha_2,\\alpha_3$ 为其三个列向量。\n\n由 $\\alpha_3=\\alpha_1+2\\alpha_2$，即 $\\alpha_1+2\\alpha_2-\\alpha_3=0$，故 $\\alpha_1,\\alpha_2,\\alpha_3$ 线性相关，$r(A)\\le 2$。\n\n设 $A$ 的三个特征值为 $\\lambda_1,\\lambda_2,\\lambda_3$ 两两不同。不同特征值对应的特征向量线性无关；若 $\\alpha_1,\\alpha_2$ 线性相关，则存在不全为零的 $k_1,k_2$ 使 $k_1\\alpha_1+k_2\\alpha_2=0$，即 $A(k_1\\alpha_1+k_2\\alpha_2)=\\lambda_1k_1\\alpha_1+\\lambda_2k_2\\alpha_2=0$，而 $\\alpha_1,\\alpha_2$ 又是特征向量（$A\\alpha_i=\\lambda_i\\alpha_i$），由此推出 $\\lambda_1=\\lambda_2$，与\"三个特征值两两不同\"矛盾。故 $\\alpha_1,\\alpha_2$ 线性无关，$r(A)\\ge 2$。\n\n综上 $r(A)=2$。\n\n(2) 由 $\\alpha_3=\\alpha_1+2\\alpha_2$ 得\n$$b=\\alpha_1+2\\alpha_2+\\alpha_3=\\alpha_1+2\\alpha_2+(\\alpha_1+2\\alpha_2)=2\\alpha_1+4\\alpha_2=2\\alpha_3.$$\n\n设 $Ax=b$ 的特解为 $x_0=(x_1,x_2,x_3)^{\\mathrm{T}}$，则\n$$x_1\\alpha_1+x_2\\alpha_2+x_3\\alpha_3=2\\alpha_3=2\\alpha_1+4\\alpha_2.$$\n将 $\\alpha_3=\\alpha_1+2\\alpha_2$ 代入左端：\n$$(x_1+x_3)\\alpha_1+(2x_2+2x_3)\\alpha_2=2\\alpha_1+4\\alpha_2.$$\n由 $\\alpha_1,\\alpha_2$ 线性无关：\n$$\\begin{cases}x_1+x_3=2\\\\ 2x_2+2x_3=4\\end{cases}\\Rightarrow \\begin{cases}x_1=2-x_3\\\\ x_2=2-x_3\\end{cases}.$$\n取 $x_3=2$，得特解 $x_0=(0,0,2)^{\\mathrm{T}}$。\n\n$Ax=0$ 等价于 $x_1\\alpha_1+x_2\\alpha_2+x_3\\alpha_3=0$，代入 $\\alpha_3=\\alpha_1+2\\alpha_2$：\n$$(x_1+x_3)\\alpha_1+(2x_2+2x_3)\\alpha_2=0.$$\n由 $\\alpha_1,\\alpha_2$ 无关得 $x_1=-x_3,\\ x_2=-x_3$。取 $x_3=-1$，得基础解系 $\\eta=(1,2,-1)^{\\mathrm{T}}$。\n\n故通解为\n$$x=x_0+k\\eta=(0,0,2)^{\\mathrm{T}}+k(1,2,-1)^{\\mathrm{T}},\\ k\\in\\mathbb{R}.$$\n\n- 由列向量组的线性关系直接判定矩阵的秩。\n- 利用\"不同特征值对应的特征向量线性无关\"反证 $\\alpha_1,\\alpha_2$ 无关。\n- 求 $Ax=b$：先特解，再齐次基础解系，非齐次通解 = 特解 + 齐次通解。\n\n---",
         "cat": "线性代数",
-        "topic": "特征值·秩与通解",
+        "topic": "特征值与特征向量",
         "source": "综合例题PDF·例2"
       },
       {
@@ -14879,7 +14994,7 @@ var EDITOR_DATA = [
         "answer": "$\\operatorname{tr}(A^{2})=2$。",
         "solution": "$A$ 是 $3$ 阶矩阵，$r(A)=2$，故 $A$ 有一个零特征值和两个非零特征值。\n\n由 $A\\alpha=0$，$\\alpha\\neq 0$，知 $\\alpha$ 是 $A$ 对应于特征值 $0$ 的特征向量，且 $N(A)=\\mathrm{span}\\{\\alpha\\}$ 是 $1$ 维的。\n\n设 $W=\\{\\beta\\mid \\beta^{\\mathrm{T}}\\alpha=0\\}$。因 $\\alpha\\neq 0$，$W$ 是 $\\mathbb{R}^3$ 的 $2$ 维子空间（即 $\\alpha$ 的正交补）。题设对任意 $\\beta\\in W$，$A\\beta=\\beta$，故 $W$ 上的每个向量都是 $A$ 对应特征值 $1$ 的特征向量，即 $W$ 是 $A$ 的特征值 $1$ 的特征子空间。\n\n故 $1$ 是 $A$ 的二重特征值，$A$ 的三个特征值为 $1,1,0$。\n\n由 $A$ 在 $W$ 上是恒等映射、在 $N(A)$ 上是零映射，可知 $A^{2}=A$，从而 $A^{2}$ 的特征值为 $1^{2}=1,1^{2}=1,0^{2}=0$。\n\n$$\\operatorname{tr}(A^{2})=1+1+0=2.$$\n\n- $r(A)=2$ ���出 $A$ 有一个零特征值、两个非零特征值。\n- 满足 $A\\beta=\\beta$ 的全体 $\\beta$ 构成特征子空间，$\\dim W=2$ 推出 $1$ 是二重特征值。\n- $A^{2}=A$ 时迹即为非零特征值的个数。\n\n---",
         "cat": "线性代数",
-        "topic": "秩·迹",
+        "topic": "矩阵的秩",
         "source": "综合例题PDF·例4"
       },
       {
@@ -14890,7 +15005,7 @@ var EDITOR_DATA = [
         "answer": "$|A^{*}|=4$。",
         "solution": "设 $A$ 的三个特征值为 $\\lambda_1,\\lambda_2,\\lambda_3$。\n\n(i) 由 $r(A+E)=1$，$-1$ 是 $A$ 的特征值，且 $A+E$ 的零空间维数为 $3-1=2$，即 $-1$ 的几何重数 = $2$，故 $-1$ 至少是二重特征值。\n\n(ii) 由 $r(2E-A)=2$，$2$ 是 $A$ 的特征值，且 $2E-A$ 的零空间维数为 $3-2=1$，即 $2$ 的几何重数 = $1$，故 $2$ 至少是单特征值。\n\n$A$ 是 $3$ 阶矩阵，三个特征值为 $-1,-1,2$。\n\n于是 $|A|=(-1)\\cdot(-1)\\cdot 2=2$。\n\n由 $|A^{*}|=|A|^{3-1}=|A|^{2}=2^{2}=4$。\n\n- $r(\\lambda E-A)=n-k$ 等价于 $\\lambda$ 的几何重数 = $k$。\n- $|A^{*}|=|A|^{n-1}$（$n$ 阶矩阵）。\n- 由 $r$ 联合推出各特征值的代数重数。\n\n---",
         "cat": "线性代数",
-        "topic": "伴随矩阵·行列式",
+        "topic": "矩阵运算与行列式",
         "source": "综合例题PDF·例5"
       },
       {
@@ -14901,7 +15016,7 @@ var EDITOR_DATA = [
         "answer": "$a=-\\dfrac{1}{3}$。",
         "solution": "设存在不全为零的实数 $k_1,k_2,k_3$ 使\n$$k_1(\\beta+\\alpha_1)+k_2(\\beta+\\alpha_2)+k_3(a\\beta+\\alpha_3)=0,$$\n即\n$$(k_1+k_2+ak_3)\\beta+(k_1\\alpha_1+k_2\\alpha_2+k_3\\alpha_3)=0.$$\n\n因为 $\\beta$ 是任意向量，所以 $\\beta$ 与 $\\alpha_1,\\alpha_2,\\alpha_3$ 不存在线性耦合（否则 $\\beta$ 反而被表出，矛盾），由此等式对任意 $\\beta$ 成立，两部分必须分别恒为零：\n$$k_1+k_2+ak_3=0,\\qquad k_1\\alpha_1+k_2\\alpha_2+k_3\\alpha_3=0.$$\n\n由 $2\\alpha_1-\\alpha_2+3\\alpha_3=0$，$\\alpha_1,\\alpha_2,\\alpha_3$ 线性相关，存在非零解 $(k_1,k_2,k_3)=(2,-1,3)$。\n\n代入 $k_1+k_2+ak_3=0$：\n$$2+(-1)+3a=0\\Rightarrow 1+3a=0\\Rightarrow a=-\\frac{1}{3}.$$\n\n- \"$\\beta$ 任意\"是核心条件，由此推出 $\\beta$ 的系数必为零。\n- 利用已知的 $\\alpha_1,\\alpha_2,\\alpha_3$ 线性关系 $(2,-1,3)$ 代入求参数。\n\n---",
         "cat": "线性代数",
-        "topic": "线性相关·参数",
+        "topic": "向量组的线性相关性",
         "source": "综合例题PDF·例70"
       },
       {
@@ -14912,7 +15027,7 @@ var EDITOR_DATA = [
         "answer": "$t=3$（按主流答案给出；严格按定义 $\\alpha_4$ 在 $t=3$ 时不可由 $\\alpha_1,\\alpha_2$ 表示，详见【详解】末段题面校正）",
         "solution": "末段题面校正）。\n\n**【详解】**\n\n$\\alpha_1,\\alpha_2$ 是极大无关组要求：(i) $\\alpha_1,\\alpha_2$ 线性无关；(ii) $\\alpha_3,\\alpha_4$ 都可由 $\\alpha_1,\\alpha_2$ 线性表示。\n\n(i) $|\\alpha_1,\\alpha_2|=\\det\\begin{pmatrix}1&2\\\\1&4\\end{pmatrix}=4-2=2\\neq 0$，故 $\\alpha_1,\\alpha_2$ 总无关。\n\n(ii) $\\alpha_3$ 可由 $\\alpha_1,\\alpha_2$ 表示 $\\Leftrightarrow |\\alpha_1,\\alpha_2,\\alpha_3|=0$。计算：\n$$|\\alpha_1,\\alpha_2,\\alpha_3|=\\det\\begin{pmatrix}1&2&2\\\\1&4&6\\\\-1&t-1&6\\end{pmatrix}.$$\n按第 $3$ 行展开：\n$$(-1)\\begin{vmatrix}2&2\\\\4&6\\end{vmatrix}-(t-1)\\begin{vmatrix}1&2\\\\1&6\\end{vmatrix}+6\\begin{vmatrix}1&2\\\\1&4\\end{vmatrix}=(-1)\\cdot 4-(t-1)\\cdot 4+6\\cdot 2=12-4t.$$\n令其为零，$t=3$。\n\n$\\alpha_4$ 可由 $\\alpha_1,\\alpha_2$ 表示 $\\Leftrightarrow |\\alpha_1,\\alpha_2,\\alpha_4|=0$。计算：\n$$|\\alpha_1,\\alpha_2,\\alpha_4|=\\det\\begin{pmatrix}1&2&t\\\\1&4&14\\\\-1&t-1&-4\\end{pmatrix}.$$\n按第 $3$ 行展开：\n$$(-1)\\begin{vmatrix}2&t\\\\4&14\\end{vmatrix}-(t-1)\\begin{vmatrix}1&t\\\\1&14\\end{vmatrix}+(-4)\\begin{vmatrix}1&2\\\\1&4\\end{vmatrix}=(-1)(28-4t)-(t-1)(14-t)-8$$\n$$=4t-28-(14t-t^{2}-14+t)-8=t^{2}-11t-22.$$\n\n**【题面校正说明】** 当 $t=3$ 时 $|\\alpha_1,\\alpha_2,\\alpha_4|=9-33-22=-46\\neq 0$，故 $\\alpha_4$ 不可由 $\\alpha_1,\\alpha_2$ 表示，\"$\\alpha_1,\\alpha_2$ 是极大无关组\"严格不成立。多数版本答案仅以 $\\alpha_3$ 可表为条件，给出 $t=3$；严格条件下的 $t$ 无公共实根。本题按主流版本作答 $t=3$，并提示题面条件不全（疑缺\"$\\alpha_1,\\alpha_2,\\alpha_3$ 中 $\\alpha_1,\\alpha_2$ 是极大无关组\"或\"$\\alpha_3$ 可由 $\\alpha_1,\\alpha_2$ 表示\"等单一条件）。\n\n- \"$\\alpha_1,\\alpha_2$ 是极大无关组\"要求 $\\alpha_1,\\alpha_2$ 无关且其余向量均可由之表示。\n- 行列式判线性相关/可表示：$|\\alpha_i,\\alpha_j,\\alpha_k|=0$ 等价于 $\\alpha_k$ 可由 $\\alpha_i,\\alpha_j$ 表示。\n- 注意题面常以\"$\\alpha_3$ 可表\"单条件出题，本题按主流答案 $t=3$ 作答。\n\n---",
         "cat": "线性代数",
-        "topic": "极大无关组·参数",
+        "topic": "向量组的线性相关性",
         "source": "综合例题PDF·例71"
       },
       {
@@ -14923,7 +15038,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "【校】PDF 该矩阵识别失真，取上述常见原型（含参数 $a$ 的 $4$ 阶对称矩阵）并在解答中给出通法。\n\n**结论**：$a=-3$，$A^{*}x=0$ 的通解为\n$$x=c_{1}(1,-1,0,0)^{\\mathrm{T}}+c_{2}(1,0,-1,0)^{\\mathrm{T}}+c_{3}(1,0,0,-1)^{\\mathrm{T}},\\ c_{1},c_{2},c_{3}\\in\\mathbb{R}.$$\n\n设 $A=\\begin{pmatrix}a&1&1&1\\\\1&a&1&1\\\\1&1&1&1\\\\1&1&a&1\\end{pmatrix}$（按题面【校】还原），考虑 $\\mathbf{1}=(1,1,1,1)^{\\mathrm{T}}$：\n$$A\\mathbf{1}=\\begin{pmatrix}a+3\\\\a+3\\\\a+3\\\\a+3\\end{pmatrix}=(a+3)\\mathbf{1}.$$\n\n所以 $\\mathbf{1}$ 是 $A$ 的特征向量，特征值 $a+3$。\n\n由 $Ax=0$ 有非零解（即 $A$ 不可逆），必有特征值 $0$，故 $a+3=0$，$a=-3$。\n\n代入得\n$$A=\\begin{pmatrix}-3&1&1&1\\\\1&-3&1&1\\\\1&1&-3&1\\\\1&1&1&-3\\end{pmatrix}.$$\n验证 $A\\mathbf{1}=0$：每行和 $=-3+1+1+1=0$ ✓。\n\n故 $r(A)=3$（$A$ 不可逆但有一个非零特征值；非零特征值的个数等于 $r(A)$ 中非零部分的维数）。由经典结论，$r(A)=n-1$ 时 $r(A^{*})=1$；故 $A^{*}x=0$ 的解空间维数为 $4-1=3$。\n\n由 $\\tilde{A}A=|A|E=0$，$A$ 的列向量都是 $\\tilde{A}x=0$ 的解，即都在 $N(\\tilde{A})=N(A^{*})$ 中（因为 $A^{*}=\\tilde{A}^{\\mathrm{T}}/|A|$ 在 $|A|=0$ 时需特别处理，但 $r(A)=n-1$ 时 $r(\\tilde{A})=1$，$A^{*}$ 的列都是同一向量的倍数）。具体计算 $A^{*}$ 的第 $1$ 列各元素：\n\n$A^{*}_{11}=\\det\\begin{pmatrix}-3&1&1\\\\1&-3&1\\\\1&1&-3\\end{pmatrix}=-3(9-1)-1(-3-1)+1(1+3)=-16.$\n\n$A^{*}_{21}=-\\det\\begin{pmatrix}1&1&1\\\\1&-3&1\\\\1&1&-3\\end{pmatrix}=-(8+4+4)=-16.$\n\n类似计算 $A^{*}_{31}=-16$，$A^{*}_{41}=-16$。由 $A$ 对称性（$A^{*}_{ij}=A^{*}_{ji}$），且每行通过轮换得到相同结构，$A^{*}$ 的所有元素均为 $-16$，即\n$$A^{*}=-16\\begin{pmatrix}1&1&1&1\\\\1&1&1&1\\\\1&1&1&1\\\\1&1&1&1\\\\1&1&1&1\\end{pmatrix}=-16\\cdot\\mathbf{1}\\mathbf{1}^{\\mathrm{T}}.$$\n\n$A^{*}x=0\\Leftrightarrow\\mathbf{1}^{\\mathrm{T}}x=0\\Leftrightarrow x_{1}+x_{2}+x_{3}+x_{4}=0$，其通解为\n$$x=c_{1}(1,-1,0,0)^{\\mathrm{T}}+c_{2}(1,0,-1,0)^{\\mathrm{T}}+c_{3}(1,0,0,-1)^{\\mathrm{T}},\\ c_{1},c_{2},c_{3}\\in\\mathbb{R}.$$\n\n- 利用 $A\\mathbf{1}=(a+3)\\mathbf{1}$，由 $Ax=0$ 有非零解推出 $a=-3$。\n- $r(A)=n-1$ 时 $r(A^{*})=1$，$N(A^{*})$ 是 $n-1$ 维的。\n- 由 $\\mathbf{1}\\in N(A)$ 与 $A$ 对称性推出 $A^{*}=-16\\mathbf{1}\\mathbf{1}^{\\mathrm{T}}$，$N(A^{*})=\\mathbf{1}^{\\perp}$。\n\n---",
         "cat": "线性代数",
-        "topic": "伴随矩阵·基础解系",
+        "topic": "线性方程组",
         "source": "综合例题PDF·例72"
       },
       {
@@ -14934,7 +15049,7 @@ var EDITOR_DATA = [
         "answer": "$Ax=0$ 的通解为 $x=k(3,-2,1)^{\\mathrm{T}},\\ k\\in\\mathbb{R}$。",
         "solution": "$A$ 是 $3$ 阶实对称矩阵，对应不同特征值的特征向量正交。\n\n$\\alpha_{1}=(1,a,-1)^{\\mathrm{T}}$ 对应 $\\lambda_{1}=1$，$\\alpha_{2}=(1,4,5)^{\\mathrm{T}}$ 对应 $\\lambda_{2}=2$。\n\n由正交性：\n$$\\alpha_{1}^{\\mathrm{T}}\\alpha_{2}=1\\cdot 1+a\\cdot 4+(-1)\\cdot 5=4a-4=0\\Rightarrow a=1.$$\n\n故 $\\alpha_{1}=(1,1,-1)^{\\mathrm{T}}$。\n\n由 $A$ 不可逆，$0$ 是 $A$ 的第三特征值。设对应特征向量 $\\xi=(x_{1},x_{2},x_{3})^{\\mathrm{T}}$，与 $\\alpha_{1},\\alpha_{2}$ 正交：\n$$\\begin{cases}x_{1}+x_{2}-x_{3}=0\\\\ x_{1}+4x_{2}+5x_{3}=0\\end{cases}$$\n两式相减：$3x_{2}+6x_{3}=0$，$x_{2}=-2x_{3}$；代入第 $1$ 式：$x_{1}-2x_{3}-x_{3}=0$，$x_{1}=3x_{3}$。取 $x_{3}=1$，得 $\\xi=(3,-2,1)^{\\mathrm{T}}$。\n\n$Ax=0$ 的通解即 $0$-特征向量张成的一维子空间：\n$$x=k\\xi=k(3,-2,1)^{\\mathrm{T}},\\ k\\in\\mathbb{R}.$$\n\n- 实对称矩阵不同特征值的特征向量正交（内积为零）。\n- 不可逆 $\\Leftrightarrow$ $0$ 是特征值。\n- $0$-特征向量与所有非零特征值的特征向量正交。\n\n---",
         "cat": "线性代数",
-        "topic": "实对称矩阵·特征向量",
+        "topic": "相似对角化与实对称矩阵",
         "source": "综合例题PDF·例73"
       },
       {
@@ -14945,7 +15060,7 @@ var EDITOR_DATA = [
         "answer": "$A\\sim\\mathrm{diag}(3,-1,-1)$。",
         "solution": "由 $A^{2}-2A=3E$ 得\n$$A^{2}-2A-3E=0\\quad\\Rightarrow\\quad(A-3E)(A+E)=0.$$\n\n设 $A$ 的特征值为 $\\lambda$，则 $\\lambda^{2}-2\\lambda-3=0$，即 $(\\lambda-3)(\\lambda+1)=0$，故 $\\lambda=3$ 或 $\\lambda=-1$。\n\n$A$ 是实对称矩阵，必可对角化；特征值仅取 $3,-1$。设 $3$ 的代数重数为 $k$，$-1$ 的代数重数为 $3-k$。\n\n由 $r(A+E)=1$（题面 $r(A+E)=2$ 应为 $r(A+E)=1$，详见【题面校正】），$A+E$ 的零空间维数 $=4-1=3$？不对，是 $3-1=2$，即 $\\lambda=-1$ 的几何重数 = $2$；实对称矩阵几何重数 = 代数重数，故 $-1$ 的代数重数 = $2$，$3$ 的代数重数 = $1$。\n\n故 $A$ 的特征值为 $3,-1,-1$，对角形为 $\\mathrm{diag}(3,-1,-1)$。\n\n**【题面校正】** 题面给出 $r(A+E)=2$，但若按 $r(A+E)=2$ 解读，$A+E$ 零空间维数为 $1$，即 $\\lambda=-1$ 是单根，$\\lambda=3$ 为二重根，对角形为 $\\mathrm{diag}(3,3,-1)$，与主流答案 $\\mathrm{diag}(3,-1,-1)$ 矛盾。题面应为 $r(A+E)=1$（OCR 失真），按校正版作答。\n\n- $A^{2}-2A-3E=0$ 推出特征多项式 $\\lambda^{2}-2\\lambda-3=(\\lambda-3)(\\lambda+1)=0$。\n- $r(\\lambda E-A)$ 反映 $\\lambda$ 的几何重数；实对称矩阵几何重数 = 代数重数。\n- 实对称必可对角化。\n\n---",
         "cat": "线性代数",
-        "topic": "实对称矩阵·相似对角形",
+        "topic": "相似对角化与实对称矩阵",
         "source": "综合例题PDF·例74"
       },
       {
@@ -14956,7 +15071,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**结论**：正确命题有 $2$ 个：**(3)(4)**。\n\n$A$ 是 $4$ 阶矩阵，$\\eta_{1}=(3,1,-2,2)^{\\mathrm{T}}$，$\\eta_{2}=(0,-1,2,1)^{\\mathrm{T}}$ 是 $Ax=0$ 的基础解系，故 $r(A)=2$，列向量组 $\\{\\alpha_{1},\\alpha_{2},\\alpha_{3},\\alpha_{4}\\}$ 的秩为 $2$。\n\n由 $A\\eta_{1}=0$：$3\\alpha_{i1}+\\alpha_{i2}-2\\alpha_{i3}+2\\alpha_{i4}=0$（$i=1,2,3,4$）。\n由 $A\\eta_{2}=0$：$-\\alpha_{i2}+2\\alpha_{i3}+\\alpha_{i4}=0$。\n\n由后者：$\\alpha_{i4}=\\alpha_{i2}-2\\alpha_{i3}$；代入前者：$3\\alpha_{i1}+\\alpha_{i2}-2\\alpha_{i3}+2(\\alpha_{i2}-2\\alpha_{i3})=3\\alpha_{i1}+3\\alpha_{i2}-6\\alpha_{i3}=0$，即 $\\alpha_{i1}=-\\alpha_{i2}+2\\alpha_{i3}$。\n\n故每一列 $\\alpha_{j}$ 由 $\\alpha_{j}$ 的第 $2,3$ 分量 $a_{2j},a_{3j}$ 唯一确定：\n$$\\alpha_{j}=\\begin{pmatrix}-a_{2j}+2a_{3j}\\\\a_{2j}\\\\a_{3j}\\\\a_{2j}-2a_{3j}\\end{pmatrix}=a_{2j}\\underbrace{\\begin{pmatrix}-1\\\\1\\\\0\\\\1\\end{pmatrix}}_{u_{1}}+a_{3j}\\underbrace{\\begin{pmatrix}2\\\\0\\\\1\\\\-2\\end{pmatrix}}_{u_{2}}.$$\n\n记 $c_{j}=(a_{2j},a_{3j})^{\\mathrm{T}}\\in\\mathbb{R}^{2}$，则 $\\alpha_{j}=c_{j}^{(1)}u_{1}+c_{j}^{(2)}u_{2}$；$u_{1},u_{2}$ 线性无关，故 $r(\\alpha_{j_{1}},\\dots,\\alpha_{j_{k}})=r(c_{j_{1}},\\dots,c_{j_{k}})$。\n\n(1) $\\alpha_{1}$ 一定可由 $\\alpha_{2},\\alpha_{3}$ 表示？\n\n等价于 $c_{1}$ 在 $\\mathrm{span}\\{c_{2},c_{3}\\}$ 中。$\\{c_{2},c_{3}\\}$ 可能共线（如 $c_{2}=c_{3}=0$ 时），此时 $c_{1}$ 不一定可表。故 **(1) 错**。\n\n(2) $\\alpha_{1},\\alpha_{3}$ 是极大无关组？\n\n$\\alpha_{1},\\alpha_{3}$ 无关要求 $c_{1},c_{3}$ 线性无关；极大还要求 $\\alpha_{2},\\alpha_{4}$ 都可由 $c_{1},c_{3}$ 表示。均不一定成立。故 **(2) 错**。\n\n(3) $r(\\alpha_{1},\\alpha_{1}+\\alpha_{2},-\\alpha_{4})=2$？\n\n将 $\\alpha_{4}=\\alpha_{2}-2\\alpha_{3}$（按行分量关系 $a_{4j}=a_{2j}-2a_{3j}$ 在题面隐含的 $\\alpha_{2}=u_{1},\\alpha_{3}=u_{2}$ 取法下，对应 $a_{22}=1,a_{32}=0,a_{23}=0,a_{33}=1$）代入，$-\\alpha_{4}=-\\alpha_{2}+2\\alpha_{3}$。又 $\\alpha_{1}=-\\alpha_{2}+2\\alpha_{3}$（对应 $a_{21}=-1,a_{31}=2$），于是 $\\alpha_{1}+\\alpha_{2}=2\\alpha_{3}$，$-\\alpha_{4}=-\\alpha_{2}+2\\alpha_{3}=\\alpha_{1}$。\n\n故 $\\{\\alpha_{1},\\alpha_{1}+\\alpha_{2},-\\alpha_{4}\\}=\\{\\alpha_{1},2\\alpha_{3},\\alpha_{1}\\}=\\{\\alpha_{1},\\alpha_{3}\\}$；当 $\\alpha_{2},\\alpha_{3}$ 线性无关时 $r(\\alpha_{1},\\alpha_{3})=r(-\\alpha_{2}+2\\alpha_{3},\\alpha_{3})=r(\\alpha_{2},\\alpha_{3})=2$。**$ (3)$ 对**。\n\n(4) $\\alpha_{2},\\alpha_{4}$ 是极大无关组？\n\n$\\alpha_{4}=\\alpha_{2}-2\\alpha_{3}$，故 $\\alpha_{4}$ 与 $\\alpha_{2}$ 线性相关（若 $\\alpha_{3}$ 与 $\\alpha_{2}$ 无关，则 $\\alpha_{4}\\neq k\\alpha_{2}$，故无关）—— 但需先验 $\\alpha_{3}$ 与 $\\alpha_{2}$ 无关。\n\n取 $\\alpha_{3}=\\frac{1}{2}\\alpha_{2}-\\frac{1}{2}\\alpha_{4}$（解 $\\alpha_{4}=\\alpha_{2}-2\\alpha_{3}$ 得 $\\alpha_{3}=\\frac{1}{2}(\\alpha_{2}-\\alpha_{4})$），$\\alpha_{1}=-\\alpha_{2}+2\\alpha_{3}=-\\alpha_{2}+(\\alpha_{2}-\\alpha_{4})=-\\alpha_{4}$（$\\alpha_{1}$ 可由 $\\alpha_{2},\\alpha_{4}$ 表示）。又 $\\alpha_{2},\\alpha_{4}$ 无关（因 $\\alpha_{4}=\\alpha_{2}-2\\alpha_{3}$，若 $\\alpha_{4}=k\\alpha_{2}$ 则 $\\alpha_{3}=\\frac{1-k}{2}\\alpha_{2}$，与 $\\alpha_{3}$ 与 $\\alpha_{2}$ 无关矛盾）。\n\n故 $\\alpha_{1},\\alpha_{3}$ 都可由 $\\alpha_{2},\\alpha_{4}$ 表示，且 $\\alpha_{2},\\alpha_{4}$ 无关，$\\{\\alpha_{2},\\alpha_{4}\\}$ 是极大无关组。**$ (4)$ 对**。\n\n- 由 $A\\eta_{i}=0$ 推出每一列 $\\alpha_{j}$ 的分量关系，确定 $\\alpha_{j}\\in\\mathrm{span}\\{u_{1},u_{2}\\}$。\n- 列向量组的秩问题化为 $2$ 维系数向量的秩问题。\n- 极大无关组 = 2 个线性无关且能表示全部的列向量；按题面隐含的 $\\alpha_{1},\\alpha_{2},\\alpha_{3},\\alpha_{4}$ 关系判断。\n\n---",
         "cat": "线性代数",
-        "topic": "基础解系·列向量组",
+        "topic": "线性方程组",
         "source": "综合例题PDF·例75"
       },
       {
@@ -14967,7 +15082,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**结论**：**(4)**。\n\n$Ax=b$ 中 $A$ 是 $m\\times n$ 矩阵，$m\\neq n$。\n\n(1) 若 $Ax=0$ 只有零解，则 $r(A)=n$（列满秩）。但 $Ax=b$ 要有唯一解需 $b\\in R(A)$；若 $b\\notin R(A)$，则 $Ax=b$ 无解。故 **(1) 错**。\n\n(2) 若 $Ax=0$ 有非零解，则 $r(A)<n$。$Ax=b$ 要有无穷多解需 $b\\in R(A)$；若 $b\\notin R(A)$ 则无解。故 **(2) 错**。\n\n(3) 若 $Ax=b$ 有无穷多解，则 $r(A)<n$（齐次解空间非零），从而 $Ax=0$ 必有非零解（取两个不同的解相减）。\"(3) 说\"$Ax=0$ 仅有零解\"与推理矛盾。故 **(3) 错**。\n\n(4) 同 (3) 的推理：$Ax=b$ 有无穷多解 $\\Rightarrow r(A)<n$ $\\Rightarrow Ax=0$ 有非零解。故 **(4) 对**。\n\n- $Ax=0$ 只有零解 $\\Leftrightarrow r(A)=n$（列满秩）。\n- $Ax=b$ 有解 $\\Leftrightarrow b\\in R(A)$。\n- $Ax=b$ 有无穷多解 $\\Leftrightarrow b\\in R(A)$ 且 $r(A)<n$。\n- $m\\neq n$ 时 $A$ 不是方阵，不能直接用系数行列式判别。\n\n---",
         "cat": "线性代数",
-        "topic": "方程组解的判定",
+        "topic": "线性方程组",
         "source": "综合例题PDF·例76"
       },
       {
@@ -14978,7 +15093,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**结论**：(1) $P$ 可逆。(2) $P^{-1}AP=\\begin{pmatrix}0&6\\\\1&-1\\end{pmatrix}$，特征值为 $2,-3$，$A$ 可相似对角化为 $\\mathrm{diag}(2,-3)$。\n\n(1) 设 $|P|=0$，则 $\\alpha,A\\alpha$ 线性相关，存在不全为零的 $k_{1},k_{2}$ 使 $k_{1}\\alpha+k_{2}A\\alpha=0$。\n\n- 若 $k_{2}=0$，则 $k_{1}\\alpha=0$，由 $\\alpha\\neq 0$ 得 $k_{1}=0$，矛盾。\n- 若 $k_{2}\\neq 0$，则 $A\\alpha=-(k_{1}/k_{2})\\alpha$，$\\alpha$ 是 $A$ 的特征向量，与题设矛盾。\n\n故 $|P|\\neq 0$，$P$ 可逆。\n\n(2) 由 $A^{2}\\alpha+A\\alpha-6\\alpha=0$ 得 $A(A\\alpha)=-A\\alpha+6\\alpha$。\n\n计算 $A$ 在基 $\\{\\alpha,A\\alpha\\}$ 下的矩阵 $B=P^{-1}AP$：\n\n- $A\\alpha = 0\\cdot\\alpha+1\\cdot(A\\alpha)$（第 $1$ 列 $(0,1)^{\\mathrm{T}}$）。\n- $A(A\\alpha) = 6\\alpha-A\\alpha = 6\\cdot\\alpha+(-1)\\cdot(A\\alpha)$（第 $2$ 列 $(6,-1)^{\\mathrm{T}}$）。\n\n故 $P^{-1}AP=\\begin{pmatrix}0&6\\\\1&-1\\end{pmatrix}$。\n\n特征多项式：\n$$\\det(\\lambda E-B)=\\det\\begin{pmatrix}\\lambda&-6\\\\-1&\\lambda+1\\end{pmatrix}=\\lambda(\\lambda+1)-6=\\lambda^{2}+\\lambda-6=(\\lambda-2)(\\lambda+3).$$\n\n特征值为 $2,-3$，互异，$B$ 可对角化为 $\\mathrm{diag}(2,-3)$。由 $A=PBP^{-1}$，$A\\sim B$，故 $A$ 相似于对角形 $\\mathrm{diag}(2,-3)$。\n\n- $\\alpha,A\\alpha$ 无关 $\\Leftrightarrow$ $P$ 可逆（否则 $\\alpha$ 落入 $A$ 的特征空间）。\n- 由 $A^{2}\\alpha,A\\alpha$ 关于 $\\alpha,A\\alpha$ 的关系写出 $P^{-1}AP$。\n- $A$ 相似于对角形 $\\Leftrightarrow$ 有 $n$ 个线性无关特征向量；本题 $P^{-1}AP$ 特征值不同，故可对角化。",
         "cat": "线性代数",
-        "topic": "相似对角化",
+        "topic": "相似对角化与实对称矩阵",
         "source": "综合例题PDF·例77"
       },
       {
@@ -15107,7 +15222,7 @@ var EDITOR_DATA = [
         "question": "设矩阵 $\\boldsymbol{A}=\\begin{pmatrix}1&b&0\\\\ b&a&0\\\\ 0&0&-1\\end{pmatrix}$ 有两个正特征值和一个负特征值，则（　）",
         "answer": 0,
         "solution": "$\\boldsymbol{A}$ 是实对称矩阵，特征值符号可用准标准形判定．\n$$|\\lambda\\boldsymbol{E}-\\boldsymbol{A}|=(\\lambda+1)\\big[\\lambda^2-(1+a)\\lambda+(a-b^2)\\big].$$\n二阶块 $\\begin{pmatrix}1&b\\\\b&a\\end{pmatrix}$ 的两个特征值 $\\lambda_{1,2}$ 满足\n$$\\lambda_1+\\lambda_2=1+a>0,\\qquad \\lambda_1\\lambda_2=a-b^2.$$\n要二阶块两特征值均正，需且只需 $a-b^2>0$（此时和、积均正，两根必全正）；再加上第三个特征值 $-1<0$，恰为\"两正一负\"．\n故 $a>b^2$，**选 A**．\n（C 多加了 $b\\neq0$ 的多余条件——$b=0$ 时 $a>0$ 同样成立；B、D 均非充要条件．）",
-        "topic": "特征值符号·二次型惯性指数",
+        "topic": "二次型标准形与合同",
         "source": "自编·数二模拟卷第七套",
         "cat": "线性代数",
         "options": [
@@ -15124,7 +15239,7 @@ var EDITOR_DATA = [
         "question": "已知齐次线性方程组 $\\boldsymbol{Ax}=\\boldsymbol{0}$ 有基础解系\n$$\\boldsymbol{\\xi}_1=(1,1,-1,1)^{\\mathrm{T}},\\quad\\boldsymbol{\\xi}_2=(2,3,1,0)^{\\mathrm{T}},\\quad\\boldsymbol{\\xi}_3=(1,2,2,1)^{\\mathrm{T}},$$\n则下列向量中，是该方程组解的是（　　）",
         "answer": 2,
         "solution": "**思路**：齐次方程组的解集合就是基础解系的张成空间，即判断选项中哪个向量能由 $\\boldsymbol{\\xi}_1,\\boldsymbol{\\xi}_2,\\boldsymbol{\\xi}_3$ 线性表示。\n\n**方法一（凑组合，最快）**：直接观察\n$$\\boldsymbol{\\xi}_1+\\boldsymbol{\\xi}_3=(1+1,\\,1+2,\\,-1+2,\\,1+1)^{\\mathrm{T}}=(2,3,1,2)^{\\mathrm{T}},$$\n恰为选项 C，故 C 是解。\n\n**方法二（正交补，可逐一排除）**：基础解系含 3 个 4 维向量，故解空间维数为 3，$r(\\boldsymbol{A})=4-3=1$，$\\boldsymbol{A}$ 的行向量共线。求出与三个 $\\boldsymbol{\\xi}_i$ 都正交的非零向量 $\\boldsymbol{\\eta}=(a,b,c,d)^{\\mathrm{T}}$：\n$$\\begin{cases}a+b-c+d=0,\\\\ 2a+3b+c=0,\\\\ a+2b+2c+d=0,\\end{cases}$$\n取 $a=4$ 解得 $b=-3,\\,c=1,\\,d=0$，即 $\\boldsymbol{\\eta}=(4,-3,1,0)^{\\mathrm{T}}$。检验 $4\\beta_1-3\\beta_2+\\beta_3$：\n\n| 选项 | $4\\beta_1-3\\beta_2+\\beta_3$ | 结论 |\n|---|---|---|\n| A $(1,2,-2,0)$ | $4-6-2=-4$ | 不是解 |\n| B $(2,1,-1,1)$ | $8-3-1=4$ | 不是解 |\n| C $(2,3,1,2)$ | $8-9+1=0$ | **是解** |\n| D $(2,1,0,0)$ | $8-3+0=5$ | 不是解 |\n\n**答案：C**。\n\n**方法点睛**：解向量必与 $\\boldsymbol{A}$ 的**行向量正交**——这是判别「某向量是不是解」最省事的办法，尤其当 $r(\\boldsymbol{A})$ 很小时（本题 $r=1$，只需一次点乘）。注意别把基础解系向量本身当成选项去找，选项通常是它们的组合。",
-        "topic": "线性方程组·基础解系·解向量判别",
+        "topic": "线性方程组",
         "source": "自编·数二模拟卷第七套",
         "cat": "线性代数",
         "options": [
@@ -15141,7 +15256,7 @@ var EDITOR_DATA = [
         "question": "设 $\\boldsymbol{A}$，$\\boldsymbol{B}$ 均为 $n$ 阶矩阵（$n\\ge 2$），则下列命题中正确的个数是（　）\n\n① 若 $\\boldsymbol{AB}=\\boldsymbol{O}$，则 $r(\\boldsymbol{A})+r(\\boldsymbol{B})\\le n$；\n\n② 若 $\\boldsymbol{A}$ 可逆，则 $r(\\boldsymbol{AB})=r(\\boldsymbol{B})$；\n\n③ 若 $r(\\boldsymbol{AB})=n$，则 $r(\\boldsymbol{A})=r(\\boldsymbol{B})=n$；\n\n④ 若 $r(\\boldsymbol{A})=r(\\boldsymbol{B})$，则 $\\boldsymbol{A}$ 与 $\\boldsymbol{B}$ 等价．",
         "answer": 3,
         "solution": "① $\\boldsymbol{AB}=\\boldsymbol{O}\\Rightarrow\\boldsymbol{B}$ 的列都是 $\\boldsymbol{Ax}=\\boldsymbol0$ 的解 $\\Rightarrow r(\\boldsymbol{A})+r(\\boldsymbol{B})\\le n$ ✓\n② $\\boldsymbol{A}$ 可逆，$r(\\boldsymbol{AB})=r(\\boldsymbol{A}^{-1}\\boldsymbol{AB})=r(\\boldsymbol{B})$ ✓\n③ $n=r(\\boldsymbol{AB})\\le\\min\\{r(\\boldsymbol A),r(\\boldsymbol B)\\}\\le n\\Rightarrow r(\\boldsymbol A)=r(\\boldsymbol B)=n$ ✓\n④ 同型矩阵等价 $\\iff$ 秩相等，故 $\\boldsymbol A$ 与 $\\boldsymbol B$ 等价 ✓\n\n四个全对，**选 D**．\n> 命题注记：本题与第 7 题呼应 2025 真题\"答案全对\"的奇异设计——第 7 题严格分析下也是四个条件全成立．考生面对\"④这么显然也对\"时容易怀疑自己，这是本题的训练价值：**判定题按定义逐条验，不预设答案分布**．\n",
-        "topic": "矩阵的秩·命题判定",
+        "topic": "矩阵的秩",
         "source": "自编·数二模拟卷第七套",
         "cat": "线性代数",
         "options": [
@@ -15202,7 +15317,7 @@ var EDITOR_DATA = [
         "question": "已知二次型 $f(x_1,x_2,x_3)=ax_1^2+ax_2^2+ax_3^2+2x_1x_2+2x_1x_3-2x_2x_3$ 的规范形为 $y_1^2+y_2^2$，则 $a=$ ______．",
         "answer": "$2$",
         "solution": "**第一步：由规范形读出惯性指数。**规范形 $y_1^2+y_2^2$ 说明：秩为 $2$、正惯性指数 $p=2$、负惯性指数 $q=0$。即二次型矩阵 $\\boldsymbol{A}$ 的特征值为**两个正数与一个 $0$**，从而 $\\det\\boldsymbol{A}=0$ 且 $\\boldsymbol{A}$ 半正定。\n\n**第二步：写出矩阵并求行列式。**\n$$\\boldsymbol{A}=\\begin{pmatrix}a&1&1\\\\ 1&a&-1\\\\ 1&-1&a\\end{pmatrix},\\qquad\\det\\boldsymbol{A}=a(a^2-1)-(a+1)-(a+1)=a^3-3a-2=(a-2)(a+1)^2.$$\n由 $\\det\\boldsymbol{A}=0$ 得 $a=2$ 或 $a=-1$。\n\n**第三步：用惯性指数定夺。**\n\n* $a=2$：$\\mathrm{tr}\\boldsymbol{A}=6$，二阶主子式之和 $=3+3+3=9$，特征多项式\n $\\lambda^3-6\\lambda^2+9\\lambda=\\lambda(\\lambda-3)^2$，特征值为 $0,3,3$，规范形确为 $y_1^2+y_2^2$ ✓\n\n* $a=-1$：$\\boldsymbol{A}=\\begin{pmatrix}-1&1&1\\\\ 1&-1&-1\\\\ 1&-1&-1\\end{pmatrix}$，三行共线，$r(\\boldsymbol{A})=1$，$\\mathrm{tr}=-3$，特征值为 $-3,0,0$，规范形为 $-y_1^2$ ✗\n\n**答案：$a=2$。**\n\n**方法点睛**：「规范形 $\\to$ 特征值符号 $\\to$ $\\det=0$」是这类题的标准入口，但 $\\det=0$ 只是**必要条件**，必须再验证惯性指数才能排除伪根——本题 $a=-1$ 就是被这一步筛掉的（它秩只有 1）。",
-        "topic": "二次型·规范形·惯性指数",
+        "topic": "二次型标准形与合同",
         "source": "自编·数二模拟卷第七套",
         "cat": "线性代数",
         "options": null
@@ -15214,7 +15329,7 @@ var EDITOR_DATA = [
         "question": "设列向量 $\\boldsymbol{\\alpha}=(1,2,-1)^{T}$，矩阵 $\\boldsymbol{A}=\\boldsymbol{\\alpha}\\boldsymbol{\\alpha}^{T}$，则 $|\\boldsymbol{A}-2\\boldsymbol{E}|=$ ______．\n",
         "answer": "$16$",
         "solution": "$\\boldsymbol{A}=\\boldsymbol{\\alpha}\\boldsymbol{\\alpha}^T$ 满足 $\\boldsymbol{A}^2=(\\boldsymbol{\\alpha}^T\\boldsymbol{\\alpha})\\boldsymbol{A}$，特征值为 $\\boldsymbol{\\alpha}^T\\boldsymbol{\\alpha}=6,\\ 0,\\ 0$．\n$$|\\boldsymbol{A}-2\\boldsymbol{E}|=(6-2)(0-2)(0-2)=16.$$\n",
-        "topic": "秩 1 矩阵·特征值",
+        "topic": "特征值与特征向量",
         "source": "自编·数二模拟卷第七套",
         "cat": "线性代数"
       },
@@ -15280,7 +15395,7 @@ var EDITOR_DATA = [
         "question": "（本题满分 12 分）设矩阵 $\\boldsymbol{A}=\\begin{pmatrix}1&-1&1\\\\ x&4&y\\\\ -3&-3&5\\end{pmatrix}$．已知 $\\boldsymbol{A}$ 有 3 个线性无关的特征向量，且 $\\lambda=2$ 是 $\\boldsymbol{A}$ 的二重特征值．\n\n（1）求 $x,\\,y$；\n\n（2）求可逆矩阵 $\\boldsymbol{P}$，使得 $\\boldsymbol{P}^{-1}\\boldsymbol{A}\\boldsymbol{P}$ 为对角矩阵．",
         "answer": "$x=2,\\,y=-2$；$\\boldsymbol{P}=\\begin{pmatrix}1&0&1\\\\ 0&1&-2\\\\ 1&1&3\\end{pmatrix}$，$\\boldsymbol{P}^{-1}\\boldsymbol{A}\\boldsymbol{P}=\\mathrm{diag}(2,2,6)$（$\\boldsymbol{P}$ 不唯一）",
         "solution": "**（1）求 $x,y$。**\n\n由 $\\mathrm{tr}\\boldsymbol{A}=1+4+5=10$，而 $\\lambda=2$ 是二重特征值，得第三个特征值 $\\lambda_3=10-2-2=6$，故特征多项式为\n$$(\\lambda-2)^2(\\lambda-6)=\\lambda^3-10\\lambda^2+28\\lambda-24.$$\n\n**关键条件：「有 3 个线性无关的特征向量」$=~\\boldsymbol{A}$ 可对角化**，于是二重特征值 $\\lambda=2$ 的**几何重数 = 代数重数 = 2**，即\n$$r(\\boldsymbol{A}-2\\boldsymbol{E})=3-2=1.$$\n而\n$$\\boldsymbol{A}-2\\boldsymbol{E}=\\begin{pmatrix}-1&-1&1\\\\ x&2&y\\\\ -3&-3&3\\end{pmatrix},$$\n第三行是第一行的 $3$ 倍，故其秩为 $1$ 当且仅当第二行也是第一行的倍数：$(x,2,y)=k(-1,-1,1)$．由第二个分量 $2=-k$ 得 $k=-2$，于是\n$$x=2,\\qquad y=-2.$$\n\n（校验：二阶主子式之和 $=(20+3y)+8+(4+x)=32+x+3y=28$，与特征多项式系数一致 ✓）\n\n**（2）求 $\\boldsymbol{P}$。**此时 $\\boldsymbol{A}=\\begin{pmatrix}1&-1&1\\\\ 2&4&-2\\\\ -3&-3&5\\end{pmatrix}$。\n\n$\\lambda=2$：$(\\boldsymbol{A}-2\\boldsymbol{E})\\boldsymbol{X}=\\boldsymbol{0}$ 即 $-x_1-x_2+x_3=0$，取两组无关解\n$$\\boldsymbol{\\alpha}_1=(1,0,1)^{\\mathrm{T}},\\qquad \\boldsymbol{\\alpha}_2=(0,1,1)^{\\mathrm{T}}.$$\n\n$\\lambda=6$：$\\boldsymbol{A}-6\\boldsymbol{E}=\\begin{pmatrix}-5&-1&1\\\\ 2&-2&-2\\\\ -3&-3&-1\\end{pmatrix}$，解得 $\\boldsymbol{\\alpha}_3=(1,-2,3)^{\\mathrm{T}}$（校验：$\\boldsymbol{A}\\boldsymbol{\\alpha}_3=(6,-12,18)^{\\mathrm{T}}=6\\boldsymbol{\\alpha}_3$ ✓）．\n\n取\n$$\\boldsymbol{P}=(\\boldsymbol{\\alpha}_1,\\boldsymbol{\\alpha}_2,\\boldsymbol{\\alpha}_3)=\\begin{pmatrix}1&0&1\\\\ 0&1&-2\\\\ 1&1&3\\end{pmatrix},\\qquad \\det\\boldsymbol{P}=4\\neq0,$$\n则\n$$\\boldsymbol{P}^{-1}\\boldsymbol{A}\\boldsymbol{P}=\\begin{pmatrix}2&0&0\\\\ 0&2&0\\\\ 0&0&6\\end{pmatrix}.$$\n\n**易错点**：只用 $\\det\\boldsymbol{A}=24$（或二阶主子式之和 $=28$）只能得到一个方程 $x+3y=-4$，**两个未知数解不出来**——「有 3 个线性无关特征向量」这个条件不是摆设，它等价于 $r(\\boldsymbol{A}-2\\boldsymbol{E})=1$，这才是定解的关键。若漏掉它，就会卡在 $x+3y=-4$ 上无从下手。",
-        "topic": "矩阵对角化·重根几何重数·求可逆阵 P",
+        "topic": "相似对角化与实对称矩阵",
         "source": "自编·数二模拟卷第七套",
         "cat": "线性代数",
         "options": null

@@ -16,7 +16,8 @@
       ],
       "answer": 2,
       "solution": "$\\alpha_1,\\alpha_2,\\alpha_3$ 为标准单位向量组，显然线性无关，故秩为 $3$。**答案：C**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "向量组的线性相关性"
     },
     {
       "id": "la-vc-002",
@@ -31,7 +32,8 @@
       ],
       "answer": 1,
       "solution": "$\\alpha_2=2\\alpha_1$，成比例，故线性相关。**答案：B**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "向量组的线性相关性"
     },
     {
       "id": "la-vc-003",
@@ -41,7 +43,8 @@
       "options": null,
       "answer": "$<$",
       "solution": "齐次方程组 $Ax=0$ 有非零解 $\\Leftrightarrow$ 系数矩阵秩小于未知量个数，即 $r(A)<n$。",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "线性方程组"
     },
     {
       "id": "la-vc-004",
@@ -56,7 +59,8 @@
       ],
       "answer": 1,
       "solution": "$(\\beta_1,\\beta_2,\\beta_3)=(\\alpha_1,\\alpha_2,\\alpha_3)\\begin{pmatrix}1&0&1\\\\1&1&0\\\\0&1&1\\end{pmatrix}$，过渡矩阵 $C$ 的行列式 $|C|=1(1-0)-0+1(1-0)=2\\neq0$，故 $\\beta_1,\\beta_2,\\beta_3$ 线性无关。**答案：B**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "向量组的线性相关性"
     },
     {
       "id": "la-vc-005",
@@ -71,7 +75,8 @@
       ],
       "answer": 0,
       "solution": "未知量个数 $n=3$，$r(A)=2$，基础解系含 $n-r(A)=3-2=1$ 个向量。**答案：A**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "线性方程组"
     },
     {
       "id": "la-vc-006",
@@ -86,7 +91,8 @@
       ],
       "answer": 1,
       "solution": "$\\mathrm{II}$ 有 $4$ 个向量，但可由只有 $3$ 个向量的 $\\mathrm{I}$ 表出，则 $\\mathrm{II}$ 的秩不超过 $\\mathrm{I}$ 的秩 $3$。$4$ 个向量秩不超过 $3$，由'以少表多，多必相关'知 $\\mathrm{II}$ 线性相关。**答案：B**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "向量组的线性相关性"
     },
     {
       "id": "la-vc-007",
@@ -101,7 +107,8 @@
       ],
       "answer": 3,
       "solution": "矩阵的秩等于行秩等于列秩，存在非零 $r$ 阶子式，所有 $r+1$ 阶子式为零，这些都是秩的基本性质。但'任意 $r$ 个列向量均线性无关'是错的——存在 $r$ 个线性无关的列向量，但并非任意 $r$ 个都无关。**答案：D**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "矩阵的秩"
     },
     {
       "id": "la-vc-008",
@@ -111,7 +118,8 @@
       "options": null,
       "answer": "$9$",
       "solution": "$R_2=2R_1$，$R_3=3R_1$ 时需 $\\frac{3}{1}=\\frac{a}{3}=\\frac{12}{4}=3$，故 $a=9$。验证：$R_3=(3,6,9,12)=3R_1$，确实所有行成比例，$r(A)=1$。",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "矩阵的秩"
     },
     {
       "id": "la-vc-009",
@@ -121,7 +129,8 @@
       "options": null,
       "answer": "$-2$",
       "solution": "两向量线性相关当且仅当对应分量成比例：$\\frac{1}{2}=\\frac{2}{4}=\\frac{-1}{k}$，得 $k=-2$。",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "向量组的线性相关性"
     },
     {
       "id": "la-vc-010",
@@ -136,7 +145,8 @@
       ],
       "answer": 1,
       "solution": "基础解系需满足：(1)都是解；(2)个数等于 $n-r(A)$；(3)线性无关。$\\eta_1,\\eta_1+\\eta_2$ 的过渡矩阵为 $\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$，行列式为 $1\\neq0$，故线性无关。A 中过渡矩阵 $\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}$，$|C|=2\\neq0$ 也无关但个数对。D 中 $\\eta_1-\\eta_2=-(\\eta_2-\\eta_1)$，线性相关。**答案：B**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "线性方程组"
     },
     {
       "id": "la-vc-011",
@@ -151,7 +161,8 @@
       ],
       "answer": 2,
       "solution": "$Ax=0$ 只有零解 $\\Leftrightarrow r(A)=n \\Leftrightarrow |A|\\neq0 \\Leftrightarrow A$ 可逆。此时 $A$ 的行向量组、列向量组均线性无关。**答案：C**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "矩阵的秩"
     },
     {
       "id": "la-vc-012",
@@ -161,7 +172,8 @@
       "options": null,
       "answer": "$\\alpha_1,\\alpha_2$（或 $\\alpha_1,\\alpha_3$ 或 $\\alpha_2,\\alpha_3$）",
       "solution": "$\\begin{pmatrix}1&2&0\\\\0&1&1\\\\1&0&-1\\end{pmatrix}\\xrightarrow{R_3-R_1}\\begin{pmatrix}1&2&0\\\\0&1&1\\\\0&-2&-1\\end{pmatrix}\\xrightarrow{R_3+2R_2}\\begin{pmatrix}1&2&0\\\\0&1&1\\\\0&0&1\\end{pmatrix}$，秩为 $3$，所以任何两个向量都可作为极大无关组。",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "向量组的线性相关性"
     },
     {
       "id": "la-vc-013",
@@ -176,7 +188,8 @@
       ],
       "answer": 1,
       "solution": "由 $AB=O$ 知 $B$ 的每个列向量都是 $Ax=0$ 的解，故 $B$ 的列空间包含于 $A$ 的零空间，从而 $r(B)\\le n-r(A)$，即 $r(A)+r(B)\\le n$。反例：$A=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix},B=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$，$AB=O$ 但 $A,B\\neq O$。**答案：B**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "矩阵的秩"
     },
     {
       "id": "la-vc-014",
@@ -186,7 +199,8 @@
       "options": null,
       "answer": "$-1$",
       "solution": "$|A|=1\\cdot(3(-2)-(a+2)a)-2\\cdot(2(-2)-(a+2)1)+1\\cdot(2a-3\\cdot1)=-6-a^2-2a-2(-4-a-2)+2a-3=-6-a^2-2a+2a+8+4+2a-3=3+2a-a^2$。令 $|A|=0$ 得 $a^2-2a-3=0$，$a=3$ 或 $a=-1$。$a=3$ 时二阶子式 $\\begin{vmatrix}1&2\\\\2&3\\end{vmatrix}=-1\\neq0$，秩为 $2$；$a=-1$ 时亦有非零二阶子式。验证 $a=-1$：$A=\\begin{pmatrix}1&2&1\\\\2&3&1\\\\1&-1&-2\\end{pmatrix}$，$|A|=0$ 且存在非零二阶子式，$r(A)=2$，符合。",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "矩阵的秩"
     },
     {
       "id": "la-vc-015",
@@ -201,7 +215,8 @@
       ],
       "answer": 2,
       "solution": "齐次方程组的解的线性组合仍是解（解空间的线性性质），对任意 $k_1,k_2$ 和任意解 $\\xi_1,\\xi_2$ 恒成立，无需额外条件。**答案：C**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "线性方程组"
     },
     {
       "id": "la-vc-016",
@@ -216,7 +231,8 @@
       ],
       "answer": 0,
       "solution": "$(\\beta_1,\\cdots,\\beta_m)=(\\alpha_1,\\cdots,\\alpha_m)C$，其中 $C$ 为 $m$ 阶矩阵，主对角线全为 $0$，其余位置全为 $1$。$|C|=(-1)^{m-1}(m-1)\\neq0$（$m\\ge2$），故过渡矩阵可逆，$\\beta_i$ 与 $\\alpha_i$ 等价，秩为 $m$。**答案：A**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "向量组的线性相关性"
     },
     {
       "id": "la-vc-017",
@@ -231,7 +247,8 @@
       ],
       "answer": 0,
       "solution": "$AB=O$ 说明 $B$ 的每一列都是 $Ax=0$ 的解，故 $B$ 的列空间 $\\subseteq \\operatorname{Null}(A)$，$\\dim\\operatorname{Null}(A)=n-r(A)$，故 $r(B)\\le n-r(A)$，即 $r(A)+r(B)\\le n$。这是著名的 Sylvester 秩不等式。**答案：A**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "矩阵的秩"
     },
     {
       "id": "la-vc-018",
@@ -241,7 +258,8 @@
       "options": null,
       "answer": "$b=a+2$",
       "solution": "三向量线性相关 $\\Leftrightarrow$ 以它们为列向量的矩阵行列式为零。计算：$\\begin{vmatrix}1&1&-1\\\\2&a+2&-b\\\\0&-3&3\\end{vmatrix}=1\\cdot\\begin{vmatrix}a+2&-b\\\\-3&3\\end{vmatrix}-1\\cdot\\begin{vmatrix}2&-b\\\\0&3\\end{vmatrix}+(-1)\\cdot\\begin{vmatrix}2&a+2\\\\0&-3\\end{vmatrix}=((a+2)\\cdot3-(-b)(-3))-(6)+(-1)(-6)=3a+6-3b-6+6=3a-3b+6=0$，解得 $b=a+2$。",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "向量组的线性相关性"
     },
     {
       "id": "la-vc-019",
@@ -256,7 +274,8 @@
       ],
       "answer": 1,
       "solution": "$r(A)=n-2$，解空间维数 $=n-(n-2)=2$。$\\alpha_1,\\alpha_2$ 线性无关且都是解，构成基础解系，通解为 $k_1\\alpha_1+k_2\\alpha_2$。**答案：B**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "线性方程组"
     },
     {
       "id": "la-vc-020",
@@ -266,7 +285,8 @@
       "options": null,
       "answer": "$0$",
       "solution": "$A$ 为 $4\\times3$ 矩阵，未知量个数 $n=3$。基础解系含 $3$ 个无关解向量，故 $n-r(A)=3$，$r(A)=3-3=0$，即 $A$ 为零矩阵。",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "线性方程组"
     },
     {
       "id": "la-vc-021",
@@ -281,7 +301,8 @@
       ],
       "answer": 0,
       "solution": "若 $\\mathrm{I}$ 可由 $\\mathrm{II}$ 表出，则 $\\operatorname{rank}(\\mathrm{I})\\le\\operatorname{rank}(\\mathrm{II})$。$\\mathrm{I}$ 无关 $\\Rightarrow\\operatorname{rank}(\\mathrm{I})=r$，$\\operatorname{rank}(\\mathrm{II})\\le s$，故 $r\\le s$。这是'替换定理'的推论。**答案：A**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "向量组的线性相关性"
     },
     {
       "id": "la-vc-022",
@@ -296,7 +317,8 @@
       ],
       "answer": 0,
       "solution": "$A(I-A)=A-A^2=A-A=O$。由 Sylvester 不等式：$r(A)+r(I-A)\\le n$。又 $r(A)+r(I-A)\\ge r(A+I-A)=r(I)=n$，故 $r(A)+r(I-A)=n$。**答案：A**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "矩阵的秩"
     },
     {
       "id": "la-vc-023",
@@ -306,7 +328,8 @@
       "options": null,
       "answer": "$2$",
       "solution": "观察发现 $\\alpha_2-\\alpha_1=(1,1,1,1)$，$\\alpha_3-\\alpha_2=(1,1,1,1)$，$\\alpha_4-\\alpha_3=(1,1,1,1)$。故所有向量均在 $\\alpha_1$ 和 $(1,1,1,1)$ 张成的二维空间中，秩为 $2$。",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "向量组的线性相关性"
     },
     {
       "id": "la-vc-024",
@@ -321,7 +344,8 @@
       ],
       "answer": 2,
       "solution": "未知量个数 $n=4$，$r(A)=2$，基础解系含 $n-r(A)=4-2=2$ 个向量，通解形式为 $k_1\\eta_1+k_2\\eta_2$。**答案：C**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "线性方程组"
     },
     {
       "id": "la-vc-025",
@@ -331,7 +355,8 @@
       "options": null,
       "answer": "$2$",
       "solution": "过渡矩阵 $C=\\begin{pmatrix}1&0&-1\\\\-1&1&0\\\\0&-1&1\\end{pmatrix}$，$|C|=1(1-0)-0+(-1)(1-0)=1-1=0$。且 $\\beta_1+\\beta_2+\\beta_3=0$，故 $\\beta_1,\\beta_2,\\beta_3$ 线性相关，秩不超过 $2$。$\\beta_1,\\beta_2$ 不成比例（过渡矩阵前两列的子块可逆），故秩为 $2$。",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "向量组的线性相关性"
     },
     {
       "id": "la-vc-026",
@@ -346,7 +371,8 @@
       ],
       "answer": 1,
       "solution": "$A$ 可逆 $\\Leftrightarrow |A|\\neq0 \\Leftrightarrow$ 列向量组线性无关 $\\Leftrightarrow$ 列向量组是 $\\mathbb{R}^n$ 的一组基。$|\\alpha_1,\\cdots,\\alpha_n|$ 即 $|A|$，非零即可逆。**答案：B**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "矩阵的秩"
     },
     {
       "id": "la-vc-027",
@@ -356,7 +382,8 @@
       "options": null,
       "answer": "$1$",
       "solution": "未知量个数 $n=3$，基础解系含 $2$ 个向量，故 $n-r(A)=2$，$r(A)=3-2=1$。",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "线性方程组"
     },
     {
       "id": "la-vc-028",
@@ -371,7 +398,8 @@
       ],
       "answer": 3,
       "solution": "$A,B$ 可逆。A 中 $A+B$ 不一定可逆（如 $B=-A$ 则 $A+B=O$）；B 分块对角阵的秩 $=r(A)+r(B)=2n$；C 中后 $n$ 列与前 $n$ 列相同，秩不超过 $n$（实际为 $r(A)=n$ 当且仅当 $r(A-B)=0$ 时）；D 中 $(A,B)$ 的秩为 $n$，因 $A$ 可逆，列向量已满秩。**答案：D**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "矩阵的秩"
     },
     {
       "id": "la-vc-029",
@@ -381,7 +409,8 @@
       "options": null,
       "answer": "$1$",
       "solution": "$n=3$，$r(A)=2$，基础解系含 $n-r(A)=1$ 个向量。已知 $(1,1,1)^\\mathrm{T}$ 是一个非零解，它就是基础解系。",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "线性方程组"
     },
     {
       "id": "la-vc-030",
@@ -396,7 +425,8 @@
       ],
       "answer": 2,
       "solution": "非齐次线性方程组 $Ax=b$ 有解 $\\Leftrightarrow b$ 可由 $A$ 的列向量组线性表出 $\\Leftrightarrow r(A)=r(A,b)$。这是线性方程组有解判定定理的核心。**答案：C**",
-      "cat": "线性代数"
+      "cat": "线性代数",
+      "topic": "线性方程组"
     }
   ]
 }
