@@ -9213,7 +9213,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$三重积分 \\iiint_\\Omega 1\\,dV 等于区域体积。长方体体积 = 1 \\times 2 \\times 3 = 6。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9232,7 +9232,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "格林公式要求 $D$ 是有界闭区域，$L$ 为逐段光滑的正向边界，$P$、$Q$ 在 $D$ 上有一阶连续偏导数。无界区域不能直接应用。**答案：C**",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -9251,7 +9251,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$沿 y=x，x 从 0 到 1：\\int_L y\\,dx = \\int_0^1 x\\,dx = \\frac{1}{2}。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第二类曲线积分·参数化",
       "papers": [
         "shu1"
       ]
@@ -9270,7 +9270,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$**格林公式**：P=y, Q=-x，\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -1 - 1 = -2。\\oint_L = \\iint_D (-2)dxdy = -2 \\cdot \\pi。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第二类曲线积分·参数化",
       "papers": [
         "shu1"
       ]
@@ -9289,7 +9289,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "第一类曲线积分（对弧长）与曲线方向无关，因为 $ds$ 是弧长微元（非负）。第二类曲线积分（对坐标）方向相反则变号。**答案：A**",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第一类曲线积分",
       "papers": [
         "shu1"
       ]
@@ -9308,7 +9308,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$高斯公式（散度定理）：\\iiint_\\Omega \\text{div}\\vec{F}\\,dV = \\oiint_\\Sigma \\vec{F} \\cdot \\vec{n}\\,dS，将三重积分转化为曲面积分。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "高斯公式",
       "papers": [
         "shu1"
       ]
@@ -9327,7 +9327,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$柱面坐标：\\iiint_\\Omega z\\,dV = \\int_0^{2\\pi}\\!\\int_0^1\\!\\int_0^{1-r^2} z \\cdot r\\,dz\\,dr\\,d\\theta = 2\\pi\\int_0^1 r \\cdot \\frac{(1-r^2)^2}{2}dr = \\frac{\\pi}{6}。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9346,7 +9346,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$P=x^2+y^2，Q=2xy。\\frac{\\partial Q}{\\partial x}=2y，\\frac{\\partial P}{\\partial y}=2y，\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = 0。格林公式得 0。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -9365,7 +9365,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\text{div}\\vec{F} = 1+1+1 = 3。\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "高斯公式",
       "papers": [
         "shu1"
       ]
@@ -9384,7 +9384,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$ds = \\sqrt{1+(y')^2}dx = \\sqrt{1+(2x)^2}dx = \\sqrt{1+4x^2}dx。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第一类曲线积分",
       "papers": [
         "shu1"
       ]
@@ -9403,7 +9403,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$**格林公式**：P=2xy-y^2，Q=x^2+y。\\frac{\\partial Q}{\\partial x}=2x，\\frac{\\partial P}{\\partial y}=2x-2y。\\iint_D (2y)dxdy。D: -1 \\leq x \\leq 1, x^2 \\leq y \\leq 1。\\iint_D 2y\\,dxdy = 2\\int_{-1}^1\\!\\int_{x^2}^1 y\\,dy\\,dx = \\frac{4}{3}。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -9422,7 +9422,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$投影到 xOy 面：D: x \\geq 0, y \\geq 0, x+y \\leq 1。dS = \\sqrt{1+z_x^2+z_y^2}dxdy = \\sqrt{3}\\,dxdy。\\iint_\\Sigma x\\,dS = \\sqrt{3}\\int_0^1\\!\\int_0^{1-x} x\\,dy\\,dx = \\sqrt{3}\\int_0^1 x(1-x)dx = \\frac{\\sqrt{3}}{6}。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第一类曲面积分",
       "papers": [
         "shu1"
       ]
@@ -9441,7 +9441,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$在圆 L 内部区域 D 内，原点 (0,0) 不在区域内。\\frac{\\partial Q}{\\partial x} = \\frac{\\partial P}{\\partial y}（在区域内有连续偏导），格林公式得 0。**答案：A**。注：若 L 包含原点则结果为 2\\pi（奇点问题）。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -9460,7 +9460,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$**球面坐标**：x=\\rho\\sin\\varphi\\cos\\theta, y=\\rho\\sin\\varphi\\sin\\theta, z=\\rho\\cos\\varphi。x^2+y^2 = \\rho^2\\sin^2\\varphi，dV = \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta。\\iiint = \\int_0^{2\\pi}\\!\\int_0^{\\pi}\\!\\int_0^1 \\rho^2\\sin^2\\varphi \\cdot \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta = 2\\pi \\cdot \\frac{1}{5} \\cdot \\frac{4}{3} = \\frac{8\\pi}{15}。**答案：B**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9479,7 +9479,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$参数化 x=\\cos t, y=\\sin t，t 从 0 到 \\pi。dx = -\\sin t\\,dt。\\int_0^\\pi \\sin t \\cdot (-\\sin t)dt = -\\int_0^\\pi \\sin^2 t\\,dt = -\\frac{\\pi}{2}。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第二类曲线积分·参数化",
       "papers": [
         "shu1"
       ]
@@ -9498,7 +9498,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$P=y, Q=x，\\frac{\\partial Q}{\\partial x}=\\frac{\\partial P}{\\partial y}=1，与路径无关。沿 y=x：\\int_0^1 (x\\,dx + x\\,dx) = 2\\int_0^1 x\\,dx = 1。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "路径无关与全微分",
       "papers": [
         "shu1"
       ]
@@ -9517,7 +9517,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$z = \\sqrt{x^2+y^2}，dS = \\sqrt{1+\\frac{x^2}{x^2+y^2}+\\frac{y^2}{x^2+y^2}}dxdy = \\sqrt{2}\\,dxdy。投影 D: x^2+y^2 \\leq 1。\\iint_\\Sigma dS = \\sqrt{2} \\cdot \\pi \\cdot 1^2 = \\sqrt{2}\\pi。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第一类曲面积分",
       "papers": [
         "shu1"
       ]
@@ -9536,7 +9536,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$**高斯公式**：P=x, Q=y, R=z。\\text{div}\\vec{F} = 3。\\oiint_\\Sigma = \\iiint_\\Omega 3\\,dV = 3 \\cdot \\frac{4}{3}\\pi = 4\\pi。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "高斯公式",
       "papers": [
         "shu1"
       ]
@@ -9555,7 +9555,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$**格林公式**：P=xy+\\sin y, Q=\\cos x。\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} = -\\sin x - (x+\\cos y) = -\\sin x - x - \\cos y。\\iint_D (-\\sin x - x - \\cos y)dxdy。D: 0\\leq x,y\\leq 1。计算得 -\\frac{1}{2}。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -9574,7 +9574,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\Sigma 上侧，z=1-x-y。\\iint_\\Sigma (y^2+z^2+x^2)dS 投影到 xOy 面。D: 0\\leq x\\leq 1, 0\\leq y\\leq 1-x。积分得 \\frac{1}{12}。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第二类曲面积分·投影法",
       "papers": [
         "shu1"
       ]
@@ -9593,7 +9593,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$**斯托克斯公式**：\\text{rot}\\vec{F} = (-1,-1,-1)。曲面 \\Sigma 取圆盘 x^2+y^2 \\leq 1, z=\\sqrt{3}，法向量 \\vec{n}=(0,0,1)。\\iint_\\Sigma \\text{rot}\\vec{F}\\cdot\\vec{n}dS = \\iint_\\Sigma (-1)dS = -\\pi。**答案：A**$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "斯托克斯公式",
       "papers": [
         "shu1"
       ]
@@ -9612,7 +9612,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "被积函数为1的三重积分等于区域体积。",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9631,7 +9631,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$柱坐标：x=r\\cos\\theta,y=r\\sin\\theta,z=z，雅可比|J|=r。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9650,7 +9650,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$球坐标：x=\\rho\\sin\\phi\\cos\\theta,y=\\rho\\sin\\phi\\sin\\theta,z=\\rho\\cos\\phi，|J|=\\rho^2\\sin\\phi。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9669,7 +9669,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "被积函数为1的弧长积分等于曲线弧长。",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第一类曲线积分",
       "papers": [
         "shu1"
       ]
@@ -9688,7 +9688,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\int_0^1 dz\\int_0^z dx\\int_0^z z\\,dy=\\int_0^1 z^3dz=\\frac14。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9707,7 +9707,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$格林公式：\\oint_L Pdx+Qdy=\\iint_D(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y})dxdy。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -9726,7 +9726,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "奇函数$z$在关于$xy$平面对称的球域上积分，由对称性得0。",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9745,7 +9745,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$格林：\\iint_D(1-(-1))dxdy=2\\iint_D dxdy=2\\pi ab。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -9764,7 +9764,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "高斯公式（散度定理）。",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "高斯公式",
       "papers": [
         "shu1"
       ]
@@ -9783,7 +9783,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "格林：$\\iint_D(1-1)dxdy=0$。",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -9802,7 +9802,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$球坐标：\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\,d\\phi\\int_0^1\\rho^2\\cdot\\rho^2 d\\rho=4\\pi\\cdot\\frac15=\\frac{4\\pi}{5}。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9821,7 +9821,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$格林：\\iint(2y-(-1))dxdy不对，Q_x=1,P_y=-1，Q_x-P_y=2，\\iint 2dxdy=2\\pi。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -9840,7 +9840,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "斯托克斯公式将空间曲线积分转化为以该曲线为边界的曲面积分。",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "斯托克斯公式",
       "papers": [
         "shu1"
       ]
@@ -9859,7 +9859,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$高斯：散度P_x+Q_y+R_z=1+1+1=3，\\iiint 3dV=3\\cdot\\frac{4\\pi}{3}=4\\pi。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "高斯公式",
       "papers": [
         "shu1"
       ]
@@ -9878,7 +9878,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$对称性：\\iiint x=\\iiint y=\\iiint z=\\frac12，总和\\frac32。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9897,7 +9897,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$ds=\\sqrt{1+1}dx=\\sqrt{2}dx，\\int_0^1 x\\sqrt{2}dx=\\frac{\\sqrt{2}}{2}。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第一类曲线积分",
       "papers": [
         "shu1"
       ]
@@ -9910,7 +9910,7 @@ var QUESTION_BANK = {
       "answer": "$4\\piR³/3$",
       "solution": "球体积公式。",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9923,7 +9923,7 @@ var QUESTION_BANK = {
       "answer": "1/8",
       "solution": "$\\int_0^1xdx\\int_0^1ydy\\int_0^1zdz=(\\frac12)^3=\\frac18。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9936,7 +9936,7 @@ var QUESTION_BANK = {
       "answer": "$2\\pi$",
       "solution": "$\\int_0^{2\\pi}d\\theta\\int_0^1 rdr\\int_0^2 z\\,dz=2\\pi\\cdot\\frac12\\cdot2=2\\pi。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9949,7 +9949,7 @@ var QUESTION_BANK = {
       "answer": "2",
       "solution": "$参数化x=\\cos t,y=\\sin t，ds=dt，\\int_0^\\pi\\sin t\\,dt=2。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第一类曲线积分",
       "papers": [
         "shu1"
       ]
@@ -9962,7 +9962,7 @@ var QUESTION_BANK = {
       "answer": "$\\pi$",
       "solution": "$格林：\\iint_D 1\\,dxdy=\\pi。或用参数直接算。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -9975,7 +9975,7 @@ var QUESTION_BANK = {
       "answer": "$4\\pi/15$",
       "solution": "$\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\cos^2\\phi\\,d\\phi\\int_0^1\\rho^4 d\\rho=2\\pi\\cdot\\frac{2}{3}\\cdot\\frac15=\\frac{4\\pi}{15}。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -9988,7 +9988,7 @@ var QUESTION_BANK = {
       "answer": "$2\\pi/3$",
       "solution": "$z=\\sqrt{1-x^2-y^2}，D:x^2+y^2\\le1，极坐标：\\int_0^{2\\pi}d\\theta\\int_0^1\\sqrt{1-r^2}\\,r\\,dr=2\\pi\\cdot\\frac13=\\frac{2\\pi}{3}。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第二类曲面积分·投影法",
       "papers": [
         "shu1"
       ]
@@ -10001,7 +10001,7 @@ var QUESTION_BANK = {
       "answer": "2A",
       "solution": "$A为L所围面积。格林：Q_x-P_y=(e^x\\cos y+1)-(e^x\\cos y-1)=2，结果=2A。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -10014,7 +10014,7 @@ var QUESTION_BANK = {
       "answer": "$2\\pi$",
       "solution": "$球坐标：4\\pi\\int_0^1\\rho^2\\cdot\\frac{1}{\\rho}d\\rho=4\\pi\\cdot\\frac12=2\\pi。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -10027,7 +10027,7 @@ var QUESTION_BANK = {
       "answer": "$\\pi\\sqrt2$",
       "solution": "$ds=\\sqrt{(-\\sin t)^2+(\\cos t)^2+1}dt=\\sqrt{2}dt，\\int_0^\\pi(\\cos^2t+\\sin^2t)\\sqrt{2}dt=\\pi\\sqrt{2}。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第一类曲线积分",
       "papers": [
         "shu1"
       ]
@@ -10046,7 +10046,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "被积函数为1的曲面积分等于曲面面积。",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第一类曲面积分",
       "papers": [
         "shu1"
       ]
@@ -10065,7 +10065,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\iint_{x^2+y^2\\le1}dxdy\\cdot\\int_0^1e^zdz=\\pi\\cdot(e-1)。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "三重积分计算",
       "papers": [
         "shu1"
       ]
@@ -10078,7 +10078,7 @@ var QUESTION_BANK = {
       "answer": "-3/2",
       "solution": "$平面上x+y+z=1，用斯托克斯：\\iint_S(1-1)dydz+(1-1)dzdx+(1-1)dxdy=0。不对，P=y,Q=z,R=x，旋度=(0-1,0-1,0-1)=(-1,-1,-1)，\\iint_S(-1,-1,-1)\\cdot(1,1,1)dS=-3\\iint_S dS。S面积=\\sqrt{3}/2。-3\\cdot\\frac{\\sqrt{3}}{2}\\cdot\\frac{1}{\\sqrt{3}}=-3/2。正确！$",
       "cat": "三重·曲线曲面积分",
-      "topic": "三重·曲线曲面积分",
+      "topic": "第二类曲线积分·参数化",
       "papers": [
         "shu1"
       ]
@@ -10090,7 +10090,7 @@ var QUESTION_BANK = {
       "question": "计算三重积分 $\\displaystyle\\iiint_{\\Omega}x\\,dxdydz$，其中 $\\Omega$ 为三个坐标面以及平面 $x+2y+z=1$ 所围成的闭区域。",
       "solution": "**确定投影区域**：$\\Omega$ 由 $x\\ge0,y\\ge0,z\\ge0$ 与 $x+2y+z\\le1$ 围成（四面体）。\n\n投影到 $xOy$ 面上：\n$$D_{xy}=\\left\\{(x,y)\\ \\Big|\\ 0\\le x\\le1,\\ 0\\le y\\le\\frac{1-x}{2}\\right\\}$$\n\n**先一后二**（先对 $z$ 积分）：\n$$\\iiint_{\\Omega}x\\,dV=\\int_{0}^{1}dx\\int_{0}^{\\frac{1-x}{2}}dy\\int_{0}^{1-x-2y}x\\,dz$$\n\n对 $z$ 积分（被积与 $z$ 无关）：\n$$=\\int_{0}^{1}x\\,dx\\int_{0}^{\\frac{1-x}{2}}(1-x-2y)\\,dy$$\n\n内层：$\\displaystyle\\int_{0}^{\\frac{1-x}{2}}(1-x-2y)dy=\\left[(1-x)y-y^{2}\\right]_{0}^{\\frac{1-x}{2}}=\\frac{(1-x)^{2}}{4}$\n\n外层：$\\displaystyle\\frac{1}{4}\\int_{0}^{1}x(1-x)^{2}dx=\\frac{1}{4}\\cdot\\frac{1}{12}=\\frac{1}{48}$\n\n（其中 $\\int_{0}^{1}x(1-x)^{2}dx=B(2,3)=\\dfrac{1}{12}$）\n\n**答案**：$\\dfrac{1}{48}$",
       "cat": "三重·曲线曲面积分",
-      "topic": "先一后二·投影区域确定",
+      "topic": "三重积分计算",
       "source": "经纬研选（五）·数一多元",
       "answer": "$\\dfrac{1}{48}$",
       "papers": [
@@ -10104,7 +10104,7 @@ var QUESTION_BANK = {
       "question": "设 $\\Omega$ 为平面曲线 $\\begin{cases}y^{2}=2z\\\\ x=0\\end{cases}$ 绕 $z$ 轴旋转一周所成的曲面与平面 $z=2$ 所围成的区域，求 $\\displaystyle\\iiint_{\\Omega}(x^{2}+y^{2})\\,dV$。",
       "solution": "**旋转曲面方程**：平面曲线 $y^{2}=2z$（在 $yOz$ 面内）绕 $z$ 轴旋转，把 $y$ 换成 $\\pm\\sqrt{x^{2}+y^{2}}$，得\n\n$$x^{2}+y^{2}=2z$$\n\n与平面 $z=2$ 围成的区域为旋转抛物面的内部，$z\\in\\left[\\dfrac{x^{2}+y^{2}}{2},\\,2\\right]$。\n\n**投影区域**：$z=2$ 时 $x^{2}+y^{2}=4$，故在 $xOy$ 面投影为圆盘 $x^{2}+y^{2}\\le4$。\n\n**用柱坐标**（$x^{2}+y^{2}=r^{2}$，$dV=r\\,dr\\,d\\theta\\,dz$）：\n$$\\iiint_{\\Omega}(x^{2}+y^{2})dV\n=\\int_{0}^{2\\pi}d\\theta\\int_{0}^{2}dr\\int_{\\frac{r^{2}}{2}}^{2}r^{2}\\cdot r\\,dz\n=2\\pi\\int_{0}^{2}r^{3}\\left(2-\\frac{r^{2}}{2}\\right)dr$$\n\n计算内层：\n$$\\int_{0}^{2}r^{3}\\left(2-\\frac{r^{2}}{2}\\right)dr=\\left[\\frac{r^{4}}{2}-\\frac{r^{6}}{12}\\right]_{0}^{2}=8-\\frac{16}{3}=\\frac{8}{3}$$\n\n故\n$$\\iiint_{\\Omega}(x^{2}+y^{2})dV=2\\pi\\cdot\\frac{8}{3}=\\frac{16\\pi}{3}$$\n\n**答案**：$\\dfrac{16\\pi}{3}$\n\n**校注**：本题容易在最后一步把 $2\\pi$ 漏掉而错答 $\\dfrac{8\\pi}{3}$。上面结果已用蒙特卡洛抽样独立复核（抽样值 $16.82$，与 $16\\pi/3\\approx16.755$ 吻合，与 $8\\pi/3\\approx8.378$ 差一倍）。",
       "cat": "三重·曲线曲面积分",
-      "topic": "旋转曲面·柱坐标",
+      "topic": "三重积分计算",
       "source": "经纬研选（五）·数一多元",
       "answer": "$\\dfrac{16\\pi}{3}$",
       "papers": [
@@ -10118,7 +10118,7 @@ var QUESTION_BANK = {
       "question": "计算 $I=\\displaystyle\\iiint_{\\Omega}\\frac{1}{\\sqrt{x^{2}+y^{2}+z^{2}}}\\,dV$，其中 $\\Omega$ 由 $x^{2}+y^{2}+(z-1)^{2}\\le1,\\ z\\ge1,\\ y\\ge0$ 所确定。",
       "solution": "**认清区域**：$x^{2}+y^{2}+(z-1)^{2}\\le1$ 是球心 $(0,0,1)$、半径 $1$ 的球体；$z\\ge1$ 取其上半球；$y\\ge0$ 再取一半（共 $\\frac{1}{4}$ 球体）。\n\n**用球坐标**（以**原点**为极点，这样被积函数 $\\frac{1}{r}$ 才最简）：\n$$x=r\\sin\\varphi\\cos\\theta,\\quad y=r\\sin\\varphi\\sin\\theta,\\quad z=r\\cos\\varphi$$\n$$dV=r^{2}\\sin\\varphi\\,dr\\,d\\varphi\\,d\\theta$$\n\n**确定 $r$ 的范围**（这是本题最难的一步）：\n\n- 球面方程展开：$x^{2}+y^{2}+z^{2}-2z+1\\le1$，即 $r^{2}\\le2r\\cos\\varphi$，得 $r\\le2\\cos\\varphi$\n- 条件 $z\\ge1$：$r\\cos\\varphi\\ge1$，得 $r\\ge\\dfrac{1}{\\cos\\varphi}$\n\n两者要相容：$\\dfrac{1}{\\cos\\varphi}\\le2\\cos\\varphi\\ \\Rightarrow\\ \\cos^{2}\\varphi\\ge\\dfrac{1}{2}\\ \\Rightarrow\\ \\varphi\\in\\left[0,\\dfrac{\\pi}{4}\\right]$\n\n**确定 $\\theta$ 的范围**：$y\\ge0$ 即 $\\sin\\theta\\ge0$，故 $\\theta\\in[0,\\pi]$。\n\n**积分**：\n$$I=\\int_{0}^{\\pi}d\\theta\\int_{0}^{\\frac{\\pi}{4}}d\\varphi\\int_{\\frac{1}{\\cos\\varphi}}^{2\\cos\\varphi}\\frac{1}{r}\\cdot r^{2}\\sin\\varphi\\,dr$$\n\n对 $r$ 积分：\n$$=\\pi\\int_{0}^{\\frac{\\pi}{4}}\\sin\\varphi\\cdot\\frac{(2\\cos\\varphi)^{2}-\\left(\\frac{1}{\\cos\\varphi}\\right)^{2}}{2}\\,d\\varphi\n=\\frac{\\pi}{2}\\int_{0}^{\\frac{\\pi}{4}}\\left(4\\cos^{2}\\varphi-\\sec^{2}\\varphi\\right)\\sin\\varphi\\,d\\varphi$$\n\n令 $u=\\cos\\varphi$：\n$$=\\frac{\\pi}{2}\\int_{\\frac{1}{\\sqrt{2}}}^{1}\\left(4u^{2}-\\frac{1}{u^{2}}\\right)du\n=\\frac{\\pi}{2}\\left[\\frac{4u^{3}}{3}+\\frac{1}{u}\\right]_{\\frac{1}{\\sqrt{2}}}^{1}$$\n\n$$=\\frac{\\pi}{2}\\left[\\left(\\frac{4}{3}+1\\right)-\\left(\\frac{4}{3}\\cdot\\frac{1}{2\\sqrt{2}}+\\sqrt{2}\\right)\\right]\n=\\frac{\\pi}{2}\\left(\\frac{7}{3}-\\frac{\\sqrt{2}}{3}-\\sqrt{2}\\right)\n=\\frac{\\pi}{2}\\cdot\\frac{7-4\\sqrt{2}}{3}\n=\\frac{(7-4\\sqrt{2})\\pi}{6}$$\n\n**答案**：$\\dfrac{(7-4\\sqrt{2})\\pi}{6}\\approx0.7032$（已数值复核）",
       "cat": "三重·曲线曲面积分",
-      "topic": "球坐标·积分限的确定",
+      "topic": "三重积分计算",
       "source": "经纬研选（五）·数一多元",
       "answer": "$\\dfrac{(7-4\\sqrt{2})\\pi}{6}$",
       "papers": [
@@ -10132,7 +10132,7 @@ var QUESTION_BANK = {
       "question": "计算 $\\displaystyle\\iiint_{\\Omega}(ax+by+cz)^{2}\\,dV$，其中 $\\Omega$ 为球体 $x^{2}+y^{2}+z^{2}\\le R^{2}$。",
       "solution": "**展开被积函数**：\n$$(ax+by+cz)^{2}=\\underbrace{(a^{2}x^{2}+b^{2}y^{2}+c^{2}z^{2})}_{\\text{平方项}}+\\underbrace{(2abxy+2bcyz+2acxz)}_{\\text{交叉项}}$$\n\n**交叉项用奇偶性消掉**：$\\Omega$ 关于三个坐标面都对称，而 $xy$ 关于 $x$（也关于 $y$）是奇函数，故\n$$\\iiint_{\\Omega}xy\\,dV=\\iiint_{\\Omega}yz\\,dV=\\iiint_{\\Omega}xz\\,dV=0$$\n\n**平方项用轮换对称性**：$\\Omega$ 关于 $x,y,z$ 完全对称，故\n$$\\iiint_{\\Omega}x^{2}dV=\\iiint_{\\Omega}y^{2}dV=\\iiint_{\\Omega}z^{2}dV=\\frac{1}{3}\\iiint_{\\Omega}(x^{2}+y^{2}+z^{2})dV$$\n\n于是\n$$\\iiint_{\\Omega}(a^{2}x^{2}+b^{2}y^{2}+c^{2}z^{2})dV=\\frac{a^{2}+b^{2}+c^{2}}{3}\\iiint_{\\Omega}(x^{2}+y^{2}+z^{2})dV$$\n\n**球坐标计算**：\n$$\\iiint_{\\Omega}(x^{2}+y^{2}+z^{2})dV=\\int_{0}^{2\\pi}d\\theta\\int_{0}^{\\pi}d\\varphi\\int_{0}^{R}r^{2}\\cdot r^{2}\\sin\\varphi\\,dr\n=2\\pi\\cdot2\\cdot\\frac{R^{5}}{5}=\\frac{4\\pi R^{5}}{5}$$\n\n**合并**：\n$$\\iiint_{\\Omega}(ax+by+cz)^{2}dV=\\frac{a^{2}+b^{2}+c^{2}}{3}\\cdot\\frac{4\\pi R^{5}}{5}=\\frac{4\\pi R^{5}}{15}(a^{2}+b^{2}+c^{2})$$\n\n**答案**：$\\dfrac{4\\pi R^{5}}{15}(a^{2}+b^{2}+c^{2})$\n\n**注**：原题中球体半径也记作 $a$，与被积函数的系数 $a$ 重名，容易混淆，这里把球体半径改记为 $R$。",
       "cat": "三重·曲线曲面积分",
-      "topic": "奇偶对称性·轮换对称性",
+      "topic": "三重积分计算",
       "source": "经纬研选（五）·数一多元",
       "answer": "$\\dfrac{4\\pi R^{5}}{15}(a^{2}+b^{2}+c^{2})$",
       "papers": [
@@ -10146,7 +10146,7 @@ var QUESTION_BANK = {
       "question": "计算半径为 $R$、中心角为 $2\\alpha$ 的圆弧 $L$ 对于其对称轴的转动惯量 $I$（设线密度 $\\mu=1$）。",
       "solution": "**建系**：取对称轴为 $x$ 轴，圆心在原点，则 $L$ 的参数方程为\n$$\\begin{cases}x=R\\cos\\theta\\\\ y=R\\sin\\theta\\end{cases}\\quad(-\\alpha\\le\\theta\\le\\alpha)$$\n\n**转动惯量**：对 $x$ 轴的转动惯量为 $\\displaystyle I=\\int_{L}y^{2}\\mu\\,ds=\\int_{L}y^{2}ds$。\n\n**弧长微元**：\n$$ds=\\sqrt{(-R\\sin\\theta)^{2}+(R\\cos\\theta)^{2}}\\,d\\theta=R\\,d\\theta$$\n\n**代入计算**：\n$$I=\\int_{-\\alpha}^{\\alpha}(R\\sin\\theta)^{2}\\cdot R\\,d\\theta\n=R^{3}\\int_{-\\alpha}^{\\alpha}\\sin^{2}\\theta\\,d\\theta$$\n\n$$\\int_{-\\alpha}^{\\alpha}\\sin^{2}\\theta\\,d\\theta=\\left[\\frac{\\theta}{2}-\\frac{\\sin2\\theta}{4}\\right]_{-\\alpha}^{\\alpha}=\\alpha-\\frac{\\sin2\\alpha}{2}=\\alpha-\\sin\\alpha\\cos\\alpha$$\n\n**答案**：$I=R^{3}(\\alpha-\\sin\\alpha\\cos\\alpha)$",
       "cat": "三重·曲线曲面积分",
-      "topic": "第一类曲线积分·转动惯量",
+      "topic": "第一类曲线积分",
       "source": "经纬研选（五）·数一多元",
       "answer": "$R^{3}(\\alpha-\\sin\\alpha\\cos\\alpha)$",
       "papers": [
@@ -10160,7 +10160,7 @@ var QUESTION_BANK = {
       "question": "设曲线 $L:\\begin{cases}x^{2}+y^{2}+z^{2}=4\\\\ x+y+z=0\\end{cases}$，求第一类曲线积分 $\\displaystyle\\int_{L}(x+y)^{2}ds$。",
       "solution": "**化简被积函数**：在 $L$ 上恒有 $x+y=-z$，故\n$$\\int_{L}(x+y)^{2}ds=\\int_{L}z^{2}ds$$\n\n**用轮换对称性**：$L$ 的方程组关于 $x,y,z$ 完全对称，故\n$$\\int_{L}z^{2}ds=\\int_{L}x^{2}ds=\\int_{L}y^{2}ds$$\n\n于是\n$$3\\int_{L}z^{2}ds=\\int_{L}(x^{2}+y^{2}+z^{2})ds=\\int_{L}4\\,ds=4\\cdot|L|$$\n\n**求弧长**：$L$ 是球面 $x^{2}+y^{2}+z^{2}=4$ 与过球心的平面 $x+y+z=0$ 的交圆，半径为球的半径 $2$，故\n$$|L|=2\\pi\\cdot2=4\\pi$$\n\n**结论**：\n$$\\int_{L}(x+y)^{2}ds=\\frac{4}{3}\\cdot4\\pi=\\frac{16\\pi}{3}$$\n\n**答案**：$\\dfrac{16\\pi}{3}$\n\n**点睛**：第一类（对弧长的）曲线积分可以把曲线方程代入被积函数化简——因为积分变量满足这些关系。**但第二类曲线积分不可以这样代入**，代入会改变 $\\cos\\alpha$ 等方向余弦，从而改变结果。",
       "cat": "三重·曲线曲面积分",
-      "topic": "第一类曲线积分·轮换对称性",
+      "topic": "第一类曲线积分",
       "source": "经纬研选（五）·数一多元",
       "answer": "$\\dfrac{16\\pi}{3}$",
       "papers": [
@@ -10202,7 +10202,7 @@ var QUESTION_BANK = {
       "question": "计算 $\\displaystyle\\oint_{L}x^{2}y\\,dx-xy^{2}dy$，其中 $L$ 为正向圆周 $x^{2}+y^{2}=a^{2}$。",
       "solution": "**方法一：参数方程**\n\n$L$ 的正向（逆时针）参数方程：$x=a\\cos\\theta,\\ y=a\\sin\\theta,\\ \\theta:0\\to2\\pi$，\n$$dx=-a\\sin\\theta\\,d\\theta,\\quad dy=a\\cos\\theta\\,d\\theta$$\n\n$$\\oint_{L}x^{2}y\\,dx-xy^{2}dy=\\int_{0}^{2\\pi}\\left[a^{2}\\cos^{2}\\theta\\cdot a\\sin\\theta\\cdot(-a\\sin\\theta)-a\\cos\\theta\\cdot a^{2}\\sin^{2}\\theta\\cdot a\\cos\\theta\\right]d\\theta$$\n\n$$=-a^{4}\\int_{0}^{2\\pi}2\\cos^{2}\\theta\\sin^{2}\\theta\\,d\\theta\n=-2a^{4}\\int_{0}^{2\\pi}\\frac{\\sin^{2}2\\theta}{4}d\\theta\n=-\\frac{a^{4}}{2}\\cdot\\pi=-\\frac{\\pi a^{4}}{2}$$\n\n（用到 $\\int_{0}^{2\\pi}\\sin^{2}2\\theta\\,d\\theta=\\pi$）\n\n**方法二：格林公式**\n\n$P=x^{2}y,\\ Q=-xy^{2}$，则 $\\dfrac{\\partial Q}{\\partial x}-\\dfrac{\\partial P}{\\partial y}=-y^{2}-x^{2}=-(x^{2}+y^{2})$\n\n$$\\oint_{L}=\\iint_{D}-(x^{2}+y^{2})dA=-\\int_{0}^{2\\pi}d\\theta\\int_{0}^{a}r^{2}\\cdot r\\,dr=-2\\pi\\cdot\\frac{a^{4}}{4}=-\\frac{\\pi a^{4}}{2}$$\n\n**答案**：$-\\dfrac{\\pi a^{4}}{2}$\n\n**校注**：常见错答 $-\\dfrac{\\pi a^{4}}{8}$，是把 $\\int_{0}^{2\\pi}\\cos^{2}\\theta\\sin^{2}\\theta\\,d\\theta$ 算成了 $\\dfrac{\\pi}{8}$（正确值是 $\\dfrac{\\pi}{4}$），或漏掉了 $dx,dy$ 带来的两个 $a$ 因子。上面结果已用参数化数值积分与格林公式两条独立路径互验（取 $a=1$ 均为 $-1.5708=-\\pi/2$）。",
       "cat": "三重·曲线曲面积分",
-      "topic": "第二类曲线积分·格林公式",
+      "topic": "格林公式",
       "source": "经纬研选（五）·数一多元",
       "answer": "$-\\dfrac{\\pi a^{4}}{2}$",
       "papers": [
@@ -10216,7 +10216,7 @@ var QUESTION_BANK = {
       "question": "计算 $\\displaystyle\\oint_{L}\\frac{x\\,dy-y\\,dx}{x^{2}+y^{2}}$，其中 $L$ 为分段光滑且不经过原点的连续封闭曲线，$L$ 的方向为逆时针方向。",
       "solution": "**记**：$L$ 围成的闭区域为 $D$。被积式写成 $P\\,dx+Q\\,dy$，其中\n$$P=\\frac{-y}{x^{2}+y^{2}},\\qquad Q=\\frac{x}{x^{2}+y^{2}}$$\n\n**验证恰当性**（在原点以外）：\n$$\\frac{\\partial Q}{\\partial x}=\\frac{(x^{2}+y^{2})-x\\cdot2x}{(x^{2}+y^{2})^{2}}=\\frac{y^{2}-x^{2}}{(x^{2}+y^{2})^{2}}$$\n$$\\frac{\\partial P}{\\partial y}=\\frac{-(x^{2}+y^{2})-(-y)\\cdot2y}{(x^{2}+y^{2})^{2}}=\\frac{y^{2}-x^{2}}{(x^{2}+y^{2})^{2}}$$\n\n两者相等，所以在不含原点的单连通区域上积分与路径无关。\n\n**情形一：$(0,0)\\notin D$**\n\n此时 $P,Q$ 在 $D$ 上连续可微，满足格林公式条件：\n$$\\oint_{L}\\frac{x\\,dy-y\\,dx}{x^{2}+y^{2}}=\\iint_{D}\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dA=\\iint_{D}0\\,dA=0$$\n\n**情形二：$(0,0)\\in D$**\n\n$P,Q$ 在原点无定义、在 $D$ 上不连续，**不能直接用格林公式**。取充分小的 $r>0$，在 $D$ 内作圆周\n$$l:\\ x^{2}+y^{2}=r^{2}\\quad(\\text{取逆时针方向})$$\n\n记 $L$ 与 $l$ 围成的环形区域为 $D_{1}$（$D_{1}$ 不含原点），在 $D_{1}$ 上应用格林公式：\n$$\\oint_{L+l^{-}}\\frac{x\\,dy-y\\,dx}{x^{2}+y^{2}}=0$$\n\n于是 $\\displaystyle\\oint_{L}=\\oint_{l}$（注意 $l^{-}$ 是顺时针，移项后变号）：\n$$\\oint_{l}\\frac{x\\,dy-y\\,dx}{x^{2}+y^{2}}\n=\\int_{0}^{2\\pi}\\frac{r\\cos\\theta\\cdot r\\cos\\theta\\,d\\theta-r\\sin\\theta\\cdot(-r\\sin\\theta\\,d\\theta)}{r^{2}}\n=\\int_{0}^{2\\pi}1\\,d\\theta=2\\pi$$\n\n**结论**：\n$$\\oint_{L}\\frac{x\\,dy-y\\,dx}{x^{2}+y^{2}}=\\begin{cases}0, & (0,0)\\notin D\\\\[4pt] 2\\pi, & (0,0)\\in D\\end{cases}$$\n\n**点睛**：这就是\"挖洞法\"——奇点把区域挖掉，沿小洞的积分反而最好算。本题的被积式正是极角微分 $d\\theta$，绕原点一圈积累 $2\\pi$。",
       "cat": "三重·曲线曲面积分",
-      "topic": "格林公式·挖洞法（奇点处理）",
+      "topic": "格林公式",
       "source": "经纬研选（五）·数一多元",
       "answer": "",
       "papers": [
@@ -10230,7 +10230,7 @@ var QUESTION_BANK = {
       "question": "计算第二类线积分 $\\displaystyle\\int_{L}ye^{y^{2}}dx+(xe^{y^{2}}+2xy^{2}e^{y^{2}})dy$，其中 $L$ 是曲线 $y=\\sqrt[3]{x}$ 从 $O(0,0)$ 到 $A(1,1)$ 的一段弧。",
       "solution": "**先验证路径无关**：\n$$P=ye^{y^{2}},\\quad Q=xe^{y^{2}}+2xy^{2}e^{y^{2}}$$\n$$\\frac{\\partial P}{\\partial y}=e^{y^{2}}+2y^{2}e^{y^{2}},\\qquad \\frac{\\partial Q}{\\partial x}=e^{y^{2}}+2y^{2}e^{y^{2}}$$\n\n两者相等，故积分与路径无关，**可以改走从 $O$ 到 $A$ 的直线段 $y=x$**。\n\n**计算**（$y=x,dy=dx$）：\n$$\\int_{O}^{A}=\\int_{0}^{1}\\left[xe^{x^{2}}+(xe^{x^{2}}+2x^{3}e^{x^{2}})\\right]dx\n=\\underbrace{\\int_{0}^{1}2xe^{x^{2}}dx}_{I_{1}}+\\underbrace{\\int_{0}^{1}2x^{3}e^{x^{2}}dx}_{I_{2}}$$\n\n$$I_{1}=\\left[e^{x^{2}}\\right]_{0}^{1}=e-1$$\n\n$$I_{2}\\overset{u=x^{2}}{=}\\int_{0}^{1}ue^{u}du=\\left[(u-1)e^{u}\\right]_{0}^{1}=0-(-1)=1$$\n\n**结论**：$\\displaystyle\\int_{L}=I_{1}+I_{2}=(e-1)+1=e$\n\n**答案**：$e$\n\n**注**：也可改走折线 $O(0,0)\\to B(1,0)\\to A(1,1)$：$OB$ 上 $y=0,dy=0$，积分为 $0$；$BA$ 上 $dx=0$，积分 $\\int_{0}^{1}(e^{y^{2}}+2y^{2}e^{y^{2}})dy$，用分部积分同样得 $e$。",
       "cat": "三重·曲线曲面积分",
-      "topic": "路径无关性·改走简单路径",
+      "topic": "路径无关与全微分",
       "source": "经纬研选（五）·数一多元",
       "answer": "$e$",
       "papers": [
@@ -10244,7 +10244,7 @@ var QUESTION_BANK = {
       "question": "求解方程 $(5x^{4}+3xy^{2}-y^{3})dx+(3x^{2}y-3xy^{2}+y^{2})dy=0$ 的通解。",
       "solution": "**判别全微分**：\n$$P=5x^{4}+3xy^{2}-y^{3},\\qquad Q=3x^{2}y-3xy^{2}+y^{2}$$\n$$\\frac{\\partial P}{\\partial y}=6xy-3y^{2},\\qquad \\frac{\\partial Q}{\\partial x}=6xy-3y^{2}$$\n\n两者相等，故为**全微分方程**，存在原函数 $U$ 使 $dU=P\\,dx+Q\\,dy$。\n\n**求原函数**（取起点 $(0,0)$，走折线）：\n\n$$U(x,y)=\\int_{(0,0)}^{(x,y)}P\\,dx+Q\\,dy$$\n\n- 沿 $x$ 轴 $(0,0)\\to(x,0)$：$y=0,dy=0$\n$$\\int_{0}^{x}5t^{4}dt=x^{5}$$\n\n- 沿竖直线 $(x,0)\\to(x,y)$：$dx=0$\n$$\\int_{0}^{y}(3x^{2}t-3xt^{2}+t^{2})dt=\\frac{3}{2}x^{2}y^{2}-xy^{3}+\\frac{1}{3}y^{3}$$\n\n$$U(x,y)=x^{5}+\\frac{3}{2}x^{2}y^{2}-xy^{3}+\\frac{1}{3}y^{3}$$\n\n**通解**：\n$$x^{5}+\\frac{3}{2}x^{2}y^{2}-xy^{3}+\\frac{1}{3}y^{3}=C$$\n\n**注**：折线法的关键在于走平行于坐标轴的折线，使每段上只有一个变量在变（$x$ 轴上 $dy=0$，竖直段上 $dx=0$），这样每段都是一元积分。",
       "cat": "三重·曲线曲面积分",
-      "topic": "全微分方程·凑原函数",
+      "topic": "路径无关与全微分",
       "source": "经纬研选（五）·数一多元",
       "answer": "",
       "papers": [
@@ -10258,7 +10258,7 @@ var QUESTION_BANK = {
       "question": "设平面曲线 $L$ 是从点 $O(0,0)$ 到点 $A(\\pi,\\pi)$ 的半圆弧，试求该平面内一质点在变力 $\\vec{F}=(e^{x}\\sin y-4y)\\vec{i}+(e^{x}\\cos y-1)\\vec{j}$ 作用下，沿圆弧 $L$ 从 $O$ 移动到 $A$ 所做的功。",
       "solution": "**物理意义**：变力做功 $W=\\displaystyle\\int_{L}P\\,dx+Q\\,dy$，其中\n$$P=e^{x}\\sin y-4y,\\qquad Q=e^{x}\\cos y-1$$\n\n**补线成闭**：补上有向线段 $AO$（从 $A$ 回到 $O$），与半圆弧 $L$ 围成半圆区域 $D$，闭曲线 $L+AO$ 是**负向**（顺时针）。\n\n**用格林公式**：\n$$\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}=e^{x}\\cos y-(e^{x}\\cos y-4)=4$$\n\n$$\\oint_{L+AO}=\\iint_{D}(-4)\\,dA=-4\\cdot|D|$$\n\n半圆以 $OA$ 为直径，直径长 $\\sqrt{\\pi^{2}+\\pi^{2}}=\\sqrt{2}\\pi$，半径 $\\dfrac{\\sqrt{2}\\pi}{2}=\\dfrac{\\pi}{\\sqrt{2}}$，\n$$|D|=\\frac{1}{2}\\pi\\left(\\frac{\\pi}{\\sqrt{2}}\\right)^{2}=\\frac{\\pi^{3}}{4}$$\n\n故 $\\displaystyle\\oint_{L+AO}=-4\\cdot\\frac{\\pi^{3}}{4}=-\\pi^{3}$。\n\n**减去补线段的贡献**：线段 $AO$ 在直线 $y=x$ 上，$x$ 从 $\\pi$ 到 $0$，\n\n$$\\int_{AO}=\\int_{\\pi}^{0}\\left[(e^{x}\\sin x-4x)+(e^{x}\\cos x-1)\\right]dx$$\n\n$$\\int_{0}^{\\pi}e^{x}\\sin x\\,dx=\\left[\\frac{e^{x}(\\sin x-\\cos x)}{2}\\right]_{0}^{\\pi}=\\frac{e^{\\pi}+1}{2}$$\n$$\\int_{0}^{\\pi}e^{x}\\cos x\\,dx=\\left[\\frac{e^{x}(\\sin x+\\cos x)}{2}\\right]_{0}^{\\pi}=-\\frac{e^{\\pi}+1}{2}$$\n\n两项相消，故\n$$\\int_{AO}=-\\int_{0}^{\\pi}(-4x-1)dx=4\\cdot\\frac{\\pi^{2}}{2}+\\pi=2\\pi^{2}+\\pi$$\n\n**结论**：\n$$W=\\int_{L}=\\oint_{L+AO}-\\int_{AO}=-\\pi^{3}-(2\\pi^{2}+\\pi)=-\\pi^{3}-2\\pi^{2}-\\pi$$\n\n**答案**：$-\\pi^{3}-2\\pi^{2}-\\pi$",
       "cat": "三重·曲线曲面积分",
-      "topic": "格林公式·变力做功",
+      "topic": "格林公式",
       "source": "经纬研选（五）·数一多元",
       "answer": "$-\\pi^{3}-2\\pi^{2}-\\pi$",
       "papers": [
@@ -10272,7 +10272,7 @@ var QUESTION_BANK = {
       "question": "设 $f(x)$ 具有二阶连续导数，$f(1)=f'(1)=1$；且 $\\displaystyle\\oint_{L}\\left[\\frac{y^{2}}{x}+xf\\left(\\frac{y}{x}\\right)\\right]dx+\\left[y-xf'\\left(\\frac{y}{x}\\right)\\right]dy=0$，其中 $L$ 是右半平面 $x>0$ 内任一光滑封闭曲线，求 $f(x)$。",
       "solution": "**把条件翻译成偏导等式**：闭曲线积分恒为零 $\\Leftrightarrow$ 积分与路径无关 $\\Leftrightarrow\\dfrac{\\partial P}{\\partial y}=\\dfrac{\\partial Q}{\\partial x}$。\n\n$$P=\\frac{y^{2}}{x}+xf\\left(\\frac{y}{x}\\right),\\qquad Q=y-xf'\\left(\\frac{y}{x}\\right)$$\n\n$$\\frac{\\partial P}{\\partial y}=\\frac{2y}{x}+x\\cdot f'\\left(\\frac{y}{x}\\right)\\cdot\\frac{1}{x}=\\frac{2y}{x}+f'\\left(\\frac{y}{x}\\right)$$\n$$\\frac{\\partial Q}{\\partial x}=-\\left[f'\\left(\\frac{y}{x}\\right)+x\\cdot f''\\left(\\frac{y}{x}\\right)\\cdot\\left(-\\frac{y}{x^{2}}\\right)\\right]=-f'\\left(\\frac{y}{x}\\right)+\\frac{y}{x}f''\\left(\\frac{y}{x}\\right)$$\n\n令两者相等：\n$$\\frac{2y}{x}+f'\\left(\\frac{y}{x}\\right)=-f'\\left(\\frac{y}{x}\\right)+\\frac{y}{x}f''\\left(\\frac{y}{x}\\right)$$\n\n**换元**：设 $t=\\dfrac{y}{x}$，整理得\n$$t\\,f''(t)-2f'(t)=2t\\quad\\Rightarrow\\quad f''(t)-\\frac{2}{t}f'(t)=2$$\n\n**降阶**：令 $u=f'(t)$，得到一阶线性方程 $u'-\\dfrac{2}{t}u=2$。\n\n积分因子 $e^{\\int-\\frac{2}{t}dt}=t^{-2}$：\n$$\\left(u\\,t^{-2}\\right)'=2t^{-2}\\quad\\Rightarrow\\quad u\\,t^{-2}=-\\frac{2}{t}+C_{1}\\quad\\Rightarrow\\quad u=-2t+C_{1}t^{2}$$\n\n即 $f'(t)=-2t+C_{1}t^{2}$。由 $f'(1)=1$：$-2+C_{1}=1$，得 $C_{1}=3$。\n\n**再积分**：\n$$f(t)=\\int(-2t+3t^{2})dt=-t^{2}+t^{3}+C_{2}$$\n\n由 $f(1)=1$：$-1+1+C_{2}=1$，得 $C_{2}=1$。\n\n**答案**：$f(x)=x^{3}-x^{2}+1$",
       "cat": "三重·曲线曲面积分",
-      "topic": "由线积分性质反推·欧拉型方程",
+      "topic": "路径无关与全微分",
       "source": "经纬研选（五）·数一多元",
       "answer": "$f(x)=x^{3}-x^{2}+1$",
       "papers": [
@@ -10286,7 +10286,7 @@ var QUESTION_BANK = {
       "question": "计算曲面积分 $\\displaystyle\\iint_{\\Sigma}z\\,dxdy$，其中 $\\Sigma$ 是球面 $x^{2}+y^{2}+z^{2}=1$ 外侧在 $x\\ge0,y\\ge0$ 的部分。",
       "solution": "**分面**：$\\Sigma$ 由上下两片组成\n$$\\Sigma_{1}:\\ z=\\sqrt{1-x^{2}-y^{2}}\\ (\\text{上侧}),\\qquad \\Sigma_{2}:\\ z=-\\sqrt{1-x^{2}-y^{2}}\\ (\\text{下侧})$$\n\n两者在 $xOy$ 面的投影都是 $D_{xy}=\\{(x,y)\\mid x\\ge0,y\\ge0,x^{2}+y^{2}\\le1\\}$（第一象限的 $\\frac{1}{4}$ 圆）。\n\n**化为二重积分**（第二类曲面积分 $\\iint z\\,dxdy$，上侧取正、下侧取负）：\n$$\\iint_{\\Sigma}z\\,dxdy=\\iint_{\\Sigma_{1}}z\\,dxdy+\\iint_{\\Sigma_{2}}z\\,dxdy$$\n$$=\\iint_{D_{xy}}\\sqrt{1-x^{2}-y^{2}}\\,dxdy+\\iint_{D_{xy}}\\left(-\\sqrt{1-x^{2}-y^{2}}\\right)\\cdot(-1)\\,dxdy$$\n$$=2\\iint_{D_{xy}}\\sqrt{1-x^{2}-y^{2}}\\,dxdy$$\n\n**极坐标**：$D_{xy}$ 对应 $\\theta\\in\\left[0,\\dfrac{\\pi}{2}\\right],\\ r\\in[0,1]$：\n$$=2\\int_{0}^{\\frac{\\pi}{2}}d\\theta\\int_{0}^{1}\\sqrt{1-r^{2}}\\cdot r\\,dr\n=2\\cdot\\frac{\\pi}{2}\\cdot\\frac{1}{3}=\\frac{\\pi}{3}$$\n\n（其中 $\\int_{0}^{1}r\\sqrt{1-r^{2}}dr=\\left[-\\dfrac{(1-r^{2})^{3/2}}{3}\\right]_{0}^{1}=\\dfrac{1}{3}$）\n\n**答案**：$\\dfrac{\\pi}{3}$",
       "cat": "三重·曲线曲面积分",
-      "topic": "第二类曲面积分·分面投影",
+      "topic": "第二类曲面积分·投影法",
       "source": "经纬研选（五）·数一多元",
       "answer": "$\\dfrac{\\pi}{3}$",
       "papers": [
@@ -10300,7 +10300,7 @@ var QUESTION_BANK = {
       "question": "计算曲面积分 $\\displaystyle\\iint_{\\Sigma}(z^{2}+x)\\,dydz-z\\,dxdy$，其中 $\\Sigma$ 是旋转抛物面 $z=x^{2}+y^{2}$ 介于平面 $z=0$ 与 $z=4$ 之间的部分的下侧。",
       "solution": "**认清被积式**：$\\displaystyle\\iint_{\\Sigma}P\\,dydz+Q\\,dzdx+R\\,dxdy$，其中\n$$P=z^{2}+x,\\qquad Q=0,\\qquad R=-z$$\n\n**补面用高斯**：$\\Sigma$ 是下侧（不封闭），补上平面 $\\Sigma_{1}:z=4$ 的**上侧**，则 $\\Sigma+\\Sigma_{1}$ 围成闭区域 $\\Omega$（取外法向）。\n\n$$\\frac{\\partial P}{\\partial x}+\\frac{\\partial Q}{\\partial y}+\\frac{\\partial R}{\\partial z}=1+0+(-1)=0$$\n\n故由高斯公式：\n$$\\iint_{\\Sigma+\\Sigma_{1}}=\\iiint_{\\Omega}0\\,dV=0\\quad\\Rightarrow\\quad \\iint_{\\Sigma}=-\\iint_{\\Sigma_{1}}$$\n\n**算补面 $\\Sigma_{1}$ 的积分**：$\\Sigma_{1}$ 上 $z=4$（常数），\n\n- $dydz$ 项：曲面是水平面，在 $yOz$ 面投影退化为线段，故 $\\displaystyle\\iint_{\\Sigma_{1}}(z^{2}+x)dydz=0$\n- $dxdy$ 项：上侧取正，投影区域 $D_{xy}:x^{2}+y^{2}\\le4$\n$$\\iint_{\\Sigma_{1}}-z\\,dxdy=-\\iint_{D_{xy}}4\\,dxdy=-4\\cdot\\pi\\cdot2^{2}=-16\\pi$$\n\n**结论**：\n$$\\iint_{\\Sigma}=-\\iint_{\\Sigma_{1}}=-(-16\\pi)=16\\pi$$\n\n**答案**：$16\\pi$\n\n**点睛**：本题散度恰为 $0$，所以补面后闭曲面积分为零，原积分直接等于补面积分的相反数——散度为 $0$ 的向量场，穿过任何闭曲面的通量为零，是高斯公式里最好用的一类。",
       "cat": "三重·曲线曲面积分",
-      "topic": "高斯公式·补面法",
+      "topic": "高斯公式",
       "source": "经纬研选（五）·数一多元",
       "answer": "$16\\pi$",
       "papers": [
@@ -10314,7 +10314,7 @@ var QUESTION_BANK = {
       "question": "计算 $\\displaystyle\\iint_{\\Sigma}(x^{2}+y^{2}+z^{2})\\,dS$，其中 $\\Sigma$ 为球面 $x^{2}+y^{2}+z^{2}=2z$。",
       "solution": "**先化简被积函数**：曲面方程是 $x^{2}+y^{2}+z^{2}=2z$，即 $x^{2}+y^{2}+(z-1)^{2}=1$（球心 $(0,0,1)$、半径 $1$）。在 $\\Sigma$ 上恒有 $x^{2}+y^{2}+z^{2}=2z$，代入得\n\n$$\\iint_{\\Sigma}(x^{2}+y^{2}+z^{2})dS=\\iint_{\\Sigma}2z\\,dS$$\n\n**方法一：对称性**（推荐）\n\n$\\Sigma$ 关于平面 $z=1$ 对称，故 $\\displaystyle\\iint_{\\Sigma}(z-1)dS=0$，于是\n$$\\iint_{\\Sigma}2z\\,dS=2\\iint_{\\Sigma}\\left[(z-1)+1\\right]dS=2\\iint_{\\Sigma}1\\,dS=2\\cdot|\\Sigma|=2\\cdot4\\pi=8\\pi$$\n\n（球面半径 $1$，表面积 $4\\pi R^{2}=4\\pi$）\n\n**方法二：形心公式**\n\n$$\\iint_{\\Sigma}z\\,dS=\\bar{z}\\cdot|\\Sigma|=1\\cdot4\\pi=4\\pi$$\n\n故原式 $=2\\cdot4\\pi=8\\pi$。\n\n**答案**：$8\\pi$\n\n**点睛**：第一类（对面积的）曲面积分可以**把曲面方程代入被积函数**化简——因为积分变量在曲面上满足该关系。这一点与第一类曲线积分类似，但要注意与第二类积分区分开。",
       "cat": "三重·曲线曲面积分",
-      "topic": "第一类曲面积分·对称性与形心",
+      "topic": "第一类曲面积分",
       "source": "经纬研选（五）·数一多元",
       "answer": "$8\\pi$",
       "papers": [
@@ -10328,7 +10328,7 @@ var QUESTION_BANK = {
       "question": "计算曲线积分 $I=\\displaystyle\\oint_{L}y^{2}dx+z^{2}dy+x^{2}dz$，其中 $L$ 为曲线 $\\begin{cases}x^{2}+y^{2}+z^{2}=4\\\\ x^{2}+y^{2}=2x\\end{cases}\\ (z\\ge0)$，从 $z$ 轴正向看取逆时针方向。",
       "solution": "**求参数方程**：由 $x^{2}+y^{2}=2x$ 得 $(x-1)^{2}+y^{2}=1$，是母线平行于 $z$ 轴的圆柱面。\n\n代入球面 $x^{2}+y^{2}+z^{2}=4$：$2x+z^{2}=4$，即 $z^{2}=4-2x$。\n\n取参数 $\\theta$ 使 $x=1+\\cos\\theta,\\ y=\\sin\\theta$（$\\theta:0\\to2\\pi$），则\n$$z^{2}=4-2(1+\\cos\\theta)=2-2\\cos\\theta=4\\sin^{2}\\frac{\\theta}{2}$$\n由 $z\\ge0$ 得 $z=2\\sin\\dfrac{\\theta}{2}$。\n\n$$x'=-\\sin\\theta,\\qquad y'=\\cos\\theta,\\qquad z'=\\cos\\frac{\\theta}{2}$$\n\n**代入积分**：\n$$I=\\int_{0}^{2\\pi}\\left[\\sin^{2}\\theta\\cdot(-\\sin\\theta)+4\\sin^{2}\\frac{\\theta}{2}\\cdot\\cos\\theta+(1+\\cos\\theta)^{2}\\cdot\\cos\\frac{\\theta}{2}\\right]d\\theta$$\n\n**第一项**：$\\displaystyle\\int_{0}^{2\\pi}-\\sin^{3}\\theta\\,d\\theta=0$\n\n**第二项**（用 $\\sin^{2}\\frac{\\theta}{2}=\\frac{1-\\cos\\theta}{2}$）：\n$$4\\int_{0}^{2\\pi}\\frac{1-\\cos\\theta}{2}\\cos\\theta\\,d\\theta=2\\int_{0}^{2\\pi}(\\cos\\theta-\\cos^{2}\\theta)d\\theta=2(0-\\pi)=-2\\pi$$\n\n**第三项**（用 $1+\\cos\\theta=2\\cos^{2}\\frac{\\theta}{2}$）：\n$$\\int_{0}^{2\\pi}4\\cos^{4}\\frac{\\theta}{2}\\cos\\frac{\\theta}{2}\\,d\\theta\\overset{\\varphi=\\theta/2}{=}8\\int_{0}^{\\pi}\\cos^{5}\\varphi\\,d\\varphi=0$$\n\n**结论**：$I=0+(-2\\pi)+0=-2\\pi$\n\n**答案**：$-2\\pi$",
       "cat": "三重·曲线曲面积分",
-      "topic": "空间曲线积分·参数方程",
+      "topic": "第二类曲线积分·参数化",
       "source": "经纬研选（五）·数一多元",
       "answer": "$-2\\pi$",
       "papers": [
@@ -10342,7 +10342,7 @@ var QUESTION_BANK = {
       "question": "求八分之一球面 $x^{2}+y^{2}+z^{2}=R^{2}\\ (x\\ge0,y\\ge0,z\\ge0)$ 的边界曲线的质心（设密度为 $1$）。",
       "solution": "**认清边界**：八分之一球面的边界由三段 $\\frac{1}{4}$ 圆弧组成，分别在三个坐标面上：\n$$l_{1}:x^{2}+y^{2}=R^{2}(z=0),\\quad l_{2}:y^{2}+z^{2}=R^{2}(x=0),\\quad l_{3}:x^{2}+z^{2}=R^{2}(y=0)$$\n记 $L=l_{1}+l_{2}+l_{3}$。\n\n**质心公式**：\n$$\\bar{x}=\\frac{\\oint_{L}x\\rho\\,ds}{\\oint_{L}\\rho\\,ds}=\\frac{\\oint_{L}x\\,ds}{\\oint_{L}ds}$$\n\n**分母**（总弧长）：每段是 $\\frac{1}{4}$ 圆周，弧长 $\\dfrac{2\\pi R}{4}=\\dfrac{\\pi R}{2}$，\n$$\\oint_{L}ds=3\\cdot\\frac{\\pi R}{2}=\\frac{3\\pi R}{2}$$\n\n**分子**：\n- 在 $l_{1}$（$z=0$）上，取 $x=R\\cos\\theta,\\ ds=R\\,d\\theta,\\ \\theta:0\\to\\frac{\\pi}{2}$：\n$$\\int_{l_{1}}x\\,ds=R^{2}\\int_{0}^{\\frac{\\pi}{2}}\\cos\\theta\\,d\\theta=R^{2}$$\n- 在 $l_{2}$（$x=0$）上：$x\\equiv0$，积分为 $0$\n- 在 $l_{3}$（$y=0$）上，取 $x=R\\cos\\theta$：同理得 $R^{2}$\n\n$$\\oint_{L}x\\,ds=R^{2}+0+R^{2}=2R^{2}$$\n\n**质心**：由对称性 $\\bar{x}=\\bar{y}=\\bar{z}$，\n$$\\bar{x}=\\frac{2R^{2}}{\\frac{3\\pi R}{2}}=\\frac{4R}{3\\pi}$$\n\n**答案**：$\\bar{x}=\\bar{y}=\\bar{z}=\\dfrac{4R}{3\\pi}$，即质心为 $\\left(\\dfrac{4R}{3\\pi},\\dfrac{4R}{3\\pi},\\dfrac{4R}{3\\pi}\\right)$\n\n**校注**：用 $xOy$ 面上的弧长微元直接算也行——在 $l_{1}$ 上 $ds=\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^{2}}dx=\\dfrac{R}{\\sqrt{R^{2}-x^{2}}}dx$，则 $\\int_{0}^{R}x\\cdot\\dfrac{R}{\\sqrt{R^{2}-x^{2}}}dx=R^{2}$，结果一致。",
       "cat": "三重·曲线曲面积分",
-      "topic": "第一类曲线积分·质心",
+      "topic": "第一类曲线积分",
       "source": "经纬研选（五）·数一多元",
       "answer": "$\\dfrac{4R}{3\\pi}$",
       "papers": [
@@ -10356,7 +10356,7 @@ var QUESTION_BANK = {
       "question": "计算 $\\displaystyle\\iint_{\\Sigma}(xy+yz+zx)\\,dS$，其中 $\\Sigma$ 为圆锥面 $z=\\sqrt{x^{2}+y^{2}}$ 被圆柱面 $x^{2}+y^{2}=2x$ 所截的部分。",
       "solution": "**投影区域**：柱面 $x^{2}+y^{2}=2x$ 即 $(x-1)^{2}+y^{2}=1$，故\n$$D_{xy}=\\{(x,y)\\mid (x-1)^{2}+y^{2}\\le1\\}$$\n\n**用对称性消去两项**：$\\Sigma$ 关于 $xOz$ 坐标面对称（$y\\to-y$ 不变），而 $xy$ 与 $yz$ 关于 $y$ 是奇函数，故\n$$\\iint_{\\Sigma}xy\\,dS=\\iint_{\\Sigma}yz\\,dS=0$$\n\n于是\n$$\\iint_{\\Sigma}(xy+yz+zx)dS=\\iint_{\\Sigma}zx\\,dS$$\n\n**面积微元**：$z=\\sqrt{x^{2}+y^{2}}$，$z_{x}=\\dfrac{x}{\\sqrt{x^{2}+y^{2}}},\\ z_{y}=\\dfrac{y}{\\sqrt{x^{2}+y^{2}}}$\n$$dS=\\sqrt{1+z_{x}^{2}+z_{y}^{2}}\\,dxdy=\\sqrt{1+\\frac{x^{2}}{x^{2}+y^{2}}+\\frac{y^{2}}{x^{2}+y^{2}}}\\,dxdy=\\sqrt{2}\\,dxdy$$\n\n**化为二重积分并转极坐标**：\n$$\\iint_{\\Sigma}zx\\,dS=\\iint_{D_{xy}}\\sqrt{x^{2}+y^{2}}\\cdot x\\cdot\\sqrt{2}\\,dxdy$$\n\n$D$ 的极坐标表示：$r^{2}=2r\\cos\\theta$，即 $r=2\\cos\\theta,\\ \\theta\\in\\left[-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right]$：\n$$=\\sqrt{2}\\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}}d\\theta\\int_{0}^{2\\cos\\theta}r\\cos\\theta\\cdot r\\cdot r\\,dr\n=\\sqrt{2}\\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}}\\cos\\theta\\cdot\\frac{(2\\cos\\theta)^{4}}{4}\\,d\\theta$$\n$$=4\\sqrt{2}\\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}}\\cos^{5}\\theta\\,d\\theta\n=4\\sqrt{2}\\cdot2\\int_{0}^{\\frac{\\pi}{2}}\\cos^{5}\\theta\\,d\\theta\n=8\\sqrt{2}\\cdot\\frac{8}{15}=\\frac{64\\sqrt{2}}{15}$$\n\n（用到 $\\int_{0}^{\\pi/2}\\cos^{5}\\theta\\,d\\theta=\\dfrac{4}{5}\\cdot\\dfrac{2}{3}\\cdot1=\\dfrac{8}{15}$）\n\n**答案**：$\\dfrac{64\\sqrt{2}}{15}$",
       "cat": "三重·曲线曲面积分",
-      "topic": "第一类曲面积分·锥面·对称性",
+      "topic": "第一类曲面积分",
       "source": "经纬研选（五）·数一多元",
       "answer": "$\\dfrac{64\\sqrt{2}}{15}$",
       "papers": [
@@ -10370,7 +10370,7 @@ var QUESTION_BANK = {
       "question": "设 $\\Sigma$ 是球面 $x^{2}+y^{2}+z^{2}=1\\ (x\\ge0,y\\ge0)$ 的外侧，求曲面积分 $\\displaystyle\\iint_{\\Sigma}xyz\\,dxdy$。",
       "solution": "**分面**：$\\Sigma$ 由上下两片组成\n$$\\Sigma_{1}:z=\\sqrt{1-x^{2}-y^{2}}\\ (\\text{上侧}),\\qquad \\Sigma_{2}:z=-\\sqrt{1-x^{2}-y^{2}}\\ (\\text{下侧})$$\n\n**注意投影区域**：因为 $\\Sigma$ 只取 $x\\ge0,y\\ge0$ 的部分，两片在 $xOy$ 面的投影是\n$$D_{xy}=\\{(x,y)\\mid x\\ge0,\\ y\\ge0,\\ x^{2}+y^{2}\\le1\\}$$\n即第一象限的 $\\frac{1}{4}$ 圆（不是整个圆）。\n\n**化为二重积分**（上侧取正、下侧取负）：\n$$\\iint_{\\Sigma}xyz\\,dxdy=\\iint_{D_{xy}}xy\\sqrt{1-x^{2}-y^{2}}\\,dxdy+\\iint_{D_{xy}}xy(-\\sqrt{1-x^{2}-y^{2}})\\cdot(-1)\\,dxdy$$\n$$=2\\iint_{D_{xy}}xy\\sqrt{1-x^{2}-y^{2}}\\,dxdy$$\n\n**极坐标**（$D_{xy}$ 对应 $\\theta\\in\\left[0,\\dfrac{\\pi}{2}\\right],\\ r\\in[0,1]$）：\n$$=2\\int_{0}^{\\frac{\\pi}{2}}d\\theta\\int_{0}^{1}r\\cos\\theta\\cdot r\\sin\\theta\\cdot\\sqrt{1-r^{2}}\\cdot r\\,dr$$\n$$=2\\left(\\int_{0}^{\\frac{\\pi}{2}}\\cos\\theta\\sin\\theta\\,d\\theta\\right)\\left(\\int_{0}^{1}r^{3}\\sqrt{1-r^{2}}\\,dr\\right)$$\n\n前者 $=\\dfrac{1}{2}$；后者令 $u=1-r^{2}$：\n$$\\int_{0}^{1}r^{3}\\sqrt{1-r^{2}}dr=\\frac{1}{2}\\int_{0}^{1}(1-u)u^{1/2}du=\\frac{1}{2}\\left(\\frac{2}{3}-\\frac{2}{5}\\right)=\\frac{2}{15}$$\n\n$$\\iint_{\\Sigma}xyz\\,dxdy=2\\cdot\\frac{1}{2}\\cdot\\frac{2}{15}=\\frac{2}{15}$$\n\n**答案**：$\\dfrac{2}{15}$\n\n**校注**：这一步的 $\\theta$ 上限必须随 $x\\ge0,y\\ge0$ 写 $\\dfrac{\\pi}{2}$。若误写成 $[0,2\\pi]$，则 $\\int_{0}^{2\\pi}\\cos\\theta\\sin\\theta\\,d\\theta=0$，会得到 $0$（与第一象限外的部分正负相消）——结果就错了。",
       "cat": "三重·曲线曲面积分",
-      "topic": "第二类曲面积分·分面投影",
+      "topic": "第二类曲面积分·投影法",
       "source": "经纬研选（五）·数一多元",
       "answer": "$\\dfrac{2}{15}$",
       "papers": [
@@ -18096,7 +18096,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$用格林公式：∮_L P dx + Q dy = ∬_D (\\partialQ/\\partialx - \\partialP/\\partialy) dxdy。此处 P=-y，Q=x，\\partialQ/\\partialx-\\partialP/\\partialy=1-(-1)=2。∬_D 2 dxdy = 2·\\pi·1² = 2\\pi。考查格林公式——第二类曲线积分与二重积分的桥梁。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "第二类曲线积分·格林公式",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -18115,7 +18115,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$功 = ∮_L y dx - x dy。由格林公式：\\partialQ/\\partialx - \\partialP/\\partialy = \\partial(-x)/\\partialx - \\partialy/\\partialy = -1 - 1 = -2。积分 = ∬_D (-2) dσ = -2\\pi。若顺时针则变号。考查物理意义：做功 = 第二类曲线积分。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "第二类曲线积分·格林公式",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -18134,7 +18134,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$检查 \\partialQ/\\partialx = \\partial(x+2y)/\\partialx = 1 = \\partialP/\\partialy = \\partial(2x+y)/\\partialy，是保守场。求势函数 u 使 u_x=2x+y，u_y=x+2y。u = x^{2}+xy+y²。功 = u(1,1)-u(0,0) = 1+1+1 = 3。考查保守场与路径无关性+势函数法。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "保守场·路径无关",
+      "topic": "路径无关与全微分",
       "papers": [
         "shu1"
       ]
@@ -18153,7 +18153,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$P = e^x \\sin y - my，Q = e^x \\cos y - m。\\partialQ/\\partialx = e^x \\cos y，\\partialP/\\partialy = e^x \\cos y - m。\\partialQ/\\partialx - \\partialP/\\partialy = m。格林公式：∬_D m dσ = m·\\pi·1² = m\\pi。考查格林公式+偏导计算。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "格林公式·含参计算",
+      "topic": "格林公式",
       "papers": [
         "shu1"
       ]
@@ -18198,7 +18198,7 @@ var QUESTION_BANK = {
       "answer": "$2\\sqrt2 \\pi$",
       "solution": "$ds = \\sqrt[(dx/dt)²+(dy/dt)²+(dz/dt)²] dt = \\sqrt[\\sin²t+\\cos²t+1] dt = \\sqrt2 dt。弧长 = \\int ₀^(2\\pi) \\sqrt2 dt = 2\\sqrt2 \\pi。考查空间曲线弧长——参数方程的三维推广。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "曲线弧长·参数方程",
+      "topic": "第一类曲线积分",
       "papers": [
         "shu1"
       ]
@@ -18217,7 +18217,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$取上侧，dxdy >0。在 Σ 上 z=1，所以 ∯_Σ 1·dxdy = ∬_(x^{2}+y²\\leq1) 1 dxdy = \\pi·1² = \\pi。考查第二类曲面积分的投影计算法。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "第二类曲面积分",
+      "topic": "第二类曲面积分·投影法",
       "papers": [
         "shu1"
       ]
@@ -19858,7 +19858,7 @@ var QUESTION_BANK = {
       "answer": "$\\displaystyle \\iint_{\\Sigma} = \\dfrac{\\pi a^{4}}{2}.$",
       "solution": "**第一步：识别 $\\Sigma$。** $\\Sigma$ 取**外侧**（含抛物面上侧 $\\Sigma_1$ 与下底面 $\\Sigma_0$），围成区域 $\\Omega=\\{(x,y,z)\\mid x^2+y^2\\le a^2,\\ 0\\le z\\le a^2-x^2-y^2\\}$。\n\n**第二步：用 Gauss 公式。** 设\n$$P=x^2yz^2,\\quad Q=-xy^2z^2,\\quad R=z(1+xyz)=z+xyz^2.$$\n计算散度：\n$$\n\\frac{\\partial P}{\\partial x}=2xyz^2,\\quad\n\\frac{\\partial Q}{\\partial y}=-2xyz^2,\\quad\n\\frac{\\partial R}{\\partial z}=1+2xyz.\n$$\n求和：\n$$\\frac{\\partial P}{\\partial x}+\\frac{\\partial Q}{\\partial y}+\\frac{\\partial R}{\\partial z}=2xyz^2-2xyz^2+1+2xyz=1+2xyz.$$\n\n**第三步：体积分。** 由对称性，$\\Omega$ 上 $xyz$ 关于 $x$（或 $y$）为奇函数，积分为 $0$，故\n$$\n\\iiint_\\Omega(1+2xyz)\\,\\mathrm{d}V = \\iiint_\\Omega 1\\,\\mathrm{d}V = V.\n$$\n\n**第四步：计算 $V$。** 用柱坐标 $x=r\\cos\\theta,\\ y=r\\sin\\theta,\\ z$：\n$$\nV=\\int_0^{2\\pi}\\mathrm{d}\\theta\\int_0^a r\\,\\mathrm{d}r\\int_0^{a^2-r^2}\\mathrm{d}z\n=2\\pi\\int_0^a r(a^2-r^2)\\,\\mathrm{d}r\n=2\\pi\\left[\\frac{a^2r^2}{2}-\\frac{r^4}{4}\\right]_0^a\n=2\\pi\\cdot\\frac{a^4}{4}=\\frac{\\pi a^4}{2}.\n$$\n\n【校】**注**：题面\"所围体积为 $V$\"作为已知提示。本题严格按 Gauss 公式得 $\\displaystyle\\iint_\\Sigma = V = \\dfrac{\\pi a^4}{2}$。\n\nGauss 公式三步走：(1) 确认 $\\Sigma$ 为封闭曲面取外侧； (2) 算散度 $\\partial P/\\partial x+\\partial Q/\\partial y+\\partial R/\\partial z$； (3) 在 $\\Omega$ 上作体积分，常用对称性消掉奇函数项（如 $xyz^2$）。本题 $2xyz^2-2xyz^2$ 对消，只余常数项 $1$，配合体积公式 $V=\\tfrac{\\pi a^4}{2}$ 即得答案。\n\n---",
       "cat": "三重·曲线曲面积分",
-      "topic": "Gauss 公式",
+      "topic": "高斯公式",
       "source": "综合例题PDF·例46",
       "papers": [
         "shu1"
@@ -19935,11 +19935,13 @@ var QUESTION_BANK = {
       "question": "设 $f(x)=g(x)=\\begin{cases}2,&0\\le x\\le1\\\\[2pt]0,&\\text{其他}\\end{cases}$，$D$ 表示全平面，求 $\\displaystyle\\iint_D f(x)g(y-x)\\,\\mathrm{d}x\\mathrm{d}y$。\n",
       "answer": "$\\displaystyle\\iint_D f(x)g(y-x)\\,\\mathrm{d}x\\mathrm{d}y = 4.$",
       "solution": "**第一步：写出 $g(y-x)$ 的非零区间。** 令 $u=y-x$，则\n$$\ng(u)=2\\cdot\\mathbf 1_{[0,1]}(u) \\implies g(y-x)\\ne 0 \\iff 0\\le y-x\\le 1.\n$$\n即 $D$ 中 $g$ 非零的部分是带状区域 $\\{x\\le y\\le x+1\\}$。\n\n**第二步：与 $f(x)$ 支集求交。** $f(x)\\ne 0 \\iff 0\\le x\\le 1$。故\n$$\n\\Omega=\\{(x,y)\\mid 0\\le x\\le 1,\\ x\\le y\\le x+1\\},\n$$\n此区域面积为 $\\int_0^1 1\\,\\mathrm{d}x=1$。\n\n**第三步：化为累次积分。** 选先 $y$ 后 $x$，内层 $y$ 积分长度恒为 $1$：\n$$\n\\iint_\\Omega f(x)g(y-x)\\,\\mathrm{d}x\\mathrm{d}y\n=\\int_0^1 2\\,\\mathrm{d}x\\int_x^{x+1}2\\,\\mathrm{d}y\n=\\int_0^1 4\\cdot 1\\,\\mathrm{d}x =4.\n$$\n\n【校】**注**：本题按卷积定义 $f*g=\\iint f(x)g(y-x)\\,dxdy$ 在 $D$ 全平面上、$f=g=2\\cdot\\mathbf 1_{[0,1]}$ 计算结果为 $4$。若 $f,g$ 取振幅 $1$ 则结果为 $1$。\n\n卷积型二重积分的通用解法：先写 $g(y-x)$ 的非零带 $\\{0\\le y-x\\le 1\\}$（即\"对角带\"），再把 $f(x)$ 的支集 $\\{0\\le x\\le 1\\}$ 叠加进去，得 $\\Omega=\\{0\\le x\\le 1,\\ x\\le y\\le x+1\\}$。化为先 $y$ 后 $x$ 后内层长度恒为 $1$，立即化为一维积分——这是卷积与矩形脉冲\"面积=1\"特性的直接体现。\n\n---",
-      "cat": "三重·曲线曲面积分",
-      "topic": "数一·二重积分·卷积型",
+      "cat": "二重积分",
+      "topic": "直角坐标计算",
       "source": "综合例题PDF·例31",
       "papers": [
-        "shu1"
+        "shu1",
+        "shu2",
+        "shu3"
       ]
     },
     {
@@ -19949,7 +19951,7 @@ var QUESTION_BANK = {
       "question": "设\n$$\\oint_L\\bigl[2x\\varphi(y)+2f(y)\\bigr]\\mathrm{d}x+\\bigl[x^{2}f(y)+2xy^{2}-2x\\varphi(y)\\bigr]\\mathrm{d}y=0,$$\n其中 $L$ 为简单光滑闭曲线，$\\varphi(y),f(y)$ 在 $(-\\infty,+\\infty)$ 内具有连续导数，$\\varphi(0)=2$，$f(0)=1$。求 $\\varphi(y),\\ f(y)$。",
       "solution": "**【答案】** 答案：$\\varphi(y)=4\\cos y+\\sin y+y^{2}-2$，$f(y)=-4\\sin y+\\cos y+2y$。\n\n【校】PDF 中 $2[x\\varphi(y)+f(y)]$ 写作 $2[\\cdots]$，按与路径无关条件还原为首项 $2\\bigl[x\\varphi(y)+f(y)\\bigr]$。\n\n记\n$$P(x,y)=2x\\varphi(y)+2f(y),\\qquad Q(x,y)=x^{2}f(y)+2xy^{2}-2x\\varphi(y).$$\n\n$P,Q$ 在全平面 $\\mathbb{R}^{2}$（单连通）上有连续一阶偏导，故\n\n$$\\oint_L P\\,\\mathrm{d}x+Q\\,\\mathrm{d}y=0\\ (\\forall\\text{闭曲线 }L)\\iff \\frac{\\partial P}{\\partial y}\\equiv\\frac{\\partial Q}{\\partial x}.$$\n\n分别计算：\n\n$$\\frac{\\partial P}{\\partial y}=2x\\varphi'(y)+2f'(y),\\qquad\n\\frac{\\partial Q}{\\partial x}=2xf(y)+2y^{2}-2\\varphi(y).$$\n\n令二者恒等：\n\n$$2x\\varphi'(y)+2f'(y)=2xf(y)+2y^{2}-2\\varphi(y),\\qquad \\forall x,y\\in\\mathbb{R}.$$\n\n比较 $x$ 的系数与常数项（关于 $x$ 为恒等式）：\n\n$$x^{1}:\\quad 2\\varphi'(y)=2f(y)\\ \\Longrightarrow\\ \\varphi'(y)=f(y);\\tag{1}$$\n$$x^{0}:\\quad 2f'(y)=2y^{2}-2\\varphi(y)\\ \\Longrightarrow\\ f'(y)=y^{2}-\\varphi(y).\\tag{2}$$\n\n由 (1) 求导再代入 (2)：\n\n$$\\varphi''(y)=f'(y)=y^{2}-\\varphi(y)\\ \\Longrightarrow\\ \\varphi''+\\varphi=y^{2}.$$\n\n初值：$\\varphi(0)=2$；由 (1) $\\varphi'(0)=f(0)=1$。\n\n解线性方程：特解取 $\\varphi_p=ay^{2}+by+c$，代入得 $2a+ay^{2}+by+c=y^{2}$，故 $a=1,\\ b=0,\\ c=-2$，即 $\\varphi_p=y^{2}-2$；齐次通解 $C_1\\cos y+C_2\\sin y$。于是\n\n$$\\varphi(y)=C_1\\cos y+C_2\\sin y+y^{2}-2,\\qquad\n\\varphi'(y)=-C_1\\sin y+C_2\\cos y+2y.$$\n\n由 $\\varphi(0)=C_1-2=2$ 得 $C_1=4$；由 $\\varphi'(0)=C_2=1$ 得 $C_2=1$。故\n\n$$\\varphi(y)=4\\cos y+\\sin y+y^{2}-2,$$\n$$f(y)=\\varphi'(y)=-4\\sin y+\\cos y+2y.$$\n\n**检验：** $\\varphi(0)=4-2=2$，$f(0)=1$；$\\varphi'(y)=-4\\sin y+\\cos y+2y=f(y)$ ✓；$f'(y)=-4\\cos y-\\sin y+2=y^{2}-\\varphi(y)$ ✓。\n\n### 【方法点睛】\n\n1. **闭环恒为零 $\\iff$ 与路径无关 $\\iff$ $\\partial P/\\partial y=\\partial Q/\\partial x$**（单连通区域 + 一阶连续偏导），这是本题唯一的入口。\n2. **\"比较 $x$ 的幂次\"是标准动作**：$P,Q$ 都是关于 $x$ 的多项式而系数含 $y$，恒等式必须对一切 $x$ 成立，于是按 $x$ 的各次幂拆成若干个只含 $y$ 的 ODE——这是把偏微分方程降维成常微分方程组的关键技巧。\n3. 得到 $\\varphi'=f,\\ f'=y^{2}-\\varphi$ 后，**消去一个未知量化为二阶方程** $\\varphi''+\\varphi=y^{2}$；初值要两个，$\\varphi(0)$ 题给，另一个 $\\varphi'(0)=f(0)$ 由 (1) 补出——这类题最容易漏掉的正是第二个初值。\n\n---\n\n1. **闭环恒为零 $\\iff$ 与路径无关 $\\iff$ $\\partial P/\\partial y=\\partial Q/\\partial x$**（单连通区域 + 一阶连续偏导），这是本题唯一的入口。\n2. **\"比较 $x$ 的幂次\"是标准动作**：$P,Q$ 都是关于 $x$ 的多项式而系数含 $y$，恒等式必须对一切 $x$ 成立，于是按 $x$ 的各次幂拆成若干个只含 $y$ 的 ODE——这是把偏微分方程降维成常微分方程组的关键技巧。\n3. 得到 $\\varphi'=f,\\ f'=y^{2}-\\varphi$ 后，**消去一个未知量化为二阶方程** $\\varphi''+\\varphi=y^{2}$；初值要两个，$\\varphi(0)$ 题给，另一个 $\\varphi'(0)=f(0)$ 由 (1) 补出——这类题最容易漏掉的正是第二个初值。\n\n---",
       "cat": "三重·曲线曲面积分",
-      "topic": "数一·曲线积分·与路径无关",
+      "topic": "路径无关与全微分",
       "source": "综合例题PDF·例32",
       "papers": [
         "shu1"
@@ -19963,7 +19965,7 @@ var QUESTION_BANK = {
       "answer": "-\\pi",
       "solution": "**【答案】** 答案：$I=-\\pi$。\n\n**第一步：拆微分。** 分子重组：\n\n$$(x-y)\\mathrm{d}x+(x+y)\\mathrm{d}y=(x\\mathrm{d}x+y\\mathrm{d}y)+(x\\mathrm{d}y-y\\mathrm{d}x).$$\n\n故\n\n$$I=\\underbrace{\\int_L\\frac{x\\mathrm{d}x+y\\mathrm{d}y}{x^{2}+y^{2}}}_{I_1}+\\underbrace{\\int_L\\frac{x\\mathrm{d}y-y\\mathrm{d}x}{x^{2}+y^{2}}}_{I_2}.$$\n\n**第二步：$I_1=0$。** 因为 $x\\mathrm{d}x+y\\mathrm{d}y=\\dfrac12\\mathrm{d}(x^{2}+y^{2})$，所以\n\n$$\\frac{x\\mathrm{d}x+y\\mathrm{d}y}{x^{2}+y^{2}}=\\mathrm{d}\\!\\left(\\frac12\\ln(x^{2}+y^{2})\\right),$$\n\n在 $x^{2}+y^{2}>0$ 上是**全微分**（势函数单值），积分只与端点有关：\n\n$$I_1=\\frac12\\Bigl[\\ln(x^{2}+y^{2})\\Bigr]_{A}^{B}=\\frac12\\bigl(\\ln a^{2}-\\ln a^{2}\\bigr)=0,$$\n\n因为 $A(-a,0)$ 与 $B(a,0)$ 处都有 $x^{2}+y^{2}=a^{2}$。（注意：$\\ln(x^2+y^2)$ 在原点无定义，但上半椭圆不经过原点，路径上一切合法。）\n\n**第三步：$I_2=-\\pi$（\"绕原点的转角\"）。** 记极角 $\\theta$，则\n\n$$\\mathrm{d}\\theta=\\mathrm{d}\\!\\left(\\arctan\\frac{y}{x}\\right)=\\frac{x\\mathrm{d}y-y\\mathrm{d}x}{x^{2}+y^{2}},$$\n\n所以 $I_2=\\displaystyle\\int_L\\mathrm{d}\\theta=\\Delta\\theta$，即沿 $L$ **极角的连续改变量**。\n\n取参数化 $x=a\\cos t,\\ y=b\\sin t$。从 $A(-a,0)$ 到 $B(a,0)$ 走上半支，对应 $t:\\pi\\to0$。此时极角：\n\n$$t=\\pi:\\ (-a,0)\\Rightarrow\\theta=\\pi;\\qquad t=\\tfrac{\\pi}{2}:\\ (0,b)\\Rightarrow\\theta=\\tfrac{\\pi}{2};\\qquad t=0:\\ (a,0)\\Rightarrow\\theta=0.$$\n\n极角沿路径**连续递减** $\\pi\\to\\frac{\\pi}{2}\\to0$，故\n\n$$I_2=\\theta\\big|_{B}-\\theta\\big|_{A}=0-\\pi=-\\pi.$$\n\n**第四步：直接参数化核验（防止符号出错）。**\n\n$$x\\mathrm{d}y-y\\mathrm{d}x=a\\cos t\\cdot b\\cos t\\,\\mathrm{d}t-b\\sin t\\cdot(-a\\sin t)\\,\\mathrm{d}t=ab\\,\\mathrm{d}t,$$\n$$x^{2}+y^{2}=a^{2}\\cos^{2}t+b^{2}\\sin^{2}t,$$\n\n$$I_2=\\int_{\\pi}^{0}\\frac{ab\\,\\mathrm{d}t}{a^{2}\\cos^{2}t+b^{2}\\sin^{2}t}\n=-ab\\int_{0}^{\\pi}\\frac{\\mathrm{d}t}{a^{2}\\cos^{2}t+b^{2}\\sin^{2}t}\n=-ab\\cdot 2\\cdot\\frac{\\pi}{2ab}=-\\pi,$$\n\n其中用到 $\\displaystyle\\int_0^{\\pi/2}\\frac{\\mathrm{d}t}{a^{2}\\cos^{2}t+b^{2}\\sin^{2}t}=\\frac{\\pi}{2ab}$（令 $u=\\tan t$ 即得）。\n\n**结论：** $I=I_1+I_2=0+(-\\pi)=-\\pi$。结果与 $a,b$ 无关，只与\"绕原点的转角\"有关。\n\n### 【方法点睛】\n\n1. **两个经典微分必须形成条件反射**：\n   $$\\frac{x\\mathrm{d}x+y\\mathrm{d}y}{x^{2}+y^{2}}=\\mathrm{d}\\Bigl(\\frac12\\ln(x^{2}+y^{2})\\Bigr)\\ \\text{（是势函数，端点定）},\\qquad\n   \\frac{x\\mathrm{d}y-y\\mathrm{d}x}{x^{2}+y^{2}}=\\mathrm{d}\\theta\\ \\text{（不是单值势）}.$$\n   遇到分母 $x^2+y^2$ 就先这样拆，题目立刻变成\"端点差 + 转角\"。\n2. **$\\mathrm{d}\\theta$ 的本质是绕数**：$\\oint \\mathrm{d}\\theta=2\\pi\\cdot(\\text{绕原点的圈数})$，逆时针为正。本题从 $(-a,0)$ 经上方到 $(a,0)$ 是绕原点**顺时针**半圈，故 $-\\pi$；反向即为 $+\\pi$。判定符号最快的方法就是看\"从哪个角度出发、中间经过哪条射线\"。\n3. **$\\mathrm{d}\\theta$ 在挖掉原点的区域上不是全微分**（区域非单连通），所以千万不能对 $I_2$ 用\"与路径无关\"；同理，本题不能用 Green 公式直接套（$\\partial Q/\\partial x-\\partial P/\\partial y=0$，但原点在奇点上）。若要用 Green 公式，需换成从 $A$ 沿 $x$ 轴下方小半圆绕过原点的辅助路径再取极限——结果同样是 $-\\pi$。\n\n---\n\n1. **两个经典微分必须形成条件反射**：\n   $$\\frac{x\\mathrm{d}x+y\\mathrm{d}y}{x^{2}+y^{2}}=\\mathrm{d}\\Bigl(\\frac12\\ln(x^{2}+y^{2})\\Bigr)\\ \\text{（是势函数，端点定）},\\qquad\n   \\frac{x\\mathrm{d}y-y\\mathrm{d}x}{x^{2}+y^{2}}=\\mathrm{d}\\theta\\ \\text{（不是单值势）}.$$\n   遇到分母 $x^2+y^2$ 就先这样拆，题目立刻变成\"端点差 + 转角\"。\n2. **$\\mathrm{d}\\theta$ 的本质是绕数**：$\\oint \\mathrm{d}\\theta=2\\pi\\cdot(\\text{绕原点的圈数})$，逆时针为正。本题从 $(-a,0)$ 经上方到 $(a,0)$ 是绕原点**顺时针**半圈，故 $-\\pi$；反向即为 $+\\pi$。判定符号最快的方法就是看\"从哪个角度出发、中间经过哪条射线\"。\n3. **$\\mathrm{d}\\theta$ 在挖掉原点的区域上不是全微分**（区域非单连通），所以千万不能对 $I_2$ 用\"与路径无关\"；同理，本题不能用 Green 公式直接套（$\\partial Q/\\partial x-\\partial P/\\partial y=0$，但原点在奇点上）。若要用 Green 公式，需换成从 $A$ 沿 $x$ 轴下方小半圆绕过原点的辅助路径再取极限——结果同样是 $-\\pi$。\n\n---",
       "cat": "三重·曲线曲面积分",
-      "topic": "曲线积分·上半椭圆",
+      "topic": "路径无关与全微分",
       "source": "综合例题PDF·例59",
       "papers": [
         "shu1"
@@ -19977,7 +19979,7 @@ var QUESTION_BANK = {
       "answer": "-\\dfrac{15\\pi}{2}",
       "solution": "**【答案】** 答案：$I=-\\dfrac{15\\pi}{2}$。\n\n**第一步：认清\"外侧\"并补面。** 记向量场 $\\mathbf{F}=(P,Q,R)=(y,\\,-x,\\,z^{2})$，则 $I=\\iint_{\\Sigma}P\\,\\mathrm{d}y\\mathrm{d}z+Q\\,\\mathrm{d}z\\mathrm{d}x+R\\,\\mathrm{d}x\\mathrm{d}y$。\n\n锥面 $x^{2}+y^{2}-z^{2}=0$ 的\"外侧\"指背离 $z$ 轴，即 $\\nabla(x^{2}+y^{2}-z^{2})=(2x,2y,-2z)$ 的方向（其 $z$ 分量 $-2z<0$，故法向朝下外）。\n\n补上两个圆面使之封闭：\n\n$$\\Sigma_1:\\ z=1,\\ x^{2}+y^{2}\\le 1\\ (\\text{下底，外法向}- \\mathbf{k});\\qquad\n\\Sigma_2:\\ z=2,\\ x^{2}+y^{2}\\le 4\\ (\\text{上底，外法向}+\\mathbf{k}).$$\n\n围成区域 $\\Omega=\\{(x,y,z)\\mid 1\\le z\\le 2,\\ x^{2}+y^{2}\\le z^{2}\\}$。\n\n**第二步：Gauss 公式。** $\\mathbf{F}$ 在 $\\Omega$ 上光滑，\n\n$$\\operatorname{div}\\mathbf{F}=\\frac{\\partial P}{\\partial x}+\\frac{\\partial Q}{\\partial y}+\\frac{\\partial R}{\\partial z}=0+0+2z=2z,$$\n\n$$\\iint_{\\Sigma}+\\iint_{\\Sigma_1}+\\iint_{\\Sigma_2}=\\iiint_{\\Omega}2z\\,\\mathrm{d}V=\\oint_{\\partial\\Omega}\\mathbf{F}\\cdot\\mathbf{n}\\,\\mathrm{d}S.$$\n\n**第三步：算三重积分（柱坐标）。**\n\n$$\\iiint_{\\Omega}2z\\,\\mathrm{d}V=\\int_1^{2}2z\\Bigl(\\int_0^{2\\pi}\\!\\mathrm{d}\\theta\\int_0^{z}r\\,\\mathrm{d}r\\Bigr)\\mathrm{d}z\n=\\int_1^{2}2z\\cdot\\pi z^{2}\\,\\mathrm{d}z=2\\pi\\int_1^{2}z^{3}\\,\\mathrm{d}z\n=2\\pi\\cdot\\frac{2^{4}-1}{4}=\\frac{15\\pi}{2}.$$\n\n**第四步：算两个补面。**\n\n- 上底 $\\Sigma_2$：法向 $+\\mathbf{k}$，故 $\\mathrm{d}y\\mathrm{d}z=\\mathrm{d}z\\mathrm{d}x=0$，$\\mathrm{d}x\\mathrm{d}y=\\mathrm{d}x\\mathrm{d}y$，且 $z=2$：\n  $$\\iint_{\\Sigma_2}R\\,\\mathrm{d}x\\mathrm{d}y=\\iint_{x^{2}+y^{2}\\le 4}4\\,\\mathrm{d}x\\mathrm{d}y=4\\cdot 4\\pi=16\\pi.$$\n- 下底 $\\Sigma_1$：法向 $-\\mathbf{k}$，故 $\\mathrm{d}x\\mathrm{d}y=-\\mathrm{d}x\\mathrm{d}y$，且 $z=1$：\n  $$\\iint_{\\Sigma_1}R\\,\\mathrm{d}x\\mathrm{d}y=-\\iint_{x^{2}+y^{2}\\le 1}1\\,\\mathrm{d}x\\mathrm{d}y=-\\pi.$$\n\n**第五步：回代。**\n\n$$I=\\frac{15\\pi}{2}-16\\pi-(-\\pi)=\\frac{15\\pi}{2}-15\\pi=-\\frac{15\\pi}{2}.$$\n\n**核验（直接法）：** 锥面 $z=g(x,y)=\\sqrt{x^{2}+y^{2}}$，投影区域 $D=\\{1\\le\\sqrt{x^{2}+y^{2}}\\le 2\\}$。外法向 $z$ 分量为负，取\"下侧\"公式 $\\iint_{\\Sigma}(P g_x+Q g_y-R)\\mathrm{d}x\\mathrm{d}y$：\n\n$$P g_x+Q g_y-R=y\\cdot\\frac{x}{r}+(-x)\\cdot\\frac{y}{r}-r^{2}=-r^{2},$$\n\n$$I=-\\iint_D(x^{2}+y^{2})\\mathrm{d}x\\mathrm{d}y=-\\int_0^{2\\pi}\\!\\mathrm{d}\\theta\\int_1^{2}r^{2}\\cdot r\\,\\mathrm{d}r=-2\\pi\\cdot\\frac{15}{4}=-\\frac{15\\pi}{2}.\\ \\checkmark$$\n\n### 【方法点睛】\n\n1. **补面三要素**：方向要对齐（补面后整体必须是同一闭曲面的外法向）、补面的 $z=$ 常数面只有 $\\mathrm{d}x\\mathrm{d}y$ 项非零、符号由法向的 $z$ 分量定。本题最容易错的是下底符号（法向朝下，$\\mathrm{d}x\\mathrm{d}y$ 取负）。\n2. **散度里\"零项\"要抓牢**：$P=y$ 与 $x$ 无关、$Q=-x$ 与 $y$ 无关，前两项散度为 $0$，只剩 $\\partial R/\\partial z=2z$，三重积分瞬间简化。\n3. **能用直接法交叉验证就验证一次**：投影法（本题\"下侧\"）只要一分钟，能立刻查出补面法向是否搞反。\n\n---\n\n1. **补面三要素**：方向要对齐（补面后整体必须是同一闭曲面的外法向）、补面的 $z=$ 常数面只有 $\\mathrm{d}x\\mathrm{d}y$ 项非零、符号由法向的 $z$ 分量定。本题最容易错的是下底符号（法向朝下，$\\mathrm{d}x\\mathrm{d}y$ 取负）。\n2. **散度里\"零项\"要抓牢**：$P=y$ 与 $x$ 无关、$Q=-x$ 与 $y$ 无关，前两项散度为 $0$，只剩 $\\partial R/\\partial z=2z$，三重积分瞬间简化。\n3. **能用直接法交叉验证就验证一次**：投影法（本题\"下侧\"）只要一分钟，能立刻查出补面法向是否搞反。\n\n---",
       "cat": "三重·曲线曲面积分",
-      "topic": "曲面积分·锥面",
+      "topic": "高斯公式",
       "source": "综合例题PDF·例60",
       "papers": [
         "shu1"
@@ -19991,7 +19993,7 @@ var QUESTION_BANK = {
       "answer": "12\\pi",
       "solution": "**【答案】** 答案：$I=12\\pi$。\n\n记 $\\mathbf{F}=\\left(\\dfrac1x,\\dfrac1y,\\dfrac1z\\right)$，$I=\\displaystyle\\iint_{\\Sigma}P\\,\\mathrm{d}y\\mathrm{d}z+Q\\,\\mathrm{d}z\\mathrm{d}x+R\\,\\mathrm{d}x\\mathrm{d}y$。\n\n**先看为什么不能用 Gauss 公式。** 形式散度\n\n$$\\operatorname{div}\\mathbf{F}=-\\frac{1}{x^{2}}-\\frac{1}{y^{2}}-\\frac{1}{z^{2}},$$\n\n在原点处非可积（且在三个坐标面与球面的交线上 $P,Q,R$ 本身无界），既不满足 Gauss 公式的光滑性条件，其体积分也不收敛。**\"挖小球\"同样失效**：$\\iiint(1/x^{2}+1/y^{2}+1/z^{2})\\mathrm{d}V$ 在原点附近发散。必须分项处理。\n\n**分项：用两类曲面积分的关系。** 单位球面外侧的单位法向恰为 $\\mathbf{n}=(x,y,z)$，故方向余弦\n\n$$\\cos\\alpha=x,\\qquad \\cos\\beta=y,\\qquad \\cos\\gamma=z,$$\n\n且 $\\mathrm{d}y\\mathrm{d}z=\\cos\\alpha\\,\\mathrm{d}S=x\\,\\mathrm{d}S$，$\\mathrm{d}z\\mathrm{d}x=\\cos\\beta\\,\\mathrm{d}S=y\\,\\mathrm{d}S$，$\\mathrm{d}x\\mathrm{d}y=\\cos\\gamma\\,\\mathrm{d}S=z\\,\\mathrm{d}S$。于是（在 $x\\ne0$ 处）\n\n$$\\frac{\\mathrm{d}y\\mathrm{d}z}{x}=\\frac{x\\,\\mathrm{d}S}{x}=\\mathrm{d}S,\\qquad\n\\frac{\\mathrm{d}z\\mathrm{d}x}{y}=\\mathrm{d}S,\\qquad\n\\frac{\\mathrm{d}x\\mathrm{d}y}{z}=\\mathrm{d}S,$$\n\n**奇点被方向余弦恰好约掉**，每一项都化为面积元。由对称性三项相等：\n\n$$I=3\\iint_{\\Sigma}\\mathrm{d}S=3\\cdot 4\\pi=12\\pi.$$\n\n**严格性说明（这是广义积分，需验证收敛）。** 以第一项为例，把 $\\Sigma$ 按 $x\\gtrless0$ 分成两片，投到 $yOz$ 面的单位圆 $D:y^{2}+z^{2}\\le1$，其中 $x_{\\pm}=\\pm\\sqrt{1-y^{2}-z^{2}}$，外法向使 $\\pm x$ 半球的投影符号分别为 $+1,-1$：\n\n$$\\iint_{\\Sigma}\\frac{\\mathrm{d}y\\mathrm{d}z}{x}=\\iint_D\\left(\\frac{1}{x_{+}}-\\frac{1}{x_{-}}\\right)\\mathrm{d}y\\mathrm{d}z\n=\\iint_D\\frac{2}{\\sqrt{1-y^{2}-z^{2}}}\\,\\mathrm{d}y\\mathrm{d}z\n=\\int_0^{2\\pi}\\!\\mathrm{d}\\theta\\int_0^1\\frac{2r\\,\\mathrm{d}r}{\\sqrt{1-r^{2}}}=4\\pi.$$\n\n内层积分 $\\int_0^1\\frac{r\\,\\mathrm{d}r}{\\sqrt{1-r^{2}}}=1$ 收敛，故广义积分确实收敛，且值为 $4\\pi$。另两项同理（各 $4\\pi$）。\n\n**结论：** $I=4\\pi+4\\pi+4\\pi=12\\pi$。\n\n### 【方法点睛】\n\n1. **判别\"能否用 Gauss\"先看奇点**：$\\mathbf{F}$ 在闭曲面所围区域内（含边界）是否有奇点或无界点。本题 $\\mathbf{F}$ 在原点及三条大圆上都不光滑，Gauss 不可用；若曲面不含原点但被坐标面穿过，\"挖小球\"也不够，须连同坐标面一起挖——这是本题的陷阱所在。\n2. **两类曲面积分的关系是化奇点的利器**：$\\mathrm{d}y\\mathrm{d}z=\\cos\\alpha\\,\\mathrm{d}S$ 等。当被积函数是 $1/(\\text{坐标})$ 时，方向余弦正好把奇点约掉，$\\frac{1}{x}\\mathrm{d}y\\mathrm{d}z=\\mathrm{d}S$。球面上 $\\mathbf{n}=(x,y,z)$ 是本题能一秒出结果的原因。\n3. **凡是\"被积函数无界\"的曲面积分，都要当成广义积分验证收敛**，不能只做形式运算。上述投影法（两片相减）就是标准写法，也顺手给出了数值。\n\n---\n\n1. **判别\"能否用 Gauss\"先看奇点**：$\\mathbf{F}$ 在闭曲面所围区域内（含边界）是否有奇点或无界点。本题 $\\mathbf{F}$ 在原点及三条大圆上都不光滑，Gauss 不可用；若曲面不含原点但被坐标面穿过，\"挖小球\"也不够，须连同坐标面一起挖——这是本题的陷阱所在。\n2. **两类曲面积分的关系是化奇点的利器**：$\\mathrm{d}y\\mathrm{d}z=\\cos\\alpha\\,\\mathrm{d}S$ 等。当被积函数是 $1/(\\text{坐标})$ 时，方向余弦正好把奇点约掉，$\\frac{1}{x}\\mathrm{d}y\\mathrm{d}z=\\mathrm{d}S$。球面上 $\\mathbf{n}=(x,y,z)$ 是本题能一秒出结果的原因。\n3. **凡是\"被积函数无界\"的曲面积分，都要当成广义积分验证收敛**，不能只做形式运算。上述投影法（两片相减）就是标准写法，也顺手给出了数值。\n\n---",
       "cat": "三重·曲线曲面积分",
-      "topic": "曲面积分·球面",
+      "topic": "第二类曲面积分·投影法",
       "source": "综合例题PDF·例61",
       "papers": [
         "shu1"

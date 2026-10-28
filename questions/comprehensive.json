@@ -671,7 +671,7 @@
       "answer": 2,
       "solution": "$用格林公式：∮_L P dx + Q dy = ∬_D (\\partialQ/\\partialx - \\partialP/\\partialy) dxdy。此处 P=-y，Q=x，\\partialQ/\\partialx-\\partialP/\\partialy=1-(-1)=2。∬_D 2 dxdy = 2·\\pi·1² = 2\\pi。考查格林公式——第二类曲线积分与二重积分的桥梁。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "第二类曲线积分·格林公式"
+      "topic": "格林公式"
     },
     {
       "id": "comp-047",
@@ -687,7 +687,7 @@
       "answer": 2,
       "solution": "$功 = ∮_L y dx - x dy。由格林公式：\\partialQ/\\partialx - \\partialP/\\partialy = \\partial(-x)/\\partialx - \\partialy/\\partialy = -1 - 1 = -2。积分 = ∬_D (-2) dσ = -2\\pi。若顺时针则变号。考查物理意义：做功 = 第二类曲线积分。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "第二类曲线积分·格林公式"
+      "topic": "格林公式"
     },
     {
       "id": "comp-048",
@@ -703,7 +703,7 @@
       "answer": 1,
       "solution": "$检查 \\partialQ/\\partialx = \\partial(x+2y)/\\partialx = 1 = \\partialP/\\partialy = \\partial(2x+y)/\\partialy，是保守场。求势函数 u 使 u_x=2x+y，u_y=x+2y。u = x^{2}+xy+y²。功 = u(1,1)-u(0,0) = 1+1+1 = 3。考查保守场与路径无关性+势函数法。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "保守场·路径无关"
+      "topic": "路径无关与全微分"
     },
     {
       "id": "comp-049",
@@ -719,7 +719,7 @@
       "answer": 1,
       "solution": "$P = e^x \\sin y - my，Q = e^x \\cos y - m。\\partialQ/\\partialx = e^x \\cos y，\\partialP/\\partialy = e^x \\cos y - m。\\partialQ/\\partialx - \\partialP/\\partialy = m。格林公式：∬_D m dσ = m·\\pi·1² = m\\pi。考查格林公式+偏导计算。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "格林公式·含参计算"
+      "topic": "格林公式"
     },
     {
       "id": "comp-050",
@@ -755,7 +755,7 @@
       "answer": "$2\\sqrt2 \\pi$",
       "solution": "$ds = \\sqrt[(dx/dt)²+(dy/dt)²+(dz/dt)²] dt = \\sqrt[\\sin²t+\\cos²t+1] dt = \\sqrt2 dt。弧长 = \\int ₀^(2\\pi) \\sqrt2 dt = 2\\sqrt2 \\pi。考查空间曲线弧长——参数方程的三维推广。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "曲线弧长·参数方程"
+      "topic": "第一类曲线积分"
     },
     {
       "id": "comp-053",
@@ -771,7 +771,7 @@
       "answer": 1,
       "solution": "$取上侧，dxdy >0。在 Σ 上 z=1，所以 ∯_Σ 1·dxdy = ∬_(x^{2}+y²\\leq1) 1 dxdy = \\pi·1² = \\pi。考查第二类曲面积分的投影计算法。$",
       "cat": "三重·曲线曲面积分",
-      "topic": "第二类曲面积分"
+      "topic": "第二类曲面积分·投影法"
     },
     {
       "id": "comp-054",
@@ -1978,7 +1978,7 @@
       "answer": "$\\displaystyle \\iint_{\\Sigma} = \\dfrac{\\pi a^{4}}{2}.$",
       "solution": "**第一步：识别 $\\Sigma$。** $\\Sigma$ 取**外侧**（含抛物面上侧 $\\Sigma_1$ 与下底面 $\\Sigma_0$），围成区域 $\\Omega=\\{(x,y,z)\\mid x^2+y^2\\le a^2,\\ 0\\le z\\le a^2-x^2-y^2\\}$。\n\n**第二步：用 Gauss 公式。** 设\n$$P=x^2yz^2,\\quad Q=-xy^2z^2,\\quad R=z(1+xyz)=z+xyz^2.$$\n计算散度：\n$$\n\\frac{\\partial P}{\\partial x}=2xyz^2,\\quad\n\\frac{\\partial Q}{\\partial y}=-2xyz^2,\\quad\n\\frac{\\partial R}{\\partial z}=1+2xyz.\n$$\n求和：\n$$\\frac{\\partial P}{\\partial x}+\\frac{\\partial Q}{\\partial y}+\\frac{\\partial R}{\\partial z}=2xyz^2-2xyz^2+1+2xyz=1+2xyz.$$\n\n**第三步：体积分。** 由对称性，$\\Omega$ 上 $xyz$ 关于 $x$（或 $y$）为奇函数，积分为 $0$，故\n$$\n\\iiint_\\Omega(1+2xyz)\\,\\mathrm{d}V = \\iiint_\\Omega 1\\,\\mathrm{d}V = V.\n$$\n\n**第四步：计算 $V$。** 用柱坐标 $x=r\\cos\\theta,\\ y=r\\sin\\theta,\\ z$：\n$$\nV=\\int_0^{2\\pi}\\mathrm{d}\\theta\\int_0^a r\\,\\mathrm{d}r\\int_0^{a^2-r^2}\\mathrm{d}z\n=2\\pi\\int_0^a r(a^2-r^2)\\,\\mathrm{d}r\n=2\\pi\\left[\\frac{a^2r^2}{2}-\\frac{r^4}{4}\\right]_0^a\n=2\\pi\\cdot\\frac{a^4}{4}=\\frac{\\pi a^4}{2}.\n$$\n\n【校】**注**：题面\"所围体积为 $V$\"作为已知提示。本题严格按 Gauss 公式得 $\\displaystyle\\iint_\\Sigma = V = \\dfrac{\\pi a^4}{2}$。\n\nGauss 公式三步走：(1) 确认 $\\Sigma$ 为封闭曲面取外侧； (2) 算散度 $\\partial P/\\partial x+\\partial Q/\\partial y+\\partial R/\\partial z$； (3) 在 $\\Omega$ 上作体积分，常用对称性消掉奇函数项（如 $xyz^2$）。本题 $2xyz^2-2xyz^2$ 对消，只余常数项 $1$，配合体积公式 $V=\\tfrac{\\pi a^4}{2}$ 即得答案。\n\n---",
       "cat": "三重·曲线曲面积分",
-      "topic": "Gauss 公式",
+      "topic": "高斯公式",
       "source": "综合例题PDF·例46"
     },
     {
@@ -2032,8 +2032,8 @@
       "question": "设 $f(x)=g(x)=\\begin{cases}2,&0\\le x\\le1\\\\[2pt]0,&\\text{其他}\\end{cases}$，$D$ 表示全平面，求 $\\displaystyle\\iint_D f(x)g(y-x)\\,\\mathrm{d}x\\mathrm{d}y$。\n",
       "answer": "$\\displaystyle\\iint_D f(x)g(y-x)\\,\\mathrm{d}x\\mathrm{d}y = 4.$",
       "solution": "**第一步：写出 $g(y-x)$ 的非零区间。** 令 $u=y-x$，则\n$$\ng(u)=2\\cdot\\mathbf 1_{[0,1]}(u) \\implies g(y-x)\\ne 0 \\iff 0\\le y-x\\le 1.\n$$\n即 $D$ 中 $g$ 非零的部分是带状区域 $\\{x\\le y\\le x+1\\}$。\n\n**第二步：与 $f(x)$ 支集求交。** $f(x)\\ne 0 \\iff 0\\le x\\le 1$。故\n$$\n\\Omega=\\{(x,y)\\mid 0\\le x\\le 1,\\ x\\le y\\le x+1\\},\n$$\n此区域面积为 $\\int_0^1 1\\,\\mathrm{d}x=1$。\n\n**第三步：化为累次积分。** 选先 $y$ 后 $x$，内层 $y$ 积分长度恒为 $1$：\n$$\n\\iint_\\Omega f(x)g(y-x)\\,\\mathrm{d}x\\mathrm{d}y\n=\\int_0^1 2\\,\\mathrm{d}x\\int_x^{x+1}2\\,\\mathrm{d}y\n=\\int_0^1 4\\cdot 1\\,\\mathrm{d}x =4.\n$$\n\n【校】**注**：本题按卷积定义 $f*g=\\iint f(x)g(y-x)\\,dxdy$ 在 $D$ 全平面上、$f=g=2\\cdot\\mathbf 1_{[0,1]}$ 计算结果为 $4$。若 $f,g$ 取振幅 $1$ 则结果为 $1$。\n\n卷积型二重积分的通用解法：先写 $g(y-x)$ 的非零带 $\\{0\\le y-x\\le 1\\}$（即\"对角带\"），再把 $f(x)$ 的支集 $\\{0\\le x\\le 1\\}$ 叠加进去，得 $\\Omega=\\{0\\le x\\le 1,\\ x\\le y\\le x+1\\}$。化为先 $y$ 后 $x$ 后内层长度恒为 $1$，立即化为一维积分——这是卷积与矩形脉冲\"面积=1\"特性的直接体现。\n\n---",
-      "cat": "三重·曲线曲面积分",
-      "topic": "数一·二重积分·卷积型",
+      "cat": "二重积分",
+      "topic": "直角坐标计算",
       "source": "综合例题PDF·例31"
     },
     {
@@ -2043,7 +2043,7 @@
       "question": "设\n$$\\oint_L\\bigl[2x\\varphi(y)+2f(y)\\bigr]\\mathrm{d}x+\\bigl[x^{2}f(y)+2xy^{2}-2x\\varphi(y)\\bigr]\\mathrm{d}y=0,$$\n其中 $L$ 为简单光滑闭曲线，$\\varphi(y),f(y)$ 在 $(-\\infty,+\\infty)$ 内具有连续导数，$\\varphi(0)=2$，$f(0)=1$。求 $\\varphi(y),\\ f(y)$。",
       "solution": "**【答案】** 答案：$\\varphi(y)=4\\cos y+\\sin y+y^{2}-2$，$f(y)=-4\\sin y+\\cos y+2y$。\n\n【校】PDF 中 $2[x\\varphi(y)+f(y)]$ 写作 $2[\\cdots]$，按与路径无关条件还原为首项 $2\\bigl[x\\varphi(y)+f(y)\\bigr]$。\n\n记\n$$P(x,y)=2x\\varphi(y)+2f(y),\\qquad Q(x,y)=x^{2}f(y)+2xy^{2}-2x\\varphi(y).$$\n\n$P,Q$ 在全平面 $\\mathbb{R}^{2}$（单连通）上有连续一阶偏导，故\n\n$$\\oint_L P\\,\\mathrm{d}x+Q\\,\\mathrm{d}y=0\\ (\\forall\\text{闭曲线 }L)\\iff \\frac{\\partial P}{\\partial y}\\equiv\\frac{\\partial Q}{\\partial x}.$$\n\n分别计算：\n\n$$\\frac{\\partial P}{\\partial y}=2x\\varphi'(y)+2f'(y),\\qquad\n\\frac{\\partial Q}{\\partial x}=2xf(y)+2y^{2}-2\\varphi(y).$$\n\n令二者恒等：\n\n$$2x\\varphi'(y)+2f'(y)=2xf(y)+2y^{2}-2\\varphi(y),\\qquad \\forall x,y\\in\\mathbb{R}.$$\n\n比较 $x$ 的系数与常数项（关于 $x$ 为恒等式）：\n\n$$x^{1}:\\quad 2\\varphi'(y)=2f(y)\\ \\Longrightarrow\\ \\varphi'(y)=f(y);\\tag{1}$$\n$$x^{0}:\\quad 2f'(y)=2y^{2}-2\\varphi(y)\\ \\Longrightarrow\\ f'(y)=y^{2}-\\varphi(y).\\tag{2}$$\n\n由 (1) 求导再代入 (2)：\n\n$$\\varphi''(y)=f'(y)=y^{2}-\\varphi(y)\\ \\Longrightarrow\\ \\varphi''+\\varphi=y^{2}.$$\n\n初值：$\\varphi(0)=2$；由 (1) $\\varphi'(0)=f(0)=1$。\n\n解线性方程：特解取 $\\varphi_p=ay^{2}+by+c$，代入得 $2a+ay^{2}+by+c=y^{2}$，故 $a=1,\\ b=0,\\ c=-2$，即 $\\varphi_p=y^{2}-2$；齐次通解 $C_1\\cos y+C_2\\sin y$。于是\n\n$$\\varphi(y)=C_1\\cos y+C_2\\sin y+y^{2}-2,\\qquad\n\\varphi'(y)=-C_1\\sin y+C_2\\cos y+2y.$$\n\n由 $\\varphi(0)=C_1-2=2$ 得 $C_1=4$；由 $\\varphi'(0)=C_2=1$ 得 $C_2=1$。故\n\n$$\\varphi(y)=4\\cos y+\\sin y+y^{2}-2,$$\n$$f(y)=\\varphi'(y)=-4\\sin y+\\cos y+2y.$$\n\n**检验：** $\\varphi(0)=4-2=2$，$f(0)=1$；$\\varphi'(y)=-4\\sin y+\\cos y+2y=f(y)$ ✓；$f'(y)=-4\\cos y-\\sin y+2=y^{2}-\\varphi(y)$ ✓。\n\n### 【方法点睛】\n\n1. **闭环恒为零 $\\iff$ 与路径无关 $\\iff$ $\\partial P/\\partial y=\\partial Q/\\partial x$**（单连通区域 + 一阶连续偏导），这是本题唯一的入口。\n2. **\"比较 $x$ 的幂次\"是标准动作**：$P,Q$ 都是关于 $x$ 的多项式而系数含 $y$，恒等式必须对一切 $x$ 成立，于是按 $x$ 的各次幂拆成若干个只含 $y$ 的 ODE——这是把偏微分方程降维成常微分方程组的关键技巧。\n3. 得到 $\\varphi'=f,\\ f'=y^{2}-\\varphi$ 后，**消去一个未知量化为二阶方程** $\\varphi''+\\varphi=y^{2}$；初值要两个，$\\varphi(0)$ 题给，另一个 $\\varphi'(0)=f(0)$ 由 (1) 补出——这类题最容易漏掉的正是第二个初值。\n\n---\n\n1. **闭环恒为零 $\\iff$ 与路径无关 $\\iff$ $\\partial P/\\partial y=\\partial Q/\\partial x$**（单连通区域 + 一阶连续偏导），这是本题唯一的入口。\n2. **\"比较 $x$ 的幂次\"是标准动作**：$P,Q$ 都是关于 $x$ 的多项式而系数含 $y$，恒等式必须对一切 $x$ 成立，于是按 $x$ 的各次幂拆成若干个只含 $y$ 的 ODE——这是把偏微分方程降维成常微分方程组的关键技巧。\n3. 得到 $\\varphi'=f,\\ f'=y^{2}-\\varphi$ 后，**消去一个未知量化为二阶方程** $\\varphi''+\\varphi=y^{2}$；初值要两个，$\\varphi(0)$ 题给，另一个 $\\varphi'(0)=f(0)$ 由 (1) 补出——这类题最容易漏掉的正是第二个初值。\n\n---",
       "cat": "三重·曲线曲面积分",
-      "topic": "数一·曲线积分·与路径无关",
+      "topic": "路径无关与全微分",
       "source": "综合例题PDF·例32"
     },
     {
@@ -2054,7 +2054,7 @@
       "answer": "-\\pi",
       "solution": "**【答案】** 答案：$I=-\\pi$。\n\n**第一步：拆微分。** 分子重组：\n\n$$(x-y)\\mathrm{d}x+(x+y)\\mathrm{d}y=(x\\mathrm{d}x+y\\mathrm{d}y)+(x\\mathrm{d}y-y\\mathrm{d}x).$$\n\n故\n\n$$I=\\underbrace{\\int_L\\frac{x\\mathrm{d}x+y\\mathrm{d}y}{x^{2}+y^{2}}}_{I_1}+\\underbrace{\\int_L\\frac{x\\mathrm{d}y-y\\mathrm{d}x}{x^{2}+y^{2}}}_{I_2}.$$\n\n**第二步：$I_1=0$。** 因为 $x\\mathrm{d}x+y\\mathrm{d}y=\\dfrac12\\mathrm{d}(x^{2}+y^{2})$，所以\n\n$$\\frac{x\\mathrm{d}x+y\\mathrm{d}y}{x^{2}+y^{2}}=\\mathrm{d}\\!\\left(\\frac12\\ln(x^{2}+y^{2})\\right),$$\n\n在 $x^{2}+y^{2}>0$ 上是**全微分**（势函数单值），积分只与端点有关：\n\n$$I_1=\\frac12\\Bigl[\\ln(x^{2}+y^{2})\\Bigr]_{A}^{B}=\\frac12\\bigl(\\ln a^{2}-\\ln a^{2}\\bigr)=0,$$\n\n因为 $A(-a,0)$ 与 $B(a,0)$ 处都有 $x^{2}+y^{2}=a^{2}$。（注意：$\\ln(x^2+y^2)$ 在原点无定义，但上半椭圆不经过原点，路径上一切合法。）\n\n**第三步：$I_2=-\\pi$（\"绕原点的转角\"）。** 记极角 $\\theta$，则\n\n$$\\mathrm{d}\\theta=\\mathrm{d}\\!\\left(\\arctan\\frac{y}{x}\\right)=\\frac{x\\mathrm{d}y-y\\mathrm{d}x}{x^{2}+y^{2}},$$\n\n所以 $I_2=\\displaystyle\\int_L\\mathrm{d}\\theta=\\Delta\\theta$，即沿 $L$ **极角的连续改变量**。\n\n取参数化 $x=a\\cos t,\\ y=b\\sin t$。从 $A(-a,0)$ 到 $B(a,0)$ 走上半支，对应 $t:\\pi\\to0$。此时极角：\n\n$$t=\\pi:\\ (-a,0)\\Rightarrow\\theta=\\pi;\\qquad t=\\tfrac{\\pi}{2}:\\ (0,b)\\Rightarrow\\theta=\\tfrac{\\pi}{2};\\qquad t=0:\\ (a,0)\\Rightarrow\\theta=0.$$\n\n极角沿路径**连续递减** $\\pi\\to\\frac{\\pi}{2}\\to0$，故\n\n$$I_2=\\theta\\big|_{B}-\\theta\\big|_{A}=0-\\pi=-\\pi.$$\n\n**第四步：直接参数化核验（防止符号出错）。**\n\n$$x\\mathrm{d}y-y\\mathrm{d}x=a\\cos t\\cdot b\\cos t\\,\\mathrm{d}t-b\\sin t\\cdot(-a\\sin t)\\,\\mathrm{d}t=ab\\,\\mathrm{d}t,$$\n$$x^{2}+y^{2}=a^{2}\\cos^{2}t+b^{2}\\sin^{2}t,$$\n\n$$I_2=\\int_{\\pi}^{0}\\frac{ab\\,\\mathrm{d}t}{a^{2}\\cos^{2}t+b^{2}\\sin^{2}t}\n=-ab\\int_{0}^{\\pi}\\frac{\\mathrm{d}t}{a^{2}\\cos^{2}t+b^{2}\\sin^{2}t}\n=-ab\\cdot 2\\cdot\\frac{\\pi}{2ab}=-\\pi,$$\n\n其中用到 $\\displaystyle\\int_0^{\\pi/2}\\frac{\\mathrm{d}t}{a^{2}\\cos^{2}t+b^{2}\\sin^{2}t}=\\frac{\\pi}{2ab}$（令 $u=\\tan t$ 即得）。\n\n**结论：** $I=I_1+I_2=0+(-\\pi)=-\\pi$。结果与 $a,b$ 无关，只与\"绕原点的转角\"有关。\n\n### 【方法点睛】\n\n1. **两个经典微分必须形成条件反射**：\n   $$\\frac{x\\mathrm{d}x+y\\mathrm{d}y}{x^{2}+y^{2}}=\\mathrm{d}\\Bigl(\\frac12\\ln(x^{2}+y^{2})\\Bigr)\\ \\text{（是势函数，端点定）},\\qquad\n   \\frac{x\\mathrm{d}y-y\\mathrm{d}x}{x^{2}+y^{2}}=\\mathrm{d}\\theta\\ \\text{（不是单值势）}.$$\n   遇到分母 $x^2+y^2$ 就先这样拆，题目立刻变成\"端点差 + 转角\"。\n2. **$\\mathrm{d}\\theta$ 的本质是绕数**：$\\oint \\mathrm{d}\\theta=2\\pi\\cdot(\\text{绕原点的圈数})$，逆时针为正。本题从 $(-a,0)$ 经上方到 $(a,0)$ 是绕原点**顺时针**半圈，故 $-\\pi$；反向即为 $+\\pi$。判定符号最快的方法就是看\"从哪个角度出发、中间经过哪条射线\"。\n3. **$\\mathrm{d}\\theta$ 在挖掉原点的区域上不是全微分**（区域非单连通），所以千万不能对 $I_2$ 用\"与路径无关\"；同理，本题不能用 Green 公式直接套（$\\partial Q/\\partial x-\\partial P/\\partial y=0$，但原点在奇点上）。若要用 Green 公式，需换成从 $A$ 沿 $x$ 轴下方小半圆绕过原点的辅助路径再取极限——结果同样是 $-\\pi$。\n\n---\n\n1. **两个经典微分必须形成条件反射**：\n   $$\\frac{x\\mathrm{d}x+y\\mathrm{d}y}{x^{2}+y^{2}}=\\mathrm{d}\\Bigl(\\frac12\\ln(x^{2}+y^{2})\\Bigr)\\ \\text{（是势函数，端点定）},\\qquad\n   \\frac{x\\mathrm{d}y-y\\mathrm{d}x}{x^{2}+y^{2}}=\\mathrm{d}\\theta\\ \\text{（不是单值势）}.$$\n   遇到分母 $x^2+y^2$ 就先这样拆，题目立刻变成\"端点差 + 转角\"。\n2. **$\\mathrm{d}\\theta$ 的本质是绕数**：$\\oint \\mathrm{d}\\theta=2\\pi\\cdot(\\text{绕原点的圈数})$，逆时针为正。本题从 $(-a,0)$ 经上方到 $(a,0)$ 是绕原点**顺时针**半圈，故 $-\\pi$；反向即为 $+\\pi$。判定符号最快的方法就是看\"从哪个角度出发、中间经过哪条射线\"。\n3. **$\\mathrm{d}\\theta$ 在挖掉原点的区域上不是全微分**（区域非单连通），所以千万不能对 $I_2$ 用\"与路径无关\"；同理，本题不能用 Green 公式直接套（$\\partial Q/\\partial x-\\partial P/\\partial y=0$，但原点在奇点上）。若要用 Green 公式，需换成从 $A$ 沿 $x$ 轴下方小半圆绕过原点的辅助路径再取极限——结果同样是 $-\\pi$。\n\n---",
       "cat": "三重·曲线曲面积分",
-      "topic": "曲线积分·上半椭圆",
+      "topic": "路径无关与全微分",
       "source": "综合例题PDF·例59"
     },
     {
@@ -2065,7 +2065,7 @@
       "answer": "-\\dfrac{15\\pi}{2}",
       "solution": "**【答案】** 答案：$I=-\\dfrac{15\\pi}{2}$。\n\n**第一步：认清\"外侧\"并补面。** 记向量场 $\\mathbf{F}=(P,Q,R)=(y,\\,-x,\\,z^{2})$，则 $I=\\iint_{\\Sigma}P\\,\\mathrm{d}y\\mathrm{d}z+Q\\,\\mathrm{d}z\\mathrm{d}x+R\\,\\mathrm{d}x\\mathrm{d}y$。\n\n锥面 $x^{2}+y^{2}-z^{2}=0$ 的\"外侧\"指背离 $z$ 轴，即 $\\nabla(x^{2}+y^{2}-z^{2})=(2x,2y,-2z)$ 的方向（其 $z$ 分量 $-2z<0$，故法向朝下外）。\n\n补上两个圆面使之封闭：\n\n$$\\Sigma_1:\\ z=1,\\ x^{2}+y^{2}\\le 1\\ (\\text{下底，外法向}- \\mathbf{k});\\qquad\n\\Sigma_2:\\ z=2,\\ x^{2}+y^{2}\\le 4\\ (\\text{上底，外法向}+\\mathbf{k}).$$\n\n围成区域 $\\Omega=\\{(x,y,z)\\mid 1\\le z\\le 2,\\ x^{2}+y^{2}\\le z^{2}\\}$。\n\n**第二步：Gauss 公式。** $\\mathbf{F}$ 在 $\\Omega$ 上光滑，\n\n$$\\operatorname{div}\\mathbf{F}=\\frac{\\partial P}{\\partial x}+\\frac{\\partial Q}{\\partial y}+\\frac{\\partial R}{\\partial z}=0+0+2z=2z,$$\n\n$$\\iint_{\\Sigma}+\\iint_{\\Sigma_1}+\\iint_{\\Sigma_2}=\\iiint_{\\Omega}2z\\,\\mathrm{d}V=\\oint_{\\partial\\Omega}\\mathbf{F}\\cdot\\mathbf{n}\\,\\mathrm{d}S.$$\n\n**第三步：算三重积分（柱坐标）。**\n\n$$\\iiint_{\\Omega}2z\\,\\mathrm{d}V=\\int_1^{2}2z\\Bigl(\\int_0^{2\\pi}\\!\\mathrm{d}\\theta\\int_0^{z}r\\,\\mathrm{d}r\\Bigr)\\mathrm{d}z\n=\\int_1^{2}2z\\cdot\\pi z^{2}\\,\\mathrm{d}z=2\\pi\\int_1^{2}z^{3}\\,\\mathrm{d}z\n=2\\pi\\cdot\\frac{2^{4}-1}{4}=\\frac{15\\pi}{2}.$$\n\n**第四步：算两个补面。**\n\n- 上底 $\\Sigma_2$：法向 $+\\mathbf{k}$，故 $\\mathrm{d}y\\mathrm{d}z=\\mathrm{d}z\\mathrm{d}x=0$，$\\mathrm{d}x\\mathrm{d}y=\\mathrm{d}x\\mathrm{d}y$，且 $z=2$：\n  $$\\iint_{\\Sigma_2}R\\,\\mathrm{d}x\\mathrm{d}y=\\iint_{x^{2}+y^{2}\\le 4}4\\,\\mathrm{d}x\\mathrm{d}y=4\\cdot 4\\pi=16\\pi.$$\n- 下底 $\\Sigma_1$：法向 $-\\mathbf{k}$，故 $\\mathrm{d}x\\mathrm{d}y=-\\mathrm{d}x\\mathrm{d}y$，且 $z=1$：\n  $$\\iint_{\\Sigma_1}R\\,\\mathrm{d}x\\mathrm{d}y=-\\iint_{x^{2}+y^{2}\\le 1}1\\,\\mathrm{d}x\\mathrm{d}y=-\\pi.$$\n\n**第五步：回代。**\n\n$$I=\\frac{15\\pi}{2}-16\\pi-(-\\pi)=\\frac{15\\pi}{2}-15\\pi=-\\frac{15\\pi}{2}.$$\n\n**核验（直接法）：** 锥面 $z=g(x,y)=\\sqrt{x^{2}+y^{2}}$，投影区域 $D=\\{1\\le\\sqrt{x^{2}+y^{2}}\\le 2\\}$。外法向 $z$ 分量为负，取\"下侧\"公式 $\\iint_{\\Sigma}(P g_x+Q g_y-R)\\mathrm{d}x\\mathrm{d}y$：\n\n$$P g_x+Q g_y-R=y\\cdot\\frac{x}{r}+(-x)\\cdot\\frac{y}{r}-r^{2}=-r^{2},$$\n\n$$I=-\\iint_D(x^{2}+y^{2})\\mathrm{d}x\\mathrm{d}y=-\\int_0^{2\\pi}\\!\\mathrm{d}\\theta\\int_1^{2}r^{2}\\cdot r\\,\\mathrm{d}r=-2\\pi\\cdot\\frac{15}{4}=-\\frac{15\\pi}{2}.\\ \\checkmark$$\n\n### 【方法点睛】\n\n1. **补面三要素**：方向要对齐（补面后整体必须是同一闭曲面的外法向）、补面的 $z=$ 常数面只有 $\\mathrm{d}x\\mathrm{d}y$ 项非零、符号由法向的 $z$ 分量定。本题最容易错的是下底符号（法向朝下，$\\mathrm{d}x\\mathrm{d}y$ 取负）。\n2. **散度里\"零项\"要抓牢**：$P=y$ 与 $x$ 无关、$Q=-x$ 与 $y$ 无关，前两项散度为 $0$，只剩 $\\partial R/\\partial z=2z$，三重积分瞬间简化。\n3. **能用直接法交叉验证就验证一次**：投影法（本题\"下侧\"）只要一分钟，能立刻查出补面法向是否搞反。\n\n---\n\n1. **补面三要素**：方向要对齐（补面后整体必须是同一闭曲面的外法向）、补面的 $z=$ 常数面只有 $\\mathrm{d}x\\mathrm{d}y$ 项非零、符号由法向的 $z$ 分量定。本题最容易错的是下底符号（法向朝下，$\\mathrm{d}x\\mathrm{d}y$ 取负）。\n2. **散度里\"零项\"要抓牢**：$P=y$ 与 $x$ 无关、$Q=-x$ 与 $y$ 无关，前两项散度为 $0$，只剩 $\\partial R/\\partial z=2z$，三重积分瞬间简化。\n3. **能用直接法交叉验证就验证一次**：投影法（本题\"下侧\"）只要一分钟，能立刻查出补面法向是否搞反。\n\n---",
       "cat": "三重·曲线曲面积分",
-      "topic": "曲面积分·锥面",
+      "topic": "高斯公式",
       "source": "综合例题PDF·例60"
     },
     {
@@ -2076,7 +2076,7 @@
       "answer": "12\\pi",
       "solution": "**【答案】** 答案：$I=12\\pi$。\n\n记 $\\mathbf{F}=\\left(\\dfrac1x,\\dfrac1y,\\dfrac1z\\right)$，$I=\\displaystyle\\iint_{\\Sigma}P\\,\\mathrm{d}y\\mathrm{d}z+Q\\,\\mathrm{d}z\\mathrm{d}x+R\\,\\mathrm{d}x\\mathrm{d}y$。\n\n**先看为什么不能用 Gauss 公式。** 形式散度\n\n$$\\operatorname{div}\\mathbf{F}=-\\frac{1}{x^{2}}-\\frac{1}{y^{2}}-\\frac{1}{z^{2}},$$\n\n在原点处非可积（且在三个坐标面与球面的交线上 $P,Q,R$ 本身无界），既不满足 Gauss 公式的光滑性条件，其体积分也不收敛。**\"挖小球\"同样失效**：$\\iiint(1/x^{2}+1/y^{2}+1/z^{2})\\mathrm{d}V$ 在原点附近发散。必须分项处理。\n\n**分项：用两类曲面积分的关系。** 单位球面外侧的单位法向恰为 $\\mathbf{n}=(x,y,z)$，故方向余弦\n\n$$\\cos\\alpha=x,\\qquad \\cos\\beta=y,\\qquad \\cos\\gamma=z,$$\n\n且 $\\mathrm{d}y\\mathrm{d}z=\\cos\\alpha\\,\\mathrm{d}S=x\\,\\mathrm{d}S$，$\\mathrm{d}z\\mathrm{d}x=\\cos\\beta\\,\\mathrm{d}S=y\\,\\mathrm{d}S$，$\\mathrm{d}x\\mathrm{d}y=\\cos\\gamma\\,\\mathrm{d}S=z\\,\\mathrm{d}S$。于是（在 $x\\ne0$ 处）\n\n$$\\frac{\\mathrm{d}y\\mathrm{d}z}{x}=\\frac{x\\,\\mathrm{d}S}{x}=\\mathrm{d}S,\\qquad\n\\frac{\\mathrm{d}z\\mathrm{d}x}{y}=\\mathrm{d}S,\\qquad\n\\frac{\\mathrm{d}x\\mathrm{d}y}{z}=\\mathrm{d}S,$$\n\n**奇点被方向余弦恰好约掉**，每一项都化为面积元。由对称性三项相等：\n\n$$I=3\\iint_{\\Sigma}\\mathrm{d}S=3\\cdot 4\\pi=12\\pi.$$\n\n**严格性说明（这是广义积分，需验证收敛）。** 以第一项为例，把 $\\Sigma$ 按 $x\\gtrless0$ 分成两片，投到 $yOz$ 面的单位圆 $D:y^{2}+z^{2}\\le1$，其中 $x_{\\pm}=\\pm\\sqrt{1-y^{2}-z^{2}}$，外法向使 $\\pm x$ 半球的投影符号分别为 $+1,-1$：\n\n$$\\iint_{\\Sigma}\\frac{\\mathrm{d}y\\mathrm{d}z}{x}=\\iint_D\\left(\\frac{1}{x_{+}}-\\frac{1}{x_{-}}\\right)\\mathrm{d}y\\mathrm{d}z\n=\\iint_D\\frac{2}{\\sqrt{1-y^{2}-z^{2}}}\\,\\mathrm{d}y\\mathrm{d}z\n=\\int_0^{2\\pi}\\!\\mathrm{d}\\theta\\int_0^1\\frac{2r\\,\\mathrm{d}r}{\\sqrt{1-r^{2}}}=4\\pi.$$\n\n内层积分 $\\int_0^1\\frac{r\\,\\mathrm{d}r}{\\sqrt{1-r^{2}}}=1$ 收敛，故广义积分确实收敛，且值为 $4\\pi$。另两项同理（各 $4\\pi$）。\n\n**结论：** $I=4\\pi+4\\pi+4\\pi=12\\pi$。\n\n### 【方法点睛】\n\n1. **判别\"能否用 Gauss\"先看奇点**：$\\mathbf{F}$ 在闭曲面所围区域内（含边界）是否有奇点或无界点。本题 $\\mathbf{F}$ 在原点及三条大圆上都不光滑，Gauss 不可用；若曲面不含原点但被坐标面穿过，\"挖小球\"也不够，须连同坐标面一起挖——这是本题的陷阱所在。\n2. **两类曲面积分的关系是化奇点的利器**：$\\mathrm{d}y\\mathrm{d}z=\\cos\\alpha\\,\\mathrm{d}S$ 等。当被积函数是 $1/(\\text{坐标})$ 时，方向余弦正好把奇点约掉，$\\frac{1}{x}\\mathrm{d}y\\mathrm{d}z=\\mathrm{d}S$。球面上 $\\mathbf{n}=(x,y,z)$ 是本题能一秒出结果的原因。\n3. **凡是\"被积函数无界\"的曲面积分，都要当成广义积分验证收敛**，不能只做形式运算。上述投影法（两片相减）就是标准写法，也顺手给出了数值。\n\n---\n\n1. **判别\"能否用 Gauss\"先看奇点**：$\\mathbf{F}$ 在闭曲面所围区域内（含边界）是否有奇点或无界点。本题 $\\mathbf{F}$ 在原点及三条大圆上都不光滑，Gauss 不可用；若曲面不含原点但被坐标面穿过，\"挖小球\"也不够，须连同坐标面一起挖——这是本题的陷阱所在。\n2. **两类曲面积分的关系是化奇点的利器**：$\\mathrm{d}y\\mathrm{d}z=\\cos\\alpha\\,\\mathrm{d}S$ 等。当被积函数是 $1/(\\text{坐标})$ 时，方向余弦正好把奇点约掉，$\\frac{1}{x}\\mathrm{d}y\\mathrm{d}z=\\mathrm{d}S$。球面上 $\\mathbf{n}=(x,y,z)$ 是本题能一秒出结果的原因。\n3. **凡是\"被积函数无界\"的曲面积分，都要当成广义积分验证收敛**，不能只做形式运算。上述投影法（两片相减）就是标准写法，也顺手给出了数值。\n\n---",
       "cat": "三重·曲线曲面积分",
-      "topic": "曲面积分·球面",
+      "topic": "第二类曲面积分·投影法",
       "source": "综合例题PDF·例61"
     },
     {
