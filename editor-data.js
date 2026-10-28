@@ -5114,7 +5114,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\sin(y^2) 对 y 不可用初等函数表示，但交换次序后：\\int_0^1\\!\\int_0^y \\sin(y^2)\\,dx\\,dy = \\int_0^1 y\\sin(y^2)dy = -\\frac{1}{2}\\cos(y^2)\\big|_0^1 = \\frac{1-\\cos 1}{2}。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "交换积分次序"
       },
       {
         "id": "cal-di-011",
@@ -5129,7 +5130,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$区域：0 \\leq y \\leq 2，y \\leq x \\leq 2。画出区域：y \\leq x，交换后 0 \\leq y \\leq x，0 \\leq x \\leq 2。故 \\int_0^2\\!\\int_0^x f(x,y)\\,dy\\,dx。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "交换积分次序"
       },
       {
         "id": "cal-di-012",
@@ -5144,7 +5146,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**极坐标**：x^2+y^2 \\leq 2x 即 r^2 \\leq 2r\\cos\\theta \\Rightarrow r \\leq 2\\cos\\theta，-\\frac{\\pi}{2} \\leq \\theta \\leq \\frac{\\pi}{2}。\\iint = \\int_{-\\pi/2}^{\\pi/2}\\!\\int_0^{2\\cos\\theta} r \\cdot r\\,dr\\,d\\theta = \\int_{-\\pi/2}^{\\pi/2} \\frac{8\\cos^3\\theta}{3}d\\theta = \\frac{16}{3}\\int_0^{\\pi/2} \\cos^3\\theta d\\theta = \\frac{16}{3} \\cdot \\frac{2}{3} = \\frac{32}{9}。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-013",
@@ -5159,7 +5162,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$区域分 y \\geq x 和 y < x 两部分。对称性：I = 2\\int_0^1\\!\\int_0^x (x-y)\\,dy\\,dx = 2\\int_0^1 \\frac{x^2}{2}\\,dx = \\frac{1}{3}。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "分段函数与最值"
       },
       {
         "id": "cal-di-014",
@@ -5174,7 +5178,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**极坐标**：\\iint_D e^{r^2} \\cdot r\\,dr\\,d\\theta = \\int_0^{2\\pi}\\!\\int_0^1 re^{r^2}\\,dr\\,d\\theta = 2\\pi \\cdot \\frac{1}{2}(e-1) = \\pi(e-1)。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-015",
@@ -5189,7 +5194,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**对称性**：D 关于 y 轴对称（-1 \\leq x \\leq 1），f(x,y)=x 是 x 的奇函数，积分为 0。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "直角坐标计算"
       },
       {
         "id": "cal-di-016",
@@ -5204,7 +5210,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$交换次序：区域 0 \\leq x \\leq 1, \\sqrt{x} \\leq y \\leq 1 等价于 0 \\leq y \\leq 1, 0 \\leq x \\leq y^2。I = \\int_0^1\\!\\int_0^{y^2} \\frac{\\sin y}{y}\\,dx\\,dy = \\int_0^1 y\\sin y\\,dy = \\sin 1 - \\cos 1…再算：\\int y\\sin y dy = -y\\cos y + \\sin y，代入得 1-\\cos 1。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "交换积分次序"
       },
       {
         "id": "cal-di-017",
@@ -5219,7 +5226,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**极坐标**：D: 0 \\leq r \\leq 1, 0 \\leq \\theta \\leq \\pi/2。I = \\int_0^{\\pi/2}\\!\\int_0^1 \\frac{r\\cos\\theta}{r^2} \\cdot r\\,dr\\,d\\theta = \\int_0^{\\pi/2}\\!\\int_0^1 \\cos\\theta\\,dr\\,d\\theta = \\sin\\theta\\big|_0^{\\pi/2} = 1。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-018",
@@ -5234,7 +5242,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**对称性+极坐标**：I = \\int_0^{2\\pi}\\!\\int_0^1 r^2(\\cos^2\\theta - \\sin^2\\theta) \\cdot r\\,dr\\,d\\theta = \\int_0^{2\\pi} \\cos 2\\theta d\\theta \\cdot \\frac{1}{4} = 0。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "对称性与轮换"
       },
       {
         "id": "cal-di-020",
@@ -5249,7 +5258,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**极坐标**：\\int_0^{2\\pi}\\!\\int_0^1 \\sin(\\pi r) \\cdot r\\,dr\\,d\\theta = 2\\pi \\int_0^1 r\\sin(\\pi r)dr。\\int r\\sin(\\pi r)dr = -\\frac{r}{\\pi}\\cos(\\pi r) + \\frac{1}{\\pi^2}\\sin(\\pi r)，代入得 2\\pi \\cdot \\frac{1}{\\pi^2} = \\frac{2}{\\pi}。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-021",
@@ -5264,7 +5274,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$体积 V = \\iint_D (1 - (x^2+y^2))dxdy，D: x^2+y^2 \\leq 1。极坐标：V = \\int_0^{2\\pi}\\!\\int_0^1 (1-r^2)r\\,dr\\,d\\theta = 2\\pi(\\frac{1}{2} - \\frac{1}{4}) = \\frac{\\pi}{2}。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "二重积分几何应用"
       },
       {
         "id": "cal-di-031",
@@ -5279,7 +5290,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$2\\pi\\int_0^1 re^{-r^2}dr=\\pi(1-e^{-1})。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-032",
@@ -5294,7 +5306,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\theta\\in[\\pi/4,3\\pi/4]，\\frac{\\pi}{2}\\cdot\\frac13=\\frac{\\pi}{6}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-034",
@@ -5309,7 +5322,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$r\\le2\\cos\\theta，\\int_{-\\pi/2}^{\\pi/2}d\\theta\\int_0^{2\\cos\\theta}r^3dr=\\frac{3\\pi}{2}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-044",
@@ -5318,7 +5332,8 @@ var EDITOR_DATA = [
         "question": "$\\iint_D\\ln(1+x^2+y^2)d\\sigma，D:x^2+y^2\\le1,x,y\\ge0，值(  )。$",
         "answer": "$\\pi(2ln2-1)/4$",
         "solution": "$\\frac{\\pi}{2}\\int_0^1 r\\ln(1+r^2)dr=\\frac{\\pi(2\\ln2-1)}{4}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-045",
@@ -5327,7 +5342,8 @@ var EDITOR_DATA = [
         "question": "$\\int_0^1dx\\int_{\\sqrt{x}}^1 e^{y^3}dy 值为(  )。$",
         "answer": "(e-1)/3",
         "solution": "$交换次序：\\int_0^1e^{y^3}dy\\int_0^{y^2}dx=\\frac{e-1}{3}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "交换积分次序"
       },
       {
         "id": "cal-di-046",
@@ -5336,7 +5352,8 @@ var EDITOR_DATA = [
         "question": "$\\iint_{x^2+y^2\\le1}\\frac{1}{\\sqrt{1-x^2-y^2}}d\\sigma=(  )。$",
         "answer": "$2\\pi$",
         "solution": "$极坐标：2\\pi\\int_0^1\\frac{r}{\\sqrt{1-r^2}}dr=2\\pi。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-048",
@@ -5345,7 +5362,8 @@ var EDITOR_DATA = [
         "question": "$\\iint_{0\\le x,y\\le1}\\max\\{x,y\\}dxdy=(  )。$",
         "answer": "2/3",
         "solution": "对称拆分为两个$1/3$区域。",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "分段函数与最值"
       },
       {
         "id": "cal-di-049",
@@ -5354,7 +5372,8 @@ var EDITOR_DATA = [
         "question": "$\\iint_D e^{x/y}dxdy，D:y=1,y=x,x=0，值(  )。$",
         "answer": "(e-1)/2",
         "solution": "$\\int_0^1dy\\int_0^y e^{x/y}dx=\\frac{e-1}{2}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "直角坐标计算"
       },
       {
         "id": "cal-di-050",
@@ -5363,7 +5382,8 @@ var EDITOR_DATA = [
         "question": "$\\iint_D(x+y)dxdy$，$D:y^2=2x,x=2$，值(  )。",
         "answer": "32/5",
         "solution": "$\\int_{-2}^2dy\\int_{y^2/2}^2(x+y)dx得32/5。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "直角坐标计算"
       },
       {
         "id": "cal-di-051",
@@ -5378,7 +5398,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$两个积分区域合并后，y \\in [0,1]，左边界由 y=x+1 得 x=y-1，右边界由 y=1-x 得 x=1-y，故交换后为 \\int_0^1 dy \\int_{y-1}^{1-y} f(x,y)\\,dx。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "交换积分次序"
       },
       {
         "id": "cal-di-052",
@@ -5393,7 +5414,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$极坐标下 \\frac{x}{\\sqrt{x^2+y^2}}=\\cos\\theta，D 对应 -\\frac{\\pi}{2}\\leq\\theta\\leq\\frac{\\pi}{2},\\;1\\leq r\\leq2。\\int_{-\\pi/2}^{\\pi/2}\\cos\\theta\\,d\\theta \\int_1^2 r\\,dr = 2 \\times \\frac{3}{2} = 3。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-053",
@@ -5408,7 +5430,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$利用对称性取第一象限乘4：4\\int_0^1 dx \\int_0^{1-x}(x^2+y^2)\\,dy = 4\\int_0^1\\left[x^2(1-x)+\\frac{(1-x)^3}{3}\\right]dx = 4 \\times \\frac{1}{6} = \\frac{2}{3}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "对称性与轮换"
       },
       {
         "id": "cal-di-054",
@@ -5423,7 +5446,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$以 x^2+y^2=1 分界。内部分：\\int_0^{\\pi/2}\\int_0^1(1-r^2)r\\,dr\\,d\\theta=\\frac{\\pi}{8}；外部：\\iint_D(x^2+y^2-1)d\\sigma+\\frac{\\pi}{8}，其中 \\iint_D(x^2+y^2)d\\sigma=\\frac{2}{3}，外部=-\\frac{1}{3}+\\frac{\\pi}{8}。总计=\\frac{\\pi}{4}-\\frac{1}{3}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "分段函数与最值"
       },
       {
         "id": "cal-di-055",
@@ -5438,7 +5462,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$极坐标：2\\pi\\int_0^1 \\frac{r}{(1+r^2)^2}\\,dr = 2\\pi\\left[-\\frac{1}{2(1+r^2)}\\right]_0^1 = 2\\pi\\left(\\frac{1}{2}-\\frac{1}{4}\\right) = \\frac{\\pi}{2}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-056",
@@ -5453,7 +5478,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$极坐标：\\int_0^a r^3\\,dr \\int_0^{2\\pi}|\\cos\\theta\\sin\\theta|\\,d\\theta = \\frac{a^4}{4} \\times 4\\int_0^{\\pi/2}\\cos\\theta\\sin\\theta\\,d\\theta = \\frac{a^4}{4} \\times 2 = \\frac{a^4}{2}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "分段函数与最值"
       },
       {
         "id": "cal-di-057",
@@ -5468,7 +5494,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$由对称性 x\\,e^{xy} 与 y\\,e^{xy} 积分相等，原式=2\\int_0^1 dx\\int_0^1 x\\,e^{xy}\\,dy = 2\\int_0^1(e^x-1)\\,dx = 2(e-2)。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "直角坐标计算"
       },
       {
         "id": "cal-di-058",
@@ -5483,7 +5510,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$极坐标：\\iint = 2\\pi\\int_0^t f(r)\\,r\\,dr。洛必达：\\lim\\frac{2\\pi f(t)\\cdot t}{3t^2}=\\frac{2\\pi}{3}\\lim\\frac{f(t)}{t}=\\frac{2\\pi}{3}\\cdot f'(0)=\\frac{2\\pi}{3}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "重积分极限与求导"
       },
       {
         "id": "cal-di-059",
@@ -5498,7 +5526,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$以 y=x 分界：\\int_0^1 dx\\int_0^x x^2\\,dy + \\int_0^1 dx\\int_x^1 y^2\\,dy = \\int_0^1 x^3\\,dx + \\int_0^1\\left(\\frac{1}{3}-\\frac{x^3}{3}\\right)dx = \\frac{1}{4}+\\frac{1}{3}-\\frac{1}{12} = \\frac{1}{2}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "分段函数与最值"
       },
       {
         "id": "cal-di-060",
@@ -5513,7 +5542,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$2x、3y 为奇函数积分为0。由轮换对称 \\iint x^2\\,d\\sigma=\\iint y^2\\,d\\sigma=\\frac{1}{2}\\iint(x^2+y^2)\\,d\\sigma=\\frac{\\pi}{4}。故 (4+5)\\times\\frac{\\pi}{4}=\\frac{9\\pi}{4}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "对称性与轮换"
       },
       {
         "id": "cal-di-061",
@@ -5528,7 +5558,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$令 x=r\\cos\\theta,\\,y=1+r\\sin\\theta，则 x^2+y^2=r^2+2r\\sin\\theta+1。\\int_0^{2\\pi}\\int_0^1(r^3+2r^2\\sin\\theta+r)\\,dr\\,d\\theta = \\frac{1}{4}\\cdot 2\\pi + 0 + \\frac{1}{2}\\cdot 2\\pi = \\frac{3\\pi}{2}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-062",
@@ -5543,7 +5574,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$交换次序：\\int_0^1 dx\\int_0^x \\frac{y}{\\sqrt{1+x^3}}\\,dy = \\int_0^1 \\frac{x^2}{2\\sqrt{1+x^3}}\\,dx = \\frac{1}{2}\\cdot\\frac{2}{3}[\\sqrt{1+x^3}]_0^1 = \\frac{\\sqrt{2}-1}{3}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "交换积分次序"
       },
       {
         "id": "cal-di-063",
@@ -5552,7 +5584,8 @@ var EDITOR_DATA = [
         "question": "$\\int_0^2 dy \\int_{y^2}^{2y} f(x,y)\\,dx$ 交换积分次序后为(  )。",
         "answer": "$\\int_0^4 dx \\int_{x/2}^{\\sqrt{x}} f(x,y)\\,dy$",
         "solution": "$由 y^2 \\leq x \\leq 2y,\\;0 \\leq y \\leq 2，得 x \\in [0,4]，下界 y=\\frac{x}{2}，上界 y=\\sqrt{x}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "交换积分次序"
       },
       {
         "id": "cal-di-064",
@@ -5561,7 +5594,8 @@ var EDITOR_DATA = [
         "question": "$\\iint_D \\arctan\\frac{y}{x}\\,d\\sigma$，其中 $D: 1 \\leq x^2+y^2 \\leq 4,\\; 0 \\leq \\frac{y}{x} \\leq 1,\\; x > 0$，值为(  )。",
         "answer": "$\\frac{3\\pi^2}{64}$",
         "solution": "$极坐标下 \\arctan\\frac{y}{x}=\\theta，D 对应 1\\leq r\\leq2,\\;0\\leq\\theta\\leq\\frac{\\pi}{4}。\\int_0^{\\pi/4}\\theta\\,d\\theta \\int_1^2 r\\,dr = \\frac{\\pi^2}{32}\\times\\frac{3}{2} = \\frac{3\\pi^2}{64}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-065",
@@ -5570,7 +5604,8 @@ var EDITOR_DATA = [
         "question": "$\\iint_{x^2+y^2 \\leq 2x} (x+y)\\,d\\sigma = (  )$。",
         "answer": "$\\pi$",
         "solution": "$区域关于 x 轴对称，y 为奇函数故 \\iint y\\,d\\sigma=0。\\iint x\\,d\\sigma = \\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta} r\\cos\\theta\\cdot r\\,dr\\,d\\theta = \\frac{8}{3}\\int_{-\\pi/2}^{\\pi/2}\\cos^4\\theta\\,d\\theta = \\frac{8}{3}\\times\\frac{3\\pi}{8} = \\pi。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-066",
@@ -5579,7 +5614,8 @@ var EDITOR_DATA = [
         "question": "$\\iint_D \\sin\\sqrt{x^2+y^2}\\,d\\sigma$，其中 $D: \\pi^2 \\leq x^2+y^2 \\leq 4\\pi^2$，值为(  )。",
         "answer": "$-6\\pi^2$",
         "solution": "$极坐标：2\\pi\\int_\\pi^{2\\pi} r\\sin r\\,dr。分部积分=[-r\\cos r]_\\pi^{2\\pi}+\\int_\\pi^{2\\pi}\\cos r\\,dr=(-2\\pi+\\pi)+0=-3\\pi。2\\pi\\times(-3\\pi)=-6\\pi^2。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-067",
@@ -5588,7 +5624,8 @@ var EDITOR_DATA = [
         "question": "$\\iint_D \\sqrt{1-\\frac{x^2}{a^2}-\\frac{y^2}{b^2}}\\,d\\sigma$，其中 $D: \\frac{x^2}{a^2}+\\frac{y^2}{b^2} \\leq 1$（$a,b>0$），值为(  )。",
         "answer": "$\\frac{2\\pi ab}{3}$",
         "solution": "$令 x=ar\\cos\\theta,\\,y=br\\sin\\theta，J=abr。2\\pi ab\\int_0^1 r\\sqrt{1-r^2}\\,dr = 2\\pi ab\\times\\frac{1}{3} = \\frac{2\\pi ab}{3}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "二重积分几何应用"
       },
       {
         "id": "cal-di-068",
@@ -5597,7 +5634,8 @@ var EDITOR_DATA = [
         "question": "设 $f(x)$ 连续，$F(x) = \\int_0^x dy \\int_0^y f(t)\\,dt$，则 $F'(x) = (  )$。",
         "answer": "$\\int_0^x f(t)\\,dt$",
         "solution": "$交换次序：F(x)=\\int_0^x dt\\int_t^x f(t)\\,dy = \\int_0^x (x-t)\\,f(t)\\,dt。由 Leibniz 公式，F'(x)=\\int_0^x f(t)\\,dt。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "重积分极限与求导"
       },
       {
         "id": "cal-di-069",
@@ -5606,7 +5644,8 @@ var EDITOR_DATA = [
         "question": "$\\lim_{R \\to +\\infty} \\iint_{x^2+y^2 \\leq R^2} e^{-(x^2+y^2)}\\,d\\sigma = (  )$。",
         "answer": "$\\pi$",
         "solution": "极坐标：$\\int_0^{2\\pi}\\int_0^R e^{-r^2} r\\,dr\\,d\\theta = \\pi(1-e^{-R^2}) \\to \\pi$（$R\\to+\\infty$）。",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-070",
@@ -5615,7 +5654,8 @@ var EDITOR_DATA = [
         "question": "$\\iint_{x^2+y^2 \\leq R^2} (3x^2+5y^2+7xy)\\,d\\sigma = (  )$。",
         "answer": "$2\\pi R^4$",
         "solution": "$xy 为奇函数积分=0。由轮换对称 \\iint x^2\\,d\\sigma=\\iint y^2\\,d\\sigma=\\frac{1}{2}\\iint(x^2+y^2)\\,d\\sigma=\\frac{\\pi R^4}{4}。故 (3+5)\\times\\frac{\\pi R^4}{4}=2\\pi R^4。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "对称性与轮换"
       },
       {
         "id": "cal-di-071",
@@ -5630,7 +5670,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$交换积分次序：\\int_0^1 dx \\int_0^x \\frac{y}{1+x^2}\\,dy = \\int_0^1 \\frac{x^2}{2(1+x^2)}\\,dx = \\frac{1}{2}\\int_0^1 \\left(1 - \\frac{1}{1+x^2}\\right) dx = \\frac{1}{2}\\left(1 - \\frac{\\pi}{4}\\right) = \\frac{4-\\pi}{8}。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "交换积分次序"
       },
       {
         "id": "cal-di-072",
@@ -5645,7 +5686,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**对称性分析**：D 关于 y 轴对称，\\sin(xy) 在 x \\to -x 下变号，故 \\iint_D \\sin(xy)\\,d\\sigma = 0。由轮换对称，\\iint_D x^2\\,d\\sigma = \\iint_D y^2\\,d\\sigma = \\frac{1}{2}\\iint_D (x^2+y^2)\\,d\\sigma = \\frac{1}{2} \\cdot 2\\pi \\int_0^1 r^3\\,dr = \\frac{\\pi}{4}。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "对称性与轮换"
       },
       {
         "id": "cal-di-073",
@@ -5660,7 +5702,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$以 y=x 分界。当 y < x 时 x^2 > y^2，当 y > x 时 y^2 > x^2。由对称性：I = 2\\int_0^1 dx \\int_0^x (x^2 - y^2)\\,dy = 2\\int_0^1 \\left(x^3 - \\frac{x^3}{3}\\right) dx = 2\\int_0^1 \\frac{2x^3}{3}\\,dx = \\frac{4}{3} \\cdot \\frac{1}{4} = \\frac{1}{3}。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "分段函数与最值"
       },
       {
         "id": "cal-di-074",
@@ -5675,7 +5718,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$计算各积分值：I_1 = \\frac{1}{4}\\iint_D (x+y)\\,d\\sigma = \\frac{1}{4} \\cdot 1 = \\frac{1}{4}；I_3 = \\frac{1}{2} \\cdot 1 = \\frac{1}{2}；I_2 = \\left(\\int_0^1 \\sqrt{x}\\,dx\\right)^2 = \\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}。数值比较：I_1 = 0.25 < I_2 \\approx 0.444 < I_3 = 0.5。（也可用 AM-GM 不等式 \\sqrt{xy} \\leq \\frac{x+y}{2} 说明 I_2 \\leq I_3。）**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "积分比较"
       },
       {
         "id": "cal-di-075",
@@ -5690,7 +5734,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**广义极坐标**：令 x = 2r\\cos\\theta,\\; y = r\\sin\\theta，J = 2r。x^2+y^2 = 4r^2\\cos^2\\theta + r^2\\sin^2\\theta = r^2(4\\cos^2\\theta + \\sin^2\\theta)。\\iint = \\int_0^{2\\pi} \\int_0^1 r^2(4\\cos^2\\theta+\\sin^2\\theta) \\cdot 2r\\,dr\\,d\\theta = 2\\int_0^{2\\pi}(4\\cos^2\\theta+\\sin^2\\theta)\\,d\\theta \\cdot \\int_0^1 r^3\\,dr = 2 \\cdot 5\\pi \\cdot \\frac{1}{4} = \\frac{5\\pi}{2}。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-076",
@@ -5699,7 +5744,8 @@ var EDITOR_DATA = [
         "question": "$\\lim_{t \\to 0} \\frac{1}{\\pi t^2} \\iint_{x^2+y^2 \\leq t^2} e^{x^2+y^2}\\,d\\sigma = (  )$。",
         "answer": "$1$",
         "solution": "$极坐标：\\iint e^{x^2+y^2}\\,d\\sigma = 2\\pi\\int_0^t e^{r^2} r\\,dr。故原式 = \\lim_{t \\to 0} \\frac{2\\pi\\int_0^t e^{r^2} r\\,dr}{\\pi t^2} = \\lim_{t \\to 0} \\frac{2e^{t^2} t}{2t} = \\lim_{t \\to 0} e^{t^2} = 1。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "重积分极限与求导"
       },
       {
         "id": "cal-di-077",
@@ -5708,7 +5754,8 @@ var EDITOR_DATA = [
         "question": "$设 f 连续，F(t) = \\iint_{x^2+y^2 \\leq t^2} f(x^2+y^2)\\,d\\sigma，则 F'(t) = (  )$。",
         "answer": "$2\\pi t\\, f(t^2)$",
         "solution": "$极坐标：F(t) = 2\\pi\\int_0^t f(r^2)\\,r\\,dr。由变限积分求导公式，F'(t) = 2\\pi\\, f(t^2) \\cdot t = 2\\pi t\\, f(t^2)。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "重积分极限与求导"
       },
       {
         "id": "cal-di-078",
@@ -5717,7 +5764,8 @@ var EDITOR_DATA = [
         "question": "$\\int_0^1 dy \\int_y^1 \\frac{x}{1+x^4}\\,dx = (  )$。",
         "answer": "$\\frac{\\pi}{8}$",
         "solution": "$交换次序：\\int_0^1 dx \\int_0^x \\frac{x}{1+x^4}\\,dy = \\int_0^1 \\frac{x^2}{1+x^4}\\,dx = \\frac{1}{2}\\int_0^1 \\frac{d(x^2)}{1+(x^2)^2} = \\frac{1}{2}\\arctan(x^2)\\Big|_0^1 = \\frac{\\pi}{8}。$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "交换积分次序"
       },
       {
         "id": "cal-di-079",
@@ -5732,7 +5780,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$由轮换对称 \\iint \\frac{x^2}{1+x^2+y^2} = \\iint \\frac{y^2}{1+x^2+y^2}，故原式 = \\frac{1}{2}\\iint \\frac{x^2+y^2}{1+x^2+y^2}\\,d\\sigma。极坐标：\\frac{1}{2} \\cdot 2\\pi \\int_0^1 \\frac{r^2}{1+r^2} \\cdot r\\,dr = \\pi \\int_0^1 \\frac{r^3}{1+r^2}\\,dr = \\pi \\int_0^1 \\left(r - \\frac{r}{1+r^2}\\right) dr = \\pi\\left[\\frac{r^2}{2} - \\frac{1}{2}\\ln(1+r^2)\\right]_0^1 = \\pi \\cdot \\frac{1-\\ln 2}{2} = \\frac{\\pi(1-\\ln 2)}{2}。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "极坐标计算"
       },
       {
         "id": "cal-di-080",
@@ -5747,7 +5796,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**逐项分析**：xy 是 x 的奇函数，D 关于 y 轴对称，积分为 0；x, y 分别为奇函数，积分均为 0。由轮换对称 \\iint x^2 = \\iint y^2 = \\frac{1}{2}\\iint(x^2+y^2) = \\frac{\\pi R^4}{4}。\\iint f = f\\pi R^2。故结果 = (a+b)\\frac{\\pi R^4}{4} + f\\pi R^2。**答案：A**$",
-        "cat": "二重积分"
+        "cat": "二重积分",
+        "topic": "对称性与轮换"
       },
       {
         "id": "cal-di-101",
@@ -5756,7 +5806,7 @@ var EDITOR_DATA = [
         "question": "计算 $\\displaystyle\\iint_{D}\\left[|xy|+\\sin(xy^{2})\\right]\\mathrm{d}\\sigma$，其中 $D$ 是由曲线 $|x|+|y|=1$ 围成的区域。\n\n【校】原卷第二项印刷模糊（识别为 $\\sin\\frac{y}{x}$ 或 $\\sin(y^{2}x)$ 类），无论取何版本，该项均为 $x$ 的奇函数，由对称性积分为 0，不影响结果。此处取 $\\sin(xy^{2})$。",
         "answer": "$\\dfrac16$。",
         "solution": "$D$ 关于两坐标轴对称。$\\sin(xy^{2})$ 关于 $x$ 为奇函数，故 $\\iint_{D}\\sin(xy^{2})\\,\\mathrm{d}\\sigma=0$；$|xy|$ 关于两轴均为偶函数，故 $\\iint_{D}|xy|\\,\\mathrm{d}\\sigma=4\\int_{0}^{1}\\mathrm{d}x\\int_{0}^{1-x}xy\\,\\mathrm{d}y=4\\int_{0}^{1}\\dfrac{x(1-x)^{2}}{2}\\,\\mathrm{d}x=2\\cdot\\dfrac{1}{12}=\\dfrac16$。",
-        "topic": "对称性·绝对值与奇函数",
+        "topic": "对称性与轮换",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5767,7 +5817,7 @@ var EDITOR_DATA = [
         "question": "计算 $\\displaystyle\\iint_{D}(x+1)^{2}\\,\\mathrm{d}\\sigma$，$D=\\{(x,y)\\mid x^{2}+y^{2}\\le 2x+2y\\}$。",
         "answer": "$9\\pi$。",
         "solution": "$D$ 即 $(x-1)^{2}+(y-1)^{2}\\le 2$，圆心 $(1,1)$，半径 $\\sqrt2$，面积 $2\\pi$。$x^{2}=(x-1)^{2}+2(x-1)+1$，而 $\\iint_{D}(x-1)^{2}\\,\\mathrm{d}\\sigma=\\dfrac14\\pi R^{4}=\\pi$，$\\iint_{D}(x-1)\\,\\mathrm{d}\\sigma=0$（形心），故 $\\iint_{D}x^{2}\\,\\mathrm{d}\\sigma=\\pi+0+2\\pi=3\\pi$；又 $\\iint_{D}x\\,\\mathrm{d}\\sigma=1\\cdot 2\\pi=2\\pi$，$\\iint_{D}1\\,\\mathrm{d}\\sigma=2\\pi$。合计 $3\\pi+2\\cdot2\\pi+2\\pi=9\\pi$。",
-        "topic": "对称性·平移圆域",
+        "topic": "对称性与轮换",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5778,7 +5828,7 @@ var EDITOR_DATA = [
         "question": "函数 $f(x,y)=x^{2}-3x+y+1$ 在平面区域 $D=\\{(x,y)\\mid x^{2}+y^{2}\\le a^{2}\\}$ 上的平均值。",
         "answer": "$1+\\dfrac{a^{2}}{4}$。",
         "solution": "平均值 $=\\dfrac{1}{\\pi a^{2}}\\iint_{D}(x^{2}-3x+y+1)\\,\\mathrm{d}\\sigma$。由对称性 $\\iint_{D}x\\,\\mathrm{d}\\sigma=\\iint_{D}y\\,\\mathrm{d}\\sigma=0$；$\\iint_{D}x^{2}\\,\\mathrm{d}\\sigma=\\dfrac12\\iint_{D}(x^{2}+y^{2})\\,\\mathrm{d}\\sigma=\\dfrac12\\int_{0}^{2\\pi}\\mathrm{d}\\theta\\int_{0}^{a}r^{2}\\cdot r\\,\\mathrm{d}r=\\dfrac{\\pi a^{4}}{4}$。故平均值 $=\\dfrac{1}{\\pi a^{2}}\\left(\\dfrac{\\pi a^{4}}{4}+\\pi a^{2}\\right)=\\dfrac{a^{2}}{4}+1$。",
-        "topic": "对称性·圆域平均值",
+        "topic": "对称性与轮换",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5789,7 +5839,7 @@ var EDITOR_DATA = [
         "question": "设 $f(t)$ 在 $(-\\infty,+\\infty)$ 内有连续导数，且 $f(t)=\\displaystyle\\iint_{x^{2}+y^{2}\\le t^{2}}\\left(x^{2}+y^{2}\\right)f\\!\\left(\\sqrt{x^{2}+y^{2}}\\right)\\mathrm{d}\\sigma+t^{4}$，求 $f(x)$。",
         "answer": "$f(x)=\\dfrac{2}{\\pi}\\left(\\mathrm{e}^{\\frac{\\pi}{2}x^{4}}-1\\right)$。",
         "solution": "极坐标：$f(t)=2\\pi\\int_{0}^{t}r^{3}f(r)\\,\\mathrm{d}r+t^{4}$（$t\\ge0$），且 $f(0)=0$。两边求导：$f'(t)=2\\pi t^{3}f(t)+4t^{3}$，即 $f'-2\\pi t^{3}f=4t^{3}$。一阶线性方程，积分因子 $\\mathrm{e}^{-\\pi t^{4}/2}$：$\\dfrac{\\mathrm{d}}{\\mathrm{d}t}\\left[f\\,\\mathrm{e}^{-\\pi t^{4}/2}\\right]=4t^{3}\\mathrm{e}^{-\\pi t^{4}/2}$，积分得 $f(t)\\,\\mathrm{e}^{-\\pi t^{4}/2}=\\dfrac{2}{\\pi}\\left(1-\\mathrm{e}^{-\\pi t^{4}/2}\\right)$（用了 $f(0)=0$），故 $f(t)=\\dfrac{2}{\\pi}\\left(\\mathrm{e}^{\\pi t^{4}/2}-1\\right)$。",
-        "topic": "积分方程·化为 ODE",
+        "topic": "积分方程",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5800,7 +5850,7 @@ var EDITOR_DATA = [
         "question": "设 $f(x,y)$ 为连续函数，且 $f(x,y)=\\displaystyle\\iint_{D}y\\,f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v+x$；其中 $D$ 由 $y=\\dfrac1x$，$y=2$，$x=1$ 围成，求 $f(x,y)$。",
         "answer": "$f(x,y)=x+\\dfrac{y}{2}$。",
         "solution": "**关键第一步：认清谁是积分变量。**右端积分变量是 $u,v$，$y$ 不随积分变，是**自由变量**，可以提出积分号外：$\\iint_{D}y\\,f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v=y\\iint_{D}f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v$。记常数 $A=\\iint_{D}f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v$，则 $f(x,y)=yA+x$。\n\n**第二步：两边在 $D$ 上积分求 $A$。**$D=\\left\\{(u,v)\\mid \\tfrac12\\le u\\le 1,\\ \\tfrac1u\\le v\\le 2\\right\\}$（由 $v=\\tfrac1u$、$v=2$、$u=1$ 围成，交点 $(\\tfrac12,2),(1,2),(1,1)$）。$A=\\iint_{D}(vA+u)\\,\\mathrm{d}u\\,\\mathrm{d}v=A I_{1}+I_{2}$，其中$I_{1}=\\iint_{D}v\\,\\mathrm{d}u\\,\\mathrm{d}v=\\int_{1/2}^{1}\\dfrac{4-\\frac{1}{u^{2}}}{2}\\,\\mathrm{d}u=\\left[2u+\\dfrac{1}{2u}\\right]_{1/2}^{1}=\\dfrac12$；$I_{2}=\\iint_{D}u\\,\\mathrm{d}u\\,\\mathrm{d}v=\\int_{1/2}^{1}u\\left(2-\\dfrac1u\\right)\\mathrm{d}u=\\left[u^{2}-u\\right]_{1/2}^{1}=\\dfrac14$。\n\n**第三步：解出 $A$。**$A\\left(1-\\tfrac12\\right)=\\tfrac14$，故 $A=\\tfrac12$，所以 $f(x,y)=x+\\dfrac{y}{2}$。\n\n（代回自检：$\\iint_{D}\\left(u+\\tfrac v2\\right)\\mathrm{d}u\\,\\mathrm{d}v=\\tfrac14+\\tfrac12\\cdot\\tfrac12=\\tfrac12=A$ ✓）\n\n**易错点：题面写 $f(u,v)$ 已表明积分变量是 $u,v$，此时 $y$ 是参数而非积分变量——若把 $y$ 误当第二积分变量（相当于把题改成 $\\iint_{D}v\\,f(u,v)\\,\\mathrm{d}u\\,\\mathrm{d}v$），会解出与原题不符的常数型答案 $x+\\tfrac32-\\ln 2$。**",
-        "topic": "积分方程·含参常数提取法",
+        "topic": "积分方程",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5811,7 +5861,7 @@ var EDITOR_DATA = [
         "question": "设 $f(x,y)$ 是定义在 $0\\le x\\le 1$，$0\\le y\\le 1$ 上的连续函数，且 $f(0,0)=1$，求极限：$$\\lim_{x\\to 0^{+}}\\frac{\\displaystyle\\int_{0}^{x^{2}}\\mathrm{d}t\\int_{x}^{\\sqrt{t}}f(t,u)\\,\\mathrm{d}u}{1-\\mathrm{e}^{-x^{3}}}$$",
         "answer": "$-\\dfrac{1}{3}$",
         "solution": "**关键第一步：交换积分次序，把「里层上限依赖 $t$」的区域化成可求导形式。**\n\n分子中的积分区域为 $D_x=\\{(t,u)\\mid 0\\le t\\le x^{2},\\ x\\le u\\le\\sqrt{t}\\}$。由于 $0\\le t\\le x^{2}$ 时 $\\sqrt{t}\\le x$，内层积分实际是负向的；换序时由 $u$ 反解 $t$：$u\\ge\\sqrt{t}\\iff t\\le u^{2}$，故区域等价于$$D_x=\\{(t,u)\\mid 0\\le u\\le x,\\ 0\\le t\\le u^{2}\\},$$于是分子（注意变号）为$$I(x)=-\\int_{0}^{x}\\mathrm{d}u\\int_{0}^{u^{2}}f(t,u)\\,\\mathrm{d}t.$$\n\n**第二步：洛必达 + 变限积分求导。**分母 $1-\\mathrm{e}^{-x^{3}}\\sim x^{3}\\to 0$，分子 $I(x)\\to 0$，是 $\\frac00$ 型。记 $G(u)=\\displaystyle\\int_{0}^{u^{2}}f(t,u)\\,\\mathrm{d}t$（下限 $0$ 不含 $x$，求导只有外层上限一项）：$$\\lim_{x\\to0^{+}}\\frac{I(x)}{1-\\mathrm{e}^{-x^{3}}}=\\lim_{x\\to0^{+}}\\frac{-\\int_{0}^{x}G(u)\\,\\mathrm{d}u}{3x^{2}\\mathrm{e}^{-x^{3}}}=\\lim_{x\\to0^{+}}\\frac{-G(x)}{3x^{2}}=\\lim_{x\\to0^{+}}\\frac{-\\displaystyle\\int_{0}^{x^{2}}f(t,x)\\,\\mathrm{d}t}{3x^{2}}.$$\n\n**第三步：积分中值定理 + 连续性。**由积分中值定理，$\\displaystyle\\int_{0}^{x^{2}}f(t,x)\\,\\mathrm{d}t=x^{2}f(\\xi,x)$（$0<\\xi<x^{2}$），且 $(\\xi,x)\\to(0,0)$，故上式 $=\\lim_{x\\to0^{+}}\\dfrac{-x^{2}f(\\xi,x)}{3x^{2}}=-\\dfrac{f(0,0)}{3}=-\\dfrac{1}{3}$。\n\n（数值验证：取 $f=1$、$f=1{+}tu{+}t^{2}$、$f=\\mathrm{e}^{t+u}$ 等多个满足 $f(0,0)=1$ 的函数，$x\\to0^{+}$ 时比值均收敛于 $-1/3$；又 $f\\equiv1$ 时直接积分 $I(x)=\\int_{0}^{x^{2}}(\\sqrt{t}-x)\\,\\mathrm{d}t=\\frac{2}{3}x^{3}-x^{3}=-\\frac{1}{3}x^{3}$，立得 $-\\frac{1}{3}$。）\n\n一般地，此题的极限为 $-\\dfrac{1}{3}f(0,0)$，本题 $f(0,0)=1$，故答案为 $-\\dfrac{1}{3}$。**易错点：换序后内层 $t$ 的上界是 $u^{2}$（由 $u\\ge\\sqrt t$ 反解），不是 $x^{2}$——写成 $x^{2}$ 会得到错误答案 $-\\frac{2}{3}$。**",
-        "topic": "二重积分·累次积分极限·交换次序+洛必达",
+        "topic": "重积分极限与求导",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分",
         "proof_note_removed": true
@@ -5823,7 +5873,7 @@ var EDITOR_DATA = [
         "question": "比较重积分大小：设 $A=\\displaystyle\\iint_{x^{2}+y^{2}\\le1}(x^{2}+y^{2})\\,\\mathrm{d}\\sigma$；$B=\\displaystyle\\iint_{|x|+|y|\\le1}(x^{2}+y^{2})\\,\\mathrm{d}\\sigma$；$C=\\displaystyle\\iint_{|x|+|y|\\le1}2|xy|\\,\\mathrm{d}\\sigma$。",
         "answer": "$C<B<A$，即 $C=\\dfrac13<B=\\dfrac23<A=\\dfrac\\pi2$。",
         "solution": "正方形 $|x|+|y|\\le1$ 内切于单位圆且不等，被积函数相同，故 $B<A$；在同一区域 $|x|+|y|\\le1$ 上，$2|xy|\\le x^{2}+y^{2}$ 且仅在 $|x|=|y|$ 上取等，故 $C<B$。具体值：$A=\\int_{0}^{2\\pi}\\mathrm{d}\\theta\\int_{0}^{1}r^{2}\\cdot r\\,\\mathrm{d}r=\\dfrac\\pi2$；$B=4\\int_{0}^{1}\\mathrm{d}x\\int_{0}^{1-x}(x^{2}+y^{2})\\,\\mathrm{d}y=\\dfrac23$；$C=4\\int_{0}^{1}\\mathrm{d}x\\int_{0}^{1-x}2xy\\,\\mathrm{d}y=\\dfrac13$。",
-        "topic": "重积分比较·区域与被积函数",
+        "topic": "积分比较",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5834,7 +5884,7 @@ var EDITOR_DATA = [
         "question": "比较积分大小：积分区域为 $D=\\{(x,y)\\mid(x-1)^{2}+(y-1)^{2}\\le 2\\}$，$I_{1}=\\displaystyle\\iint_{D}\\frac{x+y}{4}\\,\\mathrm{d}\\sigma$，$I_{2}=\\displaystyle\\iint_{D}\\sqrt{\\frac{x+y}{4}}\\,\\mathrm{d}\\sigma$，$I_{3}=\\displaystyle\\iint_{D}\\sqrt[3]{\\frac{x+y}{4}}\\,\\mathrm{d}\\sigma$。",
         "answer": "$I_{1}<I_{2}<I_{3}$",
         "solution": "**关键观察**：$D$ 是以 $(1,1)$ 为圆心、$\\sqrt2$ 为半径的圆。令 $u=\\dfrac{x+y}{4}$，则二元线性函数 $x+y$ 在有界闭区域 $D$ 上的最大、最小值在边界取得：$x+y$ 的取值范围是 $[0,4]$（最小值 $0$ 在切点 $(0,0)$，最大值 $4$ 在切点 $(2,2)$，圆心值 $2$）。故在 $D$ 上恒有 $0\\le u\\le 1$。\n\n**比较**：当 $0<u<1$ 时，幂函数不等式 $u<\\sqrt{u}<\\sqrt[3]{u}$ 成立（因为 $u^{\\frac12}>u$、$u^{\\frac13}>u^{\\frac12}$）。而 $u=0$ 或 $u=1$ 仅在切点 $(0,0)$、$(2,2)$ 处取得，这两点在 $D$ 中测度为零，因此不等式在 $D$ 上**几乎处处严格成立**，积分保持严格不等号：\n\n$$I_{1}<I_{2}<I_{3}.$$\n\n**精确值核验**（作答时不需要）：平移 $u=x-1,\\ v=y-1$ 后极坐标计算可得$I_{1}=\\displaystyle\\iint_{D}\\frac{x+y}{4}\\,\\mathrm{d}\\sigma=\\pi$（恰为圆面积的 $\\tfrac14\\times\\overline{x+y}=\\tfrac14\\times 2\\times 2\\pi=\\pi$），$I_{2}=\\dfrac{64}{15}\\approx 4.267$，$I_{3}\\approx 4.801$，与结论一致。\n\n**方法点睛**：被积函数都是 $u=\\dfrac{x+y}{4}$ 的幂函数 $u^{a}$（$a=1,\\tfrac12,\\tfrac13$）时，先弄清 $u$ 在区域上的取值范围是第一步——落在 $(0,1)$ 内则幂越大值越大，落在 $(1,+\\infty)$ 内则反过来。这类\"同底不同指数\"的比较题，核心就是把线性函数 $x+y$ 压进 $[0,1]$ 这个区间，再用幂函数单调性。",
-        "topic": "重积分比较·幂函数不等式",
+        "topic": "积分比较",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5845,7 +5895,7 @@ var EDITOR_DATA = [
         "question": "设函数 $f(x,y)$ 连续，则累次积分 $\\displaystyle\\int_{0}^{\\pi/4}\\mathrm{d}\\theta\\int_{0}^{1}r^{2}\\cos\\theta\\,f(r\\cos\\theta,r\\sin\\theta)\\,\\mathrm{d}r$ 等于：",
         "answer": 2,
         "solution": "区域为扇形 $D=\\{r\\le1,\\ 0\\le\\theta\\le\\pi/4\\}$，即单位圆内 $0\\le y\\le x$ 部分。被积式 $r^{2}\\cos\\theta\\,\\mathrm{d}r\\,\\mathrm{d}\\theta=r\\cos\\theta\\cdot f\\cdot r\\,\\mathrm{d}r\\,\\mathrm{d}\\theta=x\\,f(x,y)\\,\\mathrm{d}\\sigma$。按先 $x$ 后 $y$：$y\\in\\left[0,\\tfrac{\\sqrt2}{2}\\right]$，$x\\in\\left[y,\\sqrt{1-y^{2}}\\right]$，恰为选项 C（选项 D 的内层下限 0 会混入 $x<y$ 部分，A 是上半楔形且区域颠倒，B 被积函数错为 $y$）。",
-        "topic": "极坐标化直角坐标·选项",
+        "topic": "交换积分次序",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分",
         "options": [
@@ -5862,7 +5912,7 @@ var EDITOR_DATA = [
         "question": "交换累次积分的次序：$\\displaystyle\\int_{0}^{1}\\mathrm{d}y\\int_{\\sqrt{y}}^{\\sqrt{1-y^{2}}}f(x,y)\\,\\mathrm{d}x$。",
         "answer": "$\\displaystyle\\int_{0}^{\\sqrt{\\frac{\\sqrt5-1}{2}}}\\mathrm{d}x\\int_{0}^{x^{2}}f(x,y)\\,\\mathrm{d}y+\\int_{\\sqrt{\\frac{\\sqrt5-1}{2}}}^{1}\\mathrm{d}x\\int_{0}^{\\sqrt{1-x^{2}}}f(x,y)\\,\\mathrm{d}y$。",
         "solution": "**先定区域。**内层要求 $\\sqrt y\\le\\sqrt{1-y^{2}}$，即 $y\\le\\dfrac{\\sqrt5-1}{2}$（记 $y_{0}=\\tfrac{\\sqrt5-1}{2}$，由 $y=1-y^{2}$ 解得），故$D=\\left\\{(x,y)\\mid 0\\le y\\le y_{0},\\ \\sqrt y\\le x\\le\\sqrt{1-y^{2}}\\right\\}$：介于抛物线 $y=x^{2}$ 与圆 $x^{2}+y^{2}=1$ 之间、第一象限部分。\n\n**换序：由 $x$ 的边界反解 $y$。**$x\\ge\\sqrt y\\iff y\\le x^{2}$；$x\\le\\sqrt{1-y^{2}}\\iff y\\le\\sqrt{1-x^{2}}$。故固定 $x$ 时 $y\\in\\left[0,\\min\\left(x^{2},\\sqrt{1-x^{2}}\\right)\\right]$。两上限曲线 $y=x^{2}$ 与 $y=\\sqrt{1-x^{2}}$ 的交点由 $x^{4}=1-x^{2}$ 得 $x^{2}=\\tfrac{\\sqrt5-1}{2}$，即 $x_{0}=\\sqrt{\\tfrac{\\sqrt5-1}{2}}\\approx0.786$。\n\n**分两段写：**$x\\in\\left[0,x_{0}\\right]$ 时 $y$ 从 $0$ 到 $x^{2}$；$x\\in\\left[x_{0},1\\right]$ 时 $y$ 从 $0$ 到 $\\sqrt{1-x^{2}}$，即得答案。\n\n（面积自检：$f\\equiv1$ 时原次序 $\\int_{0}^{y_{0}}\\left(\\sqrt{1-y^{2}}-\\sqrt y\\right)\\mathrm{d}y=0.5761-0.3239=0.2522$；新次序 $\\int_{0}^{x_{0}}x^{2}\\mathrm{d}x+\\int_{x_{0}}^{1}\\sqrt{1-x^{2}}\\,\\mathrm{d}x=0.1620+0.0905=0.2525$，一致 ✓）\n\n**易错点：内层下限是 $\\sqrt y$ 不是 $y$——丢根号会把区域看成直线 $y=x$ 下方、分段点错成 $\\tfrac{\\sqrt2}{2}$；另外外层上限虽然写了 1，但 $y>y_{0}$ 后区域为空，有效范围只到 $y_{0}$。**",
-        "topic": "交换累次积分次序",
+        "topic": "交换积分次序",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5873,7 +5923,7 @@ var EDITOR_DATA = [
         "question": "化极坐标为直角坐标：$\\displaystyle\\int_{\\pi/2}^{\\pi}\\mathrm{d}\\theta\\int_{0}^{2\\sin\\theta}f(\\rho\\cos\\theta,\\rho\\sin\\theta)\\,\\rho\\,\\mathrm{d}\\rho$。",
         "answer": "$\\displaystyle\\int_{-1}^{0}\\mathrm{d}x\\int_{1-\\sqrt{1-x^{2}}}^{1+\\sqrt{1-x^{2}}}f(x,y)\\,\\mathrm{d}y$。",
         "solution": "$\\rho=2\\sin\\theta$ 即圆 $x^{2}+y^{2}=2y$（圆心 $(0,1)$、半径 1）；$\\theta\\in\\left[\\tfrac\\pi2,\\pi\\right]$ 取其左半部分（$x\\le0$）。直角坐标下：$x\\in[-1,0]$，$y$ 从下边界 $1-\\sqrt{1-x^{2}}$ 到上边界 $1+\\sqrt{1-x^{2}}$。",
-        "topic": "极坐标化直角坐标",
+        "topic": "交换积分次序",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5884,7 +5934,7 @@ var EDITOR_DATA = [
         "question": "已知平面区域 $D=\\{(x,y)\\mid x^{2}+y^{2}\\le4y,\\ x^{2}+y^{2}\\le4x\\}$，计算 $\\displaystyle\\iint_{D}(x-y)^{2}\\,\\mathrm{d}x\\,\\mathrm{d}y$。",
         "answer": "$12\\pi-\\dfrac{112}{3}$。",
         "solution": "$D$ 为圆 $r\\le4\\sin\\theta$ 与圆 $r\\le4\\cos\\theta$ 的公共部分，关于直线 $y=x$ 对称，极坐标下 $\\theta\\in\\left[0,\\tfrac\\pi4\\right]$ 时 $r\\le4\\sin\\theta$。故 $I=2\\int_{0}^{\\pi/4}\\mathrm{d}\\theta\\int_{0}^{4\\sin\\theta}r^{2}(\\cos\\theta-\\sin\\theta)^{2}\\,r\\,\\mathrm{d}r=128\\int_{0}^{\\pi/4}\\sin^{4}\\theta\\,(\\cos\\theta-\\sin\\theta)^{2}\\,\\mathrm{d}\\theta$。拆开 $(\\cos\\theta-\\sin\\theta)^{2}=1-\\sin2\\theta$：$\\int_{0}^{\\pi/4}\\sin^{4}\\theta\\,\\mathrm{d}\\theta=\\dfrac{3\\pi}{32}-\\dfrac14$，$\\int_{0}^{\\pi/4}\\sin^{4}\\theta\\sin2\\theta\\,\\mathrm{d}\\theta=\\left[\\tfrac{\\sin^{6}\\theta}{3}\\right]_{0}^{\\pi/4}=\\dfrac{1}{24}$。故 $I=128\\left(\\dfrac{3\\pi}{32}-\\dfrac14-\\dfrac{1}{24}\\right)=12\\pi-\\dfrac{112}{3}$。",
-        "topic": "两圆公共部分·轮换对称性",
+        "topic": "对称性与轮换",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5895,7 +5945,7 @@ var EDITOR_DATA = [
         "question": "计算二重积分 $\\displaystyle\\iint_{D}y\\,\\mathrm{d}\\sigma$，其中 $D$ 是由曲线 $y=x^{2}$ 与 $y=2-x^{2}$ 所围成的平面区域。",
         "answer": "$\\dfrac83$。",
         "solution": "两曲线交于 $(\\pm1,1)$。$D=\\{x\\in[-1,1],\\ x^{2}\\le y\\le2-x^{2}\\}$。$I=\\int_{-1}^{1}\\mathrm{d}x\\int_{x^{2}}^{2-x^{2}}y\\,\\mathrm{d}y=\\int_{-1}^{1}\\dfrac{(2-x^{2})^{2}-x^{4}}{2}\\,\\mathrm{d}x=\\int_{-1}^{1}(2-2x^{2})\\,\\mathrm{d}x=\\left[2x-\\dfrac{2x^{3}}{3}\\right]_{-1}^{1}=\\dfrac83$。",
-        "topic": "抛物线围成区域·直角坐标",
+        "topic": "直角坐标计算",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5906,7 +5956,7 @@ var EDITOR_DATA = [
         "question": "求二重积分 $I=\\displaystyle\\iint_{D}\\left(1-x^{2}-y^{2}+x^{3}\\sin^{2}y\\right)\\mathrm{d}\\sigma$，其中 $D$ 为 $x^{2}+y^{2}=1$ 的上半圆与 $x^{2}+y^{2}=2y$ 的下半圆所围成的区域。",
         "answer": "$\\dfrac{3\\sqrt3}{8}$。",
         "solution": "两圆交于 $\\left(\\pm\\tfrac{\\sqrt3}{2},\\tfrac12\\right)$。$D$ 关于 $y$ 轴对称，$x^{3}\\sin^{2}y$ 关于 $x$ 为奇函数，积分为 0。剩余部分用极坐标（$D$ 为两单位圆公共部分：$\\theta\\in\\left[0,\\tfrac\\pi6\\right]$ 时 $r\\le2\\sin\\theta$，$\\theta\\in\\left[\\tfrac\\pi6,\\tfrac\\pi2\\right]$ 时 $r\\le1$，再对称翻倍）：$I=2\\left[\\int_{0}^{\\pi/6}\\mathrm{d}\\theta\\int_{0}^{2\\sin\\theta}(1-r^{2})r\\,\\mathrm{d}r+\\int_{\\pi/6}^{\\pi/2}\\mathrm{d}\\theta\\int_{0}^{1}(1-r^{2})r\\,\\mathrm{d}r\\right]$。第一段 $=\\int_{0}^{\\pi/6}\\left(2\\sin^{2}\\theta-4\\sin^{4}\\theta\\right)\\mathrm{d}\\theta=-\\dfrac\\pi{12}+\\dfrac{3\\sqrt3}{16}$，第二段 $=\\dfrac\\pi3\\cdot\\dfrac14=\\dfrac\\pi{12}$。故 $I=2\\cdot\\dfrac{3\\sqrt3}{16}=\\dfrac{3\\sqrt3}{8}$。",
-        "topic": "两圆弧围成·极坐标分段",
+        "topic": "极坐标计算",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       },
@@ -5917,7 +5967,7 @@ var EDITOR_DATA = [
         "question": "设平面区域 $D=\\{(x,y)\\mid 1\\le x^{2}+y^{2}\\le4,\\ x\\ge0,\\ y\\ge0\\}$，计算 $\\displaystyle\\iint_{D}\\dfrac{x\\cos(x^{2}+y^{2})}{x+y}\\,\\mathrm{d}x\\,\\mathrm{d}y$。",
         "answer": "$\\dfrac{\\pi}{8}\\left(\\sin4-\\sin1\\right)$。",
         "solution": "$D$ 关于 $y=x$ 对称。记 $f(x,y)=\\dfrac{x\\cos(x^{2}+y^{2})}{x+y}$，则 $f(x,y)+f(y,x)=\\dfrac{(x+y)\\cos(x^{2}+y^{2})}{x+y}=\\cos(x^{2}+y^{2})$。故 $I=\\dfrac12\\iint_{D}\\cos(x^{2}+y^{2})\\,\\mathrm{d}\\sigma=\\dfrac12\\int_{0}^{\\pi/2}\\mathrm{d}\\theta\\int_{1}^{2}\\cos(r^{2})\\,r\\,\\mathrm{d}r=\\dfrac{\\pi}{4}\\cdot\\dfrac{\\sin4-\\sin1}{2}=\\dfrac{\\pi}{8}(\\sin4-\\sin1)$。",
-        "topic": "轮换对称性·对称化简",
+        "topic": "对称性与轮换",
         "source": "自编·经纬研选（四）·二元函数的微积分",
         "cat": "二重积分"
       }
@@ -12973,7 +13023,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$∬_D x dxdy = \\int ₀¹ \\int ₀^(1-x) x dy dx = \\int ₀¹ x(1-x) dx = [x^{2}/2 - x^{3}/3]\\big|_{0}¹ = 1/2 - 1/3 = 1/6。考查二重积分化为累次积分。$",
         "cat": "二重积分",
-        "topic": "直角坐标·化为累次积分"
+        "topic": "直角坐标计算"
       },
       {
         "id": "comp-040",
@@ -12989,7 +13039,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$极坐标变换：x=r \\cosθ，y=r \\sinθ，dxdy=r dr dθ。原式 = \\int ₀^(2\\pi) \\int ₀¹ r·r dr dθ = 2\\pi·[r³/3]\\big|_{0}¹ = 2\\pi/3。考查极坐标下二重积分——被积函数含 \\sqrt{x^{2}+y²} 是用极坐标的典型信号。$",
         "cat": "二重积分",
-        "topic": "极坐标换元"
+        "topic": "极坐标计算"
       },
       {
         "id": "comp-041",
@@ -14225,7 +14275,7 @@ var EDITOR_DATA = [
         "answer": "原式 $=\\dfrac{\\pi}{12}$（若内层被积函数按 PDF 原文取 $x^{2}-y^{2}$，则结果为 $\\dfrac16$）。",
         "solution": "【校】PDF 作 $\\int_y^1 (x^2-y^2)\\mathrm{d}x$，据常见原型取 $\\sqrt{x^2-y^2}$；两种情形均在解答中给出。\n\n积分区域由 $0\\le y\\le1,\\ y\\le x\\le1$ 确定，即单位正方形中直线 $y=x$ **下方**的三角形域\n$$D=\\{(x,y)\\mid 0\\le y\\le x\\le1\\}=\\{(x,y)\\mid 0\\le x\\le1,\\ 0\\le y\\le x\\}.$$\n内层 $\\displaystyle\\int\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}y$ 的原函数是 $\\dfrac{y}{2}\\sqrt{x^{2}-y^{2}}+\\dfrac{x^{2}}{2}\\arcsin\\dfrac{y}{x}$，代入 $0$ 与 $x$ 尚可算但十分繁冗（含 $\\arcsin$），故改先对 $y$ 积分、后对 $x$ 积分次序不变而**交换为先 $y$ 后 $x$**，这才是本题用意——把内层变成对 $y$ 的四分之一圆面积分。\n\n交换次序（先固定 $x$，让 $y$ 跑 $0\\to x$）：\n$$I=\\int_0^1\\mathrm{d}y\\int_y^1\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}x\n=\\iint_D\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}x\\mathrm{d}y\n=\\int_0^1\\mathrm{d}x\\int_0^x\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}y .$$\n\n对固定的 $x>0$，内层是\"半径 $x$ 的圆的四分之一面积\"：\n$$\\int_0^x\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}y=\\frac{\\pi x^{2}}{4}.$$\n（若需验证：$\\Bigl[\\dfrac{y}{2}\\sqrt{x^{2}-y^{2}}+\\dfrac{x^{2}}{2}\\arcsin\\dfrac{y}{x}\\Bigr]_0^x=\\dfrac{x^{2}}{2}\\cdot\\dfrac{\\pi}{2}=\\dfrac{\\pi x^{2}}{4}$。）\n\n于是\n$$I=\\int_0^1\\frac{\\pi x^{2}}{4}\\,\\mathrm{d}x=\\frac{\\pi}{4}\\cdot\\frac13=\\frac{\\pi}{12}.$$\n\n**另一版本（PDF 原文 $x^{2}-y^{2}$）：**\n$$\\int_y^1(x^{2}-y^{2})\\,\\mathrm{d}x=\\Bigl[\\frac{x^{3}}{3}-y^{2}x\\Bigr]_y^1=\\frac13-y^{2}-\\frac{y^{3}}{3}+y^{3}=\\frac13-y^{2}+\\frac{2y^{3}}{3},$$\n故\n$$\\int_0^1\\left(\\frac13-y^{2}+\\frac{2y^{3}}{3}\\right)\\mathrm{d}y=\\frac13-\\frac13+\\frac{2}{3}\\cdot\\frac14=\\frac16 .$$\n\n---\n\n① 看到内层上限是外层积分变量（或反之）的累次积分，**第一步永远是画出积分域**，再按要求换成相反次序。② 出现 $\\sqrt{x^{2}-y^{2}}$ 时要想到\"以 $x$ 为参数的四分之一圆面积 $\\pi x^{2}/4$\"，用几何意义代替硬算 $\\arcsin$ 项，既快又不易错。③ 注意 $\\sqrt{x^2-y^2}$ 要求积分域满足 $|y|\\le x$，本题 $0\\le y\\le x$ 恰好满足；若区域跨越 $y>x$，则应另行分段或改用极坐标。\n\n---",
         "cat": "二重积分",
-        "topic": "二重积分换序",
+        "topic": "交换积分次序",
         "source": "综合例题PDF·例11"
       },
       {
@@ -14319,7 +14369,7 @@ var EDITOR_DATA = [
         "answer": "$\\displaystyle\\int_0^{\\pi/2}f(\\cos x)\\,\\mathrm{d}x=\\frac{1}{4\\pi^{2}}$。",
         "solution": "【校】PDF 内层上限为 $\\pi$，外层 $0\\to 2\\pi$；按此还原（内层与 $x$ 无关，可直接化简）。\n\n**第一步：内层与 $x$ 无关，直接提出。**\n$$\\int_0^{2\\pi}\\mathrm{d}x\\int_0^{\\pi}x f(\\sin y)\\,\\mathrm{d}y=\\int_0^{2\\pi}x\\left(\\int_0^{\\pi}f(\\sin y)\\,\\mathrm{d}y\\right)\\mathrm{d}x .$$\n记 $C=\\displaystyle\\int_0^{\\pi}f(\\sin y)\\,\\mathrm{d}y$（常数），则\n$$1=C\\int_0^{2\\pi}x\\,\\mathrm{d}x=C\\cdot\\frac{(2\\pi)^{2}}{2}=2\\pi^{2}C\n\\quad\\Longrightarrow\\quad C=\\frac{1}{2\\pi^{2}} .$$\n\n**第二步：用对称性把 $[0,\\pi]$ 折半。** 因 $\\sin(\\pi-y)=\\sin y$，令 $t=\\pi-y$：\n$$\\int_{\\pi/2}^{\\pi}f(\\sin y)\\,\\mathrm{d}y=\\int_0^{\\pi/2}f(\\sin t)\\,\\mathrm{d}t,$$\n故\n$$C=\\int_0^{\\pi}f(\\sin y)\\,\\mathrm{d}y=2\\int_0^{\\pi/2}f(\\sin y)\\,\\mathrm{d}y\n\\quad\\Longrightarrow\\quad \\int_0^{\\pi/2}f(\\sin y)\\,\\mathrm{d}y=\\frac{C}{2}=\\frac{1}{4\\pi^{2}} .$$\n\n**第三步：把 $\\cos$ 换成 $\\sin$。** 令 $x=\\dfrac{\\pi}{2}-t$（$x:0\\to\\dfrac\\pi2$ 对应 $t:\\dfrac\\pi2\\to0$），$\\cos x=\\sin t$：\n$$\\int_0^{\\pi/2}f(\\cos x)\\,\\mathrm{d}x=\\int_0^{\\pi/2}f(\\sin t)\\,\\mathrm{d}t=\\frac{1}{4\\pi^{2}} .$$\n\n（说明：全程不需要知道 $f$ 的具体形式，只需假设相应的积分存在即可。）\n\n---\n\n① 累次积分先看**哪一层与外层变量无关**，能提出来的先提出来（本题 $x$ 是一次因子，积分是 $\\int_0^{2\\pi}x\\,\\mathrm{d}x=2\\pi^{2}$ 而非 $2\\pi$）。② 牢记三角对称公式：$\\int_0^{\\pi}f(\\sin)=2\\int_0^{\\pi/2}f(\\sin)$，$\\int_0^{\\pi/2}f(\\sin)=\\int_0^{\\pi/2}f(\\cos)$，$\\int_0^{\\pi}f(\\sin)=\\int_{-\\pi/2}^{\\pi/2}f(\\cos)$。③ 也可用 $\\int_0^{\\pi}x f(\\sin x)\\mathrm{d}x=\\frac{\\pi}{2}\\int_0^{\\pi}f(\\sin x)\\mathrm{d}x$ 型公式（$\\int_0^\\pi xg(\\sin x)\\mathrm dx$ 换 $x\\to\\pi-x$）处理更复杂的变体。",
         "cat": "二重积分",
-        "topic": "二重积分换序",
+        "topic": "交换积分次序",
         "source": "综合例题PDF·例45"
       },
       {
@@ -14402,7 +14452,7 @@ var EDITOR_DATA = [
         "answer": "$\\displaystyle I=\\dfrac{3\\sqrt 3}{8}.$",
         "solution": "**第一步：识别区域 $D$。** \n- $x^2+y^2=1$ 是单位圆；\n- $x^2+y^2=2y$ 即 $x^2+(y-1)^2=1$，是圆心 $(0,1)$ 半径 $1$ 的小圆。\n\n两圆均过原点与 $(0,2)$。\"$x^2+y^2=1$ 的上半圆\" 与 \"$x^2+y^2=2y$ 的下半圆\" 围成的区域 $D$ 是位于下方单位圆 $x^2+y^2=1$ 与上方小圆 $x^2+(y-1)^2=1$ 之间的\"弯月\"——即在 $x^2+y^2\\le 1$ 内、$x^2+(y-1)^2\\ge 1$ 的部分。\n\n**第二步：利用对称性简化被积函数。** \n- $x^3\\sin^2 y$ 关于 $x$ 是奇函数（$D$ 关于 $y$ 轴对称），故 $\\iint_D x^3\\sin^2 y\\,\\mathrm{d}\\sigma=0$。\n\n故\n$$I=\\iint_D(1-x^2-y^2)\\,\\mathrm{d}\\sigma.$$\n\n**第三步：用极坐标计算。** 设 $x=r\\cos\\theta,\\ y=r\\sin\\theta$。两圆的极坐标方程：$r=1$（单位圆）与 $r=2\\sin\\theta$（小圆，$\\theta\\in[0,\\pi]$）。\n\n两圆交点：$r=1=2\\sin\\theta \\Rightarrow \\theta=\\pi/6$ 或 $5\\pi/6$；$r=\\sin\\theta=\\tfrac12$ 时 $r=\\tfrac12$，对应 $(\\pm\\tfrac{\\sqrt 3}{2},\\tfrac12)$。\n\n$D$ 极坐标描述：$r\\le\\min(1,2\\sin\\theta)$，$\\theta\\in[0,\\pi]$。\n- $\\theta\\in[\\pi/6,5\\pi/6]$：$2\\sin\\theta\\ge 1$，$\\min=1$，$r\\in[0,1]$。\n- $\\theta\\in[0,\\pi/6]\\cup[5\\pi/6,\\pi]$：$2\\sin\\theta\\le 1$，$\\min=2\\sin\\theta$。\n\n按 $y$ 轴对称性倍乘 $\\theta\\in[0,\\pi/2]$：\n$$I=2\\int_{\\pi/6}^{\\pi/2}\\mathrm{d}\\theta\\int_0^1(1-r^2)r\\,\\mathrm{d}r+2\\int_0^{\\pi/6}\\mathrm{d}\\theta\\int_0^{2\\sin\\theta}(1-r^2)r\\,\\mathrm{d}r.$$\n\n第一段内层 $=\\int_0^1(r-r^3)\\,\\mathrm{d}r=\\tfrac14$；第二段内层 $=\\left[\\tfrac{r^2}{2}-\\tfrac{r^4}{4}\\right]_0^{2\\sin\\theta}=2\\sin^2\\theta-4\\sin^4\\theta$。\n\n$$I=2\\cdot\\frac14\\cdot\\frac{\\pi}{2-\\pi/6}+2\\int_0^{\\pi/6}(2\\sin^2\\theta-4\\sin^4\\theta)\\,\\mathrm{d}\\theta\n=\\frac{\\pi}{6}+2\\int_0^{\\pi/6}(2\\sin^2\\theta-4\\sin^4\\theta)\\,\\mathrm{d}\\theta.$$\n\n**第四步：计算 $\\theta$ 积分。** 用 $\\sin^2\\theta=\\tfrac{1-\\cos 2\\theta}{2}$，$\\sin^4\\theta=\\tfrac{3-4\\cos 2\\theta+\\cos 4\\theta}{8}$：\n$$2\\sin^2\\theta-4\\sin^4\\theta=-\\frac12+\\cos 2\\theta-\\frac{\\cos 4\\theta}{2}.$$\n$$\\int_0^{\\pi/6}\\!\\left(-\\frac12+\\cos2\\theta-\\frac{\\cos 4\\theta}{2}\\right)\\mathrm{d}\\theta\n=\\left[-\\frac{\\theta}{2}+\\frac{\\sin 2\\theta}{2}-\\frac{\\sin 4\\theta}{8}\\right]_0^{\\pi/6}\n=-\\frac{\\pi}{12}+\\frac{\\sqrt 3/2}{2}-\\frac{\\sqrt 3/2}{8}\n=-\\frac{\\pi}{12}+\\frac{3\\sqrt 3}{16}.$$\n\n故\n$$I=\\frac{\\pi}{6}+2\\!\\left(-\\frac{\\pi}{12}+\\frac{3\\sqrt 3}{16}\\right)\n=\\frac{\\pi}{6}-\\frac{\\pi}{6}+\\frac{3\\sqrt 3}{8}\n=\\frac{3\\sqrt 3}{8}.$$\n\n区域拼接型二重积分的关键：用补集法（$D=D_1\\setminus D_2$）将弯月区域拆成两个标准圆盘的差。被积函数按对称性消项（$x^3\\sin^2 y$ 关于 $x$ 奇函数积分为 $0$），然后在两个圆盘上分别用极坐标计算并作差。\n\n---",
         "cat": "二重积分",
-        "topic": "二重积分·区域拼接",
+        "topic": "极坐标计算",
         "source": "综合例题PDF·例57"
       },
       {
@@ -14413,7 +14463,7 @@ var EDITOR_DATA = [
         "answer": "$\\displaystyle I=\\dfrac{9\\pi}{64}.$",
         "solution": "**第一步：求交线。** 在 $D$ 内解\n$$\\frac34-r^2=r^2 \\iff 2r^2=\\frac34 \\iff r^2=\\frac38,\\quad r=\\sqrt{\\tfrac38}=\\frac{\\sqrt 6}{4}.$$\n设交圆半径 $\\rho=\\dfrac{\\sqrt 6}{4}$，将 $D$ 分为内环 $D_1=\\{r\\le\\rho\\}$ 与外环 $D_2=\\{\\rho\\le r\\le \\tfrac{\\sqrt 3}{2}\\}$。\n\n**第二步：判断大小。** \n- 在 $D_1$（$r\\le\\rho$）：$r^2\\le\\tfrac38$，故 $\\tfrac34-r^2\\ge r^2$，取 $\\min=r^2$。\n- 在 $D_2$（$\\rho\\le r\\le\\tfrac{\\sqrt 3}{2}$）：$r^2\\ge\\tfrac38$，故 $\\tfrac34-r^2\\le r^2$，取 $\\min=\\tfrac34-r^2$。\n\n**第三步：分块计算。**\n$$I=I_1+I_2=\\iint_{D_1}r^2\\,\\mathrm{d}\\sigma+\\iint_{D_2}\\bigl(\\tfrac34-r^2\\bigr)\\,\\mathrm{d}\\sigma.$$\n\n**$I_1$：**\n$$I_1=\\int_0^{2\\pi}\\mathrm{d}\\theta\\int_0^{\\rho}r^2\\cdot r\\,\\mathrm{d}r=2\\pi\\cdot\\frac{\\rho^4}{4}=\\frac{\\pi\\rho^4}{2}.$$\n$\\rho^4=\\tfrac{9}{16}$（因 $\\rho^2=\\tfrac38$，$\\rho^4=\\tfrac{9}{64}$）。故 $I_1=\\dfrac{\\pi}{2}\\cdot\\dfrac{9}{64}=\\dfrac{9\\pi}{128}$。\n\n**$I_2$：** 用 $D=D_2\\cup D_1$ 总盘面积减去 $D_1$：\n$$I_2=\\iint_D(\\tfrac34-r^2)\\,\\mathrm{d}\\sigma-\\iint_{D_1}(\\tfrac34-r^2)\\,\\mathrm{d}\\sigma.$$\n\n**$J=\\iint_D(\\tfrac34-r^2)\\,\\mathrm{d}\\sigma$：**\n$$J=\\int_0^{2\\pi}\\mathrm{d}\\theta\\int_0^{\\sqrt 3/2}(\\tfrac34-r^2)r\\,\\mathrm{d}r\n=2\\pi\\left[\\tfrac34\\cdot\\tfrac{r^2}{2}-\\tfrac{r^4}{4}\\right]_0^{\\sqrt 3/2}\n=2\\pi\\left[\\tfrac38\\cdot\\tfrac34-\\tfrac{9/16}{4}\\right]\n=2\\pi\\left[\\tfrac{9}{32}-\\tfrac{9}{64}\\right]\n=2\\pi\\cdot\\tfrac{9}{64}=\\tfrac{9\\pi}{32}.$$\n\n**$K=\\iint_{D_1}(\\tfrac34-r^2)\\,\\mathrm{d}\\sigma$：**\n$$K=\\int_0^{2\\pi}\\mathrm{d}\\theta\\int_0^{\\rho}(\\tfrac34-r^2)r\\,\\mathrm{d}r\n=2\\pi\\left[\\tfrac34\\cdot\\tfrac{\\rho^2}{2}-\\tfrac{\\rho^4}{4}\\right]\n=2\\pi\\left[\\tfrac34\\cdot\\tfrac38\\cdot\\tfrac12-\\tfrac{9/64}{4}\\right]\n=2\\pi\\left[\\tfrac{9}{64}-\\tfrac{9}{256}\\right]\n=2\\pi\\cdot\\tfrac{27}{256}=\\tfrac{27\\pi}{128}.$$\n\n故 $I_2=\\tfrac{9\\pi}{32}-\\tfrac{27\\pi}{128}=\\tfrac{36\\pi-27\\pi}{128}=\\tfrac{9\\pi}{128}$。\n\n**总：** $I=I_1+I_2=\\dfrac{9\\pi}{128}+\\dfrac{9\\pi}{128}=\\dfrac{9\\pi}{64}.$\n\nmin 函数二重积分通用步骤：(1) 令两个表达式相等求交线（这里是半径 $\\rho=\\sqrt{3/8}$）；(2) 在交线内外分别判大小、确定取哪个；(3) 分块计算。本题利用\"$\\iint_D(3/4-r^2)d\\sigma$\"与\"$\\iint_{D_1}(3/4-r^2)d\\sigma$\"作差得到外环上的积分，避免直接对外环 $r\\in[\\rho,\\sqrt 3/2]$ 积分。\n\n---",
         "cat": "二重积分",
-        "topic": "二重积分·min 函数",
+        "topic": "分段函数与最值",
         "source": "综合例题PDF·例58"
       },
       {
@@ -14424,7 +14474,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**结论**：$$\n\\int_0^{\\tfrac12}\\mathrm{d}x\\int_{1-x}^{\\sqrt{1-x^2}}f(x,y)\\,\\mathrm{d}y\n\\;=\\;\n\\int_0^{\\tfrac12}\\mathrm{d}y\\int_{1-y}^{\\sqrt{1-y^2}}f(x,y)\\,\\mathrm{d}x.\n$$\n\n**第一步：识别积分区域。** 极坐标下 $\\theta\\in[0,\\pi/2]$，径向 $r$ 从内边界 $r=\\dfrac{1}{\\cos\\theta+\\sin\\theta}$ 出发，到外边界 $r=1$。\n\n- 内边界 $r=\\dfrac{1}{\\cos\\theta+\\sin\\theta}$ 等价于 $r(\\cos\\theta+\\sin\\theta)=1$，即 $x+y=1$。\n- 外边界 $r=1$ 等价于 $x^2+y^2=1$。\n\n故积分区域 $D$ 为第一象限内由直线 $x+y=1$ 与圆 $x^2+y^2=1$ 围成的\"弓形\"：第一象限圆弧 $x^2+y^2=1$（端点 $(1,0)$、$(0,1)$）与直线段 $x+y=1,\\ x,y\\ge0$ 围成。\n\n**第二步：先 $y$ 后 $x$。** 对 $x\\in[0,\\tfrac12]$，竖直方向上 $y$ 从直线 $y=1-x$ 到圆 $y=\\sqrt{1-x^2}$：\n$$\n\\int_0^{\\tfrac12}\\mathrm{d}x\\int_{1-x}^{\\sqrt{1-x^2}}f(x,y)\\,\\mathrm{d}y.\n$$\n\n**第三步：先 $x$ 后 $y$。** 由区域关于 $x$、$y$ 对称（直线 $x+y=1$ 与单位圆在第一象限互换 $x,y$ 后区域不变），对 $y\\in[0,\\tfrac12]$，$x$ 从 $x=1-y$ 到 $x=\\sqrt{1-y^2}$：\n$$\n\\int_0^{\\tfrac12}\\mathrm{d}y\\int_{1-y}^{\\sqrt{1-y^2}}f(x,y)\\,\\mathrm{d}x.\n$$\n\n极坐标 $\\to$ 直角坐标的关键：把 $\\theta\\in[\\alpha,\\beta]$ 翻译成\"扫过角度\"的射线族，从而在 $xy$ 平面描绘出区域 $D$；再用 $D$ 的横/竖截线确定两个积分上下限。本题 $r$ 的下限含 $\\cos\\theta+\\sin\\theta$（即一条直线）而非简单常数，是考察\"读懂极坐标边界\"的典型题。\n\n---",
         "cat": "二重积分",
-        "topic": "极坐标 ↔ 直角坐标累次积分",
+        "topic": "交换积分次序",
         "source": "综合例题PDF·例15"
       },
       {
@@ -14809,7 +14859,7 @@ var EDITOR_DATA = [
         "question": "设 $f(x,y)$ 连续，则 $\\displaystyle\\int_{-1}^{1}dx\\int_{x^2}^{2-x^2}f(x,y)\\,dy=$（　）",
         "answer": 0,
         "solution": "积分区域由 $y=x^2$（下界）与 $y=2-x^2$（上界）围成，两曲线交于 $(-1,1)$，$(1,1)$．改为 $y$ 型区域需以 $y=1$ 分界：\n\n- $0\\le y\\le 1$：$x$ 从左支 $x=-\\sqrt y$ 到右支 $x=\\sqrt y$（此段区域由 $y=x^2$ 两侧控制）；\n- $1\\le y\\le 2$：$x$ 从 $x=-\\sqrt{2-y}$ 到 $x=\\sqrt{2-y}$（此段由 $y=2-x^2$ 控制）．\n\n故原式 $=\\displaystyle\\int_0^1 dy\\int_{-\\sqrt y}^{\\sqrt y}f\\,dx+\\int_1^2 dy\\int_{-\\sqrt{2-y}}^{\\sqrt{2-y}}f\\,dx$，**选 A**．\n（B 的内限混入 $y^2$ 与直线；C 两段上下颠倒；D 忽略了区域的分段且没有奇偶性依据可乘 2．）",
-        "topic": "二重积分·交换积分次序",
+        "topic": "交换积分次序",
         "source": "自编·数二模拟卷第七套",
         "cat": "二重积分",
         "options": [
@@ -15022,7 +15072,7 @@ var EDITOR_DATA = [
         "question": "计算二重积分 $I=\\displaystyle\\iint_D\\left|x^2+y^2-2y\\right|\\,dxdy$，其中 $D=\\{(x,y)\\mid x^2+y^2\\le 4\\}$．",
         "answer": "$I=9\\pi$",
         "solution": "极坐标下 $x^2+y^2-2y=r^2-2r\\sin\\theta$，$D: r\\le2$，被积函数含绝对值，以圆 $x^2+(y-1)^2=1$（即 $r=2\\sin\\theta$）为分界线．\n\n**θ∈(0,π)（上半平面）**：$r<2\\sin\\theta$ 时 $r^2-2r\\sin\\theta<0$，取负号；$r>2\\sin\\theta$ 时取正号：\n$$I_1=\\int_0^{\\pi}\\left[\\int_0^{2\\sin\\theta}(2r\\sin\\theta-r^2)\\,r\\,dr+\\int_{2\\sin\\theta}^{2}(r^2-2r\\sin\\theta)\\,r\\,dr\\right]d\\theta.$$\n内层积分：\n$$\\int_0^{2\\sin\\theta}(2r\\sin\\theta-r^2)r\\,dr=\\frac{4}{3}\\sin^4\\theta,$$\n$$\\int_{2\\sin\\theta}^{2}(r^2-2r\\sin\\theta)r\\,dr=\\left[\\frac{r^4}{4}-\\frac{2\\sin\\theta}{3}r^3\\right]_{2\\sin\\theta}^{2}=4-\\frac{16}{3}\\sin\\theta+\\frac{4}{3}\\sin^4\\theta.$$\n\n合并后 θ 向积分：\n$$I_1=\\int_0^{\\pi}\\left(4-\\frac{16}{3}\\sin\\theta+\\frac{8}{3}\\sin^4\\theta\\right)d\\theta=4\\pi-\\frac{32}{3}+\\frac{8}{3}\\cdot\\frac{3\\pi}{8}=5\\pi-\\frac{32}{3}.$$\n\n**θ∈(π,2π)（下半平面）**：$\\sin\\theta<0$，$r^2-2r\\sin\\theta=r^2+2r|\\sin\\theta|>0$ 恒成立，绝对值直接去掉：\n$$I_2=\\int_{\\pi}^{2\\pi}\\int_0^{2}(r^2-2r\\sin\\theta)\\,r\\,dr\\,d\\theta=\\int_{\\pi}^{2\\pi}\\left(4-\\frac{16}{3}\\sin\\theta\\right)d\\theta=4\\pi+\\frac{32}{3}.$$\n\n**合计**：$I=I_1+I_2=9\\pi$．\n（已用网格数值积分复核：$9\\pi\\approx28.2743$ ✓．易错点：下半平面误把 $\\sin\\theta$ 的符号又负一次，会算出 $9\\pi-\\frac{64}3$——本卷验算时程序先犯过此错，靠网格复核抓住．）",
-        "topic": "二重积分·绝对值与极坐标（12 分）",
+        "topic": "分段函数与最值",
         "source": "自编·数二模拟卷第七套",
         "cat": "二重积分"
       },

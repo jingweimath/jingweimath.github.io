@@ -571,7 +571,7 @@
       "answer": 0,
       "solution": "$∬_D x dxdy = \\int ₀¹ \\int ₀^(1-x) x dy dx = \\int ₀¹ x(1-x) dx = [x^{2}/2 - x^{3}/3]\\big|_{0}¹ = 1/2 - 1/3 = 1/6。考查二重积分化为累次积分。$",
       "cat": "二重积分",
-      "topic": "直角坐标·化为累次积分"
+      "topic": "直角坐标计算"
     },
     {
       "id": "comp-040",
@@ -587,7 +587,7 @@
       "answer": 1,
       "solution": "$极坐标变换：x=r \\cosθ，y=r \\sinθ，dxdy=r dr dθ。原式 = \\int ₀^(2\\pi) \\int ₀¹ r·r dr dθ = 2\\pi·[r³/3]\\big|_{0}¹ = 2\\pi/3。考查极坐标下二重积分——被积函数含 \\sqrt{x^{2}+y²} 是用极坐标的典型信号。$",
       "cat": "二重积分",
-      "topic": "极坐标换元"
+      "topic": "极坐标计算"
     },
     {
       "id": "comp-041",
@@ -1823,7 +1823,7 @@
       "answer": "原式 $=\\dfrac{\\pi}{12}$（若内层被积函数按 PDF 原文取 $x^{2}-y^{2}$，则结果为 $\\dfrac16$）。",
       "solution": "【校】PDF 作 $\\int_y^1 (x^2-y^2)\\mathrm{d}x$，据常见原型取 $\\sqrt{x^2-y^2}$；两种情形均在解答中给出。\n\n积分区域由 $0\\le y\\le1,\\ y\\le x\\le1$ 确定，即单位正方形中直线 $y=x$ **下方**的三角形域\n$$D=\\{(x,y)\\mid 0\\le y\\le x\\le1\\}=\\{(x,y)\\mid 0\\le x\\le1,\\ 0\\le y\\le x\\}.$$\n内层 $\\displaystyle\\int\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}y$ 的原函数是 $\\dfrac{y}{2}\\sqrt{x^{2}-y^{2}}+\\dfrac{x^{2}}{2}\\arcsin\\dfrac{y}{x}$，代入 $0$ 与 $x$ 尚可算但十分繁冗（含 $\\arcsin$），故改先对 $y$ 积分、后对 $x$ 积分次序不变而**交换为先 $y$ 后 $x$**，这才是本题用意——把内层变成对 $y$ 的四分之一圆面积分。\n\n交换次序（先固定 $x$，让 $y$ 跑 $0\\to x$）：\n$$I=\\int_0^1\\mathrm{d}y\\int_y^1\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}x\n=\\iint_D\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}x\\mathrm{d}y\n=\\int_0^1\\mathrm{d}x\\int_0^x\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}y .$$\n\n对固定的 $x>0$，内层是\"半径 $x$ 的圆的四分之一面积\"：\n$$\\int_0^x\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}y=\\frac{\\pi x^{2}}{4}.$$\n（若需验证：$\\Bigl[\\dfrac{y}{2}\\sqrt{x^{2}-y^{2}}+\\dfrac{x^{2}}{2}\\arcsin\\dfrac{y}{x}\\Bigr]_0^x=\\dfrac{x^{2}}{2}\\cdot\\dfrac{\\pi}{2}=\\dfrac{\\pi x^{2}}{4}$。）\n\n于是\n$$I=\\int_0^1\\frac{\\pi x^{2}}{4}\\,\\mathrm{d}x=\\frac{\\pi}{4}\\cdot\\frac13=\\frac{\\pi}{12}.$$\n\n**另一版本（PDF 原文 $x^{2}-y^{2}$）：**\n$$\\int_y^1(x^{2}-y^{2})\\,\\mathrm{d}x=\\Bigl[\\frac{x^{3}}{3}-y^{2}x\\Bigr]_y^1=\\frac13-y^{2}-\\frac{y^{3}}{3}+y^{3}=\\frac13-y^{2}+\\frac{2y^{3}}{3},$$\n故\n$$\\int_0^1\\left(\\frac13-y^{2}+\\frac{2y^{3}}{3}\\right)\\mathrm{d}y=\\frac13-\\frac13+\\frac{2}{3}\\cdot\\frac14=\\frac16 .$$\n\n---\n\n① 看到内层上限是外层积分变量（或反之）的累次积分，**第一步永远是画出积分域**，再按要求换成相反次序。② 出现 $\\sqrt{x^{2}-y^{2}}$ 时要想到\"以 $x$ 为参数的四分之一圆面积 $\\pi x^{2}/4$\"，用几何意义代替硬算 $\\arcsin$ 项，既快又不易错。③ 注意 $\\sqrt{x^2-y^2}$ 要求积分域满足 $|y|\\le x$，本题 $0\\le y\\le x$ 恰好满足；若区域跨越 $y>x$，则应另行分段或改用极坐标。\n\n---",
       "cat": "二重积分",
-      "topic": "二重积分换序",
+      "topic": "交换积分次序",
       "source": "综合例题PDF·例11"
     },
     {
@@ -1917,7 +1917,7 @@
       "answer": "$\\displaystyle\\int_0^{\\pi/2}f(\\cos x)\\,\\mathrm{d}x=\\frac{1}{4\\pi^{2}}$。",
       "solution": "【校】PDF 内层上限为 $\\pi$，外层 $0\\to 2\\pi$；按此还原（内层与 $x$ 无关，可直接化简）。\n\n**第一步：内层与 $x$ 无关，直接提出。**\n$$\\int_0^{2\\pi}\\mathrm{d}x\\int_0^{\\pi}x f(\\sin y)\\,\\mathrm{d}y=\\int_0^{2\\pi}x\\left(\\int_0^{\\pi}f(\\sin y)\\,\\mathrm{d}y\\right)\\mathrm{d}x .$$\n记 $C=\\displaystyle\\int_0^{\\pi}f(\\sin y)\\,\\mathrm{d}y$（常数），则\n$$1=C\\int_0^{2\\pi}x\\,\\mathrm{d}x=C\\cdot\\frac{(2\\pi)^{2}}{2}=2\\pi^{2}C\n\\quad\\Longrightarrow\\quad C=\\frac{1}{2\\pi^{2}} .$$\n\n**第二步：用对称性把 $[0,\\pi]$ 折半。** 因 $\\sin(\\pi-y)=\\sin y$，令 $t=\\pi-y$：\n$$\\int_{\\pi/2}^{\\pi}f(\\sin y)\\,\\mathrm{d}y=\\int_0^{\\pi/2}f(\\sin t)\\,\\mathrm{d}t,$$\n故\n$$C=\\int_0^{\\pi}f(\\sin y)\\,\\mathrm{d}y=2\\int_0^{\\pi/2}f(\\sin y)\\,\\mathrm{d}y\n\\quad\\Longrightarrow\\quad \\int_0^{\\pi/2}f(\\sin y)\\,\\mathrm{d}y=\\frac{C}{2}=\\frac{1}{4\\pi^{2}} .$$\n\n**第三步：把 $\\cos$ 换成 $\\sin$。** 令 $x=\\dfrac{\\pi}{2}-t$（$x:0\\to\\dfrac\\pi2$ 对应 $t:\\dfrac\\pi2\\to0$），$\\cos x=\\sin t$：\n$$\\int_0^{\\pi/2}f(\\cos x)\\,\\mathrm{d}x=\\int_0^{\\pi/2}f(\\sin t)\\,\\mathrm{d}t=\\frac{1}{4\\pi^{2}} .$$\n\n（说明：全程不需要知道 $f$ 的具体形式，只需假设相应的积分存在即可。）\n\n---\n\n① 累次积分先看**哪一层与外层变量无关**，能提出来的先提出来（本题 $x$ 是一次因子，积分是 $\\int_0^{2\\pi}x\\,\\mathrm{d}x=2\\pi^{2}$ 而非 $2\\pi$）。② 牢记三角对称公式：$\\int_0^{\\pi}f(\\sin)=2\\int_0^{\\pi/2}f(\\sin)$，$\\int_0^{\\pi/2}f(\\sin)=\\int_0^{\\pi/2}f(\\cos)$，$\\int_0^{\\pi}f(\\sin)=\\int_{-\\pi/2}^{\\pi/2}f(\\cos)$。③ 也可用 $\\int_0^{\\pi}x f(\\sin x)\\mathrm{d}x=\\frac{\\pi}{2}\\int_0^{\\pi}f(\\sin x)\\mathrm{d}x$ 型公式（$\\int_0^\\pi xg(\\sin x)\\mathrm dx$ 换 $x\\to\\pi-x$）处理更复杂的变体。",
       "cat": "二重积分",
-      "topic": "二重积分换序",
+      "topic": "交换积分次序",
       "source": "综合例题PDF·例45"
     },
     {
@@ -2000,7 +2000,7 @@
       "answer": "$\\displaystyle I=\\dfrac{3\\sqrt 3}{8}.$",
       "solution": "**第一步：识别区域 $D$。** \n- $x^2+y^2=1$ 是单位圆；\n- $x^2+y^2=2y$ 即 $x^2+(y-1)^2=1$，是圆心 $(0,1)$ 半径 $1$ 的小圆。\n\n两圆均过原点与 $(0,2)$。\"$x^2+y^2=1$ 的上半圆\" 与 \"$x^2+y^2=2y$ 的下半圆\" 围成的区域 $D$ 是位于下方单位圆 $x^2+y^2=1$ 与上方小圆 $x^2+(y-1)^2=1$ 之间的\"弯月\"——即在 $x^2+y^2\\le 1$ 内、$x^2+(y-1)^2\\ge 1$ 的部分。\n\n**第二步：利用对称性简化被积函数。** \n- $x^3\\sin^2 y$ 关于 $x$ 是奇函数（$D$ 关于 $y$ 轴对称），故 $\\iint_D x^3\\sin^2 y\\,\\mathrm{d}\\sigma=0$。\n\n故\n$$I=\\iint_D(1-x^2-y^2)\\,\\mathrm{d}\\sigma.$$\n\n**第三步：用极坐标计算。** 设 $x=r\\cos\\theta,\\ y=r\\sin\\theta$。两圆的极坐标方程：$r=1$（单位圆）与 $r=2\\sin\\theta$（小圆，$\\theta\\in[0,\\pi]$）。\n\n两圆交点：$r=1=2\\sin\\theta \\Rightarrow \\theta=\\pi/6$ 或 $5\\pi/6$；$r=\\sin\\theta=\\tfrac12$ 时 $r=\\tfrac12$，对应 $(\\pm\\tfrac{\\sqrt 3}{2},\\tfrac12)$。\n\n$D$ 极坐标描述：$r\\le\\min(1,2\\sin\\theta)$，$\\theta\\in[0,\\pi]$。\n- $\\theta\\in[\\pi/6,5\\pi/6]$：$2\\sin\\theta\\ge 1$，$\\min=1$，$r\\in[0,1]$。\n- $\\theta\\in[0,\\pi/6]\\cup[5\\pi/6,\\pi]$：$2\\sin\\theta\\le 1$，$\\min=2\\sin\\theta$。\n\n按 $y$ 轴对称性倍乘 $\\theta\\in[0,\\pi/2]$：\n$$I=2\\int_{\\pi/6}^{\\pi/2}\\mathrm{d}\\theta\\int_0^1(1-r^2)r\\,\\mathrm{d}r+2\\int_0^{\\pi/6}\\mathrm{d}\\theta\\int_0^{2\\sin\\theta}(1-r^2)r\\,\\mathrm{d}r.$$\n\n第一段内层 $=\\int_0^1(r-r^3)\\,\\mathrm{d}r=\\tfrac14$；第二段内层 $=\\left[\\tfrac{r^2}{2}-\\tfrac{r^4}{4}\\right]_0^{2\\sin\\theta}=2\\sin^2\\theta-4\\sin^4\\theta$。\n\n$$I=2\\cdot\\frac14\\cdot\\frac{\\pi}{2-\\pi/6}+2\\int_0^{\\pi/6}(2\\sin^2\\theta-4\\sin^4\\theta)\\,\\mathrm{d}\\theta\n=\\frac{\\pi}{6}+2\\int_0^{\\pi/6}(2\\sin^2\\theta-4\\sin^4\\theta)\\,\\mathrm{d}\\theta.$$\n\n**第四步：计算 $\\theta$ 积分。** 用 $\\sin^2\\theta=\\tfrac{1-\\cos 2\\theta}{2}$，$\\sin^4\\theta=\\tfrac{3-4\\cos 2\\theta+\\cos 4\\theta}{8}$：\n$$2\\sin^2\\theta-4\\sin^4\\theta=-\\frac12+\\cos 2\\theta-\\frac{\\cos 4\\theta}{2}.$$\n$$\\int_0^{\\pi/6}\\!\\left(-\\frac12+\\cos2\\theta-\\frac{\\cos 4\\theta}{2}\\right)\\mathrm{d}\\theta\n=\\left[-\\frac{\\theta}{2}+\\frac{\\sin 2\\theta}{2}-\\frac{\\sin 4\\theta}{8}\\right]_0^{\\pi/6}\n=-\\frac{\\pi}{12}+\\frac{\\sqrt 3/2}{2}-\\frac{\\sqrt 3/2}{8}\n=-\\frac{\\pi}{12}+\\frac{3\\sqrt 3}{16}.$$\n\n故\n$$I=\\frac{\\pi}{6}+2\\!\\left(-\\frac{\\pi}{12}+\\frac{3\\sqrt 3}{16}\\right)\n=\\frac{\\pi}{6}-\\frac{\\pi}{6}+\\frac{3\\sqrt 3}{8}\n=\\frac{3\\sqrt 3}{8}.$$\n\n区域拼接型二重积分的关键：用补集法（$D=D_1\\setminus D_2$）将弯月区域拆成两个标准圆盘的差。被积函数按对称性消项（$x^3\\sin^2 y$ 关于 $x$ 奇函数积分为 $0$），然后在两个圆盘上分别用极坐标计算并作差。\n\n---",
       "cat": "二重积分",
-      "topic": "二重积分·区域拼接",
+      "topic": "极坐标计算",
       "source": "综合例题PDF·例57"
     },
     {
@@ -2011,7 +2011,7 @@
       "answer": "$\\displaystyle I=\\dfrac{9\\pi}{64}.$",
       "solution": "**第一步：求交线。** 在 $D$ 内解\n$$\\frac34-r^2=r^2 \\iff 2r^2=\\frac34 \\iff r^2=\\frac38,\\quad r=\\sqrt{\\tfrac38}=\\frac{\\sqrt 6}{4}.$$\n设交圆半径 $\\rho=\\dfrac{\\sqrt 6}{4}$，将 $D$ 分为内环 $D_1=\\{r\\le\\rho\\}$ 与外环 $D_2=\\{\\rho\\le r\\le \\tfrac{\\sqrt 3}{2}\\}$。\n\n**第二步：判断大小。** \n- 在 $D_1$（$r\\le\\rho$）：$r^2\\le\\tfrac38$，故 $\\tfrac34-r^2\\ge r^2$，取 $\\min=r^2$。\n- 在 $D_2$（$\\rho\\le r\\le\\tfrac{\\sqrt 3}{2}$）：$r^2\\ge\\tfrac38$，故 $\\tfrac34-r^2\\le r^2$，取 $\\min=\\tfrac34-r^2$。\n\n**第三步：分块计算。**\n$$I=I_1+I_2=\\iint_{D_1}r^2\\,\\mathrm{d}\\sigma+\\iint_{D_2}\\bigl(\\tfrac34-r^2\\bigr)\\,\\mathrm{d}\\sigma.$$\n\n**$I_1$：**\n$$I_1=\\int_0^{2\\pi}\\mathrm{d}\\theta\\int_0^{\\rho}r^2\\cdot r\\,\\mathrm{d}r=2\\pi\\cdot\\frac{\\rho^4}{4}=\\frac{\\pi\\rho^4}{2}.$$\n$\\rho^4=\\tfrac{9}{16}$（因 $\\rho^2=\\tfrac38$，$\\rho^4=\\tfrac{9}{64}$）。故 $I_1=\\dfrac{\\pi}{2}\\cdot\\dfrac{9}{64}=\\dfrac{9\\pi}{128}$。\n\n**$I_2$：** 用 $D=D_2\\cup D_1$ 总盘面积减去 $D_1$：\n$$I_2=\\iint_D(\\tfrac34-r^2)\\,\\mathrm{d}\\sigma-\\iint_{D_1}(\\tfrac34-r^2)\\,\\mathrm{d}\\sigma.$$\n\n**$J=\\iint_D(\\tfrac34-r^2)\\,\\mathrm{d}\\sigma$：**\n$$J=\\int_0^{2\\pi}\\mathrm{d}\\theta\\int_0^{\\sqrt 3/2}(\\tfrac34-r^2)r\\,\\mathrm{d}r\n=2\\pi\\left[\\tfrac34\\cdot\\tfrac{r^2}{2}-\\tfrac{r^4}{4}\\right]_0^{\\sqrt 3/2}\n=2\\pi\\left[\\tfrac38\\cdot\\tfrac34-\\tfrac{9/16}{4}\\right]\n=2\\pi\\left[\\tfrac{9}{32}-\\tfrac{9}{64}\\right]\n=2\\pi\\cdot\\tfrac{9}{64}=\\tfrac{9\\pi}{32}.$$\n\n**$K=\\iint_{D_1}(\\tfrac34-r^2)\\,\\mathrm{d}\\sigma$：**\n$$K=\\int_0^{2\\pi}\\mathrm{d}\\theta\\int_0^{\\rho}(\\tfrac34-r^2)r\\,\\mathrm{d}r\n=2\\pi\\left[\\tfrac34\\cdot\\tfrac{\\rho^2}{2}-\\tfrac{\\rho^4}{4}\\right]\n=2\\pi\\left[\\tfrac34\\cdot\\tfrac38\\cdot\\tfrac12-\\tfrac{9/64}{4}\\right]\n=2\\pi\\left[\\tfrac{9}{64}-\\tfrac{9}{256}\\right]\n=2\\pi\\cdot\\tfrac{27}{256}=\\tfrac{27\\pi}{128}.$$\n\n故 $I_2=\\tfrac{9\\pi}{32}-\\tfrac{27\\pi}{128}=\\tfrac{36\\pi-27\\pi}{128}=\\tfrac{9\\pi}{128}$。\n\n**总：** $I=I_1+I_2=\\dfrac{9\\pi}{128}+\\dfrac{9\\pi}{128}=\\dfrac{9\\pi}{64}.$\n\nmin 函数二重积分通用步骤：(1) 令两个表达式相等求交线（这里是半径 $\\rho=\\sqrt{3/8}$）；(2) 在交线内外分别判大小、确定取哪个；(3) 分块计算。本题利用\"$\\iint_D(3/4-r^2)d\\sigma$\"与\"$\\iint_{D_1}(3/4-r^2)d\\sigma$\"作差得到外环上的积分，避免直接对外环 $r\\in[\\rho,\\sqrt 3/2]$ 积分。\n\n---",
       "cat": "二重积分",
-      "topic": "二重积分·min 函数",
+      "topic": "分段函数与最值",
       "source": "综合例题PDF·例58"
     },
     {
@@ -2022,7 +2022,7 @@
       "answer": "",
       "solution": "**结论**：$$\n\\int_0^{\\tfrac12}\\mathrm{d}x\\int_{1-x}^{\\sqrt{1-x^2}}f(x,y)\\,\\mathrm{d}y\n\\;=\\;\n\\int_0^{\\tfrac12}\\mathrm{d}y\\int_{1-y}^{\\sqrt{1-y^2}}f(x,y)\\,\\mathrm{d}x.\n$$\n\n**第一步：识别积分区域。** 极坐标下 $\\theta\\in[0,\\pi/2]$，径向 $r$ 从内边界 $r=\\dfrac{1}{\\cos\\theta+\\sin\\theta}$ 出发，到外边界 $r=1$。\n\n- 内边界 $r=\\dfrac{1}{\\cos\\theta+\\sin\\theta}$ 等价于 $r(\\cos\\theta+\\sin\\theta)=1$，即 $x+y=1$。\n- 外边界 $r=1$ 等价于 $x^2+y^2=1$。\n\n故积分区域 $D$ 为第一象限内由直线 $x+y=1$ 与圆 $x^2+y^2=1$ 围成的\"弓形\"：第一象限圆弧 $x^2+y^2=1$（端点 $(1,0)$、$(0,1)$）与直线段 $x+y=1,\\ x,y\\ge0$ 围成。\n\n**第二步：先 $y$ 后 $x$。** 对 $x\\in[0,\\tfrac12]$，竖直方向上 $y$ 从直线 $y=1-x$ 到圆 $y=\\sqrt{1-x^2}$：\n$$\n\\int_0^{\\tfrac12}\\mathrm{d}x\\int_{1-x}^{\\sqrt{1-x^2}}f(x,y)\\,\\mathrm{d}y.\n$$\n\n**第三步：先 $x$ 后 $y$。** 由区域关于 $x$、$y$ 对称（直线 $x+y=1$ 与单位圆在第一象限互换 $x,y$ 后区域不变），对 $y\\in[0,\\tfrac12]$，$x$ 从 $x=1-y$ 到 $x=\\sqrt{1-y^2}$：\n$$\n\\int_0^{\\tfrac12}\\mathrm{d}y\\int_{1-y}^{\\sqrt{1-y^2}}f(x,y)\\,\\mathrm{d}x.\n$$\n\n极坐标 $\\to$ 直角坐标的关键：把 $\\theta\\in[\\alpha,\\beta]$ 翻译成\"扫过角度\"的射线族，从而在 $xy$ 平面描绘出区域 $D$；再用 $D$ 的横/竖截线确定两个积分上下限。本题 $r$ 的下限含 $\\cos\\theta+\\sin\\theta$（即一条直线）而非简单常数，是考察\"读懂极坐标边界\"的典型题。\n\n---",
       "cat": "二重积分",
-      "topic": "极坐标 ↔ 直角坐标累次积分",
+      "topic": "交换积分次序",
       "source": "综合例题PDF·例15"
     },
     {
@@ -2407,7 +2407,7 @@
       "question": "设 $f(x,y)$ 连续，则 $\\displaystyle\\int_{-1}^{1}dx\\int_{x^2}^{2-x^2}f(x,y)\\,dy=$（　）",
       "answer": 0,
       "solution": "积分区域由 $y=x^2$（下界）与 $y=2-x^2$（上界）围成，两曲线交于 $(-1,1)$，$(1,1)$．改为 $y$ 型区域需以 $y=1$ 分界：\n\n- $0\\le y\\le 1$：$x$ 从左支 $x=-\\sqrt y$ 到右支 $x=\\sqrt y$（此段区域由 $y=x^2$ 两侧控制）；\n- $1\\le y\\le 2$：$x$ 从 $x=-\\sqrt{2-y}$ 到 $x=\\sqrt{2-y}$（此段由 $y=2-x^2$ 控制）．\n\n故原式 $=\\displaystyle\\int_0^1 dy\\int_{-\\sqrt y}^{\\sqrt y}f\\,dx+\\int_1^2 dy\\int_{-\\sqrt{2-y}}^{\\sqrt{2-y}}f\\,dx$，**选 A**．\n（B 的内限混入 $y^2$ 与直线；C 两段上下颠倒；D 忽略了区域的分段且没有奇偶性依据可乘 2．）",
-      "topic": "二重积分·交换积分次序",
+      "topic": "交换积分次序",
       "source": "自编·数二模拟卷第七套",
       "cat": "二重积分",
       "options": [
@@ -2620,7 +2620,7 @@
       "question": "计算二重积分 $I=\\displaystyle\\iint_D\\left|x^2+y^2-2y\\right|\\,dxdy$，其中 $D=\\{(x,y)\\mid x^2+y^2\\le 4\\}$．",
       "answer": "$I=9\\pi$",
       "solution": "极坐标下 $x^2+y^2-2y=r^2-2r\\sin\\theta$，$D: r\\le2$，被积函数含绝对值，以圆 $x^2+(y-1)^2=1$（即 $r=2\\sin\\theta$）为分界线．\n\n**θ∈(0,π)（上半平面）**：$r<2\\sin\\theta$ 时 $r^2-2r\\sin\\theta<0$，取负号；$r>2\\sin\\theta$ 时取正号：\n$$I_1=\\int_0^{\\pi}\\left[\\int_0^{2\\sin\\theta}(2r\\sin\\theta-r^2)\\,r\\,dr+\\int_{2\\sin\\theta}^{2}(r^2-2r\\sin\\theta)\\,r\\,dr\\right]d\\theta.$$\n内层积分：\n$$\\int_0^{2\\sin\\theta}(2r\\sin\\theta-r^2)r\\,dr=\\frac{4}{3}\\sin^4\\theta,$$\n$$\\int_{2\\sin\\theta}^{2}(r^2-2r\\sin\\theta)r\\,dr=\\left[\\frac{r^4}{4}-\\frac{2\\sin\\theta}{3}r^3\\right]_{2\\sin\\theta}^{2}=4-\\frac{16}{3}\\sin\\theta+\\frac{4}{3}\\sin^4\\theta.$$\n\n合并后 θ 向积分：\n$$I_1=\\int_0^{\\pi}\\left(4-\\frac{16}{3}\\sin\\theta+\\frac{8}{3}\\sin^4\\theta\\right)d\\theta=4\\pi-\\frac{32}{3}+\\frac{8}{3}\\cdot\\frac{3\\pi}{8}=5\\pi-\\frac{32}{3}.$$\n\n**θ∈(π,2π)（下半平面）**：$\\sin\\theta<0$，$r^2-2r\\sin\\theta=r^2+2r|\\sin\\theta|>0$ 恒成立，绝对值直接去掉：\n$$I_2=\\int_{\\pi}^{2\\pi}\\int_0^{2}(r^2-2r\\sin\\theta)\\,r\\,dr\\,d\\theta=\\int_{\\pi}^{2\\pi}\\left(4-\\frac{16}{3}\\sin\\theta\\right)d\\theta=4\\pi+\\frac{32}{3}.$$\n\n**合计**：$I=I_1+I_2=9\\pi$．\n（已用网格数值积分复核：$9\\pi\\approx28.2743$ ✓．易错点：下半平面误把 $\\sin\\theta$ 的符号又负一次，会算出 $9\\pi-\\frac{64}3$——本卷验算时程序先犯过此错，靠网格复核抓住．）",
-      "topic": "二重积分·绝对值与极坐标（12 分）",
+      "topic": "分段函数与最值",
       "source": "自编·数二模拟卷第七套",
       "cat": "二重积分"
     },
