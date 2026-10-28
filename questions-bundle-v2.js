@@ -223,7 +223,7 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "solution": "$\\frac{0}{0}$ 型。提取 $e^{\\sin x}$：原式 $= e^{\\sin x} \\cdot \\frac{e^{x-\\sin x}-1}{x-\\sin x}$。当 $x\\to 0$，$e^{\\sin x}\\to 1$，且 $x-\\sin x \\to 0$，所以 $\\frac{e^{x-\\sin x}-1}{x-\\sin x} \\to 1$（$\\because e^{u}-1 \\sim u$）。结果为 $1 \\times 1 = 1$。",
-      "topic": "极限计算·等价无穷小·提公因子",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -245,7 +245,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "$1^{\\infty}$ 型。用重要极限 $\\lim(1+\\frac{1}{n})^{n}=e$ 变体：$\\left(\\frac{x+1}{x-1}\\right)^{x} = \\left(1+\\frac{2}{x-1}\\right)^{x} = \\left[\\left(1+\\frac{2}{x-1}\\right)^{\\frac{x-1}{2}}\\right]^{\\frac{2x}{x-1}} \\to e^{2}$。或取对数：$\\lim x\\ln\\frac{x+1}{x-1} = \\lim x\\ln\\left(1+\\frac{2}{x-1}\\right) = \\lim x \\cdot \\frac{2}{x-1} = 2$，故原式 $=e^{2}$。",
-      "topic": "极限计算·重要极限·1^∞型",
+      "topic": "幂指函数极限",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -267,7 +267,7 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "solution": "$\\frac{0}{0}$ 型（变上限积分求导 + 洛必达）。分子求导：$\\frac{d}{dx}\\int_{0}^{x}\\sin(t^{2})dt = \\sin(x^{2})$。洛必达：$\\lim_{x\\to 0}\\frac{\\sin(x^{2})}{3x^{2}} = \\lim \\frac{x^{2}}{3x^{2}} = \\frac{1}{3}$（$\\sin(x^{2})\\sim x^{2}$）。",
-      "topic": "极限计算·洛必达·变限积分",
+      "topic": "变限积分求极限",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -289,7 +289,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "$0^{0}$ 型。取对数：$\\ln(x^{x}) = x\\ln x \\to 0$（见 cal-limit-004）。故原式 $= e^{0} = 1$。关键：$0^{0}$ 型极限不一定是 1，需具体分析，此处 $x\\ln x\\to 0$。",
-      "topic": "极限计算·幂指函数·取对数",
+      "topic": "幂指函数极限",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -311,7 +311,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "$\\frac{\\infty}{\\infty}$ 型，洛必达：$\\lim \\frac{1/x}{a x^{a-1}} = \\lim \\frac{1}{a x^{a}} = 0$。一般结论：当 $x\\to +\\infty$，$\\ln x \\ll x^{a} \\ll e^{x}$（对数函数增长最慢，幂函数次之，指数函数最快）。",
-      "topic": "无穷小阶的比较·洛必达定阶",
+      "topic": "无穷小阶的比较",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -333,7 +333,7 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "solution": "$\\frac{0}{0}$ 型。拆项：$\\frac{a^{x}-b^{x}}{x} = \\frac{a^{x}-1}{x} - \\frac{b^{x}-1}{x}$。由 $\\lim_{x\\to 0}\\frac{a^{x}-1}{x} = \\ln a$，原式 $= \\ln a - \\ln b = \\ln\\frac{a}{b}$。",
-      "topic": "极限计算·导数定义",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -355,7 +355,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "$n\\ln(1+\\frac{1}{n}) = \\ln(1+\\frac{1}{n})^{n} \\to \\ln e = 1$。或等价无穷小：$n\\ln(1+\\frac{1}{n}) \\sim n \\cdot \\frac{1}{n} = 1$。",
-      "topic": "数列极限·对数化简",
+      "topic": "数列极限",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -377,7 +377,7 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "solution": "夹逼准则：$3 = \\sqrt[n]{3^{n}} \\leq \\sqrt[n]{1^{n}+2^{n}+3^{n}} \\leq \\sqrt[n]{3\\cdot 3^{n}} = 3\\sqrt[n]{3}$。当 $n\\to\\infty$，$\\sqrt[n]{3}\\to 1$，左右均 $\\to 3$，故极限为 3。一般：$\\lim\\sqrt[n]{a_{1}^{n}+\\cdots+a_{k}^{n}}=\\max\\{a_{1},\\ldots,a_{k}\\}$。",
-      "topic": "数列极限·夹逼准则",
+      "topic": "数列极限",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -399,7 +399,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "$\\frac{0}{0}$ 型，洛必达：$\\lim \\frac{1 - \\frac{1}{1+x^{2}}}{3x^{2}} = \\lim \\frac{\\frac{x^{2}}{1+x^{2}}}{3x^{2}} = \\lim \\frac{1}{3(1+x^{2})} = \\frac{1}{3}$。或用泰勒展开：$\\arctan x = x - \\frac{x^{3}}{3} + o(x^{3})$，$x - \\arctan x = \\frac{x^{3}}{3} + o(x^{3})$。",
-      "topic": "极限计算·泰勒展开",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -421,7 +421,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "$\\infty^{0}$ 型。取对数：$\\ln(x^{1/x}) = \\frac{\\ln x}{x} \\to 0$（洛必达：$\\frac{1/x}{1} \\to 0$）。故极限 $= e^{0} = 1$。",
-      "topic": "极限计算·幂指函数·取对数",
+      "topic": "幂指函数极限",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -443,7 +443,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "**连续性条件**：$\\lim_{x\\to 0}f(x) = f(0) = 0$。拆分：$\\lim_{x\\to 0}\\frac{\\sin 2x}{x} = 2$，$\\lim_{x\\to 0}\\frac{e^{ax}-1}{x} = a$（$\\because e^{ax}-1 \\sim ax$）。故 $\\lim f(x) = 2 + a = 0 \\Rightarrow a = -2$。",
-      "topic": "连续性·参数确定",
+      "topic": "连续性与闭区间性质",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -465,7 +465,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "$\\frac{0}{0}$ 型，连续使用洛必达法则两次：\n\n原式 $=\\lim_{x\\to 0}\\frac{e^{x}-1-x-\\frac{x^{2}}{2}}{x^{3}}$\n$\\stackrel{\\text{洛}}{=}\\lim_{x\\to 0}\\frac{e^{x}-1-x}{3x^{2}}$\n$\\stackrel{\\text{洛}}{=}\\lim_{x\\to 0}\\frac{e^{x}-1}{6x}=\\frac{1}{6}$。\n\n（注：也可用泰勒展开 $e^{x}=1+x+\\frac{x^2}{2}+\\frac{x^3}{6}+o(x^3)$，代入即得。）",
-      "topic": "极限计算·泰勒展开",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -487,7 +487,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "$\\infty-\\infty$ 型，先通分：$\\frac{1}{x}-\\frac{1}{e^{x}-1}=\\frac{e^{x}-1-x}{x(e^{x}-1)}$。分母 $x(e^{x}-1)\\sim x^{2}$，分子 $e^{x}-1-x=\\frac{x^{2}}{2}+o(x^{2})$。故原式 $=\\frac{1}{2}$。",
-      "topic": "极限计算·通分化简",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -509,7 +509,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "$\\tan x-\\sin x = \\sin x\\left(\\frac{1}{\\cos x}-1\\right)= \\frac{\\sin x(1-\\cos x)}{\\cos x}$。$\\sin x\\sim x$，$1-\\cos x\\sim\\frac{x^{2}}{2}$，$\\cos x\\to 1$，所以原式 $= \\frac{x\\cdot\\frac{x^{2}}{2}}{x^{3}} = \\frac{1}{2}$。",
-      "topic": "极限计算·等价无穷小·三角恒等",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -531,7 +531,7 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "solution": "$分子有理化：分子分母同乘 \\sqrt(1+x) + \\sqrt(1-x)，分子变为 (1+x)-(1-x) = 2x。原式 = 2x / [x(\\sqrt(1+x)+\\sqrt(1-x))] = 2/(1+1) = 1。也可用等价无穷小：\\sqrt(1+x)-1 ~ x/2，\\sqrt(1-x)-1 ~ -x/2，差 ~ x。$",
-      "topic": "极限计算·根式有理化",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -547,7 +547,7 @@ var QUESTION_BANK = {
       "question": "$\\lim_{x\\to 0}(1+2x)^{1/x} = (\\ )$",
       "answer": "$e^{2}$",
       "solution": "$1^{\\infty}$ 型。取对数：$\\lim_{x\\to 0}\\frac{\\ln(1+2x)}{x}= \\lim_{x\\to 0}\\frac{2x}{x}=2$，故原式 $=e^{2}$。也可凑重要极限：$\\left[(1+2x)^{1/(2x)}\\right]^{2}\\to e^{2}$。",
-      "topic": "极限计算·重要极限·1^∞型",
+      "topic": "幂指函数极限",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -569,7 +569,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "$\\infty-\\infty$ 型，有理化：原式 $=\\lim_{x\\to +\\infty}\\frac{(x^{2}+x)-x^{2}}{\\sqrt{x^{2}+x}+x}=\\lim_{x\\to +\\infty}\\frac{x}{x(\\sqrt{1+1/x}+1)}=\\frac{1}{2}$。",
-      "topic": "极限计算·根式有理化·无穷大",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -591,7 +591,7 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "solution": "$\\frac{x^{2}-1}{x-1}=x+1$（$x\\neq 1$）。极限 $\\lim_{x\\to 1}f(x)=2$ 存在且有限，但 $f(1)$ 无定义，故为可去间断点。补充定义 $f(1)=2$ 即可连续。",
-      "topic": "间断点分类·可去间断点",
+      "topic": "间断点分类",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -613,7 +613,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "左极限 $\\lim_{x\\to 0^{-}} f(x) = -1$，右极限 $\\lim_{x\\to 0^{+}} f(x) = 1$。左右极限存在但不相等，为跳跃间断点。间隙为 $2$。",
-      "topic": "间断点分类·跳跃间断点",
+      "topic": "间断点分类",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -635,7 +635,7 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "solution": "$\\frac{0}{0}$ 型，连续洛必达三次：\n原式 $=\\lim_{x\\to 0}\\frac{e^{x}-e^{-x}-2x}{x-\\sin x}\\stackrel{\\text{洛}}{=}\\lim_{x\\to 0}\\frac{e^{x}+e^{-x}-2}{1-\\cos x}$\n$\\stackrel{\\text{洛}}{=}\\lim_{x\\to 0}\\frac{e^{x}-e^{-x}}{\\sin x}\\stackrel{\\text{洛}}{=}\\lim_{x\\to 0}\\frac{e^{x}+e^{-x}}{\\cos x}=\\frac{2}{1}=2$。",
-      "topic": "极限计算·泰勒展开",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -651,7 +651,7 @@ var QUESTION_BANK = {
       "question": "$\\lim_{x\\to 0}\\left(\\frac{1}{\\sin x}-\\frac{1}{x}\\right) = (\\ )$",
       "answer": "$0$",
       "solution": "通分：$\\frac{1}{\\sin x}-\\frac{1}{x}=\\frac{x-\\sin x}{x\\sin x}$。分母 $x\\sin x\\sim x^{2}$。$\\frac{0}{0}$ 型，洛必达两次：$\\lim_{x\\to 0}\\frac{1-\\cos x}{2x}=\\lim_{x\\to 0}\\frac{\\sin x}{2}=0$。",
-      "topic": "极限计算·通分化简",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -673,7 +673,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "$x>0$ 时，$\\frac{\\sqrt{x^{2}+3x-1}}{x}=\\sqrt{1+\\frac{3}{x}-\\frac{1}{x^{2}}}\\to 1$。",
-      "topic": "无穷小阶的比较·根式提最高次",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -695,7 +695,7 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "solution": "$1^{\\infty}$ 型。取对数：$\\lim_{x\\to 0}\\frac{\\ln(1+\\sin x)}{x}=\\lim_{x\\to 0}\\frac{\\sin x}{x}=1$（$\\ln(1+u)\\sim u$），故原式 $=e^{1}=e$。",
-      "topic": "极限计算·重要极限·1^∞型",
+      "topic": "幂指函数极限",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -717,7 +717,7 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "solution": "$x\\to 0$ 时 $\\frac{1}{x}\\to\\infty$，$\\sin\\frac{1}{x}$ 在 $[-1,1]$ 之间振荡，极限不存在，也不趋于无穷大。这是振荡间断点。",
-      "topic": "间断点分类·振荡间断点",
+      "topic": "间断点分类",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -733,7 +733,7 @@ var QUESTION_BANK = {
       "question": "$\\lim_{x\\to\\pi}\\frac{\\sin x}{x-\\pi} = (\\ )$",
       "answer": "$-1$",
       "solution": "令 $t=x-\\pi$，$x\\to\\pi$ 即 $t\\to 0$。$\\sin x = \\sin(t+\\pi) = -\\sin t$，原式 $= -\\frac{\\sin t}{t}\\to -1$。",
-      "topic": "极限计算·等价无穷小·变量平移",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -755,7 +755,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "分子有理化：分子分母同乘 $\\sqrt{1+x}+\\sqrt{1-x}$，分子 $=(1+x)-(1-x)=2x$，分母 $=x(\\sqrt{1+x}+\\sqrt{1-x})\\to 2x$，原式 $=\\frac{2x}{2x}=1$。",
-      "topic": "极限计算·根式有理化",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -777,7 +777,7 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "solution": "$\\frac{0}{0}$ 型，洛必达：\n原式 $=\\lim_{x\\to 0}\\frac{\\ln(1+x+x^{2})-x}{x^{2}}\\stackrel{\\text{洛}}{=}\\lim_{x\\to 0}\\frac{\\frac{1+2x}{1+x+x^{2}}-1}{2x}$\n$=\\lim_{x\\to 0}\\frac{1+2x-1-x-x^{2}}{2x(1+x+x^{2})}=\\lim_{x\\to 0}\\frac{x-x^{2}}{2x(1+x+x^{2})}$\n$=\\lim_{x\\to 0}\\frac{1-x}{2(1+x+x^{2})}=\\frac{1}{2}$。",
-      "topic": "极限计算·泰勒展开",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -793,7 +793,7 @@ var QUESTION_BANK = {
       "question": "$\\lim_{x\\to 0}\\frac{e^{\\sin x}-e^{x}}{x^{3}} = (\\ )$",
       "answer": "$-\\frac{1}{6}$",
       "solution": "提取公因子：$e^{\\sin x}-e^{x}=e^{x}(e^{\\sin x-x}-1)$。当 $x\\to 0$ 时 $e^{x}\\to 1$，$e^{\\sin x-x}-1\\sim\\sin x-x$。原式 $=\\lim_{x\\to 0}\\frac{\\sin x-x}{x^{3}}=\\lim_{x\\to 0}\\frac{\\cos x-1}{3x^{2}}=\\lim_{x\\to 0}\\frac{-\\frac{x^{2}}{2}}{3x^{2}}=-\\frac{1}{6}$。",
-      "topic": "极限计算·泰勒展开·指数复合",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -815,7 +815,7 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "solution": "令 $t=x-1$，则 $x=1+t$，$t\\to 0$。$x^{x}=e^{x\\ln x}=e^{(1+t)\\ln(1+t)}$。$\\ln(1+t)=t-\\frac{t^{2}}{2}+o(t^{2})$，$(1+t)\\ln(1+t)=t+\\frac{t^{2}}{2}+o(t^{2})$。$x^{x}=e^{t+t^{2}/2+o(t^{2})}=1+t+t^{2}+o(t^{2})$。$x-1-\\ln x=t-(t-t^{2}/2)=t^{2}/2+o(t^{2})$。故原式 $=\\lim_{t\\to 0}\\frac{(1+t+t^{2})-(1+t)}{t^{2}/2}=\\lim_{t\\to 0}\\frac{t^{2}}{t^{2}/2}=2$。",
-      "topic": "极限计算·泰勒展开·幂指",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -831,7 +831,7 @@ var QUESTION_BANK = {
       "question": "设 $\\lim_{x\\to 0}\\frac{f(x)}{x}=1$，求 $\\lim_{x\\to 0}\\frac{f(2x)}{f(3x)} = (\\ )$",
       "answer": "$\\frac{2}{3}$",
       "solution": "由条件知 $x\\to 0$ 时 $f(x)\\sim x$，即 $f(x)=x+o(x)$。故 $\\frac{f(2x)}{f(3x)}=\\frac{2x+o(x)}{3x+o(x)}\\to\\frac{2}{3}$。",
-      "topic": "极限计算·变量代换",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -853,7 +853,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "通分：$\\frac{1}{x^{2}}-\\cot^{2}x=\\frac{\\sin^{2}x-x^{2}\\cos^{2}x}{x^{2}\\sin^{2}x}$。分母 $x^{2}\\sin^{2}x\\sim x^{4}$。用泰勒展开：$\\sin x=x-\\frac{x^{3}}{6}+o(x^{3})$，$\\cos x=1-\\frac{x^{2}}{2}+o(x^{2})$，代入得 $\\frac{2}{3}$。（也可连续洛必达）",
-      "topic": "极限计算·通分化简",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -869,7 +869,7 @@ var QUESTION_BANK = {
       "question": "$\\lim_{n\\to\\infty}\\left(1+\\frac{1}{n}+\\frac{1}{n^{2}}\\right)^{n} = (\\ )$",
       "answer": "$e$",
       "solution": "$1^{\\infty}$ 型。取对数：$\\ln(1+\\frac{1}{n}+\\frac{1}{n^{2}})=\\frac{1}{n}+\\frac{1}{n^{2}}-\\frac{1}{2n^{2}}+o(\\frac{1}{n^{2}})=\\frac{1}{n}+\\frac{1}{2n^{2}}+o(\\frac{1}{n^{2}})$。$n\\ln(\\cdots)=1+\\frac{1}{2n}+o(\\frac{1}{n})\\to 1$，故原式 $=e$。",
-      "topic": "数列极限·重要极限·1^∞型",
+      "topic": "数列极限",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -891,7 +891,7 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "solution": "由绝对值函数的连续性，若极限存在则取绝对值后的极限也存在且为绝对值的极限。\nA错误：极限存在不要求函数在该点有定义。\nB错误：反例 $f(x)=(-1)^{[1/x]}$，$|f(x)|\\equiv 1$ 极限为1。\nD错误：反例 $f(n)=(-1)^n$，$|f(n)|\\to 1$ 但 $f(n)$ 极限不存在。",
-      "topic": "极限性质·概念辨析",
+      "topic": "极限性质辨析",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -913,7 +913,7 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "solution": "泰勒展开 $\\ln(1+x)=x-\\frac{x^2}{2}+\\frac{x^3}{3}-\\cdots$。\n分子 $=(x-\\frac{x^2}{2})-(ax+bx^2)+o(x^2)=(1-a)x+(-\\frac{1}{2}-b)x^2+o(x^2)$。\n极限为0要求 $1-a=0$ 且 $-\\frac{1}{2}-b=0$，得 $a=1,b=-\\frac{1}{2}$。",
-      "topic": "极限计算·泰勒展开·待定系数",
+      "topic": "极限反推",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -935,7 +935,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "由几何平均值的极限等于极限的几何平均。利用 Cesàro 均值思想：\n$\\ln\\sqrt[n]{x_1\\cdots x_n}=\\frac{1}{n}\\sum_{k=1}^n\\ln x_k$。\n若 $\\lim x_n=a>0$，则 $\\lim\\frac{1}{n}\\sum\\ln x_k=\\ln a$，所以原极限 $=e^{\\ln a}=a$。\n这是一个重要的结论：正项数列的几何平均值极限等于数列的极限。",
-      "topic": "数列极限·几何平均·对数化",
+      "topic": "数列极限",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -957,7 +957,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "利用定积分定义：$\\frac{k}{n^2+k^2}=\\frac{1}{n}\\cdot\\frac{k/n}{1+(k/n)^2}$。\n原式 $=\\lim_{n\\to\\infty}\\frac{1}{n}\\sum_{k=1}^n\\frac{k/n}{1+(k/n)^2}=\\int_0^1\\frac{x}{1+x^2}dx$\n$=\\frac{1}{2}\\ln(1+x^2)\\Big|_0^1=\\frac{1}{2}\\ln 2$。这是和式极限化定积分的典型题。",
-      "topic": "数列极限·定积分定义·和式",
+      "topic": "和式极限·定积分定义",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -979,7 +979,7 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "solution": "经典结论：$a_n=(1+\\frac{1}{n})^n$ 单调递增趋于 $e$，$b_n=(1+\\frac{1}{n})^{n+1}$ 单调递减趋于 $e$。\n这两个数列从两侧夹逼 $e$：$a_n<e<b_n$ 对所有 $n$ 成立。\n证明可用 Bernoulli 不等式或对函数求导。考研中常用此结论进行估值。",
-      "topic": "数列极限·单调有界·夹逼",
+      "topic": "数列极限",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1001,7 +1001,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "泰勒展开：$\\sin x=x-\\frac{x^3}{6}+o(x^3)$，$\\tan x=x+\\frac{x^3}{3}+o(x^3)$。\n$f(u)=f(0)+f'(0)u+\\frac{f''(0)}{2}u^2+\\frac{f'''(0)}{6}u^3+o(u^3)$。\n代入后 $f''(0)$ 的二次项与 $f'''(0)$ 的三次项均相消，仅 $f'(0)$ 的一次项产生非零贡献：\n$f(\\sin x)-f(\\tan x)=f'(0)(-\\frac{x^3}{6}-\\frac{x^3}{3})+o(x^3)=2\\cdot(-\\frac{x^3}{2})+o(x^3)=-x^3+o(x^3)$。\n故原极限 $=-1$。",
-      "topic": "极限计算·泰勒展开·抽象函数",
+      "topic": "函数极限计算",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1017,7 +1017,7 @@ var QUESTION_BANK = {
       "question": "设 $f(x)$ 连续，$\\lim_{x\\to 0}\\frac{f(x)}{x}=2$，则 $f(0)=$______",
       "answer": "0",
       "solution": "由条件 $\\lim_{x\\to 0}\\frac{f(x)}{x}=2$ 极限存在且分母趋于0，分子也必须趋于0，所以 $\\lim_{x\\to 0}f(x)=0$。\n由连续性 $f(0)=\\lim_{x\\to 0}f(x)=0$。进一步可得 $f'(0)=\\lim_{x\\to 0}\\frac{f(x)-f(0)}{x}=2$。",
-      "topic": "极限性质·连续性反推",
+      "topic": "极限性质辨析",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1033,7 +1033,7 @@ var QUESTION_BANK = {
       "question": "函数 $f(x)=\\frac{|x|}{x}$ 的间断点是 $x=$______，其类型为______间断点",
       "answer": "0,跳跃",
       "solution": "$x>0$ 时 $f(x)=1$，$x<0$ 时 $f(x)=-1$。$f(0)$ 无定义。\n$\\lim_{x\\to 0^+}f(x)=1$，$\\lim_{x\\to 0^-}f(x)=-1$，左右极限存在但不相等。\n所以 $x=0$ 是第一类跳跃间断点。考察符号函数型分段函数的间断点分类。",
-      "topic": "间断点分类·跳跃间断点",
+      "topic": "间断点分类",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1058,7 +1058,7 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "solution": "极限的局部保号性：若 $\\lim_{x\\to x_0}f(x)=A>0$，则【存在】某个去心邻域，使得 $f(x)>0$。关键点：是「存在」邻域，不是「对任意」邻域。选项 C、D 错在将存在换成了任意；B 的 $\\geq$ 不够精确。",
-      "topic": "极限性质·保号性",
+      "topic": "极限性质辨析",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1083,7 +1083,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "保号性只能推出极限 $\\geq 0$，不能推出 $>0$。反例：$f(x)=x^2$，在 $x=0$ 的任何去心邻域内 $f(x)>0$，但 $\\lim_{x\\to 0}f(x)=0$。极限取等号是完全可能的。",
-      "topic": "极限性质·保号性",
+      "topic": "极限性质辨析",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1108,7 +1108,7 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "solution": "由 $\\lim_{x\\to 0}\\frac{f(x)}{x}=2>0$ 及保号性，存在 $\\delta>0$ 使得当 $0<|x|<\\delta$ 时 $\\frac{f(x)}{x}>0$。故 $f(x)$ 与 $x$ 同号：$x>0$ 时 $f(x)>0$，$x<0$ 时 $f(x)<0$。（由连续性，$f(0)=\\lim f(x)=\\lim x\\cdot\\frac{f(x)}{x}=0\\cdot 2=0$。）",
-      "topic": "极限性质·保号性",
+      "topic": "极限性质辨析",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1133,7 +1133,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "A：$\\sin\\frac{1}{x}$ 在 $x\\to 0$ 时无限振荡，极限不存在。\nB：$|x\\sin\\frac{1}{x}|\\leq|x|\\to 0$，无穷小乘有界函数，极限为 $0$，存在。\nC：$\\frac{1}{x}\\to\\infty$，$\\sin\\frac{1}{x}\\in[-1,1]$，无界振荡，不存在。\nD：左右极限不相等（$x>0$ 时 $\\to 1$，$x<0$ 时 $\\to -1$），不存在。",
-      "topic": "极限性质·存在性辨析",
+      "topic": "极限性质辨析",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1158,7 +1158,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "A：$\\frac{\\sin x}{x}\\to 1$，存在。\nB：$\\arctan\\frac{1}{x}$，$x\\to 0^{+}$ 时 $\\to\\frac{\\pi}{2}$，$x\\to 0^{-}$ 时 $\\to-\\frac{\\pi}{2}$，左右极限不等，不存在。\nC：$|x\\arctan\\frac{1}{x}|\\leq\\frac{\\pi}{2}|x|\\to 0$，无穷小乘有界，存在。\nD：$\\frac{\\tan x}{x}\\to 1$，存在。",
-      "topic": "极限性质·存在性辨析",
+      "topic": "极限性质辨析",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1183,7 +1183,7 @@ var QUESTION_BANK = {
       ],
       "answer": 3,
       "solution": "左极限：$\\lim_{x\\to 0^{-}}f(x)=\\lim_{x\\to 0^{-}}\\ln(1-x)=0$。右极限：$\\lim_{x\\to 0^{+}}f(x)=\\lim_{x\\to 0^{+}}e^{1/x}=+\\infty$。左右极限不相等（一个为 $0$，一个为 $+\\infty$），故极限不存在。",
-      "topic": "极限性质·左右极限·分段",
+      "topic": "极限性质辨析",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1208,7 +1208,7 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "solution": "$x=1$ 时分母为 $0$，函数无定义。$\\lim_{x\\to 1}\\frac{x^2-1}{x-1}=\\lim_{x\\to 1}(x+1)=2$，极限存在且为有限值。极限存在但函数在该点无定义（或定义值与极限不相等），故为【可去间断点】。补充定义 $f(1)=2$ 即可使之连续。",
-      "topic": "间断点分类·可去间断点",
+      "topic": "间断点分类",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1233,7 +1233,7 @@ var QUESTION_BANK = {
       ],
       "answer": 2,
       "solution": "左极限：$\\lim_{x\\to 0^{-}}f(x)=\\lim_{x\\to 0^{-}}x=0$。右极限：$\\lim_{x\\to 0^{+}}f(x)=\\lim_{x\\to 0^{+}}(1+x^2)=1$。左右极限均存在但不相等（$0\\neq 1$），故为【跳跃间断点】。跳跃量 $=1-0=1$。",
-      "topic": "间断点分类·跳跃间断点",
+      "topic": "间断点分类",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1258,7 +1258,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "令 $t=\\frac{x}{1-x}$。$x\\to 1^{-}$ 时 $t\\to +\\infty$，$e^{t}\\to +\\infty$，$f(x)\\to 0^{-}$。$x\\to 1^{+}$ 时 $t\\to -\\infty$，$e^{t}\\to 0$，$f(x)\\to 1$。左右极限均存在但不相等（$0\\neq 1$），故 $x=1$ 为跳跃间断点。注意：虽然涉及无穷大，但函数极限仍有限，不是无穷间断点。",
-      "topic": "间断点分类·无穷间断点",
+      "topic": "间断点分类",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1283,7 +1283,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "闭区间上连续函数的性质（有界性与最值定理）：① 必有界；② 必能取得最大值和最小值。注意：若区间改为开区间 $(a,b)$，则连续函数未必有界，如 $f(x)=\\frac{1}{x}$ 在 $(0,1)$ 上连续但无界。闭区间是核心条件。",
-      "topic": "闭区间连续性质·有界性定理",
+      "topic": "连续性与闭区间性质",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1308,7 +1308,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "A：$\\frac{1}{x}\\to +\\infty$（$x\\to 0^{+}$），无界。\nB：$|\\sin\\frac{1}{x}|\\leq 1$，有界。$\\sin$ 本身有界与自变量取值无关。\nC：$\\ln x\\to -\\infty$（$x\\to 0^{+}$），无界。\nD：$\\sin x\\to 0$（$x\\to 0^{+}$），$\\frac{1}{\\sin x}\\to\\infty$，无界。",
-      "topic": "闭区间连续性质·有界性辨析",
+      "topic": "连续性与闭区间性质",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1333,7 +1333,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "令 $f(x)=x^5+x-1$，$f(x)$ 在 $[0,1]$ 上连续。$f(0)=-1<0$，$f(1)=1>0$，由零点定理知存在 $\\xi\\in(0,1)$ 使 $f(\\xi)=0$。又 $f'(x)=5x^4+1>0$（严格单调递增），故根唯一。",
-      "topic": "闭区间连续性质·零点定理",
+      "topic": "连续性与闭区间性质",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1358,7 +1358,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "构造 $F(x)=f(x)-x$，则 $F(x)$ 在 $[a,b]$ 上连续。$F(a)=f(a)-a<0$，$F(b)=f(b)-b>0$。由零点定理，存在 $\\xi\\in(a,b)$ 使 $F(\\xi)=0$，即 $f(\\xi)=\\xi$。这类问题的核心技巧：欲证 $f(x)=g(x)$ 有根，构造 $F(x)=f(x)-g(x)$。",
-      "topic": "闭区间连续性质·介值定理·构造辅助函数",
+      "topic": "连续性与闭区间性质",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1383,7 +1383,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "零点定理是介值定理的特例（$f(a)$ 与 $f(b)$ 异号时取 $c=0$）。本题 $c$ 是 $(0,1)$ 内任意值，$f(0)=0<c<1=f(1)$，由介值定理知必存在 $\\xi$ 使 $f(\\xi)=c$。区别：零点定理要求 $f(a)f(b)<0$；介值定理覆盖任意中间值。",
-      "topic": "闭区间连续性质·介值定理",
+      "topic": "连续性与闭区间性质",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1408,7 +1408,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "介值定理：若 $f(x)$ 在闭区间 $[x_1,x_2]$ 上连续，则对介于端点函数值之间的任意 $c$，存在 $\\xi$ 使 $f(\\xi)=c$。$f(x)$ 在 $(a,b)$ 内连续保证了在 $[x_1,x_2]\\subset(a,b)$ 上连续，故介值定理适用。虽然定义在开区间，但 $x_1$ 与 $x_2$ 之间的闭区间上仍连续。",
-      "topic": "闭区间连续性质·介值定理",
+      "topic": "连续性与闭区间性质",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1433,7 +1433,7 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "solution": "复合函数的连续性：$\\lim_{x\\to x_0}f(g(x))=f(\\lim_{x\\to x_0}g(x))=f(g(x_0))$。外函数在内函数的值点连续，内函数在该点连续，则复合函数在该点连续。这是连续函数复合运算的封闭性。",
-      "topic": "连续性·复合函数",
+      "topic": "连续性与闭区间性质",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1458,7 +1458,7 @@ var QUESTION_BANK = {
       ],
       "answer": 0,
       "solution": "海涅定理（归结原则）：$\\lim_{x\\to x_0}f(x)=A$ 的充要条件是，对任意以 $x_0$ 为极限且 $x_n\\neq x_0$ 的数列 $\\{x_n\\}$，都有 $\\lim_{n\\to\\infty}f(x_n)=A$。不需额外条件；选项 B、C、D 是常见干扰。",
-      "topic": "极限性质·海涅定理",
+      "topic": "极限性质辨析",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1483,7 +1483,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "连续性：$|f(x)|\\leq|x|\\to 0=f(0)$，故在 $x=0$ 处连续。可导性：差商 $\\frac{f(x)-f(0)}{x-0}=\\sin\\frac{1}{x}$，当 $x\\to 0$ 时无限振荡，极限不存在。故 $f(x)$ 在 $x=0$ 处连续但不可导。此例说明：连续不一定可导。",
-      "topic": "连续性·振荡因子",
+      "topic": "连续性与闭区间性质",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1508,7 +1508,7 @@ var QUESTION_BANK = {
       ],
       "answer": 1,
       "solution": "A×：有定义+极限存在不等于连续，还需 $\\lim f(x)=f(x_0)$。B√：连续的定义就是极限存在且等于函数值，故极限必存在。C×：极限存在不一定连续（可去间断点即为反例）。D×：无定义也可以极限存在（可去间断点）。",
-      "topic": "连续性·命题辨析",
+      "topic": "连续性与闭区间性质",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1527,7 +1527,7 @@ var QUESTION_BANK = {
       "question": "设 $f(x)$ 在 $[0,1]$ 上连续，且 $0\\leq f(x)\\leq 1$。若要证明存在 $\\xi\\in[0,1]$ 使 $f(\\xi)=\\xi$，应构造辅助函数 $F(x)=\\underline{\\qquad}$。",
       "answer": "f(x)-x",
       "solution": "构造 $F(x)=f(x)-x$，则 $F(x)$ 在 $[0,1]$ 上连续。$F(0)=f(0)-0=f(0)\\geq 0$，$F(1)=f(1)-1\\leq 0$。若端点值为 $0$ 则 $\\xi$ 取端点；否则 $F(0)>0$ 且 $F(1)<0$，由零点定理存在 $\\xi\\in(0,1)$ 使 $F(\\xi)=0$，即 $f(\\xi)=\\xi$。这是不动点问题的标准处理手法。",
-      "topic": "闭区间连续性质·零点定理·构造辅助函数",
+      "topic": "连续性与闭区间性质",
       "source": "自编",
       "cat": "极限与连续",
       "papers": [
@@ -1541,7 +1541,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "数列极限·单调有界准则·递推",
+      "topic": "数列极限",
       "question": "设 $x_1=\\sqrt{2}$，$x_{n+1}=\\sqrt{2+x_n}\\ (n\\geq1)$。证明数列 $\\{x_n\\}$ 收敛，并求其极限。",
       "answer": "$\\lim\\limits_{n\\to\\infty}x_n=2$",
       "solution": "**第一步，证有上界。** 用数学归纳法。$x_1=\\sqrt2<2$。设 $x_n<2$，则 $x_{n+1}=\\sqrt{2+x_n}<\\sqrt{2+2}=2$，故对一切 $n$ 有 $x_n<2$。\n**第二步，证单调递增。** $x_{n+1}-x_n=\\sqrt{2+x_n}-x_n$，由 $0<x_n<2$ 有 $\\sqrt{2+x_n}>x_n\\iff 2+x_n>x_n^2\\iff(x_n-2)(x_n+1)<0$，成立，故 $\\{x_n\\}$ 单调递增。\n**第三步，求极限。** 由单调有界准则 $\\{x_n\\}$ 收敛。设极限为 $A$，对递推式取极限：$A=\\sqrt{2+A}\\Rightarrow A^2-A-2=0\\Rightarrow A=2$ 或 $-1$，由 $x_n>0$ 得 $A=2$。\n**注**：递推式为增函数时直接用单调有界；若为减函数（见第 14 题）则须改用压缩估计或分奇偶子列。",
@@ -1557,7 +1557,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "数列极限·夹逼准则·项数也在变",
+      "topic": "数列极限",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\left(\\frac{1}{\\sqrt{n^2+1}}+\\frac{1}{\\sqrt{n^2+2}}+\\cdots+\\frac{1}{\\sqrt{n^2+n}}\\right)$。",
       "answer": "$1$",
       "solution": "记 $S_n=\\sum\\limits_{k=1}^{n}\\dfrac{1}{\\sqrt{n^2+k}}$。对 $1\\leq k\\leq n$ 有 $\\dfrac{1}{\\sqrt{n^2+n}}\\leq\\dfrac{1}{\\sqrt{n^2+k}}\\leq\\dfrac{1}{\\sqrt{n^2+1}}$，求和得 $\\dfrac{n}{\\sqrt{n^2+n}}\\leq S_n\\leq\\dfrac{n}{\\sqrt{n^2+1}}$。左端 $=\\dfrac{1}{\\sqrt{1+\\frac1n}}\\to1$，右端 $=\\dfrac{1}{\\sqrt{1+\\frac{1}{n^2}}}\\to1$，由夹逼准则 $S_n\\to1$。\n**注**：本题要点是\"项数也在变\"，不能逐项取极限；必须先整体放缩成 $n$ 个相同项再夹逼。",
@@ -1573,7 +1573,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "和式极限·定积分定义·黎曼和",
+      "topic": "和式极限·定积分定义",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^{n}\\frac{n}{n^2+k^2}$。",
       "answer": "$\\dfrac{\\pi}{4}$",
       "solution": "$\\sum\\limits_{k=1}^{n}\\dfrac{n}{n^2+k^2}=\\dfrac1n\\sum\\limits_{k=1}^{n}\\dfrac{1}{1+\\left(\\frac{k}{n}\\right)^2}$，这是 $f(x)=\\dfrac{1}{1+x^2}$ 在 $[0,1]$ 上取等分点的黎曼和，故极限 $=\\int_0^1\\dfrac{dx}{1+x^2}=\\arctan x\\Big|_0^1=\\dfrac{\\pi}{4}$。\n**注**：识别定积分定义的关键是能写成 $\\dfrac1n\\sum f\\!\\left(\\dfrac{k}{n}\\right)$ 的形状。",
@@ -1589,7 +1589,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "数列极限·Stolz 定理",
+      "topic": "数列极限",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\frac{\\sqrt1+\\sqrt2+\\cdots+\\sqrt n}{n^{3/2}}$。",
       "answer": "$\\dfrac{2}{3}$",
       "solution": "记 $a_n=\\sum\\sqrt k$，$b_n=n^{3/2}$，$b_n$ 严格递增且趋于 $+\\infty$，可用 Stolz 定理：极限 $=\\lim\\dfrac{a_n-a_{n-1}}{b_n-b_{n-1}}=\\lim\\dfrac{\\sqrt n}{n^{3/2}-(n-1)^{3/2}}$。分母 $=n^{3/2}\\left[1-\\left(1-\\frac1n\\right)^{3/2}\\right]\\sim n^{3/2}\\cdot\\frac32\\cdot\\frac1n=\\frac32\\sqrt n$，故极限 $=\\dfrac{\\sqrt n}{\\frac32\\sqrt n}=\\dfrac23$。\n**另解**：$\\dfrac{1}{n^{3/2}}\\sum\\sqrt k=\\dfrac1n\\sum\\sqrt{\\dfrac{k}{n}}\\to\\int_0^1\\sqrt x\\,dx=\\dfrac23$。",
@@ -1605,7 +1605,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "幂指函数极限·1^∞型·几何平均",
+      "topic": "幂指函数极限",
       "question": "设 $a>0,\\ b>0$，求 $\\displaystyle\\lim_{x\\to0}\\left(\\frac{a^x+b^x}{2}\\right)^{\\frac1x}$。",
       "answer": "$\\sqrt{ab}$",
       "solution": "$1^\\infty$ 型。取对数：$\\ln L=\\lim\\limits_{x\\to0}\\dfrac{1}{x}\\ln\\dfrac{a^x+b^x}{2}$。由 $\\ln u\\sim u-1$ 及 $a^x-1\\sim x\\ln a$，得 $\\ln L=\\lim\\dfrac1x\\cdot\\dfrac{x(\\ln a+\\ln b)}{2}=\\dfrac{\\ln a+\\ln b}{2}=\\ln\\sqrt{ab}$，故 $L=\\sqrt{ab}$。\n**注**：结论是 $a,b$ 的几何平均，可与算术平均 $\\dfrac{a+b}{2}$ 对照记忆。",
@@ -1621,7 +1621,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "数列极限·泰勒展开·e 的逼近速度",
+      "topic": "数列极限",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}n\\Big[\\,e-\\Big(1+\\frac1n\\Big)^{n}\\Big]$。",
       "answer": "$\\dfrac{e}{2}$",
       "solution": "$n\\ln\\left(1+\\frac1n\\right)=1-\\dfrac{1}{2n}+\\dfrac{1}{3n^2}+O\\left(\\dfrac1{n^3}\\right)$，故 $\\left(1+\\frac1n\\right)^n=e\\cdot\\exp\\left(-\\dfrac{1}{2n}+\\dfrac{1}{3n^2}+\\cdots\\right)=e\\left(1-\\dfrac{1}{2n}+\\dfrac{11}{24n^2}+O\\left(\\dfrac1{n^3}\\right)\\right)$。于是 $e-\\left(1+\\frac1n\\right)^n=e\\left(\\dfrac{1}{2n}-\\dfrac{11}{24n^2}+\\cdots\\right)$，乘以 $n$ 得极限 $\\dfrac e2$。\n**注**：若把 $n$ 换成 $n^2$，极限为 $+\\infty$——阶的匹配很关键。",
@@ -1637,7 +1637,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "数列极限·阶乘·定积分定义·瑕积分",
+      "topic": "数列极限",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\frac{\\sqrt[n]{n!}}{n}$。",
       "answer": "$\\dfrac{1}{e}$",
       "solution": "取对数：$\\ln\\dfrac{\\sqrt[n]{n!}}{n}=\\dfrac1n\\sum\\limits_{k=1}^{n}\\ln\\dfrac{k}{n}$，这是 $\\ln x$ 在 $(0,1]$ 上的黎曼和（$x=0$ 处无界，属瑕积分，由 $\\int_0^1|\\ln x|dx$ 收敛知黎曼和收敛）。$\\int_0^1\\ln x\\,dx=\\big[x\\ln x-x\\big]_0^1=-1$，故原式 $\\to e^{-1}=\\dfrac1e$。\n**注**：也可由 Stirling 公式得到，但定积分定义不依赖课外公式，是标准解法。",
@@ -1653,7 +1653,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "数列极限·阶乘·Stirling 型·定积分定义",
+      "topic": "数列极限",
       "question": "求极限 $\\displaystyle\\lim_{n\\to\\infty}\\sqrt[n]{\\frac{(2n)!}{n!\\;n^{n}}}$。",
       "answer": "$\\dfrac{4}{e}$",
       "solution": "取对数。用 Stirling 公式 $\\ln(m!)=m\\ln m-m+O(\\ln m)$：$\\ln((2n)!)=2n\\ln2+2n\\ln n-2n+O(\\ln n)$，$\\ln(n!)=n\\ln n-n+O(\\ln n)$，相减得 $\\ln A_n=2n\\ln2-n+O(\\ln n)$，除以 $n$ 得 $2\\ln2-1=\\ln\\dfrac4e$，故极限 $\\dfrac4e$。\n**另解**（更简洁，不用 Stirling）：$\\dfrac1n\\ln\\dfrac{(2n)!}{n!\\,n^n}=\\dfrac1n\\sum\\limits_{k=n+1}^{2n}\\ln\\dfrac{k}{n}\\to\\int_1^2\\ln x\\,dx=\\big[x\\ln x-x\\big]_1^2=2\\ln2-1$。",
@@ -1669,7 +1669,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "函数极限·泰勒展开·抽象函数",
+      "topic": "函数极限计算",
       "question": "设 $f(x)$ 在 $x=0$ 处三阶可导，且 $f(0)=0$，$f'(0)=1$，$f''(0)=0$，$f'''(0)=6$。求 $\\displaystyle\\lim_{x\\to0}\\frac{f(x)-x}{x^3}$。",
       "answer": "$1$",
       "solution": "由泰勒公式（Peano 余项）：$f(x)=f(0)+f'(0)x+\\dfrac{f''(0)}{2}x^2+\\dfrac{f'''(0)}{6}x^3+o(x^3)=x+x^3+o(x^3)$，故 $\\dfrac{f(x)-x}{x^3}=\\dfrac{x^3+o(x^3)}{x^3}\\to1$。\n**注**：抽象函数极限题唯一通法就是带余项的泰勒展开。",
@@ -1685,7 +1685,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "变限积分·等价无穷小·洛必达",
+      "topic": "变限积分求极限",
       "question": "求极限 $\\displaystyle\\lim_{x\\to0}\\frac{\\displaystyle\\int_0^{x^2}\\big(e^t-1-t\\big)\\,dt}{x^6}$。",
       "answer": "$\\dfrac{1}{6}$",
       "solution": "当 $t\\to0$ 时 $e^t-1-t=\\dfrac{t^2}{2}+o(t^2)$，故 $\\int_0^{x^2}(e^t-1-t)dt=\\dfrac{(x^2)^3}{6}+o(x^6)=\\dfrac{x^6}{6}+o(x^6)$，极限为 $\\dfrac16$。\n**洛必达解法**：$\\lim\\dfrac{(e^{x^2}-1-x^2)\\cdot2x}{6x^5}=\\lim\\dfrac{e^{x^2}-1-x^2}{3x^4}=\\lim\\dfrac{x^4/2}{3x^4}=\\dfrac16$。\n**注**：积分上限是 $x^2$ 时求导要乘 $2x$，最易丢分。",
@@ -1701,7 +1701,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "极限反求参数·泰勒待定系数",
+      "topic": "极限反推",
       "question": "设 $\\displaystyle\\lim_{x\\to0}\\frac{\\ln(1+x)-(ax+bx^2)}{x^2}=0$，求常数 $a,b$。",
       "answer": "$a=1,\\ b=-\\dfrac12$",
       "solution": "展开 $\\ln(1+x)=x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}+o(x^3)$，代入得 $\\dfrac{(1-a)x+\\left(-\\frac12-b\\right)x^2+\\frac13x^3+o(x^3)}{x^2}=\\dfrac{1-a}{x}+\\left(-\\dfrac12-b\\right)+\\dfrac{x}{3}+o(x)$。极限存在且为 $0$，须 $1-a=0\\Rightarrow a=1$，此时 $-\\dfrac12-b=0\\Rightarrow b=-\\dfrac12$。\n**注**：分母是 $x^2$ 时分子中 $x$ 的一次项若不为零则极限为 $\\infty$，这是\"先定低阶系数\"的原则。",
@@ -1717,7 +1717,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "极限反求·抽象函数·整体极限",
+      "topic": "极限反推",
       "question": "设函数 $f(x)$ 满足 $\\displaystyle\\lim_{x\\to0}\\frac{\\ln(1+2x)+x\\,f(x)}{x^2}=1$，求 $\\displaystyle\\lim_{x\\to0}\\frac{f(x)+2}{x}$。",
       "answer": "$3$",
       "solution": "$\\ln(1+2x)=2x-2x^2+o(x^2)$，代入得 $\\dfrac{2x-2x^2+xf(x)+o(x^2)}{x^2}=\\dfrac{2+f(x)}{x}-2+\\dfrac{o(x^2)}{x^2}\\to1$，故 $\\lim\\limits_{x\\to0}\\dfrac{f(x)+2}{x}=1+2=3$。\n**注**：由 $\\dfrac{2+f(x)}{x}\\to3$ 还可推出 $f(x)\\to-2$，题设隐含了 $f$ 在 $0$ 附近的性态。",
@@ -1733,7 +1733,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "x→∞ 型·倒代换·泰勒展开",
+      "topic": "函数极限计算",
       "question": "求极限 $\\displaystyle\\lim_{x\\to\\infty}x^2\\Big[\\ln\\Big(1+\\frac1x\\Big)-\\frac1x\\Big]$。",
       "answer": "$-\\dfrac12$",
       "solution": "令 $t=\\dfrac1x\\to0^+$，原式化为 $\\lim\\limits_{t\\to0^+}\\dfrac{\\ln(1+t)-t}{t^2}$。由 $\\ln(1+t)=t-\\dfrac{t^2}{2}+o(t^2)$ 得极限 $-\\dfrac12$。\n**注**：$x\\to\\infty$ 的极限题作代换 $t=\\dfrac1x$ 化为 $t\\to0$，即可统一使用泰勒工具。",
@@ -1749,7 +1749,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "递推数列·压缩映射·减函数递推",
+      "topic": "数列极限",
       "question": "设 $x_1=1$，$x_{n+1}=\\dfrac{1}{1+x_n}\\ (n\\geq1)$。证明 $\\{x_n\\}$ 收敛并求极限。",
       "answer": "$\\dfrac{\\sqrt5-1}{2}$",
       "solution": "令 $\\varphi(x)=\\dfrac{1}{1+x}$，在 $\\left[\\dfrac12,1\\right]$ 上 $|\\varphi'|=\\dfrac{1}{(1+x)^2}\\leq\\dfrac49<1$。先证 $x_n\\in\\left[\\dfrac12,1\\right]$：$x_1=1$，若 $x_n$ 在此区间则 $x_{n+1}\\in\\left[\\dfrac12,\\dfrac23\\right]$。于是 $|x_{n+1}-x_n|=|\\varphi(x_n)-\\varphi(x_{n-1})|\\leq\\dfrac49|x_n-x_{n-1}|$，$\\sum|x_{n+1}-x_n|$ 收敛，故 $\\{x_n\\}$ 收敛。\n设极限为 $A$，由 $A=\\dfrac{1}{1+A}$ 得 $A^2+A-1=0$，由 $x_n>0$ 取 $A=\\dfrac{\\sqrt5-1}{2}$。\n**注**：递推式为减函数时 $\\{x_n\\}$ 本身不单调，需考察子列或用压缩估计——这是与第 01 题的关键区别。",
@@ -1765,7 +1765,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "极限与连续",
-      "topic": "∞−∞ 型·通分化商·泰勒展开",
+      "topic": "函数极限计算",
       "question": "求极限 $\\displaystyle\\lim_{x\\to0}\\left(\\frac{1}{x^2}-\\cot^2x\\right)$。",
       "answer": "$\\dfrac{2}{3}$",
       "solution": "先通分：$\\dfrac{1}{x^2}-\\cot^2x=\\dfrac{\\sin^2x-x^2\\cos^2x}{x^2\\sin^2x}$。分母 $x^2\\sin^2x\\sim x^4$。分子用泰勒展开到 $x^4$：$\\sin^2x=x^2-\\dfrac{x^4}{3}+O(x^6)$，$\\cos^2x=1-x^2+O(x^4)$，故 $x^2\\cos^2x=x^2-x^4+O(x^6)$，分子 $=\\dfrac23x^4+O(x^6)$，极限 $=\\dfrac23$。\n**另解**：$\\cot x=\\dfrac1x-\\dfrac x3-\\dfrac{x^3}{45}+O(x^5)$，平方得 $\\cot^2x=\\dfrac1{x^2}-\\dfrac23+O(x^2)$。\n**注**：$\\infty-\\infty$ 型必须先通分化为 $\\dfrac00$ 再用泰勒；直接洛必达会求导爆炸。",
@@ -1798,7 +1798,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\text{拆项：}\\frac{f(x_{0}+3h)-f(x_{0}-2h)}{h} = \\frac{f(x_{0}+3h)-f(x_{0})}{h} + \\frac{f(x_{0})-f(x_{0}-2h)}{h}$。$\\text{第一项}=3\\cdot\\frac{f(x_{0}+3h)-f(x_{0})}{3h}\\to 3f'(x_{0})$；$\\text{第二项}=2\\cdot\\frac{f(x_{0}-2h)-f(x_{0})}{-2h}\\to 2f'(x_{0})$。$\\text{合计}=5f'(x_{0})$。",
       "cat": "一元微分学",
-      "topic": "导数定义与可导性·导数定义式凑形",
+      "topic": "导数定义与可导性",
       "source": "自编",
       "papers": [
         "shu1",
@@ -1820,7 +1820,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\text{两边对 }x\\text{ 求导：}2x + 2y y' = 0 \\Rightarrow y' = -\\frac{x}{y}$。$y'' = -\\frac{y - x y'}{y^{2}} = -\\frac{y - x(-x/y)}{y^{2}} = -\\frac{y^{2}+x^{2}}{y^{3}} = -\\frac{1}{y^{3}}$（$\\because x^{2}+y^{2}=1$）。",
       "cat": "一元微分学",
-      "topic": "导数计算·隐函数求导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -1842,7 +1842,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt} = \\frac{e^{t}\\sin t + e^{t}\\cos t}{e^{t}\\cos t - e^{t}\\sin t} = \\frac{\\sin t + \\cos t}{\\cos t - \\sin t}$。",
       "cat": "一元微分学",
-      "topic": "导数计算·参数方程求导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -1864,7 +1864,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\text{对数求导法：}\\ln y = \\sin x \\cdot \\ln x$。$\\text{两边求导：}\\frac{y'}{y} = \\cos x \\cdot \\ln x + \\sin x \\cdot \\frac{1}{x}$。$y' = x^{\\sin x}(\\cos x \\cdot \\ln x + \\frac{\\sin x}{x})$。",
       "cat": "一元微分学",
-      "topic": "导数计算·幂指函数·对数求导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -1886,7 +1886,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$y' = \\frac{1}{1+x}$，$y'' = -\\frac{1}{(1+x)^{2}}$，$y''' = \\frac{2}{(1+x)^{3}}$。$\\text{归纳得 } y^{(n)} = (-1)^{n-1} \\frac{(n-1)!}{(1+x)^{n}}（n \\geq 1）$。",
       "cat": "一元微分学",
-      "topic": "导数计算·高阶导数",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -1908,7 +1908,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$y' = f'(x^{2}) \\cdot 2x$。$y'' = f''(x^{2}) \\cdot 2x \\cdot 2x + f'(x^{2}) \\cdot 2 = 4x^{2}f''(x^{2}) + 2f'(x^{2})$。",
       "cat": "一元微分学",
-      "topic": "导数计算·复合函数求导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -1930,7 +1930,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$x=0\\text{ 时 }e^{y(0)}=e\\Rightarrow y(0)=1$。$\\text{一阶求导：}e^{y}y'+y+xy'=0$，$\\text{代入得 }y'(0)=-\\frac{1}{e}$。$\\text{二阶求导：}e^{y}(y')^{2}+e^{y}y''+2y'+xy''=0$。$\\text{代入得 }\\frac{1}{e}+e y''(0)-\\frac{2}{e}=0\\Rightarrow y''(0)=\\frac{1}{e^{2}}$。",
       "cat": "一元微分学",
-      "topic": "导数计算·隐函数求导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -1952,7 +1952,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$y' = 3x^{2} - 3$，$y'(1) = 0$。$\\text{切线斜率 }k=0\\text{，过点 }(1,-2)\\text{，方程 }y = -2$。",
       "cat": "一元微分学",
-      "topic": "几何应用·切线方程",
+      "topic": "导数几何应用",
       "source": "自编",
       "papers": [
         "shu1",
@@ -1974,7 +1974,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$y' = \\frac{1}{2\\sqrt{x}}$，$y'(4) = \\frac{1}{4}$。$\\text{法线斜率 }k_{n} = -4$。$y-2 = -4(x-4) \\Rightarrow y = -4x + 18$。",
       "cat": "一元微分学",
-      "topic": "几何应用·法线方程",
+      "topic": "导数几何应用",
       "source": "自编",
       "papers": [
         "shu1",
@@ -1996,7 +1996,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$f(x)=\\sqrt{x}, f'(x)=\\frac{1}{2\\sqrt{x}}$。$f(1+0.02) \\approx f(1) + f'(1)\\cdot 0.02 = 1 + \\frac{1}{2}\\cdot 0.02 = 1.01$。",
       "cat": "一元微分学",
-      "topic": "微分与近似·微分近似计算",
+      "topic": "微分与近似",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2018,7 +2018,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$\\text{连续性：}|x^{2}\\sin\\frac{1}{x}| \\leq x^{2} \\to 0\\text{，故 }\\lim f(x)=0=f(0)$。$\\text{可导性：}f'(0)=\\lim_{x\\to 0}\\frac{x^{2}\\sin(1/x)}{x}=\\lim x\\sin\\frac{1}{x}=0$。",
       "cat": "一元微分学",
-      "topic": "导数定义与可导性·分段函数可导性",
+      "topic": "导数定义与可导性",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2040,7 +2040,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$x=1\\text{ 时 }y=1$。$g'(y) = \\frac{1}{y'(x)} = \\frac{1}{1+1/x}$。$x=1\\text{ 时 }y'(1)=2$，$g'(1)=\\frac{1}{2}$。",
       "cat": "一元微分学",
-      "topic": "导数计算·反函数求导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2062,7 +2062,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\text{取对数：}\\ln x + \\ln y = x + y$。$\\text{求导：}\\frac{1}{x} + \\frac{y'}{y} = 1 + y'$。$y' = \\frac{1-1/x}{1/y-1} = \\frac{y(x-1)}{x(1-y)}$。",
       "cat": "一元微分学",
-      "topic": "导数计算·隐函数求导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2084,7 +2084,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\ln y = x[\\ln x - \\ln(1+x)]$。$\\frac{y'}{y} = \\ln\\frac{x}{1+x} + x(\\frac{1}{x} - \\frac{1}{1+x}) = \\ln\\frac{x}{1+x} + \\frac{1}{1+x}$。",
       "cat": "一元微分学",
-      "topic": "导数计算·幂指函数·对数求导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2106,7 +2106,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$S = \\pi r^{2}$，$\\frac{dS}{dt} = 2\\pi r \\cdot \\frac{dr}{dt} = 2\\pi \\cdot 5 \\cdot 2 = 20\\pi \\text{ cm}^{2}/\\text{s}$。",
       "cat": "一元微分学",
-      "topic": "微分与近似·相关变化率",
+      "topic": "微分与近似",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2128,7 +2128,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$f'(x) = 1 - \\frac{1}{1+x} = \\frac{x}{1+x} > 0（x>0）$，$\\text{故 } f(x) \\text{ 单调递增。}$",
       "cat": "一元微分学",
-      "topic": "单调性与极值·单调性判定",
+      "topic": "单调性与极值",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2150,7 +2150,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$f'(x) = 3(x-3)(x+1)$。$\\text{驻点 } x=-1,3$。$f''(x)=6x-6$：$f''(3)=12>0$（$\\text{极小}$）。$f(3) = 27-27-27+5 = -22$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·极值计算",
+      "topic": "单调性与极值",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2172,7 +2172,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$f''(x) = 6(x-1)$。$x<1$ $\\text{时 } f''<0$，$x>1$ $\\text{时 } f''>0$，$\\text{拐点 }(1, -1)$。",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·拐点计算",
+      "topic": "凹凸性与拐点",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2194,7 +2194,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "$\\lim_{x\\to\\infty}\\frac{x^{2}+1}{x-1} = \\infty$，$\\text{无水平渐近线。但有斜渐近线 } y = x+1$。",
       "cat": "一元微分学",
-      "topic": "几何应用·渐近线",
+      "topic": "导数几何应用",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2216,7 +2216,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$切线平行于 x 轴 \\rightarrow 导数为 0。y' = 3x^{2} - 3 = 3(x^{2}-1) = 0，解得 x = ±1。x=1 时 y = -2；x=-1 时 y = 2。故有两点 (1,-2) 和 (-1,2)。导数等于 0 是求驻点（可疑极值点）的标准方法。$",
       "cat": "一元微分学",
-      "topic": "几何应用·切线方程",
+      "topic": "导数几何应用",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2238,7 +2238,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$连续性：|x \\sin(1/x)| \\leq |x| \\rightarrow 0 (x\\rightarrow0)，故 f(x) 在 x=0 连续。可导性：f'(0) = \\lim(h\\rightarrow0) [h \\sin(1/h) - 0]/h = \\lim \\sin(1/h)，该极限不存在（振荡），故不可导。$",
       "cat": "一元微分学",
-      "topic": "导数定义与可导性·分段函数可导性",
+      "topic": "导数定义与可导性",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2260,7 +2260,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$极限存在且 =1>0，表明 [f(x)-f(0)]/x^{2} > 0 在充分小的邻域内（分母恒正），所以 f(x) > f(0)，f(0) 为极小值。又由极限存在推 f(x)-f(0)\\rightarrow0，且 [f(x)-f(0)]/x = x·[f(x)-f(0)]/x^{2} \\rightarrow 0·1 = 0，故 f'(0)=0。注意：这是极值判定的高阶推广，不需要二阶导数。$",
       "cat": "一元微分学",
-      "topic": "导数定义与可导性·极限反推可导性",
+      "topic": "导数定义与可导性",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2276,7 +2276,7 @@ var QUESTION_BANK = {
       "answer": "1/[x·ln x·ln(ln x)]",
       "solution": "三重复合：y = \\ln u，u = \\ln v，v = \\ln x。y' = (1/u)·(1/v)·(1/x) = 1/[x·\\ln x·\\ln(\\ln x)]。链式法则可以嵌套任意多层，每一步乘以「当前层的导数倒数」。",
       "cat": "一元微分学",
-      "topic": "导数计算·复合函数求导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2292,7 +2292,7 @@ var QUESTION_BANK = {
       "answer": "$1/\\sqrt(1+x²)$",
       "solution": "$链式法则：[1/(x+\\sqrt{1+x^{2}})]·[1+x/\\sqrt{1+x^{2}}]=1/\\sqrt{1+x^{2}}。$",
       "cat": "一元微分学",
-      "topic": "导数计算·复合函数求导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2314,7 +2314,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "f'(x)=3x^{2}-3=3(x-1)(x+1)，f'<0当-1<x<1。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·单调区间",
+      "topic": "单调性与极值",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2336,7 +2336,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "f''>0⇒f'递增。拉格朗日:f(2)-f(1)=f'(ξ),1<ξ<2,f'(ξ)<f'(2)⇒差<f'(2)。",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·凹凸性判定",
+      "topic": "凹凸性与拐点",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2358,7 +2358,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "在[0,3]连续但x=1处尖点不可导，不满足定理条件。",
       "cat": "一元微分学",
-      "topic": "中值定理·定理条件辨析",
+      "topic": "中值定理与泰勒公式",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2374,7 +2374,7 @@ var QUESTION_BANK = {
       "answer": "-1",
       "solution": "隐函数求导:2x+2yy'=0⇒y'=-x/y。y''=-(y²+x^{2})/y³=-1/y³。点(0,1):y''=-1。",
       "cat": "一元微分学",
-      "topic": "导数计算·隐函数求导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2396,7 +2396,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\text{令 } g = \\frac{\\ln x}{x}$，$g' = \\frac{1-\\ln x}{x^{2}} = 0 \\Rightarrow x = e$ $\\text{为极大值点。}$ $f(e) = e^{1/e}$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·最值计算",
+      "topic": "单调性与极值",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2418,7 +2418,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "$\\frac{dy}{dx} = \\frac{3t^2-3}{2t+1}$。$t=1$ 时 $y' = 0$。$\\frac{d^2y}{dx^2} = \\frac{d}{dt}\\!\\left(\\frac{3t^2-3}{2t+1}\\right) \\big/ (2t+1)$。$t=1$ 时代入得 $0$。",
       "cat": "一元微分学",
-      "topic": "导数计算·参数方程高阶导",
+      "topic": "导数计算",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2440,7 +2440,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$f'(x) = \\frac{1}{1+x} - \\frac{1}{(1+x)^2} = \\frac{x}{(1+x)^2} > 0$（$x>0$），故 $f$ 单调递增。且 $f(0)=0$，则 $x>0$ 时 $\\ln(1+x) > \\frac{x}{1+x}$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·单调性判定",
+      "topic": "单调性与极值",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2462,7 +2462,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$f'(x)=3x^2+2ax+b$。极值条件：$f'(1)=0 \\Rightarrow 3+2a+b=0$ ①；$f(1)=2 \\Rightarrow 1+a+b=2$ ②。解 ①② 得 $a=-4, b=5$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·极值反求参数",
+      "topic": "单调性与极值",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2484,7 +2484,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "$f'(x)=2(x-1)(x-2)^2+2(x-1)^2(x-2)=2(x-1)(x-2)(2x-3)$。驻点 $x=1, \\frac{3}{2}, 2$。$x=\\frac{3}{2}$ 处 $f''>0$（极小），两端为极大。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·极值计算",
+      "topic": "单调性与极值",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2506,7 +2506,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$\\lim_{x\\to\\infty} \\frac{2x-1}{(x-1)^2} = 0$，故 $y=0$ 是水平渐近线。斜渐近线 $k=\\lim y/x=0$，不存在。竖渐近线 $x=1$。",
       "cat": "一元微分学",
-      "topic": "几何应用·渐近线",
+      "topic": "导数几何应用",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2528,7 +2528,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$f'(x)=\\frac{1-\\ln x}{x^2}=0 \\Rightarrow x=e$。$x<e$ 时 $f'>0$（增），$x>e$ 时 $f'<0$（减）。极大 $f(e)=\\frac{1}{e}$。端点 $f(1)=0, f(e^2)=\\frac{2}{e^2}<\\frac{1}{e}$。最大值 $=\\frac{1}{e}$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·闭区间最值",
+      "topic": "单调性与极值",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2550,7 +2550,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$f'(x)=1-\\frac{1}{x^2}=0 \\Rightarrow x=1$。$f(1)=2$。或直接均值不等式：$x+\\frac{1}{x} \\geq 2\\sqrt{x\\cdot\\frac{1}{x}}=2$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·最值计算",
+      "topic": "单调性与极值",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2572,7 +2572,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$f'(x)=\\ln x+1$。$f(e)-f(1)=e$。由 $f'(\\xi)=\\frac{e}{e-1} \\Rightarrow \\ln\\xi+1=\\frac{e}{e-1} \\Rightarrow \\ln\\xi=\\frac{1}{e-1} \\Rightarrow \\xi=e^{\\frac{1}{e-1}}$。",
       "cat": "一元微分学",
-      "topic": "中值定理·拉格朗日求ξ",
+      "topic": "中值定理与泰勒公式",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2594,7 +2594,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$f''(x)>0$ 则 $f$ 为凹函数（下凸）。由琴生不等式：$f\\left(\\frac{x_1+x_2}{2}\\right) \\leq \\frac{f(x_1)+f(x_2)}{2}$，即 $f(x_1)+f(x_2) \\geq 2f\\left(\\frac{x_1+x_2}{2}\\right)$。",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·凹凸性应用",
+      "topic": "凹凸性与拐点",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2616,7 +2616,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\varphi(x)=e^{-x}f(x)$，则 $\\varphi'(x)=e^{-x}[f'(x)-f(x)]$。$\\varphi(a)=\\varphi(b)=0$（因 $f(a)=f(b)=0$），由罗尔定理，$\\exists \\xi \\in (a,b)$ 使 $\\varphi'(\\xi)=0$，即 $f'(\\xi)=f(\\xi)$。注：解微分方程 $f'=f$ 得 $f=Ce^{x}$，变形为 $e^{-x}f=C$，故构造 $\\varphi(x)=e^{-x}f(x)$。",
       "cat": "一元微分学",
-      "topic": "中值定理·构造辅助函数",
+      "topic": "中值定理与泰勒公式",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2638,7 +2638,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\text{由拉格朗日中值定理：}f(x)-f(0)=f'(\\xi)(x-0)$，其中 $\\xi \\in (0,x)$。$\\therefore |f(x)|=|f'(\\xi)| \\cdot x \\leq Mx$。这是利用中值定理估计函数值的经典方法：用导数界控制函数界。",
       "cat": "一元微分学",
-      "topic": "中值定理·拉格朗日估值",
+      "topic": "中值定理与泰勒公式",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2660,7 +2660,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\varphi(x)=f(x)-x^{2}$，则 $\\varphi(0)=0$，$\\varphi(1)=1-1=0$。$\\varphi$ 满足罗尔定理条件，$\\exists \\xi \\in (0,1)$ 使 $\\varphi'(\\xi)=f'(\\xi)-2\\xi=0$，即 $f'(\\xi)=2\\xi$。",
       "cat": "一元微分学",
-      "topic": "中值定理·构造辅助函数",
+      "topic": "中值定理与泰勒公式",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2682,7 +2682,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\text{由介值定理，}\\exists c \\in (0,1)\\text{ 使 }f(c)=\\frac{1}{2}$。$\\text{在 }[0,c]\\text{ 上用拉格朗日：}\\frac{1}{2}=f'(\\xi)c$；$\\text{在 }[c,1]\\text{ 上：}\\frac{1}{2}=f'(\\eta)(1-c)$。$\\therefore \\frac{1}{f'(\\xi)}+\\frac{1}{f'(\\eta)}=2c+2(1-c)=2$。$\\text{关键：用介值定理找分割点 }c$。",
       "cat": "一元微分学",
-      "topic": "中值定理·双中值问题",
+      "topic": "中值定理与泰勒公式",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2704,7 +2704,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "①$\\text{罗尔定理：}f(0)=f(2)=0 \\Rightarrow \\exists \\xi_{1} \\in (0,2), f'(\\xi_{1})=0$。②$\\text{拉格朗日：在}[0,1]\\text{上 }f'(\\xi_{2})=1$；$\\text{在}[1,2]\\text{上 }f'(\\eta_{2})=-1$。③$f(1)=1>0=\\max\\{f(0),f(2)\\}$，$\\text{故最大值在}(0,2)\\text{内取到}$，$\\text{设为 }x_{0}$，$\\text{则 }f'(x_{0})=0$，$f''(x_{0}) \\leq 0$。又 $f''(x_{0})$ $\\text{不能恒为零（否则 }f\\text{ 为一次函数，矛盾）}$，$\\text{故 }\\exists \\zeta\\text{ 使 }f''(\\zeta)<0$。",
       "cat": "一元微分学",
-      "topic": "中值定理·中值定理综合",
+      "topic": "中值定理与泰勒公式",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2726,7 +2726,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\varphi(x)=e^{x}f(x)$，$\\varphi'(x)=e^{x}[f'(x)+f(x)]$。$\\varphi(a)=\\varphi(b)=0$，罗尔定理 $\\Rightarrow \\exists \\xi$ 使 $\\varphi'(\\xi)=0 \\Rightarrow f'(\\xi)+f(\\xi)=0$。$\\text{注：解 }f'+f=0 \\Rightarrow f=Ce^{-x}$，$\\text{变形为 }e^{x}f=C$。$\\text{对比 }050$ $\\text{题：}f'-f=0 \\Rightarrow e^{-x}f=C$。",
       "cat": "一元微分学",
-      "topic": "中值定理·构造辅助函数",
+      "topic": "中值定理与泰勒公式",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2742,7 +2742,7 @@ var QUESTION_BANK = {
       "answer": "1",
       "solution": "$\\text{令 }f(t)=e^{t}$，$\\text{在 }[\\sin x, x]\\text{（或 }[x, \\sin x]\\text{）上，}\\exists \\xi\\text{ 介于 }\\sin x\\text{ 与 }x\\text{ 之间}$，$\\text{使 }\\dfrac{e^{x}-e^{\\sin x}}{x-\\sin x}=e^{\\xi}$。$\\text{当 }x \\to 0\\text{ 时，}\\sin x \\to 0$，$\\text{故 }\\xi \\to 0$，$\\text{极限 }=e^{0}=1$。$\\text{洛必达也能做，但中值定理更优雅。}$",
       "cat": "一元微分学",
-      "topic": "中值定理·拉格朗日求极限",
+      "topic": "中值定理与泰勒公式",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2764,7 +2764,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$f''(x)>0\\text{ 说明 }f\\text{ 严格凹（下凸）}$。$\\text{由琴生不等式：}\\forall \\lambda \\in (0,1), f(\\lambda a+(1-\\lambda)b) < \\lambda f(a)+(1-\\lambda)f(b)=0$。$\\text{或证：若存在 }x_{0}\\text{ 使 }f(x_{0})\\geq 0$，$\\text{由罗尔定理 + 凹凸性可导出矛盾。}$",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·凹凸性应用",
+      "topic": "凹凸性与拐点",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2786,7 +2786,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\text{同济版定义：}f''(x)>0\\text{ 为凹（}\\cup\\text{形）}$，$f''(x)<0\\text{ 为凸（}\\cap\\text{形）}$。$\\text{几何直观：凹函数曲线位于弦之下，凸函数曲线位于弦之上。}$",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·凹凸性判定",
+      "topic": "凹凸性与拐点",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2808,7 +2808,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$y'=4x^{3}-12x+8$，$y''=12x^{2}-12=12(x-1)(x+1)$。$y''$ $\\text{在 }x=\\pm 1$ $\\text{处变号：}$ $x<-1$ $\\text{时 }y''>0$（$\\text{凹}$），$-1<x<1$ $\\text{时 }y''<0$（$\\text{凸}$），$x>1$ $\\text{时 }y''>0$（$\\text{凹}$）。$\\text{共 }2$ $\\text{个拐点。}$",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·拐点计算",
+      "topic": "凹凸性与拐点",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2830,7 +2830,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$f''(x)<0$ $\\text{故 }\\ln x$ $\\text{为凸函数（}\\cap\\text{形）}$。$\\text{凸函数的琴生不等式：}f\\left(\\frac{x_{1}+x_{2}}{2}\\right) > \\frac{f(x_{1})+f(x_{2})}{2}$。$\\text{即 }\\ln\\frac{a+b}{2} > \\frac{\\ln a+\\ln b}{2} = \\ln\\sqrt{ab}$，$\\text{得 }\\frac{a+b}{2} > \\sqrt{ab}$（$\\text{均值不等式}$）。",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·琴生不等式",
+      "topic": "凹凸性与拐点",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2852,7 +2852,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\text{法一（泰勒）：}f(1)=f(0)+f'(0)\\cdot 1+\\frac{f''(\\xi)}{2}\\cdot 1^{2}=1+\\frac{f''(\\xi)}{2}>1$（$f''>0$）。$\\text{法二（拉格朗日）：}f(1)=f'(\\eta)$，$\\eta \\in (0,1)$。$f''>0$ $\\Rightarrow f'$ $\\text{严格递增}$，$\\therefore f'(\\eta)>f'(0)=1$。",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·凹凸性应用",
+      "topic": "凹凸性与拐点",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2868,7 +2868,7 @@ var QUESTION_BANK = {
       "answer": "1",
       "solution": "$y''=6ax+2b$。$\\text{拐点条件：}$ ①$y''(1)=0 \\Rightarrow 6a+2b=0 \\Rightarrow b=-3a$；②$y(1)=-2 \\Rightarrow a+b=-2$。$\\text{代入得 }a-3a=-2 \\Rightarrow a=1$。$\\text{代回得 }b=-3$。$\\text{验证 }y''=6x-6=6(x-1)\\text{ 在 }x=1\\text{ 两侧变号，确为拐点。}$",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·拐点反求参数",
+      "topic": "凹凸性与拐点",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2890,7 +2890,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "$f''>0\\text{ 仅说明 }f'\\text{ 严格递增，但 }\\xi\\text{ 的位置还取决于 }f'\\text{ 的凹凸性（即 }f'''\\text{ 的符号）}$。$\\text{例：}f(x)=x^{2}\\text{（}f''=2>0\\text{）时 }\\xi=\\frac{a+b}{2}$；$f(x)=e^{x}\\text{（}f''=e^{x}>0\\text{）时 }\\xi > \\frac{a+b}{2}$。$\\text{故无法仅由 }f''>0\\text{ 确定。}$",
       "cat": "一元微分学",
-      "topic": "中值定理·中值点位置",
+      "topic": "中值定理与泰勒公式",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2912,7 +2912,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$f''(x)<0\\text{ 为凸函数}$。$\\text{凸函数的等价定义：}$ $f(\\frac{x_{1}+x_{2}}{2}) > \\frac{f(x_{1})+f(x_{2})}{2}$，$\\text{即中点函数值大于两端平均值}$，$\\text{图形上曲线在弦之上}$。$\\text{凹函数则相反：中点值小于平均值，曲线在弦之下。}$",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·琴生不等式",
+      "topic": "凹凸性与拐点",
       "source": "自编",
       "papers": [
         "shu1",
@@ -2925,7 +2925,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "连续性·连续延拓·分段点导数定义",
+      "topic": "导数定义与可导性",
       "question": "设 $f(x)=\\begin{cases}\\dfrac{\\ln(1+x)-x}{x^2}, & x\\neq0,\\\\[2mm] a, & x=0,\\end{cases}$ 若 $f(x)$ 在 $x=0$ 处连续，求常数 $a$；并讨论 $f(x)$ 在 $x=0$ 处是否可导。",
       "answer": "$a=-\\dfrac12$；可导，$f'(0)=\\dfrac13$",
       "solution": "由 $\\ln(1+x)=x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}+o(x^3)$ 得 $\\dfrac{\\ln(1+x)-x}{x^2}=-\\dfrac12+\\dfrac{x}{3}+o(x)\\to-\\dfrac12$，故 $a=-\\dfrac12$。\n可导性用导数定义：$f'(0)=\\lim\\limits_{x\\to0}\\dfrac{-\\frac12+\\frac{x}{3}+o(x)+\\frac12}{x}=\\dfrac13$。\n**注**：分段点处的可导性必须用导数定义求，不能对分段表达式直接求导后代入。",
@@ -2941,7 +2941,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "可导性讨论·含参数振荡因子·三个门槛",
+      "topic": "导数定义与可导性",
       "question": "设 $f(x)=\\begin{cases}x^{\\alpha}\\sin\\dfrac1x, & x\\neq0,\\\\[2mm] 0, & x=0,\\end{cases}$ 分别讨论 $\\alpha$ 取何值时，$f(x)$ 在 $x=0$ 处：(1) 连续；(2) 可导；(3) 导函数 $f'(x)$ 在 $x=0$ 处连续。",
       "answer": "(1) $\\alpha>0$；(2) $\\alpha>1$；(3) $\\alpha>2$",
       "solution": "(1) 连续需 $\\lim x^\\alpha\\sin\\dfrac1x=0$，当且仅当 $\\alpha>0$（有界量乘无穷小）。\n(2) 可导：$f'(0)=\\lim\\dfrac{x^\\alpha\\sin\\frac1x}{x}=\\lim x^{\\alpha-1}\\sin\\dfrac1x$，存在当且仅当 $\\alpha>1$，此时 $f'(0)=0$。\n(3) 当 $x\\neq0$ 时 $f'(x)=\\alpha x^{\\alpha-1}\\sin\\dfrac1x-x^{\\alpha-2}\\cos\\dfrac1x$，要使其 $\\to0$ 需 $\\alpha-1>0$ 且 $\\alpha-2>0$，即 $\\alpha>2$。\n**注**：三个门槛 $0,1,2$ 依次对应\"连续 / 可导 / 连续可导\"，是含振荡因子的标准结论。",
@@ -2957,7 +2957,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "导数定义·复合凑形·抽象函数",
+      "topic": "导数定义与可导性",
       "question": "设 $f(0)=0$，$f'(0)=2$，求 $\\displaystyle\\lim_{x\\to0}\\frac{f(1-\\cos x)}{x^2}$。",
       "answer": "$1$",
       "solution": "由 $f'(0)=2$ 得 $f(u)=2u+o(u)$。令 $u=1-\\cos x\\to0^+$，且 $1-\\cos x\\sim\\dfrac{x^2}{2}$，故 $f(1-\\cos x)=2(1-\\cos x)+o(1-\\cos x)=x^2+o(x^2)$，极限为 $1$。\n**注**：抽象函数求极限的标准套路是把 $f(u)$ 在 $u=0$ 处一阶展开，再代入 $u=u(x)$ 的等价无穷小。",
@@ -2973,7 +2973,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "二阶可导·对称差分·反向不成立",
+      "topic": "导数定义与可导性",
       "question": "设 $f(x)$ 在 $x_0$ 处二阶可导，求 $\\displaystyle\\lim_{h\\to0}\\frac{f(x_0+h)+f(x_0-h)-2f(x_0)}{h^2}$。",
       "answer": "$f''(x_0)$",
       "solution": "在 $x_0$ 处作带 Peano 余项的泰勒展开：$f(x_0\\pm h)=f(x_0)\\pm f'(x_0)h+\\dfrac{f''(x_0)}{2}h^2+o(h^2)$，两式相加得 $f(x_0+h)+f(x_0-h)-2f(x_0)=f''(x_0)h^2+o(h^2)$，除以 $h^2$ 得极限 $f''(x_0)$。\n**注**：反过来不成立——对称差分极限存在推不出二阶可导。如 $f(x)=x|x|$，对称差分恒为 $0$，但 $f''(0)$ 不存在。这是选择题常见陷阱。",
@@ -2989,7 +2989,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "隐函数求导·先定点坐标",
+      "topic": "导数计算",
       "question": "设 $y=y(x)$ 由方程 $xy+e^{y}=e^{x}+1$ 确定，求 $y(0)$ 与 $y'(0)$。",
       "answer": "$y(0)=\\ln2,\\quad y'(0)=\\dfrac{1-\\ln2}{2}$",
       "solution": "代 $x=0$ 得 $e^{y}=e^0+1=2$，故 $y(0)=\\ln2$。两边对 $x$ 求导：$y+xy'+e^{y}y'=e^{x}$。代入 $x=0,\\,y=\\ln2,\\,e^y=2$：$\\ln2+2y'(0)=1$，得 $y'(0)=\\dfrac{1-\\ln2}{2}$。\n**注**：隐函数求导必须先确定点的坐标 $(x_0,y_0)$ 再代入；$e^y$ 对 $x$ 求导是 $e^y y'$。",
@@ -3005,7 +3005,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "参数方程二阶导·摆线",
+      "topic": "导数计算",
       "question": "设摆线 $\\begin{cases}x=t-\\sin t,\\\\ y=1-\\cos t,\\end{cases}$ 求 $\\dfrac{dy}{dx}$ 与 $\\dfrac{d^2y}{dx^2}$。",
       "answer": "$\\dfrac{dy}{dx}=\\cot\\dfrac t2,\\quad \\dfrac{d^2y}{dx^2}=-\\dfrac{1}{4\\sin^4\\frac t2}$",
       "solution": "$\\dfrac{dx}{dt}=1-\\cos t$，$\\dfrac{dy}{dt}=\\sin t$，故 $\\dfrac{dy}{dx}=\\dfrac{\\sin t}{1-\\cos t}=\\dfrac{2\\sin\\frac t2\\cos\\frac t2}{2\\sin^2\\frac t2}=\\cot\\dfrac t2$。\n二阶导须再除以 $\\dfrac{dx}{dt}$：$\\dfrac{d^2y}{dx^2}=\\dfrac{-\\frac12\\csc^2\\frac t2}{1-\\cos t}=\\dfrac{-\\frac12\\csc^2\\frac t2}{2\\sin^2\\frac t2}=-\\dfrac{1}{4\\sin^4\\frac t2}$。\n**注**：公式为 $\\dfrac{d^2y}{dx^2}=\\dfrac{x'y''-y'x''}{(x')^3}$，别漏掉\"再除以 $\\dfrac{dx}{dt}$\"。",
@@ -3021,7 +3021,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "高阶导数·莱布尼茨公式·幂级数法",
+      "topic": "导数计算",
       "question": "设 $f(x)=x^2e^{2x}$，求 $f^{(n)}(0)\\ (n\\geq2)$。",
       "answer": "$f^{(n)}(0)=n(n-1)2^{\\,n-2}$",
       "solution": "**幂级数法**：$e^{2x}=\\sum\\dfrac{2^k}{k!}x^k$，故 $f(x)=\\sum\\dfrac{2^k}{k!}x^{k+2}$。$x^n$ 项对应 $k=n-2$，系数 $\\dfrac{2^{n-2}}{(n-2)!}=\\dfrac{f^{(n)}(0)}{n!}$，得 $f^{(n)}(0)=n(n-1)2^{n-2}$。\n**莱布尼茨法**：$(uv)^{(n)}=\\sum\\binom{n}{k}u^{(k)}v^{(n-k)}$，取 $u=x^2$，代入 $x=0$ 只剩 $k=2$ 项：$\\dbinom n2\\cdot2\\cdot2^{n-2}=n(n-1)2^{n-2}$。\n**注**：\"多项式 × 指数/三角\"的高阶导用莱布尼茨最稳；只求某点的高阶导用幂级数更快。",
@@ -3037,7 +3037,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "罗尔定理·构造辅助函数·积分因子",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(1)=0$。证明：存在 $\\xi\\in(0,1)$，使得 $f'(\\xi)=-\\dfrac{f(\\xi)}{\\xi}$。",
       "answer": "令 $F(x)=xf(x)$，用罗尔定理",
       "solution": "目标式等价于 $\\xi f'(\\xi)+f(\\xi)=0$，而 $[xf(x)]'=xf'(x)+f(x)$，故令 $F(x)=xf(x)$。\n$F$ 在 $[0,1]$ 连续、$(0,1)$ 可导，且 $F(0)=0$，$F(1)=1\\cdot f(1)=0$，即 $F(0)=F(1)$。由罗尔定理，存在 $\\xi\\in(0,1)$ 使 $F'(\\xi)=0$，即 $\\xi f'(\\xi)+f(\\xi)=0$，亦即 $f'(\\xi)=-\\dfrac{f(\\xi)}{\\xi}$。\n**注**：看到 $f'+pf=0$ 型就乘积分因子 $e^{\\int p\\,dx}$；本题 $p=\\dfrac1x$，积分因子为 $x$。",
@@ -3053,7 +3053,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "罗尔定理·构造辅助函数·乘 e^x",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $f(a)=f(b)=0$。证明：存在 $\\xi\\in(a,b)$，使得 $f'(\\xi)+f(\\xi)=0$。",
       "answer": "令 $F(x)=e^xf(x)$，用罗尔定理",
       "solution": "因 $[e^xf(x)]'=e^x[f'(x)+f(x)]$，令 $F(x)=e^xf(x)$。则 $F$ 在 $[a,b]$ 连续、$(a,b)$ 可导，且 $F(a)=e^af(a)=0$，$F(b)=e^bf(b)=0$。由罗尔定理存在 $\\xi$ 使 $F'(\\xi)=0$，即 $e^{\\xi}[f'(\\xi)+f(\\xi)]=0$，而 $e^{\\xi}\\neq0$，故 $f'(\\xi)+f(\\xi)=0$。\n**注**：要证 $f'(\\xi)+kf(\\xi)=0$ 构造 $e^{kx}f(x)$；要证 $f'(\\xi)+g(\\xi)f(\\xi)=0$ 构造 $e^{\\int g(x)dx}f(x)$。",
@@ -3069,7 +3069,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "柯西中值定理·取 g(x)=ln x",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $0<a<b$，函数 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导。证明：存在 $\\xi\\in(a,b)$ 使得 $f(b)-f(a)=\\xi f'(\\xi)\\ln\\dfrac{b}{a}$。",
       "answer": "取 $g(x)=\\ln x$ 用柯西中值定理",
       "solution": "取 $g(x)=\\ln x$，则 $g$ 在 $[a,b]$ 连续、$(a,b)$ 可导且 $g'(x)=\\dfrac1x\\neq0$。由柯西中值定理 $\\dfrac{f(b)-f(a)}{g(b)-g(a)}=\\dfrac{f'(\\xi)}{g'(\\xi)}$。代入 $g(b)-g(a)=\\ln\\dfrac ba$，$g'(\\xi)=\\dfrac1\\xi$，得 $\\dfrac{f(b)-f(a)}{\\ln\\frac ba}=\\xi f'(\\xi)$，即所求。\n**注**：拉格朗日是柯西取 $g(x)=x$ 的特例。结论出现 $\\ln\\dfrac ba$、$\\dfrac1a-\\dfrac1b$、$b^2-a^2$ 时对应取 $g(x)=\\ln x,\\ \\dfrac1x,\\ x^2$。",
@@ -3085,7 +3085,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "双中值问题·介值定理分点·分段拉格朗日",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(0)=0$，$f(1)=1$。证明：存在**不同**的 $\\xi,\\eta\\in(0,1)$，使得 $\\dfrac{1}{f'(\\xi)}+\\dfrac{1}{f'(\\eta)}=2$。",
       "answer": "先用介值定理取 $f(c)=\\\\frac12$，再两段用拉格朗日",
       "solution": "**第一步**：由 $f(0)=0,\\,f(1)=1$ 及介值定理，存在 $c\\in(0,1)$ 使 $f(c)=\\dfrac12$。\n**第二步**：在 $[0,c]$ 上用拉格朗日，存在 $\\xi\\in(0,c)$ 使 $\\dfrac12=f'(\\xi)c$，即 $\\dfrac{1}{f'(\\xi)}=2c$；在 $[c,1]$ 上用拉格朗日，存在 $\\eta\\in(c,1)$ 使 $\\dfrac12=f'(\\eta)(1-c)$，即 $\\dfrac{1}{f'(\\eta)}=2(1-c)$。（由 $f'(\\xi)c=\\frac12>0$ 知取倒数合法。）\n**第三步**：相加得 $2c+2(1-c)=2$，且 $\\xi\\in(0,c)$、$\\eta\\in(c,1)$ 故 $\\xi\\neq\\eta$。\n**注**：双中值题的标准动作是\"先用介值定理分点，再分段用拉格朗日\"，分点取函数值中点可使两段贡献对称抵消。",
@@ -3101,7 +3101,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "泰勒公式·最大值反推二阶导·最优常数",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,1]$ 上二阶可导，$f(0)=f(1)=0$，且 $\\max\\limits_{[0,1]}f(x)=2$。证明：存在 $\\xi\\in(0,1)$ 使得 $f''(\\xi)\\leq-16$。",
       "answer": "在最大值点对两端作泰勒展开，比较两端候选",
       "solution": "由最值定理存在 $x_0\\in[0,1]$ 使 $f(x_0)=2$；因 $f(0)=f(1)=0<2$ 故 $x_0\\in(0,1)$，由费马定理 $f'(x_0)=0$。\n在 $x_0$ 处对两端作带拉格朗日余项的泰勒展开：$0=f(0)=2+\\dfrac{f''(\\xi_1)}{2}x_0^2$，得 $f''(\\xi_1)=-\\dfrac{4}{x_0^2}$；$0=f(1)=2+\\dfrac{f''(\\xi_2)}{2}(1-x_0)^2$，得 $f''(\\xi_2)=-\\dfrac{4}{(1-x_0)^2}$。\n由 $x_0+(1-x_0)=1$，$x_0$ 与 $1-x_0$ 中至少一个 $\\leq\\dfrac12$：若 $x_0\\leq\\dfrac12$ 则 $f''(\\xi_1)\\leq-\\dfrac{4}{1/4}=-16$；若 $1-x_0\\leq\\dfrac12$ 则 $f''(\\xi_2)\\leq-16$。\n**注**：$-16$ 是最优常数，取 $f(x)=8x(1-x)$ 可验证取等。",
@@ -3117,7 +3117,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "泰勒余项·抽象函数·含参数结论",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $x=0$ 处三阶可导，且 $f(0)=0$，$f'(0)=0$，$f''(0)=2$。求 $\\displaystyle\\lim_{x\\to0}\\frac{f(x)-x^2}{x^3}$。",
       "answer": "$\\dfrac{f'''(0)}{6}$",
       "solution": "由泰勒公式 $f(x)=f(0)+f'(0)x+\\dfrac{f''(0)}{2}x^2+\\dfrac{f'''(0)}{6}x^3+o(x^3)=x^2+\\dfrac{f'''(0)}{6}x^3+o(x^3)$，故 $\\dfrac{f(x)-x^2}{x^3}\\to\\dfrac{f'''(0)}{6}$。\n**注**：只给\"三阶可导\"而非\"三阶导数连续\"时只能用 Peano 余项；本题极限值含 $f'''(0)$，属含参数的结论型题。",
@@ -3133,7 +3133,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "拉格朗日定理·证明不等式·ln(1+x) 双侧估计",
+      "topic": "中值定理与泰勒公式",
       "question": "证明：当 $x>0$ 时，$\\dfrac{x}{1+x}<\\ln(1+x)<x$。",
       "answer": "对 $\\\\ln(1+t)$ 在 $[0,x]$ 用拉格朗日中值定理",
       "solution": "对 $f(t)=\\ln(1+t)$ 在 $[0,x]$ 上用拉格朗日中值定理：$\\ln(1+x)=f'(\\xi)x=\\dfrac{x}{1+\\xi}$，$\\xi\\in(0,x)$。由 $0<\\xi<x$ 得 $1<1+\\xi<1+x$，故 $\\dfrac{x}{1+x}<\\dfrac{x}{1+\\xi}<x$。\n**另解（单调性）**：$g(x)=x-\\ln(1+x)$，$g(0)=0$，$g'(x)=\\dfrac{x}{1+x}>0$；$h(x)=\\ln(1+x)-\\dfrac{x}{1+x}$，$h(0)=0$，$h'(x)=\\dfrac{x}{(1+x)^2}>0$。\n**注**：由此可导出 $\\left(1+\\dfrac1n\\right)^n<e<\\left(1+\\dfrac1n\\right)^{n+1}$。",
@@ -3149,7 +3149,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "零点定理+单调性·根的唯一性",
+      "topic": "零点与方程根",
       "question": "证明方程 $x^3-3x+1=0$ 在区间 $(0,1)$ 内有且仅有一个实根。",
       "answer": "存在性用零点定理，唯一性用严格单调",
       "solution": "令 $f(x)=x^3-3x+1$。$f$ 在 $[0,1]$ 连续，且 $f(0)=1>0$，$f(1)=-1<0$，由零点定理存在 $x_0\\in(0,1)$ 使 $f(x_0)=0$。\n又 $f'(x)=3(x^2-1)<0$ 对 $x\\in(0,1)$ 恒成立，故 $f$ 严格递减，零点至多一个。\n**注**：\"存在性用零点定理、唯一性用单调性\"是根的个数问题的标准两步；若 $f'$ 变号则需分段讨论。",
@@ -3165,7 +3165,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "凹凸性·琴生不等式·均值不等式",
+      "topic": "凹凸性与拐点",
       "question": "利用函数 $f(x)=\\ln x$ 的凹凸性证明：对任意 $a>0,\\ b>0$，有 $\\sqrt{ab}\\leq\\dfrac{a+b}{2}$，并说明等号成立的条件。",
       "answer": "$f(x)=\\\\ln x$ 为凹函数，用琴生不等式；等号当且仅当 $a=b$",
       "solution": "$f(x)=\\ln x$ 满足 $f''(x)=-\\dfrac{1}{x^2}<0$，故 $f$ 是凹函数（$\\cap$ 型）。由琴生不等式 $f\\left(\\dfrac{a+b}{2}\\right)\\geq\\dfrac{f(a)+f(b)}{2}$，即 $\\ln\\dfrac{a+b}{2}\\geq\\dfrac{\\ln a+\\ln b}{2}=\\ln\\sqrt{ab}$。由 $\\ln x$ 单调递增得 $\\dfrac{a+b}{2}\\geq\\sqrt{ab}$。等号当且仅当 $a=b$。\n**注**：$f''<0$（凹）时函数值在平均点更大，不等式方向为 $\\geq$。",
@@ -3181,7 +3181,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "单调性·拉格朗日定理·割线斜率递增",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,+\\infty)$ 上连续，在 $(0,+\\infty)$ 内可导，$f(0)=0$，且 $f'(x)$ 在 $(0,+\\infty)$ 上单调递增。证明：$g(x)=\\dfrac{f(x)}{x}$ 在 $(0,+\\infty)$ 上单调递增。",
       "answer": "证 $g'(x)=\\\\dfrac{xf'(x)-f(x)}{x^2}>0$",
       "solution": "$g'(x)=\\dfrac{xf'(x)-f(x)}{x^2}$。对 $f$ 在 $[0,x]$ 上用拉格朗日：$f(x)-f(0)=f'(\\xi)x$，$\\xi\\in(0,x)$，由 $f(0)=0$ 得 $f(x)=xf'(\\xi)$。因 $f'$ 递增且 $\\xi<x$，有 $f'(\\xi)<f'(x)$，故 $f(x)<xf'(x)$，即 $xf'(x)-f(x)>0$，于是 $g'(x)>0$。\n**注**：几何含义是\"导数递增时割线斜率随右端点右移而增大\"；注意条件是 $f'$ 单调递增而非 $f$ 单调。",
@@ -3197,7 +3197,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "罗尔定理·构造 f(x)-∫h(x)dx",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(0)=0$，$f(1)=1$。证明：存在 $\\xi\\in(0,1)$ 使得 $f'(\\xi)=2\\xi$。",
       "answer": "令 $F(x)=f(x)-x^2$，用罗尔定理",
       "solution": "目标 $f'(\\xi)=2\\xi$ 等价于 $[f(x)-x^2]'\\big|_{x=\\xi}=0$。令 $F(x)=f(x)-x^2$，则 $F$ 在 $[0,1]$ 连续、$(0,1)$ 可导，且 $F(0)=0$，$F(1)=f(1)-1=0$。由罗尔定理存在 $\\xi$ 使 $F'(\\xi)=0$，即 $f'(\\xi)=2\\xi$。\n**注**：结论形如 $f'(\\xi)=h(\\xi)$ 时构造 $F(x)=f(x)-\\int h(x)dx$，这是第 108、109、118 题共同的模式。",
@@ -3213,7 +3213,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "渐近线综合·垂直渐近线须分左右",
+      "topic": "导数几何应用",
       "question": "求曲线 $y=x\\,e^{1/x}$ 的全部渐近线。",
       "answer": "垂直渐近线 $x=0$（仅右侧）；斜渐近线 $y=x+1$",
       "solution": "**垂直渐近线**：$x\\to0^+$ 时令 $t=\\dfrac1x\\to+\\infty$，$\\lim xe^{1/x}=\\lim\\dfrac{e^t}{t}=+\\infty$，故 $x=0$ 是右侧垂直渐近线；$x\\to0^-$ 时 $t\\to-\\infty$，$\\dfrac{e^t}{t}\\to0$，左侧无。\n**斜渐近线**：$a=\\lim\\limits_{x\\to\\infty}\\dfrac{y}{x}=\\lim e^{1/x}=1$；$b=\\lim\\limits_{x\\to\\infty}x(e^{1/x}-1)=\\lim\\limits_{t\\to0}\\dfrac{e^t-1}{t}=1$。故 $y=x+1$（两侧相同）。\n**注**：本题 $x=0$ 两侧性态不同，垂直渐近线必须分左右讨论——最易漏掉。",
@@ -3229,7 +3229,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "方程根的个数讨论·两端极限同号+唯一极值",
+      "topic": "零点与方程根",
       "question": "讨论方程 $\\ln x=ax\\ (a>0)$ 的实根个数。",
       "answer": "$0<a<\\dfrac1e$ 时 2 个；$a=\\dfrac1e$ 时 1 个；$a>\\dfrac1e$ 时 0 个",
       "solution": "令 $f(x)=\\ln x-ax$（$x>0$）。$\\lim\\limits_{x\\to0^+}f=-\\infty$，$\\lim\\limits_{x\\to+\\infty}f=-\\infty$。$f'(x)=\\dfrac1x-a$，$f''(x)=-\\dfrac1{x^2}<0$，唯一驻点 $x=\\dfrac1a$ 为极大值点，最大值 $f\\left(\\dfrac1a\\right)=-\\ln a-1$。\n- 若 $-\\ln a-1>0$ 即 $0<a<\\dfrac1e$：最大值 $>0$，两端趋于 $-\\infty$，各段一根，共 2 个；\n- 若 $a=\\dfrac1e$：最大值 $=0$，在 $x=e$ 处重根，共 1 个；\n- 若 $a>\\dfrac1e$：最大值 $<0$，无实根。\n**注**：\"两端极限同号 + 唯一极值\"是标准结构，只需判断极值符号。",
@@ -3245,7 +3245,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "不等式恒成立·分离参数·最值法",
+      "topic": "单调性与极值",
       "question": "若不等式 $a\\,e^{x}\\geq x+1$ 对一切 $x>0$ 成立，求常数 $a$ 的取值范围。",
       "answer": "$a\\geq1$",
       "solution": "因 $e^x>0$，可分离参数：$a\\geq(x+1)e^{-x}$ 对一切 $x>0$ 成立。令 $g(x)=(x+1)e^{-x}$，则 $g'(x)=-xe^{-x}<0$（$x>0$），$g$ 严格递减，$\\sup\\limits_{x>0}g(x)=\\lim\\limits_{x\\to0^+}g(x)=1$。故需且只需 $a\\geq1$。\n**验证**：$a=1$ 时即经典不等式 $e^x\\geq x+1$（由 $h(x)=e^x-x-1$，$h(0)=0$，$h'>0$）。\n**注**：恒成立问题两条路线——分离参数（参数可显式解出时首选）与最值法。",
@@ -3261,7 +3261,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "曲率·最值应用·曲率公式",
+      "topic": "导数几何应用",
       "question": "求曲线 $y=\\ln x\\ (x>0)$ 上曲率最大的点，并求该最大曲率。",
       "answer": "点 $\\Big(\\dfrac{1}{\\sqrt2},-\\dfrac{\\ln2}{2}\\Big)$；$K_{\\max}=\\dfrac{2}{3\\sqrt3}$",
       "solution": "$y'=\\dfrac1x$，$y''=-\\dfrac1{x^2}$，$K(x)=\\dfrac{|y''|}{(1+y'^2)^{3/2}}=\\dfrac{\\frac1{x^2}}{\\left(\\frac{x^2+1}{x^2}\\right)^{3/2}}=\\dfrac{x}{(x^2+1)^{3/2}}$。\n$K'(x)=(x^2+1)^{-5/2}(1-2x^2)$，驻点 $x=\\dfrac1{\\sqrt2}$；左侧 $K'>0$、右侧 $K'<0$，且 $K\\to0$（$x\\to0^+$ 或 $+\\infty$），故为最大值点。对应 $y=\\ln\\dfrac1{\\sqrt2}=-\\dfrac{\\ln2}{2}$，$K_{\\max}=\\dfrac{\\frac1{\\sqrt2}}{\\left(\\frac32\\right)^{3/2}}=\\dfrac{2}{3\\sqrt3}$。\n**注**：参数方程形式为 $K=\\dfrac{|x'y''-y'x''|}{(x'^2+y'^2)^{3/2}}$。",
@@ -3277,7 +3277,7 @@ var QUESTION_BANK = {
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "极值·反求参数·驻点非极值的例子",
+      "topic": "单调性与极值",
       "question": "设 $f(x)=x^3-3ax+1$。(1) 若 $f(x)$ 在 $x=1$ 处取得极值，求 $a$ 并判断是极大值还是极小值；(2) 求使 $f(x)$ 有极值的 $a$ 的取值范围。",
       "answer": "(1) $a=1$，极小值 $f(1)=-1$；(2) $a>0$",
       "solution": "**(1)** $f'(x)=3x^2-3a$，由 $f'(1)=0$ 得 $a=1$。此时 $f'(x)=3(x-1)(x+1)$，$f''(x)=6x$，$f''(1)=6>0$，故 $x=1$ 为极小值点，$f(1)=-1$（另一驻点 $x=-1$ 为极大值点，$f(-1)=3$）。\n**(2)** $f'(x)=3x^2-3a$：$a>0$ 时有两相异实根 $\\pm\\sqrt a$ 且 $f'$ 变号，有极大、极小各一个；$a=0$ 时 $f'=3x^2\\geq0$，$f$ 递增无极值；$a<0$ 时 $f'>0$ 恒成立，无极值。故充要条件为 $a>0$。\n**注**：$f'(x_0)=0$ 只是必要条件，必须再判断变号或用二阶导数检验；$a=0$ 时 $x=0$ 是\"驻点但非极值点\"。",
@@ -3293,7 +3293,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "介值定理·不动点型·一维 Borsuk-Ulam",
+      "topic": "零点与方程根",
       "question": "设 $f(x)$ 在 $[0,1]$ 上连续，且 $f(0)=f(1)$。证明：存在 $\\xi\\in\\Big[0,\\dfrac12\\Big]$，使得 $f(\\xi)=f\\Big(\\xi+\\dfrac12\\Big)$。",
       "answer": "令 $g(x)=f(x+\\\\frac12)-f(x)$，两端点值异号",
       "solution": "令 $g(x)=f\\left(x+\\dfrac12\\right)-f(x)$，$x\\in\\left[0,\\dfrac12\\right]$，$g$ 连续。$g(0)=f\\left(\\dfrac12\\right)-f(0)$，$g\\left(\\dfrac12\\right)=f(1)-f\\left(\\dfrac12\\right)=f(0)-f\\left(\\dfrac12\\right)=-g(0)$。\n若 $g(0)=0$ 取 $\\xi=0$；否则 $g(0)$ 与 $g\\left(\\dfrac12\\right)$ 异号，由零点定理存在 $\\xi\\in\\left(0,\\dfrac12\\right)$ 使 $g(\\xi)=0$，即 $f(\\xi)=f\\left(\\xi+\\dfrac12\\right)$。\n**注**：这是\"一维 Borsuk—Ulam 定理\"的特例。一般化：对任意正整数 $n$，存在 $\\xi\\in\\left[0,1-\\dfrac1n\\right]$ 使 $f(\\xi)=f\\left(\\xi+\\dfrac1n\\right)$，用 $g(0)+\\cdots+g\\left(\\dfrac{n-1}{n}\\right)=0$ 说明诸值不能全同号。",
@@ -3309,7 +3309,7 @@ var QUESTION_BANK = {
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "泰勒展开·两点展开相减·导界估计",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,1]$ 上二阶可导，$f(0)=f(1)=0$，且 $|f''(x)|\\leq1$ 对 $x\\in[0,1]$ 成立。证明：对任意 $x\\in[0,1]$，$|f'(x)|\\leq\\dfrac12$。",
       "answer": "在 $x_0$ 处对 0 与 1 分别作泰勒展开后相减",
       "solution": "任取 $x_0\\in(0,1)$，在 $x_0$ 处对 $0$ 与 $1$ 作带拉格朗日余项的泰勒展开，由 $f(0)=f(1)=0$ 两式相减消去 $f(x_0)$：$0=f'(x_0)+\\dfrac12\\left[f''(\\xi_2)(1-x_0)^2-f''(\\xi_1)x_0^2\\right]$，即 $f'(x_0)=\\dfrac12\\left[f''(\\xi_1)x_0^2-f''(\\xi_2)(1-x_0)^2\\right]$。\n取绝对值并用 $|f''|\\leq1$：$|f'(x_0)|\\leq\\dfrac12\\left[x_0^2+(1-x_0)^2\\right]$，而 $x_0^2+(1-x_0)^2=2\\left(x_0-\\dfrac12\\right)^2+\\dfrac12\\leq1$，故 $|f'(x_0)|\\leq\\dfrac12$。\n**注**：常数 $\\dfrac12$ 最优（取 $f(x)=\\dfrac12x(1-x)$）。此类\"由二阶导界估计一阶导界\"的通法就是在两点作泰勒展开后相减消去函数值。",
@@ -17219,7 +17219,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$由导数定义：f'(0) = \\lim_{x \\to 0} [f(x)-f(0)]/(x-0) = \\lim_{x \\to 0} f(x)/x = 2。此题综合考查导数定义与极限计算，关键是识别出该极限就是导数定义式。$",
       "cat": "一元微分学",
-      "topic": "导数定义·由 f(0)=0 反推极限",
+      "topic": "导数定义与可导性",
       "papers": [
         "shu1",
         "shu2",
@@ -17240,7 +17240,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$极限存在且有限，分母\\rightarrow0，所以分子也必须\\rightarrow0（否则极限为\\infty）。故 f(1)=\\lim(x\\rightarrow1) f(x)=0。进一步由导数定义可得 f'(1)=3。此题反用导数定义：由极限存在反推函数值。$",
       "cat": "一元微分学",
-      "topic": "导数定义·极限存在推出函数值",
+      "topic": "导数定义与可导性",
       "papers": [
         "shu1",
         "shu2",
@@ -17261,7 +17261,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$0/0型，洛必达（两次）：第一次得 \\lim(e^x-1)/(2x) = 1/2（再用一次或等价无穷小 e^x-1~x）。或用泰勒展开：e^x=1+x+x^{2}/2+o(x^{2})，代入得 x^{2}/2/x^{2}=1/2。考查洛必达与泰勒展开的结合使用。$",
       "cat": "极限与连续",
-      "topic": "泰勒展开·等价无穷小",
+      "topic": "函数极限计算",
       "papers": [
         "shu1",
         "shu2",
@@ -17282,7 +17282,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "泰勒展开 \\sin x = x - x^{3}/6 + o(x^{3})，代入得 -x^{3}/6 / x^{3} = -1/6。也可洛必达三次，但泰勒更直接。考查常见函数的泰勒展开在极限中的应用。",
       "cat": "极限与连续",
-      "topic": "泰勒展开·等价无穷小",
+      "topic": "函数极限计算",
       "papers": [
         "shu1",
         "shu2",
@@ -17303,7 +17303,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$极限为 A 有限值，分母\\rightarrow0得 f(0)=0。再由导数定义：f'(0) = \\lim_{x \\to 0} f(x)/x = A。注意题目给了 f'(x) 连续是冗余条件，实际只需可导即可。考查审题能力。$",
       "cat": "一元微分学",
-      "topic": "导数定义·由极限反推导数值",
+      "topic": "导数定义与可导性",
       "papers": [
         "shu1",
         "shu2",
@@ -17324,7 +17324,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$f'(0) = \\lim h²\\sin(1/h)/h = \\lim h \\sin(1/h) = 0（有界×无穷小）。x\\neq0时 f'(x)=2x \\sin(1/x) - \\cos(1/x)，\\lim_{x \\to 0} f'(x) 不存在（\\cos(1/x)震荡）。故 f 可导但 f' 在 x=0 不连续。经典反例，综合连续、可导、导数连续三个层次。$",
       "cat": "一元微分学",
-      "topic": "导数定义·振荡因子可导性判定",
+      "topic": "导数定义与可导性",
       "papers": [
         "shu1",
         "shu2",
@@ -17345,7 +17345,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$由条件得 f(0)=1，f'(0)=2。所求 = \\lim exp[(1/x)·\\ln f(x)]。利用 \\ln f(x) ~ f(x)-1（x\\rightarrow0），原式 = exp[\\lim (f(x)-1)/x] = exp(f'(0)) = e²。考查幂指函数极限化归与导数定义。$",
       "cat": "极限与连续",
-      "topic": "1^∞ 型幂指函数极限",
+      "topic": "幂指函数极限",
       "papers": [
         "shu1",
         "shu2",
@@ -17366,7 +17366,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "利用二阶泰勒：f(x₀±h) = f(x₀) ± f'(x₀)h + f''(x₀)h²/2 + o(h²)。相加得 2f(x₀) + f''(x₀)h² + o(h²)，所以分子 = f''(x₀)h² + o(h²)，极限为 f''(x₀)。考查二阶泰勒与对称差商的二阶精度。",
       "cat": "一元微分学",
-      "topic": "二阶导数·对称差商极限",
+      "topic": "导数定义与可导性",
       "papers": [
         "shu1",
         "shu2",
@@ -17381,7 +17381,7 @@ var QUESTION_BANK = {
       "answer": "-8",
       "solution": "f'(x) = (x-2)²(x-3)³ + (x-1)·[(x-2)²(x-3)³]'。代入 x=1：f'(1) = (1-2)²(1-3)³ + 0 = 1×(-8) = -8。乘积函数在某点导数为零若该因子在该点为零，但需检查其他因子在该点的值。(1-2)²=1，(1-3)³=-8，乘积=-8。",
       "cat": "一元微分学",
-      "topic": "乘积求导·单点取值的因式技巧",
+      "topic": "导数计算",
       "papers": [
         "shu1",
         "shu2",
@@ -17396,7 +17396,7 @@ var QUESTION_BANK = {
       "answer": "x",
       "solution": "$y' = x·e^x + e^x = e^x(x+1)，y'(0) = 1·1 = 1。切线方程为 y - 0 = 1·(x - 0)，即 y = x。考查导数几何意义——切线斜率。综合乘积求导法则。$",
       "cat": "一元微分学",
-      "topic": "切线方程",
+      "topic": "导数几何应用",
       "papers": [
         "shu1",
         "shu2",
@@ -17411,7 +17411,7 @@ var QUESTION_BANK = {
       "answer": "1",
       "solution": "$泰勒展开：\\ln(1+x)=x-x^{2}/2+o(x^{2})，\\ln(1-x)=-x-x^{2}/2+o(x^{2})。分子 = x-x^{2}/2 + a(-x-x^{2}/2) + o(x^{2}) = (1-a)x - (1+a)x^{2}/2 + o(x^{2})。要使极限存在且有限，分子中 x 的系数必须为零即 1-a=0，解得 a=1。此时分子=-x^{2}+o(x^{2})，极限值为 b=-1。考查参数确定型极限，综合泰勒展开与待定系数法。$",
       "cat": "极限与连续",
-      "topic": "泰勒展开·由极限存在反求系数",
+      "topic": "极限反推",
       "papers": [
         "shu1",
         "shu2",
@@ -17432,7 +17432,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$设最大值点为 c∈(0,1)，f(c)=2，f'(c)=0。用泰勒：f(0)=f(c)+f'(c)(0-c)+f''(ξ₁)(0-c)²/2，即 0=2+f''(ξ₁)c²/2，得 f''(ξ₁)=-4/c² \\leq -4。同理 f''(ξ₂)=-4/(1-c)² \\leq (min: 当c=1/2时=-16)。取较小者即 \\leq -8（当c\\neq1/2时有一边更紧）。最严格结论：f''(ξ)\\leq-4/c²\\leq-4。选项中最严格可保证的是 -8。考查费马引理+泰勒+极值综合。$",
       "cat": "一元微分学",
-      "topic": "最值点·二阶导数估计",
+      "topic": "中值定理与泰勒公式",
       "papers": [
         "shu1",
         "shu2",
@@ -17594,7 +17594,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$g'(x) = [xf'(x) - f(x)]/x^{2} = [xf'(x) - f(x)]/x^{2}。由拉格朗日中值定理：f(x)-f(0)=f(x)=f'(ξ)x，ξ∈(0,x)。由于 f' 递增，f'(ξ) \\leq f'(x)，故 f(x)=f'(ξ)x \\leq f'(x)x，即 xf'(x)-f(x) \\geq 0，g'(x) \\geq 0。考查中值定理+导数符号+单调性综合判断。$",
       "cat": "一元微分学",
-      "topic": "单调性·导数符号判定",
+      "topic": "单调性与极值",
       "papers": [
         "shu1",
         "shu2",
@@ -18377,7 +18377,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$第二个重要极限的数列形式：\\lim_{n \\to \\infty} (1+1/n)^n = e。这是定义自然常数 e 的方式之一，也是级数 Σ 1/n! 的和。$",
       "cat": "极限与连续",
-      "topic": "重要极限·e 的定义",
+      "topic": "数列极限",
       "papers": [
         "shu1",
         "shu2",
@@ -18398,7 +18398,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$令 x=1/n\\rightarrow0，原式 = \\lim_{x \\to 0} \\sin x / x = 1。数列极限化归为函数极限。这是处理 n\\rightarrow\\infty 时含三角函数的经典手法。$",
       "cat": "极限与连续",
-      "topic": "等价无穷小",
+      "topic": "数列极限",
       "papers": [
         "shu1",
         "shu2",
@@ -18419,7 +18419,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$n 项和 = (1/n)Σ(k=1\\rightarrown) 1/[1+(k/n)²]。这是定积分定义：\\lim(1/n)Σ f(k/n) = \\int ₀¹ f(x) dx，其中 f(x)=1/(1+x^{2})。\\int ₀¹ dx/(1+x^{2}) = [\\arctan x]\\big|_{0}¹ = \\pi/4。考查数列极限化归定积分——综合极限、级数、积分三大块。$",
       "cat": "极限与连续",
-      "topic": "定积分定义·和式极限",
+      "topic": "和式极限·定积分定义",
       "papers": [
         "shu1",
         "shu2",
@@ -18440,7 +18440,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$n 项中最小项为 1/\\sqrt{2n}，和 \\geq n·1/\\sqrt{2n} = \\sqrt{n/2} \\rightarrow \\infty。或用定积分定义：和 = (1/\\sqrtn) Σ 1/\\sqrt{1+k/n} \\approx \\sqrtn \\int ₀¹ dx/\\sqrt{1+x} \\rightarrow \\infty。考查数列极限的上下界估计——调和型发散。$",
       "cat": "极限与连续",
-      "topic": "定积分定义·和式极限",
+      "topic": "和式极限·定积分定义",
       "papers": [
         "shu1",
         "shu2",
@@ -18481,7 +18481,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$由斯特林公式 n! ~ \\sqrt{2\\pin}(n/e)^n，代入化简：(2n)! ~ \\sqrt{4\\pin}(2n/e)^(2n)。(2n)!/(n!·nⁿ) ~ [\\sqrt{4\\pin}(2n/e)^(2n)] / [\\sqrt{2\\pin}(n/e)^n·nⁿ] = \\sqrt2·(4n²/e²)^n/(n²/e)^n·1/nⁿ...(需要仔细算)。最终极限 = 4/e。$",
       "cat": "极限与连续",
-      "topic": "阶乘型·根值法",
+      "topic": "数列极限",
       "papers": [
         "shu1",
         "shu2",
@@ -18496,7 +18496,7 @@ var QUESTION_BANK = {
       "answer": "e²",
       "solution": "$(1+2/n)^n = [(1+2/n)^(n/2)]² \\rightarrow e²。或令 t=2/n\\rightarrow0，(1+t)^(2/t) = [(1+t)^(1/t)]² \\rightarrow e²。考查重要极限的变形——调整系数。$",
       "cat": "极限与连续",
-      "topic": "重要极限·1^∞ 型",
+      "topic": "数列极限",
       "papers": [
         "shu1",
         "shu2",
@@ -18511,7 +18511,7 @@ var QUESTION_BANK = {
       "answer": "e/2",
       "solution": "$利用展开式：(1+1/n)^n = e^{n \\ln(1+1/n)} = e^{n[1/n-1/(2n²)+1/(3n³)+…]} = e^{1-1/(2n)+1/(3n²)+…} = e·e^{-1/(2n)+1/(3n²)+…} = e·[1-1/(2n)+O(1/n²)]。所以 e-(1+1/n)^n = e/(2n)+O(1/n²)，n²[e-(1+1/n)^n] \\rightarrow e/2。考查数列收敛速率的精确估计。$",
       "cat": "极限与连续",
-      "topic": "泰勒展开·渐近估计",
+      "topic": "数列极限",
       "papers": [
         "shu1",
         "shu2",
@@ -19117,7 +19117,7 @@ var QUESTION_BANK = {
       "answer": "",
       "solution": "【校】PDF 题面写 $f''(\\xi)=\\frac{1}{a^2}|f(a)+f(-a)|$，一般情形严格结论为 $\\bigl|f''(\\xi)\\bigr|\\ge\\frac{1}{a^2}|f(a)+f(-a)|$ 之介值形式，解答中一并说明。\n\n【校】PDF 题面 (1) 处误写为 $f''(\\xi)=\\dfrac{1}{a^{2}}\\bigl|f(a)+f(-a)\\bigr|$，笔误去掉绝对值即可（无必要）；严格结论不需要绝对值，按 PDF 修正版（下式）证明。\n\n**结论**：(1) 存在 $\\xi\\in(-a,a)$，使 $f''(\\xi)=\\dfrac{1}{a^{2}}\\bigl[f(a)+f(-a)\\bigr]$；\n(2) 存在 $\\eta\\in(-a,a)$，使 $|f''(\\eta)|\\ge\\dfrac{1}{2a^{2}}\\bigl|f(a)-f(-a)\\bigr|$。\n\n(1) 由带 Lagrange 余项的 Taylor 公式（$f\\in C^2$）：\n\n$$f(a)=f(0)+f'(0)a+\\tfrac{1}{2}f''(\\xi_{1})a^{2},\\quad \\xi_{1}\\in(0,a);$$\n$$f(-a)=f(0)-f'(0)a+\\tfrac{1}{2}f''(\\xi_{2})a^{2},\\quad \\xi_{2}\\in(-a,0).$$\n\n将两式相加，并利用 $f(0)=0$：\n\n$$f(a)+f(-a)=\\tfrac{a^{2}}{2}\\bigl[f''(\\xi_{1})+f''(\\xi_{2})\\bigr].$$\n\n注意 $f''$ 在 $\\xi_{2},\\xi_{1}$ 之间连续，故 $\\dfrac{f''(\\xi_{1})+f''(\\xi_{2})}{2}$ 介于 $f''$ 的最小值与最大值之间；由介值定理，$\\exists\\,\\xi$ 介于 $\\xi_{2},\\xi_{1}$（即 $\\xi\\in(-a,a)$）使\n\n$$f''(\\xi)=\\frac{f''(\\xi_{1})+f''(\\xi_{2})}{2}=\\frac{f(a)+f(-a)}{a^{2}}.\\qquad\\square$$\n\n(2) $f$ 在 $(-a,a)$ 内某点 $x_{0}$ 取得极值，由 Fermat 定理 $f'(x_{0})=0$。再以 $x_{0}$ 为基点 Taylor 展开：\n\n$$f(a)=f(x_{0})+\\tfrac{1}{2}f''(\\eta_{1})(a-x_{0})^{2},\\quad \\eta_{1}\\in(x_{0},a);$$\n$$f(-a)=f(x_{0})+\\tfrac{1}{2}f''(\\eta_{2})(a+x_{0})^{2},\\quad \\eta_{2}\\in(-a,x_{0}).$$\n\n相减得\n\n$$f(a)-f(-a)=\\tfrac{1}{2}\\bigl[f''(\\eta_{1})(a-x_{0})^{2}-f''(\\eta_{2})(a+x_{0})^{2}\\bigr].$$\n\n取绝对值并用三角不等式，令 $M=\\max\\{|f''(\\eta_{1})|,|f''(\\eta_{2})|\\}$，注意 $|x_{0}|<a$ 所以\n\n$$(a-x_{0})^{2}+(a+x_{0})^{2}=2(a^{2}+x_{0}^{2})<4a^{2}.$$\n\n故\n\n$$|f(a)-f(-a)|\\le M\\cdot\\tfrac{1}{2}\\bigl[(a-x_{0})^{2}+(a+x_{0})^{2}\\bigr]<2Ma^{2}.$$\n\n从而 $|f''(\\eta_{i})|\\ge M\\ge\\dfrac{|f(a)-f(-a)|}{2a^{2}}$，取对应 $\\eta=\\eta_{i}$ 即得结论。$\\square$\n\nTaylor 公式是处理\"高阶导数值等式\"的不二法门。第 (1) 问用 $\\xi_{1},\\xi_{2}$ 处二阶展开相加，再用介值定理\"合成\"出中点 $\\xi$；第 (2) 问的关键是用**极值点** $x_{0}$ 作展开基点（消掉 $f'(x_{0})$ 项），并用 $|x_{0}|<a$ 把 $(a\\pm x_{0})^{2}$ 放大到 $<4a^{2}$。\n\n---",
       "cat": "一元微分学",
-      "topic": "中值定理·Taylor",
+      "topic": "中值定理与泰勒公式",
       "source": "综合例题PDF·例1",
       "papers": [
         "shu1",
@@ -19133,7 +19133,7 @@ var QUESTION_BANK = {
       "answer": "",
       "solution": "**结论**：必要性：$f''(x)\\ge 0$（$f$ 凸）$\\Rightarrow$ 对任意 $a<b$，$f\\!\\left(\\dfrac{a+b}{2}\\right)\\le\\dfrac{1}{b-a}\\displaystyle\\int_a^b f(x)\\,\\mathrm{d}x$；\n充分性：上述不等式对所有 $a<b$ 成立 $\\Rightarrow$ $f''(x)\\ge 0$。\n\n**必要性**（$f$ 凸 $\\Rightarrow$ 积分均值 $\\ge$ 中点值）：设 $m=\\dfrac{a+b}{2}$，$h=\\dfrac{b-a}{2}$。由 $f''\\ge 0$ 知 $f'$ 单调不减，从而\n\n$$f(m+s)+f(m-s)-2f(m)\\ge 0,\\qquad \\forall s\\in[0,h].$$\n\n（这是凸性的一阶等价：弦在曲线\"上方\"，或等价地 $f$ 满足 $f(m+s)+f(m-s)\\ge 2f(m)$。）\n\n对 $s$ 从 $0$ 到 $h$ 积分：\n\n$$\\int_0^h\\bigl[f(m+s)+f(m-s)\\bigr]\\,\\mathrm{d}s\\ge 2hf(m).$$\n\n左端换元即 $\\displaystyle\\int_{m-h}^{m+h}f(x)\\,\\mathrm{d}x=\\int_a^b f(x)\\,\\mathrm{d}x$，故\n\n$$\\int_a^b f(x)\\,\\mathrm{d}x\\ge (b-a)\\,f\\!\\left(\\tfrac{a+b}{2}\\right),\\qquad\\text{即}\\quad f\\!\\left(\\tfrac{a+b}{2}\\right)\\le\\frac{1}{b-a}\\int_a^b f(x)\\,\\mathrm{d}x.\\qquad\\square$$\n\n**充分性**（反证 + 局部 Taylor）：若题设条件恒成立，但 $\\exists x_{0}$ 使 $f''(x_{0})<0$。由 $f''$ 连续，存在邻域使 $f''<0$。取 $a=x_{0}-h$，$b=x_{0}+h$（$h>0$ 充分小），则条件要求\n\n$$f(x_{0})\\le\\frac{1}{2h}\\int_{x_{0}-h}^{x_{0}+h}f(t)\\,\\mathrm{d}t.\\quad(*)$$\n\n由带 Peano 余项的 Taylor 公式 $f(x_{0}+u)=f(x_{0})+f'(x_{0})u+\\tfrac{1}{2}f''(x_{0})u^{2}+o(u^{2})$，代入并利用奇函数项在对称区间积分为零：\n\n$$\\frac{1}{2h}\\int_{-h}^{h}\\!\\!f(x_{0}+u)\\,\\mathrm{d}u-f(x_{0})=\\frac{f''(x_{0})}{6}h^{2}+o(h^{2}).$$\n\n当 $h\\to 0^{+}$ 且 $f''(x_{0})<0$ 时，右端 $<0$，与 $(*)$ 矛盾。故 $f''(x_{0})\\ge 0$，由 $x_{0}$ 任意性 $f''\\ge 0$。$\\square$\n\n必要性用了凸函数的\"等间距和\"非负性（Hermite-Hadamard 不等式）；充分性用\"局部条件 ⟹ 全局一阶性质\"的反证套路，核心是把区间取得很小后用 Taylor 展开把积分均值与中点值的差表为 $f''(x_{0})\\cdot h^{2}/6+o(h^{2})$，符号完全由 $f''(x_{0})$ 决定。\n\n---",
       "cat": "一元微分学",
-      "topic": "凸性·积分不等式",
+      "topic": "凹凸性与拐点",
       "source": "综合例题PDF·例3",
       "papers": [
         "shu1",
@@ -19149,7 +19149,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "【校】按题面 $2/3$ 计算得 $f(0)=-1,\\ f'(0)=\\dfrac{7}{6}$；若极限值为 $\\dfrac{3}{2}$（常见版本）则选 C。\n\n【校】按 PDF 题面极限值 $\\dfrac{2}{3}$ 计算得 $f(0)=-1,\\ f'(0)=\\dfrac{7}{6}$，**与所有选项均不符**；按【校】提示的常见版本（极限值 $\\dfrac{3}{2}$）则选 C。本解答**如实按 PDF 原题 $\\dfrac{2}{3}$ 计算**并指出差异。\n\n将 $\\ln(1+x)$ 按 Taylor 展开至 $o(x^{2})$：\n\n$$\\ln(1+x)=x-\\tfrac{1}{2}x^{2}+o(x^{2}),\\qquad\\frac{\\ln(1+x)}{x^{2}}=\\frac{1}{x}-\\frac{1}{2}+o(1).$$\n\n原极限化为\n\n$$\\lim_{x\\to0}\\!\\left[\\frac{f(x)}{x}+\\frac{1}{x}-\\frac{1}{2}+o(1)\\right]=\\frac{2}{3}.$$\n\n即\n\n$$\\lim_{x\\to0}\\frac{f(x)+1}{x}=\\frac{2}{3}+\\frac{1}{2}=\\frac{7}{6}.$$\n\n由 $f$ 在 $x=0$ 连续，$\\lim_{x\\to0}f(x)=f(0)$：\n\n(i) 设 $f(0)=c$。由 $f$ 在 $x=0$ 连续，$\\lim_{x\\to0}f(x)=c$，故分子 $f(x)+1\\to c+1$。若 $c\\ne-1$，则分子趋于非零常数 $c+1\\ne0$ 而分母 $x\\to0$，于是\n$$\\left|\\frac{f(x)+1}{x}\\right|\\longrightarrow+\\infty$$\n（且 $x\\to0^{+}$ 与 $x\\to0^{-}$ 两侧分别为 $\\pm\\infty$），极限不存在，与题设矛盾。故必须有 $f(0)=-1$。\n\n(ii) 当 $f(0)=-1$ 时，$\\dfrac{f(x)+1}{x}=\\dfrac{f(x)-f(0)}{x}$，其极限存在（题设已保证）即说明 $f'(0)$ 存在，且\n$$f'(0)=\\lim_{x\\to0}\\frac{f(x)-f(0)}{x}=\\frac{7}{6}.$$\n\n综上：$f(0)=-1,\\ f'(0)=\\dfrac{7}{6}$。按 PDF 原题值 $2/3$，**没有匹配选项**；若将极限改成 $\\dfrac{3}{2}$，则 $f'(0)=\\dfrac{3}{2}+\\dfrac{1}{2}=2$，对应选项 C。$\\square$\n\n\"极限反推参数/导数值\"型：先 Taylor 展开已知部分，分离出 $\\dfrac{1}{x}$ 项看常数项定 $f(0)$，看一次项系数定 $f'(0)$。本题的关键是 $\\dfrac{\\ln(1+x)}{x^{2}}$ 展开后产生的 $\\dfrac{1}{x}$ 项与 $\\dfrac{f(x)}{x}$ 项合并。\n\n---",
       "cat": "极限与连续",
-      "topic": "极限反推·连续与导数",
+      "topic": "极限反推",
       "source": "综合例题PDF·例6",
       "options": [
         "$f(0)=0,\\ f'(0)=2$",
@@ -19171,7 +19171,7 @@ var QUESTION_BANK = {
       "answer": "",
       "solution": "**结论**：$g(x)=f(x)|x-a|$ 在 $x=a$ 处可导 $\\iff$ $f(a)=0$（此时 $g'(a)=0$）。\n\n**充分性**（$f(a)=0\\Rightarrow g'(a)$ 存在）：\n\n$g(a)=f(a)\\cdot 0=0$。对 $x\\ne a$：\n\n$$\\frac{g(x)-g(a)}{x-a}=\\frac{f(x)|x-a|}{x-a}=f(x)\\cdot\\operatorname{sgn}(x-a).$$\n\n由 $f$ 可导故 $f$ 连续，\n\n$$g'_+(a)=\\lim_{x\\to a^{+}}f(x)=f(a)=0,\\qquad g'_-(a)=\\lim_{x\\to a^{-}}\\bigl(-f(x)\\bigr)=-f(a)=0.$$\n\n两侧极限均为 $0$，故 $g'(a)=0$。$\\square$\n\n**必要性**（$g'(a)$ 存在 $\\Rightarrow f(a)=0$）：\n\n$$g'_+(a)=\\lim_{x\\to a^{+}}\\frac{g(x)-g(a)}{x-a}=\\lim_{x\\to a^{+}}\\frac{f(x)(x-a)}{x-a}=\\lim_{x\\to a^{+}}f(x)=f(a).$$\n\n$$g'_-(a)=\\lim_{x\\to a^{-}}\\frac{g(x)-g(a)}{x-a}=\\lim_{x\\to a^{-}}\\frac{f(x)(a-x)}{x-a}=\\lim_{x\\to a^{-}}\\bigl(-f(x)\\bigr)=-f(a).$$\n\n可导要求两侧相等：$f(a)=-f(a)$，故 $f(a)=0$。$\\square$\n\n带绝对值（更一般地，带 $\\operatorname{sgn}$ 因子）的函数在拼接点的可导性，充要条件总是\"该点处系数为零\"。原因是 $|x-a|$ 在 $x=a$ 左右导数不相等（$+1$ 与 $-1$），必须靠 $f(a)=0$ 把这一项\"压平\"。\n\n---",
       "cat": "一元微分学",
-      "topic": "可导性判定",
+      "topic": "导数定义与可导性",
       "source": "综合例题PDF·例7",
       "papers": [
         "shu1",
@@ -19187,7 +19187,7 @@ var QUESTION_BANK = {
       "answer": "命题正确。",
       "solution": "记 $u(x)=x\\sin\\dfrac{1}{x}$。要判断\n$$\\lim_{x\\to0}\\frac{\\sin(u(x))}{u(x)}\\stackrel{?}{=}1. \\quad(\\text{等价无穷小的定义})$$\n\n按 $\\varepsilon\\text{-}\\delta$ 定义，极限存在要求在 $\\dot{U}(0,\\delta)$ 内商函数**处处有定义**（分母 $\\ne 0$），并对所有路径趋于同一常数。\n\n但 $u(x)=0\\iff \\sin\\dfrac{1}{x}=0\\iff \\dfrac{1}{x}=k\\pi\\ (k\\in\\mathbb{Z}^{*})$，即 $x=x_{k}=\\dfrac{1}{k\\pi}$。\n\n这样的 $x_{k}$ 在 $0$ 的任何邻域内都有无穷多个（取 $k$ 充分大使 $|x_{k}|<\\delta$）。在这些点上商 $\\sin(u(x_{k}))/u(x_{k})$ 为 $\\sin 0/0$ 未定义。\n\n严格表述（否定极限存在）：取 $\\varepsilon_{0}=1/2$；对任意 $\\delta>0$，选 $k$ 使 $0<|x_{k}|=\\dfrac{1}{k\\pi}<\\delta$，则 $u(x_{k})=0$，商在 $x_{k}$ 无定义，故极限不存在。\n\n因此 $x\\sin\\dfrac{1}{x}$ 与 $\\sin(x\\sin\\dfrac{1}{x})$ 在 $x\\to 0$ 时**不能称为等价无穷小**，命题正确。$\\square$\n\n**附注**：在去掉 $u$ 的所有零点后（即将定义域限制到 $\\{x:u(x)\\ne 0\\}$），由 $u(x)\\to 0$ 知 $\\sin(u)/u\\to 1$，\"看起来\"等价；但等价无穷小的前提是去心邻域内处处有定义，而此处不满足，故不构成等价。\n\n等价无穷小的形式定义包含\"分母在去心邻域内处处不为零\"这一前提。当分母（取作\"标准型\"的那个）有零点时，商函数在零点附近未定义，极限按 $\\varepsilon\\text{-}\\delta$ 不存在。判别时只需问：\"分母在该点的任意邻域内是否为 $0$ 之外的值处处可达？\"\n\n---",
       "cat": "极限与连续",
-      "topic": "等价无穷小·真命题判断",
+      "topic": "无穷小阶的比较",
       "source": "综合例题PDF·例8",
       "papers": [
         "shu1",
@@ -19203,7 +19203,7 @@ var QUESTION_BANK = {
       "answer": "",
       "solution": "【校】PDF 作 $f(0)=2f(1)=2f(2)+f(3)$；只有 $f(2)+f(3)$ 时结论方可由介值+Rolle 严格推出，取此版本。\n\n【校】按 PDF 还原后的版本（$f(0)=2f(1)=f(2)+f(3)$，即 $f(0)=2f(1)$ 与 $f(2)+f(3)=2f(1)$）求解。\n\n**结论**：存在 $\\xi\\in(0,3)$ 使 $f'(\\xi)=0$。\n\n设公共值 $m$，则\n$$f(0)=m,\\quad f(1)=\\tfrac{m}{2},\\quad f(2)+f(3)=m.$$\n\n**情形 A** $f(2)=f(1)=\\dfrac{m}{2}$：此时 $f(3)=m-\\dfrac{m}{2}=\\dfrac{m}{2}$，即 $f(1)=f(2)$，由 Rolle 定理在 $[1,2]$ 上存在 $\\xi\\in(1,2)\\subset(0,3)$，$f'(\\xi)=0$。\n\n**情形 B** $f(2)\\ne f(1)$：由 $f(3)=m-f(2)=2f(1)-f(2)$，\n\n$$f(3)-f(1)=f(1)-f(2).$$\n\n于是 $f(2)-f(1)$ 与 $f(3)-f(1)$ **异号**（除非都为零，已在情形 A 处理）。\n\n不妨设 $f(2)>f(1)>f(3)$（另一情形对称）。考察 $f$ 在 $[1,3]$ 上的最大值 $M$。\n\n- 因 $f(2)\\ge M$，且 $M\\ge f(2)>\\max\\{f(1),f(3)\\}$，最大值点 $x_{0}$ 既不等于 $1$ 也不等于 $3$（否则 $M=f(1)$ 或 $f(3)$，矛盾）；\n- 故 $x_{0}\\in(1,3)$，且由 Fermat 定理（F 取极值且可导）$f'(x_{0})=0$。\n\n两种情形均得 $\\xi\\in(0,3)$ 使 $f'(\\xi)=0$。$\\square$\n\n题设给的是\"和\"条件 $f(2)+f(3)=2f(1)$，没有直接给出等值点，故不能直接 Rolle。这里改用**极值原理**：连续函数在闭区间的极值，若最大值点落在内点，由 Fermat 引理 $f'=0$。技巧是先用\"和 = 和\"推出 $f(2),f(3)$ 夹住 $f(1)$，保证最大值点必在 $(1,3)$ 内。\n\n---",
       "cat": "一元微分学",
-      "topic": "Rolle 定理·介值构造",
+      "topic": "中值定理与泰勒公式",
       "source": "综合例题PDF·例9",
       "papers": [
         "shu1",
@@ -19235,7 +19235,7 @@ var QUESTION_BANK = {
       "answer": "$\\displaystyle\\lim_{x\\to0}\\frac{1+f(x)}{x}=-\\frac{1}{2}$.",
       "solution": "【校】题面疑为 $e^{x}-1+x f(x)$（亦见版本 $\\mathrm{e}^{x}-1-xf(x)$），按前者求解。\n\n【校】题面已校正为 $e^{x}-1+x\\,f(x)$（而非 $e^{x}-1-xf(x)$）。\n\n将 $e^{x}$ Taylor 展开至二阶：\n\n$$e^{x}=1+x+\\tfrac{x^{2}}{2}+o(x^{2}),\\qquad e^{x}-1=x+\\tfrac{x^{2}}{2}+o(x^{2}).$$\n\n代入题设极限：\n\n$$\\frac{e^{x}-1+x\\,f(x)}{x^{2}}=\\frac{x+\\tfrac{x^{2}}{2}+o(x^{2})+x\\,f(x)}{x^{2}}=\\frac{1+f(x)}{x}+\\frac{1}{2}+o(1).$$\n\n题设该极限为 $0$，故\n\n$$\\lim_{x\\to0}\\!\\left[\\frac{1+f(x)}{x}+\\frac{1}{2}+o(1)\\right]=0\\quad\\Longrightarrow\\quad \\lim_{x\\to0}\\frac{1+f(x)}{x}=-\\frac{1}{2}.\\qquad\\square$$\n\n\"展开到够用的阶，凑出目标项\"。本题展开 $e^{x}$ 到 $x^{2}$，配合 $xf(x)$ 正好凑出 $\\dfrac{1+f(x)}{x}$ 加上常数 $\\dfrac{1}{2}$，常数项数值由题给极限值确定。\n\n---",
       "cat": "极限与连续",
-      "topic": "极限反推函数",
+      "topic": "极限反推",
       "source": "综合例题PDF·例18",
       "papers": [
         "shu1",
@@ -19251,7 +19251,7 @@ var QUESTION_BANK = {
       "answer": "$k=\\dfrac{1}{\\alpha}$。",
       "solution": "**Step 1 定阶**：\n$(x^{\\alpha}+8x^{4}+2)^{k}$ 的主阶为 $x^{\\alpha k}$。要使差 $(x^{\\alpha}+8x^{4}+2)^{k}-x$ 有有限极限，必须二者同阶，即 $\\alpha k=1$，故\n\n$$k=\\frac{1}{\\alpha}.$$\n\n若 $k\\ne 1/\\alpha$（$\\alpha k>1$ 或 $<1$），主项之比 $\\to\\infty$ 或 $0$，差分别 $\\to\\pm\\infty$，极限不存在。\n\n**Step 2 同阶情形展开**：\n\n$$(x^{\\alpha}+8x^{4}+2)^{1/\\alpha}=x\\cdot\\Bigl(1+\\frac{8x^{4}+2}{x^{\\alpha}}\\Bigr)^{1/\\alpha}=x\\cdot(1+u)^{1/\\alpha},$$\n\n其中 $u=\\dfrac{8x^{4}+2}{x^{\\alpha}}=8x^{4-\\alpha}+2x^{-\\alpha}$。由 $\\alpha\\ge5$ 知 $4-\\alpha\\le-1$，故 $u\\to 0$。\n\n用 $(1+u)^{1/\\alpha}=1+\\dfrac{u}{\\alpha}+O(u^{2})$（$u\\to 0$ 时）：\n\n$$(1+u)^{1/\\alpha}=1+\\frac{8}{\\alpha}x^{4-\\alpha}+\\frac{2}{\\alpha}x^{-\\alpha}+O(x^{8-2\\alpha}).$$\n\n故\n\n$$(x^{\\alpha}+8x^{4}+2)^{1/\\alpha}=x+\\frac{8}{\\alpha}x^{5-\\alpha}+\\frac{2}{\\alpha}x^{1-\\alpha}+O(x^{9-2\\alpha}).$$\n\n**Step 3 极限值**：\n\n- $\\alpha=5$：$(x^{5}+8x^{4}+2)^{1/5}=x+\\dfrac{8}{5}+\\dfrac{2}{5}x^{-4}+O(x^{-1})$，故\n\n$$\\lim_{x\\to+\\infty}\\bigl[(x^{5}+8x^{4}+2)^{1/5}-x\\bigr]=\\frac{8}{5}.$$\n\n- $\\alpha>5$：$5-\\alpha<0,\\ 1-\\alpha<0$，两项与余项均 $\\to 0$，故\n\n$$\\lim_{x\\to+\\infty}\\bigl[(x^{\\alpha}+8x^{4}+2)^{1/\\alpha}-x\\bigr]=0.$$\n\n综上：$k=\\dfrac{1}{\\alpha}$；$\\alpha=5$ 时极限 $=\\dfrac{8}{5}$，$\\alpha>5$ 时极限 $=0$。$\\square$\n\n\"$\\bigl(f(x)\\bigr)^{k}-g(x)$ 型极限\"的通用套路：(1) 先用阶的比较定出 $k$；(2) 提公因子把 $(f(x))^{k}$ 写成 $g(x)\\cdot(1+u)^{k}$；(3) 用 $(1+u)^{k}$ 的一阶展开（按需加上高阶）得到极限主部。注意本题高次项 $x^{4}$ 与最高次项 $x^{\\alpha}$ 之比 $x^{4-\\alpha}$ 在 $\\alpha\\ge5$ 时 $\\to 0$，是计算稳定的关键。\n\n---",
       "cat": "极限与连续",
-      "topic": "极限存在·参数",
+      "topic": "极限反推",
       "source": "综合例题PDF·例19",
       "papers": [
         "shu1",
@@ -19283,7 +19283,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "**【答案】** 选 C。\n\n**A 错。** 反例：$f(x)=\\dfrac{1}{x}$，$f'(x)=-\\dfrac{1}{x^{2}}$ 在 $(0,1)$ 上连续，但 $f(x)$ 在 $(0,1)$ 上无界（$x\\to 0^{+}$ 时 $f(x)\\to +\\infty$）。\n\n**B 错。** 反例同上：$f(x)=\\dfrac{1}{x}$ 在 $(0,1)$ 上连续但无界。\n\n**C 对。** 设 $M=\\sup_{x\\in(0,1)}|f'(x)|<+\\infty$。任取 $x\\in(0,1)$，固定 $x_{0}\\in(0,1)$（如 $x_{0}=\\tfrac12$），由 Lagrange 中值定理，存在 $\\xi\\in(x,x_{0})$ 使\n$$f(x)-f(x_{0})=f'(\\xi)(x-x_{0}).$$\n故\n$$|f(x)|\\le |f(x_{0})|+M|x-x_{0}|\\le |f(x_{0})|+M,$$\n$f$ 在 $(0,1)$ 上有界。\n\n**D 错。** 反例：$f(x)=\\sin\\dfrac{1}{x}$，在 $(0,1)$ 上 $|f(x)|\\le 1$ 有界，但\n$$f'(x)=-\\dfrac{1}{x^{2}}\\cos\\dfrac{1}{x}$$\n在 $x=\\dfrac{1}{2k\\pi}$（$k$ 充分大）附近，$\\cos\\dfrac{1}{x}=\\cos(2k\\pi)=1$，$f'(x)\\to -\\infty$，故 $f'(x)$ 在 $(0,1)$ 上无界。\n\n「导数有界 $\\Rightarrow$ 原函数有界」是闭区间（或紧集）上连续函数的典型结论，证法就是 Lagrange 中值定理 + 一点固定。反例要点：$f$ 有界推不出 $f'$ 有界（典型反例 $\\sin(1/x)$）；连续也推不出有界（典型反例 $1/x$）。\n\n---",
       "cat": "一元微分学",
-      "topic": "命题判断·有界与导数",
+      "topic": "中值定理与泰勒公式",
       "source": "综合例题PDF·例21",
       "options": [
         "若 $f'(x)$ 在 $(0,1)$ 内连续，则 $f(x)$ 在 $(0,1)$ 内有界；",
@@ -19305,7 +19305,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "**【答案】** 选 D（取得极小值）。\n\n由 $1-\\cos x\\sim \\dfrac{x^{2}}{2}\\ (x\\to 0)$，题设极限化为\n$$\\lim_{x\\to0}\\frac{f(x)}{x^{2}/2}=2\\ \\Longrightarrow\\ \\lim_{x\\to0}\\frac{f(x)}{x^{2}}=1.$$\n因 $\\dfrac{f(x)}{x^{2}}$ 的极限为正数 $1$，由极限的保号性，存在 $\\delta>0$，当 $0<|x|<\\delta$ 时\n$$\\frac{f(x)}{x^{2}}>0\\ \\Longrightarrow\\ f(x)>0.$$\n又 $f(0)=0$，所以 $f(0)<f(x)$（$0<|x|<\\delta$），即 $f$ 在 $x=0$ 处取得**极小值**。\n\n再判可导性：\n$$f'(0)=\\lim_{x\\to0}\\frac{f(x)}{x}=\\lim_{x\\to0}\\frac{f(x)}{x^{2}}\\cdot x=1\\cdot 0=0,$$\n所以 $f$ 在 $x=0$ 处可导，且 $f'(0)=0$。\n\n综上：**A、B、C 均不成立**，仅 D 正确（取得极小值）。\n\n\"$\\lim f(x)/x^{2}=c>0$\" 同时给出三件事：① $f(x)\\sim cx^{2}$，② $f(0)=0$（否则比值无意义），③ $x=0$ 是极小值点。可导性单独算，$f'(0)=\\lim f(x)/x$ 用 $f(x)\\sim cx^{2}$ 即得。\n\n---",
       "cat": "极限与连续",
-      "topic": "极限·极值判定",
+      "topic": "极限反推",
       "source": "综合例题PDF·例22",
       "options": [
         "不可导",
@@ -19327,7 +19327,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "**【答案】** 选 A：$\\dfrac{b}{a}\\in(e,+\\infty)$。\n\n$f$ 的定义域 $x>0$，$f'(x)=a-\\dfrac{b}{x}$。\n\n- **若 $b\\le 0$：** $f'(x)=a-\\dfrac{b}{x}>0$，$f$ 在 $(0,+\\infty)$ 上严格单调递增，又 $\\lim_{x\\to 0^{+}}f(x)=+\\infty$，$f(1)=a>0$，故 $f(x)>0$ 恒成立，**至多 0 个零点**。\n\n- **若 $b>0$：** $f'(x)=0$ 得唯一驻点 $x_{0}=\\dfrac{b}{a}$，且\n$$f''(x)=\\frac{b}{x^{2}}>0,$$\n故 $x_{0}$ 是极小值点，极小值\n$$f(x_{0})=a\\cdot\\frac{b}{a}-b\\ln\\frac{b}{a}=b\\left(1-\\ln\\frac{b}{a}\\right).$$\n\n两端极限：$\\lim_{x\\to 0^{+}}f(x)=+\\infty$，$\\lim_{x\\to+\\infty}f(x)=+\\infty$。\n\n零点个数取决于极小值的符号：\n\n| 条件 | 极小值 | 零点个数 |\n|---|---|---|\n| $f(x_{0})>0$，即 $\\ln\\dfrac{b}{a}<1$，即 $\\dfrac{b}{a}<e$ | 正 | 0 个 |\n| $f(x_{0})=0$，即 $\\dfrac{b}{a}=e$ | 零 | 1 个（$x=x_{0}$）|\n| $f(x_{0})<0$，即 $\\dfrac{b}{a}>e$ | 负 | 2 个 |\n\n**两个零点 $\\Longleftrightarrow \\dfrac{b}{a}>e$**，选 **A**。\n\n求零点个数 = 求极值个数：单调函数至多 1 零点；先算驻点（由 $f'=0$ 解出），再判端点极限符号、极值符号。注意 $b=0$ 时 $f(x)=ax$ 没有正数零点（$x=0$ 不在定义域）。\n\n---",
       "cat": "一元微分学",
-      "topic": "零点个数·参数范围",
+      "topic": "零点与方程根",
       "source": "综合例题PDF·例23",
       "options": [
         "$(e,+\\infty)$",
@@ -19349,7 +19349,7 @@ var QUESTION_BANK = {
       "answer": "$x=0$ 和 $x=1$ 均为极小值点，同时均为拐点。",
       "solution": "将 $f(x)=|x(1-x)|$ 写成分段函数（去掉绝对值时分界点 $x=0$ 与 $x=1$）：\n$$f(x)=\\begin{cases}x^{2}-x, & x\\le 0,\\\\[2pt]x-x^{2}, & 0<x<1,\\\\[2pt]x^{2}-x, & x\\ge 1.\\end{cases}$$\n\n**(1) 在 $x=0$ 处：**\n- 左、右导数：$f'_{-}(0)=(2x-1)\\big|_{x=0}=-1$，$f'_{+}(0)=(1-2x)\\big|_{x=0}=1$，故 $f$ 在 $x=0$ 处**不可导**。\n- 当 $x\\in(-\\delta,0)$：$f(x)=x(x-1)>0$（$x<0,\\ x-1<0$）；\n- 当 $x\\in(0,\\delta)$：$f(x)=x(1-x)>0$（$0<x<1$）。\n- 又 $f(0)=0$，故 $f(x)\\ge f(0)=0$ 在 $x=0$ 附近成立，**$x=0$ 是极小值点**。\n\n**(2) 在 $x=1$ 处：**\n- 左、右导数：$f'_{-}(1)=(1-2x)\\big|_{x=1}=-1$，$f'_{+}(1)=(2x-1)\\big|_{x=1}=1$，**不可导**。\n- $f(x)\\ge 0=f(1)$ 在 $x=1$ 附近成立，**$x=1$ 是极小值点**。\n\n**(3) 拐点：** 各区间 $f''$：\n$$f''(x)=\\begin{cases}2, & x<0,\\\\-2, & 0<x<1,\\\\2, & x>1.\\end{cases}$$\n\n- $x=0$：左侧 $f''>0$（凸），右侧 $f''<0$（凹），凹凸性改变，**$x=0$ 是拐点**。\n- $x=1$：左侧 $f''<0$（凹），右侧 $f''>0$（凸），凹凸性改变，**$x=1$ 是拐点**。\n\n含绝对值的分段函数：先去绝对值写成分段式，分别在分段点处判左右导数；拐点的判定只需 $f$ 在该点**连续**且两侧凹凸性改变，不要求二阶可导。极小值点的判定不要求可导，只要 $f(x_{0})$ 是一侧邻域的最小值即可。\n\n---",
       "cat": "一元微分学",
-      "topic": "极值点与拐点",
+      "topic": "单调性与极值",
       "source": "综合例题PDF·例24",
       "papers": [
         "shu1",
@@ -19381,7 +19381,7 @@ var QUESTION_BANK = {
       "answer": "$g'(-1)=0$。",
       "solution": "由复合求导链式法则\n$$g'(x)=f'\\bigl[f(x)\\bigr]\\cdot f'(x).$$\n\n**第一步：求 $f(-1)$。** $-1\\le 0$，用 $f(x)=1+x^{3}$：\n$$f(-1)=1+(-1)^{3}=0.$$\n\n**第二步：求 $f(0)$，即 $g(-1)$。** $0\\le 0$，用 $f(x)=1+x^{3}$：\n$$f(0)=1+0=1.$$\n\n**第三步：求 $f'(-1)$。** 在 $x=-1<0$ 区间内，$f(x)=1+x^{3}$，$f'(x)=3x^{2}$，故\n$$f'(-1)=3(-1)^{2}=3.$$\n\n**第四步：求 $f'(0)$（注意 $x=0$ 是分段点）。** 左、右导数分别为\n$$f'_{-}(0)=\\lim_{x\\to 0^{-}}\\frac{(1+x^{3})-1}{x-0}=0,\\qquad f'_{+}(0)=\\lim_{x\\to 0^{+}}\\frac{(1-x\\sin x)-1}{x-0}=-\\lim_{x\\to 0^{+}}\\frac{\\sin x}{x}=-1.$$\n两侧不相等，故 $f$ 在 $x=0$ 处**不可导**，$f'(0)$ 不存在。\n\n**第五步：代入。** 因 $f'(0)$ 不存在，链式法则的乘积中第一因子 $f'(f(-1))=f'(0)$ 无意义，需要回到定义式处理：\n$$g'(-1)=\\lim_{x\\to -1}\\frac{f[f(x)]-f[f(-1)]}{x-(-1)}=\\lim_{x\\to -1}\\frac{f[f(x)]-1}{x+1}.$$\n\n当 $x$ 接近 $-1$ 时，$f(x)=1+x^{3}$ 接近 $0$，所以 $f(x)$ 在 $-1$ 附近从左侧小于 $0$、右侧大于 $0$（$1+(-1)^{3}=0$；当 $x>-1$ 略大时 $1+x^{3}>0$）。于是 $f(x)$ 跨越分段点 $0$ 时，$f$ 的右导数 $-1$ 与左导数 $0$ 在 $f$ 的内、外层位置不同。\n\n更精细地：用 $f(x)=1+x^{3}$（$x\\le 0$ 一侧），$f(-1)=0$，\n$$f[f(x)]-f[f(-1)]=f(1+x^{3})-f(0).$$\n当 $x\\to -1^{-}$（$x$ 从左侧接近 $-1$），$1+x^{3}\\to 0^{-}$，进入 $f$ 的左段 $1+t^{3}$，故\n$$f(1+x^{3})-1=(1+x^{3})^{3}-0=(x+1)^{3}(x^{2}-x+1)^{3},$$\n$$g'_{-}(-1)=\\lim_{x\\to -1^{-}}\\frac{(x+1)^{3}(x^{2}-x+1)^{3}}{x+1}=0.$$\n\n当 $x\\to -1^{+}$（$x$ 从右侧接近 $-1$），$1+x^{3}\\to 0^{+}$，进入 $f$ 的右段 $1-t\\sin t$，\n$$f(1+x^{3})-1=-(1+x^{3})\\sin(1+x^{3}),$$\n$$g'_{+}(-1)=\\lim_{x\\to -1^{+}}\\frac{-(1+x^{3})\\sin(1+x^{3})}{x+1}=\\lim_{u\\to 0^{+}}\\frac{-u\\sin u}{u}\\cdot 1=-0=0,$$\n其中 $u=1+x^{3}$，当 $x\\to -1^{+}$ 时 $u\\to 0^{+}$，且 $\\dfrac{u}{x+1}=\\dfrac{1+x^{3}}{x+1}=(x^{2}-x+1)\\to 3$，代入即得。\n\n两侧极限相等且为 $0$，故 $g'(-1)=0$。\n\n复合求导在分段点处一定要谨慎：若内层函数的值恰好落在外层分段点，外层在该点不可导则链式法则不可用，必须**回到定义式**分别求左、右导数。本题外层 $f$ 在 $0$ 处不可导，但极限仍存在（为 $0$），属于\"巧合型\"情形。\n\n---",
       "cat": "一元微分学",
-      "topic": "复合函数求导",
+      "topic": "导数计算",
       "source": "综合例题PDF·例26",
       "papers": [
         "shu1",
@@ -19397,7 +19397,7 @@ var QUESTION_BANK = {
       "answer": "$\\dfrac{1}{2e^{2}}$。",
       "solution": "【校】PDF 作 $\\lim_{x\\to0}f(\\sin x)=1$ 与 $x+\\sin x$，据题意还原为上式的 $\\dfrac{0}{0}$ 型极限。\n\n设 $y=f(x)$ 在点 $(0,1)$ 处的切线为 $\\ell$。题设 $\\ell$ 与曲线 $y=\\ln x$ 相切，设切点为 $(x_{0},\\ln x_{0})$（$x_{0}>0$）。\n\n$\\ell$ 在 $(x_{0},\\ln x_{0})$ 处的斜率为 $\\ln x$ 的导数 $\\dfrac{1}{x_{0}}$，故\n$$\\ell:\\ y-\\ln x_{0}=\\frac{1}{x_{0}}(x-x_{0}),\\ \\text{即}\\ y=\\frac{x}{x_{0}}+\\ln x_{0}-1.$$\n\n又 $\\ell$ 过 $(0,1)$：\n$$1=\\ln x_{0}-1\\ \\Longrightarrow\\ \\ln x_{0}=2\\ \\Longrightarrow\\ x_{0}=e^{2}.$$\n\n于是 $f(0)=1$，$f'(0)=\\dfrac{1}{x_{0}}=\\dfrac{1}{e^{2}}$。\n\n**求极限：**\n$$L=\\lim_{x\\to 0}\\frac{f(\\sin x)-1}{x+\\sin x}=\\lim_{x\\to 0}\\frac{f(\\sin x)-f(0)}{x+\\sin x}.$$\n\n分离变量：\n$$L=\\lim_{x\\to 0}\\underbrace{\\frac{f(\\sin x)-f(0)}{\\sin x}}_{(\\star)}\\cdot \\underbrace{\\frac{\\sin x}{x+\\sin x}}_{(\\star\\star)}.$$\n\n- $(\\star)$：当 $x\\to 0$，$\\sin x\\to 0$，由 $f$ 在 $0$ 处可导（链式法则 / 已知 $f'(0)$ 存在），\n$$(\\star)=\\lim_{\\sin x\\to 0}\\frac{f(\\sin x)-f(0)}{\\sin x-0}=f'(0)=\\frac{1}{e^{2}}.$$\n\n- $(\\star\\star)$：$\\displaystyle(\\star\\star)=\\lim_{x\\to 0}\\frac{\\sin x}{x+\\sin x}=\\lim_{x\\to 0}\\frac{\\sin x/x}{1+\\sin x/x}=\\frac{1}{1+1}=\\frac{1}{2}.$\n\n故\n$$L=\\frac{1}{e^{2}}\\cdot\\frac{1}{2}=\\frac{1}{2e^{2}}.$$\n\n「曲线在一点的切线又切另一曲线」=两曲线在该点共切线，可联立两个方程：(i) 切点满足切线方程，(ii) 切点在该曲线上；再由\"切线过题给点\"定第三个条件。极限题中把 $f(\\sin x)-f(0)$ 凑出 $f(\\sin x)-f(0)$ 与 $\\sin x-0$ 之商（用到 $f'(0)$），再乘以 $\\sin x/(x+\\sin x)$。\n\n---",
       "cat": "一元微分学",
-      "topic": "切线·极限",
+      "topic": "导数几何应用",
       "source": "综合例题PDF·例27",
       "papers": [
         "shu1",
@@ -19413,7 +19413,7 @@ var QUESTION_BANK = {
       "answer": "$x=0$ 是 第一类间断点（可去间断点）。",
       "solution": "分两部分考察左、右极限。\n\n**第一部分** $\\dfrac{2}{1+e^{1/x}}$：\n$$\\lim_{x\\to 0^{+}}e^{1/x}=+\\infty\\ \\Longrightarrow\\ \\lim_{x\\to 0^{+}}\\frac{2}{1+e^{1/x}}=0;$$\n$$\\lim_{x\\to 0^{-}}e^{1/x}=0\\ \\Longrightarrow\\ \\lim_{x\\to 0^{-}}\\frac{2}{1+e^{1/x}}=\\frac{2}{1+0}=2.$$\n\n**第二部分** $\\dfrac{\\sin x}{|x|}$：\n$$\\lim_{x\\to 0^{+}}\\frac{\\sin x}{x}=1;\\qquad \\lim_{x\\to 0^{-}}\\frac{\\sin x}{-x}=-1.$$\n\n**合计：**\n$$\\lim_{x\\to 0^{+}}f(x)=0+1=1;\\qquad \\lim_{x\\to 0^{-}}f(x)=2+(-1)=1.$$\n\n两侧极限都存在且相等（均为 $1$），但 $f(0)$ 未定义（分母含 $|x|$，$x=0$ 处无意义），故 $x=0$ 是**第一类间断点中的可去间断点**（补充定义 $f(0)=1$ 后函数在该点连续）。\n\n间断点判定口诀：「先看 $f(x_{0})$ 有无定义 → 再算左、右极限 → 比对」。本题两个含 $1/x$ 和 $1/|x|$ 的子项左右极限不同，但合在一起\"巧合地\"相等，是经典的\"可去\"陷阱：千万不能因为子项左右极限不同就草率判为跳跃。\n\n---",
       "cat": "极限与连续",
-      "topic": "间断点类型",
+      "topic": "间断点分类",
       "source": "综合例题PDF·例36",
       "papers": [
         "shu1",
@@ -19429,7 +19429,7 @@ var QUESTION_BANK = {
       "answer": "b≠-1，a任意",
       "solution": "$x=0$ 是可去间断点 $\\Longleftrightarrow$ $\\lim_{x\\to 0}f(x)$ 存在且有限。\n\n**Taylor 展开：**\n- 分子：$ax-\\ln(1+x)=ax-\\left(x-\\dfrac{x^{2}}{2}+\\dfrac{x^{3}}{3}-\\cdots\\right)=(a-1)x+\\dfrac{x^{2}}{2}-\\dfrac{x^{3}}{3}+O(x^{4}).$\n- 分母：$x+b\\sin x=x+b\\left(x-\\dfrac{x^{3}}{6}+O(x^{5})\\right)=(1+b)x-\\dfrac{b}{6}x^{3}+O(x^{5}).$\n\n**分情形讨论：**\n\n**(1) $b=-1$：** 分母 $=x-\\sin x=\\dfrac{x^{3}}{6}+O(x^{5})$，是 $O(x^{3})$；\n- 若 $a\\ne 1$，分子是 $O(x)$，分母是 $O(x^{3})$，极限 $=\\infty$（无穷间断点）；\n- 若 $a=1$，分子是 $O(x^{2})$，分母是 $O(x^{3})$，极限 $=\\infty$（无穷间断点）。\n\n故 $b=-1$ 时 $x=0$ 是无穷间断点，**排除**。\n\n**(2) $b\\ne -1$：** 分母主项 $(1+b)x$ 是 $O(x)$。\n- 若 $a\\ne 1$，分子分母同为 $O(x)$，\n$$\\lim_{x\\to 0}f(x)=\\frac{a-1}{1+b}.$$\n- 若 $a=1$，分子主项 $\\dfrac{x^{2}}{2}$ 高于分母的 $O(x)$，\n$$\\lim_{x\\to 0}f(x)=0.$$\n\n两者极限都存在且有限，且 $f(0)$ 因分母为 $0$ 而无定义，故 $x=0$ 是**可去间断点**。\n\n**结论：** 可去间断点的条件是 $b\\ne -1$（$a$ 任意）。极限值：\n$$\\lim_{x\\to 0}f(x)=\\begin{cases}0, & a=1,\\\\[2pt]\\dfrac{a-1}{1+b}, & a\\ne 1.\\end{cases}$$\n\n可去间断点 = 极限存在。判别套路：分子分母各自 Taylor 到最低非零阶，看阶数是否同阶或分子阶数更高（否则极限 $\\infty$，不是可去）。本题若题目要求极限为定值（如 $=0$），则 $a=1$；若仅要求可去，则 $b\\ne -1$ 即可。\n\n---",
       "cat": "极限与连续",
-      "topic": "可去间断点",
+      "topic": "间断点分类",
       "source": "综合例题PDF·例37",
       "papers": [
         "shu1",
@@ -19445,7 +19445,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "**【答案】** 选 D。\n\n**A 错。** 反例：$f(x)=x$，$f$ 在 $x_{0}=0$ 可导（$f'(0)=1$），但 $|f(x)|=|x|$ 在 $x=0$ 处**不可导**（左右导数分别为 $-1,+1$）。\n\n**B 错。** 反例：$f(x)=\\operatorname{sgn}(x)=\\begin{cases}1,&x\\ge 0\\\\-1,&x<0\\end{cases}$（即 $f(x)=|x|/x$，$x\\ne 0$）。\n- $f$ 在 $x_{0}=0$ 处不连续，因此不可导；\n- $|f(x)|\\equiv 1$ 在 $x=0$ 处可导（导数为 $0$）。\n\n故 \"$|f|$ 在 $x_{0}$ 可导\" 不能推出 \"$f$ 在 $x_{0}$ 可导\"。\n\n**C 错。** 反例：$f(x)=x^{2}$，$f$ 在 $x_{0}=0$ 可导且 $f'(0)=0$，但 $|f(x)|=x^{2}=f(x)$，在 $0$ 处可导（导数 $=0$）。说明\"$f$ 可导且 $f'(x_{0})=0$\" 时 $|f|$ 不一定不可导。\n\n**D 对。** 设 $f$ 在 $x_{0}$ 连续，$|f|$ 在 $x_{0}$ 可导。记 $g(x)=|f(x)|$，$g'(x_{0})=L$。\n\n- **情形 1：** $f(x_{0})\\ne 0$。由 $f$ 连续，$f$ 在 $x_{0}$ 某邻域 $U$ 内不变号，故 $g(x)=\\pm f(x)$（在 $U$ 内），由 $g$ 可导推出 $f$ 在 $x_{0}$ 可导。\n\n- **情形 2：** $f(x_{0})=0$。则 $g(x_{0})=0$，且 $g(x)\\ge 0$。考察\n$$L=g'(x_{0})=\\lim_{x\\to x_{0}}\\frac{g(x)}{x-x_{0}}.$$\n当 $x>x_{0}$ 时 $\\dfrac{g(x)}{x-x_{0}}\\ge 0$，极限 $=L$；当 $x<x_{0}$ 时 $\\dfrac{g(x)}{x-x_{0}}\\le 0$，极限也 $=L$。两侧同号同极限 $\\Rightarrow L=0$。\n\n  从而 $g(x)=|f(x)|=o(|x-x_{0}|)$。于是\n$$\\left|\\frac{f(x)}{x-x_{0}}\\right|\\le \\frac{g(x)}{|x-x_{0}|}\\to 0,$$\n故 $\\lim_{x\\to x_{0}}\\dfrac{f(x)}{x-x_{0}}=0$，即 $f'(x_{0})=0$，$f$ 在 $x_{0}$ 可导。\n\n综上四种命题，仅 **D 正确**。\n\n\"$|f|$ 可导 $\\Leftrightarrow$ $f$ 可导\" 不成立。可导条件要\"分情形\"：(i) $f(x_{0})\\ne 0$ 时两者等价（同号）；(ii) $f(x_{0})=0$ 时 $|f|$ 可导必推出 $f'(x_{0})=0$，但反之 $|f|$ 是否可导要看 $|f|$ 在 $x_{0}$ 的左右导数。考研最常考的就是\"$f$ 在 $x_{0}=0$ 处可导但 $|f|$ 不可导\"的反例 $f(x)=x$。",
       "cat": "一元微分学",
-      "topic": "可导性与绝对值·命题判断",
+      "topic": "导数定义与可导性",
       "source": "综合例题PDF·例38",
       "options": [
         "若 $f(x)$ 在 $x_0$ 可导，则 $|f(x)|$ 在 $x_0$ 可导；",
@@ -19467,7 +19467,7 @@ var QUESTION_BANK = {
       "answer": "$f(x)$ 在 $x=\\dfrac{1}{2}$ 与 $x=2$ 处不可导（其余点均连续可导）。",
       "solution": "【校】PDF 该式识别失真，按常见原型取 $f(x)=\\lim\\limits_{n\\to\\infty}\\bigl[n^{2}+(2x)^{n}+x^{2n}\\bigr]^{1/n}$ 型讨论其不可导点；解答给出分段方法与不可导点求法。\n\n**第一步：求极限函数 $f(x)$ 的显式表达。** \n\n对形如 $\\lim\\limits_{n\\to\\infty}[a_n]^{1/n}$（$a_n>0$）的极限，由\"取最大项\"原则，其极限等于各项 $1/n$ 次方极限中的最大值当且仅当该项起主导作用。具体地：\n\n- $[n^2]^{1/n}=n^{2/n}\\to 1$；\n- $[(2x)^n]^{1/n}=2x$；\n- $[x^{2n}]^{1/n}=x^2$。\n\n因此\n$$f(x)=\\max\\{1,\\,2x,\\,x^2\\},\\quad x\\in(0,+\\infty).$$\n\n**第二步：写出分段表达式。** \n\n比较三段函数的交点：\n- $1=2x \\iff x=1/2$；\n- $1=x^2 \\iff x=1$（舍 $x=-1$）；\n- $2x=x^2 \\iff x=0$ 或 $x=2$。\n\n在 $(0,+\\infty)$ 内分段讨论：\n\n| 区间 | 比较 | 最大项 |\n| --- | --- | --- |\n| $0<x<1/2$ | $1>2x,\\ 1>x^2$ | $f(x)=1$ |\n| $1/2<x<1$ | $2x>1,\\ 2x>x^2$ | $f(x)=2x$ |\n| $1<x<2$ | $2x>1,\\ 2x>x^2$ | $f(x)=2x$ |\n| $x>2$ | $x^2>2x,\\ x^2>1$ | $f(x)=x^2$ |\n\n合并得\n$$f(x)=\\begin{cases}1,&0<x\\le \\dfrac{1}{2},\\\\[2pt]2x,&\\dfrac{1}{2}\\le x\\le 2,\\\\[2pt]x^2,&x\\ge 2.\\end{cases}$$\n（端点处的取值使 $f$ 连续。）\n\n**第三步：考察分段点处的可导性。** \n\n- **$x=\\dfrac{1}{2}$ 处**：$f_{-}'(1/2)=0$（左侧为常数），$f_{+}'(1/2)=2$（右侧导数），左右导数不等 $\\Rightarrow$ **不可导**。\n- **$x=2$ 处**：$f_{-}'(2)=2$，$f_{+}'(2)=2\\cdot 2=4$，左右导数不等 $\\Rightarrow$ **不可导**。\n- **其余点**：每段内部为初等函数，可导；不存在其他分段点。\n\n故 $f$ 的不可导点恰为 $x=\\dfrac{1}{2}$ 与 $x=2$。\n\n$\\lim_{n\\to\\infty}[n^{2}+(2x)^{n}+x^{2n}]^{1/n}$ 这类幂指极限的通用做法：先对各项单独取 $n$ 次根（得到常数或简单初等函数），再取各项极限的最大值作为最终函数。判别不可导点的关键：找各段\"最大项切换\"的拼接点，比较左右导数即可。\n\n---",
       "cat": "极限与连续",
-      "topic": "极限函数·不可导点",
+      "topic": "函数极限计算",
       "source": "综合例题PDF·例39",
       "papers": [
         "shu1",
@@ -19483,7 +19483,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "**【答案】** 选 C（$x=2$ 是驻点且是极小值点）。\n\n**第一步：确定 $f(2)$ 的值。** \n\n由于 $\\lim\\limits_{x\\to 0}\\dfrac{\\ln[f(x+2)+e^{x^{2}}]}{1-\\cos x}=4$ 存在（有限），$x\\to 0$ 时分母 $1-\\cos x\\to 0$，故分子必须 $\\to 0$，即\n$$\\ln[f(x+2)+e^{x^{2}}]\\to 0 \\quad\\Longrightarrow\\quad f(x+2)+e^{x^{2}}\\to 1.$$\n\n代入 $x=0$ 并由 $f$ 在 $x=2$ 处连续 $f(2+0)=f(2)$：\n$$f(2)+1=1 \\quad\\Longrightarrow\\quad f(2)=0.$$\n\n**第二步：利用等价无穷小化简极限。** \n\n注意分子可以拆：\n$$\\ln[f(x+2)+e^{x^{2}}]=\\ln\\!\\Big[e^{x^{2}}\\!\\Big(\\tfrac{f(x+2)}{e^{x^{2}}}+1\\Big)\\Big]=x^{2}+\\ln\\!\\Big(1+\\tfrac{f(x+2)}{e^{x^{2}}}\\Big).$$\n\n由于 $x\\to 0$ 时 $\\dfrac{f(x+2)}{e^{x^{2}}}\\to 0$（$f(x+2)\\to 0$, $e^{x^2}\\to 1$），由 $\\ln(1+u)\\sim u$（$u\\to 0$）：\n$$\\ln[f(x+2)+e^{x^{2}}]=x^{2}+\\frac{f(x+2)}{e^{x^{2}}}+o\\bigl(f(x+2)\\bigr)\\sim x^{2}+f(x+2).$$\n\n分母 $1-\\cos x\\sim \\dfrac{x^{2}}{2}$。因此\n$$\\lim_{x\\to 0}\\frac{x^{2}+f(x+2)}{x^{2}/2}=2+2\\lim_{x\\to 0}\\frac{f(x+2)}{x^{2}}=4 \\;\\Longrightarrow\\; \\lim_{x\\to 0}\\frac{f(x+2)}{x^{2}}=1.$$\n\n**第三步：判读 $f'(2)$ 与极值。** \n\n由导数定义，$f'(2)=\\lim\\limits_{x\\to 0}\\dfrac{f(x+2)-f(2)}{x}=\\lim\\limits_{x\\to 0}\\dfrac{f(x+2)}{x}$.\n\n而 $\\dfrac{f(x+2)}{x}=\\dfrac{f(x+2)}{x^{2}}\\cdot x\\to 1\\cdot 0=0$，故\n$$\\boxed{f'(2)=0}\\quad\\text{（$x=2$ 是驻点）。}$$\n\n又由 $\\lim\\limits_{x\\to 0}\\dfrac{f(x+2)}{x^{2}}=1$ 知 $f(x+2)=x^{2}+o(x^{2})$，即在 $x=2$ 附近\n$$f(2+h)=h^{2}+o(h^{2})\\ge 0=f(2),$$\n故 $f(2)$ 是 **极小值**。\n\n综上：选 **C**。\n\n此类\"对数形式 $\\ln[f(\\cdot)+g(\\cdot)]$ 与 $x^2$\"的极限，关键两步：(1) 令 $f+g\\to 1$ 推出 $f$ 在该点的值；(2) 利用 $\\ln(1+u)\\sim u$（$u\\to 0$）以及对数拆分 $\\ln(AB)=\\ln A+\\ln B$，将对数化为 $x^2$ 的等价量后再求出 $\\lim f(x+2)/x^k$，从而反推 $f'$ 与极值类型。\n\n---",
       "cat": "极限与连续",
-      "topic": "极限·驻点与极值",
+      "topic": "极限反推",
       "source": "综合例题PDF·例40",
       "options": [
         "不可导点",
@@ -19505,7 +19505,7 @@ var QUESTION_BANK = {
       "answer": "驻点 2 个，极值点 3 个。驻点：$x=1,\\ x=2$；极值点：$x=1$（极大）, $x_0\\in(0,1)$（极小，即 $g$ 的零点）, $x=2$（",
       "solution": "设内部函数 $g(x)=2x^{3}-9x^{2}+12x-3$，则 $f(x)=|g(x)|$。\n\n**第一步：分析 $g$ 的导数与极值。** \n\n$$g'(x)=6x^{2}-18x+12=6(x-1)(x-2).$$\n\n$g'(x)=0$ 得 $x=1,\\ x=2$。列表：\n\n| $x$ | $(-\\infty,1)$ | $1$ | $(1,2)$ | $2$ | $(2,+\\infty)$ |\n| --- | --- | --- | --- | --- | --- |\n| $g'$ | $+$ | $0$ | $-$ | $0$ | $+$ |\n| $g$ | $\\nearrow$ | **极大** $g(1)=2$ | $\\searrow$ | **极小** $g(2)=1$ | $\\nearrow$ |\n\n**第二步：找 $g$ 的零点。** \n\n$g(0)=-3<0,\\ g(1)=2>0$，由 $g$ 在 $[0,1]$ 严格单调递增，$g$ 在 $(0,1)$ 内有唯一零点 $x_0$。\n\n$g(2)=1>0,\\ g(+\\infty)\\to+\\infty$，$g$ 在 $[2,+\\infty)$ 单调递增且恒正，无零点。\n\n$g(-\\infty)\\to-\\infty,\\ g(0)=-3<0$，$g$ 在 $(-\\infty,0]$ 内单调（$g'$ 在 $x<0$ 时仍 $>0$？等等，$g'(x)=6(x-1)(x-2)$，$x<0$ 时两因子皆负，乘正，故 $g'>0$）。但 $g$ 在 $x<0$ 时单调递增且 $g(0)=-3<0$，无零点。\n\n综上：$g$ **恰有一个零点** $x_0\\in(0,1)$，且 $g$ 的极大值 $g(1)=2>0$, 极小值 $g(2)=1>0$，均大于零。\n\n**第三步：分析 $f=|g|$ 的驻点（$f$ 可导且 $f'=0$ 的点）。** \n\n- 当 $g(x)>0$ 时，$f(x)=g(x)$，$f'(x)=g'(x)=0$ 在 $x=1,2$ 处成立，$f$ 可导 $\\Rightarrow$ **$x=1,\\ 2$ 是驻点**。\n- 当 $g(x)<0$ 时，$f(x)=-g(x)$，$f'(x)=-g'(x)=0$。但 $g'<0$ 区域为 $(1,2)$，那里 $g>0$（已被排除），$g'>0$ 区域在 $g<0$ 处不存在零点。\n- 当 $g(x)=0$ 即 $x=x_0$ 处：左导 $= -g'(x_0)<0$，右导 $= g'(x_0)>0$，左右导数不等 $\\Rightarrow$ $f$ 在 $x_0$ 处不可导，**不计为驻点**。\n\n故驻点恰 **2** 个：$x=1,\\ x=2$。\n\n**第四步：分析 $f=|g|$ 的极值点。** \n\n- $x=1$：$f(1)=2$，附近 $f=g$，$g$ 在 $x=1$ 处取极大 $\\Rightarrow$ $f$ 取极大值点。\n- $x=2$：$f(2)=1$，附近 $f=g$，$g$ 在 $x=2$ 处取极小 $\\Rightarrow$ $f$ 取极小值点。\n- $x=x_0$（$g=0$ 处）：$f(x_0)=0$，附近 $f=|g|\\ge 0$，故 $f(x_0)$ 是 **极小值点**。\n\n故极值点共 **3** 个。\n\n绝对值函数 $f=|g|$ 的极值点有两类来源：(1) 内部 $g$ 的非零极值点（$g$ 的极值点也是 $f$ 的极值点）；(2) $g$ 的零点（绝对值把负半轴翻上来，过零点处 $f$ 必取到局部最小 $0$）。驻点则只在 $f$ 可导且 $f'=0$ 处统计，零点处因左右导数异号不可导，不算驻点。\n\n---",
       "cat": "一元微分学",
-      "topic": "绝对值函数·驻点与极值点计数",
+      "topic": "单调性与极值",
       "source": "综合例题PDF·例41",
       "papers": [
         "shu1",
@@ -19543,7 +19543,7 @@ var QUESTION_BANK = {
       "answer": "$\\alpha=1,\\ \\ \\beta=f''(0)$（其中 $f''(0)\\neq 0$ 是题设）。",
       "solution": "**第一步：分析分子。** \n\n由 $\\lim\\limits_{x\\to 0}\\dfrac{f(x)}{x}=0$ 及 $f$ 在 $x=0$ 处二阶可导（题设隐含 $f(0)=0$），Taylor 展开：\n$$f(x)=f'(0)x+\\frac{1}{2}f''(0)x^{2}+o(x^{2}).$$\n由 $\\lim f(x)/x=0$ 知 $f'(0)=0$，故\n$$f(x)=\\frac{1}{2}f''(0)x^{2}+o(x^{2}).$$\n\n积分得\n$$\\int_{0}^{x}f(t)\\,\\mathrm{d}t=\\frac{f''(0)}{6}x^{3}+o(x^{3}).\\tag{$\\star$}$$\n\n**第二步：分析分母的阶。** \n\nTaylor 展开 $\\sin x=x-\\dfrac{x^{3}}{6}+\\dfrac{x^{5}}{120}-\\cdots$，故\n$$x^{\\alpha}-\\sin x=\\begin{cases}-x+o(x), & \\alpha<1, \\\\[2pt]\\dfrac{x^{3}}{6}+o(x^{3}), & \\alpha=1, \\\\[2pt]x^{\\alpha}+o(x^{\\alpha}), & 1<\\alpha<3, \\\\[2pt]-x+\\dfrac{7}{6}x^{3}+o(x^{3}), & \\alpha=3, \\\\[2pt]-x+o(x), & \\alpha>3.\\end{cases}$$\n\n**第三步：要求极限 $\\beta\\neq 0$（有限非零），则分子分母主项必须同为 $x^{3}$ 量级。** \n\n由 $(\\star)$，分子 $= \\dfrac{f''(0)}{6}x^{3}+o(x^{3})$，量级 $x^{3}$。所以分母也必须 $\\sim C x^{3}$（$C\\neq 0$）。由上表，**仅当 $\\alpha=1$** 时分母 $= \\dfrac{x^{3}}{6}+o(x^{3})$，量级 $x^{3}$。\n\n其他取值下分母主项为 $x$ 或 $x^{\\alpha}$（$\\alpha\\neq 1,3$）或者 $-x$（$\\alpha=3$ 或 $\\alpha>3$），都会让极限为 $\\infty$ 或 $0$，无法得到 $\\beta\\neq 0$。\n\n**第四步：求 $\\beta$。** \n\n取 $\\alpha=1$：\n$$\\lim_{x\\to 0}\\frac{\\displaystyle\\int_{0}^{x}f(t)\\,\\mathrm{d}t}{x-\\sin x}=\\lim_{x\\to 0}\\frac{\\dfrac{f''(0)}{6}x^{3}+o(x^{3})}{\\dfrac{x^{3}}{6}+o(x^{3})}=\\frac{f''(0)/6}{1/6}=f''(0).$$\n\n故\n$$\\boxed{\\alpha=1,\\quad \\beta=f''(0)\\ (\\neq 0)}.$$\n\n极限型参数题通用思路：分子、分母分别用 Taylor 展到与极限\"非平凡\"匹配所需阶；本题分子依赖 $f$ 的二阶信息（$f''(0)$），而分母 $\\sin x$ 的 Taylor 第一项恰是 $x$，因此要让 $x^{\\alpha}-\\sin x$ 的最低阶不平凡项是 $x^3$，就必须取 $\\alpha=1$ 让 $x$ 的一次项与 $\\sin x$ 的一次项对消——这是 $\\sin x$ 展开中最低非平凡阶为 $x^3/6$ 的事实决定的。\n\n---",
       "cat": "一元微分学",
-      "topic": "极限·参数",
+      "topic": "导数定义与可导性",
       "source": "综合例题PDF·例52",
       "papers": [
         "shu1",
@@ -19559,7 +19559,7 @@ var QUESTION_BANK = {
       "answer": "",
       "solution": "**结论**：至少存在 $c\\in(0,1)$，使 $|f''(c)|\\ge 8\\max\\limits_{[0,1]}|f(x)|$。\n\n令 $M=\\max\\limits_{[0,1]}|f(x)|$。若 $M=0$，则 $f\\equiv 0$，结论平凡。故设 $M>0$。\n\n**第一步：取到极大值点。** \n\n存在 $x_{0}\\in(0,1)$ 使 $|f(x_{0})|=M$（因为 $f(0)=f(1)=0$ 严格小于 $M$）。不妨设 $f(x_{0})=M$（$f(x_{0})=-M$ 的情形完全对称）。\n\n**第二步：Taylor 展开配 $f(0),f(1)$。** \n\n在 $x_{0}$ 处展开到二阶（带 Lagrange 余项）：\n\n$$f(0)=f(x_{0})+f'(x_{0})(0-x_{0})+\\frac{1}{2}f''(\\xi_{1})x_{0}^{2},\\quad \\xi_{1}\\in(0,x_{0})$$\n$$\\Longrightarrow\\quad 0=M-x_{0}f'(x_{0})+\\frac{1}{2}f''(\\xi_{1})x_{0}^{2}.\\tag{1}$$\n\n$$f(1)=f(x_{0})+f'(x_{0})(1-x_{0})+\\frac{1}{2}f''(\\xi_{2})(1-x_{0})^{2},\\quad \\xi_{2}\\in(x_{0},1)$$\n$$\\Longrightarrow\\quad 0=M+(1-x_{0})f'(x_{0})+\\frac{1}{2}f''(\\xi_{2})(1-x_{0})^{2}.\\tag{2}$$\n\n**第三步：线性组合消 $f'(x_{0})$。** \n\n(1) 式乘 $(1-x_{0})$、(2) 式乘 $x_{0}$ 后相加：\n$$M(1-x_{0})+Mx_{0}+\\frac{1}{2}(1-x_{0})x_{0}^{2}f''(\\xi_{1})+\\frac{1}{2}x_{0}(1-x_{0})^{2}f''(\\xi_{2})=0.$$\n\n整理：\n$$M+\\frac{x_{0}(1-x_{0})}{2}\\Bigl[x_{0}\\,f''(\\xi_{1})+(1-x_{0})\\,f''(\\xi_{2})\\Bigr]=0,$$\n$$\\Longrightarrow\\quad x_{0}f''(\\xi_{1})+(1-x_{0})f''(\\xi_{2})=-\\frac{2M}{x_{0}(1-x_{0})}.\\tag{3}$$\n\n**第四步：放缩得 $\\max|f''|\\ge 8M$。** \n\n由平均值不等式（AM-GM），$x_{0}(1-x_{0})\\le\\dfrac{1}{4}$（$x_{0}\\in(0,1)$），所以\n$$\\frac{2M}{x_{0}(1-x_{0})}\\ge 8M.$$\n\n由 (3) 式取绝对值，并由加权平均小于等于最大值：\n$$\\bigl|x_{0}f''(\\xi_{1})+(1-x_{0})f''(\\xi_{2})\\bigr|\\le x_{0}|f''(\\xi_{1})|+(1-x_{0})|f''(\\xi_{2})|\\le\\max\\bigl\\{|f''(\\xi_{1})|,\\,|f''(\\xi_{2})|\\bigr\\}.$$\n\n结合 (3)：\n$$\\max\\bigl\\{|f''(\\xi_{1})|,\\,|f''(\\xi_{2})|\\bigr\\}\\ge\\frac{2M}{x_{0}(1-x_{0})}\\ge 8M.$$\n\n取 $c=\\xi_{1}$ 或 $c=\\xi_{2}$（取 $|f''|$ 较大者），即得\n$$|f''(c)|\\ge 8M=8\\max_{[0,1]}|f(x)|.$$\n\n\"二阶导下界类不等式\"的标准套路：在 $f$ 取极值的点 $x_0$ 处做 Taylor 展开到二阶，再分别代入 $f=0$ 的两个端点 (这里是 $f(0)=f(1)=0$)，将得到的两式做 **线性组合**（用端点距离为系数）消去一阶导 $f'(x_0)$；最后利用 $x_0(1-x_0)\\le 1/4$ 把下界放大。\"$8$\"正是 $1/[x_0(1-x_0)]$ 的最小值 $4$ 再乘以 $2$ 来的。\n\n---",
       "cat": "一元微分学",
-      "topic": "二阶导数估计",
+      "topic": "中值定理与泰勒公式",
       "source": "综合例题PDF·例53",
       "papers": [
         "shu1",
@@ -19724,7 +19724,7 @@ var QUESTION_BANK = {
       "answer": "曲线 $x^{3}+y^{3}=y^{2}$ 有唯一斜渐近线",
       "solution": "**第一步：设 $y\\sim kx$ 定斜率 $k$。** 隐函数（或多值）曲线不能用 $k=\\lim\\dfrac{y}{x}$ 直接取极限值，应向方程本身代入。设沿无界分支有 $|x|\\to\\infty$、$|y|\\to\\infty$，原式同除以 $x^{3}$：\n$$1+\\left(\\frac{y}{x}\\right)^{3}=\\frac{y^{2}}{x^{3}}=\\frac{1}{x}\\left(\\frac{y}{x}\\right)^{2}.$$\n先证 $\\dfrac{y}{x}$ 有界：若 $\\left|\\dfrac{y}{x}\\right|\\to\\infty$，则由上式得 $\\left|\\dfrac{y}{x}\\right|^{3}\\sim\\dfrac1x\\left(\\dfrac{y}{x}\\right)^{2}$，即 $\\left|\\dfrac{y}{x}\\right|\\sim\\dfrac1x\\to0$，矛盾。故 $\\dfrac{y}{x}$ 有界，令 $x\\to\\infty$，右端 $\\dfrac1x\\left(\\dfrac yx\\right)^2\\to0$，得\n$$1+k^{3}=0\\ \\Longrightarrow\\ k=-1 .$$\n\n**第二步：定截距 $b$。** 由 $x^{3}+y^{3}=(x+y)\\left(x^{2}-xy+y^{2}\\right)=y^{2}$，得\n$$x+y=\\frac{y^{2}}{x^{2}-xy+y^{2}}=\\frac{\\left(\\dfrac{y}{x}\\right)^{2}}{1-\\dfrac{y}{x}+\\left(\\dfrac{y}{x}\\right)^{2}} .$$\n令 $x\\to\\infty$，由 $\\dfrac yx\\to-1$：\n$$b=\\lim_{x\\to\\infty}(y-kx)=\\lim_{x\\to\\infty}(y+x)=\\frac{(-1)^{2}}{1-(-1)+(-1)^{2}}=\\frac{1}{3} .$$\n（等价做法：把 $y=-x+b+o(1)$ 代回方程，$x^{3}+(-x+b)^{3}=(-x+b)^{2}$，比较最高次：$3bx^{2}-3b^{2}x+b^{3}=x^{2}-2bx+b^{2}$，比较 $x^{2}$ 项得 $3b=1$，即 $b=\\dfrac13$。）\n\n故斜渐近线为\n$$y=-x+\\frac13 .$$\n\n**第三步：说明不存在其他渐近线。** 由方程解出 $x=\\sqrt[3]{y^{2}-y^{3}}$，对一切有限 $y$ 有定义且有限，故**无垂直渐近线**；又 $x\\to\\infty$ 时 $y\\sim-x\\to\\mp\\infty$，**无水平渐近线**。$x\\to+\\infty$ 与 $x\\to-\\infty$ 属于同一条无界分支的两端，故只有上述一条斜渐近线。（注意 $|x|\\to\\infty$ 时该曲线还有一小段有界分支 $y\\in[0,1]$，与渐近线无关。）\n\n> 注：若原题系笛卡儿叶形线 $x^{3}+y^{3}=3axy$，同法得 $k=-1$、$b=-a$，渐近线为 $x+y+a=0$，方法完全一致。\n\n---\n\n① 斜渐近线标准做法：$k=\\lim\\dfrac yx$，$b=\\lim(y-kx)$；**隐曲线要把 $y=kx+b+o(1)$ 代回方程比较同次幂系数**（或先除最高次项定 $k$，再用恒等变形求 $b$）。② 由 $F_n(x,y)+F_{n-1}(x,y)+\\cdots=0$（齐次多项式按次排列）求 $k$ 时，$k$ 由最高次部分 $F_n(1,k)=0$ 决定，$b$ 由下一级 $F_{n-1}(1,k)+k\\,F_n'(1,k)\\cdot b=0$ 决定——本例即 $3b=1$。③ 别忘检查垂直渐近线（令 $y\\to y_0$ 有限而 $x\\to\\infty$ 是否有解）。\n\n---",
       "cat": "一元微分学",
-      "topic": "渐近线",
+      "topic": "导数几何应用",
       "source": "综合例题PDF·例29",
       "papers": [
         "shu1",
@@ -20434,7 +20434,7 @@ var QUESTION_BANK = {
       "question": "设 $f(x)$，$g(x)$ 当 $x\\to 0$ 时均为无穷小，且 $f(x)$ 与 $g(x)$ 是同阶无穷小，$\\lim\\limits_{x\\to 0}\\dfrac{f(x)}{g(x)}=c\\neq 0$，则下列结论**必定**成立的是（　）",
       "answer": 2,
       "solution": "由 $\\lim\\limits_{x\\to0}\\dfrac{f(x)}{g(x)}=c\\neq0$，得\n$$\\lim_{x\\to0}\\frac{f^2(x)}{g^2(x)}=c^2\\neq0,$$\n故 $f^2(x)$ 与 $g^2(x)$ 同阶，**C 必定成立**．\n\n各干扰项均可举反例：\n- A：取 $c\\neq1$（如 $f=2g$），$f-g=g$ 与 $g$ 同阶而非高阶，错；\n- B：取 $f=-g+g^2$（$c=-1$），则 $f+g=g^2=o(g)$，不是同阶，错；\n- D：\"$n$ 阶无穷小\"必须以 $x$ 为基准，$f,g$ 未必是 $x$ 的一阶无穷小（如 $f=x^2$，$g=2x^2$ 时 $fg$ 是四阶），错．",
-      "topic": "无穷小比较·概念辨析",
+      "topic": "无穷小阶的比较",
       "source": "自编·数二模拟卷第七套",
       "cat": "极限与连续",
       "options": [
@@ -20500,7 +20500,7 @@ var QUESTION_BANK = {
       "question": "设函数 $f(x)$ 在 $x=0$ 处连续，给出下列四个条件：\n\n① $\\lim\\limits_{x\\to 0}\\dfrac{f(x)-f(0)}{\\ln(1+2x)}$ 存在；\n\n② $\\lim\\limits_{x\\to 0}\\dfrac{f(x^2)-f(0)}{x}$ 存在；\n\n③ $\\lim\\limits_{n\\to\\infty}n\\left[f\\left(\\dfrac{1}{n}\\right)-f(0)\\right]$ 存在；\n\n④ $\\lim\\limits_{x\\to 0}\\dfrac{f(x)-f(0)-\\dfrac{x}{1+x^2}}{x}$ 存在．\n\n其中能得出\"$f(x)$ 在 $x=0$ 处可导\"的条件个数是（　）",
       "answer": 1,
       "solution": "**本题命题手法对照 2025 年真题第 7 题**：四个条件表面上都是\"某个极限存在\"，实质分别踩在导数定义的不同门槛上——等价无穷小替换、单侧信息、归结原则（点列 vs 整体）、极限四则运算．逐条判定：\n\n**① 正确**．由 $\\ln(1+2x)\\sim 2x$（$x\\to0$，双向等价），且 $f(x)-f(0)\\to 0$（连续性），\n$$\\lim_{x\\to0}\\frac{f(x)-f(0)}{\\ln(1+2x)}=A\\ \\text{存在}\\ \\Longrightarrow\\ \\lim_{x\\to0}\\frac{f(x)-f(0)}{x}=\\lim_{x\\to0}\\frac{f(x)-f(0)}{\\ln(1+2x)}\\cdot\\frac{\\ln(1+2x)}{x}=2A,$$\n即 $f'(0)=2A$ 存在．（考等价无穷小替换：分母换成同阶量不改变\"是否存在\"的结论．）\n\n**② 错误**．$x^2\\ge0$，条件只含 $f$ 在**右侧**的信息：令 $t=x^2$，则 $\\dfrac{f(x^2)-f(0)}{x}=\\dfrac{f(t)-f(0)}{\\sqrt t}$（$t>0$），极限存在只说明 $\\lim\\limits_{t\\to0^+}\\dfrac{f(t)-f(0)}{\\sqrt{t}}$ 存在，完全控制不到左侧．\n反例：$f(x)=|x|$（连续，$f(0)=0$），$\\dfrac{f(x^2)-f(0)}{x}=\\dfrac{x^2}{x}=x\\to0$ 存在，但 $f$ 在 $x=0$ 不可导．（考\"单侧信息不足\"——与真题第 7 题中\"③ $\\frac{|f(x)|}{x}$ 型条件\"同源．）\n\n**③ 错误**．条件只沿**点列** $x_n=\\frac1n$ 成立．由归结原则（海涅定理），\"整列极限存在 $\\Rightarrow$ 任意点列极限存在且相等\"，但**一个点列的极限存在推不出整体极限存在**．\n反例：$f(x)=x\\sin\\dfrac{\\pi}{x}$（补充定义 $f(0)=0$，连续），则 $n\\left[f\\left(\\dfrac1n\\right)-f(0)\\right]=\\sin n\\pi=0$ 存在；但 $\\dfrac{f(x)-f(0)}{x}=\\sin\\dfrac{\\pi}{x}$ 当 $x\\to0$ 无极限，$f'(0)$ 不存在．（考归结原则的必要不充分性．）\n\n**④ 正确**．设该极限为 $A$，则由极限的四则运算法则：\n$$\\lim_{x\\to0}\\frac{f(x)-f(0)}{x}=\\lim_{x\\to0}\\left[\\frac{f(x)-f(0)-\\frac{x}{1+x^2}}{x}+\\frac{1}{1+x^2}\\right]=A+1,$$\n存在，即 $f'(0)=A+1$．（考\"收敛 + 收敛 = 收敛\"的拆分；对照 2025 真题第 7 题④的处理思想．）\n\n综上，能得出可导的是①④，共 **2** 个，**选 B**．\n\n> **命题注记（给老板）**：2025 真题第 7 题官方答案 B（②④），但严格数学分析（保号性逼出 $\\lim\\frac{|f(x)|}{x}=0$）支持四个条件全部成立，是当年著名的争议题，多家机构评析认为\"四个全对\"正是其\"奇异之美\"．本题沿用\"四条件判个数\"的骨架与\"每个条件各踩一个知识点\"的分工（等价无穷小／单双侧／归结原则／四则拆分），但答案取平凡的\"2 个\"，四条判定本身无争议．",
-      "topic": "导数定义·条件判定（仿 2025 真题第 7 题）",
+      "topic": "导数定义与可导性",
       "source": "自编·数二模拟卷第七套",
       "cat": "一元微分学",
       "options": [
@@ -20604,7 +20604,7 @@ var QUESTION_BANK = {
       "question": "曲线 $y=x\\ln\\left(e+\\dfrac{1}{x}\\right)$ 的斜渐近线方程为 ______．",
       "answer": "$y=x+\\dfrac{1}{e}$",
       "solution": "$x\\to+\\infty$ 时 $k=\\lim\\dfrac yx=1$；\n$$b=\\lim_{x\\to+\\infty}\\left[x\\ln\\left(e+\\frac1x\\right)-x\\right]=\\lim_{x\\to+\\infty}x\\ln\\left(1+\\frac{1}{ex}\\right)=\\lim_{x\\to+\\infty}x\\cdot\\frac{1}{ex}=\\frac1e.$$\n（$x\\to-\\infty$ 同理得同一渐近线；另曲线有垂直渐近线 $x=-\\dfrac1e$，但题目只问斜渐近线．）",
-      "topic": "渐近线",
+      "topic": "导数几何应用",
       "source": "自编·数二模拟卷第七套",
       "cat": "一元微分学",
       "papers": [
@@ -20620,7 +20620,7 @@ var QUESTION_BANK = {
       "question": "$\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^{n}\\frac{1}{\\sqrt{n^2+k^2}}=$ ______．",
       "answer": "$\\ln(1+\\sqrt2)$",
       "solution": "$$\\sum_{k=1}^{n}\\frac{1}{\\sqrt{n^2+k^2}}=\\frac1n\\sum_{k=1}^n\\frac{1}{\\sqrt{1+(k/n)^2}}\\longrightarrow\\int_0^1\\frac{dx}{\\sqrt{1+x^2}}=\\Big[\\ln\\big(x+\\sqrt{1+x^2}\\big)\\Big]_0^1=\\ln(1+\\sqrt2).$$",
-      "topic": "数列极限·定积分定义",
+      "topic": "和式极限·定积分定义",
       "source": "自编·数二模拟卷第七套",
       "cat": "极限与连续",
       "papers": [
@@ -20717,7 +20717,7 @@ var QUESTION_BANK = {
       "question": "设函数 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(0)=0$，$f(1)=1$．证明：\n（I）存在 $\\xi\\in(0,1)$，使得 $f(\\xi)=1-\\xi$；\n（II）存在两个不同的点 $\\eta_1,\\eta_2\\in(0,1)$，使得 $f'(\\eta_1)\\cdot f'(\\eta_2)=1$．",
       "answer": "证明见详解",
       "solution": "**（I）** 令 $g(x)=f(x)+x-1$，则 $g$ 在 $[0,1]$ 连续，$g(0)=-1<0$，$g(1)=1>0$．由零点定理，存在 $\\xi\\in(0,1)$ 使 $g(\\xi)=0$，即 $f(\\xi)=1-\\xi$．\n\n**（II）** 在 $[0,\\xi]$ 与 $[\\xi,1]$ 上分别用拉格朗日中值定理（$f$ 在两段上均满足条件）：存在 $\\eta_1\\in(0,\\xi)$ 与 $\\eta_2\\in(\\xi,1)$，使\n$$f'(\\eta_1)=\\frac{f(\\xi)-f(0)}{\\xi-0}=\\frac{1-\\xi}{\\xi},\\qquad f'(\\eta_2)=\\frac{f(1)-f(\\xi)}{1-\\xi}=\\frac{\\xi}{1-\\xi}.$$\n由 $\\xi\\in(0,1)$ 知 $\\eta_1<\\eta_2$（互异），且\n$$f'(\\eta_1)f'(\\eta_2)=\\frac{1-\\xi}{\\xi}\\cdot\\frac{\\xi}{1-\\xi}=1.\\qquad\\blacksquare$$",
-      "topic": "中值定理·双中值证明（12 分）",
+      "topic": "中值定理与泰勒公式",
       "source": "自编·数二模拟卷第七套",
       "cat": "一元微分学",
       "papers": [

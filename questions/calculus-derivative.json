@@ -17,7 +17,7 @@
       "answer": 1,
       "solution": "$\\text{拆项：}\\frac{f(x_{0}+3h)-f(x_{0}-2h)}{h} = \\frac{f(x_{0}+3h)-f(x_{0})}{h} + \\frac{f(x_{0})-f(x_{0}-2h)}{h}$。$\\text{第一项}=3\\cdot\\frac{f(x_{0}+3h)-f(x_{0})}{3h}\\to 3f'(x_{0})$；$\\text{第二项}=2\\cdot\\frac{f(x_{0}-2h)-f(x_{0})}{-2h}\\to 2f'(x_{0})$。$\\text{合计}=5f'(x_{0})$。",
       "cat": "一元微分学",
-      "topic": "导数定义与可导性·导数定义式凑形",
+      "topic": "导数定义与可导性",
       "source": "自编"
     },
     {
@@ -34,7 +34,7 @@
       "answer": 1,
       "solution": "$\\text{两边对 }x\\text{ 求导：}2x + 2y y' = 0 \\Rightarrow y' = -\\frac{x}{y}$。$y'' = -\\frac{y - x y'}{y^{2}} = -\\frac{y - x(-x/y)}{y^{2}} = -\\frac{y^{2}+x^{2}}{y^{3}} = -\\frac{1}{y^{3}}$（$\\because x^{2}+y^{2}=1$）。",
       "cat": "一元微分学",
-      "topic": "导数计算·隐函数求导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -51,7 +51,7 @@
       "answer": 0,
       "solution": "$\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt} = \\frac{e^{t}\\sin t + e^{t}\\cos t}{e^{t}\\cos t - e^{t}\\sin t} = \\frac{\\sin t + \\cos t}{\\cos t - \\sin t}$。",
       "cat": "一元微分学",
-      "topic": "导数计算·参数方程求导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -68,7 +68,7 @@
       "answer": 1,
       "solution": "$\\text{对数求导法：}\\ln y = \\sin x \\cdot \\ln x$。$\\text{两边求导：}\\frac{y'}{y} = \\cos x \\cdot \\ln x + \\sin x \\cdot \\frac{1}{x}$。$y' = x^{\\sin x}(\\cos x \\cdot \\ln x + \\frac{\\sin x}{x})$。",
       "cat": "一元微分学",
-      "topic": "导数计算·幂指函数·对数求导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -85,7 +85,7 @@
       "answer": 1,
       "solution": "$y' = \\frac{1}{1+x}$，$y'' = -\\frac{1}{(1+x)^{2}}$，$y''' = \\frac{2}{(1+x)^{3}}$。$\\text{归纳得 } y^{(n)} = (-1)^{n-1} \\frac{(n-1)!}{(1+x)^{n}}（n \\geq 1）$。",
       "cat": "一元微分学",
-      "topic": "导数计算·高阶导数",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -102,7 +102,7 @@
       "answer": 2,
       "solution": "$y' = f'(x^{2}) \\cdot 2x$。$y'' = f''(x^{2}) \\cdot 2x \\cdot 2x + f'(x^{2}) \\cdot 2 = 4x^{2}f''(x^{2}) + 2f'(x^{2})$。",
       "cat": "一元微分学",
-      "topic": "导数计算·复合函数求导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -119,7 +119,7 @@
       "answer": 2,
       "solution": "$x=0\\text{ 时 }e^{y(0)}=e\\Rightarrow y(0)=1$。$\\text{一阶求导：}e^{y}y'+y+xy'=0$，$\\text{代入得 }y'(0)=-\\frac{1}{e}$。$\\text{二阶求导：}e^{y}(y')^{2}+e^{y}y''+2y'+xy''=0$。$\\text{代入得 }\\frac{1}{e}+e y''(0)-\\frac{2}{e}=0\\Rightarrow y''(0)=\\frac{1}{e^{2}}$。",
       "cat": "一元微分学",
-      "topic": "导数计算·隐函数求导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -136,7 +136,7 @@
       "answer": 0,
       "solution": "$y' = 3x^{2} - 3$，$y'(1) = 0$。$\\text{切线斜率 }k=0\\text{，过点 }(1,-2)\\text{，方程 }y = -2$。",
       "cat": "一元微分学",
-      "topic": "几何应用·切线方程",
+      "topic": "导数几何应用",
       "source": "自编"
     },
     {
@@ -153,7 +153,7 @@
       "answer": 1,
       "solution": "$y' = \\frac{1}{2\\sqrt{x}}$，$y'(4) = \\frac{1}{4}$。$\\text{法线斜率 }k_{n} = -4$。$y-2 = -4(x-4) \\Rightarrow y = -4x + 18$。",
       "cat": "一元微分学",
-      "topic": "几何应用·法线方程",
+      "topic": "导数几何应用",
       "source": "自编"
     },
     {
@@ -170,7 +170,7 @@
       "answer": 0,
       "solution": "$f(x)=\\sqrt{x}, f'(x)=\\frac{1}{2\\sqrt{x}}$。$f(1+0.02) \\approx f(1) + f'(1)\\cdot 0.02 = 1 + \\frac{1}{2}\\cdot 0.02 = 1.01$。",
       "cat": "一元微分学",
-      "topic": "微分与近似·微分近似计算",
+      "topic": "微分与近似",
       "source": "自编"
     },
     {
@@ -187,7 +187,7 @@
       "answer": 2,
       "solution": "$\\text{连续性：}|x^{2}\\sin\\frac{1}{x}| \\leq x^{2} \\to 0\\text{，故 }\\lim f(x)=0=f(0)$。$\\text{可导性：}f'(0)=\\lim_{x\\to 0}\\frac{x^{2}\\sin(1/x)}{x}=\\lim x\\sin\\frac{1}{x}=0$。",
       "cat": "一元微分学",
-      "topic": "导数定义与可导性·分段函数可导性",
+      "topic": "导数定义与可导性",
       "source": "自编"
     },
     {
@@ -204,7 +204,7 @@
       "answer": 1,
       "solution": "$x=1\\text{ 时 }y=1$。$g'(y) = \\frac{1}{y'(x)} = \\frac{1}{1+1/x}$。$x=1\\text{ 时 }y'(1)=2$，$g'(1)=\\frac{1}{2}$。",
       "cat": "一元微分学",
-      "topic": "导数计算·反函数求导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -221,7 +221,7 @@
       "answer": 1,
       "solution": "$\\text{取对数：}\\ln x + \\ln y = x + y$。$\\text{求导：}\\frac{1}{x} + \\frac{y'}{y} = 1 + y'$。$y' = \\frac{1-1/x}{1/y-1} = \\frac{y(x-1)}{x(1-y)}$。",
       "cat": "一元微分学",
-      "topic": "导数计算·隐函数求导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -238,7 +238,7 @@
       "answer": 1,
       "solution": "$\\ln y = x[\\ln x - \\ln(1+x)]$。$\\frac{y'}{y} = \\ln\\frac{x}{1+x} + x(\\frac{1}{x} - \\frac{1}{1+x}) = \\ln\\frac{x}{1+x} + \\frac{1}{1+x}$。",
       "cat": "一元微分学",
-      "topic": "导数计算·幂指函数·对数求导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -255,7 +255,7 @@
       "answer": 1,
       "solution": "$S = \\pi r^{2}$，$\\frac{dS}{dt} = 2\\pi r \\cdot \\frac{dr}{dt} = 2\\pi \\cdot 5 \\cdot 2 = 20\\pi \\text{ cm}^{2}/\\text{s}$。",
       "cat": "一元微分学",
-      "topic": "微分与近似·相关变化率",
+      "topic": "微分与近似",
       "source": "自编"
     },
     {
@@ -272,7 +272,7 @@
       "answer": 1,
       "solution": "$f'(x) = 1 - \\frac{1}{1+x} = \\frac{x}{1+x} > 0（x>0）$，$\\text{故 } f(x) \\text{ 单调递增。}$",
       "cat": "一元微分学",
-      "topic": "单调性与极值·单调性判定",
+      "topic": "单调性与极值",
       "source": "自编"
     },
     {
@@ -289,7 +289,7 @@
       "answer": 0,
       "solution": "$f'(x) = 3(x-3)(x+1)$。$\\text{驻点 } x=-1,3$。$f''(x)=6x-6$：$f''(3)=12>0$（$\\text{极小}$）。$f(3) = 27-27-27+5 = -22$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·极值计算",
+      "topic": "单调性与极值",
       "source": "自编"
     },
     {
@@ -306,7 +306,7 @@
       "answer": 1,
       "solution": "$f''(x) = 6(x-1)$。$x<1$ $\\text{时 } f''<0$，$x>1$ $\\text{时 } f''>0$，$\\text{拐点 }(1, -1)$。",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·拐点计算",
+      "topic": "凹凸性与拐点",
       "source": "自编"
     },
     {
@@ -323,7 +323,7 @@
       "answer": 3,
       "solution": "$\\lim_{x\\to\\infty}\\frac{x^{2}+1}{x-1} = \\infty$，$\\text{无水平渐近线。但有斜渐近线 } y = x+1$。",
       "cat": "一元微分学",
-      "topic": "几何应用·渐近线",
+      "topic": "导数几何应用",
       "source": "自编"
     },
     {
@@ -340,7 +340,7 @@
       "answer": 1,
       "solution": "$切线平行于 x 轴 \\rightarrow 导数为 0。y' = 3x^{2} - 3 = 3(x^{2}-1) = 0，解得 x = ±1。x=1 时 y = -2；x=-1 时 y = 2。故有两点 (1,-2) 和 (-1,2)。导数等于 0 是求驻点（可疑极值点）的标准方法。$",
       "cat": "一元微分学",
-      "topic": "几何应用·切线方程",
+      "topic": "导数几何应用",
       "source": "自编"
     },
     {
@@ -357,7 +357,7 @@
       "answer": 1,
       "solution": "$连续性：|x \\sin(1/x)| \\leq |x| \\rightarrow 0 (x\\rightarrow0)，故 f(x) 在 x=0 连续。可导性：f'(0) = \\lim(h\\rightarrow0) [h \\sin(1/h) - 0]/h = \\lim \\sin(1/h)，该极限不存在（振荡），故不可导。$",
       "cat": "一元微分学",
-      "topic": "导数定义与可导性·分段函数可导性",
+      "topic": "导数定义与可导性",
       "source": "自编"
     },
     {
@@ -374,7 +374,7 @@
       "answer": 0,
       "solution": "$极限存在且 =1>0，表明 [f(x)-f(0)]/x^{2} > 0 在充分小的邻域内（分母恒正），所以 f(x) > f(0)，f(0) 为极小值。又由极限存在推 f(x)-f(0)\\rightarrow0，且 [f(x)-f(0)]/x = x·[f(x)-f(0)]/x^{2} \\rightarrow 0·1 = 0，故 f'(0)=0。注意：这是极值判定的高阶推广，不需要二阶导数。$",
       "cat": "一元微分学",
-      "topic": "导数定义与可导性·极限反推可导性",
+      "topic": "导数定义与可导性",
       "source": "自编"
     },
     {
@@ -385,7 +385,7 @@
       "answer": "1/[x·ln x·ln(ln x)]",
       "solution": "三重复合：y = \\ln u，u = \\ln v，v = \\ln x。y' = (1/u)·(1/v)·(1/x) = 1/[x·\\ln x·\\ln(\\ln x)]。链式法则可以嵌套任意多层，每一步乘以「当前层的导数倒数」。",
       "cat": "一元微分学",
-      "topic": "导数计算·复合函数求导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -396,7 +396,7 @@
       "answer": "$1/\\sqrt(1+x²)$",
       "solution": "$链式法则：[1/(x+\\sqrt{1+x^{2}})]·[1+x/\\sqrt{1+x^{2}}]=1/\\sqrt{1+x^{2}}。$",
       "cat": "一元微分学",
-      "topic": "导数计算·复合函数求导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -413,7 +413,7 @@
       "answer": 1,
       "solution": "f'(x)=3x^{2}-3=3(x-1)(x+1)，f'<0当-1<x<1。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·单调区间",
+      "topic": "单调性与极值",
       "source": "自编"
     },
     {
@@ -430,7 +430,7 @@
       "answer": 3,
       "solution": "f''>0⇒f'递增。拉格朗日:f(2)-f(1)=f'(ξ),1<ξ<2,f'(ξ)<f'(2)⇒差<f'(2)。",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·凹凸性判定",
+      "topic": "凹凸性与拐点",
       "source": "自编"
     },
     {
@@ -447,7 +447,7 @@
       "answer": 2,
       "solution": "在[0,3]连续但x=1处尖点不可导，不满足定理条件。",
       "cat": "一元微分学",
-      "topic": "中值定理·定理条件辨析",
+      "topic": "中值定理与泰勒公式",
       "source": "自编"
     },
     {
@@ -458,7 +458,7 @@
       "answer": "-1",
       "solution": "隐函数求导:2x+2yy'=0⇒y'=-x/y。y''=-(y²+x^{2})/y³=-1/y³。点(0,1):y''=-1。",
       "cat": "一元微分学",
-      "topic": "导数计算·隐函数求导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -475,7 +475,7 @@
       "answer": 0,
       "solution": "$\\text{令 } g = \\frac{\\ln x}{x}$，$g' = \\frac{1-\\ln x}{x^{2}} = 0 \\Rightarrow x = e$ $\\text{为极大值点。}$ $f(e) = e^{1/e}$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·最值计算",
+      "topic": "单调性与极值",
       "source": "自编"
     },
     {
@@ -492,7 +492,7 @@
       "answer": 3,
       "solution": "$\\frac{dy}{dx} = \\frac{3t^2-3}{2t+1}$。$t=1$ 时 $y' = 0$。$\\frac{d^2y}{dx^2} = \\frac{d}{dt}\\!\\left(\\frac{3t^2-3}{2t+1}\\right) \\big/ (2t+1)$。$t=1$ 时代入得 $0$。",
       "cat": "一元微分学",
-      "topic": "导数计算·参数方程高阶导",
+      "topic": "导数计算",
       "source": "自编"
     },
     {
@@ -509,7 +509,7 @@
       "answer": 0,
       "solution": "$f'(x) = \\frac{1}{1+x} - \\frac{1}{(1+x)^2} = \\frac{x}{(1+x)^2} > 0$（$x>0$），故 $f$ 单调递增。且 $f(0)=0$，则 $x>0$ 时 $\\ln(1+x) > \\frac{x}{1+x}$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·单调性判定",
+      "topic": "单调性与极值",
       "source": "自编"
     },
     {
@@ -526,7 +526,7 @@
       "answer": 1,
       "solution": "$f'(x)=3x^2+2ax+b$。极值条件：$f'(1)=0 \\Rightarrow 3+2a+b=0$ ①；$f(1)=2 \\Rightarrow 1+a+b=2$ ②。解 ①② 得 $a=-4, b=5$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·极值反求参数",
+      "topic": "单调性与极值",
       "source": "自编"
     },
     {
@@ -543,7 +543,7 @@
       "answer": 3,
       "solution": "$f'(x)=2(x-1)(x-2)^2+2(x-1)^2(x-2)=2(x-1)(x-2)(2x-3)$。驻点 $x=1, \\frac{3}{2}, 2$。$x=\\frac{3}{2}$ 处 $f''>0$（极小），两端为极大。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·极值计算",
+      "topic": "单调性与极值",
       "source": "自编"
     },
     {
@@ -560,7 +560,7 @@
       "answer": 2,
       "solution": "$\\lim_{x\\to\\infty} \\frac{2x-1}{(x-1)^2} = 0$，故 $y=0$ 是水平渐近线。斜渐近线 $k=\\lim y/x=0$，不存在。竖渐近线 $x=1$。",
       "cat": "一元微分学",
-      "topic": "几何应用·渐近线",
+      "topic": "导数几何应用",
       "source": "自编"
     },
     {
@@ -577,7 +577,7 @@
       "answer": 0,
       "solution": "$f'(x)=\\frac{1-\\ln x}{x^2}=0 \\Rightarrow x=e$。$x<e$ 时 $f'>0$（增），$x>e$ 时 $f'<0$（减）。极大 $f(e)=\\frac{1}{e}$。端点 $f(1)=0, f(e^2)=\\frac{2}{e^2}<\\frac{1}{e}$。最大值 $=\\frac{1}{e}$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·闭区间最值",
+      "topic": "单调性与极值",
       "source": "自编"
     },
     {
@@ -594,7 +594,7 @@
       "answer": 2,
       "solution": "$f'(x)=1-\\frac{1}{x^2}=0 \\Rightarrow x=1$。$f(1)=2$。或直接均值不等式：$x+\\frac{1}{x} \\geq 2\\sqrt{x\\cdot\\frac{1}{x}}=2$。",
       "cat": "一元微分学",
-      "topic": "单调性与极值·最值计算",
+      "topic": "单调性与极值",
       "source": "自编"
     },
     {
@@ -611,7 +611,7 @@
       "answer": 2,
       "solution": "$f'(x)=\\ln x+1$。$f(e)-f(1)=e$。由 $f'(\\xi)=\\frac{e}{e-1} \\Rightarrow \\ln\\xi+1=\\frac{e}{e-1} \\Rightarrow \\ln\\xi=\\frac{1}{e-1} \\Rightarrow \\xi=e^{\\frac{1}{e-1}}$。",
       "cat": "一元微分学",
-      "topic": "中值定理·拉格朗日求ξ",
+      "topic": "中值定理与泰勒公式",
       "source": "自编"
     },
     {
@@ -628,7 +628,7 @@
       "answer": 1,
       "solution": "$f''(x)>0$ 则 $f$ 为凹函数（下凸）。由琴生不等式：$f\\left(\\frac{x_1+x_2}{2}\\right) \\leq \\frac{f(x_1)+f(x_2)}{2}$，即 $f(x_1)+f(x_2) \\geq 2f\\left(\\frac{x_1+x_2}{2}\\right)$。",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·凹凸性应用",
+      "topic": "凹凸性与拐点",
       "source": "自编"
     },
     {
@@ -645,7 +645,7 @@
       "answer": 1,
       "solution": "$\\varphi(x)=e^{-x}f(x)$，则 $\\varphi'(x)=e^{-x}[f'(x)-f(x)]$。$\\varphi(a)=\\varphi(b)=0$（因 $f(a)=f(b)=0$），由罗尔定理，$\\exists \\xi \\in (a,b)$ 使 $\\varphi'(\\xi)=0$，即 $f'(\\xi)=f(\\xi)$。注：解微分方程 $f'=f$ 得 $f=Ce^{x}$，变形为 $e^{-x}f=C$，故构造 $\\varphi(x)=e^{-x}f(x)$。",
       "cat": "一元微分学",
-      "topic": "中值定理·构造辅助函数",
+      "topic": "中值定理与泰勒公式",
       "source": "自编"
     },
     {
@@ -662,7 +662,7 @@
       "answer": 1,
       "solution": "$\\text{由拉格朗日中值定理：}f(x)-f(0)=f'(\\xi)(x-0)$，其中 $\\xi \\in (0,x)$。$\\therefore |f(x)|=|f'(\\xi)| \\cdot x \\leq Mx$。这是利用中值定理估计函数值的经典方法：用导数界控制函数界。",
       "cat": "一元微分学",
-      "topic": "中值定理·拉格朗日估值",
+      "topic": "中值定理与泰勒公式",
       "source": "自编"
     },
     {
@@ -679,7 +679,7 @@
       "answer": 0,
       "solution": "$\\varphi(x)=f(x)-x^{2}$，则 $\\varphi(0)=0$，$\\varphi(1)=1-1=0$。$\\varphi$ 满足罗尔定理条件，$\\exists \\xi \\in (0,1)$ 使 $\\varphi'(\\xi)=f'(\\xi)-2\\xi=0$，即 $f'(\\xi)=2\\xi$。",
       "cat": "一元微分学",
-      "topic": "中值定理·构造辅助函数",
+      "topic": "中值定理与泰勒公式",
       "source": "自编"
     },
     {
@@ -696,7 +696,7 @@
       "answer": 1,
       "solution": "$\\text{由介值定理，}\\exists c \\in (0,1)\\text{ 使 }f(c)=\\frac{1}{2}$。$\\text{在 }[0,c]\\text{ 上用拉格朗日：}\\frac{1}{2}=f'(\\xi)c$；$\\text{在 }[c,1]\\text{ 上：}\\frac{1}{2}=f'(\\eta)(1-c)$。$\\therefore \\frac{1}{f'(\\xi)}+\\frac{1}{f'(\\eta)}=2c+2(1-c)=2$。$\\text{关键：用介值定理找分割点 }c$。",
       "cat": "一元微分学",
-      "topic": "中值定理·双中值问题",
+      "topic": "中值定理与泰勒公式",
       "source": "自编"
     },
     {
@@ -713,7 +713,7 @@
       "answer": 3,
       "solution": "①$\\text{罗尔定理：}f(0)=f(2)=0 \\Rightarrow \\exists \\xi_{1} \\in (0,2), f'(\\xi_{1})=0$。②$\\text{拉格朗日：在}[0,1]\\text{上 }f'(\\xi_{2})=1$；$\\text{在}[1,2]\\text{上 }f'(\\eta_{2})=-1$。③$f(1)=1>0=\\max\\{f(0),f(2)\\}$，$\\text{故最大值在}(0,2)\\text{内取到}$，$\\text{设为 }x_{0}$，$\\text{则 }f'(x_{0})=0$，$f''(x_{0}) \\leq 0$。又 $f''(x_{0})$ $\\text{不能恒为零（否则 }f\\text{ 为一次函数，矛盾）}$，$\\text{故 }\\exists \\zeta\\text{ 使 }f''(\\zeta)<0$。",
       "cat": "一元微分学",
-      "topic": "中值定理·中值定理综合",
+      "topic": "中值定理与泰勒公式",
       "source": "自编"
     },
     {
@@ -730,7 +730,7 @@
       "answer": 1,
       "solution": "$\\varphi(x)=e^{x}f(x)$，$\\varphi'(x)=e^{x}[f'(x)+f(x)]$。$\\varphi(a)=\\varphi(b)=0$，罗尔定理 $\\Rightarrow \\exists \\xi$ 使 $\\varphi'(\\xi)=0 \\Rightarrow f'(\\xi)+f(\\xi)=0$。$\\text{注：解 }f'+f=0 \\Rightarrow f=Ce^{-x}$，$\\text{变形为 }e^{x}f=C$。$\\text{对比 }050$ $\\text{题：}f'-f=0 \\Rightarrow e^{-x}f=C$。",
       "cat": "一元微分学",
-      "topic": "中值定理·构造辅助函数",
+      "topic": "中值定理与泰勒公式",
       "source": "自编"
     },
     {
@@ -741,7 +741,7 @@
       "answer": "1",
       "solution": "$\\text{令 }f(t)=e^{t}$，$\\text{在 }[\\sin x, x]\\text{（或 }[x, \\sin x]\\text{）上，}\\exists \\xi\\text{ 介于 }\\sin x\\text{ 与 }x\\text{ 之间}$，$\\text{使 }\\dfrac{e^{x}-e^{\\sin x}}{x-\\sin x}=e^{\\xi}$。$\\text{当 }x \\to 0\\text{ 时，}\\sin x \\to 0$，$\\text{故 }\\xi \\to 0$，$\\text{极限 }=e^{0}=1$。$\\text{洛必达也能做，但中值定理更优雅。}$",
       "cat": "一元微分学",
-      "topic": "中值定理·拉格朗日求极限",
+      "topic": "中值定理与泰勒公式",
       "source": "自编"
     },
     {
@@ -758,7 +758,7 @@
       "answer": 0,
       "solution": "$f''(x)>0\\text{ 说明 }f\\text{ 严格凹（下凸）}$。$\\text{由琴生不等式：}\\forall \\lambda \\in (0,1), f(\\lambda a+(1-\\lambda)b) < \\lambda f(a)+(1-\\lambda)f(b)=0$。$\\text{或证：若存在 }x_{0}\\text{ 使 }f(x_{0})\\geq 0$，$\\text{由罗尔定理 + 凹凸性可导出矛盾。}$",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·凹凸性应用",
+      "topic": "凹凸性与拐点",
       "source": "自编"
     },
     {
@@ -775,7 +775,7 @@
       "answer": 1,
       "solution": "$\\text{同济版定义：}f''(x)>0\\text{ 为凹（}\\cup\\text{形）}$，$f''(x)<0\\text{ 为凸（}\\cap\\text{形）}$。$\\text{几何直观：凹函数曲线位于弦之下，凸函数曲线位于弦之上。}$",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·凹凸性判定",
+      "topic": "凹凸性与拐点",
       "source": "自编"
     },
     {
@@ -792,7 +792,7 @@
       "answer": 2,
       "solution": "$y'=4x^{3}-12x+8$，$y''=12x^{2}-12=12(x-1)(x+1)$。$y''$ $\\text{在 }x=\\pm 1$ $\\text{处变号：}$ $x<-1$ $\\text{时 }y''>0$（$\\text{凹}$），$-1<x<1$ $\\text{时 }y''<0$（$\\text{凸}$），$x>1$ $\\text{时 }y''>0$（$\\text{凹}$）。$\\text{共 }2$ $\\text{个拐点。}$",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·拐点计算",
+      "topic": "凹凸性与拐点",
       "source": "自编"
     },
     {
@@ -809,7 +809,7 @@
       "answer": 0,
       "solution": "$f''(x)<0$ $\\text{故 }\\ln x$ $\\text{为凸函数（}\\cap\\text{形）}$。$\\text{凸函数的琴生不等式：}f\\left(\\frac{x_{1}+x_{2}}{2}\\right) > \\frac{f(x_{1})+f(x_{2})}{2}$。$\\text{即 }\\ln\\frac{a+b}{2} > \\frac{\\ln a+\\ln b}{2} = \\ln\\sqrt{ab}$，$\\text{得 }\\frac{a+b}{2} > \\sqrt{ab}$（$\\text{均值不等式}$）。",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·琴生不等式",
+      "topic": "凹凸性与拐点",
       "source": "自编"
     },
     {
@@ -826,7 +826,7 @@
       "answer": 0,
       "solution": "$\\text{法一（泰勒）：}f(1)=f(0)+f'(0)\\cdot 1+\\frac{f''(\\xi)}{2}\\cdot 1^{2}=1+\\frac{f''(\\xi)}{2}>1$（$f''>0$）。$\\text{法二（拉格朗日）：}f(1)=f'(\\eta)$，$\\eta \\in (0,1)$。$f''>0$ $\\Rightarrow f'$ $\\text{严格递增}$，$\\therefore f'(\\eta)>f'(0)=1$。",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·凹凸性应用",
+      "topic": "凹凸性与拐点",
       "source": "自编"
     },
     {
@@ -837,7 +837,7 @@
       "answer": "1",
       "solution": "$y''=6ax+2b$。$\\text{拐点条件：}$ ①$y''(1)=0 \\Rightarrow 6a+2b=0 \\Rightarrow b=-3a$；②$y(1)=-2 \\Rightarrow a+b=-2$。$\\text{代入得 }a-3a=-2 \\Rightarrow a=1$。$\\text{代回得 }b=-3$。$\\text{验证 }y''=6x-6=6(x-1)\\text{ 在 }x=1\\text{ 两侧变号，确为拐点。}$",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·拐点反求参数",
+      "topic": "凹凸性与拐点",
       "source": "自编"
     },
     {
@@ -854,7 +854,7 @@
       "answer": 3,
       "solution": "$f''>0\\text{ 仅说明 }f'\\text{ 严格递增，但 }\\xi\\text{ 的位置还取决于 }f'\\text{ 的凹凸性（即 }f'''\\text{ 的符号）}$。$\\text{例：}f(x)=x^{2}\\text{（}f''=2>0\\text{）时 }\\xi=\\frac{a+b}{2}$；$f(x)=e^{x}\\text{（}f''=e^{x}>0\\text{）时 }\\xi > \\frac{a+b}{2}$。$\\text{故无法仅由 }f''>0\\text{ 确定。}$",
       "cat": "一元微分学",
-      "topic": "中值定理·中值点位置",
+      "topic": "中值定理与泰勒公式",
       "source": "自编"
     },
     {
@@ -871,7 +871,7 @@
       "answer": 1,
       "solution": "$f''(x)<0\\text{ 为凸函数}$。$\\text{凸函数的等价定义：}$ $f(\\frac{x_{1}+x_{2}}{2}) > \\frac{f(x_{1})+f(x_{2})}{2}$，$\\text{即中点函数值大于两端平均值}$，$\\text{图形上曲线在弦之上}$。$\\text{凹函数则相反：中点值小于平均值，曲线在弦之下。}$",
       "cat": "一元微分学",
-      "topic": "凹凸性与拐点·琴生不等式",
+      "topic": "凹凸性与拐点",
       "source": "自编"
     },
     {
@@ -879,7 +879,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "连续性·连续延拓·分段点导数定义",
+      "topic": "导数定义与可导性",
       "question": "设 $f(x)=\\begin{cases}\\dfrac{\\ln(1+x)-x}{x^2}, & x\\neq0,\\\\[2mm] a, & x=0,\\end{cases}$ 若 $f(x)$ 在 $x=0$ 处连续，求常数 $a$；并讨论 $f(x)$ 在 $x=0$ 处是否可导。",
       "answer": "$a=-\\dfrac12$；可导，$f'(0)=\\dfrac13$",
       "solution": "由 $\\ln(1+x)=x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}+o(x^3)$ 得 $\\dfrac{\\ln(1+x)-x}{x^2}=-\\dfrac12+\\dfrac{x}{3}+o(x)\\to-\\dfrac12$，故 $a=-\\dfrac12$。\n可导性用导数定义：$f'(0)=\\lim\\limits_{x\\to0}\\dfrac{-\\frac12+\\frac{x}{3}+o(x)+\\frac12}{x}=\\dfrac13$。\n**注**：分段点处的可导性必须用导数定义求，不能对分段表达式直接求导后代入。",
@@ -890,7 +890,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "可导性讨论·含参数振荡因子·三个门槛",
+      "topic": "导数定义与可导性",
       "question": "设 $f(x)=\\begin{cases}x^{\\alpha}\\sin\\dfrac1x, & x\\neq0,\\\\[2mm] 0, & x=0,\\end{cases}$ 分别讨论 $\\alpha$ 取何值时，$f(x)$ 在 $x=0$ 处：(1) 连续；(2) 可导；(3) 导函数 $f'(x)$ 在 $x=0$ 处连续。",
       "answer": "(1) $\\alpha>0$；(2) $\\alpha>1$；(3) $\\alpha>2$",
       "solution": "(1) 连续需 $\\lim x^\\alpha\\sin\\dfrac1x=0$，当且仅当 $\\alpha>0$（有界量乘无穷小）。\n(2) 可导：$f'(0)=\\lim\\dfrac{x^\\alpha\\sin\\frac1x}{x}=\\lim x^{\\alpha-1}\\sin\\dfrac1x$，存在当且仅当 $\\alpha>1$，此时 $f'(0)=0$。\n(3) 当 $x\\neq0$ 时 $f'(x)=\\alpha x^{\\alpha-1}\\sin\\dfrac1x-x^{\\alpha-2}\\cos\\dfrac1x$，要使其 $\\to0$ 需 $\\alpha-1>0$ 且 $\\alpha-2>0$，即 $\\alpha>2$。\n**注**：三个门槛 $0,1,2$ 依次对应\"连续 / 可导 / 连续可导\"，是含振荡因子的标准结论。",
@@ -901,7 +901,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "导数定义·复合凑形·抽象函数",
+      "topic": "导数定义与可导性",
       "question": "设 $f(0)=0$，$f'(0)=2$，求 $\\displaystyle\\lim_{x\\to0}\\frac{f(1-\\cos x)}{x^2}$。",
       "answer": "$1$",
       "solution": "由 $f'(0)=2$ 得 $f(u)=2u+o(u)$。令 $u=1-\\cos x\\to0^+$，且 $1-\\cos x\\sim\\dfrac{x^2}{2}$，故 $f(1-\\cos x)=2(1-\\cos x)+o(1-\\cos x)=x^2+o(x^2)$，极限为 $1$。\n**注**：抽象函数求极限的标准套路是把 $f(u)$ 在 $u=0$ 处一阶展开，再代入 $u=u(x)$ 的等价无穷小。",
@@ -912,7 +912,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "二阶可导·对称差分·反向不成立",
+      "topic": "导数定义与可导性",
       "question": "设 $f(x)$ 在 $x_0$ 处二阶可导，求 $\\displaystyle\\lim_{h\\to0}\\frac{f(x_0+h)+f(x_0-h)-2f(x_0)}{h^2}$。",
       "answer": "$f''(x_0)$",
       "solution": "在 $x_0$ 处作带 Peano 余项的泰勒展开：$f(x_0\\pm h)=f(x_0)\\pm f'(x_0)h+\\dfrac{f''(x_0)}{2}h^2+o(h^2)$，两式相加得 $f(x_0+h)+f(x_0-h)-2f(x_0)=f''(x_0)h^2+o(h^2)$，除以 $h^2$ 得极限 $f''(x_0)$。\n**注**：反过来不成立——对称差分极限存在推不出二阶可导。如 $f(x)=x|x|$，对称差分恒为 $0$，但 $f''(0)$ 不存在。这是选择题常见陷阱。",
@@ -923,7 +923,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "隐函数求导·先定点坐标",
+      "topic": "导数计算",
       "question": "设 $y=y(x)$ 由方程 $xy+e^{y}=e^{x}+1$ 确定，求 $y(0)$ 与 $y'(0)$。",
       "answer": "$y(0)=\\ln2,\\quad y'(0)=\\dfrac{1-\\ln2}{2}$",
       "solution": "代 $x=0$ 得 $e^{y}=e^0+1=2$，故 $y(0)=\\ln2$。两边对 $x$ 求导：$y+xy'+e^{y}y'=e^{x}$。代入 $x=0,\\,y=\\ln2,\\,e^y=2$：$\\ln2+2y'(0)=1$，得 $y'(0)=\\dfrac{1-\\ln2}{2}$。\n**注**：隐函数求导必须先确定点的坐标 $(x_0,y_0)$ 再代入；$e^y$ 对 $x$ 求导是 $e^y y'$。",
@@ -934,7 +934,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "参数方程二阶导·摆线",
+      "topic": "导数计算",
       "question": "设摆线 $\\begin{cases}x=t-\\sin t,\\\\ y=1-\\cos t,\\end{cases}$ 求 $\\dfrac{dy}{dx}$ 与 $\\dfrac{d^2y}{dx^2}$。",
       "answer": "$\\dfrac{dy}{dx}=\\cot\\dfrac t2,\\quad \\dfrac{d^2y}{dx^2}=-\\dfrac{1}{4\\sin^4\\frac t2}$",
       "solution": "$\\dfrac{dx}{dt}=1-\\cos t$，$\\dfrac{dy}{dt}=\\sin t$，故 $\\dfrac{dy}{dx}=\\dfrac{\\sin t}{1-\\cos t}=\\dfrac{2\\sin\\frac t2\\cos\\frac t2}{2\\sin^2\\frac t2}=\\cot\\dfrac t2$。\n二阶导须再除以 $\\dfrac{dx}{dt}$：$\\dfrac{d^2y}{dx^2}=\\dfrac{-\\frac12\\csc^2\\frac t2}{1-\\cos t}=\\dfrac{-\\frac12\\csc^2\\frac t2}{2\\sin^2\\frac t2}=-\\dfrac{1}{4\\sin^4\\frac t2}$。\n**注**：公式为 $\\dfrac{d^2y}{dx^2}=\\dfrac{x'y''-y'x''}{(x')^3}$，别漏掉\"再除以 $\\dfrac{dx}{dt}$\"。",
@@ -945,7 +945,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "高阶导数·莱布尼茨公式·幂级数法",
+      "topic": "导数计算",
       "question": "设 $f(x)=x^2e^{2x}$，求 $f^{(n)}(0)\\ (n\\geq2)$。",
       "answer": "$f^{(n)}(0)=n(n-1)2^{\\,n-2}$",
       "solution": "**幂级数法**：$e^{2x}=\\sum\\dfrac{2^k}{k!}x^k$，故 $f(x)=\\sum\\dfrac{2^k}{k!}x^{k+2}$。$x^n$ 项对应 $k=n-2$，系数 $\\dfrac{2^{n-2}}{(n-2)!}=\\dfrac{f^{(n)}(0)}{n!}$，得 $f^{(n)}(0)=n(n-1)2^{n-2}$。\n**莱布尼茨法**：$(uv)^{(n)}=\\sum\\binom{n}{k}u^{(k)}v^{(n-k)}$，取 $u=x^2$，代入 $x=0$ 只剩 $k=2$ 项：$\\dbinom n2\\cdot2\\cdot2^{n-2}=n(n-1)2^{n-2}$。\n**注**：\"多项式 × 指数/三角\"的高阶导用莱布尼茨最稳；只求某点的高阶导用幂级数更快。",
@@ -956,7 +956,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "罗尔定理·构造辅助函数·积分因子",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(1)=0$。证明：存在 $\\xi\\in(0,1)$，使得 $f'(\\xi)=-\\dfrac{f(\\xi)}{\\xi}$。",
       "answer": "令 $F(x)=xf(x)$，用罗尔定理",
       "solution": "目标式等价于 $\\xi f'(\\xi)+f(\\xi)=0$，而 $[xf(x)]'=xf'(x)+f(x)$，故令 $F(x)=xf(x)$。\n$F$ 在 $[0,1]$ 连续、$(0,1)$ 可导，且 $F(0)=0$，$F(1)=1\\cdot f(1)=0$，即 $F(0)=F(1)$。由罗尔定理，存在 $\\xi\\in(0,1)$ 使 $F'(\\xi)=0$，即 $\\xi f'(\\xi)+f(\\xi)=0$，亦即 $f'(\\xi)=-\\dfrac{f(\\xi)}{\\xi}$。\n**注**：看到 $f'+pf=0$ 型就乘积分因子 $e^{\\int p\\,dx}$；本题 $p=\\dfrac1x$，积分因子为 $x$。",
@@ -967,7 +967,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "罗尔定理·构造辅助函数·乘 e^x",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导，且 $f(a)=f(b)=0$。证明：存在 $\\xi\\in(a,b)$，使得 $f'(\\xi)+f(\\xi)=0$。",
       "answer": "令 $F(x)=e^xf(x)$，用罗尔定理",
       "solution": "因 $[e^xf(x)]'=e^x[f'(x)+f(x)]$，令 $F(x)=e^xf(x)$。则 $F$ 在 $[a,b]$ 连续、$(a,b)$ 可导，且 $F(a)=e^af(a)=0$，$F(b)=e^bf(b)=0$。由罗尔定理存在 $\\xi$ 使 $F'(\\xi)=0$，即 $e^{\\xi}[f'(\\xi)+f(\\xi)]=0$，而 $e^{\\xi}\\neq0$，故 $f'(\\xi)+f(\\xi)=0$。\n**注**：要证 $f'(\\xi)+kf(\\xi)=0$ 构造 $e^{kx}f(x)$；要证 $f'(\\xi)+g(\\xi)f(\\xi)=0$ 构造 $e^{\\int g(x)dx}f(x)$。",
@@ -978,7 +978,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "柯西中值定理·取 g(x)=ln x",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $0<a<b$，函数 $f(x)$ 在 $[a,b]$ 上连续，在 $(a,b)$ 内可导。证明：存在 $\\xi\\in(a,b)$ 使得 $f(b)-f(a)=\\xi f'(\\xi)\\ln\\dfrac{b}{a}$。",
       "answer": "取 $g(x)=\\ln x$ 用柯西中值定理",
       "solution": "取 $g(x)=\\ln x$，则 $g$ 在 $[a,b]$ 连续、$(a,b)$ 可导且 $g'(x)=\\dfrac1x\\neq0$。由柯西中值定理 $\\dfrac{f(b)-f(a)}{g(b)-g(a)}=\\dfrac{f'(\\xi)}{g'(\\xi)}$。代入 $g(b)-g(a)=\\ln\\dfrac ba$，$g'(\\xi)=\\dfrac1\\xi$，得 $\\dfrac{f(b)-f(a)}{\\ln\\frac ba}=\\xi f'(\\xi)$，即所求。\n**注**：拉格朗日是柯西取 $g(x)=x$ 的特例。结论出现 $\\ln\\dfrac ba$、$\\dfrac1a-\\dfrac1b$、$b^2-a^2$ 时对应取 $g(x)=\\ln x,\\ \\dfrac1x,\\ x^2$。",
@@ -989,7 +989,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "双中值问题·介值定理分点·分段拉格朗日",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(0)=0$，$f(1)=1$。证明：存在**不同**的 $\\xi,\\eta\\in(0,1)$，使得 $\\dfrac{1}{f'(\\xi)}+\\dfrac{1}{f'(\\eta)}=2$。",
       "answer": "先用介值定理取 $f(c)=\\\\frac12$，再两段用拉格朗日",
       "solution": "**第一步**：由 $f(0)=0,\\,f(1)=1$ 及介值定理，存在 $c\\in(0,1)$ 使 $f(c)=\\dfrac12$。\n**第二步**：在 $[0,c]$ 上用拉格朗日，存在 $\\xi\\in(0,c)$ 使 $\\dfrac12=f'(\\xi)c$，即 $\\dfrac{1}{f'(\\xi)}=2c$；在 $[c,1]$ 上用拉格朗日，存在 $\\eta\\in(c,1)$ 使 $\\dfrac12=f'(\\eta)(1-c)$，即 $\\dfrac{1}{f'(\\eta)}=2(1-c)$。（由 $f'(\\xi)c=\\frac12>0$ 知取倒数合法。）\n**第三步**：相加得 $2c+2(1-c)=2$，且 $\\xi\\in(0,c)$、$\\eta\\in(c,1)$ 故 $\\xi\\neq\\eta$。\n**注**：双中值题的标准动作是\"先用介值定理分点，再分段用拉格朗日\"，分点取函数值中点可使两段贡献对称抵消。",
@@ -1000,7 +1000,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "泰勒公式·最大值反推二阶导·最优常数",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,1]$ 上二阶可导，$f(0)=f(1)=0$，且 $\\max\\limits_{[0,1]}f(x)=2$。证明：存在 $\\xi\\in(0,1)$ 使得 $f''(\\xi)\\leq-16$。",
       "answer": "在最大值点对两端作泰勒展开，比较两端候选",
       "solution": "由最值定理存在 $x_0\\in[0,1]$ 使 $f(x_0)=2$；因 $f(0)=f(1)=0<2$ 故 $x_0\\in(0,1)$，由费马定理 $f'(x_0)=0$。\n在 $x_0$ 处对两端作带拉格朗日余项的泰勒展开：$0=f(0)=2+\\dfrac{f''(\\xi_1)}{2}x_0^2$，得 $f''(\\xi_1)=-\\dfrac{4}{x_0^2}$；$0=f(1)=2+\\dfrac{f''(\\xi_2)}{2}(1-x_0)^2$，得 $f''(\\xi_2)=-\\dfrac{4}{(1-x_0)^2}$。\n由 $x_0+(1-x_0)=1$，$x_0$ 与 $1-x_0$ 中至少一个 $\\leq\\dfrac12$：若 $x_0\\leq\\dfrac12$ 则 $f''(\\xi_1)\\leq-\\dfrac{4}{1/4}=-16$；若 $1-x_0\\leq\\dfrac12$ 则 $f''(\\xi_2)\\leq-16$。\n**注**：$-16$ 是最优常数，取 $f(x)=8x(1-x)$ 可验证取等。",
@@ -1011,7 +1011,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "泰勒余项·抽象函数·含参数结论",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $x=0$ 处三阶可导，且 $f(0)=0$，$f'(0)=0$，$f''(0)=2$。求 $\\displaystyle\\lim_{x\\to0}\\frac{f(x)-x^2}{x^3}$。",
       "answer": "$\\dfrac{f'''(0)}{6}$",
       "solution": "由泰勒公式 $f(x)=f(0)+f'(0)x+\\dfrac{f''(0)}{2}x^2+\\dfrac{f'''(0)}{6}x^3+o(x^3)=x^2+\\dfrac{f'''(0)}{6}x^3+o(x^3)$，故 $\\dfrac{f(x)-x^2}{x^3}\\to\\dfrac{f'''(0)}{6}$。\n**注**：只给\"三阶可导\"而非\"三阶导数连续\"时只能用 Peano 余项；本题极限值含 $f'''(0)$，属含参数的结论型题。",
@@ -1022,7 +1022,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "拉格朗日定理·证明不等式·ln(1+x) 双侧估计",
+      "topic": "中值定理与泰勒公式",
       "question": "证明：当 $x>0$ 时，$\\dfrac{x}{1+x}<\\ln(1+x)<x$。",
       "answer": "对 $\\\\ln(1+t)$ 在 $[0,x]$ 用拉格朗日中值定理",
       "solution": "对 $f(t)=\\ln(1+t)$ 在 $[0,x]$ 上用拉格朗日中值定理：$\\ln(1+x)=f'(\\xi)x=\\dfrac{x}{1+\\xi}$，$\\xi\\in(0,x)$。由 $0<\\xi<x$ 得 $1<1+\\xi<1+x$，故 $\\dfrac{x}{1+x}<\\dfrac{x}{1+\\xi}<x$。\n**另解（单调性）**：$g(x)=x-\\ln(1+x)$，$g(0)=0$，$g'(x)=\\dfrac{x}{1+x}>0$；$h(x)=\\ln(1+x)-\\dfrac{x}{1+x}$，$h(0)=0$，$h'(x)=\\dfrac{x}{(1+x)^2}>0$。\n**注**：由此可导出 $\\left(1+\\dfrac1n\\right)^n<e<\\left(1+\\dfrac1n\\right)^{n+1}$。",
@@ -1033,7 +1033,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "零点定理+单调性·根的唯一性",
+      "topic": "零点与方程根",
       "question": "证明方程 $x^3-3x+1=0$ 在区间 $(0,1)$ 内有且仅有一个实根。",
       "answer": "存在性用零点定理，唯一性用严格单调",
       "solution": "令 $f(x)=x^3-3x+1$。$f$ 在 $[0,1]$ 连续，且 $f(0)=1>0$，$f(1)=-1<0$，由零点定理存在 $x_0\\in(0,1)$ 使 $f(x_0)=0$。\n又 $f'(x)=3(x^2-1)<0$ 对 $x\\in(0,1)$ 恒成立，故 $f$ 严格递减，零点至多一个。\n**注**：\"存在性用零点定理、唯一性用单调性\"是根的个数问题的标准两步；若 $f'$ 变号则需分段讨论。",
@@ -1044,7 +1044,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "凹凸性·琴生不等式·均值不等式",
+      "topic": "凹凸性与拐点",
       "question": "利用函数 $f(x)=\\ln x$ 的凹凸性证明：对任意 $a>0,\\ b>0$，有 $\\sqrt{ab}\\leq\\dfrac{a+b}{2}$，并说明等号成立的条件。",
       "answer": "$f(x)=\\\\ln x$ 为凹函数，用琴生不等式；等号当且仅当 $a=b$",
       "solution": "$f(x)=\\ln x$ 满足 $f''(x)=-\\dfrac{1}{x^2}<0$，故 $f$ 是凹函数（$\\cap$ 型）。由琴生不等式 $f\\left(\\dfrac{a+b}{2}\\right)\\geq\\dfrac{f(a)+f(b)}{2}$，即 $\\ln\\dfrac{a+b}{2}\\geq\\dfrac{\\ln a+\\ln b}{2}=\\ln\\sqrt{ab}$。由 $\\ln x$ 单调递增得 $\\dfrac{a+b}{2}\\geq\\sqrt{ab}$。等号当且仅当 $a=b$。\n**注**：$f''<0$（凹）时函数值在平均点更大，不等式方向为 $\\geq$。",
@@ -1055,7 +1055,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "单调性·拉格朗日定理·割线斜率递增",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,+\\infty)$ 上连续，在 $(0,+\\infty)$ 内可导，$f(0)=0$，且 $f'(x)$ 在 $(0,+\\infty)$ 上单调递增。证明：$g(x)=\\dfrac{f(x)}{x}$ 在 $(0,+\\infty)$ 上单调递增。",
       "answer": "证 $g'(x)=\\\\dfrac{xf'(x)-f(x)}{x^2}>0$",
       "solution": "$g'(x)=\\dfrac{xf'(x)-f(x)}{x^2}$。对 $f$ 在 $[0,x]$ 上用拉格朗日：$f(x)-f(0)=f'(\\xi)x$，$\\xi\\in(0,x)$，由 $f(0)=0$ 得 $f(x)=xf'(\\xi)$。因 $f'$ 递增且 $\\xi<x$，有 $f'(\\xi)<f'(x)$，故 $f(x)<xf'(x)$，即 $xf'(x)-f(x)>0$，于是 $g'(x)>0$。\n**注**：几何含义是\"导数递增时割线斜率随右端点右移而增大\"；注意条件是 $f'$ 单调递增而非 $f$ 单调。",
@@ -1066,7 +1066,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "罗尔定理·构造 f(x)-∫h(x)dx",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,1]$ 上连续，在 $(0,1)$ 内可导，且 $f(0)=0$，$f(1)=1$。证明：存在 $\\xi\\in(0,1)$ 使得 $f'(\\xi)=2\\xi$。",
       "answer": "令 $F(x)=f(x)-x^2$，用罗尔定理",
       "solution": "目标 $f'(\\xi)=2\\xi$ 等价于 $[f(x)-x^2]'\\big|_{x=\\xi}=0$。令 $F(x)=f(x)-x^2$，则 $F$ 在 $[0,1]$ 连续、$(0,1)$ 可导，且 $F(0)=0$，$F(1)=f(1)-1=0$。由罗尔定理存在 $\\xi$ 使 $F'(\\xi)=0$，即 $f'(\\xi)=2\\xi$。\n**注**：结论形如 $f'(\\xi)=h(\\xi)$ 时构造 $F(x)=f(x)-\\int h(x)dx$，这是第 108、109、118 题共同的模式。",
@@ -1077,7 +1077,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "渐近线综合·垂直渐近线须分左右",
+      "topic": "导数几何应用",
       "question": "求曲线 $y=x\\,e^{1/x}$ 的全部渐近线。",
       "answer": "垂直渐近线 $x=0$（仅右侧）；斜渐近线 $y=x+1$",
       "solution": "**垂直渐近线**：$x\\to0^+$ 时令 $t=\\dfrac1x\\to+\\infty$，$\\lim xe^{1/x}=\\lim\\dfrac{e^t}{t}=+\\infty$，故 $x=0$ 是右侧垂直渐近线；$x\\to0^-$ 时 $t\\to-\\infty$，$\\dfrac{e^t}{t}\\to0$，左侧无。\n**斜渐近线**：$a=\\lim\\limits_{x\\to\\infty}\\dfrac{y}{x}=\\lim e^{1/x}=1$；$b=\\lim\\limits_{x\\to\\infty}x(e^{1/x}-1)=\\lim\\limits_{t\\to0}\\dfrac{e^t-1}{t}=1$。故 $y=x+1$（两侧相同）。\n**注**：本题 $x=0$ 两侧性态不同，垂直渐近线必须分左右讨论——最易漏掉。",
@@ -1088,7 +1088,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "方程根的个数讨论·两端极限同号+唯一极值",
+      "topic": "零点与方程根",
       "question": "讨论方程 $\\ln x=ax\\ (a>0)$ 的实根个数。",
       "answer": "$0<a<\\dfrac1e$ 时 2 个；$a=\\dfrac1e$ 时 1 个；$a>\\dfrac1e$ 时 0 个",
       "solution": "令 $f(x)=\\ln x-ax$（$x>0$）。$\\lim\\limits_{x\\to0^+}f=-\\infty$，$\\lim\\limits_{x\\to+\\infty}f=-\\infty$。$f'(x)=\\dfrac1x-a$，$f''(x)=-\\dfrac1{x^2}<0$，唯一驻点 $x=\\dfrac1a$ 为极大值点，最大值 $f\\left(\\dfrac1a\\right)=-\\ln a-1$。\n- 若 $-\\ln a-1>0$ 即 $0<a<\\dfrac1e$：最大值 $>0$，两端趋于 $-\\infty$，各段一根，共 2 个；\n- 若 $a=\\dfrac1e$：最大值 $=0$，在 $x=e$ 处重根，共 1 个；\n- 若 $a>\\dfrac1e$：最大值 $<0$，无实根。\n**注**：\"两端极限同号 + 唯一极值\"是标准结构，只需判断极值符号。",
@@ -1099,7 +1099,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "不等式恒成立·分离参数·最值法",
+      "topic": "单调性与极值",
       "question": "若不等式 $a\\,e^{x}\\geq x+1$ 对一切 $x>0$ 成立，求常数 $a$ 的取值范围。",
       "answer": "$a\\geq1$",
       "solution": "因 $e^x>0$，可分离参数：$a\\geq(x+1)e^{-x}$ 对一切 $x>0$ 成立。令 $g(x)=(x+1)e^{-x}$，则 $g'(x)=-xe^{-x}<0$（$x>0$），$g$ 严格递减，$\\sup\\limits_{x>0}g(x)=\\lim\\limits_{x\\to0^+}g(x)=1$。故需且只需 $a\\geq1$。\n**验证**：$a=1$ 时即经典不等式 $e^x\\geq x+1$（由 $h(x)=e^x-x-1$，$h(0)=0$，$h'>0$）。\n**注**：恒成立问题两条路线——分离参数（参数可显式解出时首选）与最值法。",
@@ -1110,7 +1110,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "曲率·最值应用·曲率公式",
+      "topic": "导数几何应用",
       "question": "求曲线 $y=\\ln x\\ (x>0)$ 上曲率最大的点，并求该最大曲率。",
       "answer": "点 $\\Big(\\dfrac{1}{\\sqrt2},-\\dfrac{\\ln2}{2}\\Big)$；$K_{\\max}=\\dfrac{2}{3\\sqrt3}$",
       "solution": "$y'=\\dfrac1x$，$y''=-\\dfrac1{x^2}$，$K(x)=\\dfrac{|y''|}{(1+y'^2)^{3/2}}=\\dfrac{\\frac1{x^2}}{\\left(\\frac{x^2+1}{x^2}\\right)^{3/2}}=\\dfrac{x}{(x^2+1)^{3/2}}$。\n$K'(x)=(x^2+1)^{-5/2}(1-2x^2)$，驻点 $x=\\dfrac1{\\sqrt2}$；左侧 $K'>0$、右侧 $K'<0$，且 $K\\to0$（$x\\to0^+$ 或 $+\\infty$），故为最大值点。对应 $y=\\ln\\dfrac1{\\sqrt2}=-\\dfrac{\\ln2}{2}$，$K_{\\max}=\\dfrac{\\frac1{\\sqrt2}}{\\left(\\frac32\\right)^{3/2}}=\\dfrac{2}{3\\sqrt3}$。\n**注**：参数方程形式为 $K=\\dfrac{|x'y''-y'x''|}{(x'^2+y'^2)^{3/2}}$。",
@@ -1121,7 +1121,7 @@
       "type": "fill",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "极值·反求参数·驻点非极值的例子",
+      "topic": "单调性与极值",
       "question": "设 $f(x)=x^3-3ax+1$。(1) 若 $f(x)$ 在 $x=1$ 处取得极值，求 $a$ 并判断是极大值还是极小值；(2) 求使 $f(x)$ 有极值的 $a$ 的取值范围。",
       "answer": "(1) $a=1$，极小值 $f(1)=-1$；(2) $a>0$",
       "solution": "**(1)** $f'(x)=3x^2-3a$，由 $f'(1)=0$ 得 $a=1$。此时 $f'(x)=3(x-1)(x+1)$，$f''(x)=6x$，$f''(1)=6>0$，故 $x=1$ 为极小值点，$f(1)=-1$（另一驻点 $x=-1$ 为极大值点，$f(-1)=3$）。\n**(2)** $f'(x)=3x^2-3a$：$a>0$ 时有两相异实根 $\\pm\\sqrt a$ 且 $f'$ 变号，有极大、极小各一个；$a=0$ 时 $f'=3x^2\\geq0$，$f$ 递增无极值；$a<0$ 时 $f'>0$ 恒成立，无极值。故充要条件为 $a>0$。\n**注**：$f'(x_0)=0$ 只是必要条件，必须再判断变号或用二阶导数检验；$a=0$ 时 $x=0$ 是\"驻点但非极值点\"。",
@@ -1132,7 +1132,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "介值定理·不动点型·一维 Borsuk-Ulam",
+      "topic": "零点与方程根",
       "question": "设 $f(x)$ 在 $[0,1]$ 上连续，且 $f(0)=f(1)$。证明：存在 $\\xi\\in\\Big[0,\\dfrac12\\Big]$，使得 $f(\\xi)=f\\Big(\\xi+\\dfrac12\\Big)$。",
       "answer": "令 $g(x)=f(x+\\\\frac12)-f(x)$，两端点值异号",
       "solution": "令 $g(x)=f\\left(x+\\dfrac12\\right)-f(x)$，$x\\in\\left[0,\\dfrac12\\right]$，$g$ 连续。$g(0)=f\\left(\\dfrac12\\right)-f(0)$，$g\\left(\\dfrac12\\right)=f(1)-f\\left(\\dfrac12\\right)=f(0)-f\\left(\\dfrac12\\right)=-g(0)$。\n若 $g(0)=0$ 取 $\\xi=0$；否则 $g(0)$ 与 $g\\left(\\dfrac12\\right)$ 异号，由零点定理存在 $\\xi\\in\\left(0,\\dfrac12\\right)$ 使 $g(\\xi)=0$，即 $f(\\xi)=f\\left(\\xi+\\dfrac12\\right)$。\n**注**：这是\"一维 Borsuk—Ulam 定理\"的特例。一般化：对任意正整数 $n$，存在 $\\xi\\in\\left[0,1-\\dfrac1n\\right]$ 使 $f(\\xi)=f\\left(\\xi+\\dfrac1n\\right)$，用 $g(0)+\\cdots+g\\left(\\dfrac{n-1}{n}\\right)=0$ 说明诸值不能全同号。",
@@ -1143,7 +1143,7 @@
       "type": "proof",
       "difficulty": "hard",
       "cat": "一元微分学",
-      "topic": "泰勒展开·两点展开相减·导界估计",
+      "topic": "中值定理与泰勒公式",
       "question": "设 $f(x)$ 在 $[0,1]$ 上二阶可导，$f(0)=f(1)=0$，且 $|f''(x)|\\leq1$ 对 $x\\in[0,1]$ 成立。证明：对任意 $x\\in[0,1]$，$|f'(x)|\\leq\\dfrac12$。",
       "answer": "在 $x_0$ 处对 0 与 1 分别作泰勒展开后相减",
       "solution": "任取 $x_0\\in(0,1)$，在 $x_0$ 处对 $0$ 与 $1$ 作带拉格朗日余项的泰勒展开，由 $f(0)=f(1)=0$ 两式相减消去 $f(x_0)$：$0=f'(x_0)+\\dfrac12\\left[f''(\\xi_2)(1-x_0)^2-f''(\\xi_1)x_0^2\\right]$，即 $f'(x_0)=\\dfrac12\\left[f''(\\xi_1)x_0^2-f''(\\xi_2)(1-x_0)^2\\right]$。\n取绝对值并用 $|f''|\\leq1$：$|f'(x_0)|\\leq\\dfrac12\\left[x_0^2+(1-x_0)^2\\right]$，而 $x_0^2+(1-x_0)^2=2\\left(x_0-\\dfrac12\\right)^2+\\dfrac12\\leq1$，故 $|f'(x_0)|\\leq\\dfrac12$。\n**注**：常数 $\\dfrac12$ 最优（取 $f(x)=\\dfrac12x(1-x)$）。此类\"由二阶导界估计一阶导界\"的通法就是在两点作泰勒展开后相减消去函数值。",
