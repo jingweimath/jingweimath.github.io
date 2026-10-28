@@ -1,5 +1,5 @@
 // Auto-generated editor data
-// Chapters: 19, Total questions: 1082
+// Chapters: 19, Total questions: 1099
 // Regenerate: python build_editor_data.py
 
 var EDITOR_DATA = [
@@ -3075,6 +3075,199 @@ var EDITOR_DATA = [
         "cat": "物理应用",
         "topic": "物理应用·变力做功·递推",
         "source": "自编"
+      },
+      {
+        "id": "cal-int-101",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}\\sin 2t\\,dt}{x^{2}}$。",
+        "solution": "$\\dfrac{0}{0}$ 型，洛必达：$$\\lim_{x\\to 0}\\frac{\\int_{0}^{x}\\sin 2t\\,dt}{x^{2}}=\\lim_{x\\to 0}\\frac{\\sin 2x}{2x}=1,$$最后一步用等价无穷小 $\\sin 2x\\sim 2x\\ (x\\to0)$。**易错点**：被积函数是 $\\sin 2t$ 不是 $\\sin t$，洛必达后得到的是 $\\dfrac{\\sin 2x}{2x}$ 而不是 $\\dfrac{\\sin 2x}{x}$；漏掉系数 2 会得出 $\\dfrac{1}{2}$ 的错误结果。",
+        "cat": "一元函数积分学",
+        "topic": "变限积分求极限·洛必达法则",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$1$"
+      },
+      {
+        "id": "cal-int-102",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}\\sin(t-x)\\,dt}{x^{2}}$。",
+        "solution": "这是 $\\dfrac{0}{0}$ 型。注意这里的 $x$ 既是积分上限、又出现在被积函数内部（$\\sin(t-x)$ 是「卷积型」），**先做变量代换把 $x$ 从被积函数里挪到积分限上**，再用洛必达。令 $u=x-t$，则 $t=0$ 时 $u=x$、$t=x$ 时 $u=0$，且 $dt=-du$、$\\sin(t-x)=-\\sin u$，$$\\int_{0}^{x}\\sin(t-x)\\,dt=\\int_{x}^{0}(-\\sin u)(-du)=\\int_{x}^{0}\\sin u\\,du=-\\int_{0}^{x}\\sin u\\,du.$$于是$$\\lim_{x\\to 0}\\frac{\\int_{0}^{x}\\sin(t-x)\\,dt}{x^{2}}=\\lim_{x\\to 0}\\frac{-\\int_{0}^{x}\\sin u\\,du}{x^{2}}=\\lim_{x\\to 0}\\frac{-\\sin x}{2x}=-\\frac{1}{2}.$$**方法点睛（本题考点）**：被积函数是 $\\sin(t-x)$、$\\arctan(tx)$ 这类「参数 $x$ 嵌在被积函数内部」的形式时，必须**先变量代换**、把 $x$ 移到积分限上，再用 $\\bigl(\\int_{a}^{\\varphi(x)}f(t)\\,dt\\bigr)^{\\prime}=f[\\varphi(x)]\\varphi^{\\prime}(x)$ 求导。若跳过代换直接对 $x$ 求导，就要用积分号下求导（莱布尼茨公式），既容易漏项，也不在考纲要求的常规路径上。",
+        "cat": "一元函数积分学",
+        "topic": "变限积分求极限·卷积型变量代换后洛必达",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$-\\dfrac{1}{2}$"
+      },
+      {
+        "id": "cal-int-103",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}\\sin t^{2}\\,dt}{x^{3}}$。",
+        "solution": "被积函数 $\\sin t^2$ 没有初等原函数，**不能先积分**，直接洛必达：$$\\lim_{x\\to 0}\\frac{\\int_{0}^{x}\\sin t^{2}\\,dt}{x^{3}}=\\lim_{x\\to 0}\\frac{\\sin x^{2}}{3x^{2}}=\\frac{1}{3}.$$**方法点睛**：这类题的通用套路是「洛必达一次 → 等价无穷小收尾」，$\\dfrac{d}{dx}\\int_a^x f(t)\\,dt=f(x)$ 这一步把积分号直接消掉。",
+        "cat": "一元函数积分学",
+        "topic": "变限积分求极限·洛必达法则",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$\\dfrac{1}{3}$"
+      },
+      {
+        "id": "cal-int-104",
+        "type": "choice",
+        "difficulty": "basic",
+        "question": "$\\lim_{x\\to 0}\\dfrac{\\int_{0}^{1}\\arctan(tx)\\,dt}{x}$ 的值为（　　）",
+        "solution": "选 **B**。这是 $\\dfrac{0}{0}$ 型，但 $x$ 嵌在被积函数 $\\arctan(tx)$ 内部，**先做变量代换把 $x$ 移出被积函数、落到积分限上**，再用洛必达。令 $u=tx$，则 $dt=\\dfrac{du}{x}$；$t=0$ 时 $u=0$，$t=1$ 时 $u=x$，$$\\int_{0}^{1}\\arctan(tx)\\,dt=\\frac{1}{x}\\int_{0}^{x}\\arctan u\\,du.$$于是$$\\lim_{x\\to 0}\\frac{\\int_{0}^{1}\\arctan(tx)\\,dt}{x}=\\lim_{x\\to 0}\\frac{\\int_{0}^{x}\\arctan u\\,du}{x^{2}}=\\lim_{x\\to 0}\\frac{\\arctan x}{2x}=\\frac{1}{2},$$最后一步用等价无穷小 $\\arctan x\\sim x$。**方法点睛（本题考点）**：$x$ 是被积函数里的参数时，积分限（这里是从 0 到 1）与 $x$ 无关，直接洛必达就要算 $\\dfrac{d}{dx}\\int_{0}^{1}\\arctan(tx)\\,dt=\\int_{0}^{1}\\dfrac{t}{1+t^{2}x^{2}}\\,dt=\\dfrac{\\ln(1+x^{2})}{2x^{2}}$，中间又冒出一个 $\\dfrac{0}{0}$，还得再算一次；先代换则一步到位、只做一次洛必达。",
+        "cat": "一元函数积分学",
+        "topic": "变限积分求极限·卷积型变量代换后洛必达",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "options": [
+          "$0$",
+          "$\\dfrac{1}{2}$",
+          "$1$",
+          "不存在"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "cal-int-105",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "求 $\\lim_{x\\to 0}\\dfrac{x-\\sin x}{\\int_{0}^{x}t\\sin t\\,dt}$。",
+        "solution": "**变限积分在分母**上。分子分母都趋于 0，可用等价无穷小直接比阶：$$x-\\sin x\\sim\\frac{x^{3}}{6},\\qquad\\int_{0}^{x}t\\sin t\\,dt\\sim\\int_{0}^{x}t\\cdot t\\,dt=\\frac{x^{3}}{3}.$$故 $$\\lim_{x\\to0}\\frac{x-\\sin x}{\\int_0^x t\\sin t\\,dt}=\\frac{1/6}{1/3}=\\frac{1}{2}.$$**方法点睛**：分母是变限积分时，先用等价无穷小把被积函数替换为幂函数，积分就变成了普通幂函数积分，比连做三次洛必达干净得多。（若用洛必达：$\\dfrac{1-\\cos x}{x\\sin x}\\to\\dfrac{\\sin x}{\\sin x+x\\cos x}\\to\\dfrac{\\cos x}{2\\cos x-x\\sin x}\\to\\dfrac12$，需三次。）",
+        "cat": "一元函数积分学",
+        "topic": "变限积分作分母·等价无穷小",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$\\dfrac{1}{2}$"
+      },
+      {
+        "id": "cal-int-106",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "求 $\\lim_{x\\to 0}\\dfrac{\\tan x-x}{\\int_{0}^{x}t^{2}\\cos t\\,dt}$。",
+        "solution": "**变限积分在分母**。用等价无穷小定阶：$$\\tan x-x\\sim\\frac{x^{3}}{3},\\qquad\\int_{0}^{x}t^{2}\\cos t\\,dt\\sim\\int_{0}^{x}t^{2}\\,dt=\\frac{x^{3}}{3}.$$故极限 $=\\dfrac{1/3}{1/3}=1$。**易错点**：$\\tan x-x$ 的主部是 $\\dfrac{x^3}{3}$ 而不是 $\\dfrac{x^3}{6}$（后者是 $x-\\sin x$ 的），记混了答案会差一倍。",
+        "cat": "一元函数积分学",
+        "topic": "变限积分作分母·等价无穷小",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$1$"
+      },
+      {
+        "id": "cal-int-107",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}(e^{t^{2}}-1)\\,dt}{x^{3}}$。",
+        "solution": "被积函数 $e^{t^2}-1$ 无初等原函数，用洛必达：$$\\lim_{x\\to 0}\\frac{\\int_{0}^{x}(e^{t^{2}}-1)\\,dt}{x^{3}}=\\lim_{x\\to 0}\\frac{e^{x^{2}}-1}{3x^{2}}=\\frac{1}{3},$$最后一步用 $e^{u}-1\\sim u$（这里 $u=x^2\\to0$）。",
+        "cat": "一元函数积分学",
+        "topic": "变限积分求极限·洛必达法则",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$\\dfrac{1}{3}$"
+      },
+      {
+        "id": "cal-int-108",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}\\cos t^{2}\\,dt-x}{x^{5}}$。",
+        "solution": "**要用泰勒展开**，因为本题洛必达一次后是 $\\dfrac{\\cos x^2-1}{5x^4}$，再做下去会越来越繁。直接对被积函数展开：$$\\cos t^{2}=1-\\frac{(t^{2})^{2}}{2!}+o(t^{4})=1-\\frac{t^{4}}{2}+o(t^{4}),$$逐项积分：$$\\int_{0}^{x}\\cos t^{2}\\,dt=\\int_{0}^{x}\\left(1-\\frac{t^{4}}{2}+o(t^{4})\\right)dt=x-\\frac{x^{5}}{10}+o(x^{5}).$$代入：$$\\lim_{x\\to0}\\frac{\\left(x-\\dfrac{x^{5}}{10}+o(x^{5})\\right)-x}{x^{5}}=-\\frac{1}{10}.$$**易错点**：分子两个主项恰好相消（都是 $x$），必须保留到 $x^5$ 项；只展开到 $\\cos t^2=1+o(1)$ 会得出「极限为 0」的错误结论。",
+        "cat": "一元函数积分学",
+        "topic": "变限积分求极限·泰勒展开",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$-\\dfrac{1}{10}$"
+      },
+      {
+        "id": "cal-int-109",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}\\dfrac{\\sin t}{t}\\,dt-x}{x^{3}}$。",
+        "solution": "被积函数 $\\dfrac{\\sin t}{t}$ 无初等原函数（它的原函数是正弦积分 $\\mathrm{Si}$），只能展开逐项积分：$$\\frac{\\sin t}{t}=\\frac{t-\\dfrac{t^{3}}{6}+o(t^{3})}{t}=1-\\frac{t^{2}}{6}+o(t^{2}),$$$$\\int_{0}^{x}\\frac{\\sin t}{t}\\,dt=x-\\frac{x^{3}}{18}+o(x^{3}).$$故 $$\\lim_{x\\to0}\\frac{\\left(x-\\dfrac{x^{3}}{18}+o(x^{3})\\right)-x}{x^{3}}=-\\frac{1}{18}.$$**方法点睛**：$\\dfrac{\\sin t}{t}$ 在 $t=0$ 处是可去奇点，补充定义值为 1，积分本身没有瑕点。",
+        "cat": "一元函数积分学",
+        "topic": "变限积分求极限·泰勒展开",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$-\\dfrac{1}{18}$"
+      },
+      {
+        "id": "cal-int-110",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "求 $\\lim_{x\\to +\\infty}\\dfrac{x\\int_{0}^{x}e^{t^{2}}\\,dt}{e^{x^{2}}}$。",
+        "solution": "这是 $\\dfrac{\\infty}{\\infty}$ 型。对分子用乘积求导法则：$$\\bigl(x\\int_{0}^{x}e^{t^{2}}\\,dt\\bigr)^{\\prime}=\\int_{0}^{x}e^{t^{2}}\\,dt+xe^{x^{2}},\\qquad (e^{x^{2}})^{\\prime}=2xe^{x^{2}}.$$洛必达后拆成两项：$$\\frac{\\int_{0}^{x}e^{t^{2}}dt+xe^{x^{2}}}{2xe^{x^{2}}}=\\underbrace{\\frac{xe^{x^{2}}}{2xe^{x^{2}}}}_{=\\frac12}+\\frac{\\int_{0}^{x}e^{t^{2}}dt}{2xe^{x^{2}}}.$$对余项再用一次洛必达：$$\\lim_{x\\to+\\infty}\\frac{e^{x^{2}}}{2e^{x^{2}}+4x^{2}e^{x^{2}}}=\\lim_{x\\to+\\infty}\\frac{1}{2+4x^{2}}=0.$$故原极限 $=\\dfrac12+0=\\dfrac12$。**结论记忆**：$\\int_0^x e^{t^2}dt\\sim\\dfrac{e^{x^2}}{2x}\\ (x\\to+\\infty)$，即 $x\\int_0^xe^{t^2}dt\\sim\\dfrac{e^{x^2}}{2}$。**易错点**：洛必达后如果不拆项、直接对整式再洛必达，会陷入死循环。",
+        "cat": "一元函数积分学",
+        "topic": "积分上限函数·渐近分析与洛必达",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$\\dfrac{1}{2}$"
+      },
+      {
+        "id": "cal-int-111",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "计算 $\\int_{0}^{+\\infty}xe^{-x}\\,dx$。",
+        "solution": "分部积分：$$\\int_{0}^{A}xe^{-x}dx=\\bigl[-xe^{-x}\\bigr]_{0}^{A}+\\int_{0}^{A}e^{-x}dx=-Ae^{-A}+\\left(1-e^{-A}\\right).$$令 $A\\to+\\infty$，$Ae^{-A}\\to0$（指数衰减快于幂增长），$e^{-A}\\to0$，故值为 $1$。**推广**：$\\int_0^{+\\infty}x^ne^{-x}dx=n!$（$n$ 为正整数），本题 $n=1$。",
+        "cat": "一元函数积分学",
+        "topic": "反常积分·分部积分",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$1$"
+      },
+      {
+        "id": "cal-int-112",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "计算 $\\int_{1}^{+\\infty}\\dfrac{1}{x(x+1)}\\,dx$。",
+        "solution": "先部分分式：$\\dfrac{1}{x(x+1)}=\\dfrac{1}{x}-\\dfrac{1}{x+1}$。$$\\int_{1}^{A}\\left(\\frac{1}{x}-\\frac{1}{x+1}\\right)dx=\\left[\\ln\\frac{x}{x+1}\\right]_{1}^{A}=\\ln\\frac{A}{A+1}-\\ln\\frac{1}{2}.$$令 $A\\to+\\infty$，$\\dfrac{A}{A+1}\\to1$，$\\ln\\dfrac{A}{A+1}\\to0$，故值为 $\\ln 2$。**易错点**：不要分别算 $\\int_1^\\infty\\dfrac1x dx$ 与 $\\int_1^\\infty\\dfrac1{x+1}dx$——两个都发散，$\\infty-\\infty$ 没有意义；必须先合成一个对数再取极限。",
+        "cat": "一元函数积分学",
+        "topic": "反常积分·部分分式",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$\\ln 2$"
+      },
+      {
+        "id": "cal-int-113",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "计算 $\\int_{0}^{1}\\dfrac{1}{\\sqrt{x}}\\,dx$。",
+        "solution": "$x=0$ 是**瑕点**（被积函数无界），按瑕积分定义：$$\\int_{0}^{1}\\frac{1}{\\sqrt{x}}dx=\\lim_{\\varepsilon\\to0^{+}}\\int_{\\varepsilon}^{1}x^{-1/2}dx=\\lim_{\\varepsilon\\to0^{+}}\\bigl[2\\sqrt{x}\\bigr]_{\\varepsilon}^{1}=\\lim_{\\varepsilon\\to0^{+}}\\left(2-2\\sqrt{\\varepsilon}\\right)=2.$$**结论**：$\\int_0^1\\dfrac{dx}{x^q}$ 当 $q<1$ 时收敛于 $\\dfrac{1}{1-q}$，当 $q\\ge1$ 时发散。本题 $q=\\dfrac12$，值为 $2$。**提醒**：瑕积分与无穷限积分的判别条件形式相反，别记串。",
+        "cat": "一元函数积分学",
+        "topic": "反常积分·瑕积分",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$2$"
+      },
+      {
+        "id": "cal-int-114",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "计算 $\\int_{0}^{+\\infty}e^{-x}\\sin x\\,dx$。",
+        "solution": "连续两次分部积分后自解。对 $A>0$：$$\\int_{0}^{A}e^{-x}\\sin x\\,dx=\\bigl[-e^{-x}\\sin x\\bigr]_{0}^{A}+\\int_{0}^{A}e^{-x}\\cos x\\,dx,$$$$\\int_{0}^{A}e^{-x}\\cos x\\,dx=\\bigl[-e^{-x}\\cos x\\bigr]_{0}^{A}-\\int_{0}^{A}e^{-x}\\sin x\\,dx.$$令 $A\\to+\\infty$，带因子 $e^{-A}$ 的项均趋于 $0$，记 $I=\\int_{0}^{+\\infty}e^{-x}\\sin x\\,dx$，则第二式给出 $I=1-I$，故 $2I=1$，$I=\\dfrac{1}{2}$。**公式记忆**：$\\int_0^{+\\infty}e^{-ax}\\sin bx\\,dx=\\dfrac{b}{a^{2}+b^{2}}$（$a>0$）。本题 $a=b=1$，得 $\\dfrac{1}{2}$。",
+        "cat": "一元函数积分学",
+        "topic": "反常积分·分部积分",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$\\dfrac{1}{2}$"
+      },
+      {
+        "id": "cal-int-115",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "计算 $\\int_{0}^{+\\infty}\\dfrac{1}{(1+x^{2})^{2}}\\,dx$。",
+        "solution": "令 $x=\\tan\\theta$，则 $dx=\\sec^{2}\\theta\\,d\\theta$、$(1+x^{2})^{2}=\\sec^{4}\\theta$，积分限 $x:0\\to+\\infty$ 对应 $\\theta:0\\to\\dfrac{\\pi}{2}$：$$\\int_{0}^{+\\infty}\\frac{dx}{(1+x^{2})^{2}}=\\int_{0}^{\\pi/2}\\frac{\\sec^{2}\\theta}{\\sec^{4}\\theta}\\,d\\theta=\\int_{0}^{\\pi/2}\\cos^{2}\\theta\\,d\\theta$$$$=\\int_{0}^{\\pi/2}\\frac{1+\\cos 2\\theta}{2}\\,d\\theta=\\left[\\frac{\\theta}{2}+\\frac{\\sin 2\\theta}{4}\\right]_{0}^{\\pi/2}=\\frac{\\pi}{4}.$$**方法点睛**：三角代换把无穷区间变成了有限区间 $\\left[0,\\dfrac{\\pi}{2}\\right]$，这是处理 $\\dfrac{1}{(a^2+x^2)^n}$ 型反常积分的标准手法。",
+        "cat": "一元函数积分学",
+        "topic": "反常积分·三角代换",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$\\dfrac{\\pi}{4}$"
+      },
+      {
+        "id": "cal-int-116",
+        "type": "fill",
+        "difficulty": "basic",
+        "question": "已知 $\\int_{0}^{+\\infty}\\dfrac{\\sin x}{x}\\,dx=\\dfrac{\\pi}{2}$，求 $\\int_{0}^{+\\infty}\\dfrac{\\sin^{2}x}{x^{2}}\\,dx$。",
+        "solution": "分部积分，取 $u=\\sin^{2}x$、$dv=\\dfrac{1}{x^{2}}dx$（则 $v=-\\dfrac{1}{x}$）：$$\\int_{\\varepsilon}^{A}\\frac{\\sin^{2}x}{x^{2}}dx=\\left[-\\frac{\\sin^{2}x}{x}\\right]_{\\varepsilon}^{A}+\\int_{\\varepsilon}^{A}\\frac{2\\sin x\\cos x}{x}\\,dx.$$取极限：端点项在 $A\\to+\\infty$ 时趋于 $0$（有界量除以 $A$），在 $\\varepsilon\\to0^{+}$ 时 $\\dfrac{\\sin^2\\varepsilon}{\\varepsilon}\\to0$（因 $\\sin^2 x\\sim x^2$），故端点项消失。于是 $$I=\\int_{0}^{+\\infty}\\frac{\\sin 2x}{x}\\,dx.$$令 $t=2x$：$$I=\\int_{0}^{+\\infty}\\frac{\\sin t}{t/2}\\cdot\\frac{dt}{2}=\\int_{0}^{+\\infty}\\frac{\\sin t}{t}\\,dt=\\frac{\\pi}{2}.$$**要点**：$x=0$ 不是瑕点，因为 $\\dfrac{\\sin^2x}{x^2}\\to1$；无穷远处收敛靠 $\\dfrac{1}{x^2}$ 的衰减，被积函数非负故绝对收敛。",
+        "cat": "一元函数积分学",
+        "topic": "反常积分·分部积分与 Dirichlet 积分",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$\\dfrac{\\pi}{2}$"
+      },
+      {
+        "id": "cal-int-117",
+        "type": "proof",
+        "difficulty": "medium",
+        "question": "证明反常积分 $\\int_{1}^{+\\infty}\\dfrac{\\ln x}{x^{2}}\\,dx$ 收敛，并求其值。",
+        "solution": "**证明（分部积分法）**：对 $A>1$，$$\\int_{1}^{A}\\frac{\\ln x}{x^{2}}dx=\\int_{1}^{A}\\ln x\\,d\\left(-\\frac{1}{x}\\right)$$$$=\\left[-\\frac{\\ln x}{x}\\right]_{1}^{A}+\\int_{1}^{A}\\frac{1}{x}\\cdot\\frac{1}{x}\\,dx=-\\frac{\\ln A}{A}+0+\\int_{1}^{A}\\frac{1}{x^{2}}\\,dx$$$$=-\\frac{\\ln A}{A}+\\left(1-\\frac{1}{A}\\right).$$当 $A\\to+\\infty$ 时，$\\dfrac{\\ln A}{A}\\to0$（对数增长慢于幂增长）、$\\dfrac{1}{A}\\to0$，故极限存在且有限，积分**收敛**，值为 $1$。**另证（比较判别法）**：当 $x$ 充分大时 $\\ln x\\le\\sqrt{x}$，于是$$\\frac{\\ln x}{x^{2}}\\le\\frac{\\sqrt{x}}{x^{2}}=\\frac{1}{x^{3/2}},$$而 $\\int_1^{+\\infty}\\dfrac{dx}{x^{3/2}}$ 收敛（$p=\\dfrac32>1$），由比较判别法知原积分收敛。（此证法只判收敛，要求值仍用上面的分部积分。）**结论**：$\\int_1^{+\\infty}\\dfrac{\\ln x}{x^2}dx=1$。",
+        "cat": "一元函数积分学",
+        "topic": "反常积分·收敛性判定与分部积分",
+        "source": "经纬自编·变限积分与反常积分专项",
+        "answer": "$1$"
       }
     ]
   },
