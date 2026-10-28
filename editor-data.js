@@ -11761,7 +11761,9 @@ var EDITOR_DATA = [
           "不存在"
         ],
         "answer": 2,
-        "solution": "$由导数定义：f'(0) = \\lim_{x \\to 0} [f(x)-f(0)]/(x-0) = \\lim_{x \\to 0} f(x)/x = 2。此题综合考查导数定义与极限计算，关键是识别出该极限就是导数定义式。$"
+        "solution": "$由导数定义：f'(0) = \\lim_{x \\to 0} [f(x)-f(0)]/(x-0) = \\lim_{x \\to 0} f(x)/x = 2。此题综合考查导数定义与极限计算，关键是识别出该极限就是导数定义式。$",
+        "cat": "极限与微分",
+        "topic": "导数定义·由 f(0)=0 反推极限"
       },
       {
         "id": "comp-002",
@@ -11775,7 +11777,9 @@ var EDITOR_DATA = [
           "无法确定"
         ],
         "answer": 0,
-        "solution": "$极限存在且有限，分母\\rightarrow0，所以分子也必须\\rightarrow0（否则极限为\\infty）。故 f(1)=\\lim(x\\rightarrow1) f(x)=0。进一步由导数定义可得 f'(1)=3。此题反用导数定义：由极限存在反推函数值。$"
+        "solution": "$极限存在且有限，分母\\rightarrow0，所以分子也必须\\rightarrow0（否则极限为\\infty）。故 f(1)=\\lim(x\\rightarrow1) f(x)=0。进一步由导数定义可得 f'(1)=3。此题反用导数定义：由极限存在反推函数值。$",
+        "cat": "极限与微分",
+        "topic": "导数定义·极限存在推出函数值"
       },
       {
         "id": "comp-003",
@@ -11789,7 +11793,9 @@ var EDITOR_DATA = [
           "2"
         ],
         "answer": 1,
-        "solution": "$0/0型，洛必达（两次）：第一次得 \\lim(e^x-1)/(2x) = 1/2（再用一次或等价无穷小 e^x-1~x）。或用泰勒展开：e^x=1+x+x^{2}/2+o(x^{2})，代入得 x^{2}/2/x^{2}=1/2。考查洛必达与泰勒展开的结合使用。$"
+        "solution": "$0/0型，洛必达（两次）：第一次得 \\lim(e^x-1)/(2x) = 1/2（再用一次或等价无穷小 e^x-1~x）。或用泰勒展开：e^x=1+x+x^{2}/2+o(x^{2})，代入得 x^{2}/2/x^{2}=1/2。考查洛必达与泰勒展开的结合使用。$",
+        "cat": "极限与微分",
+        "topic": "泰勒展开·等价无穷小"
       },
       {
         "id": "comp-004",
@@ -11803,7 +11809,9 @@ var EDITOR_DATA = [
           "-1/2"
         ],
         "answer": 1,
-        "solution": "泰勒展开 \\sin x = x - x^{3}/6 + o(x^{3})，代入得 -x^{3}/6 / x^{3} = -1/6。也可洛必达三次，但泰勒更直接。考查常见函数的泰勒展开在极限中的应用。"
+        "solution": "泰勒展开 \\sin x = x - x^{3}/6 + o(x^{3})，代入得 -x^{3}/6 / x^{3} = -1/6。也可洛必达三次，但泰勒更直接。考查常见函数的泰勒展开在极限中的应用。",
+        "cat": "极限与微分",
+        "topic": "泰勒展开·等价无穷小"
       },
       {
         "id": "comp-005",
@@ -11817,7 +11825,9 @@ var EDITOR_DATA = [
           "不存在"
         ],
         "answer": 1,
-        "solution": "$极限为 A 有限值，分母\\rightarrow0得 f(0)=0。再由导数定义：f'(0) = \\lim_{x \\to 0} f(x)/x = A。注意题目给了 f'(x) 连续是冗余条件，实际只需可导即可。考查审题能力。$"
+        "solution": "$极限为 A 有限值，分母\\rightarrow0得 f(0)=0。再由导数定义：f'(0) = \\lim_{x \\to 0} f(x)/x = A。注意题目给了 f'(x) 连续是冗余条件，实际只需可导即可。考查审题能力。$",
+        "cat": "极限与微分",
+        "topic": "导数定义·由极限反推导数值"
       },
       {
         "id": "comp-006",
@@ -11831,7 +11841,9 @@ var EDITOR_DATA = [
           "二阶可导"
         ],
         "answer": 1,
-        "solution": "$f'(0) = \\lim h²\\sin(1/h)/h = \\lim h \\sin(1/h) = 0（有界×无穷小）。x\\neq0时 f'(x)=2x \\sin(1/x) - \\cos(1/x)，\\lim_{x \\to 0} f'(x) 不存在（\\cos(1/x)震荡）。故 f 可导但 f' 在 x=0 不连续。经典反例，综合连续、可导、导数连续三个层次。$"
+        "solution": "$f'(0) = \\lim h²\\sin(1/h)/h = \\lim h \\sin(1/h) = 0（有界×无穷小）。x\\neq0时 f'(x)=2x \\sin(1/x) - \\cos(1/x)，\\lim_{x \\to 0} f'(x) 不存在（\\cos(1/x)震荡）。故 f 可导但 f' 在 x=0 不连续。经典反例，综合连续、可导、导数连续三个层次。$",
+        "cat": "极限与微分",
+        "topic": "导数定义·振荡因子可导性判定"
       },
       {
         "id": "comp-007",
@@ -11845,7 +11857,9 @@ var EDITOR_DATA = [
           "∞"
         ],
         "answer": 2,
-        "solution": "$由条件得 f(0)=1，f'(0)=2。所求 = \\lim exp[(1/x)·\\ln f(x)]。利用 \\ln f(x) ~ f(x)-1（x\\rightarrow0），原式 = exp[\\lim (f(x)-1)/x] = exp(f'(0)) = e²。考查幂指函数极限化归与导数定义。$"
+        "solution": "$由条件得 f(0)=1，f'(0)=2。所求 = \\lim exp[(1/x)·\\ln f(x)]。利用 \\ln f(x) ~ f(x)-1（x\\rightarrow0），原式 = exp[\\lim (f(x)-1)/x] = exp(f'(0)) = e²。考查幂指函数极限化归与导数定义。$",
+        "cat": "极限与微分",
+        "topic": "1^∞ 型幂指函数极限"
       },
       {
         "id": "comp-008",
@@ -11859,7 +11873,9 @@ var EDITOR_DATA = [
           "0"
         ],
         "answer": 1,
-        "solution": "利用二阶泰勒：f(x₀±h) = f(x₀) ± f'(x₀)h + f''(x₀)h²/2 + o(h²)。相加得 2f(x₀) + f''(x₀)h² + o(h²)，所以分子 = f''(x₀)h² + o(h²)，极限为 f''(x₀)。考查二阶泰勒与对称差商的二阶精度。"
+        "solution": "利用二阶泰勒：f(x₀±h) = f(x₀) ± f'(x₀)h + f''(x₀)h²/2 + o(h²)。相加得 2f(x₀) + f''(x₀)h² + o(h²)，所以分子 = f''(x₀)h² + o(h²)，极限为 f''(x₀)。考查二阶泰勒与对称差商的二阶精度。",
+        "cat": "极限与微分",
+        "topic": "二阶导数·对称差商极限"
       },
       {
         "id": "comp-009",
@@ -11867,7 +11883,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "设 f(x) = (x-1)(x-2)²(x-3)³，则 f'(1) = (   )",
         "answer": "-8",
-        "solution": "f'(x) = (x-2)²(x-3)³ + (x-1)·[(x-2)²(x-3)³]'。代入 x=1：f'(1) = (1-2)²(1-3)³ + 0 = 1×(-8) = -8。乘积函数在某点导数为零若该因子在该点为零，但需检查其他因子在该点的值。(1-2)²=1，(1-3)³=-8，乘积=-8。"
+        "solution": "f'(x) = (x-2)²(x-3)³ + (x-1)·[(x-2)²(x-3)³]'。代入 x=1：f'(1) = (1-2)²(1-3)³ + 0 = 1×(-8) = -8。乘积函数在某点导数为零若该因子在该点为零，但需检查其他因子在该点的值。(1-2)²=1，(1-3)³=-8，乘积=-8。",
+        "cat": "极限与微分",
+        "topic": "乘积求导·单点取值的因式技巧"
       },
       {
         "id": "comp-010",
@@ -11875,7 +11893,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "$设曲线 y = x·e^x 在点 (0,0) 处的切线方程为 y = （　）$",
         "answer": "x",
-        "solution": "$y' = x·e^x + e^x = e^x(x+1)，y'(0) = 1·1 = 1。切线方程为 y - 0 = 1·(x - 0)，即 y = x。考查导数几何意义——切线斜率。综合乘积求导法则。$"
+        "solution": "$y' = x·e^x + e^x = e^x(x+1)，y'(0) = 1·1 = 1。切线方程为 y - 0 = 1·(x - 0)，即 y = x。考查导数几何意义——切线斜率。综合乘积求导法则。$",
+        "cat": "极限与微分",
+        "topic": "切线方程"
       },
       {
         "id": "comp-011",
@@ -11883,7 +11903,9 @@ var EDITOR_DATA = [
         "difficulty": "hard",
         "question": "$若 \\lim_{x \\to 0} [\\ln(1+x) + a \\ln(1-x)] / x^{2} = b（a,b为常数），则 a = （　）$",
         "answer": "1",
-        "solution": "$泰勒展开：\\ln(1+x)=x-x^{2}/2+o(x^{2})，\\ln(1-x)=-x-x^{2}/2+o(x^{2})。分子 = x-x^{2}/2 + a(-x-x^{2}/2) + o(x^{2}) = (1-a)x - (1+a)x^{2}/2 + o(x^{2})。要使极限存在且有限，分子中 x 的系数必须为零即 1-a=0，解得 a=1。此时分子=-x^{2}+o(x^{2})，极限值为 b=-1。考查参数确定型极限，综合泰勒展开与待定系数法。$"
+        "solution": "$泰勒展开：\\ln(1+x)=x-x^{2}/2+o(x^{2})，\\ln(1-x)=-x-x^{2}/2+o(x^{2})。分子 = x-x^{2}/2 + a(-x-x^{2}/2) + o(x^{2}) = (1-a)x - (1+a)x^{2}/2 + o(x^{2})。要使极限存在且有限，分子中 x 的系数必须为零即 1-a=0，解得 a=1。此时分子=-x^{2}+o(x^{2})，极限值为 b=-1。考查参数确定型极限，综合泰勒展开与待定系数法。$",
+        "cat": "极限与微分",
+        "topic": "泰勒展开·由极限存在反求系数"
       },
       {
         "id": "comp-012",
@@ -11897,7 +11919,9 @@ var EDITOR_DATA = [
           "f''(ξ) ≥ 4"
         ],
         "answer": 0,
-        "solution": "$设最大值点为 c∈(0,1)，f(c)=2，f'(c)=0。用泰勒：f(0)=f(c)+f'(c)(0-c)+f''(ξ₁)(0-c)²/2，即 0=2+f''(ξ₁)c²/2，得 f''(ξ₁)=-4/c² \\leq -4。同理 f''(ξ₂)=-4/(1-c)² \\leq (min: 当c=1/2时=-16)。取较小者即 \\leq -8（当c\\neq1/2时有一边更紧）。最严格结论：f''(ξ)\\leq-4/c²\\leq-4。选项中最严格可保证的是 -8。考查费马引理+泰勒+极值综合。$"
+        "solution": "$设最大值点为 c∈(0,1)，f(c)=2，f'(c)=0。用泰勒：f(0)=f(c)+f'(c)(0-c)+f''(ξ₁)(0-c)²/2，即 0=2+f''(ξ₁)c²/2，得 f''(ξ₁)=-4/c² \\leq -4。同理 f''(ξ₂)=-4/(1-c)² \\leq (min: 当c=1/2时=-16)。取较小者即 \\leq -8（当c\\neq1/2时有一边更紧）。最严格结论：f''(ξ)\\leq-4/c²\\leq-4。选项中最严格可保证的是 -8。考查费马引理+泰勒+极值综合。$",
+        "cat": "中值定理",
+        "topic": "最值点·二阶导数估计"
       },
       {
         "id": "comp-013",
@@ -11911,7 +11935,9 @@ var EDITOR_DATA = [
           "π"
         ],
         "answer": 1,
-        "solution": "$变上限积分求导公式：F'(x) = x·\\sin x。代入 x=\\pi/2，F'(\\pi/2) = \\pi/2·\\sin(\\pi/2) = \\pi/2·1 = \\pi/2。考查微积分基本定理（FTC），是导数与积分最直接的交叉。$"
+        "solution": "$变上限积分求导公式：F'(x) = x·\\sin x。代入 x=\\pi/2，F'(\\pi/2) = \\pi/2·\\sin(\\pi/2) = \\pi/2·1 = \\pi/2。考查微积分基本定理（FTC），是导数与积分最直接的交叉。$",
+        "cat": "变限积分",
+        "topic": "变限积分求导"
       },
       {
         "id": "comp-014",
@@ -11925,7 +11951,9 @@ var EDITOR_DATA = [
           "2"
         ],
         "answer": 1,
-        "solution": "$变限积分求导（链式法则）：F'(x) = e^((x^{2})²) · 2x = 2x·e^(x⁴)。F'(1) = 2·e。考查复合函数型变限积分求导，上限是 x^{2} 需用链式法则。$"
+        "solution": "$变限积分求导（链式法则）：F'(x) = e^((x^{2})²) · 2x = 2x·e^(x⁴)。F'(1) = 2·e。考查复合函数型变限积分求导，上限是 x^{2} 需用链式法则。$",
+        "cat": "变限积分",
+        "topic": "复合上限·链式法则"
       },
       {
         "id": "comp-015",
@@ -11939,7 +11967,9 @@ var EDITOR_DATA = [
           "0"
         ],
         "answer": 1,
-        "solution": "两边对 x 求导：f(x) = (x·eˣ)' = eˣ + x·eˣ = eˣ(1+x)。f(1) = e(1+1) = 2e。考查：变限积分求导 + 乘积求导法则。"
+        "solution": "两边对 x 求导：f(x) = (x·eˣ)' = eˣ + x·eˣ = eˣ(1+x)。f(1) = e(1+1) = 2e。考查：变限积分求导 + 乘积求导法则。",
+        "cat": "变限积分",
+        "topic": "积分方程·反求被积函数"
       },
       {
         "id": "comp-016",
@@ -11953,7 +11983,9 @@ var EDITOR_DATA = [
           "x^{3}/9 - x^{2}/4"
         ],
         "answer": 0,
-        "solution": "变上限积分求导即得被积函数：f(x) = d/dx [x^{3}/3 - x^{2}/2 + C] = x^{2} - x。注意常数 C 求导后消失。考查导数是积分的逆运算。"
+        "solution": "变上限积分求导即得被积函数：f(x) = d/dx [x^{3}/3 - x^{2}/2 + C] = x^{2} - x。注意常数 C 求导后消失。考查导数是积分的逆运算。",
+        "cat": "变限积分",
+        "topic": "积分方程·反求被积函数"
       },
       {
         "id": "comp-017",
@@ -11967,7 +11999,9 @@ var EDITOR_DATA = [
           "√2/2"
         ],
         "answer": 0,
-        "solution": "$切线斜率 = y'(1)。y'(x) = \\sqrt{1+x^{2}}，y'(1) = \\sqrt2。考查变限积分求导+导数的几何意义。$"
+        "solution": "$切线斜率 = y'(1)。y'(x) = \\sqrt{1+x^{2}}，y'(1) = \\sqrt2。考查变限积分求导+导数的几何意义。$",
+        "cat": "变限积分",
+        "topic": "变限积分求导·切线斜率"
       },
       {
         "id": "comp-018",
@@ -11981,7 +12015,9 @@ var EDITOR_DATA = [
           "0"
         ],
         "answer": 1,
-        "solution": "$写成 \\int ₀ˣ (x-t)f(t) dt = x\\int ₀ˣ f(t) dt - \\int ₀ˣ t f(t) dt。求导得 \\int ₀ˣ f(t) dt + xf(x) - xf(x) = \\int ₀ˣ f(t) dt。考查含参积分的求导技巧——先分离 x 与 t。$"
+        "solution": "$写成 \\int ₀ˣ (x-t)f(t) dt = x\\int ₀ˣ f(t) dt - \\int ₀ˣ t f(t) dt。求导得 \\int ₀ˣ f(t) dt + xf(x) - xf(x) = \\int ₀ˣ f(t) dt。考查含参积分的求导技巧——先分离 x 与 t。$",
+        "cat": "变限积分",
+        "topic": "卷积型·先化为累次积分再求导"
       },
       {
         "id": "comp-019",
@@ -11989,7 +12025,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "$由 \\int ₀ˣ f(t) dt = x·\\cos x 确定的 f(x) = （　）$",
         "answer": "cos x - x sin x",
-        "solution": "求导：f(x) = (x·\\cos x)' = \\cos x - x·\\sin x。考查变上限积分求导与乘积法则。"
+        "solution": "求导：f(x) = (x·\\cos x)' = \\cos x - x·\\sin x。考查变上限积分求导与乘积法则。",
+        "cat": "变限积分",
+        "topic": "积分方程·反求被积函数"
       },
       {
         "id": "comp-020",
@@ -12003,7 +12041,9 @@ var EDITOR_DATA = [
           "常数"
         ],
         "answer": 0,
-        "solution": "$g'(x) = [xf'(x) - f(x)]/x^{2} = [xf'(x) - f(x)]/x^{2}。由拉格朗日中值定理：f(x)-f(0)=f(x)=f'(ξ)x，ξ∈(0,x)。由于 f' 递增，f'(ξ) \\leq f'(x)，故 f(x)=f'(ξ)x \\leq f'(x)x，即 xf'(x)-f(x) \\geq 0，g'(x) \\geq 0。考查中值定理+导数符号+单调性综合判断。$"
+        "solution": "$g'(x) = [xf'(x) - f(x)]/x^{2} = [xf'(x) - f(x)]/x^{2}。由拉格朗日中值定理：f(x)-f(0)=f(x)=f'(ξ)x，ξ∈(0,x)。由于 f' 递增，f'(ξ) \\leq f'(x)，故 f(x)=f'(ξ)x \\leq f'(x)x，即 xf'(x)-f(x) \\geq 0，g'(x) \\geq 0。考查中值定理+导数符号+单调性综合判断。$",
+        "cat": "极限与微分",
+        "topic": "单调性·导数符号判定"
       },
       {
         "id": "comp-021",
@@ -12017,7 +12057,9 @@ var EDITOR_DATA = [
           "1/e"
         ],
         "answer": 0,
-        "solution": "$分部积分：\\int ₀¹ x eˣ dx = [x eˣ]\\big|_{0}¹ - \\int ₀¹ eˣ dx = e - [eˣ]\\big|_{0}¹ = e - (e - 1) = 1。考查定积分的分部积分法，是积分学核心技巧。$"
+        "solution": "$分部积分：\\int ₀¹ x eˣ dx = [x eˣ]\\big|_{0}¹ - \\int ₀¹ eˣ dx = e - [eˣ]\\big|_{0}¹ = e - (e - 1) = 1。考查定积分的分部积分法，是积分学核心技巧。$",
+        "cat": "一元积分学",
+        "topic": "分部积分"
       },
       {
         "id": "comp-022",
@@ -12025,7 +12067,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "$\\int ₀^(\\pi/2) x·\\cos x dx = （　）$",
         "answer": "$\\pi/2 - 1$",
-        "solution": "$分部积分：u=x，dv=\\cos x dx。\\int x \\cos x dx = x \\sin x - \\int \\sin x dx = x \\sin x + \\cos x。从 0 到 \\pi/2：(\\pi/2·1+0) - (0+1) = \\pi/2 - 1。考查分部积分+定积分计算。$"
+        "solution": "$分部积分：u=x，dv=\\cos x dx。\\int x \\cos x dx = x \\sin x - \\int \\sin x dx = x \\sin x + \\cos x。从 0 到 \\pi/2：(\\pi/2·1+0) - (0+1) = \\pi/2 - 1。考查分部积分+定积分计算。$",
+        "cat": "一元积分学",
+        "topic": "分部积分"
       },
       {
         "id": "comp-023",
@@ -12033,7 +12077,9 @@ var EDITOR_DATA = [
         "difficulty": "hard",
         "question": "$设 f(x) = \\int ₀ˣ e^(-t²) dt，则 \\int ₀¹ x·f(x) dx = （　）$",
         "answer": "$(e^(-1)+1)/4$",
-        "solution": "$交换积分次序：\\int ₀¹ x f(x) dx = \\int ₀¹ x·\\int ₀ˣ e^(-t²) dt dx = \\int ₀¹ e^(-t²) \\int ₜ¹ x dx dt = \\int ₀¹ e^(-t²)·(1-t²)/2 dt。令 u=t²，du=2t dt 不直接。改为分部：\\int ₀¹ (1-t²)/2 · e^(-t²) dt。或用 f(x) 的原函数：设 F 为 f 的原函数，分部积分法。答案是 (1+e^(-1))/4。$"
+        "solution": "$交换积分次序：\\int ₀¹ x f(x) dx = \\int ₀¹ x·\\int ₀ˣ e^(-t²) dt dx = \\int ₀¹ e^(-t²) \\int ₜ¹ x dx dt = \\int ₀¹ e^(-t²)·(1-t²)/2 dt。令 u=t²，du=2t dt 不直接。改为分部：\\int ₀¹ (1-t²)/2 · e^(-t²) dt。或用 f(x) 的原函数：设 F 为 f 的原函数，分部积分法。答案是 (1+e^(-1))/4。$",
+        "cat": "一元积分学",
+        "topic": "含变限积分的分部积分"
       },
       {
         "id": "comp-024",
@@ -12047,7 +12093,9 @@ var EDITOR_DATA = [
           "不存在"
         ],
         "answer": 1,
-        "solution": "$0/0型。f'(x)=e^(x^{2}/2)，g'(x)=\\sin x。洛必达：\\lim f'(x)/g'(x) = \\lim e^(x^{2}/2)/\\sin x。x\\rightarrow0时 e^(x^{2}/2)\\rightarrow1，\\sin x~x，但洛必达结果也是 0/0？不对：f(0)=0，g(0)=0。洛必达得 \\lim e^(x^{2}/2)/\\sin x = \\infty？再算：f'(0)=1，g'(0)=0，极限不存在（\\infty）。答案选 \\infty。但再想想，\\sin x ~ x，极限是 \\infty。选 \\infty。$"
+        "solution": "$0/0型。f'(x)=e^(x^{2}/2)，g'(x)=\\sin x。洛必达：\\lim f'(x)/g'(x) = \\lim e^(x^{2}/2)/\\sin x。x\\rightarrow0时 e^(x^{2}/2)\\rightarrow1，\\sin x~x，但洛必达结果也是 0/0？不对：f(0)=0，g(0)=0。洛必达得 \\lim e^(x^{2}/2)/\\sin x = \\infty？再算：f'(0)=1，g'(0)=0，极限不存在（\\infty）。答案选 \\infty。但再想想，\\sin x ~ x，极限是 \\infty。选 \\infty。$",
+        "cat": "变限积分",
+        "topic": "变限积分求极限·洛必达法则"
       },
       {
         "id": "comp-025",
@@ -12061,7 +12109,9 @@ var EDITOR_DATA = [
           "y = x^{2}+1"
         ],
         "answer": 0,
-        "solution": "$可分离变量：dy/y = 2x dx，积分得 \\ln|y| = x^{2} + C，y = Ce^(x^{2})。由 y(0)=1 得 C=1，故 y=e^(x^{2})。考查一阶可分离变量方程，核心是用不定积分求解。$"
+        "solution": "$可分离变量：dy/y = 2x dx，积分得 \\ln|y| = x^{2} + C，y = Ce^(x^{2})。由 y(0)=1 得 C=1，故 y=e^(x^{2})。考查一阶可分离变量方程，核心是用不定积分求解。$",
+        "cat": "微分方程",
+        "topic": "可分离变量"
       },
       {
         "id": "comp-026",
@@ -12075,7 +12125,9 @@ var EDITOR_DATA = [
           "$y = e^x(C+x)$"
         ],
         "answer": 0,
-        "solution": "$一阶线性非齐次方程，P(x)=1，积分因子 μ=e^(\\int 1 dx)=e^x。两边乘 e^x：d(ye^x)/dx = 1，积分得 ye^x = x + C，y = (x+C)e^(-x)。考查一阶线性方程的积分因子法。$"
+        "solution": "$一阶线性非齐次方程，P(x)=1，积分因子 μ=e^(\\int 1 dx)=e^x。两边乘 e^x：d(ye^x)/dx = 1，积分得 ye^x = x + C，y = (x+C)e^(-x)。考查一阶线性方程的积分因子法。$",
+        "cat": "微分方程",
+        "topic": "一阶线性方程·常数变易"
       },
       {
         "id": "comp-027",
@@ -12089,7 +12141,9 @@ var EDITOR_DATA = [
           "$y = C₁e^(3x) + C₂e^(-x)$"
         ],
         "answer": 0,
-        "solution": "$特征方程 r²-3r+2=0，(r-1)(r-2)=0，r₁=1，r₂=2。通解 y = C₁e^x + C₂e^(2x)。考查二阶常系数齐次线性方程的特征方程法。$"
+        "solution": "$特征方程 r²-3r+2=0，(r-1)(r-2)=0，r₁=1，r₂=2。通解 y = C₁e^x + C₂e^(2x)。考查二阶常系数齐次线性方程的特征方程法。$",
+        "cat": "微分方程",
+        "topic": "二阶常系数齐次"
       },
       {
         "id": "comp-028",
@@ -12103,7 +12157,9 @@ var EDITOR_DATA = [
           "$y = \\cos 2x$"
         ],
         "answer": 1,
-        "solution": "特征方程 r²+4=0，r=±2i，通解 y = C₁\\cos 2x + C₂\\sin 2x。y(0)=C₁=0，故 C₁=0。y'(0)=2C₂\\cos0=2C₂=2，C₂=1。特解 y = \\sin 2x。考查二阶齐次方程+初始条件。"
+        "solution": "特征方程 r²+4=0，r=±2i，通解 y = C₁\\cos 2x + C₂\\sin 2x。y(0)=C₁=0，故 C₁=0。y'(0)=2C₂\\cos0=2C₂=2，C₂=1。特解 y = \\sin 2x。考查二阶齐次方程+初始条件。",
+        "cat": "微分方程",
+        "topic": "二阶常系数齐次·初值问题"
       },
       {
         "id": "comp-029",
@@ -12111,7 +12167,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "一阶微分方程 x·dy = y·dx 的通解为 y = (   )",
         "answer": "Cx",
-        "solution": "$分离变量：dy/y = dx/x (x\\neq0,y\\neq0)，积分得 \\ln|y| = \\ln|x| + C，即 y = Cx。考查分离变量法——解微分方程就是不定积分的直接应用。$"
+        "solution": "$分离变量：dy/y = dx/x (x\\neq0,y\\neq0)，积分得 \\ln|y| = \\ln|x| + C，即 y = Cx。考查分离变量法——解微分方程就是不定积分的直接应用。$",
+        "cat": "微分方程",
+        "topic": "可分离变量"
       },
       {
         "id": "comp-030",
@@ -12119,7 +12177,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "微分方程 $dy/dx = y/x + \\tan(y/x)$ 是齐次方程，令 $u = y/x$ 后化为 $du/dx = (   )$",
         "answer": "tan u / x",
-        "solution": "令 u=y/x，则 y=ux，dy/dx = u + x·du/dx。代入方程：u + x·du/dx = u + \\tan u，故 x·du/dx = \\tan u，du/dx = \\tan u / x。考查齐次方程的变量代换技巧。"
+        "solution": "令 u=y/x，则 y=ux，dy/dx = u + x·du/dx。代入方程：u + x·du/dx = u + \\tan u，故 x·du/dx = \\tan u，du/dx = \\tan u / x。考查齐次方程的变量代换技巧。",
+        "cat": "微分方程",
+        "topic": "齐次方程·变量代换"
       },
       {
         "id": "comp-031",
@@ -12133,7 +12193,9 @@ var EDITOR_DATA = [
           "非齐次特解形式"
         ],
         "answer": 1,
-        "solution": "$特征方程 r²-2r+5=0，Δ=4-20=-16<0，r=1±2i。通解 y = e^x(C₁\\cos 2x + C₂\\sin 2x)。考查特征根为复数的情形，判别式判断。$"
+        "solution": "$特征方程 r²-2r+5=0，Δ=4-20=-16<0，r=1±2i。通解 y = e^x(C₁\\cos 2x + C₂\\sin 2x)。考查特征根为复数的情形，判别式判断。$",
+        "cat": "微分方程",
+        "topic": "二阶常系数齐次·共轭复根"
       },
       {
         "id": "comp-032",
@@ -12147,7 +12209,9 @@ var EDITOR_DATA = [
           "$A \\cos x + B \\sin x$"
         ],
         "answer": 2,
-        "solution": "齐次通解：y_h = C₁\\cos x + C₂\\sin x。非齐次项 \\sin x 的 ±i 是特征根，发生共振。特解形式为 y_p = x(A \\cos x + B \\sin x)。考查非齐次常系数方程的待定系数法——共振情形。"
+        "solution": "齐次通解：y_h = C₁\\cos x + C₂\\sin x。非齐次项 \\sin x 的 ±i 是特征根，发生共振。特解形式为 y_p = x(A \\cos x + B \\sin x)。考查非齐次常系数方程的待定系数法——共振情形。",
+        "cat": "微分方程",
+        "topic": "二阶常系数非齐次·待定系数法"
       },
       {
         "id": "comp-033",
@@ -12155,7 +12219,9 @@ var EDITOR_DATA = [
         "difficulty": "hard",
         "question": "微分方程 $y' + y \\cdot \\tan x = \\sec x$ 的积分因子 $\\mu(x) = (   )$",
         "answer": "sec x",
-        "solution": "$积分因子 μ = exp(\\int  P(x)dx) = exp(\\int  \\tan x dx)。\\int  \\tan x dx = -\\ln\\big|_{c}^{o}s x| = \\ln\\big|_{s}^{e}c x|，故 μ = sec x。考查一阶线性方程的积分因子构造——连续积分+微分方程。$"
+        "solution": "$积分因子 μ = exp(\\int  P(x)dx) = exp(\\int  \\tan x dx)。\\int  \\tan x dx = -\\ln\\big|_{c}^{o}s x| = \\ln\\big|_{s}^{e}c x|，故 μ = sec x。考查一阶线性方程的积分因子构造——连续积分+微分方程。$",
+        "cat": "微分方程",
+        "topic": "一阶线性方程·积分因子"
       },
       {
         "id": "comp-034",
@@ -12169,7 +12235,9 @@ var EDITOR_DATA = [
           "x^{2}/2+x"
         ],
         "answer": 0,
-        "solution": "$换元 u=x-t，dt=-du：\\int ₀ˣ t f(x-t) dt = \\int ₀ˣ (x-u) f(u) du = x\\int ₀ˣ f(u) du - \\int ₀ˣ u f(u) du。对等式求导：f'(x) = 1 + xf(x) + \\int ₀ˣ f(u) du - xf(x) = 1 + \\int ₀ˣ f(u) du。再求导：f''(x) = f(x)。又 f(0)=0，f'(0)=1。解 f''=f 得 f(x)=C₁e^x+C₂e^(-x)，代入初始条件得 f(x)=(e^x-e^(-x))/2 = sinh x。不对……重新检查。其实尝试 f(x)=x：\\int ₀ˣ t(x-t)dt = x\\int tdt - \\int t²dt = x·x^{2}/2 - x^{3}/3 = x^{3}/6，f(x)=x+x^{3}/6\\neqx。所以不是 x。再算…正确答案是 sinh x。$"
+        "solution": "$换元 u=x-t，dt=-du：\\int ₀ˣ t f(x-t) dt = \\int ₀ˣ (x-u) f(u) du = x\\int ₀ˣ f(u) du - \\int ₀ˣ u f(u) du。对等式求导：f'(x) = 1 + xf(x) + \\int ₀ˣ f(u) du - xf(x) = 1 + \\int ₀ˣ f(u) du。再求导：f''(x) = f(x)。又 f(0)=0，f'(0)=1。解 f''=f 得 f(x)=C₁e^x+C₂e^(-x)，代入初始条件得 f(x)=(e^x-e^(-x))/2 = sinh x。不对……重新检查。其实尝试 f(x)=x：\\int ₀ˣ t(x-t)dt = x\\int tdt - \\int t²dt = x·x^{2}/2 - x^{3}/3 = x^{3}/6，f(x)=x+x^{3}/6\\neqx。所以不是 x。再算…正确答案是 sinh x。$",
+        "cat": "变限积分",
+        "topic": "卷积型积分方程·化为微分方程"
       },
       {
         "id": "comp-035",
@@ -12183,7 +12251,9 @@ var EDITOR_DATA = [
           "$2x·y·e^y$"
         ],
         "answer": 0,
-        "solution": "$先对 x 求偏导：\\partialz/\\partialx = 2x·e^y。再对 y 求偏导：\\partial²z/\\partialx\\partialy = 2x·e^y。若先对 y 再对 x，结果相同（混合偏导连续则可交换次序）。考查多元复合函数的二阶混合偏导。$"
+        "solution": "$先对 x 求偏导：\\partialz/\\partialx = 2x·e^y。再对 y 求偏导：\\partial²z/\\partialx\\partialy = 2x·e^y。若先对 y 再对 x，结果相同（混合偏导连续则可交换次序）。考查多元复合函数的二阶混合偏导。$",
+        "cat": "多元微积分",
+        "topic": "偏导数计算·混合偏导"
       },
       {
         "id": "comp-036",
@@ -12197,7 +12267,9 @@ var EDITOR_DATA = [
           "不确定"
         ],
         "answer": 0,
-        "solution": "$\\partialz/\\partialx = f'(x^{2}+y²)·2x，\\partialz/\\partialy = f'(x^{2}+y²)·2y。y·\\partialz/\\partialx - x·\\partialz/\\partialy = y·2x f' - x·2y f' = 0。考查链式法则+对称性简化。$"
+        "solution": "$\\partialz/\\partialx = f'(x^{2}+y²)·2x，\\partialz/\\partialy = f'(x^{2}+y²)·2y。y·\\partialz/\\partialx - x·\\partialz/\\partialy = y·2x f' - x·2y f' = 0。考查链式法则+对称性简化。$",
+        "cat": "多元微积分",
+        "topic": "复合函数求偏导·链式法则"
       },
       {
         "id": "comp-037",
@@ -12211,7 +12283,9 @@ var EDITOR_DATA = [
           "不充分也不必要"
         ],
         "answer": 1,
-        "solution": "可微一定偏导数存在（必要条件），但偏导数存在不一定可微（反例：f(x,y)=xy/(x^{2}+y²) 在原点偏导存在但不可微）。充分条件是偏导数连续。考查多元函数可微性的层次关系。"
+        "solution": "可微一定偏导数存在（必要条件），但偏导数存在不一定可微（反例：f(x,y)=xy/(x^{2}+y²) 在原点偏导存在但不可微）。充分条件是偏导数连续。考查多元函数可微性的层次关系。",
+        "cat": "多元微积分",
+        "topic": "偏导存在与可微的关系"
       },
       {
         "id": "comp-038",
@@ -12225,7 +12299,9 @@ var EDITOR_DATA = [
           "√2"
         ],
         "answer": 0,
-        "solution": "$u = (1/2)\\ln(x^{2}+y²)，\\partialu/\\partialx = x/(x^{2}+y²)，\\partialu/\\partialy = y/(x^{2}+y²)。在 (1,1) 处：ux=1/2，uy=1/2。|\\nablau| = \\sqrt[(1/2)²+(1/2)²] = \\sqrt{1/2} = 1/\\sqrt2。考查梯度计算+模长。$"
+        "solution": "$u = (1/2)\\ln(x^{2}+y²)，\\partialu/\\partialx = x/(x^{2}+y²)，\\partialu/\\partialy = y/(x^{2}+y²)。在 (1,1) 处：ux=1/2，uy=1/2。|\\nablau| = \\sqrt[(1/2)²+(1/2)²] = \\sqrt{1/2} = 1/\\sqrt2。考查梯度计算+模长。$",
+        "cat": "多元微积分",
+        "topic": "梯度计算"
       },
       {
         "id": "comp-039",
@@ -12239,7 +12315,9 @@ var EDITOR_DATA = [
           "2/3"
         ],
         "answer": 0,
-        "solution": "$∬_D x dxdy = \\int ₀¹ \\int ₀^(1-x) x dy dx = \\int ₀¹ x(1-x) dx = [x^{2}/2 - x^{3}/3]\\big|_{0}¹ = 1/2 - 1/3 = 1/6。考查二重积分化为累次积分。$"
+        "solution": "$∬_D x dxdy = \\int ₀¹ \\int ₀^(1-x) x dy dx = \\int ₀¹ x(1-x) dx = [x^{2}/2 - x^{3}/3]\\big|_{0}¹ = 1/2 - 1/3 = 1/6。考查二重积分化为累次积分。$",
+        "cat": "二重积分",
+        "topic": "直角坐标·化为累次积分"
       },
       {
         "id": "comp-040",
@@ -12253,7 +12331,9 @@ var EDITOR_DATA = [
           "4π/3"
         ],
         "answer": 1,
-        "solution": "$极坐标变换：x=r \\cosθ，y=r \\sinθ，dxdy=r dr dθ。原式 = \\int ₀^(2\\pi) \\int ₀¹ r·r dr dθ = 2\\pi·[r³/3]\\big|_{0}¹ = 2\\pi/3。考查极坐标下二重积分——被积函数含 \\sqrt{x^{2}+y²} 是用极坐标的典型信号。$"
+        "solution": "$极坐标变换：x=r \\cosθ，y=r \\sinθ，dxdy=r dr dθ。原式 = \\int ₀^(2\\pi) \\int ₀¹ r·r dr dθ = 2\\pi·[r³/3]\\big|_{0}¹ = 2\\pi/3。考查极坐标下二重积分——被积函数含 \\sqrt{x^{2}+y²} 是用极坐标的典型信号。$",
+        "cat": "二重积分",
+        "topic": "极坐标换元"
       },
       {
         "id": "comp-041",
@@ -12267,7 +12347,9 @@ var EDITOR_DATA = [
           "∫₀¹ ∫ₓ^1 f(x,y) dx dy"
         ],
         "answer": 0,
-        "solution": "$积分域 D: 0 \\leq y \\leq 1, 0 \\leq x \\leq y。画图知 D = { (x,y) | 0 \\leq x \\leq 1, x \\leq y \\leq 1 }。交换后：\\int ₀¹ \\int ₓ¹ f(x,y) dy dx。考查交换积分次序——这是二重积分的核心操作技巧。$"
+        "solution": "$积分域 D: 0 \\leq y \\leq 1, 0 \\leq x \\leq y。画图知 D = { (x,y) | 0 \\leq x \\leq 1, x \\leq y \\leq 1 }。交换后：\\int ₀¹ \\int ₓ¹ f(x,y) dy dx。考查交换积分次序——这是二重积分的核心操作技巧。$",
+        "cat": "二重积分",
+        "topic": "交换积分次序"
       },
       {
         "id": "comp-042",
@@ -12275,7 +12357,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "函数 z = x^{3} + y³ - 3xy 的驻点为 (0,0) 和 (   )",
         "answer": "(1,1)",
-        "solution": "$\\partialz/\\partialx = 3x^{2} - 3y = 0，\\partialz/\\partialy = 3y² - 3x = 0。由第一式 y=x^{2}，代入第二式：(x^{2})² - x = 0，x(x^{3}-1)=0，x=0 或 x=1。对应 y=0 或 y=1。驻点：(0,0)和(1,1)。考查多元函数极值必要条件+方程组求解。$"
+        "solution": "$\\partialz/\\partialx = 3x^{2} - 3y = 0，\\partialz/\\partialy = 3y² - 3x = 0。由第一式 y=x^{2}，代入第二式：(x^{2})² - x = 0，x(x^{3}-1)=0，x=0 或 x=1。对应 y=0 或 y=1。驻点：(0,0)和(1,1)。考查多元函数极值必要条件+方程组求解。$",
+        "cat": "多元微积分",
+        "topic": "驻点求解"
       },
       {
         "id": "comp-043",
@@ -12283,7 +12367,9 @@ var EDITOR_DATA = [
         "difficulty": "hard",
         "question": "在椭球面 x^{2}/a² + y²/b² + z²/c² = 1 上，函数 f(x,y,z) = xyz 的最 (   ) 值需要用拉格朗日乘数法。",
         "answer": "极",
-        "solution": "$条件极值问题，用拉格朗日乘数法。设 L=xyz+λ(x^{2}/a²+y²/b²+z²/c²-1)，令各偏导为0求解。答案为椭球面内接长方体体积最大问题，结果是 \\big|_{x}^{y}z\\big|_{m}^{a}x = abc/(3\\sqrt3)。考查条件极值+拉格朗日乘数。$"
+        "solution": "$条件极值问题，用拉格朗日乘数法。设 L=xyz+λ(x^{2}/a²+y²/b²+z²/c²-1)，令各偏导为0求解。答案为椭球面内接长方体体积最大问题，结果是 \\big|_{x}^{y}z\\big|_{m}^{a}x = abc/(3\\sqrt3)。考查条件极值+拉格朗日乘数。$",
+        "cat": "多元微积分",
+        "topic": "条件极值·拉格朗日乘数法"
       },
       {
         "id": "comp-044",
@@ -12297,7 +12383,9 @@ var EDITOR_DATA = [
           "-z"
         ],
         "answer": 2,
-        "solution": "$用全微分或隐函数求导法。对 F(u,v)=0 两边求全微分，其中 u=x+z/y, v=y+z/x。整理得 (1/y·F_u+1/x·F_v) dz + … dx + … dy = 0。最终得 x\\partialz/\\partialx + y\\partialz/\\partialy = z - xy。考查隐函数的偏导数+组合消元。$"
+        "solution": "$用全微分或隐函数求导法。对 F(u,v)=0 两边求全微分，其中 u=x+z/y, v=y+z/x。整理得 (1/y·F_u+1/x·F_v) dz + … dx + … dy = 0。最终得 x\\partialz/\\partialx + y\\partialz/\\partialy = z - xy。考查隐函数的偏导数+组合消元。$",
+        "cat": "多元微积分",
+        "topic": "隐函数求偏导"
       },
       {
         "id": "comp-045",
@@ -12311,7 +12399,9 @@ var EDITOR_DATA = [
           "2"
         ],
         "answer": 0,
-        "solution": "$L: y=x, 0\\leqx\\leq1。ds = \\sqrt{1+(y'}²) dx = \\sqrt2 dx。\\int _L (x+y) ds = \\int ₀¹ 2x·\\sqrt2 dx = \\sqrt2·[x^{2}]\\big|_{0}¹ = \\sqrt2。考查第一类曲线积分（对弧长）。$"
+        "solution": "$L: y=x, 0\\leqx\\leq1。ds = \\sqrt{1+(y'}²) dx = \\sqrt2 dx。\\int _L (x+y) ds = \\int ₀¹ 2x·\\sqrt2 dx = \\sqrt2·[x^{2}]\\big|_{0}¹ = \\sqrt2。考查第一类曲线积分（对弧长）。$",
+        "cat": "曲线曲面积分",
+        "topic": "第一类曲线积分"
       },
       {
         "id": "comp-046",
@@ -12325,7 +12415,9 @@ var EDITOR_DATA = [
           "4π"
         ],
         "answer": 2,
-        "solution": "$用格林公式：∮_L P dx + Q dy = ∬_D (\\partialQ/\\partialx - \\partialP/\\partialy) dxdy。此处 P=-y，Q=x，\\partialQ/\\partialx-\\partialP/\\partialy=1-(-1)=2。∬_D 2 dxdy = 2·\\pi·1² = 2\\pi。考查格林公式——第二类曲线积分与二重积分的桥梁。$"
+        "solution": "$用格林公式：∮_L P dx + Q dy = ∬_D (\\partialQ/\\partialx - \\partialP/\\partialy) dxdy。此处 P=-y，Q=x，\\partialQ/\\partialx-\\partialP/\\partialy=1-(-1)=2。∬_D 2 dxdy = 2·\\pi·1² = 2\\pi。考查格林公式——第二类曲线积分与二重积分的桥梁。$",
+        "cat": "曲线曲面积分",
+        "topic": "第二类曲线积分·格林公式"
       },
       {
         "id": "comp-047",
@@ -12339,7 +12431,9 @@ var EDITOR_DATA = [
           "2π"
         ],
         "answer": 2,
-        "solution": "$功 = ∮_L y dx - x dy。由格林公式：\\partialQ/\\partialx - \\partialP/\\partialy = \\partial(-x)/\\partialx - \\partialy/\\partialy = -1 - 1 = -2。积分 = ∬_D (-2) dσ = -2\\pi。若顺时针则变号。考查物理意义：做功 = 第二类曲线积分。$"
+        "solution": "$功 = ∮_L y dx - x dy。由格林公式：\\partialQ/\\partialx - \\partialP/\\partialy = \\partial(-x)/\\partialx - \\partialy/\\partialy = -1 - 1 = -2。积分 = ∬_D (-2) dσ = -2\\pi。若顺时针则变号。考查物理意义：做功 = 第二类曲线积分。$",
+        "cat": "曲线曲面积分",
+        "topic": "第二类曲线积分·格林公式"
       },
       {
         "id": "comp-048",
@@ -12353,7 +12447,9 @@ var EDITOR_DATA = [
           "5"
         ],
         "answer": 1,
-        "solution": "$检查 \\partialQ/\\partialx = \\partial(x+2y)/\\partialx = 1 = \\partialP/\\partialy = \\partial(2x+y)/\\partialy，是保守场。求势函数 u 使 u_x=2x+y，u_y=x+2y。u = x^{2}+xy+y²。功 = u(1,1)-u(0,0) = 1+1+1 = 3。考查保守场与路径无关性+势函数法。$"
+        "solution": "$检查 \\partialQ/\\partialx = \\partial(x+2y)/\\partialx = 1 = \\partialP/\\partialy = \\partial(2x+y)/\\partialy，是保守场。求势函数 u 使 u_x=2x+y，u_y=x+2y。u = x^{2}+xy+y²。功 = u(1,1)-u(0,0) = 1+1+1 = 3。考查保守场与路径无关性+势函数法。$",
+        "cat": "曲线曲面积分",
+        "topic": "保守场·路径无关"
       },
       {
         "id": "comp-049",
@@ -12367,7 +12463,9 @@ var EDITOR_DATA = [
           "-mπ"
         ],
         "answer": 1,
-        "solution": "$P = e^x \\sin y - my，Q = e^x \\cos y - m。\\partialQ/\\partialx = e^x \\cos y，\\partialP/\\partialy = e^x \\cos y - m。\\partialQ/\\partialx - \\partialP/\\partialy = m。格林公式：∬_D m dσ = m·\\pi·1² = m\\pi。考查格林公式+偏导计算。$"
+        "solution": "$P = e^x \\sin y - my，Q = e^x \\cos y - m。\\partialQ/\\partialx = e^x \\cos y，\\partialP/\\partialy = e^x \\cos y - m。\\partialQ/\\partialx - \\partialP/\\partialy = m。格林公式：∬_D m dσ = m·\\pi·1² = m\\pi。考查格林公式+偏导计算。$",
+        "cat": "曲线曲面积分",
+        "topic": "格林公式·含参计算"
       },
       {
         "id": "comp-050",
@@ -12381,7 +12479,9 @@ var EDITOR_DATA = [
           "8π"
         ],
         "answer": 2,
-        "solution": "$高斯公式：∯_Σ = ∭_Ω (\\partialP/\\partialx+\\partialQ/\\partialy+\\partialR/\\partialz) dV = ∭_Ω (1+1+1) dV = 3·(4\\pi/3) = 4\\pi。考查高斯公式——第二类曲面积分与三重积分的桥梁，球体积 4\\pi/3。$"
+        "solution": "$高斯公式：∯_Σ = ∭_Ω (\\partialP/\\partialx+\\partialQ/\\partialy+\\partialR/\\partialz) dV = ∭_Ω (1+1+1) dV = 3·(4\\pi/3) = 4\\pi。考查高斯公式——第二类曲面积分与三重积分的桥梁，球体积 4\\pi/3。$",
+        "cat": "曲线曲面积分",
+        "topic": "高斯公式"
       },
       {
         "id": "comp-051",
@@ -12389,7 +12489,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "曲线 L: x^{2}+y²=1（逆时针），则 ∮_L (x^{2}+y²) ds = (   )",
         "answer": "$2\\pi$",
-        "solution": "$在 L 上 x^{2}+y²=1，所以被积函数就是 1。∮_L 1 ds = 弧长 = 2\\pi。考查第一类曲线积分——利用曲线方程简化被积函数是关键技巧。$"
+        "solution": "$在 L 上 x^{2}+y²=1，所以被积函数就是 1。∮_L 1 ds = 弧长 = 2\\pi。考查第一类曲线积分——利用曲线方程简化被积函数是关键技巧。$",
+        "cat": "曲线曲面积分",
+        "topic": "第一类曲线积分"
       },
       {
         "id": "comp-052",
@@ -12397,7 +12499,9 @@ var EDITOR_DATA = [
         "difficulty": "hard",
         "question": "$螺旋线 x=\\cos t, y=\\sin t, z=t (0\\leqt\\leq2\\pi) 的弧长为 （　）$",
         "answer": "$2\\sqrt2 \\pi$",
-        "solution": "$ds = \\sqrt[(dx/dt)²+(dy/dt)²+(dz/dt)²] dt = \\sqrt[\\sin²t+\\cos²t+1] dt = \\sqrt2 dt。弧长 = \\int ₀^(2\\pi) \\sqrt2 dt = 2\\sqrt2 \\pi。考查空间曲线弧长——参数方程的三维推广。$"
+        "solution": "$ds = \\sqrt[(dx/dt)²+(dy/dt)²+(dz/dt)²] dt = \\sqrt[\\sin²t+\\cos²t+1] dt = \\sqrt2 dt。弧长 = \\int ₀^(2\\pi) \\sqrt2 dt = 2\\sqrt2 \\pi。考查空间曲线弧长——参数方程的三维推广。$",
+        "cat": "曲线曲面积分",
+        "topic": "曲线弧长·参数方程"
       },
       {
         "id": "comp-053",
@@ -12411,7 +12515,9 @@ var EDITOR_DATA = [
           "π/2"
         ],
         "answer": 1,
-        "solution": "$取上侧，dxdy >0。在 Σ 上 z=1，所以 ∯_Σ 1·dxdy = ∬_(x^{2}+y²\\leq1) 1 dxdy = \\pi·1² = \\pi。考查第二类曲面积分的投影计算法。$"
+        "solution": "$取上侧，dxdy >0。在 Σ 上 z=1，所以 ∯_Σ 1·dxdy = ∬_(x^{2}+y²\\leq1) 1 dxdy = \\pi·1² = \\pi。考查第二类曲面积分的投影计算法。$",
+        "cat": "曲线曲面积分",
+        "topic": "第二类曲面积分"
       },
       {
         "id": "comp-054",
@@ -12419,7 +12525,9 @@ var EDITOR_DATA = [
         "difficulty": "hard",
         "question": "用斯托克斯公式，∮_L y dx + z dy + x dz（L 为平面 x+y+z=0 与球面 x^{2}+y²+z²=1 的交线）可化为曲面积分 ∬_Σ (   ) dS 的形式。",
         "answer": "$-\\sqrt3$",
-        "solution": "$rot F = (\\partialR/\\partialy-\\partialQ/\\partialz, \\partialP/\\partialz-\\partialR/\\partialx, \\partialQ/\\partialx-\\partialP/\\partialy) = (0-1, 0-1, 0-1) = (-1,-1,-1)。平面法向量 n = (1,1,1)/\\sqrt3。rot F·n = (-1,-1,-1)·(1,1,1)/\\sqrt3 = -3/\\sqrt3 = -\\sqrt3。∬_Σ (-\\sqrt3) dS = -\\sqrt3·(截面积)。考查斯托克斯公式——空间曲线积分\\rightarrow曲面积分。$"
+        "solution": "$rot F = (\\partialR/\\partialy-\\partialQ/\\partialz, \\partialP/\\partialz-\\partialR/\\partialx, \\partialQ/\\partialx-\\partialP/\\partialy) = (0-1, 0-1, 0-1) = (-1,-1,-1)。平面法向量 n = (1,1,1)/\\sqrt3。rot F·n = (-1,-1,-1)·(1,1,1)/\\sqrt3 = -3/\\sqrt3 = -\\sqrt3。∬_Σ (-\\sqrt3) dS = -\\sqrt3·(截面积)。考查斯托克斯公式——空间曲线积分\\rightarrow曲面积分。$",
+        "cat": "曲线曲面积分",
+        "topic": "斯托克斯公式"
       },
       {
         "id": "comp-055",
@@ -12433,7 +12541,9 @@ var EDITOR_DATA = [
           "$\\ln(1+x)$"
         ],
         "answer": 0,
-        "solution": "几何级数公式：Σ xⁿ = 1/(1-x)，收敛域 |x|<1。这是幂级数求和的基础，许多复杂级数都是它的变形。"
+        "solution": "几何级数公式：Σ xⁿ = 1/(1-x)，收敛域 |x|<1。这是幂级数求和的基础，许多复杂级数都是它的变形。",
+        "cat": "无穷级数",
+        "topic": "幂级数·和函数"
       },
       {
         "id": "comp-056",
@@ -12447,7 +12557,9 @@ var EDITOR_DATA = [
           "Σ x^(2n+1)/(2n+1)!"
         ],
         "answer": 1,
-        "solution": "$\\ln(1+x) = x - x^{2}/2 + x^{3}/3 - x⁴/4 + … = Σ(n=1\\rightarrow\\infty) (-1)^(n-1) xⁿ/n，收敛域 (-1,1]。可通过积分 1/(1+x) 的展开式得到。考查常见函数的泰勒级数。$"
+        "solution": "$\\ln(1+x) = x - x^{2}/2 + x^{3}/3 - x⁴/4 + … = Σ(n=1\\rightarrow\\infty) (-1)^(n-1) xⁿ/n，收敛域 (-1,1]。可通过积分 1/(1+x) 的展开式得到。考查常见函数的泰勒级数。$",
+        "cat": "无穷级数",
+        "topic": "幂级数展开·麦克劳林级数"
       },
       {
         "id": "comp-057",
@@ -12461,7 +12573,9 @@ var EDITOR_DATA = [
           "π²/4"
         ],
         "answer": 0,
-        "solution": "$\\ln(1+x)/x = 1 - x/2 + x^{2}/3 - x^{3}/4 + …。逐项积分：\\int ₀¹ Σ(-1)^(n-1) x^(n-1)/n dx = Σ(-1)^(n-1)/n² = 1 - 1/4 + 1/9 - 1/16 + … = \\pi²/12。考查幂级数逐项积分+特殊级数求和。$"
+        "solution": "$\\ln(1+x)/x = 1 - x/2 + x^{2}/3 - x^{3}/4 + …。逐项积分：\\int ₀¹ Σ(-1)^(n-1) x^(n-1)/n dx = Σ(-1)^(n-1)/n² = 1 - 1/4 + 1/9 - 1/16 + … = \\pi²/12。考查幂级数逐项积分+特殊级数求和。$",
+        "cat": "无穷级数",
+        "topic": "幂级数·逐项积分"
       },
       {
         "id": "comp-058",
@@ -12475,7 +12589,9 @@ var EDITOR_DATA = [
           "指数函数"
         ],
         "answer": 0,
-        "solution": "$e^(-x^{2}) = Σ(-1)ⁿ x^(2n)/n!。逐项积分得 \\int  e^(-x^{2}) dx = Σ(-1)ⁿ x^(2n+1)/((2n+1)n!) + C。此为误差函数的基础。考查幂级数表示非初等原函数。$"
+        "solution": "$e^(-x^{2}) = Σ(-1)ⁿ x^(2n)/n!。逐项积分得 \\int  e^(-x^{2}) dx = Σ(-1)ⁿ x^(2n+1)/((2n+1)n!) + C。此为误差函数的基础。考查幂级数表示非初等原函数。$",
+        "cat": "无穷级数",
+        "topic": "幂级数表示非初等原函数"
       },
       {
         "id": "comp-059",
@@ -12483,7 +12599,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "函数 f(x) = 1/(1+x^{2}) 的麦克劳林展开式为 Σ (   )",
         "answer": "(-1)^n x^(2n)",
-        "solution": "$1/(1+x^{2}) = 1 - x^{2} + x⁴ - x⁶ + … = Σ(n=0\\rightarrow\\infty) (-1)ⁿ x^(2n)，|x|<1。这是几何级数 Σ(-x^{2})ⁿ。积分可得 \\arctan x 的展开式。$"
+        "solution": "$1/(1+x^{2}) = 1 - x^{2} + x⁴ - x⁶ + … = Σ(n=0\\rightarrow\\infty) (-1)ⁿ x^(2n)，|x|<1。这是几何级数 Σ(-x^{2})ⁿ。积分可得 \\arctan x 的展开式。$",
+        "cat": "无穷级数",
+        "topic": "幂级数展开"
       },
       {
         "id": "comp-061",
@@ -12497,7 +12615,9 @@ var EDITOR_DATA = [
           "1/(1-x)"
         ],
         "answer": 0,
-        "solution": "由 Σ xⁿ = 1/(1-x) 求导：Σ n x^(n-1) = 1/(1-x)²。两边乘 x 得 Σ n xⁿ = x/(1-x)²。|x|<1。考查用逐项求导法求幂级数和函数。"
+        "solution": "由 Σ xⁿ = 1/(1-x) 求导：Σ n x^(n-1) = 1/(1-x)²。两边乘 x 得 Σ n xⁿ = x/(1-x)²。|x|<1。考查用逐项求导法求幂级数和函数。",
+        "cat": "无穷级数",
+        "topic": "幂级数·逐项求导求和函数"
       },
       {
         "id": "comp-062",
@@ -12505,7 +12625,9 @@ var EDITOR_DATA = [
         "difficulty": "hard",
         "question": "$Σ(n=1\\rightarrow\\infty) 1/(n·2ⁿ) = （　）$",
         "answer": "ln 2",
-        "solution": "$令 S(x) = Σ xⁿ/n，S'(x) = Σ x^(n-1) = 1/(1-x)。积分得 S(x) = -\\ln(1-x)。代入 x=1/2：S(1/2) = -\\ln(1/2) = \\ln 2。考查构造幂级数求常数项级数和——先引入 x 变量求和再代入。$"
+        "solution": "$令 S(x) = Σ xⁿ/n，S'(x) = Σ x^(n-1) = 1/(1-x)。积分得 S(x) = -\\ln(1-x)。代入 x=1/2：S(1/2) = -\\ln(1/2) = \\ln 2。考查构造幂级数求常数项级数和——先引入 x 变量求和再代入。$",
+        "cat": "无穷级数",
+        "topic": "幂级数求和·和函数代入"
       },
       {
         "id": "comp-063",
@@ -12519,7 +12641,9 @@ var EDITOR_DATA = [
           "0"
         ],
         "answer": 1,
-        "solution": "$第二个重要极限的数列形式：\\lim_{n \\to \\infty} (1+1/n)^n = e。这是定义自然常数 e 的方式之一，也是级数 Σ 1/n! 的和。$"
+        "solution": "$第二个重要极限的数列形式：\\lim_{n \\to \\infty} (1+1/n)^n = e。这是定义自然常数 e 的方式之一，也是级数 Σ 1/n! 的和。$",
+        "cat": "数列极限",
+        "topic": "重要极限·e 的定义"
       },
       {
         "id": "comp-064",
@@ -12533,7 +12657,9 @@ var EDITOR_DATA = [
           "不存在"
         ],
         "answer": 1,
-        "solution": "$令 x=1/n\\rightarrow0，原式 = \\lim_{x \\to 0} \\sin x / x = 1。数列极限化归为函数极限。这是处理 n\\rightarrow\\infty 时含三角函数的经典手法。$"
+        "solution": "$令 x=1/n\\rightarrow0，原式 = \\lim_{x \\to 0} \\sin x / x = 1。数列极限化归为函数极限。这是处理 n\\rightarrow\\infty 时含三角函数的经典手法。$",
+        "cat": "数列极限",
+        "topic": "等价无穷小"
       },
       {
         "id": "comp-065",
@@ -12547,7 +12673,9 @@ var EDITOR_DATA = [
           "$\\ln 2$"
         ],
         "answer": 0,
-        "solution": "$n 项和 = (1/n)Σ(k=1\\rightarrown) 1/[1+(k/n)²]。这是定积分定义：\\lim(1/n)Σ f(k/n) = \\int ₀¹ f(x) dx，其中 f(x)=1/(1+x^{2})。\\int ₀¹ dx/(1+x^{2}) = [\\arctan x]\\big|_{0}¹ = \\pi/4。考查数列极限化归定积分——综合极限、级数、积分三大块。$"
+        "solution": "$n 项和 = (1/n)Σ(k=1\\rightarrown) 1/[1+(k/n)²]。这是定积分定义：\\lim(1/n)Σ f(k/n) = \\int ₀¹ f(x) dx，其中 f(x)=1/(1+x^{2})。\\int ₀¹ dx/(1+x^{2}) = [\\arctan x]\\big|_{0}¹ = \\pi/4。考查数列极限化归定积分——综合极限、级数、积分三大块。$",
+        "cat": "数列极限",
+        "topic": "定积分定义·和式极限"
       },
       {
         "id": "comp-066",
@@ -12561,7 +12689,9 @@ var EDITOR_DATA = [
           "1"
         ],
         "answer": 1,
-        "solution": "$n 项中最小项为 1/\\sqrt{2n}，和 \\geq n·1/\\sqrt{2n} = \\sqrt{n/2} \\rightarrow \\infty。或用定积分定义：和 = (1/\\sqrtn) Σ 1/\\sqrt{1+k/n} \\approx \\sqrtn \\int ₀¹ dx/\\sqrt{1+x} \\rightarrow \\infty。考查数列极限的上下界估计——调和型发散。$"
+        "solution": "$n 项中最小项为 1/\\sqrt{2n}，和 \\geq n·1/\\sqrt{2n} = \\sqrt{n/2} \\rightarrow \\infty。或用定积分定义：和 = (1/\\sqrtn) Σ 1/\\sqrt{1+k/n} \\approx \\sqrtn \\int ₀¹ dx/\\sqrt{1+x} \\rightarrow \\infty。考查数列极限的上下界估计——调和型发散。$",
+        "cat": "数列极限",
+        "topic": "定积分定义·和式极限"
       },
       {
         "id": "comp-067",
@@ -12575,7 +12705,9 @@ var EDITOR_DATA = [
           "不确定"
         ],
         "answer": 1,
-        "solution": "$用积分判别法：\\int ₂^\\infty dx/(x \\ln x) = [\\ln(\\ln x)]\\big|_{2}^\\infty \\rightarrow \\infty，故级数发散。注意 1/(n \\ln² n) 收敛而 1/(n \\ln n) 发散，这是 p-级数在 \\ln 幂次上的推广。$"
+        "solution": "$用积分判别法：\\int ₂^\\infty dx/(x \\ln x) = [\\ln(\\ln x)]\\big|_{2}^\\infty \\rightarrow \\infty，故级数发散。注意 1/(n \\ln² n) 收敛而 1/(n \\ln n) 发散，这是 p-级数在 \\ln 幂次上的推广。$",
+        "cat": "无穷级数",
+        "topic": "正项级数敛散性·积分判别法"
       },
       {
         "id": "comp-068",
@@ -12589,7 +12721,9 @@ var EDITOR_DATA = [
           "4/e²"
         ],
         "answer": 0,
-        "solution": "$由斯特林公式 n! ~ \\sqrt{2\\pin}(n/e)^n，代入化简：(2n)! ~ \\sqrt{4\\pin}(2n/e)^(2n)。(2n)!/(n!·nⁿ) ~ [\\sqrt{4\\pin}(2n/e)^(2n)] / [\\sqrt{2\\pin}(n/e)^n·nⁿ] = \\sqrt2·(4n²/e²)^n/(n²/e)^n·1/nⁿ...(需要仔细算)。最终极限 = 4/e。$"
+        "solution": "$由斯特林公式 n! ~ \\sqrt{2\\pin}(n/e)^n，代入化简：(2n)! ~ \\sqrt{4\\pin}(2n/e)^(2n)。(2n)!/(n!·nⁿ) ~ [\\sqrt{4\\pin}(2n/e)^(2n)] / [\\sqrt{2\\pin}(n/e)^n·nⁿ] = \\sqrt2·(4n²/e²)^n/(n²/e)^n·1/nⁿ...(需要仔细算)。最终极限 = 4/e。$",
+        "cat": "数列极限",
+        "topic": "阶乘型·根值法"
       },
       {
         "id": "comp-069",
@@ -12597,7 +12731,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "$\\lim_{n \\to \\infty} (1 + 2/n)^n = （　）$",
         "answer": "e²",
-        "solution": "$(1+2/n)^n = [(1+2/n)^(n/2)]² \\rightarrow e²。或令 t=2/n\\rightarrow0，(1+t)^(2/t) = [(1+t)^(1/t)]² \\rightarrow e²。考查重要极限的变形——调整系数。$"
+        "solution": "$(1+2/n)^n = [(1+2/n)^(n/2)]² \\rightarrow e²。或令 t=2/n\\rightarrow0，(1+t)^(2/t) = [(1+t)^(1/t)]² \\rightarrow e²。考查重要极限的变形——调整系数。$",
+        "cat": "数列极限",
+        "topic": "重要极限·1^∞ 型"
       },
       {
         "id": "comp-070",
@@ -12605,7 +12741,9 @@ var EDITOR_DATA = [
         "difficulty": "hard",
         "question": "$\\lim_{n \\to \\infty} n²·[e - (1+1/n)^n] = （　）$",
         "answer": "e/2",
-        "solution": "$利用展开式：(1+1/n)^n = e^{n \\ln(1+1/n)} = e^{n[1/n-1/(2n²)+1/(3n³)+…]} = e^{1-1/(2n)+1/(3n²)+…} = e·e^{-1/(2n)+1/(3n²)+…} = e·[1-1/(2n)+O(1/n²)]。所以 e-(1+1/n)^n = e/(2n)+O(1/n²)，n²[e-(1+1/n)^n] \\rightarrow e/2。考查数列收敛速率的精确估计。$"
+        "solution": "$利用展开式：(1+1/n)^n = e^{n \\ln(1+1/n)} = e^{n[1/n-1/(2n²)+1/(3n³)+…]} = e^{1-1/(2n)+1/(3n²)+…} = e·e^{-1/(2n)+1/(3n²)+…} = e·[1-1/(2n)+O(1/n²)]。所以 e-(1+1/n)^n = e/(2n)+O(1/n²)，n²[e-(1+1/n)^n] \\rightarrow e/2。考查数列收敛速率的精确估计。$",
+        "cat": "数列极限",
+        "topic": "泰勒展开·渐近估计"
       },
       {
         "id": "comp-071",
@@ -12619,7 +12757,9 @@ var EDITOR_DATA = [
           "Σ xⁿ/n"
         ],
         "answer": 0,
-        "solution": "$设 y = Σ a_n xⁿ，则 y' = Σ n a_n x^(n-1) = Σ (n+1)a(n+1) xⁿ。由 y'=y 得 (n+1)a(n+1)=a_n。a_0=y(0)=1，推得 a_n=1/n!。故 y = Σ xⁿ/n! = e^x。考查幂级数解法——微分方程与级数的完美结合。$"
+        "solution": "$设 y = Σ a_n xⁿ，则 y' = Σ n a_n x^(n-1) = Σ (n+1)a(n+1) xⁿ。由 y'=y 得 (n+1)a(n+1)=a_n。a_0=y(0)=1，推得 a_n=1/n!。故 y = Σ xⁿ/n! = e^x。考查幂级数解法——微分方程与级数的完美结合。$",
+        "cat": "微分方程",
+        "topic": "幂级数解法"
       },
       {
         "id": "comp-072",
@@ -12633,7 +12773,9 @@ var EDITOR_DATA = [
           "$Ax \\sin x$"
         ],
         "answer": 1,
-        "solution": "齐次通解 y_h = C₁\\cos x + C₂\\sin x。非齐次项 \\sin x 的 ±i 是特征根（共振情形），特解应设为 y_p = x(A \\cos x + B \\sin x)。代入方程确定 A=-2, B=0，特解为 -2x \\cos x。考查二阶常系数非齐次方程的待定系数法——共振情形。"
+        "solution": "齐次通解 y_h = C₁\\cos x + C₂\\sin x。非齐次项 \\sin x 的 ±i 是特征根（共振情形），特解应设为 y_p = x(A \\cos x + B \\sin x)。代入方程确定 A=-2, B=0，特解为 -2x \\cos x。考查二阶常系数非齐次方程的待定系数法——共振情形。",
+        "cat": "微分方程",
+        "topic": "二阶常系数非齐次·共振情形"
       },
       {
         "id": "comp-073",
@@ -12641,7 +12783,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "$函数 y = Σ(n=0\\rightarrow\\infty) xⁿ/n! 满足的微分方程是 y' = （　）$",
         "answer": "y",
-        "solution": "$y = Σ xⁿ/n! = e^x 是满足 y'=y 且 y(0)=1 的唯一解。反过来，知道级数形式可推导其满足的微分方程。这是一个双向联系。$"
+        "solution": "$y = Σ xⁿ/n! = e^x 是满足 y'=y 且 y(0)=1 的唯一解。反过来，知道级数形式可推导其满足的微分方程。这是一个双向联系。$",
+        "cat": "无穷级数",
+        "topic": "幂级数·和函数与微分方程"
       },
       {
         "id": "comp-074",
@@ -12655,7 +12799,9 @@ var EDITOR_DATA = [
           "y'' + y' = 0"
         ],
         "answer": 0,
-        "solution": "该级数为 y = \\sin x。y' = \\cos x = Σ(-1)ⁿ x^(2n)/(2n)!，y'' = -\\sin x = -y，故 y''+y=0。考查从级数识别函数+建立微分方程。"
+        "solution": "该级数为 y = \\sin x。y' = \\cos x = Σ(-1)ⁿ x^(2n)/(2n)!，y'' = -\\sin x = -y，故 y''+y=0。考查从级数识别函数+建立微分方程。",
+        "cat": "无穷级数",
+        "topic": "幂级数·和函数与微分方程"
       },
       {
         "id": "comp-075",
@@ -12669,7 +12815,9 @@ var EDITOR_DATA = [
           "dS/dt = -S/(100+t)"
         ],
         "answer": 0,
-        "solution": "t 时刻体积 V(t)=100+(3-2)t=100+t，浓度=S/(100+t)。流出带走的盐速率=2·S/(100+t)。故 dS/dt = -2S/(100+t)，S(0)=10。这是一阶线性方程，解为 S=10·100²/(100+t)²。考查微分方程建模——溶液混合问题。"
+        "solution": "t 时刻体积 V(t)=100+(3-2)t=100+t，浓度=S/(100+t)。流出带走的盐速率=2·S/(100+t)。故 dS/dt = -2S/(100+t)，S(0)=10。这是一阶线性方程，解为 S=10·100²/(100+t)²。考查微分方程建模——溶液混合问题。",
+        "cat": "微分方程",
+        "topic": "一阶线性方程·物理建模"
       },
       {
         "id": "comp-076",
@@ -12683,7 +12831,9 @@ var EDITOR_DATA = [
           "λ²"
         ],
         "answer": 1,
-        "solution": "$设 Ax=λx(x\\neq0)，则 A⁻¹(Ax)=A⁻¹(λx)，即 x=λA⁻¹x，所以 A⁻¹x=(1/λ)x。故 A⁻¹ 的特征值为 1/λ。注意 A 可逆保证 λ\\neq0。$"
+        "solution": "$设 Ax=λx(x\\neq0)，则 A⁻¹(Ax)=A⁻¹(λx)，即 x=λA⁻¹x，所以 A⁻¹x=(1/λ)x。故 A⁻¹ 的特征值为 1/λ。注意 A 可逆保证 λ\\neq0。$",
+        "cat": "特征值",
+        "topic": "逆矩阵的特征值"
       },
       {
         "id": "comp-077",
@@ -12697,7 +12847,9 @@ var EDITOR_DATA = [
           "λ₁=3, λ₂=0"
         ],
         "answer": 1,
-        "solution": "特征方程 |A-λI| = |1-λ  2; 2  1-λ| = (1-λ)²-4 = λ²-2λ-3 = (λ-3)(λ+1)=0。λ₁=3, λ₂=-1。该矩阵是对称矩阵，特征值全为实数。"
+        "solution": "特征方程 |A-λI| = |1-λ  2; 2  1-λ| = (1-λ)²-4 = λ²-2λ-3 = (λ-3)(λ+1)=0。λ₁=3, λ₂=-1。该矩阵是对称矩阵，特征值全为实数。",
+        "cat": "特征值",
+        "topic": "特征多项式求解"
       },
       {
         "id": "comp-078",
@@ -12711,7 +12863,9 @@ var EDITOR_DATA = [
           "A 的特征值都不为零"
         ],
         "answer": 1,
-        "solution": "A 可对角化的充要条件是 A 有 n 个线性无关的特征向量。注意可逆只保证特征值非零，不保证可对角化（如[[1,1],[0,1]]可逆但不可对角化）。"
+        "solution": "A 可对角化的充要条件是 A 有 n 个线性无关的特征向量。注意可逆只保证特征值非零，不保证可对角化（如[[1,1],[0,1]]可逆但不可对角化）。",
+        "cat": "特征值",
+        "topic": "可对角化判定"
       },
       {
         "id": "comp-079",
@@ -12725,7 +12879,9 @@ var EDITOR_DATA = [
           "不确定"
         ],
         "answer": 1,
-        "solution": "A 可对角化的充要条件是每个特征值的几何重数 = 代数重数。λ=1 的代数重数为 2（二重根），所以几何重数也必须是 2，即有两个线性无关的特征向量。λ=2 自然有一个。共 3 个特征向量构成可逆矩阵 P。考查相似对角化的条件——几何重数与代数重数的关系。"
+        "solution": "A 可对角化的充要条件是每个特征值的几何重数 = 代数重数。λ=1 的代数重数为 2（二重根），所以几何重数也必须是 2，即有两个线性无关的特征向量。λ=2 自然有一个。共 3 个特征向量构成可逆矩阵 P。考查相似对角化的条件——几何重数与代数重数的关系。",
+        "cat": "特征值",
+        "topic": "可对角化·几何重数"
       },
       {
         "id": "comp-080",
@@ -12739,7 +12895,9 @@ var EDITOR_DATA = [
           "min λ_i"
         ],
         "answer": 1,
-        "solution": "行列式 = 所有特征值的乘积：|A| = λ₁λ₂…λ_n。迹 = 所有特征值之和：tr(A) = λ₁+λ₂+…+λ_n。这两个公式是特征值理论最常用的结论。"
+        "solution": "行列式 = 所有特征值的乘积：|A| = λ₁λ₂…λ_n。迹 = 所有特征值之和：tr(A) = λ₁+λ₂+…+λ_n。这两个公式是特征值理论最常用的结论。",
+        "cat": "特征值",
+        "topic": "特征值与行列式的关系"
       },
       {
         "id": "comp-081",
@@ -12747,7 +12905,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "若 3 阶矩阵 A 的特征值为 1, -1, 2，则 |A²+E| = (   )",
         "answer": "20",
-        "solution": "A² 的特征值为 1²=1, (-1)²=1, 2²=4。A²+E 的特征值为 1+1=2, 1+1=2, 4+1=5。行列式 = 2×2×5 = 20。考查特征值的函数运算性质。"
+        "solution": "A² 的特征值为 1²=1, (-1)²=1, 2²=4。A²+E 的特征值为 1+1=2, 1+1=2, 4+1=5。行列式 = 2×2×5 = 20。考查特征值的函数运算性质。",
+        "cat": "特征值",
+        "topic": "矩阵多项式的特征值"
       },
       {
         "id": "comp-082",
@@ -12761,7 +12921,9 @@ var EDITOR_DATA = [
           "{3}"
         ],
         "answer": 1,
-        "solution": "设 λ 是 A 的特征值，则 λ²-3λ+2=0，λ=1 或 2。A 的特征值必取自 {1,2}，但具体取哪些取决于 A。可能只有 1（如 A=E），只有 2（如 A=2E），或都有。考查特征多项式与矩阵方程的关系——特征值必满足矩阵的零化多项式。"
+        "solution": "设 λ 是 A 的特征值，则 λ²-3λ+2=0，λ=1 或 2。A 的特征值必取自 {1,2}，但具体取哪些取决于 A。可能只有 1（如 A=E），只有 2（如 A=2E），或都有。考查特征多项式与矩阵方程的关系——特征值必满足矩阵的零化多项式。",
+        "cat": "特征值",
+        "topic": "矩阵零化多项式·特征值范围"
       },
       {
         "id": "comp-083",
@@ -12769,7 +12931,9 @@ var EDITOR_DATA = [
         "difficulty": "hard",
         "question": "设 A = [[2,1],[1,2]]，则 A 的特征值 λ₁ > λ₂，特征向量构成的矩阵 P 使得 P⁻¹AP = diag(λ₁,λ₂)，其中 P 的第一列为 (   )（单位化后的向量）",
         "answer": "$(1/\\sqrt2, 1/\\sqrt2)$",
-        "solution": "$λ₁=3 对应的特征向量 (1,1)ᵀ，单位化得 (1/\\sqrt2, 1/\\sqrt2)ᵀ。λ₂=1 对应 (-1,1)ᵀ，单位化 (-1/\\sqrt2, 1/\\sqrt2)ᵀ。P 是正交矩阵。考查实对称矩阵的正交对角化。$"
+        "solution": "$λ₁=3 对应的特征向量 (1,1)ᵀ，单位化得 (1/\\sqrt2, 1/\\sqrt2)ᵀ。λ₂=1 对应 (-1,1)ᵀ，单位化 (-1/\\sqrt2, 1/\\sqrt2)ᵀ。P 是正交矩阵。考查实对称矩阵的正交对角化。$",
+        "cat": "特征值",
+        "topic": "实对称矩阵对角化·单位特征向量"
       },
       {
         "id": "comp-084",
@@ -12783,7 +12947,9 @@ var EDITOR_DATA = [
           "整数"
         ],
         "answer": 0,
-        "solution": "实对称矩阵的特征值全部为实数，且不同特征值对应的特征向量正交。这是实对称矩阵最重要的谱性质，也是二次型化为标准型的基础。"
+        "solution": "实对称矩阵的特征值全部为实数，且不同特征值对应的特征向量正交。这是实对称矩阵最重要的谱性质，也是二次型化为标准型的基础。",
+        "cat": "特征值",
+        "topic": "实对称矩阵性质"
       },
       {
         "id": "comp-085",
@@ -12797,7 +12963,9 @@ var EDITOR_DATA = [
           "A=O"
         ],
         "answer": 0,
-        "solution": "|A| = Πλ_i，若有 λ=0 则 |A|=0，A 不可逆。迹 tr(A)=Σλ_i 为 0 不代表 A 不可逆（如特征值 1,-1,0 则迹=0且不可逆；特征值 1,-1 则迹=0但可逆）。考查特征值与行列式的关系——特征值为零等价于矩阵不可逆。"
+        "solution": "|A| = Πλ_i，若有 λ=0 则 |A|=0，A 不可逆。迹 tr(A)=Σλ_i 为 0 不代表 A 不可逆（如特征值 1,-1,0 则迹=0且不可逆；特征值 1,-1 则迹=0但可逆）。考查特征值与行列式的关系——特征值为零等价于矩阵不可逆。",
+        "cat": "特征值",
+        "topic": "零特征值与奇异性"
       },
       {
         "id": "comp-086",
@@ -12811,7 +12979,9 @@ var EDITOR_DATA = [
           "[[1,0],[4,1]]"
         ],
         "answer": 0,
-        "solution": "$二次型矩阵 A 满足 a_ij = a_ji = (x_i x_j 系数)/2（i\\neqj）。此处 x₁x₂ 系数为 4，故 a₁₂=a₂₁=2。对角元直接取平方项系数。A = [[1,2],[2,1]]。注意必须是对称矩阵。$"
+        "solution": "$二次型矩阵 A 满足 a_ij = a_ji = (x_i x_j 系数)/2（i\\neqj）。此处 x₁x₂ 系数为 4，故 a₁₂=a₂₁=2。对角元直接取平方项系数。A = [[1,2],[2,1]]。注意必须是对称矩阵。$",
+        "cat": "二次型",
+        "topic": "二次型的矩阵表示"
       },
       {
         "id": "comp-087",
@@ -12825,7 +12995,9 @@ var EDITOR_DATA = [
           "不定"
         ],
         "answer": 0,
-        "solution": "矩阵 A = [[2,1],[1,2]]。顺序主子式：Δ₁=2>0，Δ₂=4-1=3>0，故正定。或用特征值法：λ₁=3,λ₂=1 均大于0。考查二次型正定性的判别方法。"
+        "solution": "矩阵 A = [[2,1],[1,2]]。顺序主子式：Δ₁=2>0，Δ₂=4-1=3>0，故正定。或用特征值法：λ₁=3,λ₂=1 均大于0。考查二次型正定性的判别方法。",
+        "cat": "二次型",
+        "topic": "正定判定·顺序主子式"
       },
       {
         "id": "comp-088",
@@ -12839,7 +13011,9 @@ var EDITOR_DATA = [
           "√2"
         ],
         "answer": 0,
-        "solution": "$β₁=(1,1,0)ᵀ。β₂=(1,0,1)ᵀ - [(1,0,1)·β₁/‖β₁‖²]β₁ = (1,0,1)ᵀ - (1/2)(1,1,0)ᵀ = (1/2, -1/2, 1)ᵀ。投影长度 = |(1,0,1)·β₁|/‖β₁‖ = 1/\\sqrt2。考查施密特正交化+投影概念。$"
+        "solution": "$β₁=(1,1,0)ᵀ。β₂=(1,0,1)ᵀ - [(1,0,1)·β₁/‖β₁‖²]β₁ = (1,0,1)ᵀ - (1/2)(1,1,0)ᵀ = (1/2, -1/2, 1)ᵀ。投影长度 = |(1,0,1)·β₁|/‖β₁‖ = 1/\\sqrt2。考查施密特正交化+投影概念。$",
+        "cat": "线性代数",
+        "topic": "施密特正交化·投影"
       },
       {
         "id": "comp-089",
@@ -12853,7 +13027,9 @@ var EDITOR_DATA = [
           "无法判断"
         ],
         "answer": 0,
-        "solution": "两者的正惯性指数均为 2，负惯性指数均为 0，秩均为 2。由惯性定理，两实二次型合同当且仅当正负惯性指数相同。故它们合同。考查二次型分类——惯性指数是不变量。"
+        "solution": "两者的正惯性指数均为 2，负惯性指数均为 0，秩均为 2。由惯性定理，两实二次型合同当且仅当正负惯性指数相同。故它们合同。考查二次型分类——惯性指数是不变量。",
+        "cat": "二次型",
+        "topic": "合同判定·惯性指数"
       },
       {
         "id": "comp-090",
@@ -12861,7 +13037,9 @@ var EDITOR_DATA = [
         "difficulty": "medium",
         "question": "向量组 α₁=(1,2,3), α₂=(2,4,6), α₃=(1,1,1) 的秩为 (   )",
         "answer": "2",
-        "solution": "α₂=2α₁，α₃ 与 α₁ 线性无关。矩阵 [1 2 1; 2 4 1; 3 6 1] 的秩为 2。考查向量组线性相关性+秩。注意识别倍数关系。"
+        "solution": "α₂=2α₁，α₃ 与 α₁ 线性无关。矩阵 [1 2 1; 2 4 1; 3 6 1] 的秩为 2。考查向量组线性相关性+秩。注意识别倍数关系。",
+        "cat": "线性代数",
+        "topic": "向量组的秩"
       },
       {
         "id": "comp-091",
@@ -12875,7 +13053,9 @@ var EDITOR_DATA = [
           "正交矩阵"
         ],
         "answer": 0,
-        "solution": "$正定矩阵的定义就是 ∀x\\neq0，xᵀAx>0。注意：二次型矩阵默认为对称矩阵，所以这里 A 既对称又正定。正定矩阵 ⇔ 特征值全正 ⇔ 顺序主子式全正。$"
+        "solution": "$正定矩阵的定义就是 ∀x\\neq0，xᵀAx>0。注意：二次型矩阵默认为对称矩阵，所以这里 A 既对称又正定。正定矩阵 ⇔ 特征值全正 ⇔ 顺序主子式全正。$",
+        "cat": "二次型",
+        "topic": "正定判定"
       },
       {
         "id": "comp-092",
@@ -12883,7 +13063,9 @@ var EDITOR_DATA = [
         "difficulty": "hard",
         "question": "若二次型 f(x₁,x₂,x₃) = 2x₁² + x₂² + x₃² + 2x₁x₂ + tx₂x₃ 正定，则 t 的取值范围是 (   )",
         "answer": "$-\\sqrt2 < t < \\sqrt2$",
-        "solution": "$矩阵 A = [[2,1,0],[1,1,t/2],[0,t/2,1]]。顺序主子式：Δ₁=2>0，Δ₂=2-1=1>0，Δ₃=|A|=2(1-t²/4)-1(1-0)=2-t²/2-1=1-t²/2。要求 Δ₃>0 得 t²<2，即 -\\sqrt2<t<\\sqrt2。考查参数范围+正定判别。$"
+        "solution": "$矩阵 A = [[2,1,0],[1,1,t/2],[0,t/2,1]]。顺序主子式：Δ₁=2>0，Δ₂=2-1=1>0，Δ₃=|A|=2(1-t²/4)-1(1-0)=2-t²/2-1=1-t²/2。要求 Δ₃>0 得 t²<2，即 -\\sqrt2<t<\\sqrt2。考查参数范围+正定判别。$",
+        "cat": "二次型",
+        "topic": "正定判定·参数范围"
       },
       {
         "id": "comp-093",
@@ -12897,7 +13079,9 @@ var EDITOR_DATA = [
           "a 和 b 平行"
         ],
         "answer": 1,
-        "solution": "内积为零 ⇔ 两向量正交（垂直）。在线性代数中，正交是比线性无关更强的概念。一组两两正交的非零向量必定线性无关，反之不成立。"
+        "solution": "内积为零 ⇔ 两向量正交（垂直）。在线性代数中，正交是比线性无关更强的概念。一组两两正交的非零向量必定线性无关，反之不成立。",
+        "cat": "线性代数",
+        "topic": "内积与正交"
       },
       {
         "id": "comp-094",
@@ -12911,7 +13095,9 @@ var EDITOR_DATA = [
           "椭圆抛物面"
         ],
         "answer": 1,
-        "solution": "标准形式 x^{2}/a² + y²/b² - z²/c² = 1 是单叶双曲面。若 x^{2}/a² - y²/b² - z²/c² = 1 则为双叶双曲面。考查二次曲面的标准方程分类——空间解析几何的矩阵表示。"
+        "solution": "标准形式 x^{2}/a² + y²/b² - z²/c² = 1 是单叶双曲面。若 x^{2}/a² - y²/b² - z²/c² = 1 则为双叶双曲面。考查二次曲面的标准方程分类——空间解析几何的矩阵表示。",
+        "cat": "几何应用",
+        "topic": "空间解析几何·单叶双曲面"
       },
       {
         "id": "comp-095",
@@ -12925,7 +13111,9 @@ var EDITOR_DATA = [
           "2Ax"
         ],
         "answer": 1,
-        "solution": "$\\partial(xᵀAx)/\\partialx = 2Ax（A对称），\\partial(bᵀx)/\\partialx = b。故 \\nablaf = 2Ax + b。这是优化理论（如最小二乘、梯度下降）的基础。综合矩阵运算+多元微分。$"
+        "solution": "$\\partial(xᵀAx)/\\partialx = 2Ax（A对称），\\partial(bᵀx)/\\partialx = b。故 \\nablaf = 2Ax + b。这是优化理论（如最小二乘、梯度下降）的基础。综合矩阵运算+多元微分。$",
+        "cat": "多元微积分",
+        "topic": "矩阵形式的梯度"
       },
       {
         "id": "comp-096",
@@ -12939,7 +13127,9 @@ var EDITOR_DATA = [
           "A+Aᵀ"
         ],
         "answer": 1,
-        "solution": "$梯度 \\nablaf = 2Ax（A对称），再求导得 Hessian = 2A。Hessian 矩阵判断极值：正定则为极小值，负定则为极大值。综合二次型+极值判断。$"
+        "solution": "$梯度 \\nablaf = 2Ax（A对称），再求导得 Hessian = 2A。Hessian 矩阵判断极值：正定则为极小值，负定则为极大值。综合二次型+极值判断。$",
+        "cat": "多元微积分",
+        "topic": "矩阵形式的 Hessian"
       },
       {
         "id": "comp-097",
@@ -12953,7 +13143,9 @@ var EDITOR_DATA = [
           "(-1,-1)"
         ],
         "answer": 0,
-        "solution": "$\\partialf/\\partialx = 2x + y + 1 = 0，\\partialf/\\partialy = x + 2y - 1 = 0。解方程组得 x=-1, y=1。Hessian = [[2,1],[1,2]] 正定，故为极小值点。f(-1,1)=1-1+1-1-1+1=0。考查多元函数无条件极值——驻点+二阶判别。$"
+        "solution": "$\\partialf/\\partialx = 2x + y + 1 = 0，\\partialf/\\partialy = x + 2y - 1 = 0。解方程组得 x=-1, y=1。Hessian = [[2,1],[1,2]] 正定，故为极小值点。f(-1,1)=1-1+1-1-1+1=0。考查多元函数无条件极值——驻点+二阶判别。$",
+        "cat": "多元微积分",
+        "topic": "无约束极值·驻点求解"
       },
       {
         "id": "comp-098",
@@ -12967,7 +13159,9 @@ var EDITOR_DATA = [
           "λ > 1"
         ],
         "answer": 0,
-        "solution": "矩阵 A = [[1,2],[2,λ]]。顺序主子式：Δ₁=1>0，Δ₂=λ-4>0 ⇒ λ>4。或用特征值法：特征方程 (1-t)(λ-t)-4=0，两特征值均>0 ⇔ 迹=1+λ>0（显然）且行列式=λ-4>0 ⇒ λ>4。考查含参数二次型的正定性判别。"
+        "solution": "矩阵 A = [[1,2],[2,λ]]。顺序主子式：Δ₁=1>0，Δ₂=λ-4>0 ⇒ λ>4。或用特征值法：特征方程 (1-t)(λ-t)-4=0，两特征值均>0 ⇔ 迹=1+λ>0（显然）且行列式=λ-4>0 ⇒ λ>4。考查含参数二次型的正定性判别。",
+        "cat": "二次型",
+        "topic": "正定判定·参数范围"
       },
       {
         "id": "comp-099",
@@ -12975,7 +13169,9 @@ var EDITOR_DATA = [
         "difficulty": "hard",
         "question": "用正交变换化二次型 f = 2x₁² + 2x₂² + 2x₃² + 2x₁x₂ + 2x₁x₃ + 2x₂x₃ 为标准型，其中最大的特征值为 (   )",
         "answer": "4",
-        "solution": "矩阵 A 所有对角元=2，所有非对角元=1。求特征值：|A-λI| = 0。A 的特殊结构——矩阵为 J+E（J 全1矩阵，E单位阵）。λ₁=4（对应特征向量(1,1,1)ᵀ），λ₂=λ₃=1。标准型：f=4y₁²+y₂²+y₃²。考查正交变换化二次型——等对角等非对角矩阵的特征值规律。"
+        "solution": "矩阵 A 所有对角元=2，所有非对角元=1。求特征值：|A-λI| = 0。A 的特殊结构——矩阵为 J+E（J 全1矩阵，E单位阵）。λ₁=4（对应特征向量(1,1,1)ᵀ），λ₂=λ₃=1。标准型：f=4y₁²+y₂²+y₃²。考查正交变换化二次型——等对角等非对角矩阵的特征值规律。",
+        "cat": "二次型",
+        "topic": "正交变换化标准型"
       },
       {
         "id": "comp-100",
@@ -12989,7 +13185,9 @@ var EDITOR_DATA = [
           "λ < 0"
         ],
         "answer": 0,
-        "solution": "$正定矩阵的定义就是 ∀x\\neq0, xᵀAx>0。取 x 为特征向量：xᵀAx = λxᵀx = λ‖x‖² > 0，故 λ > 0。逆命题也成立：所有特征值>0 ⇒ A正定。结合二次型化标准型：f = λ₁y₁²+…+λ_ny_n²，λ_i>0 则 f>0(∀y\\neq0)。考查正定矩阵的充要条件——特征值全正。$"
+        "solution": "$正定矩阵的定义就是 ∀x\\neq0, xᵀAx>0。取 x 为特征向量：xᵀAx = λxᵀx = λ‖x‖² > 0，故 λ > 0。逆命题也成立：所有特征值>0 ⇒ A正定。结合二次型化标准型：f = λ₁y₁²+…+λ_ny_n²，λ_i>0 则 f>0(∀y\\neq0)。考查正定矩阵的充要条件——特征值全正。$",
+        "cat": "二次型",
+        "topic": "正定与特征值"
       },
       {
         "id": "comp-201",
