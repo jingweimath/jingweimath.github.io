@@ -13587,7 +13587,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$A \\cup B$ 表示A与B的和事件，即至少有一个发生。$A \\cap B$（或$AB$）才表示同时发生。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13601,7 +13601,7 @@ var QUESTION_BANK = {
       "answer": "0.7",
       "solution": "互不相容时 $P(AB)=0$，$P(A \\cup B) = P(A) + P(B) = 0.4 + 0.3 = 0.7$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13621,7 +13621,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "每次掷硬币2种结果，两次独立：$\\Omega = \\{(正,正),(正,反),(反,正),(反,反)\\}$，共4个基本事件。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13635,7 +13635,7 @@ var QUESTION_BANK = {
       "answer": "0.5",
       "solution": "$P(\\overline{A}) = 1 - P(A) = 1 - 0.5 = 0.5$。互换事件的概率之和为1。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13655,7 +13655,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$条件概率定义为 P(B|A) = \\frac{P(AB)}{P(A)}，前提 P(A) > 0。表示在A发生的条件下B发生的概率。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13669,7 +13669,7 @@ var QUESTION_BANK = {
       "answer": "0.6",
       "solution": "$P(A|B) = \\frac{P(AB)}{P(B)} = \\frac{0.3}{0.5} = 0.6。注意 P(AB) = P(A)P(B)，A与B独立。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13689,7 +13689,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$总取法 C_8^2 = 28。1红1白：C_5^1 \\cdot C_3^1 = 15。概率 = \\frac{15}{28}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13709,7 +13709,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$独立时 P(AB) = P(A) \\cdot P(B) = 0.4 \\times 0.5 = 0.2。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13729,7 +13729,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "必然事件每次试验必发生。掷六面骰子必得1~6中的数，即样本空间$\\Omega$。A是不可能事件。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13749,7 +13749,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$全概率公式：P(A) = \\sum_{i=1}^{n} P(B_i) \\cdot P(A\\big|_{B}^{i})。核心是把A在不同情况下的概率加权求和。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13769,7 +13769,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "由加法公式：$P(AB) = 0.5+0.4-0.7 = 0.2$。$P(\\overline{A}B) = P(B) - P(AB) = 0.4 - 0.2 = 0.2$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13789,7 +13789,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$全概率：P(B) = 0.4 \\times 0.3 + 0.6 \\times 0.2 = 0.12 + 0.12 = 0.24。P(\\overline{A}) = 0.6。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13809,7 +13809,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$P(\\text{破译}) = 1 - P(\\text{都未破译}) = 1 - 0.4 \\times 0.3 = 0.88。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13823,7 +13823,7 @@ var QUESTION_BANK = {
       "answer": "1/2",
       "solution": "$条件概率。第一次取红后，袋中剩2红2白共4球。第二次取红的概率 = \\frac{2}{4} = \\frac{1}{2}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13843,7 +13843,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "总三位数 $A_5^3=60$。个位为2或4：个位2时有$A_4^2=12$种，个位4时同理12种。共24个。概率 $= 24/60 = 2/5$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13863,7 +13863,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$P(AB) = P(A)P(B|A) = 0.4。P(A|B) = \\frac{0.4}{0.6} = \\frac{2}{3}。这是贝叶斯推论。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13877,7 +13877,7 @@ var QUESTION_BANK = {
       "answer": "3/8",
       "solution": "总方法 $4^3=64$。3球入不同盒：先选3盒$C_4^3=4$，排列$3!=6$，共24种。概率 $= 24/64 = 3/8$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13897,7 +13897,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$P(A)>0 且 P(B)>0 时，独立 \\Rightarrow P(AB) = P(A)P(B) > 0，故 AB \\neq \\varnothing，A与B不互斥。也可反证：互斥则P(AB)=0 \\neq P(A)P(B)。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13911,7 +13911,7 @@ var QUESTION_BANK = {
       "answer": "7",
       "solution": "$1 - 0.7^n > 0.9，即 0.7^n < 0.1。0.7^6 \\approx 0.1176，0.7^7 \\approx 0.0824。故 n \\geq 7。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13925,7 +13925,7 @@ var QUESTION_BANK = {
       "answer": "0.94",
       "solution": "$1 - (1-0.5)(1-0.6)(1-0.7) = 1 - 0.5 \\times 0.4 \\times 0.3 = 1 - 0.06 = 0.94。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13945,7 +13945,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$P(A \\cup B \\cup C) = \\frac{3}{4} - 0 - 0 - \\frac{1}{8} + 0 = \\frac{5}{8}。P(AB)=0 \\Rightarrow P(ABC)=0。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13965,7 +13965,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "化简得 $P(AB) = P(A)P(B)$，故A与B独立。这是独立性的一个等价条件。推导用到 $P(\\overline{A}\\,\\overline{B}) = 1 - P(A) - P(B) + P(AB)$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -13979,7 +13979,7 @@ var QUESTION_BANK = {
       "answer": "$r^2$",
       "solution": "$几何概型。F(r) = P(\\xi \\leq r) = \\frac{\\pi r^2}{\\pi \\cdot 1^2} = r^2。注意是面积比而非半径比。常见错误是写成 r。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -13999,7 +13999,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$几何概型。(x,y) \\in [0,T]^2，相遇条件 |x-y| \\leq t。相遇面积 = T^2 - (T-t)^2。概率 = 1 - (1-\\frac{t}{T})^2。C和D等价，C最简洁。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14013,7 +14013,7 @@ var QUESTION_BANK = {
       "answer": "2/3",
       "solution": "$P(\\overline{A},\\overline{B})=1 - P(A) - P(B) + P(AB)。由条件得 P(AB) = 1-P(A)-P(B)+P(AB)，即 P(A)+P(B)=1，P(B)=\\frac{2}{3}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14033,7 +14033,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "恰有两个发生 = $AB\\overline{C} + A\\overline{B}C + \\overline{A}BC$。相互独立时，$P(AB\\overline{C}) = p_1p_2(1-p_3)$。三项和为选项C。注意和B的区别。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14047,7 +14047,7 @@ var QUESTION_BANK = {
       "answer": "r/n",
       "solution": "$抽签原理：每次取到红球的概率都等于初始比例 r/n，与k无关。总排列数为 n!，第k位放红球的方法 r \\cdot (n-1)!。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14067,7 +14067,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$P(AB)=P(A)P(B)$ 就是独立性的定义，是充要条件。在 $P(A)>0$, $P(B)>0$ 条件下与 $P(A|B)=P(A)$ 等价。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14087,7 +14087,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$有序取法共 4 \\times 3 = 12种。X<Y 即从4个数选2个，小的在前：C_4^2 = 6种。概率 = 6/12 = 1/2。对称性也可得出。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14107,7 +14107,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$固定甲，其余 n-1 个位置等可能排列。乙在甲左右相邻两个位置的任意一个，概率 = \\frac{2}{n-1}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14127,7 +14127,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$P(A|B) = P(AB)/b。P(AB) 满足 \\max(0, a+b-1) \\leq P(AB) \\leq \\min(a, b)。P(A|B) 范围如B所示，是Frechet界。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14141,7 +14141,7 @@ var QUESTION_BANK = {
       "answer": "1/8",
       "solution": "每封信4个选择，$4^2=16$种。前两筒各一：第一封去筒1、第二封去筒2，或反过来，2种。概率 $= 2/16 = 1/8$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14161,7 +14161,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$有放回、直到首次成功——几何分布。P(X=k) = (\\frac{b}{a+b})^{k-1} \\cdot \\frac{a}{a+b}，k=1,2,\\ldots。参数 p = \\frac{a}{a+b}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14181,7 +14181,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$1-(1-p)^2 = \\frac{5}{9}，(1-p)^2 = \\frac{4}{9}，1-p = \\frac{2}{3}，p = \\frac{1}{3}。P(Y \\geq 1) = 1 - (\\frac{2}{3})^3 = \\frac{19}{27}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14195,7 +14195,7 @@ var QUESTION_BANK = {
       "answer": "1/3",
       "solution": "$甲未中后剩9张含3张有奖。P(\\text{丙中}|\\text{甲未}) = \\frac{3}{9} \\cdot \\frac{2}{8} + \\frac{6}{9} \\cdot \\frac{3}{8} = \\frac{24}{72} = \\frac{1}{3}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14215,7 +14215,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "$互不相容 \\Rightarrow AB=\\varnothing，P(AB)=0。P(A|B) = \\frac{0}{P(B)} = 0（D正确）。由于P(A)P(B)>0而P(AB)=0，不独立。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14229,7 +14229,7 @@ var QUESTION_BANK = {
       "answer": "3/4",
       "solution": "$设两点坐标 0 \\leq x \\leq y \\leq 1（x为较小者）。|y-x| < 1/2 的区域面积与总面积之比。总面积 = 1/2（三角形），满足条件的面积 = 3/8。概率 = (3/8)/(1/2) = 3/4。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14249,7 +14249,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "$全概率公式。P = \\frac{1}{2}P(\\text{甲袋同色}) + \\frac{1}{2}P(\\text{乙袋同色})。甲袋3红2白，C_5^2=10，同色=全红C_3^2=3+全白C_2^2=1=4，概率 \\frac{4}{10}。乙袋同理\\frac{4}{10}。故 P = \\frac{1}{2} \\cdot \\frac{4}{10} + \\frac{1}{2} \\cdot \\frac{4}{10} = \\frac{2}{5}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14263,7 +14263,7 @@ var QUESTION_BANK = {
       "answer": "1/6",
       "solution": "$互不相容 \\Rightarrow P(AB)=0。P(\\overline{A},\\overline{B}) = 1 - P(A) - P(B) + P(AB) = 1 - \\frac{1}{3} - \\frac{1}{2} = \\frac{1}{6}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14283,7 +14283,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$P(AB) \\leq \\min(P(A),P(B)) = \\min(\\frac{1}{2}, \\frac{1}{3}) = \\frac{1}{3}。最大值在 B \\subset A 时取到。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机事件与概率",
       "papers": [
         "shu1",
         "shu3"
@@ -14311,7 +14311,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$分布函数定义 F(x)=P(X \\leq x)，P(a<X\\leq b) = F(b)-F(a)。注意等号处理：分布函数右连续。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14325,7 +14325,7 @@ var QUESTION_BANK = {
       "answer": "N(0,1)",
       "solution": "$标准化变换：\\frac{X-\\mu}{\\sigma} \\sim N(0,1)。\\mu=2，\\sigma=3，得 Y \\sim N(0,1)。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14345,7 +14345,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$二项分布 E(X)=np=10 \\times 0.3 = 3，D(X)=np(1-p)=2.1。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14365,7 +14365,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$2\\Phi(1.96)-1 \\approx 2 \\times 0.975 - 1 = 0.95。1.96是正态分布95%置信水平的临界值。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14379,7 +14379,7 @@ var QUESTION_BANK = {
       "answer": "λ",
       "solution": "$泊松分布的期望和方差相等：E(X)=D(X)=\\lambda。这是泊松分布的核心特征。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14399,7 +14399,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$E(X) = \\frac{a+b}{2} = \\frac{1+5}{2} = 3。D(X)=\\frac{(b-a)^2}{12}=\\frac{16}{12}=\\frac{4}{3}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14413,7 +14413,7 @@ var QUESTION_BANK = {
       "answer": "1/2",
       "solution": "$指数分布 Exp(\\lambda)：f(x)=\\lambda e^{-\\lambda x}(x>0)，E(X)=1/\\lambda，D(X)=1/\\lambda^2。\\lambda=2时E(X)=0.5。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14433,7 +14433,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$检查非负性和规范性。A：\\int_0^{\\infty}e^x dx=\\infty。B：\\cos \\pi/2后变负。C：\\int_0^{\\infty}\\frac{2dx}{\\pi(1+x^2)} = \\frac{2}{\\pi}\\cdot\\frac{\\pi}{2}=1。D：\\int_0^{\\infty}\\frac{e^{-x}}{2}dx=\\frac{1}{2}\\neq 1。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14453,7 +14453,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\varphi(x)=\\frac{1}{\\sqrt{2\\pi}}e^{-x^2/2}，\\varphi(0)=\\frac{1}{\\sqrt{2\\pi}} \\approx 0.399。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14473,7 +14473,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$分布函数性质：单调不减、右连续、F(-\\infty)=0、F(+\\infty)=1。A和B错。注意中国教材通常约定F(x)右连续。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14493,7 +14493,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$P(X = a) = F(a) - F(a-)$，即分布函数在a点的跳跃度。对于连续型随机变量，分布函数连续，$P(X=a)=0$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14507,7 +14507,7 @@ var QUESTION_BANK = {
       "answer": "3",
       "solution": "$\\int_0^1 cx^2 dx = c \\cdot \\frac{1}{3} = 1，故 c = 3。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14527,7 +14527,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$正态分布的线性变换仍为正态。E(Y) = aE(X) + b = a\\mu + b，D(Y) = a^2D(X) = a^2\\sigma^2。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14541,7 +14541,7 @@ var QUESTION_BANK = {
       "answer": "$e^{-1}$",
       "solution": "$指数分布 P(X > x) = e^{-\\lambda x}。\\lambda=0.5，P(X>2) = e^{-1}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14561,7 +14561,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$P(X=2)+P(X=3) = \\frac{2}{10} + \\frac{3}{10} = 0.5。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14581,7 +14581,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$np=2.4$，$np(1-p)=1.44$，两式相除得 $1-p=0.6$，$p=0.4$，$n=6$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14595,7 +14595,7 @@ var QUESTION_BANK = {
       "answer": "0.3233",
       "solution": "$P(X\\geq 3)=1-P(X=0)-P(X=1)-P(X=2) = 1 - e^{-2} - 2e^{-2} - \\frac{4e^{-2}}{2} = 1 - 5e^{-2} \\approx 1-5/7.389 \\approx 0.3233。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14615,7 +14615,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$密度关于y轴对称即偶函数。此时若期望存在，则 E(X) = \\int_{-\\infty}^{\\infty} xf(x)dx = 0。方差不一定为0，P(X>0)=0.5。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14629,7 +14629,7 @@ var QUESTION_BANK = {
       "answer": "5",
       "solution": "$E(X)=(0+4)/2=2，E(Y)=2E(X)+1=4+1=5。D(Y)=4D(X)=4 \\times 16/12 = 16/3。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14649,7 +14649,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$E(X-Y)=E(X)-E(Y)=3-1=2$。独立时 $D(X-Y)=D(X)+D(Y)=4+3=7$。故 $X-Y \\sim N(2,7)$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14669,7 +14669,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "分布函数的凸组合仍是分布函数（单调不减、右连续、边界条件均保持）。这是概率混合模型的数学基础。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14683,7 +14683,7 @@ var QUESTION_BANK = {
       "answer": "混合",
       "solution": "$Y在[0,1)上取值X（连续部分），在Y=1处有概率质量 P(X \\geq 1) = e^{-\\lambda}。非纯连续也非纯离散，是混合型。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14703,7 +14703,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$f(x)=F'(x)=2x$（$0<x<1$），$f(0.5)=1$。$x=0$和$x=1$处为不可导点，密度不存在。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14723,7 +14723,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$E(|X|) = 2\\int_0^{\\infty} x\\varphi(x)dx = 2\\int_0^{\\infty} \\frac{x}{\\sqrt{2\\pi}}e^{-x^2/2}dx = \\sqrt{\\frac{2}{\\pi}}。令u=x^2/2换元即得。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14737,7 +14737,7 @@ var QUESTION_BANK = {
       "answer": "Φ(k)",
       "solution": "$标准化 Z=\\frac{X-\\mu}{\\sigma} \\sim N(0,1)，P(X \\leq \\mu+k\\sigma) = P(Z \\leq k) = \\Phi(k)。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14757,7 +14757,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$拉普拉斯分布（双边指数）。由对称性 E(X)=0。E(X^2)=\\int_{-\\infty}^{\\infty} x^2 \\cdot \\frac{1}{2}e^{-|x|}dx = \\int_0^{\\infty} x^2 e^{-x}dx = \\Gamma(3)=2。D(X)=2-0=2。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14777,7 +14777,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$P(Y>y) = P(-\\ln X > y) = P(X < e^{-y}) = e^{-y}（y>0）。故 f_Y(y) = e^{-y}，即 Y \\sim Exp(1)。这是生成指数分布的标准方法。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14791,7 +14791,7 @@ var QUESTION_BANK = {
       "answer": "$2e^{-2}/3$",
       "solution": "$\\lambda e^{-\\lambda} = \\frac{\\lambda^2 e^{-\\lambda}}{2}，得 1 = \\lambda/2，\\lambda=2。P(X=4) = \\frac{2^4 e^{-2}}{4!} = \\frac{16e^{-2}}{24} = \\frac{2e^{-2}}{3}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14811,7 +14811,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$概率积分变换。P(Y \\leq y) = P(F(X) \\leq y) = P(X \\leq F^{-1}(y)) = F(F^{-1}(y)) = y（0<y<1）。故 Y \\sim U[0,1]。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14825,7 +14825,7 @@ var QUESTION_BANK = {
       "answer": "-0.24",
       "solution": "$E(X)=3\\times0.4=1.2，E(X^2)=D(X)+E^2(X)=3\\times0.4\\times0.6+1.44=0.72+1.44=2.16。E(Y)=E(X^2)-2E(X)=2.16-2.4=-0.24。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14845,7 +14845,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$E(\\min(X,a)) = \\int_0^a x\\lambda e^{-\\lambda x}dx + a\\int_a^{\\infty} \\lambda e^{-\\lambda x}dx = \\frac{1}{\\lambda}(1-e^{-\\lambda a}) - ae^{-\\lambda a} + ae^{-\\lambda a} = \\frac{1-e^{-\\lambda a}}{\\lambda}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14865,7 +14865,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\int_0^2 cx dx = 2c = 1，c = 1/2。E(X) = \\int_0^2 \\frac{x^2}{2}dx = \\frac{8}{6} = \\frac{4}{3}。P(X>\\frac{4}{3}) = \\int_{4/3}^2 \\frac{x}{2}dx = \\frac{1}{4}(4 - \\frac{16}{9}) = \\frac{1}{4} \\cdot \\frac{20}{9} = \\frac{5}{9}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14879,7 +14879,7 @@ var QUESTION_BANK = {
       "answer": "$32/\\sqrt\\pi$",
       "solution": "$E(|X^3|) = \\frac{2}{\\sqrt{2\\pi}\\cdot 2}\\int_0^{\\infty} x^3 e^{-x^2/8}dx。令 t=x^2/8，= \\frac{32}{\\sqrt{\\pi}}\\int_0^{\\infty} t e^{-t}dt = \\frac{32}{\\sqrt{\\pi}}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14899,7 +14899,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$F_Y(y) = P(\\max \\leq y) = P(X_1 \\leq y)P(X_2 \\leq y) = y^2（0<y<1）。f_Y(y) = 2y。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14913,7 +14913,7 @@ var QUESTION_BANK = {
       "answer": "不存在",
       "solution": "$这是柯西分布。\\int_{-\\infty}^{\\infty} |x| \\cdot \\frac{1}{\\pi(1+x^2)}dx = \\infty，期望不存在。注意密度对称但不意味着期望为0，需绝对可积。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14933,7 +14933,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$对泊松分布：E(X(X-1)) = \\sum_{k=2}^{\\infty} k(k-1)\\frac{\\lambda^k e^{-\\lambda}}{k!} = \\lambda^2 \\sum_{k=2}^{\\infty} \\frac{\\lambda^{k-2}e^{-\\lambda}}{(k-2)!} = \\lambda^2。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -14953,7 +14953,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$指数分布的无记忆性：P(X>2000|X>1000) = P(X>1000) = e^{-0.001\\cdot1000} = e^{-1}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14967,7 +14967,7 @@ var QUESTION_BANK = {
       "answer": "$\\sqrt(2/\\pi)e^(-y^2/2)$",
       "solution": "$P(Y \\leq y) = P(|X| \\leq y) = 2\\Phi(y)-1。f_Y(y) = 2\\varphi(y) = \\frac{2}{\\sqrt{2\\pi}}e^{-y^2/2} = \\sqrt{\\frac{2}{\\pi}}e^{-y^2/2}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -14987,7 +14987,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\int_{-\\infty}^{+\\infty} [F(x+a)-F(x)]dx = \\int_{-\\infty}^{+\\infty} \\int_x^{x+a} dF(t) dx = \\int_{-\\infty}^{+\\infty} a \\cdot dF(t) = a。交换积分次序可得。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "一维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15007,7 +15007,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$(X-\\mu)^3 = X^3 - 3\\mu X^2 + 3\\mu^2 X - \\mu^3。取期望：E(X^3) - 3\\mu E(X^2) + 3\\mu^2 E(X) - \\mu^3 = E(X^3) - 3\\mu E(X^2) + 2\\mu^3。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "随机变量的数字特征",
       "papers": [
         "shu1",
         "shu3"
@@ -15035,7 +15035,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$F(x,y) = P(X \\leq x, Y \\leq y)。注意是不等号含等号。离散型时 F(x,y) = \\sum_{x_i \\leq x} \\sum_{y_j \\leq y} p_{ij}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15049,7 +15049,7 @@ var QUESTION_BANK = {
       "answer": "$\\int f(x,y)dy$",
       "solution": "$边缘密度：f_X(x) = \\int_{-\\infty}^{\\infty} f(x,y)dy。对y积分消除y的影响得到X的分布。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15069,7 +15069,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$独立 \\Leftrightarrow F(x,y) = F_X(x) \\cdot F_Y(y)。对离散型：p_{ij} = p_i \\cdot p_j。对连续型：f(x,y) = f_X(x)f_Y(y)。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15089,7 +15089,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$Cov(X,Y)=0$ 等价于 $E(XY)=E(X)E(Y)$，即X与Y不相关。不相关不一定独立（除非是正态分布）。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15103,7 +15103,7 @@ var QUESTION_BANK = {
       "answer": "19",
       "solution": "$D(X+Y)=D(X)+D(Y)+2Cov(X,Y)=4+9+2\\times3=19。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15123,7 +15123,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "二维正态分布的特殊性质：独立 $\\Leftrightarrow$ 不相关 $\\Leftrightarrow \\rho=0 \\Leftrightarrow Cov=0$。仅正态分布有这一性质。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15143,7 +15143,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$\\rho_{XY} = \\frac{Cov(X,Y)}{\\sqrt{D(X)}\\sqrt{D(Y)}} \\in [-1,1]。\\rho=1为完全正相关，\\rho=-1为完全负相关。由柯西-施瓦茨不等式保证。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15157,7 +15157,7 @@ var QUESTION_BANK = {
       "answer": "2",
       "solution": "$Cov(X,Y) = E(XY) - E(X)E(Y) = 8 - 2 \\times 3 = 2。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15177,7 +15177,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$P(X=0)=0.4+0.3=0.7，P(X=1)=0.2+0.1=0.3。E(X)=0\\times0.7+1\\times0.3=0.3。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15197,7 +15197,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$Cov(X,Y) = \\rho_{XY} \\cdot \\sqrt{D(X)} \\cdot \\sqrt{D(Y)} = 0.4 \\times 5 \\times 6 = 12。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15217,7 +15217,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$D的面积为 \\int_0^1 x^2 dx = \\frac{1}{3}。均匀分布密度为该面积的倒数：f(x,y)=3，(x,y)\\in D。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15237,7 +15237,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$联合密度 f(x,y)=\\frac{1}{8}（0<x<2, 0<y<4）。P(Y < X^2) = \\frac{1}{8}\\int_0^2 x^2 dx = \\frac{8}{24} = \\frac{1}{3}。重算：\\int_0^2 x^2 dx = 8/3，\\frac{1}{8} \\cdot \\frac{8}{3} = \\frac{1}{3}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15251,7 +15251,7 @@ var QUESTION_BANK = {
       "answer": "t(n)",
       "solution": "t分布的定义：标准正态除以独立的卡方除以其自由度再开方。$T \\sim t(n)$，自由度为n。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "抽样分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15265,7 +15265,7 @@ var QUESTION_BANK = {
       "answer": "0.35",
       "solution": "$E(X)=E(Y)=0.5$。$Cov = E(XY) - E(X)E(Y) = E(XY) - 0.25 = 0.1$，$E(XY)=0.35$。X,Y均只取0或1，$E(XY)=P(X=1,Y=1)=0.35$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15285,7 +15285,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "独立正态之和仍为正态。$E(Z)=E(X)+E(Y)=0$，$D(Z)=D(X)+D(Y)=1+1=2$。故 $Z \\sim N(0,2)$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15305,7 +15305,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$f_X(x)=\\int_{-1}^{1}\\frac{1+xy}{4}dy = \\frac{1}{2}（|x|<1），同理 f_Y(y)=\\frac{1}{2}。f(x,y) \\neq f_X(x)f_Y(y)，不独立。但 E(XY)=\\iint xy\\frac{1+xy}{4}dxdy=0=E(X)E(Y)，不相关。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15319,7 +15319,7 @@ var QUESTION_BANK = {
       "answer": "N(μ,σ^2/n)",
       "solution": "$E(\\bar{X}) = \\frac{1}{n}\\sum E(X_i) = \\mu。独立时 D(\\bar{X}) = \\frac{1}{n^2}\\sum D(X_i) = \\frac{\\sigma^2}{n}。正态分布的线性组合仍为正态。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "抽样分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15339,7 +15339,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$边缘分布不一定均匀。例如单位圆上的均匀分布，X的边缘密度 f_X(x)=\\frac{2}{\\pi}\\sqrt{1-x^2}（|x|\\leq 1），不是均匀的。但矩形区域上的联合均匀分布，边缘是均匀的。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15353,7 +15353,7 @@ var QUESTION_BANK = {
       "answer": "4",
       "solution": "$D(2X-Y) = 4D(X) + D(Y) - 4Cov = 4+4-4\\times1\\times2\\times0.5 = 8-4 = 4。Cov = \\rho\\sqrt{D(X)D(Y)} = 0.5\\times2 = 1。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15373,7 +15373,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$P(X=Y) = P(X=1,Y=1) + P(X=2,Y=2) = (\\frac{1}{3})^2 + (\\frac{2}{3})^2 = \\frac{1}{9} + \\frac{4}{9} = \\frac{5}{9}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15393,7 +15393,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$E(X)=0$，$Cov = E(XY) - 0 = E(X^3) = 0$（奇函数）。故 $\\rho=0$，不相关。但显然不独立（Y完全由X决定）。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15407,7 +15407,7 @@ var QUESTION_BANK = {
       "answer": "$2\\sqrt(1-x^2)/\\pi$",
       "solution": "$联合密度 f(x,y)=1/\\pi。对y积分从 -\\sqrt{1-x^2} 到 \\sqrt{1-x^2}：f_X(x) = \\frac{2}{\\pi}\\sqrt{1-x^2}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15427,7 +15427,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$P(Z>z) = P(X>z, Y>z) = P(X>z)P(Y>z) = e^{-\\lambda z} \\cdot e^{-\\lambda z} = e^{-2\\lambda z}。故 Z \\sim Exp(2\\lambda)。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15447,7 +15447,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$卷积：f_Z(z)=\\int_{-\\infty}^{\\infty}f_X(x)f_Y(z-x)dx。0<z<1：\\int_0^z 1\\cdot 1dx = z。1<z<2：\\int_{z-1}^1 1\\cdot 1dx = 2-z。三角分布。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15461,7 +15461,7 @@ var QUESTION_BANK = {
       "answer": "0.52",
       "solution": "$P(Z=1) = P(X=1,Y=0) + P(X=0,Y=1) = 0.4\\times0.4 + 0.6\\times0.6 = 0.16+0.36 = 0.52。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15481,7 +15481,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "独立泊松分布之和仍为泊松，参数相加：$X+Y \\sim P(5)$。可用矩母函数或特征函数证明。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15501,7 +15501,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$D(X+Y)=D(X)+D(Y)+2Cov$，$D(X-Y)=D(X)+D(Y)-2Cov$。两式相等 $\\Rightarrow 4Cov=0 \\Rightarrow Cov(X,Y)=0$。不要求独立，也不要求方差相等。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15515,7 +15515,7 @@ var QUESTION_BANK = {
       "answer": "0",
       "solution": "$Cov(U,V) = Cov(X+Y, X-Y) = Cov(X,X) - Cov(Y,Y) = D(X) - D(Y) = 0$。所以U与V也不相关。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15535,7 +15535,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$二维正态的条件期望：E(X|Y=y) = \\mu_X + \\rho\\frac{\\sigma_X}{\\sigma_Y}(y-\\mu_Y) = 0 + 0.5 \\cdot 1 \\cdot y = 0.5y。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15555,7 +15555,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$两个独立标准正态之比服从柯西分布C(0,1)，密度 f(z)=\\frac{1}{\\pi(1+z^2)}。注意柯西分布期望不存在。t(1) 也是柯西分布。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15569,7 +15569,7 @@ var QUESTION_BANK = {
       "answer": "Γ(α₁+α₂,λ)",
       "solution": "独立伽马分布之和仍为伽马分布，形状参数相加，尺度参数不变。这是伽马分布的可加性。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15589,7 +15589,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$E(X)=\\frac{8}{15}, E(Y)=\\frac{4}{5}，E(XY)=\\frac{4}{9}，E(X^2)=\\frac{1}{3}，E(Y^2)=\\frac{2}{3}。计算得 Cov(X,Y)=\\frac{2}{225}，\\rho = \\frac{2/225}{\\sqrt{(11/225)(2/75)}} \\approx 0.5。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15603,7 +15603,7 @@ var QUESTION_BANK = {
       "answer": "F(n,n)",
       "solution": "$F分布定义：两个独立卡方变量各自除以其自由度之比。F = \\frac{X_1/n_1}{X_2/n_2} \\sim F(n_1,n_2)。这里 n_1=n_2=n。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "抽样分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15623,7 +15623,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\rho=1$ 当且仅当存在 $a>0$ 和 $b$ 使 $P(Y = aX + b) = 1$。$\\rho=-1$ 时 $a<0$。这是相关系数达到边界的等价条件。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15643,7 +15643,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "独立二项分布之和仍为二项分布（p相同时）：$X+Y \\sim B(n+m,p)$。这是二项分布的可加性。p不同则不成立。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15657,7 +15657,7 @@ var QUESTION_BANK = {
       "answer": "61",
       "solution": "$二维正态。D(2X+3Y) = 4D(X) + 9D(Y) + 12Cov。Cov = \\rho\\sqrt{D(X)D(Y)} = -0.5 \\times 6 = -3。D = 16 + 81 - 36 = 61。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15677,7 +15677,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$X_1+X_2 \\sim N(0,2)$ 与 $X_1-X_2 \\sim N(0,2)$ 独立（联合正态且协方差为0）。标准化后两者独立$\\chi^2(1)$，其比$\\sim F(1,1)$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "抽样分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15691,7 +15691,7 @@ var QUESTION_BANK = {
       "answer": "1/4",
       "solution": "$正方形 [0,2]^2 面积4。|X-Y|>1 区域面积：两个全等三角形各面积 \\frac{1}{2}\\times1\\times1=\\frac{1}{2}，共1。P=1/4。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "多维随机变量及其分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15711,7 +15711,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\big|_{C}^{o}v(X,Y)| \\leq \\sqrt{D(X)D(Y)} 是柯西-施瓦茨不等式的直接推论。A不一定（Cov可正可负），C、D也都不是必然的。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15731,7 +15731,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$样本方差：\\sum(X_i - \\bar{X})^2 \\sim \\chi^2(n-1)。损失一个自由度因为\\bar{X}是估计的均值。正交分解可证。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "抽样分布",
       "papers": [
         "shu1",
         "shu3"
@@ -15759,7 +15759,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$切比雪夫不等式：P(|X-\\mu| \\geq \\varepsilon) \\leq \\frac{D(X)}{\\varepsilon^2}。它给出了随机变量偏离期望的概率上界，无需知道具体分布。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15779,7 +15779,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$伯努利大数定律：\\frac{k}{n} \\xrightarrow{P} p，即频率依概率收敛到概率。这是概率的统计定义的理论基础。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15793,7 +15793,7 @@ var QUESTION_BANK = {
       "answer": "N(0,1)",
       "solution": "$林德贝格-莱维中心极限定理：标准化后的独立同分布随机变量之和，当 n \\to \\infty 时收敛到标准正态分布。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15813,7 +15813,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$切比雪夫大数定律要求方差一致有界，即存在常数C使 D(X_i) \\leq C。比独立同分布要求更弱。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15833,7 +15833,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "辛钦大数定律：独立同分布且期望存在（方差不一定存在）即可。是常用大数定律中条件最弱的。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15847,7 +15847,7 @@ var QUESTION_BANK = {
       "answer": "二项",
       "solution": "$棣莫弗-拉普拉斯定理：二项分布的正态近似。\\frac{X-np}{\\sqrt{npq}} \\xrightarrow{D} N(0,1)。这是历史上第一个中心极限定理。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15867,7 +15867,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\xrightarrow{P} 表示依概率收敛（convergence in probability）。\\forall \\varepsilon>0，\\lim_{n\\to\\infty} P(\\big|_{X}^{n}-X|>\\varepsilon)=0。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15887,7 +15887,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "依概率收敛 $\\Rightarrow$ 依分布收敛，但反之不真（除非极限是常数$c$，此时两者等价）。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15901,7 +15901,7 @@ var QUESTION_BANK = {
       "answer": "0.96",
       "solution": "$P(|X-1| < 0.5) = 1 - P(|X-1| \\geq 0.5) \\geq 1 - \\frac{0.01}{0.25} = 1 - 0.04 = 0.96。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15921,7 +15921,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$中心极限定理是渐近结果，n越大正态近似越准确。通常 n \\geq 30 时即可认为近似效果较好。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15941,7 +15941,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$E(X)=20, D(X)=16。P(|X-20| \\geq 10) \\leq \\frac{16}{100} = 0.16。这个估计比较粗糙。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15961,7 +15961,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$E(X-E(X)) = E(X)-E(X)=0$恒成立。B一般为正数（除非退化为常数）。C和D等于$D(X)$，不一定为0。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "协方差与相关系数",
       "papers": [
         "shu1",
         "shu3"
@@ -15975,7 +15975,7 @@ var QUESTION_BANK = {
       "answer": "0.75",
       "solution": "$X\\sim B(400,0.5)，E=200, D=100。P(180<X<220)=P(|X-200|<20) \\geq 1-100/400 = 0.75。用正态近似则约0.954。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -15995,7 +15995,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "几乎处处收敛 $\\Rightarrow$ 依概率收敛 $\\Rightarrow$ 依分布收敛。但几乎处处收敛和r阶矩收敛互不蕴含。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16015,7 +16015,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$n=400, p=0.5, E=200, D=100。标准化 Z=\\frac{X-200}{10}。P(185<X<215) = P(-1.5<Z<1.5) = 2\\Phi(1.5)-1 \\approx 2\\times0.9332-1=0.8664 \\approx 0.87。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16029,7 +16029,7 @@ var QUESTION_BANK = {
       "answer": "0",
       "solution": "由切比雪夫大数定律，方差一致有界保证 $\\bar{X} - E\\bar{X} \\xrightarrow{P} 0$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16049,7 +16049,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "泊松分布 $E=2$, $D=2$。独立和 $S$ 期望200，方差200。由中心极限定理 $S \\xrightarrow{approx} N(200,200)$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16063,7 +16063,7 @@ var QUESTION_BANK = {
       "answer": "80",
       "solution": "$P(|\\bar{X}-\\mu| < \\sigma/2) \\geq 1 - \\frac{\\sigma^2/n}{(\\sigma/2)^2} = 1 - \\frac{4}{n} \\geq 0.95，得 \\frac{4}{n} \\leq 0.05，n \\geq 80。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16083,7 +16083,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "林德贝格条件是独立随机变量序列满足中心极限定理的充要条件（在一定的正则条件下）。它排除了单个变量主导全局的情况。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16103,7 +16103,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "依概率收敛的连续映射定理：$g(X_n,Y_n) \\xrightarrow{P} g(a,b)$ 对连续函数g成立。$g(x,y)=xy$连续，故 $X_nY_n \\xrightarrow{P} ab$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16123,7 +16123,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$P(X \\geq 2\\lambda) = P(X-\\lambda \\geq \\lambda) \\leq P(|X-\\lambda| \\geq \\lambda) \\leq \\frac{\\lambda}{\\lambda^2} = \\frac{1}{\\lambda}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16143,7 +16143,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "马尔可夫链等具有弱相依性的随机过程也有中心极限定理。对于强混合序列、鞅差序列等，在一定条件下中心极限定理也成立。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16157,7 +16157,7 @@ var QUESTION_BANK = {
       "answer": "1-Φ(2)",
       "solution": "$E(X_i)=100, D(X_i)=10000。E(S)=10000, D(S)=1000000, \\sqrt{D}=1000。P(S>12000) = P(Z>2) = 1-\\Phi(2)。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16177,7 +16177,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "这是连续映射定理（Continuous Mapping Theorem）的特例。$g(x,y)=x+y$ 是连续函数，$g(X_n,Y_n) \\xrightarrow{P} g(X,Y)$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16191,7 +16191,7 @@ var QUESTION_BANK = {
       "answer": "$O_p(1/\\sqrtn)$",
       "solution": "$由中心极限定理 \\sqrt{n}(\\frac{X_n}{n}-p) \\xrightarrow{D} N(0,p(1-p))，故 \\frac{X_n}{n}-p = O_p(1/\\sqrt{n})。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16211,7 +16211,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "切比雪夫不等式非常保守，因为不依赖分布的具体形式。实际概率往往比它给出的上界小得多。这是为'普适性'付出的代价。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16231,7 +16231,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$E(X_i)=0.5, D(X_i)=1/12。E(S)=100, D(S)=200/12=16.67, \\sqrt{D}=4.082。Z=(110-100)/4.082=2.45。P(S<110) \\approx \\Phi(2.45)。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16245,7 +16245,7 @@ var QUESTION_BANK = {
       "answer": "2Φ(2)-1",
       "solution": "$E(X_i)=0, D(X_i)=1。E(S)=0, D(S)=100, \\sqrt{D}=10。P(-20\\leq S\\leq 20) = P(-2\\leq Z\\leq 2) = 2\\Phi(2)-1 \\approx 0.954。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16265,7 +16265,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "柯西分布期望不存在，不满足辛钦大数定律的条件。事实上柯西分布的样本均值仍服从柯西分布，不收敛到任何常数。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16279,7 +16279,7 @@ var QUESTION_BANK = {
       "answer": "N(0,1)",
       "solution": "$\\chi^2(n)$可表示为n个独立$N(0,1)$的平方和，$E=n$, $D=2n$。由CLT标准化后近似$N(0,1)$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16299,7 +16299,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$X \\sim B(10000,0.001) 近似 P(10)。P(X \\leq k) \\geq 0.95，查泊松分布表得 k=16。但需\\Phi近似：E=10, D\\approx 10, k = 10 + 1.645\\times\\sqrt{10} \\approx 15.2。取16份但选项给的是整数范围。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16319,7 +16319,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "斯卢茨基定理：(1) $X_n+Y_n \\xrightarrow{D} X+c$，(2) $X_nY_n \\xrightarrow{D} cX$。A和C都成立。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16333,7 +16333,7 @@ var QUESTION_BANK = {
       "answer": "λ",
       "solution": "$由大数定律 \\bar{X} \\xrightarrow{P} E(X) = 1/\\lambda。由连续映射定理 \\frac{1}{\\bar{X}} \\xrightarrow{P} \\lambda。这是极大似然估计的相合性。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16353,7 +16353,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$经典 Banach 火柴问题。E(R) \\approx \\sqrt{\\frac{2n}{\\pi}} = \\sqrt{\\frac{200}{\\pi}} \\approx 8。精确解为 \\frac{2^{2n-1}}{C_{2n}^n} \\approx \\sqrt{\\frac{n}{\\pi}}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16367,7 +16367,7 @@ var QUESTION_BANK = {
       "answer": "等价",
       "solution": "当极限是常数c时，$X_n \\xrightarrow{P} c \\Leftrightarrow X_n \\xrightarrow{D} c$。因为退化分布仅在c处有跳跃，两者的定义重合。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16387,7 +16387,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$均方收敛准则：E(X_n-\\mu)^2 = D(X_n) + (E(X_n)-\\mu)^2 \\to 0，说明 X_n 均方收敛于 \\mu，进而依概率收敛。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16407,7 +16407,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$大数定律保证样本均值 \\to 积分真值（依概率）。中心极限定理给出估计的精度（收敛速度O(1/\\sqrt{n})和置信区间）。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16421,7 +16421,7 @@ var QUESTION_BANK = {
       "answer": "σ^2",
       "solution": "$$E(X_$i^2$) = D(X_i) + $E^2$(X_i) = \\sigm$a^2$ + 0 = \\sigm$a^2$$。由大数定律样本二阶矩收敛到总体二阶矩$\\sigm$a^2$$。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16441,7 +16441,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "林德贝格条件（Lindeberg condition）是独立不同分布情况下中心极限定理成立的充分条件。李雅普诺夫条件是更易验证的充分条件。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16461,7 +16461,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$np = 10，X 近似 P(10)。P(X\\leq 5) \\approx e^{-10}\\sum_{k=0}^{5}\\frac{10^k}{k!}。二项分布的泊松近似，条件：n大p小。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "大数定律与中心极限定理",
       "papers": [
         "shu1",
         "shu3"
@@ -16489,7 +16489,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\bar{X} \\sim N(\\mu, \\sigma^2/n)。E(\\bar{X})=\\mu，D(\\bar{X})=\\sigma^2/n。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "抽样分布",
       "papers": [
         "shu1",
         "shu3"
@@ -16503,7 +16503,7 @@ var QUESTION_BANK = {
       "answer": "无偏",
       "solution": "$$E($S^2$)=\\sigm$a^2$$，所以 $$S^2$$ 是总体方差的无偏估计。用n作分母的估计量有偏。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16523,7 +16523,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$T = \\frac{X}{\\sqrt{Y/n}} \\sim t(n)。t分布形状对称，尾部比正态分布厚，自由度n越大越接近正态。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "抽样分布",
       "papers": [
         "shu1",
         "shu3"
@@ -16543,7 +16543,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$F = \\frac{U/m}{V/n} \\sim F(m,n)。F分布用于方差分析和回归分析中的F检验。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "抽样分布",
       "papers": [
         "shu1",
         "shu3"
@@ -16557,7 +16557,7 @@ var QUESTION_BANK = {
       "answer": "样本;总体",
       "solution": "$矩估计：用样本矩代替总体矩建立方程求解参数。如 \\bar{X} = E(X)，\\frac{1}{n}\\sum X_i^2 = E(X^2)。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16577,7 +16577,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$无偏性：E(\\hat{\\theta}) = \\theta。即估计量的期望等于被估参数。无偏性保证估计量在平均意义下不系统偏离。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16597,7 +16597,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$置信区间的频率解释：重复抽样构造的置信区间中，有约 1-\\alpha 比例的区间包含真值参数。单个区间要么包含要么不包含。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -16611,7 +16611,7 @@ var QUESTION_BANK = {
       "answer": "$1.96/\\sqrtn$",
       "solution": "$方差已知时置信区间：\\bar{X} \\pm z_{\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}。\\alpha=0.05时 z_{0.025}=1.96。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -16631,7 +16631,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$第I类错误（弃真）：H_0为真但被拒绝，概率为 \\alpha（显著性水平）。第II类错误（取伪）：H_0为假但被接受。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -16651,7 +16651,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\chi^2(n)$ 是n个独立标准正态随机变量的平方和。自由度n反映了独立信息的数量。$E[\\chi^2(n)]=n$，$D[\\chi^2(n)]=2n$。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "抽样分布",
       "papers": [
         "shu1",
         "shu3"
@@ -16671,7 +16671,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$E(X)=\\theta/2。矩估计：\\bar{X} = \\theta/2 \\Rightarrow \\hat{\\theta} = 2\\bar{X}。极大似然估计为 \\max(X_i)。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16691,7 +16691,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$\\mu已知时，似然函数只含\\sigma^2。最大化得 \\hat{\\sigma}^2 = \\frac{1}{n}\\sum(X_i-\\mu)^2，这是无偏的。若\\mu未知则MLE为 \\frac{1}{n}\\sum(X_i-\\bar{X})^2（有偏）。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16705,7 +16705,7 @@ var QUESTION_BANK = {
       "answer": "λ/n",
       "solution": "$D(\\bar{X}) = \\frac{D(X)}{n} = \\frac{\\lambda}{n}。且 E(\\bar{X}) = \\lambda，所以 \\bar{X} 是无偏估计。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16725,7 +16725,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "$E(\\frac{1}{n-1}\\sum X_i) = \\frac{n}{n-1}\\mu \\neq \\mu，有偏。A、B、C的期望均为\\mu。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16745,7 +16745,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$费舍尔信息量反映样本包含参数信息的多少。C-R下界：D(\\hat{\\theta}) \\geq \\frac{1}{nI(\\theta)}（对无偏估计）。信息量越大，估计越精确。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16759,7 +16759,7 @@ var QUESTION_BANK = {
       "answer": "$z_{α/2}·σ/\\sqrtn$",
       "solution": "$方差已知：[\\bar{X} - z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}, \\bar{X} + z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}]。z_{\\alpha/2} 为标准正态上 \\alpha/2 分位数。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -16779,7 +16779,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$\\alpha 越大，z_{\\alpha/2} 越小，置信区间越窄。\\alpha=0.05时z=1.96；\\alpha=0.10时z=1.645。但可信度越低。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -16793,7 +16793,7 @@ var QUESTION_BANK = {
       "answer": "X̄",
       "solution": "$似然函数 L(p) = p^{\\sum X_i}(1-p)^{n-\\sum X_i}。对数似然求导得 \\hat{p} = \\bar{X}。即样本中'1'的比例。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16813,7 +16813,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\frac{S_1^2/\\sigma_1^2}{S_2^2/\\sigma_2^2} \\sim F(n_1-1, n_2-1)。方差比 \\sigma_1^2/\\sigma_2^2 的置信区间基于F分布。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -16833,7 +16833,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$均方误差 \\to 0 意味着依概率收敛：\\hat{\\theta} 是 \\theta 的一致（相合）估计。无偏是有限样本性质，一致是渐近性质。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16853,7 +16853,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$E(\\hat{\\sigma}^2) = \\frac{n-1}{n}\\sigma^2，偏差 = E(\\hat{\\sigma}^2) - \\sigma^2 = -\\frac{\\sigma^2}{n}。当 n \\to \\infty 时偏差趋于0，是渐近无偏的。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16867,7 +16867,7 @@ var QUESTION_BANK = {
       "answer": "max(X_i)",
       "solution": "$似然函数 L(\\theta) = 1/\\theta^n，0 \\leq X_i \\leq \\theta。\\theta越小L越大，但受约束\\theta \\geq \\max(X_i)。故 \\hat{\\theta} = X_{(n)} = \\max(X_i)。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16887,7 +16887,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$X \\sim Exp(\\lambda) \\Leftrightarrow 2\\lambda X \\sim \\chi^2(2)。独立和：2\\lambda \\sum X_i \\sim \\chi^2(2n)。可用于构造 \\lambda 的置信区间。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "抽样分布",
       "papers": [
         "shu1",
         "shu3"
@@ -16907,7 +16907,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\hat{\\sigma}^2 = \\frac{1}{n}\\sum(X_i-\\bar{X})^2，S^2 = \\frac{1}{n-1}\\sum(X_i-\\bar{X})^2。故 S^2 = \\frac{n}{n-1}\\hat{\\sigma}^2。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16921,7 +16921,7 @@ var QUESTION_BANK = {
       "answer": "(n-1)$S^2$/σ^2 ~ χ^2(n-1)",
       "solution": "$\\frac{(n-1)S^2}{\\sigma^2} \\sim \\chi^2(n-1)。置信区间：[\\frac{(n-1)S^2}{\\chi^2_{\\alpha/2}}, \\frac{(n-1)S^2}{\\chi^2_{1-\\alpha/2}}]。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -16941,7 +16941,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$两样本t检验：方差相等时用pooled方差 S_p^2，\\frac{(\\bar{X}-\\bar{Y})-(\\mu_1-\\mu_2)}{S_p\\sqrt{1/n_1+1/n_2}} \\sim t(n_1+n_2-2)。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -16955,7 +16955,7 @@ var QUESTION_BANK = {
       "answer": "$2t_{α/2}(n-1)·S/\\sqrtn$",
       "solution": "$\\sigma未知时用t分布：[\\bar{X} - t_{\\alpha/2}(n-1)\\frac{S}{\\sqrt{n}}, \\bar{X} + t_{\\alpha/2}(n-1)\\frac{S}{\\sqrt{n}}]。长度 = 2t_{\\alpha/2}(n-1) \\cdot S/\\sqrt{n}。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -16975,7 +16975,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$充分统计量 T(X)：给定T后，样本的条件分布与参数\\theta无关，即T包含了样本中有关\\theta的全部信息。因子分解定理用于判断。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -16995,7 +16995,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "指数族分布且具有单调似然比性质，由奈曼-皮尔逊引理可构造UMP检验。正态、二项、泊松等都属于指数族。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -17009,7 +17009,7 @@ var QUESTION_BANK = {
       "answer": "2σ^4/n",
       "solution": "$I(\\sigma^2) = \\frac{1}{2\\sigma^4}（单个观测）。C-R下界 = \\frac{1}{nI} = \\frac{2\\sigma^4}{n}。\\frac{1}{n}\\sum X_i^2 达到此下界，是最小方差无偏估计。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -17029,7 +17029,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "样本量n越大，估计越精确，置信区间越窄。置信水平越高区间越宽（A错），总体方差越大区间越宽（C错）。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -17049,7 +17049,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$p值是在 H_0 为真的假定下，检验统计量取值比观测值更极端的概率。p < \\alpha 时拒绝 H_0。p值越小，反对 H_0 的证据越强。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -17063,7 +17063,7 @@ var QUESTION_BANK = {
       "answer": "充分",
       "solution": "对于任意分布，次序统计量总是充分的（给定排序后，样本值的具体排列不再提供额外信息）。但一般不完备。",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -17083,7 +17083,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$对伽马分布，\\alpha的MLE满足 \\ln\\alpha - \\psi(\\alpha) = \\ln\\bar{X} - \\overline{\\ln X}，其中\\psi是digamma函数。无显式解，需数值求解。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -17103,7 +17103,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$均方误差 \\to 0 \\Rightarrow 相合：P(|\\hat{\\theta}-\\theta|>\\varepsilon) \\leq E(\\hat{\\theta}-\\theta)^2/\\varepsilon^2 \\to 0。C正确。A不一定（如X_1无偏但不相合），B也不一定。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -17117,7 +17117,7 @@ var QUESTION_BANK = {
       "answer": "(n-1)/(nX̄)",
       "solution": "$注意 E(1/\\bar{X}) \\neq \\lambda。\\sum X_i \\sim \\Gamma(n,\\lambda)，E(1/\\sum X_i) = \\lambda/(n-1)。故 \\hat{\\lambda} = \\frac{n-1}{n\\bar{X}} 是无偏的。实际上 E(\\frac{n-1}{\\sum X_i}) = \\lambda。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -17137,7 +17137,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$MSE = E(\\hat{\\theta}-\\theta)^2 = D(\\hat{\\theta}) + (Bias)^2。无偏时 Bias=0，MSE = D(\\hat{\\theta})。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -17151,7 +17151,7 @@ var QUESTION_BANK = {
       "answer": "μ",
       "solution": "$\\beta(\\mu) = P(\\text{接受}H_0|\\mu \\neq \\mu_0)，是 \\mu 的函数。\\beta 随 |\\mu-\\mu_0| 增大而减小。1-\\beta 是功效函数。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "区间估计与假设检验",
       "papers": [
         "shu1",
         "shu3"
@@ -17171,7 +17171,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$无偏估计中方差小者更有效。相对效率定义为 D(\\hat{\\theta}_2)/D(\\hat{\\theta}_1)。最小方差无偏估计（UMVUE）是效率最高的无偏估计。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"
@@ -17191,7 +17191,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$贝叶斯方法将参数\\theta视为随机变量（有先验分布），利用样本更新为后验分布。频率学派视\\theta为未知常数。这导致两者在推理框架上有本质差异。$",
       "cat": "概率统计",
-      "topic": "概率统计",
+      "topic": "参数估计",
       "papers": [
         "shu1",
         "shu3"

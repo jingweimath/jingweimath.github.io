@@ -1,0 +1,529 @@
+{
+  "subject": "概率论与数理统计",
+  "chapter": "大数定律与中心极限定理",
+  "chapterId": "prob-law-large",
+  "questions": [
+    {
+      "id": "prob-ll-001",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$切比雪夫不等式的形式为（设 E(X)=\\mu, D(X)=\\sigma^2）：$",
+      "options": [
+        "$A. P(|X-\\mu|\\geq\\varepsilon) \\leq \\frac{\\sigma^2}{\\varepsilon}$",
+        "$B. P(|X-\\mu|\\geq\\varepsilon) \\leq \\frac{\\sigma^2}{\\varepsilon^2}$",
+        "$C. P(|X-\\mu|\\geq\\varepsilon) \\leq \\frac{\\sigma}{\\varepsilon}$",
+        "$D. P(|X-\\mu|\\geq\\varepsilon) \\geq \\frac{\\sigma^2}{\\varepsilon^2}$"
+      ],
+      "answer": 1,
+      "solution": "$切比雪夫不等式：P(|X-\\mu| \\geq \\varepsilon) \\leq \\frac{D(X)}{\\varepsilon^2}。它给出了随机变量偏离期望的概率上界，无需知道具体分布。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-002",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "伯努利大数定律说明了什么？",
+      "options": [
+        "频率收敛于概率",
+        "样本均值收敛于总体均值",
+        "样本方差收敛于总体方差",
+        "正态分布是极限分布"
+      ],
+      "answer": 0,
+      "solution": "$伯努利大数定律：\\frac{k}{n} \\xrightarrow{P} p，即频率依概率收敛到概率。这是概率的统计定义的理论基础。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-003",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "$独立同分布中心极限定理中，\\frac{\\sum X_i - n\\mu}{\\sqrt{n}\\sigma} 的极限分布是 （　）$",
+      "answer": "N(0,1)",
+      "solution": "$林德贝格-莱维中心极限定理：标准化后的独立同分布随机变量之和，当 n \\to \\infty 时收敛到标准正态分布。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-004",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "切比雪夫大数定律成立的条件是？",
+      "options": [
+        "方差一致有界",
+        "同分布",
+        "正态分布",
+        "方差为0"
+      ],
+      "answer": 0,
+      "solution": "$切比雪夫大数定律要求方差一致有界，即存在常数C使 D(X_i) \\leq C。比独立同分布要求更弱。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-005",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "辛钦大数定律的条件是？",
+      "options": [
+        "独立正态同分布",
+        "独立同分布且期望存在",
+        "独立同分布且方差存在",
+        "任意独立序列"
+      ],
+      "answer": 1,
+      "solution": "辛钦大数定律：独立同分布且期望存在（方差不一定存在）即可。是常用大数定律中条件最弱的。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-006",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "棣莫弗-拉普拉斯中心极限定理是林德贝格-莱维定理在 (   ) 分布下的特例",
+      "answer": "二项",
+      "solution": "$棣莫弗-拉普拉斯定理：二项分布的正态近似。\\frac{X-np}{\\sqrt{npq}} \\xrightarrow{D} N(0,1)。这是历史上第一个中心极限定理。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-007",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$\\bar{X} \\xrightarrow{P} \\mu 表示什么类型的收敛？$",
+      "options": [
+        "依分布收敛",
+        "依概率收敛",
+        "几乎处处收敛",
+        "r阶收敛"
+      ],
+      "answer": 1,
+      "solution": "$\\xrightarrow{P} 表示依概率收敛（convergence in probability）。\\forall \\varepsilon>0，\\lim_{n\\to\\infty} P(\\big|_{X}^{n}-X|>\\varepsilon)=0。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-008",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "依概率收敛能推出依分布收敛，反之？",
+      "options": [
+        "成立",
+        "不成立",
+        "仅在正态分布下成立",
+        "仅在离散分布下成立"
+      ],
+      "answer": 1,
+      "solution": "依概率收敛 $\\Rightarrow$ 依分布收敛，但反之不真（除非极限是常数$c$，此时两者等价）。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-009",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "$利用切比雪夫不等式，若 E(X)=1, D(X)=0.01，则 P(0.5<X<1.5) \\geq （　）$",
+      "answer": "0.96",
+      "solution": "$P(|X-1| < 0.5) = 1 - P(|X-1| \\geq 0.5) \\geq 1 - \\frac{0.01}{0.25} = 1 - 0.04 = 0.96。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-010",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "中心极限定理中，$n$越大，近似效果？",
+      "options": [
+        "越好",
+        "越差",
+        "不变",
+        "与$n$无关"
+      ],
+      "answer": 0,
+      "solution": "$中心极限定理是渐近结果，n越大正态近似越准确。通常 n \\geq 30 时即可认为近似效果较好。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-011",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$设 X \\sim B(100,0.2)，用切比雪夫不等式估计 P(|X-20| \\geq 10) 的上界：$",
+      "options": [
+        "0.16",
+        "0.32",
+        "0.04",
+        "0.08"
+      ],
+      "answer": 0,
+      "solution": "$E(X)=20, D(X)=16。P(|X-20| \\geq 10) \\leq \\frac{16}{100} = 0.16。这个估计比较粗糙。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-012",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "设$X$和$Y$为随机变量，下列哪个常数一定为0？",
+      "options": [
+        "$E(X-E(X))$",
+        "$E(|X-E(X)|)$",
+        "$E((X-E(X))^2)$",
+        "$E(X^2)-E^2(X)$"
+      ],
+      "answer": 0,
+      "solution": "$E(X-E(X)) = E(X)-E(X)=0$恒成立。B一般为正数（除非退化为常数）。C和D等于$D(X)$，不一定为0。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-013",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "设每次试验成功概率0.5，独立重复400次。用切比雪夫不等式估计成功次数在180到220之间的概率至少为 (   )",
+      "answer": "0.75",
+      "solution": "$X\\sim B(400,0.5)，E=200, D=100。P(180<X<220)=P(|X-200|<20) \\geq 1-100/400 = 0.75。用正态近似则约0.954。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-014",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "下列哪种收敛最强？",
+      "options": [
+        "依概率收敛",
+        "依分布收敛",
+        "几乎处处收敛",
+        "r阶矩收敛"
+      ],
+      "answer": 2,
+      "solution": "几乎处处收敛 $\\Rightarrow$ 依概率收敛 $\\Rightarrow$ 依分布收敛。但几乎处处收敛和r阶矩收敛互不蕴含。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-015",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "400枚硬币同时掷，正面数在185到215之间的概率近似为？（用中心极限定理）",
+      "options": [
+        "0.68",
+        "0.87",
+        "0.95",
+        "0.99"
+      ],
+      "answer": 1,
+      "solution": "$n=400, p=0.5, E=200, D=100。标准化 Z=\\frac{X-200}{10}。P(185<X<215) = P(-1.5<Z<1.5) = 2\\Phi(1.5)-1 \\approx 2\\times0.9332-1=0.8664 \\approx 0.87。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-016",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "$设有独立随机变量序列 \\{X_n\\}，D(X_n) \\leq 2（n\\geq 1），则 \\frac{1}{n}\\sum_{i=1}^{n}(X_i-E(X_i)) 依概率收敛于 （　）$",
+      "answer": "0",
+      "solution": "由切比雪夫大数定律，方差一致有界保证 $\\bar{X} - E\\bar{X} \\xrightarrow{P} 0$。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-017",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$设 X_1,\\ldots,X_{100} 独立同分布 P(2)，S = \\sum X_i 近似服从？$",
+      "options": [
+        "$N(200,200)$",
+        "$P(200)$",
+        "$N(200,100)$",
+        "$\\chi^2(200)$"
+      ],
+      "answer": 0,
+      "solution": "泊松分布 $E=2$, $D=2$。独立和 $S$ 期望200，方差200。由中心极限定理 $S \\xrightarrow{approx} N(200,200)$。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-018",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "$设母体 X 的分布未知，E(X)=\\mu, D(X)=\\sigma^2。用切比雪夫不等式确定使 P(|\\bar{X}-\\mu|<\\sigma/2) \\geq 0.95 所需的最小样本量n至少为 （　）$",
+      "answer": "80",
+      "solution": "$P(|\\bar{X}-\\mu| < \\sigma/2) \\geq 1 - \\frac{\\sigma^2/n}{(\\sigma/2)^2} = 1 - \\frac{4}{n} \\geq 0.95，得 \\frac{4}{n} \\leq 0.05，n \\geq 80。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-019",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "林德贝格条件的作用是？",
+      "options": [
+        "保证大数定律成立",
+        "保证中心极限定理成立",
+        "保证矩存在",
+        "保证独立性"
+      ],
+      "answer": 1,
+      "solution": "林德贝格条件是独立随机变量序列满足中心极限定理的充要条件（在一定的正则条件下）。它排除了单个变量主导全局的情况。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-020",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "若 $X_n \\xrightarrow{P} a$, $Y_n \\xrightarrow{P} b$（a,b常数），则 $X_nY_n \\xrightarrow{P}$？",
+      "options": [
+        "$ab$",
+        "不一定收敛",
+        "$a+b$",
+        "$D. \\max(a,b)$"
+      ],
+      "answer": 0,
+      "solution": "依概率收敛的连续映射定理：$g(X_n,Y_n) \\xrightarrow{P} g(a,b)$ 对连续函数g成立。$g(x,y)=xy$连续，故 $X_nY_n \\xrightarrow{P} ab$。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-021",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$设 X \\sim P(\\lambda)，利用切比雪夫不等式证明 P(X \\geq 2\\lambda) \\leq？$",
+      "options": [
+        "$A. \\frac{1}{\\lambda}$",
+        "$B. \\frac{1}{2\\lambda}$",
+        "$C. \\frac{1}{\\lambda^2}$",
+        "$D. \\frac{1}{4\\lambda}$"
+      ],
+      "answer": 0,
+      "solution": "$P(X \\geq 2\\lambda) = P(X-\\lambda \\geq \\lambda) \\leq P(|X-\\lambda| \\geq \\lambda) \\leq \\frac{\\lambda}{\\lambda^2} = \\frac{1}{\\lambda}。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-022",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "中心极限定理要求独立同分布，但很多实际问题中变量不独立。哪一个放宽了独立性条件？",
+      "options": [
+        "辛钦大数定律",
+        "伯努利大数定律",
+        "马尔可夫链的中心极限定理",
+        "切比雪夫不等式"
+      ],
+      "answer": 2,
+      "solution": "马尔可夫链等具有弱相依性的随机过程也有中心极限定理。对于强混合序列、鞅差序列等，在一定条件下中心极限定理也成立。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-023",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "设100个独立元件的寿命 $X_i \\sim Exp(0.01)$，总寿命超过12000小时的概率近似为 （　）（用 $\\Phi$ 表示）",
+      "answer": "1-Φ(2)",
+      "solution": "$E(X_i)=100, D(X_i)=10000。E(S)=10000, D(S)=1000000, \\sqrt{D}=1000。P(S>12000) = P(Z>2) = 1-\\Phi(2)。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-024",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$X_n \\xrightarrow{P} X$ 且 $Y_n \\xrightarrow{P} Y$，则 $X_n+Y_n \\xrightarrow{P} X+Y$。这个结论基于什么定理？",
+      "options": [
+        "林德贝格定理",
+        "斯卢茨基定理",
+        "连续映射定理",
+        "格里汶科定理"
+      ],
+      "answer": 2,
+      "solution": "这是连续映射定理（Continuous Mapping Theorem）的特例。$g(x,y)=x+y$ 是连续函数，$g(X_n,Y_n) \\xrightarrow{P} g(X,Y)$。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-025",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$设 X_n \\sim B(n,p)，则 \\frac{X_n}{n} - p 的收敛阶为 （　）（填 O_p(1/\\sqrt{n}) 或 O_p(1/n)）$",
+      "answer": "$O_p(1/\\sqrtn)$",
+      "solution": "$由中心极限定理 \\sqrt{n}(\\frac{X_n}{n}-p) \\xrightarrow{D} N(0,p(1-p))，故 \\frac{X_n}{n}-p = O_p(1/\\sqrt{n})。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-026",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "对于任意分布，切比雪夫不等式给出的界通常？",
+      "options": [
+        "很精确",
+        "非常保守（宽松）",
+        "是最优的",
+        "仅在正态分布下精确"
+      ],
+      "answer": 1,
+      "solution": "切比雪夫不等式非常保守，因为不依赖分布的具体形式。实际概率往往比它给出的上界小得多。这是为'普适性'付出的代价。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-027",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$设 X_1,\\ldots,X_{200} 独立同分布 U[0,1]，S = \\sum X_i。P(S<110) 近似为？$",
+      "options": [
+        "$\\Phi(1.22)$",
+        "$\\Phi(1.73)$",
+        "$\\Phi(2.45)$",
+        "$\\Phi(0.87)$"
+      ],
+      "answer": 2,
+      "solution": "$E(X_i)=0.5, D(X_i)=1/12。E(S)=100, D(S)=200/12=16.67, \\sqrt{D}=4.082。Z=(110-100)/4.082=2.45。P(S<110) \\approx \\Phi(2.45)。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-028",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$设 X_i 独立，P(X_i=1)=P(X_i=-1)=1/2。由中心极限定理，\\sum_{i=1}^{100} X_i 落在 [-20,20] 内的概率近似为 （　）（用 \\Phi 表示）$",
+      "answer": "2Φ(2)-1",
+      "solution": "$E(X_i)=0, D(X_i)=1。E(S)=0, D(S)=100, \\sqrt{D}=10。P(-20\\leq S\\leq 20) = P(-2\\leq Z\\leq 2) = 2\\Phi(2)-1 \\approx 0.954。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-029",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "下列随机变量序列中，哪个不满足大数定律？",
+      "options": [
+        "柯西分布独立同分布样本均值",
+        "正态分布独立同分布样本均值",
+        "均匀分布独立同分布样本均值",
+        "泊松分布独立同分布样本均值"
+      ],
+      "answer": 0,
+      "solution": "柯西分布期望不存在，不满足辛钦大数定律的条件。事实上柯西分布的样本均值仍服从柯西分布，不收敛到任何常数。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-030",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$设 X_n \\sim \\chi^2(n)，根据中心极限定理，当n很大时 \\frac{X_n-n}{\\sqrt{2n}} 近似服从 （　） 分布$",
+      "answer": "N(0,1)",
+      "solution": "$\\chi^2(n)$可表示为n个独立$N(0,1)$的平方和，$E=n$, $D=2n$。由CLT标准化后近似$N(0,1)$。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-031",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "在一保险公司有10000个投保人，每人索赔概率0.001，各人独立。公司需准备多少赔付金才能使不够赔的概率不大于0.05？（每人赔偿额相同）",
+      "options": [
+        "约10份",
+        "约14份",
+        "约20份",
+        "约30份"
+      ],
+      "answer": 2,
+      "solution": "$X \\sim B(10000,0.001) 近似 P(10)。P(X \\leq k) \\geq 0.95，查泊松分布表得 k=16。但需\\Phi近似：E=10, D\\approx 10, k = 10 + 1.645\\times\\sqrt{10} \\approx 15.2。取16份但选项给的是整数范围。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-032",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "斯卢茨基定理（Slutsky）说的是：若 $X_n \\xrightarrow{D} X$，$Y_n \\xrightarrow{P} c$（常数），则？",
+      "options": [
+        "$X_n+Y_n \\xrightarrow{D} X+c$",
+        "$X_n+Y_n \\xrightarrow{P} X+c$",
+        "$X_nY_n \\xrightarrow{D} Xc$",
+        "A和C都成立"
+      ],
+      "answer": 3,
+      "solution": "斯卢茨基定理：(1) $X_n+Y_n \\xrightarrow{D} X+c$，(2) $X_nY_n \\xrightarrow{D} cX$。A和C都成立。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-033",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$设 X_1,\\ldots,X_n 独立同分布 Exp(\\lambda)。\\frac{1}{\\bar{X}} 依概率收敛于 （　）$",
+      "answer": "λ",
+      "solution": "$由大数定律 \\bar{X} \\xrightarrow{P} E(X) = 1/\\lambda。由连续映射定理 \\frac{1}{\\bar{X}} \\xrightarrow{P} \\lambda。这是极大似然估计的相合性。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-034",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "一盒火柴有100根，每次取火柴随机选左右口袋（概率各半）直到某口袋空为止。另一口袋剩余火柴数的期望约等于？",
+      "options": [
+        "5",
+        "8",
+        "10",
+        "15"
+      ],
+      "answer": 1,
+      "solution": "$经典 Banach 火柴问题。E(R) \\approx \\sqrt{\\frac{2n}{\\pi}} = \\sqrt{\\frac{200}{\\pi}} \\approx 8。精确解为 \\frac{2^{2n-1}}{C_{2n}^n} \\approx \\sqrt{\\frac{n}{\\pi}}。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-035",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "依概率收敛和依分布收敛的关系：若极限为常数，则两者 (   )（填等价/不等价）",
+      "answer": "等价",
+      "solution": "当极限是常数c时，$X_n \\xrightarrow{P} c \\Leftrightarrow X_n \\xrightarrow{D} c$。因为退化分布仅在c处有跳跃，两者的定义重合。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-036",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$若 E(X_n) \\to \\mu, D(X_n) \\to 0，则 X_n \\xrightarrow{P} \\mu。这是哪个定理？$",
+      "options": [
+        "切比雪夫大数定律",
+        "伯努利大数定律",
+        "均方收敛准则",
+        "辛钦大数定律"
+      ],
+      "answer": 2,
+      "solution": "$均方收敛准则：E(X_n-\\mu)^2 = D(X_n) + (E(X_n)-\\mu)^2 \\to 0，说明 X_n 均方收敛于 \\mu，进而依概率收敛。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-037",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$在蒙特卡洛积分中，用样本均值 \\frac{1}{n}\\sum f(X_i) 估计 \\int f(x)dx 的理论基础是？$",
+      "options": [
+        "中心极限定理",
+        "大数定律",
+        "贝叶斯定理",
+        "全概率公式"
+      ],
+      "answer": 1,
+      "solution": "$大数定律保证样本均值 \\to 积分真值（依概率）。中心极限定理给出估计的精度（收敛速度O(1/\\sqrt{n})和置信区间）。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-038",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$设 X_1,\\ldots,X_n 独立同分布，E(X_1)=0, D(X_1)=\\sigma^2。则 \\frac{1}{n}\\sum X_i^2 \\xrightarrow{P} （　）$",
+      "answer": "σ^2",
+      "solution": "$$E(X_$i^2$) = D(X_i) + $E^2$(X_i) = \\sigm$a^2$ + 0 = \\sigm$a^2$$。由大数定律样本二阶矩收敛到总体二阶矩$\\sigm$a^2$$。$",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-039",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "独立不同分布的中心极限定理要求什么条件？",
+      "options": [
+        "同分布",
+        "林德贝格条件",
+        "方差相等",
+        "正态分布"
+      ],
+      "answer": 1,
+      "solution": "林德贝格条件（Lindeberg condition）是独立不同分布情况下中心极限定理成立的充分条件。李雅普诺夫条件是更易验证的充分条件。",
+      "cat": "概率统计"
+    },
+    {
+      "id": "prob-ll-040",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$设 X \\sim B(10000, 0.001)，用泊松近似 P(X \\leq 5) 约等于？$",
+      "options": [
+        "$A. e^{-10}\\sum_{k=0}^{5}\\frac{10^k}{k!}$",
+        "$B. \\Phi(\\frac{5-10}{\\sqrt{10}})$",
+        "$C. e^{-10}\\frac{10^5}{5!}$",
+        "$D. \\sum_{k=0}^{5}C_{10000}^k(0.001)^k(0.999)^{10000-k}$"
+      ],
+      "answer": 0,
+      "solution": "$np = 10，X 近似 P(10)。P(X\\leq 5) \\approx e^{-10}\\sum_{k=0}^{5}\\frac{10^k}{k!}。二项分布的泊松近似，条件：n大p小。$",
+      "cat": "概率统计"
+    }
+  ]
+}
