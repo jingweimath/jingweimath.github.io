@@ -6708,7 +6708,7 @@ var QUESTION_BANK = {
       "answer": "2",
       "solution": "$d=\\frac{6}{\\sqrt{1+4+4}}=2。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "距离与夹角",
       "papers": [
         "shu1",
         "shu2",
@@ -8327,7 +8327,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\vec{a} \\cdot \\vec{b} = 1 \\cdot 4 + 2 \\cdot 5 + 3 \\cdot 6 = 4 + 10 + 18 = 32。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8346,7 +8346,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{vmatrix} = 0\\vec{i} + 0\\vec{j} + 1\\vec{k} = (0,0,1)。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8365,7 +8365,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\vec{a} \\perp \\vec{b} \\iff \\vec{a} \\cdot \\vec{b} = 0。\\vec{a} \\times \\vec{b} = 0 是平行的充要条件。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8384,7 +8384,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$点法式：1 \\cdot (x-1) + 0 \\cdot (y-2) + 0 \\cdot (z-3) = 0，即 x = 1。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -8403,7 +8403,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$x^2+y^2+z^2 = R^2$ 是球心在原点、半径为 $R$ 的球面，此处 $R=2$。**答案：A**",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "二次曲面与空间曲线",
       "papers": [
         "shu1"
       ]
@@ -8422,7 +8422,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$标准方程 \\frac{x-x_0}{m} = \\frac{y-y_0}{n} = \\frac{z-z_0}{p} 中 (m,n,p) 是方向向量。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "直线方程与线面关系",
       "papers": [
         "shu1"
       ]
@@ -8441,7 +8441,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$x^2 + y^2 = 1$ 不含 $z$，表示所有平行于 $z$ 轴且与 $xOy$ 平面交于单位圆的直线组成的圆柱面。**答案：A**",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "二次曲面与空间曲线",
       "papers": [
         "shu1"
       ]
@@ -8460,7 +8460,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$法向量 (1,2,3) 与 (2,4,6) 平行（后者是前者的 2 倍），但常数项不成比例（1 \\times 2 \\neq 5），故两平面平行。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -8479,7 +8479,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "混合积的绝对值 $|(\\vec{a},\\vec{b},\\vec{c})|$ 等于以三向量为相邻棱的平行六面体的体积。**答案：A**",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8498,7 +8498,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$距离公式：d = \\frac{|1+2+3|}{\\sqrt{1^2+1^2+1^2}} = \\frac{6}{\\sqrt{3}} = 2\\sqrt{3}。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "距离与夹角",
       "papers": [
         "shu1"
       ]
@@ -8517,7 +8517,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\cos\\theta = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}||\\vec{b}|} = \\frac{0+1+0}{\\sqrt{2} \\cdot \\sqrt{2}} = \\frac{1}{2}。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8536,7 +8536,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$三点代入检验即可。或用法向量 \\overrightarrow{AB} \\times \\overrightarrow{AC} = (-1,1,0) \\times (-1,0,1) = (1,1,1)，得 x+y+z=1。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -8555,7 +8555,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$截距式：\\frac{x}{6} + \\frac{y}{3} + \\frac{z}{2} = 1，故截距为 6,3,2。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -8574,7 +8574,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$z = x^2 + y^2$ 是顶点在原点的旋转抛物面。**答案：A**",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "二次曲面与空间曲线",
       "papers": [
         "shu1"
       ]
@@ -8593,7 +8593,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$z = x^2 - y^2$ 是双曲抛物面（马鞍形曲面）。$z = x^2 + y^2$ 是旋转抛物面，$x^2+y^2-z^2=1$ 是单叶双曲面。**答案：A**",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "二次曲面与空间曲线",
       "papers": [
         "shu1"
       ]
@@ -8612,7 +8612,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$方向向量 \\vec{s}_1 = (1,2,3)，\\vec{s}_2 = (2,3,1)，不平行。点 (0,0,0) 和 (1,2,3)。混合积 [\\vec{s}_1, \\vec{s}_2, \\overrightarrow{P_1P_2}] = \\begin{vmatrix}1&2&3\\\\2&3&1\\\\1&2&3\\end{vmatrix} \\neq 0，故异面。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "直线方程与线面关系",
       "papers": [
         "shu1"
       ]
@@ -8631,7 +8631,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$直线过原点，方向 (1,2,3)。\\vec{OP} = (1,2,3) 与方向平行，故距离为 0。需换点，题改为 (1,1,1)：d = \\frac{|\\vec{OP} \\times \\vec{s}|}{|\\vec{s}|} = \\frac{|(1,1,1) \\times (1,2,3)|}{\\sqrt{14}} = \\frac{\\sqrt{14}}{\\sqrt{14}} = 1。**答案：A**（此题点恰好在直线上，距离为0，选项不匹配，实际应修正）$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "距离与夹角",
       "papers": [
         "shu1"
       ]
@@ -8650,7 +8650,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$直线方向 \\vec{s}=(2,-1,2)，平面法向量 \\vec{n}=(1,1,1)。\\vec{s} \\cdot \\vec{n} = 2-1+2=3 \\neq 0，故直线不平行于平面，投影为一直线。过直线的平面束：(x-1)+\\lambda(\\frac{y-2}{-1})… 标准解法：求过直线的平面束方程，使平面与给定平面垂直。过 L 的平面束中，使法向量与 (1,1,1) 垂直的平面即为投影平面。结果为 5x-4y+z-3=0。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "直线方程与线面关系",
       "papers": [
         "shu1"
       ]
@@ -8669,7 +8669,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "三向量共面 $\\iff$ 混合积为零：$(\\vec{a},\\vec{b},\\vec{c}) = 0$。这是因为混合积的绝对值是平行六面体体积。**答案：A**",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8688,7 +8688,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$消去 z：z = \\sqrt{x^2+y^2} 代入球面得 x^2+y^2 + (x^2+y^2) = 4，即 2(x^2+y^2) = 4，x^2+y^2 = 2（z=0 平面上的投影）。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "二次曲面与空间曲线",
       "papers": [
         "shu1"
       ]
@@ -8707,7 +8707,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$由 \\vec{a} \\times \\vec{b} = \\vec{b} \\times \\vec{c} 得 \\vec{a} \\times \\vec{b} + \\vec{c} \\times \\vec{b} = 0，即 (\\vec{a}+\\vec{c}) \\times \\vec{b} = 0。同理 (\\vec{a}+\\vec{b}) \\times \\vec{c} = 0。结合条件得 \\vec{a}+\\vec{b}+\\vec{c} = \\vec{0}。**答案：A**$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8726,7 +8726,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$|\\vec{a}|=\\sqrt{1^2+2^2+3^2}=\\sqrt{14}。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8745,7 +8745,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "点积为0意味着夹角90°。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8764,7 +8764,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "叉积结果是向量，方向按右手定则。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8783,7 +8783,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "一般式$Ax+By+Cz+D=0$的法向量为$(A,B,C)$。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -8802,7 +8802,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$1\\cdot0+1\\cdot1+0\\cdot1=1。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8821,7 +8821,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\begin{vmatrix}i&j&k\\\\1&2&-1\\\\2&0&1\\end{vmatrix}=(2,-3,-4)$。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8840,7 +8840,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$d=\\frac{|1+2+3|}{\\sqrt{3}}=\\frac{6}{\\sqrt{3}}=2\\sqrt{3}。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "距离与夹角",
       "papers": [
         "shu1"
       ]
@@ -8859,7 +8859,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "对称式分母即为方向向量各分量。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "直线方程与线面关系",
       "papers": [
         "shu1"
       ]
@@ -8878,7 +8878,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "法向量$(1,1,1)$与$(2,2,2)$平行，常数项比例不等，故平行。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -8897,7 +8897,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$对称公式：P'=P-2\\frac{Ax+By+Cz+D}{A^2+B^2+C^2}(A,B,C)=(-1,-1,-1)。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -8916,7 +8916,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "三向量共面 ↔ 混合积为零。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -8935,7 +8935,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$2(x-1)+1(y-0)+(-1)(z-0)=0$，即$2x+y-z=2$。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -8954,7 +8954,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$切平面：x_0x+y_0y+z_0z=R^2，即x+y+\\sqrt{2}z=4。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -8973,7 +8973,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$方向向量(1,2,1)与法向量(1,2,1)平行，直线垂直平面，夹角\\pi/2。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "距离与夹角",
       "papers": [
         "shu1"
       ]
@@ -8992,7 +8992,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "平行四边形法则：对角线平方和等于四边平方和。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -9011,7 +9011,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$混合积=(\\vec{a}\\times\\vec{b})\\cdot\\vec{c}=(0,0,2)\\cdot(0,0,3)=6。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -9024,7 +9024,7 @@ var QUESTION_BANK = {
       "answer": "$\\sqrt14$",
       "solution": "$\\sqrt{9+1+4}=\\sqrt{14}。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -9037,7 +9037,7 @@ var QUESTION_BANK = {
       "answer": "90",
       "solution": "$\\cos\\theta=\\frac{1\\cdot1+1\\cdot(-1)+0\\cdot0}{\\sqrt{2}\\cdot\\sqrt{2}}=0，\\theta=90°。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -9050,7 +9050,7 @@ var QUESTION_BANK = {
       "answer": "x=2+t,y=1+2t,z=t",
       "solution": "参数式：$\\begin{cases}x=x_0+at\\\\y=y_0+bt\\\\z=z_0+ct\\end{cases}$。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "直线方程与线面关系",
       "papers": [
         "shu1"
       ]
@@ -9063,7 +9063,7 @@ var QUESTION_BANK = {
       "answer": "$1/\\sqrt2$",
       "solution": "$投影=\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{b}|}=\\frac{2+0-1}{\\sqrt{2}}=\\frac{1}{\\sqrt{2}}。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -9076,7 +9076,7 @@ var QUESTION_BANK = {
       "answer": "$\\sqrt3/\\sqrt6=1/\\sqrt2\\approx0.707$",
       "solution": "$过点作法平面，求交点再算距离。简化：(1,1,1)恰在直线上？代入x=t,y=2t,z=t，t=1时(1,2,1)\\neq(1,1,1)。距离\\frac{|\\vec{P_0P}\\times\\vec{s}|}{|\\vec{s}|}。取直线上点(0,0,0)，\\vec{P_0P}=(1,1,1)，\\vec{s}=(1,2,1)，叉积(1,1,1)\\times(1,2,1)=(-1,0,1)，|\\vec{s}|=\\sqrt{6}，d=\\sqrt{2}/\\sqrt{6}=1/\\sqrt{3}。直接改成：距离1/\\sqrt{3}。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "距离与夹角",
       "papers": [
         "shu1"
       ]
@@ -9089,7 +9089,7 @@ var QUESTION_BANK = {
       "answer": "6",
       "solution": "$平行 \\rightarrow 对应分量成比例：\\frac{1}{2}=\\frac{2}{4}=\\frac{3}{k}，k=6。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "向量运算",
       "papers": [
         "shu1"
       ]
@@ -9102,7 +9102,7 @@ var QUESTION_BANK = {
       "answer": "x+y+z=1",
       "solution": "$截距式或用法向量：\\overrightarrow{AB}\\times\\overrightarrow{AC}=(-1,1,0)\\times(-1,0,1)=(1,1,1)，法向量(1,1,1)，平面x+y+z=1。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -9115,7 +9115,7 @@ var QUESTION_BANK = {
       "answer": "圆",
       "solution": "交线是平面$z=1$上的圆$x^2+y^2=4$。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "二次曲面与空间曲线",
       "papers": [
         "shu1"
       ]
@@ -9128,7 +9128,7 @@ var QUESTION_BANK = {
       "answer": "2x+2y-z=2",
       "solution": "$F=z-x^2-y^2，\\nabla F=(-2x,-2y,1)=(-2,-2,1)，2(x-1)+2(y-1)-(z-2)=0即2x+2y-z=2。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -9141,7 +9141,7 @@ var QUESTION_BANK = {
       "answer": "(2/3,2/3,2/3)",
       "solution": "$对称：P'=(0,0,0)-2\\frac{0+0+0-1}{1+1+1}(1,1,1)=(\\frac23,\\frac23,\\frac23)。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "平面方程",
       "papers": [
         "shu1"
       ]
@@ -9154,7 +9154,7 @@ var QUESTION_BANK = {
       "answer": "旋转抛物面",
       "solution": "$z=x^2+y^2$是绕$z$轴的旋转抛物面。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "二次曲面与空间曲线",
       "papers": [
         "shu1"
       ]
@@ -9173,7 +9173,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$绕x轴：y替换为\\sqrt{y^2+z^2}，得x^2+y^2+z^2=1。\\rightarrow仔细：原x^2+y^2=1绕x轴，y\\to\\sqrt{y^2+z^2}，得x^2+y^2+z^2=1。答案C即x^2+y^2+z^2=1。$",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "二次曲面与空间曲线",
       "papers": [
         "shu1"
       ]
@@ -9186,7 +9186,7 @@ var QUESTION_BANK = {
       "answer": "椭球面",
       "solution": "三元二次方程，系数全正，为椭球面。",
       "cat": "向量代数与空间解析几何",
-      "topic": "向量代数与空间解析几何",
+      "topic": "二次曲面与空间曲线",
       "papers": [
         "shu1"
       ]
@@ -18982,7 +18982,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "标准形式 x^{2}/a² + y²/b² - z²/c² = 1 是单叶双曲面。若 x^{2}/a² - y²/b² - z²/c² = 1 则为双叶双曲面。考查二次曲面的标准方程分类——空间解析几何的矩阵表示。",
       "cat": "向量代数与空间解析几何",
-      "topic": "空间解析几何·单叶双曲面",
+      "topic": "二次曲面与空间曲线",
       "papers": [
         "shu1",
         "shu2",
