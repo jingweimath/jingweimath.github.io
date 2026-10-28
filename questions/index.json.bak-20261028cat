@@ -1,0 +1,204 @@
+{
+  "subjects": {
+    "calculus": {
+      "name": "高等数学",
+      "chapters": [
+        {
+          "id": "calculus-limit",
+          "name": "极限与连续",
+          "file": "questions/calculus-limit.json",
+          "papers": [
+            "shu1",
+            "shu2",
+            "shu3"
+          ]
+        },
+        {
+          "id": "calculus-derivative",
+          "name": "一元函数微分学",
+          "file": "questions/calculus-derivative.json",
+          "papers": [
+            "shu1",
+            "shu2",
+            "shu3"
+          ]
+        },
+        {
+          "id": "calculus-integral",
+          "name": "一元函数积分学",
+          "file": "questions/calculus-integral.json",
+          "papers": [
+            "shu1",
+            "shu2",
+            "shu3"
+          ]
+        },
+        {
+          "id": "calculus-diff-eq",
+          "name": "微分方程",
+          "file": "questions/calculus-diff-eq.json",
+          "papers": [
+            "shu1",
+            "shu2",
+            "shu3"
+          ]
+        },
+        {
+          "id": "calculus-multi-diff",
+          "name": "多元函数微分学",
+          "file": "questions/calculus-multi-diff.json",
+          "papers": [
+            "shu1",
+            "shu2",
+            "shu3"
+          ]
+        },
+        {
+          "id": "calculus-double-integral",
+          "name": "二重积分",
+          "file": "questions/calculus-double-integral.json",
+          "papers": [
+            "shu1",
+            "shu2",
+            "shu3"
+          ]
+        },
+        {
+          "id": "calculus-vector-geometry",
+          "name": "向量代数与空间解析几何",
+          "file": "questions/calculus-vector-geometry.json",
+          "papers": [
+            "shu1"
+          ]
+        },
+        {
+          "id": "calculus-triple-curve",
+          "name": "三重积分与曲线曲面积分",
+          "file": "questions/calculus-triple-curve.json",
+          "papers": [
+            "shu1"
+          ]
+        },
+        {
+          "id": "calculus-series",
+          "name": "无穷级数",
+          "file": "questions/calculus-series.json",
+          "papers": [
+            "shu1",
+            "shu3"
+          ]
+        }
+      ]
+    },
+    "linalg": {
+      "name": "线性代数",
+      "chapters": [
+        {
+          "id": "linalg-matrix",
+          "name": "矩阵与行列式",
+          "file": "questions/linalg-matrix.json",
+          "papers": [
+            "shu1",
+            "shu2",
+            "shu3"
+          ]
+        },
+        {
+          "id": "linalg-vector",
+          "name": "向量与线性方程组",
+          "file": "questions/linalg-vector.json",
+          "papers": [
+            "shu1",
+            "shu2",
+            "shu3"
+          ]
+        },
+        {
+          "id": "linalg-eigen",
+          "name": "特征值与特征向量",
+          "file": "questions/linalg-eigen.json",
+          "papers": [
+            "shu1",
+            "shu2",
+            "shu3"
+          ]
+        },
+        {
+          "id": "linalg-quadratic",
+          "name": "二次型",
+          "file": "questions/linalg-quadratic.json",
+          "papers": [
+            "shu1",
+            "shu2",
+            "shu3"
+          ]
+        }
+      ]
+    },
+    "probability": {
+      "name": "概率论与数理统计",
+      "chapters": [
+        {
+          "id": "prob-event",
+          "name": "随机事件与概率",
+          "file": "questions/prob-event.json",
+          "papers": [
+            "shu1",
+            "shu3"
+          ]
+        },
+        {
+          "id": "prob-distribution",
+          "name": "随机变量与分布",
+          "file": "questions/prob-distribution.json",
+          "papers": [
+            "shu1",
+            "shu3"
+          ]
+        },
+        {
+          "id": "prob-multi-var",
+          "name": "多维随机变量",
+          "file": "questions/prob-multi-var.json",
+          "papers": [
+            "shu1",
+            "shu3"
+          ]
+        },
+        {
+          "id": "prob-law-large",
+          "name": "大数定律与中心极限定理",
+          "file": "questions/prob-law-large.json",
+          "papers": [
+            "shu1",
+            "shu3"
+          ]
+        },
+        {
+          "id": "prob-statistics",
+          "name": "数理统计",
+          "file": "questions/prob-statistics.json",
+          "papers": [
+            "shu1",
+            "shu3"
+          ]
+        }
+      ]
+    },
+    "comprehensive": {
+      "name": "综合训练",
+      "chapters": [
+        {
+          "id": "comprehensive",
+          "name": "综合题目",
+          "file": "questions/comprehensive.json",
+          "papers": [
+            "shu1",
+            "shu2",
+            "shu3"
+          ]
+        }
+      ]
+    }
+  }
+}

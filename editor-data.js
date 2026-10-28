@@ -2373,7 +2373,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$原函数与换元结合。令 u = 2x-1，du = 2dx，dx = du/2。\\int f(2x-1)dx = \\frac{1}{2}\\int f(u)du = \\frac{1}{2}F(u)+C = \\frac{1}{2}F(2x-1)+C。$",
         "cat": "一元积分学",
-        "topic": "不定积分计算·凑微分换元",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2390,7 +2390,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$分部积分：令 u = \\arctan x, dv = x dx，则 du = \\frac{1}{1+x^{2}}dx, v = \\frac{x^{2}}{2}$。$\\int x\\arctan x dx = \\frac{x^{2}}{2}\\arctan x - \\frac{1}{2}\\int \\frac{x^{2}}{1+x^{2}}dx$。$\\frac{x^{2}}{1+x^{2}} = 1 - \\frac{1}{1+x^{2}}$，积分得 $\\frac{x^{2}}{2}\\arctan x - \\frac{1}{2}(x - \\arctan x) + C = \\frac{x^{2}}{2}\\arctan x - \\frac{x}{2} + \\frac{1}{2}\\arctan x + C$。",
         "cat": "一元积分学",
-        "topic": "不定积分计算·分部积分",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2407,7 +2407,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$有理化：\\frac{1}{1+\\sin x} = \\frac{1-\\sin x}{1-\\sin^{2}x} = \\frac{1-\\sin x}{\\cos^{2}x} = \\sec^{2}x - \\sec x\\tan x$。积分得 $\\tan x - \\sec x + C$。另法可用万能代换 $t = \\tan\\frac{x}{2}$。",
         "cat": "一元积分学",
-        "topic": "不定积分计算·三角有理式变形",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2424,7 +2424,7 @@ var EDITOR_DATA = [
         "answer": 2,
         "solution": "$分部积分：u = \\ln(x+\\sqrt{1+x^{2}}), dv = dx$。$du = \\frac{1}{\\sqrt{1+x^{2}}}dx, v = x$。原式 $= x\\ln(x+\\sqrt{1+x^{2}}) - \\int \\frac{x}{\\sqrt{1+x^{2}}}dx$。后面积分 $= \\sqrt{1+x^{2}} + C$（凑微分 $d(1+x^{2})$）。",
         "cat": "一元积分学",
-        "topic": "不定积分计算·分部积分",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2441,7 +2441,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$凑微分：令 u = 1-x^{2}, du = -2x dx, x dx = -du/2$。当 $x=0, u=1$；$x=1, u=0$。$\\int_{0}^{1} x\\sqrt{1-x^{2}}dx = \\int_{1}^{0} \\sqrt{u} \\cdot (-\\frac{du}{2}) = \\frac{1}{2}\\int_{0}^{1} u^{1/2}du = \\frac{1}{2} \\cdot \\frac{2}{3}u^{3/2}\\big|_{0}^{1} = \\frac{1}{3}$。",
         "cat": "一元积分学",
-        "topic": "定积分计算·换元法",
+        "topic": "定积分计算",
         "source": "自编"
       },
       {
@@ -2458,7 +2458,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$拆项：\\sin^{3}x = \\sin x \\cdot \\sin^{2}x = \\sin x(1-\\cos^{2}x)$。$\\int \\sin^{3}x dx = \\int \\sin x dx - \\int \\sin x\\cos^{2}x dx$。第一项 $= -\\cos x$；第二项令 $u=\\cos x, du=-\\sin x dx$，得 $\\int u^{2} du = \\frac{u^{3}}{3} = \\frac{\\cos^{3}x}{3}$。结果为 $-\\cos x + \\frac{1}{3}\\cos^{3}x + C$。",
         "cat": "一元积分学",
-        "topic": "不定积分计算·三角函数积分",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2475,7 +2475,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$先降幂：\\sin^{2}x = \\frac{1-\\cos 2x}{2}$。原式 $= \\frac{1}{2}\\int x(1-\\cos 2x)dx = \\frac{1}{2}\\int x dx - \\frac{1}{2}\\int x\\cos 2x dx$。第一项 $= \\frac{x^{2}}{4}$；第二项分部积分（$u=x, dv=\\cos 2x dx$）：$\\int x\\cos 2x dx = \\frac{x}{2}\\sin 2x - \\frac{1}{2}\\int \\sin 2x dx = \\frac{x}{2}\\sin 2x + \\frac{1}{4}\\cos 2x$。整理得结果。",
         "cat": "一元积分学",
-        "topic": "不定积分计算·分部积分·降幂",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2492,7 +2492,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$两次凑微分：令 u = \\ln x, du = \\frac{1}{x}dx$。原式 $= \\int \\frac{1}{u} du = \\ln|u| + C = \\ln|\\ln x| + C$。关键在于识别 $\\frac{1}{x\\ln x}dx = \\frac{1}{\\ln x} \\cdot \\frac{1}{x}dx = \\frac{1}{u}du$。",
         "cat": "一元积分学",
-        "topic": "不定积分计算·凑微分",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2509,7 +2509,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$定积分的绝对值不等式：\\left|\\int_{a}^{b} f(x) dx\\right| \\leq \\int_{a}^{b} |f(x)| dx$。当 f(x) 在 [a,b] 上不变号时取等号。这是因为积分是「有向面积」求和，取绝对值可能出现正负相消，而先取绝对值再积分不会相消。",
         "cat": "一元积分学",
-        "topic": "定积分性质·概念辨析",
+        "topic": "定积分计算",
         "source": "自编"
       },
       {
@@ -2526,7 +2526,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$华里士(Wallis)公式：\\int_{0}^{\\pi/2}\\sin^{n}x dx = \\int_{0}^{\\pi/2}\\cos^{n}x dx = \\frac{(n-1)!!}{n!!} \\cdot \\frac{\\pi}{2}$（n 为偶数）。$n=4$ 时：$\\frac{3!!}{4!!} \\cdot \\frac{\\pi}{2} = \\frac{3\\times1}{4\\times2} \\cdot \\frac{\\pi}{2} = \\frac{3\\pi}{16}$。",
         "cat": "一元积分学",
-        "topic": "定积分计算·华里士公式",
+        "topic": "定积分计算",
         "source": "自编"
       },
       {
@@ -2543,7 +2543,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$换元：u = \\ln x, du = \\frac{1}{x}dx$。当 $x=1$ 时 $u=0$，$x=e$ 时 $u=1$。$\\int_{1}^{e} \\frac{(\\ln x)^{2}}{x}dx = \\int_{0}^{1} u^{2} du = \\frac{1}{3}u^{3}\\big|_{0}^{1} = \\frac{1}{3}$。",
         "cat": "一元积分学",
-        "topic": "定积分计算·换元法",
+        "topic": "定积分计算",
         "source": "自编"
       },
       {
@@ -2560,7 +2560,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$部分分式分解：\\frac{1}{x^{2}-a^{2}} = \\frac{1}{(x-a)(x+a)} = \\frac{1}{2a}\\left(\\frac{1}{x-a} - \\frac{1}{x+a}\\right)$。积分得 $\\frac{1}{2a}(\\ln|x-a| - \\ln|x+a|) + C = \\frac{1}{2a}\\ln\\left|\\frac{x-a}{x+a}\\right| + C$。与 $\\int\\frac{dx}{x^{2}+a^{2}} = \\frac{1}{a}\\arctan\\frac{x}{a}+C$ 对比记忆。",
         "cat": "一元积分学",
-        "topic": "不定积分计算·有理函数·部分分式",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2577,7 +2577,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$凑微分：\\frac{1}{\\sqrt{1-x^{2}}}dx = d(\\arcsin x)$。令 $u = \\arcsin x$，则 $\\int \\frac{\\arcsin x}{\\sqrt{1-x^{2}}}dx = \\int u du = \\frac{1}{2}u^{2} + C = \\frac{1}{2}(\\arcsin x)^{2} + C$。",
         "cat": "一元积分学",
-        "topic": "不定积分计算·凑微分",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2594,7 +2594,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$分部积分：u = x, dv = e^{-x}dx$，$du = dx, v = -e^{-x}$。$\\int_{0}^{1} x e^{-x} dx = \\left[-x e^{-x}\\right]_{0}^{1} + \\int_{0}^{1} e^{-x} dx = -\\frac{1}{e} + \\left[-e^{-x}\\right]_{0}^{1} = -\\frac{1}{e} - \\left(\\frac{1}{e} - 1\\right) = 1 - \\frac{2}{e}$。",
         "cat": "一元积分学",
-        "topic": "定积分计算·分部积分",
+        "topic": "定积分计算",
         "source": "自编"
       },
       {
@@ -2611,7 +2611,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$拆分：\\frac{1}{x+x^{2}} = \\frac{1}{x(1+x)} = \\frac{1}{x} - \\frac{1}{1+x}$。$\\int_{1}^{2} \\left(\\frac{1}{x} - \\frac{1}{1+x}\\right)dx = \\left[\\ln x - \\ln(1+x)\\right]_{1}^{2} = \\left[\\ln\\frac{x}{1+x}\\right]_{1}^{2} = \\ln\\frac{2}{3} - \\ln\\frac{1}{2} = \\ln\\frac{2/3}{1/2} = \\ln\\frac{4}{3}$。",
         "cat": "一元积分学",
-        "topic": "定积分计算·有理函数·部分分式",
+        "topic": "定积分计算",
         "source": "自编"
       },
       {
@@ -2628,7 +2628,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$令 u = 1+x^{2}, du = 2x dx, x^{2} = u-1$。$x^{3}dx = x^{2} \\cdot x dx = (u-1) \\cdot \\frac{du}{2}$。$\\int x^{3}\\sqrt{1+x^{2}}dx = \\frac{1}{2}\\int (u-1)\\sqrt{u} du = \\frac{1}{2}\\int (u^{3/2} - u^{1/2}) du$。$= \\frac{1}{2}\\left(\\frac{2}{5}u^{5/2} - \\frac{2}{3}u^{3/2}\\right) + C = \\frac{1}{5}(1+x^{2})^{5/2} - \\frac{1}{3}(1+x^{2})^{3/2} + C$。",
         "cat": "一元积分学",
-        "topic": "不定积分计算·换元法",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2645,7 +2645,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$令 u = \\sqrt{x}, du = \\frac{1}{2\\sqrt{x}}dx, \\frac{1}{\\sqrt{x}}dx = 2du$。$\\int \\frac{e^{\\sqrt{x}}}{\\sqrt{x}}dx = \\int e^{u} \\cdot 2 du = 2e^{u} + C = 2e^{\\sqrt{x}} + C$。",
         "cat": "一元积分学",
-        "topic": "不定积分计算·换元法",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2662,7 +2662,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "**几何意义**：$y=\\sqrt{1-x^{2}}$ 表示上半圆 $x^{2}+y^{2}=1$。$\\int_{-1}^{1}\\sqrt{1-x^{2}}dx$ 是半径为 1 的上半圆面积，等于 $\\frac{1}{2}\\pi \\cdot 1^{2} = \\frac{\\pi}{2}$。也可用三角代换 $x=\\sin t$ 计算验证。",
         "cat": "一元积分学",
-        "topic": "定积分计算·几何意义",
+        "topic": "定积分计算",
         "source": "自编"
       },
       {
@@ -2679,7 +2679,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$拆项：\\frac{2x+1}{x^{2}+2x+3} = \\frac{2x+2-1}{(x+1)^{2}+2} = \\frac{2x+2}{(x+1)^{2}+2} - \\frac{1}{(x+1)^{2}+2}$。第一项：分子恰为分母的导数，$\\int\\frac{2x+2}{(x+1)^{2}+2}dx = \\ln(x^{2}+2x+3)$（因为 $d((x+1)^{2}+2) = 2(x+1)dx = (2x+2)dx$）。第二项：$\\int\\frac{dx}{(x+1)^{2}+2} = \\frac{1}{\\sqrt{2}}\\arctan\\frac{x+1}{\\sqrt{2}}$。所以结果为 $\\ln(x^{2}+2x+3) - \\frac{1}{\\sqrt{2}}\\arctan\\frac{x+1}{\\sqrt{2}} + C$。",
         "cat": "一元积分学",
-        "topic": "不定积分计算·有理函数·配方",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2696,7 +2696,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$凑微分：\\int  x·f(x^{2}) dx = (1/2) \\int  f(x^{2}) d(x^{2})。令 u = x^{2}，则原式 = (1/2) \\int  f(u) du = F(u)/2 + C = F(x^{2})/2 + C。这里 d(x^{2}) = 2x dx，所以 x dx = d(x^{2})/2。$",
         "cat": "一元积分学",
-        "topic": "不定积分计算·凑微分换元",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2713,7 +2713,7 @@ var EDITOR_DATA = [
         "answer": 2,
         "solution": "$分部积分两次（循环型）：令 I = \\int  e^x·\\sin x dx。第一次分部积分后出现 \\int  e^x·\\cos x dx，第二次分部积分后回到原积分，解方程得 I = e^x(\\sin x - \\cos x)/2 + C。e^x 乘三角函数是经典循环积分。$",
         "cat": "一元积分学",
-        "topic": "不定积分计算·分部积分·循环",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2730,7 +2730,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$变上限积分求导：\\mathrm{d}/\\mathrm{d}x \\int_{a}^{x} f(t) dt = f(x)。直接代入上限即可：\\Phi'(x) = e^{x^{2}}。注意：此积分不能用初等函数表示，但不影响求导。$",
         "cat": "一元积分学",
-        "topic": "变限积分·变限积分求导",
+        "topic": "变限积分求导",
         "source": "自编"
       },
       {
@@ -2747,7 +2747,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$变上限积分的链式法则。上限为 x^{2}，需复合求导：Φ'(x) = \\sin(x^{2})·(x^{2})' = \\sin(x^{2})·2x = 2x·\\sin(x^{2})。一般公式：d/dx \\int_{a}^{g(x)} f(t) dt = f(g(x))·g'(x)。$",
         "cat": "一元积分学",
-        "topic": "变限积分·变上限复合求导",
+        "topic": "变限积分求导",
         "source": "自编"
       },
       {
@@ -2764,7 +2764,7 @@ var EDITOR_DATA = [
         "answer": 2,
         "solution": "$先求交点：x^{2} = x \\rightarrow x(x-1) = 0 \\rightarrow x=0, 1。在 [0,1] 上，x \\geq x^{2}（因为 0\\leqx\\leq1 时 x - x^{2} = x(1-x) \\geq 0）。面积 = \\int_{0}^{1} (x - x^{2}) dx = (x^{2}/2 - x^{3}/3)\\big|_{0}¹ = 1/2 - 1/3 = 1/6。$",
         "cat": "一元积分学",
-        "topic": "几何应用·平面图形面积",
+        "topic": "定积分几何应用",
         "source": "自编"
       },
       {
@@ -2775,7 +2775,7 @@ var EDITOR_DATA = [
         "answer": "$\\pi/8$",
         "solution": "$分部积分：令 u = arcsin x, dv = x dx，du = 1/\\sqrt{1-x^{2}} dx, v = x^{2}/2。\\int  x·arcsin x dx = (x^{2}/2)arcsin x - (1/2)\\int  x^{2}/\\sqrt{1-x^{2}} dx。第二项用三角代换 x=\\sin t，化简得面积相关的标准结果。定积分 \\int_{0}^{1} 结果为 \\pi/8。反三角函数积分需熟练三角代换。$",
         "cat": "一元积分学",
-        "topic": "定积分计算·分部积分",
+        "topic": "定积分计算",
         "source": "自编"
       },
       {
@@ -2792,7 +2792,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$配方:(x+1)²+1,=\\int d(x+1)/((x+1)²+1)=\\arctan(x+1)+C。$",
         "cat": "一元积分学",
-        "topic": "不定积分计算·有理函数·配方",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2809,7 +2809,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$经典定积分，已知结论\\int_{0}^{\\pi/2}\\ln(sinx)dx=-(\\pi/2)\\ln2。$",
         "cat": "一元积分学",
-        "topic": "定积分计算·对称性·特殊技巧",
+        "topic": "定积分计算",
         "source": "自编"
       },
       {
@@ -2826,7 +2826,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$半角:1+cosx=2\\cos²(x/2),原式=(1/2)\\int sec²(x/2)dx=\\tan(x/2)+C。$",
         "cat": "一元积分学",
-        "topic": "不定积分计算·三角恒等变形",
+        "topic": "不定积分计算",
         "source": "自编"
       },
       {
@@ -2837,7 +2837,7 @@ var EDITOR_DATA = [
         "answer": "$\\frac{\\pi}{2}$",
         "solution": "$V = \\pi \\int_{0}^{1} (\\sqrt{x})^{2} \\, dx = \\pi \\int_{0}^{1} x \\, dx = \\pi \\left[ \\frac{x^{2}}{2} \\right]_{0}^{1} = \\frac{\\pi}{2}$。",
         "cat": "一元积分学",
-        "topic": "几何应用·旋转体体积",
+        "topic": "定积分几何应用",
         "source": "自编"
       },
       {
@@ -2854,7 +2854,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$\\Gamma \\text{函数：} \\Gamma(n+1) = \\int_{0}^{\\infty} x^{n} e^{-x} \\, dx = n!$。",
         "cat": "一元积分学",
-        "topic": "反常积分·伽马函数·递推",
+        "topic": "反常积分",
         "source": "自编"
       },
       {
@@ -2865,7 +2865,7 @@ var EDITOR_DATA = [
         "answer": "$(\\pi-2)/2\\sqrt2$",
         "solution": "$令x=tant,化为\\int_{0}^{\\pi/4}t·costdt,分部积分得(\\pi/4-1/2)/\\sqrt2。$",
         "cat": "一元积分学",
-        "topic": "定积分计算·换元加分部",
+        "topic": "定积分计算",
         "source": "自编"
       },
       {
@@ -2882,7 +2882,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$\\text{极坐标面积公式：}S = \\frac{1}{2}\\int_{0}^{2\\pi} r^{2} d\\theta = \\frac{a^{2}}{2}\\int_{0}^{2\\pi}(1+\\cos\\theta)^{2}d\\theta$。$(1+\\cos\\theta)^{2}=1+2\\cos\\theta+\\cos^{2}\\theta = 1+2\\cos\\theta+\\frac{1+\\cos 2\\theta}{2} = \\frac{3}{2}+2\\cos\\theta+\\frac{\\cos 2\\theta}{2}$。$\\int_{0}^{2\\pi}(\\frac{3}{2})d\\theta=3\\pi$，$\\cos\\theta$ $\\text{和 }\\cos 2\\theta$ $\\text{积分为 }0$。$S=\\frac{a^{2}}{2}\\cdot 3\\pi = \\frac{3}{2}\\pi a^{2}$。",
         "cat": "一元积分学",
-        "topic": "几何应用·极坐标面积",
+        "topic": "定积分几何应用",
         "source": "自编"
       },
       {
@@ -2893,7 +2893,7 @@ var EDITOR_DATA = [
         "answer": "$3\\pi a^{2}$",
         "solution": "$\\text{取 }x\\text{ 为积分变量不方便（参数方程），直接用微元法：}dS = y\\,dx = y\\cdot x'(t)dt$。$S = \\int_{0}^{2\\pi a} y\\,dx = \\int_{0}^{2\\pi} a(1-\\cos t)\\cdot a(1-\\cos t)\\,dt = a^{2}\\int_{0}^{2\\pi}(1-\\cos t)^{2}dt$。$(1-\\cos t)^{2}=1-2\\cos t+\\cos^{2}t = \\frac{3}{2}-2\\cos t+\\frac{\\cos 2t}{2}$。$S = a^{2}\\cdot\\frac{3}{2}\\cdot 2\\pi = 3\\pi a^{2}$。$\\text{这是微元法在参数方程下的经典应用：}$ $dS = y(t)x'(t)dt$。",
         "cat": "一元积分学",
-        "topic": "几何应用·参数方程面积",
+        "topic": "定积分几何应用",
         "source": "自编"
       },
       {
@@ -2910,7 +2910,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$\\text{圆盘法（绕 }x\\text{ 轴）：}V = \\pi\\int_{0}^{\\pi} y^{2}\\,dx = \\pi\\int_{0}^{\\pi}\\sin^{2}x\\,dx$。$\\sin^{2}x = \\frac{1-\\cos 2x}{2}$，$V = \\frac{\\pi}{2}\\int_{0}^{\\pi}(1-\\cos 2x)\\,dx = \\frac{\\pi}{2}\\left[x - \\frac{\\sin 2x}{2}\\right]_{0}^{\\pi} = \\frac{\\pi^{2}}{2}$。$\\text{体积微元：薄圆盘 }dV = \\pi y^{2}dx$。",
         "cat": "一元积分学",
-        "topic": "几何应用·旋转体体积",
+        "topic": "定积分几何应用",
         "source": "自编"
       },
       {
@@ -2927,7 +2927,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$\\text{法一（柱壳法，绕 }y\\text{ 轴）：}V = 2\\pi\\int_{0}^{2} x \\cdot y\\,dx = 2\\pi\\int_{0}^{2} x \\cdot x^{2}\\,dx = 2\\pi\\int_{0}^{2} x^{3}\\,dx = 2\\pi\\cdot\\frac{16}{4} = 8\\pi$。$\\text{体积微元：柱壳 }dV = 2\\pi x \\cdot y\\,dx$。$\\text{法二（垫圈法）：}x=\\sqrt{y}$，$y\\in[0,4]$，$V = \\pi\\int_{0}^{4}(2^{2}-(\\sqrt{y})^{2})\\,dy = \\pi\\int_{0}^{4}(4-y)\\,dy = \\pi\\left[4y-\\frac{y^{2}}{2}\\right]_{0}^{4} = 8\\pi$。$\\text{两种方法一致，柱壳法在此题更简捷。}$",
         "cat": "一元积分学",
-        "topic": "几何应用·旋转体体积·柱壳法",
+        "topic": "定积分几何应用",
         "source": "自编"
       },
       {
@@ -2938,7 +2938,7 @@ var EDITOR_DATA = [
         "answer": "$\\frac{4\\sqrt{3}}{3}R^{3}$",
         "solution": "$\\text{取 }x\\text{ 轴沿直径，底面圆方程 }x^{2}+y^{2}=R^{2}$。$\\text{在 }x\\text{ 处垂直于 }x\\text{ 轴的截面：弦长 }2\\sqrt{R^{2}-x^{2}}$，$\\text{等边三角形面积 }A(x)=\\frac{\\sqrt{3}}{4}(2\\sqrt{R^{2}-x^{2}})^{2}=\\sqrt{3}(R^{2}-x^{2})$。$V=\\int_{-R}^{R}A(x)dx = \\sqrt{3}\\int_{-R}^{R}(R^{2}-x^{2})dx = \\sqrt{3}\\left[R^{2}x-\\frac{x^{3}}{3}\\right]_{-R}^{R} = \\sqrt{3}(R^{3}-\\frac{R^{3}}{3}+R^{3}-\\frac{R^{3}}{3}) = \\frac{4\\sqrt{3}}{3}R^{3}$。$\\text{截面法是微元法的直接应用：}dV = A(x)dx$。",
         "cat": "一元积分学",
-        "topic": "几何应用·已知截面求体积",
+        "topic": "定积分几何应用",
         "source": "自编"
       },
       {
@@ -2955,7 +2955,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$\\text{旋转轴不是坐标轴，微元法的核心是找半径。}$ $\\text{旋线上任一点到直线 }y=1\\text{ 的距离 }r = 1 - x^{2}$。$\\text{垫圈法：}V = \\pi\\int_{0}^{1} r^{2}\\,dx = \\pi\\int_{0}^{1}(1-x^{2})^{2}\\,dx = \\pi\\int_{0}^{1}(1-2x^{2}+x^{4})\\,dx$。$= \\pi\\left[x-\\frac{2x^{3}}{3}+\\frac{x^{5}}{5}\\right]_{0}^{1} = \\pi\\left(1-\\frac{2}{3}+\\frac{1}{5}\\right) = \\pi\\cdot\\frac{15-10+3}{15} = \\frac{8\\pi}{15}$。",
         "cat": "一元积分学",
-        "topic": "几何应用·旋转体体积·平移轴",
+        "topic": "定积分几何应用",
         "source": "自编"
       },
       {
@@ -2972,7 +2972,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$y' = x^{1/2} = \\sqrt{x}$。$\\text{弧微元：}ds = \\sqrt{1+(y')^{2}}\\,dx = \\sqrt{1+x}\\,dx$。$L = \\int_{0}^{1}\\sqrt{1+x}\\,dx = \\left[\\frac{2}{3}(1+x)^{3/2}\\right]_{0}^{1} = \\frac{2}{3}(2\\sqrt{2}-1)$。$\\text{弧长公式也是微元法思想的体现：微小弧段 }ds\\text{ 可视为直线段。}$",
         "cat": "一元积分学",
-        "topic": "几何应用·弧长",
+        "topic": "定积分几何应用",
         "source": "自编"
       },
       {
@@ -2983,7 +2983,7 @@ var EDITOR_DATA = [
         "answer": "$\\frac{\\pi}{6}(5\\sqrt{5} - 1)$",
         "solution": "$y'=\\frac{1}{2\\sqrt{x}}$，$\\text{弧微元 }ds=\\sqrt{1+(y')^{2}}dx = \\sqrt{1+\\frac{1}{4x}}dx = \\sqrt{\\frac{4x+1}{4x}}dx$。$\\text{侧面积微元：}dS = 2\\pi y\\,ds = 2\\pi\\sqrt{x}\\cdot\\sqrt{\\frac{4x+1}{4x}}dx = \\pi\\sqrt{4x+1}\\,dx$。$S = \\pi\\int_{0}^{1}\\sqrt{4x+1}\\,dx$，$\\text{令 }u=4x+1$，$S = \\frac{\\pi}{4}\\int_{1}^{5}\\sqrt{u}\\,du = \\frac{\\pi}{4}\\cdot\\frac{2}{3}u^{3/2}\\big|_{1}^{5} = \\frac{\\pi}{6}(5\\sqrt{5}-1)$。",
         "cat": "一元积分学",
-        "topic": "几何应用·旋转体侧面积",
+        "topic": "定积分几何应用",
         "source": "自编"
       },
       {
@@ -3000,7 +3000,7 @@ var EDITOR_DATA = [
         "answer": 2,
         "solution": "$F=kx$，$F(0.02)=k\\cdot 0.02=1\\Rightarrow k=50$ N/m。$\\text{功的微元：}dW = F\\,dx = kx\\,dx$。$W = \\int_{0}^{0.06} 50x\\,dx = 50\\cdot\\frac{0.06^{2}}{2} = 50\\cdot 0.0018 = 0.09$ J。$\\text{注意单位统一：}2\\text{ cm}=0.02\\text{ m}$，$6\\text{ cm}=0.06\\text{ m}$。",
         "cat": "一元积分学",
-        "topic": "物理应用·变力做功",
+        "topic": "定积分物理应用",
         "source": "自编"
       },
       {
@@ -3017,7 +3017,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$\\text{微元法：在距顶部 }y\\text{ 处取厚 }dy\\text{ 的薄层}$。$\\text{体积微元 }dV = \\pi R^{2}dy$，$\\text{质量 }dm = \\rho\\pi R^{2}dy$。$\\text{该层需提升 }y\\text{ 米}$，$\\text{功微元 }dW = dm\\cdot g\\cdot y = \\rho g\\pi R^{2}y\\,dy$。$W = \\int_{0}^{H}\\rho g\\pi R^{2}y\\,dy = \\rho g\\pi R^{2}\\cdot\\frac{H^{2}}{2}$。$\\text{关键是正确建立功微元：}dW = (\\text{重力})\\times(\\text{提升高度})$。",
         "cat": "一元积分学",
-        "topic": "物理应用·抽水做功",
+        "topic": "定积分物理应用",
         "source": "自编"
       },
       {
@@ -3034,7 +3034,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$\\text{微元法：取杆上距近端 }x\\text{ 处的微元 }dx$。$\\text{线密度 }\\lambda = M/L$，$\\text{微元质量 }dm = \\lambda dx = \\frac{M}{L}dx$。$\\text{距质点 }a+x$，$\\text{引力微元 }dF = G\\frac{m\\cdot dm}{(a+x)^{2}} = \\frac{GMm}{L}\\cdot\\frac{dx}{(a+x)^{2}}$。$F = \\frac{GMm}{L}\\int_{0}^{L}\\frac{dx}{(a+x)^{2}} = \\frac{GMm}{L}\\left[-\\frac{1}{a+x}\\right]_{0}^{L} = \\frac{GMm}{L}\\left(\\frac{1}{a}-\\frac{1}{a+L}\\right) = \\frac{GMm}{a(a+L)}$。",
         "cat": "一元积分学",
-        "topic": "物理应用·万有引力",
+        "topic": "定积分物理应用",
         "source": "自编"
       },
       {
@@ -3045,7 +3045,7 @@ var EDITOR_DATA = [
         "answer": "$\\frac{1}{3}\\rho g a h^{2}$",
         "solution": "$\\text{微元法：在深度 }y\\text{ 处取水平窄条，宽 }dy$。$\\text{由相似三角形：深度 }y\\text{ 处条宽 }w(y)=a\\cdot\\frac{y}{h}$。$\\text{压强 }p(y)=\\rho gy$，$\\text{压力微元 }dF = p\\cdot w\\cdot dy = \\rho gy\\cdot a\\frac{y}{h}\\,dy = \\frac{\\rho ga}{h}y^{2}dy$。$F = \\frac{\\rho ga}{h}\\int_{0}^{h}y^{2}dy = \\frac{\\rho ga}{h}\\cdot\\frac{h^{3}}{3} = \\frac{1}{3}\\rho ga h^{2}$。$\\text{另法：形心法 — 形心在 }\\frac{2h}{3}\\text{ 深处，面积 }\\frac{ah}{2}$，$F = \\rho g\\cdot\\frac{2h}{3}\\cdot\\frac{ah}{2} = \\frac{1}{3}\\rho ga h^{2}$。",
         "cat": "一元积分学",
-        "topic": "物理应用·静水压力",
+        "topic": "定积分物理应用",
         "source": "自编"
       },
       {
@@ -3062,7 +3062,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$\\sin x$ $\\text{在 }[0,\\pi]\\text{ 上 }\\geq 0$，$\\text{在 }[\\pi,2\\pi]\\text{ 上 }\\leq 0$。$\\text{面积微元必须是正值，故 }dS = |\\sin x|dx$。$S = \\int_{0}^{2\\pi}|\\sin x|dx = \\int_{0}^{\\pi}\\sin x\\,dx + \\int_{\\pi}^{2\\pi}(-\\sin x)\\,dx = 2+2=4$。$\\text{若直接用 }\\int_{0}^{2\\pi}\\sin x\\,dx=0$，$\\text{得到的是「有向面积」而非几何面积。}$",
         "cat": "一元积分学",
-        "topic": "定积分性质·微元法",
+        "topic": "定积分几何应用",
         "source": "自编"
       },
       {
@@ -3073,7 +3073,7 @@ var EDITOR_DATA = [
         "answer": "$\\sqrt{2} - 1$",
         "solution": "$F=kx$（$x$ $\\text{为进入深度}$）。$\\text{功微元 }dW = kx\\,dx$。$\\text{第一次击打做功：}W_{1} = \\int_{0}^{1} kx\\,dx = \\frac{k}{2}$。$\\text{设第一次击打后总深度为 }1$，$\\text{第二次后总深度为 }d$，$\\text{则总功 }W_{1}+W_{2}=k$。$\\int_{0}^{d}kx\\,dx = \\frac{kd^{2}}{2} = k \\Rightarrow d^{2}=2 \\Rightarrow d=\\sqrt{2}$。$\\text{第二次击入深度 }d-1 = \\sqrt{2}-1\\text{ cm}$。$\\text{功微元是微元法的物理应用典范：}$ $dW = F(x)dx$。",
         "cat": "一元积分学",
-        "topic": "物理应用·变力做功·递推",
+        "topic": "定积分物理应用",
         "source": "自编"
       },
       {
@@ -3083,7 +3083,7 @@ var EDITOR_DATA = [
         "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}\\sin 2t\\,dt}{x^{2}}$。",
         "solution": "$\\dfrac{0}{0}$ 型，洛必达：$$\\lim_{x\\to 0}\\frac{\\int_{0}^{x}\\sin 2t\\,dt}{x^{2}}=\\lim_{x\\to 0}\\frac{\\sin 2x}{2x}=1,$$最后一步用等价无穷小 $\\sin 2x\\sim 2x\\ (x\\to0)$。**易错点**：被积函数是 $\\sin 2t$ 不是 $\\sin t$，洛必达后得到的是 $\\dfrac{\\sin 2x}{2x}$ 而不是 $\\dfrac{\\sin 2x}{x}$；漏掉系数 2 会得出 $\\dfrac{1}{2}$ 的错误结果。",
         "cat": "一元积分学",
-        "topic": "变限积分求极限·洛必达法则",
+        "topic": "变限积分求极限",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$1$"
       },
@@ -3094,7 +3094,7 @@ var EDITOR_DATA = [
         "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}\\sin(t-x)\\,dt}{x^{2}}$。",
         "solution": "这是 $\\dfrac{0}{0}$ 型。注意这里的 $x$ 既是积分上限、又出现在被积函数内部（$\\sin(t-x)$ 是「卷积型」），**先做变量代换把 $x$ 从被积函数里挪到积分限上**，再用洛必达。令 $u=x-t$，则 $t=0$ 时 $u=x$、$t=x$ 时 $u=0$，且 $dt=-du$、$\\sin(t-x)=-\\sin u$，$$\\int_{0}^{x}\\sin(t-x)\\,dt=\\int_{x}^{0}(-\\sin u)(-du)=\\int_{x}^{0}\\sin u\\,du=-\\int_{0}^{x}\\sin u\\,du.$$于是$$\\lim_{x\\to 0}\\frac{\\int_{0}^{x}\\sin(t-x)\\,dt}{x^{2}}=\\lim_{x\\to 0}\\frac{-\\int_{0}^{x}\\sin u\\,du}{x^{2}}=\\lim_{x\\to 0}\\frac{-\\sin x}{2x}=-\\frac{1}{2}.$$**方法点睛（本题考点）**：被积函数是 $\\sin(t-x)$、$\\arctan(tx)$ 这类「参数 $x$ 嵌在被积函数内部」的形式时，必须**先变量代换**、把 $x$ 移到积分限上，再用 $\\bigl(\\int_{a}^{\\varphi(x)}f(t)\\,dt\\bigr)^{\\prime}=f[\\varphi(x)]\\varphi^{\\prime}(x)$ 求导。若跳过代换直接对 $x$ 求导，就要用积分号下求导（莱布尼茨公式），既容易漏项，也不在考纲要求的常规路径上。",
         "cat": "一元积分学",
-        "topic": "变限积分求极限·卷积型变量代换后洛必达",
+        "topic": "变限积分求极限",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$-\\dfrac{1}{2}$"
       },
@@ -3105,7 +3105,7 @@ var EDITOR_DATA = [
         "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}\\sin t^{2}\\,dt}{x^{3}}$。",
         "solution": "被积函数 $\\sin t^2$ 没有初等原函数，**不能先积分**，直接洛必达：$$\\lim_{x\\to 0}\\frac{\\int_{0}^{x}\\sin t^{2}\\,dt}{x^{3}}=\\lim_{x\\to 0}\\frac{\\sin x^{2}}{3x^{2}}=\\frac{1}{3}.$$**方法点睛**：这类题的通用套路是「洛必达一次 → 等价无穷小收尾」，$\\dfrac{d}{dx}\\int_a^x f(t)\\,dt=f(x)$ 这一步把积分号直接消掉。",
         "cat": "一元积分学",
-        "topic": "变限积分求极限·洛必达法则",
+        "topic": "变限积分求极限",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$\\dfrac{1}{3}$"
       },
@@ -3116,7 +3116,7 @@ var EDITOR_DATA = [
         "question": "$\\lim_{x\\to 0}\\dfrac{\\int_{0}^{1}\\arctan(tx)\\,dt}{x}$ 的值为（　　）",
         "solution": "选 **B**。这是 $\\dfrac{0}{0}$ 型，但 $x$ 嵌在被积函数 $\\arctan(tx)$ 内部，**先做变量代换把 $x$ 移出被积函数、落到积分限上**，再用洛必达。令 $u=tx$，则 $dt=\\dfrac{du}{x}$；$t=0$ 时 $u=0$，$t=1$ 时 $u=x$，$$\\int_{0}^{1}\\arctan(tx)\\,dt=\\frac{1}{x}\\int_{0}^{x}\\arctan u\\,du.$$于是$$\\lim_{x\\to 0}\\frac{\\int_{0}^{1}\\arctan(tx)\\,dt}{x}=\\lim_{x\\to 0}\\frac{\\int_{0}^{x}\\arctan u\\,du}{x^{2}}=\\lim_{x\\to 0}\\frac{\\arctan x}{2x}=\\frac{1}{2},$$最后一步用等价无穷小 $\\arctan x\\sim x$。**方法点睛（本题考点）**：$x$ 是被积函数里的参数时，积分限（这里是从 0 到 1）与 $x$ 无关，直接洛必达就要算 $\\dfrac{d}{dx}\\int_{0}^{1}\\arctan(tx)\\,dt=\\int_{0}^{1}\\dfrac{t}{1+t^{2}x^{2}}\\,dt=\\dfrac{\\ln(1+x^{2})}{2x^{2}}$，中间又冒出一个 $\\dfrac{0}{0}$，还得再算一次；先代换则一步到位、只做一次洛必达。",
         "cat": "一元积分学",
-        "topic": "变限积分求极限·卷积型变量代换后洛必达",
+        "topic": "变限积分求极限",
         "source": "经纬自编·变限积分与反常积分专项",
         "options": [
           "$0$",
@@ -3133,7 +3133,7 @@ var EDITOR_DATA = [
         "question": "求 $\\lim_{x\\to 0}\\dfrac{x-\\sin x}{\\int_{0}^{x}t\\sin t\\,dt}$。",
         "solution": "**变限积分在分母**上。分子分母都趋于 0，可用等价无穷小直接比阶：$$x-\\sin x\\sim\\frac{x^{3}}{6},\\qquad\\int_{0}^{x}t\\sin t\\,dt\\sim\\int_{0}^{x}t\\cdot t\\,dt=\\frac{x^{3}}{3}.$$故 $$\\lim_{x\\to0}\\frac{x-\\sin x}{\\int_0^x t\\sin t\\,dt}=\\frac{1/6}{1/3}=\\frac{1}{2}.$$**方法点睛**：分母是变限积分时，先用等价无穷小把被积函数替换为幂函数，积分就变成了普通幂函数积分，比连做三次洛必达干净得多。（若用洛必达：$\\dfrac{1-\\cos x}{x\\sin x}\\to\\dfrac{\\sin x}{\\sin x+x\\cos x}\\to\\dfrac{\\cos x}{2\\cos x-x\\sin x}\\to\\dfrac12$，需三次。）",
         "cat": "一元积分学",
-        "topic": "变限积分作分母·等价无穷小",
+        "topic": "变限积分求极限",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$\\dfrac{1}{2}$"
       },
@@ -3144,7 +3144,7 @@ var EDITOR_DATA = [
         "question": "求 $\\lim_{x\\to 0}\\dfrac{\\tan x-x}{\\int_{0}^{x}t^{2}\\cos t\\,dt}$。",
         "solution": "**变限积分在分母**。用等价无穷小定阶：$$\\tan x-x\\sim\\frac{x^{3}}{3},\\qquad\\int_{0}^{x}t^{2}\\cos t\\,dt\\sim\\int_{0}^{x}t^{2}\\,dt=\\frac{x^{3}}{3}.$$故极限 $=\\dfrac{1/3}{1/3}=1$。**易错点**：$\\tan x-x$ 的主部是 $\\dfrac{x^3}{3}$ 而不是 $\\dfrac{x^3}{6}$（后者是 $x-\\sin x$ 的），记混了答案会差一倍。",
         "cat": "一元积分学",
-        "topic": "变限积分作分母·等价无穷小",
+        "topic": "变限积分求极限",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$1$"
       },
@@ -3155,7 +3155,7 @@ var EDITOR_DATA = [
         "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}(e^{t^{2}}-1)\\,dt}{x^{3}}$。",
         "solution": "被积函数 $e^{t^2}-1$ 无初等原函数，用洛必达：$$\\lim_{x\\to 0}\\frac{\\int_{0}^{x}(e^{t^{2}}-1)\\,dt}{x^{3}}=\\lim_{x\\to 0}\\frac{e^{x^{2}}-1}{3x^{2}}=\\frac{1}{3},$$最后一步用 $e^{u}-1\\sim u$（这里 $u=x^2\\to0$）。",
         "cat": "一元积分学",
-        "topic": "变限积分求极限·洛必达法则",
+        "topic": "变限积分求极限",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$\\dfrac{1}{3}$"
       },
@@ -3166,7 +3166,7 @@ var EDITOR_DATA = [
         "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}\\cos t^{2}\\,dt-x}{x^{5}}$。",
         "solution": "**要用泰勒展开**，因为本题洛必达一次后是 $\\dfrac{\\cos x^2-1}{5x^4}$，再做下去会越来越繁。直接对被积函数展开：$$\\cos t^{2}=1-\\frac{(t^{2})^{2}}{2!}+o(t^{4})=1-\\frac{t^{4}}{2}+o(t^{4}),$$逐项积分：$$\\int_{0}^{x}\\cos t^{2}\\,dt=\\int_{0}^{x}\\left(1-\\frac{t^{4}}{2}+o(t^{4})\\right)dt=x-\\frac{x^{5}}{10}+o(x^{5}).$$代入：$$\\lim_{x\\to0}\\frac{\\left(x-\\dfrac{x^{5}}{10}+o(x^{5})\\right)-x}{x^{5}}=-\\frac{1}{10}.$$**易错点**：分子两个主项恰好相消（都是 $x$），必须保留到 $x^5$ 项；只展开到 $\\cos t^2=1+o(1)$ 会得出「极限为 0」的错误结论。",
         "cat": "一元积分学",
-        "topic": "变限积分求极限·泰勒展开",
+        "topic": "变限积分求极限",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$-\\dfrac{1}{10}$"
       },
@@ -3177,7 +3177,7 @@ var EDITOR_DATA = [
         "question": "求 $\\lim_{x\\to 0}\\dfrac{\\int_{0}^{x}\\dfrac{\\sin t}{t}\\,dt-x}{x^{3}}$。",
         "solution": "被积函数 $\\dfrac{\\sin t}{t}$ 无初等原函数（它的原函数是正弦积分 $\\mathrm{Si}$），只能展开逐项积分：$$\\frac{\\sin t}{t}=\\frac{t-\\dfrac{t^{3}}{6}+o(t^{3})}{t}=1-\\frac{t^{2}}{6}+o(t^{2}),$$$$\\int_{0}^{x}\\frac{\\sin t}{t}\\,dt=x-\\frac{x^{3}}{18}+o(x^{3}).$$故 $$\\lim_{x\\to0}\\frac{\\left(x-\\dfrac{x^{3}}{18}+o(x^{3})\\right)-x}{x^{3}}=-\\frac{1}{18}.$$**方法点睛**：$\\dfrac{\\sin t}{t}$ 在 $t=0$ 处是可去奇点，补充定义值为 1，积分本身没有瑕点。",
         "cat": "一元积分学",
-        "topic": "变限积分求极限·泰勒展开",
+        "topic": "变限积分求极限",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$-\\dfrac{1}{18}$"
       },
@@ -3188,7 +3188,7 @@ var EDITOR_DATA = [
         "question": "求 $\\lim_{x\\to +\\infty}\\dfrac{x\\int_{0}^{x}e^{t^{2}}\\,dt}{e^{x^{2}}}$。",
         "solution": "这是 $\\dfrac{\\infty}{\\infty}$ 型。对分子用乘积求导法则：$$\\bigl(x\\int_{0}^{x}e^{t^{2}}\\,dt\\bigr)^{\\prime}=\\int_{0}^{x}e^{t^{2}}\\,dt+xe^{x^{2}},\\qquad (e^{x^{2}})^{\\prime}=2xe^{x^{2}}.$$洛必达后拆成两项：$$\\frac{\\int_{0}^{x}e^{t^{2}}dt+xe^{x^{2}}}{2xe^{x^{2}}}=\\underbrace{\\frac{xe^{x^{2}}}{2xe^{x^{2}}}}_{=\\frac12}+\\frac{\\int_{0}^{x}e^{t^{2}}dt}{2xe^{x^{2}}}.$$对余项再用一次洛必达：$$\\lim_{x\\to+\\infty}\\frac{e^{x^{2}}}{2e^{x^{2}}+4x^{2}e^{x^{2}}}=\\lim_{x\\to+\\infty}\\frac{1}{2+4x^{2}}=0.$$故原极限 $=\\dfrac12+0=\\dfrac12$。**结论记忆**：$\\int_0^x e^{t^2}dt\\sim\\dfrac{e^{x^2}}{2x}\\ (x\\to+\\infty)$，即 $x\\int_0^xe^{t^2}dt\\sim\\dfrac{e^{x^2}}{2}$。**易错点**：洛必达后如果不拆项、直接对整式再洛必达，会陷入死循环。",
         "cat": "一元积分学",
-        "topic": "积分上限函数·渐近分析与洛必达",
+        "topic": "变限积分求极限",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$\\dfrac{1}{2}$"
       },
@@ -3199,7 +3199,7 @@ var EDITOR_DATA = [
         "question": "计算 $\\int_{0}^{+\\infty}xe^{-x}\\,dx$。",
         "solution": "分部积分：$$\\int_{0}^{A}xe^{-x}dx=\\bigl[-xe^{-x}\\bigr]_{0}^{A}+\\int_{0}^{A}e^{-x}dx=-Ae^{-A}+\\left(1-e^{-A}\\right).$$令 $A\\to+\\infty$，$Ae^{-A}\\to0$（指数衰减快于幂增长），$e^{-A}\\to0$，故值为 $1$。**推广**：$\\int_0^{+\\infty}x^ne^{-x}dx=n!$（$n$ 为正整数），本题 $n=1$。",
         "cat": "一元积分学",
-        "topic": "反常积分·分部积分",
+        "topic": "反常积分",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$1$"
       },
@@ -3210,7 +3210,7 @@ var EDITOR_DATA = [
         "question": "计算 $\\int_{1}^{+\\infty}\\dfrac{1}{x(x+1)}\\,dx$。",
         "solution": "先部分分式：$\\dfrac{1}{x(x+1)}=\\dfrac{1}{x}-\\dfrac{1}{x+1}$。$$\\int_{1}^{A}\\left(\\frac{1}{x}-\\frac{1}{x+1}\\right)dx=\\left[\\ln\\frac{x}{x+1}\\right]_{1}^{A}=\\ln\\frac{A}{A+1}-\\ln\\frac{1}{2}.$$令 $A\\to+\\infty$，$\\dfrac{A}{A+1}\\to1$，$\\ln\\dfrac{A}{A+1}\\to0$，故值为 $\\ln 2$。**易错点**：不要分别算 $\\int_1^\\infty\\dfrac1x dx$ 与 $\\int_1^\\infty\\dfrac1{x+1}dx$——两个都发散，$\\infty-\\infty$ 没有意义；必须先合成一个对数再取极限。",
         "cat": "一元积分学",
-        "topic": "反常积分·部分分式",
+        "topic": "反常积分",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$\\ln 2$"
       },
@@ -3221,7 +3221,7 @@ var EDITOR_DATA = [
         "question": "计算 $\\int_{0}^{1}\\dfrac{1}{\\sqrt{x}}\\,dx$。",
         "solution": "$x=0$ 是**瑕点**（被积函数无界），按瑕积分定义：$$\\int_{0}^{1}\\frac{1}{\\sqrt{x}}dx=\\lim_{\\varepsilon\\to0^{+}}\\int_{\\varepsilon}^{1}x^{-1/2}dx=\\lim_{\\varepsilon\\to0^{+}}\\bigl[2\\sqrt{x}\\bigr]_{\\varepsilon}^{1}=\\lim_{\\varepsilon\\to0^{+}}\\left(2-2\\sqrt{\\varepsilon}\\right)=2.$$**结论**：$\\int_0^1\\dfrac{dx}{x^q}$ 当 $q<1$ 时收敛于 $\\dfrac{1}{1-q}$，当 $q\\ge1$ 时发散。本题 $q=\\dfrac12$，值为 $2$。**提醒**：瑕积分与无穷限积分的判别条件形式相反，别记串。",
         "cat": "一元积分学",
-        "topic": "反常积分·瑕积分",
+        "topic": "反常积分",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$2$"
       },
@@ -3232,7 +3232,7 @@ var EDITOR_DATA = [
         "question": "计算 $\\int_{0}^{+\\infty}e^{-x}\\sin x\\,dx$。",
         "solution": "连续两次分部积分后自解。对 $A>0$：$$\\int_{0}^{A}e^{-x}\\sin x\\,dx=\\bigl[-e^{-x}\\sin x\\bigr]_{0}^{A}+\\int_{0}^{A}e^{-x}\\cos x\\,dx,$$$$\\int_{0}^{A}e^{-x}\\cos x\\,dx=\\bigl[-e^{-x}\\cos x\\bigr]_{0}^{A}-\\int_{0}^{A}e^{-x}\\sin x\\,dx.$$令 $A\\to+\\infty$，带因子 $e^{-A}$ 的项均趋于 $0$，记 $I=\\int_{0}^{+\\infty}e^{-x}\\sin x\\,dx$，则第二式给出 $I=1-I$，故 $2I=1$，$I=\\dfrac{1}{2}$。**公式记忆**：$\\int_0^{+\\infty}e^{-ax}\\sin bx\\,dx=\\dfrac{b}{a^{2}+b^{2}}$（$a>0$）。本题 $a=b=1$，得 $\\dfrac{1}{2}$。",
         "cat": "一元积分学",
-        "topic": "反常积分·分部积分",
+        "topic": "反常积分",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$\\dfrac{1}{2}$"
       },
@@ -3243,7 +3243,7 @@ var EDITOR_DATA = [
         "question": "计算 $\\int_{0}^{+\\infty}\\dfrac{1}{(1+x^{2})^{2}}\\,dx$。",
         "solution": "令 $x=\\tan\\theta$，则 $dx=\\sec^{2}\\theta\\,d\\theta$、$(1+x^{2})^{2}=\\sec^{4}\\theta$，积分限 $x:0\\to+\\infty$ 对应 $\\theta:0\\to\\dfrac{\\pi}{2}$：$$\\int_{0}^{+\\infty}\\frac{dx}{(1+x^{2})^{2}}=\\int_{0}^{\\pi/2}\\frac{\\sec^{2}\\theta}{\\sec^{4}\\theta}\\,d\\theta=\\int_{0}^{\\pi/2}\\cos^{2}\\theta\\,d\\theta$$$$=\\int_{0}^{\\pi/2}\\frac{1+\\cos 2\\theta}{2}\\,d\\theta=\\left[\\frac{\\theta}{2}+\\frac{\\sin 2\\theta}{4}\\right]_{0}^{\\pi/2}=\\frac{\\pi}{4}.$$**方法点睛**：三角代换把无穷区间变成了有限区间 $\\left[0,\\dfrac{\\pi}{2}\\right]$，这是处理 $\\dfrac{1}{(a^2+x^2)^n}$ 型反常积分的标准手法。",
         "cat": "一元积分学",
-        "topic": "反常积分·三角代换",
+        "topic": "反常积分",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$\\dfrac{\\pi}{4}$"
       },
@@ -3254,7 +3254,7 @@ var EDITOR_DATA = [
         "question": "已知 $\\int_{0}^{+\\infty}\\dfrac{\\sin x}{x}\\,dx=\\dfrac{\\pi}{2}$，求 $\\int_{0}^{+\\infty}\\dfrac{\\sin^{2}x}{x^{2}}\\,dx$。",
         "solution": "分部积分，取 $u=\\sin^{2}x$、$dv=\\dfrac{1}{x^{2}}dx$（则 $v=-\\dfrac{1}{x}$）：$$\\int_{\\varepsilon}^{A}\\frac{\\sin^{2}x}{x^{2}}dx=\\left[-\\frac{\\sin^{2}x}{x}\\right]_{\\varepsilon}^{A}+\\int_{\\varepsilon}^{A}\\frac{2\\sin x\\cos x}{x}\\,dx.$$取极限：端点项在 $A\\to+\\infty$ 时趋于 $0$（有界量除以 $A$），在 $\\varepsilon\\to0^{+}$ 时 $\\dfrac{\\sin^2\\varepsilon}{\\varepsilon}\\to0$（因 $\\sin^2 x\\sim x^2$），故端点项消失。于是 $$I=\\int_{0}^{+\\infty}\\frac{\\sin 2x}{x}\\,dx.$$令 $t=2x$：$$I=\\int_{0}^{+\\infty}\\frac{\\sin t}{t/2}\\cdot\\frac{dt}{2}=\\int_{0}^{+\\infty}\\frac{\\sin t}{t}\\,dt=\\frac{\\pi}{2}.$$**要点**：$x=0$ 不是瑕点，因为 $\\dfrac{\\sin^2x}{x^2}\\to1$；无穷远处收敛靠 $\\dfrac{1}{x^2}$ 的衰减，被积函数非负故绝对收敛。",
         "cat": "一元积分学",
-        "topic": "反常积分·分部积分与 Dirichlet 积分",
+        "topic": "反常积分",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$\\dfrac{\\pi}{2}$"
       },
@@ -3265,7 +3265,7 @@ var EDITOR_DATA = [
         "question": "证明反常积分 $\\int_{1}^{+\\infty}\\dfrac{\\ln x}{x^{2}}\\,dx$ 收敛，并求其值。",
         "solution": "**证明（分部积分法）**：对 $A>1$，$$\\int_{1}^{A}\\frac{\\ln x}{x^{2}}dx=\\int_{1}^{A}\\ln x\\,d\\left(-\\frac{1}{x}\\right)$$$$=\\left[-\\frac{\\ln x}{x}\\right]_{1}^{A}+\\int_{1}^{A}\\frac{1}{x}\\cdot\\frac{1}{x}\\,dx=-\\frac{\\ln A}{A}+0+\\int_{1}^{A}\\frac{1}{x^{2}}\\,dx$$$$=-\\frac{\\ln A}{A}+\\left(1-\\frac{1}{A}\\right).$$当 $A\\to+\\infty$ 时，$\\dfrac{\\ln A}{A}\\to0$（对数增长慢于幂增长）、$\\dfrac{1}{A}\\to0$，故极限存在且有限，积分**收敛**，值为 $1$。**另证（比较判别法）**：当 $x$ 充分大时 $\\ln x\\le\\sqrt{x}$，于是$$\\frac{\\ln x}{x^{2}}\\le\\frac{\\sqrt{x}}{x^{2}}=\\frac{1}{x^{3/2}},$$而 $\\int_1^{+\\infty}\\dfrac{dx}{x^{3/2}}$ 收敛（$p=\\dfrac32>1$），由比较判别法知原积分收敛。（此证法只判收敛，要求值仍用上面的分部积分。）**结论**：$\\int_1^{+\\infty}\\dfrac{\\ln x}{x^2}dx=1$。",
         "cat": "一元积分学",
-        "topic": "反常积分·收敛性判定与分部积分",
+        "topic": "反常积分",
         "source": "经纬自编·变限积分与反常积分专项",
         "answer": "$1$"
       }
@@ -12562,7 +12562,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$变限积分求导（链式法则）：F'(x) = e^((x^{2})²) · 2x = 2x·e^(x⁴)。F'(1) = 2·e。考查复合函数型变限积分求导，上限是 x^{2} 需用链式法则。$",
         "cat": "一元积分学",
-        "topic": "复合上限·链式法则"
+        "topic": "变限积分求导"
       },
       {
         "id": "comp-015",
@@ -12578,7 +12578,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "两边对 x 求导：f(x) = (x·eˣ)' = eˣ + x·eˣ = eˣ(1+x)。f(1) = e(1+1) = 2e。考查：变限积分求导 + 乘积求导法则。",
         "cat": "一元积分学",
-        "topic": "积分方程·反求被积函数"
+        "topic": "积分方程"
       },
       {
         "id": "comp-016",
@@ -12594,7 +12594,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "变上限积分求导即得被积函数：f(x) = d/dx [x^{3}/3 - x^{2}/2 + C] = x^{2} - x。注意常数 C 求导后消失。考查导数是积分的逆运算。",
         "cat": "一元积分学",
-        "topic": "积分方程·反求被积函数"
+        "topic": "积分方程"
       },
       {
         "id": "comp-017",
@@ -12610,7 +12610,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$切线斜率 = y'(1)。y'(x) = \\sqrt{1+x^{2}}，y'(1) = \\sqrt2。考查变限积分求导+导数的几何意义。$",
         "cat": "一元积分学",
-        "topic": "变限积分求导·切线斜率"
+        "topic": "变限积分求导"
       },
       {
         "id": "comp-018",
@@ -12626,7 +12626,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$写成 \\int ₀ˣ (x-t)f(t) dt = x\\int ₀ˣ f(t) dt - \\int ₀ˣ t f(t) dt。求导得 \\int ₀ˣ f(t) dt + xf(x) - xf(x) = \\int ₀ˣ f(t) dt。考查含参积分的求导技巧——先分离 x 与 t。$",
         "cat": "一元积分学",
-        "topic": "卷积型·先化为累次积分再求导"
+        "topic": "变限积分求导"
       },
       {
         "id": "comp-019",
@@ -12636,7 +12636,7 @@ var EDITOR_DATA = [
         "answer": "cos x - x sin x",
         "solution": "求导：f(x) = (x·\\cos x)' = \\cos x - x·\\sin x。考查变上限积分求导与乘积法则。",
         "cat": "一元积分学",
-        "topic": "积分方程·反求被积函数"
+        "topic": "积分方程"
       },
       {
         "id": "comp-020",
@@ -12668,7 +12668,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$分部积分：\\int ₀¹ x eˣ dx = [x eˣ]\\big|_{0}¹ - \\int ₀¹ eˣ dx = e - [eˣ]\\big|_{0}¹ = e - (e - 1) = 1。考查定积分的分部积分法，是积分学核心技巧。$",
         "cat": "一元积分学",
-        "topic": "分部积分"
+        "topic": "定积分计算"
       },
       {
         "id": "comp-022",
@@ -12678,7 +12678,7 @@ var EDITOR_DATA = [
         "answer": "$\\pi/2 - 1$",
         "solution": "$分部积分：u=x，dv=\\cos x dx。\\int x \\cos x dx = x \\sin x - \\int \\sin x dx = x \\sin x + \\cos x。从 0 到 \\pi/2：(\\pi/2·1+0) - (0+1) = \\pi/2 - 1。考查分部积分+定积分计算。$",
         "cat": "一元积分学",
-        "topic": "分部积分"
+        "topic": "定积分计算"
       },
       {
         "id": "comp-023",
@@ -12688,7 +12688,7 @@ var EDITOR_DATA = [
         "answer": "$(e^(-1)+1)/4$",
         "solution": "$交换积分次序：\\int ₀¹ x f(x) dx = \\int ₀¹ x·\\int ₀ˣ e^(-t²) dt dx = \\int ₀¹ e^(-t²) \\int ₜ¹ x dx dt = \\int ₀¹ e^(-t²)·(1-t²)/2 dt。令 u=t²，du=2t dt 不直接。改为分部：\\int ₀¹ (1-t²)/2 · e^(-t²) dt。或用 f(x) 的原函数：设 F 为 f 的原函数，分部积分法。答案是 (1+e^(-1))/4。$",
         "cat": "一元积分学",
-        "topic": "含变限积分的分部积分"
+        "topic": "定积分计算"
       },
       {
         "id": "comp-024",
@@ -12704,7 +12704,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$0/0型。f'(x)=e^(x^{2}/2)，g'(x)=\\sin x。洛必达：\\lim f'(x)/g'(x) = \\lim e^(x^{2}/2)/\\sin x。x\\rightarrow0时 e^(x^{2}/2)\\rightarrow1，\\sin x~x，但洛必达结果也是 0/0？不对：f(0)=0，g(0)=0。洛必达得 \\lim e^(x^{2}/2)/\\sin x = \\infty？再算：f'(0)=1，g'(0)=0，极限不存在（\\infty）。答案选 \\infty。但再想想，\\sin x ~ x，极限是 \\infty。选 \\infty。$",
         "cat": "一元积分学",
-        "topic": "变限积分求极限·洛必达法则"
+        "topic": "变限积分求极限"
       },
       {
         "id": "comp-025",
@@ -12846,7 +12846,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$换元 u=x-t，dt=-du：\\int ₀ˣ t f(x-t) dt = \\int ₀ˣ (x-u) f(u) du = x\\int ₀ˣ f(u) du - \\int ₀ˣ u f(u) du。对等式求导：f'(x) = 1 + xf(x) + \\int ₀ˣ f(u) du - xf(x) = 1 + \\int ₀ˣ f(u) du。再求导：f''(x) = f(x)。又 f(0)=0，f'(0)=1。解 f''=f 得 f(x)=C₁e^x+C₂e^(-x)，代入初始条件得 f(x)=(e^x-e^(-x))/2 = sinh x。不对……重新检查。其实尝试 f(x)=x：\\int ₀ˣ t(x-t)dt = x\\int tdt - \\int t²dt = x·x^{2}/2 - x^{3}/3 = x^{3}/6，f(x)=x+x^{3}/6\\neqx。所以不是 x。再算…正确答案是 sinh x。$",
         "cat": "一元积分学",
-        "topic": "卷积型积分方程·化为微分方程"
+        "topic": "积分方程"
       },
       {
         "id": "comp-035",
@@ -13911,7 +13911,7 @@ var EDITOR_DATA = [
         "answer": "$\\alpha\\in(1,3]$.",
         "solution": "$f(x)=\\dfrac{1}{x^{\\alpha}}\\displaystyle\\int_{0}^{x}\\ln(1+t^{2})\\,\\mathrm{d}t$。要 $f$ 在 $(0,+\\infty)$ 上**有界**，需 $x\\to 0^{+}$ 与 $x\\to+\\infty$ 两个方向都不爆。\n\n**(i) $x\\to 0^{+}$ 行为**：\n\n$\\ln(1+t^{2})=t^{2}-\\tfrac{t^{4}}{2}+\\cdots\\sim t^{2}$，故\n\n$$\\int_0^x\\ln(1+t^{2})\\,\\mathrm{d}t=\\int_0^x [t^{2}+o(t^{2})]\\,\\mathrm{d}t=\\frac{x^{3}}{3}+o(x^{3})\\sim\\frac{x^{3}}{3}.$$\n\n$$f(x)\\sim\\frac{x^{3}/3}{x^{\\alpha}}=\\frac{x^{3-\\alpha}}{3}.$$\n\n| $\\alpha<3$ | $f(x)\\to 0$（有界）；|\n| $\\alpha=3$ | $f(x)\\to 1/3$（有界）；|\n| $\\alpha>3$ | $x^{3-\\alpha}\\to+\\infty$（**无界**）。 |\n\n要求 (i)：$\\alpha\\le3$。\n\n**(ii) $x\\to+\\infty$ 行为**：\n\n$$\\int_0^x\\ln(1+t^{2})\\,\\mathrm{d}t=\\int_1^x 2\\ln t\\,\\mathrm{d}t+O(1)=2x\\ln x-2x+O(\\ln x)\\sim 2x\\ln x.$$\n\n$$f(x)\\sim\\frac{2x\\ln x}{x^{\\alpha}}=\\frac{2\\ln x}{x^{\\alpha-1}}.$$\n\n| $\\alpha>1$ | $x^{-(\\alpha-1)}\\ln x\\to 0$（有界）；|\n| $\\alpha=1$ | $2\\ln x\\to+\\infty$（**无界**）；|\n| $\\alpha<1$ | 此时 $\\alpha-1<0$，$x^{-(\\alpha-1)}=x^{1-\\alpha}\\to+\\infty$，而 $\\ln x$ 增长慢于任何正幂，故 $\\dfrac{\\ln x}{x^{\\alpha-1}}=x^{1-\\alpha}\\ln x\\to+\\infty$（**无界**）。 |\n\n要求 (ii)：$\\alpha>1$。\n\n**综合**：$\\alpha\\in(1,3]$. $\\square$\n\n\"$(0,+\\infty)$ 上有界\"等价于两个端点都不爆。变限积分 $\\int_0^x\\ln(1+t^{2})\\mathrm{d}t$ 在 $0$ 附近由被积函数 $\\sim t^{2}$ 控制（量级 $x^{3}$），在 $\\infty$ 处由 $\\ln t^{2}\\sim 2\\ln t$ 控制（量级 $2x\\ln x$）。两个端点对 $\\alpha$ 分别要求 $\\alpha\\le 3$ 与 $\\alpha>1$，交集即答案。",
         "cat": "一元积分学",
-        "topic": "积分型函数的有界性",
+        "topic": "变限积分求极限",
         "source": "综合例题PDF·例20"
       },
       {
@@ -13984,7 +13984,7 @@ var EDITOR_DATA = [
         "answer": "$\\boxed{a=\\pm 2,\\quad b=1.}$",
         "solution": "当 $x\\to 0$，分子用等价无穷小 / Taylor：\n\n**分子**（$a\\ne 0$）：$\\dfrac{t^{2}}{\\sqrt{a^{2}+t^{2}}}\\sim\\dfrac{t^{2}}{|a|}$，故\n$$\\int_{0}^{x}\\frac{t^{2}}{\\sqrt{a^{2}+t^{2}}}\\,dt\\sim \\frac{1}{|a|}\\int_{0}^{x}t^{2}\\,dt=\\frac{x^{3}}{3|a|}\\quad(x\\to 0).$$\n\n（若 $a=0$，被积函数 $=|t|$，积分 $\\sim x^{2}/2$，阶数不同，下面分析一并排除。）\n\n**分母** Taylor 展开：$\\sin x=x-\\dfrac{x^{3}}{6}+o(x^{3})$，\n$$x-b\\sin x=(1-b)x+\\frac{b}{6}x^{3}+o(x^{3}).$$\n\n要使极限为**有限非零值**，分子与分母必须是**同阶无穷小**。分子是 $O(x^{3})$，故分母也应为 $O(x^{3})$，必须 $1-b=0$，即 $b=1$。此时\n$$x-\\sin x\\sim \\frac{x^{3}}{6},$$\n原极限化为\n$$\\lim_{x\\to0}\\frac{x^{3}/(3|a|)}{x^{3}/6}=\\frac{6}{3|a|}=\\frac{2}{|a|}=1,$$\n得 $|a|=2$，即 $a=\\pm 2$。\n\n**验证**：取 $a=2,\\ b=1$（$a=-2$ 同理），极限确实 $=1$。\n\n排除其它取值：\n- $b\\ne 1$：分母是 $O(x)$，分子 $O(x^{3})$，极限 $=0$，矛盾。\n- $a=0$：分子 $O(x^{2})$，分母 $O(x^{3})$（$b=1$）或 $O(x)$（$b\\ne 1$），极限 $=0$ 或 $\\infty$，均不等于 $1$。\n\n「$\\lim f/g=c\\ne 0$」型的反求参数题套路：① 把分子、分母各自 Taylor 到同阶；② 最低阶必须同阶（否则极限为 $0$ 或 $\\infty$）；③ 比较最低阶系数得 $c$；④ 验算并排除其它退化情形。\n\n---",
         "cat": "一元积分学",
-        "topic": "极限反求参数",
+        "topic": "变限积分求极限",
         "source": "综合例题PDF·例25"
       },
       {
@@ -14095,7 +14095,7 @@ var EDITOR_DATA = [
         "answer": 3,
         "solution": "**【答案】** 选 D（可导且 $f'(0)=\\dfrac12$）。\n\n【校】PDF 分子为 $1-\\cos x^2$，分母为 $f(x)\\int_0^x\\ln(1+t^2)\\mathrm{d}t$，按此版本求解。\n\n**第一步：用等价无穷小化简极限。** \n\n当 $x\\to 0$ 时：\n- $1-\\cos x^{2}\\sim\\dfrac{x^{4}}{2}$（$\\cos u\\sim 1-\\dfrac{u^{2}}{2}$）；\n- $\\displaystyle\\int_{0}^{x}\\ln(1+t^{2})\\,\\mathrm{d}t\\sim\\int_{0}^{x}t^{2}\\,\\mathrm{d}t=\\dfrac{x^{3}}{3}$（$\\ln(1+t^{2})\\sim t^{2}$）。\n\n由等价无穷小替换，\n$$\\lim_{x\\to 0}\\frac{1-\\cos x^{2}}{f(x)\\displaystyle\\int_{0}^{x}\\ln(1+t^{2})\\,\\mathrm{d}t}=\\lim_{x\\to 0}\\frac{x^{4}/2}{f(x)\\cdot x^{3}/3}=\\frac{3}{2}\\lim_{x\\to 0}\\frac{x}{f(x)}=3.$$\n\n**第二步：解出 $\\lim \\dfrac{f(x)}{x}$。** \n\n$$\\frac{3}{2}\\lim_{x\\to 0}\\frac{x}{f(x)}=3 \\;\\Longrightarrow\\; \\lim_{x\\to 0}\\frac{x}{f(x)}=2 \\;\\Longrightarrow\\; \\lim_{x\\to 0}\\frac{f(x)}{x}=\\frac{1}{2}.$$\n\n**第三步：判读可导性。** \n\n由 $f(0)=0$（题设）以及 $\\lim\\limits_{x\\to 0}\\dfrac{f(x)-f(0)}{x-0}=\\lim\\limits_{x\\to 0}\\dfrac{f(x)}{x}=\\dfrac{1}{2}$（该极限有限），按 **导数定义** 知\n$$f'(0)=\\frac{1}{2},$$\n即 $f$ 在 $x=0$ 处 **可导**。\n\n故选 **D**。\n\n当极限式中出现 $1-\\cos(\\cdot)$ 或 $\\ln(1+(\\cdot))$ 等可 Taylor 化的因子时，先用等价无穷小把它们替换成 $x$ 的多项式（$1-\\cos x^2\\sim x^4/2$, $\\int_0^x\\ln(1+t^2)dt\\sim x^3/3$），剩下未知的 $f(x)$ 暴露在外后，由极限有限推出 $\\lim f(x)/x$ 存在，即为 $f'(0)$。\n\n---",
         "cat": "一元积分学",
-        "topic": "极限反推·连续与导数",
+        "topic": "变限积分求极限",
         "source": "综合例题PDF·例43",
         "options": [
           "不连续",
@@ -14145,7 +14145,7 @@ var EDITOR_DATA = [
         "answer": "$\\alpha$ 的取值范围为 $[1,2]$。",
         "solution": "设 $F(x)=\\displaystyle\\int_{0}^{x}|\\sin t|\\,\\mathrm{d}t$，则 $f(x)=F(x)/x^{\\alpha}$。\n\n**第一步：分析 $x\\to 0^{+}$ 时 $F(x)$ 的阶。** \n\n$\\sin t\\sim t$（$t\\to 0$），故 $|\\sin t|\\sim t$，于是\n$$F(x)=\\int_{0}^{x}|\\sin t|\\,\\mathrm{d}t\\sim\\int_{0}^{x}t\\,\\mathrm{d}t=\\frac{x^{2}}{2}.$$\n\n因此 $f(x)\\sim\\dfrac{x^{2}/2}{x^{\\alpha}}=\\dfrac{1}{2}x^{2-\\alpha}$.\n\n$x\\to 0^{+}$ 时 $f$ 有界要求 $2-\\alpha\\ge 0$，即 $\\alpha\\le 2$（边界 $\\alpha=2$ 时 $f\\to 1/2$，仍有界）。\n\n**第二步：分析 $x\\to +\\infty$ 时 $F(x)$ 的阶。** \n\n$|\\sin t|$ 是以 $\\pi$ 为周期的非负函数。注意 $|\\sin t|$ 关于 $\\pi$ 的周期内积分为\n$$\\int_{0}^{\\pi}|\\sin t|\\,\\mathrm{d}t=2.$$\n\n由周期性，$\\displaystyle\\int_{0}^{n\\pi}|\\sin t|\\,\\mathrm{d}t=2n$；对任意 $x>n\\pi$，$\\displaystyle\\int_{0}^{x}|\\sin t|\\,\\mathrm{d}t=2n+\\int_{n\\pi}^{x}|\\sin t|\\,\\mathrm{d}t$，其中余项 $\\in[0,2]$。因此\n$$\\frac{2x}{\\pi}-2\\le F(x)\\le \\frac{2x}{\\pi}+2,\\quad x\\to +\\infty,$$\n即 $F(x)\\sim\\dfrac{2}{\\pi}x$ 作为主项。\n\n故 $f(x)\\sim\\dfrac{(2/\\pi)x}{x^{\\alpha}}=\\dfrac{2}{\\pi}x^{1-\\alpha}$.\n\n$x\\to +\\infty$ 时 $f$ 有界要求 $1-\\alpha\\le 0$，即 $\\alpha\\ge 1$（边界 $\\alpha=1$ 时 $f\\to 2/\\pi$，仍有界）。\n\n**第三步：综合两端约束。** \n\n$$\\boxed{1\\le \\alpha\\le 2.}$$\n\n判断含积分的商函数 $F(x)/x^\\alpha$ 在 $(0,+\\infty)$ 上的有界性，必须分别讨论 $x\\to 0^+$（\"零端\"）与 $x\\to +\\infty$（\"无穷端\"）两个方向，分别给出 $\\alpha$ 的约束，最后取交集。本题中\"零端\"由 $|\\sin t|\\sim t$ 给出 $F\\sim x^2/2$，约束 $\\alpha\\le 2$；\"无穷端\"由 $|\\sin t|$ 周期函数积分的线性主项 $F\\sim 2x/\\pi$ 给出，约束 $\\alpha\\ge 1$。两边在端点处均保留（含等号），因主项非零有限时函数本身亦有界。\n\n---",
         "cat": "一元积分学",
-        "topic": "有界性·参数",
+        "topic": "变限积分求极限",
         "source": "综合例题PDF·例55"
       },
       {
@@ -14167,7 +14167,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**结论**：先得 $f(x)=\\dfrac{|x|^{3}-x^{2}}{6}$（偶函数）。极大值 $f(0)=0$；极小值 $f\\!\\left(\\pm\\dfrac23\\right)=-\\dfrac{2}{81}$；拐点 $\\left(\\pm\\dfrac13,-\\dfrac{1}{81}\\right)$。曲线与 $x$ 轴围成的有界图形（$[-1,0]$ 与 $[0,1]$ 上两个全等的\"叶\"）绕 $x$ 轴体积 $V_x=\\dfrac{\\pi}{1890}$，绕 $y$ 轴体积 $V_y=\\dfrac{\\pi}{60}$。\n\n**第一步：分段算出含参积分 $\\displaystyle\\int_0^x t|x-t|\\,\\mathrm{d}t$。**\n\n设 $I(x)=\\displaystyle\\int_0^x t|x-t|\\,\\mathrm{d}t$。绝对值符号里的 $t$ 既是积分变量又与参数 $x$ 比较大小，必须按 $x$ 的符号讨论。\n\n*情形一：$x\\ge0$。* 此时 $t$ 从 $0$ 积到 $x$，恒有 $0\\le t\\le x$，故 $|x-t|=x-t$，\n$$I(x)=\\int_0^x t(x-t)\\,\\mathrm{d}t=x\\cdot\\frac{x^{2}}{2}-\\frac{x^{3}}{3}=\\frac{x^{3}}{6}.$$\n\n*情形二：$x<0$。* 此时 $t$ 从 $0$ 积到 $x$（积分变量落在 $[x,0]$ 内），恒有 $x\\le t\\le0$，故 $t-x\\ge0$，$|x-t|=t-x$，\n$$I(x)=\\int_0^x t(t-x)\\,\\mathrm{d}t=\\Bigl[\\frac{t^{3}}{3}-x\\cdot\\frac{t^{2}}{2}\\Bigr]_0^x=\\frac{x^{3}}{3}-\\frac{x^{3}}{2}=-\\frac{x^{3}}{6}.$$\n\n于是统一写成（利用 $|x|^{3}$）\n$$I(x)=\\frac{|x|^{3}}{6},\\qquad\\textbf{从而}\\quad f(x)=\\frac{|x|^{3}-x^{2}}{6},\\quad x\\in(-\\infty,+\\infty).$$\n即\n$$f(x)=\\begin{cases}\\dfrac{x^{3}-x^{2}}{6},&x\\ge0,\\\\[6pt]\\dfrac{-x^{3}-x^{2}}{6},&x<0.\\end{cases}$$\n$f$ 在 $(-\\infty,+\\infty)$ 连续（两段多项式在 $x=0$ 处值都为 $0$），且显然是**偶函数**：$f(-x)=f(x)$。\n\n**第二步：求一、二阶导数（含分界点 $x=0$）。**\n\n对 $x>0$：$f'(x)=\\dfrac{3x^{2}-2x}{6}=\\dfrac{x(3x-2)}{6}$，$f''(x)=x-\\dfrac13$；\n对 $x<0$：$f'(x)=\\dfrac{-3x^{2}-2x}{6}=-\\dfrac{x(3x+2)}{6}$，$f''(x)=-x-\\dfrac13$。\n\n在 $x=0$ 处必须用定义（不能用分段式直接代值）：\n$$f'(0)=\\lim_{h\\to0}\\frac{f(h)-f(0)}{h}=\\lim_{h\\to0}\\frac{|h|^{3}-h^{2}}{6h}=0,$$\n再由\n$$\\lim_{h\\to0^+}\\frac{f'(h)-f'(0)}{h}=\\lim_{h\\to0^+}\\frac{3h-2}{6}=-\\frac13,\\qquad\n\\lim_{h\\to0^-}\\frac{f'(h)-f'(0)}{h}=\\lim_{h\\to0^-}\\frac{-3h-2}{6}=-\\frac13,$$\n得 $f''(0)=-\\dfrac13$（二阶导数存在且连续）。合并后有漂亮的统一式\n$$f'(x)=\\frac{x\\bigl(3|x|-2\\bigr)}{6},\\qquad f''(x)=|x|-\\frac13\\quad(\\text{在 }x=0\\text{ 也成立}).$$\n\n**第三步：极值、拐点与凹凸区间。**\n\n由 $f'(x)=\\dfrac{x(3|x|-2)}{6}$ 得驻点：$x=0$ 与 $|x|=\\dfrac23$，即 $x=0,\\ \\pm\\dfrac23$。列表：\n\n| $x$ 的范围 | $(-\\infty,-\\frac23)$ | $-\\frac23$ | $(-\\frac23,0)$ | $0$ | $(0,\\frac23)$ | $\\frac23$ | $(\\frac23,+\\infty)$ |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| $f'$ 符号 | $-$ | $0$ | $+$ | $0$ | $-$ | $0$ | $+$ |\n| $f$ | ↘ | 极小 | ↗ | 极大 | ↘ | 极小 | ↗ |\n\n故：$x=0$ 处取极大值 $f(0)=0$；$x=\\pm\\dfrac23$ 处取极小值\n$$f\\!\\left(\\pm\\frac23\\right)=\\frac{1}{6}\\left(\\frac{8}{27}-\\frac{4}{9}\\right)=\\frac{1}{6}\\cdot\\left(-\\frac{4}{27}\\right)=-\\frac{2}{81}.$$\n\n由 $f''(x)=|x|-\\dfrac13$：\n- $|x|>\\dfrac13$ 即 $x\\in\\left(-\\infty,-\\dfrac13\\right)\\cup\\left(\\dfrac13,+\\infty\\right)$ 时 $f''>0$，**凹**（凹弧/下凸）；\n- $|x|<\\dfrac13$ 即 $x\\in\\left(-\\dfrac13,\\dfrac13\\right)$ 时 $f''<0$，**凸**（凸弧/上凸）。\n\n$f''$ 在 $x=\\pm\\dfrac13$ 两侧变号，故拐点为\n$$\\left(\\frac13,\\,f\\!\\left(\\frac13\\right)\\right)=\\left(\\frac13,-\\frac{1}{81}\\right),\\qquad\n\\left(-\\frac13,\\,f\\!\\left(-\\frac13\\right)\\right)=\\left(-\\frac13,-\\frac{1}{81}\\right),$$\n其中 $f\\!\\left(\\pm\\dfrac13\\right)=\\dfrac{1}{6}\\left(\\dfrac{1}{27}-\\dfrac19\\right)=-\\dfrac{1}{81}$。注意 $x=0$ 虽是驻点但两侧 $f''<0$，不是拐点。\n\n**第四步：确定旋转的平面图形。** 由 $f(x)=\\dfrac{x^{2}(|x|-1)}{6}$（$x\\ge0$ 时 $f=\\dfrac{x^{2}(x-1)}{6}$）知 $f$ 的零点为 $x=0,\\ \\pm1$，且 $-1<x<1$ 时 $f(x)\\le0$，$f$ 在 $|x|>1$ 时为正且无界。所以**曲线 $y=f(x)$ 与 $x$ 轴围成的有界图形**只有 $[-1,0]$ 与 $[0,1]$ 上两个全等的叶（关于 $y$ 轴对称），面积各为\n$$A=\\int_0^1|f(x)|\\,\\mathrm{d}x=\\frac16\\int_0^1x^{2}(1-x)\\,\\mathrm{d}x=\\frac16\\left(\\frac13-\\frac14\\right)=\\frac{1}{72}\\quad(\\text{总面积 }\\tfrac1{36}).$$\n\n**第五步：绕 $x$ 轴的体积 $V_x$（圆盘/垫片法）。**\n\n对介于曲线 $y=g(x)$ 与 $x$ 轴之间、$a\\le x\\le b$ 的图形，绕 $x$ 轴旋转时用垂直于轴的切片：$V_x=\\pi\\displaystyle\\int_a^b\\bigl[g(x)\\bigr]^{2}\\,\\mathrm{d}x$。它成立的前提是\"每个竖条 $[0,g(x)]$ 各自生成一个位于平面 $x=\\text{const}$ 内、半径 $|g(x)|$ 的圆盘\"，不同 $x$ 的圆盘位于不同的平行平面，**互不重叠**，故曲线变号、过轴都不影响（只要每条竖线截得的区间是完整的一段）。于是两个叶各转各的，互不重叠，相加即可：\n$$V_x=\\pi\\int_{-1}^{1}f^{2}(x)\\,\\mathrm{d}x=2\\pi\\int_0^1\\frac{x^{4}(1-x)^{2}}{36}\\,\\mathrm{d}x\n=\\frac{\\pi}{18}\\int_0^1\\bigl(x^{4}-2x^{5}+x^{6}\\bigr)\\,\\mathrm{d}x.$$\n而\n$$\\int_0^1\\bigl(x^{4}-2x^{5}+x^{6}\\bigr)\\mathrm{d}x=\\frac15-\\frac13+\\frac17=\\frac{21-35+15}{105}=\\frac{1}{105},$$\n故\n$$V_x=\\frac{\\pi}{18}\\cdot\\frac{1}{105}=\\frac{\\pi}{1890}.$$\n\n**第六步：绕 $y$ 轴的体积 $V_y$（柱壳法，注意适用前提）。**\n\n柱壳公式 $V_y=2\\pi\\displaystyle\\int_a^b x|g(x)|\\,\\mathrm{d}x$ 成立的前提是 **$0\\le a<b$**：图形必须整体位于旋转轴 $y$ 轴的**同一侧**，这样半径 $x$ 互不相同的柱壳才彼此嵌套而不重叠。本例图形横跨 $[-1,1]$，若直接套用会得\n$$2\\pi\\int_{-1}^{1}x|f(x)|\\,\\mathrm{d}x=0\\quad(\\text{被积函数为奇函数}),\\qquad\n2\\pi\\int_{-1}^{1}|x|\\,|f(x)|\\,\\mathrm{d}x=\\frac{\\pi}{30},$$\n前者荒谬、后者**重复计数**——因为由偶对称性，$[-1,0]$ 上的叶绕 $y$ 轴生成的立体与 $[0,1]$ 上的叶绕 $y$ 轴生成的立体**是同一个立体**（互为镜像）。故只须取右半叶 $[0,1]$ 一次：\n$$V_y=2\\pi\\int_0^1 x\\cdot|f(x)|\\,\\mathrm{d}x=2\\pi\\int_0^1 x\\cdot\\frac{x^{2}(1-x)}{6}\\,\\mathrm{d}x\n=\\frac{\\pi}{3}\\int_0^1\\bigl(x^{3}-x^{4}\\bigr)\\mathrm{d}x=\\frac{\\pi}{3}\\left(\\frac14-\\frac15\\right)=\\frac{\\pi}{60}.$$\n\n（校验：右叶不与 $y$ 轴相交，可用 Pappus 定理。$\\bar x=\\dfrac{\\int_0^1 x|f|\\mathrm{d}x}{A}=\\dfrac{1/120}{1/72}=\\dfrac35$，故 $V_y=2\\pi\\bar x\\cdot A=2\\pi\\cdot\\dfrac35\\cdot\\dfrac1{72}=\\dfrac{\\pi}{60}$，一致。）\n\n---\n\n① 含 $|x-t|$ 且 $t$ 为积分变量的变限积分，**先按 $x$ 的符号拆区间**，把绝对值内部的符号在积分区间上固定下来，切不可把 $|x-t|$ 当成常数；本例结果 $|x|^{3}/6$ 是偶性来源。② 分段函数在分界点的一、二阶导数必须**回到定义**求，本例 $f'(0)=0$、$f''(0)=-\\frac13$ 都存在，$f''=|x|-\\frac13$ 才是正确写法。③ $V_x=\\pi\\int y^{2}\\mathrm{d}x$ 对被积区域是否\"过轴\"不敏感；而柱壳法 $V_y=2\\pi\\int x|y|\\mathrm{d}x$ **必须**满足 $0\\le a<b$，图形跨轴时要按对称性只算一侧，切见 \"×2\" 的重复陷阱。\n\n---",
         "cat": "一元积分学",
-        "topic": "积分上限函数·极值拐点与旋转体体积",
+        "topic": "变限积分函数性质",
         "source": "综合例题PDF·例10"
       },
       {
@@ -14177,8 +14177,8 @@ var EDITOR_DATA = [
         "question": "计算 $\\displaystyle\\int_0^1\\mathrm{d}y\\int_y^1\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}x$。",
         "answer": "原式 $=\\dfrac{\\pi}{12}$（若内层被积函数按 PDF 原文取 $x^{2}-y^{2}$，则结果为 $\\dfrac16$）。",
         "solution": "【校】PDF 作 $\\int_y^1 (x^2-y^2)\\mathrm{d}x$，据常见原型取 $\\sqrt{x^2-y^2}$；两种情形均在解答中给出。\n\n积分区域由 $0\\le y\\le1,\\ y\\le x\\le1$ 确定，即单位正方形中直线 $y=x$ **下方**的三角形域\n$$D=\\{(x,y)\\mid 0\\le y\\le x\\le1\\}=\\{(x,y)\\mid 0\\le x\\le1,\\ 0\\le y\\le x\\}.$$\n内层 $\\displaystyle\\int\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}y$ 的原函数是 $\\dfrac{y}{2}\\sqrt{x^{2}-y^{2}}+\\dfrac{x^{2}}{2}\\arcsin\\dfrac{y}{x}$，代入 $0$ 与 $x$ 尚可算但十分繁冗（含 $\\arcsin$），故改先对 $y$ 积分、后对 $x$ 积分次序不变而**交换为先 $y$ 后 $x$**，这才是本题用意——把内层变成对 $y$ 的四分之一圆面积分。\n\n交换次序（先固定 $x$，让 $y$ 跑 $0\\to x$）：\n$$I=\\int_0^1\\mathrm{d}y\\int_y^1\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}x\n=\\iint_D\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}x\\mathrm{d}y\n=\\int_0^1\\mathrm{d}x\\int_0^x\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}y .$$\n\n对固定的 $x>0$，内层是\"半径 $x$ 的圆的四分之一面积\"：\n$$\\int_0^x\\sqrt{x^{2}-y^{2}}\\,\\mathrm{d}y=\\frac{\\pi x^{2}}{4}.$$\n（若需验证：$\\Bigl[\\dfrac{y}{2}\\sqrt{x^{2}-y^{2}}+\\dfrac{x^{2}}{2}\\arcsin\\dfrac{y}{x}\\Bigr]_0^x=\\dfrac{x^{2}}{2}\\cdot\\dfrac{\\pi}{2}=\\dfrac{\\pi x^{2}}{4}$。）\n\n于是\n$$I=\\int_0^1\\frac{\\pi x^{2}}{4}\\,\\mathrm{d}x=\\frac{\\pi}{4}\\cdot\\frac13=\\frac{\\pi}{12}.$$\n\n**另一版本（PDF 原文 $x^{2}-y^{2}$）：**\n$$\\int_y^1(x^{2}-y^{2})\\,\\mathrm{d}x=\\Bigl[\\frac{x^{3}}{3}-y^{2}x\\Bigr]_y^1=\\frac13-y^{2}-\\frac{y^{3}}{3}+y^{3}=\\frac13-y^{2}+\\frac{2y^{3}}{3},$$\n故\n$$\\int_0^1\\left(\\frac13-y^{2}+\\frac{2y^{3}}{3}\\right)\\mathrm{d}y=\\frac13-\\frac13+\\frac{2}{3}\\cdot\\frac14=\\frac16 .$$\n\n---\n\n① 看到内层上限是外层积分变量（或反之）的累次积分，**第一步永远是画出积分域**，再按要求换成相反次序。② 出现 $\\sqrt{x^{2}-y^{2}}$ 时要想到\"以 $x$ 为参数的四分之一圆面积 $\\pi x^{2}/4$\"，用几何意义代替硬算 $\\arcsin$ 项，既快又不易错。③ 注意 $\\sqrt{x^2-y^2}$ 要求积分域满足 $|y|\\le x$，本题 $0\\le y\\le x$ 恰好满足；若区域跨越 $y>x$，则应另行分段或改用极坐标。\n\n---",
-        "cat": "一元积分学",
-        "topic": "二重积分·交换次序",
+        "cat": "二重积分",
+        "topic": "二重积分换序",
         "source": "综合例题PDF·例11"
       },
       {
@@ -14189,7 +14189,7 @@ var EDITOR_DATA = [
         "answer": 2,
         "solution": "**【答案】** 选 C（连续但不可导；$F(0)=\\dfrac12$，$F'_-(0)=1$，$F'_+(0)=0$）。\n\n**第一步：写出 $f$ 与 $F$ 的显式表达。**\n$$f(x)=\\begin{cases}1+x,&-1\\le x<0,\\\\[2pt]-x,&0\\le x\\le1.\\end{cases}$$\n（两段在 $x=0$ 处给出的值不同——`$-x$` 给出 $0$、`$1+x$` 给出 $1$——但单点取值不影响任何积分值，也不影响 $F$，故无论怎样定义 $f(0)$，结论都一样。）\n\n因为 $f$ 在 $[-1,1]$ 上只有一个跳跃间断点，故有界可积，$F(x)=\\displaystyle\\int_{-1}^{x}f(t)\\,\\mathrm{d}t$ 在 $[-1,1]$ 上**处处有定义且连续**（变上限积分对可积函数必连续）。特别地\n$$F(0)=\\int_{-1}^{0}(1+t)\\,\\mathrm{d}t=\\Bigl[t+\\frac{t^{2}}{2}\\Bigr]_{-1}^{0}=0-\\Bigl(-1+\\frac12\\Bigr)=\\frac12\\ (\\text{有限值}).$$\n排除 A、B。\n\n**第二步：分别计算左右导数。**\n\n对 $0<x\\le1$（此段 $f(t)=-t$）：\n$$F(x)=F(0)+\\int_0^x(-t)\\,\\mathrm{d}t=\\frac12-\\frac{x^{2}}{2}\n\\ \\Longrightarrow\\ \\frac{F(x)-F(0)}{x}=-\\frac{x}{2}\\xrightarrow[x\\to0^+]{}0=F'_+(0).$$\n\n对 $-1\\le x<0$（此段 $f(t)=1+t$）：\n$$F(x)-F(0)=\\int_0^{x}f(t)\\,\\mathrm{d}t=-\\int_x^{0}(1+t)\\,\\mathrm{d}t=-\\Bigl(-x-\\frac{x^{2}}{2}\\Bigr)=x+\\frac{x^{2}}{2},$$\n故\n$$\\frac{F(x)-F(0)}{x}=1+\\frac{x}{2}\\xrightarrow[x\\to0^-]{}1=F'_-(0).$$\n\n左右导数存在但不相等（$1\\ne0$），故 $F(x)$ 在 $x=0$ 处**不可导**，选 C。\n\n**第三步：本质解释。** $f$ 在 $x=0$ 处的左右极限分别是 $\\lim\\limits_{t\\to0^-}f(t)=1$ 与 $\\lim\\limits_{t\\to0^+}f(t)=0=f(0)$。定理保证：若 $f$ 在 $x_0$ 连续，则 $F'(x_0)=f(x_0)$；若仅单侧连续，则得到对应的单侧导数 $F'_\\pm(x_0)=f(x_0^\\pm)$。这里是跳跃间断，两侧拉出两个不同的单侧导数，故不可导。\n\n---\n\n① 记住层次：$f$ 可积 $\\Rightarrow F$ 连续；$f$ 连续 $\\Rightarrow F$ 可导且 $F'=f$。**有跳跃间断点的 $f$ 只会让 $F$ 在该点\"折一下\"（尖点），不会破坏连续性**，这是选择题的高频陷阱（容易错选 B 或 D）。② 判定时最稳妥的做法是**把 $F$ 在 $x_0$ 两侧显式写出来**再作差商，而不是凭感觉引用定理。③ 分段函数在某点定义重复（本题 $x=0$）时不必纠结——单个点对定积分没有影响。\n\n---",
         "cat": "一元积分学",
-        "topic": "变限积分·连续与可导",
+        "topic": "变限积分函数性质",
         "source": "综合例题PDF·例12",
         "options": [
           "无定义",
@@ -14206,7 +14206,7 @@ var EDITOR_DATA = [
         "answer": "旋转曲面面积 $S=\\dfrac{8\\pi}{3}\\left(2\\sqrt{2}-1\\right)$。",
         "solution": "**第一步：写出弧段与面积公式。** 曲线 $y=2\\sqrt{x-1}\\ (1\\le x\\le2)$，即从点 $(1,0)$ 到点 $(2,2)$ 的一段。绕 $x$ 轴旋转一周，由曲面面积公式（微元为周长 $2\\pi y$ 乘弧长微元 $\\mathrm{d}s=\\sqrt{1+y'^{2}}\\,\\mathrm{d}x$）\n$$S=2\\pi\\int_a^b y\\sqrt{1+y'^{2}}\\,\\mathrm{d}x,$$\n其前提：$y=y(x)$ 在 $[a,b]$ 上连续可微且 $y\\ge0$（对 $x$ 轴旋转要求 $y$ 不变号，否则面积应按 $|y|$ 累加）。\n\n**第二步：计算。**\n$$y=2(x-1)^{1/2},\\qquad y'=\\frac{1}{\\sqrt{x-1}}\\quad(x>1),$$\n$$1+y'^{2}=1+\\frac{1}{x-1}=\\frac{x}{x-1},\\qquad \\sqrt{1+y'^{2}}=\\sqrt{\\frac{x}{x-1}} .$$\n代入：\n$$S=2\\pi\\int_1^2 2\\sqrt{x-1}\\cdot\\sqrt{\\frac{x}{x-1}}\\,\\mathrm{d}x\n=4\\pi\\int_1^2\\sqrt{x}\\,\\mathrm{d}x\n=4\\pi\\cdot\\frac{2}{3}x^{3/2}\\Big|_1^2=\\frac{8\\pi}{3}\\left(2\\sqrt2-1\\right).$$\n\n注意 $x\\to1^+$ 时 $y'\\to\\infty$（切线竖直），但被积函数 $2\\sqrt{x-1}\\sqrt{\\dfrac{x}{x-1}}=2\\sqrt{x}$ 在该点的可去奇性被约掉，被积函数实际连续有界，该积分事实上是普通的定积分（形式上按反常积分取极限，结果相同）。\n\n**第三步：另一种参数化校验（$y$ 作参数）。** 由 $y=2\\sqrt{x-1}$ 得 $x=1+\\dfrac{y^{2}}{4}$，$y\\in[0,2]$，$\\dfrac{\\mathrm{d}x}{\\mathrm{d}y}=\\dfrac{y}{2}$，\n$$S=2\\pi\\int_0^2 y\\sqrt{1+\\left(\\frac{\\mathrm{d}x}{\\mathrm{d}y}\\right)^{2}}\\,\\mathrm{d}y\n=2\\pi\\int_0^2 y\\sqrt{1+\\frac{y^{2}}{4}}\\,\\mathrm{d}y\n=2\\pi\\int_0^2 y\\cdot\\frac{\\sqrt{4+y^{2}}}{2}\\,\\mathrm{d}y=\\pi\\int_0^2 y\\sqrt{4+y^{2}}\\,\\mathrm{d}y .$$\n令 $u=4+y^{2}$：$\\displaystyle\\int_0^2 y\\sqrt{4+y^{2}}\\,\\mathrm{d}y=\\frac12\\int_4^8 u^{1/2}\\mathrm{d}u=\\frac13\\bigl(8^{3/2}-4^{3/2}\\bigr)=\\frac13\\left(16\\sqrt2-8\\right)$，故 $S=\\dfrac{8\\pi}{3}\\left(2\\sqrt2-1\\right)$，一致。\n\n---\n\n① 旋转曲面面积必须用**弧长微元** $\\mathrm{d}s=\\sqrt{1+y'^2}\\mathrm{d}x$，写成 $2\\pi\\int y\\,\\mathrm{d}x$（漏掉 $\\sqrt{1+y'^2}$）是最常见错误。② 遇到 $y'\\to\\infty$ 的端点（$x=1$ 处切线竖直）不要慌，先观察乘积是否化简——本例恰好化为 $2\\sqrt{x}$。③ 若 $y(x)$ 以 $x$ 表示时 $\\sqrt{1+y'^2}$ 难积，可尝试改用 $y$ 作参数：$\\mathrm{d}s=\\sqrt{1+(\\mathrm{d}x/\\mathrm{d}y)^2}\\,\\mathrm{d}y$。\n\n---",
         "cat": "一元积分学",
-        "topic": "旋转曲面面积",
+        "topic": "定积分几何应用",
         "source": "综合例题PDF·例13"
       },
       {
@@ -14217,7 +14217,7 @@ var EDITOR_DATA = [
         "answer": "π/6",
         "solution": "**第一步：用判别式法求过原点的切线。** 设过原点的直线为 $y=kx$（竖直线 $x=0$ 显然不与抛物线相切，可不考虑）。它与 $C:y=x^{2}+1$ 相交时，$x$ 满足\n$$x^{2}+1=kx\\quad\\Longleftrightarrow\\quad x^{2}-kx+1=0 .$$\n相切的充要条件是该二次方程有**重根**，即判别式为零：\n$$\\Delta=k^{2}-4=0\\ \\Longrightarrow\\ k=\\pm2 .$$\n故两条切线为\n$$l_1:\\ y=2x,\\qquad l_2:\\ y=-2x,$$\n重根分别为 $x=\\dfrac{k}{2}=\\pm1$，切点为 $(1,2)$ 与 $(-1,2)$。\n\n**第二步：确定积分区域。** 两条切线与抛物线围成的封闭图形满足 $x^{2}+1\\ge y\\ge 2|x|$（$|x|\\le1$）：下边界为 V 形折线 $y=2|x|$，上边界为抛物线段 $y=x^{2}+1$，两端交于 $x=\\pm1$（此时 $y=2$）。该图形关于 $y$ 轴**对称**。\n\n**第三步：绕 $y$ 轴旋转的体积（柱壳法，只取右半，避免重复）。**\n\n由对称性，$[-1,0]$ 上的左半叶绕 $y$ 轴扫出的立体与 $[0,1]$ 上的右半叶扫出的立体**完全相同**（互为镜像），整个图形绕 $y$ 轴所得立体 = 右半叶绕 $y$ 轴所得立体。对右半叶用柱壳法（$0\\le x\\le1$，位于 $y$ 轴右侧，柱壳半径互不相同、互不重叠）：壳高 $h(x)=(x^{2}+1)-2x$，\n$$V=2\\pi\\int_0^1 x\\,h(x)\\,\\mathrm{d}x=2\\pi\\int_0^1 x\\bigl(x^{2}+1-2x\\bigr)\\mathrm{d}x\n=2\\pi\\int_0^1\\bigl(x^{3}-2x^{2}+x\\bigr)\\mathrm{d}x .$$\n$$\\int_0^1\\bigl(x^{3}-2x^{2}+x\\bigr)\\mathrm{d}x=\\frac14-\\frac23+\\frac12=\\frac{3-8+6}{12}=\\frac{1}{12},$$\n故\n$$V=2\\pi\\cdot\\frac{1}{12}=\\frac{\\pi}{6}.$$\n\n**第四步：用垫片法（横切片）验证。** 图形被 $y=1$ 分成两部分：\n- $0\\le y\\le1$：截面半径 $r=\\dfrac{y}{2}$，圆盘面积 $\\pi\\dfrac{y^{2}}{4}$；\n- $1\\le y\\le2$： $|x|$ 介于 $\\sqrt{y-1}$ 与 $\\dfrac y2$ 之间，旋转后为**圆环**，外半径 $\\dfrac y2$、内半径 $\\sqrt{y-1}$（两曲线在 $y=2$ 处相切，内半径在此为 $1=$ 外半径），面积 $\\pi\\left(\\dfrac{y^{2}}{4}-(y-1)\\right)$。\n\n于是\n$$V=\\pi\\int_0^1\\frac{y^{2}}{4}\\,\\mathrm{d}y+\\pi\\int_1^2\\left(\\frac{y^{2}}{4}-y+1\\right)\\mathrm{d}y\n=\\frac{\\pi}{12}+\\pi\\left[\\frac{y^{3}}{12}-\\frac{y^{2}}{2}+y\\right]_1^2=\\frac{\\pi}{12}+\\pi\\left(\\frac{2}{3}-\\frac{7}{12}\\right)=\\frac{\\pi}{12}+\\frac{\\pi}{12}=\\frac{\\pi}{6},$$\n与柱壳法一致。（可见 $y>1$ 段的确是\"空心\"的，直接对整个图形用 $\\pi\\int r^2$ 会把抛物线上方的洞算进去。）\n\n---\n\n① 求\"过已知点的切线\"用**判别式法**（重根条件 $\\Delta=0$）最省事，比起\"设切点、列 $k=y'=2x_0$ 与 $y_0=kx_0$\"更不易漏解。② 区域横跨旋转轴时（对称双叶），**左半与右半绕 $y$ 轴生成同一立体**，只能算一次；柱壳法也只允许对 $x\\ge0$ 的部分使用。③ 若改用横切片（垫片法），务必逐段核对内外半径，遇到\"空心\"部分要用 $\\pi(r_{\\text{外}}^2-r_{\\text{内}}^2)$。\n\n---",
         "cat": "一元积分学",
-        "topic": "切线·旋转体体积",
+        "topic": "定积分几何应用",
         "source": "综合例题PDF·例14"
       },
       {
@@ -14228,7 +14228,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**结论**：$\\displaystyle\\int_0^1 y(x)\\,\\mathrm{d}x=\\frac{\\sin 1}{2}$（此处 $\\cos(1-x)^{2}$ 按 $\\cos\\bigl[(1-x)^{2}\\bigr]$ 理解）。\n\n**第一步：把 $\\int y$ 转化成 $\\int y'$（分部积分 / 交换积分次序）。** 由 $y(0)=0$ 有 $y(x)=\\displaystyle\\int_0^x y'(t)\\,\\mathrm{d}t$，于是\n$$\\int_0^1 y(x)\\,\\mathrm{d}x=\\int_0^1\\mathrm{d}x\\int_0^x y'(t)\\,\\mathrm{d}t\n=\\int_0^1 y'(t)\\,\\mathrm{d}t\\int_t^1\\mathrm{d}x=\\int_0^1(1-t)\\,y'(t)\\,\\mathrm{d}t .$$\n（等价写法：分部积分 $\\displaystyle\\int_0^1 y\\,\\mathrm{d}x=\\bigl[xy\\bigr]_0^1-\\int_0^1 xy'\\,\\mathrm{d}x=y(1)-\\int_0^1 xy'\\,\\mathrm{d}x=\\int_0^1 y'\\,\\mathrm{d}x-\\int_0^1xy'\\,\\mathrm{d}x=\\int_0^1(1-x)y'\\,\\mathrm{d}x$。）\n关键是：**并不需要求出 $y(x)$ 本身**（$\\int\\cos(1-x)^2\\mathrm{d}x$ 不是初等函数），权函数 $(1-x)$ 与 $y'$ 恰好配对可积。\n\n**第二步：代入 $y'(x)=\\cos\\bigl[(1-x)^{2}\\bigr]$ 计算。**\n$$\\int_0^1 y(x)\\,\\mathrm{d}x=\\int_0^1(1-x)\\cos\\bigl[(1-x)^{2}\\bigr]\\,\\mathrm{d}x .$$\n令 $u=(1-x)^{2}$，则 $\\mathrm{d}u=-2(1-x)\\,\\mathrm{d}x$；$x=0\\to u=1$，$x=1\\to u=0$：\n$$\\int_0^1(1-x)\\cos\\bigl[(1-x)^{2}\\bigr]\\mathrm{d}x=\\int_1^0\\cos u\\cdot\\frac{\\mathrm{d}u}{-2}=\\frac12\\int_0^1\\cos u\\,\\mathrm{d}u=\\frac{\\sin 1}{2}.$$\n\n**第三步：版本说明。** 若把 $\\cos(1-x)^{2}$ 读成 $\\cos^{2}(1-x)$，则令 $u=1-x$ 后\n$$\\int_0^1 u\\cos^{2}u\\,\\mathrm{d}u=\\frac12\\int_0^1 u\\bigl(1+\\cos2u\\bigr)\\mathrm{d}u=\\frac14+\\frac12\\left[\\frac{u\\sin2u}{2}+\\frac{\\cos2u}{4}\\right]_0^1=\\frac{1+2\\sin2+\\cos2}{8},$$\n结果不简洁、不像标准考题；故按 $\\cos\\bigl[(1-x)^{2}\\bigr]$ 理解，答案 $\\dfrac{\\sin1}{2}$。\n\n---\n\n① \"已知 $y'$ 求 $\\int y$\" 的通用套路：$\\displaystyle\\int_a^b y\\,\\mathrm{d}x=\\bigl[(x-b)y\\bigr]_a^b-\\int_a^b(x-b)y'\\,\\mathrm{d}x$（等价于交换积分次序），把问题化为 $(x-b)y'$ 的积分，常常可避开不可积的原函数。② 看见 $\\cos\\bigl[(1-x)^2\\bigr]$ 与因子 $(1-x)$ 同时出现，立即凑微分 $u=(1-x)^2$。③ 注意书写规范：$\\cos^2(1-x)$ 才表示平方在余弦上，$\\cos(1-x)^2$ 表示自变量先平方。\n\n---",
         "cat": "一元积分学",
-        "topic": "积分方程·分部积分",
+        "topic": "定积分计算",
         "source": "综合例题PDF·例28"
       },
       {
@@ -14238,8 +14238,8 @@ var EDITOR_DATA = [
         "question": "求曲线 $x^{3}+y^{3}=y^{2}$ 的斜渐近线方程。",
         "answer": "曲线 $x^{3}+y^{3}=y^{2}$ 有唯一斜渐近线",
         "solution": "**第一步：设 $y\\sim kx$ 定斜率 $k$。** 隐函数（或多值）曲线不能用 $k=\\lim\\dfrac{y}{x}$ 直接取极限值，应向方程本身代入。设沿无界分支有 $|x|\\to\\infty$、$|y|\\to\\infty$，原式同除以 $x^{3}$：\n$$1+\\left(\\frac{y}{x}\\right)^{3}=\\frac{y^{2}}{x^{3}}=\\frac{1}{x}\\left(\\frac{y}{x}\\right)^{2}.$$\n先证 $\\dfrac{y}{x}$ 有界：若 $\\left|\\dfrac{y}{x}\\right|\\to\\infty$，则由上式得 $\\left|\\dfrac{y}{x}\\right|^{3}\\sim\\dfrac1x\\left(\\dfrac{y}{x}\\right)^{2}$，即 $\\left|\\dfrac{y}{x}\\right|\\sim\\dfrac1x\\to0$，矛盾。故 $\\dfrac{y}{x}$ 有界，令 $x\\to\\infty$，右端 $\\dfrac1x\\left(\\dfrac yx\\right)^2\\to0$，得\n$$1+k^{3}=0\\ \\Longrightarrow\\ k=-1 .$$\n\n**第二步：定截距 $b$。** 由 $x^{3}+y^{3}=(x+y)\\left(x^{2}-xy+y^{2}\\right)=y^{2}$，得\n$$x+y=\\frac{y^{2}}{x^{2}-xy+y^{2}}=\\frac{\\left(\\dfrac{y}{x}\\right)^{2}}{1-\\dfrac{y}{x}+\\left(\\dfrac{y}{x}\\right)^{2}} .$$\n令 $x\\to\\infty$，由 $\\dfrac yx\\to-1$：\n$$b=\\lim_{x\\to\\infty}(y-kx)=\\lim_{x\\to\\infty}(y+x)=\\frac{(-1)^{2}}{1-(-1)+(-1)^{2}}=\\frac{1}{3} .$$\n（等价做法：把 $y=-x+b+o(1)$ 代回方程，$x^{3}+(-x+b)^{3}=(-x+b)^{2}$，比较最高次：$3bx^{2}-3b^{2}x+b^{3}=x^{2}-2bx+b^{2}$，比较 $x^{2}$ 项得 $3b=1$，即 $b=\\dfrac13$。）\n\n故斜渐近线为\n$$y=-x+\\frac13 .$$\n\n**第三步：说明不存在其他渐近线。** 由方程解出 $x=\\sqrt[3]{y^{2}-y^{3}}$，对一切有限 $y$ 有定义且有限，故**无垂直渐近线**；又 $x\\to\\infty$ 时 $y\\sim-x\\to\\mp\\infty$，**无水平渐近线**。$x\\to+\\infty$ 与 $x\\to-\\infty$ 属于同一条无界分支的两端，故只有上述一条斜渐近线。（注意 $|x|\\to\\infty$ 时该曲线还有一小段有界分支 $y\\in[0,1]$，与渐近线无关。）\n\n> 注：若原题系笛卡儿叶形线 $x^{3}+y^{3}=3axy$，同法得 $k=-1$、$b=-a$，渐近线为 $x+y+a=0$，方法完全一致。\n\n---\n\n① 斜渐近线标准做法：$k=\\lim\\dfrac yx$，$b=\\lim(y-kx)$；**隐曲线要把 $y=kx+b+o(1)$ 代回方程比较同次幂系数**（或先除最高次项定 $k$，再用恒等变形求 $b$）。② 由 $F_n(x,y)+F_{n-1}(x,y)+\\cdots=0$（齐次多项式按次排列）求 $k$ 时，$k$ 由最高次部分 $F_n(1,k)=0$ 决定，$b$ 由下一级 $F_{n-1}(1,k)+k\\,F_n'(1,k)\\cdot b=0$ 决定——本例即 $3b=1$。③ 别忘检查垂直渐近线（令 $y\\to y_0$ 有限而 $x\\to\\infty$ 是否有解）。\n\n---",
-        "cat": "一元积分学",
-        "topic": "斜渐近线",
+        "cat": "一元微分学",
+        "topic": "渐近线",
         "source": "综合例题PDF·例29"
       },
       {
@@ -14250,7 +14250,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**结论**：$$\\int_{-1}^{x}t f(t)\\,\\mathrm{d}t=\n\\begin{cases}\n(x-1)e^{x}+\\dfrac{2}{e}, & x\\le0,\\\\[8pt]\n-1+\\dfrac{2}{e}+\\dfrac{x^{2}}{2}\\ln x-\\dfrac{x^{2}}{4}, & x>0.\n\\end{cases}$$\n（两段在 $x=0$ 处衔接连续，且导数 $=xf(x)$。）\n\n被积函数 $g(t)=t f(t)=\\begin{cases}t e^{t},&t\\le0,\\\\ t\\ln t,&t>0.\\end{cases}$\n\n先注意 $t=0$ 处：$g(t)=t\\ln t\\to0\\ (t\\to0^+)$，且 $\\displaystyle\\int_0^x t\\ln t\\,\\mathrm{d}t$ 收敛（原函数 $\\dfrac{t^{2}}{2}\\ln t-\\dfrac{t^{2}}{4}\\to0$），所以当 $x>0$ 时这是一个**收敛的瑕积分**，可正常分段计算。\n\n**情形一：$x\\le0$。** 此时积分全程落在 $(-\\infty,0]$ 上，$g(t)=te^{t}$：\n$$\\int_{-1}^{x}te^{t}\\,\\mathrm{d}t=\\Bigl[(t-1)e^{t}\\Bigr]_{-1}^{x}=(x-1)e^{x}-(-2)e^{-1}=(x-1)e^{x}+\\frac{2}{e}.$$\n\n**情形二：$x>0$。** 必须在 $t=0$ 处断开：\n$$\\int_{-1}^{x}t f(t)\\,\\mathrm{d}t=\\int_{-1}^{0}te^{t}\\,\\mathrm{d}t+\\int_0^{x}t\\ln t\\,\\mathrm{d}t .$$\n第一项：\n$$\\int_{-1}^{0}te^{t}\\mathrm{d}t=\\Bigl[(t-1)e^{t}\\Bigr]_{-1}^{0}=-1+2e^{-1}=-1+\\frac2e .$$\n第二项（分部积分，$u=\\ln t$，$\\mathrm{d}v=t\\,\\mathrm{d}t$）：\n$$\\int_0^{x}t\\ln t\\,\\mathrm{d}t=\\left[\\frac{t^{2}}{2}\\ln t-\\frac{t^{2}}{4}\\right]_{0}^{x}=\\frac{x^{2}}{2}\\ln x-\\frac{x^{2}}{4},$$\n其中 $t\\to0^+$ 时 $\\dfrac{t^{2}}{2}\\ln t\\to0$（$t^{\\alpha}\\ln t\\to0$）。故\n$$\\int_{-1}^{x}tf(t)\\,\\mathrm{d}t=-1+\\frac2e+\\frac{x^{2}}{2}\\ln x-\\frac{x^{2}}{4}.$$\n\n**校验：**\n- 连续性：$\\lim\\limits_{x\\to0^+}(\\cdots)=-1+\\dfrac2e+0-0$，而情形一在 $x=0$ 处为 $(-1)\\cdot1+\\dfrac2e=-1+\\dfrac2e$，相等，故结果连续（这正是 $\\Phi(x)=\\int_{-1}^x g$ 应有的性质）。\n- 求导：$x<0$ 时 $\\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\bigl[(x-1)e^{x}\\bigr]=xe^{x}=xf(x)$ ✓；$x>0$ 时 $\\dfrac{\\mathrm{d}}{\\mathrm{d}x}\\left(\\dfrac{x^{2}}{2}\\ln x-\\dfrac{x^{2}}{4}\\right)=x\\ln x+\\dfrac x2-\\dfrac x2=x\\ln x=xf(x)$ ✓。\n\n---\n\n① 被积函数分段（或分段点在积分路径中间）时，**必须按积分上限 $x$ 落在哪一段分类讨论**，中间跨过点则拆成两段相加——这是本题全部考点。② $\\ln x$ 在 $0$ 处虽然发散，但乘 $t$ 后 $t\\ln t\\to0$ 且积分收敛，属收敛瑕积分，可以照常使用 Newton–Leibniz 公式。③ 做出来的变限积分函数**必须在分段点连续**且导数等于 $xf(x)$，多写一步校验可即时发现算错常数（如 $\\frac2e$、$-1$ 这些常数项最容易错）。\n\n---",
         "cat": "一元积分学",
-        "topic": "分段函数·变限积分",
+        "topic": "变限积分函数性质",
         "source": "综合例题PDF·例30"
       },
       {
@@ -14261,7 +14261,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**结论**：(1) $\\displaystyle\\int_1^{+\\infty}\\frac{\\mathrm{d}x}{(\\ln x)^{n}(1+x^{m})}$ 收敛的充要条件是\n$$m>1\\quad\\text{且}\\quad 0<n<1\\ \\ (\\text{此时积分收敛；其余情形一律发散}).$$\n具体由两个端点共同决定：$x\\to1^+$ 处要求 $n<1$，$x\\to+\\infty$ 处要求 $m>1$（$m=1$ 时要求 $n>1$，与前矛盾）。\n(2) $\\displaystyle\\int_0^{\\pi/2}\\frac{\\mathrm{d}x}{\\sqrt{\\sin x}\\cos x}$ **发散**（$x=\\dfrac{\\pi}{2}$ 处为一阶极点，$x=0$ 处收敛）。\n\n### (1) $\\displaystyle\\int_1^{+\\infty}\\frac{\\mathrm{d}x}{(\\ln x)^{n}(1+x^{m})}$，$m,n>0$\n\n被积函数在 $(1,+\\infty)$ 上恒正。$x=1$ 处 $\\ln x=0$，是**瑕点**；$+\\infty$ 是**无穷端**。分两段（例如取 $c=2$ 拆成 $\\int_1^2+\\int_2^{+\\infty}$）分别判别，两者都收敛才算收敛。\n\n**端点一：$x\\to1^{+}$（瑕点，$n>0$）。** 此时 $\\ln x\\sim x-1$，$1+x^{m}\\to2$，故\n$$\\frac{1}{(\\ln x)^{n}(1+x^{m})}\\sim\\frac{1}{2(x-1)^{n}}\\quad(x\\to1^+),$$\n严格地，极限比较判别：$\\displaystyle\\lim_{x\\to1^+}\\frac{\\frac{1}{(\\ln x)^n(1+x^m)}}{(x-1)^{-n}}=\\lim_{x\\to1^+}\\frac{1}{1+x^m}\\left(\\frac{x-1}{\\ln x}\\right)^{n}=\\frac12\\in(0,+\\infty)$。\n由 $p$-积分 $\\displaystyle\\int_1^2\\frac{\\mathrm{d}x}{(x-1)^{n}}$ 收敛 $\\iff n<1$，得\n$$\\text{在 }x=1\\text{ 处：收敛}\\iff 0<n<1 .$$\n\n**端点二：$x\\to+\\infty$。** 此时 $1+x^{m}\\sim x^{m}$，故\n$$\\frac{1}{(\\ln x)^{n}(1+x^{m})}\\sim\\frac{1}{x^{m}(\\ln x)^{n}}\\quad(x\\to+\\infty).$$\n- 若 $m>1$：取 $p$ 使 $m>p>1$，则 $\\dfrac{x^{p}}{x^{m}(\\ln x)^{n}}=\\dfrac{1}{x^{m-p}(\\ln x)^{n}}\\to0$，故充分大后 $\\dfrac{1}{x^{m}(\\ln x)^{n}}<\\dfrac{1}{x^{p}}$，由比较判别**收敛**。\n- 若 $m<1$：取 $p$ 使 $m<p<1$，则 $\\dfrac{x^{p}}{x^{m}(\\ln x)^{n}}=\\dfrac{x^{p-m}}{(\\ln x)^{n}}\\to+\\infty$，故充分大后 $\\dfrac{1}{x^{m}(\\ln x)^{n}}>\\dfrac{1}{x^{p}}$，由比较判别**发散**。\n- 若 $m=1$：化为 $\\displaystyle\\int^{+\\infty}\\frac{\\mathrm{d}x}{x(\\ln x)^{n}}=\\int^{+\\infty}\\frac{\\mathrm{d}u}{u^{n}}\\ (u=\\ln x)$，收敛 $\\iff n>1$。\n\n综上\n$$\\text{在 }+\\infty\\text{ 处：收敛}\\iff m>1,\\ \\text{或}\\ m=1\\ \\text{且}\\ n>1 .$$\n\n**合并两处条件：** $x=1$ 处要求 $n<1$，而 $m=1$ 时要求 $n>1$，二者不可能同时满足；故整个积分收敛 $\\iff$\n$$\\boxed{\\,m>1\\ \\text{且}\\ 0<n<1\\,}$$\n其余（$n\\ge1$、或 $m\\le1$）均发散。\n\n### (2) $\\displaystyle\\int_0^{\\pi/2}\\frac{\\mathrm{d}x}{\\sqrt{\\sin x}\\,\\cos x}$\n\n瑕点为 $x=0$ 与 $x=\\dfrac{\\pi}{2}$，被积函数恒正。拆成 $\\displaystyle\\int_0^{\\pi/4}+\\int_{\\pi/4}^{\\pi/2}$。\n\n- **$x\\to0^{+}$**：$\\sin x\\sim x$，$\\cos x\\to1$，故被积函数 $\\sim\\dfrac{1}{\\sqrt{x}}$，而 $\\displaystyle\\int_0^{\\pi/4}x^{-1/2}\\mathrm{d}x$ 收敛（$p=\\dfrac12<1$），故此处**收敛**。\n- **$x\\to\\dfrac{\\pi}{2}^{-}$**：令 $u=\\dfrac{\\pi}{2}-x\\to0^+$，$\\sin x\\to1$，$\\cos x=\\sin u\\sim u$，故\n$$\\frac{1}{\\sqrt{\\sin x}\\cos x}\\sim\\frac{1}{u}\\quad(u\\to0^+),$$\n而 $\\displaystyle\\int_0^{\\pi/4}\\frac{\\mathrm{d}u}{u}$ 发散（一阶，$p=1$），故此处**发散**。\n\n因此整个反常积分**发散（为 $+\\infty$）**。\n\n（补充：若把 $\\cos x$ 的幂次改成 $p<1$，如 $\\displaystyle\\int_0^{\\pi/2}\\frac{\\mathrm{d}x}{\\sqrt{\\sin x}\\,(\\cos x)^{p}}$，则收敛 $\\iff p<1$；本题 $p=1$ 恰为临界，发散。）\n\n---\n\n① 判别反常积分的**标准动作**：先列出所有\"坏点\"（瑕点 + 无穷端），用一点把区间拆开，逐个用**比较/极限比较判别法**与 $p$-积分 $\\int\\frac{\\mathrm{d}x}{(x-a)^p}$、$\\int^{+\\infty}\\frac{\\mathrm{d}x}{x^p}$、$\\int^{+\\infty}\\frac{\\mathrm{d}x}{x(\\ln x)^p}$ 对照；**全部收敛才收敛**。② 本题最大的坑是忘记 $x=1$ 也是瑕点（$\\ln1=0$），只看 $+\\infty$ 会答成 \"$m>1$ 或 $m=1,n>1$\"。③ 记住口诀\"对数压不住任何幂\"：$\\dfrac{1}{x^m(\\ln x)^n}$ 在 $+\\infty$ 的敛散只由 $m$ 与 $1$ 的大小决定，$m=1$ 时才轮到 $\\ln$（此时需 $n>1$）。\n\n---",
         "cat": "一元积分学",
-        "topic": "反常积分敛散性",
+        "topic": "反常积分",
         "source": "综合例题PDF·例42"
       },
       {
@@ -14271,8 +14271,8 @@ var EDITOR_DATA = [
         "question": "已知 $\\displaystyle\\int_0^{2\\pi}\\mathrm{d}x\\int_0^{\\pi}x f(\\sin y)\\,\\mathrm{d}y=1$，求 $\\displaystyle\\int_0^{\\pi/2}f(\\cos x)\\,\\mathrm{d}x$。",
         "answer": "$\\displaystyle\\int_0^{\\pi/2}f(\\cos x)\\,\\mathrm{d}x=\\frac{1}{4\\pi^{2}}$。",
         "solution": "【校】PDF 内层上限为 $\\pi$，外层 $0\\to 2\\pi$；按此还原（内层与 $x$ 无关，可直接化简）。\n\n**第一步：内层与 $x$ 无关，直接提出。**\n$$\\int_0^{2\\pi}\\mathrm{d}x\\int_0^{\\pi}x f(\\sin y)\\,\\mathrm{d}y=\\int_0^{2\\pi}x\\left(\\int_0^{\\pi}f(\\sin y)\\,\\mathrm{d}y\\right)\\mathrm{d}x .$$\n记 $C=\\displaystyle\\int_0^{\\pi}f(\\sin y)\\,\\mathrm{d}y$（常数），则\n$$1=C\\int_0^{2\\pi}x\\,\\mathrm{d}x=C\\cdot\\frac{(2\\pi)^{2}}{2}=2\\pi^{2}C\n\\quad\\Longrightarrow\\quad C=\\frac{1}{2\\pi^{2}} .$$\n\n**第二步：用对称性把 $[0,\\pi]$ 折半。** 因 $\\sin(\\pi-y)=\\sin y$，令 $t=\\pi-y$：\n$$\\int_{\\pi/2}^{\\pi}f(\\sin y)\\,\\mathrm{d}y=\\int_0^{\\pi/2}f(\\sin t)\\,\\mathrm{d}t,$$\n故\n$$C=\\int_0^{\\pi}f(\\sin y)\\,\\mathrm{d}y=2\\int_0^{\\pi/2}f(\\sin y)\\,\\mathrm{d}y\n\\quad\\Longrightarrow\\quad \\int_0^{\\pi/2}f(\\sin y)\\,\\mathrm{d}y=\\frac{C}{2}=\\frac{1}{4\\pi^{2}} .$$\n\n**第三步：把 $\\cos$ 换成 $\\sin$。** 令 $x=\\dfrac{\\pi}{2}-t$（$x:0\\to\\dfrac\\pi2$ 对应 $t:\\dfrac\\pi2\\to0$），$\\cos x=\\sin t$：\n$$\\int_0^{\\pi/2}f(\\cos x)\\,\\mathrm{d}x=\\int_0^{\\pi/2}f(\\sin t)\\,\\mathrm{d}t=\\frac{1}{4\\pi^{2}} .$$\n\n（说明：全程不需要知道 $f$ 的具体形式，只需假设相应的积分存在即可。）\n\n---\n\n① 累次积分先看**哪一层与外层变量无关**，能提出来的先提出来（本题 $x$ 是一次因子，积分是 $\\int_0^{2\\pi}x\\,\\mathrm{d}x=2\\pi^{2}$ 而非 $2\\pi$）。② 牢记三角对称公式：$\\int_0^{\\pi}f(\\sin)=2\\int_0^{\\pi/2}f(\\sin)$，$\\int_0^{\\pi/2}f(\\sin)=\\int_0^{\\pi/2}f(\\cos)$，$\\int_0^{\\pi}f(\\sin)=\\int_{-\\pi/2}^{\\pi/2}f(\\cos)$。③ 也可用 $\\int_0^{\\pi}x f(\\sin x)\\mathrm{d}x=\\frac{\\pi}{2}\\int_0^{\\pi}f(\\sin x)\\mathrm{d}x$ 型公式（$\\int_0^\\pi xg(\\sin x)\\mathrm dx$ 换 $x\\to\\pi-x$）处理更复杂的变体。",
-        "cat": "一元积分学",
-        "topic": "累次积分·对称性",
+        "cat": "二重积分",
+        "topic": "二重积分换序",
         "source": "综合例题PDF·例45"
       },
       {
@@ -14282,8 +14282,8 @@ var EDITOR_DATA = [
         "question": "设 $f(x),g(x)$ 满足 $f'(x)=g(x)$，$g'(x)=4e^{x}-f(x)$，且 $f(0)=g(0)=0$，求\n$$\\int_0^{\\pi/2}\\left[\\frac{g(x)}{1+x}-\\frac{f(x)}{(1+x)^{2}}\\right]\\mathrm{d}x .$$",
         "answer": "$\\displaystyle I=\\dfrac{4\\bigl(e^{\\pi/2}-1\\bigr)}{\\pi+2}.$",
         "solution": "【校】PDF 上限为 $\\pi$，应为 $\\dfrac{\\pi}{2}$ 或 $\\pi$ 均可，按 $\\dfrac{\\pi}{2}$ 处理并在解答中说明 $\\pi$ 的情形。\n\n**第一步：联立微分方程。** 由 $f'(x)=g(x)$，得 $f''(x)=g'(x)=4e^x-f(x)$，即\n$$f''(x)+f(x)=4e^x,\\quad f(0)=0,\\ f'(0)=g(0)=0.$$\n\n**第二步：解 ODE。** 齐次解 $f_h=C_1\\cos x+C_2\\sin x$。设特解 $f_p=Ae^x$，代入得 $2Ae^x=4e^x$，$A=2$，$f_p=2e^x$。\n通解 $f(x)=C_1\\cos x+C_2\\sin x+2e^x$。\n由 $f(0)=C_1+2=0\\Rightarrow C_1=-2$；$f'(0)=-C_1\\sin 0+C_2\\cos 0+2e^0=C_2+2=0\\Rightarrow C_2=-2$。\n$$f(x)=-2\\cos x-2\\sin x+2e^x.$$\n$$g(x)=f'(x)=2\\sin x-2\\cos x+2e^x.$$\n\n**第三步：分部积分被积函数。** 记\n$$I=\\int_0^{\\pi/2}\\left[\\frac{g(x)}{1+x}-\\frac{f(x)}{(1+x)^2}\\right]\\mathrm{d}x.$$\n注意到\n$$\\frac{\\mathrm{d}}{\\mathrm{d}x}\\!\\left[\\frac{f(x)}{1+x}\\right]=\\frac{f'(x)(1+x)-f(x)}{(1+x)^2}=\\frac{g(x)(1+x)-f(x)}{(1+x)^2}=\\frac{g(x)}{1+x}-\\frac{f(x)}{(1+x)^2}.$$\n故被积函数恰为 $\\left[\\dfrac{f(x)}{1+x}\\right]'$，原函数为 $\\dfrac{f(x)}{1+x}$。\n\n**第四步：套 Newton-Leibniz 公式。**\n$$I=\\left.\\frac{f(x)}{1+x}\\right|_0^{\\pi/2}=\\frac{f(\\pi/2)}{1+\\pi/2}-\\frac{f(0)}{1+0}.$$\n\n计算 $f(\\pi/2)=-2\\cos(\\pi/2)-2\\sin(\\pi/2)+2e^{\\pi/2}=0-2+2e^{\\pi/2}=2e^{\\pi/2}-2$。\n$$I=\\frac{2e^{\\pi/2}-2}{1+\\pi/2}-0=\\frac{2(e^{\\pi/2}-1)}{1+\\pi/2}=\\frac{4(e^{\\pi/2}-1)}{\\pi+2}.$$\n\n【校】**注**：本题上限 PDF 给 $\\pi$ 或 $\\dfrac{\\pi}{2}$，按 $\\dfrac{\\pi}{2}$ 处理。若上限取 $\\pi$：\n$$f(\\pi)=-2\\cos\\pi-2\\sin\\pi+2e^\\pi=2+0+2e^\\pi=2(e^\\pi+1).$$\n$$I=\\frac{2(e^\\pi+1)}{1+\\pi}=\\frac{2(e^\\pi+1)}{\\pi+1}.$$\n\n被积式 $\\dfrac{g(x)}{1+x}-\\dfrac{f(x)}{(1+x)^2}$ 是 $\\dfrac{f(x)}{1+x}$ 的导数——观察到此结构后无需具体求 $f$、$g$，直接用 Newton-Leibniz 公式即可。为配合边界条件 $f(0)=0$，仍需求出 $f(\\pi/2)$ 的值。\n\n---",
-        "cat": "一元积分学",
-        "topic": "微分方程组·定积分",
+        "cat": "微分方程",
+        "topic": "",
         "source": "综合例题PDF·例65"
       },
       {
@@ -14294,7 +14294,7 @@ var EDITOR_DATA = [
         "answer": "$\\displaystyle f(x)=xe^x.$",
         "solution": "**第一步：利用反函数性质消去 $g$。** 由 $g$ 是 $f$ 的反函数，$f(g(t))=t$，对 $\\int_0^{f(x)}g(t)\\,\\mathrm{d}t$ 作换元 $t=f(s)$，则 $dt=f'(s)\\,ds$，$g(t)=s$，上下限 $t:0\\to f(x)$ 对应 $s:0\\to x$：\n$$\\int_0^{f(x)}g(t)\\,\\mathrm{d}t=\\int_0^{x}s\\,f'(s)\\,\\mathrm{d}s.$$\n对右端分部积分（$u=s,\\ \\mathrm{d}v=f'(s)\\,\\mathrm{d}s$）：\n$$\\int_0^x s\\,f'(s)\\,\\mathrm{d}s=\\bigl[s\\,f(s)\\bigr]_0^x-\\int_0^x f(s)\\,\\mathrm{d}s=x\\,f(x)-\\int_0^x f(s)\\,\\mathrm{d}s.$$\n\n**第二步：合并两项积分。** 代入原方程：\n$$x\\,f(x)-\\int_0^x f(s)\\,\\mathrm{d}s+\\int_0^x f(t)\\,\\mathrm{d}t=x^{2}e^{x}.$$\n两个 $\\int_0^x f$ 项恰好对消：\n$$x\\,f(x)=x^{2}e^{x}.$$\n\n**第三步：解出 $f$。** 对 $x>0$：\n$$f(x)=\\frac{x^{2}e^{x}}{x}=x\\,e^{x}.$$\n\n**第四步：确定 $f(0)$。** 令 $x=0$ 入原方程：左端 $= \\int_0^{f(0)}g(t)dt$（因 $\\int_0^0 f(t)dt=0$），右端 $=0$。由于 $g$ 是 $f$ 的反函数且 $f$ 在 $x=0$ 处连续递增，$g$ 在 $[0,f(0)]$ 上严格递增。若 $f(0)\\ne 0$，则 $\\int_0^{f(0)}g(t)dt\\ne 0$，故必须 $f(0)=0$（与 $f(x)=xe^x$ 在 $x=0$ 取值一致）。\n\n**第五步：验证。** $f(x)=xe^x$，$f(0)=0$，$f'(x)=e^x+xe^x=(x+1)e^x$。$g(t)$ 是 $f$ 的反函数。\n原方程左端：$\\int_0^{xe^x}g(t)dt + \\int_0^x te^t dt$。\n由分部积分 $\\int_0^x s f'(s)ds = x\\cdot xe^x - \\int_0^x se^s ds = x^2 e^x - \\int_0^x se^s ds$，故\n$$\\int_0^{xe^x}g(t)dt = x^2 e^x - \\int_0^x te^t dt,$$\n代入原方程左端恰好 $= x^2 e^x$ ✓。\n\n反函数积分方程的通用化简：先换元 $t=f(s)$ 把 $\\int_0^{f(x)}g(t)dt$ 化为 $\\int_0^x s f'(s)ds$，再分部积分 $\\int s f'(s)ds = sf(s)-\\int f(s)ds$——这一步最关键，常被遗漏。本题因 $f$ 与 $\\int f$ 恰好对消直接得到代数式 $xf(x)=x^2e^x$，省去求解 ODE；若两边不抵消则需解一阶线性 ODE。\n\n---",
         "cat": "一元积分学",
-        "topic": "反函数·积分方程",
+        "topic": "积分方程",
         "source": "综合例题PDF·例66"
       },
       {
@@ -14305,7 +14305,7 @@ var EDITOR_DATA = [
         "answer": "$\\displaystyle f(x)=-\\dfrac{1}{x+1}.$",
         "solution": "**第一步：化简积分 $\\int_0^x(x-t)f(t)f'(t)\\,\\mathrm{d}t$。** 由 $f(t)f'(t)=\\tfrac12\\bigl[f^2(t)\\bigr]'$，\n$$\\int_0^x(x-t)f(t)f'(t)\\,\\mathrm{d}t=\\frac12\\int_0^x(x-t)\\,\\mathrm{d}[f^2(t)].$$\n用分部积分（$u=x-t$, $\\mathrm{d}v=\\mathrm{d}[f^2(t)]$）：\n$$\\frac12\\left\\{(x-t)f^2(t)\\Big|_0^x+\\!\\int_0^xf^2(t)\\,\\mathrm{d}t\\right\\}\n=-\\frac{x\\,f^2(0)}{2}+\\frac12\\int_0^xf^2(t)\\,\\mathrm{d}t.$$\n\n**第二步：求 $f(0)$。** 令 $x=0$ 入原方程得 $f(0)=-1$，故 $f^2(0)=1$。代入原方程：\n$$f(x)=-1+x-x+\\int_0^xf^2(t)\\,\\mathrm{d}t=-1+\\int_0^xf^2(t)\\,\\mathrm{d}t.$$\n即\n$$f(x)+1=\\int_0^xf^2(t)\\,\\mathrm{d}t.$$\n\n**第三步：对 $x$ 求导（ODE）。** 两端对 $x$ 求导：\n$$f'(x)=f^2(x).$$\n\n**第四步：解 ODE。** $\\dfrac{\\mathrm{d}f}{f^2}=\\mathrm{d}x$，积分得 $-\\dfrac{1}{f(x)}=x+C$。由 $f(0)=-1$：$C=1$，故\n$$f(x)=-\\frac{1}{x+1}.$$\n\n**第五步：验证。** $f(0)=-1$，$f'(x)=\\dfrac{1}{(x+1)^2}=f^2(x)$ ✓。\n\n代回原方程右端：\n$$-1+x+2\\int_0^x(x-t)\\frac{1}{(t+1)^3}\\,\\mathrm{d}t.$$\n按分部积分结果 $2\\int = -xf^2(0)+\\int_0^x f^2(t)dt = -x+\\left[-\\frac{1}{t+1}\\right]_0^x = -x+1-\\frac{1}{x+1}$.\n故右端 $= -1+x+(-x+1-\\tfrac{1}{x+1}) = -\\tfrac{1}{x+1} = f(x)$ ✓。\n\n含 $(x-t)$ 因子与 $f(t)f'(t)$ 的积分项的化简套路：(1) 识别 $f(t)f'(t)=\\tfrac12[f^2(t)]'$；(2) 对 $(x-t)$ 分部积分，得 $\\tfrac12\\int_0^xf^2(t)dt-\\tfrac{xf^2(0)}{2}$；(3) 由 $x=0$ 入原方程定 $f(0)$；(4) 化为 $\\int_0^xf^2(t)dt$ 形式后对 $x$ 求导得 ODE $f'=f^2$，分离变量求解。本题与例66共同体现\"积分方程 $\\to$ 微分方程\"的标准降维路径。",
         "cat": "一元积分学",
-        "topic": "积分方程·化为微分方程",
+        "topic": "积分方程",
         "source": "综合例题PDF·例67"
       },
       {
@@ -14711,7 +14711,7 @@ var EDITOR_DATA = [
         "question": "设函数 $f(x)=\\displaystyle\\int_0^x t(t-1)e^t\\,dt$，则（　）",
         "answer": 0,
         "solution": "$f'(x)=x(x-1)e^x$，故 $f'(0)=0$；\n$f''(x)=(x^2+x-1)e^x$，故 $f''(0)=-1<0$．\n由极值第二充分条件，$x=0$ 是 $f(x)$ 的**极大值点**．**选 A**．\n另：拐点要求 $f''$ 在该点变号，$f''(0)=-1\\neq 0$，$(0,0)$ 不是拐点，排除 C；D 与 A 矛盾．",
-        "topic": "变限积分·极值与拐点",
+        "topic": "变限积分函数性质",
         "source": "自编·数二模拟卷第七套",
         "cat": "一元积分学",
         "options": [
@@ -14779,7 +14779,7 @@ var EDITOR_DATA = [
         "question": "一口半径为 $R$（$R>0$，单位：m）的圆柱形蓄水池，池内水深 $6$ m。现将池中的水全部抽至池口上方 $2$ m 处的水箱，设水的密度为 $\\rho$，重力加速度为 $g$，则克服重力所做的功为（　）",
         "answer": 0,
         "solution": "取深度微元 $[x,x+dx]$（$x$ 为该层水深，$0\\le x\\le 6$），该层水重 $\\rho g\\pi R^2dx$，需提升的高度为 $(6-x)+2=8-x$（m）．故\n$$W=\\int_0^6\\rho g\\pi R^2(8-x)\\,dx,\\quad\\text{**选 A**}.$$\n（B 漏掉池口上方 $2$ m；C 把积分上限错当成提升高度；D 的被积式与区间均不对应微元关系．）",
-        "topic": "定积分应用·抽水做功",
+        "topic": "定积分物理应用",
         "source": "自编·数二模拟卷第七套",
         "cat": "一元积分学",
         "options": [
@@ -14864,7 +14864,7 @@ var EDITOR_DATA = [
         "question": "$\\displaystyle\\int_0^{+\\infty}\\frac{dx}{(x^2+1)(x^2+4)}=$ ______．",
         "answer": "$\\dfrac{\\pi}{12}$",
         "solution": "$$\\frac{1}{(x^2+1)(x^2+4)}=\\frac13\\left(\\frac{1}{x^2+1}-\\frac{1}{x^2+4}\\right),$$\n$$\\int_0^{+\\infty}\\frac{dx}{(x^2+1)(x^2+4)}=\\frac13\\left(\\frac{\\pi}{2}-\\frac{\\pi}{4}\\right)=\\frac{\\pi}{12}.$$\n（用 $\\displaystyle\\int_0^{+\\infty}\\frac{dx}{x^2+a^2}=\\frac{\\pi}{2a}$．）",
-        "topic": "反常积分计算",
+        "topic": "反常积分",
         "source": "自编·数二模拟卷第七套",
         "cat": "一元积分学"
       },
@@ -14931,7 +14931,7 @@ var EDITOR_DATA = [
         "question": "计算定积分 $I=\\displaystyle\\int_0^{\\pi}\\frac{x\\sin x}{1+\\cos^2 x}\\,dx$．",
         "answer": "$\\dfrac{\\pi^2}{4}$",
         "solution": "由 $x\\to\\pi-x$ 换元：\n$$I=\\int_0^{\\pi}\\frac{(\\pi-x)\\sin x}{1+\\cos^2x}\\,dx,$$\n两式相加：\n$$2I=\\pi\\int_0^{\\pi}\\frac{\\sin x}{1+\\cos^2x}\\,dx=\\pi\\int_0^{\\pi}\\frac{-d(\\cos x)}{1+\\cos^2x}=-\\pi\\Big[\\arctan(\\cos x)\\Big]_0^{\\pi}=-\\pi\\left(-\\frac{\\pi}{4}-\\frac{\\pi}{4}\\right)=\\frac{\\pi^2}{2}.$$\n故 $I=\\dfrac{\\pi^2}{4}$．",
-        "topic": "定积分·对称性（10 分）",
+        "topic": "定积分计算",
         "source": "自编·数二模拟卷第七套",
         "cat": "一元积分学"
       },
@@ -14942,7 +14942,7 @@ var EDITOR_DATA = [
         "question": "设曲线 $y=2x-x^2$ 与 $x$ 轴围成平面图形 $D$．\n（I）求 $D$ 的面积 $S$；\n（II）求 $D$ 绕 $y$ 轴旋转一周所得旋转体的体积 $V$．",
         "answer": "$S=\\dfrac{4}{3}$，$V=\\dfrac{8\\pi}{3}$",
         "solution": "曲线 $y=2x-x^2$ 与 $x$ 轴交于 $x=0,2$．\n\n**（I）** $S=\\displaystyle\\int_0^2(2x-x^2)\\,dx=\\left[x^2-\\frac{x^3}{3}\\right]_0^2=4-\\frac83=\\frac43$．\n\n**（II）** 用柱壳法（竖条绕 $y$ 轴）：\n$$V=\\int_0^2 2\\pi x\\,(2x-x^2)\\,dx=2\\pi\\int_0^2(2x^2-x^3)\\,dx=2\\pi\\left[\\frac{2x^3}{3}-\\frac{x^4}{4}\\right]_0^2=2\\pi\\left(\\frac{16}{3}-4\\right)=\\frac{8\\pi}{3}.$$",
-        "topic": "定积分应用·面积与旋转体（12 分）",
+        "topic": "定积分几何应用",
         "source": "自编·数二模拟卷第七套",
         "cat": "一元积分学"
       },

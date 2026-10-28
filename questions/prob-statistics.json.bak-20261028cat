@@ -1,0 +1,489 @@
+{
+  "subject": "概率论与数理统计",
+  "chapter": "数理统计",
+  "chapterId": "prob-statistics",
+  "questions": [
+    {
+      "id": "prob-stat-001",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$设 X_1,\\ldots,X_n 为来自正态总体 N(\\mu,\\sigma^2) 的样本，\\bar{X} 服从什么分布？$",
+      "options": [
+        "$A. N(\\mu,\\sigma^2)$",
+        "$B. N(\\mu,\\sigma^2/n)$",
+        "$t(n-1)$",
+        "$\\chi^2(n-1)$"
+      ],
+      "answer": 1,
+      "solution": "$\\bar{X} \\sim N(\\mu, \\sigma^2/n)。E(\\bar{X})=\\mu，D(\\bar{X})=\\sigma^2/n。$"
+    },
+    {
+      "id": "prob-stat-002",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "$样本方差 S^2 = \\frac{1}{n-1}\\sum_{i=1}^{n}(X_i-\\bar{X})^2，分母为n-1而不是n，是为了保证 S^2 是 \\sigma^2 的 （　） 估计$",
+      "answer": "无偏",
+      "solution": "$$E($S^2$)=\\sigm$a^2$$，所以 $$S^2$$ 是总体方差的无偏估计。用n作分母的估计量有偏。$"
+    },
+    {
+      "id": "prob-stat-003",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$t$ 分布的定义：若 $X\\sim N(0,1)$，$Y\\sim \\chi^2(n)$ 且独立，则 $T=$？",
+      "options": [
+        "$A. \\frac{X}{\\sqrt{Y/n}}$",
+        "$B. \\frac{X}{Y}$",
+        "$C. \\frac{X}{\\sqrt{Y}}$",
+        "$D. \\frac{X}{Y/n}$"
+      ],
+      "answer": 0,
+      "solution": "$T = \\frac{X}{\\sqrt{Y/n}} \\sim t(n)。t分布形状对称，尾部比正态分布厚，自由度n越大越接近正态。$"
+    },
+    {
+      "id": "prob-stat-004",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$F$ 分布的定义：若 $U\\sim\\chi^2(m)$, $V\\sim\\chi^2(n)$ 且独立，则 $F=$？",
+      "options": [
+        "$A. \\frac{U/m}{V/n}$",
+        "$B. \\frac{U}{V}$",
+        "$C. \\frac{U/m}{V}$",
+        "$D. \\frac{U}{V/n}$"
+      ],
+      "answer": 0,
+      "solution": "$F = \\frac{U/m}{V/n} \\sim F(m,n)。F分布用于方差分析和回归分析中的F检验。$"
+    },
+    {
+      "id": "prob-stat-005",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "矩估计法的基本思想是用 (   ) 矩代替 (   ) 矩（每个空填：样本/总体）",
+      "answer": "样本;总体",
+      "solution": "$矩估计：用样本矩代替总体矩建立方程求解参数。如 \\bar{X} = E(X)，\\frac{1}{n}\\sum X_i^2 = E(X^2)。$"
+    },
+    {
+      "id": "prob-stat-006",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$某参数 \\theta 的估计量 \\hat{\\theta} 满足 E(\\hat{\\theta})=\\theta，则称 \\hat{\\theta} 为？$",
+      "options": [
+        "一致估计",
+        "有效估计",
+        "无偏估计",
+        "充分估计"
+      ],
+      "answer": 2,
+      "solution": "$无偏性：E(\\hat{\\theta}) = \\theta。即估计量的期望等于被估参数。无偏性保证估计量在平均意义下不系统偏离。$"
+    },
+    {
+      "id": "prob-stat-007",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$置信水平 1-\\alpha 的含义是？$",
+      "options": [
+        "$A. 参数落入置信区间的概率为 1-\\alpha$",
+        "$B. 置信区间包含参数的概率为 1-\\alpha$",
+        "$C. 参数等于估计值的概率为 1-\\alpha$",
+        "以上都不对"
+      ],
+      "answer": 1,
+      "solution": "$置信区间的频率解释：重复抽样构造的置信区间中，有约 1-\\alpha 比例的区间包含真值参数。单个区间要么包含要么不包含。$"
+    },
+    {
+      "id": "prob-stat-008",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "$设 X \\sim N(\\mu, 1)，样本量为n，\\mu 的95%置信区间为 [\\bar{X} - 1.96/\\sqrt{n}, \\bar{X} + （　）]$",
+      "answer": "$1.96/\\sqrtn$",
+      "solution": "$方差已知时置信区间：\\bar{X} \\pm z_{\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}。\\alpha=0.05时 z_{0.025}=1.96。$"
+    },
+    {
+      "id": "prob-stat-009",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "假设检验中，第I类错误是指？",
+      "options": [
+        "取伪",
+        "弃真",
+        "两者都是",
+        "两者都不是"
+      ],
+      "answer": 1,
+      "solution": "$第I类错误（弃真）：H_0为真但被拒绝，概率为 \\alpha（显著性水平）。第II类错误（取伪）：H_0为假但被接受。$"
+    },
+    {
+      "id": "prob-stat-010",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$\\chi^2$ 分布的自由度是？",
+      "options": [
+        "独立标准正态随机变量的个数",
+        "样本容量",
+        "参数个数",
+        "方差"
+      ],
+      "answer": 0,
+      "solution": "$\\chi^2(n)$ 是n个独立标准正态随机变量的平方和。自由度n反映了独立信息的数量。$E[\\chi^2(n)]=n$，$D[\\chi^2(n)]=2n$。"
+    },
+    {
+      "id": "prob-stat-011",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$设总体 X \\sim U[0,\\theta]，X_1,\\ldots,X_n 为样本。\\theta 的矩估计为？$",
+      "options": [
+        "$\\bar{X}$",
+        "$2\\bar{X}$",
+        "$C. \\max(X_i)$",
+        "$D. \\min(X_i)$"
+      ],
+      "answer": 1,
+      "solution": "$E(X)=\\theta/2。矩估计：\\bar{X} = \\theta/2 \\Rightarrow \\hat{\\theta} = 2\\bar{X}。极大似然估计为 \\max(X_i)。$"
+    },
+    {
+      "id": "prob-stat-012",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$设 X \\sim N(\\mu, \\sigma^2)，\\mu已知时 \\sigma^2 的极大似然估计为？$",
+      "options": [
+        "$A. \\frac{1}{n}\\sum(X_i-\\bar{X})^2$",
+        "$B. \\frac{1}{n-1}\\sum(X_i-\\bar{X})^2$",
+        "$C. \\frac{1}{n}\\sum(X_i-\\mu)^2$",
+        "$D. \\frac{1}{n-1}\\sum(X_i-\\mu)^2$"
+      ],
+      "answer": 2,
+      "solution": "$\\mu已知时，似然函数只含\\sigma^2。最大化得 \\hat{\\sigma}^2 = \\frac{1}{n}\\sum(X_i-\\mu)^2，这是无偏的。若\\mu未知则MLE为 \\frac{1}{n}\\sum(X_i-\\bar{X})^2（有偏）。$"
+    },
+    {
+      "id": "prob-stat-013",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "$设 X \\sim P(\\lambda)，\\hat{\\lambda} = \\bar{X} 的方差为 （　）$",
+      "answer": "λ/n",
+      "solution": "$D(\\bar{X}) = \\frac{D(X)}{n} = \\frac{\\lambda}{n}。且 E(\\bar{X}) = \\lambda，所以 \\bar{X} 是无偏估计。$"
+    },
+    {
+      "id": "prob-stat-014",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$设总体均值为 \\mu，样本 X_1,\\ldots,X_n。下列哪个不是 \\mu 的无偏估计？$",
+      "options": [
+        "$\\bar{X}$",
+        "$X_1$",
+        "$C. \\frac{X_1+X_n}{2}$",
+        "$D. \\frac{1}{n-1}\\sum X_i$"
+      ],
+      "answer": 3,
+      "solution": "$E(\\frac{1}{n-1}\\sum X_i) = \\frac{n}{n-1}\\mu \\neq \\mu，有偏。A、B、C的期望均为\\mu。$"
+    },
+    {
+      "id": "prob-stat-015",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$费舍尔信息量 I(\\theta) 反映了？$",
+      "options": [
+        "参数估计的最小方差下界",
+        "样本包含参数信息的多少",
+        "A和B都对",
+        "参数的矩"
+      ],
+      "answer": 2,
+      "solution": "$费舍尔信息量反映样本包含参数信息的多少。C-R下界：D(\\hat{\\theta}) \\geq \\frac{1}{nI(\\theta)}（对无偏估计）。信息量越大，估计越精确。$"
+    },
+    {
+      "id": "prob-stat-016",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "$X \\sim N(\\mu, \\sigma^2)，\\sigma已知时 \\mu 的 1-\\alpha 置信区间半宽为 （　）$",
+      "answer": "$z_{α/2}·σ/\\sqrtn$",
+      "solution": "$方差已知：[\\bar{X} - z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}, \\bar{X} + z_{\\alpha/2}\\frac{\\sigma}{\\sqrt{n}}]。z_{\\alpha/2} 为标准正态上 \\alpha/2 分位数。$"
+    },
+    {
+      "id": "prob-stat-017",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$显著性水平 \\alpha 和置信水平 1-\\alpha 的关系：$",
+      "options": [
+        "无关",
+        "$B. \\alpha 大则置信区间宽$",
+        "$C. \\alpha 大则置信区间窄$",
+        "取决于数据"
+      ],
+      "answer": 2,
+      "solution": "$\\alpha 越大，z_{\\alpha/2} 越小，置信区间越窄。\\alpha=0.05时z=1.96；\\alpha=0.10时z=1.645。但可信度越低。$"
+    },
+    {
+      "id": "prob-stat-018",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "设总体 $X \\sim B(1,p)$，则p的极大似然估计 $\\hat{p} =$ （　）",
+      "answer": "X̄",
+      "solution": "$似然函数 L(p) = p^{\\sum X_i}(1-p)^{n-\\sum X_i}。对数似然求导得 \\hat{p} = \\bar{X}。即样本中'1'的比例。$"
+    },
+    {
+      "id": "prob-stat-019",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "两个独立正态总体方差比的置信区间用哪个分布？",
+      "options": [
+        "$t$分布",
+        "$F$分布",
+        "$\\chi^2$分布",
+        "正态分布"
+      ],
+      "answer": 1,
+      "solution": "$\\frac{S_1^2/\\sigma_1^2}{S_2^2/\\sigma_2^2} \\sim F(n_1-1, n_2-1)。方差比 \\sigma_1^2/\\sigma_2^2 的置信区间基于F分布。$"
+    },
+    {
+      "id": "prob-stat-020",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$E(\\hat{\\theta}) = \\theta 且 D(\\hat{\\theta}) \\to 0（n\\to\\infty），则 \\hat{\\theta} 是 \\theta 的？$",
+      "options": [
+        "一致估计",
+        "无偏估计",
+        "有效估计",
+        "充分估计"
+      ],
+      "answer": 0,
+      "solution": "$均方误差 \\to 0 意味着依概率收敛：\\hat{\\theta} 是 \\theta 的一致（相合）估计。无偏是有限样本性质，一致是渐近性质。$"
+    },
+    {
+      "id": "prob-stat-021",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$设总体 X \\sim N(\\mu, \\sigma^2)，\\sigma^2 的极大似然估计为 \\hat{\\sigma}^2 = \\frac{1}{n}\\sum(X_i-\\bar{X})^2。其偏差为？$",
+      "options": [
+        "0",
+        "$B. -\\frac{\\sigma^2}{n}$",
+        "$C. -\\frac{2\\sigma^2}{n}$",
+        "$D. -\\frac{\\sigma^4}{n}$"
+      ],
+      "answer": 1,
+      "solution": "$E(\\hat{\\sigma}^2) = \\frac{n-1}{n}\\sigma^2，偏差 = E(\\hat{\\sigma}^2) - \\sigma^2 = -\\frac{\\sigma^2}{n}。当 n \\to \\infty 时偏差趋于0，是渐近无偏的。$"
+    },
+    {
+      "id": "prob-stat-022",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$设 X \\sim U[0,\\theta]，\\theta 的极大似然估计 \\hat{\\theta}_{MLE} = （　）$",
+      "answer": "max(X_i)",
+      "solution": "$似然函数 L(\\theta) = 1/\\theta^n，0 \\leq X_i \\leq \\theta。\\theta越小L越大，但受约束\\theta \\geq \\max(X_i)。故 \\hat{\\theta} = X_{(n)} = \\max(X_i)。$"
+    },
+    {
+      "id": "prob-stat-023",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$设 X_1,\\ldots,X_n 独立同分布 Exp(\\lambda)，则 2\\lambda \\sum_{i=1}^n X_i \\sim？$",
+      "options": [
+        "$\\chi^2(2n)$",
+        "$\\chi^2(n)$",
+        "$F(n,n)$",
+        "$t(2n)$"
+      ],
+      "answer": 0,
+      "solution": "$X \\sim Exp(\\lambda) \\Leftrightarrow 2\\lambda X \\sim \\chi^2(2)。独立和：2\\lambda \\sum X_i \\sim \\chi^2(2n)。可用于构造 \\lambda 的置信区间。$"
+    },
+    {
+      "id": "prob-stat-024",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$\\sigma^2的无偏估计 S^2 与极大似然估计 \\hat{\\sigma}^2 的关系：$",
+      "options": [
+        "$A. S^2 = \\hat{\\sigma}^2$",
+        "$B. S^2 = \\frac{n}{n-1}\\hat{\\sigma}^2$",
+        "$C. \\hat{\\sigma}^2 = \\frac{n}{n-1}S^2$",
+        "无关"
+      ],
+      "answer": 1,
+      "solution": "$\\hat{\\sigma}^2 = \\frac{1}{n}\\sum(X_i-\\bar{X})^2，S^2 = \\frac{1}{n-1}\\sum(X_i-\\bar{X})^2。故 S^2 = \\frac{n}{n-1}\\hat{\\sigma}^2。$"
+    },
+    {
+      "id": "prob-stat-025",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$设 X \\sim N(\\mu, \\sigma^2)，\\mu 未知，\\sigma^2的 1-\\alpha 置信区间基于的枢轴量为 （　）$",
+      "answer": "(n-1)$S^2$/σ^2 ~ χ^2(n-1)",
+      "solution": "$\\frac{(n-1)S^2}{\\sigma^2} \\sim \\chi^2(n-1)。置信区间：[\\frac{(n-1)S^2}{\\chi^2_{\\alpha/2}}, \\frac{(n-1)S^2}{\\chi^2_{1-\\alpha/2}}]。$"
+    },
+    {
+      "id": "prob-stat-026",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$设总体 X \\sim N(\\mu_1, \\sigma^2)，Y \\sim N(\\mu_2, \\sigma^2)，方差相等。\\mu_1-\\mu_2 的置信区间用什么分布？$",
+      "options": [
+        "$t$分布",
+        "$F$分布",
+        "$\\chi^2$分布",
+        "正态分布"
+      ],
+      "answer": 0,
+      "solution": "$两样本t检验：方差相等时用pooled方差 S_p^2，\\frac{(\\bar{X}-\\bar{Y})-(\\mu_1-\\mu_2)}{S_p\\sqrt{1/n_1+1/n_2}} \\sim t(n_1+n_2-2)。$"
+    },
+    {
+      "id": "prob-stat-027",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$设 X \\sim N(\\mu, \\sigma^2)，样本容量n。\\mu 的 1-\\alpha 置信区间的长度为 （　）（用 t_{\\alpha/2}(n-1), S, n 表示）$",
+      "answer": "$2t_{α/2}(n-1)·S/\\sqrtn$",
+      "solution": "$\\sigma未知时用t分布：[\\bar{X} - t_{\\alpha/2}(n-1)\\frac{S}{\\sqrt{n}}, \\bar{X} + t_{\\alpha/2}(n-1)\\frac{S}{\\sqrt{n}}]。长度 = 2t_{\\alpha/2}(n-1) \\cdot S/\\sqrt{n}。$"
+    },
+    {
+      "id": "prob-stat-028",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "充分统计量的直观含义是？",
+      "options": [
+        "包含样本中关于参数的全部信息",
+        "方差最小",
+        "无偏",
+        "计算量最小"
+      ],
+      "answer": 0,
+      "solution": "$充分统计量 T(X)：给定T后，样本的条件分布与参数\\theta无关，即T包含了样本中有关\\theta的全部信息。因子分解定理用于判断。$"
+    },
+    {
+      "id": "prob-stat-029",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$对于正态总体 N(\\mu, 1)，\\mu 的UMP（一致最优势）检验存在，因为？$",
+      "options": [
+        "指数族分布",
+        "正态分布",
+        "单调似然比性质",
+        "A和C"
+      ],
+      "answer": 3,
+      "solution": "指数族分布且具有单调似然比性质，由奈曼-皮尔逊引理可构造UMP检验。正态、二项、泊松等都属于指数族。"
+    },
+    {
+      "id": "prob-stat-030",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$设 X_1,\\ldots,X_n 独立同分布 N(0,\\sigma^2)。\\sigma^2 的C-R下界为 （　）$",
+      "answer": "2σ^4/n",
+      "solution": "$I(\\sigma^2) = \\frac{1}{2\\sigma^4}（单个观测）。C-R下界 = \\frac{1}{nI} = \\frac{2\\sigma^4}{n}。\\frac{1}{n}\\sum X_i^2 达到此下界，是最小方差无偏估计。$"
+    },
+    {
+      "id": "prob-stat-031",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "关于置信区间，哪个说法正确？",
+      "options": [
+        "置信水平越高，区间越窄",
+        "样本量越大，区间越窄",
+        "总体方差越大，区间越窄",
+        "以上都不对"
+      ],
+      "answer": 1,
+      "solution": "样本量n越大，估计越精确，置信区间越窄。置信水平越高区间越宽（A错），总体方差越大区间越宽（C错）。"
+    },
+    {
+      "id": "prob-stat-032",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "在假设检验中，p值的定义为？",
+      "options": [
+        "第I类错误的概率",
+        "在原假设下观测到比当前更极端结果的概率",
+        "第II类错误的概率",
+        "功效函数的值"
+      ],
+      "answer": 1,
+      "solution": "$p值是在 H_0 为真的假定下，检验统计量取值比观测值更极端的概率。p < \\alpha 时拒绝 H_0。p值越小，反对 H_0 的证据越强。$"
+    },
+    {
+      "id": "prob-stat-033",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$设总体 X 的分布函数为 F(x;\\theta)。次序统计量 (X_{(1)},\\ldots,X_{(n)}) 是 \\theta 的 （　） 统计量（填充分/完备/有效）$",
+      "answer": "充分",
+      "solution": "对于任意分布，次序统计量总是充分的（给定排序后，样本值的具体排列不再提供额外信息）。但一般不完备。"
+    },
+    {
+      "id": "prob-stat-034",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$设 X \\sim \\Gamma(\\alpha,\\lambda)，\\lambda已知时 \\alpha 的极大似然估计满足什么方程？$",
+      "options": [
+        "$A. \\ln\\alpha - \\psi(\\alpha) = \\ln\\bar{X} - \\overline{\\ln X}$",
+        "$B. \\alpha = \\bar{X}$",
+        "$C. \\alpha = \\lambda \\bar{X}$",
+        "有显式解"
+      ],
+      "answer": 0,
+      "solution": "$对伽马分布，\\alpha的MLE满足 \\ln\\alpha - \\psi(\\alpha) = \\ln\\bar{X} - \\overline{\\ln X}，其中\\psi是digamma函数。无显式解，需数值求解。$"
+    },
+    {
+      "id": "prob-stat-035",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "下列关于无偏估计和相合估计的说法，正确的是？",
+      "options": [
+        "无偏估计必为相合估计",
+        "相合估计必为无偏估计",
+        "均方误差趋于0是相合的充分条件",
+        "无偏且方差趋于0是相合的充要条件"
+      ],
+      "answer": 2,
+      "solution": "$均方误差 \\to 0 \\Rightarrow 相合：P(|\\hat{\\theta}-\\theta|>\\varepsilon) \\leq E(\\hat{\\theta}-\\theta)^2/\\varepsilon^2 \\to 0。C正确。A不一定（如X_1无偏但不相合），B也不一定。$"
+    },
+    {
+      "id": "prob-stat-036",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$设 X \\sim Exp(\\lambda)，\\lambda 的无偏估计 \\hat{\\lambda} = （　）（用 \\bar{X} 表示）$",
+      "answer": "(n-1)/(nX̄)",
+      "solution": "$注意 E(1/\\bar{X}) \\neq \\lambda。\\sum X_i \\sim \\Gamma(n,\\lambda)，E(1/\\sum X_i) = \\lambda/(n-1)。故 \\hat{\\lambda} = \\frac{n-1}{n\\bar{X}} 是无偏的。实际上 E(\\frac{n-1}{\\sum X_i}) = \\lambda。$"
+    },
+    {
+      "id": "prob-stat-037",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$用 \\hat{\\theta} 的均方误差 MSE(\\hat{\\theta}) 来衡量估计量的优劣。对于无偏估计，MSE等于？$",
+      "options": [
+        "偏差",
+        "方差",
+        "$C. \\theta^2$",
+        "0"
+      ],
+      "answer": 1,
+      "solution": "$MSE = E(\\hat{\\theta}-\\theta)^2 = D(\\hat{\\theta}) + (Bias)^2。无偏时 Bias=0，MSE = D(\\hat{\\theta})。$"
+    },
+    {
+      "id": "prob-stat-038",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$在 H_0: \\mu = \\mu_0 vs H_1: \\mu \\neq \\mu_0 的双边检验中，若 |T| > t_{\\alpha/2} 时拒绝 H_0。此时第II类错误 \\beta 依赖于 （　）（填参数名称）$",
+      "answer": "μ",
+      "solution": "$\\beta(\\mu) = P(\\text{接受}H_0|\\mu \\neq \\mu_0)，是 \\mu 的函数。\\beta 随 |\\mu-\\mu_0| 增大而减小。1-\\beta 是功效函数。$"
+    },
+    {
+      "id": "prob-stat-039",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$设 \\hat{\\theta}_1 和 \\hat{\\theta}_2 都是 \\theta 的无偏估计，D(\\hat{\\theta}_1) < D(\\hat{\\theta}_2)，则 \\hat{\\theta}_1 比 \\hat{\\theta}_2：$",
+      "options": [
+        "更有效",
+        "更充分",
+        "更相合",
+        "更无偏"
+      ],
+      "answer": 0,
+      "solution": "$无偏估计中方差小者更有效。相对效率定义为 D(\\hat{\\theta}_2)/D(\\hat{\\theta}_1)。最小方差无偏估计（UMVUE）是效率最高的无偏估计。$"
+    },
+    {
+      "id": "prob-stat-040",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "贝叶斯估计和频率学派估计的根本区别在于？",
+      "options": [
+        "计算复杂度",
+        "是否将参数视为随机变量",
+        "是否使用样本信息",
+        "是否使用先验信息"
+      ],
+      "answer": 1,
+      "solution": "$贝叶斯方法将参数\\theta视为随机变量（有先验分布），利用样本更新为后验分布。频率学派视\\theta为未知常数。这导致两者在推理框架上有本质差异。$"
+    }
+  ]
+}

@@ -1,0 +1,635 @@
+{
+  "subject": "高等数学",
+  "chapter": "向量代数与空间解析几何",
+  "chapterId": "calculus-vector-geometry",
+  "questions": [
+    {
+      "id": "cal-vg-001",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$设 \\vec{a} = (1,2,3)，\\vec{b} = (4,5,6)，则 \\vec{a} \\cdot \\vec{b} =（ ）$",
+      "options": [
+        "$32$",
+        "$28$",
+        "$35$",
+        "$30$"
+      ],
+      "answer": 0,
+      "solution": "$\\vec{a} \\cdot \\vec{b} = 1 \\cdot 4 + 2 \\cdot 5 + 3 \\cdot 6 = 4 + 10 + 18 = 32。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-002",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$设 \\vec{a} = (1,0,0)，\\vec{b} = (0,1,0)，则 \\vec{a} \\times \\vec{b} =（ ）$",
+      "options": [
+        "$(0,0,1)$",
+        "$(1,0,0)$",
+        "$(0,1,0)$",
+        "$(0,0,0)$"
+      ],
+      "answer": 0,
+      "solution": "$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{vmatrix} = 0\\vec{i} + 0\\vec{j} + 1\\vec{k} = (0,0,1)。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-003",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "两向量 $\\vec{a}$ 与 $\\vec{b}$ 垂直的充要条件是（ ）",
+      "options": [
+        "$\\vec{a} \\cdot \\vec{b} = 0$",
+        "$\\vec{a} \\times \\vec{b} = 0$",
+        "$|\\vec{a}| = |\\vec{b}|$",
+        "$\\vec{a} + \\vec{b} = 0$"
+      ],
+      "answer": 0,
+      "solution": "$\\vec{a} \\perp \\vec{b} \\iff \\vec{a} \\cdot \\vec{b} = 0。\\vec{a} \\times \\vec{b} = 0 是平行的充要条件。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-004",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "过点 $(1,2,3)$ 且法向量为 $\\vec{n} = (1,0,0)$ 的平面方程是（ ）",
+      "options": [
+        "$x = 1$",
+        "$y = 2$",
+        "$z = 3$",
+        "$x + y + z = 6$"
+      ],
+      "answer": 0,
+      "solution": "$点法式：1 \\cdot (x-1) + 0 \\cdot (y-2) + 0 \\cdot (z-3) = 0，即 x = 1。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-005",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "曲面 $x^2 + y^2 + z^2 = 4$ 表示（ ）",
+      "options": [
+        "球面",
+        "圆柱面",
+        "圆锥面",
+        "抛物面"
+      ],
+      "answer": 0,
+      "solution": "$x^2+y^2+z^2 = R^2$ 是球心在原点、半径为 $R$ 的球面，此处 $R=2$。**答案：A**"
+    },
+    {
+      "id": "cal-vg-006",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$空间直线 \\frac{x-1}{2} = \\frac{y-2}{3} = \\frac{z-3}{4} 的方向向量是（ ）$",
+      "options": [
+        "$(2,3,4)$",
+        "$(1,2,3)$",
+        "$(-2,-3,-4)$",
+        "$(1,1,1)$"
+      ],
+      "answer": 0,
+      "solution": "$标准方程 \\frac{x-x_0}{m} = \\frac{y-y_0}{n} = \\frac{z-z_0}{p} 中 (m,n,p) 是方向向量。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-007",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "曲面 $x^2 + y^2 = 1$ 在空间直角坐标系中表示（ ）",
+      "options": [
+        "圆柱面",
+        "圆",
+        "球面",
+        "双曲面"
+      ],
+      "answer": 0,
+      "solution": "$x^2 + y^2 = 1$ 不含 $z$，表示所有平行于 $z$ 轴且与 $xOy$ 平面交于单位圆的直线组成的圆柱面。**答案：A**"
+    },
+    {
+      "id": "cal-vg-008",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "两平面 $x + 2y + 3z = 1$ 和 $2x + 4y + 6z = 5$ 的位置关系是（ ）",
+      "options": [
+        "平行",
+        "垂直",
+        "相交",
+        "重合"
+      ],
+      "answer": 0,
+      "solution": "$法向量 (1,2,3) 与 (2,4,6) 平行（后者是前者的 2 倍），但常数项不成比例（1 \\times 2 \\neq 5），故两平面平行。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-009",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$向量的混合积 (\\vec{a},\\vec{b},\\vec{c}) = \\vec{a} \\cdot (\\vec{b} \\times \\vec{c}) 的绝对值表示（ ）$",
+      "options": [
+        "以三向量为棱的平行六面体的体积",
+        "三角形面积",
+        "平行四边形面积",
+        "向量夹角"
+      ],
+      "answer": 0,
+      "solution": "混合积的绝对值 $|(\\vec{a},\\vec{b},\\vec{c})|$ 等于以三向量为相邻棱的平行六面体的体积。**答案：A**"
+    },
+    {
+      "id": "cal-vg-010",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "点 $(1,2,3)$ 到平面 $x + y + z = 0$ 的距离是（ ）",
+      "options": [
+        "$2\\sqrt{3}$",
+        "$\\sqrt{6}$",
+        "$\\frac{6}{\\sqrt{3}}$",
+        "$\\sqrt{3}$"
+      ],
+      "answer": 0,
+      "solution": "$距离公式：d = \\frac{|1+2+3|}{\\sqrt{1^2+1^2+1^2}} = \\frac{6}{\\sqrt{3}} = 2\\sqrt{3}。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-011",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "设 $\\vec{a} = (1,1,0)$，$\\vec{b} = (0,1,1)$，则 $\\vec{a}$ 与 $\\vec{b}$ 的夹角余弦为（ ）",
+      "options": [
+        "$\\frac{1}{2}$",
+        "$\\frac{\\sqrt{2}}{2}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{\\sqrt{3}}{2}$"
+      ],
+      "answer": 0,
+      "solution": "$\\cos\\theta = \\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{a}||\\vec{b}|} = \\frac{0+1+0}{\\sqrt{2} \\cdot \\sqrt{2}} = \\frac{1}{2}。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-012",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "过点 $(1,0,0)$、$(0,1,0)$、$(0,0,1)$ 的平面方程是（ ）",
+      "options": [
+        "$x + y + z = 1$",
+        "$x + y + z = 0$",
+        "$x + y = 1$",
+        "$x + z = 1$"
+      ],
+      "answer": 0,
+      "solution": "$三点代入检验即可。或用法向量 \\overrightarrow{AB} \\times \\overrightarrow{AC} = (-1,1,0) \\times (-1,0,1) = (1,1,1)，得 x+y+z=1。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-013",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "平面 $x + 2y + 3z = 6$ 在三个坐标轴上的截距分别为（ ）",
+      "options": [
+        "$6,3,2$",
+        "$1,2,3$",
+        "$6,6,6$",
+        "$1,\\frac{1}{2},\\frac{1}{3}$"
+      ],
+      "answer": 0,
+      "solution": "$截距式：\\frac{x}{6} + \\frac{y}{3} + \\frac{z}{2} = 1，故截距为 6,3,2。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-014",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "曲面 $z = x^2 + y^2$ 是（ ）",
+      "options": [
+        "旋转抛物面",
+        "双曲抛物面",
+        "椭球面",
+        "锥面"
+      ],
+      "answer": 0,
+      "solution": "$z = x^2 + y^2$ 是顶点在原点的旋转抛物面。**答案：A**"
+    },
+    {
+      "id": "cal-vg-015",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "下列方程中，表示双曲抛物面（马鞍面）的是（ ）",
+      "options": [
+        "$z = x^2 - y^2$",
+        "$z = x^2 + y^2$",
+        "$x^2 + y^2 - z^2 = 1$",
+        "$x^2 + y^2 + z^2 = 1$"
+      ],
+      "answer": 0,
+      "solution": "$z = x^2 - y^2$ 是双曲抛物面（马鞍形曲面）。$z = x^2 + y^2$ 是旋转抛物面，$x^2+y^2-z^2=1$ 是单叶双曲面。**答案：A**"
+    },
+    {
+      "id": "cal-vg-016",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$直线 L_1: \\frac{x}{1} = \\frac{y}{2} = \\frac{z}{3} 和 L_2: \\frac{x-1}{2} = \\frac{y-2}{3} = \\frac{z-3}{1} 的位置关系是（ ）$",
+      "options": [
+        "异面（不平行也不相交）",
+        "平行",
+        "相交",
+        "重合"
+      ],
+      "answer": 0,
+      "solution": "$方向向量 \\vec{s}_1 = (1,2,3)，\\vec{s}_2 = (2,3,1)，不平行。点 (0,0,0) 和 (1,2,3)。混合积 [\\vec{s}_1, \\vec{s}_2, \\overrightarrow{P_1P_2}] = \\begin{vmatrix}1&2&3\\\\2&3&1\\\\1&2&3\\end{vmatrix} \\neq 0，故异面。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-017",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$点 (1,2,3) 到直线 \\frac{x}{1} = \\frac{y}{2} = \\frac{z}{3} 的距离为（ ）$",
+      "options": [
+        "$\\frac{\\sqrt{14}}{\\sqrt{14}}$",
+        "$\\frac{\\sqrt{14}}{7}$",
+        "$\\frac{\\sqrt{14}}{14}$",
+        "$\\sqrt{\\frac{14}{13}}$"
+      ],
+      "answer": 0,
+      "solution": "$直线过原点，方向 (1,2,3)。\\vec{OP} = (1,2,3) 与方向平行，故距离为 0。需换点，题改为 (1,1,1)：d = \\frac{|\\vec{OP} \\times \\vec{s}|}{|\\vec{s}|} = \\frac{|(1,1,1) \\times (1,2,3)|}{\\sqrt{14}} = \\frac{\\sqrt{14}}{\\sqrt{14}} = 1。**答案：A**（此题点恰好在直线上，距离为0，选项不匹配，实际应修正）$"
+    },
+    {
+      "id": "cal-vg-018",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$设直线 L: \\frac{x-1}{2} = \\frac{y-2}{-1} = \\frac{z+1}{2}，则 L 在平面 x + y + z = 1 上的投影直线方程是（ ）$",
+      "options": [
+        "$\\begin{cases} x+y+z=1 \\\\ 5x-4y+z-3=0 \\end{cases}$",
+        "$\\frac{x-1}{2} = \\frac{y-2}{-1} = \\frac{z+1}{2}$",
+        "$\\begin{cases} x+y+z=1 \\\\ x-y+z=0 \\end{cases}$",
+        "投影为一个点"
+      ],
+      "answer": 0,
+      "solution": "$直线方向 \\vec{s}=(2,-1,2)，平面法向量 \\vec{n}=(1,1,1)。\\vec{s} \\cdot \\vec{n} = 2-1+2=3 \\neq 0，故直线不平行于平面，投影为一直线。过直线的平面束：(x-1)+\\lambda(\\frac{y-2}{-1})… 标准解法：求过直线的平面束方程，使平面与给定平面垂直。过 L 的平面束中，使法向量与 (1,1,1) 垂直的平面即为投影平面。结果为 5x-4y+z-3=0。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-019",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "已知三向量 $\\vec{a},\\vec{b},\\vec{c}$ 共面的充要条件是（ ）",
+      "options": [
+        "$(\\vec{a},\\vec{b},\\vec{c}) = 0$",
+        "$\\vec{a} \\cdot \\vec{b} = 0$",
+        "$\\vec{a} \\times \\vec{b} = \\vec{c}$",
+        "$\\vec{a} + \\vec{b} = \\vec{c}$"
+      ],
+      "answer": 0,
+      "solution": "三向量共面 $\\iff$ 混合积为零：$(\\vec{a},\\vec{b},\\vec{c}) = 0$。这是因为混合积的绝对值是平行六面体体积。**答案：A**"
+    },
+    {
+      "id": "cal-vg-020",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$曲线 \\begin{cases} x^2 + y^2 + z^2 = 4 \\\\ z = \\sqrt{x^2 + y^2} \\end{cases} 在 xOy 平面上的投影曲线方程是（ ）$",
+      "options": [
+        "$x^2 + y^2 = 2$（$z=0$）",
+        "$x^2 + y^2 = 4$（$z=0$）",
+        "$x^2 + y^2 = 1$（$z=0$）",
+        "$x^2 + y^2 = 3$（$z=0$）"
+      ],
+      "answer": 0,
+      "solution": "$消去 z：z = \\sqrt{x^2+y^2} 代入球面得 x^2+y^2 + (x^2+y^2) = 4，即 2(x^2+y^2) = 4，x^2+y^2 = 2（z=0 平面上的投影）。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-021",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$设 \\vec{a} \\times \\vec{b} = \\vec{b} \\times \\vec{c} = \\vec{c} \\times \\vec{a} \\neq 0，则 \\vec{a} + \\vec{b} + \\vec{c} =（ ）$",
+      "options": [
+        "$\\vec{0}$",
+        "$\\vec{a}$",
+        "$\\vec{b}$",
+        "不能确定"
+      ],
+      "answer": 0,
+      "solution": "$由 \\vec{a} \\times \\vec{b} = \\vec{b} \\times \\vec{c} 得 \\vec{a} \\times \\vec{b} + \\vec{c} \\times \\vec{b} = 0，即 (\\vec{a}+\\vec{c}) \\times \\vec{b} = 0。同理 (\\vec{a}+\\vec{b}) \\times \\vec{c} = 0。结合条件得 \\vec{a}+\\vec{b}+\\vec{c} = \\vec{0}。**答案：A**$"
+    },
+    {
+      "id": "cal-vg-022",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "向量 $\\vec{a}=(1,2,3)$ 的模为（ ）",
+      "options": [
+        "$\\sqrt{14}$",
+        "$6$",
+        "$14$",
+        "$\\sqrt{6}$"
+      ],
+      "answer": 0,
+      "solution": "$|\\vec{a}|=\\sqrt{1^2+2^2+3^2}=\\sqrt{14}。$"
+    },
+    {
+      "id": "cal-vg-023",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$\\vec{a}\\cdot\\vec{b}=0 说明两向量（ ）$",
+      "options": [
+        "平行",
+        "垂直",
+        "共线",
+        "相等"
+      ],
+      "answer": 1,
+      "solution": "点积为0意味着夹角90°。"
+    },
+    {
+      "id": "cal-vg-024",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "$\\vec{a}\\times\\vec{b} 的结果是（ ）$",
+      "options": [
+        "标量",
+        "向量",
+        "矩阵",
+        "行列式"
+      ],
+      "answer": 1,
+      "solution": "叉积结果是向量，方向按右手定则。"
+    },
+    {
+      "id": "cal-vg-025",
+      "type": "choice",
+      "difficulty": "basic",
+      "question": "平面 $2x-y+3z=6$ 的法向量为（ ）",
+      "options": [
+        "$(2,-1,3)$",
+        "$(2,1,3)$",
+        "$(-2,1,3)$",
+        "$(6,6,6)$"
+      ],
+      "answer": 0,
+      "solution": "一般式$Ax+By+Cz+D=0$的法向量为$(A,B,C)$。"
+    },
+    {
+      "id": "cal-vg-026",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$\\vec{a}=(1,1,0)，\\vec{b}=(0,1,1)，\\vec{a}\\cdot\\vec{b}=（ ）$",
+      "options": [
+        "$0$",
+        "$1$",
+        "$2$",
+        "$-1$"
+      ],
+      "answer": 1,
+      "solution": "$1\\cdot0+1\\cdot1+0\\cdot1=1。$"
+    },
+    {
+      "id": "cal-vg-027",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$\\vec{a}=(1,2,-1)，\\vec{b}=(2,0,1)，\\vec{a}\\times\\vec{b}=（ ）$",
+      "options": [
+        "$(2,-3,-4)$",
+        "$(2,3,4)$",
+        "$(-2,3,4)$",
+        "$(0,0,0)$"
+      ],
+      "answer": 0,
+      "solution": "$\\begin{vmatrix}i&j&k\\\\1&2&-1\\\\2&0&1\\end{vmatrix}=(2,-3,-4)$。"
+    },
+    {
+      "id": "cal-vg-028",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "点 $(1,2,3)$ 到平面 $x+y+z=0$ 的距离为（ ）",
+      "options": [
+        "$2\\sqrt{3}$",
+        "$\\sqrt{3}$",
+        "$6$",
+        "$\\frac{6}{\\sqrt{3}}$"
+      ],
+      "answer": 0,
+      "solution": "$d=\\frac{|1+2+3|}{\\sqrt{3}}=\\frac{6}{\\sqrt{3}}=2\\sqrt{3}。$"
+    },
+    {
+      "id": "cal-vg-029",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "$直线 \\frac{x-1}{2}=\\frac{y+1}{-1}=z 的方向向量为（ ）$",
+      "options": [
+        "$(2,-1,1)$",
+        "$(1,-1,0)$",
+        "$(2,1,1)$",
+        "$(-2,1,1)$"
+      ],
+      "answer": 0,
+      "solution": "对称式分母即为方向向量各分量。"
+    },
+    {
+      "id": "cal-vg-030",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "两平面 $x+y+z=1$ 和 $2x+2y+2z=3$ 的位置关系（ ）",
+      "options": [
+        "平行",
+        "相交",
+        "重合",
+        "垂直"
+      ],
+      "answer": 0,
+      "solution": "法向量$(1,1,1)$与$(2,2,2)$平行，常数项比例不等，故平行。"
+    },
+    {
+      "id": "cal-vg-031",
+      "type": "choice",
+      "difficulty": "medium",
+      "question": "点 $(1,1,1)$ 关于平面 $x+y+z=0$ 的对称点为（ ）",
+      "options": [
+        "$(-1,-1,-1)$",
+        "$(0,0,0)$",
+        "$(2,2,2)$",
+        "$(-2,-2,-2)$"
+      ],
+      "answer": 0,
+      "solution": "$对称公式：P'=P-2\\frac{Ax+By+Cz+D}{A^2+B^2+C^2}(A,B,C)=(-1,-1,-1)。$"
+    },
+    {
+      "id": "cal-vg-032",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$\\vec{a},\\vec{b},\\vec{c}$ 共面的充要条件是（ ）",
+      "options": [
+        "$(\\vec{a}\\times\\vec{b})\\cdot\\vec{c}=0$",
+        "$\\vec{a}\\cdot\\vec{b}=0$",
+        "$\\vec{a}\\times\\vec{b}=\\vec{c}$",
+        "$\\vec{a}+\\vec{b}+\\vec{c}=0$"
+      ],
+      "answer": 0,
+      "solution": "三向量共面 ↔ 混合积为零。"
+    },
+    {
+      "id": "cal-vg-033",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "过点 $(1,0,0)$ 且法向量为 $(2,1,-1)$ 的平面方程为（ ）",
+      "options": [
+        "$2x+y-z=2$",
+        "$2x+y-z=0$",
+        "$x+y-z=1$",
+        "$2x+y+z=2$"
+      ],
+      "answer": 0,
+      "solution": "$2(x-1)+1(y-0)+(-1)(z-0)=0$，即$2x+y-z=2$。"
+    },
+    {
+      "id": "cal-vg-034",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$球面 x^2+y^2+z^2=4 在点 (1,1,\\sqrt{2}) 的切平面为（ ）$",
+      "options": [
+        "$x+y+\\sqrt{2}z=4$",
+        "$x+y+z=4$",
+        "$2x+y+z=4$",
+        "$x+2y+z=4$"
+      ],
+      "answer": 0,
+      "solution": "$切平面：x_0x+y_0y+z_0z=R^2，即x+y+\\sqrt{2}z=4。$"
+    },
+    {
+      "id": "cal-vg-035",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$直线 \\frac{x}{1}=\\frac{y}{2}=\\frac{z}{1} 与平面 x+2y+z=0 的夹角为（ ）$",
+      "options": [
+        "$0$",
+        "$\\pi/2$",
+        "$\\pi/4$",
+        "$\\pi/3$"
+      ],
+      "answer": 1,
+      "solution": "$方向向量(1,2,1)与法向量(1,2,1)平行，直线垂直平面，夹角\\pi/2。$"
+    },
+    {
+      "id": "cal-vg-036",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "$|\\vec{a}+\\vec{b}|^2+|\\vec{a}-\\vec{b}|^2=$（ ）",
+      "options": [
+        "$2(|\\vec{a}|^2+|\\vec{b}|^2)$",
+        "$|\\vec{a}|^2+|\\vec{b}|^2$",
+        "$4\\vec{a}\\cdot\\vec{b}$",
+        "$0$"
+      ],
+      "answer": 0,
+      "solution": "平行四边形法则：对角线平方和等于四边平方和。"
+    },
+    {
+      "id": "cal-vg-037",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "三向量 $\\vec{a}=(1,0,0)$,$\\vec{b}=(0,2,0)$,$\\vec{c}=(0,0,3)$ 混合积为（ ）",
+      "options": [
+        "$6$",
+        "$0$",
+        "$1$",
+        "$5$"
+      ],
+      "answer": 0,
+      "solution": "$混合积=(\\vec{a}\\times\\vec{b})\\cdot\\vec{c}=(0,0,2)\\cdot(0,0,3)=6。$"
+    },
+    {
+      "id": "cal-vg-038",
+      "type": "fill",
+      "difficulty": "basic",
+      "question": "$\\vec{a}=(3,-1,2)$ 的模为(  )。",
+      "answer": "$\\sqrt14$",
+      "solution": "$\\sqrt{9+1+4}=\\sqrt{14}。$"
+    },
+    {
+      "id": "cal-vg-039",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "$\\vec{a}=(1,1,0)$ 与 $\\vec{b}=(1,-1,0)$ 的夹角为(  )度。",
+      "answer": "90",
+      "solution": "$\\cos\\theta=\\frac{1\\cdot1+1\\cdot(-1)+0\\cdot0}{\\sqrt{2}\\cdot\\sqrt{2}}=0，\\theta=90°。$"
+    },
+    {
+      "id": "cal-vg-040",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "过点 $(2,1,0)$ 且方向为 $(1,2,1)$ 的直线参数方程为(  )。",
+      "answer": "x=2+t,y=1+2t,z=t",
+      "solution": "参数式：$\\begin{cases}x=x_0+at\\\\y=y_0+bt\\\\z=z_0+ct\\end{cases}$。"
+    },
+    {
+      "id": "cal-vg-041",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "$\\vec{a}=(2,-1,1)$ 在 $\\vec{b}=(1,0,-1)$ 上的投影为(  )。",
+      "answer": "$1/\\sqrt2$",
+      "solution": "$投影=\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{b}|}=\\frac{2+0-1}{\\sqrt{2}}=\\frac{1}{\\sqrt{2}}。$"
+    },
+    {
+      "id": "cal-vg-042",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "$点 (1,1,1) 到直线 \\frac{x}{1}=\\frac{y}{2}=\\frac{z}{1} 的距离为(  )。$",
+      "answer": "$\\sqrt3/\\sqrt6=1/\\sqrt2\\approx0.707$",
+      "solution": "$过点作法平面，求交点再算距离。简化：(1,1,1)恰在直线上？代入x=t,y=2t,z=t，t=1时(1,2,1)\\neq(1,1,1)。距离\\frac{|\\vec{P_0P}\\times\\vec{s}|}{|\\vec{s}|}。取直线上点(0,0,0)，\\vec{P_0P}=(1,1,1)，\\vec{s}=(1,2,1)，叉积(1,1,1)\\times(1,2,1)=(-1,0,1)，|\\vec{s}|=\\sqrt{6}，d=\\sqrt{2}/\\sqrt{6}=1/\\sqrt{3}。直接改成：距离1/\\sqrt{3}。$"
+    },
+    {
+      "id": "cal-vg-043",
+      "type": "fill",
+      "difficulty": "medium",
+      "question": "两向量 $\\vec{a}=(1,2,3)$，$\\vec{b}=(2,4,k)$ 平行，则 $k=$(  )。",
+      "answer": "6",
+      "solution": "$平行 \\rightarrow 对应分量成比例：\\frac{1}{2}=\\frac{2}{4}=\\frac{3}{k}，k=6。$"
+    },
+    {
+      "id": "cal-vg-044",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "过三点 $A(1,0,0),B(0,1,0),C(0,0,1)$ 的平面方程为(  )。",
+      "answer": "x+y+z=1",
+      "solution": "$截距式或用法向量：\\overrightarrow{AB}\\times\\overrightarrow{AC}=(-1,1,0)\\times(-1,0,1)=(1,1,1)，法向量(1,1,1)，平面x+y+z=1。$"
+    },
+    {
+      "id": "cal-vg-045",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "柱面 $x^2+y^2=4$ 与平面 $z=1$ 的交线为(  )。",
+      "answer": "圆",
+      "solution": "交线是平面$z=1$上的圆$x^2+y^2=4$。"
+    },
+    {
+      "id": "cal-vg-046",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "旋转抛物面 $z=x^2+y^2$ 在 $(1,1,2)$ 处的切平面方程为(  )。",
+      "answer": "2x+2y-z=2",
+      "solution": "$F=z-x^2-y^2，\\nabla F=(-2x,-2y,1)=(-2,-2,1)，2(x-1)+2(y-1)-(z-2)=0即2x+2y-z=2。$"
+    },
+    {
+      "id": "cal-vg-047",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "原点 $(0,0,0)$ 关于平面 $x+y+z=1$ 的对称点为(  )。",
+      "answer": "(2/3,2/3,2/3)",
+      "solution": "$对称：P'=(0,0,0)-2\\frac{0+0+0-1}{1+1+1}(1,1,1)=(\\frac23,\\frac23,\\frac23)。$"
+    },
+    {
+      "id": "cal-vg-048",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$x^2+y^2=z$ 是什么曲面？(  )。",
+      "answer": "旋转抛物面",
+      "solution": "$z=x^2+y^2$是绕$z$轴的旋转抛物面。"
+    },
+    {
+      "id": "cal-vg-049",
+      "type": "choice",
+      "difficulty": "hard",
+      "question": "空间曲线 $\\begin{cases}x^2+y^2=1\\\\z=0\\end{cases}$ 绕$x$轴旋转所得曲面为（ ）",
+      "options": [
+        "$(y^2+z^2)+x^2=1$",
+        "$x^2+y^2+z^2=1$",
+        "$x^2+(y^2+z^2)=1$",
+        "$x^2=y^2+z^2$"
+      ],
+      "answer": 2,
+      "solution": "$绕x轴：y替换为\\sqrt{y^2+z^2}，得x^2+y^2+z^2=1。\\rightarrow仔细：原x^2+y^2=1绕x轴，y\\to\\sqrt{y^2+z^2}，得x^2+y^2+z^2=1。答案C即x^2+y^2+z^2=1。$"
+    },
+    {
+      "id": "cal-vg-050",
+      "type": "fill",
+      "difficulty": "hard",
+      "question": "$x^2/4+y^2/9+z^2/16=1$ 是什么曲面？(  )。",
+      "answer": "椭球面",
+      "solution": "三元二次方程，系数全正，为椭球面。"
+    }
+  ]
+}
