@@ -15,7 +15,8 @@
         "$\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$"
       ],
       "answer": 0,
-      "solution": "$f=x_1^2+2x_1x_2+x_2^2$。$x_1^2$ 系数为 $a_{11}=1$，$x_2^2$ 系数为 $a_{22}=1$，$x_1x_2$ 系数为 $2a_{12}=2$，故 $a_{12}=a_{21}=1$。矩阵为 $\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$。**答案：A**"
+      "solution": "$f=x_1^2+2x_1x_2+x_2^2$。$x_1^2$ 系数为 $a_{11}=1$，$x_2^2$ 系数为 $a_{22}=1$，$x_1x_2$ 系数为 $2a_{12}=2$，故 $a_{12}=a_{21}=1$。矩阵为 $\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}$。**答案：A**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-002",
@@ -29,7 +30,8 @@
         "$3$"
       ],
       "answer": 3,
-      "solution": "该二次型已是标准形，所有系数均为正（$1,2,3>0$），正惯性指数 $p=3$，负惯性指数 $q=0$。**答案：D**"
+      "solution": "该二次型已是标准形，所有系数均为正（$1,2,3>0$），正惯性指数 $p=3$，负惯性指数 $q=0$。**答案：D**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-003",
@@ -38,7 +40,8 @@
       "question": "二次型 $f(x_1,x_2)=2x_1^2+4x_1x_2+x_2^2$ 对应的对称矩阵 $A$ 中，$a_{12}=(\\quad)$。",
       "options": null,
       "answer": "$2$",
-      "solution": "二次型的矩阵表示中，$x_ix_j$（$i\\neq j$）的系数为 $2a_{ij}$。此处 $x_1x_2$ 的系数为 $4$，故 $a_{12}=a_{21}=2$。"
+      "solution": "二次型的矩阵表示中，$x_ix_j$（$i\\neq j$）的系数为 $2a_{ij}$。此处 $x_1x_2$ 的系数为 $4$，故 $a_{12}=a_{21}=2$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-004",
@@ -52,7 +55,8 @@
         "$-1,-1$"
       ],
       "answer": 0,
-      "solution": "对称矩阵 $A=\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$。$|A-\\lambda I|=(1-\\lambda)^2-4=\\lambda^2-2\\lambda-3=(\\lambda-3)(\\lambda+1)=0$，$\\lambda_1=3,\\lambda_2=-1$。正交标准形为 $3y_1^2-y_2^2$。**答案：A**"
+      "solution": "对称矩阵 $A=\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$。$|A-\\lambda I|=(1-\\lambda)^2-4=\\lambda^2-2\\lambda-3=(\\lambda-3)(\\lambda+1)=0$，$\\lambda_1=3,\\lambda_2=-1$。正交标准形为 $3y_1^2-y_2^2$。**答案：A**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-005",
@@ -66,7 +70,8 @@
         "A$ 的秩等于 $n"
       ],
       "answer": 1,
-      "solution": "Sylvester 判据：实对称矩阵正定 $\\Leftrightarrow$ 所有顺序主子式均大于零。$|A|>0$ 只是必要非充分条件；特征值均大于零才是正定，仅非零不保证正定；满秩也不保证正定（如 $\\operatorname{diag}(1,-1)$ 满秩但不定）。**答案：B**"
+      "solution": "Sylvester 判据：实对称矩阵正定 $\\Leftrightarrow$ 所有顺序主子式均大于零。$|A|>0$ 只是必要非充分条件；特征值均大于零才是正定，仅非零不保证正定；满秩也不保证正定（如 $\\operatorname{diag}(1,-1)$ 满秩但不定）。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-006",
@@ -80,7 +85,8 @@
         "$0$"
       ],
       "answer": 2,
-      "solution": "对称矩阵 $A=\\begin{pmatrix}1&1&-1\\\\1&2&0\\\\-1&0&3\\end{pmatrix}$。$|A|=1(6-0)-1(3-0)+(-1)(0+2)=6-3-2=1\\neq0$，故 $r(A)=3$。**答案：C**"
+      "solution": "对称矩阵 $A=\\begin{pmatrix}1&1&-1\\\\1&2&0\\\\-1&0&3\\end{pmatrix}$。$|A|=1(6-0)-1(3-0)+(-1)(0+2)=6-3-2=1\\neq0$，故 $r(A)=3$。**答案：C**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-007",
@@ -94,7 +100,8 @@
         "正交"
       ],
       "answer": 2,
-      "solution": "$B=C^\\mathrm{T}AC$ 是合同关系的定义。等价 $B=PAQ$（$P,Q$ 可逆）；相似 $B=P^{-1}AP$；合同 $B=C^\\mathrm{T}AC$（$C$ 可逆）。**答案：C**"
+      "solution": "$B=C^\\mathrm{T}AC$ 是合同关系的定义。等价 $B=PAQ$（$P,Q$ 可逆）；相似 $B=P^{-1}AP$；合同 $B=C^\\mathrm{T}AC$（$C$ 可逆）。**答案：C**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-008",
@@ -103,7 +110,8 @@
       "question": "二次型 $f(x_1,x_2,x_3)=2x_1^2+x_2^2-4x_1x_2-4x_2x_3$ 的矩阵为 $(\\quad)$。",
       "options": null,
       "answer": "$\\begin{pmatrix}2&-2&0\\\\-2&1&-2\\\\0&-2&0\\end{pmatrix}$",
-      "solution": "$a_{11}=2$，$a_{22}=1$，$a_{33}=0$。$x_1x_2$ 系数 $-4$ 得 $2a_{12}=-4\\Rightarrow a_{12}=a_{21}=-2$。$x_2x_3$ 系数 $-4$ 得 $2a_{23}=-4\\Rightarrow a_{23}=a_{32}=-2$。$x_1x_3$ 系数 $0$ 得 $a_{13}=a_{31}=0$。"
+      "solution": "$a_{11}=2$，$a_{22}=1$，$a_{33}=0$。$x_1x_2$ 系数 $-4$ 得 $2a_{12}=-4\\Rightarrow a_{12}=a_{21}=-2$。$x_2x_3$ 系数 $-4$ 得 $2a_{23}=-4\\Rightarrow a_{23}=a_{32}=-2$。$x_1x_3$ 系数 $0$ 得 $a_{13}=a_{31}=0$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-009",
@@ -117,7 +125,8 @@
         "$\\begin{pmatrix}-1&0\\\\0&-1\\end{pmatrix}$"
       ],
       "answer": 1,
-      "solution": "$A$ 的特征值为 $\\lambda_1=3,\\lambda_2=-1$。正惯性指数 $p=1$，负惯性指数 $q=1$。规范形为 $\\operatorname{diag}(1,-1)$。**答案：B**"
+      "solution": "$A$ 的特征值为 $\\lambda_1=3,\\lambda_2=-1$。正惯性指数 $p=1$，负惯性指数 $q=1$。规范形为 $\\operatorname{diag}(1,-1)$。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-010",
@@ -126,7 +135,8 @@
       "question": "二次型 $f(x_1,x_2,x_3)=x_1^2+x_2^2+x_3^2+2x_1x_2$ 的规范形为 $(\\quad)$。",
       "options": null,
       "answer": "$y_1^2+y_2^2$（或 $z_1^2+z_2^2$）",
-      "solution": "$A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$r(A)=2$（第一、二行成比例）。配方：$f=(x_1+x_2)^2+x_3^2$。令 $y_1=x_1+x_2,y_2=x_3$，得 $f=y_1^2+y_2^2$。$p=2,q=0$。"
+      "solution": "$A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$r(A)=2$（第一、二行成比例）。配方：$f=(x_1+x_2)^2+x_3^2$。令 $y_1=x_1+x_2,y_2=x_3$，得 $f=y_1^2+y_2^2$。$p=2,q=0$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-011",
@@ -140,7 +150,8 @@
         "$A$ 的行列式大于零"
       ],
       "answer": 1,
-      "solution": "$A$ 正定 $\\Leftrightarrow A=C^\\mathrm{T}C$（$C$ 可逆）。A 中'非负'对应半正定；C 中'非负'也对应半正定；D 只保证 $|A|>0$，必要非充分。**答案：B**"
+      "solution": "$A$ 正定 $\\Leftrightarrow A=C^\\mathrm{T}C$（$C$ 可逆）。A 中'非负'对应半正定；C 中'非负'也对应半正定；D 只保证 $|A|>0$，必要非充分。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-012",
@@ -149,7 +160,8 @@
       "question": "二次型 $f(x_1,x_2)=x_1^2+2tx_1x_2+4x_2^2$ 正定，则 $t$ 的取值范围是 $(\\quad)$。",
       "options": null,
       "answer": "$(-2,2)$",
-      "solution": "矩阵 $A=\\begin{pmatrix}1&t\\\\t&4\\end{pmatrix}$。Sylvester 判据：(1) $a_{11}=1>0$；(2) $|A|=4-t^2>0$，故 $t^2<4$，即 $-2<t<2$。"
+      "solution": "矩阵 $A=\\begin{pmatrix}1&t\\\\t&4\\end{pmatrix}$。Sylvester 判据：(1) $a_{11}=1>0$；(2) $|A|=4-t^2>0$，故 $t^2<4$，即 $-2<t<2$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-013",
@@ -163,7 +175,8 @@
         "$3y_1^2+3y_2^2$"
       ],
       "answer": 0,
-      "solution": "$A=\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}$。$|A-\\lambda I|=(3-\\lambda)^2-1=(\\lambda-2)(\\lambda-4)=0$，$\\lambda=2,4>0$。正惯性指数 $p=2,q=0$，规范形 $y_1^2+y_2^2$。**答案：A**"
+      "solution": "$A=\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}$。$|A-\\lambda I|=(3-\\lambda)^2-1=(\\lambda-2)(\\lambda-4)=0$，$\\lambda=2,4>0$。正惯性指数 $p=2,q=0$，规范形 $y_1^2+y_2^2$。**答案：A**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-014",
@@ -177,7 +190,8 @@
         "$A$ 与 $B$ 相似"
       ],
       "answer": 1,
-      "solution": "合同变换 $B=C^\\mathrm{T}AC$（$C$ 可逆）保秩。但一般不保特征值（如 $\\operatorname{diag}(1,1)$ 合同于 $\\operatorname{diag}(2,2)$ 但特征值不同），也一般不保相似。$|B|=|C|^2|A|$，不等于 $|A|$。**答案：B**"
+      "solution": "合同变换 $B=C^\\mathrm{T}AC$（$C$ 可逆）保秩。但一般不保特征值（如 $\\operatorname{diag}(1,1)$ 合同于 $\\operatorname{diag}(2,2)$ 但特征值不同），也一般不保相似。$|B|=|C|^2|A|$，不等于 $|A|$。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-015",
@@ -186,7 +200,8 @@
       "question": "设二次型 $f(x)=x^\\mathrm{T}Ax$ 的正惯性指数为 $p$，负惯性指数为 $q$，则 $f(x)=0$ 对非零 $x$ 有解的充要条件是 $(\\quad)$。",
       "options": null,
       "answer": "$p<n$ 且 $q<n$（或不定/半正定半负定均可）",
-      "solution": "存在非零 $x$ 使 $f(x)=0$ 等价于二次型不是正定也不是负定的，即 $p<n$ 且 $q<n$（存在零特征值或正负惯性均存在）。确切地说，$f$ 不定或半正定（$q=0,p<n$）或半负定（$p=0,q<n$）时，非零 $x$ 使 $f=0$。"
+      "solution": "存在非零 $x$ 使 $f(x)=0$ 等价于二次型不是正定也不是负定的，即 $p<n$ 且 $q<n$（存在零特征值或正负惯性均存在）。确切地说，$f$ 不定或半正定（$q=0,p<n$）或半负定（$p=0,q<n$）时，非零 $x$ 使 $f=0$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-016",
@@ -200,7 +215,8 @@
         "$3$"
       ],
       "answer": 2,
-      "solution": "$A^2=A\\Rightarrow$ 特征值只能为 $0$ 或 $1$。$r(A)=2\\Rightarrow$ 非零特征值个数为 $2$，即有两个特征值为 $1$，一个为 $0$。正惯性指数 $=$ 正特征值个数 $=2$。**答案：C**"
+      "solution": "$A^2=A\\Rightarrow$ 特征值只能为 $0$ 或 $1$。$r(A)=2\\Rightarrow$ 非零特征值个数为 $2$，即有两个特征值为 $1$，一个为 $0$。正惯性指数 $=$ 正特征值个数 $=2$。**答案：C**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-017",
@@ -214,7 +230,8 @@
         "$2$"
       ],
       "answer": 1,
-      "solution": "$A=\\begin{pmatrix}k&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$|A|=k\\cdot1-1\\cdot1+0=k-1$。$r(A)=2\\Rightarrow|A|=0\\Rightarrow k=1$。当 $k=1$ 时 $A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$，二阶子式 $\\begin{vmatrix}1&0\\\\0&1\\end{vmatrix}=1\\neq0$，$r(A)=2$。**答案：B**"
+      "solution": "$A=\\begin{pmatrix}k&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$。$|A|=k\\cdot1-1\\cdot1+0=k-1$。$r(A)=2\\Rightarrow|A|=0\\Rightarrow k=1$。当 $k=1$ 时 $A=\\begin{pmatrix}1&1&0\\\\1&1&0\\\\0&0&1\\end{pmatrix}$，二阶子式 $\\begin{vmatrix}1&0\\\\0&1\\end{vmatrix}=1\\neq0$，$r(A)=2$。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-018",
@@ -223,7 +240,8 @@
       "question": "设 $A=\\begin{pmatrix}1&2&0\\\\2&1&0\\\\0&0&-2\\end{pmatrix}$，则二次型 $x^\\mathrm{T}Ax$ 的规范形为 $(\\quad)$。",
       "options": null,
       "answer": "$y_1^2+y_2^2-y_3^2$",
-      "solution": "$A$ 是分块对角阵。左上块 $\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$ 的特征值：$|A-\\lambda I|=(1-\\lambda)^2-4=0\\Rightarrow\\lambda^2-2\\lambda-3=0$，$\\lambda_1=3,\\lambda_2=-1$。右下块 $-2$，特征值 $-2$。总特征值 $3,-1,-2$。正特征值 $3>0$（一个），负特征值 $-1,-2<0$（两个）。$p=1,q=2$。规范形 $y_1^2-y_2^2-y_3^2$。"
+      "solution": "$A$ 是分块对角阵。左上块 $\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$ 的特征值：$|A-\\lambda I|=(1-\\lambda)^2-4=0\\Rightarrow\\lambda^2-2\\lambda-3=0$，$\\lambda_1=3,\\lambda_2=-1$。右下块 $-2$，特征值 $-2$。总特征值 $3,-1,-2$。正特征值 $3>0$（一个），负特征值 $-1,-2<0$（两个）。$p=1,q=2$。规范形 $y_1^2-y_2^2-y_3^2$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-019",
@@ -237,7 +255,8 @@
         "$|A|=|B|$"
       ],
       "answer": 1,
-      "solution": "合同 $\\Leftrightarrow$ 秩相等且正惯性指数相等（Sylvester 惯性定律）。合同不一定保特征值，保特征值的是相似。合同 $B=C^\\mathrm{T}AC$ 时 $|B|=|C|^2|A|$，一般 $|C|^2\\neq1$，故 $|A|\\neq|B|$。**答案：B**"
+      "solution": "合同 $\\Leftrightarrow$ 秩相等且正惯性指数相等（Sylvester 惯性定律）。合同不一定保特征值，保特征值的是相似。合同 $B=C^\\mathrm{T}AC$ 时 $|B|=|C|^2|A|$，一般 $|C|^2\\neq1$，故 $|A|\\neq|B|$。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-020",
@@ -246,7 +265,8 @@
       "question": "二次型 $f(x_1,x_2,x_3)=2x_1^2+2x_2^2+2x_3^2+2x_1x_2+2x_1x_3+2x_2x_3$ 在正交变换下的标准形为 $(\\quad)$。",
       "options": null,
       "answer": "$4y_1^2+y_2^2+y_3^2$",
-      "solution": "$A=\\begin{pmatrix}2&1&1\\\\1&2&1\\\\1&1&2\\end{pmatrix}=I+J$（其中 $J$ 为全 $1$ 矩阵）。$J$ 的特征值：$3$（对应 $(1,1,1)^\\mathrm{T}$）和 $0$（二重）。$A=I+J$ 的特征值：$1+3=4$，$1+0=1$（二重）。故正交标准形为 $4y_1^2+y_2^2+y_3^2$。"
+      "solution": "$A=\\begin{pmatrix}2&1&1\\\\1&2&1\\\\1&1&2\\end{pmatrix}=I+J$（其中 $J$ 为全 $1$ 矩阵）。$J$ 的特征值：$3$（对应 $(1,1,1)^\\mathrm{T}$）和 $0$（二重）。$A=I+J$ 的特征值：$1+3=4$，$1+0=1$（二重）。故正交标准形为 $4y_1^2+y_2^2+y_3^2$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-021",
@@ -260,7 +280,8 @@
         "$0$"
       ],
       "answer": 2,
-      "solution": "$A^2-5A+6I=(A-2I)(A-3I)=O$，特征值只能为 $2$ 或 $3$。$r(A-2I)=2\\Rightarrow\\dim\\operatorname{Null}(A-2I)=3-2=1$，$\\lambda=2$ 的几何重数为 $1$。$A$ 实对称必可对角化，故 $\\lambda=2$ 的代数重数 $=$ 几何重数 $=1$。总阶数 $3$，故 $\\lambda=3$ 的代数重数为 $2$。特征值 $2>0,3>0,3>0$ 全正，正惯性指数 $p=3$。**答案：C**"
+      "solution": "$A^2-5A+6I=(A-2I)(A-3I)=O$，特征值只能为 $2$ 或 $3$。$r(A-2I)=2\\Rightarrow\\dim\\operatorname{Null}(A-2I)=3-2=1$，$\\lambda=2$ 的几何重数为 $1$。$A$ 实对称必可对角化，故 $\\lambda=2$ 的代数重数 $=$ 几何重数 $=1$。总阶数 $3$，故 $\\lambda=3$ 的代数重数为 $2$。特征值 $2>0,3>0,3>0$ 全正，正惯性指数 $p=3$。**答案：C**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-022",
@@ -269,7 +290,8 @@
       "question": "二次型 $f(x_1,x_2,x_3)=x_1^2+x_2^2+5x_3^2+2tx_1x_2-2x_1x_3+4x_2x_3$ 正定，则 $t$ 的取值范围是 $(\\quad)$。",
       "options": null,
       "answer": "$-\\frac{4}{5}<t<0$",
-      "solution": "$A=\\begin{pmatrix}1&t&-1\\\\t&1&2\\\\-1&2&5\\end{pmatrix}$。顺序主子式：$D_1=1>0$；$D_2=1-t^2>0\\Rightarrow-1<t<1$；$D_3=|A|=1(5-4)-t(5t+2)+(-1)(2t+1)=1-t(5t+2)-(2t+1)=1-5t^2-2t-2t-1=-5t^2-4t=-t(5t+4)>0\\Rightarrow t(5t+4)<0\\Rightarrow-\\frac{4}{5}<t<0$。综合得 $-\\frac{4}{5}<t<0$。"
+      "solution": "$A=\\begin{pmatrix}1&t&-1\\\\t&1&2\\\\-1&2&5\\end{pmatrix}$。顺序主子式：$D_1=1>0$；$D_2=1-t^2>0\\Rightarrow-1<t<1$；$D_3=|A|=1(5-4)-t(5t+2)+(-1)(2t+1)=1-t(5t+2)-(2t+1)=1-5t^2-2t-2t-1=-5t^2-4t=-t(5t+4)>0\\Rightarrow t(5t+4)<0\\Rightarrow-\\frac{4}{5}<t<0$。综合得 $-\\frac{4}{5}<t<0$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-023",
@@ -283,7 +305,8 @@
         "$ab=0$"
       ],
       "answer": 1,
-      "solution": "正、负惯性指数之和等于秩，$p+q=3 \\Rightarrow r(A)=3$，即 $A$ 满秩 $\\Rightarrow |A| \\neq 0$。计算 $|A|$：按第一行展开，$|A|=1\\cdot(1-b^2)-a\\cdot(a-b)+1\\cdot(ab-1)=1-b^2-a^2+ab+ab-1=-(a^2-2ab+b^2)=-(a-b)^2$。由 $|A|\\neq0$ 得 $a\\neq b$。当 $a\\neq b$ 时 $|A|=-(a-b)^2<0$，即三个特征值乘积为负；又 $\\operatorname{tr}(A)=3>0$，三个特征值之和为正。实对称矩阵特征值均为实数，故必有两个正特征值、一个负特征值，即 $p=2,q=1$。因此条件等价于 $a\\neq b$。"
+      "solution": "正、负惯性指数之和等于秩，$p+q=3 \\Rightarrow r(A)=3$，即 $A$ 满秩 $\\Rightarrow |A| \\neq 0$。计算 $|A|$：按第一行展开，$|A|=1\\cdot(1-b^2)-a\\cdot(a-b)+1\\cdot(ab-1)=1-b^2-a^2+ab+ab-1=-(a^2-2ab+b^2)=-(a-b)^2$。由 $|A|\\neq0$ 得 $a\\neq b$。当 $a\\neq b$ 时 $|A|=-(a-b)^2<0$，即三个特征值乘积为负；又 $\\operatorname{tr}(A)=3>0$，三个特征值之和为正。实对称矩阵特征值均为实数，故必有两个正特征值、一个负特征值，即 $p=2,q=1$。因此条件等价于 $a\\neq b$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-024",
@@ -292,7 +315,8 @@
       "question": "已知二次型 $f=x^\\mathrm{T}Ax$ 的矩阵 $A$ 的特征值为 $\\lambda_1,\\lambda_2,\\lambda_3$，且 $f$ 在 $x^\\mathrm{T}x=1$ 条件下的最大值为 $M$，最小值为 $m$，则 $M$ 和 $m$ 分别等于 $(\\quad)$。",
       "options": null,
       "answer": "$\\max\\{\\lambda_i\\}$ 和 $\\min\\{\\lambda_i\\}$",
-      "solution": "Rayleigh 商定理：对于实对称矩阵 $A$，$\\min\\limits_{\\|x\\|=1}x^\\mathrm{T}Ax=\\lambda_{\\min}$，$\\max\\limits_{\\|x\\|=1}x^\\mathrm{T}Ax=\\lambda_{\\max}$。在单位球面上，二次型的最值分别等于 $A$ 的最小和最大特征值。"
+      "solution": "Rayleigh 商定理：对于实对称矩阵 $A$，$\\min\\limits_{\\|x\\|=1}x^\\mathrm{T}Ax=\\lambda_{\\min}$，$\\max\\limits_{\\|x\\|=1}x^\\mathrm{T}Ax=\\lambda_{\\max}$。在单位球面上，二次型的最值分别等于 $A$ 的最小和最大特征值。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-025",
@@ -306,7 +330,8 @@
         "$A+B$"
       ],
       "answer": 3,
-      "solution": "正定矩阵之和仍正定：对任意 $x\\neq0$，$x^\\mathrm{T}(A+B)x=x^\\mathrm{T}Ax+x^\\mathrm{T}Bx>0$。A 项 $A-B$ 不一定正定（取 $A=I,B=2I$，$A-B=-I$ 负定）。B 项 $AB$ 不一定对称，即使对称也不一定正定（如 $A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix},B=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}$，$AB$ 不对称）。C 项 $A^{-1}-B^{-1}$ 不一定正定（取 $A=I,B=2I$ 得 $\\frac{1}{2}I$ 正定，但取 $A=2I,B=I$ 得 $-\\frac{1}{2}I$ 负定）。只有 D 项 $A+B$ 恒正定。"
+      "solution": "正定矩阵之和仍正定：对任意 $x\\neq0$，$x^\\mathrm{T}(A+B)x=x^\\mathrm{T}Ax+x^\\mathrm{T}Bx>0$。A 项 $A-B$ 不一定正定（取 $A=I,B=2I$，$A-B=-I$ 负定）。B 项 $AB$ 不一定对称，即使对称也不一定正定（如 $A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix},B=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}$，$AB$ 不对称）。C 项 $A^{-1}-B^{-1}$ 不一定正定（取 $A=I,B=2I$ 得 $\\frac{1}{2}I$ 正定，但取 $A=2I,B=I$ 得 $-\\frac{1}{2}I$ 负定）。只有 D 项 $A+B$ 恒正定。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-026",
@@ -315,7 +340,8 @@
       "question": "设 $A$ 为3阶实对称矩阵且 $|A|=-12$，$A$ 的迹为 $1$，已知 $A$ 的一个特征值为 $3$，则二次型 $x^\\mathrm{T}Ax$ 的正惯性指数为 $(\\quad)$。",
       "options": null,
       "answer": "$2$",
-      "solution": "设三特征值为 $\\lambda_1=3,\\lambda_2,\\lambda_3$。$\\lambda_1+\\lambda_2+\\lambda_3=1\\Rightarrow\\lambda_2+\\lambda_3=-2$。$\\lambda_1\\lambda_2\\lambda_3=-12\\Rightarrow3\\lambda_2\\lambda_3=-12\\Rightarrow\\lambda_2\\lambda_3=-4$。解 $\\lambda_2+\\lambda_3=-2,\\lambda_2\\lambda_3=-4$：$\\lambda_2,\\lambda_3$ 是 $t^2+2t-4=0$ 的根，$t=-1\\pm\\sqrt{5}$。$\\sqrt{5}-1\\approx1.236>0$（正），$-1-\\sqrt{5}\\approx-3.236<0$（负）。特征值 $3>0,\\sqrt{5}-1>0,-1-\\sqrt{5}<0$。正特征值有 $2$ 个，正惯性指数 $p=2$。"
+      "solution": "设三特征值为 $\\lambda_1=3,\\lambda_2,\\lambda_3$。$\\lambda_1+\\lambda_2+\\lambda_3=1\\Rightarrow\\lambda_2+\\lambda_3=-2$。$\\lambda_1\\lambda_2\\lambda_3=-12\\Rightarrow3\\lambda_2\\lambda_3=-12\\Rightarrow\\lambda_2\\lambda_3=-4$。解 $\\lambda_2+\\lambda_3=-2,\\lambda_2\\lambda_3=-4$：$\\lambda_2,\\lambda_3$ 是 $t^2+2t-4=0$ 的根，$t=-1\\pm\\sqrt{5}$。$\\sqrt{5}-1\\approx1.236>0$（正），$-1-\\sqrt{5}\\approx-3.236<0$（负）。特征值 $3>0,\\sqrt{5}-1>0,-1-\\sqrt{5}<0$。正特征值有 $2$ 个，正惯性指数 $p=2$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-027",
@@ -329,7 +355,8 @@
         "不定"
       ],
       "answer": 0,
-      "solution": "对任意 $y\\neq0$，$x=Cy\\neq0$（因 $C$ 可逆）。$g(y)=y^\\mathrm{T}C^\\mathrm{T}ACy=(Cy)^\\mathrm{T}A(Cy)=x^\\mathrm{T}Ax>0$（因 $f$ 正定）。故 $g$ 也正定。合同变换保正定性。**答案：A**"
+      "solution": "对任意 $y\\neq0$，$x=Cy\\neq0$（因 $C$ 可逆）。$g(y)=y^\\mathrm{T}C^\\mathrm{T}ACy=(Cy)^\\mathrm{T}A(Cy)=x^\\mathrm{T}Ax>0$（因 $f$ 正定）。故 $g$ 也正定。合同变换保正定性。**答案：A**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-028",
@@ -338,7 +365,8 @@
       "question": "设 $A=\\begin{pmatrix}0&1&0\\\\1&0&0\\\\0&0&2\\end{pmatrix}$，则二次型 $x^\\mathrm{T}Ax$ 在 $x^\\mathrm{T}x=1$ 下的最大值为 $(\\quad)$。",
       "options": null,
       "answer": "$2$",
-      "solution": "$A$ 的特征值：左上 $2\\times2$ 块 $\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}$，特征值 $1,-1$；右下 $2$。故 $A$ 的最大特征值为 $2$。由 Rayleigh 商，最大值为 $2$。"
+      "solution": "$A$ 的特征值：左上 $2\\times2$ 块 $\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}$，特征值 $1,-1$；右下 $2$。故 $A$ 的最大特征值为 $2$。由 Rayleigh 商，最大值为 $2$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-029",
@@ -352,7 +380,8 @@
         "$A+B$ 一定正定"
       ],
       "answer": 2,
-      "solution": "这是惯性定律的推广：若 $A$ 正定，$B$ 对称，则可同时合同对角化 $A$ 和 $B$（通过 $A$ 的 Cholesky 分解后对 $B$ 正交对角化）。即存在可逆 $C$ 使 $C^\\mathrm{T}AC=I$，$C^\\mathrm{T}BC=\\operatorname{diag}$。A 错（$AB$ 不一定对称更不一定可对角化）；B 错（合同需同惯性指数）；D 错（$B$ 可能负定使 $A+B$ 不定）。**答案：C**"
+      "solution": "这是惯性定律的推广：若 $A$ 正定，$B$ 对称，则可同时合同对角化 $A$ 和 $B$（通过 $A$ 的 Cholesky 分解后对 $B$ 正交对角化）。即存在可逆 $C$ 使 $C^\\mathrm{T}AC=I$，$C^\\mathrm{T}BC=\\operatorname{diag}$。A 错（$AB$ 不一定对称更不一定可对角化）；B 错（合同需同惯性指数）；D 错（$B$ 可能负定使 $A+B$ 不定）。**答案：C**",
+      "cat": "线性代数"
     },
     {
       "id": "la-qf-030",
@@ -366,7 +395,8 @@
         "$\\mu_1<\\lambda_1$ 且 $\\mu_n>\\lambda_n$"
       ],
       "answer": 1,
-      "solution": "$uu^\\mathrm{T}$ 为半正定矩阵（秩为 $1$ 的投影矩阵的倍数）。半正定矩阵加法使特征值单调不减（Weyl 不等式/特征值交错定理的推论）。故 $\\mu_i\\ge\\lambda_i$ 对所有 $i$ 成立。**答案：B**"
+      "solution": "$uu^\\mathrm{T}$ 为半正定矩阵（秩为 $1$ 的投影矩阵的倍数）。半正定矩阵加法使特征值单调不减（Weyl 不等式/特征值交错定理的推论）。故 $\\mu_i\\ge\\lambda_i$ 对所有 $i$ 成立。**答案：B**",
+      "cat": "线性代数"
     }
   ]
 }

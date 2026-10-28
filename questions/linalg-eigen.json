@@ -15,7 +15,8 @@
         "$A\\lambda=\\lambda x$"
       ],
       "answer": 0,
-      "solution": "特征值定义：存在非零向量 $x$ 使 $Ax=\\lambda x$，即 $(A-\\lambda I)x=0$ 有非零解，等价于 $|A-\\lambda I|=0$。**答案：A**"
+      "solution": "特征值定义：存在非零向量 $x$ 使 $Ax=\\lambda x$，即 $(A-\\lambda I)x=0$ 有非零解，等价于 $|A-\\lambda I|=0$。**答案：A**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-004",
@@ -29,7 +30,8 @@
         "$1$"
       ],
       "answer": 1,
-      "solution": "行列式等于所有特征值之积：$|A|=\\lambda_1\\lambda_2\\lambda_3=1\\times2\\times3=6$。**答案：B**"
+      "solution": "行列式等于所有特征值之积：$|A|=\\lambda_1\\lambda_2\\lambda_3=1\\times2\\times3=6$。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-005",
@@ -43,7 +45,8 @@
         "$\\lambda_1,\\lambda_2,\\lambda_3$"
       ],
       "answer": 0,
-      "solution": "若 $Ax=\\lambda x$，则 $A^2x=A(Ax)=A(\\lambda x)=\\lambda Ax=\\lambda^2 x$。故 $A^2$ 的特征值为 $\\lambda_i^2$。**答案：A**"
+      "solution": "若 $Ax=\\lambda x$，则 $A^2x=A(Ax)=A(\\lambda x)=\\lambda Ax=\\lambda^2 x$。故 $A^2$ 的特征值为 $\\lambda_i^2$。**答案：A**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-007",
@@ -57,7 +60,8 @@
         "是奇异矩阵"
       ],
       "answer": 0,
-      "solution": "$|A|=\\lambda_1\\lambda_2\\lambda_3=0$，故至少有一个特征值为 $0$。但并非所有特征值都为零（如 $\\lambda_1=0,\\lambda_2=1,\\lambda_3=2$，$|A|=0$ 但不全为零）。**答案：A**"
+      "solution": "$|A|=\\lambda_1\\lambda_2\\lambda_3=0$，故至少有一个特征值为 $0$。但并非所有特征值都为零（如 $\\lambda_1=0,\\lambda_2=1,\\lambda_3=2$，$|A|=0$ 但不全为零）。**答案：A**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-008",
@@ -66,7 +70,8 @@
       "question": "设 $A$ 满足 $A^2=A$，则 $A$ 的特征值只能是 $(\\quad)$。",
       "options": null,
       "answer": "$0$ 或 $1$",
-      "solution": "设 $Ax=\\lambda x$（$x\\neq0$），则 $A^2x=A(Ax)=A(\\lambda x)=\\lambda^2 x$。又 $A^2=A$ 得 $\\lambda^2 x=\\lambda x$，故 $(\\lambda^2-\\lambda)x=0$，解得 $\\lambda=0$ 或 $\\lambda=1$。"
+      "solution": "设 $Ax=\\lambda x$（$x\\neq0$），则 $A^2x=A(Ax)=A(\\lambda x)=\\lambda^2 x$。又 $A^2=A$ 得 $\\lambda^2 x=\\lambda x$，故 $(\\lambda^2-\\lambda)x=0$，解得 $\\lambda=0$ 或 $\\lambda=1$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-009",
@@ -80,7 +85,8 @@
         "特征向量"
       ],
       "answer": 3,
-      "solution": "相似矩阵有相同的特征值、行列式、迹（均为相似不变量）。但特征向量一般不同：若 $B=P^{-1}AP$，$Ax=\\lambda x$，则 $B(P^{-1}x)=\\lambda(P^{-1}x)$，$B$ 的特征向量为 $P^{-1}x$。**答案：D**"
+      "solution": "相似矩阵有相同的特征值、行列式、迹（均为相似不变量）。但特征向量一般不同：若 $B=P^{-1}AP$，$Ax=\\lambda x$，则 $B(P^{-1}x)=\\lambda(P^{-1}x)$，$B$ 的特征向量为 $P^{-1}x$。**答案：D**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-011",
@@ -94,7 +100,8 @@
         "$A$ 一定可逆"
       ],
       "answer": 3,
-      "solution": "实对称矩阵的三个核心性质：(1)可正交对角化；(2)特征值全为实数；(3)不同特征值对应的特征向量正交。但实对称矩阵不一定可逆（如零矩阵是对称的但不可逆）。**答案：D**"
+      "solution": "实对称矩阵的三个核心性质：(1)可正交对角化；(2)特征值全为实数；(3)不同特征值对应的特征向量正交。但实对称矩阵不一定可逆（如零矩阵是对称的但不可逆）。**答案：D**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-012",
@@ -108,7 +115,8 @@
         "是实对称矩阵"
       ],
       "answer": 1,
-      "solution": "$A$ 的特征值为 $\\lambda=1$（二重）。$A-I=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$，秩为 $1$，故 $\\lambda=1$ 的几何重数 $=2-1=1<$ 代数重数 $2$，$A$ 不可对角化。**答案：B**"
+      "solution": "$A$ 的特征值为 $\\lambda=1$（二重）。$A-I=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}$，秩为 $1$，故 $\\lambda=1$ 的几何重数 $=2-1=1<$ 代数重数 $2$，$A$ 不可对角化。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-013",
@@ -122,7 +130,8 @@
         "$A$ 与 $B$ 合同"
       ],
       "answer": 1,
-      "solution": "相似 $\\Rightarrow$ 特征多项式相同 $\\Rightarrow$ 特征值相同。但特征向量通过 $P^{-1}x$ 变换，一般不同。相似 $\\Rightarrow$ 等价（秩相等），但相似与合同无必然关系。**答案：B**"
+      "solution": "相似 $\\Rightarrow$ 特征多项式相同 $\\Rightarrow$ 特征值相同。但特征向量通过 $P^{-1}x$ 变换，一般不同。相似 $\\Rightarrow$ 等价（秩相等），但相似与合同无必然关系。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-015",
@@ -136,7 +145,8 @@
         "$A$ 的特征向量线性相关"
       ],
       "answer": 0,
-      "solution": "不同特征值对应的特征向量线性无关。$P=(p_1,p_2,p_3)$ 可逆，且 $AP=P\\operatorname{diag}(1,2,3)$，故 $P^{-1}AP=\\operatorname{diag}(1,2,3)$。**答案：A**"
+      "solution": "不同特征值对应的特征向量线性无关。$P=(p_1,p_2,p_3)$ 可逆，且 $AP=P\\operatorname{diag}(1,2,3)$，故 $P^{-1}AP=\\operatorname{diag}(1,2,3)$。**答案：A**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-016",
@@ -150,7 +160,8 @@
         "$2,2,2$"
       ],
       "answer": 0,
-      "solution": "设 $f(\\lambda)=\\lambda^3-\\lambda^2-2\\lambda+2$。若 $Ax=\\lambda x$，则 $f(A)x=f(\\lambda)x$。$f(1)=1-1-2+2=0$；$f(-1)=-1-1+2+2=2$；$f(2)=8-4-4+2=2$。故 $B$ 的特征值为 $0,2,2$。**答案：A**"
+      "solution": "设 $f(\\lambda)=\\lambda^3-\\lambda^2-2\\lambda+2$。若 $Ax=\\lambda x$，则 $f(A)x=f(\\lambda)x$。$f(1)=1-1-2+2=0$；$f(-1)=-1-1+2+2=2$；$f(2)=8-4-4+2=2$。故 $B$ 的特征值为 $0,2,2$。**答案：A**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-017",
@@ -164,7 +175,8 @@
         "$12$"
       ],
       "answer": 1,
-      "solution": "$A^{-1}$ 的特征值为 $1,\\frac12,\\frac13$。$A^{-1}+I$ 的特征值为 $1+1=2$，$\\frac12+1=\\frac32$，$\\frac13+1=\\frac43$。$|A^{-1}+I|=2\\times\\frac32\\times\\frac43=4$。**答案：B**"
+      "solution": "$A^{-1}$ 的特征值为 $1,\\frac12,\\frac13$。$A^{-1}+I$ 的特征值为 $1+1=2$，$\\frac12+1=\\frac32$，$\\frac13+1=\\frac43$。$|A^{-1}+I|=2\\times\\frac32\\times\\frac43=4$。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-018",
@@ -173,7 +185,8 @@
       "question": "设 $A$ 为3阶方阵，特征值为 $\\lambda_1=\\lambda_2=1,\\lambda_3=2$，且 $A$ 可对角化，则 $r(A-I)=(\\quad)$。",
       "options": null,
       "answer": "$1$",
-      "solution": "$A$ 可对角化 $\\Leftrightarrow$ 对每个特征值 $\\lambda$，几何重数 $=$ 代数重数。$\\lambda=1$ 的代数重数为 $2$，故几何重数也为 $2$，即 $\\dim\\operatorname{Null}(A-I)=2$。由秩-零度定理：$r(A-I)=3-2=1$。"
+      "solution": "$A$ 可对角化 $\\Leftrightarrow$ 对每个特征值 $\\lambda$，几何重数 $=$ 代数重数。$\\lambda=1$ 的代数重数为 $2$，故几何重数也为 $2$，即 $\\dim\\operatorname{Null}(A-I)=2$。由秩-零度定理：$r(A-I)=3-2=1$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-019",
@@ -187,7 +200,8 @@
         "$3,0,0$"
       ],
       "answer": 0,
-      "solution": "$A$ 的每行和均为 $2$，故 $\\lambda=2$ 是一个特征值（对应特征向量 $(1,1,1)^\\mathrm{T}$）。迹 $\\operatorname{tr}(A)=0$，故 $\\lambda_2+\\lambda_3=-2$。$|A|=0\\cdot(-1)+1\\cdot(-1)+1\\cdot1=0$，故 $\\lambda_2\\lambda_3=-1\\cdot(-1)=1$...验证：$A-2I=\\begin{pmatrix}-2&1&1\\\\1&-2&1\\\\1&1&-2\\end{pmatrix}$，秩为 $2$（每行和为 $0$，第一、二行不成比例），故 $\\lambda=2$ 几何重数为 $1$。$|A|=\\begin{vmatrix}0&1&1\\\\1&0&1\\\\1&1&0\\end{vmatrix}=0\\cdot(-1)-1\\cdot(-1)+1\\cdot1=2$。特征值之积为 $2$：$\\lambda_1\\lambda_2\\lambda_3=2\\cdot\\lambda_2\\lambda_3=2$，故 $\\lambda_2\\lambda_3=1$。又 $\\lambda_2+\\lambda_3=-2$，解得 $\\lambda_2=\\lambda_3=-1$。**答案：A**"
+      "solution": "$A$ 的每行和均为 $2$，故 $\\lambda=2$ 是一个特征值（对应特征向量 $(1,1,1)^\\mathrm{T}$）。迹 $\\operatorname{tr}(A)=0$，故 $\\lambda_2+\\lambda_3=-2$。$|A|=0\\cdot(-1)+1\\cdot(-1)+1\\cdot1=0$，故 $\\lambda_2\\lambda_3=-1\\cdot(-1)=1$...验证：$A-2I=\\begin{pmatrix}-2&1&1\\\\1&-2&1\\\\1&1&-2\\end{pmatrix}$，秩为 $2$（每行和为 $0$，第一、二行不成比例），故 $\\lambda=2$ 几何重数为 $1$。$|A|=\\begin{vmatrix}0&1&1\\\\1&0&1\\\\1&1&0\\end{vmatrix}=0\\cdot(-1)-1\\cdot(-1)+1\\cdot1=2$。特征值之积为 $2$：$\\lambda_1\\lambda_2\\lambda_3=2\\cdot\\lambda_2\\lambda_3=2$，故 $\\lambda_2\\lambda_3=1$。又 $\\lambda_2+\\lambda_3=-2$，解得 $\\lambda_2=\\lambda_3=-1$。**答案：A**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-020",
@@ -196,7 +210,8 @@
       "question": "设 $A$ 为3阶实对称矩阵，特征值为 $\\lambda_1=1,\\lambda_2=\\lambda_3=2$，已知 $\\alpha_1=(1,1,0)^\\mathrm{T}$ 是 $\\lambda_1=1$ 的特征向量，$\\alpha_2=(1,-1,0)^\\mathrm{T}$ 是 $\\lambda_2=2$ 的特征向量，则 $\\lambda_3=2$ 的一个特征向量为 $(\\quad)$。",
       "options": null,
       "answer": "$(0,0,1)^\\mathrm{T}$",
-      "solution": "实对称矩阵不同特征值对应的特征向量正交。$\\alpha_1\\cdot\\alpha_2=1-1+0=0$（正交）。$\\lambda_3=2$ 的特征向量需与 $\\alpha_1$ 正交且与 $\\alpha_2$ 正交：$\\alpha_1\\cdot x=x_1+x_2=0$，$\\alpha_2\\cdot x=x_1-x_2=0$。解得 $(0,0,1)^\\mathrm{T}$。"
+      "solution": "实对称矩阵不同特征值对应的特征向量正交。$\\alpha_1\\cdot\\alpha_2=1-1+0=0$（正交）。$\\lambda_3=2$ 的特征向量需与 $\\alpha_1$ 正交且与 $\\alpha_2$ 正交：$\\alpha_1\\cdot x=x_1+x_2=0$，$\\alpha_2\\cdot x=x_1-x_2=0$。解得 $(0,0,1)^\\mathrm{T}$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-021",
@@ -210,7 +225,8 @@
         "$B$ 一定可对角化"
       ],
       "answer": 1,
-      "solution": "$A$ 有 $n$ 个互异特征值 $\\Rightarrow$ $A$ 可对角化。$AB=BA$ 是可同时对角化的充分条件。设 $P^{-1}AP=D$ 为对角阵，则 $P^{-1}BP$ 也是对角阵（对于互异特征值的情况）。**答案：B**"
+      "solution": "$A$ 有 $n$ 个互异特征值 $\\Rightarrow$ $A$ 可对角化。$AB=BA$ 是可同时对角化的充分条件。设 $P^{-1}AP=D$ 为对角阵，则 $P^{-1}BP$ 也是对角阵（对于互异特征值的情况）。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-022",
@@ -219,7 +235,8 @@
       "question": "设 $A$ 的特征多项式为 $f(\\lambda)=\\lambda^3-4\\lambda^2+5\\lambda-2$，且 $A$ 不是纯量矩阵，则 $A$ 的一个特征值为 $(\\quad)$。",
       "options": null,
       "answer": "$1$（$1$ 是二重根）",
-      "solution": "$f(\\lambda)=\\lambda^3-4\\lambda^2+5\\lambda-2=(\\lambda-1)^2(\\lambda-2)$。特征值为 $\\lambda=1$（二重），$\\lambda=2$（单根）。$A$ 不是纯量矩阵说明 $\\lambda=1$ 的几何重数可能小于 $2$，即 $A$ 可能不可对角化。"
+      "solution": "$f(\\lambda)=\\lambda^3-4\\lambda^2+5\\lambda-2=(\\lambda-1)^2(\\lambda-2)$。特征值为 $\\lambda=1$（二重），$\\lambda=2$（单根）。$A$ 不是纯量矩阵说明 $\\lambda=1$ 的几何重数可能小于 $2$，即 $A$ 可能不可对角化。",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-023",
@@ -233,7 +250,8 @@
         "$\\operatorname{diag}(0,1,-1)$"
       ],
       "answer": 0,
-      "solution": "$A$ 为实对称矩阵，必可正交对角化。$|A-\\lambda I|=\\begin{vmatrix}-\\lambda&0&1\\\\0&1-\\lambda&0\\\\1&0&-\\lambda\\end{vmatrix}=(-\\lambda)^2(1-\\lambda)-1\\cdot(1-\\lambda)=-\\lambda\\cdot(-\\lambda)(1-\\lambda)-1\\cdot(1-\\lambda)=(\\lambda^2-1)(1-\\lambda)=-(\\lambda-1)(\\lambda+1)(1-\\lambda)=(\\lambda-1)^2(\\lambda+1)=0$。特征值：$\\lambda=1$（二重），$\\lambda=-1$。**答案：A**"
+      "solution": "$A$ 为实对称矩阵，必可正交对角化。$|A-\\lambda I|=\\begin{vmatrix}-\\lambda&0&1\\\\0&1-\\lambda&0\\\\1&0&-\\lambda\\end{vmatrix}=(-\\lambda)^2(1-\\lambda)-1\\cdot(1-\\lambda)=-\\lambda\\cdot(-\\lambda)(1-\\lambda)-1\\cdot(1-\\lambda)=(\\lambda^2-1)(1-\\lambda)=-(\\lambda-1)(\\lambda+1)(1-\\lambda)=(\\lambda-1)^2(\\lambda+1)=0$。特征值：$\\lambda=1$（二重），$\\lambda=-1$。**答案：A**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-024",
@@ -242,7 +260,8 @@
       "question": "设 $A$ 为 $n$ 阶幂零矩阵（$A^k=O$），则 $A$ 的所有特征值均为 $(\\quad)$。",
       "options": null,
       "answer": "$0$",
-      "solution": "设 $Ax=\\lambda x$（$x\\neq0$），则 $A^kx=\\lambda^kx=0$，故 $\\lambda^k=0\\Rightarrow\\lambda=0$。幂零矩阵的特征值全为零。"
+      "solution": "设 $Ax=\\lambda x$（$x\\neq0$），则 $A^kx=\\lambda^kx=0$，故 $\\lambda^k=0\\Rightarrow\\lambda=0$。幂零矩阵的特征值全为零。",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-025",
@@ -256,7 +275,8 @@
         "三个特征值均为零"
       ],
       "answer": 1,
-      "solution": "实对称矩阵的秩等于非零特征值的个数（计重数）。$r(A)=2$ 故有 $2$ 个非零特征值，$1$ 个零特征值。**答案：B**"
+      "solution": "实对称矩阵的秩等于非零特征值的个数（计重数）。$r(A)=2$ 故有 $2$ 个非零特征值，$1$ 个零特征值。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-026",
@@ -265,7 +285,8 @@
       "question": "设 $A=\\begin{pmatrix}1&0&0\\\\0&2&1\\\\0&1&2\\end{pmatrix}$，则 $A$ 的属于特征值 $\\lambda=3$ 的一个特征向量为 $(\\quad)$。",
       "options": null,
       "answer": "$(0,1,1)^\\mathrm{T}$",
-      "solution": "$|A-\\lambda I|=(1-\\lambda)[(2-\\lambda)^2-1]=(1-\\lambda)(\\lambda^2-4\\lambda+3)=(1-\\lambda)^2(3-\\lambda)$。特征值：$\\lambda=1$（二重），$\\lambda=3$。对于 $\\lambda=3$，$A-3I=\\begin{pmatrix}-2&0&0\\\\0&-1&1\\\\0&1&-1\\end{pmatrix}$，解得特征向量 $(0,1,1)^\\mathrm{T}$。"
+      "solution": "$|A-\\lambda I|=(1-\\lambda)[(2-\\lambda)^2-1]=(1-\\lambda)(\\lambda^2-4\\lambda+3)=(1-\\lambda)^2(3-\\lambda)$。特征值：$\\lambda=1$（二重），$\\lambda=3$。对于 $\\lambda=3$，$A-3I=\\begin{pmatrix}-2&0&0\\\\0&-1&1\\\\0&1&-1\\end{pmatrix}$，解得特征向量 $(0,1,1)^\\mathrm{T}$。",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-027",
@@ -279,7 +300,8 @@
         "$\\begin{pmatrix}1&1&0\\\\0&1&0\\\\0&0&1\\end{pmatrix}$"
       ],
       "answer": 1,
-      "solution": "Jordan 块个数 $=$ 几何重数 $=\\dim\\operatorname{Null}(A-I)=n-r(A-I)=3-1=2$。有 $2$ 个 Jordan 块，特征值全为 $1$，总阶数为 $3$，必有一个 $2$ 阶块和一个 $1$ 阶块。**答案：B**"
+      "solution": "Jordan 块个数 $=$ 几何重数 $=\\dim\\operatorname{Null}(A-I)=n-r(A-I)=3-1=2$。有 $2$ 个 Jordan 块，特征值全为 $1$，总阶数为 $3$，必有一个 $2$ 阶块和一个 $1$ 阶块。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-028",
@@ -288,7 +310,8 @@
       "question": "设 $3$ 阶矩阵 $A$ 满足 $A^2+A-2I=O$，且 $r(A-I)=2$，则 $A$ 的特征值为 $(\\quad)$。",
       "options": null,
       "answer": "$1$（单根），$-2$（二重根）",
-      "solution": "由 $A^2+A-2I=O$ 得 $(A-I)(A+2I)=O$，故 $A$ 的特征值只能为 $1$ 或 $-2$。$r(A-I)=2$ 说明 $\\dim\\operatorname{Null}(A-I)=3-2=1$，即 $\\lambda=1$ 的几何重数为 $1$。设代数重数分别为 $a$（$\\lambda=1$）和 $b$（$\\lambda=-2$），$a+b=3$。迹 $=$ 特征值之和 $=1\\cdot a+(-2)\\cdot b$，但迹未知。利用 $r(A+2I)$ 信息缺失。——**推理**：$r(A-I)=2\\Rightarrow\\lambda=1$ 几何重数为 $1$。$A+2I$ 的秩：$(A-I)(A+2I)=O$，由秩不等式 $r(A-I)+r(A+2I)\\le3$，故 $r(A+2I)\\le1$。$\\lambda=-2$ 的代数重数至少为 $3-r(A+2I)\\ge2$。又 $\\lambda=1$ 至少 $1$ 重，总重数 $3$，故 $\\lambda=1$ 为 $1$ 重，$\\lambda=-2$ 为 $2$ 重。"
+      "solution": "由 $A^2+A-2I=O$ 得 $(A-I)(A+2I)=O$，故 $A$ 的特征值只能为 $1$ 或 $-2$。$r(A-I)=2$ 说明 $\\dim\\operatorname{Null}(A-I)=3-2=1$，即 $\\lambda=1$ 的几何重数为 $1$。设代数重数分别为 $a$（$\\lambda=1$）和 $b$（$\\lambda=-2$），$a+b=3$。迹 $=$ 特征值之和 $=1\\cdot a+(-2)\\cdot b$，但迹未知。利用 $r(A+2I)$ 信息缺失。——**推理**：$r(A-I)=2\\Rightarrow\\lambda=1$ 几何重数为 $1$。$A+2I$ 的秩：$(A-I)(A+2I)=O$，由秩不等式 $r(A-I)+r(A+2I)\\le3$，故 $r(A+2I)\\le1$。$\\lambda=-2$ 的代数重数至少为 $3-r(A+2I)\\ge2$。又 $\\lambda=1$ 至少 $1$ 重，总重数 $3$，故 $\\lambda=1$ 为 $1$ 重，$\\lambda=-2$ 为 $2$ 重。",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-029",
@@ -302,7 +325,8 @@
         "特征值全为零"
       ],
       "answer": 1,
-      "solution": "$\\alpha_1$ 是 $\\lambda=1$ 的特征向量。$\\alpha_2$ 是 $\\lambda=2$ 的特征向量。$A\\alpha_3=2\\alpha_3+\\alpha_2$ 说明 $\\alpha_3$ 不是 $\\lambda=2$ 的特征向量，而是广义特征向量。在基 $\\alpha_1,\\alpha_2,\\alpha_3$ 下：$A\\sim\\begin{pmatrix}1&0&0\\\\0&2&1\\\\0&0&2\\end{pmatrix}$，$\\lambda=2$ 有一个 $2$ 阶 Jordan 块，不可对角化。**答案：B**"
+      "solution": "$\\alpha_1$ 是 $\\lambda=1$ 的特征向量。$\\alpha_2$ 是 $\\lambda=2$ 的特征向量。$A\\alpha_3=2\\alpha_3+\\alpha_2$ 说明 $\\alpha_3$ 不是 $\\lambda=2$ 的特征向量，而是广义特征向量。在基 $\\alpha_1,\\alpha_2,\\alpha_3$ 下：$A\\sim\\begin{pmatrix}1&0&0\\\\0&2&1\\\\0&0&2\\end{pmatrix}$，$\\lambda=2$ 有一个 $2$ 阶 Jordan 块，不可对角化。**答案：B**",
+      "cat": "线性代数"
     },
     {
       "id": "la-eg-030",
@@ -316,7 +340,8 @@
         "A$ 的特征值之积为 $1"
       ],
       "answer": 0,
-      "solution": "正交矩阵的特征值之积 $=$ $|A|=-1$。实正交矩阵的复特征值成共轭对出现，每对共轭特征值之积为 $1$。故至少有一个实特征值 $\\lambda$ 满足 $|\\lambda|=1$ 且 $\\lambda<0$（否则乘积为正），即 $\\lambda=-1$。**答案：A**"
+      "solution": "正交矩阵的特征值之积 $=$ $|A|=-1$。实正交矩阵的复特征值成共轭对出现，每对共轭特征值之积为 $1$。故至少有一个实特征值 $\\lambda$ 满足 $|\\lambda|=1$ 且 $\\lambda<0$（否则乘积为正），即 $\\lambda=-1$。**答案：A**",
+      "cat": "线性代数"
     }
   ]
 }
