@@ -5853,7 +5853,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$偏导计算：把 y 看作常数求导。\\frac{\\partial z}{\\partial x} = 3x^2 + 3y，代入 (1,2)：3+6=9。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -5874,7 +5874,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$可微 \\Rightarrow 偏导存在（必要），但偏导存在 \\nRightarrow 可微。反例：f(x,y)=\\frac{xy}{x^2+y^2} 在 (0,0) 偏导存在但不可微。**答案：C**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元极限与可微性",
       "papers": [
         "shu1",
         "shu2",
@@ -5895,7 +5895,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$链式法则：\\frac{\\partial z}{\\partial x} = f_u \\cdot u_x + f_v \\cdot v_x = f_u \\cdot 1 + f_v \\cdot y。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -5916,7 +5916,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\nabla z = (\\frac{\\partial z}{\\partial x}, \\frac{\\partial z}{\\partial y}) = (2x, 2y)，点 (1,2) 处为 (2,4)。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "方向导数与梯度",
       "papers": [
         "shu1",
         "shu2",
@@ -5937,7 +5937,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$全微分：dz = \\frac{\\partial z}{\\partial x}dx + \\frac{\\partial z}{\\partial y}dy = e^{x+y}dx + e^{x+y}dy = e^{x+y}(dx+dy)。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -5958,7 +5958,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\frac{\\partial z}{\\partial x} = \\frac{1}{x+y}，再对 y 求导：\\frac{\\partial^2 z}{\\partial x\\partial y} = -\\frac{1}{(x+y)^2}。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -5979,7 +5979,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "驻点：$z_x = 2x-2=0 \\Rightarrow x=1$，$z_y = 2y-4=0 \\Rightarrow y=2$。$z_{xx}=2>0$ 且 $z_{xx}z_{yy}-z_{xy}^2=4>0$，是极小值点。**答案：A**",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元函数极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6000,7 +6000,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$隐函数求导公式：F(x,y(x)) = 0 两边对 x 求导，F_x + F_y \\cdot y' = 0，得 y' = -\\frac{F_x}{F_y}。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "隐函数求偏导",
       "papers": [
         "shu1",
         "shu2",
@@ -6021,7 +6021,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "$沿 y=kx 取极限：\\frac{kx^2}{x^2+k^2x^2} = \\frac{k}{1+k^2}，不同 k 得到不同值，极限不存在。**答案：D**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元极限与可微性",
       "papers": [
         "shu1",
         "shu2",
@@ -6042,7 +6042,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$方向导数公式：\\frac{\\partial u}{\\partial l} = \\nabla u \\cdot \\vec{l} = f_x\\cos\\alpha + f_y\\cos\\beta。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "方向导数与梯度",
       "papers": [
         "shu1",
         "shu2",
@@ -6063,7 +6063,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$链式法则：令 u=xy, v=x^2+y^2，则 z_x = f_u \\cdot u_x + f_v \\cdot v_x = f_1' \\cdot y + f_2' \\cdot 2x。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6084,7 +6084,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$令 F = x^2 + y^2 - z = 0，\\nabla F = (2x, 2y, -1)。在 (1,1,2)：\\vec{n} = (2,2,-1)。切平面：2(x-1)+2(y-1)-(z-2)=0，即 2x+2y-z=2。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "曲面切平面与法线",
       "papers": [
         "shu1",
         "shu2",
@@ -6105,7 +6105,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "驻点：$z_x=3x^2-3y=0$，$z_y=3y^2-3x=0$，解得 $(0,0)$ 和 $(1,1)$。$z_{xx}=6x$，$z_{xy}=-3$，$z_{yy}=6y$。$(0,0)$ 处 $A=0, B=-3, C=0$，$AC-B^2=-9<0$，是鞍点。$(1,1)$ 处 $A=6, B=-3, C=6$，$AC-B^2=27>0, A>0$，是极小值点。**答案：A**",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元函数极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6126,7 +6126,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$隐函数求导：F = x^2+y^2+z^2-1=0，F_x=2x，F_z=2z。\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{x}{z}。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "隐函数求偏导",
       "papers": [
         "shu1",
         "shu2",
@@ -6147,7 +6147,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$记 r=\\sqrt{x^2+y^2}，z = r^2 - \\ln r。z_x = 2x - \\frac{x}{r^2}，z_{xx} = 2 - \\frac{r^2 - 2x^2}{r^4}。同理 z_{yy} = 2 - \\frac{r^2 - 2y^2}{r^4}。相加得 4 - \\frac{2r^2 - 2(x^2+y^2)}{r^4} = 4。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6168,7 +6168,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$**拉格朗日乘数法**：L = x^2+y^2 + \\lambda(2-x-y)。L_x=2x-\\lambda=0，L_y=2y-\\lambda=0，得 x=y。由 x+y=2 得 x=y=1，极小值 z=2。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "条件极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6189,7 +6189,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$可微意味着 f(\\sin t, \\tan t) = f(0,0) + f_x(0,0)\\sin t + f_y(0,0)\\tan t + o(\\sqrt{\\sin^2 t + \\tan^2 t})。= \\sin t + 2\\tan t + o(t)。除以 t：\\frac{\\sin t}{t} + 2\\frac{\\tan t}{t} \\to 1+2=3。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元极限与可微性",
       "papers": [
         "shu1",
         "shu2",
@@ -6210,7 +6210,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$设 u = x+zy, v = y+z。对 x 求偏导：F_u \\cdot (1 + z_x y) + F_v \\cdot z_x = 0，得 z_x = -\\frac{F_u}{yF_u + F_v} = -\\frac{F_1'}{yF_1'+F_2'}。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "隐函数求偏导",
       "papers": [
         "shu1",
         "shu2",
@@ -6231,7 +6231,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "$取对数：\\ln u = \\frac{1}{z}(\\ln x - \\ln y)。求全微分：\\frac{du}{u} = -\\frac{1}{z^2}(\\ln x - \\ln y)dz + \\frac{1}{z}(\\frac{dx}{x} - \\frac{dy}{y})。在 (2,1,1)：u=2，\\ln u = \\ln 2，du = 2(\\frac{dx}{2} - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz… 检验：u=2，du/u = -\\ln2 dz + dx/2 - dy，du = \\frac{1}{2}dx - dy - \\ln 2 dz。（乘以 u 时注意 x=2, y=1，\\frac{2}{2x}=\\frac{1}{2}\\cdot 2? 再算：u=2，\\frac{du}{2}=-\\ln 2 + \\frac{1}{2} - 1，所以 du = 2(\\frac{1}{2}dx - dy - \\ln 2 dz) = dx - 2dy - 2\\ln 2 dz... 选项D是 \\frac{1}{2}dx - dy - \\ln 2 dz。**答案：D**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6252,7 +6252,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$隐函数：F = e^{xyz} - x - y - z = 0。F_x = yz \\cdot e^{xyz} - 1，F_z = xy \\cdot e^{xyz} - 1。在 (0,0,0)：F_x = -1，F_z = -1，\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z} = -\\frac{-1}{-1} = -1… 再算：F_x = yz e^{xyz} - 1 = 0-1 = -1，F_z = xy e^{xyz} - 1 = 0-1 = -1。z_x = -F_x/F_z = -(-1)/(-1) = -1。**答案：B**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "隐函数求偏导",
       "papers": [
         "shu1",
         "shu2",
@@ -6273,7 +6273,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$z_x = y + f'(x^2+y^2) \\cdot 2x，z_y = x + f'(x^2+y^2) \\cdot 2y。x z_y - y z_x = x(x+2yf') - y(y+2xf') = x^2 + 2xyf' - y^2 - 2xyf' = x^2 - y^2 \\neq 0 一般情况不为0。要使恒为零，需要 f 为常数（f'=0时原方程变为 x^2-y^2，仍不恒为零）。重新检查题目含义…更严谨地：题设可能指 x\\frac{\\partial z}{\\partial y} - y\\frac{\\partial z}{\\partial x} 在特定条件下成立。若 f 为常数，则 z=xy+C，xz_y-yz_x = x(x)-y(y) = x^2-y^2。所以 f 不是常数。若 f(u) = C\\ln u，检验代入后…此题需慎重。**答案：A**$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6294,7 +6294,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "对数函数要求真数大于0：$x^2+y^2>0$，除去原点。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元极限与可微性",
       "papers": [
         "shu1",
         "shu2",
@@ -6315,7 +6315,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$z_x=2xy$，再对$y$求导得$z_{xy}=2x$。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6336,7 +6336,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$f\\ge0=f(0,0)$，$A=2,B=0,C=2$，$AC-B^2=4>0,A>0$极小。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元函数极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6357,7 +6357,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "全微分定义：$dz=f_xdx+f_ydy$。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6378,7 +6378,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$z_x=\\frac{2x}{1+x^2+y^2}，z_y=\\frac{2y}{1+x^2+y^2}。$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6399,7 +6399,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$z_x=2xf',z_y=2yf'$，相减得0。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6420,7 +6420,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$z_x=yx^{y-1}=2e，z_y=x^y\\ln x=e^2。$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6441,7 +6441,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$2x+2z\\frac{\\partial z}{\\partial x}=0，\\frac{\\partial z}{\\partial x}=-\\frac{x}{z}。$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "隐函数求偏导",
       "papers": [
         "shu1",
         "shu2",
@@ -6462,7 +6462,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$拉格朗日：L=xy+\\lambda(1-x-y)，x=y=\\frac12，f=\\frac14。$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "条件极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6483,7 +6483,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$F=z-xy$，$F_x=-1,F_y=-1,F_z=1$，$x+y-z=1$。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "曲面切平面与法线",
       "papers": [
         "shu1",
         "shu2",
@@ -6504,7 +6504,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "偏导存在$\\not\\Rightarrow$连续，连续$\\not\\Rightarrow$偏导存在。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元极限与可微性",
       "papers": [
         "shu1",
         "shu2",
@@ -6525,7 +6525,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$链式法则：u_x=f_1\\cdot1+f_2\\cdot y+f_3\\cdot yz。$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6546,7 +6546,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$f_x=3x^2-3y=0$，得$x^4=x$，$x=0,1$对应$(0,0),(1,1)$。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元函数极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6567,7 +6567,7 @@ var QUESTION_BANK = {
       "answer": 2,
       "solution": "$f_x=f_y=0$但$A=0,B=1,C=0$，$AC-B^2=-1<0$，鞍点。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元函数极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6588,7 +6588,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "内部$(0,0)$取最小值0，边界取最大值1。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元函数极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6603,7 +6603,7 @@ var QUESTION_BANK = {
       "answer": "0",
       "solution": "欧拉定理：零次齐次函数。直接验证也可。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6618,7 +6618,7 @@ var QUESTION_BANK = {
       "answer": "(-2,-2,1)",
       "solution": "$F=z-x^2-y^2$，$F_x=-2,F_y=-2,F_z=1$。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "曲面切平面与法线",
       "papers": [
         "shu1",
         "shu2",
@@ -6633,7 +6633,7 @@ var QUESTION_BANK = {
       "answer": "3",
       "solution": "$\\nabla f=(2x-y,-x+2y)=(0,3)，|\\nabla f|=3。$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "方向导数与梯度",
       "papers": [
         "shu1",
         "shu2",
@@ -6648,7 +6648,7 @@ var QUESTION_BANK = {
       "answer": "2cos(x+y)-xsin(x+y)",
       "solution": "$z_x=\\sin(x+y)+x\\cos(x+y)，再求导。$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -6663,7 +6663,7 @@ var QUESTION_BANK = {
       "answer": "(1/3,1/3,1/3)",
       "solution": "$u_x=\\frac{x}{x^2+y^2+z^2}，各分量1/3。$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "方向导数与梯度",
       "papers": [
         "shu1",
         "shu2",
@@ -6678,7 +6678,7 @@ var QUESTION_BANK = {
       "answer": "2",
       "solution": "$L=x^2+y^2+\\lambda(2-x-y)，x=y=1，f=2。$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "条件极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6693,7 +6693,7 @@ var QUESTION_BANK = {
       "answer": "-3",
       "solution": "驻点$(1,1)$，$AC-B^2=3>0,A>0$，$f=-3$。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元函数极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6707,8 +6707,8 @@ var QUESTION_BANK = {
       "question": "$(0,0,0)$ 到平面 $x+2y+2z=6$ 距离(  )。",
       "answer": "2",
       "solution": "$d=\\frac{6}{\\sqrt{1+4+4}}=2。$",
-      "cat": "多元微分学",
-      "topic": "多元微分学",
+      "cat": "向量代数与空间解析几何",
+      "topic": "向量代数与空间解析几何",
       "papers": [
         "shu1",
         "shu2",
@@ -6723,7 +6723,7 @@ var QUESTION_BANK = {
       "answer": "-1/4",
       "solution": "$F_x=yz=1$，$F_z=xy+3z^2=4$，商$-1/4$。",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "隐函数求偏导",
       "papers": [
         "shu1",
         "shu2",
@@ -6738,7 +6738,7 @@ var QUESTION_BANK = {
       "answer": "极小值",
       "solution": "$A=e^{-1}>0,B=0,C=2e^{-1}，AC-B^2>0。$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "多元函数极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6753,7 +6753,7 @@ var QUESTION_BANK = {
       "answer": "6",
       "solution": "$旋转变换或特征值法，\\lambda_{\\max}=2，最大值3\\cdot2=6。$",
       "cat": "多元微分学",
-      "topic": "多元微分学",
+      "topic": "条件极值",
       "papers": [
         "shu1",
         "shu2",
@@ -6767,7 +6767,7 @@ var QUESTION_BANK = {
       "question": "验证极限 $\\lim\\limits_{(x,y)\\to(0,0)}\\dfrac{xy^{2}}{x^{2}+y^{4}}$ 是否存在。\n\n【校】原卷印作 $x\\to x_{0},\\ y\\to y_{0}$，按经典版本应为 $(x,y)\\to(0,0)$。",
       "answer": "极限不存在。",
       "solution": "沿 $y=0$ 趋于原点，得 $\\dfrac{0}{x^{2}}=0$；沿抛物线 $x=y^{2}$ 趋于原点，得 $\\dfrac{y^{2}\\cdot y^{2}}{y^{4}+y^{4}}=\\dfrac12$。两条路径极限不同，故极限不存在。",
-      "topic": "二元极限·路径法判不存在",
+      "topic": "多元极限与可微性",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6783,7 +6783,7 @@ var QUESTION_BANK = {
       "question": "求极限 $\\lim\\limits_{(x,y)\\to(0,0)}\\dfrac{xy^{2}\\sin(xy)}{x^{2}+y^{4}}$。",
       "answer": "$0$。",
       "solution": "在 $|xy|<1$ 的邻域内 $|\\sin(xy)|\\le|xy|$，故 $\\left|\\dfrac{xy^{2}\\sin(xy)}{x^{2}+y^{4}}\\right|\\le\\dfrac{x^{2}|y|^{3}}{x^{2}+y^{4}}\\le|y|^{3}\\to 0$，由夹逼准则极限为 $0$。",
-      "topic": "二元极限·夹逼定值",
+      "topic": "多元极限与可微性",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6799,7 +6799,7 @@ var QUESTION_BANK = {
       "question": "设 $z=u^{2}\\ln v$，$u=\\dfrac{x}{y}$，$v=3x-2y$，求 $\\dfrac{\\partial z}{\\partial x}$、$\\dfrac{\\partial z}{\\partial y}$。",
       "answer": "$\\dfrac{\\partial z}{\\partial x}=\\dfrac{2x\\ln(3x-2y)}{y^{2}}+\\dfrac{3x^{2}}{y^{2}(3x-2y)}$；$\\dfrac{\\partial z}{\\partial y}=-\\dfrac{2x^{2}\\ln(3x-2y)}{y^{3}}-\\dfrac{2x^{2}}{y^{2}(3x-2y)}$。",
       "solution": "$\\dfrac{\\partial z}{\\partial x}=2u\\ln v\\cdot\\dfrac1y+u^{2}\\cdot\\dfrac{3}{v}$，$\\dfrac{\\partial z}{\\partial y}=2u\\ln v\\cdot\\left(-\\dfrac{x}{y^{2}}\\right)+u^{2}\\cdot\\left(-\\dfrac2v\\right)$，代入 $u=\\dfrac xy$，$v=3x-2y$ 整理即得。",
-      "topic": "链式法则·具体复合",
+      "topic": "偏导数与全微分",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6815,7 +6815,7 @@ var QUESTION_BANK = {
       "question": "设 $u=f\\!\\left(\\dfrac{x}{y},\\dfrac{y}{z}\\right)$，求 $\\dfrac{\\partial u}{\\partial x}$、$\\dfrac{\\partial u}{\\partial y}$。",
       "answer": "$\\dfrac{\\partial u}{\\partial x}=\\dfrac1y f_{1}$；$\\dfrac{\\partial u}{\\partial y}=-\\dfrac{x}{y^{2}}f_{1}+\\dfrac1z f_{2}$。",
       "solution": "令 $s=\\dfrac xy$，$t=\\dfrac yz$，则 $u=f(s,t)$。$s_{x}=\\dfrac1y$，$s_{y}=-\\dfrac{x}{y^{2}}$，$t_{x}=0$，$t_{y}=\\dfrac1z$，由链式法则 $u_{x}=f_{1}s_{x}$，$u_{y}=f_{1}s_{y}+f_{2}t_{y}$，代入即得。",
-      "topic": "链式法则·抽象复合记号",
+      "topic": "偏导数与全微分",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6831,7 +6831,7 @@ var QUESTION_BANK = {
       "question": "已知 $(axy^{3}-y^{2}\\cos x)\\,\\mathrm{d}x+(1+by\\sin x+3x^{2}y^{2})\\,\\mathrm{d}y$ 是某一函数 $f(x,y)$ 的全微分，求 $a,\\ b$，并求出 $f(x,y)$。\n\n【校】原卷\"时候\"系\"是\"之误。",
       "answer": "$a=2,\\ b=-2$；$f(x,y)=x^{2}y^{3}-y^{2}\\sin x+y+C$。",
       "solution": "$P=axy^{3}-y^{2}\\cos x$，$Q=1+by\\sin x+3x^{2}y^{2}$。全微分要求 $P_{y}=Q_{x}$：$3axy^{2}-2y\\cos x=by\\cos x+6xy^{2}$，比较得 $3a=6,\\ b=-2$，即 $a=2$。于是 $f=\\int(2xy^{3}-y^{2}\\cos x)\\,\\mathrm{d}x=x^{2}y^{3}-y^{2}\\sin x+g(y)$；再由 $f_{y}=3x^{2}y^{2}-2y\\sin x+g'(y)=1-2y\\sin x+3x^{2}y^{2}$ 得 $g'(y)=1$，$g(y)=y+C$。",
-      "topic": "全微分·待定系数还原原函数",
+      "topic": "偏导数与全微分",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6847,7 +6847,7 @@ var QUESTION_BANK = {
       "question": "设函数 $u=f(x,y,z)$ 有连续偏导数，$y=y(x)$、$z=z(x)$ 分别由方程 $\\mathrm{e}^{xy}-y=0$ 和 $\\mathrm{e}^{z}-xz=0$ 所确定，求 $\\dfrac{\\mathrm{d}u}{\\mathrm{d}x}$。",
       "answer": "$\\dfrac{\\mathrm{d}u}{\\mathrm{d}x}=f_{x}+\\dfrac{y^{2}}{1-xy}f_{y}+\\dfrac{z}{x(z-1)}f_{z}$。",
       "solution": "$u=f(x,y(x),z(x))$，故 $\\dfrac{\\mathrm{d}u}{\\mathrm{d}x}=f_{x}+f_{y}y'+f_{z}z'$。对 $\\mathrm{e}^{xy}=y$ 关于 $x$ 求导：$\\mathrm{e}^{xy}(y+xy')=y'$，代入 $\\mathrm{e}^{xy}=y$ 得 $y^{2}+xy\\,y'=y'$，解得 $y'=\\dfrac{y^{2}}{1-xy}$。对 $\\mathrm{e}^{z}=xz$ 求导：$\\mathrm{e}^{z}z'=z+xz'$，代入 $\\mathrm{e}^{z}=xz$ 得 $xz\\,z'=z+xz'$，解得 $z'=\\dfrac{z}{x(z-1)}$。代入即得。",
-      "topic": "隐函数求导·方程组确定",
+      "topic": "隐函数求偏导",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6863,7 +6863,7 @@ var QUESTION_BANK = {
       "question": "设由方程组 $\\begin{cases}x+y+z=0\\\\ x^{2}+y^{2}+z^{2}=1\\end{cases}$ 所确定的函数为 $x=x(z)$，$y=y(z)$，求 $\\dfrac{\\mathrm{d}x}{\\mathrm{d}z}$ 和 $\\dfrac{\\mathrm{d}y}{\\mathrm{d}z}$。",
       "answer": "$\\dfrac{\\mathrm{d}x}{\\mathrm{d}z}=\\dfrac{y-z}{x-y}$，$\\dfrac{\\mathrm{d}y}{\\mathrm{d}z}=\\dfrac{z-x}{x-y}$。",
       "solution": "两式对 $z$ 求导：$x'+y'=-1$；$2xx'+2yy'+2z=0$ 即 $xx'+yy'=-z$。由第一式 $y'=-1-x'$，代入第二式：$xx'+y(-1-x')=-z$，得 $x'(x-y)=y-z$，故 $x'=\\dfrac{y-z}{x-y}$，$y'=-1-x'=\\dfrac{z-x}{x-y}$。",
-      "topic": "隐函数求导·方程组确定 dx/dz",
+      "topic": "隐函数求偏导",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6879,7 +6879,7 @@ var QUESTION_BANK = {
       "question": "设函数 $f(u)$ 在 $(0,+\\infty)$ 内具有二阶导数，且 $z=f\\!\\left(\\sqrt{x^{2}+y^{2}}\\right)$ 满足等式 $\\dfrac{\\partial^{2}z}{\\partial x^{2}}+\\dfrac{\\partial^{2}z}{\\partial y^{2}}=0$。验证：(1) $f''(u)+\\dfrac{f'(u)}{u}=0$；(2) 若 $f(1)=0$，$f'(1)=1$，求 $f(u)$。",
       "answer": "$f(u)=\\ln u$。",
       "solution": "(1) 记 $r=\\sqrt{x^{2}+y^{2}}$，$z_{x}=f'(r)\\dfrac{x}{r}$，$z_{xx}=f''(r)\\dfrac{x^{2}}{r^{2}}+f'(r)\\dfrac{y^{2}}{r^{3}}$；同理 $z_{yy}=f''(r)\\dfrac{y^{2}}{r^{2}}+f'(r)\\dfrac{x^{2}}{r^{3}}$。相加：$\\Delta z=f''(r)+\\dfrac{f'(r)}{r}=0$，即 $f''(u)+\\dfrac{f'(u)}{u}=0$。(2) 方程两边乘 $u$：$(u f'(u))'=0$，故 $u f'(u)=C_{1}$；代入 $f'(1)=1$ 得 $C_{1}=1$，$f'(u)=\\dfrac1u$，$f(u)=\\ln u+C_{2}$；代入 $f(1)=0$ 得 $C_{2}=0$。故 $f(u)=\\ln u$。",
-      "topic": "变量代换化简·欧拉型方程",
+      "topic": "偏导数与全微分",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6895,7 +6895,7 @@ var QUESTION_BANK = {
       "question": "已知函数 $z=f(x,y)$ 在 $(0,0)$ 点连续，且 $\\lim\\limits_{(x,y)\\to(0,0)}\\dfrac{f(x,y)-1-2x+3y}{x^{2}+y^{2}}=0$，求 $\\mathrm{d}z\\big|_{(0,0)}$。",
       "answer": "$\\mathrm{d}z\\big|_{(0,0)}=2\\,\\mathrm{d}x-3\\,\\mathrm{d}y$。",
       "solution": "由极限为 0 知 $f(x,y)=1+2x-3y+o(\\rho)$（$\\rho=\\sqrt{x^{2}+y^{2}}$）。取 $y=0$ 得 $f(x,0)-1-2x=o(x^{2})$，令 $x\\to0$ 由连续性得 $f(0,0)=1$；且 $\\dfrac{f(x,0)-f(0,0)}{x}=2+\\dfrac{o(x^{2})}{x}\\to 2$，故 $f_{x}(0,0)=2$；同理 $f_{y}(0,0)=-3$。两个偏导存在且增量可表示为 $2\\Delta x-3\\Delta y+o(\\rho)$，故可微，$\\mathrm{d}z\\big|_{(0,0)}=2\\,\\mathrm{d}x-3\\,\\mathrm{d}y$。",
-      "topic": "全微分近似·高阶无穷小反推",
+      "topic": "偏导数与全微分",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6911,7 +6911,7 @@ var QUESTION_BANK = {
       "question": "已知 $\\dfrac{\\partial^{2}z}{\\partial x\\partial y}=1$，且当 $x=0$ 时 $z(0,y)=\\sin y$；当 $y=0$ 时 $z(x,0)=\\cos x$，求 $z(x,y)$。",
       "answer": "$z(x,y)=xy+\\sin y+\\cos x-1$。",
       "solution": "由 $z_{xy}=1$ 对 $x$ 积分得 $z_{y}=x+\\varphi(y)$；再对 $y$ 积分得 $z=xy+\\Phi(y)+\\psi(x)$。由 $z(0,y)=\\Phi(y)+\\psi(0)=\\sin y$ 得 $\\Phi(y)=\\sin y-\\psi(0)$；由 $z(x,0)=\\Phi(0)+\\psi(x)=\\cos x$ 得 $\\psi(x)=\\cos x-\\Phi(0)$。故 $z=xy+\\sin y+\\cos x-\\bigl[\\psi(0)+\\Phi(0)\\bigr]$；又 $z(0,0)=1=\\psi(0)+\\Phi(0)$，故常数项为 $-1$。",
-      "topic": "混合偏导还原·边界条件定函数",
+      "topic": "偏导数与全微分",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6927,7 +6927,7 @@ var QUESTION_BANK = {
       "question": "设函数 $f(x,y)$ 可微且满足 $\\mathrm{d}f(x,y)=-2x\\mathrm{e}^{-y}\\,\\mathrm{d}x+\\mathrm{e}^{-y}(x^{2}-y-1)\\,\\mathrm{d}y$，$f(0,0)=2$。求 $f(x,y)$ 并求 $f(x,y)$ 的极值。",
       "answer": "$f(x,y)=(y+2-x^{2})\\mathrm{e}^{-y}$；在 $(0,-1)$ 取得极大值 $f(0,-1)=\\mathrm{e}$。",
       "solution": "$f_{x}=-2x\\mathrm{e}^{-y}$，对 $x$ 积分得 $f=-x^{2}\\mathrm{e}^{-y}+g(y)$；则 $f_{y}=x^{2}\\mathrm{e}^{-y}+g'(y)=\\mathrm{e}^{-y}(x^{2}-y-1)$，故 $g'(y)=-(y+1)\\mathrm{e}^{-y}$，$g(y)=(y+2)\\mathrm{e}^{-y}+C$。由 $f(0,0)=2$ 得 $C=0$，$f=(y+2-x^{2})\\mathrm{e}^{-y}$。令 $f_{x}=-2x\\mathrm{e}^{-y}=0$ 得 $x=0$；$f_{y}=\\mathrm{e}^{-y}(x^{2}-y-1)=0$ 得 $y=-1$，驻点 $(0,-1)$。$A=f_{xx}(0,-1)=-2\\mathrm{e}<0$，$B=f_{xy}(0,-1)=0$，$C=f_{yy}(0,-1)=\\mathrm{e}^{-y}(y-x^{2})\\big|_{(0,-1)}=-\\mathrm{e}<0$，$AC-B^{2}=2\\mathrm{e}^{2}>0$ 且 $A<0$，故极大值 $f(0,-1)=\\mathrm{e}$。",
-      "topic": "全微分还原·极值判定",
+      "topic": "多元函数极值",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6943,7 +6943,7 @@ var QUESTION_BANK = {
       "question": "已知函数 $f(x+y,\\ x-y)=x^{2}-y^{2}$ 对任何 $x,y$ 都成立，求 $\\dfrac{\\partial f(x,y)}{\\partial x}+\\dfrac{\\partial f(x,y)}{\\partial y}$。",
       "answer": "$x+y$。",
       "solution": "令 $u=x+y$，$v=x-y$，则 $x^{2}-y^{2}=(x+y)(x-y)=uv$，故 $f(u,v)=uv$，即 $f(x,y)=xy$。于是 $f_{x}+f_{y}=y+x=x+y$。",
-      "topic": "抽象函数记号·换元识别",
+      "topic": "偏导数与全微分",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6959,7 +6959,7 @@ var QUESTION_BANK = {
       "question": "求函数 $z=x^{2}y(1-x-y)$ 在直线 $x+y=3$、$x$ 轴、$y$ 轴围成的闭区域 $D$ 上的最大值与最小值。",
       "answer": "最大值 $z\\!\\left(\\tfrac12,\\tfrac14\\right)=\\tfrac{1}{64}$；最小值 $z(2,1)=-8$。",
       "solution": "$D=\\{(x,y)\\mid x\\ge0,\\ y\\ge0,\\ x+y\\le3\\}$。内部：$z_{x}=xy(2-3x-2y)=0$，$z_{y}=x^{2}(1-x-2y)=0$，解得 $\\left(\\tfrac12,\\tfrac14\\right)$，$z=\\tfrac{1}{64}$。边界 $x=0$、$y=0$ 上 $z\\equiv0$；边界 $x+y=3$ 上 $y=3-x$，$z=-2x^{2}(3-x)$，$x\\in[0,3]$，求导得驻点 $x=2$，$z(2,1)=-8$，端点值为 $0$。比较各值：最大 $\\tfrac{1}{64}$，最小 $-8$。",
-      "topic": "闭区域最值·三角形区域",
+      "topic": "多元函数极值",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6975,7 +6975,7 @@ var QUESTION_BANK = {
       "question": "求在斜边为 $a$ 的一切直角三角形中，有最大周长的直角三角形。",
       "answer": "等腰直角三角形（两直角边均为 $\\dfrac{a}{\\sqrt2}$），最大周长 $(1+\\sqrt2)a$。",
       "solution": "设两直角边 $x,y$，约束 $x^{2}+y^{2}=a^{2}$，周长 $p=a+x+y$，只需最大化 $s=x+y$。令 $x=a\\cos\\theta$，$y=a\\sin\\theta$（$\\theta\\in(0,\\tfrac\\pi2)$），则 $s=a(\\cos\\theta+\\sin\\theta)=\\sqrt2\\,a\\sin\\!\\left(\\theta+\\tfrac\\pi4\\right)\\le\\sqrt2\\,a$，当且仅当 $\\theta=\\tfrac\\pi4$ 即 $x=y=\\dfrac{a}{\\sqrt2}$ 时取等。故最大周长 $p_{\\max}=a+\\sqrt2\\,a=(1+\\sqrt2)a$。",
-      "topic": "条件极值·拉格朗日·几何最值",
+      "topic": "条件极值",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -6991,7 +6991,7 @@ var QUESTION_BANK = {
       "question": "抛物面 $z=x^{2}+y^{2}$ 被平面 $x+y+z=1$ 截成一椭圆，求原点到这椭圆的最短和最长距离。",
       "answer": "最短距离 $\\sqrt{9-5\\sqrt3}$，最长距离 $\\sqrt{9+5\\sqrt3}$。",
       "solution": "椭圆上 $z=1-x-y$ 且 $x^{2}+y^{2}+x+y=1$。目标 $d^{2}=x^{2}+y^{2}+(1-x-y)^{2}$，约束 $g=x^{2}+y^{2}+x+y-1=0$。拉格朗日条件：$4x+2y-2=\\lambda(2x+1)$，$4y+2x-2=\\lambda(2y+1)$。两式相减得 $(x-y)(1-\\lambda)\\cdot 2=0$。若 $\\lambda=1$：由第一式 $x+y=\\tfrac32$，代入约束得 $x^{2}+y^{2}=-\\tfrac12$，无解；故 $x=y$。代入约束：$2x^{2}+2x=1$，$x=\\dfrac{-1\\pm\\sqrt3}{2}$。$x=y=\\dfrac{\\sqrt3-1}{2}$ 时 $z=2-\\sqrt3$，$d^{2}=9-5\\sqrt3$（最短）；$x=y=-\\dfrac{1+\\sqrt3}{2}$ 时 $z=2+\\sqrt3$，$d^{2}=9+5\\sqrt3$（最长）。",
-      "topic": "条件极值·拉格朗日·距离最值",
+      "topic": "条件极值",
       "source": "自编·经纬研选（四）·二元函数的微积分",
       "cat": "多元微分学",
       "papers": [
@@ -7007,7 +7007,7 @@ var QUESTION_BANK = {
       "question": "求曲线 $\\begin{cases}x^{2}+y^{2}+z^{2}=6\\\\ x+y+z=0\\end{cases}$ 在点 $(1,-2,1)$ 处的切线及法平面。",
       "solution": "设 $F=x^{2}+y^{2}+z^{2}-6$，$G=x+y+z$。\n\n**思路**：把曲线看成隐函数组 $y=y(x),z=z(x)$，方程两边对 $x$ 求导。\n\n**求导**：对两方程两边对 $x$ 求导并移项，得\n$$\\begin{cases}y\\frac{dy}{dx}+z\\frac{dz}{dx}=-x\\\\[4pt] \\frac{dy}{dx}+\\frac{dz}{dx}=-1\\end{cases}$$\n\n由克拉默法则，\n$$\\frac{dy}{dx}=\\frac{\\begin{vmatrix}-x & z\\\\ -1 & 1\\end{vmatrix}}{\\begin{vmatrix}y & z\\\\ 1 & 1\\end{vmatrix}}=\\frac{z-x}{y-z}=0,\\qquad\n\\frac{dz}{dx}=\\frac{\\begin{vmatrix}y & -x\\\\ 1 & -1\\end{vmatrix}}{\\begin{vmatrix}y & z\\\\ 1 & 1\\end{vmatrix}}=\\frac{x-y}{y-z}=-1$$\n\n**切向量**：$T=\\left(1,\\frac{dy}{dx},\\frac{dz}{dx}\\right)=(1,0,-1)$。\n\n**切线方程**：\n$$\\frac{x-1}{1}=\\frac{y+2}{0}=\\frac{z-1}{-1}$$\n或写成 $\\begin{cases}x+z-2=0\\\\ y+2=0\\end{cases}$。\n\n**法平面方程**（点法式）：\n$$1\\cdot(x-1)+0\\cdot(y+2)+(-1)\\cdot(z-1)=0$$\n即 $x-z=0$。\n\n**注**：因为 $\\frac{\\partial(F,G)}{\\partial(y,z)}\\Big|_{(1,-2,1)}=2y-2z\\Big|_{(1,-2,1)}=-6\\neq0$，由隐函数存在定理确实确定了 $y=y(x),z=z(x)$，所以上面的求导是合法的。",
       "cat": "多元微分学",
-      "topic": "隐函数求导·空间曲线的切线与法平面",
+      "topic": "曲面切平面与法线",
       "source": "经纬研选（五）·数一多元",
       "answer": "",
       "papers": [
@@ -7023,7 +7023,7 @@ var QUESTION_BANK = {
       "question": "求旋转椭球面 $3x^{2}+y^{2}+z^{2}=16$ 上点 $(-1,-2,3)$ 处的切平面与 $xOy$ 面夹角的余弦。",
       "solution": "**分析**：切平面与 $xOy$ 面的夹角，等于切平面的法线与 $z$ 轴的夹角，也就是法向量与 $z$ 轴单位向量 $\\vec{e}=(0,0,1)$ 的夹角。\n\n设 $F=3x^{2}+y^{2}+z^{2}-16$，则\n$$F_{x}=6x,\\quad F_{y}=2y,\\quad F_{z}=2z$$\n\n在 $(-1,-2,3)$ 处法向量 $\\vec{n}=(-6,-4,6)$。\n\n由两向量夹角余弦公式，\n$$\\cos\\gamma=\\frac{|\\vec{n}\\cdot\\vec{e}|}{|\\vec{n}|\\,|\\vec{e}|}\n=\\frac{|(-6)\\cdot0+(-4)\\cdot0+6\\cdot1|}{\\sqrt{36+16+36}\\times1}\n=\\frac{6}{\\sqrt{88}}=\\frac{3}{\\sqrt{22}}$$\n\n**答案**：$\\dfrac{3}{\\sqrt{22}}$（也可写成 $\\dfrac{3\\sqrt{22}}{22}$）。",
       "cat": "多元微分学",
-      "topic": "曲面切平面·两平面夹角",
+      "topic": "曲面切平面与法线",
       "source": "经纬研选（五）·数一多元",
       "answer": "$\\dfrac{3}{\\sqrt{22}}$",
       "papers": [
@@ -7039,7 +7039,7 @@ var QUESTION_BANK = {
       "question": "试证曲面 $\\sqrt{x}+\\sqrt{y}+\\sqrt{z}=\\sqrt{a}\\ (a>0)$ 上任何点处的切平面在三个坐标轴上的截距之和等于 $a$。",
       "solution": "**证明**：设 $P_{0}(x_{0},y_{0},z_{0})$ 为曲面上任意一点，则 $\\sqrt{x_{0}}+\\sqrt{y_{0}}+\\sqrt{z_{0}}=\\sqrt{a}$。\n\n**法向量**：令 $F=\\sqrt{x}+\\sqrt{y}+\\sqrt{z}-\\sqrt{a}$，则\n$$\\vec{n}=\\left(\\frac{1}{2\\sqrt{x_{0}}},\\frac{1}{2\\sqrt{y_{0}}},\\frac{1}{2\\sqrt{z_{0}}}\\right)$$\n\n**切平面方程**：\n$$\\frac{x-x_{0}}{2\\sqrt{x_{0}}}+\\frac{y-y_{0}}{2\\sqrt{y_{0}}}+\\frac{z-z_{0}}{2\\sqrt{z_{0}}}=0$$\n\n整理为截距式形式：\n$$\\frac{x}{2\\sqrt{x_{0}}}+\\frac{y}{2\\sqrt{y_{0}}}+\\frac{z}{2\\sqrt{z_{0}}}\n=\\frac{x_{0}}{2\\sqrt{x_{0}}}+\\frac{y_{0}}{2\\sqrt{y_{0}}}+\\frac{z_{0}}{2\\sqrt{z_{0}}}\n=\\frac{\\sqrt{x_{0}}+\\sqrt{y_{0}}+\\sqrt{z_{0}}}{2}=\\frac{\\sqrt{a}}{2}$$\n\n**三个截距**：令 $y=z=0$ 得 $x$ 轴截距 $\\dfrac{\\sqrt{a}}{2}\\cdot2\\sqrt{x_{0}}=\\sqrt{ax_{0}}$；同理得 $y$ 轴、$z$ 轴截距分别为 $\\sqrt{ay_{0}},\\sqrt{az_{0}}$。\n\n**求和**：\n$$\\sqrt{ax_{0}}+\\sqrt{ay_{0}}+\\sqrt{az_{0}}\n=\\sqrt{a}\\left(\\sqrt{x_{0}}+\\sqrt{y_{0}}+\\sqrt{z_{0}}\\right)\n=\\sqrt{a}\\cdot\\sqrt{a}=a$$\n\n故截距之和恒为 $a$，与所取的点无关。证毕。",
       "cat": "多元微分学",
-      "topic": "曲面切平面·截距之和",
+      "topic": "曲面切平面与法线",
       "source": "经纬研选（五）·数一多元",
       "answer": "",
       "papers": [
@@ -7055,7 +7055,7 @@ var QUESTION_BANK = {
       "question": "函数 $z=\\sqrt{x^{2}+y^{2}}$ 在点 $(0,0)$ 处沿 $(1,0)$ 方向的方向导数 $\\dfrac{\\partial z}{\\partial l}=1$，证明函数在 $(0,0)$ 的偏导数 $\\dfrac{\\partial z}{\\partial x}$ 不存在。",
       "solution": "**证明**：记 $f(x,y)=\\sqrt{x^{2}+y^{2}}$。\n\n**方向导数**（沿 $\\vec{l}=(1,0)$，由定义）：\n$$\\frac{\\partial z}{\\partial l}\\Big|_{(0,0)}\n=\\lim_{t\\to0^{+}}\\frac{f(t,0)-f(0,0)}{t}\n=\\lim_{t\\to0^{+}}\\frac{\\sqrt{t^{2}}}{t}\n=\\lim_{t\\to0^{+}}\\frac{|t|}{t}=1$$\n\n**偏导数**（仍由定义，注意这里是双侧极限）：\n$$\\frac{\\partial z}{\\partial x}\\Big|_{(0,0)}\n=\\lim_{x\\to0}\\frac{f(x,0)-f(0,0)}{x}\n=\\lim_{x\\to0}\\frac{\\sqrt{x^{2}}}{x}\n=\\lim_{x\\to0}\\frac{|x|}{x}$$\n\n右极限为 $1$，左极限为 $-1$，两者不相等，故该极限不存在。\n\n**结论**：偏导数 $\\dfrac{\\partial z}{\\partial x}$ 不存在。\n\n**点睛**：方向导数用的是**单侧**极限 $t\\to0^{+}$，偏导数用的是**双侧**极限 $x\\to0$。沿某方向的方向导数存在，推不出偏导数存在——这是本题的要害。",
       "cat": "多元微分学",
-      "topic": "方向导数·偏导数存在性",
+      "topic": "方向导数与梯度",
       "source": "经纬研选（五）·数一多元",
       "answer": "",
       "papers": [
@@ -7071,7 +7071,7 @@ var QUESTION_BANK = {
       "question": "函数 $z=\\sqrt{x^{2}+y^{2}}$ 在点 $(0,0)$ 处，下面哪个正确？",
       "solution": "逐项判断。\n\n**A 错**：$z=\\sqrt{x^{2}+y^{2}}$ 是连续函数的复合，在 $(0,0)$ 处连续。\n\n**C 错**：由上一题，$\\dfrac{\\partial z}{\\partial x}\\Big|_{(0,0)}=\\lim\\limits_{x\\to0}\\dfrac{|x|}{x}$ 不存在，偏导数不存在。\n\n**B 错、D 对**：设任意单位方向 $\\vec{l}=(\\cos\\alpha,\\cos\\beta)$，由定义\n$$\\frac{\\partial f}{\\partial l}\\Big|_{(0,0)}\n=\\lim_{t\\to0^{+}}\\frac{f(t\\cos\\alpha,\\,t\\cos\\beta)-f(0,0)}{t}\n=\\lim_{t\\to0^{+}}\\frac{\\sqrt{t^{2}(\\cos^{2}\\alpha+\\cos^{2}\\beta)}}{t}\n=\\lim_{t\\to0^{+}}\\frac{t\\cdot1}{t}=1$$\n\n即沿**任意**方向的方向导数都存在且都等于 $1$。\n\n**答案：D**",
       "cat": "多元微分学",
-      "topic": "方向导数·偏导数存在性",
+      "topic": "方向导数与梯度",
       "source": "经纬研选（五）·数一多元",
       "options": [
         "不连续",
@@ -7093,7 +7093,7 @@ var QUESTION_BANK = {
       "question": "设 $f(x,y)=\\dfrac{1}{2}(x^{2}+y^{2})$，点 $P_{0}(1,1)$，求：（1）$f(x,y)$ 在 $P_{0}$ 处增加最快的方向以及沿这个方向的方向导数；（2）$f(x,y)$ 在 $P_{0}$ 处变化率为零的方向。",
       "solution": "**（1）增加最快的方向**\n\n增加最快的方向就是梯度方向。\n$$f_{x}=x,\\quad f_{y}=y\\quad\\Rightarrow\\quad \\nabla f(1,1)=(1,1)$$\n\n其方向余弦为 $\\left(\\dfrac{1}{\\sqrt{2}},\\dfrac{1}{\\sqrt{2}}\\right)$，即方向与 $x$ 轴正向成 $45^{\\circ}$。\n\n沿该方向的方向导数等于梯度的模：\n$$\\frac{\\partial f}{\\partial l}\\Big|_{(1,1)}\n=1\\cdot\\frac{1}{\\sqrt{2}}+1\\cdot\\frac{1}{\\sqrt{2}}=\\sqrt{2}$$\n\n**（2）变化率为零的方向**\n\n方向导数 $\\dfrac{\\partial f}{\\partial l}=\\nabla f\\cdot\\vec{l}^{\\,\\circ}=0$ 意味着方向与梯度垂直。\n\n与 $(1,1)$ 垂直的单位向量有两个：\n$$\\left(-\\frac{1}{\\sqrt{2}},\\frac{1}{\\sqrt{2}}\\right)\\quad\\text{或}\\quad\\left(\\frac{1}{\\sqrt{2}},-\\frac{1}{\\sqrt{2}}\\right)$$\n\n**点睛**：变化率为零的方向是**等值线（等高线）的切线方向**。本题等值线是圆 $x^{2}+y^{2}=C$，在 $(1,1)$ 处切线方向正是上述两个方向。",
       "cat": "多元微分学",
-      "topic": "梯度·方向导数·变化率为零的方向",
+      "topic": "方向导数与梯度",
       "source": "经纬研选（五）·数一多元",
       "answer": "",
       "papers": [
@@ -17879,7 +17879,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$先对 x 求偏导：\\partialz/\\partialx = 2x·e^y。再对 y 求偏导：\\partial²z/\\partialx\\partialy = 2x·e^y。若先对 y 再对 x，结果相同（混合偏导连续则可交换次序）。考查多元复合函数的二阶混合偏导。$",
       "cat": "多元微分学",
-      "topic": "偏导数计算·混合偏导",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -17900,7 +17900,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\partialz/\\partialx = f'(x^{2}+y²)·2x，\\partialz/\\partialy = f'(x^{2}+y²)·2y。y·\\partialz/\\partialx - x·\\partialz/\\partialy = y·2x f' - x·2y f' = 0。考查链式法则+对称性简化。$",
       "cat": "多元微分学",
-      "topic": "复合函数求偏导·链式法则",
+      "topic": "偏导数与全微分",
       "papers": [
         "shu1",
         "shu2",
@@ -17921,7 +17921,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "可微一定偏导数存在（必要条件），但偏导数存在不一定可微（反例：f(x,y)=xy/(x^{2}+y²) 在原点偏导存在但不可微）。充分条件是偏导数连续。考查多元函数可微性的层次关系。",
       "cat": "多元微分学",
-      "topic": "偏导存在与可微的关系",
+      "topic": "多元极限与可微性",
       "papers": [
         "shu1",
         "shu2",
@@ -17942,7 +17942,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$u = (1/2)\\ln(x^{2}+y²)，\\partialu/\\partialx = x/(x^{2}+y²)，\\partialu/\\partialy = y/(x^{2}+y²)。在 (1,1) 处：ux=1/2，uy=1/2。|\\nablau| = \\sqrt[(1/2)²+(1/2)²] = \\sqrt{1/2} = 1/\\sqrt2。考查梯度计算+模长。$",
       "cat": "多元微分学",
-      "topic": "梯度计算",
+      "topic": "方向导数与梯度",
       "papers": [
         "shu1",
         "shu2",
@@ -18020,7 +18020,7 @@ var QUESTION_BANK = {
       "answer": "(1,1)",
       "solution": "$\\partialz/\\partialx = 3x^{2} - 3y = 0，\\partialz/\\partialy = 3y² - 3x = 0。由第一式 y=x^{2}，代入第二式：(x^{2})² - x = 0，x(x^{3}-1)=0，x=0 或 x=1。对应 y=0 或 y=1。驻点：(0,0)和(1,1)。考查多元函数极值必要条件+方程组求解。$",
       "cat": "多元微分学",
-      "topic": "驻点求解",
+      "topic": "多元函数极值",
       "papers": [
         "shu1",
         "shu2",
@@ -18035,7 +18035,7 @@ var QUESTION_BANK = {
       "answer": "极",
       "solution": "$条件极值问题，用拉格朗日乘数法。设 L=xyz+λ(x^{2}/a²+y²/b²+z²/c²-1)，令各偏导为0求解。答案为椭球面内接长方体体积最大问题，结果是 \\big|_{x}^{y}z\\big|_{m}^{a}x = abc/(3\\sqrt3)。考查条件极值+拉格朗日乘数。$",
       "cat": "多元微分学",
-      "topic": "条件极值·拉格朗日乘数法",
+      "topic": "条件极值",
       "papers": [
         "shu1",
         "shu2",
@@ -19003,7 +19003,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$\\partial(xᵀAx)/\\partialx = 2Ax（A对称），\\partial(bᵀx)/\\partialx = b。故 \\nablaf = 2Ax + b。这是优化理论（如最小二乘、梯度下降）的基础。综合矩阵运算+多元微分。$",
       "cat": "多元微分学",
-      "topic": "矩阵形式的梯度",
+      "topic": "方向导数与梯度",
       "papers": [
         "shu1",
         "shu2",
@@ -19024,7 +19024,7 @@ var QUESTION_BANK = {
       "answer": 1,
       "solution": "$梯度 \\nablaf = 2Ax（A对称），再求导得 Hessian = 2A。Hessian 矩阵判断极值：正定则为极小值，负定则为极大值。综合二次型+极值判断。$",
       "cat": "多元微分学",
-      "topic": "矩阵形式的 Hessian",
+      "topic": "方向导数与梯度",
       "papers": [
         "shu1",
         "shu2",
@@ -19045,7 +19045,7 @@ var QUESTION_BANK = {
       "answer": 0,
       "solution": "$\\partialf/\\partialx = 2x + y + 1 = 0，\\partialf/\\partialy = x + 2y - 1 = 0。解方程组得 x=-1, y=1。Hessian = [[2,1],[1,2]] 正定，故为极小值点。f(-1,1)=1-1+1-1-1+1=0。考查多元函数无条件极值——驻点+二阶判别。$",
       "cat": "多元微分学",
-      "topic": "无约束极值·驻点求解",
+      "topic": "多元函数极值",
       "papers": [
         "shu1",
         "shu2",
@@ -19836,7 +19836,7 @@ var QUESTION_BANK = {
       "answer": 3,
       "solution": "**【答案】** 选 D（A、B、C 都正确，不正确的是 D：$(0,0)$ 是极小值点而非极大值点）。\n\n**第一步：利用等价无穷小化简。** 当 $(x,y)\\to(0,0)$ 时\n$$e^{x^2+y^2}-1\\sim x^2+y^2.$$\n故\n$$\\frac{f(x,y)-f(0,0)}{e^{x^2+y^2}-1}\\to 2 \\iff \\frac{f(x,y)-f(0,0)}{x^2+y^2}\\to 2.$$\n\n**第二步：推出 $f(0,0)=0$。** 由上式分子趋于 $0$（当 $(x,y)\\to(0,0)$ 时 $x^2+y^2\\to 0$，分母趋于 $0$，极限 $2$ 有限意味着分子也趋于 $0$），即\n$$\\lim_{(x,y)\\to(0,0)}\\bigl[f(x,y)-f(0,0)\\bigr]=0 \\implies f(0,0)=f(0,0).$$\n等等——这只能说明 $\\lim f(x,y)=f(0,0)$，故 $f$ 在 $(0,0)$ 连续。**A 正确**。\n\n**第三步：分析 $\\dfrac{f(x,y)}{\\sqrt{x^2+y^2}}$ 的极限。** 由 $f(x,y)\\sim 2(x^2+y^2)$，得\n$$\\frac{f(x,y)}{\\sqrt{x^2+y^2}}\\sim 2\\sqrt{x^2+y^2}\\to 0.$$\n\n**第四步：计算偏导。** 沿 $x$ 轴（$y=0$）逼近 $(0,0)$：\n$$f'_x(0,0)=\\lim_{x\\to 0}\\frac{f(x,0)-f(0,0)}{x}=\\lim_{x\\to 0}\\frac{2x^2}{x}=0.$$\n同理 $f'_y(0,0)=0$。**B 正确**。\n\n**第五步：判可微性。** 需验证\n$$\\lim_{(x,y)\\to(0,0)}\\frac{f(x,y)-f(0,0)-f'_x(0,0)x-f'_y(0,0)y}{\\sqrt{x^2+y^2}}=\\lim_{(x,y)\\to(0,0)}\\frac{f(x,y)}{\\sqrt{x^2+y^2}}=0.$$\n由第三步，此极限为 $0$，故 $f$ 在 $(0,0)$ 可微，且 $\\mathrm{d}f(0,0)=0$。**C 正确**。\n\n**第六步：判极值。** 由于 $f(x,y)\\sim 2(x^2+y^2)\\ge 0$ 在 $(0,0)$ 邻域内成立（更精确地：$f(x,y)=2(x^2+y^2)+o(x^2+y^2)$），故 $f(x,y)\\ge 0=f(0,0)$ 在 $(0,0)$ 某邻域内——**$(0,0)$ 为极小值点**，不是极大值。**D 错误**。\n\n综上选 **A、B、C**。\n\n$e^{x^2+y^2}-1\\sim x^2+y^2$ 是关键等价代换；得 $f\\sim 2(x^2+y^2)$ 后，$f/\\sqrt{x^2+y^2}\\to 0$ 直接给出可微性（用 $o(\\rho)/\\rho\\to 0$ 的判定），且偏导必为 $0$；$f\\ge 0$ 决定是极小而非极大。\n\n---",
       "cat": "多元微分学",
-      "topic": "多元极限·连续偏导可微",
+      "topic": "多元极限与可微性",
       "source": "综合例题PDF·例44",
       "options": [
         "$f(x,y)$ 在 $(0,0)$ 处连续",
@@ -19872,7 +19872,7 @@ var QUESTION_BANK = {
       "answer": "$(x,y)=(-1,-1)$ 处 $z=-2$ 为极大值；$(x,y)=(1,1)$ 处 $z=2$ 为极小值。",
       "solution": "**第一步：构造辅助函数并求驻点。** 令\n$$F(x,y,z)=x^{2}+y^{2}-xz-yz-z^{2}+6.$$\n由隐函数存在定理，$F'_z=-(x+y+2z)\\ne 0$ 时可解出 $z=z(x,y)$。\n\n驻点要求 $\\partial z/\\partial x=\\partial z/\\partial y=0$，等价于 $F'_x=F'_y=0$ 在 $F=0$ 上同时成立：\n$$\nF'_x=2x-z=0,\\quad F'_y=2y-z=0.\n$$\n两式联立得 $x=y=z/2$。代入 $F=0$：\n$$\n2x^2-xz-xz-z^2+6=2x^2-2xz-z^2+6=0.\n$$\n把 $z=2x$ 代入：\n$$2x^2-2x(2x)-(2x)^2+6=2x^2-4x^2-4x^2+6=-6x^2+6=0\\implies x=\\pm 1.$$\n对应两组驻点：$(1,1,2)$ 与 $(-1,-1,-2)$。\n\n**第二步：Hesse 矩阵判别。** 先算 $z_{xx},z_{yy},z_{xy}$。对 $F=0$ 关于 $x$ 求导：\n$$2x-z-xz'_x-yz'_x-2zz'_x=0 \\implies z'_x=\\frac{2x-z}{x+y+2z}.$$\n同理 $z'_y=\\dfrac{2y-z}{x+y+2z}$。\n\n在驻点 $(1,1,2)$：$z'_x=z'_y=0$（验证），$x+y+2z=1+1+4=6$。\n对 $z'_x$ 再求 $x$ 偏导：\n$$z''_{xx}=\\frac{2-z'_x(x+y+2z)-(2x-z)(z'_x+y'_x+2z'_x)}{(x+y+2z)^2}.$$\n驻点处 $z'_x=z'_y=0$，$2x-z=2-2=0$，故\n$$z''_{xx}=\\frac{2-0-0}{36}=\\frac{1}{18}.$$\n对称地 $z''_{yy}=\\dfrac{1}{18}$。混合项 $z''_{xy}=0$（分子涉及 $(2y-z)=0$）。判别\n$$\\Delta=z''_{xx}z''_{yy}-(z''_{xy})^2=\\tfrac1{18}\\cdot\\tfrac1{18}-0>0,\\quad z''_{xx}>0.$$\n故 $(1,1)$ 处 $z=2$ 是**极小值**。\n\n在驻点 $(-1,-1,-2)$：$x+y+2z=-6$，$2x-z=0$，$2y-z=0$。同样 $z''_{xx}=2/(-6)=-1/3<0$，故 $z=-2$ 在 $(-1,-1)$ 处为**极大值**。\n\n综上：$z(1,1)=2$ 是**极小值**；$z(-1,-1)=-2$ 是**极大值**。\n\n隐函数极值的标准步骤：(1) 由 $F'_x=F'_y=0$ 与 $F=0$ 解出驻点 $(x_0,y_0,z_0)$；(2) 在该点处算 $z''_{xx},z''_{xy},z''_{yy}$（可用 $z'_x$ 公式再求导，或用隐函数二阶导公式）；(3) 用 $\\Delta=z''_{xx}z''_{yy}-(z''_{xy})^2$ 与 $z''_{xx}$ 的符号判别极大/极小。本题利用\"驻点处 $z'_x=z'_y=0$\"简化计算。\n\n---",
       "cat": "多元微分学",
-      "topic": "隐函数·极值",
+      "topic": "多元函数极值",
       "source": "综合例题PDF·例56",
       "papers": [
         "shu1",
@@ -20368,7 +20368,7 @@ var QUESTION_BANK = {
       "question": "设可微函数 $z=z(x,y)$ 由方程 $\\sin(xy)+z^2=x+2z$ 确定，则 $\\dfrac{\\partial z}{\\partial x}+\\dfrac{\\partial z}{\\partial y}=$（　）",
       "answer": 0,
       "solution": "设 $F(x,y,z)=\\sin(xy)+z^2-x-2z$，则\n$$F_x=y\\cos(xy)-1,\\quad F_y=x\\cos(xy),\\quad F_z=2z-2.$$\n由隐函数求导公式：\n$$\\frac{\\partial z}{\\partial x}=-\\frac{F_x}{F_z}=-\\frac{y\\cos(xy)-1}{2z-2},\\qquad \\frac{\\partial z}{\\partial y}=-\\frac{F_y}{F_z}=-\\frac{x\\cos(xy)}{2z-2}.$$\n相加：\n$$\\frac{\\partial z}{\\partial x}+\\frac{\\partial z}{\\partial y}=\\frac{1-(x+y)\\cos(xy)}{2(z-1)}.$$\n**选 A**．B 是分子差一个负号；C 把 $\\cos$ 换成 $\\sin$ 且分母错；D 分子多加了 $x+y\\cos(xy)$ 中的符号．",
-      "topic": "多元微分·隐函数求导",
+      "topic": "隐函数求偏导",
       "source": "自编·数二模拟卷第七套",
       "cat": "多元微分学",
       "options": [
@@ -20733,7 +20733,7 @@ var QUESTION_BANK = {
       "question": "求函数 $z=x^3+y^3-3xy$ 在闭区域 $D:|x|+|y|\\le 2$ 上的最大值与最小值．",
       "answer": "最大值 8，最小值 -8",
       "solution": "**内部**：解 $\\begin{cases}z_x=3x^2-3y=0\\\\ z_y=3y^2-3x=0\\end{cases}$ 得驻点 $(0,0)$，$(1,1)$．\n$A=z_{xx}=6x,\\ B=z_{xy}=-3,\\ C=z_{yy}=6y$．\n- $(1,1)$：$AC-B^2=36-9>0$，$A=6>0$，极小值 $z(1,1)=-1$；\n- $(0,0)$：$AC-B^2=-9<0$，非极值，$z(0,0)=0$．\n\n**边界**（四段，均代入化为一元）：\n- $x+y=2$（$0\\le x\\le2$）：$z=9x^2-18x+8$，最大 $z(0)=z(2)=8$，最小 $z(1)=-1$；\n- $-x+y=2$（$-2\\le x\\le0$）：$z=2x^3+3x^2+6x+8$，$z'>0$ 单调增，最大 $z(0)=8$，最小 $z(-2)=-8$（点 $(-2,0)$）；\n- $x-y=2$（$0\\le x\\le2$）：$z=2x^3-9x^2+18x-8$，最大 $8$（端点 $(2,0)$），最小 $-8$；\n- $x+y=-2$（$-2\\le x\\le0$）：$z=-3x^2-6x-8$，最大 $z(-1)=-5$，最小 $-8$（点 $(0,-2)$）．\n\n（以上各段最值均已用 sympy 的 maximum/minimum 逐段复核．）\n\n**比较**：$z_{\\max}=8$（在 $(2,0)$ 与 $(0,2)$），$z_{\\min}=-8$（在 $(-2,0)$ 与 $(0,-2)$）．\n（内部极小值 $-1$ 不及边界最小值，最大值不在驻点取得——闭区域最值必须内外兼顾．）",
-      "topic": "二元函数·闭区域最值（12 分）",
+      "topic": "多元函数极值",
       "source": "自编·数二模拟卷第七套",
       "cat": "多元微分学",
       "papers": [
