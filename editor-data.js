@@ -7695,7 +7695,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$级数收敛的必要条件是一般项趋于零：\\lim_{n\\to\\infty} a_n = 0。注意这不是充分条件（如调和级数）。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-cs-002",
@@ -7710,7 +7711,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$几何级数 \\sum ar^n 当 |r| < 1 时收敛，和为 \\frac{a}{1-r}。|r| \\geq 1 时发散。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-cs-003",
@@ -7725,7 +7727,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$p-级数：p > 1 收敛，p \\leq 1 发散。p=1 即调和级数，发散。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-cs-004",
@@ -7740,7 +7743,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\frac{1}{n(n+1)} = \\frac{1}{n} - \\frac{1}{n+1}。部分和 S_n = (1-\\frac{1}{2})+(\\frac{1}{2}-\\frac{1}{3})+\\cdots+(\\frac{1}{n}-\\frac{1}{n+1}) = 1-\\frac{1}{n+1}。\\lim S_n = 1。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-cs-005",
@@ -7755,7 +7759,8 @@ var EDITOR_DATA = [
         ],
         "answer": 2,
         "solution": "$莱布尼茨判别法的两个条件是：① a_n 单调递减；② \\lim_{n\\to\\infty} a_n = 0。a_n 有界是必要条件中的一部分但非判别条件。**答案：C**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-cs-006",
@@ -7770,7 +7775,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "比值判别法：$\\rho < 1 \\Rightarrow$ 绝对收敛；$\\rho > 1 \\Rightarrow$ 发散；$\\rho = 1 \\Rightarrow$ 不能确定。**答案：A**",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-cs-007",
@@ -7785,7 +7791,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "**阿贝尔定理**：幂级数在某点 $x_0$ 收敛，则在 $|x| < |x_0|$ 内绝对收敛。$|1| < |2|$，故在 $x=1$ 处绝对收敛。**答案：A**",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "幂级数收敛域"
       },
       {
         "id": "cal-cs-008",
@@ -7800,7 +7807,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\lim_{n\\to\\infty} \\left|\\frac{a_{n+1}}{a_n}\\right| = \\lim_{n\\to\\infty} \\frac{n}{n+1} = 1，收敛半径 R = 1。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "幂级数收敛域"
       },
       {
         "id": "cal-cs-009",
@@ -7815,7 +7823,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\frac{1}{1-x} = 1 + x + x^2 + \\cdots = \\sum_{n=0}^{\\infty} x^n，收敛区间 |x|<1。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "函数展开为幂级数"
       },
       {
         "id": "cal-cs-010",
@@ -7830,7 +7839,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$莱布尼茨条件满足（\\frac{1}{n} 递减趋于 0），级数收敛。但 \\sum |a_n| = \\sum \\frac{1}{n} 发散（调和级数），故条件收敛。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-cs-011",
@@ -7845,7 +7855,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**比值法**：\\rho = \\lim \\frac{n+1}{2^{n+1}} \\cdot \\frac{2^n}{n} = \\frac{1}{2} < 1，收敛。求和：S = \\sum nx^n 取 x=\\frac{1}{2}，S = \\frac{x}{(1-x)^2} = \\frac{1/2}{1/4} = 2。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-cs-012",
@@ -7860,7 +7871,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\cosh x = \\frac{e^x + e^{-x}}{2} = \\sum_{n=0}^{\\infty} \\frac{x^{2n}}{(2n)!}。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "幂级数和函数"
       },
       {
         "id": "cal-cs-013",
@@ -7875,7 +7887,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$半径 R=1。x=1：交错调和级数，条件收敛 ✅。x=-1：-\\sum \\frac{1}{n}，调和级数发散 ❌。收敛域 (-1,1]。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "幂级数收敛域"
       },
       {
         "id": "cal-cs-014",
@@ -7890,7 +7903,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\cos n\\pi = (-1)^n，交错级数。a_n = \\frac{1}{n^{2/3}} 递减趋于 0，莱布尼茨条件满足，条件收敛。\\sum \\frac{1}{n^{2/3}} 中 p=2/3<1，发散，非绝对收敛。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-cs-015",
@@ -7905,7 +7919,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\ln(1+x) = \\sum_{n=1}^{\\infty} (-1)^{n-1}\\frac{x^n}{n}。x=1：交错调和级数收敛 ✅。x=-1：-\\sum \\frac{1}{n} 发散 ❌。收敛域 (-1,1]。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "函数展开为幂级数"
       },
       {
         "id": "cal-cs-016",
@@ -7920,7 +7935,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$a_0 = \\frac{1}{\\pi}\\int_{-\\pi}^{\\pi} f(x)dx。注意常数项是 \\frac{a_0}{2}。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "傅里叶级数"
       },
       {
         "id": "cal-cs-017",
@@ -7935,7 +7951,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$拆成两个几何级数：\\sum (\\frac{3}{5})^n + \\sum (-\\frac{2}{5})^n = \\frac{3/5}{1-3/5} + \\frac{-2/5}{1+2/5} = \\frac{3}{2} - \\frac{2}{7} = \\frac{21-4}{14} = \\frac{17}{14}… 重算：第一个从 n=1：\\frac{3/5}{1-3/5} = \\frac{3/5}{2/5} = \\frac{3}{2}。第二个：\\frac{-2/5}{1-(-2/5)} = \\frac{-2/5}{7/5} = -\\frac{2}{7}。和 = \\frac{3}{2} - \\frac{2}{7} = \\frac{21-4}{14} = \\frac{17}{14}。选项不匹配，选项A是 \\frac{7}{4}。重算：\\frac{3}{2} - \\frac{2}{7} = \\frac{21}{14} - \\frac{4}{14} = \\frac{17}{14}。选项A 7/4 = 14/8，不对。选项D 5/2 = 35/14。都不对。改为题目用更整齐的数字：\\frac{2^n+3^n}{6^n}。和 = \\frac{2/6}{1-2/6} + \\frac{3/6}{1-3/6} = \\frac{1/3}{2/3} + \\frac{1/2}{1/2} = \\frac{1}{2} + 1 = \\frac{3}{2}。**答案：B**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-cs-018",
@@ -7950,7 +7967,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\sum_{n=1}^{\\infty} ny^{n-1} = \\frac{1}{(1-y)^2}。此处 y=\\frac{x}{3}。\\sum \\frac{n}{3^n}x^{n-1} = \\frac{1}{3}\\sum n(\\frac{x}{3})^{n-1} = \\frac{1}{3} \\cdot \\frac{1}{(1-\\frac{x}{3})^2} = \\frac{1}{3} \\cdot \\frac{9}{(3-x)^2} = \\frac{3}{(3-x)^2}。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "幂级数和函数"
       },
       {
         "id": "cal-cs-019",
@@ -7965,7 +7983,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$|x| 是偶函数，b_n=0。a_0 = \\frac{2}{\\pi}\\int_0^{\\pi} x\\,dx = \\pi。a_n = \\frac{2}{\\pi}\\int_0^{\\pi} x\\cos nx\\,dx = \\frac{2}{\\pi}\\frac{(-1)^n-1}{n^2}。|x| = \\frac{\\pi}{2} - \\frac{4}{\\pi}\\sum\\frac{\\cos(2k-1)x}{(2k-1)^2}。在 x=0 处，傅里叶级数收敛于 f(0)=0（f 连续）。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "傅里叶级数"
       },
       {
         "id": "cal-cs-020",
@@ -7980,7 +7999,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$**积分判别法**：\\int_2^{\\infty} \\frac{dx}{x(\\ln x)^p}，令 u=\\ln x，\\int_{\\ln 2}^{\\infty} u^{-p}du。收敛 \\iff p>1，与 p-级数的积分判别结果相同。**答案：A**$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-cs-021",
@@ -7995,7 +8015,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$x=-1$ 对应 $(x-1)=-2$。若在 $-2$ 处收敛，收敛半径至少为 $2$。$(2-1)=1$，$|1|<2$，在收敛区间内绝对收敛。**答案：A**",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "幂级数收敛域"
       },
       {
         "id": "cal-series-022",
@@ -8010,7 +8031,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$p$级数：$p>1$收敛，$p\\le1$发散。",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-series-023",
@@ -8025,7 +8047,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$裂项：\\frac{1}{n(n+1)}=\\frac{1}{n}-\\frac{1}{n+1}，部分和S_n=1-\\frac{1}{n+1}\\to1。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-series-024",
@@ -8040,7 +8063,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$几何级数：|q|<1时收敛，和\\frac{1}{1-q}。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-series-025",
@@ -8055,7 +8079,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "收敛的必要条件：通项趋于0。",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-series-026",
@@ -8070,7 +8095,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$交错调和级数条件收敛：莱布尼茨判别法，但\\sum1/n发散故非绝对收敛。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-series-027",
@@ -8085,7 +8111,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$\\rho=\\lim|a_{n+1}/a_n|=\\lim\\frac{1/(n+1)}{1/n}=1，R=1。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "幂级数收敛域"
       },
       {
         "id": "cal-series-028",
@@ -8100,7 +8127,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$|\\sin n/n^2|\\le1/n^2，\\sum 1/n^2收敛，比较判别法得绝对收敛。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-series-029",
@@ -8115,7 +8143,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$\\sum nx^n=\\frac{x}{(1-x)^2}，取x=1/2：\\frac{1/2}{1/4}=2。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-series-030",
@@ -8130,7 +8159,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$e^x的麦克劳林展开：e^x=\\sum_{n=0}^\\infty\\frac{x^n}{n!}。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "幂级数和函数"
       },
       {
         "id": "cal-series-031",
@@ -8145,7 +8175,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\lim\\frac{a_{n+1}}{a_n}=\\lim\\frac{n+1}{(n+1)^{n+1}}\\cdot\\frac{n^n}{n!}\\cdot\\frac{(n+1)!}{n+1}=...=1/e<1收敛。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-series-032",
@@ -8160,7 +8191,8 @@ var EDITOR_DATA = [
         ],
         "answer": 1,
         "solution": "$\\ln(1+1/n)\\sim 1/n，与调和级数同阶故发散。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-series-033",
@@ -8175,7 +8207,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$莱布尼茨判别法：交错且1/\\sqrt{n}\\to0单调递减\\rightarrow收敛。但\\sum 1/\\sqrt{n}发散，故条件收敛。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-series-034",
@@ -8190,7 +8223,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\ln(1+x)=\\sum_{n=1}^\\infty(-1)^{n-1}\\frac{x^n}{n}，-1<x\\le1。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "函数展开为幂级数"
       },
       {
         "id": "cal-series-035",
@@ -8205,7 +8239,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$\\rho=1，R=1。端点x=\\pm1时\\sum n(\\pm1)^{n-1}通项不趋于0，发散。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "幂级数收敛域"
       },
       {
         "id": "cal-series-036",
@@ -8220,7 +8255,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$e^x=1+x+\\frac{x^2}{2!}+\\frac{x^3}{3!}+\\cdots。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "函数展开为幂级数"
       },
       {
         "id": "cal-series-037",
@@ -8235,7 +8271,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$e^x展开代入x=2：e^2=\\sum\\frac{2^n}{n!}。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-series-038",
@@ -8244,7 +8281,8 @@ var EDITOR_DATA = [
         "question": "$\\sum_{n=1}^\\infty \\frac{1}{4n^2-1} 的和为(  )。$",
         "answer": "1/2",
         "solution": "$裂项：\\frac{1}{4n^2-1}=\\frac{1}{2}(\\frac{1}{2n-1}-\\frac{1}{2n+1})，望远镜和=1/2。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-series-039",
@@ -8253,7 +8291,8 @@ var EDITOR_DATA = [
         "question": "$等比级数 \\sum_{n=0}^\\infty \\frac{2}{3^n} 的和为(  )。$",
         "answer": "3",
         "solution": "$S=2\\sum(1/3)^n=2\\cdot\\frac{1}{1-1/3}=3。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-series-040",
@@ -8262,7 +8301,8 @@ var EDITOR_DATA = [
         "question": "$\\sum_{n=1}^\\infty \\frac{(-1)^{n-1}}{n\\cdot 2^n} 的近似值（取前2项）为(  )。$",
         "answer": "7/24",
         "solution": "$前2项：1/2-1/8=3/8。但题目取前2项：n=1:\\frac{1}{2}，n=2:-\\frac{1}{8}，和3/8。改为\\frac{3}{8}=0.375。答案3/8。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-series-041",
@@ -8271,7 +8311,8 @@ var EDITOR_DATA = [
         "question": "$\\lim_{n\\to\\infty}\\frac{2^n}{n!}=(  )。$",
         "answer": "0",
         "solution": "$比值：\\frac{2^{n+1}/(n+1)!}{2^n/n!}=\\frac{2}{n+1}\\to0，收敛于0。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "cal-series-042",
@@ -8280,7 +8321,8 @@ var EDITOR_DATA = [
         "question": "$\\sum_{n=1}^\\infty (\\frac{1}{2^n}+\\frac{1}{3^n}) 的和为(  )。$",
         "answer": "3/2",
         "solution": "$分别求和：\\frac{1/2}{1-1/2}+\\frac{1/3}{1-1/3}=1+\\frac12=\\frac32。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-series-043",
@@ -8289,7 +8331,8 @@ var EDITOR_DATA = [
         "question": "$幂级数 \\sum_{n=0}^\\infty (n+1)x^n 的和函数为(  )。$",
         "answer": "1/(1-x)²",
         "solution": "$\\sum(n+1)x^n=\\frac{d}{dx}\\sum x^{n+1}=\\frac{d}{dx}\\frac{x}{1-x}=\\frac{1}{(1-x)^2}。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "幂级数和函数"
       },
       {
         "id": "cal-series-044",
@@ -8298,7 +8341,8 @@ var EDITOR_DATA = [
         "question": "$\\sum_{n=1}^\\infty \\frac{1}{n^2+n} 的和为(  )。$",
         "answer": "1",
         "solution": "$裂项\\frac{1}{n(n+1)}=\\frac{1}{n}-\\frac{1}{n+1}，望远镜和=1。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-series-045",
@@ -8307,7 +8351,8 @@ var EDITOR_DATA = [
         "question": "$将 \\frac{1}{1+x^2} 展开为 x 的幂级数：\\sum_{n=0}^\\infty(  )。$",
         "answer": "(-1)^n x^(2n)",
         "solution": "$\\frac{1}{1+x^2}=\\frac{1}{1-(-x^2)}=\\sum(-x^2)^n=\\sum(-1)^n x^{2n}，|x|<1。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "函数展开为幂级数"
       },
       {
         "id": "cal-series-046",
@@ -8316,7 +8361,8 @@ var EDITOR_DATA = [
         "question": "$f(x)=\\cos x 的麦克劳林级数 x^2 项系数为(  )。$",
         "answer": "-1/2",
         "solution": "$\\cos x=1-\\frac{x^2}{2!}+\\frac{x^4}{4!}-\\cdots，x^2系数-1/2。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "函数展开为幂级数"
       },
       {
         "id": "cal-series-047",
@@ -8325,7 +8371,8 @@ var EDITOR_DATA = [
         "question": "$\\sum_{n=1}^\\infty n(\\frac{2}{3})^{n-1} 的和为(  )。$",
         "answer": "9",
         "solution": "$\\sum nx^{n-1}=\\frac{1}{(1-x)^2}，代入x=2/3：1/(1/3)^2=9。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-series-048",
@@ -8334,7 +8381,8 @@ var EDITOR_DATA = [
         "question": "$级数 \\sum_{n=1}^\\infty(-1)^{n-1}\\frac{x^{2n-1}}{2n-1} 的和函数为(  )。$",
         "answer": "arctan x",
         "solution": "$\\arctan x=\\sum_{n=0}^\\infty(-1)^n\\frac{x^{2n+1}}{2n+1}=x-\\frac{x^3}{3}+\\cdots。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "幂级数和函数"
       },
       {
         "id": "cal-series-049",
@@ -8343,7 +8391,8 @@ var EDITOR_DATA = [
         "question": "$\\sum_{n=1}^\\infty \\frac{n+1}{n!} 的和为(  )。$",
         "answer": "2e-1",
         "solution": "$\\sum\\frac{n}{n!}+\\sum\\frac{1}{n!}=\\sum\\frac{1}{(n-1)!}+\\sum\\frac{1}{n!}=e+(e-1)=2e-1。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       },
       {
         "id": "cal-series-050",
@@ -8358,7 +8407,8 @@ var EDITOR_DATA = [
         ],
         "answer": 0,
         "solution": "$巴塞尔问题：\\sum_{n=1}^\\infty\\frac{1}{n^2}=\\frac{\\pi^2}{6}。$",
-        "cat": "无穷级数"
+        "cat": "无穷级数",
+        "topic": "数项级数求和"
       }
     ]
   },
@@ -13346,7 +13396,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "几何级数公式：Σ xⁿ = 1/(1-x)，收敛域 |x|<1。这是幂级数求和的基础，许多复杂级数都是它的变形。",
         "cat": "无穷级数",
-        "topic": "幂级数·和函数"
+        "topic": "幂级数和函数"
       },
       {
         "id": "comp-056",
@@ -13362,7 +13412,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$\\ln(1+x) = x - x^{2}/2 + x^{3}/3 - x⁴/4 + … = Σ(n=1\\rightarrow\\infty) (-1)^(n-1) xⁿ/n，收敛域 (-1,1]。可通过积分 1/(1+x) 的展开式得到。考查常见函数的泰勒级数。$",
         "cat": "无穷级数",
-        "topic": "幂级数展开·麦克劳林级数"
+        "topic": "函数展开为幂级数"
       },
       {
         "id": "comp-057",
@@ -13378,7 +13428,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$\\ln(1+x)/x = 1 - x/2 + x^{2}/3 - x^{3}/4 + …。逐项积分：\\int ₀¹ Σ(-1)^(n-1) x^(n-1)/n dx = Σ(-1)^(n-1)/n² = 1 - 1/4 + 1/9 - 1/16 + … = \\pi²/12。考查幂级数逐项积分+特殊级数求和。$",
         "cat": "无穷级数",
-        "topic": "幂级数·逐项积分"
+        "topic": "幂级数和函数"
       },
       {
         "id": "comp-058",
@@ -13394,7 +13444,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$e^(-x^{2}) = Σ(-1)ⁿ x^(2n)/n!。逐项积分得 \\int  e^(-x^{2}) dx = Σ(-1)ⁿ x^(2n+1)/((2n+1)n!) + C。此为误差函数的基础。考查幂级数表示非初等原函数。$",
         "cat": "无穷级数",
-        "topic": "幂级数表示非初等原函数"
+        "topic": "函数展开为幂级数"
       },
       {
         "id": "comp-059",
@@ -13404,7 +13454,7 @@ var EDITOR_DATA = [
         "answer": "(-1)^n x^(2n)",
         "solution": "$1/(1+x^{2}) = 1 - x^{2} + x⁴ - x⁶ + … = Σ(n=0\\rightarrow\\infty) (-1)ⁿ x^(2n)，|x|<1。这是几何级数 Σ(-x^{2})ⁿ。积分可得 \\arctan x 的展开式。$",
         "cat": "无穷级数",
-        "topic": "幂级数展开"
+        "topic": "函数展开为幂级数"
       },
       {
         "id": "comp-061",
@@ -13420,7 +13470,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "由 Σ xⁿ = 1/(1-x) 求导：Σ n x^(n-1) = 1/(1-x)²。两边乘 x 得 Σ n xⁿ = x/(1-x)²。|x|<1。考查用逐项求导法求幂级数和函数。",
         "cat": "无穷级数",
-        "topic": "幂级数·逐项求导求和函数"
+        "topic": "幂级数和函数"
       },
       {
         "id": "comp-062",
@@ -13430,7 +13480,7 @@ var EDITOR_DATA = [
         "answer": "ln 2",
         "solution": "$令 S(x) = Σ xⁿ/n，S'(x) = Σ x^(n-1) = 1/(1-x)。积分得 S(x) = -\\ln(1-x)。代入 x=1/2：S(1/2) = -\\ln(1/2) = \\ln 2。考查构造幂级数求常数项级数和——先引入 x 变量求和再代入。$",
         "cat": "无穷级数",
-        "topic": "幂级数求和·和函数代入"
+        "topic": "幂级数和函数"
       },
       {
         "id": "comp-063",
@@ -13510,7 +13560,7 @@ var EDITOR_DATA = [
         "answer": 1,
         "solution": "$用积分判别法：\\int ₂^\\infty dx/(x \\ln x) = [\\ln(\\ln x)]\\big|_{2}^\\infty \\rightarrow \\infty，故级数发散。注意 1/(n \\ln² n) 收敛而 1/(n \\ln n) 发散，这是 p-级数在 \\ln 幂次上的推广。$",
         "cat": "无穷级数",
-        "topic": "正项级数敛散性·积分判别法"
+        "topic": "数项级数敛散性判别"
       },
       {
         "id": "comp-068",
@@ -13562,7 +13612,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "$设 y = Σ a_n xⁿ，则 y' = Σ n a_n x^(n-1) = Σ (n+1)a(n+1) xⁿ。由 y'=y 得 (n+1)a(n+1)=a_n。a_0=y(0)=1，推得 a_n=1/n!。故 y = Σ xⁿ/n! = e^x。考查幂级数解法——微分方程与级数的完美结合。$",
         "cat": "无穷级数",
-        "topic": null
+        "topic": "幂级数和函数"
       },
       {
         "id": "comp-072",
@@ -13588,7 +13638,7 @@ var EDITOR_DATA = [
         "answer": "y",
         "solution": "$y = Σ xⁿ/n! = e^x 是满足 y'=y 且 y(0)=1 的唯一解。反过来，知道级数形式可推导其满足的微分方程。这是一个双向联系。$",
         "cat": "无穷级数",
-        "topic": "幂级数·和函数与微分方程"
+        "topic": "幂级数和函数"
       },
       {
         "id": "comp-074",
@@ -13604,7 +13654,7 @@ var EDITOR_DATA = [
         "answer": 0,
         "solution": "该级数为 y = \\sin x。y' = \\cos x = Σ(-1)ⁿ x^(2n)/(2n)!，y'' = -\\sin x = -y，故 y''+y=0。考查从级数识别函数+建立微分方程。",
         "cat": "无穷级数",
-        "topic": "幂级数·和函数与微分方程"
+        "topic": "幂级数和函数"
       },
       {
         "id": "comp-075",
@@ -14350,7 +14400,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**结论**：$\\displaystyle\\sum_{n=1}^{\\infty}\\!\\Big[f\\!\\big(\\tfrac{1}{n}\\big)-1\\Big]$ 绝对收敛。\n\n**第一步：利用偶函数条件推出 $f'(0)=0$。** \n\n$f$ 是偶函数 $\\Rightarrow f(-x)=f(x)$，故\n$$f'(0)=\\lim_{h\\to 0}\\frac{f(h)-f(0)}{h}=\\lim_{h\\to 0}\\frac{f(-h)-f(0)}{-h}=\\lim_{h\\to 0}\\frac{f(h)-f(0)}{-h}=-f'(0).$$\n又由题设 $f$ 在 $0$ 邻域内有 **二阶连续导数**，故 $f'$ 在 $0$ 处连续，从而 $f'(-0)=f'(0)$，即 $f'(0)=0$。\n\n**第二步：Taylor 展开到二阶。** \n\n由 $f(0)=1$，$f'(0)=0$，$f''(0)=2$：\n$$f(x)=f(0)+f'(0)x+\\frac{f''(0)}{2}x^{2}+o(x^{2})=1+x^{2}+o(x^{2}).\\tag{$\\star$}$$\n\n（这里是偶函数的天然优势：一阶项消失，否则 $|\\frac{f(x)-1}{x^2}|$ 主项可能含 $\\frac{1}{x}$。）\n\n**第三步：用比较判别法。** \n\n由 $(\\star)$：\n$$\\lim_{x\\to 0}\\frac{f(x)-1}{x^{2}}=\\lim_{x\\to 0}\\frac{x^{2}+o(x^{2})}{x^{2}}=1.$$\n\n所以当 $n\\to\\infty$ 时\n$$a_n=f\\!\\left(\\tfrac{1}{n}\\right)-1\\sim\\frac{1}{n^{2}}.$$\n\n由 **比较判别法**（极限形式）：因为\n$$\\lim_{n\\to\\infty}\\frac{|a_n|}{1/n^{2}}=\\lim_{n\\to\\infty}n^{2}\\bigl[f(1/n)-1\\bigr]=1\\in(0,+\\infty),$$\n而 $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{1}{n^{2}}$ 收敛（$p$-级数，$p=2>1$），故\n$$\\sum_{n=1}^{\\infty}\\bigl|f(1/n)-1\\bigr|\\text{ 收敛}\\quad\\Longleftrightarrow\\quad\\sum_{n=1}^{\\infty}\\bigl[f(1/n)-1\\bigr]\\text{ 绝对收敛}.$$\n\n\"绝对收敛\"型证明题的固定套路：(1) 找主部——用 Taylor 公式将 $f(x)-f(0)$ 展开到使极限存在所需阶；(2) 比较判别——$|a_n|\\sim 1/n^p$（$p>1$）则绝对收敛。本题的隐藏关键：**偶函数** $\\Rightarrow$ 一阶导为 $0$，保证主项是 $x^2$ 量级而非 $x$ 量级——若 $f$ 不偶（$f'(0)\\neq 0$），则 $|f(1/n)-1|\\sim c/n$，类似调和级数，不绝对收敛。",
         "cat": "无穷级数",
-        "topic": "级数·绝对收敛",
+        "topic": "绝对收敛与条件收敛",
         "source": "综合例题PDF·例64"
       },
       {
@@ -14636,7 +14686,7 @@ var EDITOR_DATA = [
         "answer": "\\left(\\dfrac12,1\\right]",
         "solution": "**【答案】** 答案：$\\dfrac12<p\\le1$。\n\n记 $u_n=\\dfrac{(-1)^{n}}{n^{p}}$（$n\\ge2$），$a_n=\\ln(1+u_n)$。因 $p>0$，有 $u_n\\to0$，故当 $n$ 充分大时 $|u_n|\\le\\dfrac12$。\n\n**第一步：绝对收敛性（用等价量）。** 由 $\\displaystyle\\lim_{u\\to0}\\frac{\\ln(1+u)}{u}=1$，\n\n$$\\lim_{n\\to\\infty}\\frac{|a_n|}{|u_n|}=\\lim_{n\\to\\infty}\\frac{|\\ln(1+u_n)|}{|u_n|}=1,$$\n\n即 $|a_n|\\sim\\dfrac{1}{n^{p}}$。由比较判别法的极限形式，\n\n$$\\sum|a_n|\\ \\text{收敛}\\iff\\sum\\frac{1}{n^{p}}\\ \\text{收敛}\\iff p>1.$$\n\n所以 **$p>1$ 时原级数绝对收敛，不可能\"条件收敛\"**。\n\n**第二步：Taylor 展开（收敛性分析）。** 对 $|u|\\le\\dfrac12$，\n\n$$\\ln(1+u)=u-\\frac{u^{2}}{2}+R(u),\\qquad |R(u)|\\le C|u|^{3}.$$\n\n代入 $u=u_n$：\n\n$$a_n=\\frac{(-1)^{n}}{n^{p}}-\\frac{1}{2n^{2p}}+r_n,\\qquad |r_n|\\le \\frac{C}{n^{3p}}.\\tag{$\\ast$}$$\n\n**情形一：$\\dfrac12<p\\le1$ —— 条件收敛。**\n\n- $\\displaystyle\\sum\\frac{(-1)^{n}}{n^{p}}$：由 Leibniz 判别法，对一切 $p>0$ 收敛（$|u_n|=n^{-p}$ 单调递减趋于 $0$）。\n- $\\displaystyle\\sum\\frac{1}{2n^{2p}}$：因 $2p>1$，由 $p$-级数判别法收敛。\n- $\\displaystyle\\sum r_n$：因 $3p>\\dfrac32>1$，绝对收敛。\n\n三项相加收敛，故 $\\sum a_n$ 收敛；又由第一步 $p\\le1$ 时非绝对收敛，故为**条件收敛**。\n\n**情形二：$0<p\\le\\dfrac12$ —— 发散。**\n\n用不等式（$|u|\\le\\frac12$）：\n$$\\ln(1+u)\\le u-\\frac{u^{2}}{4}.$$\n（证明：令 $g(u)=u-\\frac{u^2}{4}-\\ln(1+u)$，$g(0)=0$，$g'(u)=\\dfrac{u(1-u)}{2(1+u)}$ 在 $(-\\frac12,0)$ 为负、在 $(0,\\frac12)$ 为正，故 $g(u)\\ge g(0)=0$。）\n\n取 $u=u_n$ 并对 $n=2,\\dots,N$ 求和：\n\n$$\\sum_{n=2}^{N}a_n\\le \\underbrace{\\sum_{n=2}^{N}\\frac{(-1)^{n}}{n^{p}}}_{\\text{部分和有界}}-\\frac14\\underbrace{\\sum_{n=2}^{N}\\frac{1}{n^{2p}}}_{\\xrightarrow[N\\to\\infty]{}\\ +\\infty\\ (2p\\le1)}.$$\n\n右端第二项趋于 $-\\infty$，第一项有界，故 $\\sum_{n=2}^{N}a_n\\to-\\infty$，级数**发散**。\n\n**情形三：$p>1$ —— 绝对收敛**（第一步已证），非条件收敛。\n\n**结论：** 条件收敛 $\\iff \\dfrac12<p\\le1$。\n\n### 【方法点睛】\n\n1. **$\\ln(1+u_n)$ 型必须展开到二阶**：一阶项 $(-1)^n/n^p$ 只决定\"是否收敛\"，二阶项 $-\\dfrac{1}{2n^{2p}}$（恒负）才决定\"是否在 $p$ 小时把它拽向 $-\\infty$\"。只看到一阶就会错答 $0<p\\le1$。\n2. **\"条件收敛\" = 收敛 且 非绝对收敛**，要同时做两边：收敛性用 $(\\ast)$ 拆分 + Leibniz + $p$-级数；绝对性用 $|\\ln(1+u)|\\sim|u|$ 与 $\\sum n^{-p}$ 比较。\n3. **下界 $\\dfrac12$ 的来源**：负项 $\\dfrac{1}{2n^{2p}}$ 要可和，需 $2p>1$。凡是 $\\ln(1+u_n)$ 型出现，临界指数总是\"二阶项指数 $>1$\"，记住这条能秒杀同类题。\n4. 发散性的证明**不要用 $(\\ast)$ 中的余项硬拼**（当 $3p\\le1$ 时 $\\sum r_n$ 未必绝对收敛），改用不等式 $\\ln(1+u)\\le u-\\frac{u^2}{4}$ 直接夹，干净且无漏洞。\n\n---\n\n1. **$\\ln(1+u_n)$ 型必须展开到二阶**：一阶项 $(-1)^n/n^p$ 只决定\"是否收敛\"，二阶项 $-\\dfrac{1}{2n^{2p}}$（恒负）才决定\"是否在 $p$ 小时把它拽向 $-\\infty$\"。只看到一阶就会错答 $0<p\\le1$。\n2. **\"条件收敛\" = 收敛 且 非绝对收敛**，要同时做两边：收敛性用 $(\\ast)$ 拆分 + Leibniz + $p$-级数；绝对性用 $|\\ln(1+u)|\\sim|u|$ 与 $\\sum n^{-p}$ 比较。\n3. **下界 $\\dfrac12$ 的来源**：负项 $\\dfrac{1}{2n^{2p}}$ 要可和，需 $2p>1$。凡是 $\\ln(1+u_n)$ 型出现，临界指数总是\"二阶项指数 $>1$\"，记住这条能秒杀同类题。\n4. 发散性的证明**不要用 $(\\ast)$ 中的余项硬拼**（当 $3p\\le1$ 时 $\\sum r_n$ 未必绝对收敛），改用不等式 $\\ln(1+u)\\le u-\\frac{u^2}{4}$ 直接夹，干净且无漏洞。\n\n---",
         "cat": "无穷级数",
-        "topic": "数一·条件收敛",
+        "topic": "绝对收敛与条件收敛",
         "source": "综合例题PDF·例33"
       },
       {
@@ -14647,7 +14697,7 @@ var EDITOR_DATA = [
         "answer": "绝对收敛",
         "solution": "**【答案】** 答案：绝对收敛（收敛半径同为 $R=2$，$x=\\dfrac52$ 为内点）。\n\n**第一步：由 \"$x=2$ 条件收敛\" 定出原幂级数的收敛半径。**\n\n设原级数收敛半径为 $R$。\n\n- 因 $\\sum a_n 2^{n}$ 收敛，故 $R\\ge 2$（收敛半径的定义：$|x|<R$ 时绝对收敛，$|x|>R$ 时发散；$x=2$ 收敛只能说明 $2\\le R$ 或 $2$ 是端点，总之 $R\\ge2$）。\n- 若 $R>2$，则 $|2|=2<R$，此时 $x=2$ 位于收敛区间**内部**，级数必**绝对收敛**，与\"条件收敛\"矛盾。\n\n故\n\n$$R=2.$$\n\n等价地：$\\displaystyle\\limsup_{n\\to\\infty}|a_n|^{1/n}=\\frac1R=\\frac12$。\n\n**第二步：求新幂级数的收敛半径。** 记 $b_n=\\dfrac{a_n}{n+1}$，则\n\n$$\\limsup_{n\\to\\infty}|b_n|^{1/n}=\\limsup_{n\\to\\infty}|a_n|^{1/n}\\cdot\\lim_{n\\to\\infty}(n+1)^{-1/n}=\\frac12\\cdot 1=\\frac12,$$\n\n（用到 $(n+1)^{1/n}\\to1$；乘以 $n+1$ 的因子**不改变**收敛半径），故新级数\n\n$$\\sum_{n=1}^{\\infty}\\frac{a_n}{n+1}(x-1)^{n}$$\n\n的收敛半径 $R'=2$，收敛区间为 $|x-1|<2$，即 $x\\in(-1,3)$。\n\n**第三步：判断 $x=\\dfrac52$。**\n\n$$\\left|\\frac52-1\\right|=\\frac32<2=R',$$\n\n即 $x=\\dfrac52$ 落在收敛区间**内部**，故级数**绝对收敛**。\n\n**另解（逐项积分观点，更直观）：** 对 $|t|<2$，\n\n$$\\sum_{n=1}^{\\infty}\\frac{a_n}{n+1}t^{n+1}=\\int_0^{t}\\Bigl(\\sum_{n=1}^{\\infty}a_n s^{n}\\Bigr)\\mathrm{d}s,$$\n\n幂级数在收敛区间内可逐项积分且收敛半径不变（仍是 $2$）。取 $t=x-1=\\dfrac32\\in(-2,2)$，落在内部，故绝对收敛。\n\n### 【方法点睛】\n\n1. **\"在某点条件收敛\"是极强的信**息：它同时给出 $R=|x_0|$（该点必是收敛区间的端点）。若只说\"收敛\"，只能得 $R\\ge|x_0|$；加了\"条件\"二字才排除 $R>|x_0|$。\n2. **系数除以 $n+1$（或乘 $n+1$）不改变收敛半径**：本质 $(n+1)^{1/n}\\to1$；也可理解为逐项积分/求导保持收敛半径。**但端点行为会变**（除以 $n+1$ 只会\"更容易收敛\"），所以端点必须单独判断——本题 $x=\\frac52$ 是内点，无需讨论端点，直接绝对收敛。\n3. **判敛散只需比较 $|x-x_0|$ 与 $R$**：$<R$ 绝对收敛，$>R$ 发散，$=R$ 才是需要额外判断的端点。本题 $\\frac32<2$，一锤定音。\n\n---\n\n1. **\"在某点条件收敛\"是极强的信**息：它同时给出 $R=|x_0|$（该点必是收敛区间的端点）。若只说\"收敛\"，只能得 $R\\ge|x_0|$；加了\"条件\"二字才排除 $R>|x_0|$。\n2. **系数除以 $n+1$（或乘 $n+1$）不改变收敛半径**：本质 $(n+1)^{1/n}\\to1$；也可理解为逐项积分/求导保持收敛半径。**但端点行为会变**（除以 $n+1$ 只会\"更容易收敛\"），所以端点必须单独判断——本题 $x=\\frac52$ 是内点，无需讨论端点，直接绝对收敛。\n3. **判敛散只需比较 $|x-x_0|$ 与 $R$**：$<R$ 绝对收敛，$>R$ 发散，$=R$ 才是需要额外判断的端点。本题 $\\frac32<2$，一锤定音。\n\n---",
         "cat": "无穷级数",
-        "topic": "幂级数·收敛区间",
+        "topic": "幂级数收敛域",
         "source": "综合例题PDF·例47"
       },
       {
@@ -14658,7 +14708,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "**【结论】** 级数 $\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{n!}{f^{(n)}(0)}$ **绝对收敛**。\n\n**第一步：因式分解 + 部分分式，把有理函数拆成两项。**\n\n$$1+x-2x^{2}=(1-x)(1+2x).$$\n\n设 $\\dfrac{1}{(1-x)(1+2x)}=\\dfrac{A}{1-x}+\\dfrac{B}{1+2x}$，则 $1=A(1+2x)+B(1-x)$。\n\n- 取 $x=1$：$1=3A\\Rightarrow A=\\dfrac13$；\n- 取 $x=-\\dfrac12$：$1=\\dfrac32 B\\Rightarrow B=\\dfrac23$。\n\n$$\\boxed{f(x)=\\frac13\\cdot\\frac{1}{1-x}+\\frac23\\cdot\\frac{1}{1+2x}.}$$\n\n**第二步：展开为幂级数，读出 $f^{(n)}(0)$。** 由等比级数（$|x|<\\dfrac12$ 时两级数同时收敛）：\n\n$$\\frac{1}{1-x}=\\sum_{n=0}^{\\infty}x^{n},\\qquad \\frac{1}{1+2x}=\\sum_{n=0}^{\\infty}(-2x)^{n}=\\sum_{n=0}^{\\infty}(-2)^{n}x^{n}.$$\n\n故\n\n$$f(x)=\\sum_{n=0}^{\\infty}\\Bigl[\\frac13+\\frac23(-2)^{n}\\Bigr]x^{n}.$$\n\n由 Taylor 系数的唯一性 $c_n=\\dfrac{f^{(n)}(0)}{n!}$，得\n\n$$c_n=\\frac13+\\frac23(-2)^{n},\\qquad f^{(n)}(0)=n!\\Bigl[\\frac13+\\frac23(-2)^{n}\\Bigr].$$\n\n**第三步：写出待证级数的通项，并确认它有意义。**\n\n$$\\frac{n!}{f^{(n)}(0)}=\\frac{1}{\\frac13+\\frac23(-2)^{n}}.$$\n\n分母 $\\dfrac13+\\dfrac23(-2)^{n}=0$ 等价于 $(-2)^{n}=-\\dfrac12$，对整数 $n$ 无解，故每一项都有意义。\n\n（校验：$n=0$ 时 $f(0)=1$，项为 $1$；$n=1$ 时 $f'(0)=-1$，项为 $-1$；$n=2$ 时 $f''(0)=6$，项为 $\\dfrac{2!}{6}=\\dfrac13$；$n=3$ 时 $f^{(3)}(0)=-30$，项为 $-\\dfrac{6}{30}=-\\dfrac15$。）\n\n**第四步：与等比级数作比较（极限形式）。** 记 $a_n=\\dfrac13+\\dfrac23(-2)^{n}$，则\n\n$$a_n=\\frac23(-2)^{n}\\Bigl[1+\\frac12\\bigl(-\\tfrac12\\bigr)^{n}\\Bigr],\\qquad \\Bigl|\\frac12\\bigl(-\\tfrac12\\bigr)^{n}\\Bigr|\\xrightarrow[n\\to\\infty]{}0,$$\n\n所以\n\n$$\\left|\\frac{n!}{f^{(n)}(0)}\\right|=\\frac{1}{|a_n|}\\sim\\frac{1}{\\frac23\\cdot 2^{n}}=\\frac32\\Bigl(\\frac12\\Bigr)^{n}\\quad(n\\to\\infty).$$\n\n于是\n\n$$\\lim_{n\\to\\infty}\\frac{\\left|\\dfrac{n!}{f^{(n)}(0)}\\right|}{\\left(\\dfrac12\\right)^{n}}=\\frac32\\in(0,+\\infty).$$\n\n由**比较判别法的极限形式**，$\\displaystyle\\sum\\left|\\frac{n!}{f^{(n)}(0)}\\right|$ 与收敛的等比级数 $\\displaystyle\\sum\\left(\\frac12\\right)^{n}$ 同敛散，故原级数**绝对收敛**。\n\n（若想避开极限形式，也可直接放缩：$n\\ge1$ 时 $\\bigl|1+\\frac12(-\\frac12)^{n}\\bigr|\\ge 1-\\frac14=\\frac34$，于是 $\\left|\\dfrac{n!}{f^{(n)}(0)}\\right|\\le\\dfrac{1}{\\frac23\\cdot2^{n}}\\cdot\\dfrac43=2\\Bigl(\\dfrac12\\Bigr)^{n}$，与 $\\sum 2\\bigl(\\frac12\\bigr)^n$ 比较即得。）\n\n### 【方法点睛】\n\n1. **有理函数求高阶导的通法：先部分分式，再套 $\\dfrac{1}{1-u}=\\sum u^{n}$**，绝不要硬求 $n$ 阶导。读出系数 $c_n=\\dfrac{f^{(n)}(0)}{n!}$ 后，$f^{(n)}(0)=n!\\,c_n$ 一步到位。\n2. **本题的\"倒过来\"正是考点**：$\\dfrac{f^{(n)}(0)}{n!}=c_n\\sim\\dfrac23(-2)^n$ 是**发散**的（通项不趋于 $0$），而取倒数 $\\dfrac{n!}{f^{(n)}(0)}\\sim\\dfrac32\\bigl(\\dfrac12\\bigr)^{n}$ 才是**收敛**的——$c_n$ 指数增长，其倒数就指数衰减。看清通项的量级是判敛的第一步。\n3. **\"指数型通项 + 低阶扰动\"的标准处理**：把 $a_n$ 写成\"主项 $\\times\\bigl(1+$ 无穷小$\\bigr)$\"，主项定敛散，扰动只影响极限常数。配极限形式的比较判别法最省事。\n4. **别忘了先确认级数有意义**（本题即 $f^{(n)}(0)\\ne0$），否则后面全是空谈。\n\n### 【易错点】\n\n- 把 $\\dfrac{n!}{f^{(n)}(0)}$ 误看成 $\\dfrac{f^{(n)}(0)}{n!}$：后者通项 $\\dfrac13+\\dfrac23(-2)^{n}$ 不趋于 $0$，级数是**发散**的，结论正好相反。\n- 直接用比值判别法时，通项 $(-2)^n$ 变号，必须取绝对值后再算，否则 $\\dfrac{u_{n+1}}{u_n}$ 的极限不存在。",
         "cat": "无穷级数",
-        "topic": "Taylor 级数·绝对收敛",
+        "topic": "绝对收敛与条件收敛",
         "source": "综合例题PDF·例62"
       },
       {
@@ -14669,7 +14719,7 @@ var EDITOR_DATA = [
         "answer": "",
         "solution": "设 $\\displaystyle\\lim_{n\\to\\infty}\\frac{\\ln(1/a_n)}{\\ln n}=q$。注意 $n\\ge2$ 时 $\\ln n>0$，故可对不等式直接乘以 $\\ln n$ 而不变号。\n\n**情形一：$q>1$ —— 收敛。**\n\n取 $\\varepsilon>0$ 充分小，使\n\n$$q-\\varepsilon>1\\quad(\\text{例如取 }\\varepsilon=\\tfrac{q-1}{2}).$$\n\n由极限定义，存在 $N$，当 $n>N$ 时\n\n$$\\frac{\\ln(1/a_n)}{\\ln n}>q-\\varepsilon .$$\n\n乘以 $\\ln n>0$：\n\n$$\\ln\\frac{1}{a_n}>(q-\\varepsilon)\\ln n=\\ln\\bigl(n^{\\,q-\\varepsilon}\\bigr).$$\n\n因 $\\ln$ 严格增：\n\n$$\\frac{1}{a_n}>n^{\\,q-\\varepsilon}\\ \\Longrightarrow\\ 0<a_n<\\frac{1}{n^{\\,q-\\varepsilon}}.$$\n\n而 $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{1}{n^{\\,q-\\varepsilon}}$ 是 $p$-级数且 $p=q-\\varepsilon>1$，故收敛。由**比较判别法**（正项级数，通项被收敛级数的通项控制），\n\n$$\\sum_{n=1}^{\\infty}a_n\\ \\text{收敛}.$$\n\n**情形二：$q<1$ —— 发散。**\n\n取 $\\varepsilon>0$ 充分小，使\n\n$$q+\\varepsilon<1\\quad(\\text{例如取 }\\varepsilon=\\tfrac{1-q}{2}).$$\n\n由极限定义，存在 $N$，当 $n>N$ 时\n\n$$\\frac{\\ln(1/a_n)}{\\ln n}<q+\\varepsilon\\ \\Longrightarrow\\ \\ln\\frac{1}{a_n}<\\ln\\bigl(n^{\\,q+\\varepsilon}\\bigr)\n\\ \\Longrightarrow\\ \\frac{1}{a_n}<n^{\\,q+\\varepsilon}\n\\ \\Longrightarrow\\ a_n>\\frac{1}{n^{\\,q+\\varepsilon}}.$$\n\n而 $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{1}{n^{\\,q+\\varepsilon}}$ 是 $p$-级数且 $p=q+\\varepsilon<1$，故**发散**。由比较判别法（此处 $a_n$ 是\"大\"的一方，大者发散）：\n\n$$\\sum_{n=1}^{\\infty}a_n\\ \\text{发散}.$$\n\n两种情形证毕。$\\blacksquare$\n\n（注：两种情形分别用的是比较判别法的\"小者收敛\"与\"大者发散\"两个方向，逻辑完整。）\n\n### 【方法点睛】\n\n1. **这就是\"对数判别法\"**：条件 $a_n\\lesssim n^{-p}$ 的对数形式。核心操作永远是**\"取 $\\varepsilon$ 把极限 $q$ 换成严格不等式，再和 $p$-级数比较\"**——凡遇到\"$\\lim \\frac{\\ln(1/a_n)}{\\ln n}$\"这类对数型极限，一律这样做。\n2. **$p$-级数 $\\sum n^{-p}$：$p>1$ 收敛，$p<1$ 发散**是唯一的事实依据（$p=1$ 为调和级数，发散）。比较时务必让指数**严格**离开 $1$，这就是取 $\\varepsilon$ 的意义。\n3. **$q=1$ 时判别法失效**，必须另找工具：\n   - $a_n=\\dfrac1n$：$\\dfrac{\\ln n}{\\ln n}\\to1$，级数**发散**；\n   - $a_n=\\dfrac{1}{n\\ln^{2}n}$：$\\dfrac{\\ln n+2\\ln\\ln n}{\\ln n}\\to1$，级数**收敛**（积分判别法）。\n   同一极限 $q=1$ 而敛散相反，故 $q=1$ 不能判定——这是本题最常考的追问点。\n4. 与 Raabe 判别法的关系：Raabe 考察 $n\\left(\\frac{a_n}{a_{n+1}}-1\\right)$ 的极限 $r$，结论是 $r>1$ 收敛、$r<1$ 发散，与本题结论形式一致；两者都是\"用 $p$-级数做比较尺\"的产物，本题的对数形式对 $a_n=n^{-q}(\\ln n)^{\\beta}$ 这类含对数因子的通项同样有效（$q$ 恰为幂次）。\n\n1. **这就是\"对数判别法\"**：条件 $a_n\\lesssim n^{-p}$ 的对数形式。核心操作永远是**\"取 $\\varepsilon$ 把极限 $q$ 换成严格不等式，再和 $p$-级数比较\"**——凡遇到\"$\\lim \\frac{\\ln(1/a_n)}{\\ln n}$\"这类对数型极限，一律这样做。\n2. **$p$-级数 $\\sum n^{-p}$：$p>1$ 收敛，$p<1$ 发散**是唯一的事实依据（$p=1$ 为调和级数，发散）。比较时务必让指数**严格**离开 $1$，这就是取 $\\varepsilon$ 的意义。\n3. **$q=1$ 时判别法失效**，必须另找工具：\n   - $a_n=\\dfrac1n$：$\\dfrac{\\ln n}{\\ln n}\\to1$，级数**发散**；\n   - $a_n=\\dfrac{1}{n\\ln^{2}n}$：$\\dfrac{\\ln n+2\\ln\\ln n}{\\ln n}\\to1$，级数**收敛**（积分判别法）。\n   同一极限 $q=1$ 而敛散相反，故 $q=1$ 不能判定——这是本题最常考的追问点。\n4. 与 Raabe 判别法的关系：Raabe 考察 $n\\left(\\frac{a_n}{a_{n+1}}-1\\right)$ 的极限 $r$，结论是 $r>1$ 收敛、$r<1$ 发散，与本题结论形式一致；两者都是\"用 $p$-级数做比较尺\"的产物，本题的对数形式对 $a_n=n^{-q}(\\ln n)^{\\beta}$ 这类含对数因子的通项同样有效（$q$ 恰为幂次）。",
         "cat": "无穷级数",
-        "topic": "级数判敛",
+        "topic": "数项级数敛散性判别",
         "source": "综合例题PDF·例63"
       },
       {
